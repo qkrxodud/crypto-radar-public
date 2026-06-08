@@ -2,7 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BTC 투자 타이밍 레이더</title>
+<title>BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드</title>
+<meta name="description" content="비트코인 시장의 25개 이상 지표(RSI, MVRV-Z, SOPR, 공포탐욕지수, 펀딩비 등)를 매일 자동 분석하는 무료 대시보드입니다.">
+<meta name="keywords" content="비트코인, 투자, 타이밍, RSI, MVRV, SOPR, 공포탐욕, 펀딩비, BTC, 대시보드">
+<link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -187,16 +190,22 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
   <div class="loading-txt">⚡ 데이터 로딩 중...</div>
 </div>
 
-<!-- 헤더 -->
-<header>
-  <div class="header-inner">
-    <div class="logo">📡 <span class="logo-text">BTC 투자 타이밍 레이더</span></div>
-    <div style="display:flex;align-items:center;gap:12px">
-      <div class="live-badge"><div class="live-dot"></div>LIVE DATA</div>
+<!-- 네비게이션 -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">📡 <span>BTC 타이밍 레이더</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">📊 대시보드</a>
+      <a href="guide.html">📖 지표 가이드</a>
+      <a href="about.html">ℹ️ 소개</a>
+      <a href="contact.html">✉️ 문의</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <div class="nav-live"><div class="nav-live-dot"></div>LIVE DATA</div>
       <span id="upd" style="font-size:11px;color:var(--mu)"></span>
     </div>
   </div>
-</header>
+</nav>
 
 <!-- 티커 바 -->
 <div class="ticker-bar">
@@ -329,7 +338,41 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
 
 </main>
 
-<footer>데이터는 하루 1회 자동 갱신 · 투자 판단은 본인 책임 · <a href="https://github.com/qkrxodud/crypto-radar-public" style="color:var(--mu)">GitHub</a></footer>
+<footer style="background:var(--sf);border-top:1px solid var(--bd);padding:32px 24px 24px;position:relative;z-index:1">
+  <div style="max-width:1480px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:24px">
+      <div>
+        <a href="index.html" class="nav-logo" style="font-size:14px;display:inline-flex;margin-bottom:8px">📡 <span style="background:linear-gradient(90deg,#3b9eff,#9b5de5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-left:6px">BTC 타이밍 레이더</span></a>
+        <p style="color:var(--mu);font-size:12px;line-height:1.7;max-width:280px">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 모든 정보는 참고용이며 투자 조언이 아닙니다.</p>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--tx);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px">메뉴</div>
+        <a href="index.html" style="display:block;color:var(--mu);font-size:12px;padding:3px 0">대시보드</a>
+        <a href="guide.html" style="display:block;color:var(--mu);font-size:12px;padding:3px 0">지표 가이드</a>
+        <a href="about.html" style="display:block;color:var(--mu);font-size:12px;padding:3px 0">소개</a>
+        <a href="contact.html" style="display:block;color:var(--mu);font-size:12px;padding:3px 0">문의</a>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--tx);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px">정책</div>
+        <a href="privacy.html" style="display:block;color:var(--mu);font-size:12px;padding:3px 0">개인정보처리방침</a>
+        <a href="disclaimer.html" style="display:block;color:var(--mu);font-size:12px;padding:3px 0">투자 면책조항</a>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--tx);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px">데이터 출처</div>
+        <span style="display:block;color:var(--mu2);font-size:12px;padding:3px 0">Binance · CoinGecko</span>
+        <span style="display:block;color:var(--mu2);font-size:12px;padding:3px 0">FRED · Alternative.me</span>
+        <span style="display:block;color:var(--mu2);font-size:12px;padding:3px 0">매일 10시 KST 갱신</span>
+      </div>
+    </div>
+    <div style="color:var(--mu2);font-size:11px;line-height:1.6;padding:12px 0;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);margin-bottom:16px">
+      ⚠️ 이 사이트의 모든 정보는 교육·참고 목적으로만 제공되며 투자 조언이 아닙니다. 암호화폐 투자는 원금 손실 위험이 있으며 모든 투자 결정의 책임은 본인에게 있습니다.
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+      <p style="color:var(--mu2);font-size:11px">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</p>
+      <p style="font-size:11px"><a href="privacy.html" style="color:var(--mu)">개인정보처리방침</a> · <a href="disclaimer.html" style="color:var(--mu)">면책조항</a> · <a href="https://github.com/qkrxodud/crypto-radar-public" style="color:var(--mu)" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </div>
+</footer>
 <script src="app.js"></script>
 </body>
 </html>

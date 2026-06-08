@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>소개 — BTC 투자 타이밍 레이더</title>
+<meta name="description" content="BTC 투자 타이밍 레이더는 비트코인 시장의 25개 이상 지표를 종합해 매일 투자 타이밍을 분석하는 무료 정보 서비스입니다.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">📡 <span>BTC 타이밍 레이더</span></a>
+    <div class="nav-links">
+      <a href="index.html"><span>📊</span> 대시보드</a>
+      <a href="guide.html"><span>📖</span> 지표 가이드</a>
+      <a href="about.html" class="active"><span>ℹ️</span> 소개</a>
+      <a href="contact.html"><span>✉️</span> 문의</a>
+    </div>
+    <div class="nav-live"><div class="nav-live-dot"></div>DAILY UPDATE</div>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-header">
+    <div class="badge-tag">ABOUT</div>
+    <h1>사이트 소개</h1>
+    <p>BTC 투자 타이밍 레이더가 무엇인지, 어떻게 만들어졌는지, 어떤 철학으로 운영되는지 설명합니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>무엇을 하는 사이트인가요?</h2>
+    <p><strong>BTC 투자 타이밍 레이더</strong>는 비트코인(BTC) 시장의 다양한 지표를 종합 분석하여 현재 시장 상태를 0~100점으로 정량화하는 무료 정보 서비스입니다.</p>
+    <p>기술적 분석(RSI, 이동평균), 온체인 데이터(SOPR, NUPL, MVRV-Z), 시장 심리(공포탐욕지수, 펀딩비), 매크로 경제(DXY, S&P500, 연준 유동성), 파생상품(청산 히트맵, 옵션 레짐) 등 <strong>25개 이상의 지표</strong>를 통합 분석합니다.</p>
+    <p>단순한 가격 차트 이상의 깊이 있는 시장 분석 정보를 누구나 무료로 접근할 수 있도록 만들었습니다.</p>
+    <div class="info-box">
+      <p>⚠️ 이 사이트는 <strong>정보 제공 목적</strong>으로만 운영됩니다. 모든 투자 결정은 본인의 판단과 책임 하에 이루어져야 합니다. 자세한 내용은 <a href="disclaimer.html">투자 면책조항</a>을 확인하세요.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>왜 만들었나요?</h2>
+    <p>개인 투자자가 비트코인 시장을 분석하려면 수십 개의 사이트를 돌아다니며 지표를 일일이 확인해야 합니다. Glassnode, CoinGlass, TradingView, Fear&Greed Index, FRED… 각각 훌륭한 도구이지만, 이를 종합해서 하나의 판단으로 연결하는 작업은 상당한 시간과 전문 지식을 요구합니다.</p>
+    <p>이 사이트는 그 과정을 자동화합니다. 매일 한 번, 모든 지표를 수집하고 가중치를 적용해 <strong>종합 점수(0~100)</strong>를 산출합니다. 점수와 함께 각 지표의 상세 수치, 전문가 의견 요약, 매수 타이밍 분석을 한 페이지에서 확인할 수 있습니다.</p>
+    <h3>핵심 가치</h3>
+    <ul>
+      <li><strong>객관성</strong> — 정량적 지표에 기반한 분석, 감정적 판단 배제</li>
+      <li><strong>투명성</strong> — 데이터 출처, 계산 방식, 점수 산출 로직 공개</li>
+      <li><strong>접근성</strong> — 누구나 무료로, 회원가입 없이 이용 가능</li>
+      <li><strong>신뢰성</strong> — 매일 자동 갱신, 오래된 데이터 표시 금지</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>데이터 출처</h2>
+    <p>이 사이트에서 사용하는 모든 데이터는 공개 API 또는 유료 서비스에서 수집됩니다.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>데이터 카테고리</th><th>주요 출처</th><th>업데이트 주기</th></tr></thead>
+        <tbody>
+          <tr><td>BTC 가격 / 기술적 지표</td><td>Binance, CoinGecko</td><td>일 1회</td></tr>
+          <tr><td>공포탐욕 지수</td><td>Alternative.me Fear & Greed Index</td><td>일 1회</td></tr>
+          <tr><td>온체인 지표 (SOPR, NUPL, MVRV-Z 등)</td><td>Blockchain.info, BitcoinData</td><td>일 1회</td></tr>
+          <tr><td>거래소 파생상품 (펀딩비, OI, 청산)</td><td>Binance Futures, CoinGlass</td><td>일 1회</td></tr>
+          <tr><td>매크로 경제 지표 (DXY, S&P500, M2 등)</td><td>FRED (미국 연방준비은행), Yahoo Finance</td><td>일 1회</td></tr>
+          <tr><td>옵션 시장 (IV, Skew)</td><td>Deribit, Binance Options</td><td>일 1회</td></tr>
+          <tr><td>스테이블코인 공급</td><td>CoinGecko, DefiLlama</td><td>일 1회</td></tr>
+          <tr><td>AI 전문가 의견</td><td>OpenAI GPT (지표 기반 생성)</td><td>일 1회</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="section-gap">데이터는 <strong>매일 오전 10시 KST</strong>에 자동으로 수집·갱신됩니다. 갱신 시각은 대시보드 상단에 표시됩니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>종합 점수 계산 방식</h2>
+    <p>종합 점수는 각 지표를 0~100점으로 정규화한 뒤, 카테고리별 가중치를 적용하여 산출합니다.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>카테고리</th><th>포함 지표</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>사이클·심리 (30%)</td><td>공포탐욕, 반감기 사이클, MVRV-Z, NUPL, Pi Cycle</td><td>시장 단계 판별</td></tr>
+          <tr><td>기술적 분석 (25%)</td><td>RSI 일/주/월, MA200 비율, 역사적 변동성, MACD</td><td>가격 추세 강도</td></tr>
+          <tr><td>파생상품 (20%)</td><td>펀딩비, 미결제약정, 롱숏비율, 테이커비율</td><td>레버리지 과열도</td></tr>
+          <tr><td>온체인 (15%)</td><td>SOPR, LTH/STH, 거래소 유입, Puell, 해시레이트</td><td>실제 보유자 행동</td></tr>
+          <tr><td>매크로 (10%)</td><td>DXY, S&P500, 김치프리미엄, ETF 유입</td><td>외부 환경</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="section-gap">
+      <h3>점수 해석</h3>
+      <ul>
+        <li><strong style="color:var(--gr)">70~100점 (강한 매집)</strong> — 다수 지표가 매수 구간을 가리킵니다. 역사적으로 분할 매수에 우호적인 구간입니다.</li>
+        <li><strong style="color:var(--bl)">55~69점 (완만한 매집)</strong> — 매수 신호가 우세하나 확신이 강하지 않습니다. 소액 분할 진입을 고려할 수 있습니다.</li>
+        <li><strong style="color:var(--ye)">40~54점 (관망)</strong> — 매수·매도 신호가 혼재합니다. 명확한 방향이 나올 때까지 관망을 권장합니다.</li>
+        <li><strong style="color:var(--re)">0~39점 (약세 주의)</strong> — 다수 지표가 부정적입니다. 신규 진입보다 리스크 관리에 집중하세요.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>운영 정보</h2>
+    <h3>갱신 주기</h3>
+    <p>데이터는 매일 오전 10시 KST에 자동으로 수집·처리됩니다. 서버 오류나 외부 API 장애 시 갱신이 지연될 수 있으며, 이 경우 이전 수집 데이터가 표시됩니다.</p>
+    <h3>광고 정책</h3>
+    <p>이 사이트는 Google AdSense를 통한 광고를 게재합니다. 광고 수익은 서버 운영비 및 데이터 API 구독 비용에 사용됩니다. 광고 콘텐츠는 편집 방향에 영향을 미치지 않습니다.</p>
+    <h3>개인정보 보호</h3>
+    <p>이 사이트는 회원가입, 로그인 기능이 없으며 개인 식별 정보를 수집하지 않습니다. Google Analytics 및 AdSense를 통해 집계된 방문 통계와 광고 효과를 측정합니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인하세요.</p>
+    <h3>문의</h3>
+    <p>오류 신고, 제안, 협업 문의는 <a href="contact.html">문의 페이지</a>를 이용해 주세요.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size:14px">📡 <span style="background:linear-gradient(90deg,#3b9eff,#9b5de5);-webkit-background-clip:text;-webkit-text-fill-color:transparent">BTC 타이밍 레이더</span></a>
+        <p>비트코인 시장 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
+      </div>
+      <div class="footer-col">
+        <h4>메뉴</h4>
+        <a href="index.html">대시보드</a>
+        <a href="guide.html">지표 가이드</a>
+        <a href="about.html">소개</a>
+        <a href="contact.html">문의</a>
+      </div>
+      <div class="footer-col">
+        <h4>정책</h4>
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="disclaimer.html">투자 면책조항</a>
+      </div>
+      <div class="footer-col">
+        <h4>데이터</h4>
+        <a href="#" onclick="return false">Binance</a>
+        <a href="#" onclick="return false">CoinGecko</a>
+        <a href="#" onclick="return false">FRED</a>
+        <a href="#" onclick="return false">Alternative.me</a>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      이 사이트의 모든 정보는 교육·참고 목적으로만 제공되며 투자 조언이 아닙니다. 암호화폐 투자는 원금 손실 위험이 있으며 모든 투자 결정의 책임은 본인에게 있습니다.
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 BTC 투자 타이밍 레이더. All rights reserved.</p>
+      <p><a href="privacy.html">개인정보처리방침</a> · <a href="disclaimer.html">면책조항</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

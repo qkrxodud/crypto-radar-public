@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>지표 가이드 — BTC 투자 타이밍 레이더</title>
+<meta name="description" content="RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 25개 이상 지표의 의미와 해석 방법을 설명합니다.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">📡 <span>BTC 타이밍 레이더</span></a>
+    <div class="nav-links">
+      <a href="index.html">📊 대시보드</a>
+      <a href="guide.html" class="active">📖 지표 가이드</a>
+      <a href="about.html">ℹ️ 소개</a>
+      <a href="contact.html">✉️ 문의</a>
+    </div>
+    <div class="nav-live"><div class="nav-live-dot"></div>DAILY UPDATE</div>
+  </div>
+</nav>
+
+<div class="page-wide">
+  <div class="page-header">
+    <div class="badge-tag">INDICATOR GUIDE</div>
+    <h1>지표 가이드</h1>
+    <p>대시보드에서 사용하는 모든 지표의 의미, 해석 방법, 신호 기준을 설명합니다. 초보자부터 경험자까지 참고하세요.</p>
+  </div>
+
+  <!-- 종합 점수 -->
+  <h2 class="section-title">📊 종합 점수 (PRISM Score)</h2>
+  <div class="card">
+    <p><strong>종합 점수</strong>는 아래에 설명된 25개 이상의 지표를 가중 평균하여 0~100 사이의 단일 숫자로 요약한 것입니다. 숫자가 높을수록 매집에 유리한 시장 환경을 의미합니다.</p>
+    <div class="info-box"><p>종합 점수는 매수·매도를 직접 권고하는 신호가 아닙니다. 시장의 전반적인 상태를 파악하는 참고 지표로 활용하세요.</p></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>점수 범위</th><th>신호</th><th>시장 의미</th><th>참고 전략</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--gr)">70~100</strong></td><td>강한 매집</td><td>공포 극단, 과매도, 온체인 바닥 신호 집중</td><td>분할 매수 적극 고려</td></tr>
+          <tr><td><strong style="color:var(--bl)">55~69</strong></td><td>완만한 매집</td><td>저평가 신호 우세, 회복 초기</td><td>소액 분할 진입</td></tr>
+          <tr><td><strong style="color:var(--ye)">40~54</strong></td><td>관망</td><td>중립 구간, 방향성 불명확</td><td>기존 포지션 유지</td></tr>
+          <tr><td><strong style="color:var(--re)">0~39</strong></td><td>약세 주의</td><td>고평가, 과매수, 청산 위험 신호 집중</td><td>신규 진입 자제, 손절 검토</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 기술적 지표 -->
+  <h2 class="section-title section-gap">📈 기술적 분석 지표</h2>
+  <div class="indicator-grid">
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">RSI (상대강도지수)</span>
+        <span class="ind-card-tag" style="background:rgba(255,204,0,.1);color:var(--ye)">기술적</span>
+      </div>
+      <p class="ind-card-desc">가격 변동의 속도와 크기를 0~100으로 측정합니다. 일반적으로 30 이하는 과매도(매수 기회), 70 이상은 과매수(주의)로 해석합니다. 일봉·주봉·월봉을 각각 분석해 단기·중기·장기 추세를 파악합니다.</p>
+      <div class="ind-card-range"><span>🟢 &lt; 30 과매도</span><span>🔴 &gt; 70 과매수</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">MA200 비율</span>
+        <span class="ind-card-tag" style="background:rgba(255,204,0,.1);color:var(--ye)">기술적</span>
+      </div>
+      <p class="ind-card-desc">현재 가격을 200일 이동평균으로 나눈 값입니다. 1.0 미만이면 장기 이동평균 아래에 있는 것으로, 역사적으로 매집 기회가 많았던 구간입니다. 1.2 이상이면 과열 경고.</p>
+      <div class="ind-card-range"><span>🟢 &lt; 1.0 저평가</span><span>🔴 &gt; 1.2 과열</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">MACD</span>
+        <span class="ind-card-tag" style="background:rgba(255,204,0,.1);color:var(--ye)">기술적</span>
+      </div>
+      <p class="ind-card-desc">12일·26일 지수이동평균의 차이를 이용한 추세 추종 지표입니다. MACD선이 시그널선을 상향 돌파하면 골든크로스(매수 신호), 하향 돌파하면 데드크로스(매도 신호)입니다.</p>
+      <div class="ind-card-range"><span>🟢 골든크로스</span><span>🔴 데드크로스</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">역사적 변동성 (HV)</span>
+        <span class="ind-card-tag" style="background:rgba(255,204,0,.1);color:var(--ye)">기술적</span>
+      </div>
+      <p class="ind-card-desc">과거 일정 기간의 가격 변동폭을 연율화한 수치입니다. 변동성이 낮을수록 조용한 시장(큰 움직임 전조일 수 있음), 높을수록 불안정한 시장입니다.</p>
+      <div class="ind-card-range"><span>낮을수록 안정적</span><span>높을수록 위험</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">Pi Cycle 지표</span>
+        <span class="ind-card-tag" style="background:rgba(255,204,0,.1);color:var(--ye)">기술적</span>
+      </div>
+      <p class="ind-card-desc">111일 이동평균과 350일 이동평균×2의 교차를 이용해 사이클 천장을 예측합니다. 두 선이 만나면 시장 천장 신호로 해석합니다. 간격이 클수록 천장과 멀리 떨어진 구간.</p>
+      <div class="ind-card-range"><span>🟢 간격 큼 = 매집</span><span>🔴 간격 0 = 천장</span></div>
+    </div>
+  </div>
+
+  <!-- 온체인 지표 -->
+  <h2 class="section-title section-gap">🔗 온체인 지표</h2>
+  <div class="indicator-grid">
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">SOPR</span>
+        <span class="ind-card-tag" style="background:rgba(0,229,122,.1);color:var(--gr)">온체인</span>
+      </div>
+      <p class="ind-card-desc">Spent Output Profit Ratio. 이동된 코인의 실현 가격 대비 현재 가격 비율입니다. 1.0 이상이면 코인 보유자들이 평균적으로 수익 실현 중, 1.0 미만이면 손실 상태에서 매도 중. 바닥에서는 보통 0.95~0.98 수준으로 떨어집니다.</p>
+      <div class="ind-card-range"><span>🟢 &lt; 1.0 손실 매도</span><span>🔴 &gt; 1.05 수익 실현</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">NUPL</span>
+        <span class="ind-card-tag" style="background:rgba(0,229,122,.1);color:var(--gr)">온체인</span>
+      </div>
+      <p class="ind-card-desc">Net Unrealized Profit/Loss. 현재 유통 중인 모든 BTC의 미실현 손익 비율입니다. 0~0.25는 희망 단계(매집 기회), 0.75 이상은 탐욕 단계(주의). 음수이면 전체 시장이 손실 상태.</p>
+      <div class="ind-card-range"><span>🟢 0~0.25 매집</span><span>🔴 &gt; 0.75 위험</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">MVRV-Z Score</span>
+        <span class="ind-card-tag" style="background:rgba(0,229,122,.1);color:var(--gr)">온체인</span>
+      </div>
+      <p class="ind-card-desc">시장 가치(Market Cap)와 실현 가치(Realized Cap)의 Z-점수입니다. 역사적으로 0 이하이면 극단적 저평가(강한 매집), 7 이상이면 극단적 고평가(사이클 천장)로 해석됩니다.</p>
+      <div class="ind-card-range"><span>🟢 &lt; 0 극단적 저평가</span><span>🔴 &gt; 7 천장</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">LTH/STH 비율</span>
+        <span class="ind-card-tag" style="background:rgba(0,229,122,.1);color:var(--gr)">온체인</span>
+      </div>
+      <p class="ind-card-desc">장기 보유자(155일 이상) 대비 단기 보유자(155일 미만)의 공급 비율입니다. 비율이 높을수록 장기 보유자 우세 = 시장 성숙도 높음. 사이클 바닥에서 LTH가 적극적으로 매집합니다.</p>
+      <div class="ind-card-range"><span>🟢 높을수록 안정</span><span>🔴 낮을수록 불안</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">Puell Multiple</span>
+        <span class="ind-card-tag" style="background:rgba(0,229,122,.1);color:var(--gr)">온체인</span>
+      </div>
+      <p class="ind-card-desc">채굴자의 일일 수익을 365일 이동평균으로 나눈 값입니다. 0.5 이하이면 채굴자 수익성이 극도로 낮아 매도 압력 감소(매집 신호), 4 이상이면 채굴자 수익 극대화(분산 신호).</p>
+      <div class="ind-card-range"><span>🟢 &lt; 0.5 매집</span><span>🔴 &gt; 4 주의</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">거래소 순유입/보유량</span>
+        <span class="ind-card-tag" style="background:rgba(0,229,122,.1);color:var(--gr)">온체인</span>
+      </div>
+      <p class="ind-card-desc">거래소로 유입되는 BTC 순량입니다. 순유입(+)이면 잠재적 매도 압력 증가, 순유출(-)이면 보유 의지 강화 신호입니다. 총 거래소 보유량 감소 추세는 장기적 매집 신호로 해석됩니다.</p>
+      <div class="ind-card-range"><span>🟢 순유출 = 보유</span><span>🔴 순유입 = 매도</span></div>
+    </div>
+  </div>
+
+  <!-- 시장 심리 -->
+  <h2 class="section-title section-gap">😰 시장 심리 지표</h2>
+  <div class="indicator-grid">
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">공포탐욕 지수</span>
+        <span class="ind-card-tag" style="background:rgba(255,61,90,.1);color:var(--re)">심리</span>
+      </div>
+      <p class="ind-card-desc">Alternative.me에서 제공하는 지수로 0(극도 공포)~100(극도 탐욕)으로 표현됩니다. 변동성, 거래량, SNS 언급량, 설문조사, 도미넌스, 트렌드 등을 종합합니다. 역발상 투자 관점에서 극도 공포(≤20)는 매집 기회로 해석됩니다.</p>
+      <div class="ind-card-range"><span>🟢 &lt; 20 극도 공포</span><span>🔴 &gt; 80 극도 탐욕</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">펀딩비 (Funding Rate)</span>
+        <span class="ind-card-tag" style="background:rgba(255,61,90,.1);color:var(--re)">심리</span>
+      </div>
+      <p class="ind-card-desc">선물 시장에서 롱 포지션 보유자가 숏 포지션 보유자에게 지불하는 비용(또는 반대)입니다. 양수이면 롱 과열(매도 신호), 음수이면 숏 과열(반등 신호)입니다. 극단적 양수 펀딩비는 청산 위험을 높입니다.</p>
+      <div class="ind-card-range"><span>🟢 음수 = 숏 과열</span><span>🔴 &gt; 0.05% 롱 과열</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">롱/숏 비율</span>
+        <span class="ind-card-tag" style="background:rgba(255,61,90,.1);color:var(--re)">심리</span>
+      </div>
+      <p class="ind-card-desc">개인 투자자의 롱 대 숏 포지션 비율입니다. 극단적으로 한쪽으로 쏠릴 때 반대 방향 움직임이 발생하는 경향이 있습니다(역발상 신호). 2 이상이면 롱 과열, 0.5 이하이면 숏 과열로 볼 수 있습니다.</p>
+      <div class="ind-card-range"><span>🟢 0.5 이하 숏 과열</span><span>🔴 2 이상 롱 과열</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">미결제약정 (OI)</span>
+        <span class="ind-card-tag" style="background:rgba(255,61,90,.1);color:var(--re)">심리</span>
+      </div>
+      <p class="ind-card-desc">현재 청산되지 않은 파생상품 계약의 총 가치입니다. OI가 증가하면 시장 참여 증가(추세 강화), OI가 급감하면 대규모 청산 발생(변동성 증폭) 신호입니다. 가격 상승 + OI 감소는 약세 신호입니다.</p>
+      <div class="ind-card-range"><span>상승 + OI 증가 = 강세</span><span>하락 + OI 급감 = 청산</span></div>
+    </div>
+  </div>
+
+  <!-- 매크로 -->
+  <h2 class="section-title section-gap">🌍 매크로 경제 지표</h2>
+  <div class="indicator-grid">
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">DXY (달러 인덱스)</span>
+        <span class="ind-card-tag" style="background:rgba(255,107,43,.1);color:var(--or)">매크로</span>
+      </div>
+      <p class="ind-card-desc">6개 주요 통화 대비 달러 강도를 나타냅니다. DXY 상승은 달러 강세로 위험자산(BTC 포함)에 부정적 영향을 주는 경향이 있습니다. 반대로 DXY 하락은 BTC에 우호적입니다.</p>
+      <div class="ind-card-range"><span>🟢 하락 = BTC 우호</span><span>🔴 상승 = BTC 역풍</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">연준 순유동성</span>
+        <span class="ind-card-tag" style="background:rgba(255,107,43,.1);color:var(--or)">매크로</span>
+      </div>
+      <p class="ind-card-desc">연방준비은행 자산 - 역환매조건부채권 - 재무부 계좌 잔고로 계산합니다. 순유동성 증가는 시중 자금 확대로 위험자산에 우호적입니다. 양적 긴축(QT) 시기에는 유동성이 감소합니다.</p>
+      <div class="ind-card-range"><span>🟢 증가 = 위험자산 우호</span><span>🔴 감소 = 긴축</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">BTC ETF 순유입</span>
+        <span class="ind-card-tag" style="background:rgba(255,107,43,.1);color:var(--or)">매크로</span>
+      </div>
+      <p class="ind-card-desc">미국 현물 BTC ETF(BlackRock IBIT, Fidelity FBTC 등)의 일일 순유입/유출액입니다. 기관 자금 흐름의 대리 지표로, 지속적인 순유입은 기관 수요 확인 신호입니다.</p>
+      <div class="ind-card-range"><span>🟢 순유입 = 기관 수요</span><span>🔴 순유출 = 기관 매도</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">김치 프리미엄</span>
+        <span class="ind-card-tag" style="background:rgba(255,107,43,.1);color:var(--or)">매크로</span>
+      </div>
+      <p class="ind-card-desc">국내 거래소 BTC 가격과 해외 거래소 가격의 차이를 비율로 나타냅니다. 높은 프리미엄은 국내 투자자의 강한 수요를 나타내며, 음수 프리미엄(역프리미엄)은 국내 시장 위축 신호입니다.</p>
+      <div class="ind-card-range"><span>🟢 소폭 양수 = 정상</span><span>🔴 &gt; 5% 과열</span></div>
+    </div>
+  </div>
+
+  <!-- 파생상품 -->
+  <h2 class="section-title section-gap">⚡ 파생상품 지표</h2>
+  <div class="indicator-grid">
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">청산 히트맵</span>
+        <span class="ind-card-tag" style="background:rgba(59,158,255,.1);color:var(--bl)">파생</span>
+      </div>
+      <p class="ind-card-desc">특정 가격대에 몰려있는 롱/숏 청산 가능 물량을 시각화합니다. 가격이 청산 집중 구간에 접근하면 연쇄 청산(캐스케이드)이 발생할 수 있습니다. 하방 청산 규모가 크면 추가 하락 위험이 있습니다.</p>
+      <div class="ind-card-range"><span>🟢 상방 청산 큼 = 반등 연료</span><span>🔴 하방 청산 큼 = 추가 하락</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">옵션 내재 변동성 (IV30)</span>
+        <span class="ind-card-tag" style="background:rgba(59,158,255,.1);color:var(--bl)">파생</span>
+      </div>
+      <p class="ind-card-desc">30일 만기 옵션의 내재 변동성으로 시장이 예상하는 미래 변동성입니다. IV가 급등하면 시장 공포 증가(종종 바닥 신호), IV가 낮으면 안정적인 시장 분위기입니다.</p>
+      <div class="ind-card-range"><span>🟢 IV 낮음 = 안정</span><span>🔴 IV 급등 = 공포</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">25δ 스큐 (Skew)</span>
+        <span class="ind-card-tag" style="background:rgba(59,158,255,.1);color:var(--bl)">파생</span>
+      </div>
+      <p class="ind-card-desc">동일 만기의 25델타 콜 옵션과 풋 옵션의 IV 차이입니다. 양수이면 콜 수요 우세(상승 기대), 음수이면 풋 수요 우세(하락 헤지). 극단적 양수 스큐는 상승 기대 과도, 극단적 음수는 공포 극단을 나타냅니다.</p>
+      <div class="ind-card-range"><span>🟢 양수 = 상승 기대</span><span>🔴 음수 = 하락 헤지</span></div>
+    </div>
+    <div class="ind-card">
+      <div class="ind-card-head">
+        <span class="ind-card-name">롤링 상관관계</span>
+        <span class="ind-card-tag" style="background:rgba(59,158,255,.1);color:var(--bl)">파생</span>
+      </div>
+      <p class="ind-card-desc">최근 30일 BTC와 S&P500, DXY, 금의 상관계수(-1~1)입니다. BTC-SPX 상관관계가 높으면 매크로 연동 장세, 낮으면 독립적 움직임. BTC-DXY 음의 상관관계가 강할 때는 달러 움직임에 주의가 필요합니다.</p>
+      <div class="ind-card-range"><span>-1 = 완전 역상관</span><span>+1 = 완전 정상관</span></div>
+    </div>
+  </div>
+
+  <!-- 사이클 -->
+  <h2 class="section-title section-gap">🔄 사이클 지표</h2>
+  <div class="card">
+    <h2>반감기 사이클</h2>
+    <p>비트코인은 약 4년마다 채굴 보상이 절반으로 줄어드는 <strong>반감기(Halving)</strong>를 겪습니다. 역사적으로 반감기 이후 12~18개월에 걸쳐 가격이 상승하는 패턴이 반복되었습니다.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>경과 기간</th><th>통상적 국면</th><th>특징</th></tr></thead>
+        <tbody>
+          <tr><td>0~6개월</td><td>조기 반등기</td><td>반감기 기대감, 아직 효과 미반영</td></tr>
+          <tr><td>6~18개월</td><td>상승 강화기</td><td>공급 감소 효과 반영, 강세장 본격화</td></tr>
+          <tr><td>18~30개월</td><td>천장 탐색기</td><td>극도 탐욕, MVRV·NUPL 극단값</td></tr>
+          <tr><td>30~48개월</td><td>하락 및 회복기</td><td>사이클 바닥 형성, 다음 반감기 준비</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="warn-box">
+      <p>반감기 사이클은 과거 3번의 사이클 기반 패턴으로, 미래를 보장하지 않습니다. 매크로 환경, 규제 변화 등에 따라 패턴이 달라질 수 있습니다.</p>
+    </div>
+  </div>
+
+  <!-- 활용 가이드 -->
+  <h2 class="section-title section-gap">💡 대시보드 활용 가이드</h2>
+  <div class="card">
+    <h2>초보자를 위한 3단계 활용법</h2>
+    <h3>Step 1. 종합 점수 확인</h3>
+    <p>대시보드 상단의 <strong>종합 점수(0~100)</strong>를 먼저 확인합니다. 시장 전체의 분위기를 한눈에 파악할 수 있습니다.</p>
+    <h3>Step 2. 전문가 의견 읽기</h3>
+    <p>AI가 생성한 <strong>전문가 종합 의견</strong>을 읽습니다. 점수의 근거와 주요 강세·약세 신호를 설명합니다.</p>
+    <h3>Step 3. 주요 지표 크로스체크</h3>
+    <p>관심 있는 지표(RSI, 공포탐욕, 펀딩비 등)를 개별적으로 확인해 종합 점수와 일치하는지 검토합니다. 여러 지표가 같은 방향을 가리킬 때 신뢰도가 높습니다.</p>
+
+    <h3 style="margin-top:20px">중급자를 위한 심층 분석</h3>
+    <ul>
+      <li>기술적 + 온체인 지표가 동시에 저점 신호를 보낼 때 강한 매집 기회</li>
+      <li>펀딩비 급등 + 극도 탐욕 + 고점 RSI = 강한 과열 경고</li>
+      <li>레짐 매트릭스(종합 점수 vs 공포탐욕)로 역발상 투자 타이밍 포착</li>
+      <li>청산 히트맵으로 단기 지지·저항선 파악</li>
+    </ul>
+    <div class="danger-box" style="margin-top:16px">
+      <p>📌 어떤 지표도 100% 정확하지 않습니다. 이 대시보드는 다양한 시각을 종합하는 참고 도구이며, 최종 투자 판단은 항상 본인이 직접 해야 합니다.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size:14px">📡 <span style="background:linear-gradient(90deg,#3b9eff,#9b5de5);-webkit-background-clip:text;-webkit-text-fill-color:transparent">BTC 타이밍 레이더</span></a>
+        <p>비트코인 시장 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</p>
+      </div>
+      <div class="footer-col"><h4>메뉴</h4><a href="index.html">대시보드</a><a href="guide.html">지표 가이드</a><a href="about.html">소개</a><a href="contact.html">문의</a></div>
+      <div class="footer-col"><h4>정책</h4><a href="privacy.html">개인정보처리방침</a><a href="disclaimer.html">투자 면책조항</a></div>
+      <div class="footer-col"><h4>데이터</h4><a href="#" onclick="return false">Binance</a><a href="#" onclick="return false">CoinGecko</a><a href="#" onclick="return false">FRED</a></div>
+    </div>
+    <div class="footer-disclaimer">이 사이트의 모든 정보는 교육·참고 목적으로만 제공되며 투자 조언이 아닙니다. 암호화폐 투자는 원금 손실 위험이 있습니다.</div>
+    <div class="footer-bottom"><p>© 2024 BTC 투자 타이밍 레이더. All rights reserved.</p><p><a href="privacy.html">개인정보처리방침</a> · <a href="disclaimer.html">면책조항</a></p></div>
+  </div>
+</footer>
+</body>
+</html>
