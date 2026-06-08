@@ -54,15 +54,16 @@ nav{
   content:'';position:absolute;bottom:-1px;left:14px;right:14px;
   height:2px;background:var(--bl);border-radius:2px 2px 0 0;
 }
-/* LIVE 배지 */
-.nav-live{
+/* 갱신 배지 */
+.nav-daily{
   display:flex;align-items:center;gap:5px;
-  background:rgba(0,229,122,.08);border:1px solid rgba(0,229,122,.2);
-  border-radius:20px;padding:3px 10px;font-size:11px;
-  color:var(--gr);font-weight:700;white-space:nowrap;flex-shrink:0;
+  background:rgba(59,158,255,.08);border:1px solid rgba(59,158,255,.18);
+  border-radius:20px;padding:4px 12px;font-size:11px;
+  color:var(--mu);font-weight:600;white-space:nowrap;flex-shrink:0;
+  letter-spacing:.2px;
 }
-.nav-live-dot{width:6px;height:6px;border-radius:50%;background:var(--gr);animation:blink 1.5s ease-in-out infinite}
-@keyframes blink{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,229,122,.6)}50%{opacity:.4;box-shadow:0 0 0 6px rgba(0,229,122,0)}}
+/* 하위 호환 — 혹시 남은 .nav-live가 있을 경우 */
+.nav-live{display:none}
 
 /* ── 페이지 공통 ── */
 .page-wrap{max-width:900px;margin:0 auto;padding:40px 24px;flex:1}
