@@ -7,338 +7,324 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#080c14;--sf:#0f1724;--sf2:#141e2e;--sf3:#1a2640;
-  --bd:#1e2d45;--bd2:#253550;
-  --tx:#e8f0fe;--mu:#6b84a8;--mu2:#4a6080;
-  --gr:#00d97e;--re:#ff4757;--ye:#ffd32a;--bl:#4e9fff;--or:#ff6b35;--pu:#a855f7;
-  --gr-dim:rgba(0,217,126,.15);--re-dim:rgba(255,71,87,.15);
-  --ye-dim:rgba(255,211,42,.12);--bl-dim:rgba(78,159,255,.12);
+  --bg:#060b14;--sf:#0c1525;--sf2:#111d30;--sf3:#172035;
+  --bd:#1a2d48;--bd2:#223562;
+  --tx:#dce8ff;--mu:#5a7899;--mu2:#3a5470;
+  --gr:#00e57a;--re:#ff3d5a;--ye:#ffcc00;--bl:#3b9eff;--or:#ff6b2b;--pu:#9b5de5;
+  --gr-d:rgba(0,229,122,.1);--re-d:rgba(255,61,90,.1);--bl-d:rgba(59,158,255,.1);--ye-d:rgba(255,204,0,.1);
 }
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;line-height:1.5}
+body{background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;line-height:1.5;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:3px}
 
-/* ── 스크롤바 ── */
-::-webkit-scrollbar{width:6px;height:6px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:3px}
+/* ── 파티클 캔버스 ── */
+#particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.4}
 
 /* ── 헤더 ── */
 header{
-  border-bottom:1px solid var(--bd);padding:14px 28px;
-  display:flex;align-items:center;justify-content:space-between;
-  position:sticky;top:0;background:rgba(8,12,20,.92);backdrop-filter:blur(12px);z-index:99;
+  border-bottom:1px solid var(--bd);padding:0 28px;
+  background:rgba(6,11,20,.95);backdrop-filter:blur(20px);
+  position:sticky;top:0;z-index:100;
 }
-header h1{font-size:15px;font-weight:700;letter-spacing:-.3px;display:flex;align-items:center;gap:8px}
-header h1 span{background:linear-gradient(90deg,var(--bl),var(--pu));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-#upd{font-size:11px;color:var(--mu);background:var(--sf2);padding:4px 10px;border-radius:20px;border:1px solid var(--bd)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:52px}
+.logo{font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px;letter-spacing:-.3px}
+.logo-text{background:linear-gradient(90deg,#3b9eff,#9b5de5);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.live-badge{display:flex;align-items:center;gap:5px;background:rgba(0,229,122,.08);border:1px solid rgba(0,229,122,.25);border-radius:20px;padding:3px 10px;font-size:11px;color:var(--gr);font-weight:600}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--gr);animation:blink 1.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,229,122,.6)}50%{opacity:.4;box-shadow:0 0 0 6px rgba(0,229,122,0)}}
 
-/* ── 메인 컨테이너 ── */
-main{max-width:1440px;margin:0 auto;padding:24px 20px;display:flex;flex-direction:column;gap:18px}
+/* ── 티커 바 ── */
+.ticker-bar{background:rgba(10,20,40,.8);border-bottom:1px solid var(--bd);overflow:hidden;height:32px;display:flex;align-items:center}
+.ticker-label{flex-shrink:0;padding:0 16px;font-size:11px;font-weight:700;color:var(--bl);text-transform:uppercase;letter-spacing:.5px;border-right:1px solid var(--bd);height:100%;display:flex;align-items:center}
+.ticker-track{display:flex;gap:0;animation:ticker 40s linear infinite;white-space:nowrap}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{display:flex;align-items:center;gap:6px;padding:0 20px;font-size:11px;border-right:1px solid var(--bd);height:32px}
+.ticker-name{color:var(--mu);font-weight:500}
+.ticker-val{font-weight:700}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── 메인 ── */
+main{position:relative;z-index:1;max-width:1480px;margin:0 auto;padding:22px 20px;display:flex;flex-direction:column;gap:16px}
 
 /* ── 히어로 ── */
 .hero{
-  background:linear-gradient(135deg,var(--sf) 0%,var(--sf2) 50%,#0f1a2d 100%);
+  background:linear-gradient(135deg,var(--sf) 0%,#0e1b30 60%,#0a1525 100%);
   border:1px solid var(--bd);border-radius:16px;padding:32px 36px;
-  display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:32px;
+  display:grid;grid-template-columns:160px 1fr auto;align-items:center;gap:32px;
   position:relative;overflow:hidden;
 }
-.hero::before{
-  content:'';position:absolute;top:-60px;right:-60px;width:280px;height:280px;
-  border-radius:50%;opacity:.06;
-  background:radial-gradient(circle,var(--bl) 0%,transparent 70%);
-  pointer-events:none;
-}
-.ring-wrap{position:relative;flex-shrink:0}
-.ring{
-  width:130px;height:130px;border-radius:50%;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  border:3px solid;position:relative;
-}
-.ring::after{
-  content:'';position:absolute;inset:-6px;border-radius:50%;
-  border:1px solid;opacity:.3;
-}
-.ring .big{font-size:46px;font-weight:800;line-height:1;letter-spacing:-2px}
-.ring .sm{font-size:10px;color:var(--mu);margin-top:2px;letter-spacing:.5px}
-.hero-center{}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:10px;border:1px solid}
-.hero-badge::before{content:'●';font-size:8px}
-.hero-title{font-size:26px;font-weight:800;margin-bottom:8px;letter-spacing:-.5px}
-.hero-reason{color:var(--mu);font-size:13px;line-height:1.7;max-width:620px}
-.hero-stats{display:flex;flex-direction:column;gap:12px;align-items:flex-end;min-width:180px}
-.hero-stat{text-align:right}
-.hero-stat .hs-label{font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
-.hero-stat .hs-val{font-size:22px;font-weight:700}
-.hero-stat .hs-hint{font-size:11px;color:var(--mu)}
+.hero-glow{position:absolute;border-radius:50%;pointer-events:none;filter:blur(80px);opacity:0;transition:opacity 1s}
+.hero-glow-1{width:400px;height:400px;top:-150px;right:-100px}
+.hero-glow-2{width:300px;height:300px;bottom:-150px;left:100px;background:radial-gradient(circle,rgba(155,93,229,.15),transparent 70%)}
+/* SVG 링 */
+.score-svg-wrap{position:relative;width:140px;height:140px;flex-shrink:0}
+.score-svg{transform:rotate(-90deg)}
+.score-bg-circle{fill:none;stroke:var(--bd);stroke-width:8}
+.score-fill-circle{fill:none;stroke-width:8;stroke-linecap:round;stroke-dasharray:360;stroke-dashoffset:360;transition:stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1)}
+.score-text-wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.score-num{font-size:44px;font-weight:900;line-height:1;letter-spacing:-2px;transition:color .5s}
+.score-lbl{font-size:10px;color:var(--mu);letter-spacing:1px;text-transform:uppercase;margin-top:2px}
+/* 히어로 텍스트 */
+.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:10px;border:1px solid;letter-spacing:.3px}
+.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;animation:pulse-dot 2s ease-in-out infinite}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:.6}}
+.hero-title{font-size:28px;font-weight:900;margin-bottom:8px;letter-spacing:-.5px;line-height:1.2}
+.hero-reason{color:var(--mu);font-size:13px;line-height:1.7;max-width:640px}
+.hero-stats{display:flex;flex-direction:column;gap:14px;min-width:170px;align-items:flex-end}
+.hstat{text-align:right}
+.hstat-lbl{font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px}
+.hstat-val{font-size:24px;font-weight:800;line-height:1;letter-spacing:-1px}
+.hstat-hint{font-size:11px;color:var(--mu);margin-top:3px}
 
-/* ── KPI 그리드 ── */
+/* ── KPI ── */
 .kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 .kpi{
-  background:var(--sf);border:1px solid var(--bd);border-radius:12px;
-  padding:18px 20px;transition:border-color .2s,transform .2s;cursor:default;
+  background:linear-gradient(135deg,var(--sf),var(--sf2));
+  border:1px solid var(--bd);border-radius:12px;padding:20px;
+  position:relative;overflow:hidden;cursor:default;
+  transition:transform .2s,border-color .2s,box-shadow .2s;
 }
-.kpi:hover{border-color:var(--bd2);transform:translateY(-2px)}
-.kpi .lbl{font-size:11px;color:var(--mu);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
-.kpi .val{font-size:26px;font-weight:800;letter-spacing:-1px;line-height:1}
-.kpi .hint{font-size:11px;color:var(--mu);margin-top:6px}
-.kpi-accent{border-top:2px solid}
+.kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;border-radius:2px 2px 0 0}
+.kpi:hover{transform:translateY(-3px);border-color:var(--bd2);box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.kpi-lbl{font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px}
+.kpi-val{font-size:28px;font-weight:900;letter-spacing:-1px;line-height:1}
+.kpi-hint{font-size:11px;color:var(--mu);margin-top:7px}
 
-/* ── 공통 카드 ── */
-.card{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:22px;transition:border-color .2s}
-.card:hover{border-color:var(--bd2)}
+/* ── 카드 ── */
+.card{
+  background:linear-gradient(135deg,var(--sf),var(--sf2));
+  border:1px solid var(--bd);border-radius:12px;padding:22px;
+  transition:border-color .2s,box-shadow .2s;
+  opacity:0;transform:translateY(20px);
+}
+.card.visible{opacity:1;transform:translateY(0);transition:opacity .5s,transform .5s,border-color .2s,box-shadow .2s}
+.card:hover{border-color:var(--bd2);box-shadow:0 4px 24px rgba(0,0,0,.3)}
 .ct{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.8px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
-.ct::before{content:'';width:3px;height:12px;border-radius:2px;background:var(--bl);display:inline-block}
+.ct-bar{width:3px;height:14px;border-radius:2px;background:linear-gradient(180deg,var(--bl),var(--pu));flex-shrink:0}
 
 /* ── 그리드 ── */
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
-.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.g13{display:grid;grid-template-columns:1fr 3fr;gap:18px}
-.g31{display:grid;grid-template-columns:3fr 1fr;gap:18px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 
 /* ── 차트 ── */
 .ch{position:relative}
-.ch-sm{height:200px}
-.ch-md{height:280px}
-.ch-lg{height:340px}
+.ch-sm{height:180px}.ch-md{height:280px}.ch-lg{height:320px}
 
-/* ── 지표 행 ── */
-.row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(30,45,69,.8)}
+/* ── 행 ── */
+.row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(26,45,72,.7)}
 .row:last-child{border-bottom:none}
 .rl{color:var(--mu);font-size:12px}
 .rv{font-weight:600;font-size:12px;text-align:right}
 
 /* ── 테이블 ── */
 table{width:100%;border-collapse:collapse;font-size:12px}
-th{background:var(--sf2);color:var(--mu);font-weight:600;padding:9px 12px;text-align:left;border-bottom:1px solid var(--bd);font-size:11px;text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
-td{padding:8px 12px;border-bottom:1px solid rgba(30,45,69,.6)}
-tr:last-child td{border-bottom:none}
-tr:hover td{background:rgba(20,30,46,.6)}
+th{background:rgba(17,29,48,.8);color:var(--mu);font-weight:600;padding:9px 14px;text-align:left;border-bottom:1px solid var(--bd);font-size:10px;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap}
+td{padding:8px 14px;border-bottom:1px solid rgba(26,45,72,.5);transition:background .15s}
+tr:hover td{background:rgba(23,32,53,.6)}
+.sbar{background:var(--sf3);border-radius:3px;height:4px;width:100px;display:inline-block;vertical-align:middle;overflow:hidden}
+.sbar-fill{height:100%;border-radius:3px;transition:width 1s ease-out}
 
-/* ── 스코어 바 ── */
-.sbar{background:var(--sf2);border-radius:3px;height:4px;width:90px;display:inline-block;vertical-align:middle;overflow:hidden}
-.sbar-fill{height:100%;border-radius:3px;transition:width .3s}
-
-/* ── 신호 아이템 ── */
-.sig{display:flex;align-items:flex-start;gap:8px;font-size:12px;line-height:1.5;padding:4px 0}
+/* ── 신호 ── */
+.sig{display:flex;align-items:flex-start;gap:8px;padding:5px 0;font-size:12px;line-height:1.5}
 .sig-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:5px}
 
 /* ── 청산 레벨 ── */
-.liq-lvl{display:flex;justify-content:space-between;align-items:center;padding:7px 12px;border-radius:8px;margin-bottom:5px;font-size:12px;border:1px solid}
+.liq-lvl{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-radius:8px;margin-bottom:5px;font-size:12px;border:1px solid}
 
 /* ── 체크리스트 ── */
-.chk{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:1px solid rgba(30,45,69,.6);font-size:12px;line-height:1.5}
+.chk{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid rgba(26,45,72,.5);font-size:12px;line-height:1.5}
 .chk:last-child{border-bottom:none}
 
 /* ── 진행바 ── */
-.prog{background:var(--sf2);border-radius:4px;height:6px;overflow:hidden}
-.prog-fill{height:100%;border-radius:4px;transition:width .4s}
+.prog{background:var(--sf3);border-radius:4px;height:5px;overflow:hidden}
+.prog-fill{height:100%;border-radius:4px;width:0;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+
+/* ── 지표 분해 ── */
+.bd-card{background:var(--sf2);border:1px solid var(--bd);border-radius:8px;padding:10px 12px;transition:border-color .2s,transform .2s}
+.bd-card:hover{border-color:var(--bd2);transform:translateY(-1px)}
+
+/* ── 섹션 구분 ── */
+.divider{display:flex;align-items:center;gap:14px;margin:4px 0}
+.divider span{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.8px;white-space:nowrap}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--bd),transparent)}
 
 /* ── 컬러 ── */
 .gr{color:var(--gr)}.re{color:var(--re)}.ye{color:var(--ye)}.bl{color:var(--bl)}.or{color:var(--or)}.pu{color:var(--pu)}
-.bg-gr{background:var(--gr-dim)}.bg-re{background:var(--re-dim)}.bg-ye{background:var(--ye-dim)}.bg-bl{background:var(--bl-dim)}
-.bdr-gr{border-color:var(--gr)}.bdr-re{border-color:var(--re)}.bdr-ye{border-color:var(--ye)}.bdr-bl{border-color:var(--bl)}
-.ring-gr{border-color:var(--gr)}.ring-gr::after{border-color:var(--gr)}
-.ring-bl{border-color:var(--bl)}.ring-bl::after{border-color:var(--bl)}
-.ring-ye{border-color:var(--ye)}.ring-ye::after{border-color:var(--ye)}
-.ring-re{border-color:var(--re)}.ring-re::after{border-color:var(--re)}
-.glow-gr{box-shadow:0 0 24px rgba(0,217,126,.2)}
-.glow-bl{box-shadow:0 0 24px rgba(78,159,255,.2)}
-.glow-ye{box-shadow:0 0 24px rgba(255,211,42,.2)}
-.glow-re{box-shadow:0 0 24px rgba(255,71,87,.2)}
+.bg-gr{background:var(--gr-d);border-color:rgba(0,229,122,.25)!important}
+.bg-re{background:var(--re-d);border-color:rgba(255,61,90,.25)!important}
+.bg-bl{background:var(--bl-d);border-color:rgba(59,158,255,.25)!important}
+.bg-ye{background:var(--ye-d);border-color:rgba(255,204,0,.2)!important}
 
-/* ── 섹션 구분선 ── */
-.section-divider{display:flex;align-items:center;gap:12px;margin:4px 0}
-.section-divider span{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:1px;white-space:nowrap}
-.section-divider::before,.section-divider::after{content:'';flex:1;height:1px;background:var(--bd)}
+/* ── 그로우 ── */
+.glow-gr{box-shadow:0 0 28px rgba(0,229,122,.2)}
+.glow-bl{box-shadow:0 0 28px rgba(59,158,255,.2)}
+.glow-ye{box-shadow:0 0 28px rgba(255,204,0,.2)}
+.glow-re{box-shadow:0 0 28px rgba(255,61,90,.2)}
 
-/* ── 레짐 배지 ── */
-.regime-box{border-radius:10px;padding:16px;border:1px solid;text-align:center}
-.regime-label{font-size:18px;font-weight:800;margin-bottom:4px}
-.regime-desc{font-size:11px;color:var(--mu);line-height:1.5}
+/* ── 숫자 카운트업 ── */
+.count{display:inline-block;transition:transform .1s}
+
+/* ── 로딩 ── */
+#loading{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:999;flex-direction:column;gap:20px}
+.loading-ring{width:60px;height:60px;border:3px solid var(--bd);border-top-color:var(--bl);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-txt{color:var(--mu);font-size:13px;letter-spacing:.5px}
 
 /* ── 반응형 ── */
 @media(max-width:1100px){.g4{grid-template-columns:repeat(2,1fr)}.kpi-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:800px){.g2,.g3,.g13,.g31{grid-template-columns:1fr}.hero{grid-template-columns:1fr;text-align:center}.hero-stats{align-items:center}.kpi-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:500px){.kpi-grid{grid-template-columns:1fr}}
-
-footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top:1px solid var(--bd);margin-top:8px}
-#loading{text-align:center;padding:100px;color:var(--mu);font-size:15px}
-.pulse{animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@media(max-width:768px){.g2,.g3{grid-template-columns:1fr}.hero{grid-template-columns:1fr;text-align:center}.hero-stats{align-items:center}.kpi-grid{grid-template-columns:1fr 1fr}}
+footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top:1px solid var(--bd);margin-top:8px;position:relative;z-index:1}
 </style>
 </head>
 <body>
+
+<canvas id="particles"></canvas>
+
+<!-- 로딩 -->
+<div id="loading">
+  <div class="loading-ring"></div>
+  <div class="loading-txt">⚡ 데이터 로딩 중...</div>
+</div>
+
+<!-- 헤더 -->
 <header>
-  <h1>📡 <span>BTC 투자 타이밍 레이더</span></h1>
-  <span id="upd" class="pulse">로딩 중...</span>
+  <div class="header-inner">
+    <div class="logo">📡 <span class="logo-text">BTC 투자 타이밍 레이더</span></div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <div class="live-badge"><div class="live-dot"></div>LIVE DATA</div>
+      <span id="upd" style="font-size:11px;color:var(--mu)"></span>
+    </div>
+  </div>
 </header>
 
-<div id="loading">⚡ 데이터 로딩 중...</div>
+<!-- 티커 바 -->
+<div class="ticker-bar">
+  <div class="ticker-label">📊 MARKET</div>
+  <div style="overflow:hidden;flex:1">
+    <div class="ticker-track" id="ticker"></div>
+  </div>
+</div>
 
 <main id="main" style="display:none">
 
   <!-- ① 히어로 -->
   <div class="hero" id="hero">
-    <div class="ring-wrap">
-      <div class="ring" id="ring">
-        <span class="big" id="h-score">--</span>
-        <span class="sm">SCORE</span>
+    <div class="hero-glow hero-glow-1" id="hero-glow"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="score-svg-wrap">
+      <svg class="score-svg" width="140" height="140" viewBox="0 0 140 140">
+        <circle class="score-bg-circle" cx="70" cy="70" r="57"/>
+        <circle class="score-fill-circle" id="score-circle" cx="70" cy="70" r="57"/>
+      </svg>
+      <div class="score-text-wrap">
+        <div class="score-num" id="h-score">0</div>
+        <div class="score-lbl">SCORE</div>
       </div>
     </div>
-    <div class="hero-center">
+    <div>
       <div class="hero-badge" id="h-badge">--</div>
       <div class="hero-title" id="h-action">--</div>
       <p class="hero-reason" id="h-reason"></p>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hs-label">BTC 가격</div>
-        <div class="hs-val" id="hs-btc">--</div>
-        <div class="hs-hint" id="hs-date"></div>
+      <div class="hstat">
+        <div class="hstat-lbl">BTC 가격</div>
+        <div class="hstat-val gr" id="hs-btc">--</div>
+        <div class="hstat-hint" id="hs-date"></div>
       </div>
-      <div class="hero-stat">
-        <div class="hs-label">공포탐욕</div>
-        <div class="hs-val" id="hs-fg">--</div>
-        <div class="hs-hint" id="hs-fg-h"></div>
+      <div class="hstat">
+        <div class="hstat-lbl">공포탐욕</div>
+        <div class="hstat-val" id="hs-fg">--</div>
+        <div class="hstat-hint" id="hs-fg-h"></div>
       </div>
     </div>
   </div>
 
   <!-- ② KPI -->
   <div class="kpi-grid">
-    <div class="card kpi kpi-accent" id="kpi-delta-card" style="border-top-color:var(--bl)">
-      <div class="lbl">전일 점수 변화</div>
-      <div class="val" id="k-delta">--</div>
-      <div class="hint" id="k-avg"></div>
-    </div>
-    <div class="card kpi kpi-accent" style="border-top-color:var(--ye)">
-      <div class="lbl">레짐 매트릭스</div>
-      <div class="val" id="k-quad" style="font-size:16px;line-height:1.3">--</div>
-      <div class="hint" id="k-quad-h"></div>
-    </div>
-    <div class="card kpi kpi-accent" style="border-top-color:var(--gr)">
-      <div class="lbl">체크리스트</div>
-      <div class="val" id="k-chk">--</div>
-      <div class="hint" id="k-chk-h"></div>
-    </div>
-    <div class="card kpi kpi-accent" style="border-top-color:var(--pu)">
-      <div class="lbl">예측 점수 (내일)</div>
-      <div class="val" id="k-fc">--</div>
-      <div class="hint" id="k-fc-h"></div>
-    </div>
-    <div class="card kpi kpi-accent" style="border-top-color:var(--or)">
-      <div class="lbl">반감기 경과</div>
-      <div class="val" id="k-halv">--</div>
-      <div class="hint" id="k-halv-h"></div>
-    </div>
+    <div class="kpi" style="--accent:var(--bl)"><div class="kpi-lbl">전일 점수 변화</div><div class="kpi-val" id="k-delta">--</div><div class="kpi-hint" id="k-avg"></div></div>
+    <div class="kpi" style="--accent:var(--ye)"><div class="kpi-lbl">레짐 매트릭스</div><div class="kpi-val" id="k-quad" style="font-size:16px;line-height:1.4">--</div><div class="kpi-hint" id="k-quad-h"></div></div>
+    <div class="kpi" style="--accent:var(--gr)"><div class="kpi-lbl">체크리스트</div><div class="kpi-val" id="k-chk">--</div><div class="kpi-hint" id="k-chk-h"></div></div>
+    <div class="kpi" style="--accent:var(--pu)"><div class="kpi-lbl">예측 점수 (내일)</div><div class="kpi-val" id="k-fc">--</div><div class="kpi-hint" id="k-fc-h"></div></div>
+    <div class="kpi" style="--accent:var(--or)"><div class="kpi-lbl">반감기 경과</div><div class="kpi-val" id="k-halv">--</div><div class="kpi-hint" id="k-halv-h"></div></div>
   </div>
 
-  <!-- ③ 점수 차트 (넓게) + 전문가 -->
+  <!-- ③ 점수 차트 + 전문가 -->
   <div class="g2">
+    <div class="card"><div class="ct"><div class="ct-bar"></div>종합 점수 추이 (30일)</div><div class="ch ch-lg"><canvas id="score-ch"></canvas></div></div>
     <div class="card">
-      <div class="ct">종합 점수 추이 (30일)</div>
-      <div class="ch ch-lg"><canvas id="score-ch"></canvas></div>
-    </div>
-    <div class="card">
-      <div class="ct">전문가 종합 의견</div>
-      <div class="row"><span class="rl">판정</span><span class="rv" id="ex-verdict">--</span></div>
-      <p id="ex-sum" style="color:var(--mu);font-size:12.5px;line-height:1.7;margin:12px 0;padding:12px;background:var(--sf2);border-radius:8px;border-left:3px solid var(--bl)"></p>
-      <div id="ex-watch" style="font-size:11px;color:var(--ye);margin-bottom:10px;padding:6px 10px;background:rgba(255,211,42,.08);border-radius:6px;border:1px solid rgba(255,211,42,.2)"></div>
-      <div id="ex-sigs" style="display:flex;flex-direction:column;gap:4px"></div>
+      <div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--re))"></div>전문가 종합 의견</div>
+      <div class="row"><span class="rl">판정</span><span class="rv" id="ex-verdict" style="font-size:14px;font-weight:800">--</span></div>
+      <p id="ex-sum" style="color:var(--mu);font-size:12.5px;line-height:1.7;margin:12px 0;padding:14px;background:rgba(59,158,255,.05);border-radius:10px;border-left:3px solid var(--bl)"></p>
+      <div id="ex-watch" style="font-size:11px;color:var(--ye);padding:8px 12px;background:rgba(255,204,0,.06);border-radius:8px;border:1px solid rgba(255,204,0,.15);margin-bottom:10px"></div>
+      <div id="ex-sigs"></div>
     </div>
   </div>
 
-  <!-- ④ BTC 가격 + 공포탐욕 차트 -->
+  <!-- ④ BTC + FG 차트 -->
   <div class="g2">
-    <div class="card">
-      <div class="ct">BTC 가격 추이 (30일)</div>
-      <div class="ch ch-md"><canvas id="btc-ch"></canvas></div>
-    </div>
-    <div class="card">
-      <div class="ct">공포탐욕 지수 추이 (30일)</div>
-      <div class="ch ch-md"><canvas id="fg-ch"></canvas></div>
-    </div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,#f7931a,#ff6b2b)"></div>BTC 가격 추이 (30일)</div><div class="ch ch-md"><canvas id="btc-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>공포탐욕 추이 (30일)</div><div class="ch ch-md"><canvas id="fg-ch"></canvas></div></div>
   </div>
 
-  <div class="section-divider"><span>기술적 · 심리 · 온체인 · 매크로</span></div>
+  <div class="divider"><span>🔬 기술적 · 심리 · 온체인 · 매크로</span></div>
 
   <!-- ⑤ 전체 지표 테이블 -->
   <div class="card">
-    <div class="ct">전체 지표 상세 — 점수 · 실제값 · 추세</div>
-    <div style="overflow-x:auto">
-      <table>
-        <thead><tr><th>지표</th><th>실제값</th><th>점수</th><th style="min-width:100px">점수 바</th><th>추세</th></tr></thead>
-        <tbody id="ind-table"></tbody>
-      </table>
-    </div>
+    <div class="ct"><div class="ct-bar"></div>전체 지표 상세 — 점수 · 실제값 · 추세</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>지표</th><th>실제값</th><th>점수</th><th style="min-width:110px">점수 바</th><th>추세</th></tr></thead><tbody id="ind-table"></tbody></table></div>
   </div>
 
-  <!-- ⑥ 기술적 + 심리 -->
+  <!-- ⑥ 기술 + 심리 -->
   <div class="g2">
-    <div class="card"><div class="ct">기술적 분석</div><div id="tech-rows"></div></div>
-    <div class="card"><div class="ct">시장 심리</div><div id="sent-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>기술적 분석</div><div id="tech-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--re),var(--pu))"></div>시장 심리</div><div id="sent-rows"></div></div>
   </div>
 
   <!-- ⑦ 온체인 + 매크로 -->
   <div class="g2">
-    <div class="card"><div class="ct">온체인 지표</div><div id="chain-rows"></div></div>
-    <div class="card"><div class="ct">매크로 지표</div><div id="macro-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>온체인 지표</div><div id="chain-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>매크로 지표</div><div id="macro-rows"></div></div>
   </div>
 
-  <div class="section-divider"><span>파생 · 상관관계 · 유동성</span></div>
+  <div class="divider"><span>⚡ 파생 · 상관관계 · 유동성</span></div>
 
-  <!-- ⑧ 청산 히트맵 + 롤링 상관관계 -->
+  <!-- ⑧ 청산 + 상관관계 -->
   <div class="g2">
-    <div class="card">
-      <div class="ct">청산 히트맵</div>
-      <div id="liq-summary"></div>
-      <div id="liq-levels" style="margin-top:12px"></div>
-    </div>
-    <div class="card">
-      <div class="ct">롤링 상관관계 (30일)</div>
-      <div id="corr-rows"></div>
-      <div id="corr-regime" style="margin-top:14px;padding:14px;border-radius:10px;background:var(--sf2);border:1px solid var(--bd);font-size:12px;line-height:1.6"></div>
-    </div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--re),var(--or))"></div>청산 히트맵</div><div id="liq-summary"></div><div id="liq-levels" style="margin-top:12px"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>롤링 상관관계 (30일)</div><div id="corr-rows"></div><div id="corr-regime" style="margin-top:14px;padding:14px;border-radius:10px;background:rgba(59,158,255,.05);border:1px solid rgba(59,158,255,.15);font-size:12px;line-height:1.6"></div></div>
   </div>
 
-  <!-- ⑨ 옵션 IV 차트 + 순유동성 + 스테이블 -->
+  <!-- ⑨ 옵션 + 순유동성 + 스테이블 -->
   <div class="g3">
-    <div class="card">
-      <div class="ct">옵션 레짐 — IV30 · Skew</div>
-      <div id="opt-rows"></div>
-      <div class="ch ch-sm" style="margin-top:14px"><canvas id="iv-ch"></canvas></div>
-    </div>
-    <div class="card"><div class="ct">연준 순유동성</div><div id="nl-rows"></div></div>
-    <div class="card"><div class="ct">스테이블코인 공급</div><div id="stbl-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--re))"></div>옵션 레짐</div><div id="opt-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="iv-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>연준 순유동성</div><div id="nl-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--ye))"></div>스테이블코인 공급</div><div id="stbl-rows"></div></div>
   </div>
 
-  <div class="section-divider"><span>타이밍 · 예측 · 조건</span></div>
+  <div class="divider"><span>🎯 타이밍 · 예측 · 조건</span></div>
 
-  <!-- ⑩ 매수 타이밍 + 체크리스트 -->
+  <!-- ⑩ 타이밍 + 체크리스트 -->
   <div class="g2">
-    <div class="card"><div class="ct">매수 타이밍 분석</div><div id="timing-rows"></div></div>
-    <div class="card">
-      <div class="ct">매수 조건 체크리스트</div>
-      <div id="chk-prog" style="margin-bottom:14px"></div>
-      <div id="chk-items" style="max-height:360px;overflow-y:auto"></div>
-    </div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>매수 타이밍 분석</div><div id="timing-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--gr))"></div>매수 조건 체크리스트</div><div id="chk-prog" style="margin-bottom:14px"></div><div id="chk-items" style="max-height:360px;overflow-y:auto"></div></div>
   </div>
 
-  <!-- ⑪ 예측 + 고래 + 시장구조 + 알트/비유동 -->
+  <!-- ⑪ 예측 + 고래 + 구조 + 알트 -->
   <div class="g4">
-    <div class="card"><div class="ct">점수 예측</div><div id="fc-rows"></div></div>
-    <div class="card"><div class="ct">고래 활동</div><div id="whale-rows"></div></div>
-    <div class="card"><div class="ct">시장 구조</div><div id="str-rows"></div></div>
-    <div class="card"><div class="ct">알트코인 · 비유동</div><div id="alt-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>점수 예측</div><div id="fc-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>고래 활동</div><div id="whale-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>시장 구조</div><div id="str-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--pu))"></div>알트 · 비유동</div><div id="alt-rows"></div></div>
   </div>
 
-  <div class="section-divider"><span>지표별 기여 점수</span></div>
+  <div class="divider"><span>📊 27개 지표별 기여 점수</span></div>
 
   <!-- ⑫ 지표 분해 -->
   <div class="card">
-    <div class="ct">27개 지표별 기여 점수</div>
-    <div id="breakdown" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px"></div>
+    <div class="ct"><div class="ct-bar"></div>지표별 기여 점수</div>
+    <div id="breakdown" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:8px"></div>
   </div>
 
 </main>
