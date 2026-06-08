@@ -1,237 +1,205 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTC 투자 타이밍 레이더</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{
-      --bg:#0d1117;--surface:#161b22;--surface2:#1c2128;
-      --border:#30363d;--text:#e6edf3;--muted:#8b949e;
-      --green:#3fb950;--red:#f85149;--yellow:#e3b341;--blue:#58a6ff;--orange:#f0883e;
-    }
-    body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;font-size:14px}
-    a{color:var(--blue);text-decoration:none}
-    /* ── 헤더 ── */
-    header{border-bottom:1px solid var(--border);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:var(--bg);z-index:10}
-    header h1{font-size:16px;font-weight:600;display:flex;align-items:center;gap:8px}
-    #updated-at{font-size:12px;color:var(--muted)}
-    /* ── 레이아웃 ── */
-    main{max-width:1200px;margin:0 auto;padding:20px 16px;display:grid;gap:16px}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
-    .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    /* ── 카드 ── */
-    .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px}
-    .card-title{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px}
-    /* ── 점수 히어로 ── */
-    .hero{display:flex;align-items:center;gap:24px;padding:24px}
-    .score-ring{width:110px;height:110px;border-radius:50%;border:4px solid;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
-    .score-ring .big{font-size:40px;font-weight:700;line-height:1}
-    .score-ring .sub{font-size:11px;color:var(--muted);margin-top:2px}
-    .hero-info h2{font-size:20px;font-weight:700;margin-bottom:6px}
-    .hero-info .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:8px}
-    .hero-info .reason{color:var(--muted);font-size:13px;line-height:1.6;max-width:600px}
-    /* ── KPI 타일 ── */
-    .kpi{padding:14px 16px}
-    .kpi .label{font-size:11px;color:var(--muted);margin-bottom:5px}
-    .kpi .value{font-size:22px;font-weight:700}
-    .kpi .hint{font-size:11px;color:var(--muted);margin-top:3px}
-    .kpi .delta{font-size:12px;margin-top:3px}
-    /* ── 지표 행 ── */
-    .indicator-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)}
-    .indicator-row:last-child{border-bottom:none}
-    .ind-label{color:var(--muted);font-size:13px}
-    .ind-value{font-weight:600;font-size:13px}
-    /* ── 진행바 ── */
-    .progress-bar{background:var(--surface2);border-radius:4px;height:6px;overflow:hidden;margin-top:4px}
-    .progress-fill{height:100%;border-radius:4px;transition:width .3s}
-    /* ── 신호 배지 ── */
-    .signal-list{display:flex;flex-direction:column;gap:6px;margin-top:8px}
-    .signal-item{display:flex;align-items:flex-start;gap:8px;font-size:13px}
-    .signal-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:4px}
-    /* ── 차트 ── */
-    .chart-wrap{position:relative;height:180px}
-    .chart-wrap.tall{height:240px}
-    /* ── 체크리스트 ── */
-    .check-item{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:13px;border-bottom:1px solid var(--border)}
-    .check-item:last-child{border-bottom:none}
-    .check-icon{font-size:14px;flex-shrink:0}
-    /* ── 색상 유틸 ── */
-    .green{color:var(--green)}.red{color:var(--red)}.yellow{color:var(--yellow)}.blue{color:var(--blue)}.orange{color:var(--orange)}
-    .bg-green{background:rgba(63,185,80,.15)}.bg-red{background:rgba(248,81,73,.15)}
-    .bg-yellow{background:rgba(227,179,65,.15)}.bg-blue{background:rgba(88,166,255,.15)}.bg-orange{background:rgba(240,136,62,.15)}
-    .border-green{border-color:var(--green)}.border-red{border-color:var(--red)}
-    .border-yellow{border-color:var(--yellow)}.border-blue{border-color:var(--blue)}
-    /* ── 지표 분해 그리드 ── */
-    .breakdown-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-    .breakdown-item{display:flex;justify-content:space-between;align-items:center;padding:5px 8px;background:var(--surface2);border-radius:6px;font-size:12px}
-    /* ── 반응형 ── */
-    @media(max-width:900px){.grid3,.grid4{grid-template-columns:1fr 1fr}}
-    @media(max-width:600px){.grid2,.grid3,.grid4{grid-template-columns:1fr}.hero{flex-direction:column;text-align:center}.breakdown-grid{grid-template-columns:1fr}}
-    footer{text-align:center;color:var(--muted);font-size:12px;padding:24px;border-top:1px solid var(--border);margin-top:8px}
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BTC 투자 타이밍 레이더</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0d1117;--sf:#161b22;--sf2:#1c2128;--bd:#30363d;--tx:#e6edf3;--mu:#8b949e;
+  --gr:#3fb950;--re:#f85149;--ye:#e3b341;--bl:#58a6ff;--or:#f0883e;--pu:#bc8cff}
+body{background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px}
+header{border-bottom:1px solid var(--bd);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:var(--bg);z-index:99}
+header h1{font-size:15px;font-weight:600}
+#upd{font-size:11px;color:var(--mu)}
+main{max-width:1280px;margin:0 auto;padding:16px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.gap{margin-bottom:14px}
+/* card */
+.c{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:16px}
+.ct{font-size:11px;font-weight:600;color:var(--mu);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+/* hero */
+.hero{display:flex;align-items:center;gap:20px;padding:20px}
+.ring{width:100px;height:100px;border-radius:50%;border:4px solid;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+.ring .big{font-size:36px;font-weight:700;line-height:1}
+.ring .sm{font-size:10px;color:var(--mu);margin-top:2px}
+.hero-body h2{font-size:18px;font-weight:700;margin-bottom:5px}
+.badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:600;margin-bottom:6px}
+.reason{color:var(--mu);font-size:12px;line-height:1.6;max-width:700px}
+/* kpi */
+.kpi .lbl{font-size:11px;color:var(--mu);margin-bottom:4px}
+.kpi .val{font-size:20px;font-weight:700}
+.kpi .hint{font-size:11px;color:var(--mu);margin-top:3px}
+/* row */
+.row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--bd)}
+.row:last-child{border-bottom:none}
+.rl{color:var(--mu);font-size:12px}
+.rv{font-weight:600;font-size:12px}
+/* trend */
+.trend-up::after{content:' ↑';color:var(--gr)}
+.trend-dn::after{content:' ↓';color:var(--re)}
+/* chart */
+.ch{position:relative;height:160px}
+.ch.md{height:200px}
+.ch.lg{height:240px}
+/* indicator table */
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{background:var(--sf2);color:var(--mu);font-weight:500;padding:7px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
+td{padding:6px 10px;border-bottom:1px solid var(--bd)}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--sf2)}
+.score-bar-wrap{background:var(--sf2);border-radius:3px;height:5px;width:80px;display:inline-block;vertical-align:middle}
+.score-bar-fill{height:100%;border-radius:3px}
+/* signal list */
+.sig-list{display:flex;flex-direction:column;gap:5px;margin-top:8px}
+.sig-item{display:flex;align-items:flex-start;gap:7px;font-size:12px;line-height:1.5}
+.sig-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:4px}
+/* progress */
+.prog{background:var(--sf2);border-radius:4px;height:5px;overflow:hidden;margin-top:4px}
+.prog-fill{height:100%;border-radius:4px}
+/* check */
+.chk{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--bd);font-size:12px}
+.chk:last-child{border-bottom:none}
+/* color */
+.gr{color:var(--gr)}.re{color:var(--re)}.ye{color:var(--ye)}.bl{color:var(--bl)}.or{color:var(--or)}.pu{color:var(--pu)}
+.bg-gr{background:rgba(63,185,80,.12)}.bg-re{background:rgba(248,81,73,.12)}
+.bg-ye{background:rgba(227,179,65,.12)}.bg-bl{background:rgba(88,166,255,.12)}
+.border-gr{border-color:var(--gr)}.border-re{border-color:var(--re)}
+.border-ye{border-color:var(--ye)}.border-bl{border-color:var(--bl)}
+/* liq levels */
+.liq-level{display:flex;justify-content:space-between;align-items:center;padding:5px 8px;border-radius:6px;margin-bottom:4px;font-size:12px}
+/* quadrant */
+.quadrant{text-align:center;padding:14px;border-radius:8px}
+.quadrant .ql{font-size:16px;font-weight:700;margin-bottom:4px}
+.quadrant .qd{font-size:11px;color:var(--mu);line-height:1.5}
+@media(max-width:900px){.g3,.g4,.g5{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.g2,.g3,.g4,.g5{grid-template-columns:1fr}.hero{flex-direction:column;text-align:center}}
+footer{text-align:center;color:var(--mu);font-size:11px;padding:20px;border-top:1px solid var(--bd);margin-top:8px}
+#loading{text-align:center;padding:80px;color:var(--mu)}
+</style>
 </head>
 <body>
 <header>
   <h1>📡 BTC 투자 타이밍 레이더</h1>
-  <span id="updated-at">로딩 중...</span>
+  <span id="upd">로딩 중...</span>
 </header>
+<div id="loading">데이터 로딩 중...</div>
 <main id="main" style="display:none">
 
-  <!-- ① 히어로: 종합 점수 + 액션 -->
-  <div class="card hero" id="hero-card">
-    <div class="score-ring" id="score-ring">
-      <span class="big" id="hero-score">--</span>
-      <span class="sub">/ 100</span>
-    </div>
-    <div class="hero-info">
-      <div class="badge" id="signal-badge">--</div>
-      <h2 id="hero-action">--</h2>
-      <p class="reason" id="hero-reason"></p>
-    </div>
+<!-- ① 히어로 -->
+<div class="c hero gap" id="hero-card">
+  <div class="ring" id="ring"><span class="big" id="h-score">--</span><span class="sm">/ 100</span></div>
+  <div class="hero-body">
+    <div class="badge" id="h-badge">--</div>
+    <h2 id="h-action">--</h2>
+    <p class="reason" id="h-reason"></p>
   </div>
+</div>
 
-  <!-- ② KPI 4개: BTC가격 / 공포탐욕 / 점수델타 / 체크리스트 -->
-  <div class="grid4">
-    <div class="card kpi">
-      <div class="label">BTC 가격 (USD)</div>
-      <div class="value" id="kpi-btc">--</div>
-      <div class="hint" id="kpi-date"></div>
-    </div>
-    <div class="card kpi">
-      <div class="label">공포탐욕 지수</div>
-      <div class="value" id="kpi-fg">--</div>
-      <div class="hint" id="kpi-fg-hint"></div>
-    </div>
-    <div class="card kpi">
-      <div class="label">점수 변화 (전일)</div>
-      <div class="value" id="kpi-delta">--</div>
-      <div class="hint" id="kpi-weekly">주간평균: --</div>
-    </div>
-    <div class="card kpi">
-      <div class="label">매수 체크리스트</div>
-      <div class="value" id="kpi-check">--</div>
-      <div class="hint" id="kpi-check-label"></div>
-    </div>
-  </div>
+<!-- ② KPI 5종 -->
+<div class="g5 gap">
+  <div class="c kpi"><div class="lbl">BTC 가격 (USD)</div><div class="val" id="k-btc">--</div><div class="hint" id="k-date"></div></div>
+  <div class="c kpi"><div class="lbl">공포탐욕</div><div class="val" id="k-fg">--</div><div class="hint" id="k-fg-h"></div></div>
+  <div class="c kpi"><div class="lbl">전일 점수 변화</div><div class="val" id="k-delta">--</div><div class="hint" id="k-avg"></div></div>
+  <div class="c kpi"><div class="lbl">체크리스트</div><div class="val" id="k-chk">--</div><div class="hint" id="k-chk-h"></div></div>
+  <div class="c kpi"><div class="lbl">레짐 매트릭스</div><div class="val" id="k-quad">--</div><div class="hint" id="k-quad-h"></div></div>
+</div>
 
-  <!-- ③ 점수 추이 + 전문가 의견 -->
-  <div class="grid2">
-    <div class="card">
-      <div class="card-title">종합 점수 추이 (30일)</div>
-      <div class="chart-wrap"><canvas id="score-chart"></canvas></div>
-    </div>
-    <div class="card">
-      <div class="card-title">전문가 종합 의견</div>
-      <div id="expert-content">
-        <div class="indicator-row">
-          <span class="ind-label">판정</span>
-          <span class="ind-value" id="expert-verdict">--</span>
-        </div>
-        <p id="expert-summary" style="color:var(--muted);font-size:13px;line-height:1.6;margin:10px 0"></p>
-        <div id="expert-signals" class="signal-list"></div>
-      </div>
-    </div>
+<!-- ③ 점수차트 + 전문가 의견 -->
+<div class="g2 gap">
+  <div class="c"><div class="ct">종합 점수 추이 (30일)</div><div class="ch md"><canvas id="score-ch"></canvas></div></div>
+  <div class="c">
+    <div class="ct">전문가 종합 의견</div>
+    <div class="row"><span class="rl">판정</span><span class="rv" id="ex-verdict">--</span></div>
+    <p id="ex-sum" style="color:var(--mu);font-size:12px;line-height:1.6;margin:8px 0"></p>
+    <div id="ex-watch" style="font-size:11px;color:var(--ye);margin-bottom:6px"></div>
+    <div id="ex-sigs" class="sig-list"></div>
   </div>
+</div>
 
-  <!-- ④ 기술적 지표 + 시장심리 -->
-  <div class="grid2">
-    <div class="card">
-      <div class="card-title">기술적 분석</div>
-      <div id="technical-rows"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">시장 심리</div>
-      <div id="sentiment-rows"></div>
-    </div>
+<!-- ④ 전체 지표 테이블 -->
+<div class="c gap">
+  <div class="ct">전체 지표 상세 (점수·실제값·추세)</div>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>지표</th><th>실제값</th><th>점수</th><th>점수 바</th><th>추세</th></tr></thead>
+      <tbody id="ind-table"></tbody>
+    </table>
   </div>
+</div>
 
-  <!-- ⑤ 온체인 + 매크로 -->
-  <div class="grid2">
-    <div class="card">
-      <div class="card-title">온체인 지표</div>
-      <div id="onchain-rows"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">매크로 지표</div>
-      <div id="macro-rows"></div>
-    </div>
-  </div>
+<!-- ⑤ 기술적 + 시장심리 -->
+<div class="g2 gap">
+  <div class="c"><div class="ct">기술적 분석</div><div id="tech-rows"></div></div>
+  <div class="c"><div class="ct">시장 심리</div><div id="sent-rows"></div></div>
+</div>
 
-  <!-- ⑥ BTC 가격 차트 + 펀딩비 추이 -->
-  <div class="grid2">
-    <div class="card">
-      <div class="card-title">BTC 가격 추이 (30일)</div>
-      <div class="chart-wrap"><canvas id="btc-chart"></canvas></div>
-    </div>
-    <div class="card">
-      <div class="card-title">공포탐욕 추이 (30일)</div>
-      <div class="chart-wrap"><canvas id="fg-chart"></canvas></div>
-    </div>
-  </div>
+<!-- ⑥ 온체인 + 매크로 -->
+<div class="g2 gap">
+  <div class="c"><div class="ct">온체인 지표</div><div id="chain-rows"></div></div>
+  <div class="c"><div class="ct">매크로 지표</div><div id="macro-rows"></div></div>
+</div>
 
-  <!-- ⑦ 예측 + 고래 + 시장구조 -->
-  <div class="grid3">
-    <div class="card">
-      <div class="card-title">점수 예측 (내일)</div>
-      <div id="forecast-content">
-        <div class="indicator-row"><span class="ind-label">오늘 점수</span><span class="ind-value" id="fc-today">--</span></div>
-        <div class="indicator-row"><span class="ind-label">예측 점수</span><span class="ind-value" id="fc-pred">--</span></div>
-        <div class="indicator-row"><span class="ind-label">변화</span><span class="ind-value" id="fc-diff">--</span></div>
-        <div class="indicator-row"><span class="ind-label">신뢰도 (R²)</span><span class="ind-value" id="fc-r2">--</span></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">고래 활동</div>
-      <div id="whale-rows"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">시장 구조</div>
-      <div id="structure-rows"></div>
-    </div>
-  </div>
+<!-- ⑦ BTC가격 + 공포탐욕 차트 -->
+<div class="g2 gap">
+  <div class="c"><div class="ct">BTC 가격 추이 (30일)</div><div class="ch md"><canvas id="btc-ch"></canvas></div></div>
+  <div class="c"><div class="ct">공포탐욕 추이 (30일)</div><div class="ch md"><canvas id="fg-ch"></canvas></div></div>
+</div>
 
-  <!-- ⑧ 지표별 점수 분해 -->
-  <div class="card">
-    <div class="card-title">지표별 기여 점수</div>
-    <div class="breakdown-grid" id="breakdown-grid"></div>
+<!-- ⑧ 청산 히트맵 + 롤링 상관관계 -->
+<div class="g2 gap">
+  <div class="c">
+    <div class="ct">청산 히트맵</div>
+    <div id="liq-summary"></div>
+    <div id="liq-levels" style="margin-top:10px"></div>
   </div>
+  <div class="c">
+    <div class="ct">롤링 상관관계 (30일)</div>
+    <div id="corr-rows"></div>
+    <div id="corr-regime" style="margin-top:10px;padding:10px;border-radius:6px;background:var(--sf2);font-size:12px"></div>
+  </div>
+</div>
 
-  <!-- ⑨ 매수 타이밍 + 체크리스트 -->
-  <div class="grid2">
-    <div class="card">
-      <div class="card-title">매수 타이밍 분석</div>
-      <div id="timing-rows"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">매수 조건 체크리스트</div>
-      <div id="checklist-items" style="max-height:320px;overflow-y:auto"></div>
-    </div>
+<!-- ⑨ 옵션 레짐 + 순유동성 + 스테이블코인 -->
+<div class="g3 gap">
+  <div class="c">
+    <div class="ct">옵션 레짐</div>
+    <div id="opt-rows"></div>
+    <div class="ch" style="margin-top:10px"><canvas id="iv-ch"></canvas></div>
   </div>
+  <div class="c"><div class="ct">연준 순유동성</div><div id="nl-rows"></div></div>
+  <div class="c"><div class="ct">스테이블코인 공급</div><div id="stbl-rows"></div></div>
+</div>
 
-  <!-- ⑩ 사이클 + 알트코인 -->
-  <div class="grid2">
-    <div class="card">
-      <div class="card-title">사이클 위치</div>
-      <div id="cycle-rows"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">알트코인 시즌 / 스테이블코인</div>
-      <div id="altseason-rows"></div>
-    </div>
+<!-- ⑩ 예측 + 고래 + 시장구조 + 누적스코어 -->
+<div class="g4 gap">
+  <div class="c"><div class="ct">점수 예측 (내일)</div><div id="fc-rows"></div></div>
+  <div class="c"><div class="ct">고래 활동</div><div id="whale-rows"></div></div>
+  <div class="c"><div class="ct">시장 구조</div><div id="str-rows"></div></div>
+  <div class="c"><div class="ct">비유동 공급 / 알트시즌</div><div id="alt-rows"></div></div>
+</div>
+
+<!-- ⑪ 매수 타이밍 + 체크리스트 -->
+<div class="g2 gap">
+  <div class="c"><div class="ct">매수 타이밍 분석</div><div id="timing-rows"></div></div>
+  <div class="c">
+    <div class="ct">매수 조건 체크리스트</div>
+    <div id="chk-prog" style="margin-bottom:10px"></div>
+    <div id="chk-items" style="max-height:300px;overflow-y:auto"></div>
   </div>
+</div>
+
+<!-- ⑫ 지표별 점수 분해 -->
+<div class="c gap">
+  <div class="ct">지표별 기여 점수</div>
+  <div id="breakdown" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:6px"></div>
+</div>
 
 </main>
-
-<div id="loading" style="text-align:center;padding:80px;color:var(--muted)">데이터 로딩 중...</div>
-
-<footer>
-  데이터는 하루 1회 자동 갱신 · 투자 판단은 본인 책임
-</footer>
-
+<footer>데이터는 하루 1회 자동 갱신 · 투자 판단은 본인 책임</footer>
 <script src="app.js"></script>
 </body>
 </html>

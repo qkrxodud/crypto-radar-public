@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
-"""
-invest-view 대시보드 API 전체를 호출해 data/snapshot.json을 생성한다.
-"""
-import json
-import sys
-import urllib.request
-import urllib.error
+"""invest-view 대시보드 API 전체를 수집해 data/snapshot.json을 생성한다."""
+import json, sys, urllib.request
 from datetime import datetime, timezone
 
-BASE    = "http://localhost:8080"
-OUT     = sys.argv[1] if len(sys.argv) > 1 else "data/snapshot.json"
+BASE = "http://localhost:8080"
+OUT  = sys.argv[1] if len(sys.argv) > 1 else "data/snapshot.json"
 
 ENDPOINTS = [
     "/api/dashboard",
@@ -31,9 +26,13 @@ ENDPOINTS = [
     "/api/dashboard/stablecoin-supply",
     "/api/dashboard/net-liquidity",
     "/api/dashboard/altcoin",
+    "/api/dashboard/illiquid-supply",
+    "/api/dashboard/liquidation-heatmap",
+    "/api/dashboard/rolling-correlation",
+    "/api/dashboard/options-regime",
+    "/api/dashboard/system",
     "/api/prism/indices",
 ]
-
 
 def get(path):
     try:
@@ -43,26 +42,17 @@ def get(path):
         print(f"  [WARN] {path}: {e}")
         return {"hasData": False, "errorMessage": str(e)}
 
-
-print("[build_snapshot] Fetching all dashboard endpoints...")
+print("[build_snapshot] Fetching all endpoints...")
 data = {}
 for ep in ENDPOINTS:
-    key = ep.lstrip("/").replace("/", "_").replace("-", "_")
+    key = ep.lstrip("/").replace("/", "_").replace("-", "_").replace("?days=90","")
     data[key] = get(ep)
-    score_info = ""
-    if "score" in data[key]:
-        score_info = f" score={data[key]['score']}"
-    print(f"  {ep}{score_info}")
+    print(f"  {'OK' if data[key].get('hasData') else 'NG'}  {ep}")
 
-snapshot = {
-    "hasData":   True,
-    "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-    "data":      data,
-}
-
+snapshot = {"hasData": True, "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "data": data}
 with open(OUT, "w", encoding="utf-8") as f:
     json.dump(snapshot, f, ensure_ascii=False, indent=2)
 
-main = data.get("api_dashboard", {})
-print(f"\n[build_snapshot] saved → {OUT}")
-print(f"  date={main.get('dataDate')}  score={main.get('score')}  signal={main.get('signalDisplay')}")
+m = data.get("api_dashboard", {})
+print(f"\n[build_snapshot] → {OUT}")
+print(f"  date={m.get('dataDate')}  score={m.get('score')}  signal={m.get('signalDisplay')}")
