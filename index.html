@@ -185,6 +185,10 @@ tr:hover td{background:rgba(23,32,53,.6)}
 }
 
 @media(max-width:768px){
+  /* 전체 오버플로 차단 */
+  html,body{overflow-x:hidden;max-width:100vw}
+  *{box-sizing:border-box}
+
   /* 네비게이션 */
   .nav-inner{padding:0 12px;height:48px}
   .nav-logo{font-size:13px}
@@ -196,43 +200,53 @@ tr:hover td{background:rgba(23,32,53,.6)}
   .ticker-item{padding:0 12px;font-size:10px}
 
   /* 메인 여백 */
-  main{padding:12px}
+  main{padding:10px;gap:10px}
 
-  /* 히어로 */
-  .hero{grid-template-columns:1fr;padding:20px 16px;gap:16px;text-align:center}
+  /* 히어로 — 세로 스택 */
+  .hero{grid-template-columns:1fr;padding:18px 14px;gap:12px;text-align:center}
   .score-svg-wrap{margin:0 auto}
-  .hero-stats{align-items:center;flex-direction:row;justify-content:center;gap:24px;flex-wrap:wrap}
-  .hstat{text-align:center}
-  .hstat-val{font-size:20px}
-  .hero-title{font-size:20px}
-  .hero-reason{font-size:12px}
+  .hero-stats{align-items:center;flex-direction:row;justify-content:center;gap:16px;flex-wrap:wrap;min-width:0;width:100%}
+  .hstat{text-align:center;min-width:0}
+  .hstat-val{font-size:18px}
+  .hstat-hint{font-size:10px}
+  .hero-title{font-size:18px}
+  .hero-reason{font-size:11px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .hero-badge{font-size:11px}
 
   /* KPI */
   .kpi-grid{grid-template-columns:1fr 1fr}
-  .kpi{padding:14px 12px}
-  .kpi-val{font-size:22px}
+  /* KPI */
+  .kpi-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .kpi{padding:12px 10px;min-width:0}
+  .kpi-val{font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .kpi-lbl{font-size:9px;white-space:nowrap}
+  .kpi-hint{font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
   /* 그리드 */
-  .g2,.g3,.g4{grid-template-columns:1fr}
+  .g2,.g3,.g4{grid-template-columns:1fr;gap:10px}
 
   /* 차트 */
-  .ch-lg{height:220px}
-  .ch-md{height:200px}
-  .ch-sm{height:160px}
+  .ch-lg{height:200px}
+  .ch-md{height:180px}
+  .ch-sm{height:150px}
 
   /* 카드 */
-  .card{padding:16px 14px}
-  .ct{font-size:10px;margin-bottom:12px}
+  .card{padding:14px 12px;min-width:0;overflow:hidden}
+  .ct{font-size:10px;margin-bottom:10px}
 
   /* 테이블 — 점수바/추세 숨기기 */
   table td:nth-child(4),table th:nth-child(4),
   table td:nth-child(5),table th:nth-child(5){display:none}
-  td,th{padding:7px 8px;font-size:11px}
+  td,th{padding:6px 8px;font-size:11px}
 
   /* row 오버플로 방지 */
-  .row{flex-wrap:wrap;gap:2px}
-  .rl{font-size:11px;flex:1;min-width:80px}
-  .rv{font-size:11px;text-align:right;max-width:160px;word-break:break-all}
+  .row{flex-wrap:nowrap;gap:4px;min-width:0}
+  .rl{font-size:11px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rv{font-size:11px;text-align:right;flex-shrink:0;max-width:55%;word-break:break-word}
+
+  /* 배너 */
+  #update-banner{font-size:10px;padding:6px 10px;justify-content:center;text-align:center;flex-wrap:wrap;gap:3px}
+  #update-banner span{white-space:nowrap}
 
   /* 지표 분해 */
   #breakdown{grid-template-columns:repeat(2,1fr)!important}
