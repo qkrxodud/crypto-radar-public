@@ -12,14 +12,55 @@ a{color:var(--bl);text-decoration:none}a:hover{text-decoration:underline}
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:3px}
 
 /* ── 네비게이션 ── */
-nav{background:rgba(6,11,20,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:54px}
-.nav-logo{font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px;color:var(--tx);text-decoration:none}
-.nav-logo span{background:linear-gradient(90deg,#3b9eff,#9b5de5);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.nav-links{display:flex;gap:4px;align-items:center}
-.nav-links a{color:var(--mu);font-size:13px;font-weight:500;padding:6px 12px;border-radius:8px;transition:color .2s,background .2s}
-.nav-links a:hover,.nav-links a.active{color:var(--tx);background:rgba(59,158,255,.1);text-decoration:none}
-.nav-live{display:flex;align-items:center;gap:5px;background:rgba(0,229,122,.08);border:1px solid rgba(0,229,122,.2);border-radius:20px;padding:3px 10px;font-size:11px;color:var(--gr);font-weight:600}
+nav{
+  background:rgba(6,11,20,.96);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100;
+  overflow:hidden;
+}
+.nav-inner{
+  max-width:1200px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:52px;gap:12px;
+}
+/* 로고 */
+.nav-logo{
+  font-size:14px;font-weight:800;letter-spacing:-.3px;
+  color:var(--tx);text-decoration:none;white-space:nowrap;
+  display:flex;align-items:center;gap:6px;flex-shrink:0;
+}
+.nav-logo-mark{
+  width:28px;height:28px;border-radius:8px;
+  background:linear-gradient(135deg,#3b9eff,#9b5de5);
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;flex-shrink:0;
+}
+.nav-logo-name{
+  background:linear-gradient(90deg,#3b9eff,#9b5de5);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+/* 링크 */
+.nav-links{display:flex;gap:2px;align-items:center;flex:1;justify-content:center}
+.nav-links a{
+  color:var(--mu);font-size:13px;font-weight:500;
+  padding:6px 14px;border-radius:8px;white-space:nowrap;
+  transition:color .2s,background .2s;text-decoration:none;
+  position:relative;
+}
+.nav-links a:hover{color:var(--tx);background:rgba(59,158,255,.08);text-decoration:none}
+.nav-links a.active{
+  color:var(--bl);background:rgba(59,158,255,.1);font-weight:600;
+}
+.nav-links a.active::after{
+  content:'';position:absolute;bottom:-1px;left:14px;right:14px;
+  height:2px;background:var(--bl);border-radius:2px 2px 0 0;
+}
+/* LIVE 배지 */
+.nav-live{
+  display:flex;align-items:center;gap:5px;
+  background:rgba(0,229,122,.08);border:1px solid rgba(0,229,122,.2);
+  border-radius:20px;padding:3px 10px;font-size:11px;
+  color:var(--gr);font-weight:700;white-space:nowrap;flex-shrink:0;
+}
 .nav-live-dot{width:6px;height:6px;border-radius:50%;background:var(--gr);animation:blink 1.5s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,229,122,.6)}50%{opacity:.4;box-shadow:0 0 0 6px rgba(0,229,122,0)}}
 
@@ -85,16 +126,33 @@ footer{background:var(--sf);border-top:1px solid var(--bd);padding:32px 24px 24p
 
 /* ── 반응형 ── */
 @media(max-width:768px){
+  /* 네비 */
+  .nav-inner{padding:0 14px;height:48px}
+  .nav-links a{padding:5px 10px;font-size:12px}
+
+  /* 콘텐츠 */
   .footer-grid{grid-template-columns:1fr 1fr}
   .indicator-grid{grid-template-columns:1fr}
   .page-wrap,.page-wide{padding:24px 16px}
   .page-header h1{font-size:22px}
   .card{padding:18px 16px}
 }
+
+@media(max-width:560px){
+  /* 네비 — 링크 축약 */
+  .nav-inner{padding:0 12px;height:46px;gap:6px}
+  .nav-logo-name{display:none}            /* 로고 텍스트 숨김, 마크만 */
+  .nav-links{gap:0;justify-content:flex-start}
+  .nav-links a{padding:5px 8px;font-size:12px}
+  .nav-links a.active::after{left:8px;right:8px}
+}
+
+@media(max-width:420px){
+  /* 극소형 — 링크 더 줄임 */
+  .nav-links a{padding:5px 6px;font-size:11px}
+  .nav-live{padding:3px 8px;font-size:10px}
+}
+
 @media(max-width:500px){
   .footer-grid{grid-template-columns:1fr}
-  .nav-inner{padding:0 12px;height:48px}
-  .nav-links{gap:0}
-  .nav-links a{padding:6px 6px;font-size:12px}
-  .nav-logo{font-size:13px}
 }
