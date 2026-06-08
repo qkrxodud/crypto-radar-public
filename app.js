@@ -624,11 +624,11 @@ function renderHalvingCycle(d){
       </div>
     </div>
     ${[
-      ['사이클',cy.cycleNumber?cy.cycleNumber+'번째',''],
-      ['경과',cy.formattedElapsed||'--',''],
-      ['남은 기간',cy.formattedRemaining||'--',''],
-      ['마지막 반감기',cy.lastHalvingDate||'--',''],
-      ['다음 반감기',cy.nextHalvingDate||'--',''],
+      ['사이클', cy.cycleNumber ? cy.cycleNumber+'번째' : '--'],
+      ['경과', cy.formattedElapsed||'--'],
+      ['남은 기간', cy.formattedRemaining||'--'],
+      ['마지막 반감기', cy.lastHalvingDate||'--'],
+      ['다음 반감기', cy.nextHalvingDate||'--'],
     ].map(([l,v])=>row(l,v,'')).join('')}
     <div style="margin-top:12px;padding:10px;border-radius:8px;background:rgba(255,204,0,.07);border:1px solid rgba(255,204,0,.15);font-size:12px;color:var(--mu);line-height:1.6">${cy.phaseDescription||''}</div>`;
 }
