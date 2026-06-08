@@ -82,6 +82,7 @@ async function init(){
 
   const d=snap.data;
 
+  renderUpdateBanner(snap.updatedAt);
   renderHero(d);
   renderTicker(d);
   renderKpi(d);
@@ -91,11 +92,14 @@ async function init(){
   renderFgChart(d);
   renderIndTable(d);
   renderTechnical(d);renderSentiment(d);renderOnchain(d);renderMacro(d);
-  renderFundingChart(d);renderNetflowChart(d);renderMacroCharts(d);
+  renderFundingChart(d);renderNetflowChart(d);renderMacroCharts(d);renderOnchainHistoryChart(d);
   renderLiquidation(d);renderCorrelation(d);renderOptions(d);
   renderNetLiquidity(d);renderStablecoin(d);
-  renderTiming(d);renderChecklist(d);
-  renderForecast(d);renderForecastChart(d);renderWhale(d);renderStructure(d);renderAltRows(d);
+  renderTiming(d);renderDcaZones(d);renderChecklist(d);
+  renderScoreHistogram(d);renderDivergenceChart(d);renderWindowComparison(d);
+  renderScore90Chart(d);renderHalvingCycle(d);renderCycleHeatmap(d);renderForecast(d);renderForecastChart(d);renderWhale(d);renderStructure(d);renderAltRows(d);
+  renderDayOfWeek(d);renderPeriodPerf(d);renderScoreHeatmap(d);
+  renderRegimeMatrix(d);renderDcaBacktest(d);renderSignalMatrix(d);
   renderBreakdown(d);
 
   // KPI 상단 accent 바
@@ -458,6 +462,125 @@ function renderAltRows(d){
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
+// B-18: 갱신 배너
+function renderUpdateBanner(updatedAt){
+  const b=el('update-banner');if(!b)return;
+  const t=el('banner-upd');
+  if(updatedAt){
+    const dt=new Date(updatedAt);
+    if(t)t.textContent=dt.toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
+    b.style.display='flex';
+  }
+}
+
+// B-14: 국면 매트릭스
+function renderRegimeMatrix(d){
+  const c=el('regime-matrix');if(!c)return;
+  const rm=d.api_dashboard_system?.regimeMatrix||{};
+  const col=rm.color==='green'?'var(--gr)':rm.color==='red'?'var(--re)':'var(--ye)';
+  const quadrants=[
+    {q:'Q1',label:'역추세 매수',desc:'점수↑ 공포↑',col:'var(--gr)'},
+    {q:'Q2',label:'강세 지속',desc:'점수↑ 탐욕↑',col:'var(--bl)'},
+    {q:'Q3',label:'패닉 구간',desc:'점수↓ 공포↑',col:'var(--ye)'},
+    {q:'Q4',label:'과열 위험',desc:'점수↓ 탐욕↑',col:'var(--re)'},
+  ];
+  c.innerHTML=`<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px">${
+    quadrants.map(q=>{
+      const active=rm.quadrant===q.q;
+      return`<div style="padding:12px;border-radius:8px;border:1px solid ${active?q.col:'var(--bd)'};background:${active?q.col+'22':'transparent'};text-align:center">
+        <div style="font-size:10px;font-weight:700;color:${q.col};text-transform:uppercase;letter-spacing:.5px">${q.q}</div>
+        <div style="font-size:12px;font-weight:700;color:${active?q.col:'var(--tx)'};margin:4px 0">${q.label}${active?' ✓':''}</div>
+        <div style="font-size:10px;color:var(--mu)">${q.desc}</div>
+      </div>`;
+    }).join('')
+  }</div>
+  <div style="padding:12px;border-radius:8px;background:${col}11;border:1px solid ${col}33">
+    <div style="font-size:14px;font-weight:900;color:${col};margin-bottom:4px">${rm.label||'--'}</div>
+    <div style="font-size:12px;color:var(--mu);line-height:1.6">${rm.description||''}</div>
+  </div>`;
+}
+
+// B-13: DCA 백테스트
+function renderDcaBacktest(d){
+  const c=el('backtest-rows');if(!c)return;
+  const bt=d.api_dashboard_buy_timing?.dcaBacktest||[];if(!bt.length)return;
+  c.innerHTML=bt.map(b=>[
+    [b.label||'--','',''],
+    ['진입 횟수',(b.entryCount||0)+'회',''],
+    ['평균 진입가',b.avgEntry||'--',''],
+    ['현재가',b.todayClose||'--',''],
+    ['수익률',b.returnPct?pct(b.returnPct):'--%',parseFloat(b.returnPct)>=0?'gr':'re'],
+  ].map(([l,v,cc])=>row(l,v,cc)).join('')).join('<hr style="border-color:var(--bd);margin:8px 0">');
+}
+
+// B-15: 신호 매트릭스 (30일 × 지표)
+function renderSignalMatrix(d){
+  const c=el('signal-matrix');if(!c)return;
+  const entries=d.api_prism_indices?.entries||[];if(!entries.length)return;
+  const fields=['fearGreed','mvrvZScore','rsiDaily','nupl','fundingRate','longShortRatio','btcDominance'];
+  const labels={fearGreed:'공포탐욕',mvrvZScore:'MVRV-Z',rsiDaily:'RSI일',nupl:'NUPL',fundingRate:'펀딩비',longShortRatio:'롱숏',btcDominance:'도미넌스'};
+  const isBullish=(k,v)=>{
+    if(v==null)return null;
+    const n=parseFloat(v);
+    if(k==='fearGreed')return n<=30;
+    if(k==='mvrvZScore')return n<=1;
+    if(k==='rsiDaily')return n<=35;
+    if(k==='nupl')return n<=0.25;
+    if(k==='fundingRate')return Math.abs(n)<=0.0001;
+    if(k==='longShortRatio')return n>=1;
+    if(k==='btcDominance')return n>=55;
+    return null;
+  };
+  c.innerHTML=`<table style="border-collapse:collapse;font-size:10px;min-width:100%">
+    <thead><tr><th style="color:var(--mu);padding:4px 8px;text-align:left;white-space:nowrap">날짜</th>${fields.map(f=>`<th style="color:var(--mu);padding:4px 6px;text-align:center;white-space:nowrap">${labels[f]||f}</th>`).join('')}</tr></thead>
+    <tbody>${entries.slice(-14).map(e=>`<tr><td style="color:var(--mu2);padding:3px 8px;white-space:nowrap">${e.date.slice(5)}</td>${
+      fields.map(f=>{
+        const bull=isBullish(f,e[f]);
+        const col=bull===null?'var(--bd)':bull?'var(--gr)':'var(--re)';
+        const bg=bull===null?'transparent':bull?'rgba(0,229,122,.15)':'rgba(255,61,90,.15)';
+        return`<td style="padding:3px 6px;text-align:center"><div style="background:${bg};border-radius:3px;padding:2px 4px;color:${col};font-weight:700">${bull===null?'--':bull?'▲':'▼'}</div></td>`;
+      }).join('')
+    }</tr>`).join('')}</tbody></table>`;
+}
+
+// B-07~08: 요일별 수익률
+function renderDayOfWeek(d){
+  const h=d.api_dashboard_performance?.dayOfWeekStats||[];if(!h.length)return;
+  const vals=h.map(e=>parseFloat(e.avgReturn||0));
+  mkChart('dow-ch',h.map(e=>e.day),[{
+    label:'평균수익률(%)',data:vals,
+    backgroundColor:vals.map(v=>v>=0?'rgba(0,229,122,.6)':'rgba(255,61,90,.6)'),
+    borderColor:vals.map(v=>v>=0?'#00e57a':'#ff3d5a'),
+    borderWidth:1,borderRadius:4
+  }],{type:'bar',yFmt:v=>v.toFixed(2)+'%'});
+}
+
+// B-09: 기간별 수익률
+function renderPeriodPerf(d){
+  const c=el('period-rows');if(!c)return;
+  const pp=d.api_dashboard_performance?.periodPerformance||{};
+  const rows7=pp['7d']||{},rows30=pp['30d']||{},rowsAll=pp['all']||{};
+  c.innerHTML=[
+    ['7일 BTC 변화',rows7.btcChangePct?pct(rows7.btcChangePct):'--%',parseFloat(rows7.btcChangePct)>=0?'gr':'re'],
+    ['7일 점수 변화',rows7.scoreDelta!=null?(rows7.scoreDelta>0?'+':'')+rows7.scoreDelta:'--',''],
+    ['30일 BTC 변화',rows30.btcChangePct?pct(rows30.btcChangePct):'--%',parseFloat(rows30.btcChangePct)>=0?'gr':'re'],
+    ['30일 점수 변화',rows30.scoreDelta!=null?(rows30.scoreDelta>0?'+':'')+rows30.scoreDelta:'--',''],
+    ['전체 BTC 변화',rowsAll.btcChangePct?pct(rowsAll.btcChangePct):'--%',parseFloat(rowsAll.btcChangePct)>=0?'gr':'re'],
+    ['추적 기간',(rowsAll.totalDays||0)+'일',''],
+  ].map(([l,v,cc])=>row(l,v,cc)).join('');
+}
+
+// B-10: 점수 히트맵
+function renderScoreHeatmap(d){
+  const c=el('score-heatmap');if(!c)return;
+  const days=d.api_dashboard_performance?.heatmapDays||[];if(!days.length)return;
+  const colMap={buy:'var(--gr)',mild_buy:'#00c96b',neutral:'var(--bl)',caution:'var(--ye)',sell:'var(--re)'};
+  c.innerHTML=days.map(day=>{
+    const col=colMap[day.color?.toLowerCase()]||'var(--mu)';
+    return`<div title="${day.date}: ${day.score}점" style="width:32px;height:32px;border-radius:4px;background:${col}33;border:1px solid ${col}66;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:${col};cursor:default">${day.score}</div>`;
+  }).join('');
+}
+
 // 지표 분해
 function renderBreakdown(d){
   const bd=d.api_dashboard?.indicatorBreakdown||{};
@@ -472,6 +595,132 @@ function renderBreakdown(d){
       <div class="prog"><div class="prog-fill" style="width:${v}%;background:${col}"></div></div>
     </div>`;
   }).join('');
+}
+
+// B-11~12: NUPL/MVRV 30일 히스토리
+function renderOnchainHistoryChart(d){
+  const h=d.api_prism_indices?.entries||[];if(!h.length)return;
+  const labels=h.map(e=>e.date.slice(5));
+  mkChart('nupl-mvrv-ch',labels,[
+    {label:'NUPL',data:h.map(e=>e.nupl?parseFloat(e.nupl):null),borderColor:'#00e57a',backgroundColor:'rgba(0,229,122,.08)',fill:false,tension:.4,pointRadius:0,borderWidth:2,spanGaps:true},
+    {label:'MVRV-Z',data:h.map(e=>e.mvrvZScore?parseFloat(e.mvrvZScore):null),borderColor:'#9b5de5',backgroundColor:'rgba(155,93,229,.08)',fill:false,tension:.4,pointRadius:0,borderWidth:2,spanGaps:true},
+  ],{legend:true,yFmt:v=>v.toFixed(2)});
+}
+
+// B-06: 반감기 사이클 + 히트맵
+function renderHalvingCycle(d){
+  const c=el('halving-progress');if(!c)return;
+  const cy=d.api_dashboard_cycle?.halvingCycle||{};
+  const pct=parseFloat(cy.progressWidth||0);
+  const col=pct>=75?'var(--re)':pct>=50?'var(--ye)':'var(--gr)';
+  c.innerHTML=`
+    <div style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px">
+        <span style="font-size:13px;font-weight:700;color:${col}">${cy.phaseLabel||'--'}</span>
+        <span style="font-size:13px;font-weight:900;color:${col}">${pct.toFixed(1)}%</span>
+      </div>
+      <div style="height:10px;background:var(--sf3);border-radius:5px;overflow:hidden">
+        <div style="height:100%;width:${pct}%;background:linear-gradient(90deg,var(--gr),${col});border-radius:5px;transition:width 1s"></div>
+      </div>
+    </div>
+    ${[
+      ['사이클',cy.cycleNumber?cy.cycleNumber+'번째',''],
+      ['경과',cy.formattedElapsed||'--',''],
+      ['남은 기간',cy.formattedRemaining||'--',''],
+      ['마지막 반감기',cy.lastHalvingDate||'--',''],
+      ['다음 반감기',cy.nextHalvingDate||'--',''],
+    ].map(([l,v])=>row(l,v,'')).join('')}
+    <div style="margin-top:12px;padding:10px;border-radius:8px;background:rgba(255,204,0,.07);border:1px solid rgba(255,204,0,.15);font-size:12px;color:var(--mu);line-height:1.6">${cy.phaseDescription||''}</div>`;
+}
+function renderCycleHeatmap(d){
+  const c=el('cycle-heatmap');if(!c)return;
+  const cy=d.api_dashboard_cycle||{};
+  const dates=cy.heatmapDates||[];
+  const rows=cy.heatmapRows||[];
+  if(!dates.length||!rows.length)return;
+  const colMap={up:'#00e57a',down:'#ff3d5a',amber:'#ffcc00',neutral:'#3a5470'};
+  c.innerHTML=`<table style="width:100%;border-collapse:collapse;font-size:11px">
+    <thead><tr><th style="color:var(--mu);padding:4px 6px;text-align:left;width:60px">구간</th>${dates.map(dt=>`<th style="color:var(--mu);padding:4px 4px;text-align:center">${dt}</th>`).join('')}</tr></thead>
+    <tbody>${rows.map(r=>`<tr><td style="color:var(--mu);padding:4px 6px;white-space:nowrap">${r.label||''}</td>${
+      r.cells.map(cell=>{
+        const bg=colMap[cell.color]||'#3a5470';
+        const v=parseFloat(cell.value||0);
+        return`<td style="padding:3px 4px;text-align:center"><div style="background:${bg}33;border:1px solid ${bg}66;border-radius:4px;padding:3px 2px;color:${bg};font-weight:700">${v>0?'+':''}${v.toFixed(1)}%</div></td>`;
+      }).join('')
+    }</tr>`).join('')}</tbody></table>`;
+}
+
+// B-05: 90일 점수+BTC 복합 차트
+function renderScore90Chart(d){
+  const h=d.api_dashboard_cycle?.score90History||[];if(!h.length)return;
+  const labels=h.map(e=>e.date.slice(5));
+  mkChart('score90-ch',labels,[
+    {label:'점수',data:h.map(e=>e.score),borderColor:'#3b9eff',backgroundColor:'rgba(59,158,255,.08)',fill:true,tension:.4,pointRadius:0,borderWidth:2,yAxisID:'y'},
+    {label:'BTC',data:h.map(e=>e.btcClose?parseFloat(e.btcClose):null),borderColor:'#f7931a',backgroundColor:'rgba(247,147,26,.05)',fill:false,tension:.4,pointRadius:0,borderWidth:1.5,yAxisID:'y1'}
+  ],{extra:{scales:{
+    y:{position:'left',min:0,max:100,ticks:{color:'#3b9eff',font:{size:10}},grid:{color:'rgba(26,45,72,.4)'}},
+    y1:{position:'right',ticks:{color:'#f7931a',callback:v=>'$'+Math.round(v/1000)+'k',font:{size:10}},grid:{drawOnChartArea:false}},
+    x:{ticks:{color:'#5a7899',maxTicksLimit:10,font:{size:10}},grid:{color:'rgba(26,45,72,.4)'}}
+  }}});
+}
+
+// B-02: 점수 분포 히스토그램
+function renderScoreHistogram(d){
+  const h=d.api_dashboard_buy_timing?.scoreHistogram||[];
+  if(!h.length)return;
+  mkChart('score-hist-ch',h.map(e=>e.label),[{
+    label:'발생일수',data:h.map(e=>e.count),
+    backgroundColor:h.map(e=>e.isToday?'rgba(59,158,255,.9)':e.color+'99'||'rgba(155,93,229,.5)'),
+    borderColor:h.map(e=>e.isToday?'#3b9eff':e.color||'#9b5de5'),
+    borderWidth:1,borderRadius:4
+  }],{type:'bar',yFmt:v=>v+'일'});
+}
+
+// B-03: 가격-점수 다이버전스
+function renderDivergenceChart(d){
+  const h=d.api_dashboard_buy_timing?.priceDivergence||[];
+  if(!h.length)return;
+  const labels=h.map(e=>e.date.slice(5));
+  mkChart('divergence-ch',labels,[
+    {label:'점수',data:h.map(e=>e.score),borderColor:'#3b9eff',backgroundColor:'rgba(59,158,255,.1)',fill:true,tension:.4,pointRadius:3,borderWidth:2,yAxisID:'y'},
+    {label:'BTC변화(%)',data:h.map(e=>parseFloat(e.pricePct)),borderColor:'#f7931a',backgroundColor:'rgba(247,147,26,.1)',fill:false,tension:.4,pointRadius:3,borderWidth:2,yAxisID:'y1'}
+  ],{extra:{scales:{y:{position:'left',ticks:{color:'#3b9eff',font:{size:10}},grid:{color:'rgba(26,45,72,.4)'}},y1:{position:'right',ticks:{color:'#f7931a',callback:v=>v+'%',font:{size:10}},grid:{drawOnChartArea:false}},x:{ticks:{color:'#5a7899',font:{size:10}},grid:{color:'rgba(26,45,72,.4)'}}}}});
+}
+
+// B-04: 기간별 평균 점수 테이블
+function renderWindowComparison(d){
+  const c=el('window-rows');if(!c)return;
+  const h=d.api_dashboard_buy_timing?.windowComparison||[];if(!h.length)return;
+  c.innerHTML=h.map(w=>[
+    [w.window,w.avgScore??'--',w.avgScore>=70?'gr':w.avgScore>=55?'bl':'ye'],
+    ['매수 비율',w.buyPct||'--','gr'],
+    ['평균 BTC',w.avgBtc||'--',''],
+    ['샘플 수',(w.n||0)+'일',''],
+  ].map(([l,v,cc])=>row(l,v,cc)).join('')).join('<hr style="border-color:var(--bd);margin:8px 0">');
+}
+
+// B-01: DCA 존 시각화
+function renderDcaZones(d){
+  const c=el('dca-zones');if(!c)return;
+  const bt=d.api_dashboard_buy_timing||{};
+  const zones=bt.dcaZones||[];if(!zones.length)return;
+  const score=bt.currentScore??0;
+  const colorMap={success:'var(--gr)',warning:'var(--ye)',danger:'var(--re)',secondary:'var(--mu)'};
+  c.innerHTML='<div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px">DCA 구간별 투입 비율</div>'+
+    zones.map(z=>{
+      const col=colorMap[z.color]||'var(--mu)';
+      const active=z.active;
+      return`<div style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:8px;margin-bottom:5px;border:1px solid ${active?col:'var(--bd)'};background:${active?col+'22':'transparent'}">
+        <div style="width:34px;height:34px;border-radius:50%;border:2px solid ${col};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:${col};flex-shrink:0">${z.pct}%</div>
+        <div style="flex:1">
+          <div style="font-size:12px;font-weight:700;color:${active?col:'var(--tx)'}">${z.range}${active?' ← 현재':''}　</div>
+          <div style="font-size:11px;color:var(--mu)">${z.signal}</div>
+        </div>
+        <div style="width:80px;height:6px;background:var(--sf3);border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:${z.pct===0?2:z.pct*3}%;background:${col};border-radius:3px"></div>
+        </div>
+      </div>`;
+    }).join('');
 }
 
 // 펀딩비 히스토리 차트

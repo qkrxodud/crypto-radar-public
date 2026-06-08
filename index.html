@@ -166,7 +166,14 @@ tr:hover td{background:rgba(23,32,53,.6)}
 /* ── 반응형 ── */
 @media(max-width:1100px){
   .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
   .kpi-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:640px){
+  .g3{grid-template-columns:1fr}
+  .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{min-width:400px}
+  #signal-matrix table,#cycle-heatmap table{min-width:600px}
 }
 
 @media(max-width:768px){
@@ -344,6 +351,13 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     </div>
   </div>
 
+  <!-- B-18: 갱신 시각 배너 -->
+  <div id="update-banner" style="display:none;align-items:center;justify-content:center;gap:8px;padding:8px 16px;background:rgba(59,158,255,.07);border:1px solid rgba(59,158,255,.2);border-radius:10px;font-size:12px;color:var(--mu)">
+    <span style="color:var(--bl);font-weight:700">🕙 마지막 갱신</span>
+    <span id="banner-upd" style="color:var(--tx);font-weight:600">--</span>
+    <span style="color:var(--mu2)">· 매일 오전 9시 5분 KST 자동 갱신</span>
+  </div>
+
   <!-- ② KPI -->
   <div class="kpi-grid">
     <div class="kpi" style="--accent:var(--bl)"><div class="kpi-lbl">전일 점수 변화</div><div class="kpi-val" id="k-delta">--</div><div class="kpi-hint" id="k-avg"></div></div>
@@ -355,7 +369,7 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
 
   <!-- ③ 점수 차트 + 전문가 -->
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar"></div>종합 점수 추이 (30일)</div><div class="ch ch-lg"><canvas id="score-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar"></div>종합 점수 추이 (30일)</div><div class="ch ch-lg"><canvas id="score-ch"></canvas></div><div class="ch ch-lg" style="margin-top:8px"><canvas id="score90-ch"></canvas></div></div>
     <div class="card">
       <div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--re))"></div>전문가 종합 의견</div>
       <div class="row"><span class="rl">판정</span><span class="rv" id="ex-verdict" style="font-size:14px;font-weight:800">--</span></div>
@@ -369,6 +383,12 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
   <div class="g2">
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,#f7931a,#ff6b2b)"></div>BTC 가격 추이 (30일)</div><div class="ch ch-md"><canvas id="btc-ch"></canvas></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>공포탐욕 추이 (30일)</div><div class="ch ch-md"><canvas id="fg-ch"></canvas></div></div>
+  </div>
+
+  <!-- B-06: 사이클 분석 -->
+  <div class="g2">
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>반감기 사이클 진행도</div><div id="halving-progress"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--re))"></div>주간 수익률 히트맵</div><div id="cycle-heatmap" style="overflow-x:auto"></div></div>
   </div>
 
   <div class="divider"><span>🔬 기술적 · 심리 · 온체인 · 매크로</span></div>
@@ -387,7 +407,7 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
 
   <!-- ⑦ 온체인 + 매크로 -->
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>온체인 지표</div><div id="chain-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="netflow-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>온체인 지표</div><div id="chain-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="netflow-ch"></canvas></div><div class="ch ch-sm" style="margin-top:8px"><canvas id="nupl-mvrv-ch"></canvas></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>매크로 지표</div><div id="macro-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="dxy-ch"></canvas></div><div class="ch ch-sm" style="margin-top:8px"><canvas id="sp500-ch"></canvas></div></div>
   </div>
 
@@ -410,8 +430,14 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
 
   <!-- ⑩ 타이밍 + 체크리스트 -->
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>매수 타이밍 분석</div><div id="timing-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>매수 타이밍 분석</div><div id="timing-rows"></div><div id="dca-zones" style="margin-top:14px"></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--gr))"></div>매수 조건 체크리스트</div><div id="chk-prog" style="margin-bottom:14px"></div><div id="chk-items" style="max-height:360px;overflow-y:auto"></div></div>
+  </div>
+  <!-- B-02/03/04 타이밍 분석 보조 -->
+  <div class="g3">
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--pu))"></div>점수 분포 히스토그램</div><div class="ch ch-md"><canvas id="score-hist-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>가격-점수 다이버전스</div><div class="ch ch-md"><canvas id="divergence-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>기간별 평균 점수</div><div id="window-rows"></div></div>
   </div>
 
   <!-- ⑪ 예측 + 고래 + 구조 + 알트 -->
@@ -421,6 +447,22 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>시장 구조</div><div id="str-rows"></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--pu))"></div>알트 · 비유동</div><div id="alt-rows"></div></div>
   </div>
+
+  <!-- B-07~10: 성과 & 계절성 -->
+  <div class="divider"><span>📅 성과 & 계절성</span></div>
+  <div class="g2">
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>요일별 평균 수익률</div><div class="ch ch-md"><canvas id="dow-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--pu))"></div>기간별 수익률 요약</div><div id="period-rows"></div></div>
+  </div>
+  <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--gr))"></div>30일 점수 히트맵</div><div id="score-heatmap" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px"></div></div>
+
+  <!-- B-13~15: 고급 분석 -->
+  <div class="divider"><span>🎯 고급 분석 · 백테스트 · 신호 매트릭스</span></div>
+  <div class="g2">
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>국면 매트릭스 (점수 × 공포탐욕)</div><div id="regime-matrix"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>DCA 백테스트 결과</div><div id="backtest-rows"></div></div>
+  </div>
+  <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>30일 지표 신호 매트릭스</div><div id="signal-matrix" style="overflow-x:auto;margin-top:8px"></div></div>
 
   <div class="divider"><span>📊 27개 지표별 기여 점수</span></div>
 
