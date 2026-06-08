@@ -3,12 +3,11 @@
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-API_URL="http://localhost:8080/api/public/snapshot"
 OUT="$REPO_DIR/data/snapshot.json"
 
-echo "[refresh] Fetching $API_URL ..."
-curl -sf --max-time 30 "$API_URL" -o "$OUT"
-echo "[refresh] Saved to $OUT"
+echo "[refresh] $(date -u +%Y-%m-%dT%H:%M:%SZ) — fetching indicators..."
+
+python3 "$REPO_DIR/scripts/build_snapshot.py" "$OUT"
 
 cd "$REPO_DIR"
 git add data/snapshot.json
@@ -19,4 +18,4 @@ fi
 
 git commit -m "chore: refresh snapshot $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 git push origin main
-echo "[refresh] Done."
+echo "[refresh] Pushed."
