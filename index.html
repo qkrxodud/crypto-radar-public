@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTC 투자 타이밍 레이더</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+    }
+
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 { font-size: 18px; font-weight: 600; }
+    #updated-at { font-size: 12px; color: var(--muted); }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+
+    /* ── 점수 히어로 ── */
+    .score-hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 24px;
+    }
+    .score-ring {
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid;
+      flex-shrink: 0;
+    }
+    .score-ring .num { font-size: 42px; font-weight: 700; line-height: 1; }
+    .score-ring .label { font-size: 11px; color: var(--muted); margin-top: 4px; }
+    .score-info h2 { font-size: 22px; font-weight: 600; margin-bottom: 6px; }
+    .score-info p { color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .signal-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    /* ── 지표 그리드 ── */
+    .section-title { font-size: 14px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .kpi-card .kpi-label { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+    .kpi-card .kpi-value { font-size: 22px; font-weight: 700; }
+    .kpi-card .kpi-hint { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+    /* ── 차트 ── */
+    .chart-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .chart-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+    .chart-wrap { position: relative; height: 220px; }
+
+    /* ── 지표 테이블 ── */
+    .table-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .table-card h3 { font-size: 14px; font-weight: 600; padding: 16px 20px 12px; border-bottom: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { background: #1c2128; color: var(--muted); font-weight: 500; text-align: right; padding: 8px 16px; border-bottom: 1px solid var(--border); }
+    th:first-child { text-align: left; }
+    td { padding: 8px 16px; text-align: right; border-bottom: 1px solid var(--border); }
+    td:first-child { text-align: left; color: var(--muted); }
+    tr:last-child td { border-bottom: none; }
+
+    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 24px; }
+
+    /* 점수별 색상 */
+    .c-red    { color: #f85149; border-color: #f85149; background-color: rgba(248,81,73,.1); }
+    .c-orange { color: #e3b341; border-color: #e3b341; background-color: rgba(227,179,65,.1); }
+    .c-blue   { color: #58a6ff; border-color: #58a6ff; background-color: rgba(88,166,255,.1); }
+    .c-green  { color: #3fb950; border-color: #3fb950; background-color: rgba(63,185,80,.1); }
+
+    .badge-red    { background: rgba(248,81,73,.15);  color: #f85149; }
+    .badge-orange { background: rgba(227,179,65,.15); color: #e3b341; }
+    .badge-blue   { background: rgba(88,166,255,.15); color: #58a6ff; }
+    .badge-green  { background: rgba(63,185,80,.15);  color: #3fb950; }
+
+    @media (max-width: 600px) {
+      .score-hero { flex-direction: column; text-align: center; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>📡 BTC 투자 타이밍 레이더</h1>
+  <span id="updated-at">데이터 로딩 중...</span>
+</header>
+
+<main>
+  <!-- 점수 히어로 -->
+  <div class="score-hero">
+    <div class="score-ring" id="score-ring">
+      <span class="num" id="hero-score">--</span>
+      <span class="label">/ 100</span>
+    </div>
+    <div class="score-info">
+      <div class="signal-badge" id="signal-badge">로딩 중</div>
+      <h2 id="signal-text">시장 데이터를 불러오는 중...</h2>
+      <p id="signal-desc"></p>
+    </div>
+  </div>
+
+  <!-- KPI 그리드 -->
+  <p class="section-title">핵심 지표</p>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">BTC 가격 (USD)</div>
+      <div class="kpi-value" id="kpi-btc">--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">공포탐욕 지수</div>
+      <div class="kpi-value" id="kpi-fg">--</div>
+      <div class="kpi-hint" id="kpi-fg-hint"></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">RSI (일봉)</div>
+      <div class="kpi-value" id="kpi-rsi">--</div>
+      <div class="kpi-hint" id="kpi-rsi-hint"></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">MVRV-Z Score</div>
+      <div class="kpi-value" id="kpi-mvrv">--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">NUPL</div>
+      <div class="kpi-value" id="kpi-nupl">--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">BTC 도미넌스</div>
+      <div class="kpi-value" id="kpi-dom">--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">펀딩비</div>
+      <div class="kpi-value" id="kpi-fund">--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">SOPR</div>
+      <div class="kpi-value" id="kpi-sopr">--</div>
+    </div>
+  </div>
+
+  <!-- 점수 차트 -->
+  <div class="chart-card">
+    <h3>종합 점수 추이 (30일)</h3>
+    <div class="chart-wrap">
+      <canvas id="score-chart"></canvas>
+    </div>
+  </div>
+
+  <!-- BTC 가격 차트 -->
+  <div class="chart-card">
+    <h3>BTC 가격 추이 (30일)</h3>
+    <div class="chart-wrap">
+      <canvas id="btc-chart"></canvas>
+    </div>
+  </div>
+
+  <!-- 지표 히스토리 테이블 -->
+  <div class="table-card">
+    <h3>지표 이력</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>날짜</th>
+          <th>점수</th>
+          <th>BTC(USD)</th>
+          <th>공포탐욕</th>
+          <th>RSI</th>
+          <th>MVRV-Z</th>
+          <th>펀딩비</th>
+        </tr>
+      </thead>
+      <tbody id="indicator-table"></tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  데이터는 하루 1회 자동 갱신됩니다 · 투자 판단은 본인 책임
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
