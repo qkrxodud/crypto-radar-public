@@ -32,6 +32,8 @@ ENDPOINTS = [
     "/api/dashboard/options-regime",
     "/api/dashboard/system",
     "/api/prism/indices",
+    "/api/ai/digest",
+    "/api/ai/news-sentiment",
 ]
 
 def get(path):

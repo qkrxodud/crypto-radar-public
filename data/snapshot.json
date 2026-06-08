@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-08T15:49:45Z",
+  "updatedAt": "2026-06-08T16:31:05Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "61810.01",
       "macd": {
-        "macdLine": "-3977.55",
-        "signalLine": "-2949.68",
-        "histogram": "-1027.87",
+        "macdLine": "-3972.63",
+        "signalLine": "-2948.70",
+        "histogram": "-1023.93",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -432,9 +432,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000094",
       "ivRv": {
-        "iv": "46.26",
+        "iv": "43.96",
         "rv": "38.00",
-        "spread": "+8.26",
+        "spread": "+5.96",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2672,63 +2672,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63809.90",
-      "openInterestUsd": "6301820306.85090000",
-      "longAccountRatio": "0.6332",
-      "shortAccountRatio": "0.3668",
-      "downsideLiquidationUsd": "3990312618.30",
-      "upsideLiquidationUsd": "2311507688.55",
+      "currentPrice": "63850.10",
+      "openInterestUsd": "6319393019.21098300",
+      "longAccountRatio": "0.6345",
+      "shortAccountRatio": "0.3655",
+      "downsideLiquidationUsd": "4009654870.69",
+      "upsideLiquidationUsd": "2309738148.52",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57428.91",
+          "price": "57465.09",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1596125047.32"
+          "notionalUsd": "1603861948.28"
         },
         {
-          "price": "70190.89",
+          "price": "70235.11",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "924603075.42"
+          "notionalUsd": "923895259.41"
         },
         {
-          "price": "61257.50",
+          "price": "61296.10",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1396609416.40"
+          "notionalUsd": "1403379204.74"
         },
         {
-          "price": "66362.30",
+          "price": "66404.10",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "809027690.99"
+          "notionalUsd": "808408351.98"
         },
         {
-          "price": "62533.70",
+          "price": "62573.10",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "798062523.66"
+          "notionalUsd": "801930974.14"
         },
         {
-          "price": "65086.10",
+          "price": "65127.10",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "462301537.71"
+          "notionalUsd": "461947629.70"
         },
         {
-          "price": "63171.80",
+          "price": "63211.60",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "199515630.91"
+          "notionalUsd": "200482743.53"
         },
         {
-          "price": "64448.00",
+          "price": "64488.60",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "115575384.43"
+          "notionalUsd": "115486907.43"
         }
       ],
       "errorMessage": null
@@ -3975,6 +3975,163 @@
       ],
       "latestScore": 66,
       "dataDate": "2026-06-08",
+      "errorMessage": null
+    },
+    "api_ai_digest": {
+      "hasData": true,
+      "generatedAt": "2026-06-08T16:31:01.017560Z",
+      "compositeScore": 66,
+      "tone": "NEUTRAL",
+      "toneDisplay": "중립",
+      "toneHexColor": "#FBBF24",
+      "modelName": "gpt-4o-mini",
+      "sections": [
+        {
+          "type": "SUMMARY",
+          "content": "매집 우세를 보이며 시장 심리가 개선되고 있으나 여전히 저조한 기술적 지표가 존재한다."
+        },
+        {
+          "type": "RISK",
+          "content": "낮은 RSI 수치로 인해 단기적인 가격 하락 위험이 존재한다."
+        },
+        {
+          "type": "RISK",
+          "content": "거래소 순유입이 긍정적이지 않아 매도 압력이 우려된다."
+        },
+        {
+          "type": "ACTION",
+          "content": "매수 기회를 염두에 두되, 시장 변동성을 주의 깊게 살펴야 한다."
+        },
+        {
+          "type": "ACTION",
+          "content": "손절매 설정으로 리스크 관리에 유의해야 한다."
+        }
+      ],
+      "errorMessage": null
+    },
+    "api_ai_news_sentiment": {
+      "hasData": true,
+      "generatedAt": "2026-06-08T16:31:05.005912Z",
+      "compositeScore": "-0.050",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
+      "scoredCount": 16,
+      "modelName": "gpt-4o-mini",
+      "items": [
+        {
+          "title": "Sam Bankman-Fried officially asks Trump for a presidential pardon",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/06/08/sam-bankman-fried-officially-asks-donald-trump-for-a-presidential-pardon",
+          "publishedAt": "2026-06-08T15:41:10Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "The startup killer: Ledger CTO says the EU's crushing compliance costs are choking Web3 innovation",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/08/europe-s-strict-new-crypto-rules-are-crushing-small-startups-ledger-cto-says",
+          "publishedAt": "2026-06-08T15:38:03Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Aave chief defends protocol's 'resilience' after $8.45 billion bank run",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/08/aave-labs-founder-stani-kulechov-deflects-responsibility-in-usd8-billion-run-on-stage",
+          "publishedAt": "2026-06-08T15:17:44Z",
+          "score": "0.1"
+        },
+        {
+          "title": "Blame bitcoin's tumble on rising inflation, not Strategy, 10xResearch argues",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/08/blame-bitcoin-s-tumble-on-rising-inflation-not-strategy-10xresearch-argues",
+          "publishedAt": "2026-06-08T14:37:27Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "CoinDesk 20 performance update: NEAR gains 12.3% as almost all assets trade higher",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/coindesk-indices/2026/06/08/coindesk-20-performance-update-near-gains-12-3-as-almost-all-assets-trade-higher",
+          "publishedAt": "2026-06-08T13:12:12Z",
+          "score": "0.4"
+        },
+        {
+          "title": "MetaMask launches AI agent wallet with built-in security for crypto trades",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/06/08/metamask-launches-ai-agent-wallet-with-built-in-security-for-crypto-trades",
+          "publishedAt": "2026-06-08T13:00:00Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Bitmine bought the dip, making its biggest ether purchase in 2026 as prices tanked",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/07/bitmine-bought-the-dip-making-its-biggest-ether-purchase-in-2026-as-prices-tanked",
+          "publishedAt": "2026-06-08T12:53:30Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Strategy buys 1,550 bitcoin one week after selling $2.5 million of coins",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/08/strategy-buys-1-550-bitcoin-boosts-cash-reserves-to-usd1-billion",
+          "publishedAt": "2026-06-08T12:12:45Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Bitcoin price $60K support not yet safe as more macro headwinds stack up",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-price-60k-support-not-yet-safe-as-more-macro-headwinds-stack-up?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-08T15:17:15Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "Spot Bitcoin ETFs bleed $1.7B as outflow streak hits four weeks",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-etfs-outflows-ether-altcoin-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-08T14:46:26Z",
+          "score": "-0.7"
+        },
+        {
+          "title": "Bitcoin price eyes $90K as FTX-era BTC bullish divergence flashes again",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-price-eyes-90k-as-ftx-era-btc-bullish-divergence-flashes-again?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-08T14:30:28Z",
+          "score": "0.6"
+        },
+        {
+          "title": "South Korea police raid Bithumb over lawmaker hiring favoritism probe: report",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/south-korea-police-raid-bithumb-over-lawmaker-hiring-favoritism-probe-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-08T14:02:36Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Hereâs what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-08T13:49:27Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Strategy buys 1,550 Bitcoin after controversial 32 BTC sale",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/strategy-resumes-bitcoin-purchases-1550-btc-buy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-08T13:45:48Z",
+          "score": "0.2"
+        },
+        {
+          "title": "White hats rescue $500K in NFTs after Flooring exploit",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/yuga-labs-nft-rescue-flooring-protocol-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-08T12:08:18Z",
+          "score": "0.4"
+        },
+        {
+          "title": "BTC price bottom not due until Q4? Five things to know in Bitcoin this week",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/btc-price-bottom-not-due-until-q4-five-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-08T11:40:55Z",
+          "score": "-0.5"
+        }
+      ],
       "errorMessage": null
     }
   }

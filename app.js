@@ -86,6 +86,8 @@ async function init(){
   renderHero(d);
   renderTicker(d);
   renderKpi(d);
+  renderAiDigest(d);
+  renderNewsSentiment(d);
   renderScoreChart(d);
   renderExpert(d);
   renderBtcChart(d);
@@ -460,6 +462,65 @@ function renderAltRows(d){
     ['BTC 도미넌스',a.btcDominance?a.btcDominance+'%':'--',''],['ETH/BTC',f(a.ethBtcPerformance,4),''],
     ['비유동 공급 비율',il.percentFormatted||'--',''],['비유동 신호',il.label||'--',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
+}
+
+// AI 다이제스트
+function renderAiDigest(d){
+  const meta=el('ai-digest-meta');
+  const secs=el('ai-digest-sections');
+  if(!meta||!secs)return;
+  const ai=d.api_ai_digest||{};
+  if(!ai.hasData){meta.innerHTML='<span style="color:var(--mu);font-size:12px">데이터 없음</span>';return;}
+
+  const toneCol=ai.toneHexColor||'#FBBF24';
+  const ts=ai.generatedAt?new Date(ai.generatedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'--';
+  meta.innerHTML=`<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+    <span style="background:${toneCol}22;border:1px solid ${toneCol}66;color:${toneCol};font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">${ai.toneDisplay||'--'}</span>
+    <span style="color:var(--mu);font-size:11px">점수 ${ai.compositeScore??'--'}</span>
+    <span style="color:var(--mu2);font-size:10px;margin-left:auto">${ts}</span>
+  </div>`;
+
+  const typeIcon={SUMMARY:'📋',RISK:'⚠️',ACTION:'🎯',OPPORTUNITY:'✅'};
+  const typeCol={SUMMARY:'var(--bl)',RISK:'var(--re)',ACTION:'var(--gr)',OPPORTUNITY:'var(--gr)'};
+  secs.innerHTML=(ai.sections||[]).map(s=>{
+    const icon=typeIcon[s.type]||'•';
+    const col=typeCol[s.type]||'var(--mu)';
+    return`<div style="display:flex;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)">
+      <span style="font-size:14px;flex-shrink:0;margin-top:1px">${icon}</span>
+      <span style="font-size:12px;color:var(--tx);line-height:1.6">${s.content}</span>
+    </div>`;
+  }).join('');
+}
+
+// 뉴스 센티먼트
+function renderNewsSentiment(d){
+  const meta=el('news-sentiment-meta');
+  const list=el('news-sentiment-items');
+  if(!meta||!list)return;
+  const ns=d.api_ai_news_sentiment||{};
+  if(!ns.hasData){meta.innerHTML='<span style="color:var(--mu);font-size:12px">데이터 없음</span>';return;}
+
+  const col=ns.labelHexColor||'#FBBF24';
+  const ts=ns.generatedAt?new Date(ns.generatedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'--';
+  const score=parseFloat(ns.compositeScore||0);
+  meta.innerHTML=`<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+    <span style="background:${col}22;border:1px solid ${col}66;color:${col};font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">${ns.labelDisplay||'--'} · ${score>0?'+':''}${score.toFixed(3)}</span>
+    <span style="color:var(--mu);font-size:11px">${ns.scoredCount||0}개 기사 분석</span>
+    <span style="color:var(--mu2);font-size:10px;margin-left:auto">${ts}</span>
+  </div>`;
+
+  list.innerHTML=(ns.items||[]).map(item=>{
+    const sc=parseFloat(item.score||0);
+    const scCol=sc>=0.3?'var(--gr)':sc<=-0.3?'var(--re)':'var(--ye)';
+    const itemTs=item.publishedAt?new Date(item.publishedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'';
+    return`<div style="display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--bd)">
+      <div style="flex-shrink:0;width:36px;text-align:center;font-size:12px;font-weight:900;color:${scCol};padding-top:2px">${sc>0?'+':''}${sc.toFixed(1)}</div>
+      <div style="min-width:0">
+        <a href="${item.url||'#'}" target="_blank" rel="noopener" style="font-size:12px;color:var(--tx);line-height:1.5;display:block;text-decoration:none;word-break:break-word" onmouseover="this.style.color='var(--bl)'" onmouseout="this.style.color='var(--tx)'">${item.title||'--'}</a>
+        <div style="font-size:10px;color:var(--mu2);margin-top:3px">${item.source||''} · ${itemTs}</div>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 // B-18: 갱신 배너
