@@ -156,7 +156,7 @@ function renderTechnical(d){
     ['MA200 거리', t.ma200DistancePct!=null?sgn(t.ma200DistancePct)+pct(t.ma200DistancePct):'--', parseFloat(t.ma200DistancePct)>=0?'gr':'re'],
     ['역사적 변동성', t.historicalVolatility!=null?pct(parseFloat(t.historicalVolatility)*100):'--', ''],
     ['Pi Cycle 간격', f(t.piCycleGap,0), ''],
-    ['MACD', t.macd??'--', ''],
+    ['MACD', t.macd ? `${f(t.macd.macdLine,0)} / ${f(t.macd.signalLine,0)} (${t.macd.crossLabel||'--'})` : '--', t.macd?.bullish?'gr':'re'],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -355,7 +355,7 @@ function renderAltRows(d){
   el('alt-rows').innerHTML=[
     ['알트시즌 지수', f(alt.altSeasonIndex,0), ''],
     ['알트시즌 레이블', alt.altseasonLabel||'--', ''],
-    ['BTC 도미넌스', alt.btcDominance!=null?pct(parseFloat(alt.btcDominance)*100,1):'--', ''],
+    ['BTC 도미넌스', alt.btcDominance!=null?alt.btcDominance+'%':'--', ''],
     ['ETH/BTC', f(alt.ethBtcPerformance,4), ''],
     ['비유동 공급 비율', il.percentFormatted||'--', ''],
     ['비유동 신호', il.label||'--', ''],
@@ -392,7 +392,7 @@ function renderChecklist(d){
   if(iEl) iEl.innerHTML=(c.items||[]).map(item=>`
     <div class="chk">
       <span>${item.passed?'✅':'❌'}</span>
-      <span style="color:${item.passed?'var(--tx)':'var(--mu)'}">${item.label}</span>
+      <span style="color:${item.passed?'var(--tx)':'var(--mu)'}">${item.name||item.label||'--'}${item.reason?` <span style="color:var(--mu);font-size:11px">— ${item.reason}</span>`:''}</span>
     </div>`).join('');
 }
 
