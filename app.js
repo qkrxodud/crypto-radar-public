@@ -691,12 +691,16 @@ function renderDivergenceChart(d){
 function renderWindowComparison(d){
   const c=el('window-rows');if(!c)return;
   const h=d.api_dashboard_buy_timing?.windowComparison||[];if(!h.length)return;
-  c.innerHTML=h.map(w=>[
-    [w.window,w.avgScore??'--',w.avgScore>=70?'gr':w.avgScore>=55?'bl':'ye'],
-    ['매수 비율',w.buyPct||'--','gr'],
-    ['평균 BTC',w.avgBtc||'--',''],
-    ['샘플 수',(w.n||0)+'일',''],
-  ].map(([l,v,cc])=>row(l,v,cc)).join('')).join('<hr style="border-color:var(--bd);margin:8px 0">');
+  const sc=v=>v>=70?'gr':v>=55?'bl':'ye';
+  c.innerHTML=h.map(w=>
+    `<div style="font-size:11px;font-weight:700;color:var(--bl);padding:6px 0 4px;border-bottom:1px solid var(--bd2);margin-bottom:6px">${w.window} 기준</div>`+
+    [
+      ['평균 점수', w.avgScore??'--', sc(w.avgScore??0)],
+      ['매수 비율', w.buyPct||'--', 'gr'],
+      ['평균 BTC',  w.avgBtc||'--', ''],
+      ['샘플 수',   (w.n||0)+'일',  ''],
+    ].map(([l,v,cc])=>row(l,v,cc)).join('')
+  ).join('<div style="margin:10px 0;border-top:1px solid var(--bd)"></div>');
 }
 
 // B-01: DCA 존 시각화

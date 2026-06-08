@@ -171,9 +171,17 @@ tr:hover td{background:rgba(23,32,53,.6)}
 }
 @media(max-width:640px){
   .g3{grid-template-columns:1fr}
-  .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-  table{min-width:400px}
-  #signal-matrix table,#cycle-heatmap table{min-width:600px}
+  .tbl-wrap,.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{min-width:360px}
+  #signal-matrix,#cycle-heatmap{overflow-x:auto}
+  #signal-matrix table,#cycle-heatmap table{min-width:500px}
+  /* row 레이블 줄바꿈 방지 */
+  .rl{font-size:11px;white-space:nowrap;max-width:110px;overflow:hidden;text-overflow:ellipsis}
+  .rv{font-size:11px}
+  /* DCA 존 */
+  #dca-zones>div{flex-wrap:wrap}
+  /* 업데이트 배너 */
+  #update-banner{font-size:11px;text-align:center;flex-wrap:wrap;gap:4px}
 }
 
 @media(max-width:768px){
@@ -221,8 +229,19 @@ tr:hover td{background:rgba(23,32,53,.6)}
   table td:nth-child(5),table th:nth-child(5){display:none}
   td,th{padding:7px 8px;font-size:11px}
 
+  /* row 오버플로 방지 */
+  .row{flex-wrap:wrap;gap:2px}
+  .rl{font-size:11px;flex:1;min-width:80px}
+  .rv{font-size:11px;text-align:right;max-width:160px;word-break:break-all}
+
   /* 지표 분해 */
   #breakdown{grid-template-columns:repeat(2,1fr)!important}
+
+  /* 히트맵 타일 축소 */
+  #score-heatmap>div{width:26px!important;height:26px!important;font-size:9px!important}
+
+  /* DCA 존 바 숨기기 */
+  #dca-zones .dca-bar{display:none}
 }
 
 @media(max-width:480px){
@@ -240,6 +259,20 @@ tr:hover td{background:rgba(23,32,53,.6)}
 
   /* 청산 레벨 */
   .liq-lvl{flex-wrap:wrap;gap:4px}
+
+  /* 헤더 섹션 소제목 */
+  .ct{font-size:9px}
+
+  /* 차트 높이 축소 */
+  .ch-lg{height:180px!important}
+  .ch-md{height:160px!important}
+  .ch-sm{height:130px!important}
+
+  /* 사이클 히트맵 스크롤 */
+  #cycle-heatmap{font-size:9px}
+
+  /* 신호 매트릭스 */
+  #signal-matrix{font-size:9px}
 
   /* 푸터 그리드 */
   [style*="grid-template-columns:2fr 1fr 1fr 1fr"]{grid-template-columns:1fr 1fr!important}
