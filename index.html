@@ -382,13 +382,13 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
   <!-- ⑥ 기술 + 심리 -->
   <div class="g2">
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>기술적 분석</div><div id="tech-rows"></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--re),var(--pu))"></div>시장 심리</div><div id="sent-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--re),var(--pu))"></div>시장 심리</div><div id="sent-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="funding-ch"></canvas></div></div>
   </div>
 
   <!-- ⑦ 온체인 + 매크로 -->
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>온체인 지표</div><div id="chain-rows"></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>매크로 지표</div><div id="macro-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>온체인 지표</div><div id="chain-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="netflow-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>매크로 지표</div><div id="macro-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="dxy-ch"></canvas></div><div class="ch ch-sm" style="margin-top:8px"><canvas id="sp500-ch"></canvas></div></div>
   </div>
 
   <div class="divider"><span>⚡ 파생 · 상관관계 · 유동성</span></div>
@@ -416,7 +416,7 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
 
   <!-- ⑪ 예측 + 고래 + 구조 + 알트 -->
   <div class="g4">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>점수 예측</div><div id="fc-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>점수 예측</div><div id="fc-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="fc-ch"></canvas></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>고래 활동</div><div id="whale-rows"></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>시장 구조</div><div id="str-rows"></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--pu))"></div>알트 · 비유동</div><div id="alt-rows"></div></div>

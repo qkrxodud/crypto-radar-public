@@ -91,10 +91,11 @@ async function init(){
   renderFgChart(d);
   renderIndTable(d);
   renderTechnical(d);renderSentiment(d);renderOnchain(d);renderMacro(d);
+  renderFundingChart(d);renderNetflowChart(d);renderMacroCharts(d);
   renderLiquidation(d);renderCorrelation(d);renderOptions(d);
   renderNetLiquidity(d);renderStablecoin(d);
   renderTiming(d);renderChecklist(d);
-  renderForecast(d);renderWhale(d);renderStructure(d);renderAltRows(d);
+  renderForecast(d);renderForecastChart(d);renderWhale(d);renderStructure(d);renderAltRows(d);
   renderBreakdown(d);
 
   // KPI 상단 accent 바
@@ -471,6 +472,64 @@ function renderBreakdown(d){
       <div class="prog"><div class="prog-fill" style="width:${v}%;background:${col}"></div></div>
     </div>`;
   }).join('');
+}
+
+// 펀딩비 히스토리 차트
+function renderFundingChart(d){
+  const h=d.api_dashboard_sentiment?.fundingHistory||[];
+  if(!h.length)return;
+  const vals=h.map(e=>parseFloat(e.value)*100);
+  mkChart('funding-ch',h.map(e=>e.date.slice(5)),[{
+    label:'펀딩비(%)',data:vals,
+    backgroundColor:vals.map(v=>v>=0?'rgba(0,229,122,.5)':'rgba(255,61,90,.5)'),
+    borderColor:vals.map(v=>v>=0?'#00e57a':'#ff3d5a'),
+    borderWidth:1,borderRadius:3
+  }],{type:'bar',yFmt:v=>v.toFixed(4)+'%'});
+}
+
+// 거래소 순유입 차트
+function renderNetflowChart(d){
+  const h=d.api_dashboard_onchain?.netflowHistory||[];
+  if(!h.length)return;
+  const vals=h.map(e=>parseFloat(e.value));
+  mkChart('netflow-ch',h.map(e=>e.date.slice(5)),[{
+    label:'순유입(BTC)',data:vals,
+    backgroundColor:vals.map(v=>v>0?'rgba(255,61,90,.5)':'rgba(0,229,122,.5)'),
+    borderColor:vals.map(v=>v>0?'#ff3d5a':'#00e57a'),
+    borderWidth:1,borderRadius:3
+  }],{type:'bar',yFmt:v=>Math.round(v)+' BTC'});
+}
+
+// DXY + S&P500 차트
+function renderMacroCharts(d){
+  const m=d.api_dashboard_macro||{};
+  const dh=m.dxyHistory||[];
+  if(dh.length)mkChart('dxy-ch',dh.map(e=>e.date.slice(5)),[{
+    label:'DXY',data:dh.map(e=>parseFloat(e.value)),
+    borderColor:'#ffcc00',
+    backgroundColor:ctx=>{const g=ctx.chart.ctx.createLinearGradient(0,0,0,160);g.addColorStop(0,'rgba(255,204,0,.2)');g.addColorStop(1,'rgba(255,204,0,.01)');return g},
+    fill:true,tension:.4,pointRadius:0,borderWidth:2
+  }],{yFmt:v=>v.toFixed(2)});
+  const sh=m.sp500History||[];
+  if(sh.length)mkChart('sp500-ch',sh.map(e=>e.date.slice(5)),[{
+    label:'S&P 500',data:sh.map(e=>parseFloat(e.value)),
+    borderColor:'#3b9eff',
+    backgroundColor:ctx=>{const g=ctx.chart.ctx.createLinearGradient(0,0,0,160);g.addColorStop(0,'rgba(59,158,255,.2)');g.addColorStop(1,'rgba(59,158,255,.01)');return g},
+    fill:true,tension:.4,pointRadius:0,borderWidth:2
+  }],{yFmt:v=>v.toLocaleString('ko-KR',{maximumFractionDigits:0})});
+}
+
+// 점수 예측 차트 (actual vs predicted)
+function renderForecastChart(d){
+  const pts=d.api_dashboard_forecast?.forecastPoints||[];
+  if(!pts.length)return;
+  const labels=pts.map(e=>e.date.slice(5));
+  const actual=pts.map(e=>e.isActual?e.actual:null);
+  const predicted=pts.map(e=>!e.isActual&&e.predicted!=null?e.predicted:null);
+  mkChart('fc-ch',labels,[
+    {label:'실제 점수',data:actual,borderColor:'#3b9eff',backgroundColor:'rgba(59,158,255,.15)',fill:true,tension:.4,pointRadius:0,borderWidth:2,spanGaps:false},
+    {label:'예측 점수',data:predicted,borderColor:'#9b5de5',borderDash:[4,4],backgroundColor:'rgba(155,93,229,.1)',fill:true,tension:.4,pointRadius:0,borderWidth:2,spanGaps:false}
+  ],{yMin:0,yMax:100});
 }
 
 init();
