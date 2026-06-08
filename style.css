@@ -84,5 +84,17 @@ footer{background:var(--sf);border-top:1px solid var(--bd);padding:32px 24px 24p
 .footer-disclaimer{color:var(--mu2);font-size:11px;line-height:1.6;margin-top:12px;padding-top:12px;border-top:1px solid var(--bd)}
 
 /* ── 반응형 ── */
-@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}.nav-links a span{display:none}.indicator-grid{grid-template-columns:1fr}}
-@media(max-width:500px){.footer-grid{grid-template-columns:1fr}.nav-links{gap:2px}.nav-links a{padding:6px 8px;font-size:12px}}
+@media(max-width:768px){
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .indicator-grid{grid-template-columns:1fr}
+  .page-wrap,.page-wide{padding:24px 16px}
+  .page-header h1{font-size:22px}
+  .card{padding:18px 16px}
+}
+@media(max-width:500px){
+  .footer-grid{grid-template-columns:1fr}
+  .nav-inner{padding:0 12px;height:48px}
+  .nav-links{gap:0}
+  .nav-links a{padding:6px 6px;font-size:12px}
+  .nav-logo{font-size:13px}
+}
