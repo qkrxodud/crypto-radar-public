@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-09T18:00:35Z",
+  "updatedAt": "2026-06-09T18:20:54Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "63548.02",
       "macd": {
-        "macdLine": "-4126.17",
-        "signalLine": "-3190.08",
-        "histogram": "-936.09",
+        "macdLine": "-4115.16",
+        "signalLine": "-3187.88",
+        "histogram": "-927.29",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -432,9 +432,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000052",
       "ivRv": {
-        "iv": "51.67",
+        "iv": "47.86",
         "rv": "38.00",
-        "spread": "+13.67",
+        "spread": "+9.86",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2612,12 +2612,12 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "262263993564.06745",
+      "totalMarketCapUsd": "261865500541.34647",
       "marketCap30dAgoUsd": "267529343611.95909",
-      "growth30dPercent": "-1.97",
-      "signal": "STABLE",
-      "signalLabel": "중립",
-      "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
+      "growth30dPercent": "-2.12",
+      "signal": "CONTRACTING",
+      "signalLabel": "공급 축소",
+      "signalDescription": "자금 이탈/상환 — 약세 압력",
       "errorMessage": null
     },
     "api_dashboard_net_liquidity": {
@@ -2683,63 +2683,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "61709.90",
-      "openInterestUsd": "6181159797.08999200",
-      "longAccountRatio": "0.6852",
-      "shortAccountRatio": "0.3148",
-      "downsideLiquidationUsd": "4235330692.97",
-      "upsideLiquidationUsd": "1945829104.12",
+      "currentPrice": "61838.60",
+      "openInterestUsd": "6185516698.23851900",
+      "longAccountRatio": "0.6843",
+      "shortAccountRatio": "0.3157",
+      "downsideLiquidationUsd": "4232749076.60",
+      "upsideLiquidationUsd": "1952767621.63",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "55538.91",
+          "price": "55654.74",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1694132277.19"
+          "notionalUsd": "1693099630.64"
         },
         {
-          "price": "67880.89",
+          "price": "68022.46",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "778331641.65"
+          "notionalUsd": "781107048.65"
         },
         {
-          "price": "59241.50",
+          "price": "59365.06",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1482365742.54"
+          "notionalUsd": "1481462176.81"
         },
         {
-          "price": "64178.30",
+          "price": "64312.14",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "681040186.44"
+          "notionalUsd": "683468667.57"
         },
         {
-          "price": "60475.70",
+          "price": "60601.83",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "847066138.59"
+          "notionalUsd": "846549815.32"
         },
         {
-          "price": "62944.10",
+          "price": "63075.37",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "389165820.82"
+          "notionalUsd": "390553524.33"
         },
         {
-          "price": "61092.80",
+          "price": "61220.21",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "211766534.65"
+          "notionalUsd": "211637453.83"
         },
         {
-          "price": "62327.00",
+          "price": "62456.99",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "97291455.21"
+          "notionalUsd": "97638381.08"
         }
       ],
       "errorMessage": null
@@ -3998,7 +3998,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-09T17:40:33.213187Z",
+      "generatedAt": "2026-06-09T18:20:51.253461Z",
       "compositeScore": 67,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4007,31 +4007,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이며, 심리 지표가 공포 상태에 있음."
+          "content": "매집 우세로 보이나, 공포 심리가 지배적이다."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 극단적인 공포에 있으며, 이는 가격 하락의 위험을 내포함."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 있다."
         },
         {
           "type": "RISK",
-          "content": "RSI가 낮아 과매도 상태로, 반등 가능성이 있지만 불확실성 존재."
+          "content": "거래소 순유입이 긍정적이지 않아 유동성 우려가 존재한다."
         },
         {
           "type": "ACTION",
-          "content": "매집 우세를 활용하여 저가 매수 전략을 고려할 것."
+          "content": "매수 기회를 염두에 두되, 시장 심리를 주의 깊게 살펴라."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산할 필요가 있음."
+          "content": "포지션 크기를 조절하며 리스크 관리에 집중하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-09T17:20:28.246906Z",
-      "compositeScore": "-0.056",
+      "generatedAt": "2026-06-09T18:20:54.226045Z",
+      "compositeScore": "-0.044",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4095,6 +4095,20 @@
           "score": "-0.5"
         },
         {
+          "title": "Bitcoin may act as a âcanary in the coal mineâ as risk-off pressure spreads: Bitwise",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-may-act-as-a-canary-in-the-coal-mine-as-risk-off-pressure-spreads-bitwise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-09T17:48:44Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "BBB refers prediction market Kalshi to state regulators over ad inquiry",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bbb-nad-refers-kalshi-state-regulators-advertising-influencer-inquiry?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-09T17:26:49Z",
+          "score": "0.0"
+        },
+        {
           "title": "Bitcoin price slips toward $62K local lows as bear-market history keeps repeating",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-slips-toward-62k-local-lows-as-bear-market-history-keeps-repeating?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -4113,42 +4127,28 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blockchain-researchers-htx-sanctions-crypto-risk-signals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-09T14:22:11Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Privacy push as StarkWare and Sui move toward compliance-ready confidential transfers",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/privacy-starkware-sui-move-compliance-confidential-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-09T14:01:11Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "MiCA architect says EU should prioritize tokenization over DeFi rules",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/eu-broader-crypto-market-framework-mica-2-defi-regulations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-09T12:30:52Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin 'normal' 4-year cycle puts focus on $53K low before 2028 BTC price high",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-normal-four-year-cycle-puts-focus-on-53k-low-before-2028-btc-price-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-09T12:25:03Z",
-          "score": "-0.1"
-        },
-        {
-          "title": "Humanity says compromised laptop led to $36M bridge attack",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/humanity-protocol-laptop-bridge-exploit-h-token?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-09T12:14:08Z",
-          "score": "-0.8"
-        },
-        {
-          "title": "OKX expands X-Perps in Europe with Magnificent 7, gold and oil futures",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/okx-targets-eu-retail-mica-mag-7-stock-perps?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-09T11:52:15Z",
-          "score": "0.3"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
