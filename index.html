@@ -408,12 +408,12 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     </div>
     <div class="hero-stats">
       <div class="hstat">
-        <div class="hstat-lbl">BTC 가격</div>
+        <div class="hstat-lbl">BTC 현재가</div>
         <div class="hstat-val gr" id="hs-btc">--</div>
         <div class="hstat-hint" id="hs-date"></div>
       </div>
       <div class="hstat">
-        <div class="hstat-lbl">공포탐욕</div>
+        <div class="hstat-lbl">공포탐욕 지수</div>
         <div class="hstat-val" id="hs-fg">--</div>
         <div class="hstat-hint" id="hs-fg-h"></div>
       </div>
@@ -429,11 +429,11 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
 
   <!-- ② KPI -->
   <div class="kpi-grid">
-    <div class="kpi" style="--accent:var(--bl)"><div class="kpi-lbl">전일 점수 변화</div><div class="kpi-val" id="k-delta">--</div><div class="kpi-hint" id="k-avg"></div></div>
-    <div class="kpi" style="--accent:var(--ye)"><div class="kpi-lbl">레짐 매트릭스</div><div class="kpi-val" id="k-quad" style="font-size:16px;line-height:1.4">--</div><div class="kpi-hint" id="k-quad-h"></div></div>
-    <div class="kpi" style="--accent:var(--gr)"><div class="kpi-lbl">체크리스트</div><div class="kpi-val" id="k-chk">--</div><div class="kpi-hint" id="k-chk-h"></div></div>
-    <div class="kpi" style="--accent:var(--pu)"><div class="kpi-lbl">예측 점수 (내일)</div><div class="kpi-val" id="k-fc">--</div><div class="kpi-hint" id="k-fc-h"></div></div>
-    <div class="kpi" style="--accent:var(--or)"><div class="kpi-lbl">반감기 경과</div><div class="kpi-val" id="k-halv">--</div><div class="kpi-hint" id="k-halv-h"></div></div>
+    <div class="kpi" style="--accent:var(--bl)"><div class="kpi-lbl">어제보다</div><div class="kpi-val" id="k-delta">--</div><div class="kpi-hint" id="k-avg"></div></div>
+    <div class="kpi" style="--accent:var(--ye)"><div class="kpi-lbl">시장 국면</div><div class="kpi-val" id="k-quad" style="font-size:16px;line-height:1.4">--</div><div class="kpi-hint" id="k-quad-h"></div></div>
+    <div class="kpi" style="--accent:var(--gr)"><div class="kpi-lbl">매수 조건 통과</div><div class="kpi-val" id="k-chk">--</div><div class="kpi-hint" id="k-chk-h"></div></div>
+    <div class="kpi" style="--accent:var(--pu)"><div class="kpi-lbl">내일 예상 점수</div><div class="kpi-val" id="k-fc">--</div><div class="kpi-hint" id="k-fc-h"></div></div>
+    <div class="kpi" style="--accent:var(--or)"><div class="kpi-lbl">반감기 후 경과일</div><div class="kpi-val" id="k-halv">--</div><div class="kpi-hint" id="k-halv-h"></div></div>
   </div>
 
   <!-- AI 다이제스트 + 뉴스 센티먼트 -->
@@ -464,8 +464,8 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
 
   <!-- ④ BTC + FG 차트 -->
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,#f7931a,#ff6b2b)"></div>BTC 가격 추이 (30일)</div><div class="ch ch-md"><canvas id="btc-ch"></canvas></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>공포탐욕 추이 (30일)</div><div class="ch ch-md"><canvas id="fg-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,#f7931a,#ff6b2b)"></div>BTC 가격 추이 (최근 30일)</div><div class="ch ch-md"><canvas id="btc-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>공포탐욕 지수 추이 (최근 30일) — 0=극도 공포, 100=극도 탐욕</div><div class="ch ch-md"><canvas id="fg-ch"></canvas></div></div>
   </div>
 
   <!-- B-06: 사이클 분석 -->
@@ -474,42 +474,42 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--re))"></div>주간 수익률 히트맵</div><div id="cycle-heatmap" style="overflow-x:auto"></div></div>
   </div>
 
-  <div class="divider"><span>🔬 기술적 · 심리 · 온체인 · 매크로</span></div>
+  <div class="divider"><span>🔬 세부 지표 분석</span></div>
 
   <!-- ⑤ 전체 지표 테이블 -->
   <div class="card">
-    <div class="ct"><div class="ct-bar"></div>전체 지표 상세 — 점수 · 실제값 · 추세</div>
-    <div style="overflow-x:auto"><table><thead><tr><th>지표</th><th>실제값</th><th>점수</th><th style="min-width:110px">점수 바</th><th>추세</th></tr></thead><tbody id="ind-table"></tbody></table></div>
+    <div class="ct"><div class="ct-bar"></div>전체 지표 한눈에 보기 — 점수 · 현재 수치 · 추세</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>지표명</th><th>현재 수치</th><th>점수</th><th style="min-width:110px">점수 바</th><th>추세</th></tr></thead><tbody id="ind-table"></tbody></table></div>
   </div>
 
   <!-- ⑥ 기술 + 심리 -->
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>기술적 분석</div><div id="tech-rows"></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--re),var(--pu))"></div>시장 심리</div><div id="sent-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">📈 펀딩비 추이 (7일)</div><div class="ch ch-sm"><canvas id="funding-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>기술적 분석 — 가격 추세 신호</div><div id="tech-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--re),var(--pu))"></div>시장 심리 — 투자자 공포·탐욕</div><div id="sent-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">📈 펀딩비 추이 (7일)</div><div class="ch ch-sm"><canvas id="funding-ch"></canvas></div></div>
   </div>
 
   <!-- ⑦ 온체인 + 매크로 -->
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>온체인 지표</div><div id="chain-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">📊 거래소 순유입 (7일)</div><div class="ch ch-sm"><canvas id="netflow-ch"></canvas></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 4px">🔗 NUPL / MVRV-Z 추이 (30일)</div><div class="ch ch-sm"><canvas id="nupl-mvrv-ch"></canvas></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>매크로 지표</div><div id="macro-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">💵 DXY 달러 지수 (30일)</div><div class="ch ch-sm"><canvas id="dxy-ch"></canvas></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 4px">📈 S&P 500 (30일)</div><div class="ch ch-sm"><canvas id="sp500-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>온체인 지표 — 실제 코인 흐름</div><div id="chain-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">📊 거래소 유입/유출 코인 (7일)</div><div class="ch ch-sm"><canvas id="netflow-ch"></canvas></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 4px">🔗 NUPL / MVRV-Z 추이 (30일)</div><div class="ch ch-sm"><canvas id="nupl-mvrv-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>글로벌 경제 지표</div><div id="macro-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">💵 달러 지수 DXY (30일)</div><div class="ch ch-sm"><canvas id="dxy-ch"></canvas></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 4px">📈 미국 주식시장 S&P 500 (30일)</div><div class="ch ch-sm"><canvas id="sp500-ch"></canvas></div></div>
   </div>
 
-  <div class="divider"><span>⚡ 파생 · 상관관계 · 유동성</span></div>
+  <div class="divider"><span>⚡ 파생 · 유동성 분석</span></div>
 
   <!-- ⑧ 청산 + 상관관계 -->
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--re),var(--or))"></div>청산 히트맵</div><div id="liq-summary"></div><div id="liq-levels" style="margin-top:12px"></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>롤링 상관관계 (30일)</div><div id="corr-rows"></div><div id="corr-regime" style="margin-top:14px;padding:14px;border-radius:10px;background:rgba(59,158,255,.05);border:1px solid rgba(59,158,255,.15);font-size:12px;line-height:1.6"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--re),var(--or))"></div>청산 위험 분석 — 강제 매수/매도 가격대</div><div id="liq-summary"></div><div id="liq-levels" style="margin-top:12px"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>자산 간 상관관계 (30일)</div><div id="corr-rows"></div><div id="corr-regime" style="margin-top:14px;padding:14px;border-radius:10px;background:rgba(59,158,255,.05);border:1px solid rgba(59,158,255,.15);font-size:12px;line-height:1.6"></div></div>
   </div>
 
   <!-- ⑨ 옵션 + 순유동성 + 스테이블 -->
   <div class="g3">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--re))"></div>옵션 레짐</div><div id="opt-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="iv-ch"></canvas></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>연준 순유동성</div><div id="nl-rows"></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--ye))"></div>스테이블코인 공급</div><div id="stbl-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--re))"></div>옵션 시장 — 내재변동성</div><div id="opt-rows"></div><div class="ch ch-sm" style="margin-top:14px"><canvas id="iv-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>글로벌 유동성 (연준)</div><div id="nl-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--ye))"></div>스테이블코인 공급 현황</div><div id="stbl-rows"></div></div>
   </div>
 
-  <div class="divider"><span>🎯 타이밍 · 예측 · 조건</span></div>
+  <div class="divider"><span>🎯 매수 타이밍 · 예측</span></div>
 
   <!-- ⑩ 타이밍 + 체크리스트 -->
   <div class="g2">
@@ -518,40 +518,40 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
   </div>
   <!-- B-02/03/04 타이밍 분석 보조 -->
   <div class="g3">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--pu))"></div>점수 분포 히스토그램</div><div class="ch ch-md"><canvas id="score-hist-ch"></canvas></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>가격-점수 다이버전스</div><div class="ch ch-md"><canvas id="divergence-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--pu))"></div>점수 분포 — 과거 통계</div><div class="ch ch-md"><canvas id="score-hist-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>가격-점수 괴리도</div><div class="ch ch-md"><canvas id="divergence-ch"></canvas></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>기간별 평균 점수</div><div id="window-rows"></div></div>
   </div>
 
   <!-- ⑪ 예측 + 고래 + 구조 + 알트 -->
   <div class="g4">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>점수 예측</div><div id="fc-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">🔮 점수 예측 추이</div><div class="ch ch-sm"><canvas id="fc-ch"></canvas></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>고래 활동</div><div id="whale-rows"></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>시장 구조</div><div id="str-rows"></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--pu))"></div>알트 · 비유동</div><div id="alt-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>내일 점수 예측</div><div id="fc-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">🔮 점수 예측 추이</div><div class="ch ch-sm"><canvas id="fc-ch"></canvas></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--gr))"></div>대형 투자자(고래) 동향</div><div id="whale-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>가격 구조 — 지지/저항선</div><div id="str-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--pu))"></div>알트코인 & 장기 보유 현황</div><div id="alt-rows"></div></div>
   </div>
 
   <!-- B-07~10: 성과 & 계절성 -->
-  <div class="divider"><span>📅 성과 & 계절성</span></div>
+  <div class="divider"><span>📅 과거 성과 통계</span></div>
   <div class="g2">
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>요일별 평균 수익률</div><div class="ch ch-md"><canvas id="dow-ch"></canvas></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--pu))"></div>기간별 수익률 요약</div><div id="period-rows"></div></div>
   </div>
-  <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--gr))"></div>30일 점수 히트맵</div><div id="score-heatmap" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px"></div></div>
+  <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--gr))"></div>30일 점수 히트맵 — 날짜별 색상</div><div id="score-heatmap" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px"></div></div>
 
   <!-- B-13~15: 고급 분석 -->
-  <div class="divider"><span>🎯 고급 분석 · 백테스트 · 신호 매트릭스</span></div>
+  <div class="divider"><span>🎯 고급 분석</span></div>
   <div class="g2">
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>국면 매트릭스 (점수 × 공포탐욕)</div><div id="regime-matrix"></div></div>
-    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>DCA 백테스트 결과</div><div id="backtest-rows"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>점수 × 공포탐욕 국면 매트릭스</div><div id="regime-matrix"></div></div>
+    <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>DCA 전략 백테스트 결과</div><div id="backtest-rows"></div></div>
   </div>
-  <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>30일 지표 신호 매트릭스</div><div id="signal-matrix" style="overflow-x:auto;margin-top:8px"></div></div>
+  <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>30일 지표 신호 추이 매트릭스</div><div id="signal-matrix" style="overflow-x:auto;margin-top:8px"></div></div>
 
-  <div class="divider"><span>📊 27개 지표별 기여 점수</span></div>
+  <div class="divider"><span>📊 지표별 기여도</span></div>
 
   <!-- ⑫ 지표 분해 -->
   <div class="card">
-    <div class="ct"><div class="ct-bar"></div>지표별 기여 점수</div>
+    <div class="ct"><div class="ct-bar"></div>지표별 기여 점수 — 각 지표가 종합 점수에 얼마나 영향 주는지</div>
     <div id="breakdown" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:8px"></div>
   </div>
 

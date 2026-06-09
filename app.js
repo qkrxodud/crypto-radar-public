@@ -21,10 +21,10 @@ const el=id=>document.getElementById(id);
 const txt=(id,s)=>{const e=el(id);if(e)e.textContent=s};
 
 function sc(score){
-  if(score>=70)return{cls:'gr',stroke:'#00e57a',glow:'glow-gr',badge:'bg-gr',label:'강한 매집'};
-  if(score>=55)return{cls:'bl',stroke:'#3b9eff',glow:'glow-bl',badge:'bg-bl',label:'완만한 매집'};
-  if(score>=40)return{cls:'ye',stroke:'#ffcc00',glow:'glow-ye',badge:'bg-ye',label:'관망'};
-  return{cls:'re',stroke:'#ff3d5a',glow:'glow-re',badge:'bg-re',label:'약세 주의'};
+  if(score>=70)return{cls:'gr',stroke:'#00e57a',glow:'glow-gr',badge:'bg-gr',label:'지금 사기 좋은 때예요'};
+  if(score>=55)return{cls:'bl',stroke:'#3b9eff',glow:'glow-bl',badge:'bg-bl',label:'조금씩 담아볼 만해요'};
+  if(score>=40)return{cls:'ye',stroke:'#ffcc00',glow:'glow-ye',badge:'bg-ye',label:'지켜보는 게 좋아요'};
+  return{cls:'re',stroke:'#ff3d5a',glow:'glow-re',badge:'bg-re',label:'조심하는 게 좋아요'};
 }
 function scBar(s){return s>=70?'#00e57a':s>=55?'#3b9eff':s>=40?'#ffcc00':'#ff3d5a'}
 function fgLbl(v){if(v==null)return'';if(v<=20)return'극도 공포';if(v<=40)return'공포';if(v<=60)return'중립';if(v<=80)return'탐욕';return'극도 탐욕'}
@@ -178,7 +178,7 @@ function renderKpi(d){
   const m=d.api_dashboard||{},chk=d.api_dashboard_checklist||{},sys=d.api_dashboard_system||{},fc=d.api_dashboard_forecast||{};
   const dEl=el('k-delta');
   if(dEl){dEl.textContent=(m.scoreDelta!=null?(m.scoreDelta>0?'+':'')+m.scoreDelta:'--');dEl.className='kpi-val '+(m.scoreDelta>0?'gr':m.scoreDelta<0?'re':'')}
-  txt('k-avg',`주간 ${m.weeklyAverageScore??'--'} · 월간 ${m.monthlyAverageScore??'--'}`);
+  txt('k-avg',`주간 평균 ${m.weeklyAverageScore??'--'} · 월간 평균 ${m.monthlyAverageScore??'--'}`);
   const rm=sys.regimeMatrix||{};
   const qEl=el('k-quad');if(qEl){qEl.textContent=rm.label||'--';qEl.className='kpi-val '+(rm.color==='green'?'gr':rm.color==='red'?'re':'ye')}
   txt('k-quad-h',rm.description||'');
@@ -254,14 +254,14 @@ function renderIndTable(d){
 function renderTechnical(d){
   const t=d.api_dashboard_technical||{};
   el('tech-rows').innerHTML=[
-    ['RSI (일봉)',f(t.rsiDaily,1)+(t.rsiDaily<=30?' — 과매도':t.rsiDaily>=70?' — 과매수':''),t.rsiDaily<=30?'gr':t.rsiDaily>=70?'re':''],
-    ['RSI (주봉)',f(t.rsiWeekly,1),''],['RSI (월봉)',f(t.rsiMonthly,1),''],
-    ['MA200 비율',t.ma200Ratio?f(parseFloat(t.ma200Ratio)*100,1)+'%':'--',parseFloat(t.ma200Ratio)>=1?'gr':'re'],
-    ['MA200 가격',t.ma200Value?'$'+f(t.ma200Value,0):'--',''],
-    ['MA200 거리',t.ma200DistancePct?sgn(t.ma200DistancePct)+pct(t.ma200DistancePct):'--',parseFloat(t.ma200DistancePct)>=0?'gr':'re'],
-    ['역사적 변동성',t.historicalVolatility?pct(parseFloat(t.historicalVolatility)*100):'--',''],
-    ['Pi Cycle 간격',f(t.piCycleGap,0),''],
-    ['MACD',t.macd?`${f(t.macd.macdLine,0)} (${t.macd.crossLabel||'--'})`:'--, ',t.macd?.bullish?'gr':'re'],
+    ['RSI 일봉 — 과열 지수',f(t.rsiDaily,1)+(t.rsiDaily<=30?' (과매도, 반등 가능)':t.rsiDaily>=70?' (과매수, 조정 주의)':''),t.rsiDaily<=30?'gr':t.rsiDaily>=70?'re':''],
+    ['RSI 주봉',f(t.rsiWeekly,1),''],['RSI 월봉',f(t.rsiMonthly,1),''],
+    ['200일 평균 비율',t.ma200Ratio?f(parseFloat(t.ma200Ratio)*100,1)+'%':'--',parseFloat(t.ma200Ratio)>=1?'gr':'re'],
+    ['200일 평균 가격',t.ma200Value?'$'+f(t.ma200Value,0):'--',''],
+    ['현재가 vs 200일 평균',t.ma200DistancePct?sgn(t.ma200DistancePct)+pct(t.ma200DistancePct):'--',parseFloat(t.ma200DistancePct)>=0?'gr':'re'],
+    ['가격 변동성',t.historicalVolatility?pct(parseFloat(t.historicalVolatility)*100):'--',''],
+    ['Pi Cycle 간격 — 사이클 피크 신호',f(t.piCycleGap,0),''],
+    ['MACD — 추세 전환 신호',t.macd?`${f(t.macd.macdLine,0)} (${t.macd.crossLabel||'--'})`:'--, ',t.macd?.bullish?'gr':'re'],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -269,13 +269,13 @@ function renderTechnical(d){
 function renderSentiment(d){
   const s=d.api_dashboard_sentiment||{};
   el('sent-rows').innerHTML=[
-    ['공포탐욕',`${s.fearGreed??'--'} — ${fgLbl(s.fearGreed)}`,s.fearGreed<=30?'gr':s.fearGreed>=70?'re':''],
-    ['펀딩비',s.fundingRate?(parseFloat(s.fundingRate)*100).toFixed(5)+'%':'--',''],
-    ['7일 누적펀딩',s.cumulativeFunding7d?pct(s.cumulativeFunding7d,4):'--',''],
-    ['30일 누적펀딩',s.cumulativeFunding30d?pct(s.cumulativeFunding30d,3):'--',''],
-    ['롱/숏 비율',f(s.longShortRatio,2),''],['미결제약정 비율',f(s.openInterestRatio,2),''],
-    ['테이커 매수/매도',f(s.takerBuySellRatio,2),parseFloat(s.takerBuySellRatio)>=1?'gr':'re'],
-    ['Put/Call 비율',f(s.putCallRatio,2),''],['LTH/STH 비율',f(s.lthSthRatio,2),''],
+    ['공포탐욕 지수',`${s.fearGreed??'--'} — ${fgLbl(s.fearGreed)}`,s.fearGreed<=30?'gr':s.fearGreed>=70?'re':''],
+    ['펀딩비 — 선물 포지션 비용',s.fundingRate?(parseFloat(s.fundingRate)*100).toFixed(5)+'%':'--',''],
+    ['7일 누적 펀딩비',s.cumulativeFunding7d?pct(s.cumulativeFunding7d,4):'--',''],
+    ['30일 누적 펀딩비',s.cumulativeFunding30d?pct(s.cumulativeFunding30d,3):'--',''],
+    ['롱/숏 비율 — 매수/매도 포지션',f(s.longShortRatio,2),''],['미결제약정 비율',f(s.openInterestRatio,2),''],
+    ['테이커 매수/매도 비율',f(s.takerBuySellRatio,2),parseFloat(s.takerBuySellRatio)>=1?'gr':'re'],
+    ['옵션 Put/Call 비율',f(s.putCallRatio,2),''],['장기/단기 보유자 비율',f(s.lthSthRatio,2),''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -283,13 +283,13 @@ function renderSentiment(d){
 function renderOnchain(d){
   const o=d.api_dashboard_onchain||{};
   el('chain-rows').innerHTML=[
-    ['SOPR',f(o.sopr,4),parseFloat(o.sopr)>=1?'gr':'re'],
-    ['NUPL',f(o.nupl,3),parseFloat(o.nupl)>=0?'gr':'re'],
-    ['MVRV-Z Score',f(o.mvrvZScore,2),''],['LTH/STH 비율',f(o.lthSthRatio,2),''],
-    ['거래소 순유입',o.exchangeNetFlow?f(o.exchangeNetFlow,0)+' BTC':'--',parseFloat(o.exchangeNetFlow)>0?'re':'gr'],
-    ['거래소 보유량',o.exchangeReserve?f(o.exchangeReserve,0)+' BTC':'--',''],
-    ['Puell Multiple',f(o.puellMultiple,2),''],['활성 주소',f(o.activeAddresses,0),''],
-    ['해시레이트',o.hashRate?f(o.hashRate,0)+' EH/s':'--',''],['채굴자 유출',o.minerOutflow?f(o.minerOutflow,0)+' BTC':'--',''],
+    ['SOPR — 코인 매도 수익률',f(o.sopr,4),parseFloat(o.sopr)>=1?'gr':'re'],
+    ['NUPL — 미실현 손익 비율',f(o.nupl,3),parseFloat(o.nupl)>=0?'gr':'re'],
+    ['MVRV-Z — 시장 고평가 지수',f(o.mvrvZScore,2),''],['장기/단기 보유자 비율',f(o.lthSthRatio,2),''],
+    ['거래소 유입 코인 (+는 매도 압력)',o.exchangeNetFlow?f(o.exchangeNetFlow,0)+' BTC':'--',parseFloat(o.exchangeNetFlow)>0?'re':'gr'],
+    ['거래소 보유 코인 총량',o.exchangeReserve?f(o.exchangeReserve,0)+' BTC':'--',''],
+    ['Puell Multiple — 채굴자 수익 지수',f(o.puellMultiple,2),''],['일일 활성 지갑 수',f(o.activeAddresses,0),''],
+    ['채굴 네트워크 강도',o.hashRate?f(o.hashRate,0)+' EH/s':'--',''],['채굴자 매도 물량',o.minerOutflow?f(o.minerOutflow,0)+' BTC':'--',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -297,14 +297,14 @@ function renderOnchain(d){
 function renderMacro(d){
   const m=d.api_dashboard_macro||{};
   el('macro-rows').innerHTML=[
-    ['DXY',f(m.dxy,2),''],['S&P 500',f(m.sp500,0),''],
-    ['금 (Gold)','$'+f(m.goldPrice,0),''],
-    ['미국채 10년',m.usTreasury10y?pct(m.usTreasury10y):'--',''],
-    ['김치 프리미엄',m.kimchiPremium?pct(m.kimchiPremium):'--',parseFloat(m.kimchiPremium)>0?'gr':'re'],
-    ['스테이블 점유율',m.stablecoinDominance?pct(m.stablecoinDominance):'--',''],
-    ['BTC ETF 순유입',m.btcEtfNetFlow?'$'+f(m.btcEtfNetFlow,0)+'M':'--',parseFloat(m.btcEtfNetFlow)>0?'gr':'re'],
-    ['M2 성장률',m.globalM2Growth?pct(m.globalM2Growth):'--',''],
-    ['VIX',f(m.vix,1),parseFloat(m.vix)>25?'re':'gr'],
+    ['달러 지수 (DXY)',f(m.dxy,2),''],['미국 주식시장 (S&P 500)',f(m.sp500,0),''],
+    ['금 가격 (달러)','$'+f(m.goldPrice,0),''],
+    ['미국채 10년 금리',m.usTreasury10y?pct(m.usTreasury10y):'--',''],
+    ['김치 프리미엄 — 국내 프리미엄',m.kimchiPremium?pct(m.kimchiPremium):'--',parseFloat(m.kimchiPremium)>0?'gr':'re'],
+    ['스테이블코인 점유율',m.stablecoinDominance?pct(m.stablecoinDominance):'--',''],
+    ['BTC ETF 자금 유입',m.btcEtfNetFlow?'$'+f(m.btcEtfNetFlow,0)+'M':'--',parseFloat(m.btcEtfNetFlow)>0?'gr':'re'],
+    ['글로벌 통화량 증가율 (M2)',m.globalM2Growth?pct(m.globalM2Growth):'--',''],
+    ['공포 지수 (VIX)',f(m.vix,1),parseFloat(m.vix)>25?'re':'gr'],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -313,20 +313,23 @@ function renderLiquidation(d){
   const l=d.api_dashboard_liquidation_heatmap||{};
   const cc=l.cascadeDirection==='DOWNSIDE'?'re':'gr';
   el('liq-summary').innerHTML=[
-    ['현재 BTC','$'+f(l.currentPrice,0),''],
-    ['미결제약정','$'+f(parseFloat(l.openInterestUsd||0)/1e9,2)+'B',''],
-    ['롱 비율',pct(parseFloat(l.longAccountRatio||0)*100,1),'gr'],
-    ['숏 비율',pct(parseFloat(l.shortAccountRatio||0)*100,1),'re'],
-    ['하방 청산','$'+f(parseFloat(l.downsideLiquidationUsd||0)/1e9,2)+'B','re'],
-    ['상방 청산','$'+f(parseFloat(l.upsideLiquidationUsd||0)/1e9,2)+'B','gr'],
-    ['캐스케이드',l.cascadeLabel||'--',cc],
+    ['BTC 현재가','$'+f(l.currentPrice,0),''],
+    ['선물 미결제약정','$'+f(parseFloat(l.openInterestUsd||0)/1e9,2)+'B',''],
+    ['매수(롱) 포지션 비율',pct(parseFloat(l.longAccountRatio||0)*100,1),'gr'],
+    ['매도(숏) 포지션 비율',pct(parseFloat(l.shortAccountRatio||0)*100,1),'re'],
+    ['하방 청산 물량','$'+f(parseFloat(l.downsideLiquidationUsd||0)/1e9,2)+'B','re'],
+    ['상방 청산 물량','$'+f(parseFloat(l.upsideLiquidationUsd||0)/1e9,2)+'B','gr'],
+    ['연쇄 청산 방향',l.cascadeLabel||'--',cc],
   ].map(([l,v,c])=>row(l,v,c)).join('');
-  el('liq-levels').innerHTML='<div style="font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px;font-weight:700">주요 청산 레벨</div>'+
-    (l.levels||[]).slice(0,6).map(lv=>`<div class="liq-lvl ${lv.side==='LONG'?'bg-re':'bg-gr'}">
-      <span class="${lv.side==='LONG'?'re':'gr'}" style="font-weight:800;font-size:11px">${lv.side} L${lv.leverage}×</span>
-      <span style="font-weight:700">$${f(lv.price,0)}</span>
-      <span style="color:var(--mu);font-size:11px">$${f(parseFloat(lv.notionalUsd||0)/1e9,2)}B</span>
-    </div>`).join('');
+  el('liq-levels').innerHTML='<div style="font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px;font-weight:700">주요 청산 가격대</div>'+
+    (l.levels||[]).slice(0,6).map(lv=>{
+      const sideKo=lv.side==='LONG'?'매수(롱)':'매도(숏)';
+      return`<div class="liq-lvl ${lv.side==='LONG'?'bg-re':'bg-gr'}">
+        <span class="${lv.side==='LONG'?'re':'gr'}" style="font-weight:800;font-size:11px">${sideKo} ${lv.leverage}배</span>
+        <span style="font-weight:700">$${f(lv.price,0)}</span>
+        <span style="color:var(--mu);font-size:11px">$${f(parseFloat(lv.notionalUsd||0)/1e9,2)}B</span>
+      </div>`;
+    }).join('');
 }
 
 // 상관관계
@@ -334,9 +337,9 @@ function renderCorrelation(d){
   const c=d.api_dashboard_rolling_correlation||{};
   const cf=v=>{const n=parseFloat(v);return n>0.5?'gr':n<-0.5?'re':'ye'};
   el('corr-rows').innerHTML=[
-    ['BTC vs S&P500',f(c.btcVsSpx,3),cf(c.btcVsSpx)],
-    ['BTC vs DXY',f(c.btcVsDxy,3),cf(c.btcVsDxy)],
-    ['BTC vs Gold',f(c.btcVsGold,3),cf(c.btcVsGold)],
+    ['BTC vs S&P500 상관계수',f(c.btcVsSpx,3),cf(c.btcVsSpx)],
+    ['BTC vs 달러(DXY) 상관계수',f(c.btcVsDxy,3),cf(c.btcVsDxy)],
+    ['BTC vs 금 상관계수',f(c.btcVsGold,3),cf(c.btcVsGold)],
     ['측정 기간',(c.windowDays||30)+'일',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
   const rEl=el('corr-regime');
@@ -347,10 +350,10 @@ function renderCorrelation(d){
 function renderOptions(d){
   const o=d.api_dashboard_options_regime||{};
   el('opt-rows').innerHTML=[
-    ['내재변동성(IV30)',f(o.iv30d,1)+'%',o.ivSignal==='EXTREME_FEAR'?'re':o.ivSignal==='CALM'?'gr':'ye'],
-    ['IV 신호',o.ivLabel||'--',''],
-    ['25δ Skew',f(o.skew25d,2)+'%',o.skewSignal?.includes('BULLISH')?'gr':'re'],
-    ['Skew 신호',o.skewLabel||'--',o.skewSignal?.includes('BULLISH')?'gr':'re'],
+    ['내재변동성 (IV30) — 시장 기대 변동성',f(o.iv30d,1)+'%',o.ivSignal==='EXTREME_FEAR'?'re':o.ivSignal==='CALM'?'gr':'ye'],
+    ['변동성 신호',o.ivLabel||'--',''],
+    ['옵션 스큐 (25δ) — 상승/하락 선호도',f(o.skew25d,2)+'%',o.skewSignal?.includes('BULLISH')?'gr':'re'],
+    ['스큐 신호',o.skewLabel||'--',o.skewSignal?.includes('BULLISH')?'gr':'re'],
   ].map(([l,v,c])=>row(l,v,c)).join('');
   const ivH=o.ivHistory||[];
   if(ivH.length>0)mkChart('iv-ch',ivH.map(e=>e.date.slice(5)),[{
@@ -365,12 +368,12 @@ function renderOptions(d){
 function renderNetLiquidity(d){
   const n=d.api_dashboard_net_liquidity||{};
   el('nl-rows').innerHTML=[
-    ['순유동성',n.netLiquidityUsdM?'$'+f(parseFloat(n.netLiquidityUsdM)/1e6,2)+'T':'--',''],
-    ['4주 변화',n.change4wUsdM?sgn(n.change4wUsdM)+'$'+f(Math.abs(parseFloat(n.change4wUsdM))/1e3,1)+'B':'--',parseFloat(n.change4wUsdM)>0?'gr':'re'],
+    ['연준 순유동성',n.netLiquidityUsdM?'$'+f(parseFloat(n.netLiquidityUsdM)/1e6,2)+'T':'--',''],
+    ['4주 변화 금액',n.change4wUsdM?sgn(n.change4wUsdM)+'$'+f(Math.abs(parseFloat(n.change4wUsdM))/1e3,1)+'B':'--',parseFloat(n.change4wUsdM)>0?'gr':'re'],
     ['4주 변화율',n.change4wPercent?sgn(n.change4wPercent)+pct(n.change4wPercent):'--',parseFloat(n.change4wPercent)>0?'gr':'re'],
-    ['연준 자산',n.fedAssetsUsdM?'$'+f(parseFloat(n.fedAssetsUsdM)/1e6,2)+'T':'--',''],
-    ['재무부 잔고',n.treasuryAccountUsdM?'$'+f(parseFloat(n.treasuryAccountUsdM)/1e3,1)+'B':'--',''],
-    ['신호',n.signalLabel||'--',n.signal==='EXPANDING'?'gr':'re'],
+    ['연준 보유 자산',n.fedAssetsUsdM?'$'+f(parseFloat(n.fedAssetsUsdM)/1e6,2)+'T':'--',''],
+    ['미국 재무부 잔고',n.treasuryAccountUsdM?'$'+f(parseFloat(n.treasuryAccountUsdM)/1e3,1)+'B':'--',''],
+    ['유동성 신호',n.signalLabel||'--',n.signal==='EXPANDING'?'gr':'re'],
     ['해석',n.signalDescription||'--',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
@@ -379,10 +382,10 @@ function renderNetLiquidity(d){
 function renderStablecoin(d){
   const s=d.api_dashboard_stablecoin_supply||{};
   el('stbl-rows').innerHTML=[
-    ['총 시총','$'+f(parseFloat(s.totalMarketCapUsd||0)/1e9,1)+'B',''],
-    ['30일 전 시총','$'+f(parseFloat(s.marketCap30dAgoUsd||0)/1e9,1)+'B',''],
-    ['30일 성장률',s.growth30dPercent?sgn(s.growth30dPercent)+pct(s.growth30dPercent):'--',parseFloat(s.growth30dPercent)>0?'gr':'re'],
-    ['신호',s.signalLabel||'--',s.signal==='EXPANDING'?'gr':s.signal==='CONTRACTING'?'re':'ye'],
+    ['스테이블코인 총 시가총액','$'+f(parseFloat(s.totalMarketCapUsd||0)/1e9,1)+'B',''],
+    ['30일 전 시가총액','$'+f(parseFloat(s.marketCap30dAgoUsd||0)/1e9,1)+'B',''],
+    ['30일 증가율',s.growth30dPercent?sgn(s.growth30dPercent)+pct(s.growth30dPercent):'--',parseFloat(s.growth30dPercent)>0?'gr':'re'],
+    ['판단',s.signalLabel||'--',s.signal==='EXPANDING'?'gr':s.signal==='CONTRACTING'?'re':'ye'],
     ['해석',s.signalDescription||'--',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
@@ -391,11 +394,11 @@ function renderStablecoin(d){
 function renderTiming(d){
   const t=d.api_dashboard_buy_timing||{},m=d.api_dashboard||{};
   el('timing-rows').innerHTML=[
-    ['시장 국면',t.marketSeason||'--',''],
-    ['권장 포지션',t.positionSizePct?pct(t.positionSizePct,0):'--',''],
-    ['DCA 분할',t.dcaSplits?t.dcaSplits+'회':'--',''],['DCA 간격',t.dcaIntervalDays?t.dcaIntervalDays+'일':'--',''],
-    ['목표가',t.targetPrice?'$'+f(t.targetPrice,0):'--','gr'],['손절가',t.stopLossPrice?'$'+f(t.stopLossPrice,0):'--','re'],
-    ['반감기 경과',m.halvingDaysAfter?m.halvingDaysAfter+'일':'--',''],['반감기 단계',m.halvingPhase||'--',''],
+    ['현재 시장 국면',t.marketSeason||'--',''],
+    ['권장 투입 비중',t.positionSizePct?pct(t.positionSizePct,0):'--',''],
+    ['DCA 분할 횟수',t.dcaSplits?t.dcaSplits+'회':'--',''],['DCA 간격',t.dcaIntervalDays?t.dcaIntervalDays+'일':'--',''],
+    ['목표 가격',t.targetPrice?'$'+f(t.targetPrice,0):'--','gr'],['손절 가격',t.stopLossPrice?'$'+f(t.stopLossPrice,0):'--','re'],
+    ['반감기 이후 경과일',m.halvingDaysAfter?m.halvingDaysAfter+'일':'--',''],['반감기 단계',m.halvingPhase||'--',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -423,10 +426,10 @@ function renderForecast(d){
   const fc=d.api_dashboard_forecast||{};
   el('fc-rows').innerHTML=[
     ['오늘 점수',fc.todayScore??'--',''],
-    ['예측 점수',fc.predictedScore??'--',fc.predictedScore>fc.todayScore?'gr':'re'],
-    ['변화',fc.scoreDiff!=null?(fc.scoreDiff>0?'+':'')+fc.scoreDiff:'--',fc.scoreDiff>0?'gr':'re'],
-    ['신뢰도 R²',f(fc.r2,3),''],
-    ['신뢰 구간',fc.confidenceLow?`${fc.confidenceLow} ~ ${fc.confidenceHigh}`:'--',''],
+    ['내일 예상 점수',fc.predictedScore??'--',fc.predictedScore>fc.todayScore?'gr':'re'],
+    ['예상 변화',fc.scoreDiff!=null?(fc.scoreDiff>0?'+':'')+fc.scoreDiff:'--',fc.scoreDiff>0?'gr':'re'],
+    ['예측 신뢰도 (R²)',f(fc.r2,3),''],
+    ['예측 신뢰 구간',fc.confidenceLow?`${fc.confidenceLow} ~ ${fc.confidenceHigh}`:'--',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -435,10 +438,10 @@ function renderWhale(d){
   const w=d.api_dashboard_whale_activity||{};
   const cc=w.signal==='ACCUMULATING'?'gr':w.signal==='DISTRIBUTING'?'re':'ye';
   el('whale-rows').innerHTML=[
-    ['활동 레벨',w.activityLevel||'--',''],
-    ['신호',w.signal||'--',cc],
-    ['7일 순유입',w.netFlowSum7d?f(w.netFlowSum7d,0)+' BTC':'--',parseFloat(w.netFlowSum7d)>0?'re':'gr'],
-    ['7일 보유 변화',w.reserveChange7d?sgn(w.reserveChange7d)+f(w.reserveChange7d,0)+' BTC':'--',''],
+    ['고래 활동 강도',w.activityLevel||'--',''],
+    ['판단',w.signal||'--',cc],
+    ['7일 거래소 유입 (+는 매도 압력)',w.netFlowSum7d?f(w.netFlowSum7d,0)+' BTC':'--',parseFloat(w.netFlowSum7d)>0?'re':'gr'],
+    ['7일 보유량 변화',w.reserveChange7d?sgn(w.reserveChange7d)+f(w.reserveChange7d,0)+' BTC':'--',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -447,10 +450,10 @@ function renderStructure(d){
   const s=d.api_dashboard_market_structure||{};
   const cc=s.structure?.includes('강세')?'gr':s.structure?.includes('약세')?'re':'ye';
   el('str-rows').innerHTML=[
-    ['구조',s.structure||'--',cc],
-    ['직전 고점',s.lastHigh?'$'+f(s.lastHigh,0):'--',''],['직전 저점',s.lastLow?'$'+f(s.lastLow,0):'--',''],
-    ['다음 저항',s.nextResistance?'$'+f(s.nextResistance,0):'--','re'],
-    ['다음 지지',s.nextSupport?'$'+f(s.nextSupport,0):'--','gr'],
+    ['시장 구조',s.structure||'--',cc],
+    ['최근 고점',s.lastHigh?'$'+f(s.lastHigh,0):'--',''],['최근 저점',s.lastLow?'$'+f(s.lastLow,0):'--',''],
+    ['다음 저항선 (막힐 수 있는 가격)',s.nextResistance?'$'+f(s.nextResistance,0):'--','re'],
+    ['다음 지지선 (버텨줄 수 있는 가격)',s.nextSupport?'$'+f(s.nextSupport,0):'--','gr'],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -458,9 +461,9 @@ function renderStructure(d){
 function renderAltRows(d){
   const a=d.api_dashboard_altcoin||{},il=d.api_dashboard_illiquid_supply||{};
   el('alt-rows').innerHTML=[
-    ['알트시즌 지수',f(a.altSeasonIndex,0),''],['알트시즌 레이블',a.altseasonLabel||'--',''],
-    ['BTC 도미넌스',a.btcDominance?a.btcDominance+'%':'--',''],['ETH/BTC',f(a.ethBtcPerformance,4),''],
-    ['비유동 공급 비율',il.percentFormatted||'--',''],['비유동 신호',il.label||'--',''],
+    ['알트시즌 지수',f(a.altSeasonIndex,0),''],['알트시즌 상태',a.altseasonLabel||'--',''],
+    ['BTC 시장 점유율',a.btcDominance?a.btcDominance+'%':'--',''],['ETH/BTC 가격 비율',f(a.ethBtcPerformance,4),''],
+    ['장기 보유(비유동) 비율',il.percentFormatted||'--',''],['장기 보유 신호',il.label||'--',''],
   ].map(([l,v,c])=>row(l,v,c)).join('');
 }
 
@@ -643,14 +646,25 @@ function renderScoreHeatmap(d){
 }
 
 // 지표 분해
+const INDICATOR_NAMEMAP={
+  '공포탐욕':'공포탐욕 지수','펀딩비':'펀딩비','롱숏비율':'롱/숏 비율','테이커비율':'테이커 매수/매도',
+  'OI비율':'미결제약정 비율','BTC도미넌스':'BTC 점유율','김치프리미엄':'김치 프리미엄',
+  'RSI(일)':'RSI 일봉','RSI(주)':'RSI 주봉','MVRV Z':'MVRV-Z 지수','스테이블코인':'스테이블코인',
+  'ETH/BTC':'ETH/BTC 비율','MA200비율':'200일 평균 비율','Puell Multiple':'Puell Multiple',
+  'Active Addresses':'활성 지갑 수','Hash Rate':'채굴 강도','DXY':'달러 지수',
+  'S&P500':'S&P 500','Put/Call':'옵션 Put/Call','VIX':'공포 지수 (VIX)',
+  'NUPL':'NUPL','SOPR':'SOPR','NVT':'NVT 비율','M2Growth':'M2 증가율',
+  'FFR':'기준금리','US10Y':'미국채 10년','Gold':'금 가격','SP500':'S&P 500'
+};
 function renderBreakdown(d){
   const bd=d.api_dashboard?.indicatorBreakdown||{};
   const c=el('breakdown');if(!c)return;
   c.innerHTML=Object.entries(bd).map(([k,v])=>{
     const col=scBar(v);
+    const displayName=INDICATOR_NAMEMAP[k]||k;
     return`<div class="bd-card">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-        <span style="color:var(--mu);font-size:11px">${k}</span>
+        <span style="color:var(--mu);font-size:11px">${displayName}</span>
         <span style="color:${col};font-weight:900;font-size:16px">${v}</span>
       </div>
       <div class="prog"><div class="prog-fill" style="width:${v}%;background:${col}"></div></div>
