@@ -1,3 +1,13 @@
+// ── 섹션 접기/펼치기 ──────────────────────────────────────────────────
+function toggleSec(id){
+  const body=document.getElementById(id);
+  const btn=document.getElementById('btn-'+id);
+  if(!body||!btn)return;
+  const isOpen=body.classList.contains('open');
+  body.classList.toggle('open',!isOpen);
+  btn.textContent=isOpen?'▼ 자세히 보기':'▲ 접기';
+}
+
 // ── 파티클 배경 ──────────────────────────────────────────────────────
 (function particles(){
   const canvas=document.getElementById('particles'),ctx=canvas.getContext('2d');
@@ -84,6 +94,7 @@ async function init(){
 
   renderUpdateBanner(snap.updatedAt);
   renderHero(d);
+  renderBeginnerSummary(d);
   renderTicker(d);
   renderKpi(d);
   renderAiDigest(d);
@@ -113,6 +124,76 @@ async function init(){
 
   // 스크롤 리빌 등록
   setTimeout(()=>{document.querySelectorAll('.card').forEach(c=>io.observe(c))},100);
+}
+
+// 초보자 5분 요약
+function renderBeginnerSummary(d){
+  const c=el('beg-grid');if(!c)return;
+  const m=d.api_dashboard||{};
+  const t=d.api_dashboard_technical||{};
+  const o=d.api_dashboard_onchain||{};
+  const mac=d.api_dashboard_macro||{};
+  const w=d.api_dashboard_whale_activity||{};
+
+  const fg=m.fearGreed??50;
+  const rsi=parseFloat(t.rsiDaily||50);
+  const ma200Dist=parseFloat(t.ma200DistancePct||0);
+  const mvrvZ=parseFloat(o.mvrvZScore??2);
+  const nupl=parseFloat(o.nupl??0.3);
+  const dxy=parseFloat(mac.dxy||100);
+  const vix=parseFloat(mac.vix||20);
+  const netFlow=parseFloat(o.exchangeNetFlow||0);
+  const whaleSignal=w.signal||'';
+
+  // 1. 시장 분위기 (공포탐욕)
+  let fgIcon,fgStatus,fgColor,fgDesc;
+  if(fg<=20){fgIcon='😱';fgStatus='극도 공포';fgColor='gr';fgDesc='투자자 대부분이 겁먹은 상태예요. 역사적으로 좋은 매수 타이밍이었어요.';}
+  else if(fg<=40){fgIcon='😰';fgStatus='공포';fgColor='gr';fgDesc='투자자들이 불안해하고 있어요. 비교적 좋은 매수 시점일 수 있어요.';}
+  else if(fg<=60){fgIcon='😐';fgStatus='중립';fgColor='ye';fgDesc='시장이 방향을 잡지 못하고 관망 중이에요.';}
+  else if(fg<=80){fgIcon='😄';fgStatus='탐욕';fgColor='or';fgDesc='투자자들이 낙관적인 상태예요. 고점에 가까울 수 있어요.';}
+  else{fgIcon='🤑';fgStatus='극도 탐욕';fgColor='re';fgDesc='시장이 과열된 상태예요. 신중한 접근이 필요해요.';}
+
+  // 2. 가격 추세 (RSI + MA200)
+  let tIcon,tStatus,tColor,tDesc;
+  if(rsi<=35&&ma200Dist<0){tIcon='📉';tStatus='하락, 반등 가능';tColor='gr';tDesc=`RSI ${rsi.toFixed(0)}으로 과매도 구간이에요. 반등이 올 수 있어요.`;}
+  else if(rsi>=70){tIcon='🔥';tStatus='과열, 조정 주의';tColor='re';tDesc=`RSI ${rsi.toFixed(0)}으로 단기 과매수 상태예요. 조정이 올 수 있어요.`;}
+  else if(ma200Dist>5){tIcon='🚀';tStatus='강한 상승 추세';tColor='gr';tDesc=`200일 평균보다 ${ma200Dist.toFixed(1)}% 높아요. 중장기 상승 추세예요.`;}
+  else if(ma200Dist>=0){tIcon='📈';tStatus='상승 추세';tColor='gr';tDesc='200일 이동평균 위에 있어요. 전반적으로 상승 추세예요.';}
+  else{tIcon='📊';tStatus='하락 추세';tColor='re';tDesc=`200일 평균보다 ${Math.abs(ma200Dist).toFixed(1)}% 낮아요. 아직 약세 구간이에요.`;}
+
+  // 3. 온체인 건강도 (MVRV-Z + NUPL)
+  let cIcon,cStatus,cColor,cDesc;
+  const cScore=(mvrvZ<1?3:mvrvZ<2?2:mvrvZ<4?1:0)+(nupl<0.25?2:nupl<0.5?1:0);
+  if(cScore>=4){cIcon='🟢';cStatus='저평가 구간';cColor='gr';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 역사적으로 코인이 저렴하게 거래되고 있어요.`;}
+  else if(cScore>=2){cIcon='🟡';cStatus='적정 수준';cColor='ye';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 코인 가격이 적정 수준이에요.`;}
+  else{cIcon='🔴';cStatus='고평가 주의';cColor='re';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 역사적으로 고가 구간이에요. 신중하게 접근하세요.`;}
+
+  // 4. 글로벌 경제 (DXY + VIX)
+  let mIcon,mStatus,mColor,mDesc;
+  if(vix>30){mIcon='🌪';mStatus='글로벌 불안';mColor='re';mDesc=`공포 지수(VIX) ${vix.toFixed(0)} — 금융 불안이 높아 BTC에 부정적이에요.`;}
+  else if(dxy>106){mIcon='💵';mStatus='달러 강세';mColor='re';mDesc=`달러 지수 ${dxy.toFixed(1)} — 달러가 강해서 위험 자산에 불리해요.`;}
+  else if(dxy<100&&vix<20){mIcon='🌤';mStatus='매크로 우호적';mColor='gr';mDesc=`달러 ${dxy.toFixed(1)}, VIX ${vix.toFixed(0)} — 글로벌 환경이 BTC에 유리해요.`;}
+  else{mIcon='⚖️';mStatus='보통 수준';mColor='ye';mDesc=`달러 ${dxy.toFixed(1)}, VIX ${vix.toFixed(0)} — 글로벌 경제가 평온한 편이에요.`;}
+
+  // 5. 고래(큰손) 동향
+  let wIcon,wStatus,wColor,wDesc;
+  if(whaleSignal==='ACCUMULATING'||netFlow<-500){wIcon='🐋';wStatus='쌓는 중';wColor='gr';wDesc='큰손 투자자들이 코인을 사서 모으고 있어요. 긍정적인 신호예요.';}
+  else if(whaleSignal==='DISTRIBUTING'||netFlow>2000){wIcon='🚨';wStatus='팔고 있음';wColor='re';wDesc='큰손 투자자들이 코인을 거래소에 보내고 있어요. 매도 압력이 있어요.';}
+  else{wIcon='🌊';wStatus='관망 중';wColor='ye';wDesc='큰손 투자자들이 뚜렷한 움직임 없이 지켜보고 있어요.';}
+
+  const cards=[
+    {icon:fgIcon,label:'시장 분위기',status:fgStatus,color:fgColor,desc:fgDesc},
+    {icon:tIcon,label:'가격 추세',status:tStatus,color:tColor,desc:tDesc},
+    {icon:cIcon,label:'온체인 건강도',status:cStatus,color:cColor,desc:cDesc},
+    {icon:mIcon,label:'글로벌 경제',status:mStatus,color:mColor,desc:mDesc},
+    {icon:wIcon,label:'고래(큰손) 동향',status:wStatus,color:wColor,desc:wDesc},
+  ];
+  c.innerHTML=cards.map(card=>`<div class="beg-card">
+    <div class="beg-icon">${card.icon}</div>
+    <div class="beg-lbl">${card.label}</div>
+    <div class="beg-status ${card.color}">${card.status}</div>
+    <div class="beg-desc">${card.desc}</div>
+  </div>`).join('');
 }
 
 // ① 히어로

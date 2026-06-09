@@ -166,6 +166,28 @@ tr:hover td{background:rgba(23,32,53,.6)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-txt{color:var(--mu);font-size:13px;letter-spacing:.5px}
 
+/* ── 초보자 요약 ── */
+.beg-panel{background:linear-gradient(135deg,var(--sf),#0e1b30);border:1px solid var(--bd2);border-radius:14px;padding:22px;opacity:1!important;transform:none!important}
+.beg-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.beg-header-icon{font-size:24px;flex-shrink:0}
+.beg-header-title{font-size:14px;font-weight:800;color:var(--tx)}
+.beg-header-sub{font-size:11px;color:var(--mu);margin-top:3px}
+.beg-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.beg-card{background:var(--sf2);border:1px solid var(--bd);border-radius:10px;padding:16px 12px;text-align:center;transition:border-color .2s,transform .2s}
+.beg-card:hover{border-color:var(--bd2);transform:translateY(-2px)}
+.beg-icon{font-size:28px;margin-bottom:8px;line-height:1}
+.beg-lbl{font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+.beg-status{font-size:13px;font-weight:800;margin-bottom:8px;line-height:1.2}
+.beg-desc{font-size:11px;color:var(--mu);line-height:1.6;word-break:keep-all}
+
+/* ── 섹션 접기/펼치기 ── */
+.sec-toggle{display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;margin:4px 0}
+.sec-toggle-inner{flex:1}
+.sec-toggle-btn{font-size:11px;font-weight:700;color:var(--bl);white-space:nowrap;padding:4px 12px;border:1px solid rgba(59,158,255,.3);border-radius:12px;background:rgba(59,158,255,.07);transition:background .2s,color .2s;flex-shrink:0}
+.sec-toggle:hover .sec-toggle-btn{background:rgba(59,158,255,.18);color:var(--tx)}
+.sec-body{display:none;flex-direction:column;gap:16px}
+.sec-body.open{display:flex}
+
 /* ── 반응형 ── */
 @media(max-width:1100px){
   .g4{grid-template-columns:repeat(2,1fr)}
@@ -254,6 +276,12 @@ tr:hover td{background:rgba(23,32,53,.6)}
 
   /* 구분선 */
   .divider span{white-space:normal;letter-spacing:0}
+
+  /* 초보자 요약 */
+  .beg-grid{grid-template-columns:1fr 1fr}
+  .beg-icon{font-size:22px}
+  .beg-status{font-size:12px}
+  .beg-desc{font-size:10px}
 
   /* 지표 분해 */
   #breakdown{grid-template-columns:repeat(2,1fr)!important}
@@ -427,6 +455,18 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     <span style="color:var(--mu2)">· 매일 오전 9시 5분 KST 자동 갱신</span>
   </div>
 
+  <!-- 초보자 5분 요약 -->
+  <div class="beg-panel">
+    <div class="beg-header">
+      <div class="beg-header-icon">🔰</div>
+      <div>
+        <div class="beg-header-title">지금 상황 한눈에 — 초보자용 5분 요약</div>
+        <div class="beg-header-sub">복잡한 수치 없이 핵심만 정리했습니다. 각 항목을 보고 지금 시장을 파악해 보세요.</div>
+      </div>
+    </div>
+    <div class="beg-grid" id="beg-grid"></div>
+  </div>
+
   <!-- ② KPI -->
   <div class="kpi-grid">
     <div class="kpi" style="--accent:var(--bl)"><div class="kpi-lbl">어제보다</div><div class="kpi-val" id="k-delta">--</div><div class="kpi-hint" id="k-avg"></div></div>
@@ -474,7 +514,11 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--re))"></div>주간 수익률 히트맵</div><div id="cycle-heatmap" style="overflow-x:auto"></div></div>
   </div>
 
-  <div class="divider"><span>🔬 세부 지표 분석</span></div>
+  <div class="sec-toggle" onclick="toggleSec('sec-detail')">
+    <div class="sec-toggle-inner"><div class="divider" style="margin:0"><span>🔬 세부 지표 분석</span></div></div>
+    <div class="sec-toggle-btn" id="btn-sec-detail">▼ 자세히 보기</div>
+  </div>
+  <div class="sec-body" id="sec-detail">
 
   <!-- ⑤ 전체 지표 테이블 -->
   <div class="card">
@@ -494,7 +538,13 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--ye))"></div>글로벌 경제 지표</div><div id="macro-rows"></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 4px">💵 달러 지수 DXY (30일)</div><div class="ch ch-sm"><canvas id="dxy-ch"></canvas></div><div style="font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 4px">📈 미국 주식시장 S&P 500 (30일)</div><div class="ch ch-sm"><canvas id="sp500-ch"></canvas></div></div>
   </div>
 
-  <div class="divider"><span>⚡ 파생 · 유동성 분석</span></div>
+  </div><!-- /sec-detail -->
+
+  <div class="sec-toggle" onclick="toggleSec('sec-deriv')">
+    <div class="sec-toggle-inner"><div class="divider" style="margin:0"><span>⚡ 파생 · 유동성 분석</span></div></div>
+    <div class="sec-toggle-btn" id="btn-sec-deriv">▼ 자세히 보기</div>
+  </div>
+  <div class="sec-body" id="sec-deriv">
 
   <!-- ⑧ 청산 + 상관관계 -->
   <div class="g2">
@@ -509,7 +559,13 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--ye))"></div>스테이블코인 공급 현황</div><div id="stbl-rows"></div></div>
   </div>
 
-  <div class="divider"><span>🎯 매수 타이밍 · 예측</span></div>
+  </div><!-- /sec-deriv -->
+
+  <div class="sec-toggle" onclick="toggleSec('sec-timing')">
+    <div class="sec-toggle-inner"><div class="divider" style="margin:0"><span>🎯 매수 타이밍 · 예측</span></div></div>
+    <div class="sec-toggle-btn" id="btn-sec-timing">▼ 자세히 보기</div>
+  </div>
+  <div class="sec-body" id="sec-timing">
 
   <!-- ⑩ 타이밍 + 체크리스트 -->
   <div class="g2">
@@ -531,23 +587,41 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--or),var(--pu))"></div>알트코인 & 장기 보유 현황</div><div id="alt-rows"></div></div>
   </div>
 
+  </div><!-- /sec-timing -->
+
   <!-- B-07~10: 성과 & 계절성 -->
-  <div class="divider"><span>📅 과거 성과 통계</span></div>
+  <div class="sec-toggle" onclick="toggleSec('sec-perf')">
+    <div class="sec-toggle-inner"><div class="divider" style="margin:0"><span>📅 과거 성과 통계</span></div></div>
+    <div class="sec-toggle-btn" id="btn-sec-perf">▼ 자세히 보기</div>
+  </div>
+  <div class="sec-body" id="sec-perf">
   <div class="g2">
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>요일별 평균 수익률</div><div class="ch ch-md"><canvas id="dow-ch"></canvas></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--bl),var(--pu))"></div>기간별 수익률 요약</div><div id="period-rows"></div></div>
   </div>
   <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--gr))"></div>30일 점수 히트맵 — 날짜별 색상</div><div id="score-heatmap" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px"></div></div>
 
+  </div><!-- /sec-perf -->
+
   <!-- B-13~15: 고급 분석 -->
-  <div class="divider"><span>🎯 고급 분석</span></div>
+  <div class="sec-toggle" onclick="toggleSec('sec-advanced')">
+    <div class="sec-toggle-inner"><div class="divider" style="margin:0"><span>🎯 고급 분석</span></div></div>
+    <div class="sec-toggle-btn" id="btn-sec-advanced">▼ 자세히 보기</div>
+  </div>
+  <div class="sec-body" id="sec-advanced">
   <div class="g2">
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--ye),var(--or))"></div>점수 × 공포탐욕 국면 매트릭스</div><div id="regime-matrix"></div></div>
     <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--gr),var(--bl))"></div>DCA 전략 백테스트 결과</div><div id="backtest-rows"></div></div>
   </div>
   <div class="card"><div class="ct"><div class="ct-bar" style="background:linear-gradient(180deg,var(--pu),var(--bl))"></div>30일 지표 신호 추이 매트릭스</div><div id="signal-matrix" style="overflow-x:auto;margin-top:8px"></div></div>
 
-  <div class="divider"><span>📊 지표별 기여도</span></div>
+  </div><!-- /sec-advanced -->
+
+  <div class="sec-toggle" onclick="toggleSec('sec-breakdown')">
+    <div class="sec-toggle-inner"><div class="divider" style="margin:0"><span>📊 지표별 기여도</span></div></div>
+    <div class="sec-toggle-btn" id="btn-sec-breakdown">▼ 자세히 보기</div>
+  </div>
+  <div class="sec-body" id="sec-breakdown">
 
   <!-- ⑫ 지표 분해 -->
   <div class="card">
@@ -555,6 +629,7 @@ footer{text-align:center;color:var(--mu2);font-size:11px;padding:24px;border-top
     <div id="breakdown" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:8px"></div>
   </div>
 
+  </div><!-- /sec-breakdown -->
 </main>
 
 <footer style="background:var(--sf);border-top:1px solid var(--bd);padding:32px 24px 24px;position:relative;z-index:1">
