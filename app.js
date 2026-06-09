@@ -82,7 +82,7 @@ function mkChart(id,labels,datasets,opts={}){
 async function init(){
   let snap;
   try{const r=await fetch('./data/snapshot.json?t='+Date.now());snap=await r.json()}
-  catch(e){el('loading').innerHTML='<div style="color:#ff3d5a;font-size:14px">⚠ 데이터 로드 실패<br><span style="font-size:12px;color:#5a7899">'+e.message+'</span></div>';return}
+  catch(e){el('loading').innerHTML='<div style="color:#ff3d5a;font-size:14px">데이터 로드 실패<br><span style="font-size:12px;color:#5a7899">'+e.message+'</span></div>';return}
 
   el('loading').style.opacity='0';el('loading').style.transition='opacity .4s';
   setTimeout(()=>{el('loading').style.display='none';el('main').style.display='flex'},400);
@@ -146,50 +146,50 @@ function renderBeginnerSummary(d){
   const whaleSignal=w.signal||'';
 
   // 1. 시장 분위기 (공포탐욕)
-  let fgIcon,fgStatus,fgColor,fgDesc;
-  if(fg<=20){fgIcon='😱';fgStatus='극도 공포';fgColor='gr';fgDesc='투자자 대부분이 겁먹은 상태예요. 역사적으로 좋은 매수 타이밍이었어요.';}
-  else if(fg<=40){fgIcon='😰';fgStatus='공포';fgColor='gr';fgDesc='투자자들이 불안해하고 있어요. 비교적 좋은 매수 시점일 수 있어요.';}
-  else if(fg<=60){fgIcon='😐';fgStatus='중립';fgColor='ye';fgDesc='시장이 방향을 잡지 못하고 관망 중이에요.';}
-  else if(fg<=80){fgIcon='😄';fgStatus='탐욕';fgColor='or';fgDesc='투자자들이 낙관적인 상태예요. 고점에 가까울 수 있어요.';}
-  else{fgIcon='🤑';fgStatus='극도 탐욕';fgColor='re';fgDesc='시장이 과열된 상태예요. 신중한 접근이 필요해요.';}
+  let fgStatus,fgColor,fgDesc;
+  if(fg<=20){fgStatus='극도 공포';fgColor='gr';fgDesc='투자자 대부분이 겁먹은 상태예요. 역사적으로 좋은 매수 타이밍이었어요.';}
+  else if(fg<=40){fgStatus='공포';fgColor='gr';fgDesc='투자자들이 불안해하고 있어요. 비교적 좋은 매수 시점일 수 있어요.';}
+  else if(fg<=60){fgStatus='중립';fgColor='ye';fgDesc='시장이 방향을 잡지 못하고 관망 중이에요.';}
+  else if(fg<=80){fgStatus='탐욕';fgColor='or';fgDesc='투자자들이 낙관적인 상태예요. 고점에 가까울 수 있어요.';}
+  else{fgStatus='극도 탐욕';fgColor='re';fgDesc='시장이 과열된 상태예요. 신중한 접근이 필요해요.';}
 
   // 2. 가격 추세 (RSI + MA200)
-  let tIcon,tStatus,tColor,tDesc;
-  if(rsi<=35&&ma200Dist<0){tIcon='📉';tStatus='하락, 반등 가능';tColor='gr';tDesc=`RSI ${rsi.toFixed(0)}으로 과매도 구간이에요. 반등이 올 수 있어요.`;}
-  else if(rsi>=70){tIcon='🔥';tStatus='과열, 조정 주의';tColor='re';tDesc=`RSI ${rsi.toFixed(0)}으로 단기 과매수 상태예요. 조정이 올 수 있어요.`;}
-  else if(ma200Dist>5){tIcon='🚀';tStatus='강한 상승 추세';tColor='gr';tDesc=`200일 평균보다 ${ma200Dist.toFixed(1)}% 높아요. 중장기 상승 추세예요.`;}
-  else if(ma200Dist>=0){tIcon='📈';tStatus='상승 추세';tColor='gr';tDesc='200일 이동평균 위에 있어요. 전반적으로 상승 추세예요.';}
-  else{tIcon='📊';tStatus='하락 추세';tColor='re';tDesc=`200일 평균보다 ${Math.abs(ma200Dist).toFixed(1)}% 낮아요. 아직 약세 구간이에요.`;}
+  let tStatus,tColor,tDesc;
+  if(rsi<=35&&ma200Dist<0){tStatus='하락, 반등 가능';tColor='gr';tDesc=`RSI ${rsi.toFixed(0)}으로 과매도 구간이에요. 반등이 올 수 있어요.`;}
+  else if(rsi>=70){tStatus='과열, 조정 주의';tColor='re';tDesc=`RSI ${rsi.toFixed(0)}으로 단기 과매수 상태예요. 조정이 올 수 있어요.`;}
+  else if(ma200Dist>5){tStatus='강한 상승 추세';tColor='gr';tDesc=`200일 평균보다 ${ma200Dist.toFixed(1)}% 높아요. 중장기 상승 추세예요.`;}
+  else if(ma200Dist>=0){tStatus='상승 추세';tColor='gr';tDesc='200일 이동평균 위에 있어요. 전반적으로 상승 추세예요.';}
+  else{tStatus='하락 추세';tColor='re';tDesc=`200일 평균보다 ${Math.abs(ma200Dist).toFixed(1)}% 낮아요. 아직 약세 구간이에요.`;}
 
   // 3. 온체인 건강도 (MVRV-Z + NUPL)
-  let cIcon,cStatus,cColor,cDesc;
+  let cStatus,cColor,cDesc;
   const cScore=(mvrvZ<1?3:mvrvZ<2?2:mvrvZ<4?1:0)+(nupl<0.25?2:nupl<0.5?1:0);
-  if(cScore>=4){cIcon='🟢';cStatus='저평가 구간';cColor='gr';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 역사적으로 코인이 저렴하게 거래되고 있어요.`;}
-  else if(cScore>=2){cIcon='🟡';cStatus='적정 수준';cColor='ye';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 코인 가격이 적정 수준이에요.`;}
-  else{cIcon='🔴';cStatus='고평가 주의';cColor='re';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 역사적으로 고가 구간이에요. 신중하게 접근하세요.`;}
+  if(cScore>=4){cStatus='저평가 구간';cColor='gr';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 역사적으로 코인이 저렴하게 거래되고 있어요.`;}
+  else if(cScore>=2){cStatus='적정 수준';cColor='ye';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 코인 가격이 적정 수준이에요.`;}
+  else{cStatus='고평가 주의';cColor='re';cDesc=`MVRV-Z ${mvrvZ.toFixed(1)} — 역사적으로 고가 구간이에요. 신중하게 접근하세요.`;}
 
   // 4. 글로벌 경제 (DXY + VIX)
-  let mIcon,mStatus,mColor,mDesc;
-  if(vix>30){mIcon='🌪';mStatus='글로벌 불안';mColor='re';mDesc=`공포 지수(VIX) ${vix.toFixed(0)} — 금융 불안이 높아 BTC에 부정적이에요.`;}
-  else if(dxy>106){mIcon='💵';mStatus='달러 강세';mColor='re';mDesc=`달러 지수 ${dxy.toFixed(1)} — 달러가 강해서 위험 자산에 불리해요.`;}
-  else if(dxy<100&&vix<20){mIcon='🌤';mStatus='매크로 우호적';mColor='gr';mDesc=`달러 ${dxy.toFixed(1)}, VIX ${vix.toFixed(0)} — 글로벌 환경이 BTC에 유리해요.`;}
-  else{mIcon='⚖️';mStatus='보통 수준';mColor='ye';mDesc=`달러 ${dxy.toFixed(1)}, VIX ${vix.toFixed(0)} — 글로벌 경제가 평온한 편이에요.`;}
+  let mStatus,mColor,mDesc;
+  if(vix>30){mStatus='글로벌 불안';mColor='re';mDesc=`공포 지수(VIX) ${vix.toFixed(0)} — 금융 불안이 높아 BTC에 부정적이에요.`;}
+  else if(dxy>106){mStatus='달러 강세';mColor='re';mDesc=`달러 지수 ${dxy.toFixed(1)} — 달러가 강해서 위험 자산에 불리해요.`;}
+  else if(dxy<100&&vix<20){mStatus='매크로 우호적';mColor='gr';mDesc=`달러 ${dxy.toFixed(1)}, VIX ${vix.toFixed(0)} — 글로벌 환경이 BTC에 유리해요.`;}
+  else{mStatus='보통 수준';mColor='ye';mDesc=`달러 ${dxy.toFixed(1)}, VIX ${vix.toFixed(0)} — 글로벌 경제가 평온한 편이에요.`;}
 
   // 5. 고래(큰손) 동향
-  let wIcon,wStatus,wColor,wDesc;
-  if(whaleSignal==='ACCUMULATING'||netFlow<-500){wIcon='🐋';wStatus='쌓는 중';wColor='gr';wDesc='큰손 투자자들이 코인을 사서 모으고 있어요. 긍정적인 신호예요.';}
-  else if(whaleSignal==='DISTRIBUTING'||netFlow>2000){wIcon='🚨';wStatus='팔고 있음';wColor='re';wDesc='큰손 투자자들이 코인을 거래소에 보내고 있어요. 매도 압력이 있어요.';}
-  else{wIcon='🌊';wStatus='관망 중';wColor='ye';wDesc='큰손 투자자들이 뚜렷한 움직임 없이 지켜보고 있어요.';}
+  let wStatus,wColor,wDesc;
+  if(whaleSignal==='ACCUMULATING'||netFlow<-500){wStatus='쌓는 중';wColor='gr';wDesc='큰손 투자자들이 코인을 사서 모으고 있어요. 긍정적인 신호예요.';}
+  else if(whaleSignal==='DISTRIBUTING'||netFlow>2000){wStatus='팔고 있음';wColor='re';wDesc='큰손 투자자들이 코인을 거래소에 보내고 있어요. 매도 압력이 있어요.';}
+  else{wStatus='관망 중';wColor='ye';wDesc='큰손 투자자들이 뚜렷한 움직임 없이 지켜보고 있어요.';}
 
+  const colVar={gr:'var(--gr)',re:'var(--re)',ye:'var(--ye)',or:'var(--or)',bl:'var(--bl)'};
   const cards=[
-    {icon:fgIcon,label:'시장 분위기',status:fgStatus,color:fgColor,desc:fgDesc},
-    {icon:tIcon,label:'가격 추세',status:tStatus,color:tColor,desc:tDesc},
-    {icon:cIcon,label:'온체인 건강도',status:cStatus,color:cColor,desc:cDesc},
-    {icon:mIcon,label:'글로벌 경제',status:mStatus,color:mColor,desc:mDesc},
-    {icon:wIcon,label:'고래(큰손) 동향',status:wStatus,color:wColor,desc:wDesc},
+    {label:'시장 분위기',status:fgStatus,color:fgColor,desc:fgDesc},
+    {label:'가격 추세',status:tStatus,color:tColor,desc:tDesc},
+    {label:'온체인 건강도',status:cStatus,color:cColor,desc:cDesc},
+    {label:'글로벌 경제',status:mStatus,color:mColor,desc:mDesc},
+    {label:'고래(큰손) 동향',status:wStatus,color:wColor,desc:wDesc},
   ];
-  c.innerHTML=cards.map(card=>`<div class="beg-card">
-    <div class="beg-icon">${card.icon}</div>
+  c.innerHTML=cards.map(card=>`<div class="beg-card" style="border-top:2px solid ${colVar[card.color]||'var(--bd)'}">
     <div class="beg-lbl">${card.label}</div>
     <div class="beg-status ${card.color}">${card.status}</div>
     <div class="beg-desc">${card.desc}</div>
@@ -286,7 +286,7 @@ function renderExpert(d){
   const c=ex.verdictColor==='green'?'gr':ex.verdictColor==='red'?'re':'ye';
   const vEl=el('ex-verdict');if(vEl){vEl.textContent=ex.verdict||'--';vEl.className='rv '+c}
   txt('ex-sum',ex.summary||'');
-  const wEl=el('ex-watch');if(wEl){if(ex.keyWatch){wEl.innerHTML='👁 '+ex.keyWatch}else{wEl.style.display='none'}}
+  const wEl=el('ex-watch');if(wEl){if(ex.keyWatch){wEl.innerHTML='주목: '+ex.keyWatch}else{wEl.style.display='none'}}
   const list=el('ex-sigs');if(!list)return;
   const sigs=[...(ex.bullishSignals||[]).map(s=>({t:s,c:'gr'})),...(ex.bearishSignals||[]).map(s=>({t:s,c:'re'})),...(ex.neutralSignals||[]).map(s=>({t:s,c:'ye'}))].slice(0,10);
   list.innerHTML=sigs.map(s=>`<div class="sig"><div class="sig-dot" style="background:var(--${s.c})"></div><span>${s.t}</span></div>`).join('');
@@ -497,7 +497,7 @@ function renderChecklist(d){
     <p style="font-size:11px;color:var(--mu);margin-top:8px">${c.levelDescription||''}</p>`;
   el('chk-items').innerHTML=(c.items||[]).map(it=>`
     <div class="chk">
-      <span style="font-size:15px;flex-shrink:0">${it.passed?'✅':'❌'}</span>
+      <span style="font-size:13px;font-weight:900;flex-shrink:0;color:${it.passed?'var(--gr)':'var(--mu2)'}">${it.passed?'통과':'미통과'}</span>
       <span><span style="color:${it.passed?'var(--tx)':'var(--mu)'};font-weight:${it.passed?600:400}">${it.name||it.label||'--'}</span>${it.reason?`<br><span style="color:var(--mu2);font-size:11px">${it.reason}</span>`:''}</span>
     </div>`).join('');
 }
@@ -564,13 +564,13 @@ function renderAiDigest(d){
     <span style="color:var(--mu2);font-size:10px;margin-left:auto">${ts}</span>
   </div>`;
 
-  const typeIcon={SUMMARY:'📋',RISK:'⚠️',ACTION:'🎯',OPPORTUNITY:'✅'};
+  const typeTag={SUMMARY:'요약',RISK:'위험',ACTION:'행동',OPPORTUNITY:'기회'};
   const typeCol={SUMMARY:'var(--bl)',RISK:'var(--re)',ACTION:'var(--gr)',OPPORTUNITY:'var(--gr)'};
   secs.innerHTML=(ai.sections||[]).map(s=>{
-    const icon=typeIcon[s.type]||'•';
+    const tag=typeTag[s.type]||'';
     const col=typeCol[s.type]||'var(--mu)';
     return`<div style="display:flex;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)">
-      <span style="font-size:14px;flex-shrink:0;margin-top:1px">${icon}</span>
+      ${tag?`<span style="flex-shrink:0;font-size:10px;font-weight:700;color:${col};padding:2px 7px;border:1px solid ${col}44;border-radius:10px;height:fit-content;margin-top:2px">${tag}</span>`:''}
       <span style="font-size:12px;color:var(--tx);line-height:1.6">${s.content}</span>
     </div>`;
   }).join('');
@@ -634,7 +634,7 @@ function renderRegimeMatrix(d){
       const active=rm.quadrant===q.q;
       return`<div style="padding:12px;border-radius:8px;border:1px solid ${active?q.col:'var(--bd)'};background:${active?q.col+'22':'transparent'};text-align:center">
         <div style="font-size:10px;font-weight:700;color:${q.col};text-transform:uppercase;letter-spacing:.5px">${q.q}</div>
-        <div style="font-size:12px;font-weight:700;color:${active?q.col:'var(--tx)'};margin:4px 0">${q.label}${active?' ✓':''}</div>
+        <div style="font-size:12px;font-weight:700;color:${active?q.col:'var(--tx)'};margin:4px 0">${q.label}${active?' (현재)':''}</div>
         <div style="font-size:10px;color:var(--mu)">${q.desc}</div>
       </div>`;
     }).join('')
