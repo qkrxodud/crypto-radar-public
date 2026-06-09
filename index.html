@@ -190,6 +190,100 @@
   .loading-ring{width:48px;height:48px;border:3px solid rgba(255,255,255,.1);border-top-color:var(--brand);border-radius:50%;animation:spin 1s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
   #main{display:none}
+
+  /* ── 모바일 공통 (768px 이하) ── */
+  @media(max-width:768px){
+    html,body{overflow-x:hidden;max-width:100vw}
+    *{min-width:0;box-sizing:border-box}
+    .wrap{padding:0 14px}
+    .page-head{padding:20px 0 6px}
+    .page-head h1{font-size:22px}
+    .page-head .upd{font-size:11px;flex-wrap:wrap;line-height:1.6;gap:4px}
+    section.block{padding:12px 0}
+    .card{padding:16px}
+    .sub-card{padding:14px}
+    .acc>summary{padding:13px 16px}
+    .acc .acc-body{padding:4px 14px 16px}
+  }
+
+  /* ── 소형 모바일 (480px 이하) ── */
+  @media(max-width:480px){
+    /* 네비 */
+    .nav-inner{padding:10px 14px}
+    .brand{font-size:14px;gap:8px}
+    .brand .dot{width:24px;height:24px;border-radius:7px}
+    .brand .dot::after{width:6px;height:6px}
+
+    /* score-card — 게이지/텍스트 세로 스택 */
+    .score-card{grid-template-columns:1fr;gap:14px;text-align:center}
+    .gauge{width:130px;margin:0 auto}
+    .gauge-read .gv{font-size:28px}
+    .score-meta{text-align:left}
+    .state-badge{justify-content:flex-start;white-space:normal;font-size:14px;flex-wrap:wrap}
+    .delta{font-size:12px;white-space:normal;flex-wrap:wrap;height:auto}
+    .score-meta p{max-width:100%;margin-top:8px}
+
+    /* 아코디언 summary */
+    .acc>summary{font-size:13px;gap:8px}
+    .acc>summary .lt{white-space:normal;word-break:keep-all}
+    .acc>summary .cnt{display:none}
+
+    /* 차트 카드 헤더 */
+    .chart-card .ch-top{flex-wrap:wrap;gap:3px}
+    .chart-card .ch-title{white-space:normal;font-size:14px}
+    .chart-card .ch-val{text-align:left;margin-top:2px}
+
+    /* 히트맵 — 6열로 축소 */
+    .heat{grid-template-columns:repeat(6,1fr);gap:4px}
+    .heat span{font-size:9px}
+
+    /* 지표 기여도 */
+    .corr-row{grid-template-columns:70px 1fr 36px;font-size:11px;gap:7px}
+
+    /* stat-list 라벨 overflow 방지 */
+    .stat-list .sl{font-size:12px;gap:8px;flex-wrap:wrap}
+    .stat-list .sl .lk{white-space:normal;word-break:keep-all;flex:1;min-width:60%}
+    .stat-list .sl .lv{flex-shrink:0;font-size:12px}
+
+    /* 테이블 */
+    .tbl{font-size:12px}
+    .tbl th{padding:0 8px 10px;font-size:10px}
+    .tbl td{padding:10px 8px}
+    .tbl .scorebar{width:70px}
+    .tbl .scorebar .sv{font-size:11px}
+
+    /* 체크리스트 */
+    .check{padding:10px 0;gap:10px}
+    .check .ct{font-size:13px}
+    .check .cv{font-size:11px}
+
+    /* 카테고리 */
+    .cat-row{grid-template-columns:100px 1fr 40px;gap:10px}
+    .cat-row .nm{font-size:12.5px}
+    .cat-row .nm small{font-size:10px}
+    .cat-row .sc{font-size:14px}
+
+    /* 사이클 틱 레이블 */
+    .cycle .ticks{font-size:9.5px}
+
+    /* 예측 박스 */
+    .pred-box .pv{font-size:36px}
+
+    /* 반응형 그리드 min-width 0 강제 */
+    .acc-grid,.three-col,.two-col,.chart-grid,.status{gap:12px}
+    .sum-cell .v{font-size:18px}
+    .sum-cell .v.s{font-size:15px}
+  }
+
+  /* ── 극소형 (360px 이하) ── */
+  @media(max-width:360px){
+    .wrap{padding:0 10px}
+    .brand span{display:none}  /* 로고 텍스트 숨김, dot만 */
+    .gauge{width:110px}
+    .gauge-read .gv{font-size:24px}
+    .cat-row{grid-template-columns:88px 1fr 36px}
+    .heat{grid-template-columns:repeat(5,1fr)}
+  }
 </style>
 </head>
 <body>
@@ -207,7 +301,6 @@
     <nav class="nav-links">
       <a class="active" href="index.html">대시보드</a>
       <a href="guide.html">지표 가이드</a>
-      <a href="about.html">소개</a>
       <a href="contact.html">문의</a>
     </nav>
     <div class="nav-pill"><span class="pulse"></span>LIVE · 09:05 KST</div>
