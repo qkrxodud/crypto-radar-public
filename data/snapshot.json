@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-10T17:04:29Z",
+  "updatedAt": "2026-06-10T17:24:40Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "61839.99",
       "macd": {
-        "macdLine": "-4125.82",
-        "signalLine": "-3379.49",
-        "histogram": "-746.34",
+        "macdLine": "-4123.38",
+        "signalLine": "-3379.00",
+        "histogram": "-744.39",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000054",
       "ivRv": {
-        "iv": "43.22",
+        "iv": "45.98",
         "rv": "38.00",
-        "spread": "+5.22",
+        "spread": "+7.98",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2690,63 +2690,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62255.30",
-      "openInterestUsd": "6246299457.68400000",
+      "currentPrice": "62017.90",
+      "openInterestUsd": "6240239696.98720000",
       "longAccountRatio": "0.6690",
       "shortAccountRatio": "0.3310",
-      "downsideLiquidationUsd": "4178774337.19",
-      "upsideLiquidationUsd": "2067525120.49",
+      "downsideLiquidationUsd": "4174720357.28",
+      "upsideLiquidationUsd": "2065519339.70",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56029.77",
+          "price": "55816.11",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1671509734.88"
+          "notionalUsd": "1669888142.91"
         },
         {
-          "price": "68480.83",
+          "price": "68219.69",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "827010048.20"
+          "notionalUsd": "826207735.88"
         },
         {
-          "price": "59765.09",
+          "price": "59537.18",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1462571018.02"
+          "notionalUsd": "1461152125.05"
         },
         {
-          "price": "64745.51",
+          "price": "64498.62",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "723633792.17"
+          "notionalUsd": "722931768.90"
         },
         {
-          "price": "61010.19",
+          "price": "60777.54",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "835754867.44"
+          "notionalUsd": "834944071.46"
         },
         {
-          "price": "63500.41",
+          "price": "63258.26",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "413505024.10"
+          "notionalUsd": "413103867.94"
         },
         {
-          "price": "61632.75",
+          "price": "61397.72",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208938716.86"
+          "notionalUsd": "208736017.86"
         },
         {
-          "price": "62877.85",
+          "price": "62638.08",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "103376256.02"
+          "notionalUsd": "103275966.99"
         }
       ],
       "errorMessage": null
@@ -4026,8 +4026,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-10T16:05:03.841427Z",
-      "compositeScore": "-0.106",
+      "generatedAt": "2026-06-10T17:07:39.639660Z",
+      "compositeScore": "-0.031",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4035,74 +4035,81 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Crypto Long & Short: Who answers the 3am call when DeFi breaks?",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/coindesk-indices/2026/06/10/crypto-long-and-short-who-answers-the-3am-call-when-defi-breaks",
+          "publishedAt": "2026-06-10T16:20:10Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Netomi CEO says $5 trillion AI customer experience market could boost stablecoin demand",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/10/netomi-ceo-says-usd5-trillion-ai-customer-experience-market-could-boost-stablecoin-demand",
+          "publishedAt": "2026-06-10T16:17:18Z",
+          "score": "0.4"
+        },
+        {
+          "title": "The quantum clock is ticking: it's Bitcoin's problem, not Ethereum's",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/opinion/2026/06/10/the-quantum-clock-is-ticking-it-s-bitcoin-s-problem-not-ethereum-s",
+          "publishedAt": "2026-06-10T16:07:00Z",
+          "score": "-0.7"
+        },
+        {
+          "title": "Mastercard prepares for a future where AI agents make payments",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/10/mastercard-prepares-for-a-future-where-ai-agents-make-payments-with-latest-introduction",
+          "publishedAt": "2026-06-10T16:00:54Z",
+          "score": "0.2"
+        },
+        {
           "title": "Prediction markets get first U.S. rule proposal as CFTC pursues contract reviews",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/10/prediction-markets-get-first-u-s-rule-proposal-as-cftc-proposes-contract-reviews",
           "publishedAt": "2026-06-10T13:58:41Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Michael Saylor gets into public debate over claims that Strategy's latest share sale was dilutive",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/10/michael-saylor-in-x-back-and-forth-over-claims-strategy-s-latest-share-sale-was-dilutive",
           "publishedAt": "2026-06-10T13:56:41Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "CoinDesk 20 performance update: Index drops 1.4% as all constituents decline",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/10/coindesk-20-performance-update-index-drops-1-4-as-all-constituents-decline",
           "publishedAt": "2026-06-10T13:23:13Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "World Series of Poker adds Solana payments for tournament buy-ins",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/09/world-series-of-poker-adds-solana-payments-for-tournament-buy-ins",
           "publishedAt": "2026-06-10T13:00:00Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Bitcoin trims losses after core CPI rises less than feared 0.2% in May",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/10/u-s-inflation-meets-expectations-reinforcing-fed-s-higher-for-longer-stance",
-          "publishedAt": "2026-06-10T12:42:24Z",
           "score": "0.5"
         },
         {
-          "title": "A 'Bitcoin DeFi' project just shut down with a brutal post-mortem: Users just didn't care",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/10/a-bitcoin-defi-project-just-shut-down-with-a-brutal-post-mortem-users-just-didn-t-care",
-          "publishedAt": "2026-06-10T12:00:29Z",
-          "score": "-0.7"
-        },
-        {
-          "title": "The inflation scenario that could send bitcoin tumbling below $60,000",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/06/10/the-inflation-scenario-that-could-send-bitcoin-tumbling-below-usd60-000",
-          "publishedAt": "2026-06-10T11:20:23Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "Zcash, Hyperliquid tokens lead losses as traders bet against a bitcoin bounce",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/10/zcash-hyperliquid-tokens-lead-losses-as-traders-bet-against-a-bitcoin-bounce",
-          "publishedAt": "2026-06-10T10:52:54Z",
-          "score": "-0.4"
+          "title": "Bitcoin rises despite US inflation hitting 3-year high: Where will BTC price go?",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-rises-despite-us-inflation-hitting-3-year-high-where-will-btc-price-go?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-10T15:54:35Z",
+          "score": "0.6"
         },
         {
           "title": "Onchain gambling keeps rolling with $14B quarter despite crypto slump: TRM Labs",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/onchain-gambling-market-pullback-trm-labs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T15:00:00Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "AI deepfake election ad in Minnesota raises transparency concerns",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/features/ai-deepfake-election-ad-in-minnesota-raises-transparency-concerns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T15:00:00Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "Tenev says Robinhood won underwriter approval as crypto markets front-run mega IPOs",
@@ -4116,7 +4123,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-outflows-sentiment-shock-structural-crisis-coinshares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T14:08:44Z",
-          "score": "0.1"
+          "score": "-0.4"
         },
         {
           "title": "Pyth unveils continuous pricing indexes for US stocks and commodities",
@@ -4130,21 +4137,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-may-slip-under-30k-as-institutions-dump-450-of-daily-btc-supply?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T13:11:03Z",
-          "score": "-0.5"
+          "score": "-0.8"
         },
         {
           "title": "Equipment finance platform Trad.Fi to bring $650M in private credit onchain",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/equipment-finance-tradfi-650m-private-credit-onchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T12:09:04Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Botanix to shut down after 4 years, cites weak demand for Bitcoin DeFi",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/botanix-says-it-didnt-work-as-bitcoin-scaling-platform-shuts-down-sets-withdrawal-deadline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-10T11:45:36Z",
-          "score": "-0.8"
+          "score": "0.4"
         }
       ],
       "errorMessage": null
