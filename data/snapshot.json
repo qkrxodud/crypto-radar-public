@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-10T18:04:44Z",
+  "updatedAt": "2026-06-10T18:24:55Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "61839.99",
       "macd": {
-        "macdLine": "-4124.63",
-        "signalLine": "-3379.25",
-        "histogram": "-745.38",
+        "macdLine": "-4137.16",
+        "signalLine": "-3381.75",
+        "histogram": "-755.40",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000054",
       "ivRv": {
-        "iv": "46.21",
+        "iv": "46.08",
         "rv": "38.00",
-        "spread": "+8.21",
+        "spread": "+8.08",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2690,63 +2690,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "61980.00",
-      "openInterestUsd": "6216969426.05760000",
-      "longAccountRatio": "0.6720",
-      "shortAccountRatio": "0.3280",
-      "downsideLiquidationUsd": "4177803454.31",
-      "upsideLiquidationUsd": "2039165971.75",
+      "currentPrice": "61844.50",
+      "openInterestUsd": "6211296320.82492900",
+      "longAccountRatio": "0.6712",
+      "shortAccountRatio": "0.3288",
+      "downsideLiquidationUsd": "4169022090.54",
+      "upsideLiquidationUsd": "2042274230.29",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "55782.00",
+          "price": "55660.05",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1671121381.72"
+          "notionalUsd": "1667608836.22"
         },
         {
-          "price": "68178.00",
+          "price": "68028.95",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "815666388.70"
+          "notionalUsd": "816909692.11"
         },
         {
-          "price": "59500.80",
+          "price": "59370.72",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1462231209.01"
+          "notionalUsd": "1459157731.69"
         },
         {
-          "price": "64459.20",
+          "price": "64318.28",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "713708090.11"
+          "notionalUsd": "714795980.60"
         },
         {
-          "price": "60740.40",
+          "price": "60607.61",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "835560690.86"
+          "notionalUsd": "833804418.11"
         },
         {
-          "price": "63219.60",
+          "price": "63081.39",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "407833194.35"
+          "notionalUsd": "408454846.06"
         },
         {
-          "price": "61360.20",
+          "price": "61226.06",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208890172.72"
+          "notionalUsd": "208451104.53"
         },
         {
-          "price": "62599.80",
+          "price": "62462.95",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "101958298.59"
+          "notionalUsd": "102113711.51"
         }
       ],
       "errorMessage": null
@@ -4026,8 +4026,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-10T17:07:39.639660Z",
-      "compositeScore": "-0.031",
+      "generatedAt": "2026-06-10T18:07:42.473732Z",
+      "compositeScore": "0.038",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4035,11 +4035,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Coinbase-backed Stand With Crypto calls on members to campaign against banks blocking digital asset transactions",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/10/over-280-000-uk-crypto-holders-kick-off-campaign-against-banks-blocking-transactions",
+          "publishedAt": "2026-06-10T17:53:09Z",
+          "score": "0.2"
+        },
+        {
           "title": "Crypto Long & Short: Who answers the 3am call when DeFi breaks?",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/10/crypto-long-and-short-who-answers-the-3am-call-when-defi-breaks",
           "publishedAt": "2026-06-10T16:20:10Z",
-          "score": "-0.5"
+          "score": "0.0"
         },
         {
           "title": "Netomi CEO says $5 trillion AI customer experience market could boost stablecoin demand",
@@ -4053,14 +4060,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/06/10/the-quantum-clock-is-ticking-it-s-bitcoin-s-problem-not-ethereum-s",
           "publishedAt": "2026-06-10T16:07:00Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Mastercard prepares for a future where AI agents make payments",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/10/mastercard-prepares-for-a-future-where-ai-agents-make-payments-with-latest-introduction",
           "publishedAt": "2026-06-10T16:00:54Z",
-          "score": "0.2"
+          "score": "0.3"
+        },
+        {
+          "title": "Kalshi now requires users to reveal employers as it fights insider trading and market manipulation",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/10/kalshi-now-requires-users-to-reveal-employers-as-it-fights-insider-trading-and-market-manipulation",
+          "publishedAt": "2026-06-10T14:49:43Z",
+          "score": "-0.2"
         },
         {
           "title": "Prediction markets get first U.S. rule proposal as CFTC pursues contract reviews",
@@ -4077,39 +4091,32 @@
           "score": "-0.3"
         },
         {
-          "title": "CoinDesk 20 performance update: Index drops 1.4% as all constituents decline",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/coindesk-indices/2026/06/10/coindesk-20-performance-update-index-drops-1-4-as-all-constituents-decline",
-          "publishedAt": "2026-06-10T13:23:13Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "World Series of Poker adds Solana payments for tournament buy-ins",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/09/world-series-of-poker-adds-solana-payments-for-tournament-buy-ins",
-          "publishedAt": "2026-06-10T13:00:00Z",
-          "score": "0.5"
+          "title": "Anchorage backs Treasuryâs GENIUS AML rules, seeks secondary-market sanctions clarity",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/anchorage-backs-treasurys-genius-aml-rules-seeks-secondary-market-sanctions-clarity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-10T17:20:02Z",
+          "score": "0.0"
         },
         {
           "title": "Bitcoin rises despite US inflation hitting 3-year high: Where will BTC price go?",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-rises-despite-us-inflation-hitting-3-year-high-where-will-btc-price-go?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T15:54:35Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Onchain gambling keeps rolling with $14B quarter despite crypto slump: TRM Labs",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/onchain-gambling-market-pullback-trm-labs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T15:00:00Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "AI deepfake election ad in Minnesota raises transparency concerns",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/features/ai-deepfake-election-ad-in-minnesota-raises-transparency-concerns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T15:00:00Z",
-          "score": "-0.2"
+          "score": "-0.1"
         },
         {
           "title": "Tenev says Robinhood won underwriter approval as crypto markets front-run mega IPOs",
@@ -4123,7 +4130,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-outflows-sentiment-shock-structural-crisis-coinshares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T14:08:44Z",
-          "score": "-0.4"
+          "score": "0.1"
         },
         {
           "title": "Pyth unveils continuous pricing indexes for US stocks and commodities",
@@ -4137,14 +4144,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-may-slip-under-30k-as-institutions-dump-450-of-daily-btc-supply?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-10T13:11:03Z",
-          "score": "-0.8"
-        },
-        {
-          "title": "Equipment finance platform Trad.Fi to bring $650M in private credit onchain",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/equipment-finance-tradfi-650m-private-credit-onchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-10T12:09:04Z",
-          "score": "0.4"
+          "score": "-0.6"
         }
       ],
       "errorMessage": null
