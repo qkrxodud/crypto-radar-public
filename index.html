@@ -198,12 +198,26 @@
     .wrap{padding:0 14px}
     .page-head{padding:20px 0 6px}
     .page-head h1{font-size:22px}
-    .page-head .upd{font-size:11px;flex-wrap:wrap;line-height:1.6;gap:4px}
+    .page-head .upd{font-size:11px;flex-wrap:wrap;line-height:1.6;gap:4px;
+      overflow:hidden;max-width:100%}
+    /* 긴 갱신 텍스트 말줄임 */
+    .page-head .upd #updTime{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100vw - 52px)}
     section.block{padding:12px 0}
     .card{padding:16px}
     .sub-card{padding:14px}
     .acc>summary{padding:13px 16px}
     .acc .acc-body{padding:4px 14px 16px}
+  }
+
+  /* ── 모바일 score-card 세로 스택 (600px 이하) ── */
+  @media(max-width:600px){
+    .score-card{grid-template-columns:1fr!important;gap:14px!important;text-align:center}
+    .gauge{width:130px!important;margin:0 auto}
+    .gauge-read .gv{font-size:28px}
+    .score-meta{text-align:left}
+    .state-badge{justify-content:flex-start;white-space:normal;font-size:14px;flex-wrap:wrap}
+    .delta{font-size:12px;white-space:normal;flex-wrap:wrap;height:auto}
+    .score-meta p{max-width:100%!important;margin-top:8px;word-break:keep-all;overflow-wrap:break-word}
   }
 
   /* ── 소형 모바일 (480px 이하) ── */
@@ -213,15 +227,6 @@
     .brand{font-size:14px;gap:8px}
     .brand .dot{width:24px;height:24px;border-radius:7px}
     .brand .dot::after{width:6px;height:6px}
-
-    /* score-card — 게이지/텍스트 세로 스택 */
-    .score-card{grid-template-columns:1fr;gap:14px;text-align:center}
-    .gauge{width:130px;margin:0 auto}
-    .gauge-read .gv{font-size:28px}
-    .score-meta{text-align:left}
-    .state-badge{justify-content:flex-start;white-space:normal;font-size:14px;flex-wrap:wrap}
-    .delta{font-size:12px;white-space:normal;flex-wrap:wrap;height:auto}
-    .score-meta p{max-width:100%;margin-top:8px}
 
     /* 아코디언 summary */
     .acc>summary{font-size:13px;gap:8px}
