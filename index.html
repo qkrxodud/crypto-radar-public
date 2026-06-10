@@ -1037,14 +1037,17 @@ async function init(){
 
   animateGauge(SCORE);
 
-  /* 스크롤 기반 바 애니메이션 */
-  var barsDone=false;
+  /* 스크롤 기반 바 애니메이션 — rAF 스로틀 */
+  var barsDone=false,barsTick=false;
   function checkBars(){
     if(barsDone)return;
     var cl=ge('catList');
     if(cl&&cl.getBoundingClientRect().top<window.innerHeight*0.9){barsDone=true;animateBars();}
+    barsTick=false;
   }
-  window.addEventListener('scroll',checkBars,{passive:true});
+  window.addEventListener('scroll',function(){
+    if(!barsTick&&!barsDone){barsTick=true;requestAnimationFrame(checkBars);}
+  },{passive:true});
   setTimeout(checkBars,600);
 }
 
