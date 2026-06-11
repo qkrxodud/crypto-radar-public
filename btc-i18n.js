@@ -84,6 +84,7 @@
     /* signalMeta 라벨 (매집/분배) */
     '강력 매집': { en: 'Strong Accumulation', zh: '强力吸筹' },
     '완만한 매집': { en: 'Mild Accumulation', zh: '温和吸筹' },
+    '매집 우세': { en: 'Accumulation', zh: '吸筹占优' },
     '분배 우세': { en: 'Distribution', zh: '派发占优' },
     '강력 분배': { en: 'Strong Distribution', zh: '强力派发' },
 
