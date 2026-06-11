@@ -13,6 +13,10 @@
 <meta property="og:title" content="BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드" data-en-content="BTC Investment Timing Radar — Comprehensive Bitcoin Indicator Dashboard" data-zh-content="BTC 投资择时雷达 — 比特币综合指标仪表盘">
 <meta property="og:description" content="비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 대시보드. 매일 오전 9시 5분 갱신." data-en-content="A free dashboard analyzing 25+ Bitcoin market indicators daily. Updated every day at 09:05 KST." data-zh-content="每日自动分析25+个比特币市场指标的免费仪表盘。每天 09:05 KST 更新。">
 <meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드" data-en-content="BTC Investment Timing Radar — Comprehensive Bitcoin Indicator Dashboard" data-zh-content="BTC 投资择时雷达 — 比特币综合指标仪表盘">
+<meta name="twitter:description" content="비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 대시보드. 매일 오전 9시 5분 갱신." data-en-content="A free dashboard analyzing 25+ Bitcoin market indicators daily. Updated every day at 09:05 KST." data-zh-content="每日自动分析25+个比特币市场指标的免费仪表盘。每天 09:05 KST 更新。">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <script src="./btc-i18n.js" defer></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -295,6 +299,35 @@
     .heat{grid-template-columns:repeat(5,1fr)}
   }
 </style>
+<!-- 구조화 데이터: 사이트 + 웹 애플리케이션 (구글 리치결과) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "BTC 투자 타이밍 레이더",
+      "alternateName": "BTC 타이밍 레이더",
+      "url": "https://btctiming.co.kr/",
+      "inLanguage": "ko"
+    },
+    {
+      "@type": "WebApplication",
+      "name": "BTC 투자 타이밍 레이더",
+      "url": "https://btctiming.co.kr/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "ko",
+      "description": "비트코인 시장의 25개 이상 지표(RSI, MVRV-Z, SOPR, 공포탐욕지수, 펀딩비 등)를 매일 자동 분석하는 무료 대시보드입니다.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div id="loading">
