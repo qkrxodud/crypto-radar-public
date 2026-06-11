@@ -195,7 +195,14 @@
   /* STEPS */
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px;counter-reset:s}
   @media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
-  @media(max-width:520px){.steps{grid-template-columns:1fr}}
+  @media(max-width:520px){
+    .steps{grid-template-columns:1fr}
+    /* 1컬럼 구간: 번호 배지 ↔ 제목 가로 배치, 설명은 아래 전체 폭 */
+    .step{display:flex;flex-wrap:wrap;align-items:center;column-gap:12px;row-gap:0}
+    .step .num{margin-bottom:0;flex-shrink:0}
+    .step h3{flex:1;margin-bottom:0;min-width:0;word-break:keep-all}
+    .step p{flex-basis:100%;margin-top:9px}
+  }
   .step{background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:24px 22px;position:relative;overflow:hidden}
   .step .num{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--brand);background:var(--brand-soft);width:34px;height:34px;border-radius:9px;display:grid;place-items:center;margin-bottom:16px}
   .step h3{font-size:17px;font-weight:700;margin-bottom:7px}
@@ -286,6 +293,13 @@
     .card{padding:18px}
     .panel{padding:22px 18px}
 
+    /* ── 모바일 1컬럼: 아이콘 ↔ 제목 가로 배치, 설명은 아래 전체 폭 (카드 높이 축소) ── */
+    /* .grid-3는 820px에서 1컬럼이지만 실제 모바일(≤768px)에서만 가로 배치 적용 */
+    .card{display:flex;flex-wrap:wrap;align-items:center;column-gap:13px;row-gap:0}
+    .card .ic{margin-bottom:0;flex-shrink:0}
+    .card h3{flex:1;margin-bottom:0;min-width:0;word-break:keep-all}
+    .card p{flex-basis:100%;margin-top:11px}
+
     /* 면책조항 */
     .disclaimer{font-size:12px;padding:14px 16px}
   }
@@ -298,6 +312,12 @@
     .step{padding:18px 16px}
     .copy{flex-direction:column;gap:6px;font-size:11px}
     .foot-grid h4{margin-bottom:10px}
+
+    /* 1컬럼 구간: 4가지 약속 카드도 아이콘 ↔ 제목 가로 배치, 설명은 아래 전체 폭 */
+    .val{display:flex;flex-wrap:wrap;align-items:center;column-gap:13px;row-gap:0}
+    .val .vi{margin-bottom:0;flex-shrink:0}
+    .val h3{flex:1;margin-bottom:0;min-width:0;word-break:keep-all}
+    .val p{flex-basis:100%;margin-top:10px}
   }
 
   @media(prefers-reduced-motion:reduce){
