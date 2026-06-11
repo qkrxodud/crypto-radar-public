@@ -384,9 +384,22 @@
   function injectStyle() {
     if (document.getElementById('btc-i18n-style')) return;
     var css =
+      /* ── 헤더 겹침 방지(회귀 수정) ──────────────────────────────────────
+       * 스위처 주입으로 헤더 폭이 늘면, white-space:nowrap인 .brand 텍스트가
+       * 박스 밖으로 오버플로하며 CTA/스위처와 겹쳤다. 두 헤더 구조(브랜드가 a /
+       * 브랜드가 div) 모두에 공통 적용한다. 페이지 CSS는 건드리지 않고
+       * 이 주입 스타일(head 최후미 삽입 → 동일 특정성에서 우선)로 해소한다.
+       *  - .brand: 줄어들 수 있게(min-width:0, flex-shrink:1)
+       *  - .brand 텍스트 span(로고 .dot 제외): 말줄임 처리
+       *  - .dot / CTA / nav-pill / 스위처: 찌그러지지 않게 flex-shrink:0 */
+      'header.nav .nav-inner .brand{min-width:0;flex-shrink:1;overflow:hidden}' +
+      'header.nav .nav-inner .brand>span:not(.dot){min-width:0;overflow:hidden;' +
+      'text-overflow:ellipsis;white-space:nowrap}' +
+      'header.nav .nav-inner .brand .dot{flex-shrink:0}' +
+      'header.nav .nav-inner .nav-cta,header.nav .nav-inner .nav-pill{flex-shrink:0}' +
       '.btc-lang{display:inline-flex;align-items:center;gap:2px;font-family:var(--mono);' +
       'font-size:12px;background:rgba(255,255,255,.05);border:1px solid var(--border);' +
-      'border-radius:100px;padding:3px;margin-left:4px;flex:none}' +
+      'border-radius:100px;padding:3px;margin-left:4px;flex:none;flex-shrink:0}' +
       '.btc-lang button{appearance:none;border:0;background:transparent;color:var(--muted);' +
       'font:inherit;cursor:pointer;padding:4px 9px;border-radius:100px;line-height:1;' +
       'transition:.16s;white-space:nowrap}' +
@@ -396,7 +409,9 @@
       /* 모바일: 헤더가 좁아도 스위처는 항상 보이게. nav-pill만 숨고 스위처는 유지 */
       '@media(max-width:820px){.btc-lang{margin-left:auto}}' +
       '@media(max-width:480px){.btc-lang{font-size:11px}.btc-lang button{padding:4px 7px}}' +
-      '@media(max-width:360px){.btc-lang button{padding:3px 5px}}';
+      /* 극소형: 스위처를 컴팩트화해 brand 텍스트 가용폭 확보 */
+      '@media(max-width:360px){.btc-lang{gap:0;margin-left:8px;padding:2px}' +
+      '.btc-lang button{padding:3px 5px}}';
     var st = document.createElement('style');
     st.id = 'btc-i18n-style';
     st.textContent = css;
