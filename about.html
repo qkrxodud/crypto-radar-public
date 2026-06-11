@@ -164,8 +164,7 @@
   @media(max-width:860px){.gauge-wrap{grid-template-columns:1fr;gap:36px}}
   .gauge{position:relative;width:100%;max-width:440px;margin:0 auto}
   .gauge svg{width:100%;height:auto;overflow:visible}
-  .gauge .needle{transform-origin:200px 200px;transition:transform 1.6s cubic-bezier(.34,1.3,.5,1)}
-  .gauge-read{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);text-align:center}
+  .gauge-read{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%);text-align:center}
   .gauge-read .gv{font-family:var(--mono);font-size:46px;font-weight:800;line-height:1;color:#fff}
   .gauge-read .gl{font-size:13px;color:var(--muted);letter-spacing:.04em;margin-top:3px}
   .zones{display:flex;flex-direction:column;gap:12px}
@@ -463,11 +462,7 @@
           </defs>
           <path d="M40 200 A160 160 0 0 1 360 200" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="26" stroke-linecap="round"/>
           <path d="M40 200 A160 160 0 0 1 360 200" fill="none" stroke="url(#gaugeGrad)" stroke-width="26" stroke-linecap="round" id="gaugeArc"/>
-          <g class="needle" id="needle">
-            <line x1="200" y1="200" x2="200" y2="70" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="200" cy="200" r="11" fill="#fff"/>
-            <circle cx="200" cy="200" r="5" fill="#080b14"/>
-          </g>
+          <circle id="gaugeDot" cx="40" cy="200" r="13" fill="#fff" stroke="rgba(8,11,20,.6)" stroke-width="4" style="filter:drop-shadow(0 0 9px rgba(255,255,255,.5))"/>
           <text x="40" y="232" fill="#6c7795" font-size="13" font-family="var(--mono)" text-anchor="middle">0</text>
           <text x="360" y="232" fill="#6c7795" font-size="13" font-family="var(--mono)" text-anchor="middle">100</text>
         </svg>
@@ -684,9 +679,16 @@
   gaugeArc.style.strokeDasharray=len;
   gaugeArc.style.strokeDashoffset=len;
   gaugeArc.style.transition='stroke-dashoffset 1.6s cubic-bezier(.16,1,.3,1)';
-  var needle=document.getElementById('needle');
-  needle.style.transform='rotate(-90deg)';
+  var gaugeDot=document.getElementById('gaugeDot');
   var gv=document.getElementById('gaugeVal');
+  // 점수 비율을 호(중심 200,200 / 반지름 160) 위의 좌표로 변환
+  function placeDot(score){
+    if(!gaugeDot) return;
+    var ang=Math.PI*(1-score/100); // 0점→왼쪽(π), 100점→오른쪽(0)
+    gaugeDot.setAttribute('cx',(200+160*Math.cos(ang)).toFixed(1));
+    gaugeDot.setAttribute('cy',(200-160*Math.sin(ang)).toFixed(1));
+  }
+  placeDot(0); // 시작 위치(0점, 왼쪽 끝)
   var afterEl=document.getElementById('afterScore');
 
   /* ---- 뷰포트 진입 체크 (IntersectionObserver는 프리뷰 iframe에서 미발화 → rect 방식) ---- */
@@ -712,7 +714,14 @@
     if(gs && !gs.dataset.done && inView(gs,0.25)){
       gs.dataset.done=1;
       gaugeArc.style.strokeDashoffset=0;
-      needle.style.transform='rotate('+(TODAY/100*180-90)+'deg)';
+      // 점을 호 위에서 0→TODAY 까지 부드럽게 이동
+      var ds=performance.now();
+      (function dotTick(now){
+        var p=Math.min((now-ds)/1600,1);
+        var e=1-Math.pow(1-p,3);
+        placeDot(TODAY*e);
+        if(p<1) requestAnimationFrame(dotTick);
+      })(ds);
       animateNum(gv,TODAY,1600);
     }
     // 카테고리 바
