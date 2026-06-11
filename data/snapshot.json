@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-11T19:51:53Z",
+  "updatedAt": "2026-06-11T20:12:08Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "61574.52",
       "macd": {
-        "macdLine": "-3992.67",
-        "signalLine": "-3520.71",
-        "histogram": "-471.95",
+        "macdLine": "-4006.13",
+        "signalLine": "-3523.41",
+        "histogram": "-482.73",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -432,9 +432,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000046",
       "ivRv": {
-        "iv": "39.63",
+        "iv": "40.08",
         "rv": "38.00",
-        "spread": "+1.63",
+        "spread": "+2.08",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2634,12 +2634,12 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261491888380.14123",
+      "totalMarketCapUsd": "261547585117.53733",
       "marketCap30dAgoUsd": "266891157236.9735",
-      "growth30dPercent": "-2.02",
-      "signal": "CONTRACTING",
-      "signalLabel": "공급 축소",
-      "signalDescription": "자금 이탈/상환 — 약세 압력",
+      "growth30dPercent": "-2.00",
+      "signal": "STABLE",
+      "signalLabel": "중립",
+      "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
       "errorMessage": null
     },
     "api_dashboard_net_liquidity": {
@@ -2705,63 +2705,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63658.70",
-      "openInterestUsd": "6327425024.84578800",
-      "longAccountRatio": "0.6181",
-      "shortAccountRatio": "0.3819",
-      "downsideLiquidationUsd": "3910981407.86",
-      "upsideLiquidationUsd": "2416443616.99",
+      "currentPrice": "63493.00",
+      "openInterestUsd": "6308716392.81650000",
+      "longAccountRatio": "0.6169",
+      "shortAccountRatio": "0.3831",
+      "downsideLiquidationUsd": "3891847142.73",
+      "upsideLiquidationUsd": "2416869250.09",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57292.83",
+          "price": "57143.70",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1564392563.14"
+          "notionalUsd": "1556738857.09"
         },
         {
-          "price": "70024.57",
+          "price": "69842.30",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "966577446.80"
+          "notionalUsd": "966747700.04"
         },
         {
-          "price": "61112.35",
+          "price": "60953.28",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1368843492.75"
+          "notionalUsd": "1362146499.95"
         },
         {
-          "price": "66205.05",
+          "price": "66032.72",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "845755265.95"
+          "notionalUsd": "845904237.53"
         },
         {
-          "price": "62385.53",
+          "price": "62223.14",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "782196281.57"
+          "notionalUsd": "778369428.55"
         },
         {
-          "price": "64931.87",
+          "price": "64762.86",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "483288723.40"
+          "notionalUsd": "483373850.02"
         },
         {
-          "price": "63022.11",
+          "price": "62858.07",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "195549070.39"
+          "notionalUsd": "194592357.14"
         },
         {
-          "price": "64295.29",
+          "price": "64127.93",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "120822180.85"
+          "notionalUsd": "120843462.50"
         }
       ],
       "errorMessage": null
@@ -4068,8 +4068,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-11T19:11:44.998221Z",
-      "compositeScore": "0.388",
+      "generatedAt": "2026-06-11T20:12:08.018012Z",
+      "compositeScore": "0.319",
       "label": "POSITIVE",
       "labelDisplay": "긍정",
       "labelHexColor": "#10B981",
@@ -4116,21 +4116,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/11/canton-network-developer-raises-usd355-million-to-bring-wall-street-onchain",
           "publishedAt": "2026-06-11T13:50:13Z",
-          "score": "0.7"
+          "score": "0.5"
         },
         {
           "title": "Tether leads $1.4 billion funding round in German robotics company Neura",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/11/tether-leads-usd1-4-billion-funding-round-in-german-robotics-company-neura",
           "publishedAt": "2026-06-11T13:49:27Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "CoinDesk 20 performance update: Uniswap (UNI) gains 4.5% as all constituents rise",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/11/coindesk-20-performance-update-uniswap-uni-gains-4-5-as-all-constituents-rise",
           "publishedAt": "2026-06-11T13:45:50Z",
-          "score": "0.4"
+          "score": "0.3"
+        },
+        {
+          "title": "ETH futures traders lean into $1.6K range lows: Will Ether lead market recovery?",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/ether-bulls-ramp-up-risk-above-16k-can-buyers-regain-control?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-11T19:37:41Z",
+          "score": "0.2"
         },
         {
           "title": "Three signs that XRP price risks falling below $1 in June",
@@ -4144,21 +4151,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coinbase-world-cup-prediction-market-boost-bernstein?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T17:57:06Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "MassPay taps Coinbase to expand stablecoin payouts",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/masspay-coinbase-partner-stablecoin-cross-border-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T16:00:00Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Franklin Templeton, BNP Paribas see tokenization boosting EU's capital efficiency",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/liquidity-capital-efficiency-tokenization-adoption-banks-franklin-templeton-bnp?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T15:01:27Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Hereâs what happened in crypto today",
@@ -4172,20 +4179,13 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-tags-632k-as-btc-price-action-ignores-new-iran-hormuz-closure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T13:41:47Z",
-          "score": "0.8"
+          "score": "0.7"
         },
         {
           "title": "Digital Asset lands $355M as a16z doubles down on Wall Street blockchain rails",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/digital-asset-355m-16z-wall-street-blockchain-rails?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T12:59:11Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Hungary to reverse crypto trading crackdown after EU scrutiny",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/hungary-decriminalize-crypto-trading-prison-terms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-11T12:52:15Z",
           "score": "0.5"
         }
       ],
