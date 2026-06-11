@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- 404 페이지는 색인 금지. follow로 내부 링크는 따라가게 둔다 -->
+<meta name="robots" content="noindex, follow">
+<meta name="description" content="요청하신 페이지를 찾을 수 없습니다. BTC 투자 타이밍 레이더의 대시보드·지표 가이드·소개 페이지로 이동해 주세요." data-en-content="The page you requested could not be found. Please head to the BTC Timing Radar dashboard, indicator guide, or about page." data-zh-content="找不到您请求的页面。请前往 BTC 时机雷达的仪表盘、指标指南或关于页面。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="Page Not Found (404) — BTC Timing Radar" data-zh="页面未找到 (404) — BTC 时机雷达">페이지를 찾을 수 없습니다 (404) — BTC 투자 타이밍 레이더</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="btc-base.css">
+<style>
+  /* 404 전용 레이아웃 — 본문을 세로 중앙에 배치 */
+  .nf-wrap{min-height:calc(100vh - 220px);display:flex;align-items:center;justify-content:center;padding:48px 0}
+  .nf-card{max-width:620px;width:100%;text-align:center;margin:0 auto}
+
+  /* 레이더/게이지 모티프 + 거대한 404 숫자 */
+  .nf-visual{position:relative;display:inline-grid;place-items:center;margin:0 auto 30px}
+  .nf-radar{width:148px;height:148px;display:block;opacity:.92}
+  .nf-radar .ring{fill:none;stroke:var(--border-strong);stroke-width:1.5}
+  .nf-radar .ring.dim{stroke:var(--border)}
+  .nf-radar .cross{stroke:var(--border);stroke-width:1}
+  .nf-radar .sweep{fill:none;stroke:var(--brand);stroke-width:2.5;stroke-linecap:round;
+    transform-origin:74px 74px;animation:nfSpin 4s linear infinite}
+  .nf-radar .blip{fill:var(--neon)}
+  @keyframes nfSpin{to{transform:rotate(360deg)}}
+  @media(prefers-reduced-motion:reduce){.nf-radar .sweep{animation:none}}
+
+  .nf-code{font-family:var(--mono);font-weight:800;letter-spacing:.04em;line-height:1;
+    font-size:clamp(64px,16vw,108px);margin:0;
+    background:linear-gradient(135deg,var(--brand),var(--brand-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+
+  .nf-card h1{font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.02em;margin:18px 0 14px}
+  .nf-card .sub{font-size:clamp(14.5px,1.7vw,16.5px);color:var(--muted);line-height:1.75;
+    max-width:480px;margin:0 auto}
+
+  /* CTA 버튼 그룹 — 기존 .btn 토큰 재사용 */
+  .nf-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+  @media(max-width:480px){
+    .nf-actions{flex-direction:column;align-items:stretch}
+    .nf-actions .btn{justify-content:center;width:100%}
+    .nf-visual{margin-bottom:22px}
+  }
+</style>
+<script src="./btc-i18n.js" defer></script>
+</head>
+<body>
+<div class="bg-field" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
+    <nav class="nav-links">
+      <a href="index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
+      <a href="guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
+      <a href="contact.html" data-en="Contact" data-zh="联系我们">문의</a>
+    </nav>
+    <a class="nav-pill" href="index.html"><span class="pulse"></span><span data-en="Today's Score →" data-zh="今日评分 →">오늘의 점수 →</span></a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="nf-wrap">
+    <div class="nf-card">
+      <!-- 레이더 모티프: 사이트 톤(다크·오렌지·민트)에 맞춘 장식. 시각 정보만 — aria-hidden -->
+      <div class="nf-visual">
+        <svg class="nf-radar" viewBox="0 0 148 148" aria-hidden="true">
+          <circle class="ring" cx="74" cy="74" r="68"></circle>
+          <circle class="ring dim" cx="74" cy="74" r="46"></circle>
+          <circle class="ring dim" cx="74" cy="74" r="24"></circle>
+          <line class="cross" x1="74" y1="6" x2="74" y2="142"></line>
+          <line class="cross" x1="6" y1="74" x2="142" y2="74"></line>
+          <line class="sweep" x1="74" y1="74" x2="74" y2="10"></line>
+          <circle class="blip" cx="104" cy="52" r="3.5"></circle>
+        </svg>
+      </div>
+
+      <p class="nf-code">404</p>
+      <h1 data-en="Page Not Found" data-zh="页面未找到">페이지를 찾을 수 없습니다</h1>
+      <p class="sub" data-en="The address may have changed or been mistyped. Use the links below to get back on track." data-zh="该地址可能已变更或输入有误。请使用下方链接返回正常页面。">주소가 변경되었거나 잘못 입력되었을 수 있습니다. 아래 링크를 통해 원하시는 페이지로 이동해 주세요.</p>
+
+      <div class="nf-actions">
+        <a class="btn btn-primary" href="index.html" data-en="Go to Dashboard" data-zh="前往仪表盘">대시보드로 가기</a>
+        <a class="btn btn-ghost" href="guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
+        <a class="btn btn-ghost" href="about.html" data-en="About" data-zh="关于">소개</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
+        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
+      </div>
+      <div><h4 data-en="Menu" data-zh="菜单">메뉴</h4><a href="index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a><a href="guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a><a href="contact.html" data-en="Contact" data-zh="联系我们">문의</a></div>
+      <div><h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4><a href="privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a><a href="disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a></div>
+    </div>
+    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
+  </div>
+</footer>
+<script src="btc-reveal.js"></script>
+</body>
+</html>
