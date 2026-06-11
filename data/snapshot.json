@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-11T14:49:44Z",
+  "updatedAt": "2026-06-11T15:09:56Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "61574.52",
       "macd": {
-        "macdLine": "-4054.39",
-        "signalLine": "-3533.06",
-        "histogram": "-521.33",
+        "macdLine": "-4067.17",
+        "signalLine": "-3535.61",
+        "histogram": "-531.56",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -432,9 +432,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000046",
       "ivRv": {
-        "iv": "37.93",
+        "iv": "38.41",
         "rv": "38.00",
-        "spread": "-0.07",
+        "spread": "+0.41",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -453,13 +453,13 @@
     "api_dashboard_cycle": {
       "hasData": true,
       "halvingCycle": {
-        "position": "53.6%",
+        "position": "53.7%",
         "progressWidth": 54,
         "phaseLabel": "과열 구간 (Q3)",
         "phaseBadgeClass": "bg-warning text-dark",
         "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
-        "formattedElapsed": "782일 경과",
-        "formattedRemaining": "676일 남음",
+        "formattedElapsed": "783일 경과",
+        "formattedRemaining": "675일 남음",
         "cycleNumber": 4,
         "lastHalvingDate": "2024-04-20",
         "nextHalvingDate": "2028-04-17",
@@ -2634,9 +2634,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261680399858.63696",
+      "totalMarketCapUsd": "261937956375.79416",
       "marketCap30dAgoUsd": "266891157236.9735",
-      "growth30dPercent": "-1.95",
+      "growth30dPercent": "-1.86",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2705,63 +2705,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62911.20",
-      "openInterestUsd": "6386464230.57480000",
-      "longAccountRatio": "0.6138",
-      "shortAccountRatio": "0.3862",
-      "downsideLiquidationUsd": "3920011744.73",
-      "upsideLiquidationUsd": "2466452485.85",
+      "currentPrice": "62732.10",
+      "openInterestUsd": "6338927925.40420000",
+      "longAccountRatio": "0.6160",
+      "shortAccountRatio": "0.3840",
+      "downsideLiquidationUsd": "3904779602.05",
+      "upsideLiquidationUsd": "2434148323.36",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56620.08",
+          "price": "56458.89",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1568004697.89"
+          "notionalUsd": "1561911840.82"
         },
         {
-          "price": "69202.32",
+          "price": "69005.31",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "986580994.34"
+          "notionalUsd": "973659329.34"
         },
         {
-          "price": "60394.75",
+          "price": "60222.82",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1372004110.65"
+          "notionalUsd": "1366672860.72"
         },
         {
-          "price": "65427.65",
+          "price": "65241.38",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "863258370.05"
+          "notionalUsd": "851951913.17"
         },
         {
-          "price": "61652.98",
+          "price": "61477.46",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "784002348.95"
+          "notionalUsd": "780955920.41"
         },
         {
-          "price": "64169.42",
+          "price": "63986.74",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "493290497.17"
+          "notionalUsd": "486829664.67"
         },
         {
-          "price": "62282.09",
+          "price": "62104.78",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "196000587.24"
+          "notionalUsd": "195238980.10"
         },
         {
-          "price": "63540.31",
+          "price": "63359.42",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "123322624.29"
+          "notionalUsd": "121707416.17"
         }
       ],
       "errorMessage": null
@@ -4036,7 +4036,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-11T14:30:02.218953Z",
+      "generatedAt": "2026-06-11T15:00:03.477182Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4045,43 +4045,57 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "매집 우세로 보이나, 공포 심리가 지배적이다."
+          "content": "현재 시장은 매집 우세를 보이며, 공포탐욕 지수가 낮아 투자 심리가 위축된 상태입니다."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재합니다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 부정적이며, 매도 압력이 우려된다."
+          "content": "거래소 순유입이 마이너스인 점은 매도 압력을 시사합니다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매 전략을 고려하라."
+          "content": "매수 기회를 염두에 두되, 시장 변동성을 주의 깊게 살펴야 합니다."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 지속적으로 모니터링하라."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산시키는 것이 좋습니다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-11T14:05:07.178495Z",
-      "compositeScore": "0.156",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-06-11T15:05:03.227024Z",
+      "compositeScore": "0.281",
+      "label": "POSITIVE",
+      "labelDisplay": "긍정",
+      "labelHexColor": "#10B981",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Crypto for Advisors: Crypto ETFs",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/coindesk-indices/2026/06/10/crypto-for-advisors-crypto-etfs",
+          "publishedAt": "2026-06-11T15:00:00Z",
+          "score": "0.5"
+        },
+        {
+          "title": "U.S. House bill would erect crypto-theft task force across law enforcement agencies",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/06/10/u-s-house-bill-would-erect-crypto-theft-task-force-across-law-enforcement-agencies",
+          "publishedAt": "2026-06-11T14:30:00Z",
+          "score": "0.2"
+        },
         {
           "title": "SpaceX stock is coming to Solana on the same day it lists on Nasdaq",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/10/spacex-stock-is-coming-to-solana-on-the-same-day-it-lists-on-nasdaq",
           "publishedAt": "2026-06-11T14:00:00Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Canton Network developer raises $355 million to bring Wall Street onchain",
@@ -4095,56 +4109,49 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/11/tether-leads-usd1-4-billion-funding-round-in-german-robotics-company-neura",
           "publishedAt": "2026-06-11T13:49:27Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "CoinDesk 20 performance update: Uniswap (UNI) gains 4.5% as all constituents rise",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/11/coindesk-20-performance-update-uniswap-uni-gains-4-5-as-all-constituents-rise",
           "publishedAt": "2026-06-11T13:45:50Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "Citi opens new route into private markets with tokenized share offering",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/11/citi-opens-new-route-into-private-markets-with-tokenized-share-offering",
           "publishedAt": "2026-06-11T13:27:12Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Ondo Finance hires former Invesco ETF chief to build onchain investment products",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/10/ondo-finance-hires-former-invesco-etf-chief-to-build-onchain-investment-products",
           "publishedAt": "2026-06-11T12:57:56Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
-          "title": "It's not SpaceX. Bitcoin ETF outflows may be an arbitrage story",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/11/bitcoin-etf-outflows-may-be-more-about-arbitrage-unwinds-than-spacex-fomo",
-          "publishedAt": "2026-06-11T12:42:19Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Michael Saylor and Jack Mallers go toe-to-toe over Strategy's bitcoin reporting metrics",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/11/michael-saylor-and-jack-mallers-go-toe-to-toe-over-strategy-s-bitcoin-reporting-metrics",
-          "publishedAt": "2026-06-11T11:52:57Z",
-          "score": "0.0"
+          "title": "Bitcoin tags $63.2K as BTC price action ignores inflation, Iran Hormuz closure",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-tags-632k-as-btc-price-action-ignores-new-iran-hormuz-closure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-11T13:41:47Z",
+          "score": "0.7"
         },
         {
           "title": "Digital Asset lands $355M as a16z doubles down on Wall Street blockchain rails",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/digital-asset-355m-16z-wall-street-blockchain-rails?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T12:59:11Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Hungary to reverse crypto trading crackdown after EU scrutiny",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hungary-decriminalize-crypto-trading-prison-terms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T12:52:15Z",
-          "score": "0.7"
+          "score": "0.5"
         },
         {
           "title": "Japan crypto bill advances with ETF, tax reform path: Report",
@@ -4158,35 +4165,28 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/audieras-ai-token-beat-beats-bitcoin-ethereum-as-price-surges-1500-in-a-month?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T12:08:03Z",
-          "score": "-0.2"
+          "score": "-0.1"
         },
         {
           "title": "AI models led to a âvulnerability apocalypseâ in crypto security: Immunefi CEO",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/frontier-ai-models-vulnerability-apocalypse-crypto-security-immunefi-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T12:01:48Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Hereâs what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-11T07:55:49Z",
-          "score": "0.0"
+          "score": "-0.4"
         },
         {
           "title": "TradFi advisers want stablecoins, tokenization over Bitcoin: Bitwise",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/tradfi-advisors-want-stablecoins-tokenization-over-bitcoin-bitwise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T07:01:31Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "AI researcher claims he's already bypassed Anthropic's Fable 5 guardrails",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/researcher-claims-hes-already-jailbroken-anthropics-guardrailed-claude-fable-5?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T07:00:53Z",
-          "score": "-0.6"
+          "score": "-0.5"
         }
       ],
       "errorMessage": null
