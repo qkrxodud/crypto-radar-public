@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-12T00:53:47Z",
+  "updatedAt": "2026-06-12T01:13:50Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "63584.00",
       "macd": {
-        "macdLine": "-3802.34",
-        "signalLine": "-3577.20",
-        "histogram": "-225.14",
+        "macdLine": "-3819.76",
+        "signalLine": "-3580.69",
+        "histogram": "-239.08",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "44.0",
-        "plusDi": "12.9",
-        "minusDi": "34.7",
+        "plusDi": "12.8",
+        "minusDi": "34.6",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -432,10 +432,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000033",
       "ivRv": {
-        "iv": "39.33",
+        "iv": "37.75",
         "rv": "43.00",
-        "spread": "-3.67",
-        "label": "균형"
+        "spread": "-5.25",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 12,
@@ -2645,9 +2645,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261629943081.33866",
-      "marketCap30dAgoUsd": "266858314551.0094",
-      "growth30dPercent": "-1.96",
+      "totalMarketCapUsd": "261583312570.89877",
+      "marketCap30dAgoUsd": "266435642425.0113",
+      "growth30dPercent": "-1.82",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2716,63 +2716,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63680.70",
-      "openInterestUsd": "6251322456.15640000",
-      "longAccountRatio": "0.6132",
-      "shortAccountRatio": "0.3868",
-      "downsideLiquidationUsd": "3833310930.12",
-      "upsideLiquidationUsd": "2418011526.04",
+      "currentPrice": "63461.50",
+      "openInterestUsd": "6238231039.27037700",
+      "longAccountRatio": "0.6126",
+      "shortAccountRatio": "0.3874",
+      "downsideLiquidationUsd": "3821540334.66",
+      "upsideLiquidationUsd": "2416690704.61",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57312.63",
+          "price": "57115.35",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1533324372.05"
+          "notionalUsd": "1528616133.86"
         },
         {
-          "price": "70048.77",
+          "price": "69807.65",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "967204610.42"
+          "notionalUsd": "966676281.85"
         },
         {
-          "price": "61133.47",
+          "price": "60923.04",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1341658825.54"
+          "notionalUsd": "1337539117.13"
         },
         {
-          "price": "66227.93",
+          "price": "65999.96",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "846304034.11"
+          "notionalUsd": "845841746.61"
         },
         {
-          "price": "62407.09",
+          "price": "62192.27",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "766662186.02"
+          "notionalUsd": "764308066.93"
         },
         {
-          "price": "64954.31",
+          "price": "64730.73",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "483602305.21"
+          "notionalUsd": "483338140.92"
         },
         {
-          "price": "63043.89",
+          "price": "62826.89",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "191665546.51"
+          "notionalUsd": "191077016.73"
         },
         {
-          "price": "64317.51",
+          "price": "64096.12",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "120900576.30"
+          "notionalUsd": "120834535.23"
         }
       ],
       "errorMessage": null
@@ -4055,7 +4055,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-12T00:30:02.302240Z",
+      "generatedAt": "2026-06-12T01:00:03.285498Z",
       "compositeScore": 68,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4072,7 +4072,7 @@
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 부정적이며, 이는 매도 압력을 시사한다."
+          "content": "거래소 순유입이 음수로, 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
@@ -4080,15 +4080,15 @@
         },
         {
           "type": "ACTION",
-          "content": "시장 심리를 주의 깊게 관찰하며, 추가 지표 분석을 고려하라."
+          "content": "시장 심리를 주의 깊게 관찰하며 추가 매수 여부를 결정하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-12T00:05:02.951137Z",
-      "compositeScore": "0.206",
+      "generatedAt": "2026-06-12T01:05:02.290669Z",
+      "compositeScore": "0.200",
       "label": "POSITIVE",
       "labelDisplay": "긍정",
       "labelHexColor": "#10B981",
@@ -4149,7 +4149,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/11/tether-leads-usd1-4-billion-funding-round-in-german-robotics-company-neura",
           "publishedAt": "2026-06-11T13:49:27Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Big Tech crash, oil volatility rattles markets: Will Bitcoin hold above $60K?",
@@ -4163,7 +4163,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/citi-launches-blockchain-marketplace-private-company-shares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T21:24:56Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "ETH futures traders lean into $1.6K range lows: Will Ether lead market recovery?",
@@ -4205,7 +4205,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/liquidity-capital-efficiency-tokenization-adoption-banks-franklin-templeton-bnp?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T15:01:27Z",
-          "score": "0.4"
+          "score": "0.3"
         }
       ],
       "errorMessage": null
