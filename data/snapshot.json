@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-12T06:55:25Z",
+  "updatedAt": "2026-06-12T07:15:37Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63584.00",
       "macd": {
-        "macdLine": "-3861.27",
-        "signalLine": "-3588.99",
-        "histogram": "-272.28",
+        "macdLine": "-3858.02",
+        "signalLine": "-3588.34",
+        "histogram": "-269.68",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -432,9 +432,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000033",
       "ivRv": {
-        "iv": "45.12",
+        "iv": "44.64",
         "rv": "43.00",
-        "spread": "+2.12",
+        "spread": "+1.64",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2645,7 +2645,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261514317604.87838",
+      "totalMarketCapUsd": "261511395303.44212",
       "marketCap30dAgoUsd": "266435642425.0113",
       "growth30dPercent": "-1.85",
       "signal": "STABLE",
@@ -2716,63 +2716,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62938.80",
-      "openInterestUsd": "6183275449.86690000",
-      "longAccountRatio": "0.6144",
-      "shortAccountRatio": "0.3856",
-      "downsideLiquidationUsd": "3799004436.40",
-      "upsideLiquidationUsd": "2384271013.47",
+      "currentPrice": "62983.30",
+      "openInterestUsd": "6188228838.68643300",
+      "longAccountRatio": "0.6172",
+      "shortAccountRatio": "0.3828",
+      "downsideLiquidationUsd": "3819374839.24",
+      "upsideLiquidationUsd": "2368853999.45",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56644.92",
+          "price": "56684.97",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1519601774.56"
+          "notionalUsd": "1527749935.69"
         },
         {
-          "price": "69232.68",
+          "price": "69281.63",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "953708405.39"
+          "notionalUsd": "947541599.78"
         },
         {
-          "price": "60421.25",
+          "price": "60463.97",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1329651552.74"
+          "notionalUsd": "1336781193.73"
         },
         {
-          "price": "65456.35",
+          "price": "65502.63",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "834494854.71"
+          "notionalUsd": "829098899.81"
         },
         {
-          "price": "61680.02",
+          "price": "61723.63",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "759800887.28"
+          "notionalUsd": "763874967.85"
         },
         {
-          "price": "64197.58",
+          "price": "64242.97",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "476854202.69"
+          "notionalUsd": "473770799.89"
         },
         {
-          "price": "62309.41",
+          "price": "62353.47",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "189950221.82"
+          "notionalUsd": "190968741.96"
         },
         {
-          "price": "63568.19",
+          "price": "63613.13",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "119213550.67"
+          "notionalUsd": "118442699.97"
         }
       ],
       "errorMessage": null
@@ -4055,7 +4055,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-12T06:30:03.518664Z",
+      "generatedAt": "2026-06-12T07:00:02.774281Z",
       "compositeScore": 68,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4064,37 +4064,65 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로 보이며, 공포감이 지배하고 있다."
+          "content": "매집 우세로 보이나, 공포 심리가 지배적이다."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI와 높은 BTC 도미넌스는 하락 위험을 시사한다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스인 점은 매도 압력을 나타낸다."
+          "content": "거래소 순유입이 지속적으로 마이너스 상태이다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 리스크 관리에 유의하라."
+          "content": "매수 기회를 노리되, 손절 라인을 설정하라."
         },
         {
           "type": "ACTION",
-          "content": "단기 변동성에 대비하여 포지션을 조정하라."
+          "content": "시장 심리를 주의 깊게 관찰하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-12T06:05:03.691932Z",
-      "compositeScore": "0.100",
+      "generatedAt": "2026-06-12T07:05:03.319652Z",
+      "compositeScore": "0.169",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "XRP jumps 3% above $1.14 as institutional buying meets key resistance test",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/12/xrp-jumps-3-above-usd1-14-as-institutional-buying-meets-key-resistance-test",
+          "publishedAt": "2026-06-12T06:38:32Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Live updates: Bitcoin in volatile trading above $63,000, DOGE unchanged",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/06/12/live-updates-bitcoin-in-volatile-trading-above-usd63-000-doge-unchanged",
+          "publishedAt": "2026-06-12T06:32:02Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Former SEC, CFTC Chair Gary Gensler argues that prediction markets don't overrule state regulations",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/06/12/former-sec-cftc-chair-gary-gensler-argues-that-prediction-markets-don-t-overrule-state-regulations",
+          "publishedAt": "2026-06-12T06:27:20Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "SpaceX's crypto-traded IPO was sharply falling. It now points upward to a $2.4 trillion valuation",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/12/spacex-s-crypto-traded-ipo-was-sharply-falling-it-now-points-upward-to-a-usd2-4-trillion-valuation",
+          "publishedAt": "2026-06-12T06:13:44Z",
+          "score": "0.4"
+        },
         {
           "title": "The company that makes your TV is taking ads onchain. Arbitrum helped",
           "source": "CoinDesk",
@@ -4107,63 +4135,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/12/bitcoin-climbs-back-into-the-green-as-trump-signals-an-end-to-the-iran-war",
           "publishedAt": "2026-06-12T05:14:33Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Elon Musk's SpaceX prices shares at $135, raising $75 billion in largest-ever IPO",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/11/spacex-prices-shares-at-usd135-in-largest-ipo-ever",
           "publishedAt": "2026-06-11T20:12:46Z",
-          "score": "0.4"
+          "score": "0.7"
         },
         {
           "title": "Coinbase launches AI agent accounts that can trade and spend on your behalf",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/11/coinbase-launches-ai-agent-accounts-that-can-trade-and-spend-on-your-behalf",
           "publishedAt": "2026-06-11T17:00:00Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Banking rails are moving past the 'stablecoin winner' narrative: Sygnum",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/11/big-banks-are-ditching-private-blockchains-to-build-tokenized-cash-networks-on-public-infrastructure",
-          "publishedAt": "2026-06-11T16:37:53Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Crypto for Advisors: Crypto ETFs",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/coindesk-indices/2026/06/10/crypto-for-advisors-crypto-etfs",
-          "publishedAt": "2026-06-11T15:00:00Z",
-          "score": "0.2"
-        },
-        {
-          "title": "U.S. House bill would erect crypto-theft task force across law enforcement agencies",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/10/u-s-house-bill-would-erect-crypto-theft-task-force-across-law-enforcement-agencies",
-          "publishedAt": "2026-06-11T14:30:00Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "SpaceX stock is coming to Solana on the same day it lists on Nasdaq",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/10/spacex-stock-is-coming-to-solana-on-the-same-day-it-lists-on-nasdaq",
-          "publishedAt": "2026-06-11T14:00:00Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "LG, Arbitrum launch blockchain-based bid for $679B ad market",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/lg-arbitrum-launch-blockchain-based-bid-for-679b-ad-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-12T04:32:04Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Coinbase launches tool letting AI agents make payments and trade crypto",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coinbase-launches-tool-letting-ai-agents-make-payments-and-trade-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-12T04:19:03Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Avalanche Treasury Co. falls 16% as it debuts on Nasdaq",
@@ -4184,7 +4184,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/citi-launches-blockchain-marketplace-private-company-shares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T21:24:56Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "ETH futures traders lean into $1.6K range lows: Will Ether lead market recovery?",
@@ -4205,7 +4205,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coinbase-world-cup-prediction-market-boost-bernstein?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-11T17:57:06Z",
-          "score": "0.3"
+          "score": "0.5"
         }
       ],
       "errorMessage": null
