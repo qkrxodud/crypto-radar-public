@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-12T17:59:09Z",
+  "updatedAt": "2026-06-12T18:19:15Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63584.00",
       "macd": {
-        "macdLine": "-3790.50",
-        "signalLine": "-3574.83",
-        "histogram": "-215.67",
+        "macdLine": "-3799.27",
+        "signalLine": "-3576.59",
+        "histogram": "-222.69",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -432,10 +432,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000033",
       "ivRv": {
-        "iv": "38.15",
+        "iv": "31.31",
         "rv": "43.00",
-        "spread": "-4.85",
-        "label": "균형"
+        "spread": "-11.70",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 12,
@@ -2645,9 +2645,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261594491511.62804",
+      "totalMarketCapUsd": "261658248773.0663",
       "marketCap30dAgoUsd": "266435642425.0113",
-      "growth30dPercent": "-1.82",
+      "growth30dPercent": "-1.79",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2716,63 +2716,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63822.50",
-      "openInterestUsd": "6298177142.63560000",
-      "longAccountRatio": "0.6023",
-      "shortAccountRatio": "0.3977",
-      "downsideLiquidationUsd": "3793392093.01",
-      "upsideLiquidationUsd": "2504785049.63",
+      "currentPrice": "63713.80",
+      "openInterestUsd": "6291177264.45108900",
+      "longAccountRatio": "0.6011",
+      "shortAccountRatio": "0.3989",
+      "downsideLiquidationUsd": "3781626653.66",
+      "upsideLiquidationUsd": "2509550610.79",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57440.25",
+          "price": "57342.42",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1517356837.20"
+          "notionalUsd": "1512650661.46"
         },
         {
-          "price": "70204.75",
+          "price": "70085.18",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1001914019.85"
+          "notionalUsd": "1003820244.32"
         },
         {
-          "price": "61269.60",
+          "price": "61165.25",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1327687232.55"
+          "notionalUsd": "1323569328.78"
         },
         {
-          "price": "66375.40",
+          "price": "66262.35",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "876674767.37"
+          "notionalUsd": "878342713.78"
         },
         {
-          "price": "62546.05",
+          "price": "62439.52",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "758678418.60"
+          "notionalUsd": "756325330.73"
         },
         {
-          "price": "65098.95",
+          "price": "64988.08",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "500957009.93"
+          "notionalUsd": "501910122.16"
         },
         {
-          "price": "63184.28",
+          "price": "63076.66",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "189669604.65"
+          "notionalUsd": "189081332.68"
         },
         {
-          "price": "64460.73",
+          "price": "64350.94",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "125239252.48"
+          "notionalUsd": "125477530.54"
         }
       ],
       "errorMessage": null
@@ -4087,8 +4087,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-12T17:18:52.087229Z",
-      "compositeScore": "-0.006",
+      "generatedAt": "2026-06-12T18:19:15.420497Z",
+      "compositeScore": "0.081",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4096,11 +4096,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin hit bottom at $59,000 marking end to the crypto winter, says Standard Chartered analyst",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/12/bitcoin-hit-bottom-at-usd59-000-marking-end-to-the-crypto-winter-says-standard-chartered-analyst",
+          "publishedAt": "2026-06-12T18:09:06Z",
+          "score": "0.8"
+        },
+        {
           "title": "VanEck bets BNBâs real-world usage can stand out in a crowded crypto ETF market",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/12/vaneck-bets-bnb-s-real-world-usage-can-stand-out-in-a-crowded-crypto-etf-market",
           "publishedAt": "2026-06-12T16:05:31Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "Elon Musk's SpaceX soars 20% in blockbuster Nasdaq debut",
@@ -4135,20 +4142,13 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/12/ftx-s-sam-bankman-fried-loses-appeal-of-criminal-conviction-on-fraud-conspiracy-charges",
           "publishedAt": "2026-06-12T14:13:40Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "XRP sentiment falls to 8-month low, and that has been a buy signal before",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/12/xrp-sentiment-falls-to-an-eight-month-low-and-that-has-been-a-buy-signal-before",
           "publishedAt": "2026-06-12T14:08:03Z",
-          "score": "0.1"
-        },
-        {
-          "title": "CoinDesk 20 performance update: Ethereum (ETH) falls 1% as index trades lower",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/coindesk-indices/2026/06/12/coindesk-20-performance-update-ethereum-eth-falls-1-as-index-trades-lower",
-          "publishedAt": "2026-06-12T13:11:26Z",
           "score": "-0.3"
         },
         {
@@ -4156,7 +4156,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/sam-bankman-fried-loses-appeal-to-overturn-25-year-prison-sentence?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-12T16:39:16Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin surfs SpaceX IPO at $64K as trader warns key BTC price support may crumble",
@@ -4170,7 +4170,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/tokenized-rwas-kraken-spacex-ipo-prediction-markets-sbf-trump-pardon?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-12T16:07:08Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Hereâs what happened in crypto today",
@@ -4198,14 +4198,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/metaplanet-to-form-securities-arm-through-siiibo-acquisition?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-12T12:05:09Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "SpaceX tokenized IPO campaign draws $557M on Binance ahead of debut",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-12T11:32:44Z",
-          "score": "0.6"
+          "score": "0.7"
         }
       ],
       "errorMessage": null
