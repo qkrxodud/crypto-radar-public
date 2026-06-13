@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-13T22:02:04Z",
+  "updatedAt": "2026-06-13T22:22:07Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "63562.01",
       "macd": {
-        "macdLine": "-3553.67",
-        "signalLine": "-3571.00",
-        "histogram": "17.33",
+        "macdLine": "-3551.49",
+        "signalLine": "-3570.56",
+        "histogram": "19.07",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": false
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000087",
       "ivRv": {
-        "iv": "32.49",
+        "iv": "32.13",
         "rv": "38.00",
-        "spread": "-5.51",
+        "spread": "-5.87",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2662,13 +2662,13 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5897275",
-      "change4wUsdM": "38034",
-      "change4wPercent": "0.65",
+      "netLiquidityUsdM": "5896821.000",
+      "change4wUsdM": "39614.000",
+      "change4wPercent": "0.68",
       "fedAssetsUsdM": "6725397",
-      "reverseRepoUsdM": "0",
+      "reverseRepoUsdM": "454.000",
       "treasuryAccountUsdM": "828122",
-      "rrpIncluded": false,
+      "rrpIncluded": true,
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "순유동성 횡보 — 유동성 레짐 균형",
@@ -2723,63 +2723,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64399.00",
-      "openInterestUsd": "6454624792.13050000",
-      "longAccountRatio": "0.5946",
-      "shortAccountRatio": "0.4054",
-      "downsideLiquidationUsd": "3837919901.40",
-      "upsideLiquidationUsd": "2616704890.73",
+      "currentPrice": "64418.10",
+      "openInterestUsd": "6450404138.38140000",
+      "longAccountRatio": "0.5937",
+      "shortAccountRatio": "0.4063",
+      "downsideLiquidationUsd": "3829604936.96",
+      "upsideLiquidationUsd": "2620799201.42",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57959.10",
+          "price": "57976.29",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1535167960.56"
+          "notionalUsd": "1531841974.78"
         },
         {
-          "price": "70838.90",
+          "price": "70859.91",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1046681956.29"
+          "notionalUsd": "1048319680.57"
         },
         {
-          "price": "61823.04",
+          "price": "61841.38",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1343271965.49"
+          "notionalUsd": "1340361727.93"
         },
         {
-          "price": "66974.96",
+          "price": "66994.82",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "915846711.76"
+          "notionalUsd": "917279720.50"
         },
         {
-          "price": "63111.02",
+          "price": "63129.74",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "767583980.28"
+          "notionalUsd": "765920987.39"
         },
         {
-          "price": "65686.98",
+          "price": "65706.46",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "523340978.15"
+          "notionalUsd": "524159840.28"
         },
         {
-          "price": "63755.01",
+          "price": "63773.92",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "191895995.07"
+          "notionalUsd": "191480246.85"
         },
         {
-          "price": "65042.99",
+          "price": "65062.28",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "130835244.54"
+          "notionalUsd": "131039960.07"
         }
       ],
       "errorMessage": null
@@ -4083,8 +4083,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-13T21:05:02.374939Z",
-      "compositeScore": "0.063",
+      "generatedAt": "2026-06-13T22:05:02.766262Z",
+      "compositeScore": "0.025",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4096,14 +4096,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/13/crypto-s-next-billion-dollar-hacker-may-move-at-superhuman-speed",
           "publishedAt": "2026-06-13T18:00:00Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Here's what SpaceX's IPO means for its $1.3 billion bitcoin reserve",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/13/here-s-what-spacex-s-ipo-means-for-its-usd1-3-billion-bitcoin-reserve",
           "publishedAt": "2026-06-13T17:00:16Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Stablecoins Were Meant to Disrupt Finance. Instead, They Became Idle Cash.",
@@ -4117,7 +4117,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/13/bitcoin-rises-above-usd64-000-after-pakistan-prime-minister-says-iran-peace-deal-is-near",
           "publishedAt": "2026-06-13T16:16:54Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Wall Street is moving past crypto pilots and deeper into Ethereum, says Etherealize founder",
@@ -4187,21 +4187,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/anthropic-suspends-access-to-fable-mythos-citing-us-directive?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T02:37:40Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "Major crypto exchanges cancel SpaceX IPO allocations, promising refunds",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/major-crypto-exchanges-cancel-spacex-ipo-allocations-promising-refunds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T02:17:55Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Bitcoinâs âcalm topâ challenges most market bottom estimates: Research",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoins-calm-top-challenges-old-bottom-targets-what-traders-need-to-know?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T00:51:36Z",
-          "score": "-0.1"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
