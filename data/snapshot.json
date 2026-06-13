@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-13T16:00:04Z",
+  "updatedAt": "2026-06-13T16:20:06Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,11 +59,11 @@
       "historicalVolatility": "0.38",
       "btcClose": "63562.01",
       "macd": {
-        "macdLine": "-3564.11",
-        "signalLine": "-3573.09",
-        "histogram": "8.98",
-        "crossType": "GOLDEN",
-        "crossLabel": "골든크로스",
+        "macdLine": "-3580.99",
+        "signalLine": "-3576.46",
+        "histogram": "-4.52",
+        "crossType": "NONE",
+        "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000087",
       "ivRv": {
-        "iv": "37.14",
+        "iv": "37.29",
         "rv": "38.00",
-        "spread": "-0.86",
+        "spread": "-0.71",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2723,63 +2723,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64265.00",
-      "openInterestUsd": "6420459459.94200000",
-      "longAccountRatio": "0.5860",
-      "shortAccountRatio": "0.4140",
-      "downsideLiquidationUsd": "3762389243.53",
-      "upsideLiquidationUsd": "2658070216.42",
+      "currentPrice": "64043.30",
+      "openInterestUsd": "6348652859.37510000",
+      "longAccountRatio": "0.5869",
+      "shortAccountRatio": "0.4131",
+      "downsideLiquidationUsd": "3726024363.17",
+      "upsideLiquidationUsd": "2622628496.21",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57838.50",
+          "price": "57638.97",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1504955697.41"
+          "notionalUsd": "1490409745.27"
         },
         {
-          "price": "70691.50",
+          "price": "70447.63",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1063228086.57"
+          "notionalUsd": "1049051398.48"
         },
         {
-          "price": "61694.40",
+          "price": "61481.57",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1316836235.23"
+          "notionalUsd": "1304108527.11"
         },
         {
-          "price": "66835.60",
+          "price": "66605.03",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "930324575.75"
+          "notionalUsd": "917919973.67"
         },
         {
-          "price": "62979.70",
+          "price": "62762.43",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "752477848.71"
+          "notionalUsd": "745204872.63"
         },
         {
-          "price": "65550.30",
+          "price": "65324.17",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "531614043.28"
+          "notionalUsd": "524525699.24"
         },
         {
-          "price": "63622.35",
+          "price": "63402.87",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "188119462.18"
+          "notionalUsd": "186301218.16"
         },
         {
-          "price": "64907.65",
+          "price": "64683.73",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "132903510.82"
+          "notionalUsd": "131131424.81"
         }
       ],
       "errorMessage": null
@@ -4083,8 +4083,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-13T15:05:04.729237Z",
-      "compositeScore": "0.088",
+      "generatedAt": "2026-06-13T16:05:03.639664Z",
+      "compositeScore": "0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4092,18 +4092,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Wall Street is moving past crypto pilots and deeper into Ethereum, says Etherealize founder",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/13/wall-street-is-moving-past-crypto-pilots-and-deeper-into-ethereum-says-etherealize-founder",
+          "publishedAt": "2026-06-13T16:00:00Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Tokenization mirrors the $20 trillion ETF boom as blockchain and AI converge, Ondo exec says",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/13/tokenization-mirrors-the-usd20-trillion-etf-boom-as-blockchain-and-ai-converge-ondo-exec-says",
+          "publishedAt": "2026-06-13T15:29:00Z",
+          "score": "0.4"
+        },
+        {
           "title": "Perpetual futures could become crypto's next ETF moment",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/13/perpetual-futures-could-become-crypto-s-next-etf-moment",
           "publishedAt": "2026-06-13T14:00:00Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Saylor to Musk: Thanks to you, 25% of 'Mag8' firms now hold bitcoin",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/13/saylor-to-musk-thanks-to-you-25-of-mag8-firms-now-hold-bitcoin",
           "publishedAt": "2026-06-13T13:05:40Z",
-          "score": "0.4"
+          "score": "0.7"
         },
         {
           "title": "Crypto should adopt the best of centralization, says LMAX CEO",
@@ -4134,17 +4148,10 @@
           "score": "-0.3"
         },
         {
-          "title": "Bitcoin steadies above $63,000 as its worst week in months got a late macro rescue",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/13/bitcoin-steady-above-usd63-000-as-its-worst-week-in-months-got-a-late-macro-rescue",
-          "publishedAt": "2026-06-13T05:46:38Z",
-          "score": "0.6"
-        },
-        {
-          "title": "SpaceX IPO scramble reveals difference between tokenizing a stock and getting one",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/13/spacex-ipo-scramble-reveals-difference-between-tokenizing-a-stock-and-getting-one",
-          "publishedAt": "2026-06-13T05:16:10Z",
+          "title": "Anthropic's Mythos AI finds no more 'serious' bugs in Zcash: Wilcox",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/anthropic-mythos-audit-no-serious-bugs-zcash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-13T14:45:43Z",
           "score": "0.0"
         },
         {
@@ -4159,7 +4166,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T11:52:41Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "Hereâs what happened in crypto today",
@@ -4187,7 +4194,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/major-crypto-exchanges-cancel-spacex-ipo-allocations-promising-refunds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T02:17:55Z",
-          "score": "-0.2"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoinâs âcalm topâ challenges most market bottom estimates: Research",
@@ -4195,13 +4202,6 @@
           "url": "https://cointelegraph.com/markets/bitcoins-calm-top-challenges-old-bottom-targets-what-traders-need-to-know?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T00:51:36Z",
           "score": "0.3"
-        },
-        {
-          "title": "Bitcoin rally to $70K builds as orderbook structure highlights tradersâ confidence",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-data-points-to-a-relief-rally-as-order-book-demand-targets-70k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-12T23:42:12Z",
-          "score": "0.7"
         }
       ],
       "errorMessage": null
