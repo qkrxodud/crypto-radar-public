@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-13T20:01:23Z",
+  "updatedAt": "2026-06-13T20:21:39Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "63562.01",
       "macd": {
-        "macdLine": "-3565.90",
-        "signalLine": "-3573.45",
-        "histogram": "7.55",
+        "macdLine": "-3566.99",
+        "signalLine": "-3573.66",
+        "histogram": "6.68",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": false
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000087",
       "ivRv": {
-        "iv": "37.62",
+        "iv": "37.53",
         "rv": "38.00",
-        "spread": "-0.38",
+        "spread": "-0.47",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2662,13 +2662,13 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5896821.000",
-      "change4wUsdM": "39614.000",
-      "change4wPercent": "0.68",
+      "netLiquidityUsdM": "5897275",
+      "change4wUsdM": "38034",
+      "change4wPercent": "0.65",
       "fedAssetsUsdM": "6725397",
-      "reverseRepoUsdM": "454.000",
+      "reverseRepoUsdM": "0",
       "treasuryAccountUsdM": "828122",
-      "rrpIncluded": true,
+      "rrpIncluded": false,
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "순유동성 횡보 — 유동성 레짐 균형",
@@ -2723,63 +2723,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64236.70",
-      "openInterestUsd": "6473339004.38013400",
-      "longAccountRatio": "0.5873",
-      "shortAccountRatio": "0.4127",
-      "downsideLiquidationUsd": "3801791997.27",
-      "upsideLiquidationUsd": "2671547007.11",
+      "currentPrice": "64228.60",
+      "openInterestUsd": "6469841435.95290000",
+      "longAccountRatio": "0.5859",
+      "shortAccountRatio": "0.4141",
+      "downsideLiquidationUsd": "3790680097.32",
+      "upsideLiquidationUsd": "2679161338.63",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57813.03",
+          "price": "57805.74",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1520716798.91"
+          "notionalUsd": "1516272038.93"
         },
         {
-          "price": "70660.37",
+          "price": "70651.46",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1068618802.84"
+          "notionalUsd": "1071664535.45"
         },
         {
-          "price": "61667.23",
+          "price": "61659.46",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1330627199.05"
+          "notionalUsd": "1326738034.06"
         },
         {
-          "price": "66806.17",
+          "price": "66797.74",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "935041452.49"
+          "notionalUsd": "937706468.52"
         },
         {
-          "price": "62951.97",
+          "price": "62944.03",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "760358399.45"
+          "notionalUsd": "758136019.46"
         },
         {
-          "price": "65521.43",
+          "price": "65513.17",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "534309401.42"
+          "notionalUsd": "535832267.73"
         },
         {
-          "price": "63594.33",
+          "price": "63586.31",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "190089599.86"
+          "notionalUsd": "189534004.87"
         },
         {
-          "price": "64879.07",
+          "price": "64870.89",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "133577350.36"
+          "notionalUsd": "133958066.93"
         }
       ],
       "errorMessage": null
@@ -4051,7 +4051,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-13T19:41:21.025996Z",
+      "generatedAt": "2026-06-13T20:21:36.999622Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4060,7 +4060,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세를 보이며, 공포 심리가 강하게 작용하고 있다."
+          "content": "현재 매집 우세로 보이나, 시장 심리가 매우 공포에 치우쳐 있다."
         },
         {
           "type": "RISK",
@@ -4068,23 +4068,23 @@
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약화되고 있다."
+          "content": "거래소 순유입이 긍정적이지 않아 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 포착하되, 리스크 관리에 유의하라."
+          "content": "매수 기회를 염두에 두되, 손절매 설정을 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리를 주의 깊게 모니터링하며 추가 매수 여부를 결정하라."
+          "content": "시장 심리 회복을 기다리며 추가 매수는 신중하게 접근하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-13T19:21:13.405976Z",
-      "compositeScore": "0.063",
+      "generatedAt": "2026-06-13T20:21:39.765765Z",
+      "compositeScore": "0.081",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4194,14 +4194,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/major-crypto-exchanges-cancel-spacex-ipo-allocations-promising-refunds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T02:17:55Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoinâs âcalm topâ challenges most market bottom estimates: Research",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoins-calm-top-challenges-old-bottom-targets-what-traders-need-to-know?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T00:51:36Z",
-          "score": "-0.1"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
