@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-13T05:22:59Z",
+  "updatedAt": "2026-06-13T06:06:05Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "63562.01",
       "macd": {
-        "macdLine": "-3621.84",
-        "signalLine": "-3584.63",
-        "histogram": "-37.20",
+        "macdLine": "-3621.91",
+        "signalLine": "-3584.65",
+        "histogram": "-37.26",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000087",
       "ivRv": {
-        "iv": "31.45",
+        "iv": "31.70",
         "rv": "38.00",
-        "spread": "-6.56",
+        "spread": "-6.31",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2662,13 +2662,13 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5896821.000",
-      "change4wUsdM": "39614.000",
-      "change4wPercent": "0.68",
+      "netLiquidityUsdM": "5897275",
+      "change4wUsdM": "38034",
+      "change4wPercent": "0.65",
       "fedAssetsUsdM": "6725397",
-      "reverseRepoUsdM": "454.000",
+      "reverseRepoUsdM": "0",
       "treasuryAccountUsdM": "828122",
-      "rrpIncluded": true,
+      "rrpIncluded": false,
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "순유동성 횡보 — 유동성 레짐 균형",
@@ -2723,63 +2723,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63536.10",
-      "openInterestUsd": "6259633247.17500000",
-      "longAccountRatio": "0.6134",
-      "shortAccountRatio": "0.3866",
-      "downsideLiquidationUsd": "3839659033.82",
-      "upsideLiquidationUsd": "2419974213.36",
+      "currentPrice": "63541.30",
+      "openInterestUsd": "6266320441.54320000",
+      "longAccountRatio": "0.6130",
+      "shortAccountRatio": "0.3870",
+      "downsideLiquidationUsd": "3841254430.67",
+      "upsideLiquidationUsd": "2425066010.88",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57182.49",
+          "price": "57187.17",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1535863613.53"
+          "notionalUsd": "1536501772.27"
         },
         {
-          "price": "69889.71",
+          "price": "69895.43",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "967989685.34"
+          "notionalUsd": "970026404.35"
         },
         {
-          "price": "60994.66",
+          "price": "60999.65",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1343880661.84"
+          "notionalUsd": "1344439050.73"
         },
         {
-          "price": "66077.54",
+          "price": "66082.95",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "846990974.68"
+          "notionalUsd": "848773103.81"
         },
         {
-          "price": "62265.38",
+          "price": "62270.47",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "767931806.76"
+          "notionalUsd": "768250886.13"
         },
         {
-          "price": "64806.82",
+          "price": "64812.13",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "483994842.67"
+          "notionalUsd": "485013202.18"
         },
         {
-          "price": "62900.74",
+          "price": "62905.89",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "191982951.69"
+          "notionalUsd": "192062721.53"
         },
         {
-          "price": "64171.46",
+          "price": "64176.71",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "120998710.67"
+          "notionalUsd": "121253300.54"
         }
       ],
       "errorMessage": null
@@ -4051,7 +4051,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-13T05:00:03.283862Z",
+      "generatedAt": "2026-06-13T06:06:02.837906Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4060,31 +4060,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이며, 시장 심리는 극단적인 공포 상태에 있다."
+          "content": "매집 우세를 보이나 공포 심리가 강하게 작용하고 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 13으로 극단적 공포를 나타내고 있다."
+          "content": "극단적인 공포 심리로 인해 매도 압력이 클 수 있다."
         },
         {
           "type": "RISK",
-          "content": "RSI 지수가 낮아 추가 하락 가능성이 존재한다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "ACTION",
-          "content": "매집 우세를 활용하여 저가 매수 전략을 고려하라."
+          "content": "매수 기회를 노리되, 손절선을 설정해야 한다."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리 회복을 기다리며 보수적인 접근을 유지하라."
+          "content": "시장 동향을 지속적으로 모니터링하며 리스크 관리에 집중하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-13T05:05:03.720878Z",
-      "compositeScore": "0.056",
+      "generatedAt": "2026-06-13T06:06:05.703009Z",
+      "compositeScore": "0.031",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4092,25 +4092,46 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Anthropic's pre-IPO shares fall as US government shuts down its most powerful AI model",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/13/anthropic-s-pre-ipo-shares-fall-as-us-government-shuts-down-its-most-powerful-ai-model",
+          "publishedAt": "2026-06-13T06:02:05Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Bitcoin steadies above $63,000 as its worst week in months got a late macro rescue",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/13/bitcoin-steady-above-usd63-000-as-its-worst-week-in-months-got-a-late-macro-rescue",
+          "publishedAt": "2026-06-13T05:46:38Z",
+          "score": "0.4"
+        },
+        {
+          "title": "SpaceX IPO scramble reveals difference between tokenizing a stock and getting one",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/06/13/spacex-ipo-scramble-reveals-difference-between-tokenizing-a-stock-and-getting-one",
+          "publishedAt": "2026-06-13T05:16:10Z",
+          "score": "0.1"
+        },
+        {
           "title": "Bitcoin hit bottom at $59,000 marking end to the crypto winter, says Standard Chartered analyst",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/12/bitcoin-hit-bottom-at-usd59-000-marking-end-to-the-crypto-winter-says-standard-chartered-analyst",
           "publishedAt": "2026-06-12T18:09:06Z",
-          "score": "0.8"
+          "score": "0.6"
         },
         {
           "title": "VanEck bets BNBâs real-world usage can stand out in a crowded crypto ETF market",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/12/vaneck-bets-bnb-s-real-world-usage-can-stand-out-in-a-crowded-crypto-etf-market",
           "publishedAt": "2026-06-12T16:05:31Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "Elon Musk's SpaceX soars 20% in blockbuster Nasdaq debut",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/12/spacex-opens-at-usdtk-in-blockbuster-nasdaq-debut",
           "publishedAt": "2026-06-12T15:55:42Z",
-          "score": "0.0"
+          "score": "0.3"
         },
         {
           "title": "Bloomberg Analyst: Most Bitcoin ETF Investors Have Stayed Put Despite Outflows",
@@ -4124,63 +4145,49 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/12/kalshi-s-crypto-perpetuals-spark-debate-over-whether-they-re-futures-or-swaps",
           "publishedAt": "2026-06-12T15:37:08Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
-          "title": "The U.S. government is betting $2 Billion on quantum computing, and the defense side can't keep up",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/opinion/2026/06/12/the-u-s-government-is-betting-usd2-billion-on-quantum-computing-and-the-defense-side-can-t-keep-up",
-          "publishedAt": "2026-06-12T15:31:00Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "FTX's Sam Bankman-Fried loses appeal of criminal conviction on fraud, conspiracy charges",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/12/ftx-s-sam-bankman-fried-loses-appeal-of-criminal-conviction-on-fraud-conspiracy-charges",
-          "publishedAt": "2026-06-12T14:13:40Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "XRP sentiment falls to 8-month low, and that has been a buy signal before",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/12/xrp-sentiment-falls-to-an-eight-month-low-and-that-has-been-a-buy-signal-before",
-          "publishedAt": "2026-06-12T14:08:03Z",
-          "score": "-0.3"
+          "title": "Hereâs what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-13T05:47:00Z",
+          "score": "0.0"
         },
         {
           "title": "ETH futures flash bearish signal, but stakersâ resilience points to underlying strength",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/eth-futures-flash-bearish-signal-but-stakers-resilience-points-to-underlying-strength?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T03:24:05Z",
-          "score": "-0.1"
+          "score": "-0.3"
         },
         {
           "title": "Anthropic suspends access to Fable 5, Mythos 5, citing US directive",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/anthropic-suspends-access-to-fable-mythos-citing-us-directive?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T02:37:40Z",
-          "score": "0.0"
+          "score": "-0.4"
         },
         {
           "title": "Major crypto exchanges cancel SpaceX IPO allocations, promising refunds",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/major-crypto-exchanges-cancel-spacex-ipo-allocations-promising-refunds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T02:17:55Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoinâs âcalm topâ challenges most market bottom estimates: Research",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoins-calm-top-challenges-old-bottom-targets-what-traders-need-to-know?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T00:51:36Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin rally to $70K builds as orderbook structure highlights tradersâ confidence",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-data-points-to-a-relief-rally-as-order-book-demand-targets-70k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-12T23:42:12Z",
-          "score": "0.7"
+          "score": "0.5"
         },
         {
           "title": "Sam Bankman-Fried loses appeal to overturn 25-year prison sentence",
@@ -4194,14 +4201,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-surfs-spacex-ipo-iran-peace-cues-as-trader-warns-62k-may-crumble?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-12T16:17:33Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Crypto Biz: SpaceX fuels tokenizationâs next boom",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/tokenized-rwas-kraken-spacex-ipo-prediction-markets-sbf-trump-pardon?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-12T16:07:08Z",
-          "score": "0.6"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
