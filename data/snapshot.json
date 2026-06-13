@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-13T17:00:23Z",
+  "updatedAt": "2026-06-13T17:20:39Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "63562.01",
       "macd": {
-        "macdLine": "-3583.11",
-        "signalLine": "-3576.89",
-        "histogram": "-6.22",
+        "macdLine": "-3584.48",
+        "signalLine": "-3577.16",
+        "histogram": "-7.32",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000087",
       "ivRv": {
-        "iv": "37.43",
+        "iv": "37.49",
         "rv": "38.00",
-        "spread": "-0.57",
+        "spread": "-0.51",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2662,13 +2662,13 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5896821.000",
-      "change4wUsdM": "39614.000",
-      "change4wPercent": "0.68",
+      "netLiquidityUsdM": "5897275",
+      "change4wUsdM": "38034",
+      "change4wPercent": "0.65",
       "fedAssetsUsdM": "6725397",
-      "reverseRepoUsdM": "454.000",
+      "reverseRepoUsdM": "0",
       "treasuryAccountUsdM": "828122",
-      "rrpIncluded": true,
+      "rrpIncluded": false,
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "순유동성 횡보 — 유동성 레짐 균형",
@@ -2723,63 +2723,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64024.90",
-      "openInterestUsd": "6363161048.05633200",
-      "longAccountRatio": "0.5874",
-      "shortAccountRatio": "0.4126",
-      "downsideLiquidationUsd": "3737720799.63",
-      "upsideLiquidationUsd": "2625440248.43",
+      "currentPrice": "64003.50",
+      "openInterestUsd": "6369004372.95080000",
+      "longAccountRatio": "0.5868",
+      "shortAccountRatio": "0.4132",
+      "downsideLiquidationUsd": "3737331766.05",
+      "upsideLiquidationUsd": "2631672606.90",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57622.41",
+          "price": "57603.15",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1495088319.85"
+          "notionalUsd": "1494932706.42"
         },
         {
-          "price": "70427.39",
+          "price": "70403.85",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1050176099.37"
+          "notionalUsd": "1052669042.76"
         },
         {
-          "price": "61463.90",
+          "price": "61443.36",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1308202279.87"
+          "notionalUsd": "1308066118.12"
         },
         {
-          "price": "66585.90",
+          "price": "66563.64",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "918904086.95"
+          "notionalUsd": "921085412.42"
         },
         {
-          "price": "62744.40",
+          "price": "62723.43",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "747544159.93"
+          "notionalUsd": "747466353.21"
         },
         {
-          "price": "65305.40",
+          "price": "65283.57",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "525088049.69"
+          "notionalUsd": "526334521.38"
         },
         {
-          "price": "63384.65",
+          "price": "63363.47",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "186886039.98"
+          "notionalUsd": "186866588.30"
         },
         {
-          "price": "64665.15",
+          "price": "64643.54",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "131272012.42"
+          "notionalUsd": "131583630.35"
         }
       ],
       "errorMessage": null
@@ -4083,7 +4083,7 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-13T16:05:03.639664Z",
+      "generatedAt": "2026-06-13T17:20:39.616384Z",
       "compositeScore": "0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
@@ -4092,18 +4092,39 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Here's what SpaceX's IPO means for its $1.3 billion bitcoin reserve",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/13/here-s-what-spacex-s-ipo-means-for-its-usd1-3-billion-bitcoin-reserve",
+          "publishedAt": "2026-06-13T17:00:16Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Stablecoins Were Meant to Disrupt Finance. Instead, They Became Idle Cash.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/opinion/2026/06/13/stablecoins-were-meant-to-disrupt-finance-instead-they-became-idle-cash",
+          "publishedAt": "2026-06-13T16:51:00Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "Bitcoin rises above $64,000 after Pakistan prime minister says Iran peace deal is near",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/13/bitcoin-rises-above-usd64-000-after-pakistan-prime-minister-says-iran-peace-deal-is-near",
+          "publishedAt": "2026-06-13T16:16:54Z",
+          "score": "0.5"
+        },
+        {
           "title": "Wall Street is moving past crypto pilots and deeper into Ethereum, says Etherealize founder",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/13/wall-street-is-moving-past-crypto-pilots-and-deeper-into-ethereum-says-etherealize-founder",
           "publishedAt": "2026-06-13T16:00:00Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Tokenization mirrors the $20 trillion ETF boom as blockchain and AI converge, Ondo exec says",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/13/tokenization-mirrors-the-usd20-trillion-etf-boom-as-blockchain-and-ai-converge-ondo-exec-says",
           "publishedAt": "2026-06-13T15:29:00Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Perpetual futures could become crypto's next ETF moment",
@@ -4124,28 +4145,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/09/crypto-should-adopt-the-best-of-centralization-says-lmax-ceo",
           "publishedAt": "2026-06-13T13:00:00Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Ripple wants AI agents to pay in XRP and RLUSD. The market is still mostly USDC",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/11/ripple-wants-ai-agents-to-pay-in-xrp-and-rlusd-the-market-is-still-mostly-usdc",
-          "publishedAt": "2026-06-13T11:30:00Z",
           "score": "0.1"
-        },
-        {
-          "title": "Top cryptographers can't agree on Bitcoin's biggest quantum question",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/13/top-cryptographers-can-t-agree-on-bitcoin-s-biggest-quantum-question",
-          "publishedAt": "2026-06-13T06:07:00Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "Anthropic's pre-IPO shares fall as U.S. government shuts down its most powerful AI model",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/13/anthropic-s-pre-ipo-shares-fall-as-us-government-shuts-down-its-most-powerful-ai-model",
-          "publishedAt": "2026-06-13T06:02:05Z",
-          "score": "-0.3"
         },
         {
           "title": "Anthropic's Mythos AI finds no more 'serious' bugs in Zcash: Wilcox",
@@ -4159,14 +4159,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/saylor-strategys-bitcoin-sale-defend-digital-credit-products?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T13:58:24Z",
-          "score": "-0.1"
+          "score": "-0.4"
         },
         {
           "title": "Morpho's $175M raise shows where crypto VC money is flowing",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/morphos-175m-raise-shows-where-the-last-of-the-crypto-vc-money-is-going?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T11:52:41Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Hereâs what happened in crypto today",
@@ -4180,7 +4180,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/eth-futures-flash-bearish-signal-but-stakers-resilience-points-to-underlying-strength?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T03:24:05Z",
-          "score": "-0.4"
+          "score": "-0.2"
         },
         {
           "title": "Anthropic suspends access to Fable 5, Mythos 5, citing US directive",
@@ -4201,7 +4201,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoins-calm-top-challenges-old-bottom-targets-what-traders-need-to-know?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T00:51:36Z",
-          "score": "0.3"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
