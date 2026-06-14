@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-14T19:52:30Z",
+  "updatedAt": "2026-06-14T20:12:38Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "64317.89",
       "macd": {
-        "macdLine": "-3361.49",
-        "signalLine": "-3526.84",
-        "histogram": "165.35",
+        "macdLine": "-3357.93",
+        "signalLine": "-3526.13",
+        "histogram": "168.20",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -432,9 +432,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "-0.000005",
       "ivRv": {
-        "iv": "38.62",
+        "iv": "38.73",
         "rv": "38.00",
-        "spread": "+0.62",
+        "spread": "+0.73",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2667,9 +2667,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261256693123.88202",
+      "totalMarketCapUsd": "261263066744.80852",
       "marketCap30dAgoUsd": "266716896006.81407",
-      "growth30dPercent": "-2.05",
+      "growth30dPercent": "-2.04",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -2677,13 +2677,13 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5897275",
-      "change4wUsdM": "38034",
-      "change4wPercent": "0.65",
+      "netLiquidityUsdM": "5896821.000",
+      "change4wUsdM": "39614.000",
+      "change4wPercent": "0.68",
       "fedAssetsUsdM": "6725397",
-      "reverseRepoUsdM": "0",
+      "reverseRepoUsdM": "454.000",
       "treasuryAccountUsdM": "828122",
-      "rrpIncluded": false,
+      "rrpIncluded": true,
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "순유동성 횡보 — 유동성 레짐 균형",
@@ -2738,63 +2738,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63739.20",
-      "openInterestUsd": "6417448087.94234700",
-      "longAccountRatio": "0.5849",
-      "shortAccountRatio": "0.4151",
-      "downsideLiquidationUsd": "3753565386.64",
-      "upsideLiquidationUsd": "2663882701.30",
+      "currentPrice": "63787.40",
+      "openInterestUsd": "6429126859.86600000",
+      "longAccountRatio": "0.5851",
+      "shortAccountRatio": "0.4149",
+      "downsideLiquidationUsd": "3761682125.71",
+      "upsideLiquidationUsd": "2667444734.16",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57365.28",
+          "price": "57408.66",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1501426154.65"
+          "notionalUsd": "1504672850.28"
         },
         {
-          "price": "70113.12",
+          "price": "70166.14",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1065553080.52"
+          "notionalUsd": "1066977893.66"
         },
         {
-          "price": "61189.63",
+          "price": "61235.90",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1313747885.32"
+          "notionalUsd": "1316588744.00"
         },
         {
-          "price": "66288.77",
+          "price": "66338.90",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "932358945.46"
+          "notionalUsd": "933605656.96"
         },
         {
-          "price": "62464.42",
+          "price": "62511.65",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "750713077.33"
+          "notionalUsd": "752336425.14"
         },
         {
-          "price": "65013.98",
+          "price": "65063.15",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "532776540.26"
+          "notionalUsd": "533488946.83"
         },
         {
-          "price": "63101.81",
+          "price": "63149.53",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "187678269.33"
+          "notionalUsd": "188084106.29"
         },
         {
-          "price": "64376.59",
+          "price": "64425.27",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "133194135.07"
+          "notionalUsd": "133372236.71"
         }
       ],
       "errorMessage": null
@@ -4125,8 +4125,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-14T19:12:21.298764Z",
-      "compositeScore": "0.038",
+      "generatedAt": "2026-06-14T20:12:38.006948Z",
+      "compositeScore": "0.044",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4134,25 +4134,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin could crash to $48,000, if this historical pattern is triggered",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/14/bitcoin-could-crash-to-usd48-000-if-this-historical-pattern-is-triggered",
+          "publishedAt": "2026-06-14T19:17:30Z",
+          "score": "-0.6"
+        },
+        {
           "title": "Summer of crypto (regs): State of Crypto",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/14/summer-of-crypto-regs-state-of-crypto",
           "publishedAt": "2026-06-14T18:30:00Z",
-          "score": "0.0"
+          "score": "0.3"
         },
         {
           "title": "Aerodrome is turning liquidity into a prediction market with its biggest upgrade yet",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/12/aerodrome-is-turning-liquidity-into-a-prediction-market-with-its-biggest-upgrade-yet",
           "publishedAt": "2026-06-14T15:00:00Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "SEC's big swing to clear tokenization path isn't likely to get resilience of full rule",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/news-analysis/2026/06/12/sec-s-big-swing-to-clear-tokenization-path-isn-t-likely-to-get-resilience-of-full-rule",
           "publishedAt": "2026-06-14T14:00:00Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Wall Street and crypto are crashing into each other as tokenized treasury markets hit $14.6 billion",
@@ -4166,14 +4173,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/13/crypto-s-next-billion-dollar-hacker-may-move-at-superhuman-speed",
           "publishedAt": "2026-06-13T18:00:00Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Here's what SpaceX's IPO means for its $1.3 billion bitcoin reserve",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/13/here-s-what-spacex-s-ipo-means-for-its-usd1-3-billion-bitcoin-reserve",
           "publishedAt": "2026-06-13T17:00:16Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Stablecoins Were Meant to Disrupt Finance. Instead, They Became Idle Cash.",
@@ -4183,18 +4190,18 @@
           "score": "-0.3"
         },
         {
-          "title": "Bitcoin rises above $64,000 after Pakistan prime minister says Iran peace deal is near",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/13/bitcoin-rises-above-usd64-000-after-pakistan-prime-minister-says-iran-peace-deal-is-near",
-          "publishedAt": "2026-06-13T16:16:54Z",
-          "score": "0.6"
+          "title": "StanChart looks for 3 signs of BTC bottom, including Strategyâs Monday news",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/stanchart-looks-for-3-signs-of-btc-bottom-including-strategys-monday-news?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-14T19:05:46Z",
+          "score": "0.2"
         },
         {
           "title": "Ethereum can quantum-proof accounts for just 7 cents, says Ethereum's Kohaku lead",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ethereum-quantum-proof-accounts-7-cents-researcher?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-14T13:49:48Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Humanity Protocolâs $36M hack tied to suspected North Korean hackers: Quantstamp",
@@ -4208,7 +4215,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-nears-65k-as-trump-says-hormuz-will-open-to-all-in-sunday-iran-peace-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-14T10:06:04Z",
-          "score": "0.5"
+          "score": "0.7"
         },
         {
           "title": "Hereâs what happened in crypto today",
@@ -4222,7 +4229,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trump-says-iran-peace-deal-to-be-signed-sunday-contradicting-tehran?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-14T05:07:31Z",
-          "score": "0.4"
+          "score": "0.1"
         },
         {
           "title": "Amazon warning triggered US crackdown on Anthropic AI models: Reports",
@@ -4236,14 +4243,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/anthropic-mythos-audit-no-serious-bugs-zcash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-13T14:45:43Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Bitcoin sales are necessary for Strategy's digital credit business, Saylor says",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/saylor-strategys-bitcoin-sale-defend-digital-credit-products?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-13T13:58:24Z",
-          "score": "-0.3"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
