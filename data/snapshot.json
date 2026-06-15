@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-15T16:59:19Z",
+  "updatedAt": "2026-06-15T17:19:39Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "64317.89",
       "macd": {
-        "macdLine": "-2784.50",
-        "signalLine": "-3356.02",
-        "histogram": "571.52",
+        "macdLine": "-2805.76",
+        "signalLine": "-3360.27",
+        "histogram": "554.51",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -432,9 +432,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000068",
       "ivRv": {
-        "iv": "37.93",
+        "iv": "40.43",
         "rv": "38.00",
-        "spread": "-0.07",
+        "spread": "+2.43",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2678,9 +2678,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261473997903.25355",
+      "totalMarketCapUsd": "261411336616.60872",
       "marketCap30dAgoUsd": "266728951206.68657",
-      "growth30dPercent": "-1.97",
+      "growth30dPercent": "-1.99",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2749,63 +2749,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "67154.50",
-      "openInterestUsd": "7020275253.20520000",
-      "longAccountRatio": "0.5704",
-      "shortAccountRatio": "0.4296",
-      "downsideLiquidationUsd": "4004365004.43",
-      "upsideLiquidationUsd": "3015910248.78",
+      "currentPrice": "66878.90",
+      "openInterestUsd": "6958234274.75600000",
+      "longAccountRatio": "0.5689",
+      "shortAccountRatio": "0.4311",
+      "downsideLiquidationUsd": "3958539478.91",
+      "upsideLiquidationUsd": "2999694795.85",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "60439.05",
+          "price": "60191.01",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1601746001.77"
+          "notionalUsd": "1583415791.56"
         },
         {
-          "price": "73869.95",
+          "price": "73566.79",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1206364099.51"
+          "notionalUsd": "1199877918.34"
         },
         {
-          "price": "64468.32",
+          "price": "64203.74",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1401527751.55"
+          "notionalUsd": "1385488817.62"
         },
         {
-          "price": "69840.68",
+          "price": "69554.06",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1055568587.07"
+          "notionalUsd": "1049893178.55"
         },
         {
-          "price": "65811.41",
+          "price": "65541.32",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "800873000.89"
+          "notionalUsd": "791707895.78"
         },
         {
-          "price": "68497.59",
+          "price": "68216.48",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "603182049.76"
+          "notionalUsd": "599938959.17"
         },
         {
-          "price": "66482.96",
+          "price": "66210.11",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "200218250.22"
+          "notionalUsd": "197926973.95"
         },
         {
-          "price": "67826.05",
+          "price": "67547.69",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "150795512.44"
+          "notionalUsd": "149984739.79"
         }
       ],
       "errorMessage": null
@@ -4112,7 +4112,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-15T16:30:03.534541Z",
+      "generatedAt": "2026-06-15T17:19:34.897803Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4121,31 +4121,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집이 우세하나 시장 심리는 공포 상태로 위험 요소가 존재한다."
+          "content": "현재 매집 우세로 보이나 공포 심리가 지배적이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 20으로 극단적인 공포를 나타냄."
+          "content": "시장 심리가 극단적인 공포 상태로, 가격 하락 위험이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "RSI(일)와 RSI(주)가 각각 36.28과 35.63으로 과매도 구간에 있음."
+          "content": "거래소 순유입이 마이너스이며, 유동성 부족 우려가 있다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 손절매 설정을 권장함."
+          "content": "매수 기회를 노리되, 리스크 관리에 유의하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리 회복을 기다리며 추가 매수는 신중히 결정할 것."
+          "content": "추가적인 하락 시 매수 분할 전략을 고려하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-15T16:05:05.782986Z",
-      "compositeScore": "0.300",
+      "generatedAt": "2026-06-15T17:19:39.911636Z",
+      "compositeScore": "0.350",
       "label": "POSITIVE",
       "labelDisplay": "긍정",
       "labelHexColor": "#10B981",
@@ -4164,7 +4164,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/15/crypto-spring-is-here-says-one-analyst-after-bitcoin-s-key-signals-turn-bullish",
           "publishedAt": "2026-06-15T14:16:45Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "Kraken debuts U.S. perpetual futures as crypto derivatives move onshore",
@@ -4185,7 +4185,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/15/xrp-rockets-8-above-usd1-20-in-first-major-breakout-since-june-selloff",
           "publishedAt": "2026-06-15T13:26:20Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "CoinDesk 20 performance update: Bittensor (TAO) surges 31.9%, leading index higher",
@@ -4199,7 +4199,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/15/bitmine-adds-another-usd136-million-of-ether-after-raising-usd274-million-in-preferred-stock-sale",
           "publishedAt": "2026-06-15T13:04:51Z",
-          "score": "0.4"
+          "score": "0.1"
         },
         {
           "title": "Michael Saylor's Strategy acquires another 1,587 bitcoin for $100 million",
@@ -4207,6 +4207,27 @@
           "url": "https://www.coindesk.com/markets/2026/06/15/strategy-deploys-usd100-million-from-usd-reserves-to-acquire-1-587-btc",
           "publishedAt": "2026-06-15T12:06:39Z",
           "score": "0.8"
+        },
+        {
+          "title": "These Bitcoin charts show how BTC price could hit $100K before October",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/these-bitcoin-charts-show-how-btc-price-could-hit-100k-before-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-15T16:18:14Z",
+          "score": "0.9"
+        },
+        {
+          "title": "Bitcoin analysis warns over BTC price rejection as $67K approaches",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-analysis-warn-over-btc-price-rejection-as-67k-approaches?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-15T15:22:18Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "Pudgy Penguins winds down Pudgy Party mobile game",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/pudgy-penguins-winds-down-pudgy-party-mobile-game?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-15T15:05:14Z",
+          "score": "-0.2"
         },
         {
           "title": "Saylorâs Strategy buys 1,587 BTC for $100M, holdings hit 846.8K",
@@ -4234,35 +4255,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitbank-japan-crackdown-polymarket-linked-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-15T10:05:29Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Bitcoin nears $66K as Trump says US has peace deal with Iran",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-closes-in-on-66k-as-trump-signals-deal-with-iran?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-15T06:47:49Z",
-          "score": "0.5"
-        },
-        {
-          "title": "CFTC sues New Mexico over prediction market jurisdiction",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/cftc-sues-new-mexico-over-prediction-market-jurisdiction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-15T05:54:06Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Aztec Connectâs abandoned smart contract exploited for $2.1M",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/aztec-connects-depreciated-smart-contract-exploited-for-2-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-15T05:43:47Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "Bitcoin mining difficulty drops 10% in 11th largest downward adjustment",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitcoin-mining-difficulty-drops-10-in-11th-largest-downward-adjustment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-15T04:16:14Z",
-          "score": "0.1"
+          "score": "0.4"
         }
       ],
       "errorMessage": null
