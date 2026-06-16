@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-16T11:04:47Z",
+  "updatedAt": "2026-06-16T11:24:58Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "66312.75",
       "macd": {
-        "macdLine": "-2523.60",
-        "signalLine": "-3201.93",
-        "histogram": "678.33",
+        "macdLine": "-2533.79",
+        "signalLine": "-3203.97",
+        "histogram": "670.18",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000064",
       "ivRv": {
-        "iv": "33.02",
+        "iv": "32.96",
         "rv": "43.00",
-        "spread": "-9.98",
+        "spread": "-10.04",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2756,63 +2756,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "66537.30",
-      "openInterestUsd": "6934789002.64244900",
-      "longAccountRatio": "0.5843",
-      "shortAccountRatio": "0.4157",
-      "downsideLiquidationUsd": "4051997214.24",
-      "upsideLiquidationUsd": "2882791788.40",
+      "currentPrice": "66427.00",
+      "openInterestUsd": "6939972170.61690000",
+      "longAccountRatio": "0.5829",
+      "shortAccountRatio": "0.4171",
+      "downsideLiquidationUsd": "4045309778.25",
+      "upsideLiquidationUsd": "2894662392.36",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "59883.57",
+          "price": "59784.30",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1620798885.70"
+          "notionalUsd": "1618123911.30"
         },
         {
-          "price": "73191.03",
+          "price": "73069.70",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1153116715.36"
+          "notionalUsd": "1157864956.95"
         },
         {
-          "price": "63875.81",
+          "price": "63769.92",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1418199024.99"
+          "notionalUsd": "1415858422.39"
         },
         {
-          "price": "69198.79",
+          "price": "69084.08",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1008977125.94"
+          "notionalUsd": "1013131837.33"
         },
         {
-          "price": "65206.55",
+          "price": "65098.46",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "810399442.85"
+          "notionalUsd": "809061955.65"
         },
         {
-          "price": "67868.05",
+          "price": "67755.54",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "576558357.68"
+          "notionalUsd": "578932478.47"
         },
         {
-          "price": "65871.93",
+          "price": "65762.73",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "202599860.71"
+          "notionalUsd": "202265488.91"
         },
         {
-          "price": "67202.67",
+          "price": "67091.27",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "144139589.42"
+          "notionalUsd": "144733119.62"
         }
       ],
       "errorMessage": null
@@ -4140,14 +4140,28 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-16T10:05:01.476707Z",
-      "compositeScore": "0.069",
+      "generatedAt": "2026-06-16T11:05:04.722458Z",
+      "compositeScore": "0.125",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Bitcoin buyers add over 250,000 BTC between $59,000 and $67,000 as accumulation returns",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/16/bitcoin-buyers-add-over-250-000-btc-between-usd59-000-and-usd67-000-as-accumulation-returns",
+          "publishedAt": "2026-06-16T10:41:41Z",
+          "score": "0.6"
+        },
+        {
+          "title": "Bitcoin rallies after Japan rate increase with XLM, INJ, UNI advancing",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/16/bitcoin-rallies-after-japan-rate-increase-with-xlm-inj-uni-advancing",
+          "publishedAt": "2026-06-16T10:29:34Z",
+          "score": "0.5"
+        },
         {
           "title": "Tether Gold now has a dedicated options market on Bybit",
           "source": "CoinDesk",
@@ -4174,42 +4188,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/16/profit-taking-across-bitcoin-ether-solana-as-traders-wait-on-the-iran-signing",
           "publishedAt": "2026-06-16T04:48:31Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Bitcoin rises after Bank of Japan hikes interest rates to a 31-year high",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/16/bitcoin-rises-after-bank-of-japan-hikes-interest-rates-to-a-31-year-high",
           "publishedAt": "2026-06-16T04:30:41Z",
-          "score": "0.4"
+          "score": "0.7"
         },
         {
           "title": "Hyperliquid loses Anthropic, OpenAI markets as creator shuts down project",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/15/hyperliquid-loses-anthropic-openai-markets-as-creator-shuts-down-project",
           "publishedAt": "2026-06-15T18:14:07Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
-          "title": "If America wants to lead in crypto, it must protect the people who build it",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/opinion/2026/06/15/if-america-wants-to-lead-in-crypto-it-must-protect-the-people-who-build-it",
-          "publishedAt": "2026-06-15T14:25:00Z",
-          "score": "0.3"
-        },
-        {
-          "title": "âCrypto springâ is here, says one analyst after bitcoin's key signals turn bullish",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/15/crypto-spring-is-here-says-one-analyst-after-bitcoin-s-key-signals-turn-bullish",
-          "publishedAt": "2026-06-15T14:16:45Z",
-          "score": "0.5"
+          "title": "Bitcoin doesn't need Ethereum-style yield, says Strategy's Michael Saylor",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/strategy-saylor-bitcoin-credit-alternative-crypto-yield?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-16T10:11:18Z",
+          "score": "0.1"
         },
         {
           "title": "Bitcoin miner IREN enters Europe with Nostrum acquisition as AI pivot accelerates",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/iren-nostrum-acquisition-europe-ai-cloud?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-16T08:24:55Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4230,14 +4237,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-government-watchdog-urges-fdic-coordinate-on-crypto-oversight?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-16T04:42:22Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Anthropic shutdown makes a strong case for decentralized AI: Grayscale",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/anthropic-shutdown-makes-a-strong-case-for-decentralized-ai-grayscale?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-16T03:38:49Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Trump crypto company's USD1 stablecoins backing UFC event bonuses",
@@ -4251,14 +4258,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/nvidia-20-billion-debt-boom-reinforces-bitocin-minings-ai-pivot?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-15T19:15:43Z",
-          "score": "0.3"
-        },
-        {
-          "title": "CFTC hires SEC crypto task force adviser with blockchain forensics chops",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/sec-crypto-adviser-cftc-blockchain-forensics?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-15T18:41:24Z",
-          "score": "0.2"
+          "score": "0.5"
         }
       ],
       "errorMessage": null
