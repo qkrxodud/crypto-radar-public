@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="달러지수(DXY)란 무엇이고 비트코인과 어떤 관계인지 — 계산 방식, 강달러·약달러가 위험자산에 미치는 영향, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="What the US Dollar Index (DXY) is and how it relates to Bitcoin — how it's calculated, how a strong or weak dollar affects risk assets, how to use it for buy timing, and its limits." data-zh-content="美元指数（DXY）是什么、与比特币有何关系——计算方式、强弱美元对风险资产的影响、择时用法及其局限。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="Dollar Index DXY — BTC Timing Radar" data-zh="美元指数 DXY — BTC 时机雷达">달러지수 DXY란? 비트코인과의 관계 완전 정리 — BTC 타이밍 레이더</title>
+<link rel="canonical" href="https://btctiming.co.kr/indicators/dollar-index-dxy.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://btctiming.co.kr/indicators/dollar-index-dxy.html">
+<meta property="og:site_name" content="BTC 투자 타이밍 레이더" data-en-content="BTC Investment Timing Radar" data-zh-content="BTC 投资择时雷达">
+<meta property="og:title" content="달러지수 DXY란? 비트코인과의 관계 완전 정리" data-en-content="Dollar Index DXY — How It Moves Bitcoin" data-zh-content="美元指数 DXY — 它如何影响比特币">
+<meta property="og:description" content="달러지수(DXY)의 계산 방식, 강달러·약달러가 비트코인에 미치는 영향, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="How the US Dollar Index is calculated, how a strong or weak dollar affects Bitcoin, and how to use it for buy timing." data-zh-content="美元指数的计算方式、强弱美元对比特币的影响，以及择时用法。">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="달러지수 DXY란? 비트코인과의 관계 완전 정리" data-en-content="Dollar Index DXY — How It Moves Bitcoin" data-zh-content="美元指数 DXY — 它如何影响比特币">
+<meta name="twitter:description" content="달러지수(DXY)의 계산 방식, 비트코인과의 관계, 매수 타이밍 활용법과 한계를 설명합니다." data-en-content="How the US Dollar Index is calculated, its link to Bitcoin, and how to use it." data-zh-content="美元指数的计算方式、与比特币的关系及用法。">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="../btc-base.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898023121512538" crossorigin="anonymous"></script>
+<script src="../btc-i18n.js" defer></script>
+<style>
+  /* 지표 상세 페이지 공통 레이아웃 */
+  .crumb-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-2);font-family:var(--mono);margin-bottom:18px}
+  .crumb-nav a{color:var(--muted);text-decoration:none}
+  .crumb-nav a:hover{color:var(--text)}
+  .crumb-nav .sep{opacity:.5}
+  .ind-hero{margin:6px 0 8px}
+  .ind-hero .cat-pill{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--brand);background:var(--brand-soft);border:1px solid rgba(247,147,26,.25);padding:5px 12px;border-radius:100px;margin-bottom:14px}
+  .ind-hero .cat-pill .d{width:8px;height:8px;border-radius:50%;background:var(--brand)}
+  .ind-hero h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px}
+  .ind-hero h1 .hl{color:var(--brand)}
+  .ind-hero .lead{font-size:15.5px;color:var(--muted);line-height:1.74;max-width:720px;margin:0}
+  .ind-hero .lead b{color:var(--text);font-weight:600}
+  /* 한눈 요약 박스 */
+  .summary-box{margin:26px 0 0;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:680px){.summary-box{grid-template-columns:1fr;gap:16px}}
+  .summary-box .sb{display:flex;flex-direction:column;gap:6px}
+  .summary-box .sb .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted-2)}
+  .summary-box .sb .v{font-size:13.5px;color:#c2cadb;line-height:1.6}
+  .summary-box .sb .v b{color:var(--text);font-weight:600}
+  .impact-inline{font-size:11.5px;font-family:var(--mono);font-weight:600;padding:4px 9px;border-radius:7px;display:inline-flex;align-self:flex-start}
+  .impact-inline.buy{color:var(--neon);background:var(--neon-soft)}
+  /* 본문 섹션 */
+  .sec{margin:46px 0 0;scroll-margin-top:80px;max-width:780px}
+  .sec h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+  .sec h2 .ix{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--brand);background:var(--brand-soft);width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
+  .sec p{font-size:14.5px;color:var(--muted);line-height:1.78;margin:0 0 14px}
+  .sec p b{color:var(--text);font-weight:600}
+  .sec p code,.sec li code{font-family:var(--mono);font-size:12.5px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
+  .sec ul{margin:0 0 14px;padding-left:20px}
+  .sec li{font-size:14.5px;color:var(--muted);line-height:1.72;margin:0 0 8px}
+  .sec li b{color:var(--text);font-weight:600}
+  /* 해석 구간 테이블 */
+  .zone-table{margin:8px 0 6px;border:1px solid var(--border);border-radius:13px;overflow:hidden}
+  .zone-table .zrow{display:grid;grid-template-columns:128px 1fr;border-bottom:1px solid var(--border)}
+  .zone-table .zrow:last-child{border-bottom:0}
+  .zone-table .zr-band{font-family:var(--mono);font-size:12.5px;font-weight:700;padding:13px 15px;display:flex;align-items:center;background:rgba(255,255,255,.02)}
+  .zone-table .zr-desc{font-size:13px;color:var(--muted);line-height:1.58;padding:13px 15px}
+  .zone-table .zr-band.z-strong{color:var(--neon)}
+  .zone-table .zr-band.z-mild{color:var(--brand)}
+  .zone-table .zr-band.z-wait{color:var(--muted)}
+  .zone-table .zr-band.z-bear{color:var(--amber)}
+  @media(max-width:480px){.zone-table .zrow{grid-template-columns:100px 1fr}}
+  /* 콜아웃 */
+  .callout{margin:18px 0;border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:11px;background:rgba(255,194,61,.06);padding:15px 18px}
+  .callout .ct{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
+  .callout p{font-size:13.5px;color:#c2cadb;line-height:1.7;margin:0}
+  /* 함께 보면 좋은 지표 */
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+  @media(max-width:760px){.related-grid{grid-template-columns:1fr}}
+  .related-grid a{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;padding:15px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:5px}
+  .related-grid a:hover{border-color:var(--border-strong);transform:translateY(-2px);background:rgba(255,255,255,.04)}
+  .related-grid a .rn{font-size:14.5px;font-weight:700;color:var(--text)}
+  .related-grid a .rd{font-size:12.5px;color:var(--muted);line-height:1.5}
+  /* FAQ */
+  .faq-list{margin-top:14px;display:flex;flex-direction:column;gap:11px;max-width:820px}
+  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;overflow:hidden}
+  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--text);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--brand);flex:none}
+  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--muted-2);transition:.2s;flex:none}
+  .faq-item[open] summary::after{transform:rotate(45deg)}
+  .faq-item .ans{font-size:13.5px;color:var(--muted);line-height:1.74;padding:0 18px 16px}
+  .faq-item .ans b{color:var(--text);font-weight:600}
+  /* 하단 CTA */
+  .page-cta{margin:50px 0 10px;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .page-cta .ct-tx h3{font-size:17px;font-weight:700;margin:0 0 5px}
+  .page-cta .ct-tx p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.6}
+  .page-cta .ct-btn{font-size:14px;font-weight:700;color:#06140d;background:var(--neon);border-radius:11px;padding:13px 22px;text-decoration:none;white-space:nowrap;transition:.2s}
+  .page-cta .ct-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(54,222,158,.25)}
+</style>
+<!-- 구조화 데이터: 지표 해설 문서 + 빵부스러기 + FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "datePublished": "2026-06-16",
+  "dateModified": "2026-06-16",
+  "headline": "달러지수 DXY란? 비트코인과의 관계 완전 정리",
+  "description": "달러지수(DXY)의 계산 방식, 강달러·약달러가 비트코인에 미치는 영향, 매수 타이밍 활용법과 한계를 설명합니다.",
+  "inLanguage": "ko",
+  "author": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더"},
+  "publisher": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더"},
+  "mainEntityOfPage": "https://btctiming.co.kr/indicators/dollar-index-dxy.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "지표 가이드", "item": "https://btctiming.co.kr/guide.html"},
+    {"@type": "ListItem", "position": 2, "name": "달러지수 DXY", "item": "https://btctiming.co.kr/indicators/dollar-index-dxy.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "DXY가 내리면 비트코인은 무조건 오르나요?", "acceptedAnswer": {"@type": "Answer", "text": "약달러는 역사적으로 비트코인을 포함한 위험자산에 우호적인 배경이었지만 인과 법칙은 아닙니다. 둘의 역상관은 느슨한 경향일 뿐이며 한동안 깨지기도 합니다. DXY는 매매 트리거가 아니라 거시 배경을 읽는 맥락 지표로 활용하는 것이 안전합니다."}},
+    {"@type": "Question", "name": "DXY는 어떻게 계산되나요?", "acceptedAnswer": {"@type": "Answer", "text": "DXY는 유로·엔·파운드 등 6개 주요 통화 바스켓 대비 미국 달러의 가치를 가중 평균으로 나타낸 지수입니다. 유로의 비중이 절반 이상으로 가장 크며, 달러가 이들 통화 대비 강해지면 지수가 오릅니다."}},
+    {"@type": "Question", "name": "DXY는 몇 이상이면 강달러인가요?", "acceptedAnswer": {"@type": "Answer", "text": "절대적인 고정 기준선은 없고 방향과 추세가 더 중요합니다. 같은 100이라도 직전에 내려온 100인지 올라온 100인지에 따라 의미가 다릅니다. 특정 숫자보다 DXY가 오르는 추세인지 내리는 추세인지를 보는 편이 실용적입니다."}}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="bg-field" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
+    <nav class="nav-links">
+      <a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
+      <a class="active" href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
+      <a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a>
+    </nav>
+    <a class="nav-pill" href="../index.html"><span class="pulse"></span><span data-en="Today's Score →" data-zh="今日评分 →">오늘의 점수 →</span></a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="crumb-nav reveal">
+    <a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
+    <span class="sep">/</span>
+    <span data-en="Macro" data-zh="宏观">매크로</span>
+    <span class="sep">/</span>
+    <span data-en="Dollar Index DXY" data-zh="美元指数 DXY">달러지수 DXY</span>
+  </div>
+
+  <div class="ind-hero reveal">
+    <span class="cat-pill"><span class="d" style="background:var(--amber)"></span><span data-en="Macro" data-zh="宏观">매크로</span></span>
+    <h1 data-i18n-html="1" data-en="The Dollar Index (DXY), in <span class=&quot;hl&quot;>plain words</span>" data-zh="用<span class=&quot;hl&quot;>通俗的话</span>讲清楚美元指数（DXY）">달러지수 DXY, <span class="hl">쉬운 말</span>로 풀어보기</h1>
+    <p class="lead" data-i18n-html="1" data-en="The Dollar Index measures how strong the US dollar is against a basket of major currencies. It isn't a crypto indicator at all — but because the dollar is the world's pricing unit for risk, <b>a weak dollar tends to be a tailwind for Bitcoin and a strong dollar a headwind.</b> DXY is the macro backdrop your other indicators are playing against." data-zh="美元指数衡量美元相对一篮子主要货币的强弱。它根本不是加密指标——但由于美元是全球风险定价的计价单位，<b>美元走弱往往是比特币的顺风，美元走强则是逆风。</b>DXY 是你其他指标所处的宏观背景。">달러지수는 미국 달러가 주요 통화 바스켓 대비 얼마나 강한지를 재는 지표입니다. 사실 암호화폐 지표가 전혀 아니지만, 달러가 전 세계 위험자산의 가격 기준이기 때문에 <b>달러가 약하면 비트코인엔 순풍, 강하면 역풍</b>이 되는 경향이 있습니다. DXY는 다른 지표들이 그 위에서 움직이는 거시 배경입니다.</p>
+  </div>
+
+  <div class="summary-box reveal">
+    <div class="sb">
+      <span class="k" data-en="What it is" data-zh="是什么">무엇인가</span>
+      <span class="v" data-en="The dollar's strength versus six major currencies." data-zh="美元相对六种主要货币的强弱。">6개 주요 통화 대비 달러의 강세를 나타내는 지수.</span>
+    </div>
+    <div class="sb">
+      <span class="k" data-en="How to read" data-zh="如何解读">어떻게 읽나</span>
+      <span class="v" data-en="<b>Falling DXY = weaker dollar</b>, historically friendlier to risk assets." data-zh="<b>DXY 下跌 = 美元走弱</b>，历史上对风险资产更友好。" data-i18n-html="1"><b>DXY 하락 = 약달러</b>, 역사적으로 위험자산에 더 우호적.</span>
+    </div>
+    <div class="sb">
+      <span class="k" data-en="Signal" data-zh="信号">신호</span>
+      <span class="impact-inline buy" data-en="Weak dollar = crypto-friendly" data-zh="美元走弱 = 利好币市">약달러 = 코인 우호</span>
+    </div>
+  </div>
+
+  <section class="sec reveal">
+    <h2><span class="ix">1</span><span data-en="What the Dollar Index actually measures" data-zh="美元指数到底衡量什么">달러지수는 무엇을 재는가</span></h2>
+    <p data-i18n-html="1" data-en="The DXY is a single number that answers one question: <b>is the US dollar getting stronger or weaker against other major currencies?</b> When the dollar buys more euros, yen, and pounds than before, the index rises. When it buys fewer, the index falls. It says nothing about Bitcoin directly — it measures the dollar." data-zh="DXY 用一个数字回答一个问题：<b>美元相对其他主要货币是在走强还是走弱？</b>当美元能换到比以往更多的欧元、日元和英镑时，指数上升；反之下降。它本身与比特币无关——衡量的是美元。">DXY는 하나의 질문에 답하는 단일 숫자입니다 — <b>미국 달러가 다른 주요 통화 대비 강해지고 있는가, 약해지고 있는가?</b> 달러로 예전보다 더 많은 유로·엔·파운드를 살 수 있으면 지수가 오르고, 더 적게 사면 내립니다. 비트코인에 대해 직접 말하는 것은 없습니다 — 재는 대상은 달러입니다.</p>
+    <p data-en="Why does a Bitcoin dashboard care about a currency index? Because the dollar is the world's reserve currency and the unit in which risk is priced. When the dollar is strong, global liquidity tightens, borrowing in dollars gets more expensive, and money tends to flow out of speculative assets toward the safety of cash. When the dollar is weak, the opposite happens — liquidity loosens and capital looks for higher returns, which has historically included Bitcoin." data-zh="一个比特币仪表盘为何关心货币指数？因为美元是全球储备货币，也是风险定价的单位。当美元走强时，全球流动性收紧，以美元借款更贵，资金倾向从投机资产流向现金的安全；当美元走弱时则相反——流动性宽松，资本寻找更高回报，历史上这其中包括比特币。">비트코인 대시보드가 왜 통화 지수에 신경 쓸까요? 달러가 전 세계의 기축통화이자 위험이 매겨지는 단위이기 때문입니다. 달러가 강할 때는 글로벌 유동성이 조여지고 달러 차입 비용이 비싸지며, 자금이 투기적 자산에서 현금의 안전으로 흘러가는 경향이 있습니다. 달러가 약할 때는 반대로 유동성이 풀리고 자본이 더 높은 수익을 찾는데, 역사적으로 거기에 비트코인도 포함됐습니다.</p>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">2</span><span data-en="How it's calculated" data-zh="计算方式">어떻게 계산되나</span></h2>
+    <p data-i18n-html="1" data-en="The DXY is a <b>weighted geometric average</b> of the dollar's exchange rate against six currencies. The weights are fixed and were set decades ago, so the euro dominates by a wide margin:" data-zh="DXY 是美元对六种货币汇率的<b>加权几何平均</b>。权重是固定的，几十年前就已设定，因此欧元占绝对主导：">DXY는 달러의 6개 통화 대비 환율을 <b>가중 기하평균</b>한 값입니다. 가중치는 수십 년 전에 정해진 고정값이라 유로의 비중이 압도적으로 큽니다.</p>
+    <ul>
+      <li data-i18n-html="1" data-en="<b>Euro (EUR, ~57.6%)</b> — by far the largest component, so DXY is heavily a dollar-vs-euro story." data-zh="<b>欧元（EUR，约 57.6%）</b>——占比最大，故 DXY 在很大程度上是美元对欧元的故事。"><b>유로 (EUR, ~57.6%)</b> — 압도적으로 가장 큰 비중이라, DXY는 사실상 달러 대 유로 이야기에 가깝습니다.</li>
+      <li data-i18n-html="1" data-en="<b>Japanese yen (JPY, ~13.6%)</b> — the second-largest weight." data-zh="<b>日元（JPY，约 13.6%）</b>——第二大权重。"><b>일본 엔 (JPY, ~13.6%)</b> — 두 번째로 큰 비중.</li>
+      <li data-i18n-html="1" data-en="<b>British pound (GBP, ~11.9%)</b>, <b>Canadian dollar (CAD, ~9.1%)</b>." data-zh="<b>英镑（GBP，约 11.9%）</b>、<b>加元（CAD，约 9.1%）</b>。"><b>영국 파운드 (GBP, ~11.9%)</b>, <b>캐나다 달러 (CAD, ~9.1%)</b>.</li>
+      <li data-i18n-html="1" data-en="<b>Swedish krona (SEK, ~4.2%)</b>, <b>Swiss franc (CHF, ~3.6%)</b> — the smallest pieces." data-zh="<b>瑞典克朗（SEK，约 4.2%）</b>、<b>瑞士法郎（CHF，约 3.6%）</b>——占比最小。"><b>스웨덴 크로나 (SEK, ~4.2%)</b>, <b>스위스 프랑 (CHF, ~3.6%)</b> — 가장 작은 조각들.</li>
+    </ul>
+    <p data-i18n-html="1" data-en="You don't need to compute it yourself — the value is quoted everywhere as a single index level (often hovering near <code>100</code>). The key takeaway is that DXY does <b>not</b> include the Korean won, the Chinese yuan, or most emerging-market currencies, so it's a 'developed-world dollar strength' gauge, not a literal measure of the dollar against everything." data-zh="你无需自己计算——该数值随处可见，是单一的指数水平（常在 <code>100</code> 附近徘徊）。要点是：DXY <b>不</b>包含韩元、人民币或大多数新兴市场货币，因此它是“发达国家美元强弱”的标尺，而非美元对一切货币的字面衡量。">직접 계산할 필요는 없습니다 — 값은 어디서나 단일 지수 수준(흔히 <code>100</code> 부근)으로 인용됩니다. 핵심은 DXY가 한국 원, 중국 위안, 대부분의 신흥국 통화를 <b>포함하지 않는다</b>는 점입니다. 그래서 '선진국 기준 달러 강세' 잣대이지, 모든 통화에 대한 달러 가치를 그대로 재는 것은 아닙니다.</p>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">3</span><span data-en="Reading the direction" data-zh="解读方向">방향으로 읽기</span></h2>
+    <p data-en="DXY has no fixed 'buy line' — what matters is the direction and the trend, not a magic number. The table below describes how each move has tended to color the backdrop for risk assets like Bitcoin." data-zh="DXY 没有固定的“买入线”——重要的是方向与趋势，而非某个魔法数字。下表描述每种走势往往如何为比特币等风险资产着色。">DXY에는 정해진 '매수선'이 없습니다 — 중요한 것은 마법의 숫자가 아니라 방향과 추세입니다. 아래 표는 각 움직임이 비트코인 같은 위험자산의 배경을 어떻게 물들이는 경향이 있었는지를 설명합니다.</p>
+    <div class="zone-table">
+      <div class="zrow"><div class="zr-band z-strong"><span data-en="Falling fast" data-zh="快速下跌">빠른 하락</span></div><div class="zr-desc" data-en="<b>Sharp dollar weakness.</b> Liquidity loosens; historically the friendliest macro backdrop for risk assets including Bitcoin." data-zh="<b>美元大幅走弱。</b>流动性宽松；历史上对包括比特币在内的风险资产最友好的宏观背景。" data-i18n-html="1"><b>달러의 급격한 약세.</b> 유동성이 풀리는 국면. 역사적으로 비트코인을 포함한 위험자산에 가장 우호적인 거시 배경.</div></div>
+      <div class="zrow"><div class="zr-band z-mild"><span data-en="Drifting down" data-zh="缓慢下行">완만한 하락</span></div><div class="zr-desc" data-en="<b>Gentle dollar weakness.</b> A mild tailwind; supportive but not decisive on its own." data-zh="<b>美元温和走弱。</b>轻微顺风；具支撑性，但单独并不决定性。" data-i18n-html="1"><b>완만한 달러 약세.</b> 약한 순풍. 우호적이지만 그 자체로 결정적이진 않음.</div></div>
+      <div class="zrow"><div class="zr-band z-wait"><span data-en="Flat / range" data-zh="横盘 / 区间">횡보 · 박스</span></div><div class="zr-desc" data-en="<b>No clear macro push.</b> The dollar isn't dictating direction; other indicators carry more weight." data-zh="<b>无明确宏观推力。</b>美元未主导方向；其他指标更具分量。" data-i18n-html="1"><b>뚜렷한 거시 압력 없음.</b> 달러가 방향을 지시하지 않는 상태. 다른 지표의 비중이 더 큼.</div></div>
+      <div class="zrow"><div class="zr-band z-bear"><span data-en="Rising" data-zh="上行">상승</span></div><div class="zr-desc" data-en="<b>Dollar strength.</b> A macro headwind for risk assets; tightening liquidity tends to pressure speculative bids." data-zh="<b>美元走强。</b>对风险资产构成宏观逆风；流动性收紧往往压制投机买盘。" data-i18n-html="1"><b>달러 강세.</b> 위험자산에 거시적 역풍. 유동성 긴축이 투기적 매수세를 누르는 경향.</div></div>
+    </div>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">4</span><span data-en="Using it for buy timing" data-zh="用于择时">매수 타이밍에 쓰는 법</span></h2>
+    <p data-i18n-html="1" data-en="DXY is a <b>slow background variable</b>, not a trigger you act on day to day. Its best use is as a sanity check: when you see a constructive on-chain or technical setup, glance at whether the dollar is a tailwind (falling) or fighting you (rising). A favorable Bitcoin setup against a sharply rising dollar deserves more caution; the same setup with a weakening dollar has more wind at its back." data-zh="DXY 是<b>缓慢的背景变量</b>，而非你每天据以行动的触发器。它最好的用法是作为合理性检查：当你看到建设性的链上或技术形态时，看一眼美元是顺风（下跌）还是在与你作对（上涨）。在美元急升背景下出现的有利比特币形态值得更谨慎；同样的形态若伴随美元走弱，则更有助力。">DXY는 매일 반응하는 트리거가 아니라 <b>느린 배경 변수</b>입니다. 가장 좋은 쓰임새는 점검용입니다 — 건설적인 온체인·기술적 셋업이 보일 때, 달러가 순풍(하락)인지 당신과 맞서는지(상승)를 한 번 봐 두세요. 달러가 가파르게 오르는데 나타난 유호적 비트코인 셋업은 더 조심할 가치가 있고, 같은 셋업이 약달러와 함께라면 등 뒤에 바람이 더 붑니다.</p>
+    <div class="callout">
+      <div class="ct" data-en="Practical tip" data-zh="实用建议">실전 팁</div>
+      <p data-en="Don't trade DXY ticks. Look at the multi-week trend and pair it with the Fed's policy direction — DXY often moves with expectations of rate hikes (dollar up) or cuts (dollar down). It frames the environment; on-chain and derivatives indicators handle the timing." data-zh="不要交易 DXY 的瞬时波动。关注数周趋势，并结合美联储政策方向——DXY 常随加息（美元上行）或降息（美元下行）预期而动。它界定环境，择时则交给链上与衍生品指标。" data-i18n-html="1">DXY의 순간 변동에 매매하지 마세요. 몇 주 추세를 보고 연준의 정책 방향과 함께 보세요 — DXY는 금리 인상 기대(달러 상승)나 인하 기대(달러 하락)와 함께 움직이는 경우가 많습니다. 환경을 규정하는 것은 DXY, 타이밍은 온체인·파생 지표의 몫입니다.</p>
+    </div>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">5</span><span data-en="Limits &amp; common misreadings" data-zh="局限与常见误读">한계와 흔한 오해</span></h2>
+    <p data-i18n-html="1" data-en="The inverse link between the dollar and Bitcoin is a <b>loose tendency, not a law</b>, and it breaks down for long stretches — there have been periods where both rose or both fell together. The most common mistake is treating DXY as a precise timing signal: it's an indirect, slow-moving macro influence, so reacting to small daily wiggles is noise. It also excludes the won and yuan, so it doesn't capture dollar strength against emerging markets, and currency markets can move for reasons (a European crisis, a yen intervention) that have nothing to do with crypto." data-zh="美元与比特币的反向关联是<b>松散倾向而非铁律</b>，且会长期失效——曾有两者同涨或同跌的时期。最常见的错误是把 DXY 当作精准的择时信号：它是间接、缓慢的宏观影响，对每日小幅波动做出反应只是噪声。它也不含韩元和人民币，因而无法反映美元对新兴市场的强弱；汇市还可能因与加密无关的原因（欧洲危机、日元干预）而波动。">달러와 비트코인의 역상관은 <b>느슨한 경향일 뿐 법칙이 아니며</b>, 한동안 깨지기도 합니다 — 둘이 함께 오르거나 함께 내린 시기도 있었습니다. 가장 흔한 실수는 DXY를 정밀한 타이밍 신호로 다루는 것입니다. 이것은 간접적이고 느린 거시 영향이라, 하루치 작은 출렁임에 반응하는 건 잡음일 뿐입니다. 또 원·위안을 포함하지 않아 신흥국 대비 달러 강세를 담지 못하고, 환시장은 암호화폐와 무관한 이유(유럽 위기, 엔 개입)로도 움직일 수 있습니다.</p>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">+</span><span data-en="Indicators to read alongside" data-zh="建议搭配阅读的指标">함께 보면 좋은 지표</span></h2>
+    <div class="related-grid">
+      <a href="etf-net-flow.html">
+        <span class="rn" data-en="ETF Net Flow" data-zh="ETF 净流入">ETF 순유입</span>
+        <span class="rd" data-en="Whether institutional money is flowing into spot ETFs." data-zh="机构资金是否流入现货 ETF。">기관 자금이 현물 ETF로 들어오는지.</span>
+      </a>
+      <a href="kimchi-premium.html">
+        <span class="rn" data-en="Kimchi Premium" data-zh="泡菜溢价">김치 프리미엄</span>
+        <span class="rd" data-en="How hot domestic Korean demand is versus overseas." data-zh="韩国本土需求相对海外的热度。">국내 수요가 해외 대비 얼마나 뜨거운지.</span>
+      </a>
+      <a href="../guide.html">
+        <span class="rn" data-en="All indicators" data-zh="全部指标">전체 지표 보기</span>
+        <span class="rd" data-en="Back to the full indicator guide." data-zh="返回完整指标指南。">지표 가이드 전체로 돌아가기.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">?</span><span data-en="Frequently asked" data-zh="常见问题">자주 묻는 질문</span></h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary><span class="q">Q</span><span data-en="If DXY falls, does Bitcoin always rise?" data-zh="DXY 下跌，比特币就一定涨吗？">DXY가 내리면 비트코인은 무조건 오르나요?</span></summary>
+        <div class="ans" data-en="A weak dollar has historically been a friendly backdrop for risk assets including Bitcoin, but it isn't a causal rule. The inverse relationship is a loose tendency that breaks down for stretches, so use DXY as macro context rather than a trading trigger." data-zh="美元走弱历史上是包括比特币在内的风险资产的友好背景，但并非因果铁律。这种反向关系只是松散倾向、会阶段性失效，因此应把 DXY 当作宏观背景而非交易触发器。">약달러는 역사적으로 비트코인을 포함한 위험자산에 우호적인 배경이었지만 인과 법칙은 아닙니다. 둘의 역상관은 느슨한 경향일 뿐이며 한동안 깨지기도 하므로, DXY는 매매 트리거가 아니라 거시 배경을 읽는 맥락으로 활용하세요.</div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q">Q</span><span data-en="How is DXY calculated?" data-zh="DXY 是如何计算的？">DXY는 어떻게 계산되나요?</span></summary>
+        <div class="ans" data-en="DXY is a weighted geometric average of the dollar against six major currencies — the euro carries by far the largest weight (over half), followed by the yen and the pound. When the dollar strengthens against this basket, the index rises." data-zh="DXY 是美元对六种主要货币的加权几何平均——欧元权重最大（超过一半），其次是日元和英镑。当美元相对这一篮子走强时，指数上升。">DXY는 유로·엔·파운드 등 6개 주요 통화 바스켓 대비 달러 가치를 가중 기하평균한 지수입니다. 유로의 비중이 절반 이상으로 가장 크고, 그다음이 엔과 파운드입니다. 달러가 이 바스켓 대비 강해지면 지수가 오릅니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q">Q</span><span data-en="Above what level is the dollar 'strong'?" data-zh="DXY 多少以上算强美元？">DXY는 몇 이상이면 강달러인가요?</span></summary>
+        <div class="ans" data-en="There's no fixed cutoff — direction and trend matter more than any single number. The same level of 100 means different things depending on whether it was reached from above or below. It's more practical to ask whether DXY is trending up or down than to fixate on a specific figure." data-zh="没有固定分界线——方向与趋势比任何单一数字更重要。同样是 100，从上方还是下方到达，含义不同。与其纠结具体数字，不如关注 DXY 是上行还是下行趋势。">절대적인 고정 기준선은 없고 방향과 추세가 더 중요합니다. 같은 100이라도 위에서 내려온 100인지 아래서 올라온 100인지에 따라 의미가 다릅니다. 특정 숫자에 집착하기보다 DXY가 오르는 추세인지 내리는 추세인지를 보는 편이 실용적입니다.</div>
+      </details>
+    </div>
+  </section>
+
+  <div class="page-cta reveal">
+    <div class="ct-tx">
+      <h3 data-en="See today's reading" data-zh="查看今日读数">오늘의 지표 값 확인하기</h3>
+      <p data-en="Check the current dollar backdrop and the composite timing score on the dashboard." data-zh="在仪表盘上查看当前美元背景与综合择时评分。">대시보드에서 현재 달러 배경과 종합 타이밍 점수를 확인하세요.</p>
+    </div>
+    <a class="ct-btn" href="../index.html" data-en="Open dashboard →" data-zh="打开仪表盘 →">대시보드 열기 →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
+        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
+      </div>
+      <div><h4 data-en="Menu" data-zh="菜单">메뉴</h4><a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a><a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a><a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a></div>
+      <div><h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a><a href="../disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a></div>
+    </div>
+    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
+  </div>
+</footer>
+<script src="../btc-reveal.js"></script>
+</body>
+</html>

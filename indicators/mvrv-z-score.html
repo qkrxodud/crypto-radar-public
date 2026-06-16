@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="비트코인 MVRV-Z 점수(MVRV-Z Score)란 무엇이고 어떻게 읽는지 — 실현 시가총액 기반 계산식, 고점·바닥 구간 해석, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="What the Bitcoin MVRV-Z Score is and how to read it — the realized-cap based formula, top and bottom zones, how to use it for buy timing, and its limits." data-zh-content="比特币 MVRV-Z 评分（MVRV-Z Score）是什么、如何解读——基于已实现市值的计算式、顶部底部区间、择时用法及其局限。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="MVRV-Z Score — BTC Timing Radar" data-zh="MVRV-Z 评分 — BTC 时机雷达">MVRV-Z 점수란? 비트코인 고평가·저평가 지표 완전 정리 — BTC 타이밍 레이더</title>
+<link rel="canonical" href="https://btctiming.co.kr/indicators/mvrv-z-score.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://btctiming.co.kr/indicators/mvrv-z-score.html">
+<meta property="og:site_name" content="BTC 투자 타이밍 레이더" data-en-content="BTC Investment Timing Radar" data-zh-content="BTC 投资择时雷达">
+<meta property="og:title" content="MVRV-Z 점수란? 비트코인 고평가·저평가 지표 완전 정리" data-en-content="MVRV-Z Score — How to Read Bitcoin Valuation" data-zh-content="MVRV-Z 评分 — 比特币估值完全解读">
+<meta property="og:description" content="비트코인 MVRV-Z 점수의 계산 방식, 고점·바닥 구간 해석, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="How the Bitcoin MVRV-Z Score is calculated, how to read its zones, and how to use it for buy timing." data-zh-content="比特币 MVRV-Z 评分的计算方式、区间解读、择时用法与局限。">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MVRV-Z 점수란? 비트코인 고평가·저평가 지표 완전 정리" data-en-content="MVRV-Z Score — How to Read Bitcoin Valuation" data-zh-content="MVRV-Z 评分 — 比特币估值完全解读">
+<meta name="twitter:description" content="비트코인 MVRV-Z 점수의 계산 방식, 구간 해석, 매수 타이밍 활용법과 한계를 설명합니다." data-en-content="How the Bitcoin MVRV-Z Score is calculated and how to use it." data-zh-content="比特币 MVRV-Z 评分的计算方式与用法。">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="../btc-base.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898023121512538" crossorigin="anonymous"></script>
+<script src="../btc-i18n.js" defer></script>
+<style>
+  /* 지표 상세 페이지 공통 레이아웃 */
+  .crumb-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-2);font-family:var(--mono);margin-bottom:18px}
+  .crumb-nav a{color:var(--muted);text-decoration:none}
+  .crumb-nav a:hover{color:var(--text)}
+  .crumb-nav .sep{opacity:.5}
+  .ind-hero{margin:6px 0 8px}
+  .ind-hero .cat-pill{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--brand);background:var(--brand-soft);border:1px solid rgba(247,147,26,.25);padding:5px 12px;border-radius:100px;margin-bottom:14px}
+  .ind-hero .cat-pill .d{width:8px;height:8px;border-radius:50%;background:var(--brand)}
+  .ind-hero h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px}
+  .ind-hero h1 .hl{color:var(--brand)}
+  .ind-hero .lead{font-size:15.5px;color:var(--muted);line-height:1.74;max-width:720px;margin:0}
+  .ind-hero .lead b{color:var(--text);font-weight:600}
+  /* 한눈 요약 박스 */
+  .summary-box{margin:26px 0 0;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:680px){.summary-box{grid-template-columns:1fr;gap:16px}}
+  .summary-box .sb{display:flex;flex-direction:column;gap:6px}
+  .summary-box .sb .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted-2)}
+  .summary-box .sb .v{font-size:13.5px;color:#c2cadb;line-height:1.6}
+  .summary-box .sb .v b{color:var(--text);font-weight:600}
+  .impact-inline{font-size:11.5px;font-family:var(--mono);font-weight:600;padding:4px 9px;border-radius:7px;display:inline-flex;align-self:flex-start}
+  .impact-inline.buy{color:var(--neon);background:var(--neon-soft)}
+  /* 본문 섹션 */
+  .sec{margin:46px 0 0;scroll-margin-top:80px;max-width:780px}
+  .sec h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+  .sec h2 .ix{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--brand);background:var(--brand-soft);width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
+  .sec p{font-size:14.5px;color:var(--muted);line-height:1.78;margin:0 0 14px}
+  .sec p b{color:var(--text);font-weight:600}
+  .sec p code,.sec li code{font-family:var(--mono);font-size:12.5px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
+  .sec ul{margin:0 0 14px;padding-left:20px}
+  .sec li{font-size:14.5px;color:var(--muted);line-height:1.72;margin:0 0 8px}
+  .sec li b{color:var(--text);font-weight:600}
+  /* 해석 구간 테이블 */
+  .zone-table{margin:8px 0 6px;border:1px solid var(--border);border-radius:13px;overflow:hidden}
+  .zone-table .zrow{display:grid;grid-template-columns:128px 1fr;border-bottom:1px solid var(--border)}
+  .zone-table .zrow:last-child{border-bottom:0}
+  .zone-table .zr-band{font-family:var(--mono);font-size:12.5px;font-weight:700;padding:13px 15px;display:flex;align-items:center;background:rgba(255,255,255,.02)}
+  .zone-table .zr-desc{font-size:13px;color:var(--muted);line-height:1.58;padding:13px 15px}
+  .zone-table .zr-band.z-strong{color:var(--neon)}
+  .zone-table .zr-band.z-mild{color:var(--brand)}
+  .zone-table .zr-band.z-wait{color:var(--muted)}
+  .zone-table .zr-band.z-bear{color:var(--amber)}
+  @media(max-width:480px){.zone-table .zrow{grid-template-columns:100px 1fr}}
+  /* 콜아웃 */
+  .callout{margin:18px 0;border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:11px;background:rgba(255,194,61,.06);padding:15px 18px}
+  .callout .ct{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
+  .callout p{font-size:13.5px;color:#c2cadb;line-height:1.7;margin:0}
+  /* 함께 보면 좋은 지표 */
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+  @media(max-width:760px){.related-grid{grid-template-columns:1fr}}
+  .related-grid a{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;padding:15px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:5px}
+  .related-grid a:hover{border-color:var(--border-strong);transform:translateY(-2px);background:rgba(255,255,255,.04)}
+  .related-grid a .rn{font-size:14.5px;font-weight:700;color:var(--text)}
+  .related-grid a .rd{font-size:12.5px;color:var(--muted);line-height:1.5}
+  /* FAQ */
+  .faq-list{margin-top:14px;display:flex;flex-direction:column;gap:11px;max-width:820px}
+  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;overflow:hidden}
+  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--text);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--brand);flex:none}
+  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--muted-2);transition:.2s;flex:none}
+  .faq-item[open] summary::after{transform:rotate(45deg)}
+  .faq-item .ans{font-size:13.5px;color:var(--muted);line-height:1.74;padding:0 18px 16px}
+  .faq-item .ans b{color:var(--text);font-weight:600}
+  /* 하단 CTA */
+  .page-cta{margin:50px 0 10px;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .page-cta .ct-tx h3{font-size:17px;font-weight:700;margin:0 0 5px}
+  .page-cta .ct-tx p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.6}
+  .page-cta .ct-btn{font-size:14px;font-weight:700;color:#06140d;background:var(--neon);border-radius:11px;padding:13px 22px;text-decoration:none;white-space:nowrap;transition:.2s}
+  .page-cta .ct-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(54,222,158,.25)}
+</style>
+<!-- 구조화 데이터: 지표 해설 문서 + 빵부스러기 + FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "datePublished": "2026-06-16",
+  "dateModified": "2026-06-16",
+  "headline": "MVRV-Z 점수란? 비트코인 고평가·저평가 지표 완전 정리",
+  "description": "비트코인 MVRV-Z 점수의 계산 방식, 구간 해석, 매수 타이밍 활용법과 한계를 설명합니다.",
+  "inLanguage": "ko",
+  "author": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더"},
+  "publisher": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더"},
+  "mainEntityOfPage": "https://btctiming.co.kr/indicators/mvrv-z-score.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "지표 가이드", "item": "https://btctiming.co.kr/guide.html"},
+    {"@type": "ListItem", "position": 2, "name": "MVRV-Z 점수", "item": "https://btctiming.co.kr/indicators/mvrv-z-score.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "MVRV-Z 점수가 0 이하면 바로 사야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "0 이하는 시장 전체가 평균 매입가보다 낮은 가격에 거래되는 드문 구간으로, 과거에는 장기 바닥권과 자주 겹쳤습니다. 그러나 점수가 그 구간에 수개월 머무를 수 있고 이 지표는 단기 타이밍에 둔감하므로, 즉시 매수 신호로 보기보다 분할 매수 관점에서 다른 지표와 함께 활용하는 것이 안전합니다."}},
+    {"@type": "Question", "name": "실현 시가총액(Realized Cap)이 뭔가요?", "acceptedAnswer": {"@type": "Answer", "text": "실현 시가총액은 각 코인을 마지막으로 움직인(거래된) 시점의 가격으로 평가해 모두 더한 값으로, 보유자들이 실제로 치른 총 매입가에 가깝습니다. 현재 가격으로 일괄 계산하는 일반 시가총액과 달리, 시장의 평균 원가를 근사하기 때문에 가격이 그 원가 대비 비싼지 싼지를 비교하는 기준이 됩니다."}},
+    {"@type": "Question", "name": "MVRV-Z 점수로 단기 매매를 해도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "권하기 어렵습니다. MVRV-Z는 사이클 단위로 천천히 움직이는 장기 밸류에이션 잣대라 갱신이 느리고 일·주 단위 변동에는 둔감합니다. 단기 진입·청산보다는 지금이 사이클의 어디쯤인지, 시장이 전반적으로 과열인지 침체인지를 가늠하는 큰 그림 용도로 적합합니다."}}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="bg-field" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
+    <nav class="nav-links">
+      <a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
+      <a class="active" href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
+      <a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a>
+    </nav>
+    <a class="nav-pill" href="../index.html"><span class="pulse"></span><span data-en="Today's Score →" data-zh="今日评分 →">오늘의 점수 →</span></a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="crumb-nav reveal">
+    <a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
+    <span class="sep">/</span>
+    <span data-en="Cycle · Sentiment" data-zh="周期 · 心理">사이클 · 심리</span>
+    <span class="sep">/</span>
+    <span data-en="MVRV-Z Score" data-zh="MVRV-Z 评分">MVRV-Z 점수</span>
+  </div>
+
+  <div class="ind-hero reveal">
+    <span class="cat-pill"><span class="d" style="background:var(--brand)"></span><span data-en="Cycle · Sentiment" data-zh="周期 · 心理">사이클 · 심리</span></span>
+    <h1 data-i18n-html="1" data-en="The MVRV-Z Score, in <span class=&quot;hl&quot;>plain words</span>" data-zh="用<span class=&quot;hl&quot;>通俗的话</span>讲清楚 MVRV-Z 评分">MVRV-Z 점수, <span class="hl">쉬운 말</span>로 풀어보기</h1>
+    <p class="lead" data-i18n-html="1" data-en="The MVRV-Z Score compares Bitcoin's market price to what holders <b>actually paid</b> on average. When price runs far above that cost basis, the market looks stretched; when it dips below, it looks washed out. It's one of the cleaner long-term gauges of <b>over- and under-valuation</b>." data-zh="MVRV-Z 评分将比特币的市场价格与持有者<b>实际平均支付</b>的成本作比较。当价格远高于该成本基准时，市场显得过度延伸；当价格跌破它时，市场显得超卖。它是衡量<b>高估与低估</b>较为清晰的长期标尺之一。">MVRV-Z 점수는 비트코인의 시장 가격을 보유자들이 <b>실제로 치른 평균 가격</b>과 비교합니다. 가격이 그 원가보다 훨씬 높이 달리면 시장이 늘어진 것처럼 보이고, 그 아래로 내려가면 바닥까지 씻겨 내려간 것처럼 보입니다. <b>고평가·저평가</b>를 가늠하는 비교적 깔끔한 장기 잣대 중 하나입니다.</p>
+  </div>
+
+  <div class="summary-box reveal">
+    <div class="sb">
+      <span class="k" data-en="What it is" data-zh="是什么">무엇인가</span>
+      <span class="v" data-en="Price versus the market's average cost basis, scaled by volatility." data-zh="价格相对市场平均成本基准，并按波动率缩放。">가격을 시장 평균 원가와 비교해 변동성으로 보정한 값.</span>
+    </div>
+    <div class="sb">
+      <span class="k" data-en="How to read" data-zh="如何解读">어떻게 읽나</span>
+      <span class="v" data-en="<b>7+ has marked top zones, 0 or below bottom zones.</b>" data-zh="<b>7 以上为顶部区间，0 或以下为底部区间。</b>" data-i18n-html="1"><b>7 이상이면 고점권, 0 이하면 바닥권.</b></span>
+    </div>
+    <div class="sb">
+      <span class="k" data-en="Signal" data-zh="信号">신호</span>
+      <span class="impact-inline buy" data-en="Higher = overheated" data-zh="越高越过热">높을수록 과열</span>
+    </div>
+  </div>
+
+  <section class="sec reveal">
+    <h2><span class="ix">1</span><span data-en="What the MVRV-Z Score actually measures" data-zh="MVRV-Z 评分到底衡量什么">MVRV-Z 점수는 무엇을 재는가</span></h2>
+    <p data-i18n-html="1" data-en="Price alone can't tell you whether Bitcoin is 'expensive.' Expensive compared to <b>what</b>? The MVRV-Z Score answers that by using the market's own purchase history as the yardstick. It asks: how far is today's price above or below what holders, on average, originally paid? When that gap is huge, late buyers are sitting on big paper gains and the market is prone to overheating; when the gap closes or goes negative, much of the market is underwater." data-zh="单看价格无法判断比特币是否“贵”。贵——相对于<b>什么</b>？MVRV-Z 评分以市场自身的买入历史作为标尺来回答。它问：今天的价格相对持有者平均最初支付的价格高出或低出多少？当差距巨大时，后期买家账面盈利丰厚，市场易于过热；当差距收窄或转负时，市场中相当一部分处于亏损。">가격만으로는 비트코인이 '비싼지'를 알 수 없습니다. <b>무엇과 비교해</b> 비싸다는 걸까요? MVRV-Z 점수는 시장 자신의 매입 이력을 잣대로 삼아 이 질문에 답합니다 — 오늘의 가격이 보유자들이 평균적으로 처음 치른 값보다 얼마나 위 또는 아래에 있는가. 그 간극이 크면 후발 매수자들이 큰 평가 이익을 안고 있어 시장이 과열되기 쉽고, 간극이 좁혀지거나 음수가 되면 시장의 상당 부분이 손실 상태에 놓입니다.</p>
+    <p data-i18n-html="1" data-en="The 'Z' part rescales that gap by volatility, so a reading isn't distorted by Bitcoin simply being larger today than years ago. The result is a single number that lines up surprisingly well across cycles, which is why it's read as a <b>long-term valuation gauge</b> rather than a day-to-day signal." data-zh="“Z”部分用波动率重新缩放该差距，使读数不会因比特币如今体量大于多年前而失真。结果是一个在各周期间惊人吻合的数字，因此它被解读为<b>长期估值标尺</b>，而非日常信号。">'Z'라는 이름은 그 간극을 변동성으로 재척도화한다는 뜻입니다. 그래서 단순히 오늘의 비트코인이 몇 년 전보다 커졌다는 이유로 값이 왜곡되지 않습니다. 그 결과는 사이클을 가로질러 놀랍도록 잘 들어맞는 하나의 숫자이고, 그래서 일 단위 신호가 아니라 <b>장기 밸류에이션 잣대</b>로 읽힙니다.</p>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">2</span><span data-en="How it's calculated" data-zh="计算方式">어떻게 계산되나</span></h2>
+    <p data-i18n-html="1" data-en="The score is built from three pieces. Don't worry about computing it by hand — the point is to understand what each piece represents:" data-zh="该评分由三部分构成。无需手算——关键在于理解每一部分代表什么：">이 점수는 세 조각으로 만들어집니다. 직접 계산할 필요는 없습니다 — 핵심은 각 조각이 무엇을 뜻하는지 이해하는 것입니다.</p>
+    <ul>
+      <li data-i18n-html="1" data-en="<b>Market cap</b> — current price × circulating supply, i.e. today's headline value." data-zh="<b>市值</b>——当前价格×流通量，即今日的名义价值。"><b>시가총액</b> — 현재 가격 × 유통량, 즉 오늘의 표면적 가치.</li>
+      <li data-i18n-html="1" data-en="<b>Realized cap</b> — each coin valued at the price it last moved, summed up. It approximates the market's aggregate cost basis." data-zh="<b>已实现市值</b>——每枚币按其上次转移时的价格计价后求和，近似市场的总成本基准。"><b>실현 시가총액</b> — 각 코인을 마지막으로 움직인 가격으로 계산해 모두 더한 값. 시장 전체의 평균 원가에 가깝습니다.</li>
+      <li data-i18n-html="1" data-en="<b>Standard deviation (σ)</b> — of market cap, used to normalize the gap so cycles are comparable." data-zh="<b>标准差（σ）</b>——市值的标准差，用于将差距标准化，使各周期可比较。"><b>표준편차 (σ)</b> — 시가총액의 표준편차로, 간극을 정규화해 사이클끼리 비교 가능하게 만듭니다.</li>
+    </ul>
+    <p data-i18n-html="1" data-en="Putting them together: <code>MVRV-Z = (market cap − realized cap) ÷ σ</code>. In words — take how far today's value sits above the market's average cost, then scale it by how volatile the market has been. A big positive number means price is far above cost basis; a number near or below zero means it isn't." data-zh="组合起来：<code>MVRV-Z = (市值 − 已实现市值) ÷ σ</code>。换句话说——取今日价值高于市场平均成本的幅度，再按市场波动程度缩放。较大的正数意味着价格远高于成本基准；接近或低于零则相反。">이를 합치면 <code>MVRV-Z = (시총 − 실현시총) ÷ σ</code> 입니다. 말로 풀면 — 오늘의 가치가 시장 평균 원가보다 얼마나 위에 있는지를 구한 뒤, 시장이 얼마나 변동적이었는지로 보정합니다. 큰 양수면 가격이 원가보다 한참 위에 있다는 뜻이고, 0 근처거나 그 아래면 그렇지 않다는 뜻입니다.</p>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">3</span><span data-en="Reading the zones" data-zh="区间解读">구간으로 읽기</span></h2>
+    <p data-en="The score is loosely split into zones drawn from past cycles. Treat the numbers as soft historical markers, not precise triggers." data-zh="该评分大致按过往周期划分为若干区间。请把这些数字视为粗略的历史标记，而非精确的触发点。">점수는 과거 사이클에서 끌어낸 구간으로 느슨하게 나뉩니다. 숫자를 정밀한 방아쇠가 아니라 부드러운 역사적 표식으로 받아들이세요.</p>
+    <div class="zone-table">
+      <div class="zrow"><div class="zr-band z-strong"><span data-en="≤ 0" data-zh="≤ 0">0 이하</span></div><div class="zr-desc" data-en="<b>Bottom zone.</b> Price is below the market's average cost — much of the market is underwater. Historically rare and aligned with long-term lows." data-zh="<b>底部区间。</b>价格低于市场平均成本——大部分市场处于亏损。历史上罕见，且与长期低点吻合。" data-i18n-html="1"><b>바닥권.</b> 가격이 시장 평균 원가 아래 — 시장의 상당수가 손실 상태. 역사적으로 드물고 장기 저점과 겹쳤음.</div></div>
+      <div class="zrow"><div class="zr-band z-mild"><span data-en="0–2" data-zh="0~2">0~2</span></div><div class="zr-desc" data-en="<b>Undervalued-ish.</b> Price modestly above cost basis. Often an early-cycle accumulation backdrop for patient buyers." data-zh="<b>偏低估。</b>价格略高于成本基准。对有耐心的买家而言常是周期早段的积累背景。" data-i18n-html="1"><b>저평가 쪽.</b> 가격이 원가보다 약간 위. 인내심 있는 매수자에게 사이클 초반 축적 배경인 경우가 많음.</div></div>
+      <div class="zrow"><div class="zr-band z-wait"><span data-en="2–4" data-zh="2~4">2~4</span></div><div class="zr-desc" data-en="<b>Mid-cycle.</b> Broadly neutral territory. Trend can keep running, but the deepest-value entries are behind." data-zh="<b>周期中段。</b>大体中性区域。趋势可能延续，但最具价值的入场点已过去。" data-i18n-html="1"><b>사이클 중반.</b> 대체로 중립 구간. 추세는 더 갈 수 있지만 가장 저평가된 진입 구간은 지났음.</div></div>
+      <div class="zrow"><div class="zr-band z-bear"><span data-en="7+" data-zh="7 以上">7 이상</span></div><div class="zr-desc" data-en="<b>Top zone.</b> Price far above cost basis — historically an overheating warning. Note: peak readings have trended lower each cycle." data-zh="<b>顶部区间。</b>价格远高于成本基准——历史上的过热警告。注意：每轮周期的峰值读数在走低。" data-i18n-html="1"><b>고점권.</b> 가격이 원가보다 한참 위 — 역사적으로 과열 경고. 참고: 고점값은 사이클마다 낮아지는 추세였음.</div></div>
+    </div>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">4</span><span data-en="Using it for buy timing" data-zh="用于择时">매수 타이밍에 쓰는 법</span></h2>
+    <p data-i18n-html="1" data-en="MVRV-Z is a <b>valuation backdrop</b>, not a trigger. A low or negative reading suggests the market is washed out and can lend conviction to a dollar-cost-averaging plan; a very high reading suggests it's stretched and is a cue to slow aggressive buying and review risk. Because it moves slowly, it answers 'roughly where are we in the cycle' far better than 'should I buy this week.'" data-zh="MVRV-Z 是<b>估值背景</b>，而非触发器。较低或为负的读数表明市场已被洗盘，可为定投计划增添信心；非常高的读数表明市场过度延伸，是放缓激进买入、审视风险的提示。由于它移动缓慢，它更适合回答“我们大致处于周期何处”，而非“这周该不该买”。">MVRV-Z는 방아쇠가 아니라 <b>밸류에이션 배경</b>입니다. 낮거나 음수인 값은 시장이 바닥까지 씻겨 내려갔음을 시사해 분할 매수(DCA) 계획에 확신을 더할 수 있고, 아주 높은 값은 시장이 늘어졌음을 시사해 공격적 매수를 늦추고 리스크를 점검하라는 신호입니다. 천천히 움직이기 때문에 '이번 주에 살까'보다 '지금 사이클 어디쯤인가'에 훨씬 잘 답합니다.</p>
+    <div class="callout">
+      <div class="ct" data-en="Practical tip" data-zh="实用建议">실전 팁</div>
+      <p data-en="Don't expect precise tops or bottoms from it. Peak readings have fallen each cycle, so a fixed '7 = sell' rule can mislead. Pair MVRV-Z with cycle position and sentiment, and let it shape the size of your plan, not the exact day." data-zh="不要指望它给出精确的顶部或底部。每轮周期的峰值都在下降，因此固定的“7=卖出”规则可能误导。将 MVRV-Z 与周期位置和情绪结合，让它影响计划的规模，而非具体某一天。" data-i18n-html="1">정확한 고점·바닥을 기대하지 마세요. 고점값이 사이클마다 낮아져 왔기에 '7이면 매도' 같은 고정 규칙은 오판을 부를 수 있습니다. MVRV-Z를 사이클 위치·심리와 함께 보고, 정확한 날짜가 아니라 계획의 규모를 정하는 데 활용하세요.</p>
+    </div>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">5</span><span data-en="Limits &amp; common misreadings" data-zh="局限与常见误读">한계와 흔한 오해</span></h2>
+    <p data-i18n-html="1" data-en="The thresholds were calibrated on past cycles, and as the market matures the peaks have trended lower each cycle — so a level that screamed 'top' in 2017 may not recur. The biggest misread is treating it as a <b>short-term timing tool</b>: it updates slowly and is nearly useless for day or week trades. It can also sit in a zone for months without resolving. And like all valuation gauges, it describes condition, not catalyst — it tells you the market is stretched or washed out, not <b>when</b> that will change. Use it as slow-moving context, cross-checked with faster indicators." data-zh="阈值是基于过往周期校准的，随着市场成熟，每轮周期的峰值在走低——因此 2017 年高喊“顶部”的水平未必重演。最大的误读是把它当作<b>短期择时工具</b>：它更新缓慢，对日内或周内交易几乎无用。它也可能在某区间停留数月而不化解。与所有估值标尺一样，它描述状态而非催化剂——它告诉你市场过度延伸或超卖，却不告诉你<b>何时</b>会改变。请把它当作缓慢移动的背景，并与更快的指标交叉验证。">임계값은 과거 사이클로 보정된 것이고, 시장이 성숙하며 고점은 사이클마다 낮아지는 추세였습니다 — 2017년에 '고점'을 외치던 수준이 다시 오지 않을 수 있습니다. 가장 큰 오해는 이것을 <b>단기 타이밍 도구</b>로 쓰는 것입니다 — 갱신이 느려 일·주 단위 매매에는 거의 쓸모가 없습니다. 한 구간에 수개월 머무르며 풀리지 않기도 합니다. 그리고 모든 밸류에이션 잣대처럼 촉매가 아니라 상태를 묘사합니다 — 시장이 늘어졌는지 씻겨 내려갔는지는 알려주지만 그것이 <b>언제</b> 바뀔지는 알려주지 않습니다. 천천히 움직이는 맥락으로 쓰되 더 빠른 지표와 교차 검증하세요.</p>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">+</span><span data-en="Indicators to read alongside" data-zh="建议搭配阅读的指标">함께 보면 좋은 지표</span></h2>
+    <div class="related-grid">
+      <a href="halving-cycle.html">
+        <span class="rn" data-en="Halving Cycle" data-zh="减半周期">반감기 사이클</span>
+        <span class="rd" data-en="Where we sit in Bitcoin's ~4-year rhythm." data-zh="当前处于比特币约 4 年节奏中的位置。">비트코인 약 4년 주기에서 지금 위치.</span>
+      </a>
+      <a href="fear-greed-index.html">
+        <span class="rn" data-en="Fear &amp; Greed Index" data-zh="恐惧贪婪指数">공포·탐욕 지수</span>
+        <span class="rd" data-en="The crowd's mood as a single 0–100 number." data-zh="用一个 0~100 的数字概括群体情绪。">군중 심리를 0~100 한 숫자로 요약.</span>
+      </a>
+      <a href="../guide.html">
+        <span class="rn" data-en="All indicators" data-zh="全部指标">전체 지표 보기</span>
+        <span class="rd" data-en="Back to the full indicator guide." data-zh="返回完整指标指南。">지표 가이드 전체로 돌아가기.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec reveal">
+    <h2><span class="ix">?</span><span data-en="Frequently asked" data-zh="常见问题">자주 묻는 질문</span></h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary><span class="q">Q</span><span data-en="If the score is 0 or below, should I buy right away?" data-zh="评分为 0 或以下就该马上买吗？">MVRV-Z 점수가 0 이하면 바로 사야 하나요?</span></summary>
+        <div class="ans" data-en="A reading of 0 or below means the whole market is trading under its average cost — a rare zone that has often overlapped with long-term bottoms. But the score can stay there for months and the indicator is insensitive to short-term timing, so it's safer to treat it as a backdrop for a staggered (DCA) approach alongside other indicators than as an instant buy signal." data-zh="0 或以下意味着整个市场的交易价低于其平均成本——这是罕见区间，常与长期底部重叠。但评分可能在那里停留数月，且该指标对短期择时不敏感，因此把它作为分批（定投）方式的背景、结合其他指标使用，比当作即时买入信号更安全。">0 이하는 시장 전체가 평균 매입가보다 낮게 거래되는 드문 구간으로, 과거에는 장기 바닥권과 자주 겹쳤습니다. 그러나 점수가 그 구간에 수개월 머물 수 있고 이 지표는 단기 타이밍에 둔감하므로, 즉시 매수 신호로 보기보다 분할 매수(DCA) 관점에서 다른 지표와 함께 활용하는 것이 안전합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q">Q</span><span data-en="What is realized cap?" data-zh="什么是已实现市值？">실현 시가총액(Realized Cap)이 뭔가요?</span></summary>
+        <div class="ans" data-en="Realized cap values each coin at the price it last moved and sums them, approximating the aggregate amount holders actually paid. Unlike ordinary market cap, which prices every coin at today's price, it estimates the market's average cost basis — which is what lets you judge whether price is rich or cheap relative to that cost." data-zh="已实现市值按每枚币上次转移时的价格计价并求和，近似持有者实际支付的总额。与按今日价格计价每枚币的普通市值不同，它估算市场的平均成本基准——正因如此，你才能据此判断价格相对成本是贵还是便宜。">실현 시가총액은 각 코인을 마지막으로 움직인 가격으로 평가해 모두 더한 값으로, 보유자들이 실제로 치른 총액에 가깝습니다. 모든 코인을 오늘 가격으로 계산하는 일반 시가총액과 달리 시장의 평균 원가를 근사하므로, 가격이 그 원가 대비 비싼지 싼지를 판단하는 기준이 됩니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q">Q</span><span data-en="Can I day-trade with the MVRV-Z Score?" data-zh="能用 MVRV-Z 评分做短线吗？">MVRV-Z 점수로 단기 매매를 해도 되나요?</span></summary>
+        <div class="ans" data-en="It's not well suited to that. MVRV-Z is a slow-moving, long-term valuation gauge that updates gradually and is insensitive to daily or weekly swings. It's better used for the big picture — roughly where you are in the cycle and whether the market is broadly overheated or depressed — than for short-term entries and exits." data-zh="它不太适合。MVRV-Z 是缓慢移动的长期估值标尺，更新渐进，对日内或周内波动不敏感。它更适合用于大局——你大致处于周期何处、市场总体是过热还是低迷——而非短期进出。">권하기 어렵습니다. MVRV-Z는 사이클 단위로 천천히 움직이는 장기 밸류에이션 잣대라 갱신이 느리고 일·주 단위 변동에는 둔감합니다. 단기 진입·청산보다는 지금이 사이클의 어디쯤인지, 시장이 전반적으로 과열인지 침체인지를 가늠하는 큰 그림 용도로 적합합니다.</div>
+      </details>
+    </div>
+  </section>
+
+  <div class="page-cta reveal">
+    <div class="ct-tx">
+      <h3 data-en="See today's reading" data-zh="查看今日读数">오늘의 지표 값 확인하기</h3>
+      <p data-en="Check the live MVRV-Z reading and the composite timing score on the dashboard." data-zh="在仪表盘上查看实时 MVRV-Z 读数与综合择时评分。">대시보드에서 실시간 MVRV-Z 값과 종합 타이밍 점수를 확인하세요.</p>
+    </div>
+    <a class="ct-btn" href="../index.html" data-en="Open dashboard →" data-zh="打开仪表盘 →">대시보드 열기 →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
+        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
+      </div>
+      <div><h4 data-en="Menu" data-zh="菜单">메뉴</h4><a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a><a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a><a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a></div>
+      <div><h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a><a href="../disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a></div>
+    </div>
+    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
+  </div>
+</footer>
+<script src="../btc-reveal.js"></script>
+</body>
+</html>
