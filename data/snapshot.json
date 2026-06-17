@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-16T22:07:23Z",
+  "updatedAt": "2026-06-17T11:33:33Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,19 +59,19 @@
       "historicalVolatility": "0.43",
       "btcClose": "66312.75",
       "macd": {
-        "macdLine": "-2589.81",
-        "signalLine": "-3215.17",
-        "histogram": "625.37",
+        "macdLine": "-2441.97",
+        "signalLine": "-3062.61",
+        "histogram": "620.64",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "38.1",
-        "plusDi": "18.9",
-        "minusDi": "26.8",
-        "strength": "MODERATE_DOWN",
-        "strengthLabel": "보통 하락 추세",
+        "adx": "40.4",
+        "plusDi": "17.6",
+        "minusDi": "28.2",
+        "strength": "STRONG_DOWN",
+        "strengthLabel": "강한 하락 추세",
         "trending": true
       },
       "optionsSkew25d": "9.63",
@@ -431,9 +431,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000064",
       "ivRv": {
-        "iv": "38.20",
+        "iv": "41.76",
         "rv": "43.00",
-        "spread": "-4.81",
+        "spread": "-1.25",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2685,9 +2685,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261275699885.98641",
-      "marketCap30dAgoUsd": "266695982507.94358",
-      "growth30dPercent": "-2.03",
+      "totalMarketCapUsd": "261197613722.24268",
+      "marketCap30dAgoUsd": "266640955794.5112",
+      "growth30dPercent": "-2.04",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -2756,63 +2756,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "65721.50",
-      "openInterestUsd": "6734867526.36582400",
-      "longAccountRatio": "0.5877",
-      "shortAccountRatio": "0.4123",
-      "downsideLiquidationUsd": "3958081645.25",
-      "upsideLiquidationUsd": "2776785881.12",
+      "currentPrice": "64635.60",
+      "openInterestUsd": "6581584578.82075600",
+      "longAccountRatio": "0.6011",
+      "shortAccountRatio": "0.3989",
+      "downsideLiquidationUsd": "3956190490.33",
+      "upsideLiquidationUsd": "2625394088.49",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "59149.35",
+          "price": "58172.04",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1583232658.10"
+          "notionalUsd": "1582476196.13"
         },
         {
-          "price": "72293.65",
+          "price": "71099.16",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1110714352.45"
+          "notionalUsd": "1050157635.40"
         },
         {
-          "price": "63092.64",
+          "price": "62050.18",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1385328575.84"
+          "notionalUsd": "1384666671.62"
         },
         {
-          "price": "68350.36",
+          "price": "67221.02",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "971875058.39"
+          "notionalUsd": "918887930.97"
         },
         {
-          "price": "64407.07",
+          "price": "63342.89",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "791616329.05"
+          "notionalUsd": "791238098.07"
         },
         {
-          "price": "67035.93",
+          "price": "65928.31",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "555357176.22"
+          "notionalUsd": "525078817.70"
         },
         {
-          "price": "65064.29",
+          "price": "63989.24",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "197904082.26"
+          "notionalUsd": "197809524.52"
         },
         {
-          "price": "66378.72",
+          "price": "65281.96",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "138839294.06"
+          "notionalUsd": "131269704.42"
         }
       ],
       "errorMessage": null
@@ -4108,157 +4108,149 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-16T22:00:03.368184Z",
+      "generatedAt": "2026-06-17T11:20:54.234984Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
       "toneHexColor": "#FBBF24",
-      "modelName": "gpt-4o-mini",
+      "modelName": "gpt-4o-mini (fallback)",
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리 상태로, 공포가 우세하지만 일부 긍정적인 지표도 존재한다."
-        },
-        {
-          "type": "RISK",
-          "content": "공포탐욕 지수가 23으로 매우 낮아 시장 심리가 부정적이다."
-        },
-        {
-          "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 알트코인에 대한 투자 심리가 약하다."
+          "content": "종합 64점 중립 톤. LLM 미가용으로 룰 기반 요약을 제공합니다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 불확실성을 고려하여 신중한 접근이 필요하다."
+          "content": "매수 우호 구간 — DCA 비중 유지 또는 소폭 확대 고려."
         },
         {
           "type": "ACTION",
-          "content": "알트코인 투자 비중을 줄이고 BTC 중심으로 포트폴리오를 조정하라."
+          "content": "BTC 도미넌스 55% 이상 — 알트 비중 축소 검토."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-16T22:05:02.570632Z",
-      "compositeScore": "0.225",
-      "label": "POSITIVE",
-      "labelDisplay": "긍정",
-      "labelHexColor": "#10B981",
-      "scoredCount": 16,
-      "modelName": "gpt-4o-mini",
+      "generatedAt": "2026-06-17T11:21:01.525207Z",
+      "compositeScore": "0",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
+      "scoredCount": 0,
+      "modelName": "gpt-4o-mini (llm-disabled)",
       "items": [
         {
-          "title": "Here is why Strategy's dividend-paying crypto stock is crashing to near-historic lows",
+          "title": "Three Fed signals that could make bitcoin pop",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/16/here-is-why-strategy-s-dividend-paying-crypto-stock-is-crashing-to-near-historic-lows",
-          "publishedAt": "2026-06-16T21:54:49Z",
-          "score": "-0.6"
+          "url": "https://www.coindesk.com/daybook-us/2026/06/17/three-fed-signals-that-could-make-bitcoin-pop",
+          "publishedAt": "2026-06-17T11:15:00Z",
+          "score": null
         },
         {
-          "title": "Bitcoin miners' AI pivot faces $50 billion reality check, says VanEck",
+          "title": "UNI token surges while rest of crypto market looks to Fed's Warsh for guidance",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/16/bitcoin-miners-ai-pivot-faces-usd50-billion-reality-check-says-vaneck",
-          "publishedAt": "2026-06-16T20:58:18Z",
-          "score": "-0.4"
+          "url": "https://www.coindesk.com/markets/2026/06/17/uni-token-surges-while-rest-of-crypto-market-looks-to-fed-s-warsh-for-guidance",
+          "publishedAt": "2026-06-17T10:36:39Z",
+          "score": null
         },
         {
-          "title": "U.S. senators urge Treasury not to leave states out of GENIUS Act stablecoin process",
+          "title": "Forget retail traders: The real multi-trillion-dollar crypto future is building infrastructure for machines",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/16/u-s-senators-urge-treasury-not-to-leave-states-out-of-genius-act-stablecoin-process",
-          "publishedAt": "2026-06-16T20:36:09Z",
-          "score": "0.2"
+          "url": "https://www.coindesk.com/business/2026/06/17/forget-retail-traders-the-real-multi-trillion-dollar-future-of-crypto-is-building-infrastructure-for-machines",
+          "publishedAt": "2026-06-17T10:29:11Z",
+          "score": null
         },
         {
-          "title": "Hyperliquid, Uniswap and Worldcoin buck crypto slump as traders chase AI, DeFi trends",
+          "title": "BitGo offers Europeâs crypto firms a MiCA-compliance lifeline as license deadline looms",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/16/hyperliquid-uniswap-and-worldcoin-buck-crypto-slump-as-traders-chase-ai-defi-trends",
-          "publishedAt": "2026-06-16T20:20:35Z",
-          "score": "0.5"
+          "url": "https://www.coindesk.com/business/2026/06/17/bitgo-offers-europe-s-crypto-firms-a-mica-compliance-lifeline-as-license-deadline-looms",
+          "publishedAt": "2026-06-17T06:34:55Z",
+          "score": null
         },
         {
-          "title": "Coinbase intoduces AI advisor, stock options, and pre-IPO markets in finance push",
+          "title": "Forget the price charts. Here's how bitcoin and S&P 500 look like when adjusted for the money printer",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/16/coinbase-intoduces-ai-advisor-stock-options-and-pre-ipo-markets-in-finance-push",
-          "publishedAt": "2026-06-16T19:00:00Z",
-          "score": "0.4"
+          "url": "https://www.coindesk.com/markets/2026/06/17/forget-the-price-charts-here-s-how-bitcoin-and-s-and-p-500-look-like-when-adjusted-for-the-money-printer",
+          "publishedAt": "2026-06-17T06:30:14Z",
+          "score": null
         },
         {
-          "title": "Ripple invests in Flutterwave, pushing its stablecoin and XRP Ledger into payments across Africa",
+          "title": "Crypto PAC's $12 million Senate candidate, Barry Moore, wins Alabama GOP primary",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/16/ripple-invests-in-flutterwave-pushing-its-stablecoin-and-xrp-ledger-into-payments-across-africa",
-          "publishedAt": "2026-06-16T15:35:40Z",
-          "score": "0.3"
+          "url": "https://www.coindesk.com/policy/2026/06/17/crypto-pac-s-usd12-million-senate-candidate-barry-moore-wins-alabama-gop-primary",
+          "publishedAt": "2026-06-17T05:38:27Z",
+          "score": null
         },
         {
-          "title": "Coinbase to join tokenized stock race with onchain shares, dividend payments",
+          "title": "Live markets: Markets turn their focus to the Fed as oil returns to pre-war levels",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/16/coinbase-to-join-tokenized-stock-race-with-onchain-shares-dividend-payments",
-          "publishedAt": "2026-06-16T15:03:21Z",
-          "score": "0.3"
+          "url": "https://www.coindesk.com/tech/2026/06/17/live-markets-a-bitcoin-bottom-signal-flashed-as-holders-absorbed-125-000-btc-in-june",
+          "publishedAt": "2026-06-17T05:01:03Z",
+          "score": null
         },
         {
-          "title": "Binance says its European regulatory application is compliant despite report of Greek rejection",
+          "title": "XRP gives back breakout gains, slipping below $1.23 on heavy selling",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/16/binance-says-its-european-regulatory-application-is-fully-compliant-despite-report-of-greek-rejection",
-          "publishedAt": "2026-06-16T14:55:35Z",
-          "score": "0.1"
+          "url": "https://www.coindesk.com/markets/2026/06/17/xrp-gives-back-breakout-gains-slipping-below-usd1-23-on-heavy-selling",
+          "publishedAt": "2026-06-17T04:39:46Z",
+          "score": null
+        },
+        {
+          "title": "China pays closer attention to stablecoins as cross-border role expands",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/china-central-bank-stablecoins-cross-border-payments?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-17T11:02:46Z",
+          "score": null
+        },
+        {
+          "title": "Bitcoin is setting up 'meaningful floors' in $60K–$70K range: Analyst",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-is-setting-up-meaningful-floors-in-60k70k-range-analyst?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-17T11:02:08Z",
+          "score": null
+        },
+        {
+          "title": "Bitcoin trader warns of 'bearish reaction' to FOMC with $64K now essential",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-trader-warns-of-bearish-reaction-to-fomc-with-64k-now-essential?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-17T10:12:08Z",
+          "score": null
+        },
+        {
+          "title": "Hyperliquid's $10B open interest coincides with growth in equity-linked markets: Talos",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/hyperliquids-10b-open-interest-growth-equities-commodities?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-17T10:03:16Z",
+          "score": null
+        },
+        {
+          "title": "BitGo courts crypto firms awaiting MiCA approval amid Binance licensing concerns",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitgo-mica-vasp-workaround-binance-license-uncertainty?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-17T09:02:48Z",
+          "score": null
+        },
+        {
+          "title": "Congress reaches deal on housing bill with CBDC ban until 2030",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/congress-reaches-deal-on-housing-bill-inclusive-of-cbdc-ban-until-2030?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-17T06:11:33Z",
+          "score": null
         },
         {
           "title": "Here’s what happened in crypto today",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-16T21:26:55Z",
-          "score": "0.0"
+          "publishedAt": "2026-06-17T06:00:00Z",
+          "score": null
         },
         {
-          "title": "Tokenized asset market tops $43B as institutions accelerate blockchain adoption",
+          "title": "Strategy’s STRC falls to $91 as investors flinch at latest BTC buying",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/tokenized-rwa-market-tops-43b-wall-street-pushes-deeper-onchain?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-16T20:55:09Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Bitcoin metric near ‘low-risk’ zone after holders absorb 125K BTC in June: Time for a rebound?",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-risk-metric-nears-low-risk-zone-as-holders-absorb-125k-btc-in-june?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-16T19:54:21Z",
-          "score": "0.5"
-        },
-        {
-          "title": "Crypto PAC has $12M stake in Senate primary runoff as Alabama voters head to polls",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-pac-fairshake-senate-primary-alabama-voters?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-16T19:45:47Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Coinbase lets users transfer stock portfolios as exchange expands beyond crypto",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/coinbase-acats-stock-portfolio-transfers-beyond-crypto?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-16T19:31:19Z",
-          "score": "0.3"
-        },
-        {
-          "title": "XRP whale wallet withdrawals top 720M as risk-adjusted return data points to opportunity",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/xrp-whale-withdrawals-top-720m-as-risk-adjusted-returns-hints-an-opporunity?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-16T18:44:51Z",
-          "score": "0.4"
-        },
-        {
-          "title": "State Street launches GENIUS Act-aligned money market fund for stablecoin reserves",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/state-street-launches-genius-act-aligned-money-market-fund-for-stablecoin-reserves?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-16T17:28:40Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Ripple targets Africa’s booming remittance market with Flutterwave investment",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/ripple-flutterwave-africa-stablecoin-remittances-investment?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-16T17:28:00Z",
-          "score": "0.5"
+          "url": "https://cointelegraph.com/news/strc-hits-all-time-low-as-latest-btc-purchases-seen-as-unsustainable?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-17T05:58:33Z",
+          "score": null
         }
       ],
       "errorMessage": null
