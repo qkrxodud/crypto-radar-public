@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-17T22:55:51Z",
+  "updatedAt": "2026-06-17T23:15:54Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "66312.75",
       "macd": {
-        "macdLine": "-2467.96",
-        "signalLine": "-3067.81",
-        "histogram": "599.85",
+        "macdLine": "-2472.44",
+        "signalLine": "-3068.70",
+        "histogram": "596.26",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -431,10 +431,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000064",
       "ivRv": {
-        "iv": "44.12",
+        "iv": "36.10",
         "rv": "43.00",
-        "spread": "+1.12",
-        "label": "균형"
+        "spread": "-6.90",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 23,
@@ -2756,63 +2756,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64361.10",
-      "openInterestUsd": "6392695578.29280000",
-      "longAccountRatio": "0.6325",
-      "shortAccountRatio": "0.3675",
-      "downsideLiquidationUsd": "4043379953.27",
-      "upsideLiquidationUsd": "2349315625.02",
+      "currentPrice": "64301.50",
+      "openInterestUsd": "6385140567.82350000",
+      "longAccountRatio": "0.6338",
+      "shortAccountRatio": "0.3662",
+      "downsideLiquidationUsd": "4046902091.89",
+      "upsideLiquidationUsd": "2338238475.94",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57924.99",
+          "price": "57871.35",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1617351981.31"
+          "notionalUsd": "1618760836.75"
         },
         {
-          "price": "70797.21",
+          "price": "70731.65",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "939726250.01"
+          "notionalUsd": "935295390.37"
         },
         {
-          "price": "61786.66",
+          "price": "61729.44",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1415182983.64"
+          "notionalUsd": "1416415732.16"
         },
         {
-          "price": "66935.54",
+          "price": "66873.56",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "822260468.76"
+          "notionalUsd": "818383466.58"
         },
         {
-          "price": "63073.88",
+          "price": "63015.47",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "808675990.65"
+          "notionalUsd": "809380418.38"
         },
         {
-          "price": "65648.32",
+          "price": "65587.53",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "469863125.00"
+          "notionalUsd": "467647695.19"
         },
         {
-          "price": "63717.49",
+          "price": "63658.49",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "202168997.66"
+          "notionalUsd": "202345104.59"
         },
         {
-          "price": "65004.71",
+          "price": "64944.52",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "117465781.25"
+          "notionalUsd": "116911923.80"
         }
       ],
       "errorMessage": null
@@ -4108,7 +4108,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-17T22:30:02.556930Z",
+      "generatedAt": "2026-06-17T23:00:03.358586Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4121,27 +4121,27 @@
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 23으로 시장 심리가 매우 부정적이다."
+          "content": "낮은 공포탐욕 지수(23)로 인해 투자자 신뢰가 부족하다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -212.94로 자금 유출이 우세하다."
+          "content": "거래소 순유입이 -212.94로, 자금 유출이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 투자에 신중을 기하고 관망하는 것이 좋다."
+          "content": "시장 상황을 면밀히 관찰하며 추가 매수 여부를 신중히 결정하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 회복 신호를 기다린 후 진입을 고려하라."
+          "content": "단기 투자보다는 장기적인 관점에서 접근하는 것이 바람직하다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-17T22:05:05.065125Z",
-      "compositeScore": "-0.088",
+      "generatedAt": "2026-06-17T23:05:03.500117Z",
+      "compositeScore": "-0.113",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4153,35 +4153,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/17/kentucky-targets-prediction-markets-puts-red-state-in-potential-clash-with-trump-team",
           "publishedAt": "2026-06-17T21:20:05Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Fidelity joins Wall Street's race to manage stablecoin reserves",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/17/fidelity-joins-wall-street-s-race-to-manage-stablecoin-reserves",
           "publishedAt": "2026-06-17T20:30:48Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Here is how Coinbase plan to survive the crypto downturn by ditching its reliance on trading fees",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/17/here-is-how-coinbase-plan-to-survive-the-crypto-downturn-by-ditching-its-reliance-on-trading-fees",
           "publishedAt": "2026-06-17T19:23:40Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin layer-2s face a bear-market reality check",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/17/bitcoin-layer-2s-face-a-bear-market-reality-check",
           "publishedAt": "2026-06-17T19:17:07Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "FIFA wanted Avalanche's blockchain to help curb World Cup ticket scalping. Here's how it's going",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/17/fifa-wanted-avalanche-s-blockchain-to-help-curb-world-cup-ticket-scalping-here-s-how-it-s-going",
           "publishedAt": "2026-06-17T19:08:43Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Fed holds rates steady in first decision under new Chairman Kevin Warsh",
@@ -4202,7 +4202,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/17/crypto-long-and-short-the-measure-of-a-maturing-market",
           "publishedAt": "2026-06-17T16:48:04Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4223,7 +4223,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-pac-alabama-senate-runoff-june-primaries?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T20:51:29Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin capitulation ‘twice as weak’ after spot liquidity turns supportive: Glassnode",
@@ -4237,7 +4237,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bybit-singapore-mas-investor-alert-list?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T20:01:24Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Blockchain.com deepens onchain stock offerings as tokenized equities market grows",
@@ -4251,7 +4251,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/altcoins-witness-266b-in-selling-at-5-year-high-is-capital-leaving-crypto?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T19:23:39Z",
-          "score": "-0.5"
+          "score": "-0.8"
         },
         {
           "title": "Kalshi adds software partner as it looks to boost prediction market surveillance",
