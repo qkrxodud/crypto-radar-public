@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-17T15:54:08Z",
+  "updatedAt": "2026-06-17T16:14:11Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "66312.75",
       "macd": {
-        "macdLine": "-2362.67",
-        "signalLine": "-3046.75",
-        "histogram": "684.08",
+        "macdLine": "-2352.46",
+        "signalLine": "-3044.71",
+        "histogram": "692.25",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -431,10 +431,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000064",
       "ivRv": {
-        "iv": "37.47",
+        "iv": "49.42",
         "rv": "43.00",
-        "spread": "-5.53",
-        "label": "저평가"
+        "spread": "+6.42",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 23,
@@ -2756,63 +2756,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "65683.90",
-      "openInterestUsd": "6682031652.40552200",
-      "longAccountRatio": "0.6114",
-      "shortAccountRatio": "0.3886",
-      "downsideLiquidationUsd": "4085394152.28",
-      "upsideLiquidationUsd": "2596637500.12",
+      "currentPrice": "65788.90",
+      "openInterestUsd": "6711744347.28246800",
+      "longAccountRatio": "0.6082",
+      "shortAccountRatio": "0.3918",
+      "downsideLiquidationUsd": "4082082912.02",
+      "upsideLiquidationUsd": "2629661435.27",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "59115.51",
+          "price": "59210.01",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1634157660.91"
+          "notionalUsd": "1632833164.81"
         },
         {
-          "price": "72252.29",
+          "price": "72367.79",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1038655000.05"
+          "notionalUsd": "1051864574.11"
         },
         {
-          "price": "63056.54",
+          "price": "63157.34",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1429887953.30"
+          "notionalUsd": "1428729019.21"
         },
         {
-          "price": "68311.26",
+          "price": "68420.46",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "908823125.04"
+          "notionalUsd": "920381502.34"
         },
         {
-          "price": "64370.22",
+          "price": "64473.12",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "817078830.46"
+          "notionalUsd": "816416582.40"
         },
         {
-          "price": "66997.58",
+          "price": "67104.68",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "519327500.02"
+          "notionalUsd": "525932287.05"
         },
         {
-          "price": "65027.06",
+          "price": "65131.01",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204269707.61"
+          "notionalUsd": "204104145.60"
         },
         {
-          "price": "66340.74",
+          "price": "66446.79",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "129831875.01"
+          "notionalUsd": "131483071.76"
         }
       ],
       "errorMessage": null
@@ -4108,7 +4108,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-17T15:30:03.575469Z",
+      "generatedAt": "2026-06-17T16:00:04.124470Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4117,31 +4117,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리 상태로, 공포와 탐욕 지수가 낮아 매수 신호가 약함."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수로 인해 추가 하락 가능성이 있음."
+          "content": "낮은 공포탐욕 지수(23)로 인해 투자 심리가 약화되고 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스여서 매도 압력이 존재함."
+          "content": "거래소 순유입이 -212.94로, 투자자들이 자산을 거래소에서 빼고 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매를 피하고 관망하는 것이 바람직함."
+          "content": "시장의 불확실성이 크므로 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "가격 반등 시 매수 기회를 모색할 수 있음."
+          "content": "단기적인 변동성을 고려하여 포트폴리오 조정을 검토하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-17T15:05:04.270798Z",
-      "compositeScore": "-0.106",
+      "generatedAt": "2026-06-17T16:05:03.782858Z",
+      "compositeScore": "-0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4195,7 +4195,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/17/spacex-s-usd2-6-trillion-valuation-is-now-worth-nearly-twice-all-of-bitcoin",
           "publishedAt": "2026-06-17T12:09:33Z",
-          "score": "-0.7"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin's June downturn leaves $8.6 billion in options out of the money",
@@ -4209,7 +4209,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trace-finance-cross-border-stablecoin-settlement-expansion?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T15:00:00Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin price sets $64.5K week-to-date low as Strategy selling worries return",
@@ -4223,14 +4223,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ready-usdc-card-service-halt-non-eea-report?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T14:08:14Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "CoinMENA, Standard Chartered partner on UAE payment rails",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coinmena-standard-chartered-revolut-uae-crypto-finance?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T13:44:36Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Onchain, in court: What happened in crypto legal news this week",
@@ -4251,14 +4251,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/inveniam-acquire-mantra-om-token-collapse?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T12:54:40Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "China pays closer attention to stablecoins as cross-border role expands",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/china-central-bank-stablecoins-cross-border-payments?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T11:02:46Z",
-          "score": "0.3"
+          "score": "0.5"
         }
       ],
       "errorMessage": null
