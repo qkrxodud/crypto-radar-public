@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-18T03:16:30Z",
+  "updatedAt": "2026-06-18T03:36:34Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "64610.00",
       "macd": {
-        "macdLine": "-2333.75",
-        "signalLine": "-2935.27",
-        "histogram": "601.52",
+        "macdLine": "-2349.44",
+        "signalLine": "-2938.41",
+        "histogram": "588.97",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "43.1",
-        "plusDi": "16.7",
-        "minusDi": "29.2",
+        "plusDi": "16.6",
+        "minusDi": "29.1",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000090",
       "ivRv": {
-        "iv": "42.59",
+        "iv": "35.80",
         "rv": "43.00",
-        "spread": "-0.42",
-        "label": "균형"
+        "spread": "-7.20",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 15,
@@ -2696,9 +2696,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261089791430.13702",
+      "totalMarketCapUsd": "261078495673.50029",
       "marketCap30dAgoUsd": "266537650367.71662",
-      "growth30dPercent": "-2.04",
+      "growth30dPercent": "-2.05",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -2767,63 +2767,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64483.20",
-      "openInterestUsd": "6426494721.52220000",
-      "longAccountRatio": "0.6381",
-      "shortAccountRatio": "0.3619",
-      "downsideLiquidationUsd": "4100746281.80",
-      "upsideLiquidationUsd": "2325748439.72",
+      "currentPrice": "64289.90",
+      "openInterestUsd": "6402505593.56523800",
+      "longAccountRatio": "0.6354",
+      "shortAccountRatio": "0.3646",
+      "downsideLiquidationUsd": "4068152054.15",
+      "upsideLiquidationUsd": "2334353539.41",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58034.88",
+          "price": "57860.91",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1640298512.72"
+          "notionalUsd": "1627260821.66"
         },
         {
-          "price": "70931.52",
+          "price": "70718.89",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "930299375.89"
+          "notionalUsd": "933741415.77"
         },
         {
-          "price": "61903.87",
+          "price": "61718.30",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1435261198.63"
+          "notionalUsd": "1423853218.95"
         },
         {
-          "price": "67062.53",
+          "price": "66861.50",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "814011953.90"
+          "notionalUsd": "817023738.79"
         },
         {
-          "price": "63193.54",
+          "price": "63004.10",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "820149256.36"
+          "notionalUsd": "813630410.83"
         },
         {
-          "price": "65772.86",
+          "price": "65575.70",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "465149687.94"
+          "notionalUsd": "466870707.88"
         },
         {
-          "price": "63838.37",
+          "price": "63647.00",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "205037314.09"
+          "notionalUsd": "203407602.71"
         },
         {
-          "price": "65128.03",
+          "price": "64932.80",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "116287421.99"
+          "notionalUsd": "116717676.97"
         }
       ],
       "errorMessage": null
@@ -4146,7 +4146,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-18T03:00:03.350013Z",
+      "generatedAt": "2026-06-18T03:30:01.401050Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4155,23 +4155,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮고, 온체인 지표가 약세를 보이고 있다."
+          "content": "현재 시장은 중립적이며, 공포가 우세한 상태입니다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수로 인해 시장의 불확실성이 커질 수 있다."
+          "content": "낮은 RSI와 높은 NVT는 시장의 약세를 나타냅니다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 저조할 수 있다."
+          "content": "BTC 도미넌스와 알트시즌지수가 중립적이어서 변동성이 클 수 있습니다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "단기 매매를 고려하되, 포지션 크기를 줄이는 것이 좋습니다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산시키는 것이 좋다."
+          "content": "시장 심리를 주의 깊게 모니터링하며, 추가 매수는 신중하게 결정해야 합니다."
         }
       ],
       "errorMessage": null
