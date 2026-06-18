@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-18T05:56:56Z",
+  "updatedAt": "2026-06-18T06:16:58Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "64610.00",
       "macd": {
-        "macdLine": "-2376.61",
-        "signalLine": "-2943.84",
-        "histogram": "567.23",
+        "macdLine": "-2380.66",
+        "signalLine": "-2944.65",
+        "histogram": "564.00",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000090",
       "ivRv": {
-        "iv": "36.23",
+        "iv": "36.10",
         "rv": "43.00",
-        "spread": "-6.77",
+        "spread": "-6.90",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2767,63 +2767,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63944.30",
-      "openInterestUsd": "6388148037.56429200",
-      "longAccountRatio": "0.6415",
-      "shortAccountRatio": "0.3585",
-      "downsideLiquidationUsd": "4097996966.10",
-      "upsideLiquidationUsd": "2290151071.47",
+      "currentPrice": "63900.00",
+      "openInterestUsd": "6390856033.51045200",
+      "longAccountRatio": "0.6436",
+      "shortAccountRatio": "0.3564",
+      "downsideLiquidationUsd": "4113154943.17",
+      "upsideLiquidationUsd": "2277701090.34",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57549.87",
+          "price": "57510.00",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1639198786.44"
+          "notionalUsd": "1645261977.27"
         },
         {
-          "price": "70338.73",
+          "price": "70290.00",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "916060428.59"
+          "notionalUsd": "911080436.14"
         },
         {
-          "price": "61386.53",
+          "price": "61344.00",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1434298938.13"
+          "notionalUsd": "1439604230.11"
         },
         {
-          "price": "66502.07",
+          "price": "66456.00",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "801552875.01"
+          "notionalUsd": "797195381.62"
         },
         {
-          "price": "62665.41",
+          "price": "62622.00",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "819599393.22"
+          "notionalUsd": "822630988.63"
         },
         {
-          "price": "65223.19",
+          "price": "65178.00",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "458030214.29"
+          "notionalUsd": "455540218.07"
         },
         {
-          "price": "63304.86",
+          "price": "63261.00",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204899848.30"
+          "notionalUsd": "205657747.16"
         },
         {
-          "price": "64583.74",
+          "price": "64539.00",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "114507553.57"
+          "notionalUsd": "113885054.52"
         }
       ],
       "errorMessage": null
@@ -4146,7 +4146,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-18T05:30:02.782330Z",
+      "generatedAt": "2026-06-18T06:00:03.774956Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4159,87 +4159,94 @@
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
+          "content": "공포탐욕 지수가 15로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높은 상황에서 알트코인 성장이 제한될 수 있다."
+          "content": "RSI가 39.17로 과매도 구간에 진입하고 있다."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 면밀히 관찰하며 매수 기회를 모색하라."
+          "content": "단기적인 반등을 노리기 위해 소액 매수 전략을 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
+          "content": "시장의 추가적인 신호를 관찰하며 포지션을 조정하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-18T05:05:03.182057Z",
-      "compositeScore": "-0.188",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-06-18T06:05:02.750456Z",
+      "compositeScore": "-0.206",
+      "label": "NEGATIVE",
+      "labelDisplay": "부정",
+      "labelHexColor": "#F97316",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Live markets: Bitcoin and ether ETFs lost $111 million combined as rate-cut hopes died",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/06/18/live-markets-bitcoin-and-ether-etfs-lost-usd111-million-combined-as-rate-cut-hopes-died",
+          "publishedAt": "2026-06-18T06:02:19Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "Strategy's STRC preferred stock hits a record low below par",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/18/strategy-s-strc-preferred-stock-hits-a-record-low-below-par",
+          "publishedAt": "2026-06-18T05:49:21Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "XRP slips 4% below $1.20 after breakout rally stalls near key resistance",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/18/xrp-slips-4-below-usd1-20-after-breakout-rally-stalls-near-key-resistance",
+          "publishedAt": "2026-06-18T05:08:12Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Buying bitcoin below its 200-week average has historically delivered over 100% in median returns, Kraken says",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/18/buying-bitcoin-below-its-200-week-average-has-historically-delivered-over-100-in-median-returns-kraken-says",
+          "publishedAt": "2026-06-18T05:08:05Z",
+          "score": "0.5"
+        },
         {
           "title": "Bitcoin, ether slide after a hawkish Fed, even as Trump's signed Iran deal lifts stocks",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/18/bitcoin-ether-slide-after-a-hawkish-fed-even-as-trump-s-signed-iran-deal-lifts-stocks",
           "publishedAt": "2026-06-18T04:52:46Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Next bull run will be slower, less volatile as investors' crypto appetite evolves, Bitwise CIO says",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/17/next-bull-run-will-be-slower-less-volatile-as-investors-crypto-appetite-evolves-bitwise-cio-says",
           "publishedAt": "2026-06-18T04:00:00Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "CME chief executive says company plans to sue CFTC after perpetual futures approval",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/17/cme-chief-executive-says-company-plans-to-sue-cftc-after-perpetual-futures-approval",
           "publishedAt": "2026-06-18T03:44:30Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Kentucky targets prediction markets, puts red state in potential clash with Trump team",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/17/kentucky-targets-prediction-markets-puts-red-state-in-potential-clash-with-trump-team",
           "publishedAt": "2026-06-17T21:20:05Z",
-          "score": "-0.5"
+          "score": "-0.2"
         },
         {
-          "title": "Fidelity joins Wall Street's race to manage stablecoin reserves",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/17/fidelity-joins-wall-street-s-race-to-manage-stablecoin-reserves",
-          "publishedAt": "2026-06-17T20:30:48Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Here is how Coinbase plan to survive the crypto downturn by ditching its reliance on trading fees",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/17/here-is-how-coinbase-plan-to-survive-the-crypto-downturn-by-ditching-its-reliance-on-trading-fees",
-          "publishedAt": "2026-06-17T19:23:40Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Bitcoin layer-2s face a bear-market reality check",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/17/bitcoin-layer-2s-face-a-bear-market-reality-check",
-          "publishedAt": "2026-06-17T19:17:07Z",
-          "score": "-0.7"
-        },
-        {
-          "title": "FIFA wanted Avalanche's blockchain to help curb World Cup ticket scalping. Here's how it's going",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/17/fifa-wanted-avalanche-s-blockchain-to-help-curb-world-cup-ticket-scalping-here-s-how-it-s-going",
-          "publishedAt": "2026-06-17T19:08:43Z",
+          "title": "Dorsey’s Block says new AI tool handles 15% of code work",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/dorseys-block-says-new-ai-tool-handles-15-of-code-work?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-18T05:38:34Z",
           "score": "0.1"
         },
         {
@@ -4254,21 +4261,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kentucky-sues-kalshi-polymarket-joining-prediction-market-legal-battle?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T03:35:05Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Tether winds down gold-backed derivative stablecoin aUSDT",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/tether-winds-down-gold-backed-derivative-stablecoin-ausdt?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T03:26:18Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Crypto market treads thin ice following Warsh FOMC, Trump Iran comments",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/crypto-market-tread-thin-ice-following-warsh-fomc-trump-iran-comments?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T23:45:29Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4289,14 +4296,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-pac-alabama-senate-runoff-june-primaries?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-17T20:51:29Z",
-          "score": "0.5"
-        },
-        {
-          "title": "Bitcoin capitulation ‘twice as weak’ after spot liquidity turns supportive: Glassnode",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-capitulation-twice-as-weak-as-spot-liquidity-turns-supportive-glassnode?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-17T20:26:13Z",
-          "score": "-0.4"
+          "score": "0.4"
         }
       ],
       "errorMessage": null
