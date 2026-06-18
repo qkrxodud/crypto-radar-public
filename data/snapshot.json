@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-18T17:58:47Z",
+  "updatedAt": "2026-06-18T18:18:55Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "64610.00",
       "macd": {
-        "macdLine": "-2476.73",
-        "signalLine": "-2963.87",
-        "histogram": "487.13",
+        "macdLine": "-2477.66",
+        "signalLine": "-2964.05",
+        "histogram": "486.39",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.000090",
       "ivRv": {
-        "iv": "38.06",
+        "iv": "37.83",
         "rv": "43.00",
-        "spread": "-4.94",
-        "label": "균형"
+        "spread": "-5.17",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 15,
@@ -2767,63 +2767,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62643.10",
-      "openInterestUsd": "6202594688.58000000",
-      "longAccountRatio": "0.6603",
-      "shortAccountRatio": "0.3397",
-      "downsideLiquidationUsd": "4095573272.87",
-      "upsideLiquidationUsd": "2107021415.71",
+      "currentPrice": "62678.70",
+      "openInterestUsd": "6203516120.81428400",
+      "longAccountRatio": "0.6607",
+      "shortAccountRatio": "0.3393",
+      "downsideLiquidationUsd": "4098663101.02",
+      "upsideLiquidationUsd": "2104853019.79",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56378.79",
+          "price": "56410.83",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1638229309.15"
+          "notionalUsd": "1639465240.41"
         },
         {
-          "price": "68907.41",
+          "price": "68946.57",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "842808566.28"
+          "notionalUsd": "841941207.92"
         },
         {
-          "price": "60137.38",
+          "price": "60171.55",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1433450645.50"
+          "notionalUsd": "1434532085.36"
         },
         {
-          "price": "65148.82",
+          "price": "65185.85",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "737457495.50"
+          "notionalUsd": "736698556.93"
         },
         {
-          "price": "61390.24",
+          "price": "61425.13",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "819114654.57"
+          "notionalUsd": "819732620.20"
         },
         {
-          "price": "63895.96",
+          "price": "63932.27",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "421404283.14"
+          "notionalUsd": "420970603.96"
         },
         {
-          "price": "62016.67",
+          "price": "62051.91",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204778663.64"
+          "notionalUsd": "204933155.05"
         },
         {
-          "price": "63269.53",
+          "price": "63305.49",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "105351070.79"
+          "notionalUsd": "105242650.99"
         }
       ],
       "errorMessage": null
@@ -4178,8 +4178,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-18T17:18:40.913763Z",
-      "compositeScore": "-0.063",
+      "generatedAt": "2026-06-18T18:18:55.182437Z",
+      "compositeScore": "-0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4187,11 +4187,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "U.S. agencies seek stablecoin customer-ID rules akin to banks in new GENIUS Act rule",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/06/18/u-s-agencies-seek-stablecoin-customer-id-rules-akin-to-banks-in-new-genius-act-rule",
+          "publishedAt": "2026-06-18T17:17:22Z",
+          "score": "-0.6"
+        },
+        {
           "title": "Ethereum Foundation loses another key leader as co-executive director Hsiao-Wei Wang resigns",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/18/ethereum-foundation-loses-another-key-leader-as-co-executive-director-hsiao-wei-wang-resigns",
           "publishedAt": "2026-06-18T15:41:17Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Crypto for Advisors: Trading the bitcoin cycle",
@@ -4205,14 +4212,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/18/algorand-unveils-post-quantum-roadmap-to-secure-blockchain-by-2027",
           "publishedAt": "2026-06-18T14:00:00Z",
-          "score": "0.1"
+          "score": "0.5"
         },
         {
           "title": "CoinDesk 20 performance update: Stellar (XLM) jumps 10% while index declines",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/18/coindesk-20-performance-update-stellar-xlm-jumps-10-while-index-declines",
           "publishedAt": "2026-06-18T13:13:44Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Alchemy's AI-driven identity and payment service gains access to Visa network",
@@ -4233,13 +4240,20 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/18/the-great-rotation-investors-desert-the-magnificent-7-crypto-for-ai-bottlenecks",
           "publishedAt": "2026-06-18T11:37:32Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
-          "title": "Bitcoin's nemesis, the Dollar Index, is on the verge of a major breakout",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/06/18/bitcoin-s-nemesis-the-dollar-index-is-on-the-verge-of-a-major-breakout",
-          "publishedAt": "2026-06-18T11:10:40Z",
+          "title": "HIVE secures $220M AI infrastructure contract with Bell and Cohere",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/hive-secures-220m-ai-infrastructure-contract-with-bell-and-cohere?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-18T17:54:57Z",
+          "score": "0.3"
+        },
+        {
+          "title": "CME Group sues CFTC over crypto perpetual futures",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/cme-group-cftc-lawsuit-perpetual-futures-crypto?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-18T17:42:09Z",
           "score": "-0.7"
         },
         {
@@ -4247,14 +4261,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-miners-50b-ai-pivot-iren-21b-funding-gap?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T16:56:58Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "Bybit lands on Singapore MAS Investor Alert List",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bybit-singapore-mas-investor-alert-list?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T15:14:27Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin to $145K by October? Why this 'crazy accurate' 4chan prediction is sketchy",
@@ -4274,8 +4288,8 @@
           "title": "Ledn to add Tether Gold as loan collateral, expanding Bitcoin-backed lending model",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ledn-tether-gold-xaut-loans-bitcoin-backed-lending?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-18T14:10:00Z",
-          "score": "0.3"
+          "publishedAt": "2026-06-18T14:12:00Z",
+          "score": "0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4283,20 +4297,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T13:28:23Z",
           "score": "0.0"
-        },
-        {
-          "title": "Capital B shareholders approve up to $120B in financing capacity for Bitcoin strategy",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/capital-b-shareholders-approve-120b-capital?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-18T12:46:47Z",
-          "score": "0.5"
-        },
-        {
-          "title": "G7 calls for joint action on North Korean crypto theft, cybercrime",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/g7-north-korea-crypto-theft-cybercrime-warning?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-18T11:33:29Z",
-          "score": "-0.3"
         }
       ],
       "errorMessage": null
