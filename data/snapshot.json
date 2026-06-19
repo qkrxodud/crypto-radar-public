@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-19T13:01:31Z",
+  "updatedAt": "2026-06-19T13:21:34Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "62980.85",
       "macd": {
-        "macdLine": "-2444.42",
-        "signalLine": "-2870.29",
-        "histogram": "425.87",
+        "macdLine": "-2440.18",
+        "signalLine": "-2869.44",
+        "histogram": "429.26",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000151",
       "ivRv": {
-        "iv": "39.37",
+        "iv": "33.65",
         "rv": "43.00",
-        "spread": "-3.63",
-        "label": "균형"
+        "spread": "-9.36",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 14,
@@ -2778,63 +2778,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62832.80",
-      "openInterestUsd": "6211214902.85600000",
-      "longAccountRatio": "0.6574",
-      "shortAccountRatio": "0.3426",
-      "downsideLiquidationUsd": "4083252677.14",
-      "upsideLiquidationUsd": "2127962225.72",
+      "currentPrice": "62659.60",
+      "openInterestUsd": "6221933234.61600000",
+      "longAccountRatio": "0.6576",
+      "shortAccountRatio": "0.3424",
+      "downsideLiquidationUsd": "4091543295.08",
+      "upsideLiquidationUsd": "2130389939.53",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56549.52",
+          "price": "56393.64",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1633301070.86"
+          "notionalUsd": "1636617318.03"
         },
         {
-          "price": "69116.08",
+          "price": "68925.56",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "851184890.29"
+          "notionalUsd": "852155975.81"
         },
         {
-          "price": "60319.49",
+          "price": "60153.22",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1429138437.00"
+          "notionalUsd": "1432040153.28"
         },
         {
-          "price": "65346.11",
+          "price": "65165.98",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "744786779.00"
+          "notionalUsd": "745636478.84"
         },
         {
-          "price": "61576.14",
+          "price": "61406.41",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "816650535.43"
+          "notionalUsd": "818308659.02"
         },
         {
-          "price": "64089.46",
+          "price": "63912.79",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "425592445.14"
+          "notionalUsd": "426077987.91"
         },
         {
-          "price": "62204.47",
+          "price": "62033.00",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204162633.86"
+          "notionalUsd": "204577164.75"
         },
         {
-          "price": "63461.13",
+          "price": "63286.20",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "106398111.29"
+          "notionalUsd": "106519496.98"
         }
       ],
       "errorMessage": null
@@ -4197,8 +4197,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-19T12:05:06.838224Z",
-      "compositeScore": "-0.125",
+      "generatedAt": "2026-06-19T13:05:03.453849Z",
+      "compositeScore": "-0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4206,81 +4206,88 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "GoMining challenges Jack Dorsey's Square with payments system designed around bitcoin",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/19/gomining-challenges-jack-dorsey-s-square-with-payments-system-designed-around-bitcoin",
+          "publishedAt": "2026-06-19T12:30:00Z",
+          "score": "0.5"
+        },
+        {
           "title": "Franklin Templeton proposes new ETFs that turn corporate dividends into bitcoin",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/06/19/franklin-templeton-proposes-new-funds-that-turn-corporate-dividends-into-bitcoin",
           "publishedAt": "2026-06-19T11:27:59Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Smart-contract and DeFi coins lead losses as bitcoin wilts for 4th straight day",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/smart-contract-and-defi-coins-lead-losses-as-bitcoin-wilts-for-4th-straight-day",
           "publishedAt": "2026-06-19T10:47:03Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Digital credit market hit by huge selloff as Strive CEO blames leverage liquidations",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/digital-credit-market-hit-by-record-selloff-as-strive-ceo-blames-leverage-liquidations",
           "publishedAt": "2026-06-19T09:19:28Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Microsoft found malware that hijacks crypto wallets and spreads through USB sticks",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/19/microsoft-found-malware-that-hijacks-crypto-wallets-and-spreads-through-usb-sticks",
           "publishedAt": "2026-06-19T08:48:14Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "XRP falls 3% after losing $1.15 support as breakout attempt fades",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/xrp-falls-3-after-losing-usd1-15-support-as-breakout-attempt-fades",
           "publishedAt": "2026-06-19T05:14:20Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Live markets: Bitcoin under pressure as Saylor comments on STRC sell-off",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/live-markets-bitcoin-has-traded-below-its-mining-cost-for-five-months-squeezing-miners",
           "publishedAt": "2026-06-19T05:04:22Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin traders load up on bearish bets all the way down to $52,000",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/bitcoin-traders-load-up-on-bearish-bets-all-the-way-down-to-usd52-000",
           "publishedAt": "2026-06-19T05:02:01Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
-          "title": "Bitcoin falls below $63,000 as risk assets sell off and the week's bounce fades",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/19/bitcoin-falls-below-usd63-000-as-risk-assets-sell-off-and-the-week-s-bounce-fades",
-          "publishedAt": "2026-06-19T04:49:20Z",
-          "score": "-0.8"
+          "title": "Binance can serve Philippine traders under SEC framework, BlockShoals says",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/blockshoals-binance-regulatory-status-philippines?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-19T12:15:20Z",
+          "score": "0.3"
         },
         {
           "title": "Bitcoin tipped for Q3 'macro bottom' near $50K as major liquidity grab looms",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-tipped-for-q3-macro-bottom-near-50k-as-major-liquidity-grab-looms?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T10:44:28Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Bitcoin activity nears record highs on microtransaction surge",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-activity-nears-record-highs-on-microtransaction-surge?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T09:16:04Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Goldman Sachs cuts year-end gold target by $500, doubting rate cuts",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/goldman-sachs-cuts-year-end-gold-target-by-500-doubting-rate-cuts?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T08:05:37Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "AllUnity debuts SEKAU, a fully reserved Swedish krona stablecoin",
@@ -4301,21 +4308,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/algorand-plans-broad-quantum-resilience-by-2027?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T05:51:24Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
           "title": "Microsoft warns users of 'Crypto Clipper' malware spread via USB drives",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/microsoft-alerts-users-to-crypto-clipper-windows-malware?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T05:33:06Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "US crypto ETFs are pulling Bitcoiners into TradFi: BlackRock's Jay Jacobs",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/blackrocks-ibit-is-pulling-bitcoiners-into-traditional-finance-exec-says?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-19T04:16:47Z",
-          "score": "0.3"
+          "score": "-0.5"
         }
       ],
       "errorMessage": null
