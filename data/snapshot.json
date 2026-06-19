@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-19T10:01:06Z",
+  "updatedAt": "2026-06-19T10:21:06Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "62980.85",
       "macd": {
-        "macdLine": "-2476.98",
-        "signalLine": "-2876.80",
-        "histogram": "399.82",
+        "macdLine": "-2462.11",
+        "signalLine": "-2873.82",
+        "histogram": "411.72",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000151",
       "ivRv": {
-        "iv": "32.20",
+        "iv": "32.34",
         "rv": "43.00",
-        "spread": "-10.80",
+        "spread": "-10.66",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2778,63 +2778,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62357.60",
-      "openInterestUsd": "6174336581.71415400",
-      "longAccountRatio": "0.6555",
-      "shortAccountRatio": "0.3445",
-      "downsideLiquidationUsd": "4047277629.31",
-      "upsideLiquidationUsd": "2127058952.40",
+      "currentPrice": "62412.00",
+      "openInterestUsd": "6193206843.54600000",
+      "longAccountRatio": "0.6560",
+      "shortAccountRatio": "0.3440",
+      "downsideLiquidationUsd": "4062743689.37",
+      "upsideLiquidationUsd": "2130463154.18",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56121.84",
+          "price": "56170.80",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1618911051.73"
+          "notionalUsd": "1625097475.75"
         },
         {
-          "price": "68593.36",
+          "price": "68653.20",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "850823580.96"
+          "notionalUsd": "852185261.67"
         },
         {
-          "price": "59863.30",
+          "price": "59915.52",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1416547170.26"
+          "notionalUsd": "1421960291.28"
         },
         {
-          "price": "64851.90",
+          "price": "64908.48",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "744470633.34"
+          "notionalUsd": "745662103.96"
         },
         {
-          "price": "61110.45",
+          "price": "61163.76",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "809455525.86"
+          "notionalUsd": "812548737.87"
         },
         {
-          "price": "63604.75",
+          "price": "63660.24",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "425411790.48"
+          "notionalUsd": "426092630.84"
         },
         {
-          "price": "61734.02",
+          "price": "61787.88",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "202363881.47"
+          "notionalUsd": "203137184.47"
         },
         {
-          "price": "62981.18",
+          "price": "63036.12",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "106352947.62"
+          "notionalUsd": "106523157.71"
         }
       ],
       "errorMessage": null
@@ -4197,8 +4197,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-19T09:05:03.469034Z",
-      "compositeScore": "-0.281",
+      "generatedAt": "2026-06-19T10:05:02.705070Z",
+      "compositeScore": "-0.288",
       "label": "NEGATIVE",
       "labelDisplay": "부정",
       "labelHexColor": "#F97316",
@@ -4206,11 +4206,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Digital credit market hit by huge selloff as Strive CEO blames leverage liquidations",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/19/digital-credit-market-hit-by-record-selloff-as-strive-ceo-blames-leverage-liquidations",
+          "publishedAt": "2026-06-19T09:19:28Z",
+          "score": "-0.7"
+        },
+        {
           "title": "Microsoft found malware that hijacks crypto wallets and spreads through USB sticks",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/19/microsoft-found-malware-that-hijacks-crypto-wallets-and-spreads-through-usb-sticks",
           "publishedAt": "2026-06-19T08:48:14Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "XRP falls 3% after losing $1.15 support as breakout attempt fades",
@@ -4220,60 +4227,60 @@
           "score": "-0.4"
         },
         {
-          "title": "Live markets: Bitcoin has traded below its mining cost for five months, squeezing miners",
+          "title": "Live markets: Bitcoin and precious metals remain under pressure",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/live-markets-bitcoin-has-traded-below-its-mining-cost-for-five-months-squeezing-miners",
           "publishedAt": "2026-06-19T05:04:22Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin traders load up on bearish bets all the way down to $52,000",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/bitcoin-traders-load-up-on-bearish-bets-all-the-way-down-to-usd52-000",
           "publishedAt": "2026-06-19T05:02:01Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "Bitcoin falls below $63,000 as risk assets sell off and the week's bounce fades",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/bitcoin-falls-below-usd63-000-as-risk-assets-sell-off-and-the-week-s-bounce-fades",
           "publishedAt": "2026-06-19T04:49:20Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Ex-Celsius CEO Mashinsky gets U.S. CFTC ban in final resolution with regulator",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/18/ex-celsius-ceo-mashinsky-gets-u-s-cftc-ban-in-final-resolution-with-regulator",
           "publishedAt": "2026-06-18T19:26:55Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "U.S. agencies seek stablecoin customer-ID rules akin to banks in new GENIUS Act pitch",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/18/u-s-agencies-seek-stablecoin-customer-id-rules-akin-to-banks-in-new-genius-act-rule",
           "publishedAt": "2026-06-18T17:17:22Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
-          "title": "Ethereum Foundation loses another key leader as co-executive director Hsiao-Wei Wang resigns",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/18/ethereum-foundation-loses-another-key-leader-as-co-executive-director-hsiao-wei-wang-resigns",
-          "publishedAt": "2026-06-18T15:41:17Z",
-          "score": "-0.4"
+          "title": "Bitcoin activity nears record highs on microtransaction surge",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-activity-nears-record-highs-on-microtransaction-surge?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-19T09:16:04Z",
+          "score": "0.5"
         },
         {
           "title": "Goldman Sachs cuts year-end gold target by $500, doubting rate cuts",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/goldman-sachs-cuts-year-end-gold-target-by-500-doubting-rate-cuts?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T08:05:37Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "AllUnity debuts SEKAU, a fully reserved Swedish krona stablecoin",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/allunity-debut-fully-reserved-swedish-krona-stablecoin-sekau?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T07:00:00Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4287,35 +4294,28 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/algorand-plans-broad-quantum-resilience-by-2027?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T05:51:24Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Microsoft warns users of 'Crypto Clipper' malware spread via USB drives",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/microsoft-alerts-users-to-crypto-clipper-windows-malware?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T05:33:06Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "US crypto ETFs are pulling Bitcoiners into TradFi: BlackRock's Jay Jacobs",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blackrocks-ibit-is-pulling-bitcoiners-into-traditional-finance-exec-says?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T04:16:47Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Celsius’ Mashinsky gets permanent trading ban in CFTC settlement",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-permanently-bans-celsius-mashinsky-from-trading?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T02:33:11Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Ether analysts predict another ‘selling wave’ as ETH struggles to overcome $1.7K",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/ether-below-17k-gains-interest-as-analysts-warn-of-another-selling-wave?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-19T00:26:39Z",
-          "score": "-0.5"
+          "score": "-0.6"
         }
       ],
       "errorMessage": null
