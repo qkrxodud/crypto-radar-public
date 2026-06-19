@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-19T08:00:50Z",
+  "updatedAt": "2026-06-19T08:20:53Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "62980.85",
       "macd": {
-        "macdLine": "-2452.32",
-        "signalLine": "-2871.87",
-        "histogram": "419.55",
+        "macdLine": "-2452.41",
+        "signalLine": "-2871.88",
+        "histogram": "419.47",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000151",
       "ivRv": {
-        "iv": "36.18",
+        "iv": "39.89",
         "rv": "43.00",
-        "spread": "-6.82",
-        "label": "저평가"
+        "spread": "-3.11",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 14,
@@ -2778,63 +2778,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62584.30",
-      "openInterestUsd": "6171469466.71587850",
-      "longAccountRatio": "0.6536",
-      "shortAccountRatio": "0.3464",
-      "downsideLiquidationUsd": "4033672443.45",
-      "upsideLiquidationUsd": "2137797023.27",
+      "currentPrice": "62611.60",
+      "openInterestUsd": "6176593415.53760000",
+      "longAccountRatio": "0.6544",
+      "shortAccountRatio": "0.3456",
+      "downsideLiquidationUsd": "4041962731.13",
+      "upsideLiquidationUsd": "2134630684.41",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56325.87",
+          "price": "56350.44",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1613468977.38"
+          "notionalUsd": "1616785092.45"
         },
         {
-          "price": "68842.73",
+          "price": "68872.76",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "855118809.31"
+          "notionalUsd": "853852273.76"
         },
         {
-          "price": "60080.93",
+          "price": "60107.14",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1411785355.21"
+          "notionalUsd": "1414686955.89"
         },
         {
-          "price": "65087.67",
+          "price": "65116.06",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "748228958.14"
+          "notionalUsd": "747120739.54"
         },
         {
-          "price": "61332.61",
+          "price": "61359.37",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "806734488.69"
+          "notionalUsd": "808392546.23"
         },
         {
-          "price": "63835.99",
+          "price": "63863.83",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "427559404.65"
+          "notionalUsd": "426926136.88"
         },
         {
-          "price": "61958.46",
+          "price": "61985.48",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "201683622.17"
+          "notionalUsd": "202098136.56"
         },
         {
-          "price": "63210.14",
+          "price": "63237.72",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "106889851.16"
+          "notionalUsd": "106731534.22"
         }
       ],
       "errorMessage": null
@@ -4197,8 +4197,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-19T07:05:02.696803Z",
-      "compositeScore": "-0.213",
+      "generatedAt": "2026-06-19T08:05:03.188644Z",
+      "compositeScore": "-0.275",
       "label": "NEGATIVE",
       "labelDisplay": "부정",
       "labelHexColor": "#F97316",
@@ -4245,14 +4245,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/18/u-s-agencies-seek-stablecoin-customer-id-rules-akin-to-banks-in-new-genius-act-rule",
           "publishedAt": "2026-06-18T17:17:22Z",
-          "score": "0.1"
+          "score": "-0.3"
         },
         {
           "title": "Ethereum Foundation loses another key leader as co-executive director Hsiao-Wei Wang resigns",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/18/ethereum-foundation-loses-another-key-leader-as-co-executive-director-hsiao-wei-wang-resigns",
           "publishedAt": "2026-06-18T15:41:17Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "Crypto for Advisors: Trading the bitcoin cycle",
@@ -4266,7 +4266,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/allunity-debut-fully-reserved-swedish-krona-stablecoin-sekau?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T07:00:00Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4287,21 +4287,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/microsoft-alerts-users-to-crypto-clipper-windows-malware?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T05:33:06Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "US crypto ETFs are pulling Bitcoiners into TradFi: BlackRock's Jay Jacobs",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blackrocks-ibit-is-pulling-bitcoiners-into-traditional-finance-exec-says?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T04:16:47Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Celsius’ Mashinsky gets permanent trading ban in CFTC settlement",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-permanently-bans-celsius-mashinsky-from-trading?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T02:33:11Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Ether analysts predict another ‘selling wave’ as ETH struggles to overcome $1.7K",
@@ -4315,7 +4315,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/malta-defi-framework-daos-software-based-organizations-mica?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T22:04:19Z",
-          "score": "0.2"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
