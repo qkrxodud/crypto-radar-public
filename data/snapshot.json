@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-19T03:00:11Z",
+  "updatedAt": "2026-06-19T03:20:13Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "62980.85",
       "macd": {
-        "macdLine": "-2427.47",
-        "signalLine": "-2866.90",
-        "histogram": "439.42",
+        "macdLine": "-2437.98",
+        "signalLine": "-2869.00",
+        "histogram": "431.02",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000151",
       "ivRv": {
-        "iv": "37.73",
+        "iv": "38.59",
         "rv": "43.00",
-        "spread": "-5.28",
-        "label": "저평가"
+        "spread": "-4.41",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 14,
@@ -2778,63 +2778,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62978.40",
-      "openInterestUsd": "6225580652.42492600",
-      "longAccountRatio": "0.6558",
-      "shortAccountRatio": "0.3442",
-      "downsideLiquidationUsd": "4082735791.86",
-      "upsideLiquidationUsd": "2142844860.56",
+      "currentPrice": "62507.30",
+      "openInterestUsd": "6199980327.22880000",
+      "longAccountRatio": "0.6542",
+      "shortAccountRatio": "0.3458",
+      "downsideLiquidationUsd": "4056027130.07",
+      "upsideLiquidationUsd": "2143953197.16",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56680.56",
+          "price": "56256.57",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1633094316.74"
+          "notionalUsd": "1622410852.03"
         },
         {
-          "price": "69276.24",
+          "price": "68758.03",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "857137944.23"
+          "notionalUsd": "857581278.86"
         },
         {
-          "price": "60459.26",
+          "price": "60007.01",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1428957527.15"
+          "notionalUsd": "1419609495.53"
         },
         {
-          "price": "65497.54",
+          "price": "65007.59",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "749995701.20"
+          "notionalUsd": "750383619.00"
         },
         {
-          "price": "61718.83",
+          "price": "61257.15",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "816547158.37"
+          "notionalUsd": "811205426.01"
         },
         {
-          "price": "64237.97",
+          "price": "63757.45",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "428568972.11"
+          "notionalUsd": "428790639.43"
         },
         {
-          "price": "62348.62",
+          "price": "61882.23",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204136789.59"
+          "notionalUsd": "202801356.50"
         },
         {
-          "price": "63608.18",
+          "price": "63132.37",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "107142243.03"
+          "notionalUsd": "107197659.86"
         }
       ],
       "errorMessage": null
@@ -4197,8 +4197,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-19T02:05:03.259846Z",
-      "compositeScore": "0.025",
+      "generatedAt": "2026-06-19T03:05:04.175244Z",
+      "compositeScore": "-0.038",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4238,7 +4238,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/18/algorand-unveils-post-quantum-roadmap-to-secure-blockchain-by-2027",
           "publishedAt": "2026-06-18T14:00:00Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "CoinDesk 20 performance update: Stellar (XLM) jumps 10% while index declines",
@@ -4252,7 +4252,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/18/alchemy-s-ai-driven-identity-and-payment-service-gains-access-to-visa-network",
           "publishedAt": "2026-06-18T13:00:00Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Hive shares jumps 10% on $220m Canada sovereign AI infrastructure deal",
@@ -4260,6 +4260,13 @@
           "url": "https://www.coindesk.com/markets/2026/06/18/hive-shares-jumps-10-on-usd220m-canada-sovereign-ai-infrastructure-deal",
           "publishedAt": "2026-06-18T11:49:41Z",
           "score": "0.3"
+        },
+        {
+          "title": "Celsius’ Mashinsky gets permanent trading ban in CFTC settlement",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/cftc-permanently-bans-celsius-mashinsky-from-trading?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-19T02:33:11Z",
+          "score": "-0.6"
         },
         {
           "title": "Ether analysts predict another ‘selling wave’ as ETH struggles to overcome $1.7K",
@@ -4273,7 +4280,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/malta-defi-framework-daos-software-based-organizations-mica?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T22:04:19Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "Bitcoin decouples from tech stocks: Is $60K BTC’s next stop?",
@@ -4294,7 +4301,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-agencies-user-identification-stablecoin-issuers?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T21:42:13Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4308,13 +4315,6 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/custodia-vantage-unveil-token-that-shifts-between-bank-deposits-and-stablecoins?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T21:02:29Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Wealthsimple launches Kalshi-powered prediction market app for Canadian investors",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/wealthsimple-launches-kalshi-powered-prediction-market-app-for-canadian-investors?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-18T20:07:27Z",
           "score": "0.2"
         }
       ],
