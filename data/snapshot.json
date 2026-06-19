@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-19T06:00:35Z",
+  "updatedAt": "2026-06-19T06:20:37Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "62980.85",
       "macd": {
-        "macdLine": "-2447.43",
-        "signalLine": "-2870.89",
-        "histogram": "423.46",
+        "macdLine": "-2441.85",
+        "signalLine": "-2869.77",
+        "histogram": "427.93",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000151",
       "ivRv": {
-        "iv": "40.48",
+        "iv": "39.24",
         "rv": "43.00",
-        "spread": "-2.52",
+        "spread": "-3.76",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2778,63 +2778,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62709.70",
-      "openInterestUsd": "6170017017.30417500",
-      "longAccountRatio": "0.6544",
-      "shortAccountRatio": "0.3456",
-      "downsideLiquidationUsd": "4037659136.12",
-      "upsideLiquidationUsd": "2132357881.18",
+      "currentPrice": "62744.40",
+      "openInterestUsd": "6178530905.57220000",
+      "longAccountRatio": "0.6546",
+      "shortAccountRatio": "0.3454",
+      "downsideLiquidationUsd": "4044466330.79",
+      "upsideLiquidationUsd": "2134064574.78",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56438.73",
+          "price": "56469.96",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1615063654.45"
+          "notionalUsd": "1617786532.32"
         },
         {
-          "price": "68980.67",
+          "price": "69018.84",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "852943152.47"
+          "notionalUsd": "853625829.91"
         },
         {
-          "price": "60201.31",
+          "price": "60234.62",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1413180697.64"
+          "notionalUsd": "1415563215.78"
         },
         {
-          "price": "65218.09",
+          "price": "65254.18",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "746325258.41"
+          "notionalUsd": "746922601.17"
         },
         {
-          "price": "61455.51",
+          "price": "61489.51",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "807531827.22"
+          "notionalUsd": "808893266.16"
         },
         {
-          "price": "63963.89",
+          "price": "63999.29",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "426471576.24"
+          "notionalUsd": "426812914.96"
         },
         {
-          "price": "62082.60",
+          "price": "62116.96",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "201882956.81"
+          "notionalUsd": "202223316.54"
         },
         {
-          "price": "63336.80",
+          "price": "63371.84",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "106617894.06"
+          "notionalUsd": "106703228.74"
         }
       ],
       "errorMessage": null
@@ -4197,7 +4197,7 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-19T05:05:03.374852Z",
+      "generatedAt": "2026-06-19T06:05:03.877823Z",
       "compositeScore": "-0.194",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
@@ -4205,6 +4205,13 @@
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "XRP falls 3% after losing $1.15 support as breakout attempt fades",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/19/xrp-falls-3-after-losing-usd1-15-support-as-breakout-attempt-fades",
+          "publishedAt": "2026-06-19T05:14:20Z",
+          "score": "-0.5"
+        },
         {
           "title": "Live markets: Bitcoin has traded below its mining cost for five months, squeezing miners",
           "source": "CoinDesk",
@@ -4217,14 +4224,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/bitcoin-traders-load-up-on-bearish-bets-all-the-way-down-to-usd52-000",
           "publishedAt": "2026-06-19T05:02:01Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin falls below $63,000 as risk assets sell off and the week's bounce fades",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/bitcoin-falls-below-usd63-000-as-risk-assets-sell-off-and-the-week-s-bounce-fades",
           "publishedAt": "2026-06-19T04:49:20Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "Ex-Celsius CEO Mashinsky gets U.S. CFTC ban in final resolution with regulator",
@@ -4238,83 +4245,76 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/18/u-s-agencies-seek-stablecoin-customer-id-rules-akin-to-banks-in-new-genius-act-rule",
           "publishedAt": "2026-06-18T17:17:22Z",
-          "score": "-0.3"
+          "score": "0.1"
         },
         {
           "title": "Ethereum Foundation loses another key leader as co-executive director Hsiao-Wei Wang resigns",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/18/ethereum-foundation-loses-another-key-leader-as-co-executive-director-hsiao-wei-wang-resigns",
           "publishedAt": "2026-06-18T15:41:17Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "Crypto for Advisors: Trading the bitcoin cycle",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/17/crypto-for-advisors-trading-the-bitcoin-cycle",
           "publishedAt": "2026-06-18T15:00:00Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
-          "title": "Algorand unveils roadmap to achieve quantum resistance by 2028",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/18/algorand-unveils-post-quantum-roadmap-to-secure-blockchain-by-2027",
-          "publishedAt": "2026-06-18T14:00:00Z",
-          "score": "0.2"
+          "title": "Algorand plans ‘broad quantum resilience’ by 2027",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/algorand-plans-broad-quantum-resilience-by-2027?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-19T05:51:24Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Microsoft warns users of 'Crypto Clipper' malware spread via USB drives",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/microsoft-alerts-users-to-crypto-clipper-windows-malware?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-19T05:33:06Z",
+          "score": "-0.5"
         },
         {
           "title": "US crypto ETFs are pulling Bitcoiners into TradFi: BlackRock's Jay Jacobs",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blackrocks-ibit-is-pulling-bitcoiners-into-traditional-finance-exec-says?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T04:16:47Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Celsius’ Mashinsky gets permanent trading ban in CFTC settlement",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-permanently-bans-celsius-mashinsky-from-trading?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T02:33:11Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Ether analysts predict another ‘selling wave’ as ETH struggles to overcome $1.7K",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/ether-below-17k-gains-interest-as-analysts-warn-of-another-selling-wave?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T00:26:39Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "Malta proposes DeFi rulebook covering DAOs under MiCA-era framework",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/malta-defi-framework-daos-software-based-organizations-mica?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T22:04:19Z",
-          "score": "0.0"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin decouples from tech stocks: Is $60K BTC’s next stop?",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-decouples-from-tech-stocks-is-60k-btcs-next-stop?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T21:58:25Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Ireland mulls crypto safeguards in response to financial risks",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ireland-government-standards-crypto-risk-assessment?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-18T21:48:41Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "US regulators push user ID requirements for stablecoin issuers akin to regulated banks",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/us-agencies-user-identification-stablecoin-issuers?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-18T21:42:13Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-18T21:42:05Z",
           "score": "0.0"
         }
       ],
