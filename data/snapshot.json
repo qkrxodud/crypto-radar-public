@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-19T14:01:40Z",
+  "updatedAt": "2026-06-19T14:21:40Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "62980.85",
       "macd": {
-        "macdLine": "-2410.67",
-        "signalLine": "-2863.54",
-        "histogram": "452.86",
+        "macdLine": "-2421.65",
+        "signalLine": "-2865.73",
+        "histogram": "444.08",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000151",
       "ivRv": {
-        "iv": "39.34",
+        "iv": "39.36",
         "rv": "43.00",
-        "spread": "-3.66",
+        "spread": "-3.64",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2778,63 +2778,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63185.80",
-      "openInterestUsd": "6244628390.20521600",
-      "longAccountRatio": "0.6611",
-      "shortAccountRatio": "0.3389",
-      "downsideLiquidationUsd": "4128323828.76",
-      "upsideLiquidationUsd": "2116304561.44",
+      "currentPrice": "63029.20",
+      "openInterestUsd": "6230941664.88636600",
+      "longAccountRatio": "0.6577",
+      "shortAccountRatio": "0.3423",
+      "downsideLiquidationUsd": "4098090333.00",
+      "upsideLiquidationUsd": "2132851331.89",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56867.22",
+          "price": "56726.28",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1651329531.51"
+          "notionalUsd": "1639236133.20"
         },
         {
-          "price": "69504.38",
+          "price": "69332.12",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "846521824.58"
+          "notionalUsd": "853140532.76"
         },
         {
-          "price": "60658.37",
+          "price": "60508.03",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1444913340.07"
+          "notionalUsd": "1434331616.55"
         },
         {
-          "price": "65713.23",
+          "price": "65550.37",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "740706596.50"
+          "notionalUsd": "746497966.16"
         },
         {
-          "price": "61922.08",
+          "price": "61768.62",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "825664765.75"
+          "notionalUsd": "819618066.60"
         },
         {
-          "price": "64449.52",
+          "price": "64289.78",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "423260912.29"
+          "notionalUsd": "426570266.38"
         },
         {
-          "price": "62553.94",
+          "price": "62398.91",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "206416191.44"
+          "notionalUsd": "204904516.65"
         },
         {
-          "price": "63817.66",
+          "price": "63659.49",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "105815228.07"
+          "notionalUsd": "106642566.59"
         }
       ],
       "errorMessage": null
@@ -4197,8 +4197,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-19T13:05:03.453849Z",
-      "compositeScore": "-0.075",
+      "generatedAt": "2026-06-19T14:05:03.374743Z",
+      "compositeScore": "-0.106",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4262,6 +4262,27 @@
           "score": "-0.6"
         },
         {
+          "title": "Kalshi in early IPO talks with investment banks: Report",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/kalshi-early-ipo-talks-investment-banks-report?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-19T13:44:34Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Binance’s MiCA fight raises questions over ECB influence",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/mica-rules-questions-ecb-role-binance-licensing?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-19T13:38:00Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "Ethereum faces core development funding crisis, former contributor warns",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/former-ethereum-foundation-contributor-claims-core-development-funding-crisis?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-19T13:16:19Z",
+          "score": "-0.5"
+        },
+        {
           "title": "Binance can serve Philippine traders under SEC framework, BlockShoals says",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blockshoals-binance-regulatory-status-philippines?utm_source=rss&utm_medium=rss&utm_campaign=rss",
@@ -4287,35 +4308,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/goldman-sachs-cuts-year-end-gold-target-by-500-doubting-rate-cuts?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T08:05:37Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "AllUnity debuts SEKAU, a fully reserved Swedish krona stablecoin",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/allunity-debut-fully-reserved-swedish-krona-stablecoin-sekau?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T07:00:00Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-19T06:00:00Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Algorand plans ‘broad quantum resilience’ by 2027",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/algorand-plans-broad-quantum-resilience-by-2027?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-19T05:51:24Z",
           "score": "0.1"
-        },
-        {
-          "title": "Microsoft warns users of 'Crypto Clipper' malware spread via USB drives",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/microsoft-alerts-users-to-crypto-clipper-windows-malware?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-19T05:33:06Z",
-          "score": "-0.5"
         }
       ],
       "errorMessage": null
