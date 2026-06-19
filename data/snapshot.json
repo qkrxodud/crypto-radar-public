@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-19T12:01:23Z",
+  "updatedAt": "2026-06-19T12:21:25Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "62980.85",
       "macd": {
-        "macdLine": "-2454.29",
-        "signalLine": "-2872.26",
-        "histogram": "417.97",
+        "macdLine": "-2454.92",
+        "signalLine": "-2872.39",
+        "histogram": "417.47",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000151",
       "ivRv": {
-        "iv": "32.99",
+        "iv": "32.89",
         "rv": "43.00",
-        "spread": "-10.01",
+        "spread": "-10.11",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2778,63 +2778,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62600.00",
-      "openInterestUsd": "6204647229.70372300",
-      "longAccountRatio": "0.6561",
-      "shortAccountRatio": "0.3439",
-      "downsideLiquidationUsd": "4070869047.41",
-      "upsideLiquidationUsd": "2133778182.30",
+      "currentPrice": "62511.00",
+      "openInterestUsd": "6204099639.80000000",
+      "longAccountRatio": "0.6557",
+      "shortAccountRatio": "0.3443",
+      "downsideLiquidationUsd": "4068028133.82",
+      "upsideLiquidationUsd": "2136071505.98",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56340.00",
+          "price": "56259.90",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1628347618.96"
+          "notionalUsd": "1627211253.53"
         },
         {
-          "price": "68860.00",
+          "price": "68762.10",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "853511272.92"
+          "notionalUsd": "854428602.39"
         },
         {
-          "price": "60096.00",
+          "price": "60010.56",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1424804166.59"
+          "notionalUsd": "1423809846.84"
         },
         {
-          "price": "65104.00",
+          "price": "65011.44",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "746822363.80"
+          "notionalUsd": "747625027.09"
         },
         {
-          "price": "61348.00",
+          "price": "61260.78",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "814173809.48"
+          "notionalUsd": "813605626.76"
         },
         {
-          "price": "63852.00",
+          "price": "63761.22",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "426755636.46"
+          "notionalUsd": "427214301.20"
         },
         {
-          "price": "61974.00",
+          "price": "61885.89",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "203543452.37"
+          "notionalUsd": "203401406.69"
         },
         {
-          "price": "63226.00",
+          "price": "63136.11",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "106688909.11"
+          "notionalUsd": "106803575.30"
         }
       ],
       "errorMessage": null
@@ -4197,20 +4197,27 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-19T11:04:58.810624Z",
-      "compositeScore": "-0.225",
-      "label": "NEGATIVE",
-      "labelDisplay": "부정",
-      "labelHexColor": "#F97316",
+      "generatedAt": "2026-06-19T12:05:06.838224Z",
+      "compositeScore": "-0.125",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Franklin Templeton proposes new ETFs that turn corporate dividends into bitcoin",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/06/19/franklin-templeton-proposes-new-funds-that-turn-corporate-dividends-into-bitcoin",
+          "publishedAt": "2026-06-19T11:27:59Z",
+          "score": "0.5"
+        },
         {
           "title": "Smart-contract and DeFi coins lead losses as bitcoin wilts for 4th straight day",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/smart-contract-and-defi-coins-lead-losses-as-bitcoin-wilts-for-4th-straight-day",
           "publishedAt": "2026-06-19T10:47:03Z",
-          "score": "-0.6"
+          "score": "-0.4"
         },
         {
           "title": "Digital credit market hit by huge selloff as Strive CEO blames leverage liquidations",
@@ -4231,63 +4238,56 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/xrp-falls-3-after-losing-usd1-15-support-as-breakout-attempt-fades",
           "publishedAt": "2026-06-19T05:14:20Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
-          "title": "Live markets: Bitcoin and precious metals remain under pressure",
+          "title": "Live markets: Bitcoin under pressure as Saylor comments on STRC sell-off",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/live-markets-bitcoin-has-traded-below-its-mining-cost-for-five-months-squeezing-miners",
           "publishedAt": "2026-06-19T05:04:22Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin traders load up on bearish bets all the way down to $52,000",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/bitcoin-traders-load-up-on-bearish-bets-all-the-way-down-to-usd52-000",
           "publishedAt": "2026-06-19T05:02:01Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin falls below $63,000 as risk assets sell off and the week's bounce fades",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/19/bitcoin-falls-below-usd63-000-as-risk-assets-sell-off-and-the-week-s-bounce-fades",
           "publishedAt": "2026-06-19T04:49:20Z",
-          "score": "-0.7"
-        },
-        {
-          "title": "Ex-Celsius CEO Mashinsky gets U.S. CFTC ban in final resolution with regulator",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/18/ex-celsius-ceo-mashinsky-gets-u-s-cftc-ban-in-final-resolution-with-regulator",
-          "publishedAt": "2026-06-18T19:26:55Z",
-          "score": "-0.3"
+          "score": "-0.8"
         },
         {
           "title": "Bitcoin tipped for Q3 'macro bottom' near $50K as major liquidity grab looms",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-tipped-for-q3-macro-bottom-near-50k-as-major-liquidity-grab-looms?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T10:44:28Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin activity nears record highs on microtransaction surge",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-activity-nears-record-highs-on-microtransaction-surge?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T09:16:04Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Goldman Sachs cuts year-end gold target by $500, doubting rate cuts",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/goldman-sachs-cuts-year-end-gold-target-by-500-doubting-rate-cuts?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T08:05:37Z",
-          "score": "-0.2"
+          "score": "0.1"
         },
         {
           "title": "AllUnity debuts SEKAU, a fully reserved Swedish krona stablecoin",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/allunity-debut-fully-reserved-swedish-krona-stablecoin-sekau?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T07:00:00Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4315,7 +4315,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blackrocks-ibit-is-pulling-bitcoiners-into-traditional-finance-exec-says?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-19T04:16:47Z",
-          "score": "0.5"
+          "score": "0.3"
         }
       ],
       "errorMessage": null
