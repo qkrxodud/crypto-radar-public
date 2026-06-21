@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-21T20:50:35Z",
+  "updatedAt": "2026-06-21T21:10:36Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "64255.27",
       "macd": {
-        "macdLine": "-2138.95",
-        "signalLine": "-2636.54",
-        "histogram": "497.59",
+        "macdLine": "-2150.13",
+        "signalLine": "-2638.78",
+        "histogram": "488.65",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "42.5",
-        "plusDi": "16.7",
-        "minusDi": "28.7",
+        "plusDi": "16.6",
+        "minusDi": "28.5",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.000216",
       "ivRv": {
-        "iv": "40.06",
+        "iv": "41.54",
         "rv": "43.00",
-        "spread": "-2.94",
+        "spread": "-1.47",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2800,63 +2800,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63765.80",
-      "openInterestUsd": "6376870946.93320000",
-      "longAccountRatio": "0.6112",
-      "shortAccountRatio": "0.3888",
-      "downsideLiquidationUsd": "3897543522.77",
-      "upsideLiquidationUsd": "2479327424.17",
+      "currentPrice": "63636.60",
+      "openInterestUsd": "6332050947.70058100",
+      "longAccountRatio": "0.6098",
+      "shortAccountRatio": "0.3902",
+      "downsideLiquidationUsd": "3861284667.91",
+      "upsideLiquidationUsd": "2470766279.79",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57389.22",
+          "price": "57272.94",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1559017409.11"
+          "notionalUsd": "1544513867.16"
         },
         {
-          "price": "70142.38",
+          "price": "70000.26",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "991730969.67"
+          "notionalUsd": "988306511.92"
         },
         {
-          "price": "61215.17",
+          "price": "61091.14",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1364140232.97"
+          "notionalUsd": "1351449633.77"
         },
         {
-          "price": "66316.43",
+          "price": "66182.06",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "867764598.46"
+          "notionalUsd": "864768197.93"
         },
         {
-          "price": "62490.48",
+          "price": "62363.87",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "779508704.55"
+          "notionalUsd": "772256933.58"
         },
         {
-          "price": "65041.12",
+          "price": "64909.33",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "495865484.83"
+          "notionalUsd": "494153255.96"
         },
         {
-          "price": "63128.14",
+          "price": "63000.23",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "194877176.14"
+          "notionalUsd": "193064233.40"
         },
         {
-          "price": "64403.46",
+          "price": "64272.97",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "123966371.21"
+          "notionalUsd": "123538313.99"
         }
       ],
       "errorMessage": null
@@ -4203,7 +4203,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-21T20:30:29.394932Z",
+      "generatedAt": "2026-06-21T21:10:36.609207Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4212,31 +4212,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로 보이며, 심리 지표는 공포 상태에 가까움."
+          "content": "현재 매집 우세로 보이나, 공포 심리가 지배적이다."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재."
+          "content": "낮은 공포탐욕 지수(23)로 인해 시장 심리가 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높은 상황에서 알트코인 성장이 제한될 수 있음."
+          "content": "BTC 도미넌스(56)가 높아 알트코인 투자에 대한 위험이 존재한다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 손절매 설정을 권장."
+          "content": "매집 우세를 활용해 추가 매수 고려."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리를 주의 깊게 관찰하며 추가 매수 여부 결정."
+          "content": "시장 심리 개선을 기다리며 보수적인 접근 유지."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-21T20:10:26.063315Z",
-      "compositeScore": "-0.050",
+      "generatedAt": "2026-06-21T21:05:01.895946Z",
+      "compositeScore": "-0.031",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4311,7 +4311,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-may-hit-24k-if-us-stock-market-crashes-by-50-analyst-warns?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-21T14:21:06Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "Dash eyes Philippines as market for crypto payments",
@@ -4325,7 +4325,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-is-down-over-40-since-strc-launched-is-strategy-fine?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-21T10:15:57Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Japanese corporate pension fund plans 1% crypto allocation: Nikkei",
@@ -4346,7 +4346,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-etfs-shed-a-record-64b-in-30-days-as-bitcoin-shivers?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-21T04:30:00Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Notorious ‘sandwich attack’ bot Jaredfromsubway.eth exploited for $7.5M",
