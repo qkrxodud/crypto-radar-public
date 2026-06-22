@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-22T00:11:11Z",
+  "updatedAt": "2026-06-22T11:58:25Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2089.56",
-        "signalLine": "-2543.15",
-        "histogram": "453.59",
+        "macdLine": "-1998.69",
+        "signalLine": "-2524.97",
+        "histogram": "526.28",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "43.6",
-        "plusDi": "16.1",
-        "minusDi": "28.0",
+        "adx": "43.5",
+        "plusDi": "16.3",
+        "minusDi": "26.8",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "43.70",
+        "iv": "36.40",
         "rv": "43.00",
-        "spread": "+0.70",
-        "label": "균형"
+        "spread": "-6.61",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 20,
@@ -2740,9 +2740,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "261119108867.18544",
-      "marketCap30dAgoUsd": "266143605367.86733",
-      "growth30dPercent": "-1.89",
+      "totalMarketCapUsd": "261039183931.0753",
+      "marketCap30dAgoUsd": "265947418181.62312",
+      "growth30dPercent": "-1.85",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2811,63 +2811,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63495.60",
-      "openInterestUsd": "6378020778.47400000",
-      "longAccountRatio": "0.6118",
-      "shortAccountRatio": "0.3882",
-      "downsideLiquidationUsd": "3902073112.27",
-      "upsideLiquidationUsd": "2475947666.20",
+      "currentPrice": "64645.30",
+      "openInterestUsd": "6464354241.61511100",
+      "longAccountRatio": "0.6180",
+      "shortAccountRatio": "0.3820",
+      "downsideLiquidationUsd": "3994970921.32",
+      "upsideLiquidationUsd": "2469383320.30",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57146.04",
+          "price": "58180.77",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1560829244.91"
+          "notionalUsd": "1597988368.53"
         },
         {
-          "price": "69845.16",
+          "price": "71109.83",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "990379066.48"
+          "notionalUsd": "987753328.12"
         },
         {
-          "price": "60955.78",
+          "price": "62059.49",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1365725589.29"
+          "notionalUsd": "1398239822.46"
         },
         {
-          "price": "66035.42",
+          "price": "67231.11",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "866581683.17"
+          "notionalUsd": "864284162.10"
         },
         {
-          "price": "62225.69",
+          "price": "63352.39",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "780414622.45"
+          "notionalUsd": "798994184.26"
         },
         {
-          "price": "64765.51",
+          "price": "65938.21",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "495189533.24"
+          "notionalUsd": "493876664.06"
         },
         {
-          "price": "62860.64",
+          "price": "63998.85",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "195103655.61"
+          "notionalUsd": "199748546.07"
         },
         {
-          "price": "64130.56",
+          "price": "65291.75",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "123797383.31"
+          "notionalUsd": "123469166.01"
         }
       ],
       "errorMessage": null
@@ -4222,7 +4222,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-22T00:11:11.980251Z",
+      "generatedAt": "2026-06-22T11:57:14.076626Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4231,31 +4231,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적인 심리 상태이며, 공포와 탐욕 지수가 낮아 매수 신호가 약하다."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
+          "content": "낮은 RSI 수치로 인해 가격 하락 위험이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약하다."
+          "content": "거래소 순유입이 마이너스인 점은 매도 압력을 시사한다."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 주의 깊게 모니터링하며 매수 타이밍을 고려하라."
+          "content": "단기적인 매매보다는 장기 투자 전략을 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "리스크를 줄이기 위해 포트폴리오 다각화를 검토하라."
+          "content": "추가 하락 시 매수 기회를 엿보는 것이 바람직하다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-22T00:05:18.518337Z",
-      "compositeScore": "-0.031",
+      "generatedAt": "2026-06-22T11:36:12.406063Z",
+      "compositeScore": "-0.119",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4263,116 +4263,116 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
-          "title": "Are perps swaps? A quick look at that CME suit: State of Crypto",
+          "title": "Bitcoin ETF outflow pain eases just as another headwind gathers strength",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/21/are-perps-swaps-a-quick-look-at-that-cme-suit-state-of-crypto",
-          "publishedAt": "2026-06-21T18:30:00Z",
+          "url": "https://www.coindesk.com/daybook-us/2026/06/22/bitcoin-etf-outflow-pain-eases-just-as-another-headwind-strengthens",
+          "publishedAt": "2026-06-22T11:30:13Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "As bitcoin, altcoin prices gain, derivatives signal skepticism over a sustained rally",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/22/as-bitcoin-altcoin-prices-gain-derivatives-signal-skepticism-over-a-sustained-rally",
+          "publishedAt": "2026-06-22T11:05:38Z",
           "score": "-0.3"
         },
         {
-          "title": "Ethereum's biggest 'sandwich' bot drained of $7.5 million in ironic exploit",
+          "title": "Bank of England backs down on strict stablecoin holding limits, sets $50 billion issuance cap",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/21/ethereum-s-biggest-sandwich-bot-drained-of-usd7-5-million-in-ironic-exploit",
-          "publishedAt": "2026-06-21T07:12:35Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Bitcoin holds near $64,000 as a renewed Hormuz threat clouds US-Iran ceasefire talks",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/21/bitcoin-holds-near-usd64-000-as-a-renewed-hormuz-threat-clouds-us-iran-ceasefire-talks",
-          "publishedAt": "2026-06-21T06:46:28Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "AI is making crypto security cheaper, faster and harder to ignore",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/06/20/ai-is-making-crypto-security-cheaper-faster-and-harder-to-ignore",
-          "publishedAt": "2026-06-20T15:00:00Z",
+          "url": "https://www.coindesk.com/policy/2026/06/22/bank-of-england-backs-down-on-strict-stablecoin-holding-limits-sets-usd50-billion-issuance-cap",
+          "publishedAt": "2026-06-22T10:48:14Z",
           "score": "0.4"
         },
         {
-          "title": "How STRC lost its par: The timeline behind Strategy's preferred-stock meltdown",
+          "title": "Geopolitical relief meets the Warsh Fed: Crypto Week Ahead",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/20/how-strc-lost-its-par-the-timeline-behind-strategy-s-preferred-stock-meltdown",
-          "publishedAt": "2026-06-20T13:00:00Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Schwab to join prediction markets race with S&P 500 event-based options: WSJ",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/19/schwab-to-join-prediction-markets-race-with-s-and-p-500-event-based-options-wsj",
-          "publishedAt": "2026-06-19T17:51:12Z",
+          "url": "https://www.coindesk.com/markets/2026/06/22/geopolitical-relief-meets-the-warsh-fed-crypto-week-ahead",
+          "publishedAt": "2026-06-22T10:22:22Z",
           "score": "0.2"
         },
         {
-          "title": "GoMining challenges Jack Dorsey's Square with payments system designed around bitcoin",
+          "title": "Taiko halts its Ethereum layer-2 network after a bridge exploit, token dives",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/19/gomining-challenges-jack-dorsey-s-square-with-payments-system-designed-around-bitcoin",
-          "publishedAt": "2026-06-19T12:30:00Z",
-          "score": "0.5"
+          "url": "https://www.coindesk.com/tech/2026/06/22/taiko-halts-its-ethereum-layer-2-network-after-a-bridge-exploit-token-dives-10",
+          "publishedAt": "2026-06-22T09:23:02Z",
+          "score": "-0.7"
         },
         {
-          "title": "Franklin Templeton proposes new ETFs that turn corporate dividends into bitcoin",
+          "title": "Bitcoin price may be headed to $54,000, says analyst who forecast October's all-time high",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/06/19/franklin-templeton-proposes-new-funds-that-turn-corporate-dividends-into-bitcoin",
-          "publishedAt": "2026-06-19T11:27:59Z",
+          "url": "https://www.coindesk.com/markets/2026/06/22/bitcoin-price-may-be-headed-to-usd54-000-says-analyst-who-forecast-october-s-all-time-high",
+          "publishedAt": "2026-06-22T09:19:24Z",
           "score": "0.6"
         },
         {
-          "title": "Bitcoin tipped for $66K top as trader flags 'suspicious' BTC price gains",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-tipped-for-66k-top-as-trader-flags-suspicious-btc-price-gains?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-21T14:50:55Z",
-          "score": "0.7"
+          "title": "Live markets: Friday's biggest bitcoin options expiry of the year puts $60,000 in focus",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/06/22/live-markets-bitcoin-is-stuck-near-usd64-000-as-etf-outflows-reach-a-sixth-week",
+          "publishedAt": "2026-06-22T07:34:05Z",
+          "score": "0.5"
         },
         {
-          "title": "Bitcoin price may hit $24K if US stock market crashes by 50%, analyst warns",
+          "title": "Bitcoin developers want to fix the 'replace this transaction with a higher fee' button. Here's why",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/06/22/bitcoin-developers-want-to-fix-the-replace-this-transaction-with-a-higher-fee-button-here-s-why",
+          "publishedAt": "2026-06-22T06:19:13Z",
+          "score": "0.1"
+        },
+        {
+          "title": "Bank of England eases stablecoin rules, introduces 40B pound issuance cap",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-price-may-hit-24k-if-us-stock-market-crashes-by-50-analyst-warns?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-21T14:21:06Z",
+          "url": "https://cointelegraph.com/news/bank-of-england-stablecoin-rules-clears-path-for-2027-launch?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T11:16:52Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Q2 2026 emerges as most-hacked quarter on record with 83 incidents",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/q2-2026-most-hacked-quarter-record-83-incidents?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T10:52:50Z",
           "score": "-0.6"
         },
         {
-          "title": "Dash eyes Philippines as market for crypto payments",
+          "title": "US dollar strength hits highest since May 2025: Five things to know in Bitcoin this week",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/dash-eyes-philippines-crypto-payments-market?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-21T12:25:12Z",
-          "score": "0.3"
+          "url": "https://cointelegraph.com/markets/us-dollar-strength-hits-highest-since-may-2025-five-things-to-know-in-bitcoin-this-week?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T10:13:05Z",
+          "score": "-0.4"
         },
         {
-          "title": "Bitcoin price is down over 40% since STRC launched: Is Strategy 'fine'?",
+          "title": "South Korea pushes Travel Rule expansion for smaller crypto transfers",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-price-is-down-over-40-since-strc-launched-is-strategy-fine?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-21T10:15:57Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Japanese corporate pension fund plans 1% crypto allocation: Nikkei",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/japanese-corporate-pension-fund-crypto-allocation?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-21T08:54:41Z",
-          "score": "0.5"
+          "url": "https://cointelegraph.com/news/south-korea-travel-rule-smaller-crypto-transfers?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T08:58:43Z",
+          "score": "-0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-21T04:36:29Z",
+          "publishedAt": "2026-06-22T06:00:00Z",
           "score": "0.0"
         },
         {
-          "title": "Bitcoin ETFs shed record $6.4B in 30 days amid crypto winter chill",
+          "title": "Morgan Stanley amends Ethereum, Solana ETFs to reveal record cheap fees",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitcoin-etfs-shed-a-record-64b-in-30-days-as-bitcoin-shivers?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-21T04:30:00Z",
-          "score": "-0.7"
+          "url": "https://cointelegraph.com/news/morgan-stanley-amends-ethereum-solana-etfs-to-undercut-rivals-fees?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T05:40:26Z",
+          "score": "0.3"
         },
         {
-          "title": "Notorious ‘sandwich attack’ bot Jaredfromsubway.eth exploited for $7.5M",
+          "title": "Taiko urges users to withdraw as bridge exploit drains $1.7M",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/notorious-sandwich-attack-bot-jaredfromsubwayeth-exploited-for-75m?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-21T00:04:47Z",
-          "score": "-0.5"
+          "url": "https://cointelegraph.com/news/taiko-urges-users-to-withdraw-as-bridge-exploit-drains-17m?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T05:31:18Z",
+          "score": "-0.8"
+        },
+        {
+          "title": "Secret Network bridge exploited for $4.7M with ‘infinite mint’ bug",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/secret-network-bridge-exploited-infinite-mint-bug?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T03:49:49Z",
+          "score": "-0.9"
         }
       ],
       "errorMessage": null
