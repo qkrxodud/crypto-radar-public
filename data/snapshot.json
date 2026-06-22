@@ -1,101 +1,97 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-21T23:51:06Z",
+  "updatedAt": "2026-06-22T00:11:11Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
-      "score": 65,
-      "signalLabel": "MILD_BUY",
-      "signalDisplay": "매집 우세",
-      "btcClose": "64255.27",
-      "fearGreed": 23,
-      "dataDate": "2026-06-21",
-      "scoreDelta": 0,
-      "weeklyAverageScore": 65,
+      "score": 63,
+      "signalLabel": "NEUTRAL",
+      "signalDisplay": "중립",
+      "btcClose": "63433.97",
+      "fearGreed": 20,
+      "dataDate": "2026-06-22",
+      "scoreDelta": -2,
+      "weeklyAverageScore": 64,
       "monthlyAverageScore": 66,
-      "halvingDaysAfter": 793,
+      "halvingDaysAfter": 794,
       "halvingPhase": "사이클 후기",
-      "actionType": "BUY",
-      "actionReason": "혼합 시장 + 완만한 매수 적기 (저변동성-집중진입) → BTC 20% 투입 (3회 분할, 5일 간격 DCA)",
+      "actionType": "HOLD",
+      "actionReason": "관망 구간 (점수 63) — 다음 매수 기회 대기 중",
       "indicatorBreakdown": {
-        "공포탐욕": 77,
-        "펀딩비": 49,
-        "롱숏비율": 26,
-        "테이커비율": 58,
-        "OI비율": 80,
+        "공포탐욕": 80,
+        "펀딩비": 43,
+        "롱숏비율": 33,
+        "테이커비율": 41,
+        "OI비율": 77,
         "BTC도미넌스": 80,
         "김치프리미엄": 100,
-        "RSI(일)": 73,
-        "RSI(주)": 83,
+        "RSI(일)": 78,
+        "RSI(주)": 84,
         "MVRV Z": 78,
-        "스테이블코인": 70,
+        "스테이블코인": 71,
         "ETH/BTC": 47,
-        "MA200비율": 96,
+        "MA200비율": 97,
         "Puell Multiple": 87,
-        "Active Addresses": 63,
-        "Hash Rate": 56,
+        "Active Addresses": 46,
+        "Hash Rate": 44,
         "DXY": 63,
         "S&P500": 76,
         "Put/Call": 63,
         "VIX": 9,
         "M2 성장률": 42,
-        "반감기사이클": 23,
+        "반감기사이클": 24,
         "변동성(HV)": 100,
         "Pi사이클": 100,
-        "NUPL": 57,
-        "SOPR": 68,
+        "NUPL": 58,
+        "SOPR": 69,
         "LTH/STH": 100
       },
       "errorMessage": null
     },
     "api_dashboard_technical": {
       "hasData": true,
-      "rsiDaily": "40.48",
-      "rsiWeekly": "36.59",
-      "rsiMonthly": "45.97",
-      "ma200Ratio": "0.84",
-      "ma200Value": "76494",
-      "ma200DistancePct": "-16.0",
-      "piCycleGap": "0.61",
+      "rsiDaily": "38.44",
+      "rsiWeekly": "36.23",
+      "rsiMonthly": "45.64",
+      "ma200Ratio": "0.83",
+      "ma200Value": "76426",
+      "ma200DistancePct": "-17.0",
+      "piCycleGap": "0.60",
       "historicalVolatility": "0.43",
-      "btcClose": "64255.27",
+      "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2172.68",
-        "signalLine": "-2643.29",
-        "histogram": "470.61",
+        "macdLine": "-2089.56",
+        "signalLine": "-2543.15",
+        "histogram": "453.59",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "42.5",
-        "plusDi": "16.5",
-        "minusDi": "28.2",
+        "adx": "43.6",
+        "plusDi": "16.1",
+        "minusDi": "28.0",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
       },
-      "optionsSkew25d": "-11.78",
-      "perpBasisSpread": "-0.0393",
+      "optionsSkew25d": "16.13",
+      "perpBasisSpread": "-0.0365",
       "errorMessage": null
     },
     "api_dashboard_onchain": {
       "hasData": true,
-      "sopr": "0.9529",
-      "nupl": "0.18",
-      "mvrvZScore": "0.33",
-      "lthSthRatio": "0.8398",
-      "exchangeNetFlow": "23.58",
-      "exchangeReserve": "366240.05",
-      "puellMultiple": "0.6994",
-      "activeAddresses": "486150.00",
-      "hashRate": "947.7910",
+      "sopr": "0.9474",
+      "nupl": "0.17",
+      "mvrvZScore": "0.35",
+      "lthSthRatio": "0.8399",
+      "exchangeNetFlow": "-30.46",
+      "exchangeReserve": "366209.59",
+      "puellMultiple": "0.6912",
+      "activeAddresses": "409924.00",
+      "hashRate": "931.1305",
       "minerOutflow": null,
       "netflowHistory": [
-        {
-          "date": "2026-06-14",
-          "value": "-48.94"
-        },
         {
           "date": "2026-06-15",
           "value": "-49.41"
@@ -115,31 +111,31 @@
         {
           "date": "2026-06-21",
           "value": "23.58"
+        },
+        {
+          "date": "2026-06-22",
+          "value": "-30.46"
         }
       ],
-      "realizedPrice": "52966.57",
-      "rhodlRatio": "8792.3000",
-      "btcClose": "64255.27",
-      "reserveRisk": "0.01035600",
+      "realizedPrice": "52967.78",
+      "rhodlRatio": "8803.8500",
+      "btcClose": "63433.97",
+      "reserveRisk": "0.01047000",
       "coinDaysDestroyed": null,
       "illiquidSupplyRatio": null,
-      "nvtSignal": "215.12",
+      "nvtSignal": "215.88",
       "accumulationTrendScore": null,
       "errorMessage": null
     },
     "api_dashboard_macro": {
       "hasData": true,
-      "dxy": "100.849",
+      "dxy": "100.884",
       "sp500": "7500.58",
-      "kimchiPremium": "-1.24",
-      "stablecoinDominance": "11.40",
-      "btcEtfNetFlow": "-84.83",
+      "kimchiPremium": "-1.68",
+      "stablecoinDominance": "11.55",
+      "btcEtfNetFlow": "-103.33",
       "btcEtfNetFlowEstimated": false,
       "dxyHistory": [
-        {
-          "date": "2026-05-22",
-          "value": "99.182"
-        },
         {
           "date": "2026-05-23",
           "value": "99.270"
@@ -255,13 +251,13 @@
         {
           "date": "2026-06-21",
           "value": "100.849"
+        },
+        {
+          "date": "2026-06-22",
+          "value": "100.884"
         }
       ],
       "sp500History": [
-        {
-          "date": "2026-05-22",
-          "value": "7445.70"
-        },
         {
           "date": "2026-05-23",
           "value": "7473.50"
@@ -377,9 +373,13 @@
         {
           "date": "2026-06-21",
           "value": "7500.58"
+        },
+        {
+          "date": "2026-06-22",
+          "value": "7500.58"
         }
       ],
-      "goldPrice": "4172.90",
+      "goldPrice": "4153.40",
       "usTreasury10y": "4.490",
       "globalM2Growth": "4.720",
       "vix": "18.44",
@@ -388,18 +388,14 @@
     },
     "api_dashboard_sentiment": {
       "hasData": true,
-      "fearGreed": 23,
-      "fundingRate": "0.00000778",
-      "openInterestRatio": "0.96",
-      "putCallRatio": "0.6385",
-      "longShortRatio": "1.69",
-      "takerBuySellRatio": "1.05",
-      "lthSthRatio": "0.8398",
+      "fearGreed": 20,
+      "fundingRate": "0.00006572",
+      "openInterestRatio": "0.99",
+      "putCallRatio": "0.6386",
+      "longShortRatio": "1.58",
+      "takerBuySellRatio": "0.95",
+      "lthSthRatio": "0.8399",
       "fundingHistory": [
-        {
-          "date": "2026-06-14",
-          "value": "-0.00004657"
-        },
         {
           "date": "2026-06-15",
           "value": "0.00002808"
@@ -423,27 +419,31 @@
         {
           "date": "2026-06-21",
           "value": "0.00000778"
+        },
+        {
+          "date": "2026-06-22",
+          "value": "0.00006572"
         }
       ],
-      "cumulativeFunding7d": "0.0001",
-      "cumulativeFunding30d": "0.000216",
+      "cumulativeFunding7d": "0.0002",
+      "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "43.19",
+        "iv": "43.70",
         "rv": "43.00",
-        "spread": "+0.19",
+        "spread": "+0.70",
         "label": "균형"
       },
       "fearGreedMa": {
-        "currentFg": 23,
-        "fgMa30": "19.2",
-        "btcMa30": "68025.03",
+        "currentFg": 20,
+        "fgMa30": "19.0",
+        "btcMa30": "67554.60",
         "consecutiveFear": 30,
         "maxConsecutiveFear": 30,
         "interpretation": "극도 공포 구간, 매수 고려"
       },
-      "iv30d": "28.40",
-      "perpBasisSpread": "-0.0393",
-      "optionsSkew25d": "-11.78",
+      "iv30d": "43.82",
+      "perpBasisSpread": "-0.0365",
+      "optionsSkew25d": "16.13",
       "errorMessage": null
     },
     "api_dashboard_cycle": {
@@ -462,22 +462,17 @@
         "progressBarColor": "#F59E0B"
       },
       "heatmapDates": [
-        "06-14",
         "06-15",
         "06-16",
         "06-18",
         "06-19",
         "06-20",
-        "06-21"
+        "06-21",
+        "06-22"
       ],
       "heatmapRows": [
         {
           "cells": [
-            {
-              "date": "06-14",
-              "color": "down",
-              "value": "36.28"
-            },
             {
               "date": "06-15",
               "color": "down",
@@ -507,17 +502,17 @@
               "date": "06-21",
               "color": "down",
               "value": "40.48"
+            },
+            {
+              "date": "06-22",
+              "color": "down",
+              "value": "38.44"
             }
           ],
           "label": "RSI"
         },
         {
           "cells": [
-            {
-              "date": "06-14",
-              "color": "down",
-              "value": "18.00"
-            },
             {
               "date": "06-15",
               "color": "down",
@@ -547,17 +542,17 @@
               "date": "06-21",
               "color": "down",
               "value": "23.00"
+            },
+            {
+              "date": "06-22",
+              "color": "down",
+              "value": "20.00"
             }
           ],
           "label": "Fear&Greed"
         },
         {
           "cells": [
-            {
-              "date": "06-14",
-              "color": "down",
-              "value": "-1.51"
-            },
             {
               "date": "06-15",
               "color": "down",
@@ -587,17 +582,17 @@
               "date": "06-21",
               "color": "down",
               "value": "0.33"
+            },
+            {
+              "date": "06-22",
+              "color": "down",
+              "value": "0.35"
             }
           ],
           "label": "MVRV"
         },
         {
           "cells": [
-            {
-              "date": "06-14",
-              "color": "down",
-              "value": "-0.29"
-            },
             {
               "date": "06-15",
               "color": "amber",
@@ -627,17 +622,17 @@
               "date": "06-21",
               "color": "amber",
               "value": "0.18"
+            },
+            {
+              "date": "06-22",
+              "color": "amber",
+              "value": "0.17"
             }
           ],
           "label": "NUPL"
         },
         {
           "cells": [
-            {
-              "date": "06-14",
-              "color": "amber",
-              "value": "57.00"
-            },
             {
               "date": "06-15",
               "color": "amber",
@@ -665,6 +660,11 @@
             },
             {
               "date": "06-21",
+              "color": "amber",
+              "value": "56.00"
+            },
+            {
+              "date": "06-22",
               "color": "amber",
               "value": "56.00"
             }
@@ -674,11 +674,6 @@
         {
           "cells": [
             {
-              "date": "06-14",
-              "color": "amber",
-              "value": "0.00"
-            },
-            {
               "date": "06-15",
               "color": "amber",
               "value": "0.00"
@@ -707,17 +702,17 @@
               "date": "06-21",
               "color": "amber",
               "value": "0.00"
+            },
+            {
+              "date": "06-22",
+              "color": "amber",
+              "value": "0.00"
             }
           ],
           "label": "펀딩비"
         },
         {
           "cells": [
-            {
-              "date": "06-14",
-              "color": "down",
-              "value": "0.91"
-            },
             {
               "date": "06-15",
               "color": "amber",
@@ -747,17 +742,17 @@
               "date": "06-21",
               "color": "down",
               "value": "0.95"
+            },
+            {
+              "date": "06-22",
+              "color": "down",
+              "value": "0.95"
             }
           ],
           "label": "SOPR"
         },
         {
           "cells": [
-            {
-              "date": "06-14",
-              "color": "down",
-              "value": "-0.66"
-            },
             {
               "date": "06-15",
               "color": "down",
@@ -787,6 +782,11 @@
               "date": "06-21",
               "color": "down",
               "value": "-1.24"
+            },
+            {
+              "date": "06-22",
+              "color": "down",
+              "value": "-1.68"
             }
           ],
           "label": "김치P"
@@ -1197,43 +1197,48 @@
           "date": "2026-06-21",
           "score": 65,
           "btcClose": "64255.27"
+        },
+        {
+          "date": "2026-06-22",
+          "score": 63,
+          "btcClose": "63433.97"
         }
       ],
       "errorMessage": null
     },
     "api_dashboard_market_overview": {
       "hasData": true,
-      "score": 65,
-      "signalLabel": "MILD_BUY",
-      "signalDisplay": "매집 우세",
-      "btcClose": "64255.27",
-      "fearGreed": 23,
-      "scoreDelta": 0,
-      "weeklyAverageScore": 65,
+      "score": 63,
+      "signalLabel": "NEUTRAL",
+      "signalDisplay": "중립",
+      "btcClose": "63433.97",
+      "fearGreed": 20,
+      "scoreDelta": -2,
+      "weeklyAverageScore": 64,
       "monthlyAverageScore": 66,
-      "halvingDaysAfter": 793,
+      "halvingDaysAfter": 794,
       "halvingPhase": "사이클 후기",
-      "actionType": "BUY",
-      "actionReason": "혼합 시장 + 완만한 매수 적기 (저변동성-집중진입) → BTC 20% 투입 (3회 분할, 5일 간격 DCA)",
-      "consecutiveDays": 3,
-      "consecutiveLabel": "MILD_BUY",
+      "actionType": "HOLD",
+      "actionReason": "관망 구간 (점수 63) — 다음 매수 기회 대기 중",
+      "consecutiveDays": 1,
+      "consecutiveLabel": "NEUTRAL",
       "errorMessage": null
     },
     "api_dashboard_buy_timing": {
       "hasData": true,
-      "currentScore": 65,
-      "actionType": "BUY",
-      "actionLabel": "매수",
-      "actionReason": "혼합 시장 + 완만한 매수 적기 (저변동성-집중진입) → BTC 20% 투입 (3회 분할, 5일 간격 DCA)",
+      "currentScore": 63,
+      "actionType": "HOLD",
+      "actionLabel": "대기",
+      "actionReason": "관망 구간 (점수 63) — 다음 매수 기회 대기 중",
       "marketSeason": "혼합 시장",
-      "positionSizePct": 20,
-      "dcaSplits": 3,
-      "dcaIntervalDays": 5,
-      "targetPrice": "96382.91",
-      "stopLossPrice": "51404.22",
-      "buySignal": true,
+      "positionSizePct": 0,
+      "dcaSplits": 0,
+      "dcaIntervalDays": 0,
+      "targetPrice": null,
+      "stopLossPrice": null,
+      "buySignal": false,
       "sellSignal": false,
-      "targetAsset": "BTC",
+      "targetAsset": "-",
       "dcaZones": [
         {
           "range": "80점 이상",
@@ -1246,14 +1251,14 @@
           "range": "65~79점",
           "signal": "매수 신호",
           "pct": 20,
-          "active": true,
+          "active": false,
           "color": "success"
         },
         {
           "range": "50~64점",
           "signal": "관심 구간",
           "pct": 10,
-          "active": false,
+          "active": true,
           "color": "warning"
         },
         {
@@ -1275,23 +1280,23 @@
         {
           "window": "30일",
           "avgScore": 66,
-          "buyPct": "76.7%",
-          "avgBtc": "$68,025",
+          "buyPct": "73.3%",
+          "avgBtc": "$67,555",
           "n": 30
         },
         {
           "window": "60일",
           "avgScore": 67,
-          "buyPct": "76.7%",
-          "avgBtc": "$73,385",
+          "buyPct": "75.0%",
+          "avgBtc": "$73,139",
           "n": 60
         },
         {
           "window": "90일",
           "avgScore": 67,
-          "buyPct": "82.7%",
-          "avgBtc": "$73,075",
-          "n": 81
+          "buyPct": "81.7%",
+          "avgBtc": "$72,957",
+          "n": 82
         }
       ],
       "scoreHistogram": [
@@ -1339,7 +1344,7 @@
         },
         {
           "label": "60-69",
-          "count": 56,
+          "count": 57,
           "heightPct": 100,
           "isToday": true,
           "color": "#eab308"
@@ -1347,7 +1352,7 @@
         {
           "label": "70-79",
           "count": 25,
-          "heightPct": 45,
+          "heightPct": 44,
           "isToday": false,
           "color": "#22c55e"
         },
@@ -1367,13 +1372,6 @@
         }
       ],
       "priceDivergence": [
-        {
-          "date": "2026-06-15",
-          "score": 65,
-          "scoreDelta": -3,
-          "pricePct": "0.00",
-          "divergenceType": "수렴"
-        },
         {
           "date": "2026-06-16",
           "score": 64,
@@ -1408,6 +1406,13 @@
           "scoreDelta": 0,
           "pricePct": "1.17",
           "divergenceType": "수렴"
+        },
+        {
+          "date": "2026-06-22",
+          "score": 63,
+          "scoreDelta": -2,
+          "pricePct": "-1.28",
+          "divergenceType": "수렴"
         }
       ],
       "dcaBacktest": [
@@ -1415,100 +1420,105 @@
           "label": "65점 이상 매수",
           "entryCount": 67,
           "avgEntry": "$73126",
-          "todayClose": "$64255",
-          "returnPct": "-12.13"
+          "todayClose": "$63434",
+          "returnPct": "-13.25"
         },
         {
           "label": "50점 이상 매수",
-          "entryCount": 81,
-          "avgEntry": "$73075",
-          "todayClose": "$64255",
-          "returnPct": "-12.07"
+          "entryCount": 82,
+          "avgEntry": "$72957",
+          "todayClose": "$63434",
+          "returnPct": "-13.05"
         }
       ],
       "indicatorBreakdown": {
-        "공포탐욕": 77,
-        "펀딩비": 49,
-        "롱숏비율": 26,
-        "테이커비율": 58,
-        "OI비율": 80,
+        "공포탐욕": 80,
+        "펀딩비": 43,
+        "롱숏비율": 33,
+        "테이커비율": 41,
+        "OI비율": 77,
         "BTC도미넌스": 80,
         "김치프리미엄": 100,
-        "RSI(일)": 73,
-        "RSI(주)": 83,
+        "RSI(일)": 78,
+        "RSI(주)": 84,
         "MVRV Z": 78,
-        "스테이블코인": 70,
+        "스테이블코인": 71,
         "ETH/BTC": 47,
-        "MA200비율": 96,
+        "MA200비율": 97,
         "Puell Multiple": 87,
-        "Active Addresses": 63,
-        "Hash Rate": 56,
+        "Active Addresses": 46,
+        "Hash Rate": 44,
         "DXY": 63,
         "S&P500": 76,
         "Put/Call": 63,
         "VIX": 9,
         "M2 성장률": 42,
-        "반감기사이클": 23,
+        "반감기사이클": 24,
         "변동성(HV)": 100,
         "Pi사이클": 100,
-        "NUPL": 57,
-        "SOPR": 68,
+        "NUPL": 58,
+        "SOPR": 69,
         "LTH/STH": 100
       },
       "indicatorTrends": {
-        "공포탐욕": -1,
-        "펀딩비": 1,
+        "공포탐욕": 0,
+        "펀딩비": -1,
         "롱숏비율": -1,
-        "테이커비율": 0,
+        "테이커비율": -1,
         "OI비율": 0,
-        "BTC도미넌스": 0,
+        "BTC도미넌스": -1,
         "김치프리미엄": 0,
         "RSI(일)": -1,
-        "RSI(주)": -1,
-        "MVRV Z": 0,
+        "RSI(주)": 0,
+        "MVRV Z": -1,
         "스테이블코인": 0,
         "ETH/BTC": 1,
         "MA200비율": 0,
         "Puell Multiple": 0,
-        "Active Addresses": 0,
+        "Active Addresses": -1,
         "Hash Rate": 1,
         "DXY": -1,
         "S&P500": 1,
-        "Put/Call": 0,
-        "VIX": -1,
+        "Put/Call": 1,
+        "VIX": 0,
         "M2 성장률": 0,
         "반감기사이클": 0,
         "변동성(HV)": 0,
         "Pi사이클": 0,
-        "NUPL": 0,
+        "NUPL": -1,
         "SOPR": -1,
         "LTH/STH": 0
       },
       "changeRanking": [
         {
-          "name": "공포탐욕",
-          "trend": -1,
-          "score": 77
-        },
-        {
           "name": "펀딩비",
-          "trend": 1,
-          "score": 49
+          "trend": -1,
+          "score": 43
         },
         {
           "name": "롱숏비율",
           "trend": -1,
-          "score": 26
+          "score": 33
+        },
+        {
+          "name": "테이커비율",
+          "trend": -1,
+          "score": 41
+        },
+        {
+          "name": "BTC도미넌스",
+          "trend": -1,
+          "score": 80
         },
         {
           "name": "RSI(일)",
           "trend": -1,
-          "score": 73
+          "score": 78
         },
         {
-          "name": "RSI(주)",
+          "name": "MVRV Z",
           "trend": -1,
-          "score": 83
+          "score": 78
         },
         {
           "name": "ETH/BTC",
@@ -1516,101 +1526,96 @@
           "score": 47
         },
         {
+          "name": "Active Addresses",
+          "trend": -1,
+          "score": 46
+        },
+        {
           "name": "Hash Rate",
           "trend": 1,
-          "score": 56
+          "score": 44
         },
         {
           "name": "DXY",
           "trend": -1,
           "score": 63
-        },
-        {
-          "name": "S&P500",
-          "trend": 1,
-          "score": 76
-        },
-        {
-          "name": "VIX",
-          "trend": -1,
-          "score": 9
         }
       ],
       "halvingPhase": "사이클 후기",
-      "halvingDaysAfter": 793,
-      "weeklyAverageScore": 65,
+      "halvingDaysAfter": 794,
+      "weeklyAverageScore": 64,
       "monthlyAverageScore": 66,
-      "scoreDelta": 0,
-      "consecutiveDays": 3,
-      "consecutiveLabel": "MILD_BUY",
+      "scoreDelta": -2,
+      "consecutiveDays": 1,
+      "consecutiveLabel": "NEUTRAL",
       "scoreCorrelations": [
         {
           "name": "테이커비율",
-          "correlation": "0.700",
+          "correlation": "0.708",
           "strength": "강한 양의 상관",
-          "absValue": "0.700"
+          "absValue": "0.708"
         },
         {
           "name": "롱숏비율",
-          "correlation": "-0.686",
+          "correlation": "-0.690",
           "strength": "보통 음의 상관",
-          "absValue": "0.686"
+          "absValue": "0.690"
         },
         {
           "name": "OI비율",
-          "correlation": "0.668",
+          "correlation": "0.674",
           "strength": "보통 양의 상관",
-          "absValue": "0.668"
+          "absValue": "0.674"
         },
         {
           "name": "공포탐욕",
-          "correlation": "0.579",
+          "correlation": "0.586",
           "strength": "보통 양의 상관",
-          "absValue": "0.579"
+          "absValue": "0.586"
         },
         {
           "name": "RSI",
-          "correlation": "0.475",
+          "correlation": "0.480",
           "strength": "보통 양의 상관",
-          "absValue": "0.475"
-        },
-        {
-          "name": "변동성HV",
-          "correlation": "0.430",
-          "strength": "보통 양의 상관",
-          "absValue": "0.430"
+          "absValue": "0.480"
         },
         {
           "name": "BTC도미넌스",
-          "correlation": "0.383",
+          "correlation": "0.401",
+          "strength": "보통 양의 상관",
+          "absValue": "0.401"
+        },
+        {
+          "name": "변동성HV",
+          "correlation": "0.396",
           "strength": "약한 양의 상관",
-          "absValue": "0.383"
+          "absValue": "0.396"
         },
         {
           "name": "Put/Call",
-          "correlation": "-0.070",
+          "correlation": "-0.062",
           "strength": "약한 음의 상관",
-          "absValue": "0.070"
+          "absValue": "0.062"
         }
       ],
       "predictionCorrelation": [
         {
           "period": "1일후",
-          "pearsonR": "0.236",
+          "pearsonR": "0.242",
           "strength": "약함",
-          "sampleCount": 80
+          "sampleCount": 81
         },
         {
           "period": "3일후",
-          "pearsonR": "0.443",
+          "pearsonR": "0.437",
           "strength": "중간",
-          "sampleCount": 78
+          "sampleCount": 79
         },
         {
           "period": "7일후",
           "pearsonR": "0.521",
           "strength": "강함",
-          "sampleCount": 74
+          "sampleCount": 75
         }
       ],
       "errorMessage": null
@@ -1626,32 +1631,32 @@
         {
           "name": "공포탐욕 < 25",
           "passed": true,
-          "reason": "극단적 공포 구간 (현재: 23)"
+          "reason": "극단적 공포 구간 (현재: 20)"
         },
         {
           "name": "RSI < 30",
           "passed": false,
-          "reason": "과매도 아님 (현재: 40.48)"
+          "reason": "과매도 아님 (현재: 38.44)"
         },
         {
           "name": "MVRV < 1",
           "passed": true,
-          "reason": "역사적 저평가 구간 (현재: 0.33)"
+          "reason": "역사적 저평가 구간 (현재: 0.35)"
         },
         {
           "name": "김프 < 2%",
           "passed": true,
-          "reason": "김치프리미엄 적정 (현재: -1.24%)"
+          "reason": "김치프리미엄 적정 (현재: -1.68%)"
         },
         {
           "name": "펀딩비 < 0",
           "passed": false,
-          "reason": "롱 우세 (현재: 0.00000778)"
+          "reason": "롱 우세 (현재: 0.00006572)"
         },
         {
           "name": "MA200 위",
           "passed": false,
-          "reason": "MA200 하회 (MA200 대비: 0.84)"
+          "reason": "MA200 하회 (MA200 대비: 0.83)"
         },
         {
           "name": "해시리본 비항복",
@@ -1661,7 +1666,7 @@
         {
           "name": "ETF 순유입 > 0",
           "passed": false,
-          "reason": "기관 매도 또는 유출 (순유입: $-84.83M)"
+          "reason": "기관 매도 또는 유출 (순유입: $-103.33M)"
         }
       ],
       "errorMessage": null
@@ -1712,9 +1717,9 @@
         {
           "month": 6,
           "monthName": "6월",
-          "avgScore": "65.3",
-          "avgBtcReturn": "-10.22",
-          "sampleCount": 20,
+          "avgScore": "65.2",
+          "avgBtcReturn": "-11.37",
+          "sampleCount": 21,
           "isCurrentMonth": true
         },
         {
@@ -1767,10 +1772,6 @@
         }
       ],
       "scoreHistory": [
-        {
-          "score": 65,
-          "date": "2026-05-22"
-        },
         {
           "score": 65,
           "date": "2026-05-23"
@@ -1886,43 +1887,42 @@
         {
           "score": 65,
           "date": "2026-06-21"
+        },
+        {
+          "score": 63,
+          "date": "2026-06-22"
         }
       ],
       "indicatorTrends": {
-        "공포탐욕": -1,
-        "펀딩비": 1,
+        "공포탐욕": 0,
+        "펀딩비": -1,
         "롱숏비율": -1,
-        "테이커비율": 0,
+        "테이커비율": -1,
         "OI비율": 0,
-        "BTC도미넌스": 0,
+        "BTC도미넌스": -1,
         "김치프리미엄": 0,
         "RSI(일)": -1,
-        "RSI(주)": -1,
-        "MVRV Z": 0,
+        "RSI(주)": 0,
+        "MVRV Z": -1,
         "스테이블코인": 0,
         "ETH/BTC": 1,
         "MA200비율": 0,
         "Puell Multiple": 0,
-        "Active Addresses": 0,
+        "Active Addresses": -1,
         "Hash Rate": 1,
         "DXY": -1,
         "S&P500": 1,
-        "Put/Call": 0,
-        "VIX": -1,
+        "Put/Call": 1,
+        "VIX": 0,
         "M2 성장률": 0,
         "반감기사이클": 0,
         "변동성(HV)": 0,
         "Pi사이클": 0,
-        "NUPL": 0,
+        "NUPL": -1,
         "SOPR": -1,
         "LTH/STH": 0
       },
       "heatmapDays": [
-        {
-          "date": "2026-05-22",
-          "score": 65,
-          "color": "good"
-        },
         {
           "date": "2026-05-23",
           "score": 65,
@@ -2067,29 +2067,34 @@
           "date": "2026-06-21",
           "score": 65,
           "color": "good"
+        },
+        {
+          "date": "2026-06-22",
+          "score": 63,
+          "color": "neutral"
         }
       ],
       "periodPerformance": {
         "7d": {
-          "btcChangePct": "-0.10",
-          "scoreDelta": -3
+          "btcChangePct": "-1.37",
+          "scoreDelta": -2
         },
         "30d": {
-          "btcChangePct": "-17.14",
-          "scoreDelta": 0
+          "btcChangePct": "-16.07",
+          "scoreDelta": -2
         },
         "all": {
-          "btcChangePct": "-5.66",
-          "scoreDelta": -7,
-          "totalDays": 81
+          "btcChangePct": "-6.87",
+          "scoreDelta": -9,
+          "totalDays": 82
         }
       },
       "dayOfWeekStats": [
         {
           "day": "월",
           "dayOfWeek": "MONDAY",
-          "avgReturn": "0.1482",
-          "count": 11
+          "avgReturn": "0.0293",
+          "count": 12
         },
         {
           "day": "화",
@@ -2132,12 +2137,12 @@
     },
     "api_dashboard_forecast": {
       "hasData": true,
-      "predictedScore": 64,
-      "todayScore": 65,
-      "scoreDiff": -1,
+      "predictedScore": 63,
+      "todayScore": 63,
+      "scoreDiff": 0,
       "r2": null,
-      "slope": "-0.15",
-      "confidenceLow": "62",
+      "slope": "-0.17",
+      "confidenceLow": "61",
       "confidenceHigh": "65",
       "forecastPoints": [
         {
@@ -2625,6 +2630,12 @@
           "actual": 65,
           "predicted": null,
           "isActual": true
+        },
+        {
+          "date": "2026-06-22",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
         }
       ],
       "rangeStats": [
@@ -2648,9 +2659,9 @@
         },
         {
           "rangeLabel": "60-80",
-          "avgReturn": "-0.05",
-          "winRate": "52.5",
-          "count": 80
+          "avgReturn": "-0.07",
+          "winRate": "51.9",
+          "count": 81
         },
         {
           "rangeLabel": "80-100",
@@ -2663,50 +2674,50 @@
     },
     "api_dashboard_expert_opinion": {
       "hasData": true,
-      "verdict": "진입 대기 — 문턱 근접",
+      "verdict": "중립 — 관망",
       "verdictColor": "#FBBF24",
-      "summary": "점수 65점. 매집 신호(70점)까지 5점 남았습니다. 온체인 저평가가 강하므로 70점 돌파 시 즉각 대응 권장.",
-      "score": 65,
+      "summary": "점수 63점. 혼재된 신호가 관망을 지지합니다. 명확한 방향성 확인 후 진입.",
+      "score": 63,
       "bullishSignals": [
-        "NUPL 0.180 — 낮은 수익 실현 구간, 추가 상승 여력 충분",
-        "Puell Multiple 0.70 — 채굴자 수익 양호, 매도 압력 낮음",
-        "Hash Rate 948 EH/s — 채굴 네트워크 사상 최고 수준, 채굴자 장기 신뢰",
-        "공포탐욕지수 23 (극단적 공포) — 역발상 매수 시그널",
-        "MA200 비율 0.84 — 200일선 크게 하회, 역사적 할인 구간"
+        "NUPL 0.170 — 낮은 수익 실현 구간, 추가 상승 여력 충분",
+        "Puell Multiple 0.69 — 채굴자 수익 양호, 매도 압력 낮음",
+        "Hash Rate 931 EH/s — 채굴 네트워크 사상 최고 수준, 채굴자 장기 신뢰",
+        "공포탐욕지수 20 (극단적 공포) — 역발상 매수 시그널",
+        "MA200 비율 0.83 — 200일선 크게 하회, 역사적 할인 구간"
       ],
       "bearishSignals": [
-        "롱숏비율 1.69 — 롱 포지션 과밀집, 강제청산 리스크"
+        "롱숏비율 1.58 — 롱 포지션 과밀집, 강제청산 리스크"
       ],
       "neutralSignals": [
-        "MVRV Z-Score 0.33 — 적정 밸류에이션",
-        "펀딩비 0.0000% — 중립, 레버리지 쏠림 없음",
-        "RSI(일) 40.5 — 중립 구간",
-        "반감기 D+793 사이클 후기 (Q4 전환기) — 다음 사이클 준비 구간, 온체인 저평가와 사이클 후기의 교차점"
+        "MVRV Z-Score 0.35 — 적정 밸류에이션",
+        "펀딩비 0.0001% — 중립, 레버리지 쏠림 없음",
+        "RSI(일) 38.4 — 중립 구간",
+        "반감기 D+794 사이클 후기 (Q4 전환기) — 다음 사이클 준비 구간, 온체인 저평가와 사이클 후기의 교차점"
       ],
       "keyWatch": [
-        "✅ NUPL 0.180 — 낮은 수익 실현 구간, 추가 상승 여력 충분",
-        "⚠️ 롱숏비율 1.69 — 롱 포지션 과밀집, 강제청산 리스크",
-        "✅ Puell Multiple 0.70 — 채굴자 수익 양호, 매도 압력 낮음"
+        "✅ NUPL 0.170 — 낮은 수익 실현 구간, 추가 상승 여력 충분",
+        "⚠️ 롱숏비율 1.58 — 롱 포지션 과밀집, 강제청산 리스크",
+        "✅ Puell Multiple 0.69 — 채굴자 수익 양호, 매도 압력 낮음"
       ],
       "errorMessage": null
     },
     "api_dashboard_whale_activity": {
       "hasData": true,
-      "netFlowSum7d": "-208.16",
+      "netFlowSum7d": "-189.68",
       "activityLevel": "NEUTRAL",
       "signal": "NEUTRAL",
-      "reserveChange7d": "-56.70",
-      "updatedAt": "2026-06-21",
+      "reserveChange7d": "-37.75",
+      "updatedAt": "2026-06-22",
       "errorMessage": null
     },
     "api_dashboard_market_structure": {
       "hasData": true,
       "structure": "SIDEWAYS",
-      "lastHigh": "66312.75",
+      "lastHigh": "64255.27",
       "lastLow": "62980.85",
-      "nextResistance": "64317.89",
-      "nextSupport": "63562.01",
-      "consecutiveHigherHighs": 4,
+      "nextResistance": "63548.02",
+      "nextSupport": "62980.85",
+      "consecutiveHigherHighs": 0,
       "consecutiveLowerLows": 1,
       "errorMessage": null
     },
@@ -2721,7 +2732,7 @@
     },
     "api_dashboard_alt_season": {
       "hasData": true,
-      "index": 33,
+      "index": 45,
       "label": "중립",
       "cssClass": "gray",
       "description": "BTC와 알트코인이 혼조세. 선별적 알트코인 투자 가능.",
@@ -2754,13 +2765,9 @@
     "api_dashboard_altcoin": {
       "hasData": true,
       "btcDominance": 56,
-      "ethBtcPerformance": "-0.0125",
+      "ethBtcPerformance": "-0.0140",
       "altseasonLabel": "BTC 시즌",
       "ethBtcHistory": [
-        {
-          "date": "2026-06-14",
-          "value": "-6.13"
-        },
         {
           "date": "2026-06-15",
           "value": "-5.42"
@@ -2784,9 +2791,13 @@
         {
           "date": "2026-06-21",
           "value": "-1.25"
+        },
+        {
+          "date": "2026-06-22",
+          "value": "-1.40"
         }
       ],
-      "altSeasonIndex": 33,
+      "altSeasonIndex": 45,
       "errorMessage": null
     },
     "api_dashboard_illiquid_supply": {
@@ -2800,72 +2811,72 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63350.10",
-      "openInterestUsd": "6340527592.95660000",
-      "longAccountRatio": "0.6108",
-      "shortAccountRatio": "0.3892",
-      "downsideLiquidationUsd": "3872794253.78",
-      "upsideLiquidationUsd": "2467733339.18",
+      "currentPrice": "63495.60",
+      "openInterestUsd": "6378020778.47400000",
+      "longAccountRatio": "0.6118",
+      "shortAccountRatio": "0.3882",
+      "downsideLiquidationUsd": "3902073112.27",
+      "upsideLiquidationUsd": "2475947666.20",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57015.09",
+          "price": "57146.04",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1549117701.51"
+          "notionalUsd": "1560829244.91"
         },
         {
-          "price": "69685.11",
+          "price": "69845.16",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "987093335.67"
+          "notionalUsd": "990379066.48"
         },
         {
-          "price": "60816.10",
+          "price": "60955.78",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1355477988.82"
+          "notionalUsd": "1365725589.29"
         },
         {
-          "price": "65884.10",
+          "price": "66035.42",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "863706668.71"
+          "notionalUsd": "866581683.17"
         },
         {
-          "price": "62083.10",
+          "price": "62225.69",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "774558850.76"
+          "notionalUsd": "780414622.45"
         },
         {
-          "price": "64617.10",
+          "price": "64765.51",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "493546667.84"
+          "notionalUsd": "495189533.24"
         },
         {
-          "price": "62716.60",
+          "price": "62860.64",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "193639712.69"
+          "notionalUsd": "195103655.61"
         },
         {
-          "price": "63983.60",
+          "price": "64130.56",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "123386666.96"
+          "notionalUsd": "123797383.31"
         }
       ],
       "errorMessage": null
     },
     "api_dashboard_rolling_correlation": {
       "hasData": true,
-      "btcVsSpx": "0.4588",
-      "btcVsDxy": "-0.7771",
-      "btcVsGold": "0.9939",
+      "btcVsSpx": "0.4968",
+      "btcVsDxy": "-0.7673",
+      "btcVsGold": "0.9930",
       "windowDays": 30,
       "regime": "MIXED",
       "regimeLabel": "혼합",
@@ -2874,12 +2885,12 @@
     },
     "api_dashboard_options_regime": {
       "hasData": true,
-      "iv30d": "28.40",
-      "skew25d": "-11.78",
+      "iv30d": "43.82",
+      "skew25d": "16.13",
       "ivSignal": "EXTREME_FEAR",
       "ivLabel": "극단적 공포",
-      "skewSignal": "STRONG_BEARISH",
-      "skewLabel": "강한 하락 헤지",
+      "skewSignal": "BULLISH_CALL",
+      "skewLabel": "콜 수요 우세",
       "ivHistory": [
         {
           "date": "2026-05-28",
@@ -2976,6 +2987,10 @@
         {
           "date": "2026-06-21",
           "iv": "28.40"
+        },
+        {
+          "date": "2026-06-22",
+          "iv": "43.82"
         }
       ],
       "skewHistory": [
@@ -3074,6 +3089,10 @@
         {
           "date": "2026-06-21",
           "skew": "-11.78"
+        },
+        {
+          "date": "2026-06-22",
+          "skew": "16.13"
         }
       ],
       "errorMessage": null
@@ -3081,204 +3100,204 @@
     "api_dashboard_system": {
       "hasData": true,
       "regimeMatrix": {
-        "score": 65,
-        "fearGreed": 23,
-        "quadrant": "Q1",
-        "label": "역추세 매수 기회",
-        "description": "신호 강 + 시장 공포 -- 역발상 진입 구간",
-        "color": "green"
+        "score": 63,
+        "fearGreed": 20,
+        "quadrant": "Q3",
+        "label": "극도 위험 / 관망",
+        "description": "신호 약 + 공포 심화 -- 현금 비중 유지",
+        "color": "red"
       },
       "indicatorBreakdown": {
-        "공포탐욕": 77,
-        "펀딩비": 49,
-        "롱숏비율": 26,
-        "테이커비율": 58,
-        "OI비율": 80,
+        "공포탐욕": 80,
+        "펀딩비": 43,
+        "롱숏비율": 33,
+        "테이커비율": 41,
+        "OI비율": 77,
         "BTC도미넌스": 80,
         "김치프리미엄": 100,
-        "RSI(일)": 73,
-        "RSI(주)": 83,
+        "RSI(일)": 78,
+        "RSI(주)": 84,
         "MVRV Z": 78,
-        "스테이블코인": 70,
+        "스테이블코인": 71,
         "ETH/BTC": 47,
-        "MA200비율": 96,
+        "MA200비율": 97,
         "Puell Multiple": 87,
-        "Active Addresses": 63,
-        "Hash Rate": 56,
+        "Active Addresses": 46,
+        "Hash Rate": 44,
         "DXY": 63,
         "S&P500": 76,
         "Put/Call": 63,
         "VIX": 9,
         "M2 성장률": 42,
-        "반감기사이클": 23,
+        "반감기사이클": 24,
         "변동성(HV)": 100,
         "Pi사이클": 100,
-        "NUPL": 57,
-        "SOPR": 68,
+        "NUPL": 58,
+        "SOPR": 69,
         "LTH/STH": 100
       },
       "rawValues": {
-        "공포탐욕": "23",
-        "펀딩비": "0.00000778",
-        "롱숏비율": "1.69",
-        "테이커비율": "1.05",
-        "OI비율": "0.96",
+        "공포탐욕": "20",
+        "펀딩비": "0.00006572",
+        "롱숏비율": "1.58",
+        "테이커비율": "0.95",
+        "OI비율": "0.99",
         "BTC도미넌스": "56",
-        "김치프리미엄": "-1.24",
-        "RSI(일)": "40.48",
-        "RSI(주)": "36.59",
-        "MVRV Z": "0.33",
-        "스테이블코인": "11.40",
-        "ETH/BTC": "-0.0125",
-        "MA200비율": "0.84",
-        "Puell Multiple": "0.6994",
-        "Active Addresses": "486150.00",
-        "Hash Rate": "947.7910",
-        "DXY": "100.849",
+        "김치프리미엄": "-1.68",
+        "RSI(일)": "38.44",
+        "RSI(주)": "36.23",
+        "MVRV Z": "0.35",
+        "스테이블코인": "11.55",
+        "ETH/BTC": "-0.0140",
+        "MA200비율": "0.83",
+        "Puell Multiple": "0.6912",
+        "Active Addresses": "409924.00",
+        "Hash Rate": "931.1305",
+        "DXY": "100.884",
         "S&P500": "7500.58",
-        "Put/Call": "0.6385",
+        "Put/Call": "0.6386",
         "VIX": "18.44",
         "M2 성장률": "4.720",
-        "반감기사이클": "793일",
+        "반감기사이클": "794일",
         "변동성(HV)": "0.43",
-        "Pi사이클": "0.61",
-        "NUPL": "0.18",
-        "SOPR": "0.9529",
-        "LTH/STH": "0.8398",
-        "거래소넷플로우": "23.58"
+        "Pi사이클": "0.60",
+        "NUPL": "0.17",
+        "SOPR": "0.9474",
+        "LTH/STH": "0.8399",
+        "거래소넷플로우": "-30.46"
       },
       "indicatorTrends": {
-        "공포탐욕": -1,
-        "펀딩비": 1,
+        "공포탐욕": 0,
+        "펀딩비": -1,
         "롱숏비율": -1,
-        "테이커비율": 0,
+        "테이커비율": -1,
         "OI비율": 0,
-        "BTC도미넌스": 0,
+        "BTC도미넌스": -1,
         "김치프리미엄": 0,
         "RSI(일)": -1,
-        "RSI(주)": -1,
-        "MVRV Z": 0,
+        "RSI(주)": 0,
+        "MVRV Z": -1,
         "스테이블코인": 0,
         "ETH/BTC": 1,
         "MA200비율": 0,
         "Puell Multiple": 0,
-        "Active Addresses": 0,
+        "Active Addresses": -1,
         "Hash Rate": 1,
         "DXY": -1,
         "S&P500": 1,
-        "Put/Call": 0,
-        "VIX": -1,
+        "Put/Call": 1,
+        "VIX": 0,
         "M2 성장률": 0,
         "반감기사이클": 0,
         "변동성(HV)": 0,
         "Pi사이클": 0,
-        "NUPL": 0,
+        "NUPL": -1,
         "SOPR": -1,
         "LTH/STH": 0
       },
       "activeCount": 45,
       "totalCount": 40,
-      "dataDate": "2026-06-21",
+      "dataDate": "2026-06-22",
       "indicatorRows": [
         {
           "name": "공포탐욕",
-          "value": "23",
-          "score": 77,
-          "trend": -1
+          "value": "20",
+          "score": 80,
+          "trend": 0
         },
         {
           "name": "펀딩비",
-          "value": "0.00000778",
-          "score": 49,
-          "trend": 1
+          "value": "0.00006572",
+          "score": 43,
+          "trend": -1
         },
         {
           "name": "롱숏비율",
-          "value": "1.69",
-          "score": 26,
+          "value": "1.58",
+          "score": 33,
           "trend": -1
         },
         {
           "name": "테이커비율",
-          "value": "1.05",
-          "score": 58,
-          "trend": 0
+          "value": "0.95",
+          "score": 41,
+          "trend": -1
         },
         {
           "name": "OI비율",
-          "value": "0.96",
-          "score": 80,
+          "value": "0.99",
+          "score": 77,
           "trend": 0
         },
         {
           "name": "BTC도미넌스",
           "value": "56",
           "score": 80,
-          "trend": 0
+          "trend": -1
         },
         {
           "name": "김치프리미엄",
-          "value": "-1.24",
+          "value": "-1.68",
           "score": 100,
           "trend": 0
         },
         {
           "name": "RSI(일)",
-          "value": "40.48",
-          "score": 73,
+          "value": "38.44",
+          "score": 78,
           "trend": -1
         },
         {
           "name": "RSI(주)",
-          "value": "36.59",
-          "score": 83,
-          "trend": -1
-        },
-        {
-          "name": "MVRV Z",
-          "value": "0.33",
-          "score": 78,
+          "value": "36.23",
+          "score": 84,
           "trend": 0
         },
         {
+          "name": "MVRV Z",
+          "value": "0.35",
+          "score": 78,
+          "trend": -1
+        },
+        {
           "name": "스테이블코인",
-          "value": "11.40",
-          "score": 70,
+          "value": "11.55",
+          "score": 71,
           "trend": 0
         },
         {
           "name": "ETH/BTC",
-          "value": "-0.0125",
+          "value": "-0.0140",
           "score": 47,
           "trend": 1
         },
         {
           "name": "MA200비율",
-          "value": "0.84",
-          "score": 96,
+          "value": "0.83",
+          "score": 97,
           "trend": 0
         },
         {
           "name": "Puell Multiple",
-          "value": "0.6994",
+          "value": "0.6912",
           "score": 87,
           "trend": 0
         },
         {
           "name": "Active Addresses",
-          "value": "486150.00",
-          "score": 63,
-          "trend": 0
+          "value": "409924.00",
+          "score": 46,
+          "trend": -1
         },
         {
           "name": "Hash Rate",
-          "value": "947.7910",
-          "score": 56,
+          "value": "931.1305",
+          "score": 44,
           "trend": 1
         },
         {
           "name": "DXY",
-          "value": "100.849",
+          "value": "100.884",
           "score": 63,
           "trend": -1
         },
@@ -3290,15 +3309,15 @@
         },
         {
           "name": "Put/Call",
-          "value": "0.6385",
+          "value": "0.6386",
           "score": 63,
-          "trend": 0
+          "trend": 1
         },
         {
           "name": "VIX",
           "value": "18.44",
           "score": 9,
-          "trend": -1
+          "trend": 0
         },
         {
           "name": "M2 성장률",
@@ -3308,8 +3327,8 @@
         },
         {
           "name": "반감기사이클",
-          "value": "793일",
-          "score": 23,
+          "value": "794일",
+          "score": 24,
           "trend": 0
         },
         {
@@ -3320,25 +3339,25 @@
         },
         {
           "name": "Pi사이클",
-          "value": "0.61",
+          "value": "0.60",
           "score": 100,
           "trend": 0
         },
         {
           "name": "NUPL",
-          "value": "0.18",
-          "score": 57,
-          "trend": 0
+          "value": "0.17",
+          "score": 58,
+          "trend": -1
         },
         {
           "name": "SOPR",
-          "value": "0.9529",
-          "score": 68,
+          "value": "0.9474",
+          "score": 69,
           "trend": -1
         },
         {
           "name": "LTH/STH",
-          "value": "0.8398",
+          "value": "0.8399",
           "score": 100,
           "trend": 0
         }
@@ -3346,18 +3365,12 @@
       "contributionAnalysis": [
         {
           "name": "MA200비율",
-          "score": 96,
+          "score": 97,
           "weight": "0.0900",
-          "contribution": "0.0864"
+          "contribution": "0.0873"
         },
         {
-          "name": "테이커비율",
-          "score": 58,
-          "weight": "0.0700",
-          "contribution": "0.0406"
-        },
-        {
-          "name": "OI비율",
+          "name": "공포탐욕",
           "score": 80,
           "weight": "0.0500",
           "contribution": "0.0400"
@@ -3375,7 +3388,7 @@
           "contribution": "0.0400"
         },
         {
-          "name": "공포탐욕",
+          "name": "OI비율",
           "score": 77,
           "weight": "0.0500",
           "contribution": "0.0385"
@@ -3387,16 +3400,10 @@
           "contribution": "0.0348"
         },
         {
-          "name": "펀딩비",
-          "score": 49,
-          "weight": "0.0700",
-          "contribution": "0.0343"
-        },
-        {
           "name": "RSI(주)",
-          "score": 83,
+          "score": 84,
           "weight": "0.0400",
-          "contribution": "0.0332"
+          "contribution": "0.0336"
         },
         {
           "name": "BTC도미넌스",
@@ -3423,28 +3430,40 @@
           "contribution": "0.0304"
         },
         {
-          "name": "RSI(일)",
-          "score": 73,
-          "weight": "0.0300",
-          "contribution": "0.0219"
+          "name": "펀딩비",
+          "score": 43,
+          "weight": "0.0700",
+          "contribution": "0.0301"
         },
         {
-          "name": "SOPR",
-          "score": 68,
+          "name": "테이커비율",
+          "score": 41,
+          "weight": "0.0700",
+          "contribution": "0.0287"
+        },
+        {
+          "name": "RSI(일)",
+          "score": 78,
           "weight": "0.0300",
-          "contribution": "0.0204"
+          "contribution": "0.0234"
         },
         {
           "name": "롱숏비율",
-          "score": 26,
+          "score": 33,
           "weight": "0.0700",
-          "contribution": "0.0182"
+          "contribution": "0.0231"
+        },
+        {
+          "name": "SOPR",
+          "score": 69,
+          "weight": "0.0300",
+          "contribution": "0.0207"
         },
         {
           "name": "반감기사이클",
-          "score": 23,
+          "score": 24,
           "weight": "0.0600",
-          "contribution": "0.0138"
+          "contribution": "0.0144"
         },
         {
           "name": "김치프리미엄",
@@ -3454,13 +3473,13 @@
         },
         {
           "name": "Hash Rate",
-          "score": 56,
+          "score": 44,
           "weight": "0.0100",
-          "contribution": "0.0056"
+          "contribution": "0.0044"
         },
         {
           "name": "스테이블코인",
-          "score": 70,
+          "score": 71,
           "weight": "0",
           "contribution": "0.0000"
         },
@@ -3472,7 +3491,7 @@
         },
         {
           "name": "Active Addresses",
-          "score": 63,
+          "score": 46,
           "weight": "0",
           "contribution": "0.0000"
         },
@@ -3496,7 +3515,7 @@
         },
         {
           "name": "NUPL",
-          "score": 57,
+          "score": 58,
           "weight": "0",
           "contribution": "0.0000"
         },
@@ -3716,22 +3735,6 @@
     "api_prism_indices": {
       "hasData": true,
       "entries": [
-        {
-          "date": "2026-05-22",
-          "fearGreed": 28,
-          "mvrvZScore": "-0.98",
-          "rsiDaily": "47.57",
-          "rsiWeekly": "45.29",
-          "fundingRate": "0.00000000",
-          "nupl": "-0.23",
-          "sopr": null,
-          "longShortRatio": "1.24",
-          "btcDominance": "58",
-          "openInterestRatio": "0.99",
-          "putCallRatio": "0.6940",
-          "btcClose": "77546.93",
-          "readinessScore": 65
-        },
         {
           "date": "2026-05-23",
           "fearGreed": 28,
@@ -4195,16 +4198,32 @@
           "putCallRatio": "0.6385",
           "btcClose": "64255.27",
           "readinessScore": 65
+        },
+        {
+          "date": "2026-06-22",
+          "fearGreed": 20,
+          "mvrvZScore": "0.35",
+          "rsiDaily": "38.44",
+          "rsiWeekly": "36.23",
+          "fundingRate": "0.00006572",
+          "nupl": "0.17",
+          "sopr": "0.9474",
+          "longShortRatio": "1.58",
+          "btcDominance": "56",
+          "openInterestRatio": "0.99",
+          "putCallRatio": "0.6386",
+          "btcClose": "63433.97",
+          "readinessScore": 63
         }
       ],
-      "latestScore": 65,
-      "dataDate": "2026-06-21",
+      "latestScore": 63,
+      "dataDate": "2026-06-22",
       "errorMessage": null
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-21T23:30:03.168685Z",
-      "compositeScore": 65,
+      "generatedAt": "2026-06-22T00:11:11.980251Z",
+      "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
       "toneHexColor": "#FBBF24",
@@ -4212,30 +4231,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이나, 공포 심리가 지배적이다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수로 인해 시장 심리가 위축되어 있다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 알트코인에 대한 투자 심리가 약하다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 염두에 두되, 시장 심리를 주의 깊게 살펴라."
+          "content": "시장 상황을 주의 깊게 모니터링하며 매수 타이밍을 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "추가적인 하락 가능성을 고려하여 포지션을 조정하라."
+          "content": "리스크를 줄이기 위해 포트폴리오 다각화를 검토하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-21T23:05:02.546062Z",
+      "generatedAt": "2026-06-22T00:05:18.518337Z",
       "compositeScore": "-0.031",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
