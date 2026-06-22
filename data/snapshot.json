@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-22T21:00:21Z",
+  "updatedAt": "2026-06-22T21:20:24Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2016.35",
-        "signalLine": "-2528.50",
-        "histogram": "512.16",
+        "macdLine": "-2023.02",
+        "signalLine": "-2529.84",
+        "histogram": "506.82",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "34.24",
+        "iv": "34.03",
         "rv": "43.00",
-        "spread": "-8.77",
+        "spread": "-8.98",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2811,63 +2811,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64404.30",
-      "openInterestUsd": "6429955372.13440000",
-      "longAccountRatio": "0.6217",
-      "shortAccountRatio": "0.3783",
-      "downsideLiquidationUsd": "3997503254.86",
-      "upsideLiquidationUsd": "2432452117.28",
+      "currentPrice": "64320.90",
+      "openInterestUsd": "6417097342.43700000",
+      "longAccountRatio": "0.6221",
+      "shortAccountRatio": "0.3779",
+      "downsideLiquidationUsd": "3992076256.73",
+      "upsideLiquidationUsd": "2425021085.71",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57963.87",
+          "price": "57888.81",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1599001301.94"
+          "notionalUsd": "1596830502.69"
         },
         {
-          "price": "70844.73",
+          "price": "70752.99",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "972980846.91"
+          "notionalUsd": "970008434.28"
         },
         {
-          "price": "61828.13",
+          "price": "61748.06",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1399126139.20"
+          "notionalUsd": "1397226689.86"
         },
         {
-          "price": "66980.47",
+          "price": "66893.74",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "851358241.05"
+          "notionalUsd": "848757380.00"
         },
         {
-          "price": "63116.21",
+          "price": "63034.48",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "799500650.97"
+          "notionalUsd": "798415251.35"
         },
         {
-          "price": "65692.39",
+          "price": "65607.32",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "486490423.46"
+          "notionalUsd": "485004217.14"
         },
         {
-          "price": "63760.26",
+          "price": "63677.69",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "199875162.74"
+          "notionalUsd": "199603812.84"
         },
         {
-          "price": "65048.34",
+          "price": "64964.11",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "121622605.86"
+          "notionalUsd": "121251054.29"
         }
       ],
       "errorMessage": null
@@ -4254,20 +4254,34 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-22T20:20:14.982195Z",
-      "compositeScore": "0.250",
-      "label": "POSITIVE",
-      "labelDisplay": "긍정",
-      "labelHexColor": "#10B981",
+      "generatedAt": "2026-06-22T21:05:02.789675Z",
+      "compositeScore": "0.125",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Ric Edelman says cryptoâs biggest growth story is happening off the price chart",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/22/ric-edelman-says-crypto-s-biggest-growth-story-is-happening-off-the-price-chart",
+          "publishedAt": "2026-06-22T20:58:40Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "21Shares co-founder warns tokenization hype is outrunning Wall Street reality",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/22/21shares-co-founder-warns-tokenization-hype-is-outrunning-wall-street-reality",
+          "publishedAt": "2026-06-22T20:53:39Z",
+          "score": "-0.5"
+        },
         {
           "title": "Strive says digital credit selloff was a liquidation event, not a credit crisis",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/22/strive-says-digital-credit-selloff-was-a-liquidation-event-not-a-credit-crisis",
           "publishedAt": "2026-06-22T20:14:02Z",
-          "score": "-0.6"
+          "score": "0.1"
         },
         {
           "title": "Etherâs biggest corporate holders back new Ethereum research hub",
@@ -4281,42 +4295,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/22/ethereum-foundation-talent-exodus-sparks-fresh-debate-over-leadership",
           "publishedAt": "2026-06-22T16:39:41Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Crypto's second U.S. lobbying front â tax policy â sees industry push on mining, staking",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/22/crypto-s-second-u-s-lobbying-front-tax-policy-sees-industry-push-on-mining-staking",
           "publishedAt": "2026-06-22T15:56:13Z",
-          "score": "0.5"
+          "score": "0.2"
         },
         {
           "title": "Anchorage aims to bring banks onchain with new tokenized deposit platform",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/19/anchorage-aims-to-bring-banks-onchain-with-new-tokenized-deposit-platform",
           "publishedAt": "2026-06-22T15:00:00Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "MoneyGram joins Solana as validator amid stablecoin payment push",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/22/moneygram-joins-solana-as-validator-amid-stablecoin-payment-push",
           "publishedAt": "2026-06-22T13:53:16Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
-          "title": "OKX and NYSE partner to bridge tradfi and crypto markets in joint venture led by Andrew Cuomo",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/22/okx-and-nyse-partner-to-bridge-tradfi-and-crypto-markets-in-joint-venture-led-by-andrew-cuomo",
-          "publishedAt": "2026-06-22T13:40:27Z",
-          "score": "0.5"
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T21:02:23Z",
+          "score": "0.0"
         },
         {
-          "title": "Bitmine added $92 million of ETH, with Tom Lee continuing to believe in 'crypto spring'",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/22/bitmine-added-usd92-million-of-eth-with-tom-lee-continuing-to-believe-in-crypto-spring",
-          "publishedAt": "2026-06-22T13:04:44Z",
-          "score": "0.4"
+          "title": "Franklin Templeton launches dedicated crypto division after closing 250 Digital acquisition",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/franklin-templeton-launches-dedicated-crypto-division-after-completing-250-digital-acquisition?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-22T20:36:53Z",
+          "score": "0.3"
         },
         {
           "title": "New York, Maryland and Utah to hold primaries with crypto PAC money hanging over voters",
@@ -4330,28 +4344,28 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/solana-captures-95-of-tokenized-equity-as-sol-bottom-debate-grows?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-22T19:17:34Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Andrew Cuomo to lead joint TradFi-crypto venture between OKX and Intercontinental Exchange",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/andrew-cuomo-okx-intercontinental-exchange-venture?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-22T16:53:35Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin weekly close above $63K amid RSI divergence may be bottom signal: Data",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-holds-63k-as-three-market-signals-remain-supportive?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-22T16:52:38Z",
-          "score": "0.8"
+          "score": "0.7"
         },
         {
           "title": "Bitcoin price taps $65.5K as Iran deal sees oil drop toward 16-week low",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-taps-655k-as-iran-deal-sees-oil-drop-toward-16-week-low?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-22T15:48:49Z",
-          "score": "0.2"
+          "score": "0.5"
         },
         {
           "title": "Why Google search can be a crypto wallet risk",
@@ -4359,20 +4373,6 @@
           "url": "https://cointelegraph.com/learn/fake-google-ads-crypto-wallet-security?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-22T14:30:00Z",
           "score": "-0.4"
-        },
-        {
-          "title": "Enso launches RWA app and trading for over 500 tokenized assets",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/enso-launches-rwa-app-trading-500-tokenized-assets?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-22T14:00:00Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-22T13:50:31Z",
-          "score": "0.0"
         }
       ],
       "errorMessage": null
