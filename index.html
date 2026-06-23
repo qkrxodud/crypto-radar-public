@@ -32,6 +32,18 @@
   .page-head .live{width:7px;height:7px;border-radius:50%;background:var(--neon);box-shadow:0 0 8px var(--neon)}
   section.block{padding:18px 0}
 
+  /* 방문자 카운터 스트립 */
+  .visitor-strip{display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px 10px;margin-top:10px;
+    padding:7px 13px;border:1px solid var(--border);border-radius:10px;
+    font-size:13px;color:var(--muted);font-family:var(--mono);line-height:1.5;background:rgba(255,255,255,.015)}
+  .visitor-strip .vc-item{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+  .visitor-strip .vc-n{color:var(--text);font-weight:700}
+  .visitor-strip .vc-now .vc-n{color:var(--neon)}
+  .visitor-strip .vc-dot{width:6px;height:6px;border-radius:50%;background:var(--neon);
+    box-shadow:0 0 8px var(--neon);animation:vcPulse 1.6s ease-in-out infinite}
+  .visitor-strip .vc-sep{color:var(--border);font-size:11px;user-select:none}
+  @keyframes vcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+
   /* STATUS STRIP */
   .status{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:16px}
   @media(max-width:900px){.status{grid-template-columns:1fr 1fr}.status .score-card{grid-column:1/3}}
@@ -209,6 +221,9 @@
       overflow:hidden;max-width:100%}
     /* 긴 갱신 텍스트 말줄임 */
     .page-head .upd #updTime{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100vw - 52px)}
+    /* 방문자 스트립: 좁은 화면에서 줄바꿈 허용·오버플로 방지 */
+    .visitor-strip{font-size:11.5px;gap:5px 8px;padding:7px 11px;max-width:100%}
+    .visitor-strip .vc-sep{display:none}
     section.block{padding:12px 0}
     .card{padding:16px}
     .sub-card{padding:14px}
@@ -357,6 +372,14 @@
     <div class="crumb">DASHBOARD</div>
     <h1 data-en="Today's Bitcoin Timing" data-zh="今日比特币择时">오늘의 비트코인 타이밍</h1>
     <span class="upd"><span class="live"></span><span id="updTime" data-en="Loading..." data-zh="加载中...">로딩 중...</span></span>
+    <!-- 방문자 카운터 스트립 (Firebase Realtime DB). 숫자 span에는 i18n 속성 미부여 -->
+    <div class="visitor-strip" id="visitorStrip">
+      <span class="vc-item vc-now"><span class="vc-dot"></span><span data-en="Now" data-zh="在线">지금</span> <span class="vc-n" id="vcNow">--</span><span data-en="watching" data-zh="人在看">명 보는 중</span></span>
+      <span class="vc-sep">•</span>
+      <span class="vc-item"><span data-en="Today" data-zh="今日">오늘</span> <span class="vc-n" id="vcToday">--</span><span data-en="" data-zh="人">명</span></span>
+      <span class="vc-sep">•</span>
+      <span class="vc-item"><span data-en="Total" data-zh="累计">누적</span> <span class="vc-n" id="vcTotal">--</span><span data-en="" data-zh="人">명</span></span>
+    </div>
   </div>
 
   <!-- STATUS STRIP -->
@@ -673,6 +696,9 @@
 </div><!-- /#main -->
 
 <script src="btc-reveal.js"></script>
+<!-- Firebase compat SDK (동기 로드 — 아래 방문자 카운터 IIFE 실행 시점에 전역 firebase 객체가 존재해야 함) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
 <script>
 (function(){
 'use strict';
@@ -1238,6 +1264,101 @@ async function init(){
 }
 
 init();
+})();
+
+/* ──────────────────────────────────────────────────────────
+ * 방문자 카운터 (Firebase Realtime Database)
+ * - snapshot.json 대시보드 로직과 완전히 독립적인 별도 IIFE.
+ * - Firebase 초기화/연결 실패가 대시보드 렌더를 막지 않도록 전체를 try/catch로 감싸고,
+ *   실패 시 숫자는 '--' 폴백으로 그대로 둔다.
+ * ────────────────────────────────────────────────────────── */
+(function(){
+  'use strict';
+
+  // 전역 firebase SDK가 없으면(네트워크 차단 등) 조용히 종료 — 폴백 '--' 유지
+  if(typeof firebase==='undefined'||!firebase.database){
+    console.warn('[visitor] Firebase SDK not available, skipping visitor counter');
+    return;
+  }
+
+  var firebaseConfig={
+    apiKey:"AIzaSyA0rKMvdc-9tRbycgpkczyopQvqRQRV2v0",
+    authDomain:"btctiming-af87d.firebaseapp.com",
+    databaseURL:"https://btctiming-af87d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId:"btctiming-af87d",
+    storageBucket:"btctiming-af87d.firebasestorage.app",
+    messagingSenderId:"9515727678",
+    appId:"1:9515727678:web:7d6a7ad30d881c1f37ca6f",
+    measurementId:"G-QNR0LP5QH1"
+  };
+
+  // 숫자 표시 헬퍼 — ko-KR 천단위 콤마, 값이 없으면 '--' 유지
+  function setNum(id,v){
+    var el=document.getElementById(id);
+    if(!el)return;
+    if(v==null||isNaN(v)){el.textContent='--';return;}
+    el.textContent=Number(v).toLocaleString('ko-KR');
+  }
+
+  // KST(UTC+9) 기준 오늘 날짜 키 (YYYY-MM-DD)
+  function kstDateKey(){
+    return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+  }
+
+  try{
+    if(!firebase.apps||!firebase.apps.length){firebase.initializeApp(firebaseConfig);}
+    var db=firebase.database();
+    var today=kstDateKey();
+
+    /* ── 동시 접속자 (presence) ── */
+    // 세션 노드 생성 (랜덤 key)
+    var myPresenceRef=db.ref('presence').push();
+    var presenceListRef=db.ref('presence');
+
+    // .info/connected 구독 — 최초 연결 및 재연결 시마다 presence 재등록
+    db.ref('.info/connected').on('value',function(snap){
+      if(snap.val()!==true)return;
+      // 연결이 끊기면 서버가 자동으로 이 노드를 제거하도록 예약
+      myPresenceRef.onDisconnect().remove();
+      myPresenceRef.set(true);
+    });
+
+    // 실시간 동시 접속자 수 갱신
+    presenceListRef.on('value',function(snap){
+      setNum('vcNow',snap.numChildren());
+    },function(err){
+      console.warn('[visitor] presence read failed:',err&&err.message);
+    });
+
+    /* ── 누적 / 오늘 카운터 표시(읽기) ── */
+    db.ref('counters/total').on('value',function(snap){
+      setNum('vcTotal',snap.val());
+    },function(err){
+      console.warn('[visitor] total read failed:',err&&err.message);
+    });
+    db.ref('counters/daily/'+today).on('value',function(snap){
+      setNum('vcToday',snap.val());
+    },function(err){
+      console.warn('[visitor] daily read failed:',err&&err.message);
+    });
+
+    /* ── 카운터 증가 (세션당 1회) ── */
+    // sessionStorage 가드: 새 세션(탭)일 때만 누적·오늘을 함께 1 증가
+    try{
+      if(!sessionStorage.getItem('btc_counted')){
+        sessionStorage.setItem('btc_counted','1');
+        db.ref('counters/total').transaction(function(v){return (v||0)+1;});
+        db.ref('counters/daily/'+today).transaction(function(v){return (v||0)+1;});
+        console.log('[visitor] new session counted for '+today);
+      }
+    }catch(e){
+      // sessionStorage 사용 불가(시크릿/차단)해도 카운트만 건너뛰고 표시는 정상 동작
+      console.warn('[visitor] sessionStorage unavailable, count skipped:',e&&e.message);
+    }
+  }catch(e){
+    // 어떤 초기화 오류든 대시보드에 영향 없이 폴백 '--' 유지
+    console.warn('[visitor] init failed, keeping fallback:',e&&e.message);
+  }
 })();
 </script>
 </body>
