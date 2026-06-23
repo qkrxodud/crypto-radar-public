@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-23T20:05:05Z",
+  "updatedAt": "2026-06-23T20:25:16Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2051.88",
-        "signalLine": "-2448.33",
-        "histogram": "396.44",
+        "macdLine": "-2051.73",
+        "signalLine": "-2448.30",
+        "histogram": "396.56",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "32.40",
+        "iv": "32.11",
         "rv": "43.00",
-        "spread": "-10.60",
+        "spread": "-10.89",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2740,9 +2740,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "260365542366.23384",
+      "totalMarketCapUsd": "260312559370.71631",
       "marketCap30dAgoUsd": "265885433400.7846",
-      "growth30dPercent": "-2.08",
+      "growth30dPercent": "-2.10",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -2811,63 +2811,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62431.30",
-      "openInterestUsd": "6169621721.27010000",
-      "longAccountRatio": "0.6779",
-      "shortAccountRatio": "0.3221",
-      "downsideLiquidationUsd": "4182386564.85",
-      "upsideLiquidationUsd": "1987235156.42",
+      "currentPrice": "62426.50",
+      "openInterestUsd": "6172766387.94313500",
+      "longAccountRatio": "0.6782",
+      "shortAccountRatio": "0.3218",
+      "downsideLiquidationUsd": "4186370164.30",
+      "upsideLiquidationUsd": "1986396223.64",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56188.17",
+          "price": "56183.85",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1672954625.94"
+          "notionalUsd": "1674548065.72"
         },
         {
-          "price": "68674.43",
+          "price": "68669.15",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "794894062.57"
+          "notionalUsd": "794558489.46"
         },
         {
-          "price": "59934.05",
+          "price": "59929.44",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1463835297.70"
+          "notionalUsd": "1465229557.51"
         },
         {
-          "price": "64928.55",
+          "price": "64923.56",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "695532304.75"
+          "notionalUsd": "695238678.27"
         },
         {
-          "price": "61182.67",
+          "price": "61177.97",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "836477312.97"
+          "notionalUsd": "837274032.86"
         },
         {
-          "price": "63679.93",
+          "price": "63675.03",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "397447031.28"
+          "notionalUsd": "397279244.73"
         },
         {
-          "price": "61806.99",
+          "price": "61802.24",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "209119328.24"
+          "notionalUsd": "209318508.22"
         },
         {
-          "price": "63055.61",
+          "price": "63050.77",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "99361757.82"
+          "notionalUsd": "99319811.18"
         }
       ],
       "errorMessage": null
@@ -4222,7 +4222,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-23T19:45:02.824392Z",
+      "generatedAt": "2026-06-23T20:25:14.381312Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4231,31 +4231,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수는 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 가격 하락 가능성이 존재한다."
+          "content": "낮은 공포탐욕 지수(20)로 인해 투자자 심리가 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스인 점은 매도 압력을 나타낸다."
+          "content": "RSI 지표가 30대 초반으로 과매도 구간에 진입하고 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 투자에 신중을 기하고 관망하는 것이 좋다."
+          "content": "단기적인 매수 기회를 모색하되, 시장 변동성을 주의하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 변동성을 고려하여 리스크 관리 전략을 강화하라."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-23T19:24:57.255483Z",
-      "compositeScore": "-0.063",
+      "generatedAt": "2026-06-23T20:25:16.858217Z",
+      "compositeScore": "-0.013",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4274,14 +4274,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/bny-sees-fomo-driving-asset-managers-into-tokenized-funds",
           "publishedAt": "2026-06-23T16:34:34Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Chainlink teams up with 47 South Korean, European banks to speed up international money transfers",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/chainlink-teams-up-with-47-south-korean-european-banks-to-speed-up-international-money-transfers",
           "publishedAt": "2026-06-23T15:40:00Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Vitalik Buterin says Ethereum Foundation will cut budget 40% in major reset",
@@ -4302,7 +4302,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/06/23/the-sec-delayed-tokenizing-stocks-and-here-s-why-that-s-a-relief",
           "publishedAt": "2026-06-23T14:01:44Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Ethereum Foundation cuts 20% of staff amid leadership exodus",
@@ -4319,18 +4319,32 @@
           "score": "-0.7"
         },
         {
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T20:07:02Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Crypto isn't the problem with the US economy, says senator",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/digital-chamber-overlooked-senate-affordability-hearing?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T19:49:59Z",
+          "score": "0.3"
+        },
+        {
           "title": "Multi-year Bitcoin holder selling falls to 19-month low as halving model flags new market bottom date",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/og-bitcoin-selling-hits-19-month-low-as-halving-model-flags-new-bottom-date-analyst?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T19:09:26Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
           "title": "Zcash miner Fortitude gets Nasdaq listing via HeartSciences merger",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/zcash-miner-fortitude-go-public-heartsciences-merger?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T18:05:01Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "CFTC chair says perp trading not suitable for all assets it regulates",
@@ -4358,21 +4372,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-teases-62k-breakdown-as-analysis-sees-micron-earnings-volatility-next?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T15:15:41Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Bitcoin slump worsens amid SpaceX rout: Can BTC price hold $60K any longer?",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-slump-worsens-amid-spacex-rout-can-btc-price-hold-60k-any-longer?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T14:38:32Z",
-          "score": "-0.8"
-        },
-        {
-          "title": "Why tokenized SpaceX shares broke before retail investors could buy them",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/learn/tokenized-spacex-shares-xstocks-refunds?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T14:30:00Z",
-          "score": "-0.2"
+          "score": "-0.6"
         }
       ],
       "errorMessage": null
