@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-23T16:04:03Z",
+  "updatedAt": "2026-06-23T16:24:06Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2053.78",
-        "signalLine": "-2448.71",
-        "histogram": "394.93",
+        "macdLine": "-2038.46",
+        "signalLine": "-2445.64",
+        "histogram": "407.18",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "39.74",
+        "iv": "37.07",
         "rv": "43.00",
-        "spread": "-3.26",
-        "label": "균형"
+        "spread": "-5.93",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 20,
@@ -2740,12 +2740,12 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "260560359574.67105",
+      "totalMarketCapUsd": "260549738284.94674",
       "marketCap30dAgoUsd": "265885433400.7846",
-      "growth30dPercent": "-2.00",
-      "signal": "STABLE",
-      "signalLabel": "중립",
-      "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
+      "growth30dPercent": "-2.01",
+      "signal": "CONTRACTING",
+      "signalLabel": "공급 축소",
+      "signalDescription": "자금 이탈/상환 — 약세 압력",
       "errorMessage": null
     },
     "api_dashboard_net_liquidity": {
@@ -2811,63 +2811,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62395.50",
-      "openInterestUsd": "6185694731.63670000",
-      "longAccountRatio": "0.6784",
-      "shortAccountRatio": "0.3216",
-      "downsideLiquidationUsd": "4196375305.94",
-      "upsideLiquidationUsd": "1989319425.69",
+      "currentPrice": "62594.10",
+      "openInterestUsd": "6240766353.36960000",
+      "longAccountRatio": "0.6774",
+      "shortAccountRatio": "0.3226",
+      "downsideLiquidationUsd": "4227495127.77",
+      "upsideLiquidationUsd": "2013271225.60",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56155.95",
+          "price": "56334.69",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1678550122.38"
+          "notionalUsd": "1690998051.11"
         },
         {
-          "price": "68635.05",
+          "price": "68853.51",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "795727770.28"
+          "notionalUsd": "805308490.24"
         },
         {
-          "price": "59899.68",
+          "price": "60090.34",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1468731357.08"
+          "notionalUsd": "1479623294.72"
         },
         {
-          "price": "64891.32",
+          "price": "65097.86",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "696261798.99"
+          "notionalUsd": "704644928.96"
         },
         {
-          "price": "61147.59",
+          "price": "61342.22",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "839275061.19"
+          "notionalUsd": "845499025.55"
         },
         {
-          "price": "63643.41",
+          "price": "63845.98",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "397863885.14"
+          "notionalUsd": "402654245.12"
         },
         {
-          "price": "61771.55",
+          "price": "61968.16",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "209818765.30"
+          "notionalUsd": "211374756.39"
         },
         {
-          "price": "63019.46",
+          "price": "63220.04",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "99465971.28"
+          "notionalUsd": "100663561.28"
         }
       ],
       "errorMessage": null
@@ -4254,8 +4254,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-23T15:05:05.915585Z",
-      "compositeScore": "-0.113",
+      "generatedAt": "2026-06-23T16:05:03.071350Z",
+      "compositeScore": "-0.106",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4263,18 +4263,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Chainlink teams up with 47 South Korean, European banks to speed up international money transfers",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/23/chainlink-teams-up-with-47-south-korean-european-banks-to-speed-up-international-money-transfers",
+          "publishedAt": "2026-06-23T15:40:00Z",
+          "score": "0.5"
+        },
+        {
           "title": "Vitalik Buterin says Ethereum Foundation will cut budget 40% in major reset",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/23/vitalik-buterin-says-ethereum-foundation-will-cut-budget-40-in-major-reset",
           "publishedAt": "2026-06-23T15:00:00Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
           "title": "Bitcoin's recent drop below $60,000 signals Fed, ETF and AI pressures: Deutsche Bank",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/bitcoin-s-recent-drop-below-usd60-000-signals-fed-etf-and-ai-pressures-deutsche-bank",
           "publishedAt": "2026-06-23T14:54:17Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "The SEC delayed tokenizing stocks, and hereâs why thatâs a relief",
@@ -4288,14 +4295,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/23/ethereum-foundation-cuts-20-of-staff-amid-leadership-exodus",
           "publishedAt": "2026-06-23T13:45:22Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin may need to plunge 15% or more to mark bottom, according to this long-time indicator",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/bitcoin-may-need-to-plunge-15-or-more-to-mark-bottom-according-to-this-long-time-indicator",
           "publishedAt": "2026-06-23T13:08:31Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "Former Robinhood Crypto COO Tanya Denisova joins stablecoin issuer Agora as head of operations",
@@ -4309,21 +4316,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/news-analysis/2026/06/22/in-clarity-act-s-final-weeks-its-path-through-u-s-senate-not-getting-much-clearer",
           "publishedAt": "2026-06-23T13:00:00Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
-          "title": "The ECB digital euro takes step forward after winning key European Parliament vote",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/23/european-parliament-clears-last-step-for-a-digital-euro-to-break-u-s-payment-grip",
-          "publishedAt": "2026-06-23T12:37:20Z",
+          "title": "Chainlink joins European and Korean bank consortia to develop FX settlement network",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/chainlink-europe-korea-banks-stablecoin-fx-settlement-project-pangea?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T15:45:00Z",
           "score": "0.5"
+        },
+        {
+          "title": "Bitcoin teases $62K breakdown as analysis sees Micron earnings volatility next",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-teases-62k-breakdown-as-analysis-sees-micron-earnings-volatility-next?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T15:15:41Z",
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin slump worsens amid SpaceX rout: Can BTC price hold $60K any longer?",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-slump-worsens-amid-spacex-rout-can-btc-price-hold-60k-any-longer?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T14:38:32Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "Why tokenized SpaceX shares broke before retail investors could buy them",
@@ -4344,7 +4358,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kalshi-adds-india-restricted-jurisdictions?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T12:40:13Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "EU committee advances digital euro bill after key vote",
@@ -4359,20 +4373,6 @@
           "url": "https://cointelegraph.com/news/former-bis-chief-softens-stance-stablecoins-coexistence-fiat?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T12:06:35Z",
           "score": "0.3"
-        },
-        {
-          "title": "Binance’s Yi He warns of alleged impersonation scam, CoinUp denies ties",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/binances-yi-he-warns-alleged-scammer-coinup-responds?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T10:30:27Z",
-          "score": "-0.1"
-        },
-        {
-          "title": "Bitcoin gets new $54K warning as BTC price hits 11-day low on Asia tech sell-off",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-gets-new-54k-warning-as-btc-price-hits-11-day-low-on-asia-tech-sell-off?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T10:23:19Z",
-          "score": "-0.5"
         }
       ],
       "errorMessage": null
