@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-23T17:04:14Z",
+  "updatedAt": "2026-06-23T17:24:22Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2050.27",
-        "signalLine": "-2448.00",
-        "histogram": "397.74",
+        "macdLine": "-2037.85",
+        "signalLine": "-2445.52",
+        "histogram": "407.67",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "35.66",
+        "iv": "35.33",
         "rv": "43.00",
-        "spread": "-7.34",
+        "spread": "-7.67",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2740,12 +2740,12 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "260549738284.94674",
+      "totalMarketCapUsd": "260562558827.98516",
       "marketCap30dAgoUsd": "265885433400.7846",
-      "growth30dPercent": "-2.01",
-      "signal": "CONTRACTING",
-      "signalLabel": "공급 축소",
-      "signalDescription": "자금 이탈/상환 — 약세 압력",
+      "growth30dPercent": "-2.00",
+      "signal": "STABLE",
+      "signalLabel": "중립",
+      "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
       "errorMessage": null
     },
     "api_dashboard_net_liquidity": {
@@ -2811,63 +2811,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62442.10",
-      "openInterestUsd": "6214051231.55033600",
-      "longAccountRatio": "0.6763",
-      "shortAccountRatio": "0.3237",
-      "downsideLiquidationUsd": "4202562847.90",
-      "upsideLiquidationUsd": "2011488383.65",
+      "currentPrice": "62594.60",
+      "openInterestUsd": "6202484376.04360000",
+      "longAccountRatio": "0.6764",
+      "shortAccountRatio": "0.3236",
+      "downsideLiquidationUsd": "4195360431.96",
+      "upsideLiquidationUsd": "2007123944.09",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56197.89",
+          "price": "56335.14",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1681025139.16"
+          "notionalUsd": "1678144172.78"
         },
         {
-          "price": "68686.31",
+          "price": "68854.06",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "804595353.46"
+          "notionalUsd": "802849577.64"
         },
         {
-          "price": "59944.42",
+          "price": "60090.82",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1470896996.76"
+          "notionalUsd": "1468376151.18"
         },
         {
-          "price": "64939.78",
+          "price": "65098.38",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "704020934.28"
+          "notionalUsd": "702493380.43"
         },
         {
-          "price": "61193.26",
+          "price": "61342.71",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "840512569.58"
+          "notionalUsd": "839072086.39"
         },
         {
-          "price": "63690.94",
+          "price": "63846.49",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "402297676.73"
+          "notionalUsd": "401424788.82"
         },
         {
-          "price": "61817.68",
+          "price": "61968.65",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "210128142.39"
+          "notionalUsd": "209768021.60"
         },
         {
-          "price": "63066.52",
+          "price": "63220.55",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "100574419.18"
+          "notionalUsd": "100356197.20"
         }
       ],
       "errorMessage": null
@@ -4254,7 +4254,7 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-23T16:05:03.071350Z",
+      "generatedAt": "2026-06-23T17:24:22.880457Z",
       "compositeScore": "-0.106",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
@@ -4263,11 +4263,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "BNY sees 'FOMO' driving asset managers into tokenized funds",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/23/bny-sees-fomo-driving-asset-managers-into-tokenized-funds",
+          "publishedAt": "2026-06-23T16:34:34Z",
+          "score": "0.5"
+        },
+        {
           "title": "Chainlink teams up with 47 South Korean, European banks to speed up international money transfers",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/chainlink-teams-up-with-47-south-korean-european-banks-to-speed-up-international-money-transfers",
           "publishedAt": "2026-06-23T15:40:00Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Vitalik Buterin says Ethereum Foundation will cut budget 40% in major reset",
@@ -4281,28 +4288,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/bitcoin-s-recent-drop-below-usd60-000-signals-fed-etf-and-ai-pressures-deutsche-bank",
           "publishedAt": "2026-06-23T14:54:17Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "The SEC delayed tokenizing stocks, and hereâs why thatâs a relief",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/06/23/the-sec-delayed-tokenizing-stocks-and-here-s-why-that-s-a-relief",
           "publishedAt": "2026-06-23T14:01:44Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Ethereum Foundation cuts 20% of staff amid leadership exodus",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/23/ethereum-foundation-cuts-20-of-staff-amid-leadership-exodus",
           "publishedAt": "2026-06-23T13:45:22Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin may need to plunge 15% or more to mark bottom, according to this long-time indicator",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/bitcoin-may-need-to-plunge-15-or-more-to-mark-bottom-according-to-this-long-time-indicator",
           "publishedAt": "2026-06-23T13:08:31Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Former Robinhood Crypto COO Tanya Denisova joins stablecoin issuer Agora as head of operations",
@@ -4312,11 +4319,18 @@
           "score": "0.3"
         },
         {
-          "title": "In Clarity Act's final weeks, its path through U.S. Senate not getting much clearer",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/news-analysis/2026/06/22/in-clarity-act-s-final-weeks-its-path-through-u-s-senate-not-getting-much-clearer",
-          "publishedAt": "2026-06-23T13:00:00Z",
+          "title": "CFTC chair says perp trading not suitable for all assets it regulates",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/cftc-regulating-agricultural-markets-crypto-prediction-markets-push?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T16:54:38Z",
           "score": "-0.2"
+        },
+        {
+          "title": "CBOE weighs converting BTC, ETH continuous futures into perpetual futures: Report",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/cboe-bitcoin-ether-perpetual-futures-cftc-kalshi?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T16:23:56Z",
+          "score": "0.2"
         },
         {
           "title": "Chainlink joins European and Korean bank consortia to develop FX settlement network",
@@ -4330,7 +4344,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-teases-62k-breakdown-as-analysis-sees-micron-earnings-volatility-next?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T15:15:41Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin slump worsens amid SpaceX rout: Can BTC price hold $60K any longer?",
@@ -4344,35 +4358,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/learn/tokenized-spacex-shares-xstocks-refunds?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T14:30:00Z",
-          "score": "0.0"
+          "score": "-0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T13:07:43Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Kalshi adds India to growing list of restricted jurisdictions",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kalshi-adds-india-restricted-jurisdictions?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T12:40:13Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "EU committee advances digital euro bill after key vote",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/eu-committee-digital-euro-cbdc-bill-key-vote?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T12:24:54Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Former BIS chief softens stance on stablecoins, backs coexistence with fiat",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/former-bis-chief-softens-stance-stablecoins-coexistence-fiat?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T12:06:35Z",
-          "score": "0.3"
+          "score": "-0.1"
         }
       ],
       "errorMessage": null
