@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-23T18:04:28Z",
+  "updatedAt": "2026-06-23T18:24:40Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2056.78",
-        "signalLine": "-2449.31",
-        "histogram": "392.53",
+        "macdLine": "-2055.57",
+        "signalLine": "-2449.06",
+        "histogram": "393.50",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "33.91",
+        "iv": "33.82",
         "rv": "43.00",
-        "spread": "-9.09",
+        "spread": "-9.18",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2740,9 +2740,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "260562558827.98516",
+      "totalMarketCapUsd": "260582601710.43140",
       "marketCap30dAgoUsd": "265885433400.7846",
-      "growth30dPercent": "-2.00",
+      "growth30dPercent": "-1.99",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2750,11 +2750,11 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5851786.000",
-      "change4wUsdM": "64466.000",
-      "change4wPercent": "1.11",
+      "netLiquidityUsdM": "5849227.000",
+      "change4wUsdM": "59591.000",
+      "change4wPercent": "1.03",
       "fedAssetsUsdM": "6736424",
-      "reverseRepoUsdM": "3925.000",
+      "reverseRepoUsdM": "6484.000",
       "treasuryAccountUsdM": "880713",
       "rrpIncluded": true,
       "signal": "EXPANDING",
@@ -2811,63 +2811,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62370.20",
-      "openInterestUsd": "6173163137.67000000",
-      "longAccountRatio": "0.6771",
-      "shortAccountRatio": "0.3229",
-      "downsideLiquidationUsd": "4179848760.52",
-      "upsideLiquidationUsd": "1993314377.15",
+      "currentPrice": "62379.10",
+      "openInterestUsd": "6172513195.62240000",
+      "longAccountRatio": "0.6770",
+      "shortAccountRatio": "0.3230",
+      "downsideLiquidationUsd": "4178791433.44",
+      "upsideLiquidationUsd": "1993721762.19",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56133.18",
+          "price": "56141.19",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1671939504.21"
+          "notionalUsd": "1671516573.37"
         },
         {
-          "price": "68607.22",
+          "price": "68617.01",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "797325750.86"
+          "notionalUsd": "797488704.87"
         },
         {
-          "price": "59875.39",
+          "price": "59883.94",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1462947066.18"
+          "notionalUsd": "1462577001.70"
         },
         {
-          "price": "64865.01",
+          "price": "64874.26",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "697660032.00"
+          "notionalUsd": "697802616.77"
         },
         {
-          "price": "61122.80",
+          "price": "61131.52",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "835969752.10"
+          "notionalUsd": "835758286.69"
         },
         {
-          "price": "63617.60",
+          "price": "63626.68",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "398662875.43"
+          "notionalUsd": "398744352.44"
         },
         {
-          "price": "61746.50",
+          "price": "61755.31",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208992438.03"
+          "notionalUsd": "208939571.67"
         },
         {
-          "price": "62993.90",
+          "price": "63002.89",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "99665718.86"
+          "notionalUsd": "99686088.11"
         }
       ],
       "errorMessage": null
@@ -4222,7 +4222,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-23T17:44:28.473500Z",
+      "generatedAt": "2026-06-23T18:24:38.295079Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4235,33 +4235,40 @@
         },
         {
           "type": "RISK",
-          "content": "가격 하락 가능성이 높은 공포탐욕 지수 20로 인해 투자 심리가 부정적이다."
+          "content": "공포탐욕 지수가 20으로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -30.46으로, 매도 압력이 커질 수 있다."
+          "content": "RSI(일) 38.44로 과매도 상태에 가까워 추가 하락 가능성이 있다."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 면밀히 관찰하며 추가 매수는 신중하게 결정하라."
+          "content": "단기적인 매수 기회를 고려하되, 리스크 관리를 철저히 해야 한다."
         },
         {
           "type": "ACTION",
-          "content": "손실을 최소화하기 위해 손절매 전략을 고려하라."
+          "content": "시장 심리가 개선될 때까지 관망하는 전략도 유효하다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-23T17:24:22.880457Z",
-      "compositeScore": "-0.106",
+      "generatedAt": "2026-06-23T18:24:40.621686Z",
+      "compositeScore": "-0.094",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Meta is developing a prediction market app called âArenaâ as sector booms: NYT",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/23/meta-is-developing-a-prediction-market-app-called-arena-as-sector-booms-nyt",
+          "publishedAt": "2026-06-23T17:54:32Z",
+          "score": "0.3"
+        },
         {
           "title": "BNY sees 'FOMO' driving asset managers into tokenized funds",
           "source": "CoinDesk",
@@ -4312,25 +4319,25 @@
           "score": "-0.7"
         },
         {
-          "title": "Former Robinhood Crypto COO Tanya Denisova joins stablecoin issuer Agora as head of operations",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/23/former-robinhood-crypto-coo-tanya-denisova-joins-stablecoin-issuer-agora-as-head-of-operations",
-          "publishedAt": "2026-06-23T13:00:00Z",
-          "score": "0.3"
+          "title": "Zcash miner Fortitude gets Nasdaq listing via HeartSciences merger",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/zcash-miner-fortitude-go-public-heartsciences-merger?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T18:05:01Z",
+          "score": "0.2"
         },
         {
           "title": "CFTC chair says perp trading not suitable for all assets it regulates",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-regulating-agricultural-markets-crypto-prediction-markets-push?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T16:54:38Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "CBOE weighs converting BTC, ETH continuous futures into perpetual futures: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cboe-bitcoin-ether-perpetual-futures-cftc-kalshi?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T16:23:56Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Chainlink joins European and Korean bank consortia to develop FX settlement network",
@@ -4358,7 +4365,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/learn/tokenized-spacex-shares-xstocks-refunds?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T14:30:00Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4366,13 +4373,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T13:07:43Z",
           "score": "0.0"
-        },
-        {
-          "title": "Kalshi adds India to growing list of restricted jurisdictions",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/kalshi-adds-india-restricted-jurisdictions?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T12:40:13Z",
-          "score": "-0.1"
         }
       ],
       "errorMessage": null
