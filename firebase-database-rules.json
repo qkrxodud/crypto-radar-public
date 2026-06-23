@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "presence": {
+      ".read": true,
+      "$sessionId": {
+        ".write": true,
+        ".validate": "newData.val() === true"
+      }
+    },
+    "counters": {
+      "total": {
+        ".read": true,
+        ".write": "(!data.exists() && newData.val() === 1) || newData.val() === data.val() + 1",
+        ".validate": "newData.isNumber()"
+      },
+      "daily": {
+        ".read": true,
+        "$date": {
+          ".write": "(!data.exists() && newData.val() === 1) || newData.val() === data.val() + 1",
+          ".validate": "newData.isNumber() && $date.matches(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)"
+        }
+      }
+    }
+  }
+}
