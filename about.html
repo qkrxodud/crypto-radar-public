@@ -2,343 +2,274 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="BTC 투자 타이밍 레이더 소개 — 비트코인 온체인·기술·파생·매크로 지표 25개+를 매일 자동 분석해 0~100점 하나로 요약하는 무료 정보 서비스. 점수 읽는 법과 해석 시 주의점까지 안내." data-en-content="About BTC Timing Radar — a free service that automatically analyzes 25+ Bitcoin on-chain, technical, derivatives and macro indicators daily into a single 0–100 score, with guidance on reading and interpreting it." data-zh-content="BTC 时机雷达介绍 — 每日自动分析 25 项以上比特币链上、技术、衍生品与宏观指标，汇总为一个 0~100 评分的免费信息服务，并附评分解读与注意事项。">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-en="BTC Timing Radar — Bitcoin at a Glance" data-zh="BTC 时机雷达 — 一眼看懂比特币">BTC 투자 타이밍 레이더 — 비트코인을 한 눈에</title>
+<!-- SEO meta: 기존 about.html에서 이식 (한국어 우선, data-en/zh 미포함) -->
+<title>BTC 투자 타이밍 레이더 — 비트코인을 한 눈에</title>
+<meta name="description" content="BTC 투자 타이밍 레이더 소개 — 비트코인 온체인·기술·파생·매크로 지표 25개+를 매일 자동 분석해 0~100점 하나로 요약하는 무료 정보 서비스. 점수 읽는 법과 해석 시 주의점까지 안내.">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://btctiming.co.kr/about.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://btctiming.co.kr/about.html">
-<meta property="og:site_name" content="BTC 투자 타이밍 레이더" data-en-content="BTC Investment Timing Radar" data-zh-content="BTC 投资择时雷达">
-<meta property="og:title" content="BTC 투자 타이밍 레이더 — 비트코인을 한 눈에" data-en-content="BTC Timing Radar — Bitcoin at a Glance" data-zh-content="BTC 时机雷达 — 一眼看懂比特币">
-<meta property="og:description" content="BTC 투자 타이밍 레이더 소개 — 비트코인 온체인·기술·파생·매크로 지표 25개+를 매일 자동 분석해 0~100점 하나로 요약하는 무료 정보 서비스. 점수 읽는 법과 해석 시 주의점까지 안내." data-en-content="About BTC Timing Radar — a free service that automatically analyzes 25+ Bitcoin on-chain, technical, derivatives and macro indicators daily into a single 0–100 score, with guidance on reading and interpreting it." data-zh-content="BTC 时机雷达介绍 — 每日自动分析 25 项以上比特币链上、技术、衍生品与宏观指标，汇总为一个 0~100 评分的免费信息服务，并附评分解读与注意事项。">
+<meta property="og:site_name" content="BTC 투자 타이밍 레이더">
+<meta property="og:title" content="BTC 투자 타이밍 레이더 — 비트코인을 한 눈에">
+<meta property="og:description" content="BTC 투자 타이밍 레이더 소개 — 비트코인 온체인·기술·파생·매크로 지표 25개+를 매일 자동 분석해 0~100점 하나로 요약하는 무료 정보 서비스. 점수 읽는 법과 해석 시 주의점까지 안내.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BTC 투자 타이밍 레이더 — 비트코인을 한 눈에" data-en-content="BTC Timing Radar — Bitcoin at a Glance" data-zh-content="BTC 时机雷达 — 一眼看懂比特币">
-<meta name="twitter:description" content="BTC 투자 타이밍 레이더 소개 — 비트코인 온체인·기술·파생·매크로 지표 25개+를 매일 자동 분석해 0~100점 하나로 요약하는 무료 정보 서비스. 점수 읽는 법과 해석 시 주의점까지 안내." data-en-content="About BTC Timing Radar — a free service that automatically analyzes 25+ Bitcoin on-chain, technical, derivatives and macro indicators daily into a single 0–100 score, with guidance on reading and interpreting it." data-zh-content="BTC 时机雷达介绍 — 每日自动分析 25 项以上比特币链上、技术、衍生品与宏观指标，汇总为一个 0~100 评分的免费信息服务，并附评分解读与注意事项。">
+<meta name="twitter:title" content="BTC 투자 타이밍 레이더 — 비트코인을 한 눈에">
+<meta name="twitter:description" content="BTC 투자 타이밍 레이더 소개 — 비트코인 온체인·기술·파생·매크로 지표 25개+를 매일 자동 분석해 0~100점 하나로 요약하는 무료 정보 서비스. 점수 읽는 법과 해석 시 주의점까지 안내.">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- AdSense (index.html에서 그대로 이식) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898078056285143" crossorigin="anonymous"></script>
 <style>
+  /* ── 디자인 토큰 (index.html 셸 그대로) ── */
   :root{
-    --bg:#080b14;
-    --bg-2:#0b1020;
-    --surface:#111a2e;
-    --surface-2:#16203a;
-    --border:rgba(255,255,255,.08);
-    --border-strong:rgba(255,255,255,.14);
-    --text:#eef2fb;
-    --muted:#9aa5bd;
-    --muted-2:#6c7795;
-    --brand:#f7931a;
-    --brand-2:#ffb347;
-    --brand-soft:rgba(247,147,26,.12);
-    --neon:#2ee6b6;
-    --neon-soft:rgba(46,230,182,.12);
-    --blue:#5b8def;
-    --amber:#ffc23d;
-    --red:#ff5d6c;
-    --mono:'JetBrains Mono',ui-monospace,monospace;
-    --sans:'Pretendard',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
-    --maxw:1160px;
+    --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
+    --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
+    --mono:'JetBrains Mono',monospace;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:var(--sans);
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--t1);}
+  ::-webkit-scrollbar{height:10px;width:10px;}
+  ::-webkit-scrollbar-thumb{background:#2a2f3a;border-radius:8px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  a{color:inherit;}
+
+  /* ── 레이아웃 (셸 공통) ── */
+  .layout{display:flex;min-height:100vh;background:var(--bg);}
+  .sidebar{flex:none;width:240px;align-self:flex-start;position:sticky;top:0;height:100vh;
+    background:var(--nav-bg);border-right:1px solid var(--line);padding:22px 16px;
+    display:flex;flex-direction:column;}
+  .sb-brand{display:flex;align-items:center;gap:11px;padding:0 6px 24px;text-decoration:none;}
+  .sb-logo{width:36px;height:36px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:19px;}
+  .sb-brand .bt{color:var(--t1);font-size:14.5px;font-weight:700;}
+  .sb-brand .bs{color:var(--m2);font-size:11px;letter-spacing:.06em;}
+  .sb-menu-h{color:var(--m3);font-size:11px;letter-spacing:.12em;padding:0 12px 8px;}
+  .sb-nav{display:flex;flex-direction:column;gap:3px;}
+  .sb-nav a{display:flex;align-items:center;gap:11px;padding:11px 12px;border-radius:11px;text-decoration:none;font-size:14px;color:var(--m1);}
+  .sb-nav a .dot{width:7px;height:7px;border-radius:50%;background:#2a2f3a;flex:none;}
+  .sb-nav a.active{background:rgba(22,199,132,.12);color:var(--green);font-weight:600;}
+  .sb-nav a.active .dot{background:var(--green);}
+  .sb-live{margin-top:24px;padding:16px;border-radius:14px;background:linear-gradient(160deg,rgba(22,199,132,.14),rgba(22,199,132,.03));border:1px solid rgba(22,199,132,.18);}
+  .sb-live .lh{display:flex;align-items:center;gap:7px;}
+  .sb-live .lh .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .sb-live .lh .t{color:var(--green);font-family:var(--mono);font-size:11px;font-weight:600;}
+  .sb-live .lb{color:var(--t2);font-size:13px;margin-top:9px;line-height:1.5;}
+  /* 사이드바 방문자 카운터 */
+  .sb-visitor{margin-top:14px;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--line);}
+  .sb-visitor .vh{color:var(--m2);font-size:10.5px;letter-spacing:.08em;margin-bottom:9px;font-family:var(--mono);}
+  .sb-visitor .vr{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--m1);padding:3px 0;}
+  .sb-visitor .vr .vc-n{color:var(--t1);font-weight:700;font-family:var(--mono);}
+  .sb-visitor .vr.now .vc-n{color:var(--green);}
+  .sb-visitor .vr .vc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:vcPulse 1.6s ease-in-out infinite;margin-right:5px;}
+  @keyframes vcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .sb-foot{margin-top:auto;padding:14px 12px 4px;color:var(--m3);font-size:11px;line-height:1.6;}
+
+  .main{flex:1;min-width:0;}
+  .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(8,9,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  .crumb{color:var(--m1);font-size:13px;}
+  .crumb b{color:var(--t1);font-weight:600;}
+  .topbar .right{display:flex;align-items:center;gap:12px;}
+  .topbar .date{font-family:var(--mono);color:var(--m1);font-size:12px;}
+  .topbar .live{display:flex;align-items:center;gap:7px;padding:8px 13px;border-radius:10px;background:rgba(22,199,132,.12);color:var(--green);font-size:12px;font-weight:600;font-family:var(--mono);}
+  .topbar .live .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+
+  .content{max-width:1000px;margin:0 auto;padding:36px 32px 64px;display:flex;flex-direction:column;gap:28px;}
+
+  .sec-h{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;}
+  .sec-h h2{color:var(--t1);font-size:20px;font-weight:800;margin:0;}
+  .sec-h .hint{color:var(--m2);font-size:13px;}
+
+  /* ── 히어로 ── */
+  .ab-hero{background:radial-gradient(120% 160% at 12% 0%,rgba(22,199,132,.10),rgba(22,199,132,0) 55%),var(--card);border:1px solid var(--line);border-radius:20px;padding:38px;}
+  .ab-hero .eyebrow{font-family:var(--mono);color:var(--green);font-size:12px;letter-spacing:.14em;}
+  .ab-hero h1{color:var(--t1);font-size:34px;font-weight:800;margin:12px 0 12px;line-height:1.3;}
+  .ab-hero p{color:var(--t3);font-size:15px;line-height:1.8;margin:0;max-width:720px;}
+  .ab-hero p b{color:var(--green);font-weight:600;}
+
+  /* ── 스탯 4개 ── */
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .stat-cell{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;min-width:0;}
+  .stat-cell .v{font-family:var(--mono);font-size:30px;font-weight:700;color:var(--green);line-height:1;}
+  .stat-cell .k{color:var(--m1);font-size:13px;margin-top:11px;}
+
+  /* ── 동작 3단계 ── */
+  .step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .step-cell{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px;min-width:0;position:relative;}
+  .step-cell .num{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--green);background:rgba(22,199,132,.12);width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+  .step-cell .t{color:var(--t1);font-size:16px;font-weight:700;margin-bottom:8px;}
+  .step-cell .d{color:var(--t3);font-size:13.5px;line-height:1.7;}
+
+  /* ── 운영 원칙 4개 ── */
+  .prin-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  .prin-cell{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;gap:14px;align-items:flex-start;min-width:0;}
+  .prin-cell .ic{flex:none;width:36px;height:36px;border-radius:10px;background:rgba(22,199,132,.12);color:var(--green);display:flex;align-items:center;justify-content:center;}
+  .prin-cell .t{color:var(--t1);font-size:15.5px;font-weight:700;margin-bottom:6px;}
+  .prin-cell .d{color:var(--t3);font-size:13.5px;line-height:1.7;}
+
+  /* ── 본문 단락 (긴 설명) ── */
+  .lead-tx{color:var(--t3);font-size:14.5px;line-height:1.8;margin:0 0 4px;max-width:760px;}
+  .lead-tx b{color:var(--t1);font-weight:600;}
+
+  /* ── 불편함 3종 카드 ── */
+  .prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .prob-cell{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;min-width:0;}
+  .prob-cell .ic{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:rgba(22,199,132,.1);color:var(--green);margin-bottom:14px;}
+  .prob-cell .t{color:var(--t1);font-size:16px;font-weight:700;margin-bottom:7px;}
+  .prob-cell .d{color:var(--t3);font-size:13.5px;line-height:1.7;}
+
+  /* ── BEFORE / AFTER 비교 ── */
+  .vs-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:stretch;margin-top:16px;}
+  .vs-panel{border-radius:16px;padding:22px 20px;border:1px solid var(--line);background:var(--card);min-width:0;}
+  .vs-panel.before{border-color:rgba(234,57,67,.18);background:linear-gradient(160deg,rgba(234,57,67,.06),rgba(234,57,67,0) 60%),var(--card-2);}
+  .vs-panel.after{border-color:rgba(22,199,132,.2);background:linear-gradient(160deg,rgba(22,199,132,.08),rgba(22,199,132,0) 60%),var(--card-2);}
+  .vs-panel .vtag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;font-weight:600;padding:4px 10px;border-radius:7px;display:inline-block;margin-bottom:14px;}
+  .vs-panel.before .vtag{color:var(--red);background:rgba(234,57,67,.12);}
+  .vs-panel.after .vtag{color:var(--green);background:rgba(22,199,132,.12);}
+  .vs-panel .vh{color:var(--t1);font-size:17px;font-weight:700;margin-bottom:12px;}
+  .vs-chips{display:flex;flex-wrap:wrap;gap:7px;}
+  .vs-chips span{font-family:var(--mono);font-size:11.5px;color:var(--m1);background:rgba(255,255,255,.03);border:1px solid var(--line);padding:5px 10px;border-radius:7px;}
+  .vs-bigscore{display:flex;align-items:baseline;gap:10px;margin:4px 0 6px;}
+  .vs-bigscore b{font-family:var(--mono);font-size:46px;font-weight:700;color:var(--green);line-height:1;}
+  .vs-bigscore span{color:var(--m1);font-size:13px;}
+  .vs-panel.after .vd{color:var(--t3);font-size:13px;line-height:1.6;}
+  .vs-arrow{display:grid;place-items:center;color:var(--green);font-size:24px;font-family:var(--mono);}
+
+  /* ── 동작 4단계 (얇은 카드) ── */
+  .flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .flow-cell{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 18px;min-width:0;}
+  .flow-cell .num{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--green);background:rgba(22,199,132,.12);width:32px;height:32px;border-radius:9px;display:grid;place-items:center;margin-bottom:13px;}
+  .flow-cell .t{color:var(--t1);font-size:15px;font-weight:700;margin-bottom:6px;}
+  .flow-cell .d{color:var(--t3);font-size:13px;line-height:1.65;}
+
+  /* ── 카테고리 가중치 막대 ── */
+  .cat-list{display:flex;flex-direction:column;gap:13px;margin-top:14px;}
+  .cat-row{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
+  .cat-row .ct{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap;}
+  .cat-row .cn{color:var(--t1);font-size:15px;font-weight:700;display:flex;align-items:center;gap:9px;}
+  .cat-row .cn .pct{font-family:var(--mono);color:var(--green);font-weight:700;font-size:14px;}
+  .cat-row .cd{color:var(--m1);font-size:12.5px;}
+  .cat-bar{height:8px;border-radius:5px;background:rgba(255,255,255,.05);overflow:hidden;}
+  .cat-bar i{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,var(--green),var(--green-2));}
+  .cat-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px;}
+  .cat-tags span{font-family:var(--mono);font-size:11px;color:var(--m1);background:rgba(255,255,255,.03);border:1px solid var(--line);padding:4px 8px;border-radius:6px;}
+
+  /* ── 카테고리 설명 카드 ── */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .why-cell{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;min-width:0;}
+  .why-cell .ic{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:rgba(22,199,132,.1);color:var(--green);margin-bottom:13px;}
+  .why-cell .t{color:var(--t1);font-size:15px;font-weight:700;margin-bottom:8px;line-height:1.4;}
+  .why-cell .d{color:var(--t3);font-size:13px;line-height:1.72;}
+  .why-cell .d b{color:var(--t1);font-weight:600;}
+
+  /* ── 대상자 카드 ── */
+  .who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .who-cell{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 18px;min-width:0;}
+  .who-cell .ic{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:rgba(22,199,132,.1);color:var(--green);margin-bottom:13px;}
+  .who-cell .t{color:var(--t1);font-size:15px;font-weight:700;margin-bottom:7px;}
+  .who-cell .d{color:var(--t3);font-size:13px;line-height:1.7;}
+
+  /* ── 데이터 출처 ── */
+  .src-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:14px;}
+  .src-cell{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:16px 14px;text-align:center;min-width:0;}
+  .src-cell .sn{color:var(--t1);font-size:14.5px;font-weight:700;margin-bottom:4px;}
+  .src-cell .sd{font-family:var(--mono);color:var(--m1);font-size:11.5px;}
+
+  /* ── FAQ 아코디언 ── */
+  .faq-list{display:flex;flex-direction:column;gap:11px;margin-top:14px;}
+  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:13px;overflow:hidden;}
+  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--t1);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--green);flex:none;}
+  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--m2);transition:.2s;flex:none;}
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item .ans{font-size:13.5px;color:var(--t3);line-height:1.74;padding:0 18px 16px;}
+  .faq-item .ans b{color:var(--t1);font-weight:600;}
+
+  /* ── 면책 ── */
+  .disc{display:flex;gap:12px;align-items:flex-start;background:rgba(234,57,67,.06);border:1px solid rgba(234,57,67,.18);border-radius:14px;padding:18px 20px;}
+  .disc .ic{flex:none;width:22px;height:22px;border-radius:7px;background:rgba(234,57,67,.18);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;}
+  .disc .tx{color:var(--t2);font-size:13px;line-height:1.7;}
+  .disc .tx b{color:var(--red);font-weight:700;}
+
+  /* ── CTA ── */
+  .cta{background:radial-gradient(120% 160% at 50% 0%,rgba(22,199,132,.12),rgba(22,199,132,0) 60%),var(--card);border:1px solid rgba(22,199,132,.18);border-radius:20px;padding:38px;text-align:center;}
+  .cta h2{color:var(--t1);font-size:24px;font-weight:800;margin:0 0 10px;line-height:1.3;}
+  .cta p{color:var(--m1);font-size:14px;margin:0 auto 24px;max-width:520px;line-height:1.7;}
+  .cta a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:var(--green);color:#04120c;font-weight:700;font-size:15px;padding:14px 26px;border-radius:13px;}
+
+  /* ── 푸터 ── */
+  .foot{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
+  .foot .fa{max-width:360px;}
+  .foot .fb{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+  .foot .fb .lo{width:28px;height:28px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:15px;}
+  .foot .fb .nm{color:var(--t1);font-size:14px;font-weight:700;}
+  .foot .fd{color:var(--m2);font-size:12.5px;line-height:1.7;}
+  .foot .cols{display:flex;gap:48px;flex-wrap:wrap;}
+  .foot .col h4{color:var(--m1);font-size:12px;font-weight:600;margin:0 0 10px;}
+  .foot .col a{display:block;color:var(--m2);font-size:13px;text-decoration:none;margin-bottom:8px;}
+  .foot .col a:hover{color:var(--t2);}
+  .foot .copy{color:var(--m3);font-size:11.5px;width:100%;border-top:1px solid rgba(255,255,255,.04);padding-top:16px;}
+
+  /* ── 모바일 햄버거 (셸 공통) ── */
+  .mobile-bar{display:none;position:sticky;top:0;z-index:30;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(8,9,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .mobile-bar .mb-brand{display:flex;align-items:center;gap:9px;text-decoration:none;}
+  .mobile-bar .mb-logo{width:30px;height:30px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:16px;}
+  .mobile-bar .mb-t{color:var(--t1);font-size:14px;font-weight:700;}
+  .mb-toggle{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--t1);}
+  .mb-toggle span{display:block;width:18px;height:2px;background:var(--t1);position:relative;}
+  .mb-toggle span::before,.mb-toggle span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--t1);}
+  .mb-toggle span::before{top:-6px;}.mb-toggle span::after{top:6px;}
+
+  /* ── 반응형 (셸 정책 동일) ── */
+  @media(max-width:1080px){
+    .stat-grid{grid-template-columns:repeat(2,1fr);}
+    .step-grid{grid-template-columns:1fr;}
+    .flow-grid{grid-template-columns:repeat(2,1fr);}
+    .src-grid{grid-template-columns:repeat(3,1fr);}
+    .who-grid{grid-template-columns:repeat(2,1fr);}
   }
-  /* ambient background */
-  .bg-field{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;transform:translateZ(0);isolation:isolate}
-  .bg-field .glow{position:absolute;border-radius:50%;filter:blur(120px);opacity:.5;will-change:transform;transform:translateZ(0)}
-  .bg-field .g1{width:620px;height:620px;background:radial-gradient(circle,rgba(247,147,26,.22),transparent 70%);top:-180px;right:-120px;animation:drift1 22s ease-in-out infinite}
-  .bg-field .g2{width:560px;height:560px;background:radial-gradient(circle,rgba(46,230,182,.16),transparent 70%);bottom:-160px;left:-140px;animation:drift2 26s ease-in-out infinite}
-  .bg-field .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:54px 54px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 30%,transparent 75%)}
-  @keyframes drift1{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(-50px,40px,0)}}
-  @keyframes drift2{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(60px,-40px,0)}}
   @media(max-width:768px){
-    .bg-field .glow{filter:none;opacity:.15;animation:none}
-    .bg-field .grid{display:none}
-    header.nav{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(8,11,20,.96)}
+    html,body{overflow-x:hidden;max-width:100vw;}
+    .sidebar{position:fixed;left:0;top:0;z-index:40;transform:translateX(-100%);transition:transform .25s ease;height:100vh;box-shadow:2px 0 20px rgba(0,0,0,.5);}
+    .layout.nav-open .sidebar{transform:translateX(0);}
+    .nav-backdrop{display:none;position:fixed;inset:0;z-index:35;background:rgba(0,0,0,.5);}
+    .layout.nav-open .nav-backdrop{display:block;}
+    .mobile-bar{display:flex;}
+    .topbar{display:none;}
+    .content{padding:18px 16px 56px;gap:20px;max-width:100%;}
+    .ab-hero{padding:26px 20px;}
+    .ab-hero h1{font-size:25px;}
+    .stat-grid{grid-template-columns:1fr 1fr;gap:12px;}
+    .prin-grid{grid-template-columns:1fr;}
+    .prob-grid{grid-template-columns:1fr;}
+    .why-grid{grid-template-columns:1fr;}
+    .vs-grid{grid-template-columns:1fr;}
+    .vs-arrow{transform:rotate(90deg);padding:2px 0;}
+    .src-grid{grid-template-columns:repeat(2,1fr);}
+    .cta{padding:28px 20px;}
+    .cta h2{font-size:20px;}
+    .foot{flex-direction:column;}
+    .foot .cols{gap:32px;}
   }
-
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:1}
-
-  /* NAV */
-  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(8,11,20,.72);border-bottom:1px solid var(--border)}
-  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-  .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.01em;font-size:17px;white-space:nowrap}
-  .brand .dot{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;position:relative;box-shadow:0 0 22px rgba(247,147,26,.45)}
-  .brand .dot::after{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:#0b1020}
-  .brand .dot .ring{position:absolute;inset:5px;border:1.5px solid rgba(11,16,32,.7);border-radius:50%}
-  .nav-links{display:flex;gap:6px;align-items:center}
-  .nav-links a{color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:500;padding:8px 13px;border-radius:9px;transition:.18s;white-space:nowrap}
-  .nav-links a:hover{color:var(--text);background:rgba(255,255,255,.05)}
-  .nav-cta{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#1a1205!important;font-weight:700!important;padding:9px 17px!important;box-shadow:0 6px 20px rgba(247,147,26,.3)}
-  .nav-cta:hover{transform:translateY(-1px);filter:brightness(1.05)}
-  @media(max-width:740px){.nav-links a:not(.nav-cta){display:none}}
-
-  /* generic reveal */
-  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
-  .reveal.in{opacity:1;transform:none}
-  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}.reveal.d5{transition-delay:.4s}
-
-  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--neon);background:var(--neon-soft);border:1px solid rgba(46,230,182,.25);padding:6px 13px;border-radius:100px;font-weight:500}
-  .eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--neon);box-shadow:0 0 0 0 rgba(46,230,182,.6);animation:pulseDot 2s infinite}
-  @keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(46,230,182,.5)}70%{box-shadow:0 0 0 9px rgba(46,230,182,0)}100%{box-shadow:0 0 0 0 rgba(46,230,182,0)}}
-
-  .section{padding:96px 0}
-  .sec-label{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;color:var(--brand);font-weight:600;text-transform:uppercase;margin-bottom:16px}
-  h2.title{font-size:clamp(28px,4.4vw,46px);font-weight:800;letter-spacing:-.02em;line-height:1.14;margin-bottom:18px}
-  .lead{font-size:clamp(16px,1.7vw,18.5px);color:var(--muted);max-width:620px;line-height:1.7}
-  .hl{color:var(--brand)}
-  .hl-n{color:var(--neon)}
-
-  /* HERO */
-  .hero{padding:64px 0 70px;position:relative}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:34px}}
-  h1.hero-h{font-size:clamp(34px,5.6vw,62px);font-weight:800;letter-spacing:-.03em;line-height:1.08;margin:22px 0 10px}
-  .type-line{min-height:1.2em;display:block}
-  .caret{display:inline-block;width:3px;height:.92em;background:var(--brand);margin-left:4px;vertical-align:-2px;animation:blink 1s steps(2) infinite;border-radius:2px}
-  @keyframes blink{50%{opacity:0}}
-  .hero-sub{font-size:clamp(16px,1.8vw,19px);color:var(--muted);margin:18px 0 30px;max-width:520px;line-height:1.7}
-  .hero-sub b{color:var(--text);font-weight:600}
-  .cta-row{display:flex;gap:13px;flex-wrap:wrap;align-items:center}
-  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:15.5px;padding:14px 24px;border-radius:13px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:.2s;font-family:var(--sans);white-space:nowrap}
-  .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#1a1205;box-shadow:0 10px 30px rgba(247,147,26,.32)}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(247,147,26,.42)}
-  .btn-ghost{background:rgba(255,255,255,.04);border-color:var(--border-strong);color:var(--text)}
-  .btn-ghost:hover{background:rgba(255,255,255,.09);transform:translateY(-2px)}
-  .trust{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap}
-  .trust div{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted)}
-  .trust .ck{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--neon-soft);border:1px solid rgba(46,230,182,.3);flex-shrink:0}
-  .trust .ck::before{content:"";display:block;width:9px;height:5px;border-left:2px solid var(--neon);border-bottom:2px solid var(--neon);transform:rotate(-45deg) translateY(-1px)}
-
-  /* RADAR */
-  .radar-stage{display:grid;place-items:center;position:relative}
-  .radar{position:relative;width:min(420px,86vw);aspect-ratio:1;border-radius:50%}
-  .radar .ring{position:absolute;inset:0;border:1px solid rgba(46,230,182,.16);border-radius:50%}
-  .radar .ring.r2{inset:14%}.radar .ring.r3{inset:28%}.radar .ring.r4{inset:42%}
-  .radar .cross{position:absolute;background:rgba(46,230,182,.12)}
-  .radar .cross.h{left:0;right:0;top:50%;height:1px}
-  .radar .cross.v{top:0;bottom:0;left:50%;width:1px}
-  .radar .diag{position:absolute;inset:0;border-radius:50%}
-  .radar .diag span{position:absolute;left:50%;top:50%;width:50%;height:1px;background:rgba(46,230,182,.08);transform-origin:left center}
-  .radar .sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(46,230,182,.42),rgba(46,230,182,.05) 40deg,transparent 90deg,transparent 360deg);animation:spin 4.4s linear infinite;mask:radial-gradient(circle,#000 99%,transparent 100%)}
-  @keyframes spin{to{transform:rotate(360deg)}}
-  .radar .glowring{position:absolute;inset:-2%;border-radius:50%;box-shadow:inset 0 0 60px rgba(46,230,182,.08),0 0 50px rgba(46,230,182,.07)}
-  .blip{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--brand);box-shadow:0 0 12px var(--brand);transform:translate(-50%,-50%);opacity:0;animation:blipIn .5s forwards}
-  .blip.n{background:var(--neon);box-shadow:0 0 12px var(--neon)}
-  .blip::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid currentColor;color:inherit;opacity:.4;animation:blipPulse 2.4s ease-out infinite}
-  @keyframes blipIn{to{opacity:1}}
-  @keyframes blipPulse{0%{transform:scale(.4);opacity:.7}100%{transform:scale(2.2);opacity:0}}
-  .radar-core{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:2px}
-  .radar-core .score{font-family:var(--mono);font-weight:800;font-size:clamp(54px,11vw,82px);line-height:1;letter-spacing:-.02em;background:linear-gradient(135deg,#fff,var(--neon));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .radar-core .score-l{font-family:var(--mono);font-size:12px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
-  .radar-core .score-state{margin-top:7px;font-size:13.5px;font-weight:700;color:var(--neon);background:var(--neon-soft);border:1px solid rgba(46,230,182,.3);border-radius:100px;padding:3px 13px;display:inline-block}
-  .radar-label{position:absolute;font-family:var(--mono);font-size:10.5px;color:var(--muted-2);letter-spacing:.05em;white-space:nowrap}
-
-  /* PROBLEM cards */
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  @media(max-width:820px){.grid-3{grid-template-columns:1fr}}
-  .card{background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:18px;padding:26px 24px;transition:.25s}
-  .card:hover{border-color:var(--border-strong);transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.35)}
-  .card .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:16px;background:var(--brand-soft);border:1px solid rgba(247,147,26,.22)}
-  .card h3{font-size:18.5px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
-  .card p{font-size:14.5px;color:var(--muted);line-height:1.65}
-
-  .vs{display:grid;grid-template-columns:1fr auto 1fr;gap:26px;align-items:center;margin-top:42px}
-  @media(max-width:820px){.vs{grid-template-columns:1fr;gap:16px}.vs .arrow{transform:rotate(90deg);justify-self:center}}
-  .panel{border-radius:20px;padding:30px 28px;border:1px solid var(--border)}
-  .panel.before{background:linear-gradient(180deg,#16121a,#0e0b12);border-color:rgba(255,93,108,.18)}
-  .panel.after{background:linear-gradient(180deg,#0e1a16,#0a130f);border-color:rgba(46,230,182,.22);box-shadow:0 0 50px rgba(46,230,182,.06)}
-  .panel .tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;padding:4px 11px;border-radius:7px;font-weight:600;display:inline-block;margin-bottom:16px}
-  .panel.before .tag{color:var(--red);background:rgba(255,93,108,.12)}
-  .panel.after .tag{color:var(--neon);background:var(--neon-soft)}
-  .panel h3{font-size:20px;font-weight:700;margin-bottom:14px}
-  .chip-cloud{display:flex;flex-wrap:wrap;gap:8px}
-  .chip{font-size:12.5px;font-family:var(--mono);color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--border);padding:6px 11px;border-radius:8px}
-  .panel.after .big-score{display:flex;align-items:baseline;gap:12px;margin:6px 0 4px}
-  .panel.after .big-score b{font-family:var(--mono);font-size:58px;font-weight:800;color:var(--neon);line-height:1}
-  .panel.after .big-score span{color:var(--muted);font-size:15px}
-  .arrow{font-size:30px;color:var(--brand);justify-self:center}
-
-  /* GAUGE */
-  .gauge-wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;margin-top:14px}
-  @media(max-width:860px){.gauge-wrap{grid-template-columns:1fr;gap:36px}}
-  .gauge{position:relative;width:100%;max-width:440px;margin:0 auto}
-  .gauge svg{width:100%;height:auto;overflow:visible}
-  .gauge-read{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%);text-align:center}
-  .gauge-read .gv{font-family:var(--mono);font-size:46px;font-weight:800;line-height:1;color:#fff}
-  .gauge-read .gl{font-size:13px;color:var(--muted);letter-spacing:.04em;margin-top:3px}
-  .zones{display:flex;flex-direction:column;gap:12px}
-  .zone{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 16px;border-radius:13px;border:1px solid var(--border);background:rgba(255,255,255,.02);transition:.25s;cursor:default}
-  .zone:hover{background:rgba(255,255,255,.045);border-color:var(--border-strong)}
-  .zone .sw{width:13px;height:13px;border-radius:4px}
-  .zone .zt{font-weight:700;font-size:15px}
-  .zone .zr{font-family:var(--mono);font-size:13px;color:var(--muted)}
-  .zone .zd{grid-column:2/4;font-size:13px;color:var(--muted);margin-top:-2px;line-height:1.5}
-
-  /* CATEGORIES bars */
-  .cats{display:flex;flex-direction:column;gap:16px;margin-top:8px}
-  .cat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
-  .cat-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:11px;gap:14px}
-  .cat-name{font-weight:700;font-size:16px;display:flex;align-items:center;gap:10px}
-  .cat-name .pct{font-family:var(--mono);color:var(--brand);font-weight:800;font-size:15px}
-  .cat-desc{font-size:13px;color:var(--muted)}
-  .bar{height:9px;border-radius:6px;background:rgba(255,255,255,.06);overflow:hidden}
-  .bar i{display:block;height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,var(--brand),var(--brand-2));transition:width 1.4s cubic-bezier(.16,1,.3,1)}
-  .cat:nth-child(2) .bar i{background:linear-gradient(90deg,#5b8def,#7fb0ff)}
-  .cat:nth-child(3) .bar i{background:linear-gradient(90deg,#2ee6b6,#6df0cf)}
-  .cat:nth-child(4) .bar i{background:linear-gradient(90deg,#ffc23d,#ffd877)}
-  .cat:nth-child(5) .bar i{background:linear-gradient(90deg,#b07bff,#cda6ff)}
-  .cat-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
-  .cat-tags span{font-family:var(--mono);font-size:11.5px;color:var(--muted);background:rgba(255,255,255,.035);border:1px solid var(--border);padding:4px 9px;border-radius:7px}
-
-  /* STEPS */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px;counter-reset:s}
-  @media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
-  @media(max-width:520px){
-    .steps{grid-template-columns:1fr}
-    /* 1컬럼 구간: 번호 배지 ↔ 제목 가로 배치, 설명은 아래 전체 폭 */
-    .step{display:flex;flex-wrap:wrap;align-items:center;column-gap:12px;row-gap:0}
-    .step .num{margin-bottom:0;flex-shrink:0}
-    .step h3{flex:1;margin-bottom:0;min-width:0;word-break:keep-all}
-    .step p{flex-basis:100%;margin-top:9px}
-  }
-  .step{background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:24px 22px;position:relative;overflow:hidden}
-  .step .num{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--brand);background:var(--brand-soft);width:34px;height:34px;border-radius:9px;display:grid;place-items:center;margin-bottom:16px}
-  .step h3{font-size:17px;font-weight:700;margin-bottom:7px}
-  .step p{font-size:13.5px;color:var(--muted);line-height:1.6}
-  .step .line{position:absolute;top:39px;right:-9px;width:18px;height:1px;background:var(--border-strong)}
-  @media(max-width:860px){.step .line{display:none}}
-
-  /* SOURCES */
-  .src-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
-  @media(max-width:760px){.src-grid{grid-template-columns:1fr 1fr}}
-  .src{background:var(--surface);border:1px solid var(--border);border-radius:13px;padding:18px 16px;text-align:center;transition:.22s}
-  .src:hover{border-color:var(--border-strong);background:var(--surface-2)}
-  .src .sn{font-weight:700;font-size:15px;margin-bottom:3px}
-  .src .sd{font-size:12px;color:var(--muted);font-family:var(--mono)}
-
-  /* VALUES */
-  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
-  @media(max-width:860px){.grid-4{grid-template-columns:1fr 1fr}}
-  @media(max-width:480px){.grid-4{grid-template-columns:1fr}}
-  .val{padding:24px 22px;border-radius:16px;border:1px solid var(--border);background:rgba(255,255,255,.02)}
-  .val .vi{font-size:24px;margin-bottom:13px;width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:var(--neon-soft);border:1px solid rgba(46,230,182,.22)}
-  .val h3{font-size:17px;font-weight:700;margin-bottom:7px}
-  .val p{font-size:13.5px;color:var(--muted);line-height:1.6}
-
-  /* STATS counter band */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:0 auto;padding:40px 36px;border:1px solid var(--border);border-radius:22px;background:linear-gradient(180deg,var(--surface),var(--bg-2));max-width:980px}
-  @media(max-width:760px){.stats{grid-template-columns:1fr 1fr;gap:30px 20px;padding:34px 24px}}
-  .stat{text-align:center}
-  .stat .n{font-family:var(--mono);font-size:clamp(34px,5vw,46px);font-weight:800;line-height:1;background:linear-gradient(135deg,#fff,var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .stat .l{font-size:13.5px;color:var(--muted);margin-top:9px}
-
-  /* CTA */
-  .cta-final{text-align:center;padding:84px 36px;border-radius:28px;border:1px solid rgba(247,147,26,.22);background:radial-gradient(ellipse 90% 130% at 50% 0%,rgba(247,147,26,.14),transparent 60%),linear-gradient(180deg,var(--surface),var(--bg-2));position:relative;overflow:hidden}
-  .cta-final::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 120%,rgba(46,230,182,.12),transparent 55%)}
-  .cta-final>*{position:relative}
-  .cta-final h2{font-size:clamp(28px,4.6vw,44px);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-bottom:16px}
-  .cta-final p{color:var(--muted);font-size:17px;max-width:520px;margin:0 auto 30px}
-
-  /* FOOTER */
-  footer{border-top:1px solid var(--border);padding:54px 0 40px;margin-top:30px;position:relative;z-index:1}
-  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:34px}
-  @media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
-  .foot-grid h4{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted-2);margin-bottom:14px;font-family:var(--mono)}
-  .foot-grid a{display:block;color:var(--muted);text-decoration:none;font-size:14.5px;padding:5px 0;transition:.18s}
-  .foot-grid a:hover{color:var(--text)}
-  .foot-about{font-size:14px;color:var(--muted);max-width:330px;line-height:1.7;margin-top:14px}
-  .disclaimer{margin-top:38px;padding:18px 20px;border-radius:13px;background:rgba(255,93,108,.05);border:1px solid rgba(255,93,108,.16);font-size:13px;color:var(--muted);line-height:1.65}
-  .disclaimer b{color:#ffb0b8}
-  .copy{margin-top:26px;font-size:12.5px;color:var(--muted-2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--mono)}
-
-  /* ── 모바일 공통 ── */
-  @media(max-width:768px){
-    html{overflow-x:hidden;max-width:100vw;scroll-behavior:smooth}
-    body{overflow-x:hidden}
-    *{min-width:0;box-sizing:border-box}
-    .wrap{padding:0 16px}
-
-    /* 네비 CTA */
-    .nav-cta{padding:7px 12px!important;font-size:13px!important;white-space:nowrap}
-    .nav-inner{padding:12px 16px}
-
-    /* 히어로 */
-    .hero{padding:36px 0 40px}
-    .hero-sub{max-width:100%!important;word-break:keep-all;overflow-wrap:break-word}
-    .cta-row{flex-direction:column;gap:10px;align-items:stretch}
-    .cta-row .btn{width:100%;justify-content:center;font-size:14.5px;padding:13px 18px}
-    .trust{flex-wrap:wrap;gap:8px 14px}
-    .trust div{font-size:12.5px}
-
-    /* 섹션 패딩 */
-    .section{padding:56px 0}
-
-    /* stats */
-    .stats{padding:28px 18px;gap:20px 14px;max-width:100%}
-    .stat .n{font-size:clamp(26px,7vw,40px)}
-
-    /* CTA final */
-    .cta-final{padding:52px 20px;border-radius:18px}
-    .cta-final h2{font-size:clamp(22px,5.5vw,36px)}
-    .cta-final p{font-size:15px;max-width:100%}
-    .cta-final .cta-row{flex-direction:column;align-items:stretch}
-    .cta-final .btn{width:100%;justify-content:center}
-
-    /* 레이더 라벨 overflow 방지 */
-    .radar-label{display:none}
-
-    /* cards */
-    .card{padding:18px}
-    .panel{padding:22px 18px}
-
-    /* ── 모바일 1컬럼: 아이콘 ↔ 제목 가로 배치, 설명은 아래 전체 폭 (카드 높이 축소) ── */
-    /* .grid-3는 820px에서 1컬럼이지만 실제 모바일(≤768px)에서만 가로 배치 적용 */
-    .card{display:flex;flex-wrap:wrap;align-items:center;column-gap:13px;row-gap:0}
-    .card .ic{margin-bottom:0;flex-shrink:0}
-    .card h3{flex:1;margin-bottom:0;min-width:0;word-break:keep-all}
-    .card p{flex-basis:100%;margin-top:11px}
-
-    /* 면책조항 */
-    .disclaimer{font-size:12px;padding:14px 16px}
-  }
-
   @media(max-width:480px){
-    .nav-cta{font-size:12px!important;padding:6px 10px!important}
-    .eyebrow{font-size:11.5px;padding:5px 11px}
-    h2.title{word-break:keep-all}
-    .cat{padding:14px 16px}
-    .step{padding:18px 16px}
-    .copy{flex-direction:column;gap:6px;font-size:11px}
-    .foot-grid h4{margin-bottom:10px}
-
-    /* 1컬럼 구간: 4가지 약속 카드도 아이콘 ↔ 제목 가로 배치, 설명은 아래 전체 폭 */
-    .val{display:flex;flex-wrap:wrap;align-items:center;column-gap:13px;row-gap:0}
-    .val .vi{margin-bottom:0;flex-shrink:0}
-    .val h3{flex:1;margin-bottom:0;min-width:0;word-break:keep-all}
-    .val p{flex-basis:100%;margin-top:10px}
+    .content{padding:16px 12px 48px;}
+    .ab-hero h1{font-size:22px;}
+    .stat-grid{grid-template-columns:1fr;}
+    .stat-cell .v{font-size:26px;}
+    .flow-grid{grid-template-columns:1fr;}
+    .who-grid{grid-template-columns:1fr;}
   }
-
-  @media(prefers-reduced-motion:reduce){
-    *{animation:none!important}
-    .reveal{opacity:1;transform:none}
-    html{scroll-behavior:auto}
+  @media(max-width:380px){
+    .content{padding:14px 10px 44px;}
   }
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898078056285143" crossorigin="anonymous"></script>
-<script src="./btc-i18n.js" defer></script>
-<!-- 구조화 데이터: 소개 페이지 + 운영 주체 (구글 리치결과) -->
+<!-- 구조화 데이터: 소개 페이지 + 운영 주체 (기존 about.html에서 이식) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -357,540 +288,452 @@
 </script>
 </head>
 <body>
-<div class="bg-field" aria-hidden="true">
-  <div class="glow g1"></div>
-  <div class="glow g2"></div>
-  <div class="grid"></div>
-</div>
 
-<header class="nav">
-  <div class="nav-inner">
-    <div class="brand"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></div>
-    <nav class="nav-links">
-      <a href="#what" data-en="About" data-zh="介绍">소개</a>
-      <a href="#score" data-en="The Score" data-zh="查看评分">점수 보기</a>
-      <a href="#how" data-en="How It Works" data-zh="运作方式">작동 방식</a>
-      <a href="#sources" data-en="Data" data-zh="数据">데이터</a>
-      <a class="nav-cta" href="index.html" data-en="Dashboard →" data-zh="仪表盘 →">대시보드 →</a>
+<div class="layout" id="layout">
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <!-- ── 사이드바 (index.html 그대로, active=서비스 소개) ── -->
+  <aside class="sidebar">
+    <a class="sb-brand" href="index.html">
+      <div class="sb-logo">₿</div>
+      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+    </a>
+    <div class="sb-menu-h">MENU</div>
+    <nav class="sb-nav">
+      <a href="index.html"><span class="dot"></span>대시보드</a>
+      <a href="guide.html"><span class="dot"></span>지표 가이드</a>
+      <a class="active" href="about.html"><span class="dot"></span>서비스 소개</a>
+      <a href="contact.html"><span class="dot"></span>문의</a>
     </nav>
-  </div>
-</header>
+    <div class="sb-live">
+      <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
+      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
+    </div>
+    <!-- 방문자 카운터 (Firebase) -->
+    <div class="sb-visitor" id="visitorStrip">
+      <div class="vh">VISITORS</div>
+      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
+    </div>
+    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+  </aside>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <span class="eyebrow reveal in"><span class="pulse"></span><span data-en="Free · No sign-up · Auto-updated daily" data-zh="免费 · 无需注册 · 每日自动更新">무료 · 회원가입 없음 · 매일 자동 갱신</span></span>
-        <h1 class="hero-h">
-          <span class="type-line"><span id="type" data-i18n-html="1" data-en="Is now the time<br>to buy Bitcoin?" data-zh="现在，是买入<br>比特币的时机吗？">지금, 비트코인을<br>살 때일까요?</span><span class="caret"></span></span>
-        </h1>
-        <p class="hero-sub reveal d1" data-i18n-html="1" data-en="We analyze 25+ market indicators automatically every day and tell you, in <b>a single 0–100 score</b>, what the market looks like — <b>at a glance, without complex charts or jargon</b>." data-zh="我们每天自动分析 25 项以上市场指标，用<b>一个 0~100 分的评分</b>告诉您当前市场状态 — <b>无需复杂图表和专业术语，一眼看懂</b>。">25개 이상의 시장 지표를 매일 자동으로 분석해 <b>0~100점 하나의 점수</b>로 알려드립니다. 복잡한 차트와 전문 용어 없이, <b>지금 시장이 어떤 상태인지</b> 한 눈에.</p>
-        <div class="cta-row reveal d2">
-          <a class="btn btn-primary" href="index.html" data-i18n-html="1" data-en="See Today's Score <span>→</span>" data-zh="查看今日评分 <span>→</span>">오늘의 점수 보러가기 <span>→</span></a>
-          <a class="btn btn-ghost" href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Get Telegram Alerts" data-zh=" 接收 Telegram 通知"> 텔레그램 알림 받기</a>
-        </div>
-        <div class="trust reveal d3">
-          <div><span class="ck"></span> <span data-en="No sign-up needed" data-zh="无需注册">회원가입 불필요</span></div>
-          <div><span class="ck"></span> <span data-en="100% free" data-zh="100% 免费">100% 무료</span></div>
-          <div><span class="ck"></span> <span data-en="Updated daily at 9:05 AM" data-zh="每日上午 9:05 更新">매일 오전 9:05 갱신</span></div>
-        </div>
+  <!-- ── 메인 ── -->
+  <div class="main">
+    <!-- 모바일 상단 바 -->
+    <div class="mobile-bar">
+      <a class="mb-brand" href="index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
+    </div>
+    <!-- 데스크톱 상단 바 -->
+    <div class="topbar">
+      <div class="crumb">Home <span style="color:var(--m3)">›</span> <b>서비스 소개</b></div>
+      <div class="right">
+        <a href="index.html" style="text-decoration:none;color:var(--green);font-size:13px;font-weight:600;">← 대시보드로</a>
       </div>
-      <div class="radar-stage reveal d2">
-        <div class="radar" id="radar">
-          <div class="glowring"></div>
-          <div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div><div class="ring r4"></div>
-          <div class="cross h"></div><div class="cross v"></div>
-          <div class="diag" id="diag"></div>
-          <div class="sweep"></div>
-          <div class="radar-core">
-            <div class="score-l" data-en="Today's Timing" data-zh="今日时机">오늘의 타이밍</div>
-            <div class="score"><span id="heroScore">0</span></div>
-            <div class="score-state" data-en="Mild Accumulation" data-zh="温和吸筹">완만한 매집</div>
+    </div>
+
+    <div class="content">
+
+      <!-- 히어로 -->
+      <div class="ab-hero">
+        <div class="eyebrow">ABOUT</div>
+        <h1>감정이 아니라 데이터로<br>비트코인 타이밍을 읽습니다</h1>
+        <p>BTC 타이밍 레이더는 매일 25개 이상의 시장 지표를 자동으로 수집·점수화해 하나의 종합 점수로 보여주는 무료 정보 서비스입니다. 차트 하나에 매달리는 대신 <b>"지금 시장은 어느 계절인가?"</b>라는 질문에 차분히 답하는 것을 목표로 합니다.</p>
+      </div>
+
+      <!-- 스탯 4개 -->
+      <div class="stat-grid">
+        <div class="stat-cell"><div class="v">25+</div><div class="k">추적 지표</div></div>
+        <div class="stat-cell"><div class="v">5</div><div class="k">분석 카테고리</div></div>
+        <div class="stat-cell"><div class="v">09:05</div><div class="k">매일 갱신 (KST)</div></div>
+        <div class="stat-cell"><div class="v">무료</div><div class="k">회원가입 불필요</div></div>
+      </div>
+
+      <!-- 왜 필요한가요 (불편함 3종) -->
+      <div>
+        <div class="sec-h"><h2>왜 필요한가요</h2><span class="hint">비트코인 시장을 보려면 사이트 수십 개를 돌아다녀야 했죠</span></div>
+        <p class="lead-tx">RSI는 트레이딩뷰에서, 공포탐욕지수는 또 다른 사이트에서, 온체인 데이터는 글래스노드에서… 흩어진 정보를 모아 하나의 판단으로 연결하는 건 시간도, 전문 지식도 많이 듭니다.</p>
+        <div class="prob-grid" style="margin-top:16px">
+          <div class="prob-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="4" cy="4" r="2"/><circle cx="18" cy="4" r="2"/><circle cx="11" cy="11" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><line x1="6" y1="4" x2="9" y2="9" stroke-opacity=".45"/><line x1="16" y1="4" x2="13" y2="9" stroke-opacity=".45"/><line x1="9" y1="13" x2="6" y2="16" stroke-opacity=".45"/><line x1="13" y1="13" x2="16" y2="16" stroke-opacity=".45"/></svg></div>
+            <div class="t">정보가 흩어져 있어요</div>
+            <div class="d">가격, 심리, 온체인, 파생상품, 거시경제… 지표마다 봐야 할 사이트가 다릅니다.</div>
+          </div>
+          <div class="prob-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 6 3 11 7 16"/><polyline points="15 6 19 11 15 16"/><line x1="12" y1="5" x2="10" y2="17" stroke-dasharray="2 2.5"/></svg></div>
+            <div class="t">용어가 너무 어려워요</div>
+            <div class="d">MVRV-Z, SOPR, 펀딩비… 뜻을 이해하기도 전에 지쳐버리기 쉽습니다.</div>
+          </div>
+          <div class="prob-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><polyline points="11 6.5 11 11 14.5 13"/></svg></div>
+            <div class="t">볼 시간이 없어요</div>
+            <div class="d">매일 수십 개 지표를 확인하고 종합하는 건 사실상 전업 투자자의 영역이죠.</div>
+          </div>
+        </div>
+
+        <!-- BEFORE / AFTER 비교 -->
+        <div class="vs-grid">
+          <div class="vs-panel before">
+            <span class="vtag">BEFORE — 흩어진 정보</span>
+            <div class="vh">매일 일일이 확인</div>
+            <div class="vs-chips">
+              <span>TradingView</span><span>Glassnode</span><span>CoinGlass</span><span>Fear&amp;Greed</span><span>FRED</span><span>Deribit</span><span>CoinGecko</span><span>DefiLlama</span><span>+ 그 외 다수…</span>
+            </div>
+          </div>
+          <div class="vs-arrow">→</div>
+          <div class="vs-panel after">
+            <span class="vtag">AFTER — 하나의 점수</span>
+            <div class="vh">5초면 끝</div>
+            <div class="vs-bigscore"><b>62</b><span>/ 100점 · 완만한 매집</span></div>
+            <div class="vd">25개+ 지표를 종합한 오늘의 단 하나의 숫자.</div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- WHAT / PROBLEM -->
-<section class="section" id="what">
-  <div class="wrap">
-    <div class="sec-label reveal" data-en="Why You Need It" data-zh="为何需要">왜 필요한가요</div>
-    <h2 class="title reveal d1" data-i18n-html="1" data-en="To read the Bitcoin market, you had to hop across <span class=&quot;hl&quot;>dozens of sites</span>." data-zh="为了看懂比特币市场，你不得不在<span class=&quot;hl&quot;>几十个网站</span>之间来回奔波。">비트코인 시장을 보려면<br><span class="hl">사이트 수십 개</span>를 돌아다녀야 했죠.</h2>
-    <p class="lead reveal d2" data-en="RSI on TradingView, the Fear &amp; Greed Index on another site, on-chain data on Glassnode… Gathering scattered information and connecting it into a single judgment takes a lot of time and expertise." data-zh="RSI 在 TradingView，恐惧贪婪指数在另一个网站，链上数据在 Glassnode……把分散的信息汇集起来并连成一个判断，既费时间又需要专业知识。">RSI는 트레이딩뷰에서, 공포탐욕지수는 또 다른 사이트에서, 온체인 데이터는 글래스노드에서… 흩어진 정보를 모아 하나의 판단으로 연결하는 건 시간도, 전문 지식도 많이 듭니다.</p>
-
-    <div class="grid-3" style="margin-top:38px">
-      <div class="card reveal d1">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="4" cy="4" r="2"/><circle cx="18" cy="4" r="2"/><circle cx="11" cy="11" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><line x1="6" y1="4" x2="9" y2="9" stroke-opacity=".45"/><line x1="16" y1="4" x2="13" y2="9" stroke-opacity=".45"/><line x1="9" y1="13" x2="6" y2="16" stroke-opacity=".45"/><line x1="13" y1="13" x2="16" y2="16" stroke-opacity=".45"/></svg></div>
-        <h3 data-en="Information is scattered" data-zh="信息分散各处">정보가 흩어져 있어요</h3>
-        <p data-en="Price, sentiment, on-chain, derivatives, macro… each indicator lives on a different site." data-zh="价格、情绪、链上、衍生品、宏观经济……每个指标要看的网站都不一样。">가격, 심리, 온체인, 파생상품, 거시경제… 지표마다 봐야 할 사이트가 다릅니다.</p>
-      </div>
-      <div class="card reveal d2">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 6 3 11 7 16"/><polyline points="15 6 19 11 15 16"/><line x1="12" y1="5" x2="10" y2="17" stroke-dasharray="2 2.5"/></svg></div>
-        <h3 data-en="The terms are too hard" data-zh="术语太难懂">용어가 너무 어려워요</h3>
-        <p data-en="MVRV-Z, SOPR, funding rate… it's easy to get worn out before even understanding what they mean." data-zh="MVRV-Z、SOPR、资金费率……还没弄懂含义就容易先累垮了。">MVRV-Z, SOPR, 펀딩비… 뜻을 이해하기도 전에 지쳐버리기 쉽습니다.</p>
-      </div>
-      <div class="card reveal d3">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><polyline points="11 6.5 11 11 14.5 13"/></svg></div>
-        <h3 data-en="No time to watch it" data-zh="没时间盯盘">볼 시간이 없어요</h3>
-        <p data-en="Checking and synthesizing dozens of indicators every day is practically a full-time investor's job." data-zh="每天查看并综合几十个指标，实际上是全职投资者才能做到的事。">매일 수십 개 지표를 확인하고 종합하는 건 사실상 전업 투자자의 영역이죠.</p>
-      </div>
-    </div>
-
-    <div class="vs">
-      <div class="panel before reveal d1">
-        <span class="tag" data-en="BEFORE — Scattered Info" data-zh="之前 — 信息分散">BEFORE — 흩어진 정보</span>
-        <h3 data-en="Check each one daily " data-zh="每天逐个查看 ">매일 일일이 확인 </h3>
-        <div class="chip-cloud">
-          <span class="chip">TradingView</span><span class="chip">Glassnode</span><span class="chip">CoinGlass</span><span class="chip">Fear&amp;Greed</span><span class="chip">FRED</span><span class="chip">Deribit</span><span class="chip">CoinGecko</span><span class="chip">DefiLlama</span><span class="chip" data-en="+ many more…" data-zh="+ 其余众多…">+ 그 외 다수…</span>
+      <!-- 동작 4단계 (상세) -->
+      <div>
+        <div class="sec-h"><h2>어떻게 동작하나요</h2><span class="hint">하루 한 번, 4단계로 자동 분석합니다</span></div>
+        <p class="lead-tx">매일 오전 9시 5분, 모든 데이터를 수집해 점수로 변환하는 과정을 자동화했습니다.</p>
+        <div class="flow-grid" style="margin-top:16px">
+          <div class="flow-cell"><div class="num">01</div><div class="t">수집</div><div class="d">전 세계 공개 API에서 25개+ 지표를 자동으로 가져옵니다.</div></div>
+          <div class="flow-cell"><div class="num">02</div><div class="t">정규화</div><div class="d">제각각인 단위를 0~100점 척도로 통일합니다.</div></div>
+          <div class="flow-cell"><div class="num">03</div><div class="t">가중 합산</div><div class="d">카테고리별 중요도를 반영해 종합 점수를 계산합니다.</div></div>
+          <div class="flow-cell"><div class="num">04</div><div class="t">해석</div><div class="d">점수·구간·전문가 요약을 한 페이지로 정리합니다.</div></div>
         </div>
       </div>
-      <div class="arrow reveal d2">→</div>
-      <div class="panel after reveal d3">
-        <span class="tag" data-en="AFTER — One Score" data-zh="之后 — 一个评分">AFTER — 하나의 점수</span>
-        <h3 data-en="Done in 5 seconds " data-zh="5 秒搞定 ">5초면 끝 </h3>
-        <div class="big-score"><b id="afterScore">0</b><span data-en="/ 100 · Mild Accumulation" data-zh="/ 100 分 · 温和吸筹">/ 100점 · 완만한 매집</span></div>
-        <p style="color:var(--muted);font-size:14px" data-en="Today's single number, synthesizing 25+ indicators." data-zh="综合 25 项以上指标的今日唯一数字。">25개+ 지표를 종합한 오늘의 단 하나의 숫자.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- STATS -->
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    <div class="stats reveal">
-      <div class="stat"><div class="n"><span class="count" data-to="25" data-suffix="+">0</span></div><div class="l" data-en="Indicators analyzed" data-zh="分析指标数">분석 지표 수</div></div>
-      <div class="stat"><div class="n"><span class="count" data-to="5">0</span></div><div class="l" data-en="Analysis categories" data-zh="分析类别">분석 카테고리</div></div>
-      <div class="stat"><div class="n"><span class="count" data-to="1">0</span><span data-en="x" data-zh="次">회</span></div><div class="l" data-en="Auto-update daily" data-zh="每日自动更新">매일 자동 갱신</div></div>
-      <div class="stat"><div class="n">₩<span class="count" data-to="0">0</span></div><div class="l" data-en="Usage fee" data-zh="使用费用">이용 요금</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- SCORE / GAUGE -->
-<section class="section" id="score" style="background:linear-gradient(180deg,transparent,rgba(46,230,182,.025),transparent)">
-  <div class="wrap">
-    <div class="sec-label reveal" data-en="How to Read the Score" data-zh="如何解读评分">점수 읽는 법</div>
-    <h2 class="title reveal d1" data-i18n-html="1" data-en="Closer to 0 means <span class=&quot;hl-n&quot;>caution</span>,<br>closer to 100 means <span class=&quot;hl&quot;>buy-friendly</span>." data-zh="越接近 0 越需<span class=&quot;hl-n&quot;>谨慎</span>，<br>越接近 100 越<span class=&quot;hl&quot;>利于买入</span>。">0점에 가까울수록 <span class="hl-n">신중</span>,<br>100점에 가까울수록 <span class="hl">매수 우호적</span>.</h2>
-    <p class="lead reveal d2" data-en="We divide the score that synthesizes all indicators into four zones for intuitive interpretation. The higher the number, the more historically favorable the zone has been for accumulation (dollar-cost averaging)." data-zh="我们将综合所有指标的评分划分为四个区间，便于直观解读。数字越高，历史上越是利于吸筹（分批买入）的区间。">모든 지표를 종합한 점수를 4개 구간으로 나눠 직관적으로 해석해 드립니다. 숫자가 높을수록 역사적으로 매집(분할 매수)에 우호적이었던 구간입니다.</p>
-
-    <div class="gauge-wrap">
-      <div class="gauge reveal d2">
-        <svg viewBox="0 0 400 250" id="gaugeSvg">
-          <defs>
-            <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#ff5d6c"/>
-              <stop offset="0.42" stop-color="#ffc23d"/>
-              <stop offset="0.62" stop-color="#a3e635"/>
-              <stop offset="1" stop-color="#2ee6b6"/>
-            </linearGradient>
-          </defs>
-          <path d="M40 200 A160 160 0 0 1 360 200" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="26" stroke-linecap="round"/>
-          <path d="M40 200 A160 160 0 0 1 360 200" fill="none" stroke="url(#gaugeGrad)" stroke-width="26" stroke-linecap="round" id="gaugeArc"/>
-          <circle id="gaugeDot" cx="40" cy="200" r="13" fill="#fff" stroke="rgba(8,11,20,.6)" stroke-width="4" style="filter:drop-shadow(0 0 9px rgba(255,255,255,.5))"/>
-          <text x="40" y="232" fill="#6c7795" font-size="13" font-family="var(--mono)" text-anchor="middle">0</text>
-          <text x="360" y="232" fill="#6c7795" font-size="13" font-family="var(--mono)" text-anchor="middle">100</text>
-        </svg>
-        <div class="gauge-read"><div class="gv"><span id="gaugeVal">0</span></div><div class="gl" data-en="Today's composite score · Mild Accumulation" data-zh="今日综合评分 · 温和吸筹">오늘의 종합 점수 · 완만한 매집</div></div>
-      </div>
-      <div class="zones">
-        <div class="zone reveal d1"><span class="sw" style="background:#2ee6b6"></span><span class="zt" data-en="Strong Accumulation" data-zh="强力吸筹">강한 매집</span><span class="zr">70 – 100</span><span class="zd" data-en="Many indicators point to a buying zone. Historically a zone favorable for dollar-cost averaging." data-zh="多数指标指向买入区间。历史上是利于分批买入的区间。">다수 지표가 매수 구간을 가리킵니다. 역사적으로 분할 매수에 우호적인 구간.</span></div>
-        <div class="zone reveal d2"><span class="sw" style="background:#a3e635"></span><span class="zt" data-en="Mild Accumulation" data-zh="温和吸筹">완만한 매집</span><span class="zr">55 – 69</span><span class="zd" data-en="Buy signals prevail but conviction is not strong. A small, phased entry may be considered." data-zh="买入信号占优但信心不强。可考虑小额分批进场。">매수 신호가 우세하나 확신은 강하지 않습니다. 소액 분할 진입 고려 가능.</span></div>
-        <div class="zone reveal d3"><span class="sw" style="background:#ffc23d"></span><span class="zt" data-en="Wait" data-zh="观望">관망</span><span class="zr">40 – 54</span><span class="zd" data-en="Buy and sell signals are mixed. Waiting is advised until a clear direction emerges." data-zh="买卖信号交织。建议观望，直至出现明确方向。">매수·매도 신호가 혼재합니다. 명확한 방향이 나올 때까지 관망 권장.</span></div>
-        <div class="zone reveal d4"><span class="sw" style="background:#ff5d6c"></span><span class="zt" data-en="Bearish Caution" data-zh="弱势警惕">약세 주의</span><span class="zr">0 – 39</span><span class="zd" data-en="Many indicators are negative. Focus on risk management rather than new entries." data-zh="多数指标偏负面。请专注于风险管理，而非新建仓位。">다수 지표가 부정적입니다. 신규 진입보다 리스크 관리에 집중하세요.</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="section" id="how">
-  <div class="wrap">
-    <div class="sec-label reveal" data-en="How It Works" data-zh="运作方式">작동 방식</div>
-    <h2 class="title reveal d1" data-i18n-html="1" data-en="Once a day, it analyzes automatically in <span class=&quot;hl&quot;>4 steps</span>." data-zh="每天一次，分 <span class=&quot;hl&quot;>4 个步骤</span>自动分析。">하루 한 번, <span class="hl">4단계</span>로 자동 분석합니다.</h2>
-    <p class="lead reveal d2" data-en="At 9:05 AM every day, we've automated the process of collecting all the data and converting it into a score." data-zh="每天上午 9 点 5 分，我们将收集所有数据并转换为评分的过程实现了自动化。">매일 오전 9시 5분, 모든 데이터를 수집해 점수로 변환하는 과정을 자동화했습니다.</p>
-
-    <div class="steps">
-      <div class="step reveal d1"><div class="num">01</div><div class="line"></div><h3 data-en="Collect" data-zh="收集">수집</h3><p data-en="Automatically pulls 25+ indicators from public APIs worldwide." data-zh="自动从全球公开 API 获取 25 项以上指标。">전 세계 공개 API에서 25개+ 지표를 자동으로 가져옵니다.</p></div>
-      <div class="step reveal d2"><div class="num">02</div><div class="line"></div><h3 data-en="Normalize" data-zh="归一化">정규화</h3><p data-en="Unifies disparate units onto a 0–100 scale." data-zh="将各异的单位统一到 0~100 的标度。">제각각인 단위를 0~100점 척도로 통일합니다.</p></div>
-      <div class="step reveal d3"><div class="num">03</div><div class="line"></div><h3 data-en="Weighted Sum" data-zh="加权汇总">가중 합산</h3><p data-en="Calculates the composite score reflecting each category's importance." data-zh="结合各类别的重要度计算综合评分。">카테고리별 중요도를 반영해 종합 점수를 계산합니다.</p></div>
-      <div class="step reveal d4"><div class="num">04</div><h3 data-en="Interpret" data-zh="解读">해석</h3><p data-en="Organizes the score, zone, and expert summary onto a single page." data-zh="将评分、区间、专家摘要整理在一个页面上。">점수·구간·전문가 요약을 한 페이지로 정리합니다.</p></div>
-    </div>
-
-    <h3 style="font-size:20px;font-weight:700;margin:54px 0 6px" class="reveal" data-en="Here's how the composite score is built" data-zh="综合评分如此构成">종합 점수는 이렇게 구성됩니다</h3>
-    <p style="color:var(--muted);font-size:14.5px;margin-bottom:24px" class="reveal d1" data-en="Each category is weighted and summed. The longer the bar, the greater its impact on the score." data-zh="对各类别加权后汇总。柱状越长，对评分的影响越大。">각 카테고리에 가중치를 적용해 합산합니다. 막대가 길수록 점수에 큰 영향을 줍니다.</p>
-    <div class="cats">
-      <div class="cat reveal d1">
-        <div class="cat-top"><div class="cat-name"><span data-en="Cycle · Sentiment" data-zh="周期 · 心理">사이클 · 심리</span> <span class="pct">30%</span></div><div class="cat-desc" data-en="Identifies market phase" data-zh="判别市场阶段">시장 단계 판별</div></div>
-        <div class="bar"><i data-w="100"></i></div>
-        <div class="cat-tags"><span data-en="Fear &amp; Greed" data-zh="恐惧贪婪">공포탐욕</span><span data-en="Halving Cycle" data-zh="减半周期">반감기 사이클</span><span>MVRV-Z</span><span>NUPL</span><span>Pi Cycle</span></div>
-      </div>
-      <div class="cat reveal d1">
-        <div class="cat-top"><div class="cat-name"><span data-en="Technical Analysis" data-zh="技术分析">기술적 분석</span> <span class="pct" style="color:#7fb0ff">25%</span></div><div class="cat-desc" data-en="Price trend strength" data-zh="价格趋势强度">가격 추세 강도</div></div>
-        <div class="bar"><i data-w="83"></i></div>
-        <div class="cat-tags"><span data-en="RSI D/W/M" data-zh="RSI 日/周/月">RSI 일/주/월</span><span data-en="MA200 ratio" data-zh="MA200 比率">MA200 비율</span><span data-en="Volatility" data-zh="波动率">변동성</span><span>MACD</span></div>
-      </div>
-      <div class="cat reveal d2">
-        <div class="cat-top"><div class="cat-name"><span data-en="Derivatives" data-zh="衍生品">파생상품</span> <span class="pct" style="color:#6df0cf">20%</span></div><div class="cat-desc" data-en="Leverage overheating" data-zh="杠杆过热度">레버리지 과열도</div></div>
-        <div class="bar"><i data-w="66"></i></div>
-        <div class="cat-tags"><span data-en="Funding Rate" data-zh="资金费率">펀딩비</span><span data-en="Open Interest" data-zh="未平仓合约">미결제약정</span><span data-en="Long/Short Ratio" data-zh="多空比">롱숏비율</span><span data-en="Taker Ratio" data-zh="主动成交比">테이커비율</span></div>
-      </div>
-      <div class="cat reveal d2">
-        <div class="cat-top"><div class="cat-name"><span data-en="On-Chain" data-zh="链上">온체인</span> <span class="pct" style="color:#ffd877">15%</span></div><div class="cat-desc" data-en="Actual holder behavior" data-zh="实际持有者行为">실제 보유자 행동</div></div>
-        <div class="bar"><i data-w="50"></i></div>
-        <div class="cat-tags"><span>SOPR</span><span>LTH/STH</span><span data-en="Exchange Inflow" data-zh="交易所流入">거래소 유입</span><span>Puell</span><span data-en="Hash Rate" data-zh="算力">해시레이트</span></div>
-      </div>
-      <div class="cat reveal d3">
-        <div class="cat-top"><div class="cat-name"><span data-en="Macro" data-zh="宏观">매크로</span> <span class="pct" style="color:#cda6ff">10%</span></div><div class="cat-desc" data-en="External environment" data-zh="外部环境">외부 환경</div></div>
-        <div class="bar"><i data-w="33"></i></div>
-        <div class="cat-tags"><span>DXY</span><span>S&amp;P500</span><span data-en="Kimchi Premium" data-zh="泡菜溢价">김치프리미엄</span><span data-en="ETF Inflow" data-zh="ETF 流入">ETF 유입</span></div>
-      </div>
-    </div>
-
-    <h3 style="font-size:20px;font-weight:700;margin:54px 0 6px" class="reveal" data-en="Why we gathered these five categories" data-zh="为何汇集这五个类别">이 다섯 카테고리를 왜 모았나요?</h3>
-    <p style="color:var(--muted);font-size:14.5px;margin-bottom:24px;max-width:760px" class="reveal d1" data-en="A single indicator only captures one facet of the market. Price alone can't tell whether the move is driven by overheated leverage or by real on-chain accumulation. By blending five angles, we aim to reduce the blind spots of any one number." data-zh="单一指标只能反映市场的一个侧面。仅凭价格无法判断行情是由杠杆过热推动，还是由真实的链上吸筹推动。通过融合五个角度，我们力求减少单一数字的盲区。">하나의 지표는 시장의 한 단면만 보여줍니다. 가격만으로는 그 움직임이 과열된 레버리지 때문인지, 실제 온체인 매집 때문인지 알기 어렵습니다. 다섯 가지 각도를 섞어 보면 하나의 숫자가 놓치는 사각지대를 줄일 수 있습니다.</p>
-
-    <div class="grid-3" style="margin-top:8px">
-      <div class="card reveal d1">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M11 5.5v5.5l3.5 2"/></svg></div>
-        <h3 data-en="Cycle · Sentiment leads the rest" data-zh="周期 · 心理为先导">사이클 · 심리가 큰 틀을 잡습니다</h3>
-        <p data-i18n-html="1" data-en="Where we stand in the multi-year halving cycle and how greedy or fearful the crowd is together set the broad backdrop. <b>MVRV-Z</b> (how far price sits above or below the average cost of all coins) and <b>NUPL</b> (the share of holders sitting in unrealized profit) help locate that phase." data-zh="我们处于多年减半周期的哪个位置，以及人群的贪婪或恐惧程度，共同决定了大背景。<b>MVRV-Z</b>（价格相对全部币的平均成本高出或低出多少）与 <b>NUPL</b>（处于未实现盈利的持有者占比）有助于定位该阶段。">반감기 사이클의 어디쯤에 있는지, 군중이 얼마나 탐욕적인지 또는 두려워하는지가 큰 배경을 만듭니다. <b>MVRV-Z</b>(전체 코인의 평균 매입가 대비 현재 가격이 얼마나 높거나 낮은지)와 <b>NUPL</b>(미실현 이익 상태인 보유자 비중)이 그 단계를 가늠하게 해줍니다.</p>
-      </div>
-      <div class="card reveal d2">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 15 7 9 11 12 19 4"/><polyline points="14 4 19 4 19 9"/></svg></div>
-        <h3 data-en="Technicals show trend strength" data-zh="技术面显示趋势强度">기술적 분석은 추세 강도를 봅니다</h3>
-        <p data-i18n-html="1" data-en="Multi-timeframe <b>RSI</b> (a 0–100 gauge of whether price has risen or fallen too fast) and the distance from the 200-day moving average describe how stretched the current trend is, without making a forecast." data-zh="多周期 <b>RSI</b>（衡量价格上涨或下跌是否过快的 0~100 指标）以及与 200 日均线的距离，描述当前趋势被拉伸的程度，而不做预测。">여러 시간대의 <b>RSI</b>(가격이 너무 빠르게 오르거나 내렸는지를 0~100으로 보는 지표)와 200일 이동평균선과의 거리로 지금 추세가 얼마나 늘어나 있는지를 예측 없이 묘사합니다.</p>
-      </div>
-      <div class="card reveal d3">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h4l2-5 4 10 2-5h4"/></svg></div>
-        <h3 data-en="Derivatives reveal overheating" data-zh="衍生品揭示过热">파생상품은 과열을 드러냅니다</h3>
-        <p data-i18n-html="1" data-en="The <b>funding rate</b> (the periodic fee longs and shorts pay each other in perpetual futures) and open interest hint at how much borrowed money is crowding into one side — a common precursor to sharp reversals." data-zh="<b>资金费率</b>（永续合约中多空之间定期互付的费用）与未平仓合约暗示有多少借入资金挤向同一方向 — 这往往是急剧反转的前兆。">무기한 선물에서 롱과 숏이 서로 주고받는 <b>펀딩비</b>와 미결제약정은 빌린 돈이 한쪽으로 얼마나 쏠려 있는지를 암시합니다. 급격한 반전에 앞서 자주 나타나는 신호입니다.</p>
-      </div>
-      <div class="card reveal d1">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="16" height="16" rx="2"/><path d="M7 11l2.5 2.5L15 8"/></svg></div>
-        <h3 data-en="On-chain shows real behavior" data-zh="链上反映真实行为">온체인은 실제 행동을 보여줍니다</h3>
-        <p data-i18n-html="1" data-en="<b>SOPR</b> (whether coins are being moved at a profit or a loss) and the split between long- and short-term holders reveal whether participants are actually spending or holding, beyond what price alone implies." data-zh="<b>SOPR</b>（币是处于盈利还是亏损被转移）以及长期与短期持有者的占比，揭示参与者实际上是在抛售还是持有，超越了仅看价格所能推断的。"><b>SOPR</b>(코인이 이익 상태에서 옮겨지는지 손실 상태에서 옮겨지는지)와 장기·단기 보유자의 비중은 참여자들이 실제로 파는지 들고 있는지를 보여줍니다. 가격만으로는 알 수 없는 부분입니다.</p>
-      </div>
-      <div class="card reveal d2">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M2.5 11h17M11 2.5c2.5 2.5 2.5 14 0 17M11 2.5c-2.5 2.5-2.5 14 0 17"/></svg></div>
-        <h3 data-en="Macro sets the outer weather" data-zh="宏观决定外部环境">매크로는 바깥 날씨를 정합니다</h3>
-        <p data-i18n-html="1" data-en="The dollar index (<b>DXY</b>), equity markets, and spot ETF flows shape the liquidity environment that Bitcoin floats in. They carry the smallest weight because their link to BTC is indirect and shifts over time." data-zh="美元指数（<b>DXY</b>）、股市与现货 ETF 流入，塑造了比特币所处的流动性环境。它们权重最小，因为与 BTC 的关联是间接的，且会随时间变化。">달러 지수(<b>DXY</b>), 주식 시장, 현물 ETF 자금 흐름은 비트코인이 떠 있는 유동성 환경을 만듭니다. BTC와의 연결이 간접적이고 시간이 지나며 변하기 때문에 가중치는 가장 작습니다.</p>
-      </div>
-      <div class="card reveal d3">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v4M11 16v4M2 11h4M16 11h4"/><circle cx="11" cy="11" r="3.5"/></svg></div>
-        <h3 data-en="Together, not alone" data-zh="协同，而非孤立">하나가 아니라 함께</h3>
-        <p data-en="No category is treated as decisive on its own. The composite score is meant to summarize where most signals agree and disagree — not to predict tomorrow's price." data-zh="任何类别都不会被单独视为决定性的。综合评分旨在概括大多数信号在何处一致、何处分歧 — 而非预测明天的价格。">어떤 카테고리도 단독으로 결정적이라고 보지 않습니다. 종합 점수는 대부분의 신호가 어디에서 일치하고 엇갈리는지를 요약하는 것이지, 내일의 가격을 맞히는 것이 아닙니다.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHO IS IT FOR -->
-<section class="section" id="who" style="background:linear-gradient(180deg,transparent,rgba(91,141,239,.03),transparent)">
-  <div class="wrap">
-    <div class="sec-label reveal" data-en="Who It's For" data-zh="适合谁">누구에게 도움이 되나요</div>
-    <h2 class="title reveal d1" data-en="Built for people who don't watch charts all day." data-zh="为不会整天盯盘的人而打造。">하루 종일 차트를 볼 수 없는<br>분들을 위해 만들었습니다.</h2>
-    <p class="lead reveal d2" data-en="You don't need to be an expert to use it. The score is meant as a starting point for your own thinking, not a substitute for it." data-zh="使用它无需成为专家。评分旨在作为你自己思考的起点，而非替代品。">전문가가 아니어도 됩니다. 점수는 스스로 판단하는 출발점일 뿐, 판단을 대신하지는 않습니다.</p>
-
-    <div class="grid-4" style="margin-top:38px">
-      <div class="val reveal d1"><div class="vi" style="background:var(--brand-soft);border-color:rgba(247,147,26,.22)"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="7" r="4"/><path d="M3.5 19a7.5 7.5 0 0 1 15 0"/></svg></div><h3 data-en="Beginners" data-zh="新手">입문자</h3><p data-en="Those who find on-chain jargon overwhelming and want a single, readable summary first." data-zh="觉得链上术语令人望而生畏、想先看一份易读摘要的人。">온체인 용어가 부담스럽고, 우선 읽기 쉬운 요약 하나가 필요한 분.</p></div>
-      <div class="val reveal d2"><div class="vi" style="background:var(--brand-soft);border-color:rgba(247,147,26,.22)"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l8-8 8 8M5 9v9h12V9"/></svg></div><h3 data-en="Long-term accumulators" data-zh="长期定投者">장기 적립 투자자</h3><p data-en="Those building a position gradually who want a sense of which days look relatively more or less favorable." data-zh="逐步建仓、想了解哪些日子相对更有利或更不利的人。">분할로 천천히 매집하며, 어떤 날이 상대적으로 더 또는 덜 우호적인지 감을 잡고 싶은 분.</p></div>
-      <div class="val reveal d3"><div class="vi" style="background:var(--brand-soft);border-color:rgba(247,147,26,.22)"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M11 6v5l3 3"/></svg></div><h3 data-en="The time-pressed" data-zh="时间紧张者">시간이 빠듯한 분</h3><p data-en="Those who can't visit a dozen sites daily but still want a quick, consistent read on the market." data-zh="无法每天逛十几个网站、却仍想快速且稳定地了解市场的人。">매일 사이트 열 개를 돌 수는 없지만, 시장을 빠르고 일관되게 훑고 싶은 분.</p></div>
-      <div class="val reveal d4"><div class="vi" style="background:var(--brand-soft);border-color:rgba(247,147,26,.22)"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h14v10H7l-3 3z"/></svg></div><h3 data-en="Anyone curious" data-zh="任何好奇者">궁금한 누구나</h3><p data-en="Those who simply wonder what the various Bitcoin indicators are collectively saying today." data-zh="只是想知道各种比特币指标今天整体在说什么的人。">오늘 여러 비트코인 지표가 종합적으로 무엇을 말하는지 그냥 궁금한 분.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CAUTIONS -->
-<section class="section" id="cautions">
-  <div class="wrap">
-    <div class="sec-label reveal" data-en="Read With Care" data-zh="谨慎解读">해석할 때 주의할 점</div>
-    <h2 class="title reveal d1" data-en="A score is a summary, not a promise." data-zh="评分是概括，而非承诺。">점수는 요약일 뿐,<br>약속이 아닙니다.</h2>
-    <p class="lead reveal d2" data-en="The composite score compresses a lot of information into one number, and that compression has limits. Please keep these points in mind when you read it." data-zh="综合评分将大量信息压缩成一个数字，而这种压缩存在局限。解读时请记住以下几点。">종합 점수는 많은 정보를 하나의 숫자로 압축하며, 그 압축에는 한계가 있습니다. 읽으실 때 다음을 염두에 두세요.</p>
-
-    <div class="grid-3" style="margin-top:38px">
-      <div class="card reveal d1">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2L1 19h20L11 2z"/><path d="M11 9v4M11 16h.01"/></svg></div>
-        <h3 data-en="The past is not the future" data-zh="过去不代表未来">과거가 미래를 보장하지 않습니다</h3>
-        <p data-en="Zone descriptions reflect historical tendencies. Markets change, and a zone that was favorable before may behave differently this time." data-zh="区间描述反映的是历史倾向。市场会变化，过去有利的区间这次可能表现不同。">구간 설명은 과거의 경향을 반영합니다. 시장은 변하며, 예전에 우호적이던 구간이 이번에는 다르게 움직일 수 있습니다.</p>
-      </div>
-      <div class="card reveal d2">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M11 7v4M11 14.5h.01"/></svg></div>
-        <h3 data-en="One number hides nuance" data-zh="单一数字掩盖细节">하나의 숫자는 결을 숨깁니다</h3>
-        <p data-en="A score of 60 can come from very different mixes of signals. Where possible, look past the headline number to the underlying categories." data-zh="60 分可能来自截然不同的信号组合。请尽量越过表面数字，查看其背后的各类别。">60점은 매우 다른 신호 조합에서 나올 수 있습니다. 가능하면 표면의 숫자를 넘어 바탕이 되는 카테고리까지 살펴보세요.</p>
-      </div>
-      <div class="card reveal d3">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2.5L3.5 6v5.5c0 4.5 3.6 7.5 7.5 8 3.9-.5 7.5-3.5 7.5-8V6L11 2.5z"/></svg></div>
-        <h3 data-en="Manage your own risk" data-zh="管理你自己的风险">리스크 관리는 본인의 몫</h3>
-        <p data-en="No indicator removes the risk of loss. Position sizing and your own financial situation matter more than any single day's score." data-zh="任何指标都无法消除损失风险。仓位大小与你自身的财务状况，比任何单日评分都更重要。">어떤 지표도 손실 위험을 없애지 못합니다. 투입 규모와 본인의 재정 상황이 특정 하루의 점수보다 더 중요합니다.</p>
-      </div>
-    </div>
-
-    <div class="disclaimer reveal d1" style="margin-top:32px" data-i18n-html="1" data-en=" <b>Reminder</b> — The score and zone names on this site describe market conditions for reference only. They are not buy or sell recommendations, and they do not guarantee any outcome. Always make decisions based on your own research and risk tolerance." data-zh=" <b>提示</b> — 本网站的评分与区间名称仅供参考性地描述市场状况。它们并非买入或卖出建议，也不保证任何结果。请始终基于你自己的研究和风险承受能力做决定。"> <b>참고</b> — 이 사이트의 점수와 구간 이름은 시장 상황을 참고용으로 묘사할 뿐입니다. 매수·매도 권유가 아니며 어떤 결과도 보장하지 않습니다. 언제나 본인의 조사와 위험 감내 범위에 따라 결정하세요.</div>
-  </div>
-</section>
-
-<!-- SOURCES -->
-<section class="section" id="sources" style="background:linear-gradient(180deg,transparent,rgba(247,147,26,.025),transparent)">
-  <div class="wrap">
-    <div class="sec-label reveal" data-en="Data Sources" data-zh="数据来源">데이터 출처</div>
-    <h2 class="title reveal d1" data-en="We pull data only from sources you can trust." data-zh="我们只从值得信赖的来源获取数据。">믿을 수 있는 곳에서만<br>데이터를 가져옵니다.</h2>
-    <p class="lead reveal d2" data-en="All data is automatically collected every day from public APIs or verified services. We transparently disclose the sources and calculation methods." data-zh="所有数据每天自动从公开 API 或经过验证的服务中收集。我们透明地公开来源与计算方式。">모든 데이터는 공개 API 또는 검증된 서비스에서 매일 자동 수집됩니다. 출처와 계산 방식을 투명하게 공개합니다.</p>
-    <div class="src-grid">
-      <div class="src reveal d1"><div class="sn">Binance</div><div class="sd" data-en="Price · Derivatives" data-zh="价格 · 衍生品">가격 · 파생</div></div>
-      <div class="src reveal d1"><div class="sn">CoinGecko</div><div class="sd" data-en="Price · Stablecoins" data-zh="价格 · 稳定币">가격 · 스테이블</div></div>
-      <div class="src reveal d2"><div class="sn">Alternative.me</div><div class="sd" data-en="Fear &amp; Greed" data-zh="恐惧贪婪">공포탐욕</div></div>
-      <div class="src reveal d2"><div class="sn">CoinGlass</div><div class="sd" data-en="Liquidations · OI" data-zh="爆仓 · OI">청산 · OI</div></div>
-      <div class="src reveal d3"><div class="sn">Glassnode</div><div class="sd" data-en="On-Chain" data-zh="链上">온체인</div></div>
-      <div class="src reveal d3"><div class="sn">FRED</div><div class="sd" data-en="US Fed Macro" data-zh="美联储宏观">미 연준 거시</div></div>
-      <div class="src reveal d4"><div class="sn">Deribit</div><div class="sd" data-en="Options IV" data-zh="期权 IV">옵션 IV</div></div>
-      <div class="src reveal d4"><div class="sn">DefiLlama</div><div class="sd" data-en="Stablecoin Supply" data-zh="稳定币供应">스테이블 공급</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- VALUES -->
-<section class="section">
-  <div class="wrap">
-    <div class="sec-label reveal" data-en="Operating Philosophy" data-zh="运营理念">운영 철학</div>
-    <h2 class="title reveal d1" data-en="Four Promises" data-zh="四项承诺">4가지 약속</h2>
-    <div class="grid-4">
-      <div class="val reveal d1"><div class="vi"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--neon)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="12" width="4.5" height="8" rx="1"/><rect x="8.8" y="7" width="4.5" height="13" rx="1"/><rect x="15.5" y="3" width="4.5" height="17" rx="1"/></svg></div><h3 data-en="Objectivity" data-zh="客观性">객관성</h3><p data-en="Based on quantitative indicators, not emotion." data-zh="基于量化指标，而非情绪。">감정이 아닌 정량적 지표에 근거합니다.</p></div>
-      <div class="val reveal d2"><div class="vi"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--neon)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 11S5.5 4 11 4s9.5 7 9.5 7-4 7-9.5 7S1.5 11 1.5 11z"/><circle cx="11" cy="11" r="3"/></svg></div><h3 data-en="Transparency" data-zh="透明性">투명성</h3><p data-en="We disclose data sources and calculation logic." data-zh="我们公开数据来源与计算逻辑。">데이터 출처와 계산 로직을 공개합니다.</p></div>
-      <div class="val reveal d3"><div class="vi"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--neon)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="14" height="10" rx="2"/><path d="M7.5 10V7a3.5 3.5 0 0 1 7 0"/><circle cx="11" cy="15" r="1.4" fill="var(--neon)" stroke="none"/></svg></div><h3 data-en="Accessibility" data-zh="易用性">접근성</h3><p data-en="Anyone can use it for free, without signing up." data-zh="任何人都可免费使用，无需注册。">누구나 무료로, 가입 없이 이용합니다.</p></div>
-      <div class="val reveal d4"><div class="vi"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--neon)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2.5L3.5 6v5.5c0 4.5 3.6 7.5 7.5 8 3.9-.5 7.5-3.5 7.5-8V6L11 2.5z"/><polyline points="7.5 11 10 13.5 14.5 8.5"/></svg></div><h3 data-en="Reliability" data-zh="可靠性">신뢰성</h3><p data-en="Auto-updated daily; stale data is not shown." data-zh="每日自动更新，不显示过时数据。">매일 자동 갱신, 오래된 데이터는 표시 안 함.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq" style="background:linear-gradient(180deg,transparent,rgba(247,147,26,.025),transparent)">
-  <div class="wrap">
-    <div class="sec-label reveal" data-en="FAQ" data-zh="常见问题">자주 묻는 질문</div>
-    <h2 class="title reveal d1" data-en="Questions people ask first." data-zh="人们最先问的问题。">사람들이 가장 먼저 묻는 것들.</h2>
-    <p class="lead reveal d2" data-en="If something is still unclear after reading these, the contact page is open to you." data-zh="如果读完这些仍有不清楚之处，欢迎使用联系页面。">이 내용을 읽고도 궁금한 점이 있다면 문의 페이지를 이용하세요.</p>
-
-    <div class="grid-3" style="margin-top:38px">
-      <div class="card reveal d1">
-        <div class="ic">Q</div>
-        <h3 data-en="Is it really free?" data-zh="真的免费吗？">정말 무료인가요?</h3>
-        <p data-en="Yes. There is no fee and no sign-up. The site is supported by advertising, so you can use every page without an account." data-zh="是的。无需费用，也无需注册。本网站由广告支持，因此你无需账户即可使用每个页面。">네. 비용도, 회원가입도 없습니다. 광고로 운영되므로 계정 없이 모든 페이지를 이용할 수 있습니다.</p>
-      </div>
-      <div class="card reveal d2">
-        <div class="ic">Q</div>
-        <h3 data-en="How often is it updated?" data-zh="多久更新一次？">얼마나 자주 갱신되나요?</h3>
-        <p data-en="The data is collected and the score is recalculated automatically once a day, around 9:05 AM KST. The dashboard always shows the most recent collected values." data-zh="数据每天约在韩国时间上午 9:05 自动收集一次并重新计算评分。仪表盘始终显示最近一次收集的数值。">데이터 수집과 점수 재계산은 매일 한 번, 한국시간 오전 9시 5분 무렵 자동으로 이뤄집니다. 대시보드는 항상 가장 최근에 수집된 값을 보여줍니다.</p>
-      </div>
-      <div class="card reveal d3">
-        <div class="ic">Q</div>
-        <h3 data-en="Is this investment advice?" data-zh="这是投资建议吗？">이건 투자 조언인가요?</h3>
-        <p data-en="No. Everything here is provided for educational and reference purposes only. The score describes conditions; it does not recommend that you buy or sell." data-zh="不是。这里的一切仅供教育和参考之用。评分描述的是市场状况，并不建议你买入或卖出。">아닙니다. 이곳의 모든 내용은 교육·참고 목적으로만 제공됩니다. 점수는 상황을 묘사할 뿐, 매수나 매도를 권하지 않습니다.</p>
-      </div>
-      <div class="card reveal d1">
-        <div class="ic">Q</div>
-        <h3 data-en="Why a single 0–100 score?" data-zh="为何用一个 0~100 评分？">왜 0~100점 하나로 보여주나요?</h3>
-        <p data-en="Dozens of indicators use different units and scales. Mapping them onto one shared scale makes it possible to compare and combine them at a glance, while the dashboard still shows each one in detail." data-zh="数十个指标使用不同的单位和标度。将它们映射到一个共享标度上，便能一眼比较并组合，而仪表盘仍会详细展示每一项。">수십 개 지표는 단위와 척도가 제각각입니다. 하나의 공통 척도로 옮기면 한눈에 비교하고 합칠 수 있습니다. 물론 대시보드에서는 각 지표를 자세히 따로 보여드립니다.</p>
-      </div>
-      <div class="card reveal d2">
-        <div class="ic">Q</div>
-        <h3 data-en="Where does the data come from?" data-zh="数据来自哪里？">데이터는 어디서 오나요?</h3>
-        <p data-i18n-html="1" data-en="From public APIs and verified services such as Binance, CoinGecko, Glassnode, FRED and others, listed in the <b>Data Sources</b> section above. Collection methods are disclosed transparently." data-zh="来自公开 API 与经过验证的服务，如 Binance、CoinGecko、Glassnode、FRED 等，详见上方<b>数据来源</b>部分。收集方式透明公开。">위 <b>데이터 출처</b> 섹션에 정리된 Binance, CoinGecko, Glassnode, FRED 등 공개 API와 검증된 서비스에서 가져옵니다. 수집 방식은 투명하게 공개합니다.</p>
-      </div>
-      <div class="card reveal d3">
-        <div class="ic">Q</div>
-        <h3 data-en="Can I learn what each term means?" data-zh="可以了解每个术语吗？">각 용어를 자세히 배울 수 있나요?</h3>
-        <p data-i18n-html="1" data-en="Yes. The <b>Indicator Guide</b> page explains each indicator in plain language, including how it's calculated and how to read it." data-zh="可以。<b>指标指南</b>页面用通俗语言解释每个指标，包括其计算方式与解读方法。">네. <b>지표 가이드</b> 페이지에서 각 지표를 쉬운 말로, 계산 방식과 읽는 법까지 설명해 드립니다.</p>
-      </div>
-    </div>
-
-    <div class="cta-row reveal d2" style="margin-top:30px">
-      <a class="btn btn-ghost" href="guide.html" data-i18n-html="1" data-en="Read the Indicator Guide <span>→</span>" data-zh="阅读指标指南 <span>→</span>">지표 가이드 읽기 <span>→</span></a>
-      <a class="btn btn-ghost" href="contact.html" data-en="Contact Us" data-zh="联系我们">문의하기</a>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    <div class="cta-final reveal">
-      <span class="eyebrow" style="margin-bottom:18px"><span class="pulse"></span><span data-en="Check it right now" data-zh="立即查看">지금 바로 확인하세요</span></span>
-      <h2 data-i18n-html="1" data-en="What's today's Bitcoin market <span class=&quot;hl&quot;>score</span>?" data-zh="今天的比特币市场<span class=&quot;hl&quot;>几分</span>？">오늘 비트코인 시장,<br><span class="hl">몇 점</span>일까요?</h2>
-      <p data-en="No sign-up and no cost. Check today's score and 25 indicators on the dashboard now." data-zh="无需注册，无需费用。现在就到仪表盘查看今日评分和 25 项指标。">회원가입도, 비용도 필요 없습니다. 지금 대시보드에서 오늘의 점수와 25개 지표를 확인해 보세요.</p>
-      <div class="cta-row" style="justify-content:center">
-        <a class="btn btn-primary" href="index.html" data-i18n-html="1" data-en="Open Dashboard <span>→</span>" data-zh="打开仪表盘 <span>→</span>">대시보드 열기 <span>→</span></a>
-        <a class="btn btn-ghost" href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Alert Channel" data-zh=" Telegram 通知频道"> 텔레그램 알림 채널</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
+      <!-- 종합 점수 구성 (카테고리 가중치) -->
       <div>
-        <div class="brand"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></div>
-        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
+        <div class="sec-h"><h2>종합 점수는 이렇게 구성됩니다</h2><span class="hint">막대가 길수록 점수에 큰 영향을 줍니다</span></div>
+        <p class="lead-tx">각 카테고리에 가중치를 적용해 합산합니다.</p>
+        <div class="cat-list">
+          <div class="cat-row">
+            <div class="ct"><div class="cn"><span>사이클 · 심리</span><span class="pct">30%</span></div><div class="cd">시장 단계 판별</div></div>
+            <div class="cat-bar"><i style="width:100%"></i></div>
+            <div class="cat-tags"><span>공포탐욕</span><span>반감기 사이클</span><span>MVRV-Z</span><span>NUPL</span><span>Pi Cycle</span></div>
+          </div>
+          <div class="cat-row">
+            <div class="ct"><div class="cn"><span>기술적 분석</span><span class="pct">25%</span></div><div class="cd">가격 추세 강도</div></div>
+            <div class="cat-bar"><i style="width:83%"></i></div>
+            <div class="cat-tags"><span>RSI 일/주/월</span><span>MA200 비율</span><span>변동성</span><span>MACD</span></div>
+          </div>
+          <div class="cat-row">
+            <div class="ct"><div class="cn"><span>파생상품</span><span class="pct">20%</span></div><div class="cd">레버리지 과열도</div></div>
+            <div class="cat-bar"><i style="width:66%"></i></div>
+            <div class="cat-tags"><span>펀딩비</span><span>미결제약정</span><span>롱숏비율</span><span>테이커비율</span></div>
+          </div>
+          <div class="cat-row">
+            <div class="ct"><div class="cn"><span>온체인</span><span class="pct">15%</span></div><div class="cd">실제 보유자 행동</div></div>
+            <div class="cat-bar"><i style="width:50%"></i></div>
+            <div class="cat-tags"><span>SOPR</span><span>LTH/STH</span><span>거래소 유입</span><span>Puell</span><span>해시레이트</span></div>
+          </div>
+          <div class="cat-row">
+            <div class="ct"><div class="cn"><span>매크로</span><span class="pct">10%</span></div><div class="cd">외부 환경</div></div>
+            <div class="cat-bar"><i style="width:33%"></i></div>
+            <div class="cat-tags"><span>DXY</span><span>S&amp;P500</span><span>김치프리미엄</span><span>ETF 유입</span></div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4 data-en="Menu" data-zh="菜单">메뉴</h4>
-        <a href="index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
-        <a href="guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-        <a href="about.html" data-en="About" data-zh="介绍">소개</a>
-        <a href="contact.html" data-en="Contact" data-zh="联系我们">문의</a>
-      </div>
-      <div>
-        <h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4>
-        <a href="privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a>
-        <a href="disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a>
-        <a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a>
-      </div>
-    </div>
-    <div class="disclaimer" data-i18n-html="1" data-en=" <b>Investment Notice</b> — All information on this site is provided for educational and reference purposes only and is not investment advice. Cryptocurrency investment carries the risk of principal loss, and responsibility for all investment decisions rests with you." data-zh=" <b>投资提示</b> — 本网站的所有信息仅供教育和参考之用，并非投资建议。加密货币投资存在本金损失风险，所有投资决定的责任由本人承担。"> <b>투자 유의 안내</b> — 이 사이트의 모든 정보는 교육·참고 목적으로만 제공되며 투자 조언이 아닙니다. 암호화폐 투자는 원금 손실 위험이 있으며 모든 투자 결정의 책임은 본인에게 있습니다.</div>
-    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
-  </div>
-</footer>
 
+      <!-- 다섯 카테고리를 왜 모았나 -->
+      <div>
+        <div class="sec-h"><h2>이 다섯 카테고리를 왜 모았나요?</h2><span class="hint">하나의 숫자가 놓치는 사각지대를 줄이기 위해</span></div>
+        <p class="lead-tx">하나의 지표는 시장의 한 단면만 보여줍니다. 가격만으로는 그 움직임이 과열된 레버리지 때문인지, 실제 온체인 매집 때문인지 알기 어렵습니다. 다섯 가지 각도를 섞어 보면 하나의 숫자가 놓치는 사각지대를 줄일 수 있습니다.</p>
+        <div class="why-grid" style="margin-top:16px">
+          <div class="why-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M11 5.5v5.5l3.5 2"/></svg></div>
+            <div class="t">사이클 · 심리가 큰 틀을 잡습니다</div>
+            <div class="d">반감기 사이클의 어디쯤에 있는지, 군중이 얼마나 탐욕적인지 또는 두려워하는지가 큰 배경을 만듭니다. <b>MVRV-Z</b>(전체 코인의 평균 매입가 대비 현재 가격이 얼마나 높거나 낮은지)와 <b>NUPL</b>(미실현 이익 상태인 보유자 비중)이 그 단계를 가늠하게 해줍니다.</div>
+          </div>
+          <div class="why-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 15 7 9 11 12 19 4"/><polyline points="14 4 19 4 19 9"/></svg></div>
+            <div class="t">기술적 분석은 추세 강도를 봅니다</div>
+            <div class="d">여러 시간대의 <b>RSI</b>(가격이 너무 빠르게 오르거나 내렸는지를 0~100으로 보는 지표)와 200일 이동평균선과의 거리로 지금 추세가 얼마나 늘어나 있는지를 예측 없이 묘사합니다.</div>
+          </div>
+          <div class="why-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h4l2-5 4 10 2-5h4"/></svg></div>
+            <div class="t">파생상품은 과열을 드러냅니다</div>
+            <div class="d">무기한 선물에서 롱과 숏이 서로 주고받는 <b>펀딩비</b>와 미결제약정은 빌린 돈이 한쪽으로 얼마나 쏠려 있는지를 암시합니다. 급격한 반전에 앞서 자주 나타나는 신호입니다.</div>
+          </div>
+          <div class="why-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="16" height="16" rx="2"/><path d="M7 11l2.5 2.5L15 8"/></svg></div>
+            <div class="t">온체인은 실제 행동을 보여줍니다</div>
+            <div class="d"><b>SOPR</b>(코인이 이익 상태에서 옮겨지는지 손실 상태에서 옮겨지는지)와 장기·단기 보유자의 비중은 참여자들이 실제로 파는지 들고 있는지를 보여줍니다. 가격만으로는 알 수 없는 부분입니다.</div>
+          </div>
+          <div class="why-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M2.5 11h17M11 2.5c2.5 2.5 2.5 14 0 17M11 2.5c-2.5 2.5-2.5 14 0 17"/></svg></div>
+            <div class="t">매크로는 바깥 날씨를 정합니다</div>
+            <div class="d">달러 지수(<b>DXY</b>), 주식 시장, 현물 ETF 자금 흐름은 비트코인이 떠 있는 유동성 환경을 만듭니다. BTC와의 연결이 간접적이고 시간이 지나며 변하기 때문에 가중치는 가장 작습니다.</div>
+          </div>
+          <div class="why-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v4M11 16v4M2 11h4M16 11h4"/><circle cx="11" cy="11" r="3.5"/></svg></div>
+            <div class="t">하나가 아니라 함께</div>
+            <div class="d">어떤 카테고리도 단독으로 결정적이라고 보지 않습니다. 종합 점수는 대부분의 신호가 어디에서 일치하고 엇갈리는지를 요약하는 것이지, 내일의 가격을 맞히는 것이 아닙니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 운영 원칙 4개 -->
+      <div>
+        <div class="sec-h"><h2>운영 원칙</h2><span class="hint">이 서비스가 지키려는 기준</span></div>
+        <div class="prin-grid">
+          <div class="prin-cell">
+            <div class="ic">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2.5L3.5 6v5.5c0 4.5 3.6 7.5 7.5 8 3.9-.5 7.5-3.5 7.5-8V6L11 2.5z"/></svg>
+            </div>
+            <div>
+              <div class="t">맥락 필터, 방아쇠 아님</div>
+              <div class="d">정확한 매수 시점을 알려주기보다 시장의 계절을 읽는 도구로 설계했습니다.</div>
+            </div>
+          </div>
+          <div class="prin-cell">
+            <div class="ic">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="12" width="4.5" height="8" rx="1"/><rect x="8.8" y="7" width="4.5" height="13" rx="1"/><rect x="15.5" y="3" width="4.5" height="17" rx="1"/></svg>
+            </div>
+            <div>
+              <div class="t">단일 지표 의존 금지</div>
+              <div class="d">어떤 숫자도 완벽하지 않기에 다섯 카테고리를 함께 봅니다.</div>
+            </div>
+          </div>
+          <div class="prin-cell">
+            <div class="ic">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 11S5.5 4 11 4s9.5 7 9.5 7-4 7-9.5 7S1.5 11 1.5 11z"/><circle cx="11" cy="11" r="3"/></svg>
+            </div>
+            <div>
+              <div class="t">투명한 정량 분석</div>
+              <div class="d">모든 점수는 공개된 시장 데이터에 기반한 규칙 기반 계산입니다.</div>
+            </div>
+          </div>
+          <div class="prin-cell">
+            <div class="ic">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M11 6v5l3.5 2"/></svg>
+            </div>
+            <div>
+              <div class="t">교육·참고 목적</div>
+              <div class="d">투자 조언이 아니며, 분할 매수(DCA) 같은 장기 전략과 함께 쓰일 때 가장 유용합니다.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 누구에게 도움이 되나요 (대상자) -->
+      <div>
+        <div class="sec-h"><h2>누구에게 도움이 되나요</h2><span class="hint">하루 종일 차트를 볼 수 없는 분들을 위해</span></div>
+        <p class="lead-tx">전문가가 아니어도 됩니다. 점수는 스스로 판단하는 출발점일 뿐, 판단을 대신하지는 않습니다.</p>
+        <div class="who-grid" style="margin-top:16px">
+          <div class="who-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="7" r="4"/><path d="M3.5 19a7.5 7.5 0 0 1 15 0"/></svg></div>
+            <div class="t">입문자</div>
+            <div class="d">온체인 용어가 부담스럽고, 우선 읽기 쉬운 요약 하나가 필요한 분.</div>
+          </div>
+          <div class="who-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l8-8 8 8M5 9v9h12V9"/></svg></div>
+            <div class="t">장기 적립 투자자</div>
+            <div class="d">분할로 천천히 매집하며, 어떤 날이 상대적으로 더 또는 덜 우호적인지 감을 잡고 싶은 분.</div>
+          </div>
+          <div class="who-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M11 6v5l3 3"/></svg></div>
+            <div class="t">시간이 빠듯한 분</div>
+            <div class="d">매일 사이트 열 개를 돌 수는 없지만, 시장을 빠르고 일관되게 훑고 싶은 분.</div>
+          </div>
+          <div class="who-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h14v10H7l-3 3z"/></svg></div>
+            <div class="t">궁금한 누구나</div>
+            <div class="d">오늘 여러 비트코인 지표가 종합적으로 무엇을 말하는지 그냥 궁금한 분.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 해석할 때 주의할 점 (한계) -->
+      <div>
+        <div class="sec-h"><h2>해석할 때 주의할 점</h2><span class="hint">점수는 요약일 뿐, 약속이 아닙니다</span></div>
+        <p class="lead-tx">종합 점수는 많은 정보를 하나의 숫자로 압축하며, 그 압축에는 한계가 있습니다. 읽으실 때 다음을 염두에 두세요.</p>
+        <div class="prob-grid" style="margin-top:16px">
+          <div class="prob-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2L1 19h20L11 2z"/><path d="M11 9v4M11 16h.01"/></svg></div>
+            <div class="t">과거가 미래를 보장하지 않습니다</div>
+            <div class="d">구간 설명은 과거의 경향을 반영합니다. 시장은 변하며, 예전에 우호적이던 구간이 이번에는 다르게 움직일 수 있습니다.</div>
+          </div>
+          <div class="prob-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8.5"/><path d="M11 7v4M11 14.5h.01"/></svg></div>
+            <div class="t">하나의 숫자는 결을 숨깁니다</div>
+            <div class="d">60점은 매우 다른 신호 조합에서 나올 수 있습니다. 가능하면 표면의 숫자를 넘어 바탕이 되는 카테고리까지 살펴보세요.</div>
+          </div>
+          <div class="prob-cell">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2.5L3.5 6v5.5c0 4.5 3.6 7.5 7.5 8 3.9-.5 7.5-3.5 7.5-8V6L11 2.5z"/></svg></div>
+            <div class="t">리스크 관리는 본인의 몫</div>
+            <div class="d">어떤 지표도 손실 위험을 없애지 못합니다. 투입 규모와 본인의 재정 상황이 특정 하루의 점수보다 더 중요합니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 데이터 출처 -->
+      <div>
+        <div class="sec-h"><h2>데이터 출처</h2><span class="hint">믿을 수 있는 곳에서만 데이터를 가져옵니다</span></div>
+        <p class="lead-tx">모든 데이터는 공개 API 또는 검증된 서비스에서 매일 자동 수집됩니다. 출처와 계산 방식을 투명하게 공개합니다.</p>
+        <div class="src-grid">
+          <div class="src-cell"><div class="sn">Binance</div><div class="sd">가격 · 파생</div></div>
+          <div class="src-cell"><div class="sn">CoinGecko</div><div class="sd">가격 · 스테이블</div></div>
+          <div class="src-cell"><div class="sn">Alternative.me</div><div class="sd">공포탐욕</div></div>
+          <div class="src-cell"><div class="sn">CoinGlass</div><div class="sd">청산 · OI</div></div>
+          <div class="src-cell"><div class="sn">Glassnode</div><div class="sd">온체인</div></div>
+          <div class="src-cell"><div class="sn">FRED</div><div class="sd">미 연준 거시</div></div>
+          <div class="src-cell"><div class="sn">Deribit</div><div class="sd">옵션 IV</div></div>
+          <div class="src-cell"><div class="sn">DefiLlama</div><div class="sd">스테이블 공급</div></div>
+        </div>
+      </div>
+
+      <!-- 4가지 약속 -->
+      <div>
+        <div class="sec-h"><h2>4가지 약속</h2><span class="hint">운영 철학</span></div>
+        <div class="prin-grid">
+          <div class="prin-cell">
+            <div class="ic"><svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="12" width="4.5" height="8" rx="1"/><rect x="8.8" y="7" width="4.5" height="13" rx="1"/><rect x="15.5" y="3" width="4.5" height="17" rx="1"/></svg></div>
+            <div><div class="t">객관성</div><div class="d">감정이 아닌 정량적 지표에 근거합니다.</div></div>
+          </div>
+          <div class="prin-cell">
+            <div class="ic"><svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 11S5.5 4 11 4s9.5 7 9.5 7-4 7-9.5 7S1.5 11 1.5 11z"/><circle cx="11" cy="11" r="3"/></svg></div>
+            <div><div class="t">투명성</div><div class="d">데이터 출처와 계산 로직을 공개합니다.</div></div>
+          </div>
+          <div class="prin-cell">
+            <div class="ic"><svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="14" height="10" rx="2"/><path d="M7.5 10V7a3.5 3.5 0 0 1 7 0"/><circle cx="11" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg></div>
+            <div><div class="t">접근성</div><div class="d">누구나 무료로, 가입 없이 이용합니다.</div></div>
+          </div>
+          <div class="prin-cell">
+            <div class="ic"><svg width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2.5L3.5 6v5.5c0 4.5 3.6 7.5 7.5 8 3.9-.5 7.5-3.5 7.5-8V6L11 2.5z"/><polyline points="7.5 11 10 13.5 14.5 8.5"/></svg></div>
+            <div><div class="t">신뢰성</div><div class="d">매일 자동 갱신, 오래된 데이터는 표시 안 함.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div>
+        <div class="sec-h"><h2>자주 묻는 질문</h2><span class="hint">사람들이 가장 먼저 묻는 것들</span></div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>정말 무료인가요?</span></summary>
+            <div class="ans">네. 비용도, 회원가입도 없습니다. 광고로 운영되므로 계정 없이 모든 페이지를 이용할 수 있습니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>얼마나 자주 갱신되나요?</span></summary>
+            <div class="ans">데이터 수집과 점수 재계산은 매일 한 번, 한국시간 오전 9시 5분 무렵 자동으로 이뤄집니다. 대시보드는 항상 가장 최근에 수집된 값을 보여줍니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>이건 투자 조언인가요?</span></summary>
+            <div class="ans">아닙니다. 이곳의 모든 내용은 교육·참고 목적으로만 제공됩니다. 점수는 상황을 묘사할 뿐, 매수나 매도를 권하지 않습니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>왜 0~100점 하나로 보여주나요?</span></summary>
+            <div class="ans">수십 개 지표는 단위와 척도가 제각각입니다. 하나의 공통 척도로 옮기면 한눈에 비교하고 합칠 수 있습니다. 물론 대시보드에서는 각 지표를 자세히 따로 보여드립니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>데이터는 어디서 오나요?</span></summary>
+            <div class="ans">위 <b>데이터 출처</b> 섹션에 정리된 Binance, CoinGecko, Glassnode, FRED 등 공개 API와 검증된 서비스에서 가져옵니다. 수집 방식은 투명하게 공개합니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>각 용어를 자세히 배울 수 있나요?</span></summary>
+            <div class="ans">네. <b>지표 가이드</b> 페이지에서 각 지표를 쉬운 말로, 계산 방식과 읽는 법까지 설명해 드립니다.</div>
+          </details>
+        </div>
+      </div>
+
+      <!-- 면책 -->
+      <div class="disc">
+        <span class="ic">!</span>
+        <div class="tx"><b>투자 유의</b> — 이 사이트의 모든 점수·구간·해설은 교육·참고 목적의 정량 분석이며 투자 조언이 아닙니다. 매수·매도 권유가 아니고 어떤 결과도 보장하지 않으며, 모든 투자 결정의 책임은 본인에게 있습니다.</div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta">
+        <h2>매일 아침 9시 5분, 새 데이터로 갱신됩니다</h2>
+        <p>회원가입 없이 바로 확인하세요. 서비스는 광고로 운영됩니다.</p>
+        <a href="index.html">대시보드 열기 <span>→</span></a>
+      </div>
+
+      <!-- 푸터 (셸 공통) -->
+      <div class="foot">
+        <div class="fa">
+          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
+          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+        </div>
+        <div class="cols">
+          <div class="col"><h4>메뉴</h4><a href="index.html">대시보드</a><a href="guide.html">지표 가이드</a><a href="about.html">서비스 소개</a><a href="contact.html">문의</a></div>
+          <div class="col"><h4>정책 · 커뮤니티</h4><a href="privacy.html">개인정보처리방침</a><a href="disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+        </div>
+        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Firebase compat SDK (동기 로드, index.html에서 그대로 이식) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
 <script>
+'use strict';
+function ge(id){return document.getElementById(id);}
+
+/* ── 모바일 사이드바 토글 (index.html 그대로) ── */
 (function(){
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var TODAY = 62; // 데모용 오늘의 점수
+  var layout=ge('layout'),btn=ge('mbToggle'),bk=ge('navBackdrop');
+  function close(){layout.classList.remove('nav-open');}
+  if(btn)btn.addEventListener('click',function(){layout.classList.toggle('nav-open');});
+  if(bk)bk.addEventListener('click',close);
+  document.querySelectorAll('.sb-nav a').forEach(function(a){a.addEventListener('click',close);});
+})();
 
-  /* ---- 레이더 대각선 ---- */
-  var diag = document.getElementById('diag');
-  for(var a=0;a<360;a+=30){
-    var s=document.createElement('span');
-    s.style.transform='rotate('+a+'deg)';
-    diag.appendChild(s);
+/* ──────────────────────────────────────────────────────────
+ * 방문자 카운터 (Firebase Realtime Database) — index.html에서 그대로 이식
+ * 실패해도 폴백 '--' 유지.
+ * ────────────────────────────────────────────────────────── */
+(function(){
+  if(typeof firebase==='undefined'||!firebase.database){
+    console.warn('[visitor] Firebase SDK not available, skipping visitor counter');
+    return;
   }
-  /* ---- 레이더 블립 ---- */
-  var radar=document.getElementById('radar');
-  var blips=[[30,38,0],[68,30,1],[55,62,0],[40,72,1],[75,58,0],[24,60,1],[62,46,0]];
-  blips.forEach(function(b,i){
-    var el=document.createElement('div');
-    el.className='blip'+(b[2]? ' n':'');
-    el.style.left=b[0]+'%';el.style.top=b[1]+'%';
-    el.style.animationDelay=(0.6+i*0.22)+'s';
-    el.style.setProperty('color', b[2]? '#2ee6b6':'#f7931a');
-    radar.appendChild(el);
-  });
-
-  /* ---- 타이핑 헤드라인 ---- */
-  // 현재 언어 선택 헬퍼: BTCI18N.t가 있으면 사용하고, 없으면 한국어 폴백.
-  function tr(dict){
-    if(window.BTCI18N && typeof window.BTCI18N.t === 'function') return window.BTCI18N.t(dict);
-    return dict.ko;
+  var firebaseConfig={
+    apiKey:"AIzaSyA0rKMvdc-9tRbycgpkczyopQvqRQRV2v0",
+    authDomain:"btctiming-af87d.firebaseapp.com",
+    databaseURL:"https://btctiming-af87d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId:"btctiming-af87d",
+    storageBucket:"btctiming-af87d.firebasestorage.app",
+    messagingSenderId:"9515727678",
+    appId:"1:9515727678:web:7d6a7ad30d881c1f37ca6f",
+    measurementId:"G-QNR0LP5QH1"
+  };
+  function setNum(id,v){
+    var el=document.getElementById(id);
+    if(!el)return;
+    if(v==null||isNaN(v)){el.textContent='--';return;}
+    el.textContent=Number(v).toLocaleString('ko-KR');
   }
-  // 원본 dict 객체를 그대로 담는다. tr()로 캡처하면 defer 로드 전이라 ko 폴백이 박혀버리므로,
-  // 언어 해석은 반드시 사용 시점(tick/reduce 분기)에 한다.
-  var phrases=[
-    {ko:'지금, 비트코인을\n살 때일까요?', en:'Is now the time\nto buy Bitcoin?', zh:'现在，是买入\n比特币的时机吗？'},
-    {ko:'오늘 시장은\n공포일까 탐욕일까?', en:'Fear or greed\nin the market today?', zh:'今天的市场\n是恐惧还是贪婪？'},
-    {ko:'25개 지표가 보내는\n오늘의 신호.', en:"Today's signal from\n25+ indicators.", zh:'25 项指标发出的\n今日信号。'}
-  ];
-  var typeEl=document.getElementById('type');
-  function startTyping(){
-    if(reduce){ typeEl.textContent=tr(phrases[0]).replace(/\n/g,' '); return; }
-    var pi=0,ci=0,deleting=false;
-    function tick(){
-      var full=tr(phrases[pi]);
-      if(!deleting){
-        ci++;
-        if(ci>=full.length){ deleting=true; setTimeout(tick,1900); return; }
-      } else {
-        ci--;
-        if(ci<=0){ deleting=false; pi=(pi+1)%phrases.length; setTimeout(tick,260); return; }
-      }
-      typeEl.innerHTML = full.substring(0,ci).replace(/\n/g,'<br>');
-      setTimeout(tick, deleting?34:70);
-    }
-    tick();
-  }
-  // defer 스크립트(btc-i18n.js)는 DOMContentLoaded 전에 실행되므로, 그 이후 시작하면 BTCI18N 존재가 보장된다.
-  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',startTyping); }
-  else { startTyping(); }
-
-  /* ---- 카운트업 헬퍼 ---- */
-  function animateNum(el,to,dur,suffix){
-    if(reduce){ el.textContent=to+(suffix||''); return; }
-    var start=performance.now();
-    function f(now){
-      var p=Math.min((now-start)/dur,1);
-      var e=1-Math.pow(1-p,3);
-      el.textContent=Math.round(to*e)+(suffix||'');
-      if(p<1) requestAnimationFrame(f);
-    }
-    requestAnimationFrame(f);
-  }
-
-  /* 히어로 점수 (로드시) */
-  setTimeout(function(){ animateNum(document.getElementById('heroScore'),TODAY,1600); },700);
-
-  /* ---- 게이지 정적 셋업 ---- */
-  var gaugeArc=document.getElementById('gaugeArc');
-  var len=gaugeArc.getTotalLength();
-  gaugeArc.style.strokeDasharray=len;
-  gaugeArc.style.strokeDashoffset=len;
-  gaugeArc.style.transition='stroke-dashoffset 1.6s cubic-bezier(.16,1,.3,1)';
-  var gaugeDot=document.getElementById('gaugeDot');
-  var gv=document.getElementById('gaugeVal');
-  // 점수 비율을 호(중심 200,200 / 반지름 160) 위의 좌표로 변환
-  function placeDot(score){
-    if(!gaugeDot) return;
-    var ang=Math.PI*(1-score/100); // 0점→왼쪽(π), 100점→오른쪽(0)
-    gaugeDot.setAttribute('cx',(200+160*Math.cos(ang)).toFixed(1));
-    gaugeDot.setAttribute('cy',(200-160*Math.sin(ang)).toFixed(1));
-  }
-  placeDot(0); // 시작 위치(0점, 왼쪽 끝)
-  var afterEl=document.getElementById('afterScore');
-
-  /* ---- 뷰포트 진입 체크 (IntersectionObserver는 프리뷰 iframe에서 미발화 → rect 방식) ---- */
-  function inView(el,m){
-    var r=el.getBoundingClientRect();
-    var h=window.innerHeight||document.documentElement.clientHeight;
-    return r.top < h*(1-(m==null?0.12:m)) && r.bottom > 0;
-  }
-  function fireReveals(){
-    document.querySelectorAll('.reveal:not(.in)').forEach(function(el){
-      if(!inView(el)) return;
-      el.classList.add('in');
-      el.querySelectorAll('.count').forEach(function(c){
-        if(c.dataset.done) return; c.dataset.done=1;
-        animateNum(c,parseInt(c.dataset.to,10),1500,c.dataset.suffix||'');
-      });
+  function kstDateKey(){return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);}
+  try{
+    if(!firebase.apps||!firebase.apps.length){firebase.initializeApp(firebaseConfig);}
+    var db=firebase.database();
+    var today=kstDateKey();
+    var myPresenceRef=db.ref('presence').push();
+    var presenceListRef=db.ref('presence');
+    db.ref('.info/connected').on('value',function(snap){
+      if(snap.val()!==true)return;
+      myPresenceRef.onDisconnect().remove();
+      myPresenceRef.set(true);
     });
-    // AFTER 점수
-    var ap=document.querySelector('.panel.after');
-    if(ap && !ap.dataset.done && inView(ap,0.25)){ ap.dataset.done=1; animateNum(afterEl,TODAY,1400); }
-    // 게이지
-    var gs=document.getElementById('gaugeSvg');
-    if(gs && !gs.dataset.done && inView(gs,0.25)){
-      gs.dataset.done=1;
-      gaugeArc.style.strokeDashoffset=0;
-      // 점을 호 위에서 0→TODAY 까지 부드럽게 이동
-      var ds=performance.now();
-      (function dotTick(now){
-        var p=Math.min((now-ds)/1600,1);
-        var e=1-Math.pow(1-p,3);
-        placeDot(TODAY*e);
-        if(p<1) requestAnimationFrame(dotTick);
-      })(ds);
-      animateNum(gv,TODAY,1600);
-    }
-    // 카테고리 바
-    var cats=document.querySelector('.cats');
-    if(cats && !cats.dataset.done && inView(cats,0.2)){
-      cats.dataset.done=1;
-      cats.querySelectorAll('.bar i').forEach(function(i){ i.style.width=i.dataset.w+'%'; });
-    }
-  }
-  window.addEventListener('scroll',fireReveals,{passive:true});
-  window.addEventListener('resize',fireReveals);
-  fireReveals();
-  [60,200,500,1000].forEach(function(t){ setTimeout(fireReveals,t); });
+    presenceListRef.on('value',function(snap){setNum('vcNow',snap.numChildren());},function(err){console.warn('[visitor] presence read failed:',err&&err.message);});
+    db.ref('counters/total').on('value',function(snap){setNum('vcTotal',snap.val());},function(err){console.warn('[visitor] total read failed:',err&&err.message);});
+    db.ref('counters/daily/'+today).on('value',function(snap){setNum('vcToday',snap.val());},function(err){console.warn('[visitor] daily read failed:',err&&err.message);});
+    try{
+      if(!sessionStorage.getItem('btc_counted')){
+        sessionStorage.setItem('btc_counted','1');
+        db.ref('counters/total').transaction(function(v){return (v||0)+1;});
+        db.ref('counters/daily/'+today).transaction(function(v){return (v||0)+1;});
+        console.log('[visitor] new session counted for '+today);
+      }
+    }catch(e){console.warn('[visitor] sessionStorage unavailable, count skipped:',e&&e.message);}
+  }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
 })();
 </script>
 </body>

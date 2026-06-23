@@ -2,94 +2,196 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="S&amp;P 500 지수가 비트코인과 어떤 관계인지 — 미국 대표 주가지수의 의미, 위험자산 심리와 상관관계, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="How the S&amp;P 500 relates to Bitcoin — what the benchmark US stock index means, its correlation with risk-asset sentiment, how to use it for buy timing, and its limits." data-zh-content="标普 500 与比特币的关系——美国代表性股指的含义、与风险资产情绪的相关性、择时用法及其局限。">
+<meta name="description" content="S&amp;P 500 지수가 비트코인과 어떤 관계인지 — 미국 대표 주가지수의 의미, 위험자산 심리와 상관관계, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-en="S&amp;P 500 — BTC Timing Radar" data-zh="标普 500 — BTC 时机雷达">S&amp;P 500과 비트코인? 위험자산 심리 기준점 완전 정리 — BTC 타이밍 레이더</title>
+<title>S&amp;P 500과 비트코인? 위험자산 심리 기준점 완전 정리 — BTC 타이밍 레이더</title>
 <link rel="canonical" href="https://btctiming.co.kr/indicators/sp500.html">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://btctiming.co.kr/indicators/sp500.html">
-<meta property="og:site_name" content="BTC 투자 타이밍 레이더" data-en-content="BTC Investment Timing Radar" data-zh-content="BTC 投资择时雷达">
-<meta property="og:title" content="S&amp;P 500과 비트코인? 위험자산 심리 기준점 완전 정리" data-en-content="S&amp;P 500 &amp; Bitcoin — The Risk-Appetite Benchmark" data-zh-content="标普 500 与比特币 — 风险偏好的基准">
-<meta property="og:description" content="S&amp;P 500이 비트코인과 어떤 관계인지, 위험자산 심리와의 상관관계, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="How the S&amp;P 500 relates to Bitcoin, its correlation with risk appetite, and how to use it for buy timing." data-zh-content="标普 500 与比特币的关系、与风险偏好的相关性及择时用法。">
+<meta property="og:site_name" content="BTC 투자 타이밍 레이더">
+<meta property="og:title" content="S&amp;P 500과 비트코인? 위험자산 심리 기준점 완전 정리">
+<meta property="og:description" content="S&amp;P 500이 비트코인과 어떤 관계인지, 위험자산 심리와의 상관관계, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="S&amp;P 500과 비트코인? 위험자산 심리 기준점 완전 정리" data-en-content="S&amp;P 500 &amp; Bitcoin — The Risk-Appetite Benchmark" data-zh-content="标普 500 与比特币 — 风险偏好的基准">
-<meta name="twitter:description" content="S&amp;P 500과 비트코인의 관계, 상관관계, 매수 타이밍 활용법과 한계를 설명합니다." data-en-content="How the S&amp;P 500 relates to Bitcoin and how to use it." data-zh-content="标普 500 与比特币的关系与用法。">
+<meta name="twitter:title" content="S&amp;P 500과 비트코인? 위험자산 심리 기준점 완전 정리">
+<meta name="twitter:description" content="S&amp;P 500과 비트코인의 관계, 상관관계, 매수 타이밍 활용법과 한계를 설명합니다.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="../btc-base.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898023121512538" crossorigin="anonymous"></script>
-<script src="../btc-i18n.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- AdSense (index.html에서 그대로 이식) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898078056285143" crossorigin="anonymous"></script>
 <style>
-  /* 지표 상세 페이지 공통 레이아웃 */
-  .crumb-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-2);font-family:var(--mono);margin-bottom:18px}
-  .crumb-nav a{color:var(--muted);text-decoration:none}
-  .crumb-nav a:hover{color:var(--text)}
+  /* ── 디자인 토큰 (index.html 기준) ── */
+  :root{
+    --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
+    --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943; --blue:#3b82f6;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--t1);}
+  ::-webkit-scrollbar{height:10px;width:10px;}
+  ::-webkit-scrollbar-thumb{background:#2a2f3a;border-radius:8px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  a{color:inherit;}
+
+  /* ── 레이아웃 (V2 셸) ── */
+  .layout{display:flex;min-height:100vh;background:var(--bg);}
+  .sidebar{flex:none;width:240px;align-self:flex-start;position:sticky;top:0;height:100vh;
+    background:var(--nav-bg);border-right:1px solid var(--line);padding:22px 16px;
+    display:flex;flex-direction:column;}
+  .sb-brand{display:flex;align-items:center;gap:11px;padding:0 6px 24px;text-decoration:none;}
+  .sb-logo{width:36px;height:36px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:19px;}
+  .sb-brand .bt{color:var(--t1);font-size:14.5px;font-weight:700;}
+  .sb-brand .bs{color:var(--m2);font-size:11px;letter-spacing:.06em;}
+  .sb-menu-h{color:var(--m3);font-size:11px;letter-spacing:.12em;padding:0 12px 8px;}
+  .sb-nav{display:flex;flex-direction:column;gap:3px;}
+  .sb-nav a{display:flex;align-items:center;gap:11px;padding:11px 12px;border-radius:11px;text-decoration:none;font-size:14px;color:var(--m1);}
+  .sb-nav a .dot{width:7px;height:7px;border-radius:50%;background:#2a2f3a;flex:none;}
+  .sb-nav a.active{background:rgba(22,199,132,.12);color:var(--green);font-weight:600;}
+  .sb-nav a.active .dot{background:var(--green);}
+  .sb-live{margin-top:24px;padding:16px;border-radius:14px;background:linear-gradient(160deg,rgba(22,199,132,.14),rgba(22,199,132,.03));border:1px solid rgba(22,199,132,.18);}
+  .sb-live .lh{display:flex;align-items:center;gap:7px;}
+  .sb-live .lh .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .sb-live .lh .t{color:var(--green);font-family:var(--mono);font-size:11px;font-weight:600;}
+  .sb-live .lb{color:var(--t2);font-size:13px;margin-top:9px;line-height:1.5;}
+  /* 사이드바 방문자 카운터 */
+  .sb-visitor{margin-top:14px;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--line);}
+  .sb-visitor .vh{color:var(--m2);font-size:10.5px;letter-spacing:.08em;margin-bottom:9px;font-family:var(--mono);}
+  .sb-visitor .vr{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--m1);padding:3px 0;}
+  .sb-visitor .vr .vc-n{color:var(--t1);font-weight:700;font-family:var(--mono);}
+  .sb-visitor .vr.now .vc-n{color:var(--green);}
+  .sb-visitor .vr .vc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:vcPulse 1.6s ease-in-out infinite;margin-right:5px;}
+  @keyframes vcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .sb-foot{margin-top:auto;padding:14px 12px 4px;color:var(--m3);font-size:11px;line-height:1.6;}
+
+  .main{flex:1;min-width:0;}
+  .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(8,9,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  .crumb{color:var(--m1);font-size:13px;}
+  .crumb b{color:var(--t1);font-weight:600;}
+  .topbar .right{display:flex;align-items:center;gap:12px;}
+  .topbar .live{display:flex;align-items:center;gap:7px;padding:8px 13px;border-radius:10px;background:rgba(22,199,132,.12);color:var(--green);font-size:12px;font-weight:600;font-family:var(--mono);}
+  .topbar .live .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+
+  .content{max-width:880px;margin:0 auto;padding:28px 32px 64px;}
+
+  /* ── 모바일 햄버거 ── */
+  .mobile-bar{display:none;position:sticky;top:0;z-index:30;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(8,9,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .mobile-bar .mb-brand{display:flex;align-items:center;gap:9px;text-decoration:none;}
+  .mobile-bar .mb-logo{width:30px;height:30px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:16px;}
+  .mobile-bar .mb-t{color:var(--t1);font-size:14px;font-weight:700;}
+  .mb-toggle{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--t1);}
+  .mb-toggle span{display:block;width:18px;height:2px;background:var(--t1);position:relative;}
+  .mb-toggle span::before,.mb-toggle span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--t1);}
+  .mb-toggle span::before{top:-6px;}.mb-toggle span::after{top:6px;}
+
+  /* ── 지표 상세 본문 (원본 클래스 → V2 토큰 재정의) ── */
+  /* 브레드크럼 */
+  .crumb-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--m2);font-family:var(--mono);margin-bottom:18px}
+  .crumb-nav a{color:var(--m1);text-decoration:none}
+  .crumb-nav a:hover{color:var(--t1)}
   .crumb-nav .sep{opacity:.5}
+  /* 히어로 */
   .ind-hero{margin:6px 0 8px}
-  .ind-hero .cat-pill{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--brand);background:var(--brand-soft);border:1px solid rgba(247,147,26,.25);padding:5px 12px;border-radius:100px;margin-bottom:14px}
-  .ind-hero .cat-pill .d{width:8px;height:8px;border-radius:50%;background:var(--brand)}
-  .ind-hero h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px}
-  .ind-hero h1 .hl{color:var(--brand)}
-  .ind-hero .lead{font-size:15.5px;color:var(--muted);line-height:1.74;max-width:720px;margin:0}
-  .ind-hero .lead b{color:var(--text);font-weight:600}
+  .ind-hero .cat-pill{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--blue);background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.25);padding:5px 12px;border-radius:100px;margin-bottom:14px}
+  .ind-hero .cat-pill .d{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+  .ind-hero h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px;color:var(--t1)}
+  .ind-hero h1 .hl{color:var(--green)}
+  .ind-hero .lead{font-size:15.5px;color:var(--t3);line-height:1.74;max-width:720px;margin:0}
+  .ind-hero .lead b{color:var(--t1);font-weight:600}
   /* 한눈 요약 박스 */
-  .summary-box{margin:26px 0 0;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .summary-box{margin:26px 0 0;background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   @media(max-width:680px){.summary-box{grid-template-columns:1fr;gap:16px}}
   .summary-box .sb{display:flex;flex-direction:column;gap:6px}
-  .summary-box .sb .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted-2)}
-  .summary-box .sb .v{font-size:13.5px;color:#c2cadb;line-height:1.6}
-  .summary-box .sb .v b{color:var(--text);font-weight:600}
+  .summary-box .sb .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--m2)}
+  .summary-box .sb .v{font-size:13.5px;color:var(--t2);line-height:1.6}
+  .summary-box .sb .v b{color:var(--t1);font-weight:600}
   .impact-inline{font-size:11.5px;font-family:var(--mono);font-weight:600;padding:4px 9px;border-radius:7px;display:inline-flex;align-self:flex-start}
-  .impact-inline.buy{color:var(--neon);background:var(--neon-soft)}
+  .impact-inline.buy{color:var(--green);background:rgba(22,199,132,.12)}
   /* 본문 섹션 */
   .sec{margin:46px 0 0;scroll-margin-top:80px;max-width:780px}
-  .sec h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;display:flex;align-items:center;gap:10px}
-  .sec h2 .ix{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--brand);background:var(--brand-soft);width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
-  .sec p{font-size:14.5px;color:var(--muted);line-height:1.78;margin:0 0 14px}
-  .sec p b{color:var(--text);font-weight:600}
-  .sec p code,.sec li code{font-family:var(--mono);font-size:12.5px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
+  .sec h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;display:flex;align-items:center;gap:10px;color:var(--t1)}
+  .sec h2 .ix{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--green);background:rgba(22,199,132,.12);width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
+  .sec p{font-size:14.5px;color:var(--t3);line-height:1.78;margin:0 0 14px}
+  .sec p b{color:var(--t1);font-weight:600}
+  .sec p code,.sec li code{font-family:var(--mono);font-size:12.5px;color:var(--t2);background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
   .sec ul{margin:0 0 14px;padding-left:20px}
-  .sec li{font-size:14.5px;color:var(--muted);line-height:1.72;margin:0 0 8px}
-  .sec li b{color:var(--text);font-weight:600}
+  .sec li{font-size:14.5px;color:var(--t3);line-height:1.72;margin:0 0 8px}
+  .sec li b{color:var(--t1);font-weight:600}
   /* 해석 구간 테이블 */
-  .zone-table{margin:8px 0 6px;border:1px solid var(--border);border-radius:13px;overflow:hidden}
-  .zone-table .zrow{display:grid;grid-template-columns:128px 1fr;border-bottom:1px solid var(--border)}
+  .zone-table{margin:8px 0 6px;border:1px solid var(--line);border-radius:13px;overflow:hidden}
+  .zone-table .zrow{display:grid;grid-template-columns:128px 1fr;border-bottom:1px solid var(--line)}
   .zone-table .zrow:last-child{border-bottom:0}
   .zone-table .zr-band{font-family:var(--mono);font-size:12.5px;font-weight:700;padding:13px 15px;display:flex;align-items:center;background:rgba(255,255,255,.02)}
-  .zone-table .zr-desc{font-size:13px;color:var(--muted);line-height:1.58;padding:13px 15px}
-  .zone-table .zr-band.z-strong{color:var(--neon)}
-  .zone-table .zr-band.z-mild{color:var(--brand)}
-  .zone-table .zr-band.z-wait{color:var(--muted)}
+  .zone-table .zr-desc{font-size:13px;color:var(--t3);line-height:1.58;padding:13px 15px}
+  .zone-table .zr-band.z-strong{color:var(--green)}
+  .zone-table .zr-band.z-mild{color:var(--blue)}
+  .zone-table .zr-band.z-wait{color:var(--m1)}
   .zone-table .zr-band.z-bear{color:var(--amber)}
   @media(max-width:480px){.zone-table .zrow{grid-template-columns:100px 1fr}}
   /* 콜아웃 */
-  .callout{margin:18px 0;border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:11px;background:rgba(255,194,61,.06);padding:15px 18px}
+  .callout{margin:18px 0;border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:11px;background:rgba(240,185,11,.06);padding:15px 18px}
   .callout .ct{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
-  .callout p{font-size:13.5px;color:#c2cadb;line-height:1.7;margin:0}
+  .callout p{font-size:13.5px;color:var(--t2);line-height:1.7;margin:0}
   /* 함께 보면 좋은 지표 */
   .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
   @media(max-width:760px){.related-grid{grid-template-columns:1fr}}
-  .related-grid a{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;padding:15px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:5px}
-  .related-grid a:hover{border-color:var(--border-strong);transform:translateY(-2px);background:rgba(255,255,255,.04)}
-  .related-grid a .rn{font-size:14.5px;font-weight:700;color:var(--text)}
-  .related-grid a .rd{font-size:12.5px;color:var(--muted);line-height:1.5}
+  .related-grid a{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:13px;padding:15px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:5px}
+  .related-grid a:hover{border-color:rgba(255,255,255,.14);transform:translateY(-2px);background:rgba(255,255,255,.04)}
+  .related-grid a .rn{font-size:14.5px;font-weight:700;color:var(--t1)}
+  .related-grid a .rd{font-size:12.5px;color:var(--t3);line-height:1.5}
   /* FAQ */
   .faq-list{margin-top:14px;display:flex;flex-direction:column;gap:11px;max-width:820px}
-  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;overflow:hidden}
-  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--text);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
+  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--t1);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
   .faq-item summary::-webkit-details-marker{display:none}
-  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--brand);flex:none}
-  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--muted-2);transition:.2s;flex:none}
+  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--green);flex:none}
+  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--m2);transition:.2s;flex:none}
   .faq-item[open] summary::after{transform:rotate(45deg)}
-  .faq-item .ans{font-size:13.5px;color:var(--muted);line-height:1.74;padding:0 18px 16px}
-  .faq-item .ans b{color:var(--text);font-weight:600}
+  .faq-item .ans{font-size:13.5px;color:var(--t3);line-height:1.74;padding:0 18px 16px}
+  .faq-item .ans b{color:var(--t1);font-weight:600}
   /* 하단 CTA */
-  .page-cta{margin:50px 0 10px;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-  .page-cta .ct-tx h3{font-size:17px;font-weight:700;margin:0 0 5px}
-  .page-cta .ct-tx p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.6}
-  .page-cta .ct-btn{font-size:14px;font-weight:700;color:#06140d;background:var(--neon);border-radius:11px;padding:13px 22px;text-decoration:none;white-space:nowrap;transition:.2s}
-  .page-cta .ct-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(54,222,158,.25)}
+  .page-cta{margin:50px 0 10px;background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .page-cta .ct-tx h3{font-size:17px;font-weight:700;margin:0 0 5px;color:var(--t1)}
+  .page-cta .ct-tx p{font-size:13.5px;color:var(--t3);margin:0;line-height:1.6}
+  .page-cta .ct-btn{font-size:14px;font-weight:700;color:#04120c;background:var(--green);border-radius:11px;padding:13px 22px;text-decoration:none;white-space:nowrap;transition:.2s}
+  .page-cta .ct-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(22,199,132,.25)}
+
+  /* ── 푸터 ── */
+  .foot{border-top:1px solid var(--line);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
+  .foot .fa{max-width:360px;}
+  .foot .fb{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+  .foot .fb .lo{width:28px;height:28px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:15px;}
+  .foot .fb .nm{color:var(--t1);font-size:14px;font-weight:700;}
+  .foot .fd{color:var(--m2);font-size:12.5px;line-height:1.7;}
+  .foot .cols{display:flex;gap:48px;flex-wrap:wrap;}
+  .foot .col h4{color:var(--m1);font-size:12px;font-weight:600;margin:0 0 10px;}
+  .foot .col a{display:block;color:var(--m2);font-size:13px;text-decoration:none;margin-bottom:8px;}
+  .foot .col a:hover{color:var(--t2);}
+  .foot .copy{color:var(--m3);font-size:11.5px;width:100%;border-top:1px solid rgba(255,255,255,.04);padding-top:16px;}
+
+  /* ── 반응형 ── */
+  @media(max-width:768px){
+    html,body{overflow-x:hidden;max-width:100vw;}
+    .sidebar{position:fixed;left:0;top:0;z-index:40;transform:translateX(-100%);transition:transform .25s ease;height:100vh;box-shadow:2px 0 20px rgba(0,0,0,.5);}
+    .layout.nav-open .sidebar{transform:translateX(0);}
+    .nav-backdrop{display:none;position:fixed;inset:0;z-index:35;background:rgba(0,0,0,.5);}
+    .layout.nav-open .nav-backdrop{display:block;}
+    .mobile-bar{display:flex;}
+    .topbar{display:none;}
+    .content{padding:18px 16px 56px;max-width:100%;}
+    .ind-hero h1{font-size:24px;}
+    .sec h2{font-size:19px;}
+    .foot{flex-direction:column;}
+    .foot .cols{gap:32px;}
+  }
+  @media(max-width:480px){
+    .content{padding:16px 12px 48px;}
+    .ind-hero h1{font-size:21px;}
+  }
 </style>
 <!-- 구조화 데이터: 지표 해설 문서 + 빵부스러기 + FAQ -->
 <script type="application/ld+json">
@@ -129,151 +231,250 @@
 </script>
 </head>
 <body>
-<div class="bg-field" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+<div class="layout" id="layout">
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-    <nav class="nav-links">
-      <a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
-      <a class="active" href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-      <a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a>
+  <!-- ── 사이드바 (V2 셸, active=지표 가이드) ── -->
+  <aside class="sidebar">
+    <a class="sb-brand" href="../index.html">
+      <div class="sb-logo">₿</div>
+      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+    </a>
+    <div class="sb-menu-h">MENU</div>
+    <nav class="sb-nav">
+      <a href="../index.html"><span class="dot"></span>대시보드</a>
+      <a class="active" href="../guide.html"><span class="dot"></span>지표 가이드</a>
+      <a href="../about.html"><span class="dot"></span>서비스 소개</a>
+      <a href="../contact.html"><span class="dot"></span>문의</a>
     </nav>
-    <a class="nav-pill" href="../index.html"><span class="pulse"></span><span data-en="Today's Score →" data-zh="今日评分 →">오늘의 점수 →</span></a>
-  </div>
-</header>
-
-<div class="wrap">
-  <div class="crumb-nav reveal">
-    <a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-    <span class="sep">/</span>
-    <span data-en="Macro" data-zh="宏观">매크로</span>
-    <span class="sep">/</span>
-    <span>S&amp;P 500</span>
-  </div>
-
-  <div class="ind-hero reveal">
-    <span class="cat-pill"><span class="d" style="background:var(--amber)"></span><span data-en="Macro" data-zh="宏观">매크로</span></span>
-    <h1 data-i18n-html="1" data-en="The S&amp;P 500 and Bitcoin, in <span class=&quot;hl&quot;>plain words</span>" data-zh="用<span class=&quot;hl&quot;>通俗的话</span>讲清楚标普 500 与比特币">S&amp;P 500과 비트코인, <span class="hl">쉬운 말</span>로 풀어보기</h1>
-    <p class="lead" data-i18n-html="1" data-en="The S&amp;P 500 is the benchmark US stock index, and it doubles as a thermometer for global <b>risk appetite</b>. When stocks are rising, investors are comfortable taking on risk — a backdrop that has often been favorable for Bitcoin too. When equities sell off hard, that same risk-off mood has frequently dragged crypto down with it. We watch its trend, not its exact level." data-zh="标普 500 是美国代表性股指，同时充当全球<b>风险偏好</b>的温度计。股市上涨时，投资者乐于承担风险——这种背景往往也对比特币有利。股市剧烈抛售时，同样的避险情绪也常拖累币市一同下跌。我们关注的是它的趋势，而非精确水平。">S&amp;P 500은 미국 대표 주가지수이자 글로벌 <b>위험 선호</b>의 온도계 역할을 합니다. 증시가 오를 때는 투자자들이 위험을 기꺼이 감수하는 분위기로, 비트코인에도 우호적인 배경이 되곤 했습니다. 반대로 증시가 크게 빠지면 같은 위험 회피 심리가 코인까지 함께 끌어내린 경우가 잦았습니다. 절대 수준이 아니라 추세를 봅니다.</p>
-  </div>
-
-  <div class="summary-box reveal">
-    <div class="sb">
-      <span class="k" data-en="What it is" data-zh="是什么">무엇인가</span>
-      <span class="v" data-en="The benchmark US stock index and a proxy for global risk appetite." data-zh="美国代表性股指，也是全球风险偏好的代理指标。">미국 대표 주가지수이자 글로벌 위험 선호의 대리 지표.</span>
+    <div class="sb-live">
+      <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
+      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
-    <div class="sb">
-      <span class="k" data-en="How to read" data-zh="如何解读">어떻게 읽나</span>
-      <span class="v" data-en="<b>Directional</b> — strength = risk-on, sharp drops = risk-off." data-zh="<b>方向性</b>——走强=风险偏好，急跌=避险。" data-i18n-html="1"><b>방향으로 읽기</b> — 강세=위험 선호, 급락=위험 회피.</span>
+    <!-- 방문자 카운터 (Firebase) -->
+    <div class="sb-visitor" id="visitorStrip">
+      <div class="vh">VISITORS</div>
+      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-    <div class="sb">
-      <span class="k" data-en="Signal" data-zh="信号">신호</span>
-      <span class="impact-inline buy" data-en="Strength = risk-on backdrop" data-zh="走强 = 风险偏好背景">강세 = 위험 선호 배경</span>
+    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+  </aside>
+
+  <!-- ── 메인 ── -->
+  <div class="main">
+    <!-- 모바일 상단 바 -->
+    <div class="mobile-bar">
+      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
     </div>
-  </div>
-
-  <section class="sec reveal">
-    <h2><span class="ix">1</span><span data-en="What the S&amp;P 500 tells you about Bitcoin" data-zh="标普 500 关于比特币能告诉你什么">S&amp;P 500은 비트코인에 대해 무엇을 알려주는가</span></h2>
-    <p data-i18n-html="1" data-en="On its own, the S&amp;P 500 says nothing about Bitcoin's supply, on-chain activity, or cycle. What it captures is the <b>weather</b> that all risk assets share: the collective willingness of investors to put money into things that can swing hard. Bitcoin is one of the riskiest assets in a typical portfolio, so it tends to thrive when that willingness is high and struggle when it evaporates." data-zh="单看标普 500，它对比特币的供给、链上活动或周期一无所知。它捕捉的是所有风险资产共享的<b>天气</b>：投资者把钱投入可能剧烈波动之物的集体意愿。比特币是典型投资组合中风险最高的资产之一，因此当这种意愿高涨时往往蓬勃，当它消散时往往挣扎。">S&amp;P 500 자체는 비트코인의 공급이나 온체인 활동, 사이클에 대해 아무것도 말해주지 않습니다. 이 지수가 포착하는 것은 모든 위험자산이 공유하는 <b>날씨</b>입니다. 즉 크게 출렁일 수 있는 자산에 돈을 넣으려는 투자자들의 집합적 의지입니다. 비트코인은 보통의 포트폴리오에서 가장 위험한 자산에 속하므로, 그 의지가 높을 때 잘나가고 그것이 증발할 때 고전하는 경향이 있습니다.</p>
-    <p data-i18n-html="1" data-en="This is why the S&amp;P 500 belongs in a Bitcoin dashboard at all. It's a <b>macro context filter</b>: it doesn't tell you when to buy, but it tells you whether the broader environment is leaning toward putting money into risk (risk-on) or pulling it out (risk-off)." data-zh="这正是标普 500 出现在比特币仪表盘中的原因。它是一个<b>宏观背景过滤器</b>：它不告诉你何时买入，但告诉你大环境是倾向于把钱投入风险（风险偏好），还是倾向于撤离（避险）。">이것이 S&amp;P 500이 비트코인 대시보드에 들어가 있는 이유입니다. 이 지수는 <b>매크로 맥락 필터</b>입니다. 언제 사라고 알려주지는 않지만, 큰 환경이 위험에 돈을 넣는 쪽(위험 선호)으로 기우는지 빼내는 쪽(위험 회피)으로 기우는지를 알려줍니다.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">2</span><span data-en="What the index is and how we read it" data-zh="该指数是什么以及我们如何解读">지수의 정체와 읽는 방식</span></h2>
-    <p data-i18n-html="1" data-en="The mechanics are simple, and unlike on-chain metrics there's no threshold to memorize — the read is directional:" data-zh="其机制很简单，且与链上指标不同，没有需要记忆的阈值——解读是方向性的：">구조는 단순하며, 온체인 지표와 달리 외울 임계값이 없습니다. 방향으로 읽습니다.</p>
-    <ul>
-      <li data-i18n-html="1" data-en="<b>Composition</b> — a market-cap-weighted index of 500 large US companies, so bigger firms move it more." data-zh="<b>构成</b>——500 家美国大型企业的市值加权指数，因此规模更大的公司对其影响更大。"><b>구성</b> — 미국 대형 기업 500곳을 시가총액 가중한 지수라, 규모가 큰 기업일수록 더 크게 움직입니다.</li>
-      <li data-i18n-html="1" data-en="<b>What it stands for</b> — the standard benchmark for the US stock market and a widely used proxy for global risk appetite." data-zh="<b>代表意义</b>——美国股市的标准基准，也是被广泛使用的全球风险偏好代理指标。"><b>대표하는 것</b> — 미국 증시의 표준 벤치마크이자 글로벌 위험 선호의 대리 지표로 널리 쓰입니다.</li>
-      <li data-i18n-html="1" data-en="<b>No buy/sell line</b> — there's no fixed threshold. A rising trend signals risk-on; sharp selloffs signal risk-off." data-zh="<b>无买卖分界线</b>——没有固定阈值。上升趋势预示风险偏好；剧烈抛售预示避险。"><b>매수·매도 기준선 없음</b> — 고정 임계값이 없습니다. 상승 추세는 위험 선호를, 급락은 위험 회피를 나타냅니다.</li>
-      <li data-i18n-html="1" data-en="<b>What we track</b> — the <b>trend and its correlation with Bitcoin</b>, not the absolute point value." data-zh="<b>我们跟踪什么</b>——<b>趋势及其与比特币的相关性</b>，而非绝对点位。"><b>우리가 보는 것</b> — 절대 포인트 값이 아니라 <b>추세와 비트코인과의 상관관계</b>입니다.</li>
-    </ul>
-    <p data-i18n-html="1" data-en="The takeaway is that the S&amp;P 500 is read as a <b>direction and a relationship</b>, not as a number you cross above or below. A market grinding to new highs and one bleeding lower send very different messages about the risk backdrop around Bitcoin." data-zh="要点是：标普 500 应被解读为一种<b>方向与关系</b>，而非你穿越的某个数字。不断创新高的市场与持续阴跌的市场，对比特币周围的风险背景传递着截然不同的信息。">핵심은 S&amp;P 500을 위아래로 넘나드는 숫자가 아니라 <b>방향과 관계</b>로 읽는다는 점입니다. 신고가를 향해 오르는 시장과 줄줄 흘러내리는 시장은 비트코인을 둘러싼 위험 배경에 대해 전혀 다른 메시지를 보냅니다.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">3</span><span data-en="Reading the signals" data-zh="信号解读">신호로 읽기</span></h2>
-    <p data-en="Since there's no numeric threshold, read the S&amp;P 500 through these directional states rather than fixed bands." data-zh="由于没有数值阈值，请通过下列方向性状态来解读标普 500，而非固定区间。">수치 임계값이 없으므로, S&amp;P 500은 고정 구간이 아니라 아래의 방향성 상태로 읽으세요.</p>
-    <div class="zone-table">
-      <div class="zrow"><div class="zr-band z-strong"><span data-en="Steady uptrend" data-zh="稳健上行">꾸준한 상승</span></div><div class="zr-desc" data-en="<b>Risk-on backdrop.</b> Investors are comfortable with risk; historically a more supportive environment for Bitcoin — though not a guarantee." data-zh="<b>风险偏好背景。</b>投资者乐于承担风险；历史上对比特币是更有支撑的环境——但并非保证。" data-i18n-html="1"><b>위험 선호 배경.</b> 투자자가 위험을 편안해하는 국면. 역사적으로 비트코인에 더 우호적인 환경이었으나 보장은 아님.</div></div>
-      <div class="zrow"><div class="zr-band z-mild"><span data-en="Range / drift" data-zh="区间 / 横盘">횡보·표류</span></div><div class="zr-desc" data-en="No strong macro lean. Bitcoin is freer to trade on its own cycle and on-chain factors during these calmer stretches." data-zh="无明显宏观倾向。在这些较平静的阶段，比特币更易按自身周期与链上因素运行。" data-i18n-html="1">뚜렷한 매크로 기울기가 없는 국면. 이런 비교적 평온한 구간에서는 비트코인이 자기 사이클·온체인 요인대로 더 자유롭게 움직임.</div></div>
-      <div class="zrow"><div class="zr-band z-wait"><span data-en="Sharp selloff" data-zh="急剧抛售">급락</span></div><div class="zr-desc" data-en="<b>Risk-off.</b> In panics correlation tightens and everything sells together — Bitcoin has often fallen alongside equities. A caution flag." data-zh="<b>避险。</b>恐慌中相关性收紧、一切同步抛售——比特币常随股市一同下跌。属警示信号。" data-i18n-html="1"><b>위험 회피.</b> 패닉에서는 상관관계가 강해져 전부 함께 팔림 — 비트코인이 증시와 함께 떨어진 경우가 많았음. 주의 신호.</div></div>
-      <div class="zrow"><div class="zr-band z-bear"><span data-en="Decoupling" data-zh="脱钩">디커플링</span></div><div class="zr-desc" data-en="Bitcoin and stocks moving apart. A reminder the link isn't constant — check the rolling correlation before assuming they'll track each other." data-zh="比特币与股市背离。提醒该关联并非恒定——在假设二者同步前，请查看滚动相关性。" data-i18n-html="1">비트코인과 증시가 따로 노는 국면. 연결이 일정하지 않음을 일깨움 — 둘이 같이 갈 거라 가정하기 전에 롤링 상관계수를 확인할 것.</div></div>
+    <!-- 데스크톱 상단 바 -->
+    <div class="topbar">
+      <div class="crumb">지표 가이드 <span style="color:var(--m3)">›</span> <b>S&amp;P 500</b></div>
+      <div class="right">
+        <span class="live"><span class="d"></span>LIVE</span>
+      </div>
     </div>
-  </section>
 
-  <section class="sec reveal">
-    <h2><span class="ix">4</span><span data-en="Using it for buy timing" data-zh="用于择时">매수 타이밍에 쓰는 법</span></h2>
-    <p data-i18n-html="1" data-en="Treat the S&amp;P 500 as a <b>background filter</b> rather than a trigger. When equities are in a healthy uptrend, the macro wind is at Bitcoin's back, and accumulation plans tend to face less headwind. When stocks are in a violent selloff, it's a reminder that crypto can get swept up in cross-asset deleveraging regardless of its own fundamentals — a cue to size positions carefully rather than to buy or sell on the equity move alone." data-zh="把标普 500 当作<b>背景过滤器</b>，而非触发器。当股市处于健康上升趋势时，宏观之风在比特币背后，积累计划往往阻力更小。当股市剧烈抛售时，它提醒你：无论自身基本面如何，币市都可能被卷入跨资产去杠杆——这是谨慎控制仓位的提示，而非仅凭股市波动买卖的信号。">S&amp;P 500은 방아쇠가 아니라 <b>배경 필터</b>로 다루세요. 증시가 건강한 상승 추세일 때는 매크로 바람이 비트코인 등 뒤에서 불어 분할 매수 계획이 역풍을 덜 받는 경향이 있습니다. 증시가 격렬하게 빠질 때는 비트코인이 자기 펀더멘털과 무관하게 자산 간 디레버리징에 휩쓸릴 수 있음을 일깨우며, 증시 움직임만으로 사고팔기보다 비중을 신중히 조절하라는 신호입니다.</p>
-    <div class="callout">
-      <div class="ct" data-en="Practical tip" data-zh="实用建议">실전 팁</div>
-      <p data-en="Don't assume the link is fixed. Look at the <b>rolling correlation</b> between Bitcoin and the S&amp;P 500 — when it's high, macro matters more; when it's low, lean on Bitcoin's own indicators instead." data-zh="不要假设关联恒定。查看比特币与标普 500 之间的<b>滚动相关性</b>——相关性高时宏观更重要，相关性低时则更依赖比特币自身的指标。" data-i18n-html="1">연결이 고정돼 있다고 가정하지 마세요. 비트코인과 S&amp;P 500의 <b>롤링 상관계수</b>를 보고, 높을 때는 매크로의 비중을 키우고 낮을 때는 비트코인 자체 지표에 더 기대세요.</p>
+    <div class="content">
+
+      <div class="crumb-nav">
+        <a href="../guide.html">지표 가이드</a>
+        <span class="sep">/</span>
+        <span>매크로</span>
+        <span class="sep">/</span>
+        <span>S&amp;P 500</span>
+      </div>
+
+      <div class="ind-hero">
+        <span class="cat-pill"><span class="d"></span><span>매크로</span></span>
+        <h1>S&amp;P 500과 비트코인, <span class="hl">쉬운 말</span>로 풀어보기</h1>
+        <p class="lead">S&amp;P 500은 미국 대표 주가지수이자 글로벌 <b>위험 선호</b>의 온도계 역할을 합니다. 증시가 오를 때는 투자자들이 위험을 기꺼이 감수하는 분위기로, 비트코인에도 우호적인 배경이 되곤 했습니다. 반대로 증시가 크게 빠지면 같은 위험 회피 심리가 코인까지 함께 끌어내린 경우가 잦았습니다. 절대 수준이 아니라 추세를 봅니다.</p>
+      </div>
+
+      <div class="summary-box">
+        <div class="sb">
+          <span class="k">무엇인가</span>
+          <span class="v">미국 대표 주가지수이자 글로벌 위험 선호의 대리 지표.</span>
+        </div>
+        <div class="sb">
+          <span class="k">어떻게 읽나</span>
+          <span class="v"><b>방향으로 읽기</b> — 강세=위험 선호, 급락=위험 회피.</span>
+        </div>
+        <div class="sb">
+          <span class="k">신호</span>
+          <span class="impact-inline buy">강세 = 위험 선호 배경</span>
+        </div>
+      </div>
+
+      <section class="sec">
+        <h2><span class="ix">1</span><span>S&amp;P 500은 비트코인에 대해 무엇을 알려주는가</span></h2>
+        <p>S&amp;P 500 자체는 비트코인의 공급이나 온체인 활동, 사이클에 대해 아무것도 말해주지 않습니다. 이 지수가 포착하는 것은 모든 위험자산이 공유하는 <b>날씨</b>입니다. 즉 크게 출렁일 수 있는 자산에 돈을 넣으려는 투자자들의 집합적 의지입니다. 비트코인은 보통의 포트폴리오에서 가장 위험한 자산에 속하므로, 그 의지가 높을 때 잘나가고 그것이 증발할 때 고전하는 경향이 있습니다.</p>
+        <p>이것이 S&amp;P 500이 비트코인 대시보드에 들어가 있는 이유입니다. 이 지수는 <b>매크로 맥락 필터</b>입니다. 언제 사라고 알려주지는 않지만, 큰 환경이 위험에 돈을 넣는 쪽(위험 선호)으로 기우는지 빼내는 쪽(위험 회피)으로 기우는지를 알려줍니다.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">2</span><span>지수의 정체와 읽는 방식</span></h2>
+        <p>구조는 단순하며, 온체인 지표와 달리 외울 임계값이 없습니다. 방향으로 읽습니다.</p>
+        <ul>
+          <li><b>구성</b> — 미국 대형 기업 500곳을 시가총액 가중한 지수라, 규모가 큰 기업일수록 더 크게 움직입니다.</li>
+          <li><b>대표하는 것</b> — 미국 증시의 표준 벤치마크이자 글로벌 위험 선호의 대리 지표로 널리 쓰입니다.</li>
+          <li><b>매수·매도 기준선 없음</b> — 고정 임계값이 없습니다. 상승 추세는 위험 선호를, 급락은 위험 회피를 나타냅니다.</li>
+          <li><b>우리가 보는 것</b> — 절대 포인트 값이 아니라 <b>추세와 비트코인과의 상관관계</b>입니다.</li>
+        </ul>
+        <p>핵심은 S&amp;P 500을 위아래로 넘나드는 숫자가 아니라 <b>방향과 관계</b>로 읽는다는 점입니다. 신고가를 향해 오르는 시장과 줄줄 흘러내리는 시장은 비트코인을 둘러싼 위험 배경에 대해 전혀 다른 메시지를 보냅니다.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">3</span><span>신호로 읽기</span></h2>
+        <p>수치 임계값이 없으므로, S&amp;P 500은 고정 구간이 아니라 아래의 방향성 상태로 읽으세요.</p>
+        <div class="zone-table">
+          <div class="zrow"><div class="zr-band z-strong"><span>꾸준한 상승</span></div><div class="zr-desc"><b>위험 선호 배경.</b> 투자자가 위험을 편안해하는 국면. 역사적으로 비트코인에 더 우호적인 환경이었으나 보장은 아님.</div></div>
+          <div class="zrow"><div class="zr-band z-mild"><span>횡보·표류</span></div><div class="zr-desc">뚜렷한 매크로 기울기가 없는 국면. 이런 비교적 평온한 구간에서는 비트코인이 자기 사이클·온체인 요인대로 더 자유롭게 움직임.</div></div>
+          <div class="zrow"><div class="zr-band z-wait"><span>급락</span></div><div class="zr-desc"><b>위험 회피.</b> 패닉에서는 상관관계가 강해져 전부 함께 팔림 — 비트코인이 증시와 함께 떨어진 경우가 많았음. 주의 신호.</div></div>
+          <div class="zrow"><div class="zr-band z-bear"><span>디커플링</span></div><div class="zr-desc">비트코인과 증시가 따로 노는 국면. 연결이 일정하지 않음을 일깨움 — 둘이 같이 갈 거라 가정하기 전에 롤링 상관계수를 확인할 것.</div></div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">4</span><span>매수 타이밍에 쓰는 법</span></h2>
+        <p>S&amp;P 500은 방아쇠가 아니라 <b>배경 필터</b>로 다루세요. 증시가 건강한 상승 추세일 때는 매크로 바람이 비트코인 등 뒤에서 불어 분할 매수 계획이 역풍을 덜 받는 경향이 있습니다. 증시가 격렬하게 빠질 때는 비트코인이 자기 펀더멘털과 무관하게 자산 간 디레버리징에 휩쓸릴 수 있음을 일깨우며, 증시 움직임만으로 사고팔기보다 비중을 신중히 조절하라는 신호입니다.</p>
+        <div class="callout">
+          <div class="ct">실전 팁</div>
+          <p>연결이 고정돼 있다고 가정하지 마세요. 비트코인과 S&amp;P 500의 <b>롤링 상관계수</b>를 보고, 높을 때는 매크로의 비중을 키우고 낮을 때는 비트코인 자체 지표에 더 기대세요.</p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">5</span><span>한계와 흔한 오해</span></h2>
+        <p>가장 큰 실수는 상관관계가 일정하다고 가정하는 것입니다. 상관관계는 <b>패닉에서 강해집니다</b> — 유동성이 마르면 투자자는 팔 수 있는 것을 다 팔고, 비트코인은 증시와 나란히 고베타 위험자산처럼 움직입니다. 하지만 <b>평온한 시기에는 약해져</b> 비트코인이 자기 반감기 사이클과 온체인 동학을 따라 증시에서 멀리 떨어지기도 합니다. S&amp;P 500을 비트코인의 영구적 선행지표로 취급하면 둘의 관계가 깨지는 바로 그 순간에 틀리게 됩니다. 일정하다고 단정하지 말고 롤링 상관계수로 확인하며, 이것이 비트코인 고유 신호의 대체물이 아니라 매크로 맥락 레이어임을 기억하세요.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">+</span><span>함께 보면 좋은 지표</span></h2>
+        <div class="related-grid">
+          <a href="dollar-index-dxy.html">
+            <span class="rn">달러지수 DXY</span>
+            <span class="rd">달러 강세 여부 — 위험자산에 역풍인 경우가 많음.</span>
+          </a>
+          <a href="etf-net-flow.html">
+            <span class="rn">ETF 순유입</span>
+            <span class="rd">현물 ETF를 통한 기관 자금 유입 여부.</span>
+          </a>
+          <a href="../guide.html">
+            <span class="rn">전체 지표 보기</span>
+            <span class="rd">지표 가이드 전체로 돌아가기.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">?</span><span>자주 묻는 질문</span></h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>S&amp;P 500이 오르면 비트코인도 오르나요?</span></summary>
+            <div class="ans">둘은 같은 위험자산 심리를 공유해 함께 움직이는 경우가 많았지만 항상 그런 것은 아닙니다. 증시 상승은 위험 선호가 커졌다는 신호로 코인에 우호적인 맥락이 되곤 했고, 증시 급락은 비트코인까지 끌어내린 적이 잦습니다. 다만 상관관계는 시기에 따라 강해지거나 약해지므로 일정하다고 가정하지 않는 것이 좋습니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>S&amp;P 500은 어떤 지수인가요?</span></summary>
+            <div class="ans">미국 대형 기업 500곳을 시가총액 가중으로 묶은 주가지수로, 미국 증시의 표준 벤치마크이자 글로벌 위험 선호의 대리 지표로 널리 쓰입니다. 이 사이트에서는 절대 수준보다 추세와 비트코인과의 상관관계를 봅니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>비트코인은 증시와 항상 같이 움직이나요?</span></summary>
+            <div class="ans">아닙니다. 상관관계는 패닉 국면에서 강해지는 경향이 있어 모든 위험자산이 함께 팔리지만, 평온한 시기에는 약해져 비트코인이 반감기나 온체인 흐름 같은 자기 사이클대로 움직이기도 합니다. 연결이 늘 일정하다고 보지 말고 롤링 상관계수로 그때그때 확인하는 것이 좋습니다.</div>
+          </details>
+        </div>
+      </section>
+
+      <div class="page-cta">
+        <div class="ct-tx">
+          <h3>오늘의 지표 값 확인하기</h3>
+          <p>대시보드에서 S&amp;P 500 추세와 종합 타이밍 점수를 확인하세요.</p>
+        </div>
+        <a class="ct-btn" href="../index.html">대시보드 열기 →</a>
+      </div>
+
+      <!-- 푸터 -->
+      <div class="foot">
+        <div class="fa">
+          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
+          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+        </div>
+        <div class="cols">
+          <div class="col"><h4>메뉴</h4><a href="../index.html">대시보드</a><a href="../guide.html">지표 가이드</a><a href="../about.html">서비스 소개</a><a href="../contact.html">문의</a></div>
+          <div class="col"><h4>정책 · 커뮤니티</h4><a href="../privacy.html">개인정보처리방침</a><a href="../disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+        </div>
+        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+      </div>
+
     </div>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">5</span><span data-en="Limits &amp; common misreadings" data-zh="局限与常见误读">한계와 흔한 오해</span></h2>
-    <p data-i18n-html="1" data-en="The biggest mistake is assuming the correlation is constant. It <b>strengthens in panics</b> — when liquidity dries up, investors sell whatever they can, and Bitcoin trades like a high-beta risk asset alongside stocks. But it <b>weakens in calm periods</b>, when Bitcoin follows its own halving cycle and on-chain dynamics and can drift far from equities. Treating the S&amp;P 500 as a permanent leading indicator for Bitcoin sets you up to be wrong exactly when the relationship breaks. Check the rolling correlation rather than presuming it, and remember this is a macro context layer — not a substitute for Bitcoin-native signals." data-zh="最大的错误是假设相关性恒定。它在<b>恐慌中增强</b>——流动性枯竭时，投资者会抛售一切可抛之物，比特币如高贝塔风险资产般随股市波动。但它在<b>平静期减弱</b>，此时比特币遵循自身减半周期与链上动态，可能远离股市。把标普 500 当作比特币永久的领先指标，恰恰会让你在二者关系破裂时判断失误。应查看滚动相关性而非想当然，并记住这是宏观背景层——而非比特币原生信号的替代品。">가장 큰 실수는 상관관계가 일정하다고 가정하는 것입니다. 상관관계는 <b>패닉에서 강해집니다</b> — 유동성이 마르면 투자자는 팔 수 있는 것을 다 팔고, 비트코인은 증시와 나란히 고베타 위험자산처럼 움직입니다. 하지만 <b>평온한 시기에는 약해져</b> 비트코인이 자기 반감기 사이클과 온체인 동학을 따라 증시에서 멀리 떨어지기도 합니다. S&amp;P 500을 비트코인의 영구적 선행지표로 취급하면 둘의 관계가 깨지는 바로 그 순간에 틀리게 됩니다. 일정하다고 단정하지 말고 롤링 상관계수로 확인하며, 이것이 비트코인 고유 신호의 대체물이 아니라 매크로 맥락 레이어임을 기억하세요.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">+</span><span data-en="Indicators to read alongside" data-zh="建议搭配阅读的指标">함께 보면 좋은 지표</span></h2>
-    <div class="related-grid">
-      <a href="dollar-index-dxy.html">
-        <span class="rn" data-en="Dollar Index (DXY)" data-zh="美元指数（DXY）">달러지수 DXY</span>
-        <span class="rd" data-en="Dollar strength — often a headwind for risk assets." data-zh="美元强弱——常是风险资产的逆风。">달러 강세 여부 — 위험자산에 역풍인 경우가 많음.</span>
-      </a>
-      <a href="etf-net-flow.html">
-        <span class="rn" data-en="ETF Net Flow" data-zh="ETF 净流入">ETF 순유입</span>
-        <span class="rd" data-en="Whether institutional money is entering via spot ETFs." data-zh="机构资金是否通过现货 ETF 流入。">현물 ETF를 통한 기관 자금 유입 여부.</span>
-      </a>
-      <a href="../guide.html">
-        <span class="rn" data-en="All indicators" data-zh="全部指标">전체 지표 보기</span>
-        <span class="rd" data-en="Back to the full indicator guide." data-zh="返回完整指标指南。">지표 가이드 전체로 돌아가기.</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">?</span><span data-en="Frequently asked" data-zh="常见问题">자주 묻는 질문</span></h2>
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="If the S&amp;P 500 rises, does Bitcoin rise too?" data-zh="标普 500 上涨，比特币也会涨吗？">S&amp;P 500이 오르면 비트코인도 오르나요?</span></summary>
-        <div class="ans" data-en="They often move together because they share the same risk-appetite mood, but not always. A rising stock market signals greater risk-on appetite, which has tended to be a favorable backdrop for crypto, while sharp equity selloffs have frequently dragged Bitcoin down. The correlation strengthens and weakens over time, though, so it's best not to assume it's constant." data-zh="它们常因共享同样的风险偏好情绪而同向波动，但并非总是如此。股市上涨预示更强的风险偏好，往往是对币市有利的背景；股市急跌则常拖累比特币。但该相关性随时间增强或减弱，因此最好不要假设它恒定。">둘은 같은 위험자산 심리를 공유해 함께 움직이는 경우가 많았지만 항상 그런 것은 아닙니다. 증시 상승은 위험 선호가 커졌다는 신호로 코인에 우호적인 맥락이 되곤 했고, 증시 급락은 비트코인까지 끌어내린 적이 잦습니다. 다만 상관관계는 시기에 따라 강해지거나 약해지므로 일정하다고 가정하지 않는 것이 좋습니다.</div>
-      </details>
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="What kind of index is the S&amp;P 500?" data-zh="标普 500 是什么样的指数？">S&amp;P 500은 어떤 지수인가요?</span></summary>
-        <div class="ans" data-en="It's a market-cap-weighted index of 500 large US companies — the standard benchmark for the US stock market and a widely used proxy for global risk appetite. On this site we focus on its trend and its correlation with Bitcoin rather than its absolute level." data-zh="它是 500 家美国大型企业的市值加权指数——美国股市的标准基准，也是被广泛使用的全球风险偏好代理指标。在本站，我们关注的是其趋势及与比特币的相关性，而非绝对水平。">미국 대형 기업 500곳을 시가총액 가중으로 묶은 주가지수로, 미국 증시의 표준 벤치마크이자 글로벌 위험 선호의 대리 지표로 널리 쓰입니다. 이 사이트에서는 절대 수준보다 추세와 비트코인과의 상관관계를 봅니다.</div>
-      </details>
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="Does Bitcoin always move with stocks?" data-zh="比特币总是与股市同步吗？">비트코인은 증시와 항상 같이 움직이나요?</span></summary>
-        <div class="ans" data-en="No. The correlation tends to tighten in panics, when every risk asset sells off together, but it weakens in calm periods, when Bitcoin follows its own cycle — things like the halving and on-chain flows. Rather than assuming the link is constant, it's better to check the rolling correlation as conditions change." data-zh="不会。相关性在恐慌时往往收紧，此时所有风险资产同步抛售；但在平静期会减弱，此时比特币遵循自身周期——如减半与链上资金流。与其假设关联恒定，不如随条件变化查看滚动相关性。">아닙니다. 상관관계는 패닉 국면에서 강해지는 경향이 있어 모든 위험자산이 함께 팔리지만, 평온한 시기에는 약해져 비트코인이 반감기나 온체인 흐름 같은 자기 사이클대로 움직이기도 합니다. 연결이 늘 일정하다고 보지 말고 롤링 상관계수로 그때그때 확인하는 것이 좋습니다.</div>
-      </details>
-    </div>
-  </section>
-
-  <div class="page-cta reveal">
-    <div class="ct-tx">
-      <h3 data-en="See today's reading" data-zh="查看今日读数">오늘의 지표 값 확인하기</h3>
-      <p data-en="Check the S&amp;P 500 trend and the composite timing score on the dashboard." data-zh="在仪表盘上查看标普 500 趋势与综合择时评分。">대시보드에서 S&amp;P 500 추세와 종합 타이밍 점수를 확인하세요.</p>
-    </div>
-    <a class="ct-btn" href="../index.html" data-en="Open dashboard →" data-zh="打开仪表盘 →">대시보드 열기 →</a>
   </div>
 </div>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
-      </div>
-      <div><h4 data-en="Menu" data-zh="菜单">메뉴</h4><a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a><a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a><a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a></div>
-      <div><h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a><a href="../disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a></div>
-    </div>
-    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
-  </div>
-</footer>
-<script src="../btc-reveal.js"></script>
+<!-- Firebase compat SDK (동기 로드) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+<script>
+/* ── 모바일 사이드바 토글 ── */
+(function(){
+  var layout=document.getElementById('layout'),btn=document.getElementById('mbToggle'),bk=document.getElementById('navBackdrop');
+  function close(){layout.classList.remove('nav-open');}
+  if(btn)btn.addEventListener('click',function(){layout.classList.toggle('nav-open');});
+  if(bk)bk.addEventListener('click',close);
+  document.querySelectorAll('.sb-nav a').forEach(function(a){a.addEventListener('click',close);});
+})();
+
+/* ──────────────────────────────────────────────────────────
+ * 방문자 카운터 (Firebase Realtime Database) — index.html에서 그대로 이식
+ * 실패해도 폴백 '--' 유지.
+ * ────────────────────────────────────────────────────────── */
+(function(){
+  'use strict';
+  if(typeof firebase==='undefined'||!firebase.database){
+    console.warn('[visitor] Firebase SDK not available, skipping visitor counter');
+    return;
+  }
+  var firebaseConfig={
+    apiKey:"AIzaSyA0rKMvdc-9tRbycgpkczyopQvqRQRV2v0",
+    authDomain:"btctiming-af87d.firebaseapp.com",
+    databaseURL:"https://btctiming-af87d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId:"btctiming-af87d",
+    storageBucket:"btctiming-af87d.firebasestorage.app",
+    messagingSenderId:"9515727678",
+    appId:"1:9515727678:web:7d6a7ad30d881c1f37ca6f",
+    measurementId:"G-QNR0LP5QH1"
+  };
+  function setNum(id,v){
+    var el=document.getElementById(id);
+    if(!el)return;
+    if(v==null||isNaN(v)){el.textContent='--';return;}
+    el.textContent=Number(v).toLocaleString('ko-KR');
+  }
+  function kstDateKey(){return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);}
+  try{
+    if(!firebase.apps||!firebase.apps.length){firebase.initializeApp(firebaseConfig);}
+    var db=firebase.database();
+    var today=kstDateKey();
+    var myPresenceRef=db.ref('presence').push();
+    var presenceListRef=db.ref('presence');
+    db.ref('.info/connected').on('value',function(snap){
+      if(snap.val()!==true)return;
+      myPresenceRef.onDisconnect().remove();
+      myPresenceRef.set(true);
+    });
+    presenceListRef.on('value',function(snap){setNum('vcNow',snap.numChildren());},function(err){console.warn('[visitor] presence read failed:',err&&err.message);});
+    db.ref('counters/total').on('value',function(snap){setNum('vcTotal',snap.val());},function(err){console.warn('[visitor] total read failed:',err&&err.message);});
+    db.ref('counters/daily/'+today).on('value',function(snap){setNum('vcToday',snap.val());},function(err){console.warn('[visitor] daily read failed:',err&&err.message);});
+    try{
+      if(!sessionStorage.getItem('btc_counted')){
+        sessionStorage.setItem('btc_counted','1');
+        db.ref('counters/total').transaction(function(v){return (v||0)+1;});
+        db.ref('counters/daily/'+today).transaction(function(v){return (v||0)+1;});
+        console.log('[visitor] new session counted for '+today);
+      }
+    }catch(e){console.warn('[visitor] sessionStorage unavailable, count skipped:',e&&e.message);}
+  }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
+})();
+</script>
 </body>
 </html>

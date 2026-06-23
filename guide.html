@@ -2,93 +2,238 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다." data-en-content="A plain-language guide to key Bitcoin indicators — RSI, MVRV-Z, SOPR, NUPL, the Fear &amp; Greed Index, funding rate, and more — and how to read them." data-zh-content="解读 RSI、MVRV-Z、SOPR、NUPL、恐惧贪婪指数、资金费率等比特币投资常用主要指标的含义与解读方法。">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-en="Indicator Guide — BTC Timing Radar" data-zh="指标指南 — BTC 时机雷达">지표 가이드 — BTC 투자 타이밍 레이더</title>
+<title>지표 가이드 — BTC 투자 타이밍 레이더</title>
+<meta name="description" content="RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다.">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://btctiming.co.kr/guide.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://btctiming.co.kr/guide.html">
-<meta property="og:site_name" content="BTC 투자 타이밍 레이더" data-en-content="BTC Investment Timing Radar" data-zh-content="BTC 投资择时雷达">
-<meta property="og:title" content="지표 가이드 — BTC 투자 타이밍 레이더" data-en-content="Indicator Guide — BTC Timing Radar" data-zh-content="指标指南 — BTC 时机雷达">
-<meta property="og:description" content="RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다." data-en-content="A plain-language guide to key Bitcoin indicators — RSI, MVRV-Z, SOPR, NUPL, the Fear &amp; Greed Index, funding rate, and more — and how to read them." data-zh-content="解读 RSI、MVRV-Z、SOPR、NUPL、恐惧贪婪指数、资金费率等比特币投资常用主要指标的含义与解读方法。">
+<meta property="og:site_name" content="BTC 투자 타이밍 레이더">
+<meta property="og:title" content="지표 가이드 — BTC 투자 타이밍 레이더">
+<meta property="og:description" content="RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="지표 가이드 — BTC 투자 타이밍 레이더" data-en-content="Indicator Guide — BTC Timing Radar" data-zh-content="指标指南 — BTC 时机雷达">
-<meta name="twitter:description" content="RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다." data-en-content="A plain-language guide to key Bitcoin indicators — RSI, MVRV-Z, SOPR, NUPL, the Fear &amp; Greed Index, funding rate, and more — and how to read them." data-zh-content="解读 RSI、MVRV-Z、SOPR、NUPL、恐惧贪婪指数、资金费率等比特币投资常用主要指标的含义与解读方法。">
+<meta name="twitter:title" content="지표 가이드 — BTC 투자 타이밍 레이더">
+<meta name="twitter:description" content="RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다.">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="btc-base.css">
-<style>
-  .chips{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 0}
-  .chips a{font-size:13.5px;font-weight:600;color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--border);padding:9px 15px;border-radius:100px;text-decoration:none;transition:.18s;display:flex;align-items:center;gap:8px;white-space:nowrap}
-  .chips a:hover{color:var(--text);border-color:var(--border-strong);background:rgba(255,255,255,.07);transform:translateY(-1px)}
-  .chips a .d{width:9px;height:9px;border-radius:50%}
-  .cat-head{display:flex;align-items:center;gap:13px;margin:52px 0 6px;scroll-margin-top:80px}
-  .cat-head .badge{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:21px;border:1px solid;flex:none}
-  .cat-head h2{font-size:23px;font-weight:800;letter-spacing:-.01em}
-  .cat-head .w{font-family:var(--mono);font-size:12.5px;color:var(--muted-2);margin-left:auto;white-space:nowrap}
-  .cat-sub{font-size:14px;color:var(--muted);margin:0 0 22px;max-width:680px;line-height:1.7}
-  .ind-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  @media(max-width:900px){.ind-grid{grid-template-columns:1fr 1fr}}
-  @media(max-width:600px){.ind-grid{grid-template-columns:1fr}}
-  .ind-card{background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:15px;padding:18px;transition:.22s;display:flex;flex-direction:column;gap:11px}
-  .ind-card:hover{border-color:var(--border-strong);transform:translateY(-3px);box-shadow:0 16px 36px rgba(0,0,0,.32)}
-  .ind-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
-  .ind-name{font-size:16px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
-  .ind-tag{font-family:var(--mono);font-size:10.5px;color:var(--muted-2);background:rgba(255,255,255,.04);border:1px solid var(--border);padding:3px 8px;border-radius:6px;white-space:nowrap;flex:none}
-  .ind-what{font-size:13.5px;color:#c2cadb;line-height:1.62}
-  .ind-read{font-size:12.5px;color:var(--muted);line-height:1.6;border-top:1px solid var(--border);padding-top:11px;margin-top:auto}
-  .ind-read b{color:var(--text);font-weight:600}
-  .ind-more{margin-top:2px;font-size:12.5px;font-weight:600;color:var(--brand);text-decoration:none;display:inline-flex;align-items:center;gap:4px;align-self:flex-start;transition:.16s}
-  .ind-more:hover{gap:7px;color:var(--neon)}
-  .impact{font-size:11.5px;font-family:var(--mono);font-weight:600;padding:4px 9px;border-radius:7px;display:inline-flex;align-items:center;gap:5px;align-self:flex-start}
-  .impact.buy{color:var(--neon);background:var(--neon-soft)}
-  .impact.warn{color:var(--amber);background:rgba(255,194,61,.1)}
-  .impact.neutral{color:var(--muted);background:rgba(255,255,255,.05)}
-  .how-band{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  @media(max-width:760px){.how-band{grid-template-columns:1fr}}
-  .how-card{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:14px;padding:20px}
-  .how-card .n{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--brand);background:var(--brand-soft);width:32px;height:32px;border-radius:9px;display:grid;place-items:center;margin-bottom:13px}
-  .how-card h3{font-size:16px;font-weight:700;margin-bottom:6px}
-  .how-card p{font-size:13.5px;color:var(--muted);line-height:1.6}
-  /* 지표 카드 내부 심화 블록 — 계산 방식 / 임계값 / 주의점 3행 */
-  .ind-detail{border-top:1px solid var(--border);padding-top:11px;margin-top:2px;display:flex;flex-direction:column;gap:9px}
-  .ind-detail .row{display:flex;flex-direction:column;gap:3px}
-  .ind-detail .lbl{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted-2)}
-  .ind-detail .lbl.calc{color:var(--blue)}
-  .ind-detail .lbl.range{color:var(--brand)}
-  .ind-detail .lbl.warn{color:var(--amber)}
-  .ind-detail .txt{font-size:12.5px;color:var(--muted);line-height:1.58}
-  .ind-detail .txt code{font-family:var(--mono);font-size:11.5px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 5px;border-radius:5px}
-  /* 점수 산출 방법론 — 추가 산문 단락 */
-  .method-prose{margin-top:18px;max-width:760px}
-  .method-prose p{font-size:13.5px;color:var(--muted);line-height:1.72;margin:0 0 12px}
-  .method-prose p b{color:var(--text);font-weight:600}
-  .method-prose code{font-family:var(--mono);font-size:12px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
-  .zone-table{margin-top:16px;border:1px solid var(--border);border-radius:13px;overflow:hidden}
-  .zone-table .zrow{display:grid;grid-template-columns:108px 1fr;gap:0;border-bottom:1px solid var(--border)}
-  .zone-table .zrow:last-child{border-bottom:0}
-  .zone-table .zr-band{font-family:var(--mono);font-size:12.5px;font-weight:700;padding:12px 14px;display:flex;align-items:center;background:rgba(255,255,255,.02)}
-  .zone-table .zr-desc{font-size:12.5px;color:var(--muted);line-height:1.55;padding:12px 14px}
-  .zone-table .zr-band.z-strong{color:var(--neon)}
-  .zone-table .zr-band.z-mild{color:var(--brand)}
-  .zone-table .zr-band.z-wait{color:var(--muted)}
-  .zone-table .zr-band.z-bear{color:var(--amber)}
-  @media(max-width:480px){.zone-table .zrow{grid-template-columns:88px 1fr}}
-  /* FAQ */
-  .faq-list{margin-top:14px;display:flex;flex-direction:column;gap:11px;max-width:820px}
-  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;overflow:hidden}
-  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--text);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
-  .faq-item summary::-webkit-details-marker{display:none}
-  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--brand);flex:none}
-  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--muted-2);transition:.2s;flex:none}
-  .faq-item[open] summary::after{transform:rotate(45deg)}
-  .faq-item .ans{font-size:13.5px;color:var(--muted);line-height:1.72;padding:0 18px 16px}
-  .faq-item .ans b{color:var(--text);font-weight:600}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- AdSense (index.html에서 그대로 이식) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898078056285143" crossorigin="anonymous"></script>
-<script src="./btc-i18n.js" defer></script>
-<!-- 구조화 데이터: 지표 가이드 문서 (필수 필드만, 과도한 마크업 지양) -->
+<style>
+  /* ── 디자인 토큰 (index.html 셸과 동일) ── */
+  :root{
+    --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
+    --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--t1);}
+  ::-webkit-scrollbar{height:10px;width:10px;}
+  ::-webkit-scrollbar-thumb{background:#2a2f3a;border-radius:8px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  a{color:inherit;}
+
+  /* ── 레이아웃 (index.html과 동일) ── */
+  .layout{display:flex;min-height:100vh;background:var(--bg);}
+  .sidebar{flex:none;width:240px;align-self:flex-start;position:sticky;top:0;height:100vh;
+    background:var(--nav-bg);border-right:1px solid var(--line);padding:22px 16px;
+    display:flex;flex-direction:column;}
+  .sb-brand{display:flex;align-items:center;gap:11px;padding:0 6px 24px;text-decoration:none;}
+  .sb-logo{width:36px;height:36px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:19px;}
+  .sb-brand .bt{color:var(--t1);font-size:14.5px;font-weight:700;}
+  .sb-brand .bs{color:var(--m2);font-size:11px;letter-spacing:.06em;}
+  .sb-menu-h{color:var(--m3);font-size:11px;letter-spacing:.12em;padding:0 12px 8px;}
+  .sb-nav{display:flex;flex-direction:column;gap:3px;}
+  .sb-nav a{display:flex;align-items:center;gap:11px;padding:11px 12px;border-radius:11px;text-decoration:none;font-size:14px;color:var(--m1);}
+  .sb-nav a .dot{width:7px;height:7px;border-radius:50%;background:#2a2f3a;flex:none;}
+  .sb-nav a.active{background:rgba(22,199,132,.12);color:var(--green);font-weight:600;}
+  .sb-nav a.active .dot{background:var(--green);}
+  .sb-live{margin-top:24px;padding:16px;border-radius:14px;background:linear-gradient(160deg,rgba(22,199,132,.14),rgba(22,199,132,.03));border:1px solid rgba(22,199,132,.18);}
+  .sb-live .lh{display:flex;align-items:center;gap:7px;}
+  .sb-live .lh .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .sb-live .lh .t{color:var(--green);font-family:var(--mono);font-size:11px;font-weight:600;}
+  .sb-live .lb{color:var(--t2);font-size:13px;margin-top:9px;line-height:1.5;}
+  /* 사이드바 방문자 카운터 */
+  .sb-visitor{margin-top:14px;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--line);}
+  .sb-visitor .vh{color:var(--m2);font-size:10.5px;letter-spacing:.08em;margin-bottom:9px;font-family:var(--mono);}
+  .sb-visitor .vr{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--m1);padding:3px 0;}
+  .sb-visitor .vr .vc-n{color:var(--t1);font-weight:700;font-family:var(--mono);}
+  .sb-visitor .vr.now .vc-n{color:var(--green);}
+  .sb-visitor .vr .vc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:vcPulse 1.6s ease-in-out infinite;margin-right:5px;}
+  @keyframes vcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .sb-foot{margin-top:auto;padding:14px 12px 4px;color:var(--m3);font-size:11px;line-height:1.6;}
+
+  .main{flex:1;min-width:0;}
+  .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(8,9,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  .crumb{color:var(--m1);font-size:13px;}
+  .crumb b{color:var(--t1);font-weight:600;}
+  .topbar .right{display:flex;align-items:center;gap:12px;}
+  .topbar .back{text-decoration:none;color:var(--green);font-size:13px;font-weight:600;}
+
+  .content{max-width:1100px;margin:0 auto;padding:36px 32px 64px;display:flex;flex-direction:column;gap:28px;}
+
+  /* ── 페이지 헤더 ── */
+  .ph-eyebrow{font-family:var(--mono);color:var(--green);font-size:12px;letter-spacing:.14em;}
+  .ph-h1{color:var(--t1);font-size:32px;font-weight:800;margin:10px 0 8px;line-height:1.28;}
+  .ph-h1 .hl{color:var(--green);}
+  .ph-sub{color:var(--t3);font-size:15px;line-height:1.8;margin:0;max-width:760px;}
+  .ph-sub b{color:var(--green);font-weight:600;}
+
+  /* 카드 공통 */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;}
+  .card-h{color:var(--t1);font-size:16px;font-weight:700;margin-bottom:16px;}
+
+  /* ── 점수 구간 막대 ── */
+  .scale-bar{height:14px;border-radius:8px;background:linear-gradient(90deg,#16c784,#3ad29a 30%,#f0b90b 55%,#f0843b 75%,#ea3943);}
+  .scale-legend{display:flex;justify-content:space-between;gap:8px;margin-top:14px;}
+  .scale-legend .sl{flex:1;min-width:0;text-align:center;}
+  .scale-legend .sl .sw{width:10px;height:10px;border-radius:50%;display:inline-block;margin-bottom:6px;}
+  .scale-legend .sl .rng{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--t1);}
+  .scale-legend .sl .lbl{color:var(--m1);font-size:11.5px;margin-top:3px;}
+  .scale-note{color:var(--m2);font-size:12.5px;line-height:1.65;margin-top:16px;}
+  .scale-note b{color:var(--t2);font-weight:600;}
+
+  /* ── 카테고리 섹션 헤더 ── */
+  .sec-h{display:flex;align-items:baseline;gap:12px;margin:8px 0 4px;}
+  .sec-h h2{color:var(--t1);font-size:20px;font-weight:800;margin:0;}
+  .sec-h .hint{color:var(--m2);font-size:13px;}
+
+  /* ── 5개 카테고리 카드 그리드 ── */
+  .cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  .cat-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .cat-card .ct-top{display:flex;align-items:center;gap:12px;}
+  .cat-card .ct-dot{width:10px;height:10px;border-radius:50%;flex:none;}
+  .cat-card .ct-name{color:var(--t1);font-size:17px;font-weight:700;}
+  .cat-card .ct-w{margin-left:auto;font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--green);background:rgba(22,199,132,.12);padding:4px 10px;border-radius:8px;white-space:nowrap;}
+  .cat-card .ct-desc{color:var(--t3);font-size:13.5px;line-height:1.68;margin:0;}
+  .cat-card .ct-items{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:4px;}
+  .cat-card .ct-items .chip{font-family:var(--mono);font-size:11px;color:var(--m1);background:rgba(255,255,255,.04);border:1px solid var(--line);padding:4px 9px;border-radius:7px;}
+  .cat-card .ct-weight-bar{height:6px;border-radius:5px;background:rgba(255,255,255,.06);overflow:hidden;}
+  .cat-card .ct-weight-bar i{display:block;height:100%;border-radius:5px;}
+
+  /* ── 용어집 ── */
+  .glos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+  .glos-item{background:var(--card-2);border:1px solid var(--line-2);border-radius:13px;padding:18px;min-width:0;}
+  .glos-item .gt-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:9px;}
+  .glos-item .gt-term{color:var(--t1);font-size:15px;font-weight:700;}
+  .glos-item .gt-cat{font-family:var(--mono);font-size:10.5px;color:var(--m1);background:rgba(255,255,255,.04);border:1px solid var(--line);padding:3px 8px;border-radius:6px;white-space:nowrap;}
+  .glos-item .gt-def{color:var(--t3);font-size:13px;line-height:1.66;margin:0;}
+  .glos-item .gt-def code{font-family:var(--mono);font-size:11.5px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 5px;border-radius:5px;}
+
+  /* ── 점수 산출 방법론 (정규화 · 가중치 · 구간 해석) ── */
+  .how-band{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px;}
+  .how-step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0;}
+  .how-step .n{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--green);background:rgba(22,199,132,.12);width:32px;height:32px;border-radius:9px;display:grid;place-items:center;margin-bottom:13px;}
+  .how-step h3{color:var(--t1);font-size:15.5px;font-weight:700;margin:0 0 6px;}
+  .how-step p{color:var(--t3);font-size:13px;line-height:1.62;margin:0;}
+  .method-prose{margin-top:18px;}
+  .method-prose p{color:var(--t3);font-size:13.5px;line-height:1.74;margin:0 0 12px;}
+  .method-prose p b{color:var(--t2);font-weight:600;}
+  .method-prose code{font-family:var(--mono);font-size:12px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px;}
+  .zone-table{margin-top:16px;border:1px solid var(--line);border-radius:13px;overflow:hidden;}
+  .zone-table .zrow{display:grid;grid-template-columns:96px 1fr;border-bottom:1px solid var(--line);}
+  .zone-table .zrow:last-child{border-bottom:0;}
+  .zone-table .zr-band{font-family:var(--mono);font-size:12.5px;font-weight:700;padding:12px 14px;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.02);}
+  .zone-table .zr-band .sw{width:9px;height:9px;border-radius:50%;flex:none;}
+  .zone-table .zr-desc{color:var(--t3);font-size:12.5px;line-height:1.55;padding:12px 14px;}
+  @media(max-width:480px){.zone-table .zrow{grid-template-columns:78px 1fr;}}
+
+  /* ── 전체 지표 디렉터리 ── */
+  .dir-cat{margin-top:8px;}
+  .dir-cat + .dir-cat{margin-top:28px;}
+  .dir-cat-h{display:flex;align-items:center;gap:11px;margin:0 0 14px;}
+  .dir-cat-h .dot{width:11px;height:11px;border-radius:50%;flex:none;}
+  .dir-cat-h .nm{color:var(--t1);font-size:16px;font-weight:700;}
+  .dir-cat-h .ct{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--m2);white-space:nowrap;}
+  .dir-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;}
+  .dir-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 17px;min-width:0;
+    display:flex;flex-direction:column;gap:8px;text-decoration:none;transition:border-color .18s,transform .18s,background .18s;}
+  .dir-card:hover{border-color:rgba(22,199,132,.4);background:#13171e;transform:translateY(-2px);}
+  .dir-card .dc-name{color:var(--t1);font-size:14.5px;font-weight:700;letter-spacing:-.01em;}
+  .dir-card .dc-desc{color:var(--t3);font-size:12.5px;line-height:1.6;margin:0;}
+  .dir-card .dc-more{margin-top:auto;color:var(--green);font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:4px;transition:gap .16s;}
+  .dir-card:hover .dc-more{gap:7px;}
+
+  /* ── FAQ ── */
+  .faq{display:flex;flex-direction:column;gap:10px;}
+  .faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+  .faq summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary .q{color:var(--t1);font-size:14.5px;font-weight:600;line-height:1.4;}
+  .faq summary .c{color:var(--green);font-size:18px;font-family:var(--mono);flex:none;line-height:1;width:16px;text-align:center;transition:transform .2s;}
+  .faq details[open] summary .c{transform:rotate(45deg);}
+  .faq .a{color:var(--t3);font-size:13.5px;line-height:1.75;padding:0 20px 18px;}
+
+  /* ── 면책 배너 ── */
+  .disc{display:flex;gap:12px;align-items:flex-start;background:rgba(234,57,67,.06);border:1px solid rgba(234,57,67,.18);border-radius:14px;padding:18px 20px;}
+  .disc .ic{flex:none;width:22px;height:22px;border-radius:7px;background:rgba(234,57,67,.18);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;}
+  .disc .tx{color:var(--t2);font-size:13px;line-height:1.7;}
+  .disc .tx b{color:var(--red);font-weight:700;}
+
+  /* ── 푸터 ── */
+  .foot{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
+  .foot .fa{max-width:360px;}
+  .foot .fb{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+  .foot .fb .lo{width:28px;height:28px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:15px;}
+  .foot .fb .nm{color:var(--t1);font-size:14px;font-weight:700;}
+  .foot .fd{color:var(--m2);font-size:12.5px;line-height:1.7;}
+  .foot .cols{display:flex;gap:48px;flex-wrap:wrap;}
+  .foot .col h4{color:var(--m1);font-size:12px;font-weight:600;margin:0 0 10px;}
+  .foot .col a{display:block;color:var(--m2);font-size:13px;text-decoration:none;margin-bottom:8px;}
+  .foot .col a:hover{color:var(--t2);}
+  .foot .copy{color:var(--m3);font-size:11.5px;width:100%;border-top:1px solid rgba(255,255,255,.04);padding-top:16px;}
+
+  /* ── 모바일 햄버거 (index.html과 동일) ── */
+  .mobile-bar{display:none;position:sticky;top:0;z-index:30;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(8,9,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .mobile-bar .mb-brand{display:flex;align-items:center;gap:9px;text-decoration:none;}
+  .mobile-bar .mb-logo{width:30px;height:30px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:16px;}
+  .mobile-bar .mb-t{color:var(--t1);font-size:14px;font-weight:700;}
+  .mb-toggle{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--t1);}
+  .mb-toggle span{display:block;width:18px;height:2px;background:var(--t1);position:relative;}
+  .mb-toggle span::before,.mb-toggle span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--t1);}
+  .mb-toggle span::before{top:-6px;}.mb-toggle span::after{top:6px;}
+
+  /* ── 반응형 (index.html과 동일 정책) ── */
+  @media(max-width:1080px){
+    .cat-grid{grid-template-columns:1fr;}
+    .dir-grid{grid-template-columns:repeat(2,1fr);}
+    .how-band{grid-template-columns:1fr;}
+  }
+  @media(max-width:768px){
+    html,body{overflow-x:hidden;max-width:100vw;}
+    .sidebar{position:fixed;left:0;top:0;z-index:40;transform:translateX(-100%);transition:transform .25s ease;height:100vh;box-shadow:2px 0 20px rgba(0,0,0,.5);}
+    .layout.nav-open .sidebar{transform:translateX(0);}
+    .nav-backdrop{display:none;position:fixed;inset:0;z-index:35;background:rgba(0,0,0,.5);}
+    .layout.nav-open .nav-backdrop{display:block;}
+    .mobile-bar{display:flex;}
+    .topbar{display:none;}
+    .content{padding:20px 16px 56px;gap:22px;max-width:100%;}
+    .ph-h1{font-size:24px;}
+    .cat-grid{grid-template-columns:1fr;gap:12px;}
+    .dir-grid{grid-template-columns:1fr;gap:10px;}
+    .glos-grid{grid-template-columns:1fr;gap:12px;}
+    .scale-legend{flex-wrap:wrap;}
+    .scale-legend .sl{flex:1 1 30%;}
+    .foot{flex-direction:column;}
+    .foot .cols{gap:32px;}
+  }
+  @media(max-width:480px){
+    .content{padding:16px 12px 48px;}
+    .ph-h1{font-size:21px;}
+    .card{padding:18px;}
+    .scale-legend .sl .lbl{font-size:10.5px;}
+  }
+  @media(max-width:380px){
+    .content{padding:14px 10px 44px;}
+  }
+</style>
+<!-- 구조화 데이터: 지표 가이드 문서 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -97,15 +242,8 @@
   "url": "https://btctiming.co.kr/guide.html",
   "inLanguage": "ko",
   "description": "RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다.",
-  "author": {
-    "@type": "Organization",
-    "name": "BTC 투자 타이밍 레이더"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "BTC 투자 타이밍 레이더",
-    "url": "https://btctiming.co.kr/"
-  }
+  "author": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더"},
+  "publisher": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더", "url": "https://btctiming.co.kr/"}
 }
 </script>
 <!-- 구조화 데이터: FAQ (본문 FAQ 섹션과 동일 내용, 한국어 기준) -->
@@ -115,202 +253,458 @@
   "@type": "FAQPage",
   "inLanguage": "ko",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "지표는 다 좋은데 가격이 빠지면 왜 그런가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "대부분의 지표는 가격 예측이 아니라 상황과 확률을 묘사합니다. 우호적 배경은 역사적으로 확률이 한쪽으로 기울었다는 뜻일 뿐, 갑작스러운 매크로 뉴스나 대규모 연쇄 청산 같은 단기 충격을 이겨내지는 못합니다. 점수는 '지금이 어떤 환경인가'로 읽으세요."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "데이터는 며칠마다 갱신되나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "종합 점수와 지표는 하루에 한 번, 한국시간 09:05경에 갱신됩니다. 이 사이트는 실시간 시세가 아니라 마지막으로 수집한 스냅샷을 보여줍니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "어떤 지표를 먼저 봐야 하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "가장 중요한 단일 지표는 없습니다. 넓게 보고 좁혀 가는 순서를 권합니다 — 사이클·심리로 큰 그림을, 온체인으로 실제 수급을, 기술적·파생으로 단기 타이밍과 과열을 봅니다. 묶음들이 엇갈리면 그 불일치 자체가 신호입니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "점수가 높으면 매수 신호로 봐도 되나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "아닙니다. 이 사이트는 정보·교육 도구이지 투자 조언이 아니며, 높은 점수가 매수 권유는 아닙니다. 과거 데이터를 토대로 통계적으로 우호적인 배경을 묘사할 뿐이고, 과거가 미래를 보장하지 않습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "지표들이 서로 반대되는 경우는 왜 생기나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "서로 다른 것을 서로 다른 시간 단위로 재기 때문입니다. 빠른 기술적 지표가 단기 과열을 알리는 동안 느린 온체인 지표는 장기 매집을 보일 수 있습니다. 폭넓게 일치하면 환경이 또렷하다는, 크게 엇갈리면 불확실하다는 신호입니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "이 페이지에는 왜 지표의 실제 값이 없나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "이 가이드는 각 지표의 의미와 읽는 법에 대한 변하지 않는 참고서가 되도록 만들어, 금세 낡아버릴 변동 수치는 넣지 않았습니다. 실시간 값과 종합 점수, 차트는 매일 갱신되는 대시보드에 있습니다."
-      }
-    }
+    {"@type":"Question","name":"지표는 다 좋은데 가격이 빠지면 왜 그런가요?","acceptedAnswer":{"@type":"Answer","text":"대부분의 지표는 가격 예측이 아니라 상황과 확률을 묘사합니다. 우호적 배경은 역사적으로 확률이 한쪽으로 기울었다는 뜻일 뿐, 갑작스러운 매크로 뉴스나 대규모 연쇄 청산 같은 단기 충격을 이겨내지는 못합니다. 점수는 '지금이 어떤 환경인가'로 읽으세요."}},
+    {"@type":"Question","name":"데이터는 며칠마다 갱신되나요?","acceptedAnswer":{"@type":"Answer","text":"종합 점수와 지표는 하루에 한 번, 한국시간 09:05경에 갱신됩니다. 이 사이트는 실시간 시세가 아니라 마지막으로 수집한 스냅샷을 보여줍니다."}},
+    {"@type":"Question","name":"어떤 지표를 먼저 봐야 하나요?","acceptedAnswer":{"@type":"Answer","text":"가장 중요한 단일 지표는 없습니다. 넓게 보고 좁혀 가는 순서를 권합니다 — 사이클·심리로 큰 그림을, 온체인으로 실제 수급을, 기술적·파생으로 단기 타이밍과 과열을 봅니다. 묶음들이 엇갈리면 그 불일치 자체가 신호입니다."}},
+    {"@type":"Question","name":"점수가 높으면 매수 신호로 봐도 되나요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 이 사이트는 정보·교육 도구이지 투자 조언이 아니며, 높은 점수가 매수 권유는 아닙니다. 과거 데이터를 토대로 통계적으로 우호적인 배경을 묘사할 뿐이고, 과거가 미래를 보장하지 않습니다."}},
+    {"@type":"Question","name":"지표들이 서로 반대되는 경우는 왜 생기나요?","acceptedAnswer":{"@type":"Answer","text":"서로 다른 것을 서로 다른 시간 단위로 재기 때문입니다. 빠른 기술적 지표가 단기 과열을 알리는 동안 느린 온체인 지표는 장기 매집을 보일 수 있습니다. 폭넓게 일치하면 환경이 또렷하다는, 크게 엇갈리면 불확실하다는 신호입니다."}},
+    {"@type":"Question","name":"이 페이지에는 왜 지표의 실제 값이 없나요?","acceptedAnswer":{"@type":"Answer","text":"이 가이드는 각 지표의 의미와 읽는 법에 대한 변하지 않는 참고서가 되도록 만들어, 금세 낡아버릴 변동 수치는 넣지 않았습니다. 실시간 값과 종합 점수, 차트는 매일 갱신되는 대시보드에 있습니다."}}
   ]
 }
 </script>
 </head>
-<template id="__bundler_thumbnail" data-bg-color="#080b14">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#080b14"/>
-    <circle cx="600" cy="360" r="150" fill="none" stroke="#f7931a" stroke-width="14"/>
-    <text x="600" y="412" font-family="JetBrains Mono, monospace" font-size="150" font-weight="800" fill="#f7931a" text-anchor="middle">₿</text>
-    <text x="600" y="600" font-family="sans-serif" font-size="62" font-weight="800" fill="#eef2fb" text-anchor="middle">지표 가이드</text>
-    <text x="600" y="670" font-family="sans-serif" font-size="34" fill="#2ee6b6" text-anchor="middle">BTC 투자 타이밍 레이더</text>
-  </svg>
-</template>
 <body>
-<div class="bg-field" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-    <nav class="nav-links">
-      <a href="index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
-      <a class="active" href="guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-      <a href="contact.html" data-en="Contact" data-zh="联系我们">문의</a>
+<div class="layout" id="layout">
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <!-- ── 사이드바 (index.html에서 이식, active=가이드) ── -->
+  <aside class="sidebar">
+    <a class="sb-brand" href="index.html">
+      <div class="sb-logo">₿</div>
+      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+    </a>
+    <div class="sb-menu-h">MENU</div>
+    <nav class="sb-nav">
+      <a href="index.html"><span class="dot"></span>대시보드</a>
+      <a class="active" href="guide.html"><span class="dot"></span>지표 가이드</a>
+      <a href="about.html"><span class="dot"></span>서비스 소개</a>
+      <a href="contact.html"><span class="dot"></span>문의</a>
     </nav>
-    <a class="nav-pill" href="index.html"><span class="pulse"></span><span data-en="Today's Score →" data-zh="今日评分 →">오늘의 점수 →</span></a>
-  </div>
-</header>
-
-<div class="wrap">
-  <div class="page-head reveal">
-    <div class="crumb">INDICATOR GUIDE</div>
-    <h1 data-i18n-html="1" data-en="Difficult indicators, explained in <span class=&quot;hl&quot;>plain words</span>." data-zh="复杂的指标，用<span class=&quot;hl&quot;>通俗的话</span>讲清楚。">어려운 지표, <span class="hl">쉬운 말</span>로 풀어드립니다.</h1>
-    <p class="sub" data-en="We've organized what each of the 25+ indicators on the dashboard means and how to read them, so even beginners can understand. Come back anytime a term trips you up." data-zh="我们整理了仪表盘上 25 项以上指标各自的含义及解读方法，让初学者也能理解。遇到不懂的术语时，欢迎随时回来查看。">대시보드에 나오는 25개+ 지표가 각각 무엇을 의미하고 어떻게 읽어야 하는지 초보자도 이해할 수 있게 정리했습니다. 용어가 막힐 때 언제든 돌아오세요.</p>
-    <div class="chips reveal d1">
-      <a href="#cycle"><span class="d" style="background:var(--brand)"></span><span data-en="Cycle · Sentiment" data-zh="周期 · 心理">사이클 · 심리</span></a>
-      <a href="#tech"><span class="d" style="background:var(--blue)"></span><span data-en="Technical Analysis" data-zh="技术分析">기술적 분석</span></a>
-      <a href="#deriv"><span class="d" style="background:var(--neon)"></span><span data-en="Derivatives" data-zh="衍生品">파생상품</span></a>
-      <a href="#onchain"><span class="d" style="background:var(--amber)"></span><span data-en="On-Chain" data-zh="链上">온체인</span></a>
-      <a href="#macro"><span class="d" style="background:var(--violet)"></span><span data-en="Macro" data-zh="宏观">매크로</span></a>
-      <a href="#faq"><span class="d" style="background:var(--text)"></span><span data-en="FAQ" data-zh="常见问题">자주 묻는 질문</span></a>
+    <div class="sb-live">
+      <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
+      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
-  </div>
-
-  <!-- 사이클·심리 -->
-  <div class="cat-head reveal" id="cycle"><div class="badge" style="background:var(--brand-soft);border-color:rgba(247,147,26,.25)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--brand)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5A6.5 6.5 0 1 1 3.5 14"/><polyline points="3.5 9.5 3.5 14 8 14"/></svg></div><h2 data-en="Cycle · Sentiment" data-zh="周期 · 心理">사이클 · 심리</h2><span class="w" data-en="30% of composite score" data-zh="综合评分权重 30%">종합 점수 가중 30%</span></div>
-  <p class="cat-sub reveal" data-en="These indicators read the big picture rather than daily price moves. Bitcoin has historically repeated a roughly 4-year cycle tied to the halving, and crowd psychology tends to swing between fear at bottoms and greed at tops. By placing the current point within that cycle and gauging how far sentiment has shifted, this group answers the question &quot;which season are we in?&quot; — which is why it carries the largest weight in the composite score." data-zh="这些指标读的是大局，而非每日价格波动。比特币历史上重复着与减半挂钩的约 4 年周期，群体心理也往往在底部的恐惧与顶部的贪婪之间摆动。本组通过定位当前处于周期中的哪一点、衡量情绪偏离了多远，来回答“现在是哪个季节”，因此在综合评分中占比最高。">이 지표들은 하루하루의 가격보다 큰 흐름을 읽습니다. 비트코인은 반감기를 중심으로 약 4년 주기를 역사적으로 반복해 왔고, 군중 심리는 바닥에서의 공포와 천장에서의 탐욕 사이를 오가는 경향이 있습니다. 지금이 그 주기의 어느 지점인지, 심리가 어느 쪽으로 얼마나 치우쳤는지를 함께 보며 '지금이 어느 계절인가'라는 질문에 답하는 지표 묶음이라, 종합 점수에서 가장 큰 비중을 차지합니다.</p>
-  <div class="ind-grid">
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Fear &amp; Greed Index" data-zh="恐惧贪婪指数">공포·탐욕 지수</span><span class="ind-tag">Fear &amp; Greed</span></div><div class="ind-what" data-en="Represents overall market crowd psychology from 0 to 100. 0 is extreme fear, 100 is extreme greed." data-zh="以 0~100 表示整个市场的群体心理。0 为极度恐惧，100 为极度贪婪。">시장 전체의 군중 심리를 0~100으로 나타냅니다. 0은 극도의 공포, 100은 극도의 탐욕입니다.</div><span class="impact buy" data-en=" Lower = buying opportunity" data-zh=" 越低越是买入机会"> 낮을수록 매수 기회</span><div class="ind-read" data-i18n-html="1" data-en=" <b>Historically, the best times to buy were when everyone was gripped by fear.</b> Conversely, be cautious when greed reaches an extreme." data-zh=" <b>从历史上看，当所有人都陷入恐惧时往往是较好的买入时机。</b>相反，当贪婪达到极致时请保持谨慎。"> <b>모두가 공포에 빠졌을 때가 역사적으로 좋은 매수 시점</b>이었습니다. 반대로 탐욕이 극에 달하면 조심하세요.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="Several inputs — price volatility, momentum and trading volume, social-media buzz, the share of the market Bitcoin holds, and survey data — are each scored and blended into a single <code>0–100</code> number, then averaged over recent days." data-zh="将价格波动率、动能与成交量、社交媒体热度、比特币市占率、问卷调查等多项输入各自评分后混合为单一的 <code>0~100</code> 数值，再对近几日取平均。">변동성·모멘텀과 거래량·소셜미디어 언급량·비트코인 시장 점유율·설문 등 여러 입력을 각각 점수화해 하나의 <code>0~100</code> 값으로 섞은 뒤, 최근 며칠을 평균 냅니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-i18n-html="1" data-en="<code>0–24</code> extreme fear · <code>25–49</code> fear · <code>50–74</code> greed · <code>75–100</code> extreme greed." data-zh="<code>0~24</code> 极度恐惧 · <code>25~49</code> 恐惧 · <code>50~74</code> 贪婪 · <code>75~100</code> 极度贪婪。"><code>0~24</code> 극도의 공포 · <code>25~49</code> 공포 · <code>50~74</code> 탐욕 · <code>75~100</code> 극도의 탐욕.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="It reflects current emotion, not value, and can stay pinned at an extreme for weeks during a strong trend. Use it to check whether the crowd is one-sided, not to call the exact turning point." data-zh="它反映的是当下情绪而非价值，在强趋势中可能连续数周停留在极端值。应用它来判断群体是否过度偏向，而非据此精准抄底逃顶。">가치가 아니라 현재 감정을 반영하며, 강한 추세에서는 몇 주씩 극단값에 머물 수 있습니다. 정확한 전환점을 짚기보다 군중이 한쪽으로 쏠렸는지 확인하는 용도로 씁니다.</span></div></div><a class="ind-more" href="indicators/fear-greed-index.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Halving Cycle" data-zh="减半周期">반감기 사이클</span><span class="ind-tag">Halving</span></div><div class="ind-what" data-en="About every 4 years, the amount of newly issued Bitcoin is cut in half (the halving). As supply shrinks, bull markets have tended to follow." data-zh="比特币大约每 4 年新发行量减半（减半）。随着供应减少，往往伴随上涨行情。">비트코인은 약 4년마다 새로 발행되는 양이 절반으로 줄어듭니다(반감기). 공급이 줄며 상승장이 오는 경향이 있습니다.</div><span class="impact neutral" data-en=" Depends on position" data-zh=" 视所处位置而定"> 위치에 따라 다름</span><div class="ind-read" data-i18n-html="1" data-en=" <b>The 12–18 months after a halving have historically been an uptrend phase.</b> This shows where in the cycle we are now." data-zh=" <b>减半后的 12~18 个月在历史上是上涨阶段。</b>它显示目前处于周期的哪个位置。"> <b>반감기 후 12~18개월이 역사적 상승 구간</b>이었습니다. 지금이 사이클 어디쯤인지 보여줍니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="The halving is fixed by code: every 210,000 blocks (roughly 4 years) the block reward paid to miners is cut in half. We measure the number of days elapsed since the most recent halving to place the market on the cycle timeline." data-zh="减半由代码固定：每 210,000 个区块（约 4 年）支付给矿工的区块奖励减半。我们以距最近一次减半经过的天数，将市场定位在周期时间轴上。">반감기는 코드로 고정돼 있습니다 — 21만 블록(약 4년)마다 채굴자가 받는 블록 보상이 절반으로 줄어듭니다. 가장 최근 반감기 이후 경과 일수를 재서 시장을 사이클 시간축 위에 놓습니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="Past cycles topped roughly 12–18 months after a halving and bottomed near the next one. The fourth halving occurred in April 2024." data-zh="过往周期大致在减半后 12~18 个月见顶，并在下一次减半附近见底。第四次减半发生于 2024 年 4 月。">과거 사이클은 대체로 반감기 후 12~18개월에 고점, 다음 반감기 부근에서 바닥을 찍었습니다. 네 번째 반감기는 2024년 4월이었습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="Only three full cycles have completed, so this is a small sample. As ETFs and institutions reshape demand, the pattern may stretch or weaken — treat the timeline as context, not a calendar to trade by." data-zh="完整周期仅有三次，样本很小。随着 ETF 与机构重塑需求，这一模式可能被拉长或减弱——请将时间轴视为背景，而非据以交易的日历。">완결된 사이클이 세 번뿐이라 표본이 작습니다. ETF·기관이 수요 구조를 바꾸면서 패턴이 늘어지거나 약해질 수 있으니, 이 시간축은 매매 달력이 아니라 맥락으로 삼으세요.</span></div></div><a class="ind-more" href="indicators/halving-cycle.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="MVRV-Z Score" data-zh="MVRV-Z 评分">MVRV-Z 점수</span><span class="ind-tag">MVRV-Z</span></div><div class="ind-what" data-en="Measures how expensive the current market cap is relative to the &quot;sum of actual purchase prices.&quot; It gauges over/undervaluation." data-zh="衡量当前市值相对于“实际买入价总和”有多贵，用以判断高估/低估。">현재 시가총액이 '실제 매입가 합계'보다 얼마나 비싼지 측정합니다. 고평가/저평가를 가늠합니다.</div><span class="impact warn" data-en=" Higher = overheated" data-zh=" 越高越过热"> 높을수록 과열</span><div class="ind-read" data-i18n-html="1" data-en=" <b>Above 7 has been a historical top zone, and below 0 a bottom zone.</b> It is currently in a pre-overheating phase." data-zh=" <b>高于 7 在历史上为顶部区间，低于 0 则为底部区间。</b>目前处于过热前阶段。"> <b>7 이상이면 역사적 고점권, 0 이하면 바닥권</b>이었습니다. 현재는 과열 전 단계입니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="Take the gap between market cap (price × supply) and realized cap (each coin valued at the price it last moved), then divide by the standard deviation of market cap: <code>(market cap − realized cap) ÷ σ</code>. Realized cap approximates what holders actually paid in aggregate." data-zh="取市值（价格×流通量）与已实现市值（每枚币按其上次转移时的价格计价）之差，再除以市值的标准差：<code>(市值 − 已实现市值) ÷ σ</code>。已实现市值近似于持有者实际支付的总成本。">시가총액(가격×유통량)과 실현 시가총액(각 코인을 마지막으로 움직인 가격으로 계산) 사이의 차이를 시가총액의 표준편차로 나눕니다 — <code>(시총 − 실현시총) ÷ σ</code>. 실현 시총은 보유자들이 실제로 치른 총 매입가에 가깝습니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-i18n-html="1" data-en="Roughly <code>7+</code> has marked historic top zones and <code>0</code> or below has marked bottom zones; the <code>2–4</code> range is broadly mid-cycle." data-zh="大致 <code>7 以上</code> 标志历史顶部区间，<code>0 或以下</code> 标志底部区间；<code>2~4</code> 大体为周期中段。">대략 <code>7 이상</code>이 역사적 고점권, <code>0 이하</code>가 바닥권이었고, <code>2~4</code> 구간은 대체로 사이클 중반입니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="The historic thresholds were set by past cycles, and the peaks have trended lower each cycle as the market matures. It is a long-term valuation gauge — useless for short-term timing and slow to update." data-zh="历史阈值由过往周期设定，且随市场成熟，每轮周期的峰值都在走低。它是长期估值标尺——不适合短期择时，且更新较慢。">역사적 임계값은 지난 사이클로 정해진 것이고, 시장이 성숙하며 고점은 사이클마다 낮아지는 추세였습니다. 장기 밸류에이션 잣대라 단기 타이밍엔 쓸모없고 갱신도 느립니다.</span></div></div><a class="ind-more" href="indicators/mvrv-z-score.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name">NUPL</span><span class="ind-tag">NUPL</span></div><div class="ind-what" data-en="Shows whether all holders are on average in profit or loss (net unrealized profit/loss ratio)." data-zh="表示全体持有者平均处于盈利还是亏损状态（未实现盈亏比率）。">전체 보유자가 평균적으로 이익 상태인지 손실 상태인지 나타냅니다(미실현 손익 비율).</div><span class="impact warn" data-en=" Excess profit = caution" data-zh=" 盈利过高需警惕"> 과한 이익=주의</span><div class="ind-read" data-i18n-html="1" data-en=" When most holders are in a <b>large-profit zone (greed), there is profit-taking pressure</b>; a loss zone (capitulation) becomes a bottom signal." data-zh=" 当大多数持有者处于<b>大幅盈利区间（贪婪）时存在获利了结压力</b>，处于亏损区间（投降）时则成为底部信号。"> 보유자 대부분이 <b>큰 이익 구간(탐욕)이면 차익실현 압력</b>이, 손실 구간(항복)이면 바닥 신호가 됩니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="NUPL (Net Unrealized Profit/Loss) = <code>(market cap − realized cap) ÷ market cap</code>. In plain terms, it's the share of total value that is currently &quot;paper profit&quot; not yet sold." data-zh="NUPL（净未实现盈亏）= <code>(市值 − 已实现市值) ÷ 市值</code>。通俗地说，就是当前尚未卖出的“账面利润”占总价值的比例。">NUPL(미실현 순손익) = <code>(시총 − 실현시총) ÷ 시총</code>. 쉽게 말해 전체 가치 중 아직 팔지 않은 '장부상 이익'이 차지하는 비율입니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-i18n-html="1" data-en="Below <code>0</code> capitulation · <code>0–0.25</code> hope/fear · <code>0.25–0.5</code> optimism · <code>0.5–0.75</code> belief · above <code>0.75</code> euphoria (top zone)." data-zh="低于 <code>0</code> 投降 · <code>0~0.25</code> 希望/恐惧 · <code>0.25~0.5</code> 乐观 · <code>0.5~0.75</code> 信念 · 高于 <code>0.75</code> 狂热（顶部区间）。"><code>0</code> 이하 항복 · <code>0~0.25</code> 희망/공포 · <code>0.25~0.5</code> 낙관 · <code>0.5~0.75</code> 확신 · <code>0.75</code> 이상 도취(고점권).</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="Unrealized profit is only pressure to sell, not actual selling — it can stay elevated for a long time before any correction. It shares its inputs with MVRV-Z, so don't count the two as independent confirmations." data-zh="未实现利润只是卖出压力，并非实际卖出——它可能在任何回调前长期保持高位。它与 MVRV-Z 共用输入数据，因此不要把两者当作彼此独立的确认。">미실현 이익은 매도 '압력'일 뿐 실제 매도가 아니어서, 조정 전까지 오랫동안 높게 유지될 수 있습니다. MVRV-Z와 입력이 겹치므로 둘을 서로 독립된 확증으로 세지 마세요.</span></div></div><a class="ind-more" href="indicators/nupl.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name">Pi Cycle</span><span class="ind-tag">Pi Cycle Top</span></div><div class="ind-what" data-en="An indicator that has caught cycle tops at the point where two long-term moving averages cross." data-zh="一项通过两条长期移动平均线交叉点来捕捉周期顶部的指标。">두 개의 장기 이동평균선이 교차하는 시점으로 사이클 고점을 포착해온 지표입니다.</div><span class="impact neutral" data-en=" Top-warning use" data-zh=" 用于顶部预警"> 고점 경보용</span><div class="ind-read" data-i18n-html="1" data-en=" When the short-term line crosses above the long-term line, it has been read as a <b>top warning</b>. Treat it as a &quot;caution&quot; signal rather than a sell signal." data-zh=" 当短期线向上穿越长期线时，曾被解读为<b>顶部预警</b>。请将其视为“警示”信号，而非卖出信号。"> <b>단기선이 장기선을 위로 뚫으면 고점 경보</b>로 해석돼 왔습니다. 매도보다 '주의' 신호로 봅니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="It plots the 111-day moving average against twice the 350-day moving average (<code>350DMA ×2</code>). When the faster 111DMA rises to meet the doubled 350DMA, the two lines touch." data-zh="它将 111 日均线与 350 日均线的两倍（<code>350DMA ×2</code>）相对照。当较快的 111DMA 上升触及翻倍后的 350DMA 时，两线相交。">111일 이동평균선을 350일 이동평균선의 2배(<code>350DMA ×2</code>)와 함께 그립니다. 빠른 111DMA가 올라와 2배 350DMA에 닿을 때 두 선이 만납니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="In past cycles, the crossover landed within a few days of the major price top three times running, which is why it draws attention as a top-warning tool." data-zh="在过往周期中，该交叉三次都落在主要价格顶部的数日之内，因此作为顶部预警工具备受关注。">과거 사이클에서 교차 시점이 세 번 연속 주요 고점과 며칠 이내로 맞았던 탓에 고점 경보 도구로 주목받습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="Three hits is a tiny sample and may be coincidence; it only flags tops (it says nothing about bottoms) and has occasionally fired early. Read it as &quot;watch out,&quot; never as a mechanical sell trigger." data-zh="三次命中样本极小，可能只是巧合；它只提示顶部（对底部一无所知），且偶有提前触发。请将其解读为“当心”，绝不要作为机械的卖出触发器。">세 번 적중은 표본이 극히 작아 우연일 수 있고, 고점만 짚을 뿐(바닥은 알려주지 않음) 때로 일찍 켜지기도 했습니다. '조심하라'는 신호로 읽되 기계적 매도 트리거로 쓰지 마세요.</span></div></div><a class="ind-more" href="indicators/pi-cycle.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-  </div>
-
-  <!-- 기술적 -->
-  <div class="cat-head reveal" id="tech"><div class="badge" style="background:rgba(91,141,239,.12);border-color:rgba(91,141,239,.28)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#5b8def" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="1.5 13 5.5 7.5 9.5 11 16 3.5"/><line x1="1.5" y1="16" x2="16.5" y2="16"/></svg></div><h2 data-en="Technical Analysis" data-zh="技术分析">기술적 분석</h2><span class="w" data-en="25% of composite score" data-zh="综合评分权重 25%">종합 점수 가중 25%</span></div>
-  <p class="cat-sub reveal" data-en="These indicators are derived purely from price and volume on the chart, with no outside data, which makes them the most familiar and the fastest to react. They measure two things: the direction and strength of the trend, and whether the recent move has gone too far in either direction (overbought or oversold). Because they respond quickly, they often turn before slower on-chain or macro signals — but for the same reason they produce more false alarms, so we read them alongside the slower groups." data-zh="这些指标完全来自图表上的价格与成交量，不依赖外部数据，因此最为熟悉、反应也最快。它们衡量两件事：趋势的方向与强度，以及近期走势是否在某一方向走得过头（超买或超卖）。由于反应迅速，它们往往先于较慢的链上或宏观信号转向——但也正因如此，假信号更多，所以我们会结合较慢的指标组一起解读。">이 지표들은 외부 데이터 없이 차트의 가격·거래량만으로 계산되어 가장 친숙하고 반응도 빠릅니다. 추세의 방향과 강도, 그리고 최근 움직임이 한쪽으로 지나쳤는지(과매수·과매도) 두 가지를 봅니다. 반응이 빠른 만큼 느린 온체인·매크로 신호보다 먼저 돌아서는 경우가 많지만, 같은 이유로 거짓 신호도 잦아 느린 지표 묶음과 함께 읽습니다.</p>
-  <div class="ind-grid">
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name">RSI</span><span class="ind-tag">RSI 14</span></div><div class="ind-what" data-en="Shows the strength of recent gains and losses from 0 to 100. It indicates whether price has risen too fast (overbought) or fallen too fast (oversold)." data-zh="以 0~100 表示近期涨跌的力度，判断价格是否上涨过快（超买）或下跌过快（超卖）。">최근 상승·하락의 힘을 0~100으로 나타냅니다. 가격이 너무 빨리 올랐는지(과매수) 떨어졌는지(과매도) 봅니다.</div><span class="impact warn" data-en=" 70↑ overheated / 30↓ depressed" data-zh=" 70↑ 过热 / 30↓ 低迷"> 70↑ 과열 / 30↓ 침체</span><div class="ind-read" data-i18n-html="1" data-en=" <b>Above 70 is overbought (correction possible), below 30 is oversold (rebound possible).</b> View daily, weekly, and monthly candles together." data-zh=" <b>高于 70 为超买（可能回调），低于 30 为超卖（可能反弹）。</b>建议结合日线、周线、月线一起查看。"> <b>70을 넘으면 과매수(조정 가능), 30 아래면 과매도(반등 가능)</b>로 봅니다. 일·주·월봉을 함께 봅니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="Over a window (usually 14 candles), it compares average gains to average losses: <code>RSI = 100 − 100 ÷ (1 + average gain ÷ average loss)</code>. The result lands between 0 and 100." data-zh="在一段窗口（通常 14 根 K 线）内，比较平均涨幅与平均跌幅：<code>RSI = 100 − 100 ÷ (1 + 平均涨幅 ÷ 平均跌幅)</code>。结果落在 0 至 100 之间。">일정 기간(보통 14봉) 동안 평균 상승폭과 평균 하락폭을 비교합니다 — <code>RSI = 100 − 100 ÷ (1 + 평균상승 ÷ 평균하락)</code>. 결과는 0~100 사이에 놓입니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-i18n-html="1" data-en="<code>70+</code> overbought · <code>30−</code> oversold · the <code>50</code> line acts as a rough trend divider (above = uptrend bias)." data-zh="<code>70 以上</code> 超买 · <code>30 以下</code> 超卖 · <code>50</code> 线大致作为趋势分界（之上偏向上涨）。"><code>70 이상</code> 과매수 · <code>30 이하</code> 과매도 · <code>50</code> 선은 대략적인 추세 경계(위면 상승 우위)로 봅니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="In a strong trend RSI can stay above 70 (or below 30) for a long time, so &quot;overbought&quot; alone is not a sell signal. The more useful read is divergence — price making a new high while RSI fails to — which can hint at fading momentum." data-zh="在强趋势中，RSI 可能长期高于 70（或低于 30），因此“超买”本身并非卖出信号。更有用的解读是背离——价格创新高而 RSI 未能跟上——这可能暗示动能正在减弱。">강한 추세에서는 RSI가 오래 70 위(또는 30 아래)에 머물 수 있어 '과매수'만으로 매도 신호가 아닙니다. 더 쓸모 있는 해석은 다이버전스 — 가격은 신고점인데 RSI는 못 따라가는 경우로, 모멘텀이 식고 있다는 힌트가 됩니다.</span></div></div><a class="ind-more" href="indicators/rsi.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="MA200 Deviation" data-zh="MA200 乖离率">MA200 이격도</span><span class="ind-tag">MA200</span></div><div class="ind-what" data-en="How far the current price is above or below the 200-day average price line. It is the baseline for the long-term trend." data-zh="当前价格相对于 200 日平均价线高出或低于多少。它是长期趋势的基准线。">200일 평균 가격선 대비 현재가가 얼마나 위/아래에 있는지입니다. 장기 추세의 기준선입니다.</div><span class="impact buy" data-en=" Above = uptrend" data-zh=" 在上方=上涨趋势"> 위=상승추세</span><div class="ind-read" data-i18n-html="1" data-en=" <b>Being above the 200-day line is seen as a long-term uptrend.</b> Deviating too far above it may indicate short-term overheating." data-zh=" <b>位于 200 日线上方视为长期上涨趋势。</b>若偏离过远，可能是短期过热。"> <b>200일선 위에 있으면 장기 상승추세</b>로 봅니다. 너무 멀리 벗어나면 단기 과열일 수 있습니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="Average the closing price of the last 200 days, then measure how far today's price sits from that line as a percentage: <code>(price − MA200) ÷ MA200 × 100</code>." data-zh="对最近 200 天的收盘价取平均，再以百分比衡量今日价格距该线多远：<code>(价格 − MA200) ÷ MA200 × 100</code>。">최근 200일 종가를 평균낸 뒤, 오늘 가격이 그 선에서 몇 % 떨어져 있는지 측정합니다 — <code>(가격 − MA200) ÷ MA200 × 100</code>.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="Above the 200-day line is generally a long-term uptrend, below it a downtrend. Stretching far above the line (a large positive deviation) often signals short-term overheating." data-zh="位于 200 日线上方通常为长期上涨趋势，下方则为下降趋势。远高于该线（较大正乖离）往往预示短期过热。">200일선 위면 대체로 장기 상승추세, 아래면 하락추세입니다. 선보다 한참 위(큰 양의 이격)면 단기 과열을 시사하는 경우가 많습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="As an average it lags — it confirms a trend after the fact rather than predicting turns. In choppy, sideways markets price whipsaws across the line repeatedly, producing misleading signals." data-zh="作为均线它具有滞后性——它事后确认趋势，而非预测转向。在震荡横盘的市场中，价格会反复穿越该线，产生误导性信号。">평균선이라 후행합니다 — 전환을 예측하기보다 추세를 사후 확인합니다. 횡보·등락이 잦은 장에서는 가격이 선을 반복해 넘나들며 혼란스러운 신호를 냅니다.</span></div></div><a class="ind-more" href="indicators/ma200-deviation.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name">MACD</span><span class="ind-tag">MACD</span></div><div class="ind-what" data-en="Captures trend reversals and momentum (upward force) from the difference between short- and long-term trends." data-zh="通过短期与长期趋势之差，捕捉趋势转换和动能（上涨力度）。">단기·장기 추세의 차이로 추세 전환과 모멘텀(상승 힘)을 포착합니다.</div><span class="impact neutral" data-en=" Trend-reversal signal" data-zh=" 趋势转换信号"> 추세 전환 신호</span><div class="ind-read" data-i18n-html="1" data-en=" <b>The point where the two lines cross is a trend-reversal signal.</b> Above the zero line favors upside, below it favors downside." data-zh=" <b>两线交叉之处即为趋势转换信号。</b>位于零轴上方偏向上涨，下方偏向下跌。"> <b>두 선이 교차하는 시점이 추세 전환 신호</b>입니다. 0선 위는 상승, 아래는 하락 우위입니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="The MACD line is the gap between a fast and a slow exponential moving average (usually <code>12 − 26</code>). A signal line (9-period average of MACD) is plotted on top, and the bars (histogram) show the gap between them." data-zh="MACD 线为快、慢两条指数移动平均之差（通常 <code>12 − 26</code>）。其上叠加信号线（MACD 的 9 周期均线），柱状图则显示两者之差。">MACD선은 빠른·느린 지수이동평균의 차이(보통 <code>12 − 26</code>)입니다. 그 위에 시그널선(MACD의 9기간 평균)을 겹쳐 그리고, 막대(히스토그램)는 둘의 간격을 보여줍니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="MACD crossing above the signal line is a golden cross (bullish); crossing below is a dead cross (bearish). Above the zero line favors upside, below it favors downside." data-zh="MACD 上穿信号线为金叉（偏多）；下穿为死叉（偏空）。位于零轴上方偏向上涨，下方偏向下跌。">MACD가 시그널선을 위로 뚫으면 골든크로스(상승), 아래로 뚫으면 데드크로스(하락)입니다. 0선 위는 상승, 아래는 하락 우위입니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="Because it's built from moving averages it lags, and in a sideways market the lines cross back and forth, generating frequent false crosses. It works better for confirming an existing trend than for catching the very start of one." data-zh="由于由移动平均构成，它具有滞后性；在横盘市中两线来回交叉，产生频繁的假交叉。它更适合确认既有趋势，而非捕捉趋势的最初起点。">이동평균으로 만들어져 후행하고, 횡보장에서는 두 선이 오가며 잦은 거짓 교차를 냅니다. 추세의 시작을 잡기보다 이미 진행 중인 추세를 확인하는 데 낫습니다.</span></div></div><a class="ind-more" href="indicators/macd.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Historical Volatility" data-zh="历史波动率">역사적 변동성</span><span class="ind-tag">Volatility</span></div><div class="ind-what" data-en="Shows how violently the price swings. When volatility falls, a big move often lies ahead." data-zh="表示价格波动的剧烈程度。波动率降低时，往往预示着即将出现大幅波动。">가격이 얼마나 심하게 출렁이는지 나타냅니다. 변동성이 낮아지면 큰 움직임을 앞둔 경우가 많습니다.</div><span class="impact neutral" data-en=" Compression = big move ahead" data-zh=" 压缩=预示大幅波动"> 압축=큰 변동 예고</span><div class="ind-read" data-i18n-html="1" data-en=" <b>When volatility compresses tightly, a large price move tends to follow soon.</b> The direction is undetermined." data-zh=" <b>当波动率急剧收缩（压缩）时，往往很快出现大幅价格波动。</b>方向尚不确定。"> <b>변동성이 바짝 줄면(압축) 곧 큰 가격 변동</b>이 나오는 경향이 있습니다. 방향은 미정입니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="Take the day-to-day percentage changes in price over a window (e.g. 30 days), compute their standard deviation (how scattered they are), and annualize it. A larger number means wider daily swings." data-zh="取一段窗口（如 30 天）内价格的逐日百分比变化，计算其标准差（离散程度）并年化。数值越大表示每日波动越剧烈。">일정 기간(예: 30일) 동안 가격의 일일 % 변화를 모아 표준편차(흩어진 정도)를 구한 뒤 연율화합니다. 값이 클수록 하루하루의 출렁임이 큽니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="There is no fixed cutoff — what matters is the level relative to its own recent range. Multi-month lows (tight compression) have often preceded a large move." data-zh="没有固定阈值——关键在于相对自身近期区间的水平。数月低位（高度压缩）往往是大幅波动的前兆。">고정된 기준선은 없습니다 — 중요한 건 자기 자신의 최근 범위 대비 위치입니다. 수개월래 최저(강한 압축)는 큰 움직임의 전조였던 경우가 많습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="It tells you a big move may be near but says nothing about direction — the breakout can go either way. It is also backward-looking, measuring volatility that has already happened rather than what comes next." data-zh="它能提示大幅波动或将临近，却对方向只字不提——突破可上可下。它同样是回顾性的，衡量的是已发生的波动，而非接下来的走势。">큰 변동이 가까웠을 수 있다고 알려줄 뿐 방향은 말해주지 않습니다 — 돌파는 위든 아래든 갈 수 있습니다. 또한 후행 지표로, 앞일이 아니라 이미 일어난 변동을 잽니다.</span></div></div><a class="ind-more" href="indicators/historical-volatility.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-  </div>
-
-  <!-- 파생 -->
-  <div class="cat-head reveal" id="deriv"><div class="badge" style="background:var(--neon-soft);border-color:rgba(46,230,182,.28)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--neon)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="10.5 2 6.5 9 10 9 7.5 16"/></svg></div><h2 data-en="Derivatives" data-zh="衍生品">파생상품</h2><span class="w" data-en="20% of composite score" data-zh="综合评分权重 20%">종합 점수 가중 20%</span></div>
-  <p class="cat-sub reveal" data-en="Derivatives are contracts like futures and options where traders bet on price with borrowed money (leverage). This group measures the market's &quot;overheating temperature&quot; — how heavily one side is leaning and how much debt is stacked up. When leverage piles too far onto one side, a small move in the opposite direction can trigger a cascade of forced liquidations, so these readings are most useful as a warning that the market has become fragile, not as a direction signal on their own." data-zh="衍生品是期货、期权等用借来的钱（杠杆）押注价格的合约。本组衡量市场的“过热温度”——一方押注偏向有多重、累积了多少债务。当杠杆过度集中于一侧时，反方向的小幅波动就可能引发连锁强制爆仓，因此这些读数最适合作为“市场已变脆弱”的警示，而非单独的方向信号。">파생상품은 빌린 돈(레버리지)으로 가격에 베팅하는 선물·옵션 같은 계약입니다. 이 묶음은 어느 한쪽으로 베팅이 얼마나 쏠렸고 빚이 얼마나 쌓였는지 — 시장의 '과열 온도'를 잽니다. 레버리지가 한쪽으로 과하게 몰리면 반대 방향의 작은 움직임이 연쇄 강제 청산을 부를 수 있어, 이 수치들은 방향 신호라기보다 '시장이 취약해졌다'는 경고로 읽을 때 가장 쓸모 있습니다.</p>
-  <div class="ind-grid">
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Funding Rate" data-zh="资金费率">펀딩비</span><span class="ind-tag">Funding Rate</span></div><div class="ind-what" data-en="In futures, which side — longs (betting up) or shorts (betting down) — pays more. It shows the degree of one-sided positioning." data-zh="在期货中，多头（押注上涨）与空头（押注下跌）哪一方支付更多费用，用以观察持仓的偏向程度。">선물에서 롱(상승 베팅)과 숏(하락 베팅) 중 어느 쪽이 비용을 더 내는지입니다. 쏠림 정도를 봅니다.</div><span class="impact warn" data-en=" Higher = longs overheated" data-zh=" 越高=多头过热"> 높을수록 롱 과열</span><div class="ind-read" data-i18n-html="1" data-en=" <b>A strongly positive funding rate means longs are overheated</b> — raising the risk of a downward correction. Negative means shorts are overheated." data-zh=" <b>资金费率明显为正表示多头过热</b> — 下行回调风险加大。为负则表示空头过热。"> <b>펀딩비가 크게 양수면 롱이 과열</b> — 하락 조정 위험이 커집니다. 음수면 숏 과열입니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="On perpetual futures, every few hours (typically 8) one side pays the other to keep the contract price tied to the spot price. The rate is set by how far the futures price drifts from spot — when futures trade above spot, longs pay shorts." data-zh="在永续期货上，每隔数小时（通常 8 小时）一方向另一方支付费用，以使合约价格贴近现货价。费率由期货价偏离现货的幅度决定——当期货价高于现货时，多头支付空头。">무기한 선물에서는 몇 시간마다(보통 8시간) 한쪽이 다른 쪽에 비용을 내, 계약 가격을 현물 가격에 붙들어 둡니다. 요율은 선물가가 현물에서 얼마나 벌어졌는지로 정해져 — 선물이 현물보다 비싸면 롱이 숏에게 냅니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="Around 0.01% per 8 hours is the typical neutral baseline. Persistently high positive readings mean crowded longs (correction risk); negative readings mean crowded shorts (squeeze risk)." data-zh="每 8 小时约 0.01% 是典型的中性基准。持续偏高的正值意味着多头拥挤（回调风险）；负值意味着空头拥挤（轧空风险）。">8시간당 약 0.01%가 통상적 중립 기준입니다. 계속 높은 양수면 롱 쏠림(조정 위험), 음수면 숏 쏠림(숏 스퀴즈 위험)을 뜻합니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="A high funding rate shows positioning, not timing — an overheated market can stay overheated for weeks. It is best read as a contrarian warning of crowding, alongside open interest and price." data-zh="高资金费率反映的是持仓而非时机——过热的市场可能持续过热数周。它最适合作为拥挤度的反向警示，需与未平仓合约、价格一起解读。">높은 펀딩비는 타이밍이 아니라 쏠림을 보여줍니다 — 과열된 시장은 몇 주씩 과열을 유지할 수 있습니다. 미결제약정·가격과 함께 보는 역발상 경고로 읽는 게 가장 좋습니다.</span></div></div><a class="ind-more" href="indicators/funding-rate.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Open Interest" data-zh="未平仓合约">미결제약정</span><span class="ind-tag">Open Interest</span></div><div class="ind-what" data-en="The total size of futures contracts not yet closed. It represents the total leverage stacked in the market." data-zh="尚未平仓的期货合约总规模，代表市场中累积的杠杆总量。">아직 청산되지 않은 선물 계약의 총 규모입니다. 시장에 깔린 레버리지 총량을 뜻합니다.</div><span class="impact neutral" data-en=" Total leverage" data-zh=" 杠杆总量"> 레버리지 총량</span><div class="ind-read" data-i18n-html="1" data-en=" <b>A sharp surge in OI raises volatility and liquidation risk.</b> Viewed alongside price, it helps gauge the trend's reliability." data-zh=" <b>OI 急增会加大波动性和爆仓风险。</b>结合价格一起看，可衡量趋势的可靠度。"> <b>OI가 급증하면 변동성·청산 위험</b>이 커집니다. 가격과 함께 보면 추세 신뢰도를 가늠합니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="It's the total dollar value of all futures contracts currently open and not yet closed, summed across exchanges. A new contract adds to OI; closing one subtracts from it." data-zh="它是当前所有未平仓期货合约的美元总价值，跨交易所汇总。新开一笔合约会增加 OI，平掉一笔则减少 OI。">현재 열려 있고 아직 청산되지 않은 모든 선물 계약의 달러 총액을 거래소별로 합한 값입니다. 계약이 새로 생기면 OI가 늘고, 청산되면 줄어듭니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="There is no fixed level; the read comes from pairing the change with price. Rising OI + rising price = fresh longs (trend conviction); rising OI + falling price = fresh shorts; falling OI = positions unwinding." data-zh="没有固定水平；解读来自将其变化与价格配对。OI 上升 + 价格上涨 = 新多入场（趋势信心）；OI 上升 + 价格下跌 = 新空入场；OI 下降 = 持仓平仓离场。">고정 수준은 없고, 변화를 가격과 짝지어 읽습니다. OI 증가 + 가격 상승 = 신규 롱(추세 확신), OI 증가 + 가격 하락 = 신규 숏, OI 감소 = 포지션 청산·이탈로 봅니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="A rapid surge means a lot of leverage has stacked up, which raises the odds of a violent liquidation cascade in either direction. OI alone has no direction — always read it together with price and funding." data-zh="急剧飙升意味着大量杠杆堆积，会加大任一方向剧烈连环爆仓的概率。OI 本身没有方向——务必与价格和资金费率一起解读。">급증은 레버리지가 많이 쌓였다는 뜻으로, 어느 방향으로든 격렬한 연쇄 청산 가능성을 높입니다. OI 단독으로는 방향이 없으니 가격·펀딩비와 함께 읽으세요.</span></div></div><a class="ind-more" href="indicators/open-interest.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Long/Short Ratio" data-zh="多空比">롱·숏 비율</span><span class="ind-tag">L/S Ratio</span></div><div class="ind-what" data-en="The ratio of people betting on a rise versus a fall. It shows positioning bias." data-zh="押注上涨与押注下跌人数的比例，用以观察持仓偏向。">상승에 베팅한 사람과 하락에 베팅한 사람의 비율입니다. 포지션 쏠림을 봅니다.</div><span class="impact neutral" data-en=" Crowding is a contrarian signal" data-zh=" 过度偏向为反向信号"> 쏠림은 역신호</span><div class="ind-read" data-i18n-html="1" data-en=" <b>When positioning crowds too far to one side, the market often moves the other way</b> (the opposite of the crowd)." data-zh=" <b>当持仓过度偏向某一方时，行情往往反向运行</b>（与群体相反）。"> <b>한쪽으로 과하게 쏠리면 반대로 가는 경우</b>가 많습니다(군중의 반대편).</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="It divides the volume (or number of accounts) positioned long by those positioned short: <code>long ÷ short</code>. A value of 1 means balanced, above 1 means more longs, below 1 means more shorts." data-zh="它将持多头的成交量（或账户数）除以持空头的：<code>多 ÷ 空</code>。等于 1 表示均衡，大于 1 表示多头更多，小于 1 表示空头更多。">롱 포지션의 거래량(또는 계좌 수)을 숏 포지션으로 나눕니다 — <code>롱 ÷ 숏</code>. 1이면 균형, 1보다 크면 롱 우세, 1보다 작으면 숏 우세입니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="No universal cutoff — judge it against its own recent range. An unusually lopsided reading flags crowding, which often precedes a move in the opposite direction as the crowded side gets squeezed." data-zh="没有通用阈值——需对照其自身近期区间判断。异常失衡的读数预示拥挤，而拥挤一方被挤压时，往往先于反向行情出现。">보편적 기준선은 없고 자기 자신의 최근 범위로 판단합니다. 비정상적으로 한쪽으로 기운 값은 쏠림 신호로, 쏠린 쪽이 청산당하며 반대 방향 움직임이 뒤따르는 경우가 많습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="The number differs a lot by exchange and by whether it counts accounts or volume, so absolute values aren't comparable across sources. Retail and pro positioning can also point opposite ways — treat it as one sentiment hint, not proof." data-zh="该数值因交易所、以及按账户数还是成交量统计而差异很大，故不同来源的绝对值不可比。散户与专业者的持仓方向也可能相反——应将其视为一个情绪线索，而非证据。">거래소마다, 또 계좌 수 기준인지 거래량 기준인지에 따라 값이 크게 달라 출처 간 절대값 비교는 어렵습니다. 개미와 전문가의 포지션이 정반대일 수도 있으니, 증거가 아니라 하나의 심리 힌트로 보세요.</span></div></div><a class="ind-more" href="indicators/long-short-ratio.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Liquidation Heatmap" data-zh="爆仓热力图">청산 히트맵</span><span class="ind-tag">Liquidation</span></div><div class="ind-what" data-en="Shows at which price levels forced liquidations are clustered. These are levels the price is easily drawn toward." data-zh="显示强制爆仓集中在哪些价格区间，这些是价格容易被吸引过去的位置。">어느 가격대에 강제 청산(반대매매)이 몰려 있는지 보여줍니다. 가격이 끌려가기 쉬운 지점입니다.</div><span class="impact neutral" data-en=" Magnet-like price levels" data-zh=" 如磁石般的价位"> 자석 같은 가격대</span><div class="ind-read" data-i18n-html="1" data-en=" <b>Price levels where liquidations cluster tend to pull price toward them like a &quot;magnet.&quot;</b> Use it as a reference for support and resistance." data-zh=" <b>爆仓集中的价位往往如“磁石”般吸引价格靠拢。</b>可作为支撑、阻力的参考。"> <b>청산이 몰린 가격대는 '자석'처럼 가격을 끌어당기는</b> 경향이 있습니다. 지지·저항 참고용입니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="Using open positions and their leverage, it estimates the price levels at which large clusters of positions would be force-liquidated, then shades those levels by size — brighter zones hold more potential liquidations." data-zh="基于未平仓持仓及其杠杆，估算大量持仓将被强制爆仓的价位，再按规模着色——越亮的区域潜在爆仓量越大。">미결제 포지션과 레버리지를 바탕으로, 대량의 포지션이 강제 청산될 가격대를 추정한 뒤 규모에 따라 색을 입힙니다 — 밝은 구간일수록 잠재 청산량이 많습니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="There are no numeric cutoffs; you read the picture. Dense clusters above price tend to act like overhead targets, clusters below like downside magnets — price often gravitates toward them to trigger the liquidations." data-zh="没有数字阈值；看的是图像。价格上方的密集簇往往如上方目标，下方的簇则如下行磁石——价格往往被吸向那里以触发爆仓。">숫자 기준선은 없고 그림을 읽습니다. 가격 위쪽의 밀집 구간은 위쪽 목표처럼, 아래쪽 구간은 하방 자석처럼 작용하는 경향 — 가격이 그쪽으로 끌려가 청산을 유발하곤 합니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="These are estimates, not exact figures — real leverage and stop levels are unknown. The map shifts constantly as positions open and close, so use it as a rough guide to support/resistance, not a precise price prediction." data-zh="这些是估算值而非精确数字——真实的杠杆与止损位置无从得知。随着持仓的开平，热图持续变动，故仅可作为支撑/阻力的粗略参考，而非精确的价格预测。">정확한 수치가 아닌 추정치입니다 — 실제 레버리지·손절 위치는 알 수 없습니다. 포지션이 열리고 닫히며 지도는 끊임없이 바뀌므로, 정확한 가격 예측이 아니라 지지·저항의 대략적 참고로 쓰세요.</span></div></div><a class="ind-more" href="indicators/liquidation-heatmap.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-  </div>
-
-  <!-- 온체인 -->
-  <div class="cat-head reveal" id="onchain"><div class="badge" style="background:rgba(255,194,61,.12);border-color:rgba(255,194,61,.28)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="var(--amber)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10.5a3.5 3.5 0 0 0 5 0l2-2a3.5 3.5 0 0 0-5-5l-1 1"/><path d="M11 7.5a3.5 3.5 0 0 0-5 0l-2 2a3.5 3.5 0 0 0 5 5l1-1"/></svg></div><h2 data-en="On-Chain" data-zh="链上">온체인</h2><span class="w" data-en="15% of composite score" data-zh="综合评分权重 15%">종합 점수 가중 15%</span></div>
-  <p class="cat-sub reveal" data-en="Every Bitcoin transaction is permanently recorded on the blockchain, so on-chain indicators read the &quot;real flow of coins&quot; — who is moving them, at what cost they were last bought, and whether holders are sitting tight or sending coins to exchanges to sell. Because this data cannot be faked, it is treated as an honest gauge of the underlying supply-and-demand. These indicators move slowly, so they are better at identifying multi-month bottoms and tops than at timing a single day." data-zh="每一笔比特币交易都被永久记录在区块链上，因此链上指标读的是“真实的币流”——谁在转移币、上次买入成本是多少、持有者是按兵不动还是把币转入交易所卖出。由于这些数据无法伪造，被视为底层供需的诚实标尺。这类指标变化缓慢，因此更擅长识别数月级别的底部与顶部，而非把握单日时机。">모든 비트코인 거래는 블록체인에 영구 기록되므로, 온체인 지표는 '진짜 코인의 흐름'을 읽습니다 — 누가 코인을 옮기는지, 마지막에 얼마에 샀는지, 보유자가 가만히 들고 있는지 아니면 팔려고 거래소로 보내는지. 이 데이터는 조작할 수 없어 시장의 실제 수급을 보는 정직한 잣대로 여겨집니다. 변화가 느린 편이라 하루 단위 타이밍보다 수개월짜리 바닥·천장을 잡는 데 더 유용합니다.</p>
-  <div class="ind-grid">
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name">SOPR</span><span class="ind-tag">SOPR</span></div><div class="ind-what" data-en="Shows whether the coins that moved that day were, on average, sold at a profit or a loss." data-zh="表示当日发生转移的币平均而言是盈利卖出还是亏损卖出。">그날 움직인 코인들이 평균적으로 이익을 보고 팔렸는지 손해를 보고 팔렸는지 나타냅니다.</div><span class="impact neutral" data-en=" Profit/loss around 1" data-zh=" 以 1 为盈亏分界"> 1 기준 손익</span><div class="ind-read" data-i18n-html="1" data-en=" <b>Above 1, profit-taking prevails; below 1, loss-cutting prevails.</b> A recovery near 1 is a trend-reversal signal." data-zh=" <b>大于 1 时获利了结占优，小于 1 时止损占优。</b>回升至 1 附近为趋势转换信号。"> <b>1보다 크면 이익 실현, 1보다 작으면 손절</b>이 우세합니다. 1 근처 회복은 추세 전환 신호입니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="SOPR (Spent Output Profit Ratio) = <code>price sold ÷ price last bought</code>, averaged over all coins that moved that day. Above 1, coins moved at a profit; below 1, at a loss." data-zh="SOPR（已花费产出盈利率）= <code>卖出价 ÷ 上次买入价</code>，对当日发生转移的所有币取平均。大于 1 表示盈利转移，小于 1 表示亏损转移。">SOPR(소비 출력 이익률) = <code>판 가격 ÷ 마지막에 산 가격</code>으로, 그날 움직인 모든 코인을 평균낸 값입니다. 1보다 크면 이익 보고, 1보다 작으면 손해 보고 움직인 것입니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-i18n-html="1" data-en="<code>1</code> is the break-even line. In a bull market, dips toward 1 that bounce act as support; in a bear market, rallies toward 1 that fail act as resistance." data-zh="<code>1</code> 是盈亏平衡线。牛市中，回落至 1 附近并反弹起到支撑作用；熊市中，反弹至 1 附近受阻则起到阻力作用。"><code>1</code>이 손익분기선입니다. 상승장에선 1 부근으로 내려왔다 튀어 오르면 지지로, 하락장에선 1 부근까지 올랐다 막히면 저항으로 작용합니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="Same-day moves between a person's own wallets can distort the raw figure, so a smoothed version is more reliable. It describes today's realized behavior, not what holders will do tomorrow." data-zh="同一人钱包间的当日转移会扭曲原始数值，因此平滑后的版本更可靠。它描述的是当日已实现的行为，而非持有者明日的动向。">같은 사람의 지갑끼리 당일 이동이 원시 수치를 왜곡할 수 있어 평활화한 버전이 더 신뢰할 만합니다. 오늘 실현된 행동을 묘사할 뿐, 보유자가 내일 무엇을 할지는 말해주지 않습니다.</span></div></div><a class="ind-more" href="indicators/sopr.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Long/Short-Term Holders" data-zh="长期/短期持有者">장기·단기 보유</span><span class="ind-tag">LTH / STH</span></div><div class="ind-what" data-en="The share of coins held by long-term holders (held a long time) versus short-term holders (bought recently)." data-zh="长期持有者（持有时间长）与短期持有者（近期买入）所持币的占比。">오래 들고 있는 사람(장기 보유자)과 최근 산 사람(단기 보유자)의 코인 비중입니다.</div><span class="impact buy" data-en=" LTH accumulation = positive" data-zh=" 长期吸筹=积极"> 장기 매집=긍정</span><div class="ind-read" data-i18n-html="1" data-en=" <b>When long-term holders accumulate coins, it is positive</b>; conversely, a large release can be a distribution (top) signal." data-zh=" <b>当长期持有者囤积币时为积极信号</b>；相反，若大量释放，可能是派发（顶部）信号。"> <b>장기 보유자가 코인을 모으면 긍정적</b>, 반대로 대거 풀리면 분배(고점) 신호일 수 있습니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="Coins are sorted by how long they've sat untouched. Those held longer than about 155 days count as long-term holders (LTH), the rest as short-term holders (STH). We track how the supply held by each group shifts over time." data-zh="按币静置未动的时长分类：持有超过约 155 天的归为长期持有者（LTH），其余为短期持有者（STH）。我们追踪两组所持供应量随时间的变化。">코인을 마지막으로 움직인 뒤 얼마나 오래 가만히 있었는지로 분류합니다. 약 155일 이상이면 장기 보유자(LTH), 그보다 짧으면 단기 보유자(STH)로 세고, 두 집단이 든 물량이 시간에 따라 어떻게 변하는지 추적합니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="Rising LTH supply means seasoned holders are accumulating and locking coins away (typically a bottoming/accumulation sign). A falling LTH supply during a rally means they are distributing into strength — often a late-cycle warning." data-zh="LTH 供应上升表示老练持有者在吸筹并锁仓（通常为筑底/吸筹迹象）。在上涨中 LTH 供应下降则意味着他们在向强势派发——往往是周期后段的警示。">LTH 물량이 늘면 노련한 보유자가 매집해 코인을 묶어두는 것(대체로 바닥·매집 신호)입니다. 상승 중 LTH 물량이 줄면 강세에 분배하는 것으로, 사이클 후반 경고인 경우가 많습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="The 155-day cutoff is a convention, not a law, and one entity moving coins between its own wallets can blur the line. It is a slow, structural gauge — better for spotting multi-month shifts than near-term timing." data-zh="155 天的界限是惯例而非定律，且单一主体在自有钱包间转移币会模糊界线。它是缓慢的结构性标尺——更适合发现数月级别的变化，而非短期择时。">155일 기준은 관례일 뿐 법칙이 아니며, 한 주체가 자기 지갑끼리 코인을 옮기면 경계가 흐려집니다. 느리고 구조적인 잣대라 단기 타이밍보다 수개월짜리 변화를 포착하는 데 낫습니다.</span></div></div><a class="ind-more" href="indicators/holder-supply.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Exchange Net Flow" data-zh="交易所净流入">거래소 순유입</span><span class="ind-tag">Exchange Flow</span></div><div class="ind-what" data-en="The difference between coins flowing into and out of exchanges. Sending coins to an exchange is usually &quot;in order to sell.&quot;" data-zh="流入与流出交易所的币之差。将币转入交易所通常是“为了卖出”。">거래소로 들어오고 나가는 코인의 차이입니다. 거래소로 보내는 건 보통 '팔기 위해서'입니다.</div><span class="impact buy" data-en=" Outflow = accumulation signal" data-zh=" 流出=吸筹信号"> 유출=매집 신호</span><div class="ind-read" data-i18n-html="1" data-en=" <b>When coins leave exchanges (outflow), it signals long-term storage and accumulation.</b> Inflow is seen as waiting to sell." data-zh=" <b>当币流出交易所（流出）时，为长期保存、吸筹信号。</b>流入则视为等待卖出。"> <b>거래소에서 코인이 빠져나가면(유출) 장기 보관·매집</b> 신호입니다. 유입은 매도 대기로 봅니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="Net flow = <code>coins sent to exchange wallets − coins withdrawn from them</code> over a period. Positive net flow means more coins arriving on exchanges; negative means more leaving." data-zh="净流量 = 一段时间内 <code>转入交易所钱包的币 − 从中提出的币</code>。净流入为正表示更多币进入交易所；为负表示更多币流出。">순유입 = 일정 기간 <code>거래소 지갑으로 들어온 코인 − 거래소에서 빠져나간 코인</code>입니다. 양수면 거래소로 들어온 코인이 더 많고, 음수면 빠져나간 코인이 더 많습니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="Sustained outflows (negative net flow) suggest investors are moving coins to cold storage to hold — read as accumulation. Sustained inflows suggest coins are being readied to sell — read as potential supply pressure." data-zh="持续流出（净流量为负）暗示投资者将币转入冷存储以长持——视为吸筹。持续流入则暗示币正被准备卖出——视为潜在的供给压力。">지속적인 유출(음의 순유입)은 투자자가 코인을 보관용 지갑으로 옮긴다는 뜻 — 매집으로 읽습니다. 지속적 유입은 코인을 팔 준비를 한다는 뜻 — 잠재적 매물 압력으로 읽습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="Exchanges shuffle coins between their own internal and cold wallets, which can create flow that has nothing to do with investors. The rise of ETF custodians and self-custody also makes the signal noisier than it once was." data-zh="交易所会在自有的内部钱包与冷钱包间倒腾币，可能产生与投资者无关的流量。ETF 托管方与自我托管的兴起，也使该信号比以往更嘈杂。">거래소가 내부·콜드 지갑 사이로 코인을 옮기면 투자자와 무관한 흐름이 생깁니다. ETF 수탁사와 자가 보관의 확산으로 이 신호는 예전보다 잡음이 많아졌습니다.</span></div></div><a class="ind-more" href="indicators/exchange-net-flow.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name">Puell Multiple</span><span class="ind-tag">Puell</span></div><div class="ind-what" data-en="Gauges cycle bottoms and tops by whether miner revenue is higher or lower than usual." data-zh="通过矿工收入高于或低于平常，判断周期的底部与顶部。">채굴자의 수익이 평소보다 많은지 적은지로 사이클 바닥·천장을 가늠합니다.</div><span class="impact neutral" data-en=" Gauges the cycle" data-zh=" 判断周期"> 사이클 가늠</span><div class="ind-read" data-i18n-html="1" data-en=" <b>Extremely low miner revenue has marked bottom zones, and extremely high revenue top zones.</b>" data-zh=" <b>矿工收入极低时为底部区间，极高时为顶部区间。</b>"> <b>채굴자 수익이 극히 낮으면 바닥권, 극히 높으면 천장권</b>이었습니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="Puell Multiple = <code>today's miner revenue (in USD) ÷ its 365-day average</code>. It shows whether miners are earning far more or far less than they have over the past year." data-zh="Puell 倍数 = <code>当日矿工收入（美元）÷ 其 365 日均值</code>。它显示矿工的收入相对过去一年是远高还是远低。">Puell 배수 = <code>오늘 채굴자 수익(달러) ÷ 365일 평균</code>입니다. 채굴자가 지난 1년보다 훨씬 많이 버는지 적게 버는지를 보여줍니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-i18n-html="1" data-en="Roughly below <code>0.5</code> has marked bottom zones (miners squeezed), and above <code>4</code> top zones (miners flush with profit and prone to selling)." data-zh="大致低于 <code>0.5</code> 标志底部区间（矿工承压），高于 <code>4</code> 标志顶部区间（矿工利润丰厚、倾向卖出）。">대략 <code>0.5</code> 아래가 바닥권(채굴자 압박), <code>4</code> 위가 천장권(채굴자 이익 풍부, 매도 성향)이었습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="Halvings abruptly cut miner revenue, which shifts the baseline, and miners are now a smaller share of total selling than in early cycles. Use it as a coarse cycle gauge, not a precise top/bottom caller." data-zh="减半会骤减矿工收入，从而改变基准线；且矿工在总卖压中的占比已不及早期周期。请将其用作粗略的周期标尺，而非精确的顶底判定器。">반감기는 채굴자 수익을 급감시켜 기준선을 흔들고, 채굴자가 전체 매도에서 차지하는 비중도 초기 사이클보다 작아졌습니다. 정밀한 고점·바닥 판정기가 아니라 거친 사이클 잣대로 쓰세요.</span></div></div><a class="ind-more" href="indicators/puell-multiple.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Hash Rate" data-zh="算力">해시레이트</span><span class="ind-tag">Hash Rate</span></div><div class="ind-what" data-en="The computing power that miners worldwide devote to the network. It reflects the network's security and health." data-zh="全球矿机投入网络的算力，代表网络的安全与健康状况。">전 세계 채굴기가 네트워크에 쏟는 연산력입니다. 네트워크의 보안·건강 상태를 뜻합니다.</div><span class="impact buy" data-en=" Rising = healthy network" data-zh=" 上升=网络健康"> 상승=네트워크 건강</span><div class="ind-read" data-i18n-html="1" data-en=" <b>A steadily rising hash rate signals a healthy network.</b> It is a long-term confidence indicator." data-zh=" <b>算力持续上升是网络健康的信号。</b>属于长期信赖指标。"> <b>해시레이트가 꾸준히 오르면 네트워크가 건강</b>하다는 신호입니다. 장기 신뢰 지표입니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="It estimates the total computing power securing the network — how many hash guesses per second all miners make combined. The figure is inferred from how fast blocks are found and the current mining difficulty." data-zh="它估算保障网络安全的总算力——所有矿工每秒合计进行多少次哈希尝试。该数值由出块速度与当前挖矿难度推算得出。">네트워크를 지키는 총 연산력 — 모든 채굴기가 합쳐 초당 몇 번의 해시 시도를 하는지 추정합니다. 블록이 발견되는 속도와 현재 채굴 난이도로부터 역산합니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="There is no buy/sell line — the trend is what matters. A steadily rising hash rate signals a secure, healthy network; a sharp drop can mean miners are switching off, sometimes near capitulation lows." data-zh="没有买卖分界线——趋势才是关键。算力稳步上升表明网络安全、健康；急剧下降可能意味着矿工关机，有时出现在投降式低点附近。">매수·매도 기준선은 없고 추세가 핵심입니다. 해시레이트가 꾸준히 오르면 안전하고 건강한 네트워크 신호, 급락은 채굴기가 꺼지는 것으로 때로 항복성 저점 부근에서 나타납니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="It's an estimate that swings with luck in block timing, so short-term wiggles are noise. It reflects the network's long-term security and miner conviction, not near-term price — pair it with the Hash Ribbon for capitulation reads." data-zh="它是随出块运气波动的估算值，短期抖动属噪声。它反映网络的长期安全与矿工信心，而非短期价格——可与哈希丝带配合解读投降。">블록 타이밍 운에 따라 출렁이는 추정치라 단기 흔들림은 잡음입니다. 단기 가격이 아니라 네트워크의 장기 보안·채굴자 확신을 반영하니, 항복 판단은 해시 리본과 함께 보세요.</span></div></div><a class="ind-more" href="indicators/hash-rate.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-  </div>
-
-  <!-- 매크로 -->
-  <div class="cat-head reveal" id="macro"><div class="badge" style="background:rgba(176,123,255,.12);border-color:rgba(176,123,255,.28)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#b07bff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="7"/><line x1="2" y1="9" x2="16" y2="9"/><path d="M9 2c-2 2-3 4.5-3 7s1 5 3 7M9 2c2 2 3 4.5 3 7s-1 5-3 7"/></svg></div><h2 data-en="Macro (Macroeconomics)" data-zh="宏观 (宏观经济)">매크로 (거시경제)</h2><span class="w" data-en="10% of composite score" data-zh="综合评分权重 10%">종합 점수 가중 10%</span></div>
-  <p class="cat-sub reveal" data-en="Bitcoin does not trade in a vacuum. The broad economic backdrop — how strong the dollar is, how much liquidity is sloshing through the system, and how willing investors are to hold risky assets like stocks — sets the tide that crypto floats on. When money is cheap and risk appetite is high, capital tends to flow toward speculative assets including Bitcoin; when the dollar strengthens and liquidity tightens, that tide pulls back. We give this group the smallest weight because its link to price is indirect and works over longer horizons." data-zh="比特币并非在真空中交易。大的经济背景——美元有多强、系统中流动着多少流动性、投资者持有股票等风险资产的意愿有多高——决定了加密货币所漂浮其上的潮水。当资金便宜、风险偏好高涨时，资本往往流向包括比特币在内的投机资产；当美元走强、流动性收紧时，潮水便会退去。我们给本组的权重最小，因为它与价格的关联较为间接，且作用于更长的时间维度。">비트코인은 진공 속에서 거래되지 않습니다. 달러가 얼마나 강한지, 시스템에 유동성이 얼마나 풀려 있는지, 투자자들이 주식 같은 위험자산을 얼마나 기꺼이 들고 가는지 — 이런 큰 경제 배경이 코인이 떠 있는 물결을 만듭니다. 돈이 싸고 위험 선호가 높을 때는 자본이 비트코인 같은 투기 자산으로 흐르는 경향이 있고, 달러가 강해지고 유동성이 조이면 그 물결이 빠집니다. 가격과의 연결이 간접적이고 더 긴 시간에 걸쳐 작용하기에 이 묶음에는 가장 작은 비중을 둡니다.</p>
-  <div class="ind-grid">
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Dollar Index DXY" data-zh="美元指数 DXY">달러지수 DXY</span><span class="ind-tag">DXY</span></div><div class="ind-what" data-en="How strong the US dollar is against major currencies. The dollar and risk assets usually move in opposite directions." data-zh="美元相对主要货币的强弱。美元与风险资产通常反向运行。">미국 달러가 주요 통화 대비 얼마나 강한지입니다. 달러와 위험자산은 보통 반대로 움직입니다.</div><span class="impact buy" data-en=" Weak = crypto-friendly" data-zh=" 走弱=利好币市"> 약세=코인 우호</span><div class="ind-read" data-i18n-html="1" data-en=" <b>A weakening dollar (falling DXY) is favorable for Bitcoin</b>; a strong dollar is a headwind." data-zh=" <b>美元走弱（DXY 下跌）对比特币有利</b>，美元走强则形成压力。"> <b>달러가 약해지면(DXY 하락) 비트코인엔 우호적</b>, 달러가 강하면 부담이 됩니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="The DXY measures the dollar's value against a basket of six major currencies (the euro carries the largest weight). When the dollar strengthens against them, the index rises." data-zh="DXY 衡量美元相对一篮子六种主要货币的价值（欧元权重最大）。当美元对其走强时，指数上升。">DXY는 6개 주요 통화 바스켓(유로 비중이 가장 큼) 대비 달러 가치를 잽니다. 달러가 이들 대비 강해지면 지수가 오릅니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="There's no fixed level; the direction matters. A falling DXY (weaker dollar) has tended to coincide with strength in risk assets including Bitcoin; a rising DXY tends to be a headwind." data-zh="没有固定水平；方向才重要。DXY 下行（美元走弱）往往与包括比特币在内的风险资产走强同步；DXY 上行则通常构成阻力。">고정 수준은 없고 방향이 중요합니다. DXY 하락(달러 약세)은 비트코인을 포함한 위험자산 강세와 함께 가는 경향, DXY 상승은 역풍이 되는 경향이 있습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="The inverse link with Bitcoin is a loose tendency, not a rule, and breaks down for stretches. As a macro variable it's an indirect, slow-moving influence — context for the backdrop, not a trading trigger." data-zh="它与比特币的反向关联只是松散倾向而非铁律，且会在某些时段失效。作为宏观变量，其影响间接且缓慢——是背景参考，而非交易触发器。">비트코인과의 역상관은 느슨한 경향일 뿐 법칙이 아니며, 한동안 깨지기도 합니다. 매크로 변수라 영향이 간접적이고 느려, 매매 트리거가 아니라 배경 맥락으로 봅니다.</span></div></div><a class="ind-more" href="indicators/dollar-index-dxy.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name">S&amp;P 500</span><span class="ind-tag">S&amp;P 500</span></div><div class="ind-what" data-en="The benchmark US stock index. It serves as a reference point for global risk-asset sentiment." data-zh="美国代表性股指，被视为全球风险资产情绪的基准点。">미국 대표 주가지수입니다. 글로벌 위험자산 심리의 기준점으로 봅니다.</div><span class="impact buy" data-en=" Strong = risk-on" data-zh=" 走强=风险偏好"> 강세=위험선호</span><div class="ind-read" data-i18n-html="1" data-en=" <b>When stocks do well, risk appetite rises and it is often favorable for crypto too.</b>" data-zh=" <b>股市表现良好时，风险偏好上升，往往对币市也有利。</b>"> <b>증시가 좋으면 위험자산 선호가 커져 코인에도 우호적</b>인 경우가 많습니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-en="The S&amp;P 500 is a market-cap-weighted index of 500 large US companies — the standard benchmark for the US stock market and a proxy for global risk appetite. We track its trend rather than its absolute level." data-zh="标普 500 是 500 家美国大型企业的市值加权指数——美国股市的标准基准，也是全球风险偏好的代理指标。我们关注的是其趋势而非绝对水平。">S&amp;P 500은 미국 대형 기업 500곳을 시가총액 가중한 지수로 — 미국 증시의 표준 벤치마크이자 글로벌 위험 선호의 대리 지표입니다. 절대 수준보다 추세를 봅니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="No buy/sell line — the read is directional. A rising stock market reflects risk-on sentiment that has often spilled over to crypto; sharp equity selloffs have frequently dragged Bitcoin down with them." data-zh="没有买卖分界线——解读是方向性的。股市上涨反映风险偏好情绪，往往外溢至加密货币；股市剧烈抛售则常拖累比特币一同下跌。">매수·매도 기준선은 없고 방향으로 읽습니다. 증시 상승은 위험 선호 심리를 반영해 코인으로 번지는 경우가 많았고, 증시 급락은 비트코인까지 끌어내린 적이 잦습니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="The correlation strengthens in panics (everything sells off together) but weakens in calm periods when Bitcoin trades on its own cycle. Don't assume the link is constant — check the rolling correlation rather than presuming it." data-zh="该相关性在恐慌时增强（一切同步抛售），在平静期则减弱，此时比特币按自身周期运行。不要假设关联恒定——应查看滚动相关性，而非想当然。">상관관계는 패닉 때 강해지고(전부 함께 매도) 평온할 때는 약해져 비트코인이 자기 사이클대로 움직입니다. 연결이 일정하다고 가정하지 말고 롤링 상관계수로 확인하세요.</span></div></div><a class="ind-more" href="indicators/sp500.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="Kimchi Premium" data-zh="泡菜溢价">김치 프리미엄</span><span class="ind-tag">Kimchi P.</span></div><div class="ind-what" data-en="How much more expensive Korean exchange prices are than overseas. It reflects domestic investment enthusiasm." data-zh="韩国本土交易所价格比海外高出多少，反映本土投资热度。">국내 거래소 가격이 해외보다 얼마나 비싼지입니다. 국내 투자 열기를 보여줍니다.</div><span class="impact warn" data-en=" Excess + = overheated" data-zh=" 过高的正值=过热"> 과한 +는 과열</span><div class="ind-read" data-i18n-html="1" data-en=" <b>A sharply widening premium is sometimes read as a domestic overheating (top) signal.</b>" data-zh=" <b>溢价大幅扩大时，有时被解读为本土过热（顶部）信号。</b>"> <b>프리미엄이 크게 벌어지면 국내 과열(고점) 신호</b>로 해석되기도 합니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="Compare the Bitcoin price on a Korean exchange (in won) to the global price converted at the current exchange rate: <code>(domestic ÷ global − 1) × 100</code>, giving the premium as a percent." data-zh="将韩国交易所的比特币价格（韩元）与按当前汇率换算的全球价格比较：<code>(本土 ÷ 全球 − 1) × 100</code>，以百分比表示溢价。">국내 거래소의 비트코인 가격(원화)을, 현재 환율로 환산한 글로벌 가격과 비교합니다 — <code>(국내 ÷ 글로벌 − 1) × 100</code>으로 프리미엄을 % 표시합니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="Near 0% is normal. A premium widening to several percent signals strong domestic buying demand, which in past frenzies has appeared near local tops; a negative premium (discount) reflects weak domestic sentiment." data-zh="接近 0% 为正常。溢价扩大至数个百分点表明本土买盘需求旺盛，在过往狂热中曾出现于本土顶部附近；负溢价（折价）则反映本土情绪低迷。">0% 부근이 정상입니다. 프리미엄이 수 %까지 벌어지면 국내 매수 수요가 강하다는 신호로, 과거 과열기엔 국내 고점 부근에서 나타났습니다. 음의 프리미엄(역프)은 국내 심리 위축을 반영합니다.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="The premium also reflects how hard it is to move money across borders (capital controls, banking limits), not just sentiment, so it can stay elevated for structural reasons. It's a Korea-specific gauge, not a global signal." data-zh="溢价也反映跨境资金流动的难易（资本管制、银行限制），而不仅是情绪，故可能因结构性原因长期偏高。它是韩国特有的标尺，而非全球信号。">프리미엄은 심리뿐 아니라 자금의 국경 간 이동 난이도(자본 통제·은행 한도)도 반영해, 구조적 이유로 높게 유지될 수 있습니다. 글로벌 신호가 아니라 한국 한정 잣대입니다.</span></div></div><a class="ind-more" href="indicators/kimchi-premium.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-    <div class="ind-card reveal"><div class="ind-top"><span class="ind-name" data-en="ETF Net Flow" data-zh="ETF 净流入">ETF 순유입</span><span class="ind-tag">ETF Flow</span></div><div class="ind-what" data-en="Institutional money flowing into spot Bitcoin ETFs. It reflects institutional demand." data-zh="流入比特币现货 ETF 的机构资金，反映机构需求。">비트코인 현물 ETF로 들어오는 기관 자금입니다. 제도권 수요를 보여줍니다.</div><span class="impact buy" data-en=" Inflow = institutional demand" data-zh=" 流入=机构需求"> 유입=기관 수요</span><div class="ind-read" data-i18n-html="1" data-en=" <b>Steady inflows into ETFs are a positive signal that institutional demand is solid.</b>" data-zh=" <b>资金持续流入 ETF，是机构需求稳固的积极信号。</b>"> <b>ETF로 자금이 꾸준히 들어오면 기관 수요가 탄탄</b>하다는 긍정 신호입니다.</div><div class="ind-detail"><div class="row"><span class="lbl calc" data-en="How it's calculated" data-zh="计算方式">계산 방식</span><span class="txt" data-i18n-html="1" data-en="Sum the daily net flows of all US spot Bitcoin ETFs: <code>creations (money in) − redemptions (money out)</code>. To create new shares, the funds must buy actual Bitcoin, so inflows translate into real spot demand." data-zh="汇总所有美国比特币现货 ETF 的每日净流量：<code>申购（流入）− 赎回（流出）</code>。为创建新份额，基金须买入真实比特币，故流入转化为真实的现货需求。">미국 비트코인 현물 ETF 전체의 일일 순유입을 합산합니다 — <code>설정(유입) − 환매(유출)</code>. 새 주식을 만들려면 펀드가 실제 비트코인을 사야 하므로, 유입은 진짜 현물 수요로 이어집니다.</span></div><div class="row"><span class="lbl range" data-en="Thresholds" data-zh="阈值区间">임계값</span><span class="txt" data-en="Sustained net inflows point to steady institutional demand (supportive); persistent net outflows point to institutions reducing exposure (a drag). Watch the multi-day trend rather than any single day." data-zh="持续净流入指向稳定的机构需求（支撑性）；持续净流出指向机构减仓（拖累）。应关注数日趋势，而非任何单日。">지속적 순유입은 꾸준한 기관 수요(우호적), 지속적 순유출은 기관의 비중 축소(부담)를 가리킵니다. 하루가 아니라 여러 날의 추세를 보세요.</span></div><div class="row"><span class="lbl warn" data-en="Caution" data-zh="注意点">주의점</span><span class="txt" data-en="Flows can be distorted by arbitrage and hedging rather than pure directional bets, and the data is US-only and started in 2024, so there's little history to lean on. A few large players can swing the daily figure." data-zh="流量可能因套利与对冲而失真，而非纯粹的方向性押注；且数据仅限美国、始于 2024 年，可参考的历史很少。少数大玩家即可左右单日数值。">유입은 순수 방향성 베팅이 아니라 차익거래·헤지로 왜곡될 수 있고, 데이터가 미국 한정에 2024년부터라 기댈 역사가 짧습니다. 소수 큰손이 하루 수치를 흔들 수 있습니다.</span></div></div><a class="ind-more" href="indicators/etf-net-flow.html" data-en="Read in depth →" data-zh="深入了解 →">자세히 보기 →</a></div>
-  </div>
-
-  <!-- HOW SCORE -->
-  <div class="sec-h reveal"><h2><span class="ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--brand)" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="8" r="6.5"/><line x1="8" y1="7" x2="8" y2="11.5"/><circle cx="8" cy="5" r=".7" fill="var(--brand)" stroke="none"/></svg></span> <span data-en="So how is the score calculated?" data-zh="那么评分是如何得出的？">그래서 점수는 어떻게 나오나요?</span></h2></div>
-  <div class="how-band">
-    <div class="how-card reveal"><div class="n">1</div><h3 data-en="Normalize to 0–100" data-zh="归一化为 0~100">0~100으로 정규화</h3><p data-en="All indicators, which come in different units, are unified onto a 0–100 scale." data-zh="将单位各异的指标统一到 0~100 的标度上。">단위가 제각각인 지표를 모두 0~100점 척도로 통일합니다.</p></div>
-    <div class="how-card reveal d1"><div class="n">2</div><h3 data-en="Apply Weights" data-zh="应用权重">가중치 적용</h3><p data-en="The per-category importance above (30/25/20/15/10%) is multiplied and summed." data-zh="将上述各类别的重要度（30/25/20/15/10%）相乘后汇总。">위 카테고리별 중요도(30/25/20/15/10%)를 곱해 합산합니다.</p></div>
-    <div class="how-card reveal d2"><div class="n">3</div><h3 data-en="Interpret by Zone" data-zh="按区间解读">구간으로 해석</h3><p data-en="The summed score is presented across four zones: Strong Accumulation, Mild Accumulation, Wait, and Bearish." data-zh="将汇总评分划分为强力吸筹、温和吸筹、观望、弱势四个区间进行解读。">합산 점수를 강한 매집·완만한 매집·관망·약세 4구간으로 풀어 보여줍니다.</p></div>
-  </div>
-
-  <!-- 점수 산출 방법론 산문 -->
-  <div class="method-prose reveal">
-    <p data-i18n-html="1" data-en="<b>1) Normalizing to 0–100.</b> Each indicator arrives in its own units — RSI runs 0–100, funding rate is a tiny percentage, DXY is an index near 100. Comparing them directly is meaningless, so every indicator is converted to a common <code>0–100</code> score where higher always means &quot;more favorable for accumulation.&quot; For bounded indicators (like RSI) we map the known range; for open-ended ones we score against the indicator's own recent historical distribution, so a reading is judged relative to where it usually sits, not an arbitrary fixed line." data-zh="<b>1) 归一化为 0~100。</b>每个指标都有各自的单位——RSI 为 0~100，资金费率是极小的百分比，DXY 是接近 100 的指数。直接比较毫无意义，因此每个指标都被转换为统一的 <code>0~100</code> 评分，分数越高始终代表“越有利于吸筹”。对于有界指标（如 RSI）我们映射其已知区间；对于开放式指标，则对照该指标自身近期的历史分布来评分，从而使读数相对于其常处的位置来判断，而非武断的固定线。"><b>1) 0~100으로 정규화.</b> 지표마다 단위가 제각각입니다 — RSI는 0~100, 펀딩비는 아주 작은 %, DXY는 100 부근의 지수입니다. 이를 그대로 비교하는 건 의미가 없어, 모든 지표를 '높을수록 매집에 우호적'이라는 공통의 <code>0~100</code> 점수로 변환합니다. RSI처럼 범위가 정해진 지표는 알려진 구간을 매핑하고, 범위가 열린 지표는 그 지표 자신의 최근 역사적 분포에 견줘 점수화해, 임의의 고정선이 아니라 평소 위치 대비로 판단합니다.</p>
-    <p data-i18n-html="1" data-en="<b>2) Applying weights.</b> The five categories do not count equally. Slow, structural signals (cycle/sentiment, technicals) are weighted more heavily than indirect ones (macro), giving <code>30 / 25 / 20 / 15 / 10%</code>. Within each category the member indicators are averaged first, then multiplied by the category weight and summed. As a simplified example: if cycle scores 80, technicals 60, derivatives 50, on-chain 70 and macro 40, the composite is <code>80×0.30 + 60×0.25 + 50×0.20 + 70×0.15 + 40×0.10 = 63.5</code>. This way no single indicator can dominate the result, and a missing data point shrinks rather than breaks the score." data-zh="<b>2) 应用权重。</b>五个类别并非等量齐观。缓慢的结构性信号（周期/心理、技术）比间接信号（宏观）权重更高，依次为 <code>30 / 25 / 20 / 15 / 10%</code>。在每个类别内，先对成员指标取平均，再乘以类别权重后汇总。简化举例：若周期得 80、技术 60、衍生品 50、链上 70、宏观 40，则综合评分为 <code>80×0.30 + 60×0.25 + 50×0.20 + 70×0.15 + 40×0.10 = 63.5</code>。如此一来，任何单一指标都无法主导结果，缺失的数据点只会缩小评分而非令其崩溃。"><b>2) 가중치 적용.</b> 다섯 카테고리는 동등하지 않습니다. 느리고 구조적인 신호(사이클·심리, 기술적)에 간접적 신호(매크로)보다 큰 비중을 둬 <code>30 / 25 / 20 / 15 / 10%</code>입니다. 각 카테고리 안에서는 소속 지표를 먼저 평균낸 뒤, 카테고리 가중치를 곱해 합산합니다. 단순화한 예: 사이클 80, 기술 60, 파생 50, 온체인 70, 매크로 40이면 종합 점수는 <code>80×0.30 + 60×0.25 + 50×0.20 + 70×0.15 + 40×0.10 = 63.5</code>입니다. 이렇게 하면 한 지표가 결과를 지배하지 못하고, 데이터가 빠져도 점수가 깨지지 않고 줄어들 뿐입니다.</p>
-    <p data-en="3) Interpreting by zone. The final 0–100 score is read across four zones. The boundaries are guideposts, not promises — a high score describes a statistically favorable backdrop, not a guarantee of upside." data-zh="3) 按区间解读。最终的 0~100 评分按四个区间解读。这些边界是路标而非承诺——高分描述的是统计上有利的背景，而非上涨的保证。"><b>3) 구간으로 해석.</b> 최종 0~100 점수를 네 구간으로 읽습니다. 경계는 약속이 아니라 이정표입니다 — 높은 점수는 통계적으로 우호적인 배경을 묘사할 뿐, 상승을 보장하지 않습니다.</p>
-    <div class="zone-table">
-      <div class="zrow"><div class="zr-band z-strong" data-en="80–100" data-zh="80–100">80–100</div><div class="zr-desc" data-en="Strong Accumulation — a large share of indicators line up favorably at once. Historically rare and short-lived." data-zh="强力吸筹 — 大量指标同时呈现有利态势。历史上罕见且持续时间短。">강한 매집 — 다수 지표가 한꺼번에 우호적으로 정렬된 상태. 역사적으로 드물고 짧게 지나갑니다.</div></div>
-      <div class="zrow"><div class="zr-band z-mild" data-en="60–79" data-zh="60–79">60–79</div><div class="zr-desc" data-en="Mild Accumulation — more indicators favorable than not; a broadly constructive backdrop." data-zh="温和吸筹 — 有利指标多于不利；整体呈建设性背景。">완만한 매집 — 우호적 지표가 더 많은, 대체로 건설적인 배경입니다.</div></div>
-      <div class="zrow"><div class="zr-band z-wait" data-en="40–59" data-zh="40–59">40–59</div><div class="zr-desc" data-en="Wait — signals are mixed and cancel out; no clear edge in either direction." data-zh="观望 — 信号混杂相互抵消；任一方向都无明显优势。">관망 — 신호가 섞여 서로 상쇄되어, 어느 방향으로도 뚜렷한 우위가 없습니다.</div></div>
-      <div class="zrow"><div class="zr-band z-bear" data-en="0–39" data-zh="0–39">0–39</div><div class="zr-desc" data-en="Bearish — most indicators point to overheating or deterioration; a cautious backdrop." data-zh="弱势 — 多数指标指向过热或恶化；属谨慎背景。">약세 — 대부분의 지표가 과열 또는 악화를 가리키는, 조심스러운 배경입니다.</div></div>
+    <!-- 방문자 카운터 (Firebase) -->
+    <div class="sb-visitor" id="visitorStrip">
+      <div class="vh">VISITORS</div>
+      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-  </div>
+    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+  </aside>
 
-  <!-- FAQ -->
-  <div class="sec-h reveal" id="faq"><h2><span class="ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--brand)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M6.2 6.2a1.8 1.8 0 1 1 2.6 1.6c-.6.3-.8.6-.8 1.2"/><circle cx="8" cy="11.4" r=".6" fill="var(--brand)" stroke="none"/></svg></span> <span data-en="Frequently Asked Questions" data-zh="常见问题">자주 묻는 질문</span></h2></div>
-  <div class="faq-list">
-    <details class="faq-item reveal"><summary><span class="q">Q1</span><span data-en="Every indicator looks good, but the price is falling. Why?" data-zh="所有指标都不错，价格却在下跌，为什么？">지표는 다 좋은데 가격이 빠지면 왜 그런가요?</span></summary><div class="ans" data-en="Most indicators here describe conditions and probabilities, not a price forecast. A favorable backdrop means the odds have historically leaned one way — it doesn't override short-term shocks like a sudden macro headline, a large liquidation cascade, or one big seller. Indicators also update on different clocks: slow on-chain gauges can stay constructive for weeks while price chops around. Read the score as &quot;what kind of environment is this,&quot; not &quot;where does price go tomorrow.&quot;" data-zh="这里的多数指标描述的是状况与概率，而非价格预测。有利的背景意味着历史上胜率偏向某一方——它无法压过短期冲击，比如突发的宏观新闻、大规模连环爆仓或某个大卖家。指标的更新节奏也不同：缓慢的链上指标可能连续数周保持建设性，而价格上下震荡。请把评分读作“这是什么样的环境”，而非“明天价格往哪走”。">여기 대부분의 지표는 가격 예측이 아니라 '상황과 확률'을 묘사합니다. 우호적 배경은 역사적으로 확률이 한쪽으로 기울었다는 뜻일 뿐, 갑작스러운 매크로 뉴스·대규모 연쇄 청산·큰 매도자 한 명 같은 단기 충격을 이겨내지는 못합니다. 지표마다 갱신 속도도 달라, 느린 온체인 지표는 몇 주씩 건설적인 상태를 유지하는 동안 가격은 출렁일 수 있습니다. 점수는 '내일 가격이 어디로 가는가'가 아니라 '지금이 어떤 환경인가'로 읽으세요.</div></details>
-    <details class="faq-item reveal"><summary><span class="q">Q2</span><span data-en="How often is the data updated?" data-zh="数据多久更新一次？">데이터는 며칠마다 갱신되나요?</span></summary><div class="ans" data-en="The composite score and indicators are refreshed once a day, around 09:05 KST (shown in the footer). Some inputs — like price, RSI, or funding rate — change continuously through the day at their source, but this site shows the most recent collected snapshot rather than live ticks. So a reading you see at noon reflects the morning's collection, not the current second." data-zh="综合评分与各项指标每日刷新一次，约在韩国时间 09:05（见页脚）。部分输入——如价格、RSI 或资金费率——在数据源处全天持续变动，但本站显示的是最近一次采集的快照，而非实时跳动。因此你中午看到的读数反映的是上午的采集，而非当下这一秒。">종합 점수와 지표는 하루에 한 번, 한국시간 09:05경에 갱신됩니다(푸터에 표시). 가격·RSI·펀딩비 같은 일부 입력은 원천에서 하루 종일 계속 바뀌지만, 이 사이트는 실시간 시세가 아니라 마지막으로 수집한 스냅샷을 보여줍니다. 그래서 정오에 보는 값은 지금 이 순간이 아니라 그날 아침 수집분을 반영합니다.</div></details>
-    <details class="faq-item reveal"><summary><span class="q">Q3</span><span data-en="Which indicator should I look at first?" data-zh="应该先看哪个指标？">어떤 지표를 먼저 봐야 하나요?</span></summary><div class="ans" data-en="There's no single &quot;most important&quot; indicator — that's the whole reason for combining them. A reasonable order is to start broad and narrow down: first the cycle/sentiment group for the big picture (which season are we in), then on-chain for the underlying supply-demand, and finally technicals and derivatives for shorter-term timing and overheating. If those groups disagree, that disagreement is itself the signal — it usually means the picture is unsettled and patience is warranted." data-zh="并不存在单一“最重要”的指标——正因如此才要综合。合理的顺序是由宏观到微观：先看周期/心理组把握大局（现在是哪个季节），再看链上了解底层供需，最后用技术与衍生品判断短期时机与过热。若这些指标组彼此矛盾，这种矛盾本身就是信号——通常意味着局面未明，宜保持耐心。">'가장 중요한' 단일 지표는 없습니다 — 그래서 묶어 보는 것입니다. 권할 만한 순서는 넓게 보고 좁혀 가는 것입니다 — 먼저 사이클·심리 묶음으로 큰 그림(지금이 어느 계절인지)을 보고, 다음 온체인으로 실제 수급을, 끝으로 기술적·파생으로 단기 타이밍과 과열을 봅니다. 이 묶음들이 서로 엇갈리면 그 불일치 자체가 신호입니다 — 대개 그림이 불확실하니 인내가 필요하다는 뜻입니다.</div></details>
-    <details class="faq-item reveal"><summary><span class="q">Q4</span><span data-en="Can I treat a high score as a signal to buy?" data-zh="高分可以当作买入信号吗？">점수가 높으면 매수 신호로 봐도 되나요?</span></summary><div class="ans" data-en="No. This site is an information and education tool, not investment advice, and a high score is not a recommendation to buy. It describes a statistically favorable backdrop based on past data — and the past does not guarantee the future. Markets can fall even from a high score, and no indicator removes risk. Any actual decision should account for your own situation, risk tolerance, and time horizon, ideally with help from a licensed professional." data-zh="不可以。本站是信息与教育工具，并非投资建议，高分也不是买入推荐。它基于过往数据描述统计上有利的背景——而过去并不保证未来。即便高分，市场也可能下跌，没有任何指标能消除风险。任何实际决策都应结合你自身的情况、风险承受能力与投资期限，并最好在持牌专业人士的协助下进行。">아닙니다. 이 사이트는 정보·교육 도구이지 투자 조언이 아니며, 높은 점수가 매수 권유는 아닙니다. 과거 데이터를 토대로 통계적으로 우호적인 배경을 묘사할 뿐이고, 과거가 미래를 보장하지 않습니다. 점수가 높아도 시장은 빠질 수 있고, 어떤 지표도 위험을 없애지 못합니다. 실제 결정은 본인의 상황·위험 감내도·투자 기간을 고려해, 가능하면 자격 있는 전문가의 도움을 받아 내리세요.</div></details>
-    <details class="faq-item reveal"><summary><span class="q">Q5</span><span data-en="Why do indicators sometimes contradict each other?" data-zh="为什么指标有时会互相矛盾？">지표들이 서로 반대되는 경우는 왜 생기나요?</span></summary><div class="ans" data-en="Because they measure different things over different time frames. A fast technical indicator might flag short-term overheating while a slow on-chain gauge still shows long-term accumulation — both can be true at once. Leading indicators (which try to anticipate) and lagging ones (which confirm after the fact) also naturally point different ways near a turning point. Rather than a flaw, this spread is informative: broad agreement signals a clearer environment, while sharp disagreement signals an unsettled one." data-zh="因为它们在不同的时间维度上衡量不同的事物。快速的技术指标可能提示短期过热，而缓慢的链上指标仍显示长期吸筹——两者可同时成立。领先指标（试图提前预判）与滞后指标（事后确认）在转折点附近也自然会指向不同方向。这种分歧并非缺陷，反而有信息价值：广泛一致意味着环境较清晰，剧烈分歧则意味着局面未明。">서로 다른 것을, 서로 다른 시간 단위로 재기 때문입니다. 빠른 기술적 지표는 단기 과열을 알리는데 느린 온체인 지표는 여전히 장기 매집을 보일 수 있고 — 둘 다 동시에 참일 수 있습니다. 미리 내다보려는 선행 지표와 사후에 확인하는 후행 지표도 전환점 부근에서는 자연히 다른 방향을 가리킵니다. 이 엇갈림은 결함이 아니라 정보입니다 — 폭넓게 일치하면 환경이 또렷하다는, 크게 엇갈리면 불확실하다는 신호입니다.</div></details>
-    <details class="faq-item reveal"><summary><span class="q">Q6</span><span data-en="Why aren't the indicator values shown on this page?" data-zh="为什么本页不显示指标的具体数值？">이 페이지에는 왜 지표의 실제 값이 없나요?</span></summary><div class="ans" data-en="This guide is meant to be a stable reference for what each indicator means and how to read it, so it deliberately avoids changing numbers that would go stale. The live values, the composite score, and the charts all live on the dashboard, which updates daily. Use this page to understand an indicator, then check its current reading on the dashboard." data-zh="本指南旨在作为“每个指标含义及如何解读”的稳定参考，因此刻意避开会过时的变动数值。实时数值、综合评分与图表都在每日更新的仪表盘上。请用本页理解某个指标，再到仪表盘查看其当前读数。">이 가이드는 각 지표가 무엇을 뜻하고 어떻게 읽는지에 대한 변하지 않는 참고서가 되도록 만들어, 금세 낡아버릴 변동 수치는 일부러 넣지 않았습니다. 실시간 값과 종합 점수, 차트는 매일 갱신되는 대시보드에 있습니다. 이 페이지로 지표를 이해한 뒤 현재 값은 대시보드에서 확인하세요.</div></details>
-  </div>
+  <!-- ── 메인 ── -->
+  <div class="main">
+    <!-- 모바일 상단 바 -->
+    <div class="mobile-bar">
+      <a class="mb-brand" href="index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
+    </div>
+    <!-- 데스크톱 상단 바 -->
+    <div class="topbar">
+      <div class="crumb">Home <span style="color:var(--m3)">›</span> <b>지표 가이드</b></div>
+      <div class="right">
+        <a class="back" href="index.html">← 대시보드로</a>
+      </div>
+    </div>
 
-  <div class="disclaimer-note reveal" data-i18n-html="1" data-en=" <b>Note</b> — All indicator explanations are for educational and reference purposes and do not recommend any specific trade. No single indicator guarantees the future; it is important to view them together as a whole." data-zh=" <b>提示</b> — 所有指标说明仅供教育和参考之用，不建议任何特定交易。任何单一指标都无法保证未来，综合一起查看才是关键。"> <b>참고</b> — 모든 지표 설명은 교육·참고 목적이며 특정 매매를 권유하지 않습니다. 어떤 단일 지표도 미래를 보장하지 않으며, 종합적으로 함께 보는 것이 중요합니다.</div>
+    <div class="content">
 
-  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:30px" class="reveal">
-    <a class="btn btn-primary" href="index.html" data-i18n-html="1" data-en="See it on the dashboard <span>→</span>" data-zh="在仪表盘上直接查看 <span>→</span>">대시보드에서 직접 보기 <span>→</span></a>
-    <a class="btn btn-ghost" href="about.html" data-en="About the Service" data-zh="服务介绍">서비스 소개</a>
+      <!-- 페이지 헤더 -->
+      <div>
+        <div class="ph-eyebrow">INDICATOR GUIDE</div>
+        <h1 class="ph-h1">어려운 지표, <span class="hl">쉬운 말</span>로 풀어드립니다</h1>
+        <p class="ph-sub">대시보드에 나오는 <b>25개 이상의 지표</b>를 매일 5개 카테고리로 나눠 각각 0~100으로 점수화하고, 가중 평균해 하나의 종합 타이밍 점수로 합칩니다. 점수가 낮을수록 시장이 공포에 차 있어 역사적으로 매수 우호 구간에 가깝고, 높을수록 탐욕과 주의가 필요한 상태입니다. 용어가 막힐 때 언제든 돌아오세요.</p>
+      </div>
+
+      <!-- 점수 구간 막대 -->
+      <div class="card">
+        <div class="card-h">점수 구간 읽는 법</div>
+        <div class="scale-bar"></div>
+        <div class="scale-legend">
+          <div class="sl"><span class="sw" style="background:#16c784"></span><div class="rng">0–25</div><div class="lbl">극도 공포</div></div>
+          <div class="sl"><span class="sw" style="background:#3ad29a"></span><div class="rng">26–45</div><div class="lbl">공포</div></div>
+          <div class="sl"><span class="sw" style="background:#f0b90b"></span><div class="rng">46–55</div><div class="lbl">중립</div></div>
+          <div class="sl"><span class="sw" style="background:#f0843b"></span><div class="rng">56–75</div><div class="lbl">탐욕</div></div>
+          <div class="sl"><span class="sw" style="background:#ea3943"></span><div class="rng">76–100</div><div class="lbl">극도 탐욕</div></div>
+        </div>
+        <p class="scale-note"><b>낮은 점수(공포)</b>는 역사적으로 장기 진입에 더 좋았던 구간인 경우가 많지만, 하락장에서는 공포가 몇 주씩 이어질 수 있습니다. <b>높은 점수(탐욕)</b>는 과열·주의 신호로 받아들이고, 정확한 매매 방아쇠가 아니라 분할·점진적 접근의 맥락으로 활용하세요.</p>
+      </div>
+
+      <!-- 5개 카테고리 -->
+      <div>
+        <div class="sec-h"><h2>5개 카테고리, 어떻게 점수가 나오나</h2><span class="hint">괄호 안은 가중치 · 합산 시 종합 점수</span></div>
+        <div class="cat-grid">
+
+          <div class="cat-card">
+            <div class="ct-top"><span class="ct-dot" style="background:#16c784"></span><span class="ct-name">사이클 · 심리</span><span class="ct-w">30%</span></div>
+            <div class="ct-weight-bar"><i style="width:30%;background:#16c784"></i></div>
+            <p class="ct-desc">반감기 사이클 진행도, 공포·탐욕 지수, 뉴스·소셜 센티먼트 등 시장 심리와 장기 사이클 위치를 평가합니다. 하루하루의 가격보다 '지금이 어느 계절인가'라는 큰 흐름을 읽기 때문에 가장 높은 가중치를 가집니다.</p>
+            <div class="ct-items"><span class="chip">반감기 사이클</span><span class="chip">공포·탐욕</span><span class="chip">센티먼트</span></div>
+          </div>
+
+          <div class="cat-card">
+            <div class="ct-top"><span class="ct-dot" style="background:#5b8def"></span><span class="ct-name">기술적 분석</span><span class="ct-w">25%</span></div>
+            <div class="ct-weight-bar"><i style="width:25%;background:#5b8def"></i></div>
+            <p class="ct-desc">RSI, 200일 이동평균 이격도, MACD, 거래량 등 외부 데이터 없이 차트의 가격·거래량만으로 단기 과매수·과매도와 추세를 봅니다. 반응이 빠른 만큼 거짓 신호도 잦아 느린 지표 묶음과 함께 읽습니다.</p>
+            <div class="ct-items"><span class="chip">RSI(14)</span><span class="chip">200일 MA</span><span class="chip">거래량</span></div>
+          </div>
+
+          <div class="cat-card">
+            <div class="ct-top"><span class="ct-dot" style="background:#2bd49a"></span><span class="ct-name">파생상품</span><span class="ct-w">20%</span></div>
+            <div class="ct-weight-bar"><i style="width:20%;background:#2bd49a"></i></div>
+            <p class="ct-desc">펀딩비, 미결제약정(OI), 옵션 내재변동성(IV)·스큐, 청산 데이터로 레버리지 과열 여부를 측정합니다. 한쪽으로 과도하게 쏠린 레버리지는 급격한 연쇄 청산의 연료가 되기 때문에 단기 위험을 가늠하는 데 쓰입니다.</p>
+            <div class="ct-items"><span class="chip">펀딩비</span><span class="chip">OI</span><span class="chip">옵션 IV</span></div>
+          </div>
+
+          <div class="cat-card">
+            <div class="ct-top"><span class="ct-dot" style="background:#f0b90b"></span><span class="ct-name">온체인</span><span class="ct-w">15%</span></div>
+            <div class="ct-weight-bar"><i style="width:15%;background:#f0b90b"></i></div>
+            <p class="ct-desc">MVRV-Z, SOPR, 거래소 순유입·유출, 고래 동향 등 블록체인 실데이터로 보유자 행동을 분석합니다. 가격 차트에는 보이지 않는 실제 수급과 장기 보유자의 움직임을 읽습니다.</p>
+            <div class="ct-items"><span class="chip">MVRV-Z</span><span class="chip">SOPR</span><span class="chip">거래소 흐름</span></div>
+          </div>
+
+          <div class="cat-card">
+            <div class="ct-top"><span class="ct-dot" style="background:#a06bff"></span><span class="ct-name">매크로</span><span class="ct-w">10%</span></div>
+            <div class="ct-weight-bar"><i style="width:10%;background:#a06bff"></i></div>
+            <p class="ct-desc">달러 유동성, 금리, 주식시장 상관관계, 스테이블코인 공급 등 거시 환경을 반영합니다. 비트코인은 독립적으로 움직이는 듯 보이지만 큰 유동성 흐름에서 자유롭지 않기에 배경으로 함께 봅니다.</p>
+            <div class="ct-items"><span class="chip">유동성</span><span class="chip">상관관계</span><span class="chip">스테이블코인</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 그래서 점수는 어떻게 나오나요? — 정규화 · 가중치 · 구간 해석 -->
+      <div>
+        <div class="sec-h"><h2>그래서 점수는 어떻게 나오나요?</h2><span class="hint">정규화 → 가중치 → 구간 해석, 세 단계</span></div>
+        <div class="how-band">
+          <div class="how-step"><div class="n">1</div><h3>0~100으로 정규화</h3><p>단위가 제각각인 지표를 모두 0~100점 척도로 통일합니다.</p></div>
+          <div class="how-step"><div class="n">2</div><h3>가중치 적용</h3><p>위 카테고리별 중요도(30/25/20/15/10%)를 곱해 합산합니다.</p></div>
+          <div class="how-step"><div class="n">3</div><h3>구간으로 해석</h3><p>합산 점수를 공포·중립·탐욕 구간으로 풀어 보여줍니다.</p></div>
+        </div>
+
+        <div class="method-prose">
+          <p><b>1) 0~100으로 정규화.</b> 지표마다 단위가 제각각입니다 — RSI는 0~100, 펀딩비는 아주 작은 %, DXY는 100 부근의 지수입니다. 이를 그대로 비교하는 건 의미가 없어, 모든 지표를 공통의 <code>0~100</code> 점수로 변환합니다. RSI처럼 범위가 정해진 지표는 알려진 구간을 매핑하고, 범위가 열린 지표는 그 지표 자신의 최근 역사적 분포에 견줘 점수화해, 임의의 고정선이 아니라 평소 위치 대비로 판단합니다.</p>
+          <p><b>2) 가중치 적용.</b> 다섯 카테고리는 동등하지 않습니다. 느리고 구조적인 신호(사이클·심리, 기술적)에 간접적 신호(매크로)보다 큰 비중을 둬 <code>30 / 25 / 20 / 15 / 10%</code>입니다. 각 카테고리 안에서는 소속 지표를 먼저 평균낸 뒤, 카테고리 가중치를 곱해 합산합니다. 단순화한 예: 사이클 30, 기술 40, 파생 50, 온체인 35, 매크로 60이면 종합 점수는 <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>입니다. 이렇게 하면 한 지표가 결과를 지배하지 못하고, 데이터가 빠져도 점수가 깨지지 않고 줄어들 뿐입니다.</p>
+          <p><b>3) 구간으로 해석.</b> 최종 0~100 점수를 위 '점수 구간 읽는 법'의 다섯 구간으로 읽습니다. 경계는 약속이 아니라 이정표입니다 — 낮은 점수는 통계적으로 우호적이었던 배경을 묘사할 뿐, 상승을 보장하지 않습니다.</p>
+          <div class="zone-table">
+            <div class="zrow"><div class="zr-band" style="color:#16c784"><span class="sw" style="background:#16c784"></span>0–25</div><div class="zr-desc">극도 공포 — 다수 지표가 한꺼번에 비관으로 정렬된 상태. 역사적으로 장기 진입에 더 좋았던 구간인 경우가 많지만, 하락장에서는 공포가 몇 주씩 이어질 수 있습니다.</div></div>
+            <div class="zrow"><div class="zr-band" style="color:#3ad29a"><span class="sw" style="background:#3ad29a"></span>26–45</div><div class="zr-desc">공포 — 비관적 지표가 더 많은, 대체로 매수에 우호적이었던 배경입니다.</div></div>
+            <div class="zrow"><div class="zr-band" style="color:#f0b90b"><span class="sw" style="background:#f0b90b"></span>46–55</div><div class="zr-desc">중립 — 신호가 섞여 서로 상쇄되어, 어느 방향으로도 뚜렷한 우위가 없습니다.</div></div>
+            <div class="zrow"><div class="zr-band" style="color:#f0843b"><span class="sw" style="background:#f0843b"></span>56–75</div><div class="zr-desc">탐욕 — 우호적 지표가 줄고 과열 신호가 늘어나는, 주의가 필요한 배경입니다.</div></div>
+            <div class="zrow"><div class="zr-band" style="color:#ea3943"><span class="sw" style="background:#ea3943"></span>76–100</div><div class="zr-desc">극도 탐욕 — 대부분의 지표가 과열을 가리키는, 가장 조심스러운 배경입니다.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 전체 지표 디렉터리 — 22개 지표 상세페이지 링크 -->
+      <div>
+        <div class="sec-h"><h2>전체 지표 디렉터리</h2><span class="hint">22개 지표 · 클릭하면 상세 설명 페이지로</span></div>
+
+        <!-- 사이클 · 심리 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#16c784"></span><span class="nm">사이클 · 심리</span><span class="ct">5개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/fear-greed-index.html">
+              <span class="dc-name">공포·탐욕 지수</span>
+              <p class="dc-desc">시장 전체의 군중 심리를 0~100으로 나타냅니다. 0은 극도의 공포, 100은 극도의 탐욕입니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/halving-cycle.html">
+              <span class="dc-name">반감기 사이클</span>
+              <p class="dc-desc">약 4년마다 새로 발행되는 양이 절반으로 줄어듭니다. 공급이 줄며 상승장이 오는 경향이 있습니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/mvrv-z-score.html">
+              <span class="dc-name">MVRV-Z 점수</span>
+              <p class="dc-desc">현재 시가총액이 '실제 매입가 합계'보다 얼마나 비싼지로 고평가·저평가를 가늠합니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/nupl.html">
+              <span class="dc-name">NUPL</span>
+              <p class="dc-desc">전체 보유자가 평균적으로 이익 상태인지 손실 상태인지 나타냅니다(미실현 손익 비율).</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/pi-cycle.html">
+              <span class="dc-name">Pi Cycle</span>
+              <p class="dc-desc">두 개의 장기 이동평균선이 교차하는 시점으로 사이클 고점을 포착해온 지표입니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 기술적 분석 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#5b8def"></span><span class="nm">기술적 분석</span><span class="ct">4개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/rsi.html">
+              <span class="dc-name">RSI</span>
+              <p class="dc-desc">최근 상승·하락의 힘을 0~100으로 나타냅니다. 과매수인지 과매도인지 봅니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/ma200-deviation.html">
+              <span class="dc-name">MA200 이격도</span>
+              <p class="dc-desc">200일 평균 가격선 대비 현재가가 얼마나 위/아래에 있는지입니다. 장기 추세의 기준선입니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/macd.html">
+              <span class="dc-name">MACD</span>
+              <p class="dc-desc">단기·장기 추세의 차이로 추세 전환과 모멘텀(상승 힘)을 포착합니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/historical-volatility.html">
+              <span class="dc-name">역사적 변동성</span>
+              <p class="dc-desc">가격이 얼마나 심하게 출렁이는지 나타냅니다. 낮아지면 큰 움직임을 앞둔 경우가 많습니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 파생상품 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#2bd49a"></span><span class="nm">파생상품</span><span class="ct">4개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/funding-rate.html">
+              <span class="dc-name">펀딩비</span>
+              <p class="dc-desc">선물에서 롱(상승 베팅)과 숏(하락 베팅) 중 어느 쪽이 비용을 더 내는지로 쏠림을 봅니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/open-interest.html">
+              <span class="dc-name">미결제약정</span>
+              <p class="dc-desc">아직 청산되지 않은 선물 계약의 총 규모입니다. 시장에 깔린 레버리지 총량을 뜻합니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/long-short-ratio.html">
+              <span class="dc-name">롱·숏 비율</span>
+              <p class="dc-desc">상승에 베팅한 사람과 하락에 베팅한 사람의 비율입니다. 포지션 쏠림을 봅니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/liquidation-heatmap.html">
+              <span class="dc-name">청산 히트맵</span>
+              <p class="dc-desc">어느 가격대에 강제 청산이 몰려 있는지 보여줍니다. 가격이 끌려가기 쉬운 지점입니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 온체인 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#f0b90b"></span><span class="nm">온체인</span><span class="ct">5개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/sopr.html">
+              <span class="dc-name">SOPR</span>
+              <p class="dc-desc">그날 움직인 코인들이 평균적으로 이익을 보고 팔렸는지 손해를 보고 팔렸는지 나타냅니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/holder-supply.html">
+              <span class="dc-name">장기·단기 보유</span>
+              <p class="dc-desc">오래 들고 있는 사람(장기 보유자)과 최근 산 사람(단기 보유자)의 코인 비중입니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/exchange-net-flow.html">
+              <span class="dc-name">거래소 순유입</span>
+              <p class="dc-desc">거래소로 들어오고 나가는 코인의 차이입니다. 거래소로 보내는 건 보통 '팔기 위해서'입니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/puell-multiple.html">
+              <span class="dc-name">Puell Multiple</span>
+              <p class="dc-desc">채굴자의 수익이 평소보다 많은지 적은지로 사이클 바닥·천장을 가늠합니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/hash-rate.html">
+              <span class="dc-name">해시레이트</span>
+              <p class="dc-desc">전 세계 채굴기가 네트워크에 쏟는 연산력입니다. 네트워크의 보안·건강 상태를 뜻합니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 매크로 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#a06bff"></span><span class="nm">매크로 (거시경제)</span><span class="ct">4개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/dollar-index-dxy.html">
+              <span class="dc-name">달러지수 DXY</span>
+              <p class="dc-desc">미국 달러가 주요 통화 대비 얼마나 강한지입니다. 달러와 위험자산은 보통 반대로 움직입니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/sp500.html">
+              <span class="dc-name">S&amp;P 500</span>
+              <p class="dc-desc">미국 대표 주가지수입니다. 글로벌 위험자산 심리의 기준점으로 봅니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/kimchi-premium.html">
+              <span class="dc-name">김치 프리미엄</span>
+              <p class="dc-desc">국내 거래소 가격이 해외보다 얼마나 비싼지입니다. 국내 투자 열기를 보여줍니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/etf-net-flow.html">
+              <span class="dc-name">ETF 순유입</span>
+              <p class="dc-desc">비트코인 현물 ETF로 들어오는 기관 자금입니다. 제도권 수요를 보여줍니다.</p>
+              <span class="dc-more">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 용어집 8개 -->
+      <div>
+        <div class="sec-h"><h2>핵심 용어집</h2><span class="hint">처음 보는 약어, 한 줄씩 풀어보기</span></div>
+        <div class="glos-grid">
+
+          <div class="glos-item">
+            <div class="gt-top"><span class="gt-term">공포·탐욕 지수</span><span class="gt-cat">사이클·심리</span></div>
+            <p class="gt-def">시장 심리를 0(극도 공포)~100(극도 탐욕)으로 나타낸 지수입니다. 변동성, 거래량과 모멘텀, 소셜 언급량, 비트코인 시장 점유율, 설문 등을 종합합니다. 모두가 공포에 빠졌을 때가 역사적으로 더 나은 진입 구간인 경우가 많았습니다.</p>
+          </div>
+
+          <div class="glos-item">
+            <div class="gt-top"><span class="gt-term">MVRV-Z 스코어</span><span class="gt-cat">온체인</span></div>
+            <p class="gt-def">시가총액과 실현 시총(각 코인을 마지막으로 움직인 가격으로 계산한 총 매입가)의 괴리를 표준화한 값입니다 — <code>(시총 − 실현시총) ÷ σ</code>. 높을수록 고평가, 낮을수록(특히 음수) 역사적 저점 구간에 가깝습니다.</p>
+          </div>
+
+          <div class="glos-item">
+            <div class="gt-top"><span class="gt-term">SOPR</span><span class="gt-cat">온체인</span></div>
+            <p class="gt-def">Spent Output Profit Ratio. 움직인 코인들이 평균적으로 이익에 팔렸는지 손실에 팔렸는지를 나타냅니다. <code>1</code>보다 크면 이익 실현, 작으면 손실 실현 우위를 의미합니다.</p>
+          </div>
+
+          <div class="glos-item">
+            <div class="gt-top"><span class="gt-term">RSI (14)</span><span class="gt-cat">기술적 분석</span></div>
+            <p class="gt-def">상대강도지수. 최근 상승·하락의 힘을 0~100으로 나타내는 모멘텀 오실레이터입니다. <code>70</code> 이상은 과매수, <code>30</code> 이하는 과매도로 해석되며, 강한 추세에서는 극단값에 오래 머물 수 있습니다.</p>
+          </div>
+
+          <div class="glos-item">
+            <div class="gt-top"><span class="gt-term">펀딩비</span><span class="gt-cat">파생상품</span></div>
+            <p class="gt-def">무기한 선물에서 롱·숏 균형을 맞추기 위해 한쪽이 다른 쪽에 지불하는 수수료입니다. 양수면 롱 과열, 음수면 숏 과열 신호로, 한쪽 쏠림이 심하면 반대 방향 청산의 연료가 됩니다.</p>
+          </div>
+
+          <div class="glos-item">
+            <div class="gt-top"><span class="gt-term">Puell Multiple</span><span class="gt-cat">온체인</span></div>
+            <p class="gt-def">채굴자의 일일 발행 수익을 1년 이동평균과 비교한 값입니다. 채굴자의 매도 압력과 사이클 위치를 가늠하며, 낮으면 채굴자 항복 구간, 높으면 발행 수익 과열 구간으로 읽습니다.</p>
+          </div>
+
+          <div class="glos-item">
+            <div class="gt-top"><span class="gt-term">알트시즌 지수</span><span class="gt-cat">사이클·심리</span></div>
+            <p class="gt-def">상위 알트코인이 최근 비트코인을 얼마나 능가했는지 측정합니다. 높으면 자금이 알트로 퍼지는 알트시즌, 낮으면 비트코인 우위 국면을 뜻합니다.</p>
+          </div>
+
+          <div class="glos-item">
+            <div class="gt-top"><span class="gt-term">반감기 사이클</span><span class="gt-cat">사이클·심리</span></div>
+            <p class="gt-def">약 4년(21만 블록) 주기로 채굴 보상이 절반으로 줄어든 이후의 경과 시간입니다. 과거 사이클의 고점·저점 패턴과 현재 위치를 비교합니다. 네 번째 반감기는 2024년 4월이었으며, 표본이 적어 맥락으로만 삼습니다.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div>
+        <div class="sec-h"><h2>자주 묻는 질문</h2><span class="hint">지표를 읽기 전에 알아두면 좋은 것들</span></div>
+        <div class="faq">
+          <details><summary><span class="q">지표는 다 좋은데 가격이 빠지면 왜 그런가요?</span><span class="c">+</span></summary><div class="a">여기 대부분의 지표는 가격 예측이 아니라 '상황과 확률'을 묘사합니다. 우호적 배경은 역사적으로 확률이 한쪽으로 기울었다는 뜻일 뿐, 갑작스러운 매크로 뉴스·대규모 연쇄 청산·큰 매도자 한 명 같은 단기 충격을 이겨내지는 못합니다. 지표마다 갱신 속도도 달라, 느린 온체인 지표는 몇 주씩 건설적인 상태를 유지하는 동안 가격은 출렁일 수 있습니다. 점수는 '내일 가격이 어디로 가는가'가 아니라 '지금이 어떤 환경인가'로 읽으세요.</div></details>
+          <details><summary><span class="q">데이터는 며칠마다 갱신되나요?</span><span class="c">+</span></summary><div class="a">종합 점수와 지표는 하루에 한 번, 한국시간 09:05경에 갱신됩니다. 가격·RSI·펀딩비 같은 일부 입력은 원천에서 하루 종일 계속 바뀌지만, 이 사이트는 실시간 시세가 아니라 마지막으로 수집한 스냅샷을 보여줍니다. 그래서 정오에 보는 값은 지금 이 순간이 아니라 그날 아침 수집분을 반영합니다.</div></details>
+          <details><summary><span class="q">어떤 지표를 먼저 봐야 하나요?</span><span class="c">+</span></summary><div class="a">'가장 중요한' 단일 지표는 없습니다 — 그래서 묶어 보는 것입니다. 넓게 보고 좁혀 가는 순서를 권합니다 — 먼저 사이클·심리 묶음으로 큰 그림(지금이 어느 계절인지)을 보고, 다음 온체인으로 실제 수급을, 끝으로 기술적·파생으로 단기 타이밍과 과열을 봅니다. 이 묶음들이 서로 엇갈리면 그 불일치 자체가 신호입니다 — 대개 그림이 불확실하니 인내가 필요하다는 뜻입니다.</div></details>
+          <details><summary><span class="q">점수가 높으면 매수 신호로 봐도 되나요?</span><span class="c">+</span></summary><div class="a">아닙니다. 이 사이트는 정보·교육 도구이지 투자 조언이 아니며, 높은 점수가 매수 권유는 아닙니다. 과거 데이터를 토대로 통계적으로 우호적인 배경을 묘사할 뿐이고, 과거가 미래를 보장하지 않습니다. 점수가 높아도 시장은 빠질 수 있고, 어떤 지표도 위험을 없애지 못합니다. 실제 결정은 본인의 상황·위험 감내도·투자 기간을 고려해, 가능하면 자격 있는 전문가의 도움을 받아 내리세요.</div></details>
+          <details><summary><span class="q">지표들이 서로 반대되는 경우는 왜 생기나요?</span><span class="c">+</span></summary><div class="a">서로 다른 것을, 서로 다른 시간 단위로 재기 때문입니다. 빠른 기술적 지표는 단기 과열을 알리는데 느린 온체인 지표는 여전히 장기 매집을 보일 수 있고 — 둘 다 동시에 참일 수 있습니다. 미리 내다보려는 선행 지표와 사후에 확인하는 후행 지표도 전환점 부근에서는 자연히 다른 방향을 가리킵니다. 이 엇갈림은 결함이 아니라 정보입니다 — 폭넓게 일치하면 환경이 또렷하다는, 크게 엇갈리면 불확실하다는 신호입니다.</div></details>
+          <details><summary><span class="q">이 페이지에는 왜 지표의 실제 값이 없나요?</span><span class="c">+</span></summary><div class="a">이 가이드는 각 지표가 무엇을 뜻하고 어떻게 읽는지에 대한 변하지 않는 참고서가 되도록 만들어, 금세 낡아버릴 변동 수치는 일부러 넣지 않았습니다. 실시간 값과 종합 점수, 차트는 매일 갱신되는 대시보드에 있습니다. 이 페이지로 지표를 이해한 뒤 현재 값은 대시보드에서 확인하세요.</div></details>
+        </div>
+      </div>
+
+      <!-- 면책 배너 -->
+      <div class="disc">
+        <span class="ic">!</span>
+        <div class="tx"><b>투자 유의</b> — 본 가이드와 모든 지표 설명은 교육·참고 목적의 정량 분석이며 투자 조언이 아닙니다. 모든 투자 결정과 그 결과의 책임은 본인에게 있습니다. 자세한 내용은 <a href="disclaimer.html" style="color:var(--green);text-decoration:none;">투자 면책조항</a>을 확인하세요.</div>
+      </div>
+
+      <!-- 푸터 -->
+      <div class="foot">
+        <div class="fa">
+          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
+          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+        </div>
+        <div class="cols">
+          <div class="col"><h4>메뉴</h4><a href="index.html">대시보드</a><a href="guide.html">지표 가이드</a><a href="about.html">서비스 소개</a><a href="contact.html">문의</a></div>
+          <div class="col"><h4>정책 · 커뮤니티</h4><a href="privacy.html">개인정보처리방침</a><a href="disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+        </div>
+        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+      </div>
+
+    </div>
   </div>
 </div>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
-      </div>
-      <div><h4 data-en="Menu" data-zh="菜单">메뉴</h4><a href="index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a><a href="guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a><a href="contact.html" data-en="Contact" data-zh="联系我们">문의</a></div>
-      <div><h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4><a href="privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a><a href="disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a></div>
-    </div>
-    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
-  </div>
-</footer>
-<script src="btc-reveal.js"></script>
+<!-- 모바일 햄버거 토글 (index.html에서 이식) -->
+<script>
+(function(){
+  'use strict';
+  var layout=document.getElementById('layout');
+  var toggle=document.getElementById('mbToggle');
+  var backdrop=document.getElementById('navBackdrop');
+  if(!layout||!toggle)return;
+  function closeNav(){layout.classList.remove('nav-open');}
+  toggle.addEventListener('click',function(){layout.classList.toggle('nav-open');});
+  if(backdrop)backdrop.addEventListener('click',closeNav);
+  // 사이드바 메뉴 클릭 시 오프캔버스 닫기
+  document.querySelectorAll('.sb-nav a').forEach(function(a){a.addEventListener('click',closeNav);});
+})();
+</script>
+
+<!-- Firebase compat SDK (동기 로드) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+<script>
+/* ──────────────────────────────────────────────────────────
+ * 방문자 카운터 (Firebase Realtime Database) — index.html에서 그대로 이식
+ * 실패해도 폴백 '--' 유지.
+ * ────────────────────────────────────────────────────────── */
+(function(){
+  'use strict';
+  if(typeof firebase==='undefined'||!firebase.database){
+    console.warn('[visitor] Firebase SDK not available, skipping visitor counter');
+    return;
+  }
+  var firebaseConfig={
+    apiKey:"AIzaSyA0rKMvdc-9tRbycgpkczyopQvqRQRV2v0",
+    authDomain:"btctiming-af87d.firebaseapp.com",
+    databaseURL:"https://btctiming-af87d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId:"btctiming-af87d",
+    storageBucket:"btctiming-af87d.firebasestorage.app",
+    messagingSenderId:"9515727678",
+    appId:"1:9515727678:web:7d6a7ad30d881c1f37ca6f",
+    measurementId:"G-QNR0LP5QH1"
+  };
+  function setNum(id,v){
+    var el=document.getElementById(id);
+    if(!el)return;
+    if(v==null||isNaN(v)){el.textContent='--';return;}
+    el.textContent=Number(v).toLocaleString('ko-KR');
+  }
+  function kstDateKey(){return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);}
+  try{
+    if(!firebase.apps||!firebase.apps.length){firebase.initializeApp(firebaseConfig);}
+    var db=firebase.database();
+    var today=kstDateKey();
+    var myPresenceRef=db.ref('presence').push();
+    var presenceListRef=db.ref('presence');
+    db.ref('.info/connected').on('value',function(snap){
+      if(snap.val()!==true)return;
+      myPresenceRef.onDisconnect().remove();
+      myPresenceRef.set(true);
+    });
+    presenceListRef.on('value',function(snap){setNum('vcNow',snap.numChildren());},function(err){console.warn('[visitor] presence read failed:',err&&err.message);});
+    db.ref('counters/total').on('value',function(snap){setNum('vcTotal',snap.val());},function(err){console.warn('[visitor] total read failed:',err&&err.message);});
+    db.ref('counters/daily/'+today).on('value',function(snap){setNum('vcToday',snap.val());},function(err){console.warn('[visitor] daily read failed:',err&&err.message);});
+    try{
+      if(!sessionStorage.getItem('btc_counted')){
+        sessionStorage.setItem('btc_counted','1');
+        db.ref('counters/total').transaction(function(v){return (v||0)+1;});
+        db.ref('counters/daily/'+today).transaction(function(v){return (v||0)+1;});
+        console.log('[visitor] new session counted for '+today);
+      }
+    }catch(e){console.warn('[visitor] sessionStorage unavailable, count skipped:',e&&e.message);}
+  }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
+})();
+</script>
 </body>
 </html>

@@ -2,94 +2,196 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="비트코인 롱·숏 비율(Long/Short Ratio)이란 무엇이고 어떻게 읽는지 — 계산 방식, 쏠림이 역신호가 되는 이유, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="What the Bitcoin long/short ratio is and how to read it — how it's calculated, why crowding is a contrarian signal, how to use it for buy timing, and its limits." data-zh-content="比特币多空比（Long/Short Ratio）是什么、如何解读——计算方式、为何拥挤是反向信号、择时用法及其局限。">
+<meta name="description" content="비트코인 롱·숏 비율(Long/Short Ratio)이란 무엇이고 어떻게 읽는지 — 계산 방식, 쏠림이 역신호가 되는 이유, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-en="Long/Short Ratio — BTC Timing Radar" data-zh="多空比 — BTC 时机雷达">롱·숏 비율이란? 비트코인 포지션 쏠림 지표 완전 정리 — BTC 타이밍 레이더</title>
+<title>롱·숏 비율이란? 비트코인 포지션 쏠림 지표 완전 정리 — BTC 타이밍 레이더</title>
 <link rel="canonical" href="https://btctiming.co.kr/indicators/long-short-ratio.html">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://btctiming.co.kr/indicators/long-short-ratio.html">
-<meta property="og:site_name" content="BTC 투자 타이밍 레이더" data-en-content="BTC Investment Timing Radar" data-zh-content="BTC 投资择时雷达">
-<meta property="og:title" content="롱·숏 비율이란? 비트코인 포지션 쏠림 지표 완전 정리" data-en-content="Long/Short Ratio — How to Read Bitcoin Positioning" data-zh-content="多空比 — 如何解读比特币持仓偏向">
-<meta property="og:description" content="비트코인 롱·숏 비율의 계산 방식, 쏠림이 역신호가 되는 이유, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="How the Bitcoin long/short ratio is calculated, why crowding is contrarian, and how to use it for buy timing." data-zh-content="比特币多空比的计算方式、拥挤为何是反向信号、择时用法与局限。">
+<meta property="og:site_name" content="BTC 투자 타이밍 레이더">
+<meta property="og:title" content="롱·숏 비율이란? 비트코인 포지션 쏠림 지표 완전 정리">
+<meta property="og:description" content="비트코인 롱·숏 비율의 계산 방식, 쏠림이 역신호가 되는 이유, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="롱·숏 비율이란? 비트코인 포지션 쏠림 지표 완전 정리" data-en-content="Long/Short Ratio — How to Read Bitcoin Positioning" data-zh-content="多空比 — 如何解读比特币持仓偏向">
-<meta name="twitter:description" content="비트코인 롱·숏 비율의 계산 방식, 쏠림이 역신호가 되는 이유, 활용법과 한계를 설명합니다." data-en-content="How the Bitcoin long/short ratio works and how to use it." data-zh-content="比特币多空比的原理与用法。">
+<meta name="twitter:title" content="롱·숏 비율이란? 비트코인 포지션 쏠림 지표 완전 정리">
+<meta name="twitter:description" content="비트코인 롱·숏 비율의 계산 방식, 쏠림이 역신호가 되는 이유, 활용법과 한계를 설명합니다.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="../btc-base.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898023121512538" crossorigin="anonymous"></script>
-<script src="../btc-i18n.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- AdSense (index.html에서 그대로 이식) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898078056285143" crossorigin="anonymous"></script>
 <style>
-  /* 지표 상세 페이지 공통 레이아웃 */
-  .crumb-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-2);font-family:var(--mono);margin-bottom:18px}
-  .crumb-nav a{color:var(--muted);text-decoration:none}
-  .crumb-nav a:hover{color:var(--text)}
+  /* ── 디자인 토큰 (index.html 기준) ── */
+  :root{
+    --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
+    --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943; --blue:#3b82f6;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--t1);}
+  ::-webkit-scrollbar{height:10px;width:10px;}
+  ::-webkit-scrollbar-thumb{background:#2a2f3a;border-radius:8px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  a{color:inherit;}
+
+  /* ── 레이아웃 (V2 셸) ── */
+  .layout{display:flex;min-height:100vh;background:var(--bg);}
+  .sidebar{flex:none;width:240px;align-self:flex-start;position:sticky;top:0;height:100vh;
+    background:var(--nav-bg);border-right:1px solid var(--line);padding:22px 16px;
+    display:flex;flex-direction:column;}
+  .sb-brand{display:flex;align-items:center;gap:11px;padding:0 6px 24px;text-decoration:none;}
+  .sb-logo{width:36px;height:36px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:19px;}
+  .sb-brand .bt{color:var(--t1);font-size:14.5px;font-weight:700;}
+  .sb-brand .bs{color:var(--m2);font-size:11px;letter-spacing:.06em;}
+  .sb-menu-h{color:var(--m3);font-size:11px;letter-spacing:.12em;padding:0 12px 8px;}
+  .sb-nav{display:flex;flex-direction:column;gap:3px;}
+  .sb-nav a{display:flex;align-items:center;gap:11px;padding:11px 12px;border-radius:11px;text-decoration:none;font-size:14px;color:var(--m1);}
+  .sb-nav a .dot{width:7px;height:7px;border-radius:50%;background:#2a2f3a;flex:none;}
+  .sb-nav a.active{background:rgba(22,199,132,.12);color:var(--green);font-weight:600;}
+  .sb-nav a.active .dot{background:var(--green);}
+  .sb-live{margin-top:24px;padding:16px;border-radius:14px;background:linear-gradient(160deg,rgba(22,199,132,.14),rgba(22,199,132,.03));border:1px solid rgba(22,199,132,.18);}
+  .sb-live .lh{display:flex;align-items:center;gap:7px;}
+  .sb-live .lh .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .sb-live .lh .t{color:var(--green);font-family:var(--mono);font-size:11px;font-weight:600;}
+  .sb-live .lb{color:var(--t2);font-size:13px;margin-top:9px;line-height:1.5;}
+  /* 사이드바 방문자 카운터 */
+  .sb-visitor{margin-top:14px;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--line);}
+  .sb-visitor .vh{color:var(--m2);font-size:10.5px;letter-spacing:.08em;margin-bottom:9px;font-family:var(--mono);}
+  .sb-visitor .vr{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--m1);padding:3px 0;}
+  .sb-visitor .vr .vc-n{color:var(--t1);font-weight:700;font-family:var(--mono);}
+  .sb-visitor .vr.now .vc-n{color:var(--green);}
+  .sb-visitor .vr .vc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:vcPulse 1.6s ease-in-out infinite;margin-right:5px;}
+  @keyframes vcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .sb-foot{margin-top:auto;padding:14px 12px 4px;color:var(--m3);font-size:11px;line-height:1.6;}
+
+  .main{flex:1;min-width:0;}
+  .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(8,9,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  .crumb{color:var(--m1);font-size:13px;}
+  .crumb b{color:var(--t1);font-weight:600;}
+  .topbar .right{display:flex;align-items:center;gap:12px;}
+  .topbar .live{display:flex;align-items:center;gap:7px;padding:8px 13px;border-radius:10px;background:rgba(22,199,132,.12);color:var(--green);font-size:12px;font-weight:600;font-family:var(--mono);}
+  .topbar .live .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+
+  .content{max-width:880px;margin:0 auto;padding:28px 32px 64px;}
+
+  /* ── 모바일 햄버거 ── */
+  .mobile-bar{display:none;position:sticky;top:0;z-index:30;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(8,9,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .mobile-bar .mb-brand{display:flex;align-items:center;gap:9px;text-decoration:none;}
+  .mobile-bar .mb-logo{width:30px;height:30px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:16px;}
+  .mobile-bar .mb-t{color:var(--t1);font-size:14px;font-weight:700;}
+  .mb-toggle{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--t1);}
+  .mb-toggle span{display:block;width:18px;height:2px;background:var(--t1);position:relative;}
+  .mb-toggle span::before,.mb-toggle span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--t1);}
+  .mb-toggle span::before{top:-6px;}.mb-toggle span::after{top:6px;}
+
+  /* ── 지표 상세 본문 (원본 클래스 → V2 토큰 재정의) ── */
+  /* 브레드크럼 */
+  .crumb-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--m2);font-family:var(--mono);margin-bottom:18px}
+  .crumb-nav a{color:var(--m1);text-decoration:none}
+  .crumb-nav a:hover{color:var(--t1)}
   .crumb-nav .sep{opacity:.5}
+  /* 히어로 */
   .ind-hero{margin:6px 0 8px}
-  .ind-hero .cat-pill{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--brand);background:var(--brand-soft);border:1px solid rgba(247,147,26,.25);padding:5px 12px;border-radius:100px;margin-bottom:14px}
-  .ind-hero .cat-pill .d{width:8px;height:8px;border-radius:50%;background:var(--brand)}
-  .ind-hero h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px}
-  .ind-hero h1 .hl{color:var(--brand)}
-  .ind-hero .lead{font-size:15.5px;color:var(--muted);line-height:1.74;max-width:720px;margin:0}
-  .ind-hero .lead b{color:var(--text);font-weight:600}
+  .ind-hero .cat-pill{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--blue);background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.25);padding:5px 12px;border-radius:100px;margin-bottom:14px}
+  .ind-hero .cat-pill .d{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+  .ind-hero h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px;color:var(--t1)}
+  .ind-hero h1 .hl{color:var(--green)}
+  .ind-hero .lead{font-size:15.5px;color:var(--t3);line-height:1.74;max-width:720px;margin:0}
+  .ind-hero .lead b{color:var(--t1);font-weight:600}
   /* 한눈 요약 박스 */
-  .summary-box{margin:26px 0 0;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .summary-box{margin:26px 0 0;background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   @media(max-width:680px){.summary-box{grid-template-columns:1fr;gap:16px}}
   .summary-box .sb{display:flex;flex-direction:column;gap:6px}
-  .summary-box .sb .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted-2)}
-  .summary-box .sb .v{font-size:13.5px;color:#c2cadb;line-height:1.6}
-  .summary-box .sb .v b{color:var(--text);font-weight:600}
+  .summary-box .sb .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--m2)}
+  .summary-box .sb .v{font-size:13.5px;color:var(--t2);line-height:1.6}
+  .summary-box .sb .v b{color:var(--t1);font-weight:600}
   .impact-inline{font-size:11.5px;font-family:var(--mono);font-weight:600;padding:4px 9px;border-radius:7px;display:inline-flex;align-self:flex-start}
-  .impact-inline.buy{color:var(--neon);background:var(--neon-soft)}
+  .impact-inline.buy{color:var(--green);background:rgba(22,199,132,.12)}
   /* 본문 섹션 */
   .sec{margin:46px 0 0;scroll-margin-top:80px;max-width:780px}
-  .sec h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;display:flex;align-items:center;gap:10px}
-  .sec h2 .ix{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--brand);background:var(--brand-soft);width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
-  .sec p{font-size:14.5px;color:var(--muted);line-height:1.78;margin:0 0 14px}
-  .sec p b{color:var(--text);font-weight:600}
-  .sec p code,.sec li code{font-family:var(--mono);font-size:12.5px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
+  .sec h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;display:flex;align-items:center;gap:10px;color:var(--t1)}
+  .sec h2 .ix{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--green);background:rgba(22,199,132,.12);width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
+  .sec p{font-size:14.5px;color:var(--t3);line-height:1.78;margin:0 0 14px}
+  .sec p b{color:var(--t1);font-weight:600}
+  .sec p code,.sec li code{font-family:var(--mono);font-size:12.5px;color:var(--t2);background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
   .sec ul{margin:0 0 14px;padding-left:20px}
-  .sec li{font-size:14.5px;color:var(--muted);line-height:1.72;margin:0 0 8px}
-  .sec li b{color:var(--text);font-weight:600}
+  .sec li{font-size:14.5px;color:var(--t3);line-height:1.72;margin:0 0 8px}
+  .sec li b{color:var(--t1);font-weight:600}
   /* 해석 구간 테이블 */
-  .zone-table{margin:8px 0 6px;border:1px solid var(--border);border-radius:13px;overflow:hidden}
-  .zone-table .zrow{display:grid;grid-template-columns:128px 1fr;border-bottom:1px solid var(--border)}
+  .zone-table{margin:8px 0 6px;border:1px solid var(--line);border-radius:13px;overflow:hidden}
+  .zone-table .zrow{display:grid;grid-template-columns:128px 1fr;border-bottom:1px solid var(--line)}
   .zone-table .zrow:last-child{border-bottom:0}
   .zone-table .zr-band{font-family:var(--mono);font-size:12.5px;font-weight:700;padding:13px 15px;display:flex;align-items:center;background:rgba(255,255,255,.02)}
-  .zone-table .zr-desc{font-size:13px;color:var(--muted);line-height:1.58;padding:13px 15px}
-  .zone-table .zr-band.z-strong{color:var(--neon)}
-  .zone-table .zr-band.z-mild{color:var(--brand)}
-  .zone-table .zr-band.z-wait{color:var(--muted)}
+  .zone-table .zr-desc{font-size:13px;color:var(--t3);line-height:1.58;padding:13px 15px}
+  .zone-table .zr-band.z-strong{color:var(--green)}
+  .zone-table .zr-band.z-mild{color:var(--blue)}
+  .zone-table .zr-band.z-wait{color:var(--m1)}
   .zone-table .zr-band.z-bear{color:var(--amber)}
   @media(max-width:480px){.zone-table .zrow{grid-template-columns:100px 1fr}}
   /* 콜아웃 */
-  .callout{margin:18px 0;border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:11px;background:rgba(255,194,61,.06);padding:15px 18px}
+  .callout{margin:18px 0;border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:11px;background:rgba(240,185,11,.06);padding:15px 18px}
   .callout .ct{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
-  .callout p{font-size:13.5px;color:#c2cadb;line-height:1.7;margin:0}
+  .callout p{font-size:13.5px;color:var(--t2);line-height:1.7;margin:0}
   /* 함께 보면 좋은 지표 */
   .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
   @media(max-width:760px){.related-grid{grid-template-columns:1fr}}
-  .related-grid a{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;padding:15px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:5px}
-  .related-grid a:hover{border-color:var(--border-strong);transform:translateY(-2px);background:rgba(255,255,255,.04)}
-  .related-grid a .rn{font-size:14.5px;font-weight:700;color:var(--text)}
-  .related-grid a .rd{font-size:12.5px;color:var(--muted);line-height:1.5}
+  .related-grid a{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:13px;padding:15px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:5px}
+  .related-grid a:hover{border-color:rgba(255,255,255,.14);transform:translateY(-2px);background:rgba(255,255,255,.04)}
+  .related-grid a .rn{font-size:14.5px;font-weight:700;color:var(--t1)}
+  .related-grid a .rd{font-size:12.5px;color:var(--t3);line-height:1.5}
   /* FAQ */
   .faq-list{margin-top:14px;display:flex;flex-direction:column;gap:11px;max-width:820px}
-  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;overflow:hidden}
-  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--text);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
+  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--t1);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
   .faq-item summary::-webkit-details-marker{display:none}
-  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--brand);flex:none}
-  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--muted-2);transition:.2s;flex:none}
+  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--green);flex:none}
+  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--m2);transition:.2s;flex:none}
   .faq-item[open] summary::after{transform:rotate(45deg)}
-  .faq-item .ans{font-size:13.5px;color:var(--muted);line-height:1.74;padding:0 18px 16px}
-  .faq-item .ans b{color:var(--text);font-weight:600}
+  .faq-item .ans{font-size:13.5px;color:var(--t3);line-height:1.74;padding:0 18px 16px}
+  .faq-item .ans b{color:var(--t1);font-weight:600}
   /* 하단 CTA */
-  .page-cta{margin:50px 0 10px;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-  .page-cta .ct-tx h3{font-size:17px;font-weight:700;margin:0 0 5px}
-  .page-cta .ct-tx p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.6}
-  .page-cta .ct-btn{font-size:14px;font-weight:700;color:#06140d;background:var(--neon);border-radius:11px;padding:13px 22px;text-decoration:none;white-space:nowrap;transition:.2s}
-  .page-cta .ct-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(54,222,158,.25)}
+  .page-cta{margin:50px 0 10px;background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .page-cta .ct-tx h3{font-size:17px;font-weight:700;margin:0 0 5px;color:var(--t1)}
+  .page-cta .ct-tx p{font-size:13.5px;color:var(--t3);margin:0;line-height:1.6}
+  .page-cta .ct-btn{font-size:14px;font-weight:700;color:#04120c;background:var(--green);border-radius:11px;padding:13px 22px;text-decoration:none;white-space:nowrap;transition:.2s}
+  .page-cta .ct-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(22,199,132,.25)}
+
+  /* ── 푸터 ── */
+  .foot{border-top:1px solid var(--line);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
+  .foot .fa{max-width:360px;}
+  .foot .fb{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+  .foot .fb .lo{width:28px;height:28px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:15px;}
+  .foot .fb .nm{color:var(--t1);font-size:14px;font-weight:700;}
+  .foot .fd{color:var(--m2);font-size:12.5px;line-height:1.7;}
+  .foot .cols{display:flex;gap:48px;flex-wrap:wrap;}
+  .foot .col h4{color:var(--m1);font-size:12px;font-weight:600;margin:0 0 10px;}
+  .foot .col a{display:block;color:var(--m2);font-size:13px;text-decoration:none;margin-bottom:8px;}
+  .foot .col a:hover{color:var(--t2);}
+  .foot .copy{color:var(--m3);font-size:11.5px;width:100%;border-top:1px solid rgba(255,255,255,.04);padding-top:16px;}
+
+  /* ── 반응형 ── */
+  @media(max-width:768px){
+    html,body{overflow-x:hidden;max-width:100vw;}
+    .sidebar{position:fixed;left:0;top:0;z-index:40;transform:translateX(-100%);transition:transform .25s ease;height:100vh;box-shadow:2px 0 20px rgba(0,0,0,.5);}
+    .layout.nav-open .sidebar{transform:translateX(0);}
+    .nav-backdrop{display:none;position:fixed;inset:0;z-index:35;background:rgba(0,0,0,.5);}
+    .layout.nav-open .nav-backdrop{display:block;}
+    .mobile-bar{display:flex;}
+    .topbar{display:none;}
+    .content{padding:18px 16px 56px;max-width:100%;}
+    .ind-hero h1{font-size:24px;}
+    .sec h2{font-size:19px;}
+    .foot{flex-direction:column;}
+    .foot .cols{gap:32px;}
+  }
+  @media(max-width:480px){
+    .content{padding:16px 12px 48px;}
+    .ind-hero h1{font-size:21px;}
+  }
 </style>
 <!-- 구조화 데이터: 지표 해설 문서 + 빵부스러기 + FAQ -->
 <script type="application/ld+json">
@@ -129,150 +231,249 @@
 </script>
 </head>
 <body>
-<div class="bg-field" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+<div class="layout" id="layout">
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-    <nav class="nav-links">
-      <a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
-      <a class="active" href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-      <a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a>
+  <!-- ── 사이드바 (V2 셸, active=지표 가이드) ── -->
+  <aside class="sidebar">
+    <a class="sb-brand" href="../index.html">
+      <div class="sb-logo">₿</div>
+      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+    </a>
+    <div class="sb-menu-h">MENU</div>
+    <nav class="sb-nav">
+      <a href="../index.html"><span class="dot"></span>대시보드</a>
+      <a class="active" href="../guide.html"><span class="dot"></span>지표 가이드</a>
+      <a href="../about.html"><span class="dot"></span>서비스 소개</a>
+      <a href="../contact.html"><span class="dot"></span>문의</a>
     </nav>
-    <a class="nav-pill" href="../index.html"><span class="pulse"></span><span data-en="Today's Score →" data-zh="今日评分 →">오늘의 점수 →</span></a>
-  </div>
-</header>
-
-<div class="wrap">
-  <div class="crumb-nav reveal">
-    <a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-    <span class="sep">/</span>
-    <span data-en="Derivatives" data-zh="衍生品">파생상품</span>
-    <span class="sep">/</span>
-    <span data-en="Long/Short Ratio" data-zh="多空比">롱·숏 비율</span>
-  </div>
-
-  <div class="ind-hero reveal">
-    <span class="cat-pill"><span class="d" style="background:var(--brand)"></span><span data-en="Derivatives" data-zh="衍生品">파생상품</span></span>
-    <h1 data-i18n-html="1" data-en="The long/short ratio, in <span class=&quot;hl&quot;>plain words</span>" data-zh="用<span class=&quot;hl&quot;>通俗的话</span>讲清楚多空比">롱·숏 비율, <span class="hl">쉬운 말</span>로 풀어보기</h1>
-    <p class="lead" data-i18n-html="1" data-en="The long/short ratio compares how many traders are betting on a rise (longs) versus a fall (shorts). <b>It's a snapshot of which way the crowd is leaning.</b> The catch is contrarian: when positioning piles too far onto one side, the market often moves the other way, because the crowded side is the one most exposed to being squeezed." data-zh="多空比比较押注上涨（多头）与押注下跌（空头）的交易者数量。<b>它是群体偏向哪一方的快照。</b>奥妙在于逆向：当持仓过度偏向某一方时，行情往往反向运行，因为拥挤的一方正是最容易被挤压的一方。">롱·숏 비율은 상승에 베팅한 사람(롱)과 하락에 베팅한 사람(숏)이 각각 얼마나 되는지를 비교합니다. <b>군중이 어느 쪽으로 기울었는지를 보여주는 스냅샷입니다.</b> 핵심은 역발상입니다. 포지션이 한쪽으로 과하게 쌓이면 시장은 반대로 가는 경우가 많은데, 쏠린 쪽이 바로 청산에 가장 취약하기 때문입니다.</p>
-  </div>
-
-  <div class="summary-box reveal">
-    <div class="sb">
-      <span class="k" data-en="What it is" data-zh="是什么">무엇인가</span>
-      <span class="v" data-en="The volume (or accounts) positioned long divided by those short." data-zh="持多头的成交量（或账户数）除以持空头的。">롱 포지션 거래량(또는 계좌 수)을 숏으로 나눈 값.</span>
+    <div class="sb-live">
+      <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
+      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
-    <div class="sb">
-      <span class="k" data-en="How to read" data-zh="如何解读">어떻게 읽나</span>
-      <span class="v" data-en="<b>Extreme crowding is a contrarian cue</b>, not a confirmation." data-zh="<b>极端拥挤是反向提示</b>，而非确认信号。" data-i18n-html="1"><b>극단적 쏠림은 역신호</b>이지 확인 신호가 아님.</span>
+    <!-- 방문자 카운터 (Firebase) -->
+    <div class="sb-visitor" id="visitorStrip">
+      <div class="vh">VISITORS</div>
+      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-    <div class="sb">
-      <span class="k" data-en="Signal" data-zh="信号">신호</span>
-      <span class="impact-inline buy" data-en="Crowding = move the other way" data-zh="拥挤 = 反向运行">쏠림 = 반대 방향</span>
+    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+  </aside>
+
+  <!-- ── 메인 ── -->
+  <div class="main">
+    <!-- 모바일 상단 바 -->
+    <div class="mobile-bar">
+      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
     </div>
-  </div>
-
-  <section class="sec reveal">
-    <h2><span class="ix">1</span><span data-en="What the long/short ratio actually measures" data-zh="多空比到底衡量什么">롱·숏 비율은 무엇을 재는가</span></h2>
-    <p data-i18n-html="1" data-en="Price tells you the outcome of the tug-of-war between buyers and sellers. The long/short ratio tries to show you <b>how many people are pulling on each end of the rope</b> right now. A reading well above balance means most traders expect a rise; well below balance means most expect a fall. By itself that sounds bullish or bearish — but the useful reading is the opposite of intuition." data-zh="价格告诉你买卖双方拉锯的结果。多空比则试图展示当下<b>有多少人在绳子的两端各自拉扯</b>。明显高于均衡的读数意味着多数交易者预期上涨；明显低于均衡则意味着多数预期下跌。乍看像看涨或看跌——但有用的解读恰与直觉相反。">가격은 매수자와 매도자가 벌이는 줄다리기의 결과를 보여줍니다. 롱·숏 비율은 지금 <b>줄의 양쪽 끝을 각각 몇 명이 당기고 있는지</b>를 보여주려는 지표입니다. 균형을 크게 웃도는 값은 대다수가 상승을 예상한다는 뜻이고, 크게 밑도는 값은 대다수가 하락을 예상한다는 뜻입니다. 언뜻 강세나 약세처럼 들리지만, 유용한 해석은 직관의 반대편에 있습니다.</p>
-    <p data-en="Why contrarian? Because a market is fuel for the move it isn't positioned for. If almost everyone is already long, there's little new buying left to push price up, but a large pool of leveraged longs that can be force-sold on a dip — which can turn a small decline into a cascade. The ratio is a way to spot when one side has become dangerously crowded." data-zh="为何逆向？因为市场是其未持仓方向的燃料。如果几乎所有人都已做多，便没有多少新买盘能推高价格，却存在大量在下跌时会被强平的杠杆多头——这能把小幅下跌变成连环爆仓。该比率是识别某一方何时变得危险拥挤的方式。">왜 역발상일까요? 시장은 자신이 포지션을 잡지 않은 방향의 연료가 되기 때문입니다. 거의 모두가 이미 롱이라면 가격을 더 밀어 올릴 새 매수는 별로 남지 않은 반면, 하락 시 강제 매도될 수 있는 레버리지 롱이 대량으로 쌓여 있어 — 작은 하락이 연쇄 청산으로 번질 수 있습니다. 이 비율은 어느 한쪽이 위험할 만큼 쏠린 순간을 포착하는 도구입니다.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">2</span><span data-en="How it's calculated" data-zh="计算方式">어떻게 계산되나</span></h2>
-    <p data-i18n-html="1" data-en="At its simplest, the ratio divides the long side by the short side: <code>long ÷ short</code>. A value of <code>1.0</code> means the two sides are balanced, <b>above 1.0 means more longs</b>, and <b>below 1.0 means more shorts</b>. Exchanges publish a few different versions, and they don't always agree:" data-zh="最简单地说，该比率将多头一方除以空头一方：<code>多 ÷ 空</code>。值为 <code>1.0</code> 表示双方均衡，<b>大于 1.0 表示多头更多</b>，<b>小于 1.0 表示空头更多</b>。交易所会发布几种不同版本，且彼此未必一致：">가장 단순하게는 롱 쪽을 숏 쪽으로 나눕니다 — <code>롱 ÷ 숏</code>. 값이 <code>1.0</code>이면 양쪽이 균형, <b>1.0보다 크면 롱 우세</b>, <b>1.0보다 작으면 숏 우세</b>입니다. 거래소는 몇 가지 다른 버전을 발표하며, 이들이 항상 일치하지는 않습니다.</p>
-    <ul>
-      <li data-i18n-html="1" data-en="<b>By accounts</b> — counts how many trader accounts are net long versus net short. Reflects the broad crowd (often retail-heavy)." data-zh="<b>按账户</b>——统计净多头与净空头的交易账户数量。反映广泛人群（往往散户居多）。"><b>계좌 수 기준</b> — 순매수·순매도 계좌가 각각 몇 개인지 셉니다. 폭넓은 군중(흔히 개미 위주)을 반영.</li>
-      <li data-i18n-html="1" data-en="<b>By position size (volume)</b> — weights by how large the positions are, so big players count more." data-zh="<b>按持仓规模（成交量）</b>——按持仓大小加权，故大户占比更高。"><b>거래량(포지션 크기) 기준</b> — 포지션 크기로 가중하므로 큰손의 비중이 더 큼.</li>
-      <li data-i18n-html="1" data-en="<b>Top-trader ratio</b> — looks only at the largest accounts, sometimes pointing the opposite way to the retail crowd." data-zh="<b>大户多空比</b>——仅看最大账户，有时与散户群体方向相反。"><b>상위 트레이더 비율</b> — 가장 큰 계좌만 보며, 때로 개미 군중과 정반대를 가리킴.</li>
-    </ul>
-    <p data-i18n-html="1" data-en="The takeaway: there's no single 'true' ratio. Always note <b>which version and which exchange</b> you're looking at, and read the value against its own recent history rather than a fixed threshold." data-zh="要点：不存在唯一“真实”的比率。务必留意你看的是<b>哪个版本、哪家交易所</b>，并对照其自身近期历史而非固定阈值来解读。">핵심은 이렇습니다. 단 하나의 '진짜' 비율은 없습니다. 항상 <b>어떤 버전, 어떤 거래소</b>의 값인지 확인하고, 고정된 기준선이 아니라 자기 자신의 최근 이력과 견주어 읽으세요.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">3</span><span data-en="Reading the zones" data-zh="区间解读">구간으로 읽기</span></h2>
-    <p data-en="There's no universal cutoff, so the bands below are relative to a balanced reading of around 1.0. Judge any value against its own recent range." data-zh="没有通用阈值，因此下方区间是相对于约 1.0 的均衡读数而言的。任何数值都应对照其自身近期区间判断。">보편적 기준선이 없으므로 아래 구간은 약 1.0의 균형값을 기준으로 한 상대적 표현입니다. 어떤 값이든 자기 자신의 최근 범위와 견주어 판단하세요.</p>
-    <div class="zone-table">
-      <div class="zrow"><div class="zr-band z-bear"><span data-en="Very high" data-zh="非常高">매우 높음</span></div><div class="zr-desc" data-en="<b>Longs heavily crowded.</b> Most are betting up — little fuel left to rise, and many longs exposed to a downside flush." data-zh="<b>多头严重拥挤。</b>多数押注上涨——上涨燃料不足，大量多头暴露于下行清洗风险。" data-i18n-html="1"><b>롱이 크게 쏠림.</b> 대다수가 상승에 베팅 — 오를 연료가 적고, 하방 급락에 노출된 롱이 많음.</div></div>
-      <div class="zrow"><div class="zr-band z-wait"><span data-en="Mildly high" data-zh="轻度偏高">약간 높음</span></div><div class="zr-desc" data-en="<b>Slight long tilt.</b> A normal bullish lean — not yet an extreme worth fading." data-zh="<b>轻微偏多。</b>正常的看涨倾斜——尚未到值得反向操作的极端。" data-i18n-html="1"><b>약한 롱 편향.</b> 정상적인 상승 쏠림 — 아직 역으로 받아칠 극단은 아님.</div></div>
-      <div class="zrow"><div class="zr-band z-mild"><span data-en="Near 1.0" data-zh="接近 1.0">1.0 부근</span></div><div class="zr-desc" data-en="<b>Balanced.</b> Longs and shorts roughly even — no strong crowd signal to read." data-zh="<b>均衡。</b>多空大致相当——没有强烈的群体信号可读。" data-i18n-html="1"><b>균형.</b> 롱과 숏이 대체로 비슷 — 읽어낼 강한 군중 신호가 없음.</div></div>
-      <div class="zrow"><div class="zr-band z-strong"><span data-en="Very low" data-zh="非常低">매우 낮음</span></div><div class="zr-desc" data-en="<b>Shorts heavily crowded.</b> Most are betting down — often near fear-driven lows; a squeeze higher can follow." data-zh="<b>空头严重拥挤。</b>多数押注下跌——常在恐惧驱动的低位附近；随后可能轧空上行。" data-i18n-html="1"><b>숏이 크게 쏠림.</b> 대다수가 하락에 베팅 — 공포에 의한 저점 부근에서 자주 나타나며 숏 스퀴즈 반등이 따를 수 있음.</div></div>
+    <!-- 데스크톱 상단 바 -->
+    <div class="topbar">
+      <div class="crumb">지표 가이드 <span style="color:var(--m3)">›</span> <b>롱·숏 비율</b></div>
+      <div class="right">
+        <span class="live"><span class="d"></span>LIVE</span>
+      </div>
     </div>
-  </section>
 
-  <section class="sec reveal">
-    <h2><span class="ix">4</span><span data-en="Using it for buy timing" data-zh="用于择时">매수 타이밍에 쓰는 법</span></h2>
-    <p data-i18n-html="1" data-en="The ratio works best as a <b>crowd-extreme detector</b>, not a trigger. When a broad retail ratio has tipped heavily short during a fearful sell-off, it can hint that bearish positioning is stretched and a relief bounce is more likely — a context in which patient, staggered entries have historically been less punishing. The mirror case, an extremely long-heavy reading during euphoria, is a cue to be wary of chasing rather than to add aggressively." data-zh="该比率最适合作为<b>群体极端探测器</b>，而非触发器。当广泛的散户比率在恐慌抛售中严重偏空时，可能暗示看跌持仓已过度伸展、反弹更可能出现——在这种背景下，有耐心的分批入场历史上代价较小。相反，在狂热中出现极端偏多的读数，则是提示对追高保持警惕，而非激进加仓。">이 비율은 방아쇠가 아니라 <b>군중 극단 탐지기</b>로 쓸 때 가장 좋습니다. 폭넓은 개미 비율이 공포 매도 와중에 크게 숏으로 기울었다면, 하락 포지션이 과도하게 늘어나 반등 가능성이 커졌다는 힌트일 수 있습니다 — 역사적으로 인내심 있는 분할 진입의 부담이 덜했던 국면입니다. 반대로 도취 국면에서 극단적으로 롱이 무거운 값은 공격적으로 추가하기보다 추격 매수를 경계하라는 신호입니다.</p>
-    <div class="callout">
-      <div class="ct" data-en="Practical tip" data-zh="实用建议">실전 팁</div>
-      <p data-en="Compare the broad-crowd ratio with the top-trader ratio. When they diverge — retail crowded one way, large accounts the other — it often pays to lean with the bigger players, but always confirm with price and funding." data-zh="将广泛群体比率与大户比率对比。当二者背离时——散户偏向一方、大户偏向另一方——往往倾向于跟随大户更有利，但务必以价格和资金费率确认。">폭넓은 군중 비율과 상위 트레이더 비율을 비교하세요. 둘이 엇갈릴 때 — 개미는 한쪽, 큰손은 반대쪽 — 큰손 편에 서는 편이 유리한 경우가 많지만, 항상 가격·펀딩비로 확인하세요.</p>
+    <div class="content">
+
+      <div class="crumb-nav">
+        <a href="../guide.html">지표 가이드</a>
+        <span class="sep">/</span>
+        <span>파생상품</span>
+        <span class="sep">/</span>
+        <span>롱·숏 비율</span>
+      </div>
+
+      <div class="ind-hero">
+        <span class="cat-pill"><span class="d"></span><span>파생상품</span></span>
+        <h1>롱·숏 비율, <span class="hl">쉬운 말</span>로 풀어보기</h1>
+        <p class="lead">롱·숏 비율은 상승에 베팅한 사람(롱)과 하락에 베팅한 사람(숏)이 각각 얼마나 되는지를 비교합니다. <b>군중이 어느 쪽으로 기울었는지를 보여주는 스냅샷입니다.</b> 핵심은 역발상입니다. 포지션이 한쪽으로 과하게 쌓이면 시장은 반대로 가는 경우가 많은데, 쏠린 쪽이 바로 청산에 가장 취약하기 때문입니다.</p>
+      </div>
+
+      <div class="summary-box">
+        <div class="sb">
+          <span class="k">무엇인가</span>
+          <span class="v">롱 포지션 거래량(또는 계좌 수)을 숏으로 나눈 값.</span>
+        </div>
+        <div class="sb">
+          <span class="k">어떻게 읽나</span>
+          <span class="v"><b>극단적 쏠림은 역신호</b>이지 확인 신호가 아님.</span>
+        </div>
+        <div class="sb">
+          <span class="k">신호</span>
+          <span class="impact-inline buy">쏠림 = 반대 방향</span>
+        </div>
+      </div>
+
+      <section class="sec">
+        <h2><span class="ix">1</span><span>롱·숏 비율은 무엇을 재는가</span></h2>
+        <p>가격은 매수자와 매도자가 벌이는 줄다리기의 결과를 보여줍니다. 롱·숏 비율은 지금 <b>줄의 양쪽 끝을 각각 몇 명이 당기고 있는지</b>를 보여주려는 지표입니다. 균형을 크게 웃도는 값은 대다수가 상승을 예상한다는 뜻이고, 크게 밑도는 값은 대다수가 하락을 예상한다는 뜻입니다. 언뜻 강세나 약세처럼 들리지만, 유용한 해석은 직관의 반대편에 있습니다.</p>
+        <p>왜 역발상일까요? 시장은 자신이 포지션을 잡지 않은 방향의 연료가 되기 때문입니다. 거의 모두가 이미 롱이라면 가격을 더 밀어 올릴 새 매수는 별로 남지 않은 반면, 하락 시 강제 매도될 수 있는 레버리지 롱이 대량으로 쌓여 있어 — 작은 하락이 연쇄 청산으로 번질 수 있습니다. 이 비율은 어느 한쪽이 위험할 만큼 쏠린 순간을 포착하는 도구입니다.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">2</span><span>어떻게 계산되나</span></h2>
+        <p>가장 단순하게는 롱 쪽을 숏 쪽으로 나눕니다 — <code>롱 ÷ 숏</code>. 값이 <code>1.0</code>이면 양쪽이 균형, <b>1.0보다 크면 롱 우세</b>, <b>1.0보다 작으면 숏 우세</b>입니다. 거래소는 몇 가지 다른 버전을 발표하며, 이들이 항상 일치하지는 않습니다.</p>
+        <ul>
+          <li><b>계좌 수 기준</b> — 순매수·순매도 계좌가 각각 몇 개인지 셉니다. 폭넓은 군중(흔히 개미 위주)을 반영.</li>
+          <li><b>거래량(포지션 크기) 기준</b> — 포지션 크기로 가중하므로 큰손의 비중이 더 큼.</li>
+          <li><b>상위 트레이더 비율</b> — 가장 큰 계좌만 보며, 때로 개미 군중과 정반대를 가리킴.</li>
+        </ul>
+        <p>핵심은 이렇습니다. 단 하나의 '진짜' 비율은 없습니다. 항상 <b>어떤 버전, 어떤 거래소</b>의 값인지 확인하고, 고정된 기준선이 아니라 자기 자신의 최근 이력과 견주어 읽으세요.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">3</span><span>구간으로 읽기</span></h2>
+        <p>보편적 기준선이 없으므로 아래 구간은 약 1.0의 균형값을 기준으로 한 상대적 표현입니다. 어떤 값이든 자기 자신의 최근 범위와 견주어 판단하세요.</p>
+        <div class="zone-table">
+          <div class="zrow"><div class="zr-band z-bear"><span>매우 높음</span></div><div class="zr-desc"><b>롱이 크게 쏠림.</b> 대다수가 상승에 베팅 — 오를 연료가 적고, 하방 급락에 노출된 롱이 많음.</div></div>
+          <div class="zrow"><div class="zr-band z-wait"><span>약간 높음</span></div><div class="zr-desc"><b>약한 롱 편향.</b> 정상적인 상승 쏠림 — 아직 역으로 받아칠 극단은 아님.</div></div>
+          <div class="zrow"><div class="zr-band z-mild"><span>1.0 부근</span></div><div class="zr-desc"><b>균형.</b> 롱과 숏이 대체로 비슷 — 읽어낼 강한 군중 신호가 없음.</div></div>
+          <div class="zrow"><div class="zr-band z-strong"><span>매우 낮음</span></div><div class="zr-desc"><b>숏이 크게 쏠림.</b> 대다수가 하락에 베팅 — 공포에 의한 저점 부근에서 자주 나타나며 숏 스퀴즈 반등이 따를 수 있음.</div></div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">4</span><span>매수 타이밍에 쓰는 법</span></h2>
+        <p>이 비율은 방아쇠가 아니라 <b>군중 극단 탐지기</b>로 쓸 때 가장 좋습니다. 폭넓은 개미 비율이 공포 매도 와중에 크게 숏으로 기울었다면, 하락 포지션이 과도하게 늘어나 반등 가능성이 커졌다는 힌트일 수 있습니다 — 역사적으로 인내심 있는 분할 진입의 부담이 덜했던 국면입니다. 반대로 도취 국면에서 극단적으로 롱이 무거운 값은 공격적으로 추가하기보다 추격 매수를 경계하라는 신호입니다.</p>
+        <div class="callout">
+          <div class="ct">실전 팁</div>
+          <p>폭넓은 군중 비율과 상위 트레이더 비율을 비교하세요. 둘이 엇갈릴 때 — 개미는 한쪽, 큰손은 반대쪽 — 큰손 편에 서는 편이 유리한 경우가 많지만, 항상 가격·펀딩비로 확인하세요.</p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">5</span><span>한계와 흔한 오해</span></h2>
+        <p>이 비율은 거래소마다, 또 계좌 수 기준인지 거래량 기준인지에 따라 크게 달라 출처 간 절대값 비교는 어렵습니다 — 한 거래소의 '2.0'은 다른 거래소의 '2.0'과 같지 않습니다. 개미와 전문가의 포지션이 정반대를 가리킬 수도 있어 하나의 비율이 오도할 수 있습니다. 가장 흔한 실수는 <b>높은 비율을 강세 확인</b>으로 받아들이는 것입니다. 실제로는 극단적 쏠림이 군중의 반대 방향 움직임에 선행하는 경우가 더 많습니다. 증거가 아니라 여러 심리 힌트 중 하나로 보고, 항상 펀딩비·미결제약정·가격과 함께 보세요.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">+</span><span>함께 보면 좋은 지표</span></h2>
+        <div class="related-grid">
+          <a href="funding-rate.html">
+            <span class="rn">펀딩비</span>
+            <span class="rd">쏠린 쪽 중 어느 쪽이 비용을 내며 버티는지.</span>
+          </a>
+          <a href="open-interest.html">
+            <span class="rn">미결제약정</span>
+            <span class="rd">그 포지션 뒤에 쌓인 레버리지 총량.</span>
+          </a>
+          <a href="../guide.html">
+            <span class="rn">전체 지표 보기</span>
+            <span class="rd">지표 가이드 전체로 돌아가기.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">?</span><span>자주 묻는 질문</span></h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>롱·숏 비율이 높으면 가격이 오르나요?</span></summary>
+            <div class="ans">꼭 그렇지는 않습니다. 비율이 한쪽으로 크게 기울면 그 쏠린 쪽이 청산당하며 반대 방향으로 움직이는 경우가 많습니다. 높은 롱 비율은 매수 확신이 아니라 롱 쏠림에 따른 조정 위험으로 읽는 편이 안전합니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>롱·숏 비율의 절대값을 거래소끼리 비교해도 되나요?</span></summary>
+            <div class="ans">권장되지 않습니다. 거래소마다, 또 계좌 수 기준인지 거래량 기준인지에 따라 값이 크게 달라 출처 간 절대값 비교는 어렵습니다. 같은 출처의 최근 범위와 비교해 추세 변화를 보는 것이 낫습니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>롱·숏 비율만 보고 매매 판단을 내려도 되나요?</span></summary>
+            <div class="ans">권장되지 않습니다. 이 지표는 증거가 아니라 하나의 심리 힌트입니다. 개미와 전문가의 포지션이 정반대일 수도 있으므로, 펀딩비·미결제약정·가격과 함께 종합적으로 판단해야 합니다.</div>
+          </details>
+        </div>
+      </section>
+
+      <div class="page-cta">
+        <div class="ct-tx">
+          <h3>오늘의 지표 값 확인하기</h3>
+          <p>대시보드에서 실시간 롱·숏 비율과 종합 타이밍 점수를 확인하세요.</p>
+        </div>
+        <a class="ct-btn" href="../index.html">대시보드 열기 →</a>
+      </div>
+
+      <!-- 푸터 -->
+      <div class="foot">
+        <div class="fa">
+          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
+          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+        </div>
+        <div class="cols">
+          <div class="col"><h4>메뉴</h4><a href="../index.html">대시보드</a><a href="../guide.html">지표 가이드</a><a href="../about.html">서비스 소개</a><a href="../contact.html">문의</a></div>
+          <div class="col"><h4>정책 · 커뮤니티</h4><a href="../privacy.html">개인정보처리방침</a><a href="../disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+        </div>
+        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+      </div>
+
     </div>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">5</span><span data-en="Limits &amp; common misreadings" data-zh="局限与常见误读">한계와 흔한 오해</span></h2>
-    <p data-i18n-html="1" data-en="The ratio varies a lot by exchange and by whether it counts accounts or volume, so absolute values aren't comparable across sources — a '2.0' on one venue isn't the same as '2.0' on another. Retail and professional positioning can also point in opposite directions, so a single ratio can mislead. The most common mistake is treating <b>a high ratio as bullish confirmation</b>; in practice extreme crowding more often precedes a move against the crowd. Treat it as one sentiment hint among many, never as proof, and always pair it with funding, open interest, and price." data-zh="该比率因交易所、以及按账户数还是成交量统计而差异很大，故不同来源的绝对值不可比——某平台的“2.0”不等于另一平台的“2.0”。散户与专业者的持仓也可能方向相反，故单一比率可能误导。最常见的错误是把<b>高比率当作看涨确认</b>；实践中，极端拥挤更常先于与群体相反的行情。应将其视为众多情绪线索之一，而非证据，并始终与资金费率、未平仓合约和价格配对。">이 비율은 거래소마다, 또 계좌 수 기준인지 거래량 기준인지에 따라 크게 달라 출처 간 절대값 비교는 어렵습니다 — 한 거래소의 '2.0'은 다른 거래소의 '2.0'과 같지 않습니다. 개미와 전문가의 포지션이 정반대를 가리킬 수도 있어 하나의 비율이 오도할 수 있습니다. 가장 흔한 실수는 <b>높은 비율을 강세 확인</b>으로 받아들이는 것입니다. 실제로는 극단적 쏠림이 군중의 반대 방향 움직임에 선행하는 경우가 더 많습니다. 증거가 아니라 여러 심리 힌트 중 하나로 보고, 항상 펀딩비·미결제약정·가격과 함께 보세요.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">+</span><span data-en="Indicators to read alongside" data-zh="建议搭配阅读的指标">함께 보면 좋은 지표</span></h2>
-    <div class="related-grid">
-      <a href="funding-rate.html">
-        <span class="rn" data-en="Funding Rate" data-zh="资金费率">펀딩비</span>
-        <span class="rd" data-en="Which crowded side is paying to hold its position." data-zh="拥挤的哪一方在付费维持持仓。">쏠린 쪽 중 어느 쪽이 비용을 내며 버티는지.</span>
-      </a>
-      <a href="open-interest.html">
-        <span class="rn" data-en="Open Interest" data-zh="未平仓合约">미결제약정</span>
-        <span class="rd" data-en="How much leverage is stacked behind that positioning." data-zh="该持仓背后堆积了多少杠杆。">그 포지션 뒤에 쌓인 레버리지 총량.</span>
-      </a>
-      <a href="../guide.html">
-        <span class="rn" data-en="All indicators" data-zh="全部指标">전체 지표 보기</span>
-        <span class="rd" data-en="Back to the full indicator guide." data-zh="返回完整指标指南。">지표 가이드 전체로 돌아가기.</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">?</span><span data-en="Frequently asked" data-zh="常见问题">자주 묻는 질문</span></h2>
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="If the ratio is high, will price rise?" data-zh="比率高，价格会涨吗？">롱·숏 비율이 높으면 가격이 오르나요?</span></summary>
-        <div class="ans" data-en="Not necessarily. When positioning tips heavily to one side, the crowded side often gets squeezed and price moves the other way. A high long ratio is safer to read as correction risk from crowding than as buying conviction." data-zh="未必。当持仓严重偏向某一方时，拥挤的一方常被挤压，价格反向运行。把高多空比读作拥挤带来的回调风险，比读作买入信心更安全。">꼭 그렇지는 않습니다. 비율이 한쪽으로 크게 기울면 그 쏠린 쪽이 청산당하며 반대 방향으로 움직이는 경우가 많습니다. 높은 롱 비율은 매수 확신이 아니라 롱 쏠림에 따른 조정 위험으로 읽는 편이 안전합니다.</div>
-      </details>
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="Can I compare absolute ratios across exchanges?" data-zh="可以跨交易所比较绝对比率吗？">롱·숏 비율의 절대값을 거래소끼리 비교해도 되나요?</span></summary>
-        <div class="ans" data-en="It's not advised. The value varies a lot by exchange and by whether it counts accounts or volume, so absolute values aren't comparable across sources. It's better to track trend changes against the same source's recent range." data-zh="不建议。该数值因交易所、以及按账户数还是成交量统计而差异很大，故不同来源的绝对值不可比。更好的做法是对照同一来源的近期区间追踪趋势变化。">권장되지 않습니다. 거래소마다, 또 계좌 수 기준인지 거래량 기준인지에 따라 값이 크게 달라 출처 간 절대값 비교는 어렵습니다. 같은 출처의 최근 범위와 비교해 추세 변화를 보는 것이 낫습니다.</div>
-      </details>
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="Can I trade on the ratio alone?" data-zh="可以只凭多空比交易吗？">롱·숏 비율만 보고 매매 판단을 내려도 되나요?</span></summary>
-        <div class="ans" data-en="It's not advised. The ratio is one sentiment hint, not proof. Retail and professional positioning can point opposite ways, so you should judge it together with funding, open interest, and price." data-zh="不建议。该比率是一个情绪线索，而非证据。散户与专业者的持仓可能方向相反，故应结合资金费率、未平仓合约和价格综合判断。">권장되지 않습니다. 이 지표는 증거가 아니라 하나의 심리 힌트입니다. 개미와 전문가의 포지션이 정반대일 수도 있으므로, 펀딩비·미결제약정·가격과 함께 종합적으로 판단해야 합니다.</div>
-      </details>
-    </div>
-  </section>
-
-  <div class="page-cta reveal">
-    <div class="ct-tx">
-      <h3 data-en="See today's reading" data-zh="查看今日读数">오늘의 지표 값 확인하기</h3>
-      <p data-en="Check the live long/short ratio and the composite timing score on the dashboard." data-zh="在仪表盘上查看实时多空比与综合择时评分。">대시보드에서 실시간 롱·숏 비율과 종합 타이밍 점수를 확인하세요.</p>
-    </div>
-    <a class="ct-btn" href="../index.html" data-en="Open dashboard →" data-zh="打开仪表盘 →">대시보드 열기 →</a>
   </div>
 </div>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
-      </div>
-      <div><h4 data-en="Menu" data-zh="菜单">메뉴</h4><a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a><a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a><a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a></div>
-      <div><h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a><a href="../disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a></div>
-    </div>
-    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
-  </div>
-</footer>
-<script src="../btc-reveal.js"></script>
+<!-- Firebase compat SDK (동기 로드) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+<script>
+/* ── 모바일 사이드바 토글 ── */
+(function(){
+  var layout=document.getElementById('layout'),btn=document.getElementById('mbToggle'),bk=document.getElementById('navBackdrop');
+  function close(){layout.classList.remove('nav-open');}
+  if(btn)btn.addEventListener('click',function(){layout.classList.toggle('nav-open');});
+  if(bk)bk.addEventListener('click',close);
+  document.querySelectorAll('.sb-nav a').forEach(function(a){a.addEventListener('click',close);});
+})();
+
+/* ──────────────────────────────────────────────────────────
+ * 방문자 카운터 (Firebase Realtime Database) — index.html에서 그대로 이식
+ * 실패해도 폴백 '--' 유지.
+ * ────────────────────────────────────────────────────────── */
+(function(){
+  'use strict';
+  if(typeof firebase==='undefined'||!firebase.database){
+    console.warn('[visitor] Firebase SDK not available, skipping visitor counter');
+    return;
+  }
+  var firebaseConfig={
+    apiKey:"AIzaSyA0rKMvdc-9tRbycgpkczyopQvqRQRV2v0",
+    authDomain:"btctiming-af87d.firebaseapp.com",
+    databaseURL:"https://btctiming-af87d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId:"btctiming-af87d",
+    storageBucket:"btctiming-af87d.firebasestorage.app",
+    messagingSenderId:"9515727678",
+    appId:"1:9515727678:web:7d6a7ad30d881c1f37ca6f",
+    measurementId:"G-QNR0LP5QH1"
+  };
+  function setNum(id,v){
+    var el=document.getElementById(id);
+    if(!el)return;
+    if(v==null||isNaN(v)){el.textContent='--';return;}
+    el.textContent=Number(v).toLocaleString('ko-KR');
+  }
+  function kstDateKey(){return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);}
+  try{
+    if(!firebase.apps||!firebase.apps.length){firebase.initializeApp(firebaseConfig);}
+    var db=firebase.database();
+    var today=kstDateKey();
+    var myPresenceRef=db.ref('presence').push();
+    var presenceListRef=db.ref('presence');
+    db.ref('.info/connected').on('value',function(snap){
+      if(snap.val()!==true)return;
+      myPresenceRef.onDisconnect().remove();
+      myPresenceRef.set(true);
+    });
+    presenceListRef.on('value',function(snap){setNum('vcNow',snap.numChildren());},function(err){console.warn('[visitor] presence read failed:',err&&err.message);});
+    db.ref('counters/total').on('value',function(snap){setNum('vcTotal',snap.val());},function(err){console.warn('[visitor] total read failed:',err&&err.message);});
+    db.ref('counters/daily/'+today).on('value',function(snap){setNum('vcToday',snap.val());},function(err){console.warn('[visitor] daily read failed:',err&&err.message);});
+    try{
+      if(!sessionStorage.getItem('btc_counted')){
+        sessionStorage.setItem('btc_counted','1');
+        db.ref('counters/total').transaction(function(v){return (v||0)+1;});
+        db.ref('counters/daily/'+today).transaction(function(v){return (v||0)+1;});
+        console.log('[visitor] new session counted for '+today);
+      }
+    }catch(e){console.warn('[visitor] sessionStorage unavailable, count skipped:',e&&e.message);}
+  }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
+})();
+</script>
 </body>
 </html>

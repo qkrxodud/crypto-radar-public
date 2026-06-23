@@ -2,94 +2,196 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="비트코인 장기·단기 보유자(LTH/STH) 공급이란 무엇이고 어떻게 읽는지 — 155일 기준 분류, 매집·분배 신호, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="What Bitcoin long-term vs short-term holder (LTH/STH) supply is and how to read it — the 155-day cutoff, accumulation vs distribution signals, how to use it for buy timing, and its limits." data-zh-content="比特币长期/短期持有者（LTH/STH）供应是什么、如何解读——155 天界限、吸筹与派发信号、择时用法及其局限。">
+<meta name="description" content="비트코인 장기·단기 보유자(LTH/STH) 공급이란 무엇이고 어떻게 읽는지 — 155일 기준 분류, 매집·분배 신호, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-en="Long/Short-Term Holders — BTC Timing Radar" data-zh="长期/短期持有者 — BTC 时机雷达">장기·단기 보유(LTH/STH)란? 비트코인 보유자 공급 완전 정리 — BTC 타이밍 레이더</title>
+<title>장기·단기 보유(LTH/STH)란? 비트코인 보유자 공급 완전 정리 — BTC 타이밍 레이더</title>
 <link rel="canonical" href="https://btctiming.co.kr/indicators/holder-supply.html">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://btctiming.co.kr/indicators/holder-supply.html">
-<meta property="og:site_name" content="BTC 투자 타이밍 레이더" data-en-content="BTC Investment Timing Radar" data-zh-content="BTC 投资择时雷达">
-<meta property="og:title" content="장기·단기 보유(LTH/STH)란? 비트코인 보유자 공급 완전 정리" data-en-content="Long/Short-Term Holders — How to Read Bitcoin Holder Supply" data-zh-content="长期/短期持有者 — 如何解读比特币持有者供应">
-<meta property="og:description" content="비트코인 장기·단기 보유자 공급의 155일 분류, 매집·분배 신호 해석, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="How LTH/STH supply is classified by the 155-day cutoff, how to read accumulation vs distribution, and how to use it for buy timing." data-zh-content="比特币长期/短期持有者供应的 155 天分类、吸筹与派发解读、择时用法与局限。">
+<meta property="og:site_name" content="BTC 투자 타이밍 레이더">
+<meta property="og:title" content="장기·단기 보유(LTH/STH)란? 비트코인 보유자 공급 완전 정리">
+<meta property="og:description" content="비트코인 장기·단기 보유자 공급의 155일 분류, 매집·분배 신호 해석, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="장기·단기 보유(LTH/STH)란? 비트코인 보유자 공급 완전 정리" data-en-content="Long/Short-Term Holders — How to Read Bitcoin Holder Supply" data-zh-content="长期/短期持有者 — 如何解读比特币持有者供应">
-<meta name="twitter:description" content="비트코인 장기·단기 보유자 공급의 분류, 매집·분배 신호, 매수 타이밍 활용법과 한계를 설명합니다." data-en-content="How LTH/STH supply is classified and how to use it for buy timing." data-zh-content="比特币长期/短期持有者供应的分类与用法。">
+<meta name="twitter:title" content="장기·단기 보유(LTH/STH)란? 비트코인 보유자 공급 완전 정리">
+<meta name="twitter:description" content="비트코인 장기·단기 보유자 공급의 분류, 매집·분배 신호, 매수 타이밍 활용법과 한계를 설명합니다.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="../btc-base.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898023121512538" crossorigin="anonymous"></script>
-<script src="../btc-i18n.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- AdSense (index.html에서 그대로 이식) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898078056285143" crossorigin="anonymous"></script>
 <style>
-  /* 지표 상세 페이지 공통 레이아웃 */
-  .crumb-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-2);font-family:var(--mono);margin-bottom:18px}
-  .crumb-nav a{color:var(--muted);text-decoration:none}
-  .crumb-nav a:hover{color:var(--text)}
+  /* ── 디자인 토큰 (index.html 기준) ── */
+  :root{
+    --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
+    --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943; --blue:#3b82f6;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--t1);}
+  ::-webkit-scrollbar{height:10px;width:10px;}
+  ::-webkit-scrollbar-thumb{background:#2a2f3a;border-radius:8px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  a{color:inherit;}
+
+  /* ── 레이아웃 (V2 셸) ── */
+  .layout{display:flex;min-height:100vh;background:var(--bg);}
+  .sidebar{flex:none;width:240px;align-self:flex-start;position:sticky;top:0;height:100vh;
+    background:var(--nav-bg);border-right:1px solid var(--line);padding:22px 16px;
+    display:flex;flex-direction:column;}
+  .sb-brand{display:flex;align-items:center;gap:11px;padding:0 6px 24px;text-decoration:none;}
+  .sb-logo{width:36px;height:36px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:19px;}
+  .sb-brand .bt{color:var(--t1);font-size:14.5px;font-weight:700;}
+  .sb-brand .bs{color:var(--m2);font-size:11px;letter-spacing:.06em;}
+  .sb-menu-h{color:var(--m3);font-size:11px;letter-spacing:.12em;padding:0 12px 8px;}
+  .sb-nav{display:flex;flex-direction:column;gap:3px;}
+  .sb-nav a{display:flex;align-items:center;gap:11px;padding:11px 12px;border-radius:11px;text-decoration:none;font-size:14px;color:var(--m1);}
+  .sb-nav a .dot{width:7px;height:7px;border-radius:50%;background:#2a2f3a;flex:none;}
+  .sb-nav a.active{background:rgba(22,199,132,.12);color:var(--green);font-weight:600;}
+  .sb-nav a.active .dot{background:var(--green);}
+  .sb-live{margin-top:24px;padding:16px;border-radius:14px;background:linear-gradient(160deg,rgba(22,199,132,.14),rgba(22,199,132,.03));border:1px solid rgba(22,199,132,.18);}
+  .sb-live .lh{display:flex;align-items:center;gap:7px;}
+  .sb-live .lh .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .sb-live .lh .t{color:var(--green);font-family:var(--mono);font-size:11px;font-weight:600;}
+  .sb-live .lb{color:var(--t2);font-size:13px;margin-top:9px;line-height:1.5;}
+  /* 사이드바 방문자 카운터 */
+  .sb-visitor{margin-top:14px;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--line);}
+  .sb-visitor .vh{color:var(--m2);font-size:10.5px;letter-spacing:.08em;margin-bottom:9px;font-family:var(--mono);}
+  .sb-visitor .vr{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--m1);padding:3px 0;}
+  .sb-visitor .vr .vc-n{color:var(--t1);font-weight:700;font-family:var(--mono);}
+  .sb-visitor .vr.now .vc-n{color:var(--green);}
+  .sb-visitor .vr .vc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:vcPulse 1.6s ease-in-out infinite;margin-right:5px;}
+  @keyframes vcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .sb-foot{margin-top:auto;padding:14px 12px 4px;color:var(--m3);font-size:11px;line-height:1.6;}
+
+  .main{flex:1;min-width:0;}
+  .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(8,9,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  .crumb{color:var(--m1);font-size:13px;}
+  .crumb b{color:var(--t1);font-weight:600;}
+  .topbar .right{display:flex;align-items:center;gap:12px;}
+  .topbar .live{display:flex;align-items:center;gap:7px;padding:8px 13px;border-radius:10px;background:rgba(22,199,132,.12);color:var(--green);font-size:12px;font-weight:600;font-family:var(--mono);}
+  .topbar .live .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+
+  .content{max-width:880px;margin:0 auto;padding:28px 32px 64px;}
+
+  /* ── 모바일 햄버거 ── */
+  .mobile-bar{display:none;position:sticky;top:0;z-index:30;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(8,9,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .mobile-bar .mb-brand{display:flex;align-items:center;gap:9px;text-decoration:none;}
+  .mobile-bar .mb-logo{width:30px;height:30px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:16px;}
+  .mobile-bar .mb-t{color:var(--t1);font-size:14px;font-weight:700;}
+  .mb-toggle{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--t1);}
+  .mb-toggle span{display:block;width:18px;height:2px;background:var(--t1);position:relative;}
+  .mb-toggle span::before,.mb-toggle span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--t1);}
+  .mb-toggle span::before{top:-6px;}.mb-toggle span::after{top:6px;}
+
+  /* ── 지표 상세 본문 (원본 클래스 → V2 토큰 재정의) ── */
+  /* 브레드크럼 */
+  .crumb-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--m2);font-family:var(--mono);margin-bottom:18px}
+  .crumb-nav a{color:var(--m1);text-decoration:none}
+  .crumb-nav a:hover{color:var(--t1)}
   .crumb-nav .sep{opacity:.5}
+  /* 히어로 */
   .ind-hero{margin:6px 0 8px}
-  .ind-hero .cat-pill{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--brand);background:var(--brand-soft);border:1px solid rgba(247,147,26,.25);padding:5px 12px;border-radius:100px;margin-bottom:14px}
-  .ind-hero .cat-pill .d{width:8px;height:8px;border-radius:50%;background:var(--brand)}
-  .ind-hero h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px}
-  .ind-hero h1 .hl{color:var(--brand)}
-  .ind-hero .lead{font-size:15.5px;color:var(--muted);line-height:1.74;max-width:720px;margin:0}
-  .ind-hero .lead b{color:var(--text);font-weight:600}
+  .ind-hero .cat-pill{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;color:var(--blue);background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.25);padding:5px 12px;border-radius:100px;margin-bottom:14px}
+  .ind-hero .cat-pill .d{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+  .ind-hero h1{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 12px;color:var(--t1)}
+  .ind-hero h1 .hl{color:var(--green)}
+  .ind-hero .lead{font-size:15.5px;color:var(--t3);line-height:1.74;max-width:720px;margin:0}
+  .ind-hero .lead b{color:var(--t1);font-weight:600}
   /* 한눈 요약 박스 */
-  .summary-box{margin:26px 0 0;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .summary-box{margin:26px 0 0;background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   @media(max-width:680px){.summary-box{grid-template-columns:1fr;gap:16px}}
   .summary-box .sb{display:flex;flex-direction:column;gap:6px}
-  .summary-box .sb .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted-2)}
-  .summary-box .sb .v{font-size:13.5px;color:#c2cadb;line-height:1.6}
-  .summary-box .sb .v b{color:var(--text);font-weight:600}
+  .summary-box .sb .k{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--m2)}
+  .summary-box .sb .v{font-size:13.5px;color:var(--t2);line-height:1.6}
+  .summary-box .sb .v b{color:var(--t1);font-weight:600}
   .impact-inline{font-size:11.5px;font-family:var(--mono);font-weight:600;padding:4px 9px;border-radius:7px;display:inline-flex;align-self:flex-start}
-  .impact-inline.buy{color:var(--neon);background:var(--neon-soft)}
+  .impact-inline.buy{color:var(--green);background:rgba(22,199,132,.12)}
   /* 본문 섹션 */
   .sec{margin:46px 0 0;scroll-margin-top:80px;max-width:780px}
-  .sec h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;display:flex;align-items:center;gap:10px}
-  .sec h2 .ix{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--brand);background:var(--brand-soft);width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
-  .sec p{font-size:14.5px;color:var(--muted);line-height:1.78;margin:0 0 14px}
-  .sec p b{color:var(--text);font-weight:600}
-  .sec p code,.sec li code{font-family:var(--mono);font-size:12.5px;color:#c2cadb;background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
+  .sec h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;display:flex;align-items:center;gap:10px;color:var(--t1)}
+  .sec h2 .ix{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--green);background:rgba(22,199,132,.12);width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
+  .sec p{font-size:14.5px;color:var(--t3);line-height:1.78;margin:0 0 14px}
+  .sec p b{color:var(--t1);font-weight:600}
+  .sec p code,.sec li code{font-family:var(--mono);font-size:12.5px;color:var(--t2);background:rgba(255,255,255,.05);padding:1px 6px;border-radius:5px}
   .sec ul{margin:0 0 14px;padding-left:20px}
-  .sec li{font-size:14.5px;color:var(--muted);line-height:1.72;margin:0 0 8px}
-  .sec li b{color:var(--text);font-weight:600}
+  .sec li{font-size:14.5px;color:var(--t3);line-height:1.72;margin:0 0 8px}
+  .sec li b{color:var(--t1);font-weight:600}
   /* 해석 구간 테이블 */
-  .zone-table{margin:8px 0 6px;border:1px solid var(--border);border-radius:13px;overflow:hidden}
-  .zone-table .zrow{display:grid;grid-template-columns:128px 1fr;border-bottom:1px solid var(--border)}
+  .zone-table{margin:8px 0 6px;border:1px solid var(--line);border-radius:13px;overflow:hidden}
+  .zone-table .zrow{display:grid;grid-template-columns:128px 1fr;border-bottom:1px solid var(--line)}
   .zone-table .zrow:last-child{border-bottom:0}
   .zone-table .zr-band{font-family:var(--mono);font-size:12.5px;font-weight:700;padding:13px 15px;display:flex;align-items:center;background:rgba(255,255,255,.02)}
-  .zone-table .zr-desc{font-size:13px;color:var(--muted);line-height:1.58;padding:13px 15px}
-  .zone-table .zr-band.z-strong{color:var(--neon)}
-  .zone-table .zr-band.z-mild{color:var(--brand)}
-  .zone-table .zr-band.z-wait{color:var(--muted)}
+  .zone-table .zr-desc{font-size:13px;color:var(--t3);line-height:1.58;padding:13px 15px}
+  .zone-table .zr-band.z-strong{color:var(--green)}
+  .zone-table .zr-band.z-mild{color:var(--blue)}
+  .zone-table .zr-band.z-wait{color:var(--m1)}
   .zone-table .zr-band.z-bear{color:var(--amber)}
   @media(max-width:480px){.zone-table .zrow{grid-template-columns:100px 1fr}}
   /* 콜아웃 */
-  .callout{margin:18px 0;border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:11px;background:rgba(255,194,61,.06);padding:15px 18px}
+  .callout{margin:18px 0;border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:11px;background:rgba(240,185,11,.06);padding:15px 18px}
   .callout .ct{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
-  .callout p{font-size:13.5px;color:#c2cadb;line-height:1.7;margin:0}
+  .callout p{font-size:13.5px;color:var(--t2);line-height:1.7;margin:0}
   /* 함께 보면 좋은 지표 */
   .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
   @media(max-width:760px){.related-grid{grid-template-columns:1fr}}
-  .related-grid a{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;padding:15px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:5px}
-  .related-grid a:hover{border-color:var(--border-strong);transform:translateY(-2px);background:rgba(255,255,255,.04)}
-  .related-grid a .rn{font-size:14.5px;font-weight:700;color:var(--text)}
-  .related-grid a .rd{font-size:12.5px;color:var(--muted);line-height:1.5}
+  .related-grid a{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:13px;padding:15px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:5px}
+  .related-grid a:hover{border-color:rgba(255,255,255,.14);transform:translateY(-2px);background:rgba(255,255,255,.04)}
+  .related-grid a .rn{font-size:14.5px;font-weight:700;color:var(--t1)}
+  .related-grid a .rd{font-size:12.5px;color:var(--t3);line-height:1.5}
   /* FAQ */
   .faq-list{margin-top:14px;display:flex;flex-direction:column;gap:11px;max-width:820px}
-  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:13px;overflow:hidden}
-  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--text);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
+  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--t1);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5}
   .faq-item summary::-webkit-details-marker{display:none}
-  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--brand);flex:none}
-  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--muted-2);transition:.2s;flex:none}
+  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--green);flex:none}
+  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--m2);transition:.2s;flex:none}
   .faq-item[open] summary::after{transform:rotate(45deg)}
-  .faq-item .ans{font-size:13.5px;color:var(--muted);line-height:1.74;padding:0 18px 16px}
-  .faq-item .ans b{color:var(--text);font-weight:600}
+  .faq-item .ans{font-size:13.5px;color:var(--t3);line-height:1.74;padding:0 18px 16px}
+  .faq-item .ans b{color:var(--t1);font-weight:600}
   /* 하단 CTA */
-  .page-cta{margin:50px 0 10px;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-  .page-cta .ct-tx h3{font-size:17px;font-weight:700;margin:0 0 5px}
-  .page-cta .ct-tx p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.6}
-  .page-cta .ct-btn{font-size:14px;font-weight:700;color:#06140d;background:var(--neon);border-radius:11px;padding:13px 22px;text-decoration:none;white-space:nowrap;transition:.2s}
-  .page-cta .ct-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(54,222,158,.25)}
+  .page-cta{margin:50px 0 10px;background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .page-cta .ct-tx h3{font-size:17px;font-weight:700;margin:0 0 5px;color:var(--t1)}
+  .page-cta .ct-tx p{font-size:13.5px;color:var(--t3);margin:0;line-height:1.6}
+  .page-cta .ct-btn{font-size:14px;font-weight:700;color:#04120c;background:var(--green);border-radius:11px;padding:13px 22px;text-decoration:none;white-space:nowrap;transition:.2s}
+  .page-cta .ct-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(22,199,132,.25)}
+
+  /* ── 푸터 ── */
+  .foot{border-top:1px solid var(--line);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
+  .foot .fa{max-width:360px;}
+  .foot .fb{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+  .foot .fb .lo{width:28px;height:28px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:15px;}
+  .foot .fb .nm{color:var(--t1);font-size:14px;font-weight:700;}
+  .foot .fd{color:var(--m2);font-size:12.5px;line-height:1.7;}
+  .foot .cols{display:flex;gap:48px;flex-wrap:wrap;}
+  .foot .col h4{color:var(--m1);font-size:12px;font-weight:600;margin:0 0 10px;}
+  .foot .col a{display:block;color:var(--m2);font-size:13px;text-decoration:none;margin-bottom:8px;}
+  .foot .col a:hover{color:var(--t2);}
+  .foot .copy{color:var(--m3);font-size:11.5px;width:100%;border-top:1px solid rgba(255,255,255,.04);padding-top:16px;}
+
+  /* ── 반응형 ── */
+  @media(max-width:768px){
+    html,body{overflow-x:hidden;max-width:100vw;}
+    .sidebar{position:fixed;left:0;top:0;z-index:40;transform:translateX(-100%);transition:transform .25s ease;height:100vh;box-shadow:2px 0 20px rgba(0,0,0,.5);}
+    .layout.nav-open .sidebar{transform:translateX(0);}
+    .nav-backdrop{display:none;position:fixed;inset:0;z-index:35;background:rgba(0,0,0,.5);}
+    .layout.nav-open .nav-backdrop{display:block;}
+    .mobile-bar{display:flex;}
+    .topbar{display:none;}
+    .content{padding:18px 16px 56px;max-width:100%;}
+    .ind-hero h1{font-size:24px;}
+    .sec h2{font-size:19px;}
+    .foot{flex-direction:column;}
+    .foot .cols{gap:32px;}
+  }
+  @media(max-width:480px){
+    .content{padding:16px 12px 48px;}
+    .ind-hero h1{font-size:21px;}
+  }
 </style>
 <!-- 구조화 데이터: 지표 해설 문서 + 빵부스러기 + FAQ -->
 <script type="application/ld+json">
@@ -129,150 +231,249 @@
 </script>
 </head>
 <body>
-<div class="bg-field" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+<div class="layout" id="layout">
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-    <nav class="nav-links">
-      <a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
-      <a class="active" href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-      <a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a>
+  <!-- ── 사이드바 (V2 셸, active=지표 가이드) ── -->
+  <aside class="sidebar">
+    <a class="sb-brand" href="../index.html">
+      <div class="sb-logo">₿</div>
+      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+    </a>
+    <div class="sb-menu-h">MENU</div>
+    <nav class="sb-nav">
+      <a href="../index.html"><span class="dot"></span>대시보드</a>
+      <a class="active" href="../guide.html"><span class="dot"></span>지표 가이드</a>
+      <a href="../about.html"><span class="dot"></span>서비스 소개</a>
+      <a href="../contact.html"><span class="dot"></span>문의</a>
     </nav>
-    <a class="nav-pill" href="../index.html"><span class="pulse"></span><span data-en="Today's Score →" data-zh="今日评分 →">오늘의 점수 →</span></a>
-  </div>
-</header>
-
-<div class="wrap">
-  <div class="crumb-nav reveal">
-    <a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-    <span class="sep">/</span>
-    <span data-en="On-Chain" data-zh="链上">온체인</span>
-    <span class="sep">/</span>
-    <span data-en="Long/Short-Term Holders" data-zh="长期/短期持有者">장기·단기 보유</span>
-  </div>
-
-  <div class="ind-hero reveal">
-    <span class="cat-pill"><span class="d" style="background:var(--neon)"></span><span data-en="On-Chain" data-zh="链上">온체인</span></span>
-    <h1 data-i18n-html="1" data-en="Long-term vs short-term holders, in <span class=&quot;hl&quot;>plain words</span>" data-zh="用<span class=&quot;hl&quot;>通俗的话</span>讲清楚长期与短期持有者">장기·단기 보유, <span class="hl">쉬운 말</span>로 풀어보기</h1>
-    <p class="lead" data-i18n-html="1" data-en="Every Bitcoin in existence is held by someone, and on-chain data lets us sort those coins by <b>how long they've sat untouched.</b> Coins that haven't moved in a long time belong to patient, seasoned holders; coins that just changed hands belong to recent, more reactive buyers. Watching how supply shifts between these two groups reveals who is quietly accumulating and who is selling." data-zh="现存的每一枚比特币都归某人持有，链上数据让我们能按<b>币静置未动的时长</b>对其分类。长期未动的币属于有耐心、老练的持有者；刚刚易手的币则属于近期、更易反应的买家。观察供应在这两组之间的转移，能揭示谁在悄悄吸筹、谁在卖出。">세상의 모든 비트코인은 누군가가 들고 있고, 온체인 데이터는 그 코인을 <b>마지막으로 움직인 뒤 얼마나 오래 가만히 있었는지</b>로 분류하게 해줍니다. 오래 움직이지 않은 코인은 인내심 있는 노련한 보유자의 것이고, 방금 손이 바뀐 코인은 최근에 산 더 민감한 매수자의 것입니다. 이 두 집단 사이로 물량이 어떻게 옮겨가는지를 보면 누가 조용히 모으고 누가 파는지가 드러납니다.</p>
-  </div>
-
-  <div class="summary-box reveal">
-    <div class="sb">
-      <span class="k" data-en="What it is" data-zh="是什么">무엇인가</span>
-      <span class="v" data-en="The share of supply held by long-term vs short-term holders." data-zh="长期与短期持有者所持供应的占比。">장기 보유자와 단기 보유자가 든 공급의 비중.</span>
+    <div class="sb-live">
+      <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
+      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
-    <div class="sb">
-      <span class="k" data-en="How to read" data-zh="如何解读">어떻게 읽나</span>
-      <span class="v" data-en="<b>Rising long-term supply = accumulation</b>, a structurally positive sign." data-zh="<b>长期供应上升 = 吸筹</b>，结构上为积极信号。" data-i18n-html="1"><b>장기 물량 증가 = 매집</b>, 구조적으로 긍정적인 신호.</span>
+    <!-- 방문자 카운터 (Firebase) -->
+    <div class="sb-visitor" id="visitorStrip">
+      <div class="vh">VISITORS</div>
+      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-    <div class="sb">
-      <span class="k" data-en="Signal" data-zh="信号">신호</span>
-      <span class="impact-inline buy" data-en="LTH accumulation = positive" data-zh="长期吸筹 = 积极">장기 매집 = 긍정</span>
+    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+  </aside>
+
+  <!-- ── 메인 ── -->
+  <div class="main">
+    <!-- 모바일 상단 바 -->
+    <div class="mobile-bar">
+      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
     </div>
-  </div>
-
-  <section class="sec reveal">
-    <h2><span class="ix">1</span><span data-en="What holder supply actually measures" data-zh="持有者供应到底衡量什么">보유자 공급은 무엇을 재는가</span></h2>
-    <p data-i18n-html="1" data-en="Price tells you what the market <b>did</b>. Holder supply tries to tell you <b>who is holding the coins and how committed they are.</b> Because the Bitcoin ledger is public, every coin carries a timestamp of when it last moved. By grouping coins into those that have sat still for a long time and those that just changed hands, we can separate the patient, conviction-driven holders from the recent, more reactive buyers." data-zh="价格告诉你市场<b>做了什么</b>。持有者供应试图告诉你<b>谁在持有这些币、他们的信念有多坚定。</b>由于比特币账本是公开的，每枚币都带有最后一次移动的时间戳。把币分为长期静置的与刚刚易手的，就能把有耐心、信念驱动的持有者与近期、更易反应的买家区分开来。">가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 보유자 공급은 <b>누가 코인을 들고 있고 그 확신이 얼마나 강한지</b>를 알려주려는 지표입니다. 비트코인 장부는 공개돼 있어 모든 코인에는 마지막으로 움직인 시점이 기록돼 있습니다. 오래 가만히 있던 코인과 방금 손이 바뀐 코인으로 묶으면, 인내심 있고 확신에 찬 보유자와 최근의 더 민감한 매수자를 구분할 수 있습니다.</p>
-    <p data-en="The intuition is simple: long-term holders tend to buy in fear, sit through volatility, and sell into euphoria. Short-term holders tend to chase rallies and panic in drops. So when supply migrates from short-term to long-term hands, coins are moving from weak holders to strong ones — historically a healthy, accumulation-friendly backdrop." data-zh="直觉很简单：长期持有者倾向于在恐惧中买入、在波动中坚守、在狂热中卖出；短期持有者则倾向于追涨、在下跌中恐慌。因此当供应从短期持有者迁移到长期持有者手中时，币正从弱手流向强手——历史上这是健康、利于吸筹的背景。">직관은 단순합니다. 장기 보유자는 공포에 사서 변동성을 견디고 도취 국면에 파는 경향이 있고, 단기 보유자는 상승을 쫓다가 하락에 패닉하는 경향이 있습니다. 그래서 물량이 단기에서 장기의 손으로 옮겨가면 코인이 약한 손에서 강한 손으로 이동하는 것으로, 역사적으로 건강하고 매집에 우호적인 배경입니다.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">2</span><span data-en="How it's calculated" data-zh="计算方式">어떻게 계산되나</span></h2>
-    <p data-i18n-html="1" data-en="Each coin is sorted by the age of its last on-chain move. The dividing line is roughly <code>155 days</code>:" data-zh="每枚币按其最后一次链上移动的“币龄”分类。分界线约为 <code>155 天</code>：">각 코인을 마지막 온체인 이동의 나이로 분류합니다. 경계선은 대략 <code>155일</code>입니다.</p>
-    <ul>
-      <li data-i18n-html="1" data-en="<b>Long-term holders (LTH)</b> — coins untouched for more than ~155 days. Statistically, the longer a coin sits, the less likely it is to be sold on the next swing." data-zh="<b>长期持有者（LTH）</b>——超过约 155 天未动的币。统计上，币静置越久，在下一次波动中被卖出的概率越低。"><b>장기 보유자(LTH)</b> — 약 155일 넘게 움직이지 않은 코인. 통계적으로 코인이 오래 가만히 있을수록 다음 변동에 팔릴 확률이 낮아집니다.</li>
-      <li data-i18n-html="1" data-en="<b>Short-term holders (STH)</b> — coins that moved within the last ~155 days. These are the most price-sensitive and the most likely to react to short-term moves." data-zh="<b>短期持有者（STH）</b>——在过去约 155 天内移动过的币。这类币对价格最敏感，也最可能对短期波动作出反应。"><b>단기 보유자(STH)</b> — 최근 약 155일 안에 움직인 코인. 가격에 가장 민감하고 단기 변동에 가장 잘 반응합니다.</li>
-      <li data-i18n-html="1" data-en="<b>The trend, not the snapshot</b> — what matters is whether LTH supply is rising (coins maturing into strong hands) or falling (old coins waking up to sell)." data-zh="<b>看趋势而非快照</b>——关键在于 LTH 供应是上升（币成熟进入强手）还是下降（沉睡老币苏醒卖出）。"><b>스냅샷이 아니라 추세</b> — 핵심은 LTH 물량이 늘고 있는지(코인이 성숙해 강한 손으로 들어감) 줄고 있는지(오래된 코인이 깨어나 팔림)입니다.</li>
-    </ul>
-    <p data-i18n-html="1" data-en="You don't need to track the exact percentages. The takeaway is that this is a <b>slow, structural gauge of conviction</b> — it shifts over weeks and months, not hours, so it sets the backdrop rather than the trigger." data-zh="你不必追踪精确的百分比。要点是：这是一个<b>缓慢的、衡量信念的结构性标尺</b>——它以数周、数月而非数小时的尺度变动，因此它决定的是背景，而非触发器。">정확한 비율을 추적할 필요는 없습니다. 핵심은 이것이 <b>느리고 구조적인 확신의 잣대</b>라는 점입니다. 시간이 아니라 주·월 단위로 움직이므로 방아쇠가 아니라 배경을 설정합니다.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">3</span><span data-en="Reading the signals" data-zh="解读信号">신호로 읽기</span></h2>
-    <p data-en="There's no fixed numeric line. Instead, read the direction of long-term holder supply and where it sits in the cycle." data-zh="没有固定的数值分界线。应解读长期持有者供应的方向，以及它在周期中所处的位置。">고정된 숫자 경계선은 없습니다. 대신 장기 보유자 공급의 방향과 사이클 속 위치를 읽습니다.</p>
-    <div class="zone-table">
-      <div class="zrow"><div class="zr-band z-strong"><span data-en="LTH ▲ in fear" data-zh="恐惧中 LTH ▲">공포 속 LTH ▲</span></div><div class="zr-desc" data-en="<b>Accumulation.</b> Long-term supply rising while price is weak — seasoned holders are buying and locking coins away. Historically a constructive bottoming backdrop." data-zh="<b>吸筹。</b>价格疲软时长期供应上升——老练持有者在买入并锁仓。历史上是建设性的筑底背景。" data-i18n-html="1"><b>매집.</b> 가격이 약할 때 장기 물량이 늘어남 — 노련한 보유자가 사서 코인을 묶어둠. 역사적으로 건설적인 바닥 형성 배경.</div></div>
-      <div class="zrow"><div class="zr-band z-mild"><span data-en="LTH flat" data-zh="LTH 持平">LTH 횡보</span></div><div class="zr-desc" data-en="<b>Holding.</b> Supply largely unchanged. Conviction is steady; neither aggressive accumulation nor distribution is dominant." data-zh="<b>持守。</b>供应基本不变。信念稳定；既无激进吸筹也无明显派发。" data-i18n-html="1"><b>보유 유지.</b> 물량이 거의 그대로. 확신이 안정적이며 공격적 매집도 분배도 두드러지지 않음.</div></div>
-      <div class="zrow"><div class="zr-band z-wait"><span data-en="LTH ▼ early" data-zh="LTH ▼ 早期">LTH ▼ 초기</span></div><div class="zr-desc" data-en="<b>Early distribution.</b> Long-term supply starts to slip as a rally matures — some seasoned holders take profit. A cue to pay attention, not to panic." data-zh="<b>派发初期。</b>上涨成熟时长期供应开始回落——部分老练持有者获利了结。提示留意，而非恐慌。" data-i18n-html="1"><b>분배 초기.</b> 상승이 무르익으며 장기 물량이 줄기 시작 — 일부 노련한 보유자가 이익 실현. 패닉이 아니라 주의할 신호.</div></div>
-      <div class="zrow"><div class="zr-band z-bear"><span data-en="LTH ▼ in greed" data-zh="贪婪中 LTH ▼">탐욕 속 LTH ▼</span></div><div class="zr-desc" data-en="<b>Heavy distribution.</b> Old coins waking up and selling into euphoria — a frequent late-cycle warning, though never a precise top." data-zh="<b>大量派发。</b>沉睡老币苏醒并向狂热派发——常见的周期后段警示，但从非精准的顶部。" data-i18n-html="1"><b>대거 분배.</b> 오래된 코인이 깨어나 도취 국면에 팔림 — 사이클 후반의 잦은 경고이나 정확한 고점은 아님.</div></div>
+    <!-- 데스크톱 상단 바 -->
+    <div class="topbar">
+      <div class="crumb">지표 가이드 <span style="color:var(--m3)">›</span> <b>장기·단기 보유</b></div>
+      <div class="right">
+        <span class="live"><span class="d"></span>LIVE</span>
+      </div>
     </div>
-  </section>
 
-  <section class="sec reveal">
-    <h2><span class="ix">4</span><span data-en="Using it for buy timing" data-zh="用于择时">매수 타이밍에 쓰는 법</span></h2>
-    <p data-i18n-html="1" data-en="Holder supply works best as a <b>structural backdrop</b>, not a trigger. When long-term supply keeps climbing through a weak, fearful market, it tells you strong hands are quietly absorbing coins — a supportive environment for patient, staggered buying. When long-term supply rolls over during a euphoric rally, it's a cue to stop adding aggressively and to review how much risk you carry, even if price hasn't turned yet." data-zh="持有者供应最适合作为<b>结构性背景</b>，而非触发器。当长期供应在疲软、恐惧的市场中持续攀升时，说明强手在悄悄吸收筹码——这是有利于耐心、分批买入的环境。当长期供应在狂热上涨中掉头向下时，则提示停止激进加仓、审视自身风险敞口，即便价格尚未转向。">보유자 공급은 방아쇠가 아니라 <b>구조적 배경</b>으로 쓸 때 가장 좋습니다. 약하고 공포스러운 시장에서 장기 물량이 계속 오르면 강한 손이 조용히 코인을 흡수하고 있다는 뜻으로, 인내심 있는 분할 매수에 우호적인 환경입니다. 도취된 상승 중 장기 물량이 꺾이면 가격이 아직 돌지 않았더라도 공격적 추가 매수를 멈추고 자신이 진 리스크를 점검하라는 신호입니다.</p>
-    <div class="callout">
-      <div class="ct" data-en="Practical tip" data-zh="实用建议">실전 팁</div>
-      <p data-en="Don't react to a single day's blip. Look for a <b>multi-week trend</b> in long-term holder supply, and combine it with exchange flows and valuation indicators before committing capital." data-zh="不要对单日的小波动作出反应。寻找长期持有者供应中<b>持续数周的趋势</b>，并在投入资金前结合交易所流量与估值指标综合判断。" data-i18n-html="1">하루치의 작은 출렁임에 반응하지 마세요. 장기 보유자 공급의 <b>수주에 걸친 추세</b>를 보고, 자금을 넣기 전에 거래소 흐름·가치평가 지표와 함께 판단하세요.</p>
+    <div class="content">
+
+      <div class="crumb-nav">
+        <a href="../guide.html">지표 가이드</a>
+        <span class="sep">/</span>
+        <span>온체인</span>
+        <span class="sep">/</span>
+        <span>장기·단기 보유</span>
+      </div>
+
+      <div class="ind-hero">
+        <span class="cat-pill"><span class="d"></span><span>온체인</span></span>
+        <h1>장기·단기 보유, <span class="hl">쉬운 말</span>로 풀어보기</h1>
+        <p class="lead">세상의 모든 비트코인은 누군가가 들고 있고, 온체인 데이터는 그 코인을 <b>마지막으로 움직인 뒤 얼마나 오래 가만히 있었는지</b>로 분류하게 해줍니다. 오래 움직이지 않은 코인은 인내심 있는 노련한 보유자의 것이고, 방금 손이 바뀐 코인은 최근에 산 더 민감한 매수자의 것입니다. 이 두 집단 사이로 물량이 어떻게 옮겨가는지를 보면 누가 조용히 모으고 누가 파는지가 드러납니다.</p>
+      </div>
+
+      <div class="summary-box">
+        <div class="sb">
+          <span class="k">무엇인가</span>
+          <span class="v">장기 보유자와 단기 보유자가 든 공급의 비중.</span>
+        </div>
+        <div class="sb">
+          <span class="k">어떻게 읽나</span>
+          <span class="v"><b>장기 물량 증가 = 매집</b>, 구조적으로 긍정적인 신호.</span>
+        </div>
+        <div class="sb">
+          <span class="k">신호</span>
+          <span class="impact-inline buy">장기 매집 = 긍정</span>
+        </div>
+      </div>
+
+      <section class="sec">
+        <h2><span class="ix">1</span><span>보유자 공급은 무엇을 재는가</span></h2>
+        <p>가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 보유자 공급은 <b>누가 코인을 들고 있고 그 확신이 얼마나 강한지</b>를 알려주려는 지표입니다. 비트코인 장부는 공개돼 있어 모든 코인에는 마지막으로 움직인 시점이 기록돼 있습니다. 오래 가만히 있던 코인과 방금 손이 바뀐 코인으로 묶으면, 인내심 있고 확신에 찬 보유자와 최근의 더 민감한 매수자를 구분할 수 있습니다.</p>
+        <p>직관은 단순합니다. 장기 보유자는 공포에 사서 변동성을 견디고 도취 국면에 파는 경향이 있고, 단기 보유자는 상승을 쫓다가 하락에 패닉하는 경향이 있습니다. 그래서 물량이 단기에서 장기의 손으로 옮겨가면 코인이 약한 손에서 강한 손으로 이동하는 것으로, 역사적으로 건강하고 매집에 우호적인 배경입니다.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">2</span><span>어떻게 계산되나</span></h2>
+        <p>각 코인을 마지막 온체인 이동의 나이로 분류합니다. 경계선은 대략 <code>155일</code>입니다.</p>
+        <ul>
+          <li><b>장기 보유자(LTH)</b> — 약 155일 넘게 움직이지 않은 코인. 통계적으로 코인이 오래 가만히 있을수록 다음 변동에 팔릴 확률이 낮아집니다.</li>
+          <li><b>단기 보유자(STH)</b> — 최근 약 155일 안에 움직인 코인. 가격에 가장 민감하고 단기 변동에 가장 잘 반응합니다.</li>
+          <li><b>스냅샷이 아니라 추세</b> — 핵심은 LTH 물량이 늘고 있는지(코인이 성숙해 강한 손으로 들어감) 줄고 있는지(오래된 코인이 깨어나 팔림)입니다.</li>
+        </ul>
+        <p>정확한 비율을 추적할 필요는 없습니다. 핵심은 이것이 <b>느리고 구조적인 확신의 잣대</b>라는 점입니다. 시간이 아니라 주·월 단위로 움직이므로 방아쇠가 아니라 배경을 설정합니다.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">3</span><span>신호로 읽기</span></h2>
+        <p>고정된 숫자 경계선은 없습니다. 대신 장기 보유자 공급의 방향과 사이클 속 위치를 읽습니다.</p>
+        <div class="zone-table">
+          <div class="zrow"><div class="zr-band z-strong"><span>공포 속 LTH ▲</span></div><div class="zr-desc"><b>매집.</b> 가격이 약할 때 장기 물량이 늘어남 — 노련한 보유자가 사서 코인을 묶어둠. 역사적으로 건설적인 바닥 형성 배경.</div></div>
+          <div class="zrow"><div class="zr-band z-mild"><span>LTH 횡보</span></div><div class="zr-desc"><b>보유 유지.</b> 물량이 거의 그대로. 확신이 안정적이며 공격적 매집도 분배도 두드러지지 않음.</div></div>
+          <div class="zrow"><div class="zr-band z-wait"><span>LTH ▼ 초기</span></div><div class="zr-desc"><b>분배 초기.</b> 상승이 무르익으며 장기 물량이 줄기 시작 — 일부 노련한 보유자가 이익 실현. 패닉이 아니라 주의할 신호.</div></div>
+          <div class="zrow"><div class="zr-band z-bear"><span>탐욕 속 LTH ▼</span></div><div class="zr-desc"><b>대거 분배.</b> 오래된 코인이 깨어나 도취 국면에 팔림 — 사이클 후반의 잦은 경고이나 정확한 고점은 아님.</div></div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">4</span><span>매수 타이밍에 쓰는 법</span></h2>
+        <p>보유자 공급은 방아쇠가 아니라 <b>구조적 배경</b>으로 쓸 때 가장 좋습니다. 약하고 공포스러운 시장에서 장기 물량이 계속 오르면 강한 손이 조용히 코인을 흡수하고 있다는 뜻으로, 인내심 있는 분할 매수에 우호적인 환경입니다. 도취된 상승 중 장기 물량이 꺾이면 가격이 아직 돌지 않았더라도 공격적 추가 매수를 멈추고 자신이 진 리스크를 점검하라는 신호입니다.</p>
+        <div class="callout">
+          <div class="ct">실전 팁</div>
+          <p>하루치의 작은 출렁임에 반응하지 마세요. 장기 보유자 공급의 <b>수주에 걸친 추세</b>를 보고, 자금을 넣기 전에 거래소 흐름·가치평가 지표와 함께 판단하세요.</p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">5</span><span>한계와 흔한 오해</span></h2>
+        <p>155일 기준은 유용한 관례일 뿐 법칙이 아닙니다 — 154일짜리 코인이 156일짜리와 본질적으로 다르지 않습니다. 더 곤란하게도 한 주체가 자기 지갑끼리 코인을 옮기면 온체인 타임스탬프가 초기화돼 경계가 흐려지고, 실제로는 손이 바뀌지 않았는데도 일부 이동이 새 매수나 매도처럼 보입니다. 가장 흔한 실수는 장기 물량의 한 번의 하락을 <b>자동 고점 신호</b>로 받아들이는 것입니다. 실제로 이 잣대는 느리고 구조적이라 단기 전환점보다 수개월짜리 변화를 포착하는 데 훨씬 낫습니다. 정확한 타이밍 방아쇠가 아니라 누가 확신을 갖고 있는지에 대한 맥락으로 읽으세요.</p>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">+</span><span>함께 보면 좋은 지표</span></h2>
+        <div class="related-grid">
+          <a href="exchange-net-flow.html">
+            <span class="rn">거래소 순유입</span>
+            <span class="rd">코인이 보관용으로 빠져나가는지, 팔려고 들어오는지.</span>
+          </a>
+          <a href="mvrv-z-score.html">
+            <span class="rn">MVRV-Z 점수</span>
+            <span class="rd">가격이 평균 매입가 대비 고평가인지 저평가인지.</span>
+          </a>
+          <a href="../guide.html">
+            <span class="rn">전체 지표 보기</span>
+            <span class="rd">지표 가이드 전체로 돌아가기.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2><span class="ix">?</span><span>자주 묻는 질문</span></h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>장기 보유자 공급이 늘면 바로 매수해야 하나요?</span></summary>
+            <div class="ans">장기 보유자 공급 증가는 노련한 보유자가 코인을 모아 묶어두고 있다는 구조적 신호로, 역사적으로 바닥·매집 국면에서 자주 나타났습니다. 다만 수개월에 걸쳐 천천히 움직이는 느린 지표이므로 단기 매수 타이밍이 아니라 큰 흐름의 배경으로 활용하는 것이 적절합니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>155일 기준은 무슨 의미인가요?</span></summary>
+            <div class="ans">코인을 마지막으로 움직인 뒤 약 155일이 지나면 가격 변동에 흔들려 팔 확률이 통계적으로 크게 낮아진다는 관찰에서 나온 관례적 경계선입니다. 그 이상 가만히 있던 코인을 장기 보유자(LTH), 그보다 짧은 코인을 단기 보유자(STH)로 분류합니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>상승장에서 장기 보유자 공급이 줄면 무조건 고점인가요?</span></summary>
+            <div class="ans">상승 중 장기 보유자 공급이 줄어드는 것은 오래 들고 있던 코인을 강세에 분배한다는 뜻으로 사이클 후반 경고인 경우가 많지만, 그 자체로 정확한 고점을 알려주지는 않습니다. 다른 온체인·심리 지표와 함께 비중 점검의 참고로 보는 편이 현실적입니다.</div>
+          </details>
+        </div>
+      </section>
+
+      <div class="page-cta">
+        <div class="ct-tx">
+          <h3>오늘의 지표 값 확인하기</h3>
+          <p>대시보드에서 장기 보유자 공급 추이와 종합 타이밍 점수를 확인하세요.</p>
+        </div>
+        <a class="ct-btn" href="../index.html">대시보드 열기 →</a>
+      </div>
+
+      <!-- 푸터 -->
+      <div class="foot">
+        <div class="fa">
+          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
+          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+        </div>
+        <div class="cols">
+          <div class="col"><h4>메뉴</h4><a href="../index.html">대시보드</a><a href="../guide.html">지표 가이드</a><a href="../about.html">서비스 소개</a><a href="../contact.html">문의</a></div>
+          <div class="col"><h4>정책 · 커뮤니티</h4><a href="../privacy.html">개인정보처리방침</a><a href="../disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+        </div>
+        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+      </div>
+
     </div>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">5</span><span data-en="Limits &amp; common misreadings" data-zh="局限与常见误读">한계와 흔한 오해</span></h2>
-    <p data-i18n-html="1" data-en="The 155-day cutoff is a useful convention, not a law — a coin at 154 days isn't fundamentally different from one at 156. Worse, when a single entity shuffles coins between its own wallets, the on-chain timestamp resets and the line blurs, making some moves look like new buying or selling when nothing real changed hands. The most common mistake is treating a single dip in long-term supply as an <b>automatic top signal</b>; in reality this gauge is slow and structural, far better for spotting multi-month shifts than for calling a near-term turning point. Read it as context for who is committed, not as a precise timing trigger." data-zh="155 天的界限是有用的惯例而非定律——币龄 154 天的币与 156 天的并无本质区别。更麻烦的是，当单一主体在自有钱包间倒腾币时，链上时间戳会重置、界线变模糊，使一些移动看似新的买卖，实则并无真正易手。最常见的错误是把长期供应的单次回落当作<b>自动顶部信号</b>；实际上该标尺缓慢且结构化，更适合发现数月级别的变化，而非判断短期转折。应把它当作判断谁更坚定的背景，而非精准的择时触发器。">155일 기준은 유용한 관례일 뿐 법칙이 아닙니다 — 154일짜리 코인이 156일짜리와 본질적으로 다르지 않습니다. 더 곤란하게도 한 주체가 자기 지갑끼리 코인을 옮기면 온체인 타임스탬프가 초기화돼 경계가 흐려지고, 실제로는 손이 바뀌지 않았는데도 일부 이동이 새 매수나 매도처럼 보입니다. 가장 흔한 실수는 장기 물량의 한 번의 하락을 <b>자동 고점 신호</b>로 받아들이는 것입니다. 실제로 이 잣대는 느리고 구조적이라 단기 전환점보다 수개월짜리 변화를 포착하는 데 훨씬 낫습니다. 정확한 타이밍 방아쇠가 아니라 누가 확신을 갖고 있는지에 대한 맥락으로 읽으세요.</p>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">+</span><span data-en="Indicators to read alongside" data-zh="建议搭配阅读的指标">함께 보면 좋은 지표</span></h2>
-    <div class="related-grid">
-      <a href="exchange-net-flow.html">
-        <span class="rn" data-en="Exchange Net Flow" data-zh="交易所净流入">거래소 순유입</span>
-        <span class="rd" data-en="Whether coins are leaving exchanges to be held, or arriving to be sold." data-zh="币是流出交易所被长持，还是流入等待卖出。">코인이 보관용으로 빠져나가는지, 팔려고 들어오는지.</span>
-      </a>
-      <a href="mvrv-z-score.html">
-        <span class="rn" data-en="MVRV-Z Score" data-zh="MVRV-Z 分数">MVRV-Z 점수</span>
-        <span class="rd" data-en="Whether price is over- or under-valued versus cost basis." data-zh="价格相对成本基准是高估还是低估。">가격이 평균 매입가 대비 고평가인지 저평가인지.</span>
-      </a>
-      <a href="../guide.html">
-        <span class="rn" data-en="All indicators" data-zh="全部指标">전체 지표 보기</span>
-        <span class="rd" data-en="Back to the full indicator guide." data-zh="返回完整指标指南。">지표 가이드 전체로 돌아가기.</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="sec reveal">
-    <h2><span class="ix">?</span><span data-en="Frequently asked" data-zh="常见问题">자주 묻는 질문</span></h2>
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="If long-term supply rises, should I buy right away?" data-zh="长期供应上升就该马上买吗？">장기 보유자 공급이 늘면 바로 매수해야 하나요?</span></summary>
-        <div class="ans" data-en="Rising long-term holder supply is a structural sign that seasoned holders are accumulating and locking coins away — historically common during bottoming and accumulation phases. But it moves slowly over months, so it's better used as the backdrop to a bigger-picture plan than as a near-term buy trigger." data-zh="长期持有者供应上升是老练持有者在吸筹并锁仓的结构性信号——历史上常见于筑底与吸筹阶段。但它以数月为尺度缓慢变动，因此更适合作为大局规划的背景，而非短期买入触发器。">장기 보유자 공급 증가는 노련한 보유자가 코인을 모아 묶어두고 있다는 구조적 신호로, 역사적으로 바닥·매집 국면에서 자주 나타났습니다. 다만 수개월에 걸쳐 천천히 움직이는 느린 지표이므로 단기 매수 타이밍이 아니라 큰 흐름의 배경으로 활용하는 것이 적절합니다.</div>
-      </details>
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="What does the 155-day cutoff mean?" data-zh="155 天的界限是什么意思？">155일 기준은 무슨 의미인가요?</span></summary>
-        <div class="ans" data-en="It's a convention drawn from the observation that once a coin has sat untouched for about 155 days, the statistical odds of it being sold on the next swing drop sharply. Coins older than that are counted as long-term holders (LTH), younger ones as short-term holders (STH)." data-zh="这是一个惯例，源于以下观察：币静置约 155 天后，它在下一次波动中被卖出的统计概率会急剧下降。币龄超过该界限的归为长期持有者（LTH），更年轻的归为短期持有者（STH）。">코인을 마지막으로 움직인 뒤 약 155일이 지나면 가격 변동에 흔들려 팔 확률이 통계적으로 크게 낮아진다는 관찰에서 나온 관례적 경계선입니다. 그 이상 가만히 있던 코인을 장기 보유자(LTH), 그보다 짧은 코인을 단기 보유자(STH)로 분류합니다.</div>
-      </details>
-      <details class="faq-item">
-        <summary><span class="q">Q</span><span data-en="If long-term supply falls in a rally, is it always a top?" data-zh="上涨中长期供应下降就一定是顶部吗？">상승장에서 장기 보유자 공급이 줄면 무조건 고점인가요?</span></summary>
-        <div class="ans" data-en="Long-term supply falling during a rally means old coins are being distributed into strength, which is often a late-cycle warning — but it doesn't mark a precise top on its own. It's more realistic to treat it as a cue to review position size alongside other on-chain and sentiment indicators." data-zh="上涨中长期供应下降意味着老币正向强势派发，这往往是周期后段的警示——但它本身并不标记精准的顶部。更现实的做法是把它当作结合其他链上与情绪指标、检视仓位的提示。">상승 중 장기 보유자 공급이 줄어드는 것은 오래 들고 있던 코인을 강세에 분배한다는 뜻으로 사이클 후반 경고인 경우가 많지만, 그 자체로 정확한 고점을 알려주지는 않습니다. 다른 온체인·심리 지표와 함께 비중 점검의 참고로 보는 편이 현실적입니다.</div>
-      </details>
-    </div>
-  </section>
-
-  <div class="page-cta reveal">
-    <div class="ct-tx">
-      <h3 data-en="See today's reading" data-zh="查看今日读数">오늘의 지표 값 확인하기</h3>
-      <p data-en="Check long-term holder supply trends and the composite timing score on the dashboard." data-zh="在仪表盘上查看长期持有者供应趋势与综合择时评分。">대시보드에서 장기 보유자 공급 추이와 종합 타이밍 점수를 확인하세요.</p>
-    </div>
-    <a class="ct-btn" href="../index.html" data-en="Open dashboard →" data-zh="打开仪表盘 →">대시보드 열기 →</a>
   </div>
 </div>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="../about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
-      </div>
-      <div><h4 data-en="Menu" data-zh="菜单">메뉴</h4><a href="../index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a><a href="../guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a><a href="../contact.html" data-en="Contact" data-zh="联系我们">문의</a></div>
-      <div><h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a><a href="../disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a></div>
-    </div>
-    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
-  </div>
-</footer>
-<script src="../btc-reveal.js"></script>
+<!-- Firebase compat SDK (동기 로드) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+<script>
+/* ── 모바일 사이드바 토글 ── */
+(function(){
+  var layout=document.getElementById('layout'),btn=document.getElementById('mbToggle'),bk=document.getElementById('navBackdrop');
+  function close(){layout.classList.remove('nav-open');}
+  if(btn)btn.addEventListener('click',function(){layout.classList.toggle('nav-open');});
+  if(bk)bk.addEventListener('click',close);
+  document.querySelectorAll('.sb-nav a').forEach(function(a){a.addEventListener('click',close);});
+})();
+
+/* ──────────────────────────────────────────────────────────
+ * 방문자 카운터 (Firebase Realtime Database) — index.html에서 그대로 이식
+ * 실패해도 폴백 '--' 유지.
+ * ────────────────────────────────────────────────────────── */
+(function(){
+  'use strict';
+  if(typeof firebase==='undefined'||!firebase.database){
+    console.warn('[visitor] Firebase SDK not available, skipping visitor counter');
+    return;
+  }
+  var firebaseConfig={
+    apiKey:"AIzaSyA0rKMvdc-9tRbycgpkczyopQvqRQRV2v0",
+    authDomain:"btctiming-af87d.firebaseapp.com",
+    databaseURL:"https://btctiming-af87d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId:"btctiming-af87d",
+    storageBucket:"btctiming-af87d.firebasestorage.app",
+    messagingSenderId:"9515727678",
+    appId:"1:9515727678:web:7d6a7ad30d881c1f37ca6f",
+    measurementId:"G-QNR0LP5QH1"
+  };
+  function setNum(id,v){
+    var el=document.getElementById(id);
+    if(!el)return;
+    if(v==null||isNaN(v)){el.textContent='--';return;}
+    el.textContent=Number(v).toLocaleString('ko-KR');
+  }
+  function kstDateKey(){return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);}
+  try{
+    if(!firebase.apps||!firebase.apps.length){firebase.initializeApp(firebaseConfig);}
+    var db=firebase.database();
+    var today=kstDateKey();
+    var myPresenceRef=db.ref('presence').push();
+    var presenceListRef=db.ref('presence');
+    db.ref('.info/connected').on('value',function(snap){
+      if(snap.val()!==true)return;
+      myPresenceRef.onDisconnect().remove();
+      myPresenceRef.set(true);
+    });
+    presenceListRef.on('value',function(snap){setNum('vcNow',snap.numChildren());},function(err){console.warn('[visitor] presence read failed:',err&&err.message);});
+    db.ref('counters/total').on('value',function(snap){setNum('vcTotal',snap.val());},function(err){console.warn('[visitor] total read failed:',err&&err.message);});
+    db.ref('counters/daily/'+today).on('value',function(snap){setNum('vcToday',snap.val());},function(err){console.warn('[visitor] daily read failed:',err&&err.message);});
+    try{
+      if(!sessionStorage.getItem('btc_counted')){
+        sessionStorage.setItem('btc_counted','1');
+        db.ref('counters/total').transaction(function(v){return (v||0)+1;});
+        db.ref('counters/daily/'+today).transaction(function(v){return (v||0)+1;});
+        console.log('[visitor] new session counted for '+today);
+      }
+    }catch(e){console.warn('[visitor] sessionStorage unavailable, count skipped:',e&&e.message);}
+  }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
+})();
+</script>
 </body>
 </html>

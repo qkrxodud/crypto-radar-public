@@ -2,67 +2,28 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="BTC 투자 타이밍 레이더 문의 및 피드백. 서비스 개선, 오류 신고, 협업 제안을 보내주세요." data-en-content="BTC Timing Radar contact and feedback. Send us service improvements, bug reports, and collaboration proposals." data-zh-content="BTC 时机雷达咨询与反馈。欢迎发送服务改进建议、错误报告及合作提案。">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-en="Contact — BTC Timing Radar" data-zh="联系我们 — BTC 时机雷达">문의 — BTC 투자 타이밍 레이더</title>
+<!-- SEO meta: 기존 contact.html에서 가져옴 (한국어 우선) -->
+<title>문의 — BTC 투자 타이밍 레이더</title>
+<meta name="description" content="BTC 투자 타이밍 레이더 문의 및 피드백. 서비스 개선, 오류 신고, 협업 제안을 보내주세요.">
 <link rel="canonical" href="https://btctiming.co.kr/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://btctiming.co.kr/contact.html">
-<meta property="og:site_name" content="BTC 투자 타이밍 레이더" data-en-content="BTC Investment Timing Radar" data-zh-content="BTC 投资择时雷达">
-<meta property="og:title" content="문의 — BTC 투자 타이밍 레이더" data-en-content="Contact — BTC Timing Radar" data-zh-content="联系我们 — BTC 时机雷达">
-<meta property="og:description" content="BTC 투자 타이밍 레이더 문의 및 피드백. 서비스 개선, 오류 신고, 협업 제안을 보내주세요." data-en-content="BTC Timing Radar contact and feedback. Send us service improvements, bug reports, and collaboration proposals." data-zh-content="BTC 时机雷达咨询与反馈。欢迎发送服务改进建议、错误报告及合作提案。">
+<meta property="og:site_name" content="BTC 투자 타이밍 레이더">
+<meta property="og:title" content="문의 — BTC 투자 타이밍 레이더">
+<meta property="og:description" content="BTC 투자 타이밍 레이더 문의 및 피드백. 서비스 개선, 오류 신고, 협업 제안을 보내주세요.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="문의 — BTC 투자 타이밍 레이더" data-en-content="Contact — BTC Timing Radar" data-zh-content="联系我们 — BTC 时机雷达">
-<meta name="twitter:description" content="BTC 투자 타이밍 레이더 문의 및 피드백. 서비스 개선, 오류 신고, 협업 제안을 보내주세요." data-en-content="BTC Timing Radar contact and feedback. Send us service improvements, bug reports, and collaboration proposals." data-zh-content="BTC 时机雷达咨询与反馈。欢迎发送服务改进建议、错误报告及合作提案。">
+<meta name="twitter:title" content="문의 — BTC 투자 타이밍 레이더">
+<meta name="twitter:description" content="BTC 투자 타이밍 레이더 문의 및 피드백. 서비스 개선, 오류 신고, 협업 제안을 보내주세요.">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="btc-base.css">
-<style>
-  .contact-grid{display:grid;grid-template-columns:1.3fr .9fr;gap:24px;align-items:start;margin-top:8px}
-  @media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
-  .form-card{padding:28px}
-  .field{margin-bottom:18px}
-  .field label{display:block;font-size:13.5px;font-weight:600;color:#dbe2f0;margin-bottom:8px}
-  .field label .req{color:var(--brand)}
-  .input,.textarea{width:100%;background:var(--bg-2);border:1px solid var(--border);border-radius:11px;padding:13px 15px;color:var(--text);font-family:var(--sans);font-size:14.5px;transition:.18s;outline:none}
-  .input:focus,.textarea:focus{border-color:rgba(247,147,26,.5);box-shadow:0 0 0 3px rgba(247,147,26,.12);background:#0d1322}
-  .input::placeholder,.textarea::placeholder{color:var(--muted-2)}
-  .textarea{min-height:140px;resize:vertical;line-height:1.6}
-  .types{display:flex;flex-wrap:wrap;gap:9px}
-  .types label{cursor:pointer}
-  .types input{position:absolute;opacity:0;pointer-events:none}
-  .types .opt{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:500;color:var(--muted);background:var(--bg-2);border:1px solid var(--border);padding:9px 15px;border-radius:100px;transition:.18s;white-space:nowrap}
-  .types label:hover .opt{color:var(--text);border-color:var(--border-strong)}
-  .types input:checked+.opt{color:var(--brand-2);background:var(--brand-soft);border-color:rgba(247,147,26,.4)}
-  .form-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:6px;flex-wrap:wrap}
-  .form-foot .note{font-size:12px;color:var(--muted-2)}
-  .sent{display:none;text-align:center;padding:30px 10px}
-  .sent .ico{width:62px;height:62px;border-radius:50%;background:var(--neon-soft);border:1px solid rgba(46,230,182,.3);display:grid;place-items:center;font-size:28px;margin:0 auto 16px;color:var(--neon)}
-  .sent h3{font-size:20px;font-weight:700;margin-bottom:8px}
-  .sent p{font-size:14px;color:var(--muted);max-width:340px;margin:0 auto}
-  .side-card{padding:22px;margin-bottom:16px}
-  .side-card .sh{display:flex;align-items:center;gap:11px;margin-bottom:14px}
-  .side-card .sh .ci{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;font-size:19px;flex:none}
-  .side-card .sh h3{font-size:15.5px;font-weight:700;white-space:nowrap}
-  .side-card .sh p{font-size:12px;color:var(--muted)}
-  .side-card .body{font-size:13.5px;color:var(--muted);line-height:1.65}
-  .tg-btn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:14px;background:rgba(46,230,182,.1);border:1px solid rgba(46,230,182,.3);color:var(--neon);font-weight:700;font-size:14.5px;padding:12px;border-radius:11px;text-decoration:none;transition:.18s}
-  .tg-btn:hover{background:rgba(46,230,182,.16);transform:translateY(-1px)}
-  .resp{display:flex;gap:12px;align-items:center;font-size:13.5px;color:var(--muted)}
-  .resp .dotg{width:9px;height:9px;border-radius:50%;background:var(--neon);box-shadow:0 0 8px var(--neon);flex:none}
-  .faq details{border-bottom:1px solid var(--border)}
-  .faq details:last-child{border-bottom:none}
-  .faq summary{list-style:none;cursor:pointer;padding:14px 0;font-size:14px;font-weight:600;display:flex;justify-content:space-between;gap:12px;align-items:center}
-  .faq summary::-webkit-details-marker{display:none}
-  .faq summary .q{color:#dbe2f0}
-  .faq summary .pm{color:var(--brand);font-family:var(--mono);transition:transform .2s;flex:none}
-  .faq details[open] summary .pm{transform:rotate(45deg)}
-  .faq .a{font-size:13.5px;color:var(--muted);line-height:1.7;padding:0 0 16px}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- AdSense (index.html에서 그대로 이식) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7898078056285143" crossorigin="anonymous"></script>
-<script src="./btc-i18n.js" defer></script>
-<!-- 구조화 데이터: 자주 묻는 질문 (페이지의 details/summary 본문과 1:1 일치) -->
+<!-- 구조화 데이터: 자주 묻는 질문 (페이지의 FAQ 본문과 1:1 일치, 원본 contact.html에서 복원) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -104,137 +65,518 @@
   ]
 }
 </script>
+<style>
+  /* ── 디자인 토큰 (index.html 기준) ── */
+  :root{
+    --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
+    --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--t1);}
+  ::-webkit-scrollbar{height:10px;width:10px;}
+  ::-webkit-scrollbar-thumb{background:#2a2f3a;border-radius:8px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  a{color:inherit;}
+
+  /* ── 레이아웃 (index-v2 그대로) ── */
+  .layout{display:flex;min-height:100vh;background:var(--bg);}
+  .sidebar{flex:none;width:240px;align-self:flex-start;position:sticky;top:0;height:100vh;
+    background:var(--nav-bg);border-right:1px solid var(--line);padding:22px 16px;
+    display:flex;flex-direction:column;}
+  .sb-brand{display:flex;align-items:center;gap:11px;padding:0 6px 24px;text-decoration:none;}
+  .sb-logo{width:36px;height:36px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:19px;}
+  .sb-brand .bt{color:var(--t1);font-size:14.5px;font-weight:700;}
+  .sb-brand .bs{color:var(--m2);font-size:11px;letter-spacing:.06em;}
+  .sb-menu-h{color:var(--m3);font-size:11px;letter-spacing:.12em;padding:0 12px 8px;}
+  .sb-nav{display:flex;flex-direction:column;gap:3px;}
+  .sb-nav a{display:flex;align-items:center;gap:11px;padding:11px 12px;border-radius:11px;text-decoration:none;font-size:14px;color:var(--m1);}
+  .sb-nav a .dot{width:7px;height:7px;border-radius:50%;background:#2a2f3a;flex:none;}
+  .sb-nav a.active{background:rgba(22,199,132,.12);color:var(--green);font-weight:600;}
+  .sb-nav a.active .dot{background:var(--green);}
+  .sb-live{margin-top:24px;padding:16px;border-radius:14px;background:linear-gradient(160deg,rgba(22,199,132,.14),rgba(22,199,132,.03));border:1px solid rgba(22,199,132,.18);}
+  .sb-live .lh{display:flex;align-items:center;gap:7px;}
+  .sb-live .lh .d{width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .sb-live .lh .t{color:var(--green);font-family:var(--mono);font-size:11px;font-weight:600;}
+  .sb-live .lb{color:var(--t2);font-size:13px;margin-top:9px;line-height:1.5;}
+  /* 사이드바 방문자 카운터 */
+  .sb-visitor{margin-top:14px;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--line);}
+  .sb-visitor .vh{color:var(--m2);font-size:10.5px;letter-spacing:.08em;margin-bottom:9px;font-family:var(--mono);}
+  .sb-visitor .vr{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--m1);padding:3px 0;}
+  .sb-visitor .vr .vc-n{color:var(--t1);font-weight:700;font-family:var(--mono);}
+  .sb-visitor .vr.now .vc-n{color:var(--green);}
+  .sb-visitor .vr .vc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:vcPulse 1.6s ease-in-out infinite;margin-right:5px;}
+  @keyframes vcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .sb-foot{margin-top:auto;padding:14px 12px 4px;color:var(--m3);font-size:11px;line-height:1.6;}
+
+  .main{flex:1;min-width:0;}
+  .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(8,9,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  .crumb{color:var(--m1);font-size:13px;}
+  .crumb b{color:var(--t1);font-weight:600;}
+  .topbar .right{display:flex;align-items:center;gap:12px;}
+  .topbar .back{display:flex;align-items:center;gap:7px;color:var(--green);font-size:13px;font-weight:600;text-decoration:none;}
+
+  .content{max-width:1180px;margin:0 auto;padding:36px 32px 64px;}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;}
+
+  /* ── 페이지 헤드 ── */
+  .page-head{margin-bottom:28px;}
+  .page-head .crumb-tag{font-family:var(--mono);color:var(--green);font-size:12px;letter-spacing:.14em;}
+  .page-head h1{color:var(--t1);font-size:32px;font-weight:800;margin:10px 0 8px;}
+  .page-head .sub{color:var(--t3);font-size:15px;line-height:1.8;margin:0;max-width:680px;}
+
+  /* ── 문의 그리드 ── */
+  .contact-grid{display:grid;grid-template-columns:1.3fr .9fr;gap:20px;align-items:start;}
+
+  /* ── 폼 카드 ── */
+  .form-card{padding:28px;border-radius:18px;}
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-size:13.5px;font-weight:600;color:#dbe2f0;margin-bottom:8px;}
+  .field label .req{color:var(--green);}
+  .row2{display:flex;gap:14px;}
+  .row2 .field{flex:1;min-width:0;}
+  .input,.textarea{width:100%;background:var(--card-2);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 14px;color:var(--t1);font-family:'Pretendard',sans-serif;font-size:14.5px;transition:.18s;outline:none;}
+  .input:focus,.textarea:focus{border-color:rgba(22,199,132,.5);box-shadow:0 0 0 3px rgba(22,199,132,.12);}
+  .input::placeholder,.textarea::placeholder{color:var(--m2);}
+  .textarea{min-height:140px;resize:vertical;line-height:1.6;}
+  /* 문의 유형 칩 */
+  .types{display:flex;flex-wrap:wrap;gap:9px;}
+  .types label{cursor:pointer;}
+  .types input{position:absolute;opacity:0;pointer-events:none;}
+  .types .opt{display:inline-flex;align-items:center;font-size:13.5px;font-weight:500;color:var(--m1);background:var(--card-2);border:1px solid rgba(255,255,255,.08);padding:9px 15px;border-radius:100px;transition:.18s;white-space:nowrap;}
+  .types label:hover .opt{color:var(--t1);}
+  .types input:checked+.opt{color:var(--green);background:rgba(22,199,132,.14);border-color:rgba(22,199,132,.35);font-weight:600;}
+  /* 버튼 */
+  .btn{display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;font-family:'Pretendard',sans-serif;font-size:14.5px;font-weight:700;padding:13px 22px;border-radius:11px;transition:.18s;}
+  .btn-primary{background:var(--green);color:#04120c;}
+  .btn-primary:hover{background:var(--green-2);transform:translateY(-1px);}
+  .form-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:6px;flex-wrap:wrap;}
+  .form-foot .note{font-size:12px;color:var(--m2);}
+  /* 성공 화면 */
+  .sent{display:none;text-align:center;padding:30px 10px;}
+  .sent .ico{width:56px;height:56px;border-radius:50%;background:rgba(22,199,132,.14);border:1px solid rgba(22,199,132,.3);display:grid;place-items:center;margin:0 auto 16px;color:var(--green);}
+  .sent h3{font-size:20px;font-weight:700;margin:0 0 8px;color:var(--t1);}
+  .sent p{font-size:14px;color:var(--t3);max-width:380px;margin:0 auto 18px;line-height:1.7;}
+  .sent .again{background:transparent;border:none;color:var(--green);font-weight:600;font-size:14px;cursor:pointer;font-family:'Pretendard',sans-serif;}
+
+  /* ── 채널 카드 (우) ── */
+  .side-card{padding:22px;margin-bottom:16px;border-radius:16px;}
+  .side-card .sh{display:flex;align-items:center;gap:11px;margin-bottom:14px;}
+  .side-card .sh .ci{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;flex:none;}
+  .side-card .sh h3{font-size:15.5px;font-weight:700;white-space:nowrap;margin:0;color:var(--t1);}
+  .side-card .sh p{font-size:12px;color:var(--m1);margin:2px 0 0;}
+  .chan-row{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-top:1px solid var(--line-2);}
+  .chan-row:first-of-type{border-top:none;}
+  .chan-row .ci2{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;flex:none;font-size:16px;}
+  .chan-row .cl{color:var(--m1);font-size:12px;margin-bottom:3px;}
+  .chan-row .cv{color:var(--t1);font-size:13.5px;font-weight:600;word-break:break-all;}
+  .chan-row .cv a{color:var(--green);text-decoration:none;}
+  .chan-row .cs{color:var(--m2);font-size:11.5px;margin-top:2px;}
+  .tg-card{background:linear-gradient(160deg,rgba(22,199,132,.12),rgba(22,199,132,.02));border:1px solid rgba(22,199,132,.2);}
+  .tg-card .body{font-size:13.5px;color:var(--t3);line-height:1.65;}
+  .tg-btn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:14px;background:rgba(22,199,132,.12);border:1px solid rgba(22,199,132,.3);color:var(--green);font-weight:700;font-size:14.5px;padding:12px;border-radius:11px;text-decoration:none;transition:.18s;}
+  .tg-btn:hover{background:rgba(22,199,132,.18);transform:translateY(-1px);}
+
+  /* ── 응답 안내 (채널 카드 내부) ── */
+  .resp-row{display:flex;gap:12px;align-items:center;font-size:13.5px;color:var(--t3);}
+  .resp-row .dotg{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);flex:none;}
+  .resp-row b{color:var(--t1);font-weight:700;margin-left:4px;}
+  .side-card .resp-body{font-size:13.5px;color:var(--t3);line-height:1.65;margin-top:12px;}
+
+  /* ── 자주 묻는 질문 (FAQ 아코디언, rsi-v2 스타일 차용) ── */
+  .faq-sec{margin-top:24px;}
+  .faq-sec .fh{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .faq-sec .fh .ix{width:30px;height:30px;border-radius:9px;background:rgba(22,199,132,.12);color:var(--green);display:grid;place-items:center;font-weight:800;flex:none;}
+  .faq-sec .fh h2{color:var(--t1);font-size:20px;font-weight:800;margin:0;}
+  .faq-list{display:flex;flex-direction:column;gap:11px;max-width:820px;}
+  .faq-item{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:13px;overflow:hidden;}
+  .faq-item summary{font-size:14.5px;font-weight:600;color:var(--t1);padding:16px 18px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;line-height:1.5;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .q{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--green);flex:none;}
+  .faq-item summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:18px;color:var(--m2);transition:.2s;flex:none;}
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item .ans{font-size:13.5px;color:var(--t3);line-height:1.74;padding:0 18px 16px;}
+  .faq-item .ans b{color:var(--t1);font-weight:600;}
+
+  /* ── 안내 노트 (메일 앱 없을 때 대비) ── */
+  .mail-note{display:flex;gap:11px;align-items:flex-start;background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-top:20px;}
+  .mail-note .ic{flex:none;width:22px;height:22px;border-radius:7px;background:rgba(22,199,132,.16);color:var(--green);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;}
+  .mail-note .tx{color:var(--t3);font-size:13px;line-height:1.7;}
+  .mail-note .tx b{color:var(--green);font-weight:700;}
+
+  /* ── 푸터 ── */
+  .foot{border-top:1px solid var(--line);padding-top:24px;margin-top:36px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;}
+  .foot .fa{max-width:360px;}
+  .foot .fb{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+  .foot .fb .lo{width:28px;height:28px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:15px;}
+  .foot .fb .nm{color:var(--t1);font-size:14px;font-weight:700;}
+  .foot .fd{color:var(--m2);font-size:12.5px;line-height:1.7;}
+  .foot .cols{display:flex;gap:48px;flex-wrap:wrap;}
+  .foot .col h4{color:var(--m1);font-size:12px;font-weight:600;margin:0 0 10px;}
+  .foot .col a{display:block;color:var(--m2);font-size:13px;text-decoration:none;margin-bottom:8px;}
+  .foot .col a:hover{color:var(--t2);}
+  .foot .copy{color:var(--m3);font-size:11.5px;width:100%;border-top:1px solid rgba(255,255,255,.04);padding-top:16px;}
+
+  /* ── 모바일 햄버거 (index-v2 그대로) ── */
+  .mobile-bar{display:none;position:sticky;top:0;z-index:30;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(8,9,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .mobile-bar .mb-brand{display:flex;align-items:center;gap:9px;text-decoration:none;}
+  .mobile-bar .mb-logo{width:30px;height:30px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;color:#04120c;font-weight:800;font-size:16px;}
+  .mobile-bar .mb-t{color:var(--t1);font-size:14px;font-weight:700;}
+  .mb-toggle{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--t1);}
+  .mb-toggle span{display:block;width:18px;height:2px;background:var(--t1);position:relative;}
+  .mb-toggle span::before,.mb-toggle span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--t1);}
+  .mb-toggle span::before{top:-6px;}.mb-toggle span::after{top:6px;}
+
+  /* ── 반응형 (index-v2 정책 동일) ── */
+  @media(max-width:860px){
+    .contact-grid{grid-template-columns:1fr;}
+  }
+  @media(max-width:768px){
+    html,body{overflow-x:hidden;max-width:100vw;}
+    .sidebar{position:fixed;left:0;top:0;z-index:40;transform:translateX(-100%);transition:transform .25s ease;height:100vh;box-shadow:2px 0 20px rgba(0,0,0,.5);}
+    .layout.nav-open .sidebar{transform:translateX(0);}
+    .nav-backdrop{display:none;position:fixed;inset:0;z-index:35;background:rgba(0,0,0,.5);}
+    .layout.nav-open .nav-backdrop{display:block;}
+    .mobile-bar{display:flex;}
+    .topbar{display:none;}
+    .content{padding:22px 16px 56px;max-width:100%;}
+    .page-head h1{font-size:25px;}
+    .row2{flex-direction:column;gap:0;}
+    .foot{flex-direction:column;}
+    .foot .cols{gap:32px;}
+  }
+  @media(max-width:480px){
+    .content{padding:18px 12px 48px;}
+    .page-head h1{font-size:22px;}
+    .form-card{padding:20px;}
+  }
+  @media(max-width:380px){
+    .content{padding:16px 10px 44px;}
+  }
+</style>
 </head>
 <body>
-<div class="bg-field" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+<div class="layout" id="layout">
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-    <nav class="nav-links">
-      <a href="index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a>
-      <a href="guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a>
-      <a class="active" href="contact.html" data-en="Contact" data-zh="联系我们">문의</a>
+  <!-- ── 사이드바 (index-v2 그대로, active=문의) ── -->
+  <aside class="sidebar">
+    <a class="sb-brand" href="index.html">
+      <div class="sb-logo">₿</div>
+      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+    </a>
+    <div class="sb-menu-h">MENU</div>
+    <nav class="sb-nav">
+      <a href="index.html"><span class="dot"></span>대시보드</a>
+      <a href="guide.html"><span class="dot"></span>지표 가이드</a>
+      <a href="about.html"><span class="dot"></span>서비스 소개</a>
+      <a class="active" href="contact.html"><span class="dot"></span>문의</a>
     </nav>
-    <a class="nav-pill" href="https://t.me/+Q9AJzzunwnAxMzhl"><span class="pulse"></span><span data-en="Telegram Channel" data-zh="Telegram 频道">텔레그램 채널</span></a>
-  </div>
-</header>
+    <div class="sb-live">
+      <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
+      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
+    </div>
+    <!-- 방문자 카운터 (Firebase) -->
+    <div class="sb-visitor" id="visitorStrip">
+      <div class="vh">VISITORS</div>
+      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
+    </div>
+    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+  </aside>
 
-<div class="wrap">
-  <div class="page-head reveal">
-    <div class="crumb">CONTACT</div>
-    <h1 data-i18n-html="1" data-en="Ask us <span class=&quot;hl&quot;>anything</span>, anytime." data-zh="<span class=&quot;hl&quot;>随时</span>向我们提问。">무엇이든 <span class="hl">편하게</span> 물어보세요.</h1>
-    <p class="sub" data-en="We welcome bug reports, feature suggestions, and collaboration or partnership inquiries. Data error reports and improvement ideas greatly help our service quality." data-zh="欢迎错误报告、功能建议以及合作、提携咨询。数据错误或改进建议对提升服务质量大有帮助。">오류 신고, 기능 제안, 협업·제휴 문의를 환영합니다. 데이터 오류나 개선 아이디어는 서비스 품질에 큰 도움이 됩니다.</p>
-  </div>
+  <!-- ── 메인 ── -->
+  <div class="main">
+    <!-- 모바일 상단 바 -->
+    <div class="mobile-bar">
+      <a class="mb-brand" href="index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
+    </div>
+    <!-- 데스크톱 상단 바 -->
+    <div class="topbar">
+      <div class="crumb">Home <span style="color:var(--m3)">›</span> <b>문의</b></div>
+      <div class="right">
+        <a class="back" href="index.html">← 대시보드로</a>
+      </div>
+    </div>
 
-  <div class="contact-grid">
-    <!-- FORM -->
-    <div class="card form-card reveal">
-      <form id="cform" onsubmit="return false">
-        <div class="field">
-          <label data-i18n-html="1" data-en="Inquiry Type <span class=&quot;req&quot;>*</span>" data-zh="咨询类型 <span class=&quot;req&quot;>*</span>">문의 유형 <span class="req">*</span></label>
-          <div class="types">
-            <label><input type="radio" name="type" checked><span class="opt" data-en=" Bug Report" data-zh=" 错误报告"> 오류 신고</span></label>
-            <label><input type="radio" name="type"><span class="opt" data-en=" Feature Suggestion" data-zh=" 功能建议"> 기능 제안</span></label>
-            <label><input type="radio" name="type"><span class="opt" data-en=" Collaboration · Partnership" data-zh=" 合作 · 提携"> 협업 · 제휴</span></label>
-            <label><input type="radio" name="type"><span class="opt" data-en=" Other" data-zh=" 其他"> 기타</span></label>
+    <div class="content">
+
+      <!-- 페이지 헤드 -->
+      <div class="page-head">
+        <div class="crumb-tag">CONTACT</div>
+        <h1>무엇이든 편하게 물어보세요</h1>
+        <p class="sub">서비스 제안, 지표 오류 제보, 광고·제휴 문의를 환영합니다. 아래 양식이나 채널로 연락 주세요. 데이터 오류나 개선 아이디어는 서비스 품질에 큰 도움이 됩니다.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- 폼 (좌) -->
+        <div class="card form-card">
+          <form id="cform" onsubmit="return false">
+            <!-- 문의 유형 칩 4개 -->
+            <div class="field">
+              <label>문의 유형 <span class="req">*</span></label>
+              <div class="types">
+                <label><input type="radio" name="type" checked><span class="opt">서비스 제안</span></label>
+                <label><input type="radio" name="type"><span class="opt">지표 오류 제보</span></label>
+                <label><input type="radio" name="type"><span class="opt">광고 · 제휴</span></label>
+                <label><input type="radio" name="type"><span class="opt">기타</span></label>
+              </div>
+            </div>
+            <!-- 이름 / 이메일 (한 줄 2칸) -->
+            <div class="row2">
+              <div class="field">
+                <label for="name">이름 / 닉네임 <span class="req">*</span></label>
+                <input class="input" id="name" type="text" placeholder="홍길동" required>
+              </div>
+              <div class="field">
+                <label for="email">회신 이메일 <span class="req">*</span></label>
+                <input class="input" id="email" type="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <!-- 문의 내용 -->
+            <div class="field">
+              <label for="msg">문의 내용 <span class="req">*</span></label>
+              <textarea class="textarea" id="msg" placeholder="어떤 점이 궁금하신가요? 오류라면 어느 화면에서, 어떤 상황이었는지 적어주시면 빠르게 확인할 수 있어요." required></textarea>
+            </div>
+            <div class="form-foot">
+              <span class="note">제출 시 개인정보처리방침에 동의한 것으로 간주됩니다.</span>
+              <button class="btn btn-primary" type="submit" id="sendBtn">문의 보내기 <span>→</span></button>
+            </div>
+          </form>
+          <!-- 제출(성공) 화면 -->
+          <div class="sent" id="sent">
+            <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13.5 10.5 19 21 7.5"/></svg></div>
+            <h3>메일 앱이 열렸어요</h3>
+            <p>받는사람이 btctimingbtc@gmail.com 으로 채워진 메일이 열립니다. 전송을 완료하면 문의가 접수됩니다. 메일 앱이 열리지 않으면 btctimingbtc@gmail.com 으로 직접 보내주세요. 급한 문의는 텔레그램 채널을 이용해 주세요.</p>
+            <button class="again" id="againBtn">새 문의 작성 →</button>
           </div>
         </div>
-        <div class="field">
-          <label for="name" data-i18n-html="1" data-en="Name / Nickname <span class=&quot;req&quot;>*</span>" data-zh="姓名 / 昵称 <span class=&quot;req&quot;>*</span>">이름 / 닉네임 <span class="req">*</span></label>
-          <input class="input" id="name" type="text" placeholder="홍길동" data-en-placeholder="John Doe" data-zh-placeholder="张三" required>
-        </div>
-        <div class="field">
-          <label for="email" data-i18n-html="1" data-en="Email <span class=&quot;req&quot;>*</span>" data-zh="电子邮件 <span class=&quot;req&quot;>*</span>">이메일 <span class="req">*</span></label>
-          <input class="input" id="email" type="email" placeholder="you@example.com" required>
-        </div>
-        <div class="field">
-          <label for="msg" data-i18n-html="1" data-en="Message <span class=&quot;req&quot;>*</span>" data-zh="咨询内容 <span class=&quot;req&quot;>*</span>">문의 내용 <span class="req">*</span></label>
-          <textarea class="textarea" id="msg" placeholder="어떤 점이 궁금하신가요? 오류라면 어느 화면에서, 어떤 상황이었는지 적어주시면 빠르게 확인할 수 있어요." data-en-placeholder="What would you like to know? For a bug, tell us which screen and what was happening, and we can check it faster." data-zh-placeholder="您想了解什么？如为错误，请说明在哪个页面、当时的情况，以便我们快速核实。" required></textarea>
-        </div>
-        <div class="form-foot">
-          <span class="note" data-en="By submitting, you are deemed to agree to the Privacy Policy." data-zh="提交即视为同意隐私政策。">제출 시 개인정보처리방침에 동의한 것으로 간주됩니다.</span>
-          <button class="btn btn-primary" type="submit" id="sendBtn" data-i18n-html="1" data-en="Send Message <span>→</span>" data-zh="发送咨询 <span>→</span>">문의 보내기 <span>→</span></button>
-        </div>
-      </form>
-      <div class="sent" id="sent">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="var(--neon)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 13.5 10.5 19 21 7.5"/></svg></div>
-        <h3 data-en="Your email app has opened" data-zh="邮件应用已打开">메일 앱이 열렸어요</h3>
-        <p data-en="An email addressed to btctimingbtc@gmail.com has opened — please complete the send to submit your inquiry. If no mail app opened, write to btctimingbtc@gmail.com directly. For urgent matters, use our Telegram channel." data-zh="已打开收件人为 btctimingbtc@gmail.com 的邮件 — 请完成发送以提交咨询。如未打开邮件应用，请直接发送至 btctimingbtc@gmail.com。紧急事项请使用 Telegram 频道。">받는사람이 btctimingbtc@gmail.com 으로 채워진 메일이 열립니다. 전송을 완료하면 문의가 접수됩니다. 메일 앱이 열리지 않으면 btctimingbtc@gmail.com 으로 직접 보내주세요. 급한 문의는 텔레그램 채널을 이용해 주세요.</p>
-      </div>
-    </div>
 
-    <!-- SIDE -->
-    <div>
-      <div class="card side-card reveal d1">
-        <div class="sh"><div class="ci" style="background:var(--neon-soft);border:1px solid rgba(46,230,182,.28)"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="var(--neon)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2L2 8.5l5 2 1.5 5.5 3-3.5 4 2.5L17 2z"/><line x1="7" y1="10.5" x2="17" y2="2"/></svg></div><div><h3 data-en="Telegram Alert Channel" data-zh="Telegram 通知频道">텔레그램 알림 채널</h3><p data-en="The fastest way to reach us" data-zh="最快捷的沟通渠道">가장 빠른 소통 창구</p></div></div>
-        <div class="body" data-en="Be the first to receive daily update alerts and major market changes. Quick inquiries can also be handled right in the channel." data-zh="第一时间接收每日更新通知和重要市场变化。简单咨询也可直接在频道中进行。">매일 갱신 알림과 주요 시장 변화를 가장 먼저 받아보세요. 간단한 문의도 채널에서 바로 가능합니다.</div>
-        <a class="tg-btn" href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Join the Telegram Channel" data-zh="加入 Telegram 频道">텔레그램 채널 참여하기</a>
+        <!-- 채널 카드 (우) -->
+        <div>
+          <div class="card side-card">
+            <div class="sh">
+              <div class="ci" style="background:rgba(22,199,132,.14);border:1px solid rgba(22,199,132,.28)">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="var(--green)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3.5" width="15" height="12" rx="2"/><path d="M2.5 5l7 5 7-5"/></svg>
+              </div>
+              <div><h3>연락 채널</h3><p>운영자가 직접 확인합니다</p></div>
+            </div>
+            <div class="chan-row">
+              <div class="ci2" style="background:rgba(22,199,132,.12);color:var(--green)">✉</div>
+              <div>
+                <div class="cl">이메일</div>
+                <div class="cv"><a href="mailto:btctimingbtc@gmail.com">btctimingbtc@gmail.com</a></div>
+                <div class="cs">영업일 2~3일 내 답변</div>
+              </div>
+            </div>
+            <div class="chan-row">
+              <div class="ci2" style="background:rgba(240,185,11,.12);color:var(--amber)">★</div>
+              <div>
+                <div class="cl">광고 · 제휴</div>
+                <div class="cv"><a href="mailto:btctimingbtc@gmail.com">btctimingbtc@gmail.com</a></div>
+                <div class="cs">배너 · 스폰서 문의</div>
+              </div>
+            </div>
+            <div class="chan-row">
+              <div class="ci2" style="background:rgba(91,141,239,.12);color:#5b8def">◷</div>
+              <div>
+                <div class="cl">운영 시간</div>
+                <div class="cv">평일 10:00 – 18:00</div>
+                <div class="cs">한국시간 (KST)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 텔레그램 카드 -->
+          <div class="card side-card tg-card">
+            <div class="sh">
+              <div class="ci" style="background:rgba(22,199,132,.14);border:1px solid rgba(22,199,132,.28)">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="var(--green)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2L2 8.5l5 2 1.5 5.5 3-3.5 4 2.5L17 2z"/><line x1="7" y1="10.5" x2="17" y2="2"/></svg>
+              </div>
+              <div><h3>텔레그램 알림 채널</h3><p>가장 빠른 소통 창구</p></div>
+            </div>
+            <div class="body">매일 갱신 알림과 공지를 가장 먼저 받아보세요. 간단한 문의도 채널에서 바로 가능합니다.</div>
+            <a class="tg-btn" href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널 참여하기</a>
+          </div>
+
+          <!-- 응답 안내 카드 (원본 contact.html에서 복원) -->
+          <div class="card side-card">
+            <div class="sh">
+              <div class="ci" style="background:rgba(240,185,11,.12);border:1px solid rgba(240,185,11,.28)">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="var(--amber)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="10" r="7"/><polyline points="9.5 6 9.5 10 12.5 11.8"/><line x1="7.5" y1="1.5" x2="11.5" y2="1.5"/></svg>
+              </div>
+              <div><h3>응답 안내</h3><p>운영자 직접 확인</p></div>
+            </div>
+            <div class="resp-row"><span class="dotg"></span>평균 응답 시간 <b>1~2 영업일</b></div>
+            <div class="resp-body">오류 신고는 우선 처리됩니다. 데이터 갱신 지연은 외부 API 장애일 수 있으니 잠시 후 다시 확인해 주세요.</div>
+          </div>
+        </div>
       </div>
-      <div class="card side-card reveal d2">
-        <div class="sh"><div class="ci" style="background:var(--brand-soft);border:1px solid rgba(247,147,26,.28)"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="var(--brand)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="10" r="7"/><polyline points="9.5 6 9.5 10 12.5 11.8"/><line x1="7.5" y1="1.5" x2="11.5" y2="1.5"/></svg></div><div><h3 data-en="Response Info" data-zh="回复说明">응답 안내</h3><p data-en="Reviewed directly by the operator" data-zh="运营者亲自查看">운영자 직접 확인</p></div></div>
-        <div class="resp" data-i18n-html="1" data-en="<span class=&quot;dotg&quot;></span>Average response time <b style=&quot;color:var(--text);margin-left:4px&quot;>1–2 business days</b>" data-zh="<span class=&quot;dotg&quot;></span>平均回复时间 <b style=&quot;color:var(--text);margin-left:4px&quot;>1~2 个工作日</b>"><span class="dotg"></span>평균 응답 시간 <b style="color:var(--text);margin-left:4px">1~2 영업일</b></div>
-        <div class="body" style="margin-top:12px" data-en="Bug reports are prioritized. A delay in data updates may be due to an external API outage, so please check again shortly." data-zh="错误报告将优先处理。数据更新延迟可能是外部 API 故障所致，请稍后再次确认。">오류 신고는 우선 처리됩니다. 데이터 갱신 지연은 외부 API 장애일 수 있으니 잠시 후 다시 확인해 주세요.</div>
+
+      <!-- 자주 묻는 질문 (FAQ) — 원본 contact.html에서 복원, V2 아코디언 스타일 -->
+      <section class="faq-sec">
+        <div class="fh"><span class="ix">?</span><h2>자주 묻는 질문</h2></div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary><span class="q">Q</span><span>정말 무료인가요?</span></summary>
+            <div class="ans">네, 모든 기능을 회원가입 없이 무료로 이용할 수 있습니다. 운영비는 광고로 충당합니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>데이터는 얼마나 정확한가요?</span></summary>
+            <div class="ans">Binance·CoinGecko·FRED 등 공개·검증된 API에서 수집합니다. 다만 모든 정보는 참고용이며 투자 조언이 아닙니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>점수만 보고 투자해도 되나요?</span></summary>
+            <div class="ans">아니요. 점수는 여러 지표를 요약한 참고 지표일 뿐, 단독 매매 근거로 삼지 마세요. 최종 판단은 본인 책임입니다.</div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span><span>갱신은 언제 되나요?</span></summary>
+            <div class="ans">매일 오전 9시 5분(KST)에 자동 갱신됩니다. 갱신 시각은 대시보드 상단에 표시됩니다.</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 안내 노트: 메일 앱 없을 때 대비 주소 노출 -->
+      <div class="mail-note">
+        <span class="ic">i</span>
+        <div class="tx">'문의 보내기'를 누르면 받는사람이 <b>btctimingbtc@gmail.com</b> 으로 채워진 메일 앱이 열립니다. 메일 앱이 설정돼 있지 않다면 <b>btctimingbtc@gmail.com</b> 으로 직접 보내주세요.</div>
       </div>
-      <div class="card side-card reveal d3 faq">
-        <div class="sh"><div class="ci" style="background:rgba(91,141,239,.12);border:1px solid rgba(91,141,239,.28)"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" stroke="#5b8def" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 7a3 3 0 1 1 4.3 2.7c-.9.45-1.3 1-1.3 2v.3"/><circle cx="9.5" cy="15" r=".9" fill="#5b8def" stroke="none"/></svg></div><div><h3 data-en="Frequently Asked Questions" data-zh="常见问题">자주 묻는 질문</h3><p data-en="Check before reaching out" data-zh="咨询前请先查看">문의 전에 확인하세요</p></div></div>
-        <details open><summary><span class="q" data-en="Is it really free?" data-zh="真的免费吗？">정말 무료인가요?</span><span class="pm">+</span></summary><div class="a" data-en="Yes. You can use all features for free without signing up. Operating costs are covered by advertising." data-zh="是的。无需注册即可免费使用所有功能。运营费用由广告补贴。">네, 모든 기능을 회원가입 없이 무료로 이용할 수 있습니다. 운영비는 광고로 충당합니다.</div></details>
-        <details><summary><span class="q" data-en="How accurate is the data?" data-zh="数据有多准确？">데이터는 얼마나 정확한가요?</span><span class="pm">+</span></summary><div class="a" data-en="It is collected from public, verified APIs such as Binance, CoinGecko, and FRED. However, all information is for reference only and is not investment advice." data-zh="数据采集自 Binance、CoinGecko、FRED 等公开且经过验证的 API。但所有信息仅供参考，并非投资建议。">Binance·CoinGecko·FRED 등 공개·검증된 API에서 수집합니다. 다만 모든 정보는 참고용이며 투자 조언이 아닙니다.</div></details>
-        <details><summary><span class="q" data-en="Can I invest based on the score alone?" data-zh="可以仅凭评分进行投资吗？">점수만 보고 투자해도 되나요?</span><span class="pm">+</span></summary><div class="a" data-en="No. The score is merely a reference summarizing multiple indicators; do not use it as the sole basis for trading. The final decision is your own responsibility." data-zh="不可以。评分只是概括多项指标的参考指标，请勿将其作为单一的交易依据。最终判断由本人负责。">아니요. 점수는 여러 지표를 요약한 참고 지표일 뿐, 단독 매매 근거로 삼지 마세요. 최종 판단은 본인 책임입니다.</div></details>
-        <details><summary><span class="q" data-en="When is it updated?" data-zh="何时更新？">갱신은 언제 되나요?</span><span class="pm">+</span></summary><div class="a" data-en="It updates automatically at 9:05 AM KST every day. The update time is shown at the top of the dashboard." data-zh="每天 KST 上午 9 点 5 分自动更新。更新时间显示在仪表盘顶部。">매일 오전 9시 5분(KST)에 자동 갱신됩니다. 갱신 시각은 대시보드 상단에 표시됩니다.</div></details>
+
+      <!-- 푸터 -->
+      <div class="foot">
+        <div class="fa">
+          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
+          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+        </div>
+        <div class="cols">
+          <div class="col"><h4>메뉴</h4><a href="index.html">대시보드</a><a href="guide.html">지표 가이드</a><a href="about.html">서비스 소개</a><a href="contact.html">문의</a></div>
+          <div class="col"><h4>정책 · 커뮤니티</h4><a href="privacy.html">개인정보처리방침</a><a href="disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+        </div>
+        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
       </div>
+
     </div>
   </div>
-
-  <div class="disclaimer-note reveal" data-en=" Tapping 'Send Message' opens your mail app with the recipient pre-filled as btctimingbtc@gmail.com. If you don't have a mail app set up, please write to btctimingbtc@gmail.com directly." data-zh=" 点击'发送咨询'将打开收件人已填为 btctimingbtc@gmail.com 的邮件应用。如未设置邮件应用，请直接发送至 btctimingbtc@gmail.com。"> '문의 보내기'를 누르면 받는사람이 btctimingbtc@gmail.com 으로 채워진 메일 앱이 열립니다. 메일 앱이 설정돼 있지 않다면 btctimingbtc@gmail.com 으로 직접 보내주세요.</div>
 </div>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="about.html"><span class="dot"><span class="ring"></span></span><span data-en="BTC Timing Radar" data-zh="BTC 时机雷达">BTC 타이밍 레이더</span></a>
-        <p class="foot-about" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation." data-zh="一项每日自动分析 25 项以上比特币市场指标的免费信息服务。提供基于数据的客观市场解读。">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.</p>
-      </div>
-      <div><h4 data-en="Menu" data-zh="菜单">메뉴</h4><a href="index.html" data-en="Dashboard" data-zh="仪表盘">대시보드</a><a href="guide.html" data-en="Indicator Guide" data-zh="指标指南">지표 가이드</a><a href="contact.html" data-en="Contact" data-zh="联系我们">문의</a></div>
-      <div><h4 data-en="Policies · Community" data-zh="政策 · 社区">정책 · 커뮤니티</h4><a href="privacy.html" data-en="Privacy Policy" data-zh="隐私政策">개인정보처리방침</a><a href="disclaimer.html" data-en="Investment Disclaimer" data-zh="投资免责声明">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en=" Telegram Channel" data-zh=" Telegram 频道"> 텔레그램 채널</a></div>
-    </div>
-    <div class="copy"><span data-en="© 2024 BTC Timing Radar. All rights reserved." data-zh="© 2024 BTC 时机雷达。保留所有权利。">© 2024 BTC 투자 타이밍 레이더. All rights reserved.</span><span data-en="Auto-updated daily at 09:05 KST" data-zh="每日 09:05 KST 自动更新">매일 09:05 KST 자동 갱신</span></div>
-  </div>
-</footer>
-<script src="btc-reveal.js"></script>
+<!-- Firebase compat SDK (동기 로드) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
 <script>
-  // 문의 수신 메일 주소 (한 곳에서 관리)
-  var CONTACT_TO='btctimingbtc@gmail.com';
+(function(){
+'use strict';
 
-  document.getElementById('sendBtn').addEventListener('click',function(){
-    var f=document.getElementById('cform');
-    if(!f.checkValidity()){f.reportValidity();return;}
+/* ── 문의 mailto 핸들러 — 기존 contact.html에서 그대로 이식 ── */
+// 문의 수신 메일 주소 (한 곳에서 관리)
+var CONTACT_TO='btctimingbtc@gmail.com';
 
-    // 선택된 문의 유형 라벨 추출 (현재 언어 기준)
-    var typeEl=document.querySelector('input[name="type"]:checked');
-    var typeLabel=typeEl?typeEl.closest('label').querySelector('.opt').textContent.trim():'문의';
-    var name=document.getElementById('name').value.trim();
-    var email=document.getElementById('email').value.trim();
-    var msg=document.getElementById('msg').value.trim();
+var cform=document.getElementById('cform');
+var sent=document.getElementById('sent');
 
-    // mailto 제목·본문 구성 (받는사람: CONTACT_TO)
-    var subject='[BTC 타이밍 레이더] '+typeLabel;
-    var body='문의 유형: '+typeLabel+'\n'
-            +'이름/닉네임: '+name+'\n'
-            +'회신 이메일: '+email+'\n\n'
-            +'문의 내용:\n'+msg+'\n';
-    var href='mailto:'+CONTACT_TO
-            +'?subject='+encodeURIComponent(subject)
-            +'&body='+encodeURIComponent(body);
+document.getElementById('sendBtn').addEventListener('click',function(){
+  if(!cform.checkValidity()){cform.reportValidity();return;}
 
-    // 방문자 메일 앱 열기 (받는사람이 채워진 상태)
-    window.location.href=href;
+  // 선택된 문의 유형 라벨 추출
+  var typeEl=document.querySelector('input[name="type"]:checked');
+  var typeLabel=typeEl?typeEl.closest('label').querySelector('.opt').textContent.trim():'문의';
+  var name=document.getElementById('name').value.trim();
+  var email=document.getElementById('email').value.trim();
+  var msg=document.getElementById('msg').value.trim();
 
-    // 접수 안내 표시
-    f.style.display='none';
-    document.getElementById('sent').style.display='block';
-  });
+  // mailto 제목·본문 구성 (받는사람: CONTACT_TO)
+  var subject='[BTC 타이밍 레이더] '+typeLabel;
+  var body='문의 유형: '+typeLabel+'\n'
+          +'이름/닉네임: '+name+'\n'
+          +'회신 이메일: '+email+'\n\n'
+          +'문의 내용:\n'+msg+'\n';
+  var href='mailto:'+CONTACT_TO
+          +'?subject='+encodeURIComponent(subject)
+          +'&body='+encodeURIComponent(body);
+
+  // 방문자 메일 앱 열기 (받는사람이 채워진 상태)
+  window.location.href=href;
+
+  // 접수 안내 표시
+  cform.style.display='none';
+  sent.style.display='block';
+  console.log('[contact] mailto opened for type='+typeLabel);
+});
+
+// 새 문의 작성 — 폼 초기화 후 다시 표시
+document.getElementById('againBtn').addEventListener('click',function(){
+  cform.reset();
+  sent.style.display='none';
+  cform.style.display='block';
+});
+
+/* ── 모바일 사이드바 토글 (index-v2 그대로) ── */
+(function(){
+  var layout=document.getElementById('layout');
+  var btn=document.getElementById('mbToggle');
+  var bk=document.getElementById('navBackdrop');
+  function close(){layout.classList.remove('nav-open');}
+  if(btn)btn.addEventListener('click',function(){layout.classList.toggle('nav-open');});
+  if(bk)bk.addEventListener('click',close);
+  document.querySelectorAll('.sb-nav a').forEach(function(a){a.addEventListener('click',close);});
+})();
+})();
+
+/* ──────────────────────────────────────────────────────────
+ * 방문자 카운터 (Firebase Realtime Database) — index.html에서 그대로 이식
+ * 폼 로직과 독립적인 별도 IIFE. 실패해도 폴백 '--' 유지.
+ * ────────────────────────────────────────────────────────── */
+(function(){
+  'use strict';
+  if(typeof firebase==='undefined'||!firebase.database){
+    console.warn('[visitor] Firebase SDK not available, skipping visitor counter');
+    return;
+  }
+  var firebaseConfig={
+    apiKey:"AIzaSyA0rKMvdc-9tRbycgpkczyopQvqRQRV2v0",
+    authDomain:"btctiming-af87d.firebaseapp.com",
+    databaseURL:"https://btctiming-af87d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId:"btctiming-af87d",
+    storageBucket:"btctiming-af87d.firebasestorage.app",
+    messagingSenderId:"9515727678",
+    appId:"1:9515727678:web:7d6a7ad30d881c1f37ca6f",
+    measurementId:"G-QNR0LP5QH1"
+  };
+  function setNum(id,v){
+    var el=document.getElementById(id);
+    if(!el)return;
+    if(v==null||isNaN(v)){el.textContent='--';return;}
+    el.textContent=Number(v).toLocaleString('ko-KR');
+  }
+  function kstDateKey(){return new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);}
+  try{
+    if(!firebase.apps||!firebase.apps.length){firebase.initializeApp(firebaseConfig);}
+    var db=firebase.database();
+    var today=kstDateKey();
+    var myPresenceRef=db.ref('presence').push();
+    var presenceListRef=db.ref('presence');
+    db.ref('.info/connected').on('value',function(snap){
+      if(snap.val()!==true)return;
+      myPresenceRef.onDisconnect().remove();
+      myPresenceRef.set(true);
+    });
+    presenceListRef.on('value',function(snap){setNum('vcNow',snap.numChildren());},function(err){console.warn('[visitor] presence read failed:',err&&err.message);});
+    db.ref('counters/total').on('value',function(snap){setNum('vcTotal',snap.val());},function(err){console.warn('[visitor] total read failed:',err&&err.message);});
+    db.ref('counters/daily/'+today).on('value',function(snap){setNum('vcToday',snap.val());},function(err){console.warn('[visitor] daily read failed:',err&&err.message);});
+    try{
+      if(!sessionStorage.getItem('btc_counted')){
+        sessionStorage.setItem('btc_counted','1');
+        db.ref('counters/total').transaction(function(v){return (v||0)+1;});
+        db.ref('counters/daily/'+today).transaction(function(v){return (v||0)+1;});
+        console.log('[visitor] new session counted for '+today);
+      }
+    }catch(e){console.warn('[visitor] sessionStorage unavailable, count skipped:',e&&e.message);}
+  }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
+})();
 </script>
 </body>
 </html>
