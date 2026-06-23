@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-23T19:04:50Z",
+  "updatedAt": "2026-06-23T19:24:57Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2061.39",
-        "signalLine": "-2450.23",
-        "histogram": "388.84",
+        "macdLine": "-2062.43",
+        "signalLine": "-2450.44",
+        "histogram": "388.01",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "33.51",
+        "iv": "32.19",
         "rv": "43.00",
-        "spread": "-9.49",
+        "spread": "-10.81",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2740,12 +2740,12 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "260582601710.43140",
+      "totalMarketCapUsd": "260365542366.23384",
       "marketCap30dAgoUsd": "265885433400.7846",
-      "growth30dPercent": "-1.99",
-      "signal": "STABLE",
-      "signalLabel": "중립",
-      "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
+      "growth30dPercent": "-2.08",
+      "signal": "CONTRACTING",
+      "signalLabel": "공급 축소",
+      "signalDescription": "자금 이탈/상환 — 약세 압력",
       "errorMessage": null
     },
     "api_dashboard_net_liquidity": {
@@ -2811,63 +2811,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62300.00",
-      "openInterestUsd": "6162928669.37220000",
-      "longAccountRatio": "0.6769",
-      "shortAccountRatio": "0.3231",
-      "downsideLiquidationUsd": "4171686416.30",
-      "upsideLiquidationUsd": "1991242253.07",
+      "currentPrice": "62294.80",
+      "openInterestUsd": "6166101109.00241200",
+      "longAccountRatio": "0.6776",
+      "shortAccountRatio": "0.3224",
+      "downsideLiquidationUsd": "4178150111.46",
+      "upsideLiquidationUsd": "1987950997.54",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56070.00",
+          "price": "56065.32",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1668674566.52"
+          "notionalUsd": "1671260044.58"
         },
         {
-          "price": "68530.00",
+          "price": "68524.28",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "796496901.23"
+          "notionalUsd": "795180399.02"
         },
         {
-          "price": "59808.00",
+          "price": "59803.01",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1460090245.70"
+          "notionalUsd": "1462352539.01"
         },
         {
-          "price": "64792.00",
+          "price": "64786.59",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "696934788.58"
+          "notionalUsd": "695782849.14"
         },
         {
-          "price": "61054.00",
+          "price": "61048.90",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "834337283.26"
+          "notionalUsd": "835630022.29"
         },
         {
-          "price": "63546.00",
+          "price": "63540.70",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "398248450.61"
+          "notionalUsd": "397590199.51"
         },
         {
-          "price": "61677.00",
+          "price": "61671.85",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208584320.81"
+          "notionalUsd": "208907505.57"
         },
         {
-          "price": "62923.00",
+          "price": "62917.75",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "99562112.65"
+          "notionalUsd": "99397549.88"
         }
       ],
       "errorMessage": null
@@ -4254,8 +4254,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-23T18:24:40.621686Z",
-      "compositeScore": "-0.094",
+      "generatedAt": "2026-06-23T19:24:57.255483Z",
+      "compositeScore": "-0.063",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4267,7 +4267,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/meta-is-developing-a-prediction-market-app-called-arena-as-sector-booms-nyt",
           "publishedAt": "2026-06-23T17:54:32Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "BNY sees 'FOMO' driving asset managers into tokenized funds",
@@ -4319,11 +4319,18 @@
           "score": "-0.7"
         },
         {
+          "title": "Multi-year Bitcoin holder selling falls to 19-month low as halving model flags new market bottom date",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/og-bitcoin-selling-hits-19-month-low-as-halving-model-flags-new-bottom-date-analyst?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T19:09:26Z",
+          "score": "0.3"
+        },
+        {
           "title": "Zcash miner Fortitude gets Nasdaq listing via HeartSciences merger",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/zcash-miner-fortitude-go-public-heartsciences-merger?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T18:05:01Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "CFTC chair says perp trading not suitable for all assets it regulates",
@@ -4351,7 +4358,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-teases-62k-breakdown-as-analysis-sees-micron-earnings-volatility-next?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T15:15:41Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin slump worsens amid SpaceX rout: Can BTC price hold $60K any longer?",
@@ -4365,14 +4372,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/learn/tokenized-spacex-shares-xstocks-refunds?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T14:30:00Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T13:07:43Z",
-          "score": "0.0"
+          "score": "-0.2"
         }
       ],
       "errorMessage": null
