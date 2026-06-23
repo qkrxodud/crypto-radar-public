@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-23T14:03:43Z",
+  "updatedAt": "2026-06-23T14:23:47Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "63433.97",
       "macd": {
-        "macdLine": "-2043.85",
-        "signalLine": "-2446.72",
-        "histogram": "402.87",
+        "macdLine": "-2035.54",
+        "signalLine": "-2445.06",
+        "histogram": "409.52",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000282",
       "ivRv": {
-        "iv": "43.55",
+        "iv": "42.48",
         "rv": "43.00",
-        "spread": "+0.55",
+        "spread": "-0.52",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2740,9 +2740,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "260542096629.95573",
+      "totalMarketCapUsd": "260520736460.20212",
       "marketCap30dAgoUsd": "265885433400.7846",
-      "growth30dPercent": "-2.01",
+      "growth30dPercent": "-2.02",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -2811,63 +2811,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62414.80",
-      "openInterestUsd": "6119279942.06040000",
-      "longAccountRatio": "0.6777",
-      "shortAccountRatio": "0.3223",
-      "downsideLiquidationUsd": "4147036016.73",
-      "upsideLiquidationUsd": "1972243925.33",
+      "currentPrice": "62620.10",
+      "openInterestUsd": "6163402421.44152900",
+      "longAccountRatio": "0.6793",
+      "shortAccountRatio": "0.3207",
+      "downsideLiquidationUsd": "4186799264.89",
+      "upsideLiquidationUsd": "1976603156.56",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56173.32",
+          "price": "56358.09",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1658814406.69"
+          "notionalUsd": "1674719705.95"
         },
         {
-          "price": "68656.28",
+          "price": "68882.11",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "788897570.13"
+          "notionalUsd": "790641262.62"
         },
         {
-          "price": "59918.21",
+          "price": "60115.30",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1451462605.86"
+          "notionalUsd": "1465379742.71"
         },
         {
-          "price": "64911.39",
+          "price": "65124.90",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "690285373.86"
+          "notionalUsd": "691811104.79"
         },
         {
-          "price": "61166.50",
+          "price": "61367.70",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "829407203.35"
+          "notionalUsd": "837359852.98"
         },
         {
-          "price": "63663.10",
+          "price": "63872.50",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "394448785.07"
+          "notionalUsd": "395320631.31"
         },
         {
-          "price": "61790.65",
+          "price": "61993.90",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "207351800.84"
+          "notionalUsd": "209339963.24"
         },
         {
-          "price": "63038.95",
+          "price": "63246.30",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "98612196.27"
+          "notionalUsd": "98830157.83"
         }
       ],
       "errorMessage": null
@@ -4254,14 +4254,28 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-23T13:05:01.961076Z",
-      "compositeScore": "0.094",
+      "generatedAt": "2026-06-23T14:05:03.720444Z",
+      "compositeScore": "-0.019",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Ethereum Foundation cuts 20% of staff amid leadership exodus",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/06/23/ethereum-foundation-cuts-20-of-staff-amid-leadership-exodus",
+          "publishedAt": "2026-06-23T13:45:22Z",
+          "score": "-0.7"
+        },
+        {
+          "title": "Bitcoin may need to plunge 15% or more to mark bottom, according to this long-time indicator",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/23/bitcoin-may-need-to-plunge-15-or-more-to-mark-bottom-according-to-this-long-time-indicator",
+          "publishedAt": "2026-06-23T13:08:31Z",
+          "score": "-0.5"
+        },
         {
           "title": "Former Robinhood Crypto COO Tanya Denisova joins stablecoin issuer Agora as head of operations",
           "source": "CoinDesk",
@@ -4274,49 +4288,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/news-analysis/2026/06/22/in-clarity-act-s-final-weeks-its-path-through-u-s-senate-not-getting-much-clearer",
           "publishedAt": "2026-06-23T13:00:00Z",
-          "score": "-0.4"
+          "score": "0.0"
         },
         {
-          "title": "The digital euro takes a massive step forward after winning a crucial European Parliament vote",
+          "title": "The ECB digital euro takes step forward after winning key European Parliament vote",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/23/european-parliament-clears-last-step-for-a-digital-euro-to-break-u-s-payment-grip",
           "publishedAt": "2026-06-23T12:37:20Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Franklin Templeton closes 250 Digital acquisition deal and sets up new Franklin Crypto division",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/23/franklin-templeton-closes-250-digital-acquisition-deal-and-sets-up-new-franklin-crypto-division",
           "publishedAt": "2026-06-23T12:35:57Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Strategy's STRC slump prompts Terra comparisons that don't hold up, says analyst",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/23/strategy-s-strc-slid-below-par-reviving-terra-comparisons-that-don-t-hold-up",
           "publishedAt": "2026-06-23T12:14:07Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Bitcoin volatility looks cheap as $10 billion options settlement nears",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/06/23/bitcoin-volatility-looks-cheap-as-usd10-billion-options-settlement-nears",
           "publishedAt": "2026-06-23T11:16:11Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
-          "title": "Crypto market drops as Nasdaq tech selloff spills into digital assets",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/23/crypto-market-drops-as-nasdaq-tech-selloff-spills-into-digital-assets",
-          "publishedAt": "2026-06-23T10:45:50Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Ripple targets EU, wins preliminary MiCA approval from Luxembourg financial regulator",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/23/ripple-targets-eu-wins-preliminary-mica-approval-from-luxembourg-financial-regulator",
-          "publishedAt": "2026-06-23T10:17:19Z",
-          "score": "0.6"
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-23T13:07:43Z",
+          "score": "0.0"
         },
         {
           "title": "Kalshi adds India to growing list of restricted jurisdictions",
@@ -4337,7 +4344,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/former-bis-chief-softens-stance-stablecoins-coexistence-fiat?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T12:06:35Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Binance’s Yi He warns of alleged impersonation scam, CoinUp denies ties",
@@ -4358,21 +4365,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/thorchain-resumes-trading-month-10m-exploit?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T10:00:24Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Ripple gains preliminary MiCA license ahead of July 1 EU deadline",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ripple-preliminary-casp-mica-license-july-1-deadline?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-23T08:47:59Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-23T06:00:00Z",
-          "score": "0.0"
+          "score": "0.4"
         }
       ],
       "errorMessage": null
