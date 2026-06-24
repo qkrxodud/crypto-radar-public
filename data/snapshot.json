@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-24T16:48:26Z",
+  "updatedAt": "2026-06-24T17:08:32Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "62746.78",
       "macd": {
-        "macdLine": "-2205.28",
-        "signalLine": "-2404.97",
-        "histogram": "199.69",
+        "macdLine": "-2225.65",
+        "signalLine": "-2409.05",
+        "histogram": "183.40",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "46.9",
-        "plusDi": "14.9",
-        "minusDi": "32.2",
+        "adx": "47.0",
+        "plusDi": "14.8",
+        "minusDi": "33.1",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -424,9 +424,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000304",
       "ivRv": {
-        "iv": "44.52",
+        "iv": "44.60",
         "rv": "43.00",
-        "spread": "+1.52",
+        "spread": "+1.60",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2818,63 +2818,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "59986.90",
-      "openInterestUsd": "6175466696.69380000",
-      "longAccountRatio": "0.7122",
-      "shortAccountRatio": "0.2878",
-      "downsideLiquidationUsd": "4398167381.39",
-      "upsideLiquidationUsd": "1777299315.31",
+      "currentPrice": "59767.90",
+      "openInterestUsd": "6256418788.51150000",
+      "longAccountRatio": "0.7165",
+      "shortAccountRatio": "0.2835",
+      "downsideLiquidationUsd": "4482724061.97",
+      "upsideLiquidationUsd": "1773694726.54",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "53988.21",
+          "price": "53791.11",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1759266952.55"
+          "notionalUsd": "1793089624.79"
         },
         {
-          "price": "65985.59",
+          "price": "65744.69",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "710919726.12"
+          "notionalUsd": "709477890.62"
         },
         {
-          "price": "57587.42",
+          "price": "57377.18",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1539358583.48"
+          "notionalUsd": "1568953421.69"
         },
         {
-          "price": "62386.38",
+          "price": "62158.62",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "622054760.36"
+          "notionalUsd": "620793154.29"
         },
         {
-          "price": "58787.16",
+          "price": "58572.54",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "879633476.28"
+          "notionalUsd": "896544812.39"
         },
         {
-          "price": "61186.64",
+          "price": "60963.26",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "355459863.06"
+          "notionalUsd": "354738945.31"
         },
         {
-          "price": "59387.03",
+          "price": "59170.22",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "219908369.07"
+          "notionalUsd": "224136203.10"
         },
         {
-          "price": "60586.77",
+          "price": "60365.58",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "88864965.77"
+          "notionalUsd": "88684736.33"
         }
       ],
       "errorMessage": null
@@ -4237,7 +4237,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-24T16:30:03.606643Z",
+      "generatedAt": "2026-06-24T17:00:03.352249Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4246,34 +4246,34 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적이며, 공포와 탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
+          "content": "현재 시장은 중립적인 상태로, 공포가 지배하고 있으며 가격 상승 여력이 제한적이다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(17)로 인해 투자 심리가 부정적이다."
+          "content": "낮은 RSI와 높은 BTC 도미넌스는 추가 하락 가능성을 시사한다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 알트코인에 대한 관심이 낮다."
+          "content": "MVRV-Z가 0.34로 낮아, 매도 압력이 클 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 불확실성을 고려하여 신중한 접근이 필요하다."
+          "content": "단기 매매보다는 관망하며 시장 추세를 지켜보는 것이 좋다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산시키는 것이 좋다."
+          "content": "리스크 관리 차원에서 포트폴리오 다각화를 고려하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-24T16:05:03.559436Z",
-      "compositeScore": "-0.219",
-      "label": "NEGATIVE",
-      "labelDisplay": "부정",
-      "labelHexColor": "#F97316",
+      "generatedAt": "2026-06-24T17:08:32.290184Z",
+      "compositeScore": "-0.181",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
@@ -4303,7 +4303,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/24/trump-refuses-to-sign-law-with-u-s-cbdc-ban-demands-approval-of-elections-bill",
           "publishedAt": "2026-06-24T15:42:51Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Ex-FCA policy insider explains the âgreat divideâ in the UKâs crypto ambition",
@@ -4331,7 +4331,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/24/gold-silver-and-bitcoin-tumble-as-debasement-trade-unwinds",
           "publishedAt": "2026-06-24T13:48:04Z",
-          "score": "-0.5"
+          "score": "-0.4"
+        },
+        {
+          "title": "Bitcoin crash to $60K opens new $530M demand zone: Will bulls buy in?",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-daily-close-points-to-the-next-demand-zone-as-530m-in-buy-bids-emerge?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-24T16:21:52Z",
+          "score": "0.5"
         },
         {
           "title": "Credit unions managing $25B in assets join stablecoin infrastructure program",
@@ -4345,14 +4352,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-eu-license-greece-mica-setback?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-24T15:47:05Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Trump cancels signing of housing bill with CBDC ban",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/donald-trump-cancels-signing-housing-bill-cbdc-ban?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-24T15:18:07Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "The Impossibility of Perfect Fairness in Transaction Ordering",
@@ -4366,14 +4373,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/learn/pump-fun-go-bounty-memecoin-risks?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-24T14:30:00Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "DeFi TVL drops 39% in 2026 amid market downturn and record hack activity",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/defi-tvl-falls-39-2026-erases-45b-value?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-24T14:14:39Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4381,13 +4388,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-24T13:54:31Z",
           "score": "0.0"
-        },
-        {
-          "title": "SecondFi traces Cardano wallet exploit to address-level issue",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/cardano-wallet-secondfi-flaw-16-million-ada-exploit?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-24T12:38:43Z",
-          "score": "0.1"
         }
       ],
       "errorMessage": null
