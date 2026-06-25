@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-25T17:53:01Z",
+  "updatedAt": "2026-06-25T18:13:07Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "61102.02",
       "macd": {
-        "macdLine": "-2300.61",
-        "signalLine": "-2383.08",
-        "histogram": "82.47",
+        "macdLine": "-2304.00",
+        "signalLine": "-2383.76",
+        "histogram": "79.76",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -424,9 +424,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000290",
       "ivRv": {
-        "iv": "43.60",
+        "iv": "43.06",
         "rv": "43.00",
-        "spread": "+0.60",
+        "spread": "+0.06",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2829,63 +2829,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "59498.90",
-      "openInterestUsd": "6295311298.35270000",
-      "longAccountRatio": "0.7052",
-      "shortAccountRatio": "0.2948",
-      "downsideLiquidationUsd": "4439453527.60",
-      "upsideLiquidationUsd": "1855857770.75",
+      "currentPrice": "59485.40",
+      "openInterestUsd": "6311397067.61450000",
+      "longAccountRatio": "0.7059",
+      "shortAccountRatio": "0.2941",
+      "downsideLiquidationUsd": "4455215190.03",
+      "upsideLiquidationUsd": "1856181877.59",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "53549.01",
+          "price": "53536.86",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1775781411.04"
+          "notionalUsd": "1782086076.01"
         },
         {
-          "price": "65448.79",
+          "price": "65433.94",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "742343108.30"
+          "notionalUsd": "742472751.03"
         },
         {
-          "price": "57118.94",
+          "price": "57105.98",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1553808734.66"
+          "notionalUsd": "1559325316.51"
         },
         {
-          "price": "61878.86",
+          "price": "61864.82",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "649550219.76"
+          "notionalUsd": "649663657.15"
         },
         {
-          "price": "58308.92",
+          "price": "58295.69",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "887890705.52"
+          "notionalUsd": "891043038.01"
         },
         {
-          "price": "60688.88",
+          "price": "60675.11",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "371171554.15"
+          "notionalUsd": "371236375.52"
         },
         {
-          "price": "58903.91",
+          "price": "58890.55",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "221972676.38"
+          "notionalUsd": "222760759.50"
         },
         {
-          "price": "60093.89",
+          "price": "60080.25",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "92792888.54"
+          "notionalUsd": "92809093.88"
         }
       ],
       "errorMessage": null
@@ -4288,8 +4288,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-25T17:12:51.374803Z",
-      "compositeScore": "-0.125",
+      "generatedAt": "2026-06-25T18:13:07.229950Z",
+      "compositeScore": "-0.088",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4297,25 +4297,39 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Strategy's yield-generating STRC stock is more correlated with BTC than ever",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/25/strategy-s-yield-generating-strc-stock-is-more-correlated-with-btc-than-ever",
+          "publishedAt": "2026-06-25T17:48:18Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Kraken in talks to buy 15% stake in DeFi lender Aave at $385 million valuation",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/25/kraken-in-talks-to-buy-15-stake-in-defi-lender-aave-at-usd385-million-valuation",
+          "publishedAt": "2026-06-25T17:14:19Z",
+          "score": "0.4"
+        },
+        {
           "title": "a16z-backed crypto firm rebrands, shifts focus to solving AIâs global copyright headache",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/25/a16z-backed-crypto-firm-rebrands-shifts-focus-to-solving-ai-s-global-copyright-headache",
           "publishedAt": "2026-06-25T17:06:10Z",
-          "score": "0.0"
+          "score": "0.2"
         },
         {
           "title": "BlackBerry is making a massive comeback as an 'uncrashable' software layer for AI and robotics",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/25/blackberry-is-making-a-massive-comeback-as-an-uncrashable-software-layer-for-ai-and-robotics",
           "publishedAt": "2026-06-25T16:05:06Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Strategy has a 10-month cash runway for dividends, but retail investors are losing faith",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/25/michael-saylor-s-broken-promises-have-shattered-strategy-investor-trust-says-tw-prime-ceo",
           "publishedAt": "2026-06-25T15:45:43Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Quant fund says bitcoin is near a major inflection point as rare onchain signals align",
@@ -4336,21 +4350,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/24/crypto-for-advisors-bitcoin-planning-for-inheritance",
           "publishedAt": "2026-06-25T15:00:00Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
-          "title": "Bitcoin likely to fall another 30% to $44,000 by year-end, prominent BTC miner says",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/25/bitcoin-can-fall-another-30-to-usd44-000-prominent-btc-miner-says",
-          "publishedAt": "2026-06-25T14:39:55Z",
-          "score": "-0.8"
+          "title": "Bitcoin drop to $58K brings out bears: Is BTC’s next stop below $50K?",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-under-60k-activates-multiple-setups-with-54k-btc-price-target?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-25T18:05:06Z",
+          "score": "-0.6"
         },
         {
-          "title": "Kraken sues crypto derivatives firm PowerTrade over 'misappropriated' funds claim",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/25/kraken-sues-crypto-derivatives-firm-powertrade-over-misappropriated-funds-claim",
-          "publishedAt": "2026-06-25T13:53:28Z",
-          "score": "-0.5"
+          "title": "XRP risks drop below $1, but onchain data highlights silver lining",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/xrp-may-lose-1-but-onchain-data-signals-improving-outlook-heres-why?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-25T17:11:33Z",
+          "score": "-0.4"
         },
         {
           "title": "21shares trims 2026 crypto forecasts despite institutional adoption gains",
@@ -4364,49 +4378,35 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kraken-maple-launch-onchain-warehouse-facility-for-crypto-backed-institutional-loans?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T16:41:47Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "South Korean authorities fine Bithumb $136K over sharing user information overseas",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/south-korea-investigation-bithumb-user-information?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T16:13:43Z",
-          "score": "-0.6"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin drops to $58K on high US PCE inflation as trader sees 'manipulation'",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-drops-to-58-on-pce-highs?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T15:34:45Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "Why Wall Street values some crypto firms for AI power, not just crypto",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/learn/galaxy-digital-ai-infrastructure-valuation?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T15:00:00Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Story Protocol rebrands to DATA Foundation in AI pivot",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/story-protocol-pivots-to-ai-with-rebrand-to-data-foundation?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T15:00:00Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-25T13:19:46Z",
-          "score": "0.0"
-        },
-        {
-          "title": "SBI to acquire Bitbank in $289M deal creating Japan's biggest crypto exchange",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/sbi-acquire-bitbank-289-million-deal?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-25T13:08:11Z",
-          "score": "0.6"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
