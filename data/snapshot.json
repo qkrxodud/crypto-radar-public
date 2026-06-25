@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-25T10:51:49Z",
+  "updatedAt": "2026-06-25T11:11:51Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "61102.02",
       "macd": {
-        "macdLine": "-2152.35",
-        "signalLine": "-2353.43",
-        "histogram": "201.08",
+        "macdLine": "-2172.03",
+        "signalLine": "-2357.37",
+        "histogram": "185.33",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -424,9 +424,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000290",
       "ivRv": {
-        "iv": "40.34",
+        "iv": "42.36",
         "rv": "43.00",
-        "spread": "-2.66",
+        "spread": "-0.64",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2829,63 +2829,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "61341.80",
-      "openInterestUsd": "6058578703.81987700",
-      "longAccountRatio": "0.6692",
-      "shortAccountRatio": "0.3308",
-      "downsideLiquidationUsd": "4054400868.60",
-      "upsideLiquidationUsd": "2004177835.22",
+      "currentPrice": "61100.00",
+      "openInterestUsd": "6049160836.74560000",
+      "longAccountRatio": "0.6677",
+      "shortAccountRatio": "0.3323",
+      "downsideLiquidationUsd": "4039024690.70",
+      "upsideLiquidationUsd": "2010136146.05",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "55207.62",
+          "price": "54990.00",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1621760347.44"
+          "notionalUsd": "1615609876.28"
         },
         {
-          "price": "67475.98",
+          "price": "67210.00",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "801671134.09"
+          "notionalUsd": "804054458.42"
         },
         {
-          "price": "58888.13",
+          "price": "58656.00",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1419040304.01"
+          "notionalUsd": "1413658641.74"
         },
         {
-          "price": "63795.47",
+          "price": "63544.00",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "701462242.33"
+          "notionalUsd": "703547651.12"
         },
         {
-          "price": "60114.96",
+          "price": "59878.00",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "810880173.72"
+          "notionalUsd": "807804938.14"
         },
         {
-          "price": "62568.64",
+          "price": "62322.00",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "400835567.04"
+          "notionalUsd": "402027229.21"
         },
         {
-          "price": "60728.38",
+          "price": "60489.00",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "202720043.43"
+          "notionalUsd": "201951234.53"
         },
         {
-          "price": "61955.22",
+          "price": "61711.00",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "100208891.76"
+          "notionalUsd": "100506807.30"
         }
       ],
       "errorMessage": null
@@ -4256,7 +4256,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-25T10:30:03.172720Z",
+      "generatedAt": "2026-06-25T11:00:04.357983Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4265,37 +4265,58 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 매우 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 매도 압력이 지속될 가능성이 있다."
+          "content": "낮은 공포탐욕 지수(12)로 인해 투자 심리가 약화되고 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높은 상황에서 알트코인 시장이 약세를 보일 수 있다."
+          "content": "RSI 수치가 30대 초반으로 과매도 구간에 진입하고 있다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려해 보수적인 접근을 유지해야 한다."
+          "content": "단기적인 반등을 기대하며 소액 매수 고려."
         },
         {
           "type": "ACTION",
-          "content": "추가 매수는 시장 반전 신호가 나타날 때까지 유보하는 것이 좋다."
+          "content": "시장 상황을 주의 깊게 모니터링하며 추가 매수 여부 결정."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-25T10:05:02.970955Z",
-      "compositeScore": "-0.031",
+      "generatedAt": "2026-06-25T11:05:03.438171Z",
+      "compositeScore": "-0.131",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "CoinEx denies claims it served as $3.84 billion gateway to sanctioned Iranian crypto firms",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/06/25/coinex-denies-claims-it-served-as-usd3-84-billion-gateway-to-sanctioned-iranian-crypto-firms",
+          "publishedAt": "2026-06-25T10:56:58Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Crypto relief rally fails to shake persistent bearish derivatives signal",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/25/crypto-relief-rally-fails-to-shake-persistent-bearish-derivatives-signal",
+          "publishedAt": "2026-06-25T10:53:24Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "Bitcoin supply in loss reaches record high 10.83 million BTC",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/25/bitcoin-supply-in-loss-reaches-record-high-10-83-million-btc",
+          "publishedAt": "2026-06-25T10:28:37Z",
+          "score": "-0.3"
+        },
         {
           "title": "Micron delivers blowout earnings, surges 16% and deals crypto bulls a blow",
           "source": "CoinDesk",
@@ -4308,14 +4329,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/25/forget-max-pain-bitcoin-is-well-below-the-usd72-000-magnet-ahead-of-usd10-billion-options-expiry",
           "publishedAt": "2026-06-25T07:24:59Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
-          "title": "Live markets: Bitcoin, ether lead $1 billion liquidation losses as AI trade keeps going",
+          "title": "Live markets: Bitcoin steadies ahead of U.S. PCE inflation data as DXY remains strong",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/06/25/live-markets-bitcoin-ether-lead-usd1-billion-liquidation-losses-as-ai-trade-keeps-going",
           "publishedAt": "2026-06-25T06:01:07Z",
-          "score": "-0.5"
+          "score": "0.1"
         },
         {
           "title": "MemeCore's M token suddenly crashes 80% with no clear trigger",
@@ -4332,60 +4353,39 @@
           "score": "0.5"
         },
         {
-          "title": "Bitcoin has a new line in the sand. Thursdayâs core PCE could stress test it.",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/25/bitcoin-has-a-new-line-in-the-sand-thursday-s-core-pce-could-stress-test-it",
-          "publishedAt": "2026-06-25T04:53:31Z",
-          "score": "0.0"
-        },
-        {
-          "title": "XRP slides 2.8% as weak bounce keeps $1 support in focus",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/25/xrp-slides-2-8-as-weak-bounce-keeps-usd1-support-in-focus",
-          "publishedAt": "2026-06-25T04:32:00Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Bitcoin back above $60,000, ETH, SOL recoup losses as AI stocks stage rebound",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/25/bitcoin-back-above-usd60-000-eth-sol-recoup-losses-as-ai-stocks-stage-rebound",
-          "publishedAt": "2026-06-25T04:29:03Z",
-          "score": "0.6"
-        },
-        {
           "title": "Iran-linked entities moved $3.8B through CoinEx, TRM says",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/iran-entities-moved-38-billion-coinex?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T09:44:14Z",
-          "score": "-0.3"
+          "score": "-0.6"
         },
         {
           "title": "Indonesia sets certification rules for influencers recommending crypto",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/indonesia-certification-rules-influencers-recommending-crypto?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T08:44:15Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "Polish crypto exchange Kanga secures MiCA license in Latvia",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/poland-kanga-secures-mica-license-latvia?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T08:24:41Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "US arbitration giant rolls out ‘legal layer’ for agentic commerce",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ai-is-getting-a-legal-layer-as-agentic-commerce-accelerates?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T06:26:29Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "House Democrats seek SEC answers on AI investment advisers",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/dems-want-secs-answers-on-ai-investment-advisors?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T05:47:21Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4399,14 +4399,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/abracadabra-takes-emergency-measures-as-magic-internet-money-depeg-worsens?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T03:22:05Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Kalshi seeks funding at $40B valuation, nearly doubling last raise: FT",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kalshi-seeks-funding-at-40b-valuation-nearly-doubling-last-raise-ft?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T02:23:39Z",
-          "score": "0.3"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
