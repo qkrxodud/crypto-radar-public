@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-26T18:57:28Z",
+  "updatedAt": "2026-06-26T19:17:35Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "59826.01",
       "macd": {
-        "macdLine": "-2389.10",
-        "signalLine": "-2392.50",
-        "histogram": "3.41",
+        "macdLine": "-2358.64",
+        "signalLine": "-2386.41",
+        "histogram": "27.77",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000342",
       "ivRv": {
-        "iv": "42.18",
+        "iv": "34.16",
         "rv": "43.00",
-        "spread": "-0.83",
-        "label": "균형"
+        "spread": "-8.84",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 13,
@@ -2844,63 +2844,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "59600.40",
-      "openInterestUsd": "6229766999.18260000",
-      "longAccountRatio": "0.6694",
-      "shortAccountRatio": "0.3306",
-      "downsideLiquidationUsd": "4170206029.25",
-      "upsideLiquidationUsd": "2059560969.93",
+      "currentPrice": "59979.90",
+      "openInterestUsd": "6256723119.21611400",
+      "longAccountRatio": "0.6747",
+      "shortAccountRatio": "0.3253",
+      "downsideLiquidationUsd": "4221411088.54",
+      "upsideLiquidationUsd": "2035312030.68",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "53640.36",
+          "price": "53981.91",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1668082411.70"
+          "notionalUsd": "1688564435.41"
         },
         {
-          "price": "65560.44",
+          "price": "65977.89",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "823824387.97"
+          "notionalUsd": "814124812.27"
         },
         {
-          "price": "57216.38",
+          "price": "57580.70",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1459572110.24"
+          "notionalUsd": "1477493880.99"
         },
         {
-          "price": "61984.42",
+          "price": "62379.10",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "720846339.48"
+          "notionalUsd": "712359210.74"
         },
         {
-          "price": "58408.39",
+          "price": "58780.30",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "834041205.85"
+          "notionalUsd": "844282217.71"
         },
         {
-          "price": "60792.41",
+          "price": "61179.50",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "411912193.99"
+          "notionalUsd": "407062406.14"
         },
         {
-          "price": "59004.40",
+          "price": "59380.10",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208510301.46"
+          "notionalUsd": "211070554.43"
         },
         {
-          "price": "60196.40",
+          "price": "60579.70",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "102978048.50"
+          "notionalUsd": "101765601.53"
         }
       ],
       "errorMessage": null
@@ -4311,14 +4311,28 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-26T18:17:18.293018Z",
-      "compositeScore": "-0.056",
+      "generatedAt": "2026-06-26T19:17:35.023744Z",
+      "compositeScore": "-0.025",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Former Ethereum Foundation leader warns of funding gap as governance shifts",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/26/former-ethereum-foundation-leader-warns-of-funding-gap-as-governance-shifts",
+          "publishedAt": "2026-06-26T18:37:50Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Anti-trafficking group says Clarity Act's Section 604 could weaken accountability",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/06/26/anti-trafficking-group-warns-clarity-act-s-section-604-could-weaken-accountability",
+          "publishedAt": "2026-06-26T18:24:24Z",
+          "score": "-0.4"
+        },
         {
           "title": "Virtuals' Jansen Teng says AI agents are evolving into autonomous economic actors",
           "source": "CoinDesk",
@@ -4331,14 +4345,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/26/securitize-expects-to-raise-usd400-million-as-tokenization-firm-nears-public-debut",
           "publishedAt": "2026-06-26T15:04:44Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "CoinDesk 20 performance update: AAVE jumps 8.9%, leading index higher",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/26/coindesk-20-performance-update-aave-jumps-8-9-leading-index-higher",
           "publishedAt": "2026-06-26T13:22:16Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Wall Street's IPO revival hasn't reached dot-com euphoria levels, Goldman Sachs says",
@@ -4359,21 +4373,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
           "publishedAt": "2026-06-26T11:03:20Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "All eyes on Strategy's June 30 ex-dividend date and monthly STRC dividend rate reset",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/26/all-eyes-on-strategy-s-june-30-ex-dividend-date-and-monthly-strc-dividend-rate-reset",
-          "publishedAt": "2026-06-26T10:28:24Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Binance tells EU users it will no longer provide services after failing to secure MiCA license",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/26/binance-tells-eu-users-it-will-no-longer-provide-services-after-failing-to-secure-mica-license",
-          "publishedAt": "2026-06-26T10:19:22Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
           "title": "SEC, CFTC seek input on unified portfolio margin rules across securities and derivatives",
@@ -4387,7 +4387,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/ethereum-whale-who-shorted-october-2025-crash-returns-with-a-197m-short-eth-bet?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T17:02:33Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Crypto Biz: The cost of stacking sats",
@@ -4401,7 +4401,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-senators-cftc-assault-state-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T16:10:37Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin makes first sub-$60K close since Q3 2024 as tech stocks enter ‘deep bear market’",
@@ -4422,14 +4422,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/framework-ventures-raise-400-million-push-beyond-crypto-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T13:58:28Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Hyperliquid added to Singapore's Investor Alert List",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hyperliquid-singapore-mas-investor-alert-list?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T13:11:29Z",
-          "score": "-0.5"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
