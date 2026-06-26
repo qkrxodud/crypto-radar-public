@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-26T00:54:28Z",
+  "updatedAt": "2026-06-26T01:14:31Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "59826.01",
       "macd": {
-        "macdLine": "-2380.50",
-        "signalLine": "-2390.78",
-        "histogram": "10.29",
+        "macdLine": "-2392.26",
+        "signalLine": "-2393.14",
+        "histogram": "0.88",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "45.7",
-        "plusDi": "12.9",
-        "minusDi": "32.8",
+        "plusDi": "12.8",
+        "minusDi": "32.5",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000342",
       "ivRv": {
-        "iv": "44.69",
+        "iv": "40.59",
         "rv": "43.00",
-        "spread": "+1.69",
+        "spread": "-2.41",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2844,63 +2844,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "59702.80",
-      "openInterestUsd": "6314482704.54400000",
-      "longAccountRatio": "0.7008",
-      "shortAccountRatio": "0.2992",
-      "downsideLiquidationUsd": "4425189479.34",
-      "upsideLiquidationUsd": "1889293225.20",
+      "currentPrice": "59569.60",
+      "openInterestUsd": "6290942242.97880000",
+      "longAccountRatio": "0.6976",
+      "shortAccountRatio": "0.3024",
+      "downsideLiquidationUsd": "4388561308.70",
+      "upsideLiquidationUsd": "1902380934.28",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "53732.52",
+          "price": "53612.64",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1770075791.74"
+          "notionalUsd": "1755424523.48"
         },
         {
-          "price": "65673.08",
+          "price": "65526.56",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "755717290.08"
+          "notionalUsd": "760952373.71"
         },
         {
-          "price": "57314.69",
+          "price": "57186.82",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1548816317.77"
+          "notionalUsd": "1535996458.05"
         },
         {
-          "price": "62090.91",
+          "price": "61952.38",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "661252628.82"
+          "notionalUsd": "665833327.00"
         },
         {
-          "price": "58508.74",
+          "price": "58378.21",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "885037895.87"
+          "notionalUsd": "877712261.74"
         },
         {
-          "price": "60896.86",
+          "price": "60760.99",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "377858645.04"
+          "notionalUsd": "380476186.86"
         },
         {
-          "price": "59105.77",
+          "price": "58973.90",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "221259473.97"
+          "notionalUsd": "219428065.44"
         },
         {
-          "price": "60299.83",
+          "price": "60165.30",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "94464661.26"
+          "notionalUsd": "95119046.71"
         }
       ],
       "errorMessage": null
@@ -4279,7 +4279,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-26T00:30:03.853211Z",
+      "generatedAt": "2026-06-26T01:00:03.857852Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4288,31 +4288,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수는 낮고 온체인 지표는 약세를 보이고 있다."
+          "content": "현재 시장은 중립적이며, 공포와 탐욕 지수는 극단적인 공포를 나타냄."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(13)로 인해 투자 심리가 위축될 수 있다."
+          "content": "극단적인 공포 지수(13)로 인해 추가 하락 가능성이 존재."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 알트코인에 대한 투자 매력이 감소할 수 있다."
+          "content": "낮은 RSI 수치(일 30.70, 주 31.95)로 매도 압력이 지속될 수 있음."
         },
         {
           "type": "ACTION",
-          "content": "단기적으로 매수 관망을 추천하며, 시장 반전 신호를 주의 깊게 살펴보라."
+          "content": "단기 매매를 고려하며, 시장 반등을 기다리는 전략이 필요."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산할 것을 권장."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-26T00:05:19.067709Z",
-      "compositeScore": "-0.038",
+      "generatedAt": "2026-06-26T01:05:03.064145Z",
+      "compositeScore": "-0.069",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4376,6 +4376,13 @@
           "score": "0.6"
         },
         {
+          "title": "BitGo cuts 15% of staff to sharpen focus on AI, stablecoins",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-infrastructure-firm-bitgo-lays-off-15-of-staff?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "publishedAt": "2026-06-26T00:41:02Z",
+          "score": "-0.3"
+        },
+        {
           "title": "Does Botanix’s failure prove Bitcoiners don’t care about DeFi?",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/features/does-botanixs-failure-prove-bitcoiners-dont-care-about-defi?utm_source=rss&utm_medium=rss&utm_campaign=rss",
@@ -4387,7 +4394,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-bounces-off-new-2026-price-lows-will-us-stock-weakness-push-btc-lower?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T21:02:50Z",
-          "score": "-0.3"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin options traders hedge downside as uncertainty lingers, Anchorage says",
@@ -4401,7 +4408,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/key-bitcoin-price-levels-after-btc-power-law-says-58k-is-normal?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T19:51:35Z",
-          "score": "-0.2"
+          "score": "0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4422,14 +4429,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-under-60k-activates-multiple-setups-with-54k-btc-price-target?utm_source=rss&utm_medium=rss&utm_campaign=rss",
           "publishedAt": "2026-06-25T18:05:06Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "XRP risks drop below $1, but onchain data highlights silver lining",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/xrp-may-lose-1-but-onchain-data-signals-improving-outlook-heres-why?utm_source=rss&utm_medium=rss&utm_campaign=rss",
-          "publishedAt": "2026-06-25T17:11:33Z",
-          "score": "0.2"
+          "score": "-0.7"
         }
       ],
       "errorMessage": null
