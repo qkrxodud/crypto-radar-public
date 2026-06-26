@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-26T14:56:33Z",
+  "updatedAt": "2026-06-26T15:16:35Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,11 +60,11 @@
       "historicalVolatility": "0.43",
       "btcClose": "59826.01",
       "macd": {
-        "macdLine": "-2402.83",
-        "signalLine": "-2395.25",
-        "histogram": "-7.58",
-        "crossType": "DEAD",
-        "crossLabel": "데드크로스",
+        "macdLine": "-2367.57",
+        "signalLine": "-2388.20",
+        "histogram": "20.63",
+        "crossType": "NONE",
+        "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000342",
       "ivRv": {
-        "iv": "49.28",
+        "iv": "41.08",
         "rv": "43.00",
-        "spread": "+6.28",
-        "label": "과대"
+        "spread": "-1.92",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 13,
@@ -454,8 +454,8 @@
         "phaseLabel": "과열 구간 (Q3)",
         "phaseBadgeClass": "bg-warning text-dark",
         "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
-        "formattedElapsed": "797일 경과",
-        "formattedRemaining": "661일 남음",
+        "formattedElapsed": "798일 경과",
+        "formattedRemaining": "660일 남음",
         "cycleNumber": 4,
         "lastHalvingDate": "2024-04-20",
         "nextHalvingDate": "2028-04-17",
@@ -2844,63 +2844,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "59392.60",
-      "openInterestUsd": "6194177532.33622500",
-      "longAccountRatio": "0.6820",
-      "shortAccountRatio": "0.3180",
-      "downsideLiquidationUsd": "4224429077.05",
-      "upsideLiquidationUsd": "1969748455.28",
+      "currentPrice": "59867.80",
+      "openInterestUsd": "6235112977.50058650",
+      "longAccountRatio": "0.6833",
+      "shortAccountRatio": "0.3167",
+      "downsideLiquidationUsd": "4260452697.53",
+      "upsideLiquidationUsd": "1974660279.97",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "53453.34",
+          "price": "53881.02",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1689771630.82"
+          "notionalUsd": "1704181079.01"
         },
         {
-          "price": "65331.86",
+          "price": "65854.58",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "787899382.11"
+          "notionalUsd": "789864111.99"
         },
         {
-          "price": "57016.90",
+          "price": "57473.09",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1478550176.97"
+          "notionalUsd": "1491158444.13"
         },
         {
-          "price": "61768.30",
+          "price": "62262.51",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "689411959.35"
+          "notionalUsd": "691131097.99"
         },
         {
-          "price": "58204.75",
+          "price": "58670.44",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "844885815.41"
+          "notionalUsd": "852090539.51"
         },
         {
-          "price": "60580.45",
+          "price": "61065.16",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "393949691.06"
+          "notionalUsd": "394932055.99"
         },
         {
-          "price": "58798.67",
+          "price": "59269.12",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "211221453.85"
+          "notionalUsd": "213022634.88"
         },
         {
-          "price": "59986.53",
+          "price": "60466.48",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "98487422.76"
+          "notionalUsd": "98733014.00"
         }
       ],
       "errorMessage": null
@@ -4279,7 +4279,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-26T14:30:03.365419Z",
+      "generatedAt": "2026-06-26T15:00:03.696593Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4288,31 +4288,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지표가 극단적 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 13으로 극단적인 공포를 나타내고 있다."
+          "content": "극단적 공포 지표로 인해 매도 압력이 클 수 있다."
         },
         {
           "type": "RISK",
-          "content": "RSI가 30 이하로 과매도 구간에 진입하고 있다."
+          "content": "거래소 순유입이 증가하여 매도 신호로 해석될 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 반등을 노리기 위해 저가 매수 전략을 고려하라."
+          "content": "단기 매매보다는 장기 투자 전략을 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리 회복을 기다리며 포트폴리오를 점검하라."
+          "content": "시장의 변동성을 주의 깊게 관찰하며 추가 매수 기회를 탐색하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-26T14:05:02.391978Z",
-      "compositeScore": "-0.194",
+      "generatedAt": "2026-06-26T15:05:02.734992Z",
+      "compositeScore": "-0.188",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4320,11 +4320,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Securitize aims to raise $400 million as tokenization firm nears public debut",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/26/securitize-aims-to-raise-usd400-million-as-tokenization-firm-nears-public-debut",
+          "publishedAt": "2026-06-26T15:04:44Z",
+          "score": "0.2"
+        },
+        {
           "title": "CoinDesk 20 performance update: AAVE jumps 8.9%, leading index higher",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/06/26/coindesk-20-performance-update-aave-jumps-8-9-leading-index-higher",
           "publishedAt": "2026-06-26T13:22:16Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "Wall Street's IPO revival hasn't reached dot-com euphoria levels, Goldman Sachs says",
@@ -4338,14 +4345,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/06/26/with-crypto-ending-the-first-half-in-the-red-bitcoin-s-solace-is-it-beat-strategy",
           "publishedAt": "2026-06-26T11:36:01Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "Bitcoin bounces from $58,000 as derivatives signal more pain in the pipeline",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
           "publishedAt": "2026-06-26T11:03:20Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "All eyes on Strategy's June 30 ex-dividend date and monthly STRC dividend rate reset",
@@ -4366,14 +4373,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/26/ethereum-treasury-firm-sharplink-takes-in-ether-for-the-first-time-in-eight-months",
           "publishedAt": "2026-06-26T09:47:07Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
-          "title": "Japanese financial services giant SBI Holdings to buy Bitbank for $289 million",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/26/japanese-financial-services-giant-sbi-holdings-to-buy-bitbank-for-usd289-million",
-          "publishedAt": "2026-06-26T08:31:57Z",
-          "score": "0.4"
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-26T14:06:06Z",
+          "score": "0.0"
         },
         {
           "title": "Framework Ventures raises $400M to invest beyond crypto: Report",
@@ -4387,7 +4394,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hyperliquid-singapore-mas-investor-alert-list?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T13:11:29Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Australian regulator extends no-action period for crypto licensing",
@@ -4416,13 +4423,6 @@
           "url": "https://cointelegraph.com/news/polymarket-vendor-compromise-drains-29m-users?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T08:20:37Z",
           "score": "-0.5"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-26T06:04:04Z",
-          "score": "0.0"
         },
         {
           "title": "Tether stablecoin flips Ether by market cap as ETH routs to $1.5K",
