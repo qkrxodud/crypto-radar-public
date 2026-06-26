@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-26T11:56:06Z",
+  "updatedAt": "2026-06-26T12:16:09Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,11 +60,11 @@
       "historicalVolatility": "0.43",
       "btcClose": "59826.01",
       "macd": {
-        "macdLine": "-2408.89",
-        "signalLine": "-2396.46",
-        "histogram": "-12.43",
-        "crossType": "DEAD",
-        "crossLabel": "데드크로스",
+        "macdLine": "-2393.30",
+        "signalLine": "-2393.35",
+        "histogram": "0.05",
+        "crossType": "NONE",
+        "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000342",
       "ivRv": {
-        "iv": "48.41",
+        "iv": "51.81",
         "rv": "43.00",
-        "spread": "+5.41",
+        "spread": "+8.81",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2844,63 +2844,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "59359.10",
-      "openInterestUsd": "6316981198.91200000",
-      "longAccountRatio": "0.6706",
-      "shortAccountRatio": "0.3294",
-      "downsideLiquidationUsd": "4236167591.99",
-      "upsideLiquidationUsd": "2080813606.92",
+      "currentPrice": "59540.20",
+      "openInterestUsd": "6323485415.19200000",
+      "longAccountRatio": "0.6746",
+      "shortAccountRatio": "0.3254",
+      "downsideLiquidationUsd": "4265823261.09",
+      "upsideLiquidationUsd": "2057662154.10",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "53423.19",
+          "price": "53586.18",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1694467036.80"
+          "notionalUsd": "1706329304.44"
         },
         {
-          "price": "65295.01",
+          "price": "65494.22",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "832325442.77"
+          "notionalUsd": "823064861.64"
         },
         {
-          "price": "56984.74",
+          "price": "57158.59",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1482658657.20"
+          "notionalUsd": "1493038141.38"
         },
         {
-          "price": "61733.46",
+          "price": "61921.81",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "728284762.42"
+          "notionalUsd": "720181753.94"
         },
         {
-          "price": "58171.92",
+          "price": "58349.40",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "847233518.40"
+          "notionalUsd": "853164652.22"
         },
         {
-          "price": "60546.28",
+          "price": "60731.00",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "416162721.38"
+          "notionalUsd": "411532430.82"
         },
         {
-          "price": "58765.51",
+          "price": "58944.80",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "211808379.60"
+          "notionalUsd": "213291163.05"
         },
         {
-          "price": "59952.69",
+          "price": "60135.60",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "104040680.35"
+          "notionalUsd": "102883107.71"
         }
       ],
       "errorMessage": null
@@ -4279,7 +4279,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-26T11:30:06.281519Z",
+      "generatedAt": "2026-06-26T12:00:04.273996Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4288,43 +4288,50 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리 상태로, 공포가 우세하지만 일부 긍정적인 온체인 지표가 나타나고 있다."
+          "content": "현재 시장은 중립적이며, 공포가 우세한 상황이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 13으로 극단적인 공포를 나타내고 있다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "RSI가 30 이하로 과매도 상태에 진입하고 있다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매보다는 장기 투자 관점에서 접근하는 것이 바람직하다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 리스크 관리 전략을 강화해야 한다."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 좋다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-26T11:05:02.981105Z",
-      "compositeScore": "-0.225",
-      "label": "NEGATIVE",
-      "labelDisplay": "부정",
-      "labelHexColor": "#F97316",
+      "generatedAt": "2026-06-26T12:05:04.916483Z",
+      "compositeScore": "-0.169",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "With crypto ending the first half in the red, bitcoin's solace is it beat Strategy",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/06/26/with-crypto-ending-the-first-half-in-the-red-bitcoin-s-solace-is-it-beat-strategy",
+          "publishedAt": "2026-06-26T11:36:01Z",
+          "score": "-0.5"
+        },
         {
           "title": "Bitcoin bounces from $58,000 as derivatives signal more pain in the pipeline",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/26/bitcoin-bounces-from-usd58-000-as-derivatives-signal-more-pain-in-the-pipeline",
           "publishedAt": "2026-06-26T11:03:20Z",
-          "score": "-0.6"
+          "score": "-0.4"
         },
         {
           "title": "All eyes on Strategy's June 30 ex-dividend date and monthly STRC dividend rate reset",
@@ -4338,10 +4345,10 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/26/binance-tells-eu-users-it-will-no-longer-provide-services-after-failing-to-secure-mica-license",
           "publishedAt": "2026-06-26T10:19:22Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
-          "title": "Ethereum treasury firm Sharplink takes in ether for the first time in eight months",
+          "title": "Ethereum treasury firm Sharplink buys ether for the first time in eight months",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/26/ethereum-treasury-firm-sharplink-takes-in-ether-for-the-first-time-in-eight-months",
           "publishedAt": "2026-06-26T09:47:07Z",
@@ -4366,13 +4373,13 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/26/too-big-to-fail-strategy-s-usd13-billion-bitcoin-paper-loss-alone-dwarfs-hundreds-of-prominent-tokens",
           "publishedAt": "2026-06-26T06:37:29Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
-          "title": "Ether, XRP and dogecoin lead a broad crypto selloff as tech stocks tumble",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/26/ether-xrp-and-dogecoin-lead-a-broad-crypto-selloff-as-tech-stocks-tumble",
-          "publishedAt": "2026-06-26T05:41:51Z",
+          "title": "AscendEX withdrawal complaints mount as ZachXBT questions reserves",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/ascendex-exchange-reportedly-faces-liquidity-issues-claims-zachxbt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-26T11:47:02Z",
           "score": "-0.5"
         },
         {
@@ -4380,14 +4387,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-etfs-biggest-outflows-june-btc-below-60k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T09:36:34Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "Polymarket hit by $2.9M theft, users to be refunded",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/polymarket-vendor-compromise-drains-29m-users?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T08:20:37Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4401,7 +4408,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/tether-stablecoin-flips-ether-by-market-cap-as-eth-routs-to-15k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T06:02:01Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "Coinbase's Base resumes block production after 2-hour outage",
@@ -4415,7 +4422,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/sharplink-buys-eth-after-8-month-pause-as-token-hits-2026-low?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T03:56:08Z",
-          "score": "-0.5"
+          "score": "0.2"
         },
         {
           "title": "StablecoinX bets on Ethena ecosystem with Nasdaq debut",
@@ -4423,13 +4430,6 @@
           "url": "https://cointelegraph.com/news/stablecoinx-merges-with-tlgy-and-begins-trading-on-nasdaq-friday?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T03:48:03Z",
           "score": "0.3"
-        },
-        {
-          "title": "BitGo cuts 15% of staff to sharpen focus on AI, stablecoins",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-infrastructure-firm-bitgo-lays-off-15-of-staff?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-26T00:41:02Z",
-          "score": "-0.3"
         }
       ],
       "errorMessage": null
