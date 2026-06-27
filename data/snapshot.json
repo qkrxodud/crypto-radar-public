@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-27T22:17:31Z",
+  "updatedAt": "2026-06-27T22:37:31Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "60112.01",
       "macd": {
-        "macdLine": "-2401.95",
-        "signalLine": "-2402.53",
-        "histogram": "0.57",
+        "macdLine": "-2373.13",
+        "signalLine": "-2396.76",
+        "histogram": "23.63",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000395",
       "ivRv": {
-        "iv": "36.19",
+        "iv": "33.84",
         "rv": "43.00",
-        "spread": "-6.82",
+        "spread": "-9.17",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2855,63 +2855,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "59880.30",
-      "openInterestUsd": "6200487937.30959000",
-      "longAccountRatio": "0.6650",
-      "shortAccountRatio": "0.3350",
-      "downsideLiquidationUsd": "4123324478.31",
-      "upsideLiquidationUsd": "2077163459.00",
+      "currentPrice": "60214.20",
+      "openInterestUsd": "6194230696.12200000",
+      "longAccountRatio": "0.6667",
+      "shortAccountRatio": "0.3333",
+      "downsideLiquidationUsd": "4129693605.10",
+      "upsideLiquidationUsd": "2064537091.02",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "53892.27",
+          "price": "54192.78",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1649329791.32"
+          "notionalUsd": "1651877442.04"
         },
         {
-          "price": "65868.33",
+          "price": "66235.62",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "830865383.60"
+          "notionalUsd": "825814836.41"
         },
         {
-          "price": "57485.09",
+          "price": "57805.63",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1443163567.41"
+          "notionalUsd": "1445392761.79"
         },
         {
-          "price": "62275.51",
+          "price": "62622.77",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "727007210.65"
+          "notionalUsd": "722587981.86"
         },
         {
-          "price": "58682.69",
+          "price": "59009.92",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "824664895.66"
+          "notionalUsd": "825938721.02"
         },
         {
-          "price": "61077.91",
+          "price": "61418.48",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "415432691.80"
+          "notionalUsd": "412907418.20"
         },
         {
-          "price": "59281.50",
+          "price": "59612.06",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "206166223.92"
+          "notionalUsd": "206484680.26"
         },
         {
-          "price": "60479.10",
+          "price": "60816.34",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "103858172.95"
+          "notionalUsd": "103226854.55"
         }
       ],
       "errorMessage": null
@@ -4298,7 +4298,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-27T22:00:03.532982Z",
+      "generatedAt": "2026-06-27T22:30:01.673487Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4307,23 +4307,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지표가 매우 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 매우 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지표가 15로 극단적인 공포를 나타내고 있다."
+          "content": "낮은 공포탐욕 지수(15)는 시장의 부정적인 심리를 나타낸다."
         },
         {
           "type": "RISK",
-          "content": "RSI(일)와 RSI(주)가 각각 32.05와 32.87로 과매도 구간에 있다."
+          "content": "RSI 지수가 30 이하로 과매도 상태에 있어 추가 하락 가능성이 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기적으로 시장 반등을 기대하기 어려우므로 관망하는 것이 좋다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오의 리스크를 줄이기 위해 현금 비중을 늘리는 것을 고려하라."
+          "content": "매수 기회를 노리되, 손절매 설정을 권장한다."
         }
       ],
       "errorMessage": null
