@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-27T15:55:43Z",
+  "updatedAt": "2026-06-27T16:15:46Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "60112.01",
       "macd": {
-        "macdLine": "-2329.53",
-        "signalLine": "-2388.04",
-        "histogram": "58.51",
+        "macdLine": "-2334.33",
+        "signalLine": "-2389.00",
+        "histogram": "54.67",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000395",
       "ivRv": {
-        "iv": "38.75",
+        "iv": "32.19",
         "rv": "43.00",
-        "spread": "-4.25",
-        "label": "균형"
+        "spread": "-10.81",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 15,
@@ -2855,63 +2855,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "60763.50",
-      "openInterestUsd": "6349158236.98988400",
-      "longAccountRatio": "0.6689",
-      "shortAccountRatio": "0.3311",
-      "downsideLiquidationUsd": "4246951944.72",
-      "upsideLiquidationUsd": "2102206292.27",
+      "currentPrice": "60704.60",
+      "openInterestUsd": "6340336845.96192000",
+      "longAccountRatio": "0.6681",
+      "shortAccountRatio": "0.3319",
+      "downsideLiquidationUsd": "4235979046.79",
+      "upsideLiquidationUsd": "2104357799.17",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "54687.15",
+          "price": "54634.14",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1698780777.89"
+          "notionalUsd": "1694391618.71"
         },
         {
-          "price": "66839.85",
+          "price": "66775.06",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "840882516.91"
+          "notionalUsd": "841743119.67"
         },
         {
-          "price": "58332.96",
+          "price": "58276.42",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1486433180.65"
+          "notionalUsd": "1482592666.38"
         },
         {
-          "price": "63194.04",
+          "price": "63132.78",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "735772202.29"
+          "notionalUsd": "736525229.71"
         },
         {
-          "price": "59548.23",
+          "price": "59490.51",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "849390388.94"
+          "notionalUsd": "847195809.36"
         },
         {
-          "price": "61978.77",
+          "price": "61918.69",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "420441258.45"
+          "notionalUsd": "420871559.83"
         },
         {
-          "price": "60155.87",
+          "price": "60097.55",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "212347597.24"
+          "notionalUsd": "211798952.34"
         },
         {
-          "price": "61371.14",
+          "price": "61311.65",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "105110314.61"
+          "notionalUsd": "105217889.96"
         }
       ],
       "errorMessage": null
@@ -4298,7 +4298,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-27T15:30:03.212388Z",
+      "generatedAt": "2026-06-27T16:00:04.336105Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4307,31 +4307,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적이며, 공포가 우세한 상태입니다."
+          "content": "현재 시장은 중립적인 상태로, 공포탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI와 높은 BTC 도미넌스는 하락 압력을 나타냅니다."
+          "content": "낮은 공포탐욕 지수(15)는 시장의 불안감을 나타낸다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 부정적이며, ETF 순유입도 감소세입니다."
+          "content": "RSI 지수가 30 이하로 과매도 상태에 있다."
         },
         {
           "type": "ACTION",
-          "content": "시장 진입을 신중히 고려하고 관망하는 것이 좋습니다."
+          "content": "단기적으로 관망하며 시장 반등을 기다리는 것이 바람직하다."
         },
         {
           "type": "ACTION",
-          "content": "추가적인 하락 위험을 감안하여 손절매 설정을 추천합니다."
+          "content": "추가 매수 기회를 모색하되, 손실을 최소화할 전략을 세워야 한다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-27T15:05:05.930240Z",
-      "compositeScore": "-0.063",
+      "generatedAt": "2026-06-27T16:05:03.501833Z",
+      "compositeScore": "-0.044",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4350,56 +4350,56 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/27/polymarket-hack-updated-to-usd3-1-million-days-after-the-platform-promised-users-full-refunds",
           "publishedAt": "2026-06-27T14:13:22Z",
-          "score": "-0.4"
+          "score": "-0.7"
         },
         {
           "title": "Coinbase and OKX try to lure in Binanceâs EU users after it failed to secure a MiCA license",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/27/coinbase-and-okx-try-to-lure-in-binance-s-450m-eu-users-after-failing-to-secure-a-mica-license",
           "publishedAt": "2026-06-27T14:11:45Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Binance founder CZ blames crypto's sour 2026 on mix of AI, global tension, 4-year cycle",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/27/binance-founder-cz-blames-crypto-s-sour-2026-on-mix-of-ai-global-tension-4-year-cycle",
           "publishedAt": "2026-06-27T13:00:00Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "Strategy's valuation has fallen below the value of its bitcoin holdings",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/27/strategy-s-valuation-has-fallen-below-the-value-of-its-bitcoin-holdings",
           "publishedAt": "2026-06-27T12:08:14Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Ripple CEO stays bullish on bitcoin but says Saylor's strategy has hurt crypto",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/27/ripple-ceo-stays-bullish-on-bitcoin-but-says-saylor-s-strategy-has-hurt-crypto",
           "publishedAt": "2026-06-27T07:58:35Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Dogecoin and Hyperliquid's HYPE led weekly crypto losses as AI stocks lure buyers",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/27/dogecoin-and-hyperliquid-s-hype-led-weekly-crypto-losses-as-ai-stocks-lure-buyers",
           "publishedAt": "2026-06-27T07:43:58Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "Aave, Solana ecosystem tokens lead crypto rebound as bitcoin steadies near $60,000",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/26/aave-solana-ecosystem-tokens-lead-crypto-rebound-as-bitcoin-steadies-near-usd60-000",
           "publishedAt": "2026-06-26T20:15:03Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "SecondFi targets two-week recovery after Cardano wallet exploit",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/secondfi-two-week-recovery-cardano-wallet-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-27T12:00:56Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4413,14 +4413,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/eu-lawmakers-assessing-defi-staking-nft-regulation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-27T08:21:04Z",
-          "score": "0.1"
+          "score": "0.3"
         },
         {
           "title": "Securitize expects to raise $400M ahead of public debut",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/securitize-expects-to-raise-400m-ahead-of-public-debut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-27T05:35:27Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "SOL reclaims $72, but onchain data flags weakening momentum",
@@ -4434,7 +4434,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-senators-urge-cftc-probe-polymarket-over-report-deceptive-marketing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-27T02:16:06Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Old Ether wallets move 37,806 ETH as whale conviction faces key test at $1.5K",
@@ -4448,7 +4448,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/spain-no-extension-mica-compliance-crypto-companies?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-26T19:20:33Z",
-          "score": "-0.5"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
