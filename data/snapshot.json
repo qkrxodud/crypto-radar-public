@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-30T17:46:00Z",
+  "updatedAt": "2026-06-30T18:06:08Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "60041.19",
       "macd": {
-        "macdLine": "-2477.83",
-        "signalLine": "-2458.24",
-        "histogram": "-19.58",
+        "macdLine": "-2476.57",
+        "signalLine": "-2457.99",
+        "histogram": "-18.58",
         "crossType": "DEAD",
         "crossLabel": "데드크로스",
         "bullish": false
@@ -428,9 +428,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000438",
       "ivRv": {
-        "iv": "46.30",
+        "iv": "45.53",
         "rv": "43.00",
-        "spread": "+3.30",
+        "spread": "+2.53",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2795,9 +2795,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "258185972843.04055",
+      "totalMarketCapUsd": "258175049969.24790",
       "marketCap30dAgoUsd": "263974626348.57302",
-      "growth30dPercent": "-2.19",
+      "growth30dPercent": "-2.20",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -2805,11 +2805,11 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5813403.000",
-      "change4wUsdM": "29470.000",
-      "change4wPercent": "0.51",
+      "netLiquidityUsdM": "5790049.000",
+      "change4wUsdM": "-4259.000",
+      "change4wPercent": "-0.07",
       "fedAssetsUsdM": "6735645",
-      "reverseRepoUsdM": "3546.000",
+      "reverseRepoUsdM": "26900.000",
       "treasuryAccountUsdM": "918696",
       "rrpIncluded": true,
       "signal": "STABLE",
@@ -2866,63 +2866,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "58333.10",
-      "openInterestUsd": "6363194599.35040000",
-      "longAccountRatio": "0.7433",
-      "shortAccountRatio": "0.2567",
-      "downsideLiquidationUsd": "4729762545.70",
-      "upsideLiquidationUsd": "1633432053.65",
+      "currentPrice": "58337.40",
+      "openInterestUsd": "6364921852.83840000",
+      "longAccountRatio": "0.7435",
+      "shortAccountRatio": "0.2565",
+      "downsideLiquidationUsd": "4732319397.59",
+      "upsideLiquidationUsd": "1632602455.25",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "52499.79",
+          "price": "52503.66",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1891905018.28"
+          "notionalUsd": "1892927759.03"
         },
         {
-          "price": "64166.41",
+          "price": "64171.14",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "653372821.46"
+          "notionalUsd": "653040982.10"
         },
         {
-          "price": "55999.78",
+          "price": "56003.90",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1655416890.99"
+          "notionalUsd": "1656311789.15"
         },
         {
-          "price": "60666.42",
+          "price": "60670.90",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "571701218.78"
+          "notionalUsd": "571410859.34"
         },
         {
-          "price": "57166.44",
+          "price": "57170.65",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "945952509.14"
+          "notionalUsd": "946463879.52"
         },
         {
-          "price": "59499.76",
+          "price": "59504.15",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "326686410.73"
+          "notionalUsd": "326520491.05"
         },
         {
-          "price": "57749.77",
+          "price": "57754.03",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "236488127.28"
+          "notionalUsd": "236615969.88"
         },
         {
-          "price": "58916.43",
+          "price": "58920.77",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "81671602.68"
+          "notionalUsd": "81630122.76"
         }
       ],
       "errorMessage": null
@@ -4349,8 +4349,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-30T17:05:51.623970Z",
-      "compositeScore": "0.169",
+      "generatedAt": "2026-06-30T18:06:08.389286Z",
+      "compositeScore": "0.125",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4358,18 +4358,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "SEC giving novel ETFs a rethink as it opens comment period on overhauling U.S. rules",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/06/30/sec-giving-novel-etfs-a-rethink-as-it-opens-comment-period-on-overhauling-u-s-rules",
+          "publishedAt": "2026-06-30T17:51:57Z",
+          "score": "0.5"
+        },
+        {
           "title": "Chinese exile once linked to Trump strategist gets 30-year sentence in $1 billion fraud",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/30/chinese-exile-once-linked-to-trump-strategist-gets-30-year-sentence-in-usd1-billion-fraud",
           "publishedAt": "2026-06-30T16:31:46Z",
-          "score": "-0.6"
+          "score": "-0.4"
         },
         {
           "title": "Jefferies warns of crypto market volatility as Clarity Act faces Senate test",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/30/jefferies-warns-of-crypto-market-volatility-as-clarity-act-faces-senate-test",
           "publishedAt": "2026-06-30T14:41:59Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Circle slides 13% as Stripe, Coinbase and BlackRock back rival stablecoin network",
@@ -4397,21 +4404,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/30/nasdaq-expands-distribution-of-its-market-data-into-blockchain-infrastructure",
           "publishedAt": "2026-06-30T13:00:00Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Bitcoinâs quiet $59,000-$60,000 range is starting to look dangerous",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-quiet-usd59-000-usd60-000-range-is-starting-to-look-dangerous",
           "publishedAt": "2026-06-30T11:55:34Z",
-          "score": "-0.3"
+          "score": "-0.6"
         },
         {
-          "title": "New York Life's $800 billion asset manager makes tokenization debut with Centrifuge fund",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/29/new-york-life-makes-tokenization-debut-with-onchain-high-yield-bond-fund-with-centrifuge",
-          "publishedAt": "2026-06-30T11:20:30Z",
+          "title": "AI’s power crunch turns Bitcoin miners’ grid access into an asset",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/features/bitcoin-miners-ai-data-centers-power-infrastructure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T17:44:31Z",
           "score": "0.6"
+        },
+        {
+          "title": "Crypto companies have spent $189M so far on 2026 US election cycle: Report",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-companies-spent-2026-us-election-cycle-public-citizen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T17:19:17Z",
+          "score": "0.1"
         },
         {
           "title": "Business use of stablecoins set for growth surge: Cybrid report",
@@ -4446,7 +4460,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/strategy-new-plan-split-community-mstr-strc-climb?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T13:14:47Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Theo becomes first crypto-native investor in Fidelity tokenized fund",
@@ -4454,20 +4468,6 @@
           "url": "https://cointelegraph.com/news/fidelity-tokenized-fund-first-crypto-native-investor?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T13:00:00Z",
           "score": "0.5"
-        },
-        {
-          "title": "Swan's Cory Klippsten sees record Bitcoin holder supply revealing early bottom",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/record-bitcoin-holder-supply-early-bottom-swan-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-30T12:44:21Z",
-          "score": "0.7"
-        },
-        {
-          "title": "StarkWare unveils Starknet quantum roadmap, says industry has no excuse",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/starkware-ceo-blasts-crypto-complacency-in-quantum-threat-elliptic-illusion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-30T12:30:00Z",
-          "score": "0.3"
         }
       ],
       "errorMessage": null
