@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-28T10:03:41Z",
+  "updatedAt": "2026-06-30T12:04:41Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "60041.19",
       "macd": {
-        "macdLine": "-2379.80",
-        "signalLine": "-2411.41",
-        "histogram": "31.61",
+        "macdLine": "-2421.00",
+        "signalLine": "-2446.88",
+        "histogram": "25.88",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "48.1",
-        "plusDi": "11.8",
-        "minusDi": "29.7",
+        "adx": "46.5",
+        "plusDi": "11.1",
+        "minusDi": "28.2",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000438",
       "ivRv": {
-        "iv": "45.42",
+        "iv": "49.24",
         "rv": "43.00",
-        "spread": "+2.42",
-        "label": "균형"
+        "spread": "+6.24",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 18,
@@ -449,13 +449,13 @@
     "api_dashboard_cycle": {
       "hasData": true,
       "halvingCycle": {
-        "position": "54.8%",
+        "position": "54.9%",
         "progressWidth": 55,
         "phaseLabel": "과열 구간 (Q3)",
         "phaseBadgeClass": "bg-warning text-dark",
         "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
-        "formattedElapsed": "799일 경과",
-        "formattedRemaining": "659일 남음",
+        "formattedElapsed": "801일 경과",
+        "formattedRemaining": "657일 남음",
         "cycleNumber": 4,
         "lastHalvingDate": "2024-04-20",
         "nextHalvingDate": "2028-04-17",
@@ -2795,9 +2795,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "259795801315.16252",
-      "marketCap30dAgoUsd": "265316698774.57653",
-      "growth30dPercent": "-2.08",
+      "totalMarketCapUsd": "258221832296.24264",
+      "marketCap30dAgoUsd": "263974626348.57302",
+      "growth30dPercent": "-2.18",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -2805,11 +2805,11 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5810523.000",
-      "change4wUsdM": "16076.000",
-      "change4wPercent": "0.28",
+      "netLiquidityUsdM": "5813403.000",
+      "change4wUsdM": "29470.000",
+      "change4wPercent": "0.51",
       "fedAssetsUsdM": "6735645",
-      "reverseRepoUsdM": "6426.000",
+      "reverseRepoUsdM": "3546.000",
       "treasuryAccountUsdM": "918696",
       "rrpIncluded": true,
       "signal": "STABLE",
@@ -2866,63 +2866,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "60221.60",
-      "openInterestUsd": "6192922103.31597300",
-      "longAccountRatio": "0.6686",
-      "shortAccountRatio": "0.3314",
-      "downsideLiquidationUsd": "4140587718.28",
-      "upsideLiquidationUsd": "2052334385.04",
+      "currentPrice": "59035.20",
+      "openInterestUsd": "6142432366.30766100",
+      "longAccountRatio": "0.7246",
+      "shortAccountRatio": "0.2754",
+      "downsideLiquidationUsd": "4450806492.63",
+      "upsideLiquidationUsd": "1691625873.68",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "54199.44",
+          "price": "53131.68",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1656235087.31"
+          "notionalUsd": "1780322597.05"
         },
         {
-          "price": "66243.76",
+          "price": "64938.72",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "820933754.02"
+          "notionalUsd": "676650349.47"
         },
         {
-          "price": "57812.74",
+          "price": "56673.79",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1449205701.40"
+          "notionalUsd": "1557782272.42"
         },
         {
-          "price": "62630.46",
+          "price": "61396.61",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "718317034.76"
+          "notionalUsd": "592069055.79"
         },
         {
-          "price": "59017.17",
+          "price": "57854.50",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "828117543.66"
+          "notionalUsd": "890161298.53"
         },
         {
-          "price": "61426.03",
+          "price": "60215.90",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "410466877.01"
+          "notionalUsd": "338325174.74"
         },
         {
-          "price": "59619.38",
+          "price": "58444.85",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "207029385.91"
+          "notionalUsd": "222540324.63"
         },
         {
-          "price": "60823.82",
+          "price": "59625.55",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "102616719.25"
+          "notionalUsd": "84581293.68"
         }
       ],
       "errorMessage": null
@@ -4317,7 +4317,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-28T10:00:01.606502Z",
+      "generatedAt": "2026-06-30T12:04:38.607592Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4326,148 +4326,148 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로 보이며, 공포 심리가 지배적이다."
+          "content": "현재 매집 우세 상황이나 시장 심리가 극단적인 공포 상태에 있음."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높은 상황에서 알트코인 약세가 우려된다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약함."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 리스크 관리에 유의하라."
+          "content": "매수 기회를 노리되, 손절매 설정을 권장."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리를 주의 깊게 관찰하며 추가 매수 여부를 결정하라."
+          "content": "시장 심리 회복을 기다린 후 추가 매수 고려."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-28T09:05:02.455427Z",
-      "compositeScore": "-0.213",
-      "label": "NEGATIVE",
-      "labelDisplay": "부정",
-      "labelHexColor": "#F97316",
+      "generatedAt": "2026-06-30T12:04:41.471505Z",
+      "compositeScore": "-0.056",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
         {
-          "title": "Bitcoin falls below $60,000, on track for a rare back-to-back quarterly loss",
+          "title": "Bitcoinâs quiet $59,000-$60,000 range is starting to look dangerous",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/28/bitcoin-falls-below-usd60-000-on-track-for-a-rare-back-to-back-quarterly-loss",
-          "publishedAt": "2026-06-28T07:10:52Z",
+          "url": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-quiet-usd59-000-usd60-000-range-is-starting-to-look-dangerous",
+          "publishedAt": "2026-06-30T11:55:34Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "New York Life makes tokenization debut with onchain high-yield bond fund with Centrifuge",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/06/29/new-york-life-makes-tokenization-debut-with-onchain-high-yield-bond-fund-with-centrifuge",
+          "publishedAt": "2026-06-30T11:20:30Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Bitcoin $4.4 billion supply overhang emerges as institutional demand wilts",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/06/30/bitcoin-usd4-4-billion-supply-overhang-emerges-as-institutional-demand-wilts",
+          "publishedAt": "2026-06-30T11:18:34Z",
           "score": "-0.7"
         },
         {
-          "title": "Why a selloff in gold and silver is dragging bitcoin down",
+          "title": "Bitcoin nears 2024 lows as options traders pay up for downside protection",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/27/why-a-selloff-in-gold-and-silver-is-dragging-bitcoin-down",
-          "publishedAt": "2026-06-27T18:11:04Z",
+          "url": "https://www.coindesk.com/markets/2026/06/30/bitcoin-nears-2024-lows-as-options-traders-pay-up-for-downside-protection",
+          "publishedAt": "2026-06-30T10:48:06Z",
           "score": "-0.5"
         },
         {
-          "title": "What Robinhoodâs recent layoffs say about the current state of crypto investments",
+          "title": "Strategy heads for 11th losing month in 12 as bitcoin weakness continues",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/opinion/2026/06/27/what-robinhood-s-recent-layoffs-say-about-the-current-state-of-crypto-investments",
-          "publishedAt": "2026-06-27T16:30:00Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Tether putting $23 billion gold stockpile to work with bullion-backed loans",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/27/tether-putting-usd23-billion-gold-stockpile-to-work-with-bullion-backed-loans",
-          "publishedAt": "2026-06-27T15:00:00Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Polymarket hack updated to $3.1 million days after the platform promised users full refunds",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/27/polymarket-hack-updated-to-usd3-1-million-days-after-the-platform-promised-users-full-refunds",
-          "publishedAt": "2026-06-27T14:13:22Z",
+          "url": "https://www.coindesk.com/markets/2026/06/30/strategy-heads-for-eleventh-losing-month-in-twelve-as-bitcoin-weakness-continues",
+          "publishedAt": "2026-06-30T10:33:48Z",
           "score": "-0.6"
         },
         {
-          "title": "Coinbase and OKX try to lure in Binanceâs EU users after it failed to secure a MiCA license",
+          "title": "UK to lower stablecoin capital buffers, undercutting EU's MiCA requirements",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/06/27/coinbase-and-okx-try-to-lure-in-binance-s-450m-eu-users-after-failing-to-secure-a-mica-license",
-          "publishedAt": "2026-06-27T14:11:45Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Binance founder CZ blames crypto's sour 2026 on mix of AI, global tension, 4-year cycle",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/27/binance-founder-cz-blames-crypto-s-sour-2026-on-mix-of-ai-global-tension-4-year-cycle",
-          "publishedAt": "2026-06-27T13:00:00Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Strategy's valuation has fallen below the value of its bitcoin holdings",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/06/27/strategy-s-valuation-has-fallen-below-the-value-of-its-bitcoin-holdings",
-          "publishedAt": "2026-06-27T12:08:14Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Grayscale's Pandl hopes Strategy sells $3B in Bitcoin to restore confidence",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/grayscales-pandl-strategy-sells-3b-bitcoin-confidence?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-28T07:59:28Z",
+          "url": "https://www.coindesk.com/policy/2026/06/30/uk-to-lower-stablecoin-capital-buffers-undercutting-eu-s-mica-requirements",
+          "publishedAt": "2026-06-30T10:08:48Z",
           "score": "0.4"
         },
         {
-          "title": "Base post-mortem reveals sequencer bug behind back-to-back outages",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/base-post-mortem-reveals-sequencer-bug-behind-back-to-back-outages?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-28T05:14:05Z",
-          "score": "-0.2"
+          "title": "SEC wins $5.5 million default judgment over alleged fake crypto platform NanoBit",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/06/30/sec-wins-usd5-5-million-default-judgment-over-alleged-fake-crypto-platform-nanobit",
+          "publishedAt": "2026-06-30T09:54:50Z",
+          "score": "-0.4"
         },
         {
-          "title": "Bitcoin unspent transaction outputs signal capitulation underway: analyst",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitcoin-unspent-transaction-outputs-signal-capitulation-underway-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-28T02:51:04Z",
-          "score": "-0.6"
+          "title": "Bitcoin's correlation with dollar-yen rate hits -0.90, undercutting 'carry trade' theory",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-52-week-correlation-with-usd-jpy-hits-0-90-undercutting-carry-trade-theory",
+          "publishedAt": "2026-06-30T07:14:40Z",
+          "score": "-0.5"
         },
         {
-          "title": "Fidelity rebuts claims Bitcoin becomes less secure after halvings",
+          "title": "Solana Company to back Kazakhstan’s $6B crypto megacity ambition",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/fidelity-bitcoin-long-term-security-halvings-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-27T20:53:02Z",
+          "url": "https://cointelegraph.com/news/solana-company-to-back-kazakhstans-6b-crypto-megacity-ambition?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T11:00:00Z",
+          "score": "0.5"
+        },
+        {
+          "title": "ESMA MiCA warning puts Binance EU service changes under scrutiny",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/esma-challenge-binance-serving-certain-eu-users-post-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T10:25:48Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "Michigan judge blocks Kalshi from allowing residents to place sports bets",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/michigan-judge-blocks-kalshi-sports-bets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T09:08:26Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Celsius-linked Bitcoin miner Ionic Digital seeks Nasdaq direct listing amid AI pivot",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/ionic-digital-nasdaq-direct-listing-ai-pivot?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T08:16:46Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Australia’s crypto travel rule is coming into effect: Here’s what's changing",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/australias-crypto-travel-rule-takes-effect-on-july-1-whats-changing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T06:29:02Z",
           "score": "0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-27T19:34:45Z",
+          "publishedAt": "2026-06-30T06:24:14Z",
           "score": "0.0"
         },
         {
-          "title": "Bitcoin faces fresh capitulation risk as 50K BTC moved at a loss",
+          "title": "Cathie Wood’s ARK adds $43.5M in crypto stocks amid market dip",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-faces-fresh-capitulation-risk-as-50k-btc-moves-at-a-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-27T19:27:44Z",
-          "score": "-0.7"
+          "url": "https://cointelegraph.com/news/cathie-woods-ark-scoops-up-43m-worth-of-crypto-stocks-amid-market-dip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T05:49:50Z",
+          "score": "0.6"
         },
         {
-          "title": "DCG-backed Yuma launches fund offering institutional exposure to Bittensor",
+          "title": "Bitmine lifts Ether holdings to 5.7M as it joins Russell 1000",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/yuma-bittensor-fund-institutional-tao-decentralized-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-27T17:59:31Z",
-          "score": "0.5"
-        },
-        {
-          "title": "Coinbase, Circle underperform Big Tech as crypto stock slump deepens",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-stocks-underperform-tech-market-slump?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-27T16:02:38Z",
-          "score": "-0.4"
+          "url": "https://cointelegraph.com/news/bitmine-lifts-ethereum-holdings-to-57m-as-it-joins-russell-1000?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T04:03:33Z",
+          "score": "0.4"
         }
       ],
       "errorMessage": null
