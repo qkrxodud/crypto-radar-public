@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-06-30T12:44:54Z",
+  "updatedAt": "2026-06-30T13:04:59Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "60041.19",
       "macd": {
-        "macdLine": "-2439.04",
-        "signalLine": "-2450.49",
-        "histogram": "11.45",
-        "crossType": "NONE",
-        "crossLabel": "크로스 없음",
+        "macdLine": "-2468.57",
+        "signalLine": "-2456.39",
+        "histogram": "-12.18",
+        "crossType": "DEAD",
+        "crossLabel": "데드크로스",
         "bullish": false
       },
       "adx": {
-        "adx": "46.5",
-        "plusDi": "11.0",
-        "minusDi": "28.4",
+        "adx": "46.7",
+        "plusDi": "10.9",
+        "minusDi": "29.4",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -428,10 +428,10 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.000438",
       "ivRv": {
-        "iv": "42.99",
+        "iv": "51.37",
         "rv": "43.00",
-        "spread": "-0.02",
-        "label": "균형"
+        "spread": "+8.37",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 18,
@@ -2795,9 +2795,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "258221832296.24264",
+      "totalMarketCapUsd": "258303498042.07787",
       "marketCap30dAgoUsd": "263974626348.57302",
-      "growth30dPercent": "-2.18",
+      "growth30dPercent": "-2.15",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -2866,63 +2866,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "58806.40",
-      "openInterestUsd": "6142778907.44760000",
-      "longAccountRatio": "0.7202",
-      "shortAccountRatio": "0.2798",
-      "downsideLiquidationUsd": "4424029369.14",
-      "upsideLiquidationUsd": "1718749538.30",
+      "currentPrice": "58434.50",
+      "openInterestUsd": "6091595150.02510000",
+      "longAccountRatio": "0.7253",
+      "shortAccountRatio": "0.2747",
+      "downsideLiquidationUsd": "4418233962.31",
+      "upsideLiquidationUsd": "1673361187.71",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "52925.76",
+          "price": "52591.05",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1769611747.66"
+          "notionalUsd": "1767293584.93"
         },
         {
-          "price": "64687.04",
+          "price": "64277.95",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "687499815.32"
+          "notionalUsd": "669344475.08"
         },
         {
-          "price": "56454.14",
+          "price": "56097.12",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1548410279.20"
+          "notionalUsd": "1546381886.81"
         },
         {
-          "price": "61158.66",
+          "price": "60771.88",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "601562338.41"
+          "notionalUsd": "585676415.70"
         },
         {
-          "price": "57630.27",
+          "price": "57265.81",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "884805873.83"
+          "notionalUsd": "883646792.46"
         },
         {
-          "price": "59982.53",
+          "price": "59603.19",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "343749907.66"
+          "notionalUsd": "334672237.54"
         },
         {
-          "price": "58218.34",
+          "price": "57850.16",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "221201468.46"
+          "notionalUsd": "220911698.12"
         },
         {
-          "price": "59394.46",
+          "price": "59018.85",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "85937476.92"
+          "notionalUsd": "83668059.39"
         }
       ],
       "errorMessage": null
@@ -4317,7 +4317,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-06-30T12:30:03.550012Z",
+      "generatedAt": "2026-06-30T13:00:02.307062Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4326,31 +4326,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "매집 우세로 보이나, 공포 심리가 강하게 작용하고 있다."
+          "content": "매집 우세를 보이나 시장 심리가 극단적 공포 상태로 위험이 존재함."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 극단적 공포 상태로, 추가 하락 가능성이 있다."
+          "content": "극단적 공포 심리로 인해 가격 하락 가능성."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 양호하나, ETF 순유출이 부정적 영향을 미치고 있다."
+          "content": "거래소 순유입이 증가하여 매도 압력 우려."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 손절매 설정을 고려하라."
+          "content": "단기 매매 전략을 고려하며 리스크 관리 필요."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산하라."
+          "content": "시장 반전 신호를 주의 깊게 관찰할 것."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-06-30T12:04:41.471505Z",
-      "compositeScore": "-0.056",
+      "generatedAt": "2026-06-30T12:45:54.144318Z",
+      "compositeScore": "-0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4362,42 +4362,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-quiet-usd59-000-usd60-000-range-is-starting-to-look-dangerous",
           "publishedAt": "2026-06-30T11:55:34Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "New York Life makes tokenization debut with onchain high-yield bond fund with Centrifuge",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/29/new-york-life-makes-tokenization-debut-with-onchain-high-yield-bond-fund-with-centrifuge",
           "publishedAt": "2026-06-30T11:20:30Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin $4.4 billion supply overhang emerges as institutional demand wilts",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/06/30/bitcoin-usd4-4-billion-supply-overhang-emerges-as-institutional-demand-wilts",
           "publishedAt": "2026-06-30T11:18:34Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "Bitcoin nears 2024 lows as options traders pay up for downside protection",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/30/bitcoin-nears-2024-lows-as-options-traders-pay-up-for-downside-protection",
           "publishedAt": "2026-06-30T10:48:06Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Strategy heads for 11th losing month in 12 as bitcoin weakness continues",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/30/strategy-heads-for-eleventh-losing-month-in-twelve-as-bitcoin-weakness-continues",
           "publishedAt": "2026-06-30T10:33:48Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "UK to lower stablecoin capital buffers, undercutting EU's MiCA requirements",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/30/uk-to-lower-stablecoin-capital-buffers-undercutting-eu-s-mica-requirements",
           "publishedAt": "2026-06-30T10:08:48Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "SEC wins $5.5 million default judgment over alleged fake crypto platform NanoBit",
@@ -4411,21 +4411,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/06/30/bitcoin-s-52-week-correlation-with-usd-jpy-hits-0-90-undercutting-carry-trade-theory",
           "publishedAt": "2026-06-30T07:14:40Z",
-          "score": "-0.5"
+          "score": "-0.3"
+        },
+        {
+          "title": "StarkWare unveils Starknet quantum roadmap, says industry has no excuse",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/starkware-ceo-blasts-crypto-complacency-in-quantum-threat-elliptic-illusion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T12:30:00Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Spiko links EU regulated T-bill funds to Coinbase stablecoin rails",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/spiko-coinbase-stablecoin-payments-treasury-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-06-30T12:21:03Z",
+          "score": "0.3"
         },
         {
           "title": "Solana Company to back Kazakhstan’s $6B crypto megacity ambition",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/solana-company-to-back-kazakhstans-6b-crypto-megacity-ambition?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T11:00:00Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "ESMA MiCA warning puts Binance EU service changes under scrutiny",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/esma-challenge-binance-serving-certain-eu-users-post-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T10:25:48Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "Michigan judge blocks Kalshi from allowing residents to place sports bets",
@@ -4439,14 +4453,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ionic-digital-nasdaq-direct-listing-ai-pivot?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T08:16:46Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Australia’s crypto travel rule is coming into effect: Here’s what's changing",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/australias-crypto-travel-rule-takes-effect-on-july-1-whats-changing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T06:29:02Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4454,20 +4468,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T06:24:14Z",
           "score": "0.0"
-        },
-        {
-          "title": "Cathie Wood’s ARK adds $43.5M in crypto stocks amid market dip",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/cathie-woods-ark-scoops-up-43m-worth-of-crypto-stocks-amid-market-dip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-30T05:49:50Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Bitmine lifts Ether holdings to 5.7M as it joins Russell 1000",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitmine-lifts-ethereum-holdings-to-57m-as-it-joins-russell-1000?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-30T04:03:33Z",
-          "score": "0.4"
         }
       ],
       "errorMessage": null
