@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-01T06:48:42Z",
+  "updatedAt": "2026-07-01T07:08:46Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "58726.00",
       "macd": {
-        "macdLine": "-2481.45",
-        "signalLine": "-2475.82",
-        "histogram": "-5.63",
+        "macdLine": "-2481.90",
+        "signalLine": "-2475.91",
+        "histogram": "-5.99",
         "crossType": "DEAD",
         "crossLabel": "데드크로스",
         "bullish": false
@@ -424,9 +424,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000493",
       "ivRv": {
-        "iv": "48.51",
+        "iv": "48.43",
         "rv": "43.00",
-        "spread": "+5.51",
+        "spread": "+5.43",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2802,7 +2802,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257729532517.3983",
+      "totalMarketCapUsd": "257743403808.61813",
       "marketCap30dAgoUsd": "263882814672.99467",
       "growth30dPercent": "-2.33",
       "signal": "CONTRACTING",
@@ -2873,63 +2873,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "58623.80",
-      "openInterestUsd": "6222273302.52160000",
-      "longAccountRatio": "0.7019",
-      "shortAccountRatio": "0.2981",
-      "downsideLiquidationUsd": "4367413631.04",
-      "upsideLiquidationUsd": "1854859671.48",
+      "currentPrice": "58611.20",
+      "openInterestUsd": "6210546478.52805900",
+      "longAccountRatio": "0.7064",
+      "shortAccountRatio": "0.2936",
+      "downsideLiquidationUsd": "4387130032.43",
+      "upsideLiquidationUsd": "1823416446.10",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "52761.42",
+          "price": "52750.08",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1746965452.42"
+          "notionalUsd": "1754852012.97"
         },
         {
-          "price": "64486.18",
+          "price": "64472.32",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "741943868.59"
+          "notionalUsd": "729366578.44"
         },
         {
-          "price": "56278.85",
+          "price": "56266.75",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1528594770.86"
+          "notionalUsd": "1535495511.35"
         },
         {
-          "price": "60968.75",
+          "price": "60955.65",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "649200885.02"
+          "notionalUsd": "638195756.13"
         },
         {
-          "price": "57451.32",
+          "price": "57438.98",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "873482726.21"
+          "notionalUsd": "877426006.49"
         },
         {
-          "price": "59796.28",
+          "price": "59783.42",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "370971934.30"
+          "notionalUsd": "364683289.22"
         },
         {
-          "price": "58037.56",
+          "price": "58025.09",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "218370681.55"
+          "notionalUsd": "219356501.62"
         },
         {
-          "price": "59210.04",
+          "price": "59197.31",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "92742983.57"
+          "notionalUsd": "91170822.30"
         }
       ],
       "errorMessage": null
@@ -4324,7 +4324,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-01T06:30:04.138966Z",
+      "generatedAt": "2026-07-01T07:00:03.900860Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4333,37 +4333,44 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이나, 공포심리가 지배적이며 기술적 지표가 약세를 나타냄."
+          "content": "현재 시장은 매집 우세를 보이며, 공포탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 11로 극단적인 공포를 나타냄."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "RSI가 모두 40 이하로 과매도 상태임."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매수 관점에서 접근하되, 손절매 설정 필요."
+          "content": "매수 기회를 노리되, 손절매 설정을 권장한다."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리 회복을 기다리며 추가 매수 고려."
+          "content": "시장 심리를 주의 깊게 관찰하며 추가 매수 여부를 결정하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-01T06:05:04.517190Z",
-      "compositeScore": "-0.025",
+      "generatedAt": "2026-07-01T07:05:02.704767Z",
+      "compositeScore": "-0.038",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Anthropic restores AI models Fable, Mythos after the U.S. lifts export controls",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls",
+          "publishedAt": "2026-07-01T06:54:13Z",
+          "score": "0.0"
+        },
         {
           "title": "XRP holds above $1 after leverage flush as network activity improves",
           "source": "CoinDesk",
@@ -4383,28 +4390,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/30/u-s-senators-seek-to-block-foreign-adversaries-from-ai-technology-in-new-bill",
           "publishedAt": "2026-06-30T23:02:46Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "Trump pocketed more than $1 billion from crypto ties as industry headed toward slump",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/06/30/trump-pocketed-more-than-usd1-billion-from-crypto-ties-as-industry-headed-toward-slump",
           "publishedAt": "2026-06-30T22:28:15Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Phantom doubles down on perpetual futures with hire of Hyperliquid market builders",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/30/phantom-doubles-down-on-perpetual-futures-with-hire-of-hyperliquid-market-builders",
           "publishedAt": "2026-06-30T21:00:19Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Companies spending the most on AI are growing jobs, Ramp study finds",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/06/30/companies-spending-the-most-on-ai-are-growing-jobs-ramp-study-finds",
           "publishedAt": "2026-06-30T20:21:49Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Why OpenUSD's 'real threat' that tanked Circle stock still faces a steep uphill battle for adoption",
@@ -4414,67 +4421,60 @@
           "score": "-0.3"
         },
         {
-          "title": "SEC giving novel ETFs a rethink as it opens comment period on overhauling U.S. rules",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/06/30/sec-giving-novel-etfs-a-rethink-as-it-opens-comment-period-on-overhauling-u-s-rules",
-          "publishedAt": "2026-06-30T17:51:57Z",
-          "score": "0.4"
+          "title": "Taiwan’s legislature passes crypto, stablecoin regulations",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/taiwans-legislature-passes-crypto-regulation-licensing-laws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-01T06:15:48Z",
+          "score": "0.6"
+        },
+        {
+          "title": "Anthropic to bring back Fable 5 as US lifts export controls",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/anthropic-reactivates-newest-ai-models-after-us-govt-lifts-restrictions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-01T06:14:32Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-01T06:00:00Z",
+          "score": "0.0"
         },
         {
           "title": "Trump earned more from crypto than real estate in 2025, filings show",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trump-earned-more-from-crypto-than-real-estate-in-2025-filings-show?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-01T04:01:09Z",
-          "score": "-0.2"
+          "score": "-0.5"
         },
         {
           "title": "Director of ‘47 Ronin’ who gambled Netflix funds on crypto gets 30 months",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/47-ronin-director-who-gambled-netflix-funds-on-crypto-gets-30-months?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-01T03:47:30Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "UK crypto investors sue Binance, Changpeng Zhao for $200M",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/uk-crypto-investors-sue-binance-changpeng-zhao-for-potential-200m-payout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-01T02:30:07Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Has Strategy’s capital overhaul put an end to ‘death spiral’ fears?",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/features/does-strategys-new-capital-plan-put-an-end-to-death-spiral-fears?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T23:11:09Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin just $5K away from ‘best investment opportunity’ of bear market",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-is-just-a-5k-drop-away-from-its-best-investment-opportunity-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-06-30T21:49:08Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Massachusetts AG files amended lawsuit against Kalshi over sports betting after court ruling",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/massachusetts-lawsuit-kalshi-sports-betting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-30T21:44:48Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Bitmine Ether buys eclipsed by $345M ETH ETF outflows: Is sub $1.5K next?",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitmine-ether-buys-eclipsed-by-345m-eth-etf-345m-outflows-is-sub-15k-next?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-30T21:16:47Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "SEC seeks public comment on regulating next generation of ETFs",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/sec-seeks-public-comment-on-regulating-novel-etfs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-06-30T20:38:51Z",
-          "score": "0.4"
+          "score": "0.7"
         }
       ],
       "errorMessage": null
