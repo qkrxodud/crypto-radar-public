@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-03T07:34:50Z",
+  "updatedAt": "2026-07-03T07:54:54Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "59910.84",
       "macd": {
-        "macdLine": "-1946.68",
-        "signalLine": "-2326.68",
-        "histogram": "380.00",
+        "macdLine": "-1944.67",
+        "signalLine": "-2326.28",
+        "histogram": "381.61",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -70,7 +70,7 @@
       "adx": {
         "adx": "44.4",
         "plusDi": "14.1",
-        "minusDi": "24.3",
+        "minusDi": "24.2",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -424,9 +424,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000573",
       "ivRv": {
-        "iv": "32.00",
+        "iv": "31.09",
         "rv": "38.00",
-        "spread": "-6.00",
+        "spread": "-6.92",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2884,63 +2884,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "61731.50",
-      "openInterestUsd": "6639635614.55338300",
-      "longAccountRatio": "0.6365",
-      "shortAccountRatio": "0.3635",
-      "downsideLiquidationUsd": "4226128068.66",
-      "upsideLiquidationUsd": "2413507545.89",
+      "currentPrice": "61782.20",
+      "openInterestUsd": "6652982527.86149400",
+      "longAccountRatio": "0.6373",
+      "shortAccountRatio": "0.3627",
+      "downsideLiquidationUsd": "4239945765.01",
+      "upsideLiquidationUsd": "2413036762.86",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "55558.35",
+          "price": "55603.98",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1690451227.47"
+          "notionalUsd": "1695978306.00"
         },
         {
-          "price": "67904.65",
+          "price": "67960.42",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "965403018.36"
+          "notionalUsd": "965214705.14"
         },
         {
-          "price": "59262.24",
+          "price": "59310.91",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1479144824.03"
+          "notionalUsd": "1483981017.75"
         },
         {
-          "price": "64200.76",
+          "price": "64253.49",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "844727641.06"
+          "notionalUsd": "844562867.00"
         },
         {
-          "price": "60496.87",
+          "price": "60546.56",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "845225613.73"
+          "notionalUsd": "847989153.00"
         },
         {
-          "price": "62966.13",
+          "price": "63017.84",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "482701509.18"
+          "notionalUsd": "482607352.57"
         },
         {
-          "price": "61114.19",
+          "price": "61164.38",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "211306403.43"
+          "notionalUsd": "211997288.25"
         },
         {
-          "price": "62348.82",
+          "price": "62400.02",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "120675377.29"
+          "notionalUsd": "120651838.14"
         }
       ],
       "errorMessage": null
@@ -4367,125 +4367,125 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-03T06:55:25.828371Z",
-      "compositeScore": "0",
+      "generatedAt": "2026-07-03T07:44:08.284013Z",
+      "compositeScore": "0.106",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
-      "scoredCount": 0,
-      "modelName": "gpt-4o-mini (llm-disabled)",
+      "scoredCount": 16,
+      "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Live updates: More bitcoin is now held at a loss than at a profit",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/07/03/live-updates-more-bitcoin-is-now-held-at-a-loss-than-at-a-profit",
+          "publishedAt": "2026-07-03T07:05:31Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "Binance says MiCA should be judged by who it licenses, not who it excludes",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/07/03/binance-says-mica-should-be-judged-by-who-it-licenses-not-who-it-excludes",
+          "publishedAt": "2026-07-03T06:30:00Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Finally. $221 million flow into Bitcoin ETFs, ending a painful 10-day outflow streak",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/03/finally-usd221-million-flow-into-bitcoin-etfs-ending-a-painful-10-day-outflow-streak",
+          "publishedAt": "2026-07-03T05:54:51Z",
+          "score": "0.5"
+        },
+        {
+          "title": "XRP bulls test path back toward $1.10 as token zips 4% higher",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/03/xrp-bulls-test-path-back-toward-usd1-10-as-token-zips-4-higher",
+          "publishedAt": "2026-07-03T05:29:00Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Ether and solana extend gains as a short squeeze lifts bitcoin toward $62,000",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/03/ether-and-solana-extend-gains-as-a-short-squeeze-lifts-bitcoin-toward-usd62-000",
+          "publishedAt": "2026-07-03T05:18:58Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Securitize tokenizes $295 million of its own stock on Solana and Avalanche amid NYSE debut",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/02/securitize-tokenizes-usd295-million-of-its-own-stock-on-solana-and-avalanche-amid-nyse-debut",
+          "publishedAt": "2026-07-02T19:00:03Z",
+          "score": "0.1"
+        },
         {
           "title": "EToro invests in onchain derivatives platform Extended as brokers race into DeFi",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/02/etoro-invests-in-onchain-derivatives-platform-extended-as-brokers-race-into-defi",
           "publishedAt": "2026-07-02T17:00:00Z",
-          "score": null
+          "score": "0.3"
         },
         {
           "title": "Bitwise says STRC selloff signals crypto cycle nearing a bottom, not Strategyâs breaking point",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/02/bitwise-says-strc-selloff-signals-crypto-cycle-nearing-a-bottom-not-strategy-s-breaking-point",
           "publishedAt": "2026-07-02T16:51:36Z",
-          "score": null
+          "score": "0.2"
         },
         {
-          "title": "US Treasury sanctions over 100 ISIS-K crypto addresses that moved over $1.4 million",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/07/02/us-treasury-sanctions-over-100-isis-k-crypto-addresses-in-latest-enforcement-action",
-          "publishedAt": "2026-07-02T14:49:05Z",
-          "score": null
-        },
-        {
-          "title": "SBI Crypto to shut down mining pool that holds roughly 2% of Bitcoin's hashrate",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/02/sbi-crypto-to-shut-down-mining-pool-that-holds-roughly-2-of-bitcoin-s-hashrate",
-          "publishedAt": "2026-07-02T14:44:55Z",
-          "score": null
-        },
-        {
-          "title": "Ondo Finance debuts SEC-aligned tokenized stock model with BlackRock ETF, Micron shares",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/01/ondo-finance-debuts-sec-aligned-tokenized-stock-model-with-blackrock-etf-micron-shares",
-          "publishedAt": "2026-07-02T14:16:02Z",
-          "score": null
-        },
-        {
-          "title": "JPMorgan says Strategy's bitcoin sales policy adds 'two-way risk' to crypto markets",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/02/jpmorgan-says-strategy-s-bitcoin-sales-policy-adds-two-way-risk-to-crypto-markets",
-          "publishedAt": "2026-07-02T13:11:22Z",
-          "score": null
-        },
-        {
-          "title": "U.S. payroll growth slowed sharply in June, with only 57,000 jobs added",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/02/u-s-payroll-growth-slowed-sharply-in-june-adding-only-57-000-jobs",
-          "publishedAt": "2026-07-02T12:37:50Z",
-          "score": null
-        },
-        {
-          "title": "A struggling Nasdaq-listed company that tried to copy Saylor's Bitcoin playbook is completely dumping crypto for AI",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/02/a-struggling-nasdaq-listed-company-that-tried-to-copy-saylor-s-bitcoin-playbook-is-completely-dumping-crypto-for-ai",
-          "publishedAt": "2026-07-02T12:10:15Z",
-          "score": null
-        },
-        {
-          "title": "Bitcoin price taps new July high above $62K on weak US jobs data",
+          "title": "Teen ‘Scattered Spider’ suspect extradited to US over $8M crypto ransom",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-returns-to-62k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-02T17:41:26Z",
-          "score": null
+          "url": "https://cointelegraph.com/news/teen-scattered-spider-suspect-extradited-to-us-over-8m-crypto-ransom?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-03T06:18:20Z",
+          "score": "-0.4"
         },
         {
-          "title": "FBI director discloses Strategy holdings months after deadline: Report",
+          "title": "AI agent development hasn’t accelerated as expected, Zuckerberg says",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/fbi-director-kash-patel-strategy-bitcoin-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-02T17:04:32Z",
-          "score": null
+          "url": "https://cointelegraph.com/news/ai-agent-development-hasnt-accelerated-as-expected-says-zuckerberg?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-03T06:07:10Z",
+          "score": "0.0"
         },
         {
-          "title": "Ondo expands tokenized equities with onchain shareholder voting",
+          "title": "US dominates Polymarket political bets despite geoblock: Report",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/ondo-tokenized-stocks-shareholder-voting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-02T16:25:01Z",
-          "score": null
+          "url": "https://cointelegraph.com/news/us-dominates-polymarket-political-bets-despite-geoblock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-03T03:38:37Z",
+          "score": "0.1"
         },
         {
-          "title": "The biggest blockchain upgrades still to come in 2026",
+          "title": "Strategy will be ‘less important’ in Bitcoin after STRC incident: Bitwise",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/features/the-biggest-blockchain-upgrades-still-to-come-in-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-02T13:30:00Z",
-          "score": null
+          "url": "https://cointelegraph.com/news/strategy-will-be-less-important-in-bitcoin-after-strc-incident-bitwise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-03T03:12:04Z",
+          "score": "-0.3"
         },
         {
-          "title": "UK payments blueprint outlines tokenized payments for ‘multi-money ecosystem’",
+          "title": "Securitize gains on NYSE debut with tokenized stocks live on Solana, Avalanche",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/uk-payment-blueprint-tokenized-payments-multi-money-ecosystem?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-02T13:04:23Z",
-          "score": null
+          "url": "https://cointelegraph.com/news/securitize-gains-on-nyse-debut-with-tokenized-stock-live-on-solana-avalanche?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-03T02:35:34Z",
+          "score": "0.3"
         },
         {
-          "title": "Aave brings V3 lending and GHO stablecoin to Monad",
+          "title": "Bitcoin holds $61K after US jobs data report, AI sector weakness: Did BTC bottom?",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/aave-v3-lending-gho-stablecoin-monad?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-02T13:00:00Z",
-          "score": null
+          "url": "https://cointelegraph.com/markets/bitcoin-holds-61k-after-us-jobs-data-report-ai-sector-weakness-did-btc-bottom?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-03T00:01:01Z",
+          "score": "0.4"
         },
         {
-          "title": "Here’s what happened in crypto today",
+          "title": "Is Bitcoin heading for $65K? Sharplink buys $16M ETH: Market Moves",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-02T12:34:45Z",
-          "score": null
+          "url": "https://cointelegraph.com/features/is-bitcoin-heading-for-65k-sharplink-buys-16m-eth-market-moves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-02T23:17:47Z",
+          "score": "0.5"
         },
         {
-          "title": "Standard Chartered, Circle bring USDC minting onto banking rails",
+          "title": "Ripple co-founder backs venture launched by US senator's son: Report",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/standard-chartered-circle-usdc-minting-banking-rails?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-02T11:41:44Z",
-          "score": null
+          "url": "https://cointelegraph.com/news/ripple-chris-larsen-senator-gillibrand-son-venture-market-structure-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-02T22:01:25Z",
+          "score": "0.0"
         }
       ],
       "errorMessage": null
