@@ -1,12 +1,12 @@
 /* ===========================================================================
  * btc-i18n.js — BTC 타이밍 레이더 다국어(i18n) 런타임
- * 한국어(기본) / 영어 / 중국어(간체) 3개 언어 전환.
+ * 한국어(기본) / 영어 전환. (런타임은 zh 라벨도 내장하나 현재 UI 스위처는 KO·EN만 노출)
  * 프레임워크·번들러 없음. 모든 페이지가 공유하는 단일 IIFE.
  *
  * 핵심 동작
  *  1) 언어 결정: ?lang= → localStorage → navigator.language → 기본 ko
- *  2) data-en / data-zh 속성 기반 정적 텍스트 번역 (ko는 요소 원문 그대로)
- *  3) 언어 스위처(KO · EN · 中文) 자동 주입 + 스타일 <style> 주입
+ *  2) data-en 속성 기반 정적 텍스트 번역 (ko는 요소 원문 그대로)
+ *  3) 언어 스위처(KO · EN) 자동 주입 (V2 topbar/mobile-bar) + 스타일 <style> 주입
  *  4) snapshot 한국어 라벨 → 현재 언어 매핑 테이블 (mapLabel)
  *  5) 인라인 스크립트용 t({ko,en,zh}) / locale 제공
  *
@@ -116,9 +116,13 @@
 
     /* dcaZones[].signal ('강력 매수'는 위 매수 계열에서 이미 정의) */
     '매수 신호': { en: 'Buy Signal', zh: '买入信号' },
+    '매도 신호': { en: 'Sell Signal', zh: '卖出信号' },
     '관심 구간': { en: 'Watch zone', zh: '关注区间' },
+    '역추세 매수 기회': { en: 'Counter-trend buy opportunity', zh: '逆势买入机会' },
 
     /* dcaZones[].range */
+    '35점 미만': { en: 'Below 35 pts', zh: '35 分以下' },
+    '35~49점': { en: '35–49 pts', zh: '35~49 分' },
     '50~64점': { en: '50–64 pts', zh: '50~64 分' },
     '65~79점': { en: '65–79 pts', zh: '65~79 分' },
     '80점 이상': { en: '80+ pts', zh: '80 分以上' },
@@ -251,12 +255,15 @@
     'RSI 일봉': { en: 'RSI (Daily)', zh: 'RSI(日线)' },
     'MA200비율': { en: 'MA200 Ratio', zh: 'MA200 比率' },
     '200일 평균 비율': { en: '200-day MA Ratio', zh: '200日均线比率' },
+    'Pi사이클': { en: 'Pi Cycle', zh: 'Pi 周期' },
+    'Pi 사이클': { en: 'Pi Cycle', zh: 'Pi 周期' },
     '변동성(HV)': { en: 'Volatility (HV)', zh: '波动率(HV)' },
     '반감기사이클': { en: 'Halving Cycle', zh: '减半周期' },
     '채굴자수익': { en: 'Miner Revenue', zh: '矿工收入' },
     'M2 성장률': { en: 'M2 Growth', zh: 'M2 增长率' },
     'M2 증가율': { en: 'M2 Growth', zh: 'M2 增长率' },
     'BTC ETF 유입': { en: 'BTC ETF Inflow', zh: 'BTC ETF 流入' },
+    'ETF 순유입': { en: 'ETF Net Inflow', zh: 'ETF 净流入' },
     'BTC도미넌스': { en: 'BTC Dominance', zh: 'BTC 占比' },
     'BTC 점유율': { en: 'BTC Dominance', zh: 'BTC 占比' },
     '김치프리미엄': { en: 'Kimchi Premium', zh: '泡菜溢价' },
@@ -385,54 +392,47 @@
   function injectStyle() {
     if (document.getElementById('btc-i18n-style')) return;
     var css =
-      /* ── 헤더 겹침 방지(회귀 수정) ──────────────────────────────────────
-       * 스위처 주입으로 헤더 폭이 늘면, white-space:nowrap인 .brand 텍스트가
-       * 박스 밖으로 오버플로하며 CTA/스위처와 겹쳤다. 두 헤더 구조(브랜드가 a /
-       * 브랜드가 div) 모두에 공통 적용한다. 페이지 CSS는 건드리지 않고
-       * 이 주입 스타일(head 최후미 삽입 → 동일 특정성에서 우선)로 해소한다.
-       *  - .brand: 줄어들 수 있게(min-width:0, flex-shrink:1)
-       *  - .brand 텍스트 span(로고 .dot 제외): 말줄임 처리
-       *  - .dot / CTA / nav-pill / 스위처: 찌그러지지 않게 flex-shrink:0 */
-      'header.nav .nav-inner .brand{min-width:0;flex-shrink:1;overflow:hidden}' +
-      'header.nav .nav-inner .brand>span:not(.dot){min-width:0;overflow:hidden;' +
-      'text-overflow:ellipsis;white-space:nowrap}' +
-      'header.nav .nav-inner .brand .dot{flex-shrink:0}' +
-      'header.nav .nav-inner .nav-cta,header.nav .nav-inner .nav-pill{flex-shrink:0}' +
-      '.btc-lang{display:inline-flex;align-items:center;gap:2px;font-family:var(--mono);' +
-      'font-size:12px;background:rgba(255,255,255,.05);border:1px solid var(--border);' +
-      'border-radius:100px;padding:3px;margin-left:4px;flex:none;flex-shrink:0}' +
-      '.btc-lang button{appearance:none;border:0;background:transparent;color:var(--muted);' +
-      'font:inherit;cursor:pointer;padding:4px 9px;border-radius:100px;line-height:1;' +
-      'transition:.16s;white-space:nowrap}' +
-      '.btc-lang button:hover{color:var(--text)}' +
-      '.btc-lang button.on{color:var(--text);background:var(--brand-soft,rgba(247,147,26,.12));' +
-      'box-shadow:inset 0 0 0 1px rgba(247,147,26,.25)}' +
-      /* 모바일: 헤더가 좁아도 스위처는 항상 보이게. nav-pill만 숨고 스위처는 유지 */
-      '@media(max-width:820px){.btc-lang{margin-left:auto}}' +
-      '@media(max-width:480px){.btc-lang{font-size:11px}.btc-lang button{padding:4px 7px}}' +
-      /* 극소형: 스위처를 컴팩트화해 brand 텍스트 가용폭 확보 */
-      '@media(max-width:360px){.btc-lang{gap:0;margin-left:8px;padding:2px}' +
-      '.btc-lang button{padding:3px 5px}}';
+      /* 언어 스위처 — V2 사이드바 레이아웃(topbar/mobile-bar)에 얹는다.
+       * 페이지 CSS는 건드리지 않고 이 주입 스타일(head 최후미 삽입)로만 처리.
+       * 색상은 페이지 디자인 토큰(--green/--line/--m1/--t1/--mono)을 재사용해
+       * 어떤 페이지에 들어가도 톤이 맞는다(토큰 없으면 폴백값 사용). */
+      '.btc-lang{display:inline-flex;align-items:center;gap:1px;' +
+      'font-family:var(--mono,ui-monospace,monospace);font-size:12px;' +
+      'background:rgba(255,255,255,.04);border:1px solid var(--line,#20242e);' +
+      'border-radius:100px;padding:3px;flex:none}' +
+      '.btc-lang button{appearance:none;border:0;background:transparent;' +
+      'color:var(--m1,#8b94a3);font:inherit;cursor:pointer;padding:4px 10px;' +
+      'border-radius:100px;line-height:1;transition:.16s;white-space:nowrap;' +
+      'letter-spacing:.02em}' +
+      '.btc-lang button:hover{color:var(--t1,#e8ecf2)}' +
+      '.btc-lang button.on{color:var(--green,#16c784);' +
+      'background:rgba(22,199,132,.14)}' +
+      /* 데스크톱 topbar 우측 그룹 안에서 날짜/LIVE 앞에 자연스럽게 붙게 */
+      '.topbar .right .btc-lang{order:-1}' +
+      /* 모바일 바에서는 햄버거 토글 앞, 우측 정렬 */
+      '.mobile-bar .btc-lang{margin-left:auto;margin-right:10px}' +
+      '@media(max-width:480px){.btc-lang{font-size:11px}' +
+      '.btc-lang button{padding:4px 8px}}';
     var st = document.createElement('style');
     st.id = 'btc-i18n-style';
     st.textContent = css;
     (document.head || document.documentElement).appendChild(st);
   }
 
-  // 스위처 DOM 생성 후 nav-inner에 주입
-  function injectSwitcher() {
-    var navInner = document.querySelector('header.nav .nav-inner');
-    if (!navInner || navInner.querySelector('.btc-lang')) return;
+  // 노출 언어 정의 — 현재 스코프는 한국어/영어 2개.
+  // (LABELS 테이블의 zh 값은 무해하게 남겨두되 UI 스위처에는 노출하지 않는다.)
+  var SWITCHER_DEFS = [
+    { code: 'ko', label: 'KO' },
+    { code: 'en', label: 'EN' }
+  ];
+
+  // 스위처 DOM 한 벌 생성
+  function buildSwitcher() {
     var wrap = document.createElement('div');
     wrap.className = 'btc-lang';
     wrap.setAttribute('role', 'group');
-    wrap.setAttribute('aria-label', 'Language / 语言 / 언어');
-    var defs = [
-      { code: 'ko', label: 'KO' },
-      { code: 'en', label: 'EN' },
-      { code: 'zh', label: '中文' }
-    ];
-    defs.forEach(function (d) {
+    wrap.setAttribute('aria-label', 'Language / 언어');
+    SWITCHER_DEFS.forEach(function (d) {
       var b = document.createElement('button');
       b.type = 'button';
       b.textContent = d.label;
@@ -444,10 +444,24 @@
       b.addEventListener('click', function () { setLang(d.code); });
       wrap.appendChild(b);
     });
-    // nav-pill 앞에 두어 시각적으로 우측 정렬 그룹에 묶이게 한다.
-    var pill = navInner.querySelector('.nav-pill');
-    if (pill) navInner.insertBefore(wrap, pill);
-    else navInner.appendChild(wrap);
+    return wrap;
+  }
+
+  // V2 사이드바 레이아웃에 스위처 주입: 데스크톱은 topbar 우측, 모바일은 모바일 바.
+  // 두 위치는 각자의 미디어쿼리로 표시/숨김이 갈리므로 둘 다 넣는다(중복 주입 방지).
+  function injectSwitcher() {
+    // 데스크톱: .topbar .right 앞쪽에
+    var right = document.querySelector('.topbar .right');
+    if (right && !right.querySelector('.btc-lang')) {
+      right.insertBefore(buildSwitcher(), right.firstChild);
+    }
+    // 모바일: .mobile-bar 의 햄버거 토글 앞에
+    var mbar = document.querySelector('.mobile-bar');
+    if (mbar && !mbar.querySelector('.btc-lang')) {
+      var toggle = mbar.querySelector('.mb-toggle');
+      if (toggle) mbar.insertBefore(buildSwitcher(), toggle);
+      else mbar.appendChild(buildSwitcher());
+    }
   }
 
   /* ── 6. 언어 변경 (확정 방식: localStorage 저장 후 reload) ───────────── */

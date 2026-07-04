@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>대시보드 — BTC 투자 타이밍 레이더</title>
-<meta name="description" content="비트코인 시장의 25개 이상 지표(RSI, MVRV-Z, SOPR, 공포탐욕지수, 펀딩비 등)를 매일 자동 분석하는 무료 대시보드입니다.">
+<title data-en="Dashboard — BTC Timing Radar">대시보드 — BTC 투자 타이밍 레이더</title>
+<meta name="description" content="비트코인 시장의 25개 이상 지표(RSI, MVRV-Z, SOPR, 공포탐욕지수, 펀딩비 등)를 매일 자동 분석하는 무료 대시보드입니다." data-en-content="A free dashboard that automatically analyzes 25+ Bitcoin market indicators daily (RSI, MVRV-Z, SOPR, Fear & Greed Index, funding rate, and more).">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="mpKDRcv53QmEiwIpjK5V-lJ5zAKD1vjq--f8th2JL6w">
 <meta name="naver-site-verification" content="83bf0a0ab453fd31567a6f047a9c91553b9bbdfe">
@@ -12,12 +12,12 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://btctiming.co.kr/">
 <meta property="og:site_name" content="BTC 투자 타이밍 레이더">
-<meta property="og:title" content="BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드">
-<meta property="og:description" content="비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 대시보드. 매일 오전 9시 5분 갱신.">
+<meta property="og:title" content="BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드" data-en-content="BTC Timing Radar — Bitcoin Composite Indicator Dashboard">
+<meta property="og:description" content="비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 대시보드. 매일 오전 9시 5분 갱신." data-en-content="A free dashboard that automatically analyzes 25+ Bitcoin market indicators every day. Updated daily at 09:05 KST.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드">
-<meta name="twitter:description" content="비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 대시보드. 매일 오전 9시 5분 갱신.">
+<meta name="twitter:title" content="BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드" data-en-content="BTC Timing Radar — Bitcoin Composite Indicator Dashboard">
+<meta name="twitter:description" content="비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 대시보드. 매일 오전 9시 5분 갱신." data-en-content="A free dashboard that automatically analyzes 25+ Bitcoin market indicators every day. Updated daily at 09:05 KST.">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -454,7 +454,7 @@
 </script>
 </head>
 <body>
-<div id="loading"><div class="ring"></div><div style="color:var(--m1);font-size:13px;font-family:var(--mono)">데이터 로딩 중...</div></div>
+<div id="loading"><div class="ring"></div><div style="color:var(--m1);font-size:13px;font-family:var(--mono)" data-en="Loading data...">데이터 로딩 중...</div></div>
 
 <div class="layout" id="layout">
   <div class="nav-backdrop" id="navBackdrop"></div>
@@ -463,39 +463,39 @@
   <aside class="sidebar">
     <a class="sb-brand" href="index.html">
       <div class="sb-logo">₿</div>
-      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+      <div><div class="bt" data-en="Timing Radar">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
     </a>
     <div class="sb-menu-h">MENU</div>
     <nav class="sb-nav">
-      <a class="active" href="index.html"><span class="dot"></span>대시보드</a>
-      <a href="guide.html"><span class="dot"></span>지표 가이드</a>
-      <a href="about.html"><span class="dot"></span>서비스 소개</a>
-      <a href="contact.html"><span class="dot"></span>문의</a>
+      <a class="active" href="index.html" data-i18n-html="1" data-en='<span class="dot"></span>Dashboard'><span class="dot"></span>대시보드</a>
+      <a href="guide.html" data-i18n-html="1" data-en='<span class="dot"></span>Indicator Guide'><span class="dot"></span>지표 가이드</a>
+      <a href="about.html" data-i18n-html="1" data-en='<span class="dot"></span>About'><span class="dot"></span>서비스 소개</a>
+      <a href="contact.html" data-i18n-html="1" data-en='<span class="dot"></span>Contact'><span class="dot"></span>문의</a>
     </nav>
     <div class="sb-live">
       <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
-      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
+      <div class="lb" data-i18n-html="1" data-en="Auto-updated daily<br>at 09:05 KST">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
     <!-- 방문자 카운터 (Firebase) -->
     <div class="sb-visitor" id="visitorStrip">
       <div class="vh">VISITORS</div>
-      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
-      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
-      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
+      <div class="vr now"><span data-i18n-html="1" data-en='<span class="vc-dot"></span>Now viewing'><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span data-en="Today">오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span data-en="Total">누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+    <div class="sb-foot" data-i18n-html="1" data-en="Quantitative analysis for reference ·<br>Not investment advice">참고용 정량 분석 ·<br>투자 조언 아님</div>
   </aside>
 
   <!-- ── 메인 ── -->
   <div class="main">
     <!-- 모바일 상단 바 -->
     <div class="mobile-bar">
-      <a class="mb-brand" href="index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
-      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
+      <a class="mb-brand" href="index.html"><span class="mb-logo">₿</span><span class="mb-t" data-en="Timing Radar">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기" data-en-aria-label="Open menu"><span></span></button>
     </div>
     <!-- 데스크톱 상단 바 -->
     <div class="topbar">
-      <div class="crumb">Home <span style="color:var(--m3)">›</span> <b>대시보드</b></div>
+      <div class="crumb" data-i18n-html="1" data-en='Home <span style="color:var(--m3)">›</span> <b>Dashboard</b>'>Home <span style="color:var(--m3)">›</span> <b>대시보드</b></div>
       <div class="right">
         <span class="date" id="topDate">--</span>
         <span class="live"><span class="d"></span>LIVE</span>
@@ -511,7 +511,7 @@
             <circle cx="100" cy="100" r="82" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="15" stroke-linecap="round" stroke-dasharray="386.4 600" transform="rotate(135 100 100)"></circle>
             <circle id="gaugeArc" cx="100" cy="100" r="82" fill="none" stroke="var(--green)" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 600" transform="rotate(135 100 100)"></circle>
           </svg>
-          <div class="gauge-read"><div class="gv" id="gaugeVal">--</div><div class="gl">/ 100 · 종합 점수</div></div>
+          <div class="gauge-read"><div class="gv" id="gaugeVal">--</div><div class="gl" data-en="/ 100 · Composite score">/ 100 · 종합 점수</div></div>
         </div>
         <div class="hero-body">
           <div class="hero-date" id="heroDate">오늘의 비트코인 타이밍</div>
@@ -522,8 +522,8 @@
             <span class="hero-price" id="heroPrice">--</span>
           </div>
           <div class="hero-cta">
-            <a class="primary" href="guide.html">지표 가이드 보기</a>
-            <a class="ghost" href="#trends">추이 자세히</a>
+            <a class="primary" href="guide.html" data-en="View Indicator Guide">지표 가이드 보기</a>
+            <a class="ghost" href="#trends" data-en="See trends">추이 자세히</a>
           </div>
         </div>
       </div>
@@ -533,23 +533,23 @@
 
       <!-- 5분 요약 -->
       <div>
-        <div class="sec-h"><h2>지금 상황 한눈에</h2><span class="hint">초보자용 5분 요약 · 복잡한 수치 없이 핵심만</span></div>
+        <div class="sec-h"><h2 data-en="Market at a Glance">지금 상황 한눈에</h2><span class="hint" data-en="A 5-minute summary for beginners · just the essentials, no jargon">초보자용 5분 요약 · 복잡한 수치 없이 핵심만</span></div>
         <div class="sum-grid" id="sumGrid"></div>
         <div class="opinion-row">
           <div class="ob">
-            <div class="oh"><span class="d"></span><span class="t">전문가 종합 의견 · AI 다이제스트</span></div>
+            <div class="oh"><span class="d"></span><span class="t" data-en="Expert Consensus · AI Digest">전문가 종합 의견 · AI 다이제스트</span></div>
             <div class="otext" id="expertText">--</div>
           </div>
           <div class="opinion-side">
             <div class="mini-stat">
-              <div class="top"><span class="l">뉴스 센티먼트</span><span class="r" id="newsVal">--</span></div>
+              <div class="top"><span class="l" data-en="News Sentiment">뉴스 센티먼트</span><span class="r" id="newsVal">--</span></div>
               <div class="sent-bar"><i id="newsBar" style="width:50%"></i></div>
               <div class="news-meta" id="newsSentMeta"></div>
               <div class="news-list" id="newsSentItems"></div>
             </div>
             <div class="mini-pair">
-              <div class="mp"><div class="l">알트시즌 지수</div><div class="v" id="altVal">--</div><div class="s" id="altLbl">--</div></div>
-              <div class="mp"><div class="l">고래 동향</div><div class="v" id="whaleVal">--</div><div class="s" id="whaleSub">--</div></div>
+              <div class="mp"><div class="l" data-en="Altcoin Season Index">알트시즌 지수</div><div class="v" id="altVal">--</div><div class="s" id="altLbl">--</div></div>
+              <div class="mp"><div class="l" data-en="Whale Activity">고래 동향</div><div class="v" id="whaleVal">--</div><div class="s" id="whaleSub">--</div></div>
             </div>
           </div>
         </div>
@@ -557,25 +557,25 @@
 
       <!-- 추이 -->
       <div id="trends">
-        <div class="sec-h"><h2>추이 살펴보기</h2><span class="hint">최근 30일</span></div>
+        <div class="sec-h"><h2 data-en="Trends">추이 살펴보기</h2><span class="hint" data-en="Last 30 days">최근 30일</span></div>
         <div class="trend-grid">
           <div class="trend-card">
-            <div class="th"><div><div class="tt">종합 점수 추이</div><div class="ts">30일 · 0–100</div></div><span class="tv" id="trScoreV">--</span></div>
+            <div class="th"><div><div class="tt" data-en="Composite Score Trend">종합 점수 추이</div><div class="ts" data-en="30d · 0–100">30일 · 0–100</div></div><span class="tv" id="trScoreV">--</span></div>
             <canvas id="chScore"></canvas>
           </div>
           <div class="trend-card">
-            <div class="th"><div><div class="tt">BTC 가격 추이</div><div class="ts">30일 · USD</div></div><span class="tv" id="trPriceV">--</span></div>
+            <div class="th"><div><div class="tt" data-en="BTC Price Trend">BTC 가격 추이</div><div class="ts" data-en="30d · USD">30일 · USD</div></div><span class="tv" id="trPriceV">--</span></div>
             <canvas id="chPrice"></canvas>
           </div>
           <div class="trend-card">
-            <div class="th"><div><div class="tt">공포·탐욕 지수</div><div class="ts">30일 · 0–100</div></div><span class="tv" id="trFgV">--</span></div>
+            <div class="th"><div><div class="tt" data-en="Fear &amp; Greed Index">공포·탐욕 지수</div><div class="ts" data-en="30d · 0–100">30일 · 0–100</div></div><span class="tv" id="trFgV">--</span></div>
             <canvas id="chFg"></canvas>
           </div>
         </div>
         <div class="halving">
-          <div class="hh"><div class="t">반감기 사이클 진행도</div><span class="s" id="halvSub">--</span></div>
+          <div class="hh"><div class="t" data-en="Halving Cycle Progress">반감기 사이클 진행도</div><span class="s" id="halvSub">--</span></div>
           <div class="track"><i id="halvFill"></i></div>
-          <div class="ticks"><span>반감기</span><span>중기 (1년)</span><span class="cur" id="halvCur">현재</span><span>사이클 고점 예상</span><span>다음 반감기</span></div>
+          <div class="ticks"><span data-en="Halving">반감기</span><span data-en="Mid (1yr)">중기 (1년)</span><span class="cur" id="halvCur">현재</span><span data-en="Est. cycle peak">사이클 고점 예상</span><span data-en="Next halving">다음 반감기</span></div>
           <div class="desc" id="halvDesc"></div>
         </div>
       </div>
@@ -583,35 +583,35 @@
       <!-- 카테고리 + 지표 -->
       <div class="cat-row">
         <div class="cat-box">
-          <div class="ct">카테고리별 점수</div>
-          <div class="cs">가중치 적용 전 원점수 · 지표 그룹 평균</div>
+          <div class="ct" data-en="Category Scores">카테고리별 점수</div>
+          <div class="cs" data-en="Raw scores before weighting · group averages">가중치 적용 전 원점수 · 지표 그룹 평균</div>
           <div id="catList"></div>
         </div>
         <div class="ind-box">
-          <div class="ih"><div class="t">세부 지표 분석</div><span class="s" id="indMeta">주요 지표 점수 · 현재 수치 · 추세</span></div>
-          <div class="ind-head"><span>지표명</span><span>현재 수치</span><span>점수</span><span class="end">추세</span></div>
+          <div class="ih"><div class="t" data-en="Detailed Indicators">세부 지표 분석</div><span class="s" id="indMeta">주요 지표 점수 · 현재 수치 · 추세</span></div>
+          <div class="ind-head"><span data-en="Indicator">지표명</span><span data-en="Current">현재 수치</span><span data-en="Score">점수</span><span class="end" data-en="Trend">추세</span></div>
           <div id="indList"></div>
         </div>
       </div>
 
       <!-- 매수 타이밍 -->
       <div>
-        <div class="sec-h"><h2>매수 타이밍 · 예측</h2><span class="hint">참고용 — 투자 조언 아님</span></div>
+        <div class="sec-h"><h2 data-en="Buy Timing · Forecast">매수 타이밍 · 예측</h2><span class="hint" data-en="For reference — not investment advice">참고용 — 투자 조언 아님</span></div>
         <div class="buy-row">
           <div class="buy-card chk">
-            <div class="bh"><span class="bt">매수 조건 체크리스트</span><span class="cnt" id="chkCnt">--</span></div>
+            <div class="bh"><span class="bt" data-en="Buy Condition Checklist">매수 조건 체크리스트</span><span class="cnt" id="chkCnt">--</span></div>
             <div id="chkList"></div>
           </div>
           <div class="buy-card pred">
-            <span class="bt" style="margin-bottom:16px">내일 점수 예측</span>
+            <span class="bt" style="margin-bottom:16px" data-en="Tomorrow's Score Forecast">내일 점수 예측</span>
             <div style="display:flex;align-items:baseline;gap:10px"><span class="pv" id="predVal">--</span><span class="pd" id="predDiff">--</span></div>
             <div class="pr" id="predRange">--</div>
             <div class="ptrack"><div class="band" id="predBand"></div><div class="pin" id="predPin"></div></div>
             <div class="pscale"><span>0</span><span>50</span><span>100</span></div>
-            <div class="pnote">최근 모멘텀과 카테고리 가중치 기반의 단기 회귀 추정치입니다.</div>
+            <div class="pnote" data-en="A short-term regression estimate based on recent momentum and category weights.">최근 모멘텀과 카테고리 가중치 기반의 단기 회귀 추정치입니다.</div>
           </div>
           <div class="buy-card lvl">
-            <span class="bt">가격 구조 — 지지/저항</span>
+            <span class="bt" data-en="Price Structure — Support/Resistance">가격 구조 — 지지/저항</span>
             <div class="lvl-list" id="lvlList"></div>
           </div>
         </div>
@@ -619,48 +619,48 @@
 
       <!-- 더 많은 데이터 -->
       <div>
-        <div class="sec-h"><h2>더 많은 데이터</h2><span class="hint">필요할 때만 펼쳐보세요</span></div>
+        <div class="sec-h"><h2 data-en="More Data">더 많은 데이터</h2><span class="hint" data-en="Expand only when you need it">필요할 때만 펼쳐보세요</span></div>
         <details class="acc" id="accDeriv">
-          <summary><div class="lt"><span class="d"></span><span class="t">파생 · 유동성 분석</span><span class="c">4개 지표</span></div><span class="caret">▼</span></summary>
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Derivatives · Liquidity">파생 · 유동성 분석</span><span class="c" data-en="4 indicators">4개 지표</span></div><span class="caret">▼</span></summary>
           <div class="acc-body" id="derivBody"></div>
         </details>
         <details class="acc" id="accContrib">
-          <summary><div class="lt"><span class="d"></span><span class="t">고급 분석 · 지표 기여도</span><span class="c" id="contribCnt">--</span></div><span class="caret">▼</span></summary>
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Advanced · Indicator Contribution">고급 분석 · 지표 기여도</span><span class="c" id="contribCnt">--</span></div><span class="caret">▼</span></summary>
           <div class="contrib-body">
-            <div class="ch">지표별 기여도 — 각 지표가 오늘의 종합 점수에 더한 영향(가중 기여도)</div>
+            <div class="ch" data-en="Contribution by indicator — each indicator's weighted impact on today's composite score">지표별 기여도 — 각 지표가 오늘의 종합 점수에 더한 영향(가중 기여도)</div>
             <div id="contribList"></div>
           </div>
         </details>
         <details class="acc" id="accPerf">
-          <summary><div class="lt"><span class="d"></span><span class="t">과거 성과 통계</span><span class="c" id="perfCnt">--</span></div><span class="caret">▼</span></summary>
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Historical Performance">과거 성과 통계</span><span class="c" id="perfCnt">--</span></div><span class="caret">▼</span></summary>
           <div class="contrib-body">
-            <div class="ch">요일별 평균 수익 · 기간별 BTC 수익 · 최근 30일 점수 히트맵</div>
+            <div class="ch" data-en="Average return by weekday · BTC return by period · last 30-day score heatmap">요일별 평균 수익 · 기간별 BTC 수익 · 최근 30일 점수 히트맵</div>
             <div class="perf-week" id="perfWeek"></div>
             <div class="perf-period acc-body" id="perfPeriod" style="padding:0;margin-top:14px"></div>
-            <div class="ch" style="margin:18px 0 8px">최근 30일 점수 히트맵</div>
+            <div class="ch" style="margin:18px 0 8px" data-en="Last 30-day score heatmap">최근 30일 점수 히트맵</div>
             <div class="perf-heat" id="perfHeat"></div>
           </div>
         </details>
         <details class="acc" id="accRegime">
-          <summary><div class="lt"><span class="d"></span><span class="t">Score × 공포·탐욕 레짐</span><span class="c" id="regimeCnt">--</span></div><span class="caret">▼</span></summary>
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Score × Fear/Greed Regime">Score × 공포·탐욕 레짐</span><span class="c" id="regimeCnt">--</span></div><span class="caret">▼</span></summary>
           <div class="contrib-body">
-            <div class="ch">현재 종합 점수와 공포·탐욕 지수가 만드는 시장 국면(레짐)</div>
+            <div class="ch" data-en="The market regime formed by the current composite score and the Fear &amp; Greed Index">현재 종합 점수와 공포·탐욕 지수가 만드는 시장 국면(레짐)</div>
             <div class="regime-box" id="regimeBox"></div>
           </div>
         </details>
         <details class="acc" id="accDca">
-          <summary><div class="lt"><span class="d"></span><span class="t">DCA 전략 백테스트</span><span class="c" id="dcaCnt">--</span></div><span class="caret">▼</span></summary>
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="DCA Strategy Backtest">DCA 전략 백테스트</span><span class="c" id="dcaCnt">--</span></div><span class="caret">▼</span></summary>
           <div class="contrib-body">
-            <div class="ch">점수 기준 분할매수(DCA) 시뮬레이션 · 매수 구간표 · 윈도우 비교</div>
+            <div class="ch" data-en="Score-based dollar-cost averaging (DCA) simulation · buy zone table · window comparison">점수 기준 분할매수(DCA) 시뮬레이션 · 매수 구간표 · 윈도우 비교</div>
             <div class="acc-body" id="dcaBody" style="padding:0"></div>
-            <div class="ch" style="margin:18px 0 8px">점수대별 매수 비중</div>
+            <div class="ch" style="margin:18px 0 8px" data-en="Buy weight by score band">점수대별 매수 비중</div>
             <div id="dcaZones"></div>
-            <div class="ch" style="margin:18px 0 8px">기간별 평균 점수 비교</div>
+            <div class="ch" style="margin:18px 0 8px" data-en="Average score by period">기간별 평균 점수 비교</div>
             <div class="acc-body" id="dcaWindows" style="padding:0"></div>
           </div>
         </details>
         <details class="acc" id="accRaw">
-          <summary><div class="lt"><span class="d"></span><span class="t">매크로 · 온체인 · 기술 지표 원본 수치</span><span class="c">상세</span></div><span class="caret">▼</span></summary>
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Macro · On-chain · Technical Raw Values">매크로 · 온체인 · 기술 지표 원본 수치</span><span class="c" data-en="Detail">상세</span></div><span class="caret">▼</span></summary>
           <div class="acc-body" id="rawBody"></div>
         </details>
       </div>
@@ -668,46 +668,46 @@
       <!-- 면책 -->
       <div class="disc">
         <span class="ic">!</span>
-        <div class="tx"><b>투자 유의</b> — 이 대시보드의 모든 수치와 예측은 교육·참고 목적의 정량 분석이며 투자 조언이 아닙니다. 모든 투자 결정의 책임은 본인에게 있습니다.</div>
+        <div class="tx" data-i18n-html="1" data-en="<b>Investment notice</b> — All figures and forecasts on this dashboard are quantitative analysis for educational and reference purposes and are not investment advice. You are solely responsible for your own investment decisions."><b>투자 유의</b> — 이 대시보드의 모든 수치와 예측은 교육·참고 목적의 정량 분석이며 투자 조언이 아닙니다. 모든 투자 결정의 책임은 본인에게 있습니다.</div>
       </div>
 
       <!-- 해설 -->
       <div class="explain">
-        <h2>비트코인 매수 타이밍, 데이터로 읽는 법</h2>
-        <div class="sub">이 대시보드가 하는 일, 쉬운 말로</div>
-        <p>비트코인 가격은 펀더멘털만큼이나 심리로 움직이고, 어떤 단 하나의 숫자도 완벽한 바닥을 짚어주지 못합니다. 이 대시보드는 매일 <b>25개 이상의 시장 지표</b>를 모아 각각 0~100으로 점수화하고, 이를 하나의 종합 타이밍 점수로 합칩니다. 점수가 낮을수록 시장이 공포에 차 있어 역사적으로 매수 구간에 가깝고, 높을수록 탐욕과 주의가 필요한 상태입니다.</p>
+        <h2 data-en="How to read Bitcoin buy timing with data">비트코인 매수 타이밍, 데이터로 읽는 법</h2>
+        <div class="sub" data-en="What this dashboard does, in plain terms">이 대시보드가 하는 일, 쉬운 말로</div>
+        <p data-i18n-html="1" data-en="Bitcoin's price is driven as much by sentiment as by fundamentals, and no single number can pinpoint the exact bottom. Every day this dashboard gathers <b>25+ market indicators</b>, scores each from 0 to 100, and combines them into one composite timing score. The lower the score, the more fear grips the market — historically closer to a buying zone; the higher it is, the more greed and caution are warranted.">비트코인 가격은 펀더멘털만큼이나 심리로 움직이고, 어떤 단 하나의 숫자도 완벽한 바닥을 짚어주지 못합니다. 이 대시보드는 매일 <b>25개 이상의 시장 지표</b>를 모아 각각 0~100으로 점수화하고, 이를 하나의 종합 타이밍 점수로 합칩니다. 점수가 낮을수록 시장이 공포에 차 있어 역사적으로 매수 구간에 가깝고, 높을수록 탐욕과 주의가 필요한 상태입니다.</p>
         <div class="cats">
-          <div class="ec"><div class="n">사이클 · 심리</div><div class="w">30%</div></div>
-          <div class="ec"><div class="n">기술적 분석</div><div class="w">25%</div></div>
-          <div class="ec"><div class="n">파생상품</div><div class="w">20%</div></div>
-          <div class="ec"><div class="n">온체인</div><div class="w">15%</div></div>
-          <div class="ec"><div class="n">매크로</div><div class="w">10%</div></div>
+          <div class="ec"><div class="n" data-en="Cycle · Sentiment">사이클 · 심리</div><div class="w">30%</div></div>
+          <div class="ec"><div class="n" data-en="Technical">기술적 분석</div><div class="w">25%</div></div>
+          <div class="ec"><div class="n" data-en="Derivatives">파생상품</div><div class="w">20%</div></div>
+          <div class="ec"><div class="n" data-en="On-chain">온체인</div><div class="w">15%</div></div>
+          <div class="ec"><div class="n" data-en="Macro">매크로</div><div class="w">10%</div></div>
         </div>
       </div>
 
       <!-- FAQ -->
       <div>
-        <div class="sec-h"><h2>자주 묻는 질문</h2><span class="hint">처음 오신 분들을 위한 빠른 답변</span></div>
+        <div class="sec-h"><h2 data-en="Frequently Asked Questions">자주 묻는 질문</h2><span class="hint" data-en="Quick answers for first-time visitors">처음 오신 분들을 위한 빠른 답변</span></div>
         <div class="faq">
-          <details><summary><span class="q">종합 타이밍 점수란 무엇인가요?</span><span class="c">+</span></summary><div class="a">5개 카테고리(사이클·심리, 기술적 분석, 파생상품, 온체인, 매크로)에 걸친 25개 이상의 비트코인 시장 지표를 하나로 합친 0~100 숫자입니다. 낮으면 시장이 공포 상태(역사적으로 더 좋은 매수 구간), 높으면 탐욕 상태(주의가 필요한 때)를 뜻합니다.</div></details>
-          <details><summary><span class="q">데이터는 얼마나 자주 갱신되나요?</span><span class="c">+</span></summary><div class="a">대시보드는 매일 한국시간 09:05 무렵 자동으로 갱신됩니다. 방문할 때마다 실시간 API를 호출하는 대신 항상 마지막으로 수집한 값을 보여주기 때문에 페이지가 빠르고 안정적으로 동작합니다.</div></details>
-          <details><summary><span class="q">점수가 낮으면 바로 사라는 신호인가요?</span><span class="c">+</span></summary><div class="a">아닙니다. 낮은 점수는 공포가 퍼져 있다는 뜻으로 역사적으로 장기 진입에 더 좋은 구간인 경우가 많았지만, 하락장에서는 몇 주씩 공포가 이어질 수 있습니다. 정확한 매수 방아쇠가 아니라 분할·점진적 접근의 맥락으로 받아들이고, 지표 가이드와 함께 활용하세요.</div></details>
-          <details><summary><span class="q">이건 투자 조언인가요?</span><span class="c">+</span></summary><div class="a">아닙니다. 이곳의 모든 내용은 교육·참고 목적의 정량 분석일 뿐입니다. 투자 조언이나 권유가 아니며, 모든 투자 결정과 그 결과의 책임은 본인에게 있습니다.</div></details>
-          <details><summary><span class="q">무료인가요? 회원가입이 필요한가요?</span><span class="c">+</span></summary><div class="a">완전히 무료이며 회원가입이 필요 없습니다. 페이지를 열면 최신 수치가 바로 나옵니다. 서비스는 광고로 운영됩니다.</div></details>
+          <details><summary><span class="q" data-en="What is the composite timing score?">종합 타이밍 점수란 무엇인가요?</span><span class="c">+</span></summary><div class="a" data-en="It is a single 0–100 number that combines 25+ Bitcoin market indicators across five categories (Cycle · Sentiment, Technical, Derivatives, On-chain, Macro). A low score means the market is fearful (historically a better buying zone); a high score means it is greedy (a time for caution).">5개 카테고리(사이클·심리, 기술적 분석, 파생상품, 온체인, 매크로)에 걸친 25개 이상의 비트코인 시장 지표를 하나로 합친 0~100 숫자입니다. 낮으면 시장이 공포 상태(역사적으로 더 좋은 매수 구간), 높으면 탐욕 상태(주의가 필요한 때)를 뜻합니다.</div></details>
+          <details><summary><span class="q" data-en="How often is the data updated?">데이터는 얼마나 자주 갱신되나요?</span><span class="c">+</span></summary><div class="a" data-en="The dashboard updates automatically each day around 09:05 KST. Instead of calling live APIs on every visit, it always shows the most recently collected values, so the page loads fast and stays stable.">대시보드는 매일 한국시간 09:05 무렵 자동으로 갱신됩니다. 방문할 때마다 실시간 API를 호출하는 대신 항상 마지막으로 수집한 값을 보여주기 때문에 페이지가 빠르고 안정적으로 동작합니다.</div></details>
+          <details><summary><span class="q" data-en="Does a low score mean it's time to buy immediately?">점수가 낮으면 바로 사라는 신호인가요?</span><span class="c">+</span></summary><div class="a" data-en="No. A low score means fear is widespread — historically often a better zone for long-term entry — but in a downtrend fear can persist for weeks. Treat it as context for a gradual, staged approach rather than a precise buy trigger, and use it together with the Indicator Guide.">아닙니다. 낮은 점수는 공포가 퍼져 있다는 뜻으로 역사적으로 장기 진입에 더 좋은 구간인 경우가 많았지만, 하락장에서는 몇 주씩 공포가 이어질 수 있습니다. 정확한 매수 방아쇠가 아니라 분할·점진적 접근의 맥락으로 받아들이고, 지표 가이드와 함께 활용하세요.</div></details>
+          <details><summary><span class="q" data-en="Is this investment advice?">이건 투자 조언인가요?</span><span class="c">+</span></summary><div class="a" data-en="No. Everything here is quantitative analysis for educational and reference purposes only. It is not investment advice or a solicitation, and you are solely responsible for your investment decisions and their outcomes.">아닙니다. 이곳의 모든 내용은 교육·참고 목적의 정량 분석일 뿐입니다. 투자 조언이나 권유가 아니며, 모든 투자 결정과 그 결과의 책임은 본인에게 있습니다.</div></details>
+          <details><summary><span class="q" data-en="Is it free? Do I need to sign up?">무료인가요? 회원가입이 필요한가요?</span><span class="c">+</span></summary><div class="a" data-en="It is completely free and requires no sign-up. Open the page and the latest figures appear right away. The service is supported by advertising.">완전히 무료이며 회원가입이 필요 없습니다. 페이지를 열면 최신 수치가 바로 나옵니다. 서비스는 광고로 운영됩니다.</div></details>
         </div>
       </div>
 
       <!-- 푸터 -->
       <div class="foot">
         <div class="fa">
-          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
-          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+          <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
+          <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4>메뉴</h4><a href="index.html">대시보드</a><a href="guide.html">지표 가이드</a><a href="about.html">서비스 소개</a><a href="contact.html">문의</a></div>
-          <div class="col"><h4>정책 · 커뮤니티</h4><a href="privacy.html">개인정보처리방침</a><a href="disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="index.html" data-en="Dashboard">대시보드</a><a href="guide.html" data-en="Indicator Guide">지표 가이드</a><a href="about.html" data-en="About">서비스 소개</a><a href="contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
-        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+        <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
       </div>
 
     </div>
@@ -717,12 +717,18 @@
 <!-- Firebase compat SDK (동기 로드) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+<!-- 다국어(i18n) 런타임 — 인라인 IIFE보다 먼저 동기 로드해 window.BTCI18N을 파싱 시점에 확보(defer 캡처 레이스 방지) -->
+<script src="btc-i18n.js"></script>
 <script>
 (function(){
 'use strict';
 
+/* ── 다국어 헬퍼: call-time에 window.BTCI18N을 참조(파싱 시점 캡처 금지) ── */
+function T(o){return (window.BTCI18N&&window.BTCI18N.t)?window.BTCI18N.t(o):o.ko;}
+function ML(s){return (window.BTCI18N&&window.BTCI18N.mapLabel)?window.BTCI18N.mapLabel(s):s;}
+
 /* ── 공통 헬퍼 ── */
-var LOC='ko-KR';
+var LOC=(window.BTCI18N&&window.BTCI18N.locale)||'ko-KR';
 function ge(id){return document.getElementById(id);}
 function pf(v){var n=parseFloat(v);return isNaN(n)?null:n;}
 // null 안전 숫자 포맷 (ko-KR), 값 없으면 '--'
@@ -739,7 +745,7 @@ function deltaColor(d){return d>0?GREEN:d<0?RED:AMBER;}
 // 공포탐욕 색: 0~25 극공포(red), ~45 공포(red), ~55 중립(amber), ~75 탐욕(green계열은 과열이므로 amber), 그 외 극탐욕(red)
 // 단순화: 낮음=공포=red, 중립=amber, 높음=탐욕=green(역사적 위험 신호이지만 디자인상 강세색)
 function fgColor(v){return v<=45?RED:v<=60?AMBER:GREEN;}
-function fgLabel(v){return v<=20?'극단적 공포':v<=40?'공포':v<=60?'중립':v<=80?'탐욕':'극단적 탐욕';}
+function fgLabel(v){return v<=20?T({ko:'극단적 공포',en:'Extreme Fear'}):v<=40?T({ko:'공포',en:'Fear'}):v<=60?T({ko:'중립',en:'Neutral'}):v<=80?T({ko:'탐욕',en:'Greed'}):T({ko:'극단적 탐욕',en:'Extreme Greed'});}
 
 /* ── 라인 차트 (canvas, index.html lineChart 스타일 이식) ── */
 function lineChart(id,data,color,opts){
@@ -796,7 +802,7 @@ async function init(){
     var r=await fetch('./data/snapshot.json?t='+Date.now());
     snap=await r.json();
   }catch(e){
-    ge('loading').innerHTML='<div style="color:'+RED+';font-size:14px;text-align:center">데이터 로드 실패<br><span style="font-size:12px;color:#8b93a7">'+e.message+'</span></div>';
+    ge('loading').innerHTML='<div style="color:'+RED+';font-size:14px;text-align:center">'+T({ko:'데이터 로드 실패',en:'Failed to load data'})+'<br><span style="font-size:12px;color:#8b93a7">'+e.message+'</span></div>';
     console.error('[dashboard] snapshot load failed:',e&&e.message);
     return;
   }
@@ -847,20 +853,25 @@ async function init(){
 
   /* ── Hero ── */
   animateGauge(SCORE,scoreCol);
-  ge('heroDate').textContent='오늘의 비트코인 타이밍'+(updDate?' · '+updDate+(updTime?' '+updTime+' KST':''):'');
-  // 헤드라인: actionReason 우선, signalDisplay 보조
-  var sd=m.signalDisplay||'중립';
-  ge('heroHeadline').innerHTML=(m.actionReason||(sd+' 구간입니다')).replace(/(관망|중립|매수|매도|분할)/,'<span style="color:'+scoreCol+'">$1</span>');
+  ge('heroDate').textContent=T({ko:'오늘의 비트코인 타이밍',en:"Today's Bitcoin timing"})+(updDate?' · '+updDate+(updTime?' '+updTime+' KST':''):'');
+  // 헤드라인: ko는 actionReason(백엔드 한국어 문장) 우선, en은 라벨 매핑 불가 문장이므로 signalDisplay 기반으로 구성
+  var sd=m.signalDisplay||'중립';   // 로직/원문용 한국어 유지
+  var isEn=window.BTCI18N&&window.BTCI18N.lang==='en';
+  if(isEn){
+    ge('heroHeadline').innerHTML='<span style="color:'+scoreCol+'">'+ML(sd)+'</span> zone';
+  }else{
+    ge('heroHeadline').innerHTML=(m.actionReason||(sd+' 구간입니다')).replace(/(관망|중립|매수|매도|분할)/,'<span style="color:'+scoreCol+'">$1</span>');
+  }
   // 배지: signalLabel/Display 기반 색
   var badgeCol=SCORE>=60?GREEN:SCORE>=45?AMBER:RED;
   var hb=ge('heroBadge');
   hb.style.background=badgeCol+'1f';hb.style.border='1px solid '+badgeCol+'40';
   hb.querySelector('.sw').style.background=badgeCol;
   var hbt=ge('heroBadgeText');hbt.style.color=badgeCol;
-  hbt.textContent=sd+(SCORE>=50&&SCORE<65?' · 분할 매수 고려':'');
+  hbt.textContent=ML(sd)+(SCORE>=50&&SCORE<65?T({ko:' · 분할 매수 고려',en:' · Consider scaling in'}):'');
   var hd=ge('heroDelta');
   hd.style.color=deltaColor(DELTA);
-  hd.textContent=(DELTA>0?'▲ +':DELTA<0?'▼ ':'= ')+DELTA+' (어제 대비)';
+  hd.textContent=(DELTA>0?'▲ +':DELTA<0?'▼ ':'= ')+DELTA+T({ko:' (어제 대비)',en:' (vs. yesterday)'});
   ge('heroPrice').textContent='BTC '+usd(BTC);
 
   /* ── KPI 4 ── */
@@ -874,10 +885,10 @@ async function init(){
   var wAvg=pf(m.weeklyAverageScore);
   var dom=pf(altc.btcDominance);
   var kpis=[
-    {label:'BTC 현재가',value:usd(BTC),delta:'',sub:'최근 종가 기준',spark:priceHist,col:scoreCol},
-    {label:'종합 타이밍 점수',value:(SCORE||'--')+'',delta:(DELTA>0?'+':'')+DELTA,dcol:deltaColor(DELTA),sub:wAvg!=null?('주간평균 '+wAvg):'--',spark:scoreHist,col:scoreCol},
-    {label:'공포·탐욕 지수',value:(FG!=null?FG:'--')+'',delta:fgLabel(FG),dcol:fgColor(FG),sub:'0=공포 100=탐욕',spark:fgHist,col:fgColor(FG)},
-    {label:'BTC 도미넌스',value:dom!=null?(dom+'%'):'--',delta:altc.altseasonLabel||'',dcol:AMBER,sub:'시장 점유율',spark:null,col:AMBER}
+    {label:T({ko:'BTC 현재가',en:'BTC Price'}),value:usd(BTC),delta:'',sub:T({ko:'최근 종가 기준',en:'Latest close'}),spark:priceHist,col:scoreCol},
+    {label:T({ko:'종합 타이밍 점수',en:'Composite Timing Score'}),value:(SCORE||'--')+'',delta:(DELTA>0?'+':'')+DELTA,dcol:deltaColor(DELTA),sub:wAvg!=null?(T({ko:'주간평균 ',en:'Weekly avg '})+wAvg):'--',spark:scoreHist,col:scoreCol},
+    {label:T({ko:'공포·탐욕 지수',en:'Fear & Greed Index'}),value:(FG!=null?FG:'--')+'',delta:fgLabel(FG),dcol:fgColor(FG),sub:T({ko:'0=공포 100=탐욕',en:'0=Fear 100=Greed'}),spark:fgHist,col:fgColor(FG)},
+    {label:T({ko:'BTC 도미넌스',en:'BTC Dominance'}),value:dom!=null?(dom+'%'):'--',delta:ML(altc.altseasonLabel||''),dcol:AMBER,sub:T({ko:'시장 점유율',en:'Market share'}),spark:null,col:AMBER}
   ];
   var ks=ge('kpiStrip');
   kpis.forEach(function(k,i){
@@ -894,13 +905,14 @@ async function init(){
   var passed=chk.passedCount!=null?chk.passedCount:'--';
   var total=chk.totalCount!=null?chk.totalCount:'--';
   var predS=fc.predictedScore!=null?pf(fc.predictedScore):null;
-  var elapsed=cy.formattedElapsed||((m.halvingDaysAfter!=null?m.halvingDaysAfter:'--')+'일');
+  // 반감기 경과: ko는 백엔드 포맷 문자열(예: '805일 경과'), en은 라벨화 불가하므로 일수로 재구성
+  var elapsed=(isEn?null:cy.formattedElapsed)||((m.halvingDaysAfter!=null?m.halvingDaysAfter:'--')+T({ko:'일',en:'d'}));
   var sums=[
-    {k:'어제보다',v:(DELTA>0?'+':'')+DELTA+'점',col:deltaColor(DELTA),s:'종합 점수 변화'},
-    {k:'시장 국면',v:sd,col:scoreCol,s:m.actionType==='HOLD'?'관망 우세':'',cls:'s'},
-    {k:'매수 조건 통과',v:passed+' / '+total,col:(chk.passedCount/chk.totalCount>=0.5?GREEN:AMBER),s:chk.levelLabel||'체크리스트'},
-    {k:'내일 예상 점수',v:predS!=null?predS+'점':'--',col:predS!=null?scoreColor(predS):AMBER,s:fc.scoreDiff!=null?('오늘 대비 '+(pf(fc.scoreDiff)>0?'+':'')+fc.scoreDiff):''},
-    {k:'반감기 경과',v:elapsed,col:'#cfd4de',s:m.halvingPhase||cy.phaseLabel||'',cls:'s'}
+    {k:T({ko:'어제보다',en:'vs. Yesterday'}),v:(DELTA>0?'+':'')+DELTA+T({ko:'점',en:' pts'}),col:deltaColor(DELTA),s:T({ko:'종합 점수 변화',en:'Composite score change'})},
+    {k:T({ko:'시장 국면',en:'Market phase'}),v:ML(sd),col:scoreCol,s:m.actionType==='HOLD'?T({ko:'관망 우세',en:'Hold off'}):'',cls:'s'},
+    {k:T({ko:'매수 조건 통과',en:'Conditions passed'}),v:passed+' / '+total,col:(chk.passedCount/chk.totalCount>=0.5?GREEN:AMBER),s:chk.levelLabel?ML(chk.levelLabel):T({ko:'체크리스트',en:'Checklist'})},
+    {k:T({ko:'내일 예상 점수',en:"Tomorrow's score"}),v:predS!=null?predS+T({ko:'점',en:' pts'}):'--',col:predS!=null?scoreColor(predS):AMBER,s:fc.scoreDiff!=null?(T({ko:'오늘 대비 ',en:'vs. today '})+(pf(fc.scoreDiff)>0?'+':'')+fc.scoreDiff):''},
+    {k:T({ko:'반감기 경과',en:'Since halving'}),v:elapsed,col:'#cfd4de',s:ML(m.halvingPhase||cy.phaseLabel||''),cls:'s'}
   ];
   var sg=ge('sumGrid');
   sums.forEach(function(s){
@@ -917,25 +929,25 @@ async function init(){
     var esc=function(x){return String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
     // 메타: 톤·점수·갱신시각(KST)
     var dtone=ai.toneDisplay||ex.verdict||'--';
-    var dsc=(ai.compositeScore!=null?ai.compositeScore+'점':'');
+    var dsc=(ai.compositeScore!=null?ai.compositeScore+T({ko:'점',en:' pts'}):'');
     var dcol=ai.toneHexColor||AMBER;
     var gt='';
-    if(ai.generatedAt){ try{ gt=new Date(ai.generatedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}); }catch(e){} }
+    if(ai.generatedAt){ try{ gt=new Date(ai.generatedAt).toLocaleString(LOC,{timeZone:'Asia/Seoul',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}); }catch(e){} }
     // 그룹 렌더 헬퍼
     var groupHtml=function(title,col,arr){
       if(!arr.length) return '';
       return '<div class="ai-grp"><div class="ai-grp-h" style="color:'+col+'">'+title+'</div>'+
         arr.map(function(c){return '<div class="ai-grp-i"><span class="ai-dot" style="background:'+col+'"></span><span>'+esc(c)+'</span></div>';}).join('')+'</div>';
     };
-    var html='<div class="ai-meta"><span class="ai-tone" style="color:'+dcol+'">'+esc(dtone)+(dsc?' · '+dsc:'')+'</span>'+(gt?'<span class="ai-time">'+gt+' 갱신</span>':'')+'</div>';
+    var html='<div class="ai-meta"><span class="ai-tone" style="color:'+dcol+'">'+esc(ML(dtone))+(dsc?' · '+dsc:'')+'</span>'+(gt?'<span class="ai-time">'+gt+T({ko:' 갱신',en:' updated'})+'</span>':'')+'</div>';
     if(grp.SUMMARY.length) html+='<p class="ai-sum">'+grp.SUMMARY.map(esc).join(' ')+'</p>';
-    html+=groupHtml('위험 신호',RED,grp.RISK);
-    html+=groupHtml('권고 행동',GREEN,grp.ACTION);
-    html+=groupHtml('기회',GREEN,grp.OPPORTUNITY);
+    html+=groupHtml(T({ko:'위험 신호',en:'Risk Signals'}),RED,grp.RISK);
+    html+=groupHtml(T({ko:'권고 행동',en:'Recommended Action'}),GREEN,grp.ACTION);
+    html+=groupHtml(T({ko:'기회',en:'Opportunity'}),GREEN,grp.OPPORTUNITY);
     ge('expertText').innerHTML=html;
   } else {
     // 다이제스트 없으면 전문가 요약 폴백
-    ge('expertText').textContent=ex.summary||'데이터 없음';
+    ge('expertText').textContent=ex.summary||T({ko:'데이터 없음',en:'No data'});
   }
 
   /* 뉴스 센티먼트: compositeScore(-1~1) → 바 width(0~100%) + 뉴스 목록 */
@@ -943,11 +955,11 @@ async function init(){
     var nsc=pf(ns.compositeScore)||0;
     var nsCol=nsc>=0.2?GREEN:nsc<=-0.2?RED:AMBER;
     var nv=ge('newsVal');nv.style.color=nsCol;
-    nv.textContent=(nsc>0?'+':'')+nsc.toFixed(2)+' '+(ns.labelDisplay||'중립');
+    nv.textContent=(nsc>0?'+':'')+nsc.toFixed(2)+' '+ML(ns.labelDisplay||'중립');
     var nb=ge('newsBar');nb.style.background=nsCol;nb.style.width=Math.max(2,Math.min(100,(nsc+1)/2*100))+'%';
     // 헤더: 라벨 + 분석 건수
     var nsCount=ns.scoredCount||0;
-    ge('newsSentMeta').innerHTML='<span class="lab" style="color:'+nsCol+';background:'+nsCol+'1a;border:1px solid '+nsCol+'44">'+(ns.labelDisplay||'중립')+'</span> &nbsp;'+nsCount+'건 분석';
+    ge('newsSentMeta').innerHTML='<span class="lab" style="color:'+nsCol+';background:'+nsCol+'1a;border:1px solid '+nsCol+'44">'+ML(ns.labelDisplay||'중립')+'</span> &nbsp;'+nsCount+T({ko:'건 분석',en:' analyzed'});
     // 뉴스 목록(최대 8건): 제목 링크 + 출처 + 항목 점수
     var nsItems=ns.items||[];
     ge('newsSentItems').innerHTML=nsItems.slice(0,8).map(function(item){
@@ -958,10 +970,10 @@ async function init(){
         +'<div class="ns" style="color:'+c+'">'+(sc>0?'+':'')+sc.toFixed(1)+'</div>'
         +'<div class="nb"><a href="'+(item.url||'#')+'" target="_blank" rel="noopener">'+(item.title||'')+'</a>'
         +'<div class="src">'+(item.source||'')+(ts?' · '+ts:'')+'</div></div></div>';
-    }).join('')||'<div class="empty">뉴스 데이터 없음</div>';
+    }).join('')||'<div class="empty">'+T({ko:'뉴스 데이터 없음',en:'No news data'})+'</div>';
   }else{
     ge('newsVal').textContent='--';
-    ge('newsSentItems').innerHTML='<div class="empty">뉴스 데이터 없음</div>';
+    ge('newsSentItems').innerHTML='<div class="empty">'+T({ko:'뉴스 데이터 없음',en:'No news data'})+'</div>';
   }
 
   /* 알트시즌 */
@@ -969,20 +981,20 @@ async function init(){
     var ai2=pf(alt.index);
     var altCol=ai2>=75?RED:ai2>=50?AMBER:GREEN;
     var av=ge('altVal');av.textContent=ai2!=null?ai2:'--';av.style.color=altCol;
-    ge('altLbl').textContent=alt.label||'--';
+    ge('altLbl').textContent=ML(alt.label||'--');
   }else{
     var ai3=pf(altc.altSeasonIndex);
     ge('altVal').textContent=ai3!=null?ai3:'--';
-    ge('altLbl').textContent=altc.altseasonLabel||'--';
+    ge('altLbl').textContent=ML(altc.altseasonLabel||'--');
   }
 
   /* 고래 동향 (실제 NEUTRAL / netFlowSum7d 음수) */
   var whSig=wh.signal||'NEUTRAL';
   var whMap={ACCUMULATING:'매집',DISTRIBUTING:'분배',NEUTRAL:'중립'};
   var whCol=whSig==='ACCUMULATING'?GREEN:whSig==='DISTRIBUTING'?RED:AMBER;
-  var wv=ge('whaleVal');wv.textContent=whMap[whSig]||whSig;wv.style.color=whCol;
+  var wv=ge('whaleVal');wv.textContent=ML(whMap[whSig]||whSig);wv.style.color=whCol;
   var nf=pf(wh.netFlowSum7d);
-  ge('whaleSub').textContent=nf!=null?('7일 순유입 '+(nf>0?'+':'')+fN(nf,0)+' BTC'):'--';
+  ge('whaleSub').textContent=nf!=null?(T({ko:'7일 순유입 ',en:'7d net flow '})+(nf>0?'+':'')+fN(nf,0)+' BTC'):'--';
 
   /* ── 추이 차트 값 라벨 ── */
   ge('trScoreV').textContent=SCORE+(DELTA>=0?' ▲':' ▼');
@@ -996,18 +1008,19 @@ async function init(){
   var pw=pf(cy.progressWidth);
   if(pw==null&&m.halvingDaysAfter!=null)pw=Math.min(pf(m.halvingDaysAfter)/1460*100,100);
   pw=pw!=null?Math.min(pw,100):0;
-  ge('halvSub').textContent=(cy.lastHalvingDate?cy.lastHalvingDate+' 반감기 기준 · ':'')+(cy.formattedElapsed||'');
-  ge('halvCur').textContent='현재 · '+Math.round(pw)+'%';
-  ge('halvDesc').textContent=cy.phaseDescription||(m.halvingPhase||'');
+  var elapsedTail=isEn?((m.halvingDaysAfter!=null?m.halvingDaysAfter+' days elapsed':'')):(cy.formattedElapsed||'');
+  ge('halvSub').textContent=(cy.lastHalvingDate?cy.lastHalvingDate+T({ko:' 반감기 기준 · ',en:' halving basis · '}):'')+elapsedTail;
+  ge('halvCur').textContent=T({ko:'현재 · ',en:'Now · '})+Math.round(pw)+'%';
+  ge('halvDesc').textContent=cy.phaseDescription||ML(m.halvingPhase||'');
   setTimeout(function(){ge('halvFill').style.width=pw+'%';},200);
 
   /* ── 카테고리별 점수 (indicatorBreakdown 그룹 평균, index.html 그룹핑) ── */
   var cats=[
-    {name:'사이클 · 심리',w:'30%',keys:['공포탐욕','BTC도미넌스','김치프리미엄','ETH/BTC','반감기사이클'],grad:'linear-gradient(90deg,#f7931a,#ffb347)'},
-    {name:'기술적 분석',w:'25%',keys:['RSI(일)','RSI(주)','MA200비율','Pi사이클'],grad:'linear-gradient(90deg,#5b8def,#7fb0ff)'},
-    {name:'파생상품',w:'20%',keys:['펀딩비','롱숏비율','테이커비율','OI비율','변동성(HV)'],grad:'linear-gradient(90deg,#16c784,#2bd49a)'},
-    {name:'온체인',w:'15%',keys:['MVRV Z','Puell Multiple','NUPL','SOPR','LTH/STH','스테이블코인'],grad:'linear-gradient(90deg,#f0b90b,#ffd877)'},
-    {name:'매크로',w:'10%',keys:['DXY','S&P500','VIX','M2 성장률'],grad:'linear-gradient(90deg,#b07bff,#cda6ff)'}
+    {name:'사이클 · 심리',en:'Cycle · Sentiment',w:'30%',keys:['공포탐욕','BTC도미넌스','김치프리미엄','ETH/BTC','반감기사이클'],grad:'linear-gradient(90deg,#f7931a,#ffb347)'},
+    {name:'기술적 분석',en:'Technical',w:'25%',keys:['RSI(일)','RSI(주)','MA200비율','Pi사이클'],grad:'linear-gradient(90deg,#5b8def,#7fb0ff)'},
+    {name:'파생상품',en:'Derivatives',w:'20%',keys:['펀딩비','롱숏비율','테이커비율','OI비율','변동성(HV)'],grad:'linear-gradient(90deg,#16c784,#2bd49a)'},
+    {name:'온체인',en:'On-chain',w:'15%',keys:['MVRV Z','Puell Multiple','NUPL','SOPR','LTH/STH','스테이블코인'],grad:'linear-gradient(90deg,#f0b90b,#ffd877)'},
+    {name:'매크로',en:'Macro',w:'10%',keys:['DXY','S&P500','VIX','M2 성장률'],grad:'linear-gradient(90deg,#b07bff,#cda6ff)'}
   ];
   var cl=ge('catList');
   cats.forEach(function(cat){
@@ -1015,7 +1028,7 @@ async function init(){
     var avg=vals.length?Math.round(vals.reduce(function(a,b){return a+b;},0)/vals.length):null;
     var col=avg!=null?scoreColor(avg):'#8b93a7';
     var row=mk('div','cat-item',
-      '<div class="top"><span class="nm">'+cat.name+' <small>· 가중 '+cat.w+'</small></span><span class="sc" style="color:'+col+'">'+(avg!=null?avg:'--')+'</span></div>'+
+      '<div class="top"><span class="nm">'+T({ko:cat.name,en:cat.en})+' <small>'+T({ko:'· 가중 ',en:'· weight '})+cat.w+'</small></span><span class="sc" style="color:'+col+'">'+(avg!=null?avg:'--')+'</span></div>'+
       '<div class="bar"><i data-w="'+(avg||0)+'" style="background:'+cat.grad+'"></i></div>');
     cl.appendChild(row);
   });
@@ -1023,14 +1036,14 @@ async function init(){
   /* ── 세부 지표 표 (indicatorRows, 배열 길이 가변·상위 12개) ── */
   var rows=sys.indicatorRows||[];
   var showN=Math.min(rows.length,12);
-  ge('indMeta').textContent='전체 '+rows.length+'개 중 상위 '+showN+'개 · 점수 · 추세';
+  ge('indMeta').textContent=T({ko:'전체 '+rows.length+'개 중 상위 '+showN+'개 · 점수 · 추세',en:'Top '+showN+' of '+rows.length+' · score · trend'});
   var il=ge('indList');
   rows.slice(0,showN).forEach(function(r){
     var s=pf(r.score)||0,bc=scoreColor(s);
     var tr=pf(r.trend);
     var trH=tr>0?'<span style="color:'+GREEN+'">↗</span>':tr<0?'<span style="color:'+RED+'">↘</span>':'<span style="color:#8b93a7">→</span>';
     var line=mk('div','ind-line',
-      '<span class="nm">'+(r.name||'--')+'</span>'+
+      '<span class="nm">'+ML(r.name||'--')+'</span>'+
       '<span class="val">'+(r.value!=null?r.value:'--')+'</span>'+
       '<span class="chip" style="background:'+bc+'22;color:'+bc+'">'+s+'</span>'+
       '<span class="tr">'+trH+'</span>');
@@ -1040,7 +1053,7 @@ async function init(){
   /* ── 매수 체크리스트 (items 길이 가변) ── */
   var items=chk.items||[];
   var cc=ge('chkCnt');
-  cc.textContent=passed+' / '+total+' 통과';
+  cc.textContent=passed+' / '+total+T({ko:' 통과',en:' passed'});
   cc.style.color=(chk.passedCount/chk.totalCount>=0.5?GREEN:AMBER);
   var ckl=ge('chkList');
   if(items.length){
@@ -1049,10 +1062,10 @@ async function init(){
       var col=ok?GREEN:RED;
       var line=mk('div','chk-item',
         '<span class="mk" style="background:'+col+'22;color:'+col+'">'+(ok?'✓':'✕')+'</span>'+
-        '<span class="ct">'+(it.name||'--')+(it.reason?'<span class="cr">'+it.reason+'</span>':'')+'</span>');
+        '<span class="ct">'+ML(it.name||'--')+(it.reason?'<span class="cr">'+it.reason+'</span>':'')+'</span>');
       ckl.appendChild(line);
     });
-  }else{ckl.appendChild(mk('div','chk-item','<span class="ct" style="color:#8b93a7">체크리스트 데이터 없음</span>'));}
+  }else{ckl.appendChild(mk('div','chk-item','<span class="ct" style="color:#8b93a7">'+T({ko:'체크리스트 데이터 없음',en:'No checklist data'})+'</span>'));}
 
   /* ── 내일 예측 ── */
   ge('predVal').textContent=predS!=null?predS:'--';
@@ -1062,7 +1075,7 @@ async function init(){
   if(diff!=null){pdEl.textContent=(diff>0?'▲ +':diff<0?'▼ ':'= ')+Math.abs(diff);pdEl.style.color=deltaColor(diff);}
   else{pdEl.textContent='';}
   var lo=pf(fc.confidenceLow),hi=pf(fc.confidenceHigh);
-  ge('predRange').textContent=(lo!=null&&hi!=null)?('예상 범위 '+lo+' – '+hi):'예상 범위 --';
+  ge('predRange').textContent=(lo!=null&&hi!=null)?(T({ko:'예상 범위 ',en:'Range '})+lo+' – '+hi):T({ko:'예상 범위 --',en:'Range --'});
   if(lo!=null&&hi!=null){
     ge('predBand').style.left=lo+'%';ge('predBand').style.width=Math.max(2,hi-lo)+'%';
   }
@@ -1070,11 +1083,11 @@ async function init(){
 
   /* ── 지지/저항 ── */
   var levels=[
-    {t:'저항 2',p:str.lastHigh,kind:'r'},
-    {t:'저항 1',p:str.nextResistance,kind:'r'},
-    {t:'현재가',p:m.btcClose,kind:'cur'},
-    {t:'지지 1',p:str.nextSupport,kind:'s'},
-    {t:'지지 2',p:str.lastLow,kind:'s'}
+    {t:'저항 2',en:'Resistance 2',p:str.lastHigh,kind:'r'},
+    {t:'저항 1',en:'Resistance 1',p:str.nextResistance,kind:'r'},
+    {t:'현재가',en:'Current',p:m.btcClose,kind:'cur'},
+    {t:'지지 1',en:'Support 1',p:str.nextSupport,kind:'s'},
+    {t:'지지 2',en:'Support 2',p:str.lastLow,kind:'s'}
   ];
   var ll=ge('lvlList');
   levels.forEach(function(lv){
@@ -1082,7 +1095,7 @@ async function init(){
             lv.kind==='cur'?'background:rgba(240,185,11,.12);border:1px solid rgba(240,185,11,.25)':
             'background:rgba(22,199,132,.1);border:1px solid rgba(22,199,132,.22)';
     var lc=lv.kind==='r'?RED:lv.kind==='cur'?AMBER:GREEN;
-    ll.appendChild(mk('div','lvl-item','<span class="lt" style="color:'+lc+'">'+lv.t+'</span><span class="lp" style="color:'+lc+'">'+usd(lv.p)+'</span>',null));
+    ll.appendChild(mk('div','lvl-item','<span class="lt" style="color:'+lc+'">'+T({ko:lv.t,en:lv.en})+'</span><span class="lp" style="color:'+lc+'">'+usd(lv.p)+'</span>',null));
     ll.lastChild.style.cssText='display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-radius:10px;'+sty;
   });
 
@@ -1091,29 +1104,29 @@ async function init(){
   // 청산
   if(liq.hasData){
     var cd=pf(liq.downsideLiquidationUsd)/1e9,cu=pf(liq.upsideLiquidationUsd)/1e9;
-    derivCells.push({l:'청산 히트맵',v:liq.cascadeLabel||'--'+'<br>'+(cd!=null?('하방 $'+cd.toFixed(1)+'B · 상방 $'+(cu||0).toFixed(1)+'B'):'')});
-  }else derivCells.push({l:'청산 히트맵',v:'--'});
+    derivCells.push({l:T({ko:'청산 히트맵',en:'Liquidation Heatmap'}),v:ML(liq.cascadeLabel||'--')+'<br>'+(cd!=null?(T({ko:'하방 $',en:'Down $'})+cd.toFixed(1)+'B · '+T({ko:'상방 $',en:'Up $'})+(cu||0).toFixed(1)+'B'):'')});
+  }else derivCells.push({l:T({ko:'청산 히트맵',en:'Liquidation Heatmap'}),v:'--'});
   // 상관
   if(corr.hasData){
     var spx=pf(corr.btcVsSpx),gold=pf(corr.btcVsGold),dxy=pf(corr.btcVsDxy);
-    derivCells.push({l:'자산 간 상관관계',v:'나스닥/S&P '+(spx!=null?(spx>0?'+':'')+spx.toFixed(2):'--')+'<br>金 '+(gold!=null?(gold>0?'+':'')+gold.toFixed(2):'--')+' · 달러 '+(dxy!=null?dxy.toFixed(2):'--')});
-  }else derivCells.push({l:'자산 간 상관관계',v:'--'});
+    derivCells.push({l:T({ko:'자산 간 상관관계',en:'Cross-asset Correlation'}),v:T({ko:'나스닥/S&P ',en:'Nasdaq/S&P '})+(spx!=null?(spx>0?'+':'')+spx.toFixed(2):'--')+'<br>'+T({ko:'金 ',en:'Gold '})+(gold!=null?(gold>0?'+':'')+gold.toFixed(2):'--')+T({ko:' · 달러 ',en:' · Dollar '})+(dxy!=null?dxy.toFixed(2):'--')});
+  }else derivCells.push({l:T({ko:'자산 간 상관관계',en:'Cross-asset Correlation'}),v:'--'});
   // 옵션
   if(opt.hasData){
-    derivCells.push({l:'옵션 시장',v:'IV30 '+fN(opt.iv30d,1)+'% · 25Δ 스큐 '+fN(opt.skew25d,1)+'<br>'+(opt.ivLabel||'')});
-  }else derivCells.push({l:'옵션 시장',v:'--'});
+    derivCells.push({l:T({ko:'옵션 시장',en:'Options Market'}),v:'IV30 '+fN(opt.iv30d,1)+T({ko:'% · 25Δ 스큐 ',en:'% · 25Δ skew '})+fN(opt.skew25d,1)+'<br>'+ML(opt.ivLabel||'')});
+  }else derivCells.push({l:T({ko:'옵션 시장',en:'Options Market'}),v:'--'});
   // 스테이블
   if(stbl.hasData){
     var sg2=pf(stbl.growth30dPercent);
     var sCol=sg2>0?GREEN:RED;
-    derivCells.push({l:'스테이블코인 유동성',v:'<span style="color:'+sCol+'">'+(sg2!=null?((sg2>0?'+':'')+sg2.toFixed(1)+'% (30일)'):'--')+'</span><br>'+(stbl.signalLabel||'')});
-  }else derivCells.push({l:'스테이블코인 유동성',v:'--'});
+    derivCells.push({l:T({ko:'스테이블코인 유동성',en:'Stablecoin Liquidity'}),v:'<span style="color:'+sCol+'">'+(sg2!=null?((sg2>0?'+':'')+sg2.toFixed(1)+T({ko:'% (30일)',en:'% (30d)'})):'--')+'</span><br>'+ML(stbl.signalLabel||'')});
+  }else derivCells.push({l:T({ko:'스테이블코인 유동성',en:'Stablecoin Liquidity'}),v:'--'});
   var db=ge('derivBody');
   derivCells.forEach(function(c){db.appendChild(mk('div','acc-cell','<div class="l">'+c.l+'</div><div class="v">'+c.v+'</div>'));});
 
   /* ── 기여도 접이식 (contributionAnalysis, 양/음 분기) ── */
   var contrib=sys.contributionAnalysis||[];
-  ge('contribCnt').textContent=contrib.length?(contrib.length+'개 지표'):'데이터 없음';
+  ge('contribCnt').textContent=contrib.length?(contrib.length+T({ko:'개 지표',en:' indicators'})):T({ko:'데이터 없음',en:'No data'});
   if(contrib.length){
     // 기여도(절대값) 상위 10개
     var arr=contrib.map(function(c){return{name:c.name,score:pf(c.score),contribution:pf(c.contribution)};})
@@ -1130,7 +1143,7 @@ async function init(){
       var w=Math.min(Math.abs(dev)/maxDev*50,50);
       var bar=pos?('left:50%;width:'+w+'%;background:'+col):('right:50%;width:'+w+'%;background:'+col);
       var row=mk('div','contrib-row',
-        '<span class="nm">'+c.name+'</span>'+
+        '<span class="nm">'+ML(c.name)+'</span>'+
         '<div class="track"><div class="mid"></div><i style="'+bar+'"></i></div>'+
         '<span class="vv" style="color:'+col+'">'+(c.score!=null?c.score:'--')+'</span>');
       clist.appendChild(row);
@@ -1139,7 +1152,7 @@ async function init(){
 
   /* ── 과거 성과 통계 (api_dashboard_performance) ── */
   if(perf.hasData){
-    ge('perfCnt').textContent='요일·기간·히트맵';
+    ge('perfCnt').textContent=T({ko:'요일·기간·히트맵',en:'Weekday · Period · Heatmap'});
     // 요일별 평균 수익 막대
     var dow=perf.dayOfWeekStats||[];
     var wkEl=ge('perfWeek');
@@ -1154,13 +1167,13 @@ async function init(){
         fill.style.height=Math.max(Math.abs(rv)/mxW*100,2)+'%';
         fill.style.background=pos?'linear-gradient(180deg,#2bd49a,#16c784)':'linear-gradient(180deg,#ff6b75,#ea3943)';
         b.appendChild(fill);
-        b.appendChild(mk('div','wl',s.day||''));
+        b.appendChild(mk('div','wl',ML(s.day||'')));
         wkEl.appendChild(b);
       });
     }
     // 기간별 BTC 수익 요약
     var pp=perf.periodPerformance||{};
-    var ppRows=[['7일',pp['7d']],['30일',pp['30d']],['전체',pp['all']]];
+    var ppRows=[[T({ko:'7일',en:'7d'}),pp['7d']],[T({ko:'30일',en:'30d'}),pp['30d']],[T({ko:'전체',en:'All'}),pp['all']]];
     var ppEl=ge('perfPeriod');
     ppRows.forEach(function(r){
       var o=r[1]||{};
@@ -1169,8 +1182,8 @@ async function init(){
       var pct=n!=null?((n>0?'+':'')+fN(n,1)+'%'):'--';
       var col=n!=null?(n>0?GREEN:RED):'var(--m1)';
       var sd=o.scoreDelta;
-      var extra=(sd!=null?'점수 Δ '+(sd>0?'+':'')+sd:'')+(o.totalDays!=null?' · '+o.totalDays+'일':'');
-      var cell=mk('div','acc-cell','<div class="l">'+r[0]+' BTC 변화</div><div class="v"><span style="color:'+col+'">'+pct+'</span>'+(extra?'<br>'+extra:'')+'</div>');
+      var extra=(sd!=null?T({ko:'점수 Δ ',en:'Score Δ '})+(sd>0?'+':'')+sd:'')+(o.totalDays!=null?' · '+o.totalDays+T({ko:'일',en:'d'}):'');
+      var cell=mk('div','acc-cell','<div class="l">'+r[0]+T({ko:' BTC 변화',en:' BTC change'})+'</div><div class="v"><span style="color:'+col+'">'+pct+'</span>'+(extra?'<br>'+extra:'')+'</div>');
       ppEl.appendChild(cell);
     });
     // 최근 30일 점수 히트맵
@@ -1181,28 +1194,28 @@ async function init(){
       var c=v>=60?GREEN:v>=45?AMBER:RED;
       var s=mk('span',null,v);
       s.style.background=c+'24';s.style.color=c;s.style.boxShadow='inset 0 0 0 1px '+c+'44';
-      s.title=(day.date||'')+' · '+v+'점';
+      s.title=(day.date||'')+' · '+v+T({ko:'점',en:' pts'});
       heatEl.appendChild(s);
     });
-  }else{ge('perfCnt').textContent='데이터 없음';}
+  }else{ge('perfCnt').textContent=T({ko:'데이터 없음',en:'No data'});}
 
   /* ── Score × 공포·탐욕 레짐 (api_dashboard_system.regimeMatrix) ── */
   var rm=sys.regimeMatrix||{};
   if(rm&&rm.label){
-    ge('regimeCnt').textContent=rm.quadrant||'현재 국면';
+    ge('regimeCnt').textContent=rm.quadrant||T({ko:'현재 국면',en:'Current phase'});
     var rmCol=rm.color||AMBER;
     ge('regimeBox').innerHTML=
       '<div class="quad" style="background:'+rmCol+'1a;border:1px solid '+rmCol+'44;color:'+rmCol+'">'
         +'<span class="q">'+(rm.score!=null?rm.score:'--')+'</span>'
-        +'<span class="qs">공탐 '+(rm.fearGreed!=null?rm.fearGreed:'--')+'</span></div>'
-      +'<div class="rd"><div class="rl" style="color:'+rmCol+'">'+(rm.label||'--')+'</div>'
+        +'<span class="qs">'+T({ko:'공탐 ',en:'F&G '})+(rm.fearGreed!=null?rm.fearGreed:'--')+'</span></div>'
+      +'<div class="rd"><div class="rl" style="color:'+rmCol+'">'+ML(rm.label||'--')+'</div>'
         +'<div class="rdesc">'+(rm.description||'')+'</div>'
         +'<div class="rmeta">'+(rm.quadrant||'')+'</div></div>';
-  }else{ge('regimeCnt').textContent='데이터 없음';}
+  }else{ge('regimeCnt').textContent=T({ko:'데이터 없음',en:'No data'});}
 
   /* ── DCA 전략 백테스트 (api_dashboard_buy_timing) ── */
   if(bt.hasData){
-    ge('dcaCnt').textContent='백테스트 · 구간 · 윈도우';
+    ge('dcaCnt').textContent=T({ko:'백테스트 · 구간 · 윈도우',en:'Backtest · Zones · Windows'});
     // 백테스트 결과 카드
     var dca=bt.dcaBacktest||[];
     var dcaEl=ge('dcaBody');
@@ -1211,13 +1224,13 @@ async function init(){
       var rpTxt=rp!=null?((rp>0?'+':'')+fN(rp,1)+'%'):'--';
       var rpCol=rp!=null?(rp>0?GREEN:RED):'var(--m1)';
       dcaEl.appendChild(mk('div','acc-cell',
-        '<div class="l">'+(dc.label||'백테스트')+'</div>'
-        +'<div class="v">수익률 <span style="color:'+rpCol+'">'+rpTxt+'</span>'
-        +'<br>진입 '+(dc.entryCount!=null?dc.entryCount+'회':'--')
-        +' · 평균진입 '+(dc.avgEntry||'--')
-        +'<br>현재가 '+(dc.todayClose||'--')+'</div>'));
+        '<div class="l">'+(dc.label?ML(dc.label):T({ko:'백테스트',en:'Backtest'}))+'</div>'
+        +'<div class="v">'+T({ko:'수익률 ',en:'Return '})+'<span style="color:'+rpCol+'">'+rpTxt+'</span>'
+        +'<br>'+T({ko:'진입 ',en:'Entries '})+(dc.entryCount!=null?dc.entryCount+T({ko:'회',en:''}):'--')
+        +T({ko:' · 평균진입 ',en:' · avg entry '})+(dc.avgEntry||'--')
+        +'<br>'+T({ko:'현재가 ',en:'Current '})+(dc.todayClose||'--')+'</div>'));
     });
-    if(!dca.length)dcaEl.appendChild(mk('div','acc-cell','<div class="l">DCA 백테스트</div><div class="v">데이터 없음</div>'));
+    if(!dca.length)dcaEl.appendChild(mk('div','acc-cell','<div class="l">'+T({ko:'DCA 백테스트',en:'DCA Backtest'})+'</div><div class="v">'+T({ko:'데이터 없음',en:'No data'})+'</div>'));
     // 점수대별 매수 비중 (dcaZones)
     var zones=bt.dcaZones||[];
     var zEl=ge('dcaZones');
@@ -1227,7 +1240,7 @@ async function init(){
       var col=z.color==='success'?GREEN:z.color==='danger'?RED:AMBER;
       var brd=z.active?'box-shadow:0 0 0 1px '+col+'66;':'';
       var row=mk('div','dca-zone',
-        '<span class="zl">'+(z.range||'--')+(z.signal?' · '+z.signal:'')+'</span>'
+        '<span class="zl">'+ML(z.range||'--')+(z.signal?' · '+ML(z.signal):'')+'</span>'
         +'<div class="ztrack" style="'+brd+'"><i style="width:'+Math.max(p/zMax*100,3)+'%;background:'+col+'"></i></div>'
         +'<span class="zp" style="color:'+col+'">'+p+'%</span>');
       zEl.appendChild(row);
@@ -1237,55 +1250,55 @@ async function init(){
     var wcEl=ge('dcaWindows');
     wc.forEach(function(w){
       wcEl.appendChild(mk('div','acc-cell',
-        '<div class="l">'+(w.window||'--')+' 평균</div>'
-        +'<div class="v">점수 '+(w.avgScore!=null?w.avgScore:'--')
-        +' · 매수비중 '+(w.buyPct||'--')
-        +'<br>평균가 '+(w.avgBtc||'--')+(w.n!=null?' · n='+w.n:'')+'</div>'));
+        '<div class="l">'+ML(w.window||'--')+T({ko:' 평균',en:' avg'})+'</div>'
+        +'<div class="v">'+T({ko:'점수 ',en:'Score '})+(w.avgScore!=null?w.avgScore:'--')
+        +T({ko:' · 매수비중 ',en:' · buy % '})+(w.buyPct||'--')
+        +'<br>'+T({ko:'평균가 ',en:'Avg price '})+(w.avgBtc||'--')+(w.n!=null?' · n='+w.n:'')+'</div>'));
     });
-  }else{ge('dcaCnt').textContent='데이터 없음';}
+  }else{ge('dcaCnt').textContent=T({ko:'데이터 없음',en:'No data'});}
 
   /* ── 매크로·온체인·기술 원본 수치 (macro/onchain/technical) ── */
   var rawEl=ge('rawBody');
   // 매크로
   var macRows=mac.hasData?[
-    ['달러지수 DXY',mac.dxy?fN(mac.dxy,2):'--'],
+    [T({ko:'달러지수 DXY',en:'Dollar Index DXY'}),mac.dxy?fN(mac.dxy,2):'--'],
     ['S&P 500',mac.sp500?fN(mac.sp500,0):'--'],
-    ['김치 프리미엄',mac.kimchiPremium?fN(mac.kimchiPremium,2)+'%':'--'],
-    ['금 가격',mac.goldPrice?'$'+fN(mac.goldPrice,0):'--'],
-    ['미 10년물 금리',mac.usTreasury10y?fN(mac.usTreasury10y,2)+'%':'--'],
+    [T({ko:'김치 프리미엄',en:'Kimchi Premium'}),mac.kimchiPremium?fN(mac.kimchiPremium,2)+'%':'--'],
+    [T({ko:'금 가격',en:'Gold Price'}),mac.goldPrice?'$'+fN(mac.goldPrice,0):'--'],
+    [T({ko:'미 10년물 금리',en:'US 10Y Yield'}),mac.usTreasury10y?fN(mac.usTreasury10y,2)+'%':'--'],
     ['VIX',mac.vix?fN(mac.vix,1):'--'],
-    ['M2 성장률',mac.globalM2Growth?fN(mac.globalM2Growth,2)+'%':'--']
+    [T({ko:'M2 성장률',en:'M2 Growth'}),mac.globalM2Growth?fN(mac.globalM2Growth,2)+'%':'--']
   ]:[];
   // 온체인
   var ocRows=oc.hasData?[
     ['MVRV Z-Score',oc.mvrvZScore?fN(oc.mvrvZScore,2):'--'],
     ['SOPR',oc.sopr?fN(oc.sopr,3):'--'],
     ['NUPL',oc.nupl?fN(oc.nupl,3):'--'],
-    ['LTH/STH 비율',oc.lthSthRatio?fN(oc.lthSthRatio,2):'--'],
+    [T({ko:'LTH/STH 비율',en:'LTH/STH Ratio'}),oc.lthSthRatio?fN(oc.lthSthRatio,2):'--'],
     ['Puell Multiple',oc.puellMultiple?fN(oc.puellMultiple,2):'--'],
-    ['활성 주소',oc.activeAddresses?fN(oc.activeAddresses,0):'--'],
-    ['해시레이트',oc.hashRate?fN(oc.hashRate,0):'--'],
-    ['실현가',oc.realizedPrice?'$'+fN(oc.realizedPrice,0):'--']
+    [T({ko:'활성 주소',en:'Active Addresses'}),oc.activeAddresses?fN(oc.activeAddresses,0):'--'],
+    [T({ko:'해시레이트',en:'Hash Rate'}),oc.hashRate?fN(oc.hashRate,0):'--'],
+    [T({ko:'실현가',en:'Realized Price'}),oc.realizedPrice?'$'+fN(oc.realizedPrice,0):'--']
   ]:[];
   // 기술적
   var tecRows=tec.hasData?[
-    ['RSI (일봉)',tec.rsiDaily?fN(tec.rsiDaily,1):'--'],
-    ['RSI (주봉)',tec.rsiWeekly?fN(tec.rsiWeekly,1):'--'],
-    ['200일선 비율',tec.ma200Ratio?fN(tec.ma200Ratio,3):'--'],
-    ['200일선 가격',tec.ma200Value?'$'+fN(tec.ma200Value,0):'--'],
-    ['Pi 사이클 격차',tec.piCycleGap?fN(tec.piCycleGap,2):'--'],
-    ['역사적 변동성',tec.historicalVolatility?fN(tec.historicalVolatility,1)+'%':'--'],
-    ['MACD',tec.macd?(tec.macd.crossLabel||'--'):'--'],
-    ['ADX',tec.adx?(fN(tec.adx.adx,1)+' · '+(tec.adx.strengthLabel||'')):'--']
+    [T({ko:'RSI (일봉)',en:'RSI (Daily)'}),tec.rsiDaily?fN(tec.rsiDaily,1):'--'],
+    [T({ko:'RSI (주봉)',en:'RSI (Weekly)'}),tec.rsiWeekly?fN(tec.rsiWeekly,1):'--'],
+    [T({ko:'200일선 비율',en:'MA200 Ratio'}),tec.ma200Ratio?fN(tec.ma200Ratio,3):'--'],
+    [T({ko:'200일선 가격',en:'MA200 Price'}),tec.ma200Value?'$'+fN(tec.ma200Value,0):'--'],
+    [T({ko:'Pi 사이클 격차',en:'Pi Cycle Gap'}),tec.piCycleGap?fN(tec.piCycleGap,2):'--'],
+    [T({ko:'역사적 변동성',en:'Historical Volatility'}),tec.historicalVolatility?fN(tec.historicalVolatility,1)+'%':'--'],
+    ['MACD',tec.macd?ML(tec.macd.crossLabel||'--'):'--'],
+    ['ADX',tec.adx?(fN(tec.adx.adx,1)+' · '+ML(tec.adx.strengthLabel||'')):'--']
   ]:[];
   function rawCell(title,rows){
-    if(!rows.length)return mk('div','acc-cell','<div class="l">'+title+'</div><div class="v">데이터 없음</div>');
+    if(!rows.length)return mk('div','acc-cell','<div class="l">'+title+'</div><div class="v">'+T({ko:'데이터 없음',en:'No data'})+'</div>');
     var inner=rows.map(function(r){return'<div class="sl"><span class="lk">'+r[0]+'</span><span class="lv">'+r[1]+'</span></div>';}).join('');
     return mk('div','acc-cell','<div class="l" style="margin-bottom:8px;color:var(--t2);font-weight:600">'+title+'</div>'+inner);
   }
-  rawEl.appendChild(rawCell('매크로',macRows));
-  rawEl.appendChild(rawCell('온체인',ocRows));
-  rawEl.appendChild(rawCell('기술적 분석',tecRows));
+  rawEl.appendChild(rawCell(T({ko:'매크로',en:'Macro'}),macRows));
+  rawEl.appendChild(rawCell(T({ko:'온체인',en:'On-chain'}),ocRows));
+  rawEl.appendChild(rawCell(T({ko:'기술적 분석',en:'Technical'}),tecRows));
 
   /* ── 차트 그리기 & 바 애니메이션 ── */
   function draw(){
