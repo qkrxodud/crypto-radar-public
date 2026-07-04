@@ -163,6 +163,13 @@
     '보통임': { en: 'Average', zh: '一般' },
     '나쁨': { en: 'Poor', zh: '较差' },
     '매우 좋음': { en: 'Excellent', zh: '极佳' },
+    '미흡': { en: 'Weak', zh: '不足' },
+
+    /* checklist.levelDescription (종합 판정 문장) */
+    '대부분의 매수 조건이 충족되었습니다': { en: 'Most buy conditions are met', zh: '大部分买入条件已满足' },
+    '상당수 매수 조건이 충족되었습니다': { en: 'Many buy conditions are met', zh: '相当多买入条件已满足' },
+    '일부 조건만 충족되었습니다': { en: 'Only some conditions are met', zh: '仅部分条件已满足' },
+    '매수 조건이 부족합니다': { en: 'Buy conditions are insufficient', zh: '买入条件不足' },
 
     /* liquidation.cascadeLabel */
     '하락 청산 위험': { en: 'Downside liquidation risk', zh: '下行清算风险' },
@@ -317,8 +324,38 @@
     'MA200 위': { en: 'Above MA200', zh: 'MA200 之上' },
     'MA200 아래': { en: 'Below MA200', zh: 'MA200 之下' },
     '해시리본 비항복': { en: 'Hash Ribbon: no capitulation', zh: '哈希丝带未投降' },
-    '해시리본 항복': { en: 'Hash Ribbon: capitulation', zh: '哈希丝带投降' }
+    '해시리본 항복': { en: 'Hash Ribbon: capitulation', zh: '哈希丝带投降' },
+
+    /* checklist.items[].reason 상태 라벨 — "<라벨> (<접두>: <값>)" 구조의 라벨 부분.
+       괄호 값은 mapLabel의 REASON_RE 분해로 보존되고 라벨만 여기서 매핑된다.
+       (백엔드 InvestmentReadinessChecklist.java의 pass/fail 문장 전수) */
+    '극단적 공포 구간': { en: 'Extreme fear zone', zh: '极度恐惧区间' },
+    '공포 구간 아님': { en: 'Not in fear zone', zh: '非恐惧区间' },
+    '과매도 구간': { en: 'Oversold zone', zh: '超卖区间' },
+    '과매도 아님': { en: 'Not oversold', zh: '未超卖' },
+    '역사적 저평가 구간': { en: 'Historically undervalued', zh: '历史性低估区间' },
+    '저평가 아님': { en: 'Not undervalued', zh: '未低估' },
+    '김치프리미엄 적정': { en: 'Kimchi premium normal', zh: '泡菜溢价合理' },
+    '김치프리미엄 과열': { en: 'Kimchi premium overheated', zh: '泡菜溢价过热' },
+    '롱 우세': { en: 'Longs dominant', zh: '多头占优' },
+    '숏 우세 = 역발상 매수': { en: 'Shorts dominant = contrarian buy', zh: '空头占优＝逆势买入' },
+    'MA200 하회': { en: 'Below MA200', zh: 'MA200 之下' },
+    '장기 상승추세 확인': { en: 'Long-term uptrend confirmed', zh: '确认长期上升趋势' },
+    '채굴자 건전 상태': { en: 'Miners healthy', zh: '矿工状态健康' },
+    '해시리본 항복 진행 중': { en: 'Hash Ribbon capitulation underway', zh: '哈希丝带投降进行中' },
+    '기관 매도 또는 유출': { en: 'Institutional selling / outflow', zh: '机构卖出或流出' },
+    '기관 매수 확인': { en: 'Institutional buying confirmed', zh: '确认机构买入' }
   };
+
+  /* checklist reason 괄호 안 접두 라벨 ("(현재: 21)"의 "현재" 부분) 매핑 */
+  var REASON_PREFIX = {
+    '현재': { en: 'Now', zh: '当前' },
+    'MA200 대비': { en: 'vs MA200', zh: '相对 MA200' },
+    '순유입': { en: 'Net inflow', zh: '净流入' }
+  };
+
+  // reason 구조 분해용: "<라벨> (<접두>: <값>)" — 마지막 괄호만 접두:값으로 본다.
+  var REASON_RE = /^(.+?)\s*\(([^():]+):\s*(.+)\)$/;
 
   // 비교연산자 (체크리스트 "지표명 < 값" 복합 문자열 분해용)
   var CMP_RE = /\s*(<=|>=|≤|≥|<|>|=)\s*/;
@@ -341,6 +378,17 @@
       var rest = s.slice(m.index);                 // 연산자+값 (앞 공백 포함)
       var nHit = LABELS[name];
       if (nHit && nHit[lang]) return nHit[lang] + rest;
+    }
+    // 체크리스트 reason 처리: "<라벨> (<접두>: <값>)" 구조를 분해해
+    // 라벨과 접두만 매핑하고 숫자 값은 그대로 보존한다.
+    var r = s.match(REASON_RE);
+    if (r) {
+      var rLabel = LABELS[r[1].trim()];           // 상태 라벨
+      if (rLabel && rLabel[lang]) {
+        var pHit = REASON_PREFIX[r[2].trim()];    // 괄호 안 접두
+        var pTxt = (pHit && pHit[lang]) ? pHit[lang] : r[2].trim();
+        return rLabel[lang] + ' (' + pTxt + ': ' + r[3] + ')';
+      }
     }
     return ko; // 폴백: 한국어 원문
   }

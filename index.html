@@ -1062,7 +1062,7 @@ async function init(){
       var col=ok?GREEN:RED;
       var line=mk('div','chk-item',
         '<span class="mk" style="background:'+col+'22;color:'+col+'">'+(ok?'✓':'✕')+'</span>'+
-        '<span class="ct">'+ML(it.name||'--')+(it.reason?'<span class="cr">'+it.reason+'</span>':'')+'</span>');
+        '<span class="ct">'+ML(it.name||'--')+(it.reason?'<span class="cr">'+ML(it.reason)+'</span>':'')+'</span>');
       ckl.appendChild(line);
     });
   }else{ckl.appendChild(mk('div','chk-item','<span class="ct" style="color:#8b93a7">'+T({ko:'체크리스트 데이터 없음',en:'No checklist data'})+'</span>'));}
