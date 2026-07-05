@@ -2,19 +2,19 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="비트코인 거래소 순유입(Exchange Net Flow)이란 무엇이고 어떻게 읽는지 — 유입·유출 계산 방식, 매집·매도 신호 해석, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다.">
+<meta name="description" content="비트코인 거래소 순유입(Exchange Net Flow)이란 무엇이고 어떻게 읽는지 — 유입·유출 계산 방식, 매집·매도 신호 해석, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="What Bitcoin exchange net inflow is and how to read it — how inflow/outflow is calculated, how to interpret accumulation and selling signals, how to use it for buy timing, and its limits, all explained for beginners.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>거래소 순유입이란? 비트코인 온체인 흐름 완전 정리 — BTC 타이밍 레이더</title>
+<title data-en="What Is Exchange Net Inflow? A Complete Guide to Bitcoin On-chain Flows — BTC Timing Radar">거래소 순유입이란? 비트코인 온체인 흐름 완전 정리 — BTC 타이밍 레이더</title>
 <link rel="canonical" href="https://btctiming.co.kr/indicators/exchange-net-flow.html">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://btctiming.co.kr/indicators/exchange-net-flow.html">
 <meta property="og:site_name" content="BTC 투자 타이밍 레이더">
-<meta property="og:title" content="거래소 순유입이란? 비트코인 온체인 흐름 완전 정리">
-<meta property="og:description" content="비트코인 거래소 순유입의 계산 방식, 유출·유입 신호 해석, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다.">
+<meta property="og:title" content="거래소 순유입이란? 비트코인 온체인 흐름 완전 정리" data-en-content="What Is Exchange Net Inflow? A Complete Guide to Bitcoin On-chain Flows">
+<meta property="og:description" content="비트코인 거래소 순유입의 계산 방식, 유출·유입 신호 해석, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="How Bitcoin exchange net inflow is calculated, how to interpret outflow/inflow signals, how to use it for buy timing, and its limits, explained for beginners.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="거래소 순유입이란? 비트코인 온체인 흐름 완전 정리">
-<meta name="twitter:description" content="비트코인 거래소 순유입의 계산 방식, 유출·유입 신호, 매수 타이밍 활용법과 한계를 설명합니다.">
+<meta name="twitter:title" content="거래소 순유입이란? 비트코인 온체인 흐름 완전 정리" data-en-content="What Is Exchange Net Inflow? A Complete Guide to Bitcoin On-chain Flows">
+<meta name="twitter:description" content="비트코인 거래소 순유입의 계산 방식, 유출·유입 신호, 매수 타이밍 활용법과 한계를 설명합니다." data-en-content="How Bitcoin exchange net inflow is calculated, how to interpret outflow/inflow signals, how to use it for buy timing, and its limits.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -238,39 +238,39 @@
   <aside class="sidebar">
     <a class="sb-brand" href="../index.html">
       <div class="sb-logo">₿</div>
-      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+      <div><div class="bt" data-en="Timing Radar">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
     </a>
     <div class="sb-menu-h">MENU</div>
     <nav class="sb-nav">
-      <a href="../index.html"><span class="dot"></span>대시보드</a>
-      <a class="active" href="../guide.html"><span class="dot"></span>지표 가이드</a>
-      <a href="../about.html"><span class="dot"></span>서비스 소개</a>
-      <a href="../contact.html"><span class="dot"></span>문의</a>
+      <a href="../index.html"><span class="dot"></span><span data-en="Dashboard">대시보드</span></a>
+      <a class="active" href="../guide.html"><span class="dot"></span><span data-en="Indicator Guide">지표 가이드</span></a>
+      <a href="../about.html"><span class="dot"></span><span data-en="About">서비스 소개</span></a>
+      <a href="../contact.html"><span class="dot"></span><span data-en="Contact">문의</span></a>
     </nav>
     <div class="sb-live">
       <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
-      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
+      <div class="lb" data-i18n-html="1" data-en="Indicators auto-update<br>daily at 09:05 KST">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
     <!-- 방문자 카운터 (Firebase) -->
     <div class="sb-visitor" id="visitorStrip">
       <div class="vh">VISITORS</div>
-      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
-      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
-      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
+      <div class="vr now"><span><span class="vc-dot"></span><span data-en="Viewing now">지금 보는 중</span></span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span data-en="Today">오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span data-en="Total">누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+    <div class="sb-foot" data-i18n-html="1" data-en="Quantitative analysis for reference ·<br>Not investment advice">참고용 정량 분석 ·<br>투자 조언 아님</div>
   </aside>
 
   <!-- ── 메인 ── -->
   <div class="main">
     <!-- 모바일 상단 바 -->
     <div class="mobile-bar">
-      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
-      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
+      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t" data-en="Timing Radar">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기" data-en-aria-label="Open menu"><span></span></button>
     </div>
     <!-- 데스크톱 상단 바 -->
     <div class="topbar">
-      <div class="crumb">지표 가이드 <span style="color:var(--m3)">›</span> <b>거래소 순유입</b></div>
+      <div class="crumb"><span data-en="Indicator Guide">지표 가이드</span> <span style="color:var(--m3)">›</span> <b data-en="Exchange Net Inflow">거래소 순유입</b></div>
       <div class="right">
         <span class="live"><span class="d"></span>LIVE</span>
       </div>
@@ -279,131 +279,131 @@
     <div class="content">
 
       <div class="crumb-nav">
-        <a href="../guide.html">지표 가이드</a>
+        <a href="../guide.html" data-en="Indicator Guide">지표 가이드</a>
         <span class="sep">/</span>
-        <span>온체인</span>
+        <span data-en="On-chain">온체인</span>
         <span class="sep">/</span>
-        <span>거래소 순유입</span>
+        <span data-en="Exchange Net Inflow">거래소 순유입</span>
       </div>
 
       <div class="ind-hero">
-        <span class="cat-pill"><span class="d" style="background:var(--green)"></span><span>온체인</span></span>
-        <h1>거래소 순유입, <span class="hl">쉬운 말</span>로 풀어보기</h1>
-        <p class="lead">대부분의 거래소에서 비트코인을 팔려면 먼저 코인을 그곳으로 보내야 합니다. 그래서 <b>거래소로 들어오고 나가는 코인의 균형</b>을 보는 것은 의도를 보는 일입니다. 거래소로 들어오는 코인은 팔 준비를 하는 경우가 많고, 개인 지갑으로 빠져나가는 코인은 대개 보관하려고 치워두는 것입니다. 순유입은 이 줄다리기를 하나의 숫자로 바꿉니다.</p>
+        <span class="cat-pill"><span class="d" style="background:var(--green)"></span><span data-en="On-chain">온체인</span></span>
+        <h1 data-i18n-html="1" data-en="Exchange Net Inflow, <span class=&quot;hl&quot;>in plain terms</span>">거래소 순유입, <span class="hl">쉬운 말</span>로 풀어보기</h1>
+        <p class="lead" data-i18n-html="1" data-en="On most exchanges, to sell Bitcoin you first have to send your coins there. So watching the <b>balance of coins flowing into and out of exchanges</b> is a way of watching intent. Coins moving onto exchanges are often getting ready to be sold, while coins leaving for private wallets are usually being tucked away for storage. Net inflow turns this tug-of-war into a single number.">대부분의 거래소에서 비트코인을 팔려면 먼저 코인을 그곳으로 보내야 합니다. 그래서 <b>거래소로 들어오고 나가는 코인의 균형</b>을 보는 것은 의도를 보는 일입니다. 거래소로 들어오는 코인은 팔 준비를 하는 경우가 많고, 개인 지갑으로 빠져나가는 코인은 대개 보관하려고 치워두는 것입니다. 순유입은 이 줄다리기를 하나의 숫자로 바꿉니다.</p>
       </div>
 
       <div class="summary-box">
         <div class="sb">
-          <span class="k">무엇인가</span>
-          <span class="v">거래소로 들어오고 나가는 코인의 균형.</span>
+          <span class="k" data-en="What it is">무엇인가</span>
+          <span class="v" data-en="The balance of coins flowing into and out of exchanges.">거래소로 들어오고 나가는 코인의 균형.</span>
         </div>
         <div class="sb">
-          <span class="k">어떻게 읽나</span>
-          <span class="v"><b>유출 = 매집</b>, 지속 유입은 매도 압력일 수 있음.</span>
+          <span class="k" data-en="How to read it">어떻게 읽나</span>
+          <span class="v" data-i18n-html="1" data-en="<b>Outflow = accumulation</b>; sustained inflow can be selling pressure."><b>유출 = 매집</b>, 지속 유입은 매도 압력일 수 있음.</span>
         </div>
         <div class="sb">
-          <span class="k">신호</span>
-          <span class="impact-inline buy">유출 = 매집 신호</span>
+          <span class="k" data-en="Signal">신호</span>
+          <span class="impact-inline buy" data-en="Outflow = accumulation signal">유출 = 매집 신호</span>
         </div>
       </div>
 
       <section class="sec">
-        <h2><span class="ix">1</span><span>거래소 순유입은 무엇을 재는가</span></h2>
-        <p>가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 거래소 순유입은 보유자들이 <b>무엇을 하려고 준비하는지</b>를 알려주려는 지표입니다. 거래소 지갑 주소는 공개 장부에서 식별할 수 있어, 분석가는 코인이 거래소로 들어오고 나가는 시점을 추적할 수 있습니다. 코인을 거래소로 옮기는 행위는 대개 매도의 전조이고, 빼내는 것은 대개 보유하겠다는 결정입니다.</p>
-        <p>이는 매물 압력에 대한 간접적 읽기입니다. 개인 지갑에 있는 코인은 시장에 즉시 던질 수 없으므로, 꾸준한 유출은 팔 준비가 된 코인 풀을 조용히 줄입니다. 꾸준한 유입은 반대로 호가창에 쏟아질 수 있는 코인 저수지를 키웁니다.</p>
+        <h2><span class="ix">1</span><span data-en="What exchange net inflow measures">거래소 순유입은 무엇을 재는가</span></h2>
+        <p data-i18n-html="1" data-en="Price tells you <b>what the market did</b>. Exchange net inflow tries to tell you <b>what holders are getting ready to do</b>. Exchange wallet addresses can be identified on the public ledger, so analysts can track when coins move onto and off exchanges. Moving coins onto an exchange is usually a prelude to selling, while pulling them off is usually a decision to hold.">가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 거래소 순유입은 보유자들이 <b>무엇을 하려고 준비하는지</b>를 알려주려는 지표입니다. 거래소 지갑 주소는 공개 장부에서 식별할 수 있어, 분석가는 코인이 거래소로 들어오고 나가는 시점을 추적할 수 있습니다. 코인을 거래소로 옮기는 행위는 대개 매도의 전조이고, 빼내는 것은 대개 보유하겠다는 결정입니다.</p>
+        <p data-en="This is an indirect read on selling pressure. Coins in private wallets can't be dumped on the market instantly, so a steady outflow quietly shrinks the pool of coins ready to be sold. A steady inflow, conversely, grows the reservoir of coins that could hit the order book.">이는 매물 압력에 대한 간접적 읽기입니다. 개인 지갑에 있는 코인은 시장에 즉시 던질 수 없으므로, 꾸준한 유출은 팔 준비가 된 코인 풀을 조용히 줄입니다. 꾸준한 유입은 반대로 호가창에 쏟아질 수 있는 코인 저수지를 키웁니다.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">2</span><span>어떻게 계산되나</span></h2>
-        <p>일정 기간의 순유입은 단순히 <code>거래소 지갑으로 들어온 코인 − 거래소에서 빠져나간 코인</code>입니다.</p>
+        <h2><span class="ix">2</span><span data-en="How it's calculated">어떻게 계산되나</span></h2>
+        <p data-i18n-html="1" data-en="Net inflow over a period is simply <code>coins moved into exchange wallets − coins moved out of exchanges</code>.">일정 기간의 순유입은 단순히 <code>거래소 지갑으로 들어온 코인 − 거래소에서 빠져나간 코인</code>입니다.</p>
         <ul>
-          <li><b>양의 순유입(유입)</b> — 거래소로 들어온 코인이 빠져나간 것보다 많음. 잠재적 매물 압력의 누적으로 읽음.</li>
-          <li><b>음의 순유입(유출)</b> — 빠져나간 코인이 들어온 것보다 많음. 코인이 보관으로 이동 — 매집으로 읽음.</li>
-          <li><b>한 건의 전송이 아니라 추세</b> — 한 번의 큰 이동은 잡음일 수 있음. 수일·수주에 걸친 지속적 방향이 의미를 가짐.</li>
+          <li data-i18n-html="1" data-en="<b>Positive net inflow (inflow)</b> — more coins moved onto exchanges than off. Read as a buildup of potential selling pressure."><b>양의 순유입(유입)</b> — 거래소로 들어온 코인이 빠져나간 것보다 많음. 잠재적 매물 압력의 누적으로 읽음.</li>
+          <li data-i18n-html="1" data-en="<b>Negative net inflow (outflow)</b> — more coins moved off than on. Coins are heading into storage — read as accumulation."><b>음의 순유입(유출)</b> — 빠져나간 코인이 들어온 것보다 많음. 코인이 보관으로 이동 — 매집으로 읽음.</li>
+          <li data-i18n-html="1" data-en="<b>Trend, not a single transfer</b> — one large move can be noise. A sustained direction over days or weeks is what carries meaning."><b>한 건의 전송이 아니라 추세</b> — 한 번의 큰 이동은 잡음일 수 있음. 수일·수주에 걸친 지속적 방향이 의미를 가짐.</li>
         </ul>
-        <p>핵심은 순유입이 <b>가격 모델이 아니라 의도에 대한 읽기</b>라는 점입니다. 군중이 매도 쪽으로 기우는지 보유 쪽으로 기우는지를 암시해 정확한 신호를 쏘기보다 맥락을 설정합니다.</p>
+        <p data-i18n-html="1" data-en="The key point is that net inflow is <b>a read on intent, not a price model</b>. It hints at whether the crowd is leaning toward selling or holding, setting context rather than firing a precise signal.">핵심은 순유입이 <b>가격 모델이 아니라 의도에 대한 읽기</b>라는 점입니다. 군중이 매도 쪽으로 기우는지 보유 쪽으로 기우는지를 암시해 정확한 신호를 쏘기보다 맥락을 설정합니다.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">3</span><span>신호로 읽기</span></h2>
-        <p>고정된 숫자 경계선은 없습니다. 중요한 것은 방향과 그 지속성입니다. 순유입은 가격과 함께 읽으세요.</p>
+        <h2><span class="ix">3</span><span data-en="Reading it as a signal">신호로 읽기</span></h2>
+        <p data-en="There are no fixed numeric thresholds. What matters is the direction and how sustained it is. Read net inflow alongside price.">고정된 숫자 경계선은 없습니다. 중요한 것은 방향과 그 지속성입니다. 순유입은 가격과 함께 읽으세요.</p>
         <div class="zone-table">
-          <div class="zrow"><div class="zr-band z-strong"><span>강한 유출</span></div><div class="zr-desc"><b>매집.</b> 지속적 유출은 코인이 보관용 지갑으로 빠져나간다는 뜻 — 매도 가능 풀이 줄어듦. 역사적으로 우호적인 배경.</div></div>
-          <div class="zrow"><div class="zr-band z-mild"><span>완만한 유출</span></div><div class="zr-desc"><b>조용한 보유.</b> 코인이 거래소에서 완만히 빠져나감. 매도 급박함 없이 안정적이고 중립~긍정적인 분위기.</div></div>
-          <div class="zrow"><div class="zr-band z-wait"><span>완만한 유입</span></div><div class="zr-desc"><b>주의.</b> 코인이 거래소로 흘러듦. 일부 보유자가 행동을 준비 — 그 자체로 경보는 아니나 지켜볼 만함.</div></div>
-          <div class="zrow"><div class="zr-band z-bear"><span>강한 유입</span></div><div class="zr-desc"><b>매도 압력.</b> 크고 지속적인 유입은 한 무더기의 코인이 팔릴 준비를 한다는 뜻 — 잠재적 매물 부담이나 정확한 타이밍 신호는 아님.</div></div>
+          <div class="zrow"><div class="zr-band z-strong"><span data-en="Strong outflow">강한 유출</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Accumulation.</b> A sustained outflow means coins are leaving for storage wallets — the sellable pool is shrinking. Historically a favorable backdrop."><b>매집.</b> 지속적 유출은 코인이 보관용 지갑으로 빠져나간다는 뜻 — 매도 가능 풀이 줄어듦. 역사적으로 우호적인 배경.</div></div>
+          <div class="zrow"><div class="zr-band z-mild"><span data-en="Mild outflow">완만한 유출</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Quiet holding.</b> Coins are drifting off exchanges gradually. A stable, neutral-to-positive mood with no urgency to sell."><b>조용한 보유.</b> 코인이 거래소에서 완만히 빠져나감. 매도 급박함 없이 안정적이고 중립~긍정적인 분위기.</div></div>
+          <div class="zrow"><div class="zr-band z-wait"><span data-en="Mild inflow">완만한 유입</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Caution.</b> Coins are flowing onto exchanges. Some holders are getting ready to act — not an alarm in itself, but worth watching."><b>주의.</b> 코인이 거래소로 흘러듦. 일부 보유자가 행동을 준비 — 그 자체로 경보는 아니나 지켜볼 만함.</div></div>
+          <div class="zrow"><div class="zr-band z-bear"><span data-en="Strong inflow">강한 유입</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Selling pressure.</b> Large, sustained inflow means a pile of coins is getting ready to be sold — potential supply overhang, though not a precise timing signal."><b>매도 압력.</b> 크고 지속적인 유입은 한 무더기의 코인이 팔릴 준비를 한다는 뜻 — 잠재적 매물 부담이나 정확한 타이밍 신호는 아님.</div></div>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">4</span><span>매수 타이밍에 쓰는 법</span></h2>
-        <p>거래소 순유입은 단독 방아쇠가 아니라 <b>확인 도구</b>로 쓸 때 가장 좋습니다. 가격이 약한데 코인이 꾸준히 거래소에서 빠져나가면, 보유자들이 하락을 팔기 위해서가 아니라 모으기 위해 활용한다는 뜻으로 인내심 있는 분할 매수에 어느 정도 신뢰를 더해줍니다. 상승이 크고 지속적인 유입을 만나면 매물이 시장에 쏟아질 준비를 한다는 암시이니 추격에 더 신중하라는 신호입니다.</p>
+        <h2><span class="ix">4</span><span data-en="How to use it for buy timing">매수 타이밍에 쓰는 법</span></h2>
+        <p data-i18n-html="1" data-en="Exchange net inflow works best as a <b>confirmation tool</b> rather than a standalone trigger. When price is weak but coins keep leaving exchanges, it suggests holders are using the dip to accumulate rather than sell, adding some confidence to patient dollar-cost averaging. When a rally meets large, sustained inflow, it hints that supply is getting ready to hit the market — a signal to be more careful about chasing.">거래소 순유입은 단독 방아쇠가 아니라 <b>확인 도구</b>로 쓸 때 가장 좋습니다. 가격이 약한데 코인이 꾸준히 거래소에서 빠져나가면, 보유자들이 하락을 팔기 위해서가 아니라 모으기 위해 활용한다는 뜻으로 인내심 있는 분할 매수에 어느 정도 신뢰를 더해줍니다. 상승이 크고 지속적인 유입을 만나면 매물이 시장에 쏟아질 준비를 한다는 암시이니 추격에 더 신중하라는 신호입니다.</p>
         <div class="callout">
-          <div class="ct">실전 팁</div>
-          <p>한 건의 큰 전송은 무시하세요 — 거래소 내부 정리인 경우가 많습니다. <b>수일에 걸친 추세</b>에 집중하고, 결론을 내리기 전에 보유자 공급과 교차 확인하세요.</p>
+          <div class="ct" data-en="Practical tip">실전 팁</div>
+          <p data-i18n-html="1" data-en="Ignore a single large transfer — it's often internal exchange housekeeping. Focus on the <b>trend over several days</b>, and cross-check against holder supply before drawing conclusions.">한 건의 큰 전송은 무시하세요 — 거래소 내부 정리인 경우가 많습니다. <b>수일에 걸친 추세</b>에 집중하고, 결론을 내리기 전에 보유자 공급과 교차 확인하세요.</p>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">5</span><span>한계와 흔한 오해</span></h2>
-        <p>거래소는 보안·운영을 위해 자기 내부 지갑과 콜드 지갑 사이로 끊임없이 코인을 옮기며, 이런 전송은 투자자 의도와 무관한 흐름을 만들 수 있습니다. 현물 ETF의 등장 — 수탁사가 개인 매도와 무관하게 대량의 비트코인을 옮김 — 과 자가 보관으로의 폭넓은 이동으로 이 신호는 예전보다 잡음이 많아졌습니다. 가장 흔한 실수는 <b>한 건의 큰 전송을 시장 전체의 결정인 양</b> 반응하는 것입니다. 실제로는 지속적이고 합산된 추세만 의미가 있습니다. 순유입은 매물 압력에 대한 하나의 보조 단서로 받아들이고 정확한 매수·매도 방아쇠로 삼지 마세요. 항상 가격과 다른 온체인 지표와 함께 읽어야 합니다.</p>
+        <h2><span class="ix">5</span><span data-en="Limits and common misconceptions">한계와 흔한 오해</span></h2>
+        <p data-i18n-html="1" data-en="Exchanges constantly shuffle coins between their own internal and cold wallets for security and operations, and these transfers can create flows unrelated to investor intent. The arrival of spot ETFs — where custodians move large amounts of Bitcoin unrelated to individual selling — and the broad shift toward self-custody have made this signal noisier than it used to be. The most common mistake is reacting to <b>a single large transfer as if it were a market-wide decision</b>. In reality, only sustained, aggregate trends carry meaning. Treat net inflow as one supporting clue about selling pressure, not a precise buy or sell trigger. Always read it alongside price and other on-chain indicators.">거래소는 보안·운영을 위해 자기 내부 지갑과 콜드 지갑 사이로 끊임없이 코인을 옮기며, 이런 전송은 투자자 의도와 무관한 흐름을 만들 수 있습니다. 현물 ETF의 등장 — 수탁사가 개인 매도와 무관하게 대량의 비트코인을 옮김 — 과 자가 보관으로의 폭넓은 이동으로 이 신호는 예전보다 잡음이 많아졌습니다. 가장 흔한 실수는 <b>한 건의 큰 전송을 시장 전체의 결정인 양</b> 반응하는 것입니다. 실제로는 지속적이고 합산된 추세만 의미가 있습니다. 순유입은 매물 압력에 대한 하나의 보조 단서로 받아들이고 정확한 매수·매도 방아쇠로 삼지 마세요. 항상 가격과 다른 온체인 지표와 함께 읽어야 합니다.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">+</span><span>함께 보면 좋은 지표</span></h2>
+        <h2><span class="ix">+</span><span data-en="Related indicators">함께 보면 좋은 지표</span></h2>
         <div class="related-grid">
           <a href="holder-supply.html">
-            <span class="rn">장기·단기 보유</span>
-            <span class="rd">노련한 보유자가 매집 중인지 분배 중인지.</span>
+            <span class="rn" data-en="Long/Short-term Holders">장기·단기 보유</span>
+            <span class="rd" data-en="Whether seasoned holders are accumulating or distributing.">노련한 보유자가 매집 중인지 분배 중인지.</span>
           </a>
           <a href="hash-rate.html">
-            <span class="rn">해시레이트</span>
-            <span class="rd">시간에 따른 네트워크 보안과 채굴자 확신.</span>
+            <span class="rn" data-en="Hash Rate">해시레이트</span>
+            <span class="rd" data-en="Network security and miner conviction over time.">시간에 따른 네트워크 보안과 채굴자 확신.</span>
           </a>
           <a href="../guide.html">
-            <span class="rn">전체 지표 보기</span>
-            <span class="rd">지표 가이드 전체로 돌아가기.</span>
+            <span class="rn" data-en="See all indicators">전체 지표 보기</span>
+            <span class="rd" data-en="Back to the full indicator guide.">지표 가이드 전체로 돌아가기.</span>
           </a>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">?</span><span>자주 묻는 질문</span></h2>
+        <h2><span class="ix">?</span><span data-en="Frequently asked questions">자주 묻는 질문</span></h2>
         <div class="faq-list">
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>거래소에서 코인이 빠져나가면 무조건 가격이 오르나요?</span></summary>
-            <div class="ans">지속적인 유출은 투자자가 코인을 보관용 지갑으로 옮겨 팔 의사가 적다는 매집 신호로 읽히지만, 그 자체가 가격 상승을 보장하지는 않습니다. 한 번의 큰 출금이 아니라 수일·수주에 걸친 추세를 보고, 다른 지표와 함께 참고하는 것이 안전합니다.</div>
+            <summary><span class="q">Q</span><span data-en="If coins leave exchanges, does the price always go up?">거래소에서 코인이 빠져나가면 무조건 가격이 오르나요?</span></summary>
+            <div class="ans" data-en="A sustained outflow is read as an accumulation signal — investors moving coins to storage wallets with little intent to sell — but that alone does not guarantee a price rise. It's safer to look at the trend over days or weeks rather than a single large withdrawal, and to consider it alongside other indicators.">지속적인 유출은 투자자가 코인을 보관용 지갑으로 옮겨 팔 의사가 적다는 매집 신호로 읽히지만, 그 자체가 가격 상승을 보장하지는 않습니다. 한 번의 큰 출금이 아니라 수일·수주에 걸친 추세를 보고, 다른 지표와 함께 참고하는 것이 안전합니다.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>순유입은 어떻게 계산하나요?</span></summary>
-            <div class="ans">순유입은 일정 기간 거래소 지갑으로 들어온 코인에서 빠져나간 코인을 뺀 값입니다. 양수면 거래소로 들어온 코인이 더 많아 잠재적 매도 대기, 음수면 빠져나간 코인이 더 많아 보관·매집으로 해석합니다.</div>
+            <summary><span class="q">Q</span><span data-en="How is net inflow calculated?">순유입은 어떻게 계산하나요?</span></summary>
+            <div class="ans" data-en="Net inflow is the coins that moved into exchange wallets over a period minus the coins that moved out. Positive means more coins came onto exchanges, suggesting potential selling ahead; negative means more coins left, interpreted as storage or accumulation.">순유입은 일정 기간 거래소 지갑으로 들어온 코인에서 빠져나간 코인을 뺀 값입니다. 양수면 거래소로 들어온 코인이 더 많아 잠재적 매도 대기, 음수면 빠져나간 코인이 더 많아 보관·매집으로 해석합니다.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>ETF나 자가 보관이 늘면서 이 지표가 덜 유용해졌나요?</span></summary>
-            <div class="ans">ETF 수탁사와 자가 보관의 확산, 거래소가 내부·콜드 지갑 사이로 코인을 옮기는 관행 때문에 투자자 행동과 무관한 흐름이 섞여 신호가 예전보다 잡음이 많아진 것은 사실입니다. 그래서 단독으로 보기보다 보유자 공급·심리 지표와 함께 보는 것이 좋습니다.</div>
+            <summary><span class="q">Q</span><span data-en="Have ETFs and self-custody made this indicator less useful?">ETF나 자가 보관이 늘면서 이 지표가 덜 유용해졌나요?</span></summary>
+            <div class="ans" data-en="It's true that the spread of ETF custodians and self-custody, together with exchanges moving coins between their internal and cold wallets, mixes in flows unrelated to investor behavior, making the signal noisier than before. So it's better to read it alongside holder supply and sentiment indicators rather than on its own.">ETF 수탁사와 자가 보관의 확산, 거래소가 내부·콜드 지갑 사이로 코인을 옮기는 관행 때문에 투자자 행동과 무관한 흐름이 섞여 신호가 예전보다 잡음이 많아진 것은 사실입니다. 그래서 단독으로 보기보다 보유자 공급·심리 지표와 함께 보는 것이 좋습니다.</div>
           </details>
         </div>
       </section>
 
       <div class="page-cta">
         <div class="ct-tx">
-          <h3>오늘의 지표 값 확인하기</h3>
-          <p>대시보드에서 최신 거래소 순유입 추이와 종합 타이밍 점수를 확인하세요.</p>
+          <h3 data-en="Check today's indicator values">오늘의 지표 값 확인하기</h3>
+          <p data-en="See the latest exchange net inflow trend and the composite timing score on the dashboard.">대시보드에서 최신 거래소 순유입 추이와 종합 타이밍 점수를 확인하세요.</p>
         </div>
-        <a class="ct-btn" href="../index.html">대시보드 열기 →</a>
+        <a class="ct-btn" href="../index.html" data-en="Open dashboard →">대시보드 열기 →</a>
       </div>
 
       <!-- 푸터 -->
       <div class="foot">
         <div class="fa">
-          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
-          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+          <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
+          <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4>메뉴</h4><a href="../index.html">대시보드</a><a href="../guide.html">지표 가이드</a><a href="../about.html">서비스 소개</a><a href="../contact.html">문의</a></div>
-          <div class="col"><h4>정책 · 커뮤니티</h4><a href="../privacy.html">개인정보처리방침</a><a href="../disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="../index.html" data-en="Dashboard">대시보드</a><a href="../guide.html" data-en="Indicator Guide">지표 가이드</a><a href="../about.html" data-en="About">서비스 소개</a><a href="../contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="../disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
-        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+        <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
       </div>
 
     </div>
@@ -475,5 +475,7 @@
   }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
 })();
 </script>
+<!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="../btc-i18n.js"></script>
 </body>
 </html>

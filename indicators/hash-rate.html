@@ -2,19 +2,19 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="비트코인 해시레이트(Hash Rate)란 무엇이고 어떻게 읽는지 — 연산력 추정 방식, 추세 해석, 항복 저점·해시 리본과의 관계, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다.">
+<meta name="description" content="비트코인 해시레이트(Hash Rate)란 무엇이고 어떻게 읽는지 — 연산력 추정 방식, 추세 해석, 항복 저점·해시 리본과의 관계, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="What Bitcoin hash rate is and how to read it — how the hashing power is estimated, how to interpret the trend, its relationship to capitulation bottoms and the Hash Ribbon, how it's used for buy timing, and its limits, explained for beginners.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>해시레이트란? 비트코인 네트워크 보안 지표 완전 정리 — BTC 타이밍 레이더</title>
+<title data-en="What Is Hash Rate? A Complete Guide to Bitcoin's Network Security Metric — BTC Timing Radar">해시레이트란? 비트코인 네트워크 보안 지표 완전 정리 — BTC 타이밍 레이더</title>
 <link rel="canonical" href="https://btctiming.co.kr/indicators/hash-rate.html">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://btctiming.co.kr/indicators/hash-rate.html">
 <meta property="og:site_name" content="BTC 투자 타이밍 레이더">
-<meta property="og:title" content="해시레이트란? 비트코인 네트워크 보안 지표 완전 정리">
-<meta property="og:description" content="비트코인 해시레이트의 추정 방식, 추세 해석, 항복 저점·해시 리본과의 관계, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다.">
+<meta property="og:title" content="해시레이트란? 비트코인 네트워크 보안 지표 완전 정리" data-en-content="What Is Hash Rate? A Complete Guide to Bitcoin's Network Security Metric">
+<meta property="og:description" content="비트코인 해시레이트의 추정 방식, 추세 해석, 항복 저점·해시 리본과의 관계, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="The estimation method, trend interpretation, relationship to capitulation bottoms and the Hash Ribbon, buy-timing use, and limits of Bitcoin's hash rate, explained for beginners.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="해시레이트란? 비트코인 네트워크 보안 지표 완전 정리">
-<meta name="twitter:description" content="비트코인 해시레이트의 추정 방식, 추세 해석, 매수 타이밍 활용법과 한계를 설명합니다.">
+<meta name="twitter:title" content="해시레이트란? 비트코인 네트워크 보안 지표 완전 정리" data-en-content="What Is Hash Rate? A Complete Guide to Bitcoin's Network Security Metric">
+<meta name="twitter:description" content="비트코인 해시레이트의 추정 방식, 추세 해석, 매수 타이밍 활용법과 한계를 설명합니다." data-en-content="The estimation method, trend interpretation, buy-timing use, and limits of Bitcoin's hash rate.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -238,39 +238,39 @@
   <aside class="sidebar">
     <a class="sb-brand" href="../index.html">
       <div class="sb-logo">₿</div>
-      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+      <div><div class="bt" data-en="Timing Radar">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
     </a>
     <div class="sb-menu-h">MENU</div>
     <nav class="sb-nav">
-      <a href="../index.html"><span class="dot"></span>대시보드</a>
-      <a class="active" href="../guide.html"><span class="dot"></span>지표 가이드</a>
-      <a href="../about.html"><span class="dot"></span>서비스 소개</a>
-      <a href="../contact.html"><span class="dot"></span>문의</a>
+      <a href="../index.html"><span class="dot"></span><span data-en="Dashboard">대시보드</span></a>
+      <a class="active" href="../guide.html"><span class="dot"></span><span data-en="Indicator Guide">지표 가이드</span></a>
+      <a href="../about.html"><span class="dot"></span><span data-en="About">서비스 소개</span></a>
+      <a href="../contact.html"><span class="dot"></span><span data-en="Contact">문의</span></a>
     </nav>
     <div class="sb-live">
       <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
-      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
+      <div class="lb" data-i18n-html="1" data-en="Indicators auto-update<br>daily at 09:05 KST">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
     <!-- 방문자 카운터 (Firebase) -->
     <div class="sb-visitor" id="visitorStrip">
       <div class="vh">VISITORS</div>
-      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
-      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
-      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
+      <div class="vr now"><span><span class="vc-dot"></span><span data-en="Viewing now">지금 보는 중</span></span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span data-en="Today">오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span data-en="Total">누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+    <div class="sb-foot" data-i18n-html="1" data-en="Quantitative analysis for reference ·<br>Not investment advice">참고용 정량 분석 ·<br>투자 조언 아님</div>
   </aside>
 
   <!-- ── 메인 ── -->
   <div class="main">
     <!-- 모바일 상단 바 -->
     <div class="mobile-bar">
-      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
-      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
+      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t" data-en="Timing Radar">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기" data-en-aria-label="Open menu"><span></span></button>
     </div>
     <!-- 데스크톱 상단 바 -->
     <div class="topbar">
-      <div class="crumb">지표 가이드 <span style="color:var(--m3)">›</span> <b>해시레이트</b></div>
+      <div class="crumb"><span data-en="Indicator Guide">지표 가이드</span> <span style="color:var(--m3)">›</span> <b data-en="Hash Rate">해시레이트</b></div>
       <div class="right">
         <span class="live"><span class="d"></span>LIVE</span>
       </div>
@@ -279,131 +279,131 @@
     <div class="content">
 
       <div class="crumb-nav">
-        <a href="../guide.html">지표 가이드</a>
+        <a href="../guide.html" data-en="Indicator Guide">지표 가이드</a>
         <span class="sep">/</span>
-        <span>온체인</span>
+        <span data-en="On-chain">온체인</span>
         <span class="sep">/</span>
-        <span>해시레이트</span>
+        <span data-en="Hash Rate">해시레이트</span>
       </div>
 
       <div class="ind-hero">
-        <span class="cat-pill"><span class="d"></span><span>온체인</span></span>
-        <h1>해시레이트, <span class="hl">쉬운 말</span>로 풀어보기</h1>
-        <p class="lead">해시레이트는 전 세계 채굴자가 비트코인 네트워크를 지키는 데 쏟는 총 연산력입니다. <b>네트워크를 향한 연산력이 많을수록 공격하기 어렵고 더 건강합니다.</b> 비트코인의 가치가 아니라 채굴자들이 현실의 에너지와 돈을 얼마나 기꺼이 투입하는지를 보여주며, 이는 장기 신뢰를 가늠하는 느리지만 정직한 잣대입니다.</p>
+        <span class="cat-pill"><span class="d"></span><span data-en="On-chain">온체인</span></span>
+        <h1 data-i18n-html="1" data-en="Hash Rate, <span class=&quot;hl&quot;>in plain terms</span>">해시레이트, <span class="hl">쉬운 말</span>로 풀어보기</h1>
+        <p class="lead" data-i18n-html="1" data-en="Hash rate is the total computing power that miners around the world pour into securing the Bitcoin network. <b>The more computing power aimed at the network, the harder it is to attack and the healthier it is.</b> It doesn't measure Bitcoin's value but how willingly miners commit real energy and money, making it a slow but honest gauge of long-term conviction.">해시레이트는 전 세계 채굴자가 비트코인 네트워크를 지키는 데 쏟는 총 연산력입니다. <b>네트워크를 향한 연산력이 많을수록 공격하기 어렵고 더 건강합니다.</b> 비트코인의 가치가 아니라 채굴자들이 현실의 에너지와 돈을 얼마나 기꺼이 투입하는지를 보여주며, 이는 장기 신뢰를 가늠하는 느리지만 정직한 잣대입니다.</p>
       </div>
 
       <div class="summary-box">
         <div class="sb">
-          <span class="k">무엇인가</span>
-          <span class="v">채굴자가 네트워크에 쏟는 총 연산력.</span>
+          <span class="k" data-en="What it is">무엇인가</span>
+          <span class="v" data-en="The total computing power miners pour into the network.">채굴자가 네트워크에 쏟는 총 연산력.</span>
         </div>
         <div class="sb">
-          <span class="k">어떻게 읽나</span>
-          <span class="v"><b>상승 추세 = 건강하고 안전한 네트워크.</b> 장기 신뢰 지표.</span>
+          <span class="k" data-en="How to read it">어떻게 읽나</span>
+          <span class="v" data-i18n-html="1" data-en="<b>Rising trend = a healthy, secure network.</b> A long-term conviction gauge."><b>상승 추세 = 건강하고 안전한 네트워크.</b> 장기 신뢰 지표.</span>
         </div>
         <div class="sb">
-          <span class="k">신호</span>
-          <span class="impact-inline buy">상승 = 네트워크 건강</span>
+          <span class="k" data-en="Signal">신호</span>
+          <span class="impact-inline buy" data-en="Rising = network health">상승 = 네트워크 건강</span>
         </div>
       </div>
 
       <section class="sec">
-        <h2><span class="ix">1</span><span>해시레이트는 무엇을 재는가</span></h2>
-        <p>가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 해시레이트는 <b>네트워크를 지키는 데 현실의 노력이 얼마나 들어가는지</b>를 알려줍니다. 비트코인 채굴자는 초당 수조 번의 추측을 하는 전용 기계를 돌리며 다음 블록을 추가하려 경쟁합니다. 그 모든 추측의 합산 속도가 해시레이트입니다. 이 기계를 돌리는 데는 실제 전기와 하드웨어가 들기 때문에, 높은 해시레이트는 많은 자본이 비트코인의 보안 유지에 투입돼 있다는 뜻입니다.</p>
-        <p>직관은 채굴자가 장기 참여자라는 점입니다. 네트워크가 계속 돌아가고 가치가 있으리라 기대하지 않으면 비싼 장비를 켜지 않습니다. 그래서 꾸준히 오르는 해시레이트는 비트코인의 존속에 대한, 자본으로 뒷받침된 커지는 확신을 반영합니다 — 비록 단기 가격과는 느슨하고 후행적인 연결만 있더라도요.</p>
+        <h2><span class="ix">1</span><span data-en="What hash rate measures">해시레이트는 무엇을 재는가</span></h2>
+        <p data-i18n-html="1" data-en="Price tells you what the market <b>did</b>. Hash rate tells you <b>how much real-world effort goes into securing the network</b>. Bitcoin miners run specialized machines making trillions of guesses per second, competing to add the next block. The combined speed of all those guesses is the hash rate. Because running these machines takes real electricity and hardware, a high hash rate means a lot of capital is committed to keeping Bitcoin secure.">가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 해시레이트는 <b>네트워크를 지키는 데 현실의 노력이 얼마나 들어가는지</b>를 알려줍니다. 비트코인 채굴자는 초당 수조 번의 추측을 하는 전용 기계를 돌리며 다음 블록을 추가하려 경쟁합니다. 그 모든 추측의 합산 속도가 해시레이트입니다. 이 기계를 돌리는 데는 실제 전기와 하드웨어가 들기 때문에, 높은 해시레이트는 많은 자본이 비트코인의 보안 유지에 투입돼 있다는 뜻입니다.</p>
+        <p data-en="The intuition is that miners are long-term participants. They don't switch on expensive equipment unless they expect the network to keep running and hold value. So a steadily rising hash rate reflects growing, capital-backed confidence in Bitcoin's survival — even if it has only a loose and lagging connection to short-term price.">직관은 채굴자가 장기 참여자라는 점입니다. 네트워크가 계속 돌아가고 가치가 있으리라 기대하지 않으면 비싼 장비를 켜지 않습니다. 그래서 꾸준히 오르는 해시레이트는 비트코인의 존속에 대한, 자본으로 뒷받침된 커지는 확신을 반영합니다 — 비록 단기 가격과는 느슨하고 후행적인 연결만 있더라도요.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">2</span><span>어떻게 추정되나</span></h2>
-        <p>해시레이트는 직접 측정되는 값이 아니라 <b>역산</b>됩니다. 모든 기계를 셀 수는 없으므로, 온체인 사실로부터 거꾸로 추정합니다.</p>
+        <h2><span class="ix">2</span><span data-en="How it's estimated">어떻게 추정되나</span></h2>
+        <p data-i18n-html="1" data-en="Hash rate isn't measured directly — it's <b>back-calculated</b>. Since you can't count every machine, it's estimated in reverse from on-chain facts.">해시레이트는 직접 측정되는 값이 아니라 <b>역산</b>됩니다. 모든 기계를 셀 수는 없으므로, 온체인 사실로부터 거꾸로 추정합니다.</p>
         <ul>
-          <li><b>블록 속도</b> — 새 블록이 얼마나 빨리 발견되는가. 약 10분 목표보다 빠르면 더 많은 연산력이 가동 중이라는 뜻.</li>
-          <li><b>채굴 난이도</b> — 네트워크가 약 2주마다 퍼즐의 어려움을 자동 조정해 블록 시간을 10분 부근으로 유지함.</li>
-          <li><b>합산 추정</b> — 둘을 결합하면 전체 채굴자의 초당 <code>해시 횟수</code> 근삿값이 나옴.</li>
+          <li data-i18n-html="1" data-en="<b>Block speed</b> — how quickly new blocks are found. Faster than the ~10-minute target means more computing power is running."><b>블록 속도</b> — 새 블록이 얼마나 빨리 발견되는가. 약 10분 목표보다 빠르면 더 많은 연산력이 가동 중이라는 뜻.</li>
+          <li data-i18n-html="1" data-en="<b>Mining difficulty</b> — roughly every two weeks the network automatically adjusts the puzzle's difficulty to keep block time near 10 minutes."><b>채굴 난이도</b> — 네트워크가 약 2주마다 퍼즐의 어려움을 자동 조정해 블록 시간을 10분 부근으로 유지함.</li>
+          <li data-i18n-html="1" data-en="<b>Combined estimate</b> — putting the two together gives an approximation of the <code>hashes per second</code> across all miners."><b>합산 추정</b> — 둘을 결합하면 전체 채굴자의 초당 <code>해시 횟수</code> 근삿값이 나옴.</li>
         </ul>
-        <p>핵심은 이것이 블록 타이밍의 운에 묶인 추정치라서 <b>하루하루의 숫자가 출렁인다</b>는 점입니다. 의미 있는 것은 어느 한 값이 아니라 수주·수개월에 걸쳐 부드럽게 다듬은 추세입니다.</p>
+        <p data-i18n-html="1" data-en="The key point is that because it's an estimate tied to the luck of block timing, <b>the day-to-day numbers wobble</b>. What matters is not any single value but the smoothed trend over weeks and months.">핵심은 이것이 블록 타이밍의 운에 묶인 추정치라서 <b>하루하루의 숫자가 출렁인다</b>는 점입니다. 의미 있는 것은 어느 한 값이 아니라 수주·수개월에 걸쳐 부드럽게 다듬은 추세입니다.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">3</span><span>추세로 읽기</span></h2>
-        <p>매수·매도 기준선은 없습니다. 해시레이트는 임계값이 아니라 방향과 구조적 건강에 관한 것입니다. 부드럽게 다듬은 추세를 읽으세요.</p>
+        <h2><span class="ix">3</span><span data-en="Reading it as a trend">추세로 읽기</span></h2>
+        <p data-en="There's no buy/sell threshold. Hash rate is about direction and structural health, not a cutoff value. Read the smoothed trend.">매수·매도 기준선은 없습니다. 해시레이트는 임계값이 아니라 방향과 구조적 건강에 관한 것입니다. 부드럽게 다듬은 추세를 읽으세요.</p>
         <div class="zone-table">
-          <div class="zrow"><div class="zr-band z-strong"><span>꾸준한 상승</span></div><div class="zr-desc"><b>건강하고 안전.</b> 채굴자가 계속 연산력을 더함 — 네트워크에 대한 자본 기반 확신이 커짐. 건설적인 장기 배경.</div></div>
-          <div class="zrow"><div class="zr-band z-mild"><span>횡보</span></div><div class="zr-desc"><b>안정.</b> 채굴 연산력이 대체로 평탄. 네트워크는 견조하며 이 지표만으로는 강한 방향성 메시지가 없음.</div></div>
-          <div class="zrow"><div class="zr-band z-wait"><span>완만한 하락</span></div><div class="zr-desc"><b>주시.</b> 소폭 하락은 마진이 조이며 일부 채굴기가 꺼지는 것일 수 있음. 그 자체로 경보는 아니나 추적할 가치가 있음.</div></div>
-          <div class="zrow"><div class="zr-band z-bear"><span>급락</span></div><div class="zr-desc"><b>항복 구간.</b> 가파른 하락은 많은 채굴기가 꺼지는 것 — 때로 깊고 공포스러운 저점 부근에서 나타남. 단독이 아니라 해시 리본과 함께 읽음.</div></div>
+          <div class="zrow"><div class="zr-band z-strong"><span data-en="Steady rise">꾸준한 상승</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Healthy and secure.</b> Miners keep adding computing power — capital-backed confidence in the network is growing. A constructive long-term backdrop."><b>건강하고 안전.</b> 채굴자가 계속 연산력을 더함 — 네트워크에 대한 자본 기반 확신이 커짐. 건설적인 장기 배경.</div></div>
+          <div class="zrow"><div class="zr-band z-mild"><span data-en="Sideways">횡보</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Stable.</b> Mining power is roughly flat. The network is solid, and on its own this metric sends no strong directional message."><b>안정.</b> 채굴 연산력이 대체로 평탄. 네트워크는 견조하며 이 지표만으로는 강한 방향성 메시지가 없음.</div></div>
+          <div class="zrow"><div class="zr-band z-wait"><span data-en="Gentle decline">완만한 하락</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Watch.</b> A mild drop can mean margins are tightening and some machines are switching off. Not an alarm in itself, but worth tracking."><b>주시.</b> 소폭 하락은 마진이 조이며 일부 채굴기가 꺼지는 것일 수 있음. 그 자체로 경보는 아니나 추적할 가치가 있음.</div></div>
+          <div class="zrow"><div class="zr-band z-bear"><span data-en="Sharp drop">급락</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Capitulation zone.</b> A steep fall means many machines are shutting down — sometimes seen near deep, fearful bottoms. Read it alongside the Hash Ribbon, not alone."><b>항복 구간.</b> 가파른 하락은 많은 채굴기가 꺼지는 것 — 때로 깊고 공포스러운 저점 부근에서 나타남. 단독이 아니라 해시 리본과 함께 읽음.</div></div>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">4</span><span>매수 타이밍에 쓰는 법</span></h2>
-        <p>해시레이트는 타이밍 방아쇠가 아니라 <b>장기 건강 점검</b>으로 쓸 때 가장 좋습니다. 꾸준히 오르는 추세는 네트워크의 토대가 단단해지고 있음을 확인시켜, 인내심 있는 매수자에게 자신이 모으는 자산이 구조적으로 쇠퇴하지 않는다는 신뢰를 줍니다. 더 흥미로운 타이밍 관점은 급락입니다. 깊은 해시레이트 하락은 채굴자 항복을 반영하며, 역사적으로 때때로 주요 가격 저점 부근에 모이기도 했습니다 — 다만 사후적으로만 그렇고, 그 자체로 정확한 신호는 결코 아닙니다.</p>
+        <h2><span class="ix">4</span><span data-en="How to use it for buy timing">매수 타이밍에 쓰는 법</span></h2>
+        <p data-i18n-html="1" data-en="Hash rate works best as a <b>long-term health check</b> rather than a timing trigger. A steadily rising trend confirms the network's foundation is getting stronger, giving patient buyers confidence that the asset they're accumulating isn't structurally decaying. A more interesting timing angle is a sharp drop: a deep hash-rate decline reflects miner capitulation and has historically sometimes clustered near major price bottoms — but only in hindsight, and never a precise signal on its own.">해시레이트는 타이밍 방아쇠가 아니라 <b>장기 건강 점검</b>으로 쓸 때 가장 좋습니다. 꾸준히 오르는 추세는 네트워크의 토대가 단단해지고 있음을 확인시켜, 인내심 있는 매수자에게 자신이 모으는 자산이 구조적으로 쇠퇴하지 않는다는 신뢰를 줍니다. 더 흥미로운 타이밍 관점은 급락입니다. 깊은 해시레이트 하락은 채굴자 항복을 반영하며, 역사적으로 때때로 주요 가격 저점 부근에 모이기도 했습니다 — 다만 사후적으로만 그렇고, 그 자체로 정확한 신호는 결코 아닙니다.</p>
         <div class="callout">
-          <div class="ct">실전 팁</div>
-          <p>하루하루의 출렁임에 반응하지 마세요 — 블록 타이밍 운이 만드는 잡음입니다. 항복 판단은 해시레이트를 <b>해시 리본</b>과 함께 보고, 이것이 단기 가격이 아니라 보안을 반영함을 기억하세요.</p>
+          <div class="ct" data-en="Practical tip">실전 팁</div>
+          <p data-i18n-html="1" data-en="Don't react to day-to-day wobble — it's noise created by the luck of block timing. To judge capitulation, view hash rate alongside the <b>Hash Ribbon</b>, and remember it reflects security, not short-term price.">하루하루의 출렁임에 반응하지 마세요 — 블록 타이밍 운이 만드는 잡음입니다. 항복 판단은 해시레이트를 <b>해시 리본</b>과 함께 보고, 이것이 단기 가격이 아니라 보안을 반영함을 기억하세요.</p>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">5</span><span>한계와 흔한 오해</span></h2>
-        <p>해시레이트는 블록이 얼마나 빨리 발견되는지로 추정되기 때문에 블록 타이밍의 무작위한 운에 따라 출렁입니다 — 그래서 단기 흔들림은 신호가 아니라 잡음입니다. 가장 흔한 실수는 이것을 <b>가격 예측기</b>로 받아들이는 것입니다. 해시레이트 상승은 네트워크가 안전하고 채굴자가 확신을 가졌음을 확인해 주지만, 가격의 다음 움직임과는 느슨하고 후행적인 연결만 있고, 연산력 상승은 상승장과 하락장 모두와 겹쳐 왔습니다. 또한 가치평가나 심리에 대해서는 아무것도 말해주지 않습니다. 이것을 구조적 건강과 보안의 잣대 — 장기적으로 안심을 주는 배경 — 로 읽고, 채굴자 항복을 판단하려면 해시 리본과 함께 보세요. 단독으로 진입을 타이밍하리라 기대하지 마세요.</p>
+        <h2><span class="ix">5</span><span data-en="Limits and common misconceptions">한계와 흔한 오해</span></h2>
+        <p data-i18n-html="1" data-en="Because hash rate is estimated from how quickly blocks are found, it wobbles with the random luck of block timing — so short-term swings are noise, not signal. The most common mistake is treating it as a <b>price predictor</b>. A rising hash rate confirms the network is secure and miners are confident, but it has only a loose, lagging connection to price's next move, and rising computing power has overlapped with both bull and bear markets. It also says nothing about valuation or sentiment. Read it as a gauge of structural health and security — a reassuring long-term backdrop — and, to judge miner capitulation, view it with the Hash Ribbon. Don't expect it to time entries on its own.">해시레이트는 블록이 얼마나 빨리 발견되는지로 추정되기 때문에 블록 타이밍의 무작위한 운에 따라 출렁입니다 — 그래서 단기 흔들림은 신호가 아니라 잡음입니다. 가장 흔한 실수는 이것을 <b>가격 예측기</b>로 받아들이는 것입니다. 해시레이트 상승은 네트워크가 안전하고 채굴자가 확신을 가졌음을 확인해 주지만, 가격의 다음 움직임과는 느슨하고 후행적인 연결만 있고, 연산력 상승은 상승장과 하락장 모두와 겹쳐 왔습니다. 또한 가치평가나 심리에 대해서는 아무것도 말해주지 않습니다. 이것을 구조적 건강과 보안의 잣대 — 장기적으로 안심을 주는 배경 — 로 읽고, 채굴자 항복을 판단하려면 해시 리본과 함께 보세요. 단독으로 진입을 타이밍하리라 기대하지 마세요.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">+</span><span>함께 보면 좋은 지표</span></h2>
+        <h2><span class="ix">+</span><span data-en="Related indicators">함께 보면 좋은 지표</span></h2>
         <div class="related-grid">
           <a href="exchange-net-flow.html">
-            <span class="rn">거래소 순유입</span>
-            <span class="rd">코인이 보관용으로 빠져나가는지, 팔려고 들어오는지.</span>
+            <span class="rn" data-en="Exchange Net Inflow">거래소 순유입</span>
+            <span class="rd" data-en="Whether coins are leaving for storage or arriving to be sold.">코인이 보관용으로 빠져나가는지, 팔려고 들어오는지.</span>
           </a>
           <a href="holder-supply.html">
-            <span class="rn">장기·단기 보유</span>
-            <span class="rd">노련한 보유자가 매집 중인지 분배 중인지.</span>
+            <span class="rn" data-en="Long/Short-term Holders">장기·단기 보유</span>
+            <span class="rd" data-en="Whether seasoned holders are accumulating or distributing.">노련한 보유자가 매집 중인지 분배 중인지.</span>
           </a>
           <a href="../guide.html">
-            <span class="rn">전체 지표 보기</span>
-            <span class="rd">지표 가이드 전체로 돌아가기.</span>
+            <span class="rn" data-en="See all indicators">전체 지표 보기</span>
+            <span class="rd" data-en="Back to the full indicator guide.">지표 가이드 전체로 돌아가기.</span>
           </a>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">?</span><span>자주 묻는 질문</span></h2>
+        <h2><span class="ix">?</span><span data-en="Frequently asked questions">자주 묻는 질문</span></h2>
         <div class="faq-list">
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>해시레이트가 오르면 가격도 오르나요?</span></summary>
-            <div class="ans">해시레이트는 단기 가격이 아니라 네트워크의 장기 보안과 채굴자 확신을 반영합니다. 꾸준히 오르는 추세는 건강한 네트워크 신호이지만 가격 상승을 직접 보장하지는 않으며, 단기 타이밍보다 장기적 신뢰의 배경으로 보는 것이 적절합니다.</div>
+            <summary><span class="q">Q</span><span data-en="If hash rate goes up, does price go up too?">해시레이트가 오르면 가격도 오르나요?</span></summary>
+            <div class="ans" data-en="Hash rate reflects the network's long-term security and miner confidence, not short-term price. A steadily rising trend is a sign of a healthy network but doesn't directly guarantee price gains, so it's better seen as a backdrop of long-term trust than a short-term timing tool.">해시레이트는 단기 가격이 아니라 네트워크의 장기 보안과 채굴자 확신을 반영합니다. 꾸준히 오르는 추세는 건강한 네트워크 신호이지만 가격 상승을 직접 보장하지는 않으며, 단기 타이밍보다 장기적 신뢰의 배경으로 보는 것이 적절합니다.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>해시레이트는 어떻게 측정하나요?</span></summary>
-            <div class="ans">정확히 측정되는 값이 아니라 추정치입니다. 블록이 얼마나 빨리 발견되는지와 현재 채굴 난이도로부터 전 세계 채굴기가 초당 몇 번의 해시 시도를 하는지를 역산합니다. 그래서 블록 타이밍의 운에 따라 단기적으로 출렁입니다.</div>
+            <summary><span class="q">Q</span><span data-en="How is hash rate measured?">해시레이트는 어떻게 측정하나요?</span></summary>
+            <div class="ans" data-en="It's not measured exactly but estimated. From how quickly blocks are found and the current mining difficulty, the number of hash attempts miners worldwide make per second is back-calculated. That's why it wobbles in the short term with the luck of block timing.">정확히 측정되는 값이 아니라 추정치입니다. 블록이 얼마나 빨리 발견되는지와 현재 채굴 난이도로부터 전 세계 채굴기가 초당 몇 번의 해시 시도를 하는지를 역산합니다. 그래서 블록 타이밍의 운에 따라 단기적으로 출렁입니다.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>해시레이트 급락은 매수 신호인가요?</span></summary>
-            <div class="ans">급락은 채굴기가 꺼지는 것으로, 때로 항복성 저점 부근에서 나타나 사후적으로 바닥과 겹치기도 합니다. 다만 그 자체가 매수 신호는 아니며, 채굴자 항복을 판단하려면 해시 리본 등과 함께 보는 것이 더 신뢰할 수 있습니다.</div>
+            <summary><span class="q">Q</span><span data-en="Is a sharp hash-rate drop a buy signal?">해시레이트 급락은 매수 신호인가요?</span></summary>
+            <div class="ans" data-en="A sharp drop means machines are shutting down, and it sometimes appears near capitulation bottoms, overlapping with the low in hindsight. But it isn't a buy signal in itself, and to judge miner capitulation it's more reliable to view it together with tools like the Hash Ribbon.">급락은 채굴기가 꺼지는 것으로, 때로 항복성 저점 부근에서 나타나 사후적으로 바닥과 겹치기도 합니다. 다만 그 자체가 매수 신호는 아니며, 채굴자 항복을 판단하려면 해시 리본 등과 함께 보는 것이 더 신뢰할 수 있습니다.</div>
           </details>
         </div>
       </section>
 
       <div class="page-cta">
         <div class="ct-tx">
-          <h3>오늘의 지표 값 확인하기</h3>
-          <p>대시보드에서 최신 해시레이트 추이와 종합 타이밍 점수를 확인하세요.</p>
+          <h3 data-en="Check today's indicator value">오늘의 지표 값 확인하기</h3>
+          <p data-en="See the latest hash-rate trend and the composite timing score on the dashboard.">대시보드에서 최신 해시레이트 추이와 종합 타이밍 점수를 확인하세요.</p>
         </div>
-        <a class="ct-btn" href="../index.html">대시보드 열기 →</a>
+        <a class="ct-btn" href="../index.html" data-en="Open dashboard →">대시보드 열기 →</a>
       </div>
 
       <!-- 푸터 -->
       <div class="foot">
         <div class="fa">
-          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
-          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+          <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
+          <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4>메뉴</h4><a href="../index.html">대시보드</a><a href="../guide.html">지표 가이드</a><a href="../about.html">서비스 소개</a><a href="../contact.html">문의</a></div>
-          <div class="col"><h4>정책 · 커뮤니티</h4><a href="../privacy.html">개인정보처리방침</a><a href="../disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="../index.html" data-en="Dashboard">대시보드</a><a href="../guide.html" data-en="Indicator Guide">지표 가이드</a><a href="../about.html" data-en="About">서비스 소개</a><a href="../contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="../disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
-        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+        <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
       </div>
 
     </div>
@@ -475,5 +475,7 @@
   }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
 })();
 </script>
+<!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="../btc-i18n.js"></script>
 </body>
 </html>

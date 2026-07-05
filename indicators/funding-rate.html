@@ -2,19 +2,19 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="비트코인 펀딩비(Funding Rate)란 무엇이고 어떻게 읽는지 — 무기한 선물에서 펀딩이 정해지는 원리, 양수·음수 해석, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다.">
+<meta name="description" content="비트코인 펀딩비(Funding Rate)란 무엇이고 어떻게 읽는지 — 무기한 선물에서 펀딩이 정해지는 원리, 양수·음수 해석, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="What Bitcoin funding rate is and how to read it — how funding is set on perpetual futures, how to interpret positive and negative values, and how it can inform buy-timing along with its limits, explained for beginners.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>펀딩비란? 비트코인 선물 쏠림 지표 완전 정리 — BTC 타이밍 레이더</title>
+<title data-en="What Is Funding Rate? Bitcoin Futures Positioning Indicator Explained — BTC Timing Radar">펀딩비란? 비트코인 선물 쏠림 지표 완전 정리 — BTC 타이밍 레이더</title>
 <link rel="canonical" href="https://btctiming.co.kr/indicators/funding-rate.html">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://btctiming.co.kr/indicators/funding-rate.html">
 <meta property="og:site_name" content="BTC 투자 타이밍 레이더">
-<meta property="og:title" content="펀딩비란? 비트코인 선물 쏠림 지표 완전 정리">
-<meta property="og:description" content="비트코인 펀딩비가 정해지는 원리, 양수·음수 해석, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다.">
+<meta property="og:title" content="펀딩비란? 비트코인 선물 쏠림 지표 완전 정리" data-en-content="What Is Funding Rate? Bitcoin Futures Positioning Indicator Explained">
+<meta property="og:description" content="비트코인 펀딩비가 정해지는 원리, 양수·음수 해석, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="How Bitcoin funding rate is set, how to read positive and negative values, and how it can inform buy-timing along with its limits, explained for beginners.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="펀딩비란? 비트코인 선물 쏠림 지표 완전 정리">
-<meta name="twitter:description" content="비트코인 펀딩비가 정해지는 원리, 양수·음수 해석, 매수 타이밍 활용법과 한계를 설명합니다.">
+<meta name="twitter:title" content="펀딩비란? 비트코인 선물 쏠림 지표 완전 정리" data-en-content="What Is Funding Rate? Bitcoin Futures Positioning Indicator Explained">
+<meta name="twitter:description" content="비트코인 펀딩비가 정해지는 원리, 양수·음수 해석, 매수 타이밍 활용법과 한계를 설명합니다." data-en-content="How Bitcoin funding rate is set, how to read positive and negative values, and how it can inform buy-timing along with its limits.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -238,39 +238,39 @@
   <aside class="sidebar">
     <a class="sb-brand" href="../index.html">
       <div class="sb-logo">₿</div>
-      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+      <div><div class="bt" data-en="Timing Radar">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
     </a>
     <div class="sb-menu-h">MENU</div>
     <nav class="sb-nav">
-      <a href="../index.html"><span class="dot"></span>대시보드</a>
-      <a class="active" href="../guide.html"><span class="dot"></span>지표 가이드</a>
-      <a href="../about.html"><span class="dot"></span>서비스 소개</a>
-      <a href="../contact.html"><span class="dot"></span>문의</a>
+      <a href="../index.html"><span class="dot"></span><span data-en="Dashboard">대시보드</span></a>
+      <a class="active" href="../guide.html"><span class="dot"></span><span data-en="Indicator Guide">지표 가이드</span></a>
+      <a href="../about.html"><span class="dot"></span><span data-en="About">서비스 소개</span></a>
+      <a href="../contact.html"><span class="dot"></span><span data-en="Contact">문의</span></a>
     </nav>
     <div class="sb-live">
       <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
-      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
+      <div class="lb" data-i18n-html="1" data-en="Indicators auto-update<br>daily at 09:05 KST">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
     <!-- 방문자 카운터 (Firebase) -->
     <div class="sb-visitor" id="visitorStrip">
       <div class="vh">VISITORS</div>
-      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
-      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
-      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
+      <div class="vr now"><span><span class="vc-dot"></span><span data-en="Viewing now">지금 보는 중</span></span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span data-en="Today">오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span data-en="Total">누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+    <div class="sb-foot" data-i18n-html="1" data-en="Quantitative analysis for reference ·<br>Not investment advice">참고용 정량 분석 ·<br>투자 조언 아님</div>
   </aside>
 
   <!-- ── 메인 ── -->
   <div class="main">
     <!-- 모바일 상단 바 -->
     <div class="mobile-bar">
-      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
-      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
+      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t" data-en="Timing Radar">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기" data-en-aria-label="Open menu"><span></span></button>
     </div>
     <!-- 데스크톱 상단 바 -->
     <div class="topbar">
-      <div class="crumb">지표 가이드 <span style="color:var(--m3)">›</span> <b>펀딩비</b></div>
+      <div class="crumb"><span data-en="Indicator Guide">지표 가이드</span> <span style="color:var(--m3)">›</span> <b data-en="Funding Rate">펀딩비</b></div>
       <div class="right">
         <span class="live"><span class="d"></span>LIVE</span>
       </div>
@@ -279,131 +279,131 @@
     <div class="content">
 
       <div class="crumb-nav">
-        <a href="../guide.html">지표 가이드</a>
+        <a href="../guide.html" data-en="Indicator Guide">지표 가이드</a>
         <span class="sep">/</span>
-        <span>파생상품</span>
+        <span data-en="Derivatives">파생상품</span>
         <span class="sep">/</span>
-        <span>펀딩비</span>
+        <span data-en="Funding Rate">펀딩비</span>
       </div>
 
       <div class="ind-hero">
-        <span class="cat-pill"><span class="d" style="background:var(--amber)"></span><span>파생상품</span></span>
-        <h1>펀딩비, <span class="hl">쉬운 말</span>로 풀어보기</h1>
-        <p class="lead">펀딩비는 무기한 선물 시장에서 한쪽이 몇 시간마다 반대쪽에 내는 작은 수수료입니다. <b>크게 양수면 롱이 비용을 내는 것 — 군중이 상승에 쏠렸다는 뜻이고, 음수면 숏이 비용을 냅니다.</b> 가격이 어디로 갈지가 아니라, 레버리지를 쓴 군중이 얼마나 한쪽으로 기울었는지를 보여줍니다.</p>
+        <span class="cat-pill"><span class="d" style="background:var(--amber)"></span><span data-en="Derivatives">파생상품</span></span>
+        <h1 data-i18n-html="1" data-en="Funding Rate, <span class=&quot;hl&quot;>in plain words</span>">펀딩비, <span class="hl">쉬운 말</span>로 풀어보기</h1>
+        <p class="lead" data-i18n-html="1" data-en="Funding rate is the small fee one side pays the other every few hours in the perpetual futures market. <b>A strongly positive value means longs are paying — the crowd is leaning bullish; a negative value means shorts are paying.</b> It shows not where price is headed, but how far the leveraged crowd has tilted to one side.">펀딩비는 무기한 선물 시장에서 한쪽이 몇 시간마다 반대쪽에 내는 작은 수수료입니다. <b>크게 양수면 롱이 비용을 내는 것 — 군중이 상승에 쏠렸다는 뜻이고, 음수면 숏이 비용을 냅니다.</b> 가격이 어디로 갈지가 아니라, 레버리지를 쓴 군중이 얼마나 한쪽으로 기울었는지를 보여줍니다.</p>
       </div>
 
       <div class="summary-box">
         <div class="sb">
-          <span class="k">무엇인가</span>
-          <span class="v">무기한 선물을 현물 가격에 붙들어 두는 주기적 수수료.</span>
+          <span class="k" data-en="What it is">무엇인가</span>
+          <span class="v" data-en="A periodic fee that keeps perpetual futures tethered to the spot price.">무기한 선물을 현물 가격에 붙들어 두는 주기적 수수료.</span>
         </div>
         <div class="sb">
-          <span class="k">어떻게 읽나</span>
-          <span class="v"><b>높은 양수 = 롱 쏠림</b>, 조정 위험 경고인 경우가 많음.</span>
+          <span class="k" data-en="How to read it">어떻게 읽나</span>
+          <span class="v" data-i18n-html="1" data-en="<b>High positive = long crowding</b>, often a warning of correction risk."><b>높은 양수 = 롱 쏠림</b>, 조정 위험 경고인 경우가 많음.</span>
         </div>
         <div class="sb">
-          <span class="k">신호</span>
-          <span class="impact-inline buy">쏠림 = 역발상 신호</span>
+          <span class="k" data-en="Signal">신호</span>
+          <span class="impact-inline buy" data-en="Crowding = contrarian signal">쏠림 = 역발상 신호</span>
         </div>
       </div>
 
       <section class="sec">
-        <h2><span class="ix">1</span><span>펀딩비는 무엇을 재는가</span></h2>
-        <p>가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 펀딩비는 레버리지를 쓴 군중 중 어느 쪽이 <b>지나치게 조급한지</b>를 알려줍니다. 무기한 선물은 만기가 없기 때문에, 거래소는 선물 가격이 실제 현물 가격에서 멀어지지 않도록 붙잡아 둘 장치가 필요합니다 — 그 장치가 바로 펀딩입니다. 몰리는 쪽이 자제하는 쪽에 비용을 내므로, 요율은 포지션 쏠림을 그대로 보여주는 값이 됩니다.</p>
-        <p>이것을 읽는 핵심 발상은 역발상(contrarian)입니다. 거의 모두가 돈을 빌려 같은 방향에 베팅했다면, 그 움직임을 더 밀어줄 매수자(또는 매도자)가 얼마 남지 않았다는 뜻이고, 쏠린 쪽은 갑작스러운 반전에 취약해집니다. 펀딩비는 이런 쏠림이 쌓이는 과정을 실시간으로 가장 깔끔하게 보여주는 지표 중 하나입니다.</p>
+        <h2><span class="ix">1</span><span data-en="What funding rate measures">펀딩비는 무엇을 재는가</span></h2>
+        <p data-i18n-html="1" data-en="Price tells you <b>what the market did</b>. Funding rate tells you which side of the leveraged crowd is <b>too impatient</b>. Because perpetual futures have no expiry, exchanges need a mechanism to keep the futures price from drifting away from the actual spot price — and that mechanism is funding. The crowded side pays the restrained side, so the rate becomes a direct readout of position crowding.">가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 펀딩비는 레버리지를 쓴 군중 중 어느 쪽이 <b>지나치게 조급한지</b>를 알려줍니다. 무기한 선물은 만기가 없기 때문에, 거래소는 선물 가격이 실제 현물 가격에서 멀어지지 않도록 붙잡아 둘 장치가 필요합니다 — 그 장치가 바로 펀딩입니다. 몰리는 쪽이 자제하는 쪽에 비용을 내므로, 요율은 포지션 쏠림을 그대로 보여주는 값이 됩니다.</p>
+        <p data-en="The key idea for reading it is contrarian. If nearly everyone has borrowed money to bet in the same direction, it means few buyers (or sellers) are left to push the move further, and the crowded side becomes vulnerable to a sudden reversal. Funding rate is one of the cleanest real-time views of this crowding building up.">이것을 읽는 핵심 발상은 역발상(contrarian)입니다. 거의 모두가 돈을 빌려 같은 방향에 베팅했다면, 그 움직임을 더 밀어줄 매수자(또는 매도자)가 얼마 남지 않았다는 뜻이고, 쏠린 쪽은 갑작스러운 반전에 취약해집니다. 펀딩비는 이런 쏠림이 쌓이는 과정을 실시간으로 가장 깔끔하게 보여주는 지표 중 하나입니다.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">2</span><span>어떻게 계산되나</span></h2>
-        <p>무기한 계약에서 펀딩은 정해진 간격마다 정산됩니다 — 대부분의 거래소는 <code>8시간마다</code> 정산합니다. 요율은 선물 가격이 현물에서 얼마나 벌어졌는지로 정해집니다. 선물이 현물보다 <b>비싸면</b> 롱이 숏에게 내고, 선물이 현물보다 <b>싸면</b> 숏이 롱에게 냅니다. 이 비용 지불이 거래자들로 하여금 계약 가격을 다시 현물 쪽으로 끌어오게 만듭니다.</p>
+        <h2><span class="ix">2</span><span data-en="How it is calculated">어떻게 계산되나</span></h2>
+        <p data-i18n-html="1" data-en="On a perpetual contract, funding is settled at fixed intervals — most exchanges settle <code>every 8 hours</code>. The rate is set by how far the futures price has diverged from spot. When futures are <b>more expensive</b> than spot, longs pay shorts; when futures are <b>cheaper</b> than spot, shorts pay longs. This payment nudges traders to pull the contract price back toward spot.">무기한 계약에서 펀딩은 정해진 간격마다 정산됩니다 — 대부분의 거래소는 <code>8시간마다</code> 정산합니다. 요율은 선물 가격이 현물에서 얼마나 벌어졌는지로 정해집니다. 선물이 현물보다 <b>비싸면</b> 롱이 숏에게 내고, 선물이 현물보다 <b>싸면</b> 숏이 롱에게 냅니다. 이 비용 지불이 거래자들로 하여금 계약 가격을 다시 현물 쪽으로 끌어오게 만듭니다.</p>
         <ul>
-          <li><b>프리미엄 요소</b> — 무기한 가격이 기초 현물·지수 가격보다 얼마나 위 또는 아래에 있는가.</li>
-          <li><b>이자 요소</b> — 포지션을 유지하는 비용을 반영한 작은 기준 요율.</li>
-          <li><b>정산 간격</b> — 비용은 연속이 아니라 주기적으로(보통 8시간) 교환됨.</li>
+          <li data-i18n-html="1" data-en="<b>Premium component</b> — how far above or below the underlying spot/index price the perpetual price sits."><b>프리미엄 요소</b> — 무기한 가격이 기초 현물·지수 가격보다 얼마나 위 또는 아래에 있는가.</li>
+          <li data-i18n-html="1" data-en="<b>Interest component</b> — a small baseline rate reflecting the cost of holding a position."><b>이자 요소</b> — 포지션을 유지하는 비용을 반영한 작은 기준 요율.</li>
+          <li data-i18n-html="1" data-en="<b>Settlement interval</b> — the cost is exchanged periodically (usually every 8 hours), not continuously."><b>정산 간격</b> — 비용은 연속이 아니라 주기적으로(보통 8시간) 교환됨.</li>
         </ul>
-        <p>직접 계산할 필요는 없습니다. 핵심은 펀딩이 수요 불균형으로 움직이는 <b>균형 수수료</b>라는 점입니다. 한쪽이 욕심을 내면 오르고 반대쪽이 욕심을 내면 내려가므로, 그 부호와 크기가 군중의 포지션에 그대로 대응합니다.</p>
+        <p data-i18n-html="1" data-en="You don't need to compute it yourself. The point is that funding is a <b>balancing fee</b> driven by demand imbalance. It rises when one side gets greedy and falls when the other does, so its sign and size map directly onto the crowd's positioning.">직접 계산할 필요는 없습니다. 핵심은 펀딩이 수요 불균형으로 움직이는 <b>균형 수수료</b>라는 점입니다. 한쪽이 욕심을 내면 오르고 반대쪽이 욕심을 내면 내려가므로, 그 부호와 크기가 군중의 포지션에 그대로 대응합니다.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">3</span><span>구간으로 읽기</span></h2>
-        <p>펀딩비는 고정된 척도가 없으므로 자기 자신의 최근 범위로 판단합니다. 대략적인 기준으로 트레이더들은 8시간당 약 0.01%의 중립선을 중심으로 놓고 봅니다.</p>
+        <h2><span class="ix">3</span><span data-en="Reading it by zone">구간으로 읽기</span></h2>
+        <p data-en="Funding rate has no fixed scale, so you judge it against its own recent range. As a rough anchor, traders center it around a neutral line of about 0.01% per 8 hours.">펀딩비는 고정된 척도가 없으므로 자기 자신의 최근 범위로 판단합니다. 대략적인 기준으로 트레이더들은 8시간당 약 0.01%의 중립선을 중심으로 놓고 봅니다.</p>
         <div class="zone-table">
-          <div class="zrow"><div class="zr-band z-bear"><span>강한 양수</span></div><div class="zr-desc"><b>롱이 크게 쏠림.</b> 레버리지가 상방에 몰림. 조정 위험이 커지지만 움직임이 더 갈 수도 있음.</div></div>
-          <div class="zrow"><div class="zr-band z-wait"><span>약한 양수</span></div><div class="zr-desc"><b>건강한 상승 편향.</b> 롱이 숏보다 약간 많음 — 차분한 상승장에서 흔하며 아직 경고는 아님.</div></div>
-          <div class="zrow"><div class="zr-band z-mild"><span>0 부근</span></div><div class="zr-desc"><b>균형.</b> 롱과 숏이 대체로 비슷 — 읽어낼 강한 쏠림이 없음.</div></div>
-          <div class="zrow"><div class="zr-band z-strong"><span>음수</span></div><div class="zr-desc"><b>숏이 쏠림.</b> 하락 베팅이 비용을 냄. 공포에 의한 저점 부근에서 자주 나타나며, 이후 숏 스퀴즈 반등이 따를 수 있음.</div></div>
+          <div class="zrow"><div class="zr-band z-bear"><span data-en="Strongly positive">강한 양수</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Longs heavily crowded.</b> Leverage piled on the upside. Correction risk rises, though the move may still run further."><b>롱이 크게 쏠림.</b> 레버리지가 상방에 몰림. 조정 위험이 커지지만 움직임이 더 갈 수도 있음.</div></div>
+          <div class="zrow"><div class="zr-band z-wait"><span data-en="Mildly positive">약한 양수</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Healthy upward bias.</b> Slightly more longs than shorts — common in a calm uptrend and not yet a warning."><b>건강한 상승 편향.</b> 롱이 숏보다 약간 많음 — 차분한 상승장에서 흔하며 아직 경고는 아님.</div></div>
+          <div class="zrow"><div class="zr-band z-mild"><span data-en="Near zero">0 부근</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Balanced.</b> Longs and shorts roughly even — no strong crowding to read."><b>균형.</b> 롱과 숏이 대체로 비슷 — 읽어낼 강한 쏠림이 없음.</div></div>
+          <div class="zrow"><div class="zr-band z-strong"><span data-en="Negative">음수</span></div><div class="zr-desc" data-i18n-html="1" data-en="<b>Shorts crowded.</b> Bearish bets are paying the fee. Often appears near fear-driven lows, and a short-squeeze bounce can follow."><b>숏이 쏠림.</b> 하락 베팅이 비용을 냄. 공포에 의한 저점 부근에서 자주 나타나며, 이후 숏 스퀴즈 반등이 따를 수 있음.</div></div>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">4</span><span>매수 타이밍에 쓰는 법</span></h2>
-        <p>펀딩비는 방아쇠가 아니라 <b>쏠림 필터</b>로 쓸 때 가장 좋습니다. 요율이 한동안 깊은 음수에 머물러 있을 때 — 떨어진 가격 부근에서 숏이 비용을 내며 버티는 상황 — 은 하락 포지션이 과도하게 늘어났고 반등 가능성이 커졌다는 힌트일 수 있습니다. 반대로 급등 중에 강한 양수에 고정돼 있다면, 롱이 무거운 시장은 갑작스러운 급락의 연료이므로 추격 매수를 조심하라는 신호입니다.</p>
+        <h2><span class="ix">4</span><span data-en="How to use it for buy timing">매수 타이밍에 쓰는 법</span></h2>
+        <p data-i18n-html="1" data-en="Funding rate works best as a <b>crowding filter</b> rather than a trigger. When the rate sits deeply negative for a while — shorts paying the fee while holding near a beaten-down price — it can hint that bearish positions have grown excessive and a bounce has become more likely. Conversely, when it is pinned strongly positive during a surge, a long-heavy market is fuel for a sudden drop, so it's a signal to be careful about chasing.">펀딩비는 방아쇠가 아니라 <b>쏠림 필터</b>로 쓸 때 가장 좋습니다. 요율이 한동안 깊은 음수에 머물러 있을 때 — 떨어진 가격 부근에서 숏이 비용을 내며 버티는 상황 — 은 하락 포지션이 과도하게 늘어났고 반등 가능성이 커졌다는 힌트일 수 있습니다. 반대로 급등 중에 강한 양수에 고정돼 있다면, 롱이 무거운 시장은 갑작스러운 급락의 연료이므로 추격 매수를 조심하라는 신호입니다.</p>
         <div class="callout">
-          <div class="ct">실전 팁</div>
-          <p>한 번의 펀딩 수치에 반응하지 마세요. 요율이 여러 정산에 걸쳐 극단값에 <b>머무는지</b>를 보고, 자금을 넣기 전에 미결제약정·가격 흐름으로 확인하세요.</p>
+          <div class="ct" data-en="Practical tip">실전 팁</div>
+          <p data-i18n-html="1" data-en="Don't react to a single funding print. Watch whether the rate <b>stays</b> at an extreme across several settlements, and confirm with open interest and price action before committing capital.">한 번의 펀딩 수치에 반응하지 마세요. 요율이 여러 정산에 걸쳐 극단값에 <b>머무는지</b>를 보고, 자금을 넣기 전에 미결제약정·가격 흐름으로 확인하세요.</p>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">5</span><span>한계와 흔한 오해</span></h2>
-        <p>펀딩비는 타이밍이 아니라 쏠림을 보여줍니다 — 과열된 시장은 가격이 계속 오르는 동안에도 몇 주씩 과열을 유지할 수 있습니다. 가장 흔한 실수는 <b>높은 펀딩을 즉시 숏</b>으로, <b>음수 펀딩을 즉시 매수</b>로 받아들이는 것입니다. 요율은 거래소마다 다르고 소수의 큰손에 의해 왜곡될 수도 있어, 한 거래소의 값이 전부는 아닙니다. 정확한 전환점 신호가 아니라, 미결제약정·가격과 함께 보는 쏠림에 대한 역발상 경고로 읽으세요.</p>
+        <h2><span class="ix">5</span><span data-en="Limits and common misconceptions">한계와 흔한 오해</span></h2>
+        <p data-i18n-html="1" data-en="Funding rate shows crowding, not timing — an overheated market can stay overheated for weeks even as price keeps rising. The most common mistake is treating <b>high funding as an instant short</b> and <b>negative funding as an instant buy</b>. The rate differs across exchanges and can be skewed by a few large players, so one exchange's value isn't the whole picture. Read it not as a precise turning-point signal, but as a contrarian warning about crowding, alongside open interest and price.">펀딩비는 타이밍이 아니라 쏠림을 보여줍니다 — 과열된 시장은 가격이 계속 오르는 동안에도 몇 주씩 과열을 유지할 수 있습니다. 가장 흔한 실수는 <b>높은 펀딩을 즉시 숏</b>으로, <b>음수 펀딩을 즉시 매수</b>로 받아들이는 것입니다. 요율은 거래소마다 다르고 소수의 큰손에 의해 왜곡될 수도 있어, 한 거래소의 값이 전부는 아닙니다. 정확한 전환점 신호가 아니라, 미결제약정·가격과 함께 보는 쏠림에 대한 역발상 경고로 읽으세요.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">+</span><span>함께 보면 좋은 지표</span></h2>
+        <h2><span class="ix">+</span><span data-en="Indicators worth watching together">함께 보면 좋은 지표</span></h2>
         <div class="related-grid">
           <a href="open-interest.html">
-            <span class="rn">미결제약정</span>
-            <span class="rd">선물 시장에 쌓인 레버리지 총량.</span>
+            <span class="rn" data-en="Open Interest">미결제약정</span>
+            <span class="rd" data-en="The total leverage stacked up in the futures market.">선물 시장에 쌓인 레버리지 총량.</span>
           </a>
           <a href="long-short-ratio.html">
-            <span class="rn">롱·숏 비율</span>
-            <span class="rd">거래자들이 롱·숏 중 어느 쪽으로 기울었는지.</span>
+            <span class="rn" data-en="Long/Short Ratio">롱·숏 비율</span>
+            <span class="rd" data-en="Which side — long or short — traders have leaned toward.">거래자들이 롱·숏 중 어느 쪽으로 기울었는지.</span>
           </a>
           <a href="../guide.html">
-            <span class="rn">전체 지표 보기</span>
-            <span class="rd">지표 가이드 전체로 돌아가기.</span>
+            <span class="rn" data-en="See all indicators">전체 지표 보기</span>
+            <span class="rd" data-en="Back to the full indicator guide.">지표 가이드 전체로 돌아가기.</span>
           </a>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">?</span><span>자주 묻는 질문</span></h2>
+        <h2><span class="ix">?</span><span data-en="Frequently asked questions">자주 묻는 질문</span></h2>
         <div class="faq-list">
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>펀딩비가 높으면 가격이 곧 떨어지나요?</span></summary>
-            <div class="ans">높은 펀딩비는 롱이 쏠려 있다는 뜻이지 하락이 임박했다는 뜻은 아닙니다. 과열된 시장은 몇 주씩 과열을 유지하기도 하므로, 조정 위험이 커진 상태로 이해하고 가격·미결제약정으로 확인한 뒤 판단하는 것이 안전합니다.</div>
+            <summary><span class="q">Q</span><span data-en="If funding rate is high, does price fall soon?">펀딩비가 높으면 가격이 곧 떨어지나요?</span></summary>
+            <div class="ans" data-en="A high funding rate means longs are crowded, not that a decline is imminent. An overheated market can stay overheated for weeks, so it's safer to read it as elevated correction risk and confirm with price and open interest before deciding.">높은 펀딩비는 롱이 쏠려 있다는 뜻이지 하락이 임박했다는 뜻은 아닙니다. 과열된 시장은 몇 주씩 과열을 유지하기도 하므로, 조정 위험이 커진 상태로 이해하고 가격·미결제약정으로 확인한 뒤 판단하는 것이 안전합니다.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>펀딩비가 음수면 무조건 매수해야 하나요?</span></summary>
-            <div class="ans">음수 펀딩비는 숏이 쏠려 있어 숏 스퀴즈 반등 가능성이 있다는 신호지만, 그 자체가 매수 신호는 아닙니다. 다른 지표와 함께 군중이 한쪽으로 기울었는지 확인하는 하나의 참고 자료로 쓰세요.</div>
+            <summary><span class="q">Q</span><span data-en="If funding rate is negative, should I always buy?">펀딩비가 음수면 무조건 매수해야 하나요?</span></summary>
+            <div class="ans" data-en="A negative funding rate signals that shorts are crowded and a short-squeeze bounce is possible, but it is not a buy signal on its own. Use it as one reference for checking whether the crowd has leaned to one side, together with other indicators.">음수 펀딩비는 숏이 쏠려 있어 숏 스퀴즈 반등 가능성이 있다는 신호지만, 그 자체가 매수 신호는 아닙니다. 다른 지표와 함께 군중이 한쪽으로 기울었는지 확인하는 하나의 참고 자료로 쓰세요.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>펀딩비는 얼마가 정상인가요?</span></summary>
-            <div class="ans">8시간당 약 0.01%가 통상적인 중립 기준으로 여겨집니다. 이보다 계속 높은 양수면 롱 쏠림, 음수면 숏 쏠림으로 보지만, 절대 수치보다 평소 범위 대비 어느 수준인지가 더 중요합니다.</div>
+            <summary><span class="q">Q</span><span data-en="What counts as a normal funding rate?">펀딩비는 얼마가 정상인가요?</span></summary>
+            <div class="ans" data-en="About 0.01% per 8 hours is generally taken as a neutral baseline. Consistently higher positive values suggest long crowding and negative values short crowding, but where it sits relative to its usual range matters more than the absolute number.">8시간당 약 0.01%가 통상적인 중립 기준으로 여겨집니다. 이보다 계속 높은 양수면 롱 쏠림, 음수면 숏 쏠림으로 보지만, 절대 수치보다 평소 범위 대비 어느 수준인지가 더 중요합니다.</div>
           </details>
         </div>
       </section>
 
       <div class="page-cta">
         <div class="ct-tx">
-          <h3>오늘의 지표 값 확인하기</h3>
-          <p>대시보드에서 실시간 펀딩비와 종합 타이밍 점수를 확인하세요.</p>
+          <h3 data-en="Check today's indicator values">오늘의 지표 값 확인하기</h3>
+          <p data-en="See the latest funding rate and the overall timing score on the dashboard.">대시보드에서 실시간 펀딩비와 종합 타이밍 점수를 확인하세요.</p>
         </div>
-        <a class="ct-btn" href="../index.html">대시보드 열기 →</a>
+        <a class="ct-btn" href="../index.html" data-en="Open dashboard →">대시보드 열기 →</a>
       </div>
 
       <!-- 푸터 -->
       <div class="foot">
         <div class="fa">
-          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
-          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+          <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
+          <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4>메뉴</h4><a href="../index.html">대시보드</a><a href="../guide.html">지표 가이드</a><a href="../about.html">서비스 소개</a><a href="../contact.html">문의</a></div>
-          <div class="col"><h4>정책 · 커뮤니티</h4><a href="../privacy.html">개인정보처리방침</a><a href="../disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="../index.html" data-en="Dashboard">대시보드</a><a href="../guide.html" data-en="Indicator Guide">지표 가이드</a><a href="../about.html" data-en="About">서비스 소개</a><a href="../contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="../disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
-        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+        <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
       </div>
 
     </div>
@@ -475,5 +475,7 @@
   }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
 })();
 </script>
+<!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="../btc-i18n.js"></script>
 </body>
 </html>

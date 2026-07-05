@@ -33,8 +33,14 @@ ENDPOINTS = [
     "/api/dashboard/system",
     "/api/prism/indices",
     "/api/ai/digest",
+    "/api/ai/digest?lang=en",
     "/api/ai/news-sentiment",
 ]
+
+# 쿼리스트링이 붙어 자동 키 생성이 불가한 엔드포인트는 명시적으로 키를 지정한다.
+KEY_OVERRIDES = {
+    "/api/ai/digest?lang=en": "api_ai_digest_en",  # AI 다이제스트 영어판
+}
 
 def get(path):
     try:
@@ -47,7 +53,7 @@ def get(path):
 print("[build_snapshot] Fetching all endpoints...")
 data = {}
 for ep in ENDPOINTS:
-    key = ep.lstrip("/").replace("/", "_").replace("-", "_").replace("?days=90","")
+    key = KEY_OVERRIDES.get(ep) or ep.lstrip("/").replace("/", "_").replace("-", "_").replace("?days=90","")
     data[key] = get(ep)
     print(f"  {'OK' if data[key].get('hasData') else 'NG'}  {ep}")
 

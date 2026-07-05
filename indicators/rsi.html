@@ -2,19 +2,19 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="비트코인 RSI(상대강도지수)란 무엇이고 어떻게 읽는지 — 계산 방식, 70·30 과매수·과매도 구간, 다이버전스, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다.">
+<meta name="description" content="비트코인 RSI(상대강도지수)란 무엇이고 어떻게 읽는지 — 계산 방식, 70·30 과매수·과매도 구간, 다이버전스, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="What Bitcoin's RSI (Relative Strength Index) is and how to read it — the calculation, the 70/30 overbought/oversold zones, divergence, how it is used for buy timing, and its limits, explained for beginners.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RSI란? 비트코인 상대강도지수 과매수·과매도 완전 정리 — BTC 타이밍 레이더</title>
+<title data-en="RSI Explained: Bitcoin Relative Strength Index, Overbought &amp; Oversold — BTC Timing Radar">RSI란? 비트코인 상대강도지수 과매수·과매도 완전 정리 — BTC 타이밍 레이더</title>
 <link rel="canonical" href="https://btctiming.co.kr/indicators/rsi.html">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://btctiming.co.kr/indicators/rsi.html">
 <meta property="og:site_name" content="BTC 투자 타이밍 레이더">
-<meta property="og:title" content="RSI란? 비트코인 상대강도지수 완전 정리">
-<meta property="og:description" content="비트코인 RSI의 계산 방식, 70·30 과매수·과매도 구간, 다이버전스, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다.">
+<meta property="og:title" content="RSI란? 비트코인 상대강도지수 완전 정리" data-en-content="RSI Explained: Bitcoin Relative Strength Index">
+<meta property="og:description" content="비트코인 RSI의 계산 방식, 70·30 과매수·과매도 구간, 다이버전스, 매수 타이밍 활용법과 한계를 초보자 눈높이로 설명합니다." data-en-content="How Bitcoin's RSI is calculated, the 70/30 overbought/oversold zones, divergence, how it is used for buy timing, and its limits — explained for beginners.">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RSI란? 비트코인 상대강도지수 완전 정리">
-<meta name="twitter:description" content="비트코인 RSI의 계산 방식, 과매수·과매도 구간, 다이버전스, 활용법과 한계를 설명합니다.">
+<meta name="twitter:title" content="RSI란? 비트코인 상대강도지수 완전 정리" data-en-content="RSI Explained: Bitcoin Relative Strength Index">
+<meta name="twitter:description" content="비트코인 RSI의 계산 방식, 과매수·과매도 구간, 다이버전스, 활용법과 한계를 설명합니다." data-en-content="How Bitcoin's RSI is calculated, its overbought/oversold zones, divergence, uses, and limits.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -238,39 +238,39 @@
   <aside class="sidebar">
     <a class="sb-brand" href="../index.html">
       <div class="sb-logo">₿</div>
-      <div><div class="bt">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
+      <div><div class="bt" data-en="Timing Radar">타이밍 레이더</div><div class="bs">TIMING RADAR</div></div>
     </a>
     <div class="sb-menu-h">MENU</div>
     <nav class="sb-nav">
-      <a href="../index.html"><span class="dot"></span>대시보드</a>
-      <a class="active" href="../guide.html"><span class="dot"></span>지표 가이드</a>
-      <a href="../about.html"><span class="dot"></span>서비스 소개</a>
-      <a href="../contact.html"><span class="dot"></span>문의</a>
+      <a href="../index.html"><span class="dot"></span><span data-en="Dashboard">대시보드</span></a>
+      <a class="active" href="../guide.html"><span class="dot"></span><span data-en="Indicator Guide">지표 가이드</span></a>
+      <a href="../about.html"><span class="dot"></span><span data-en="About">서비스 소개</span></a>
+      <a href="../contact.html"><span class="dot"></span><span data-en="Contact">문의</span></a>
     </nav>
     <div class="sb-live">
       <div class="lh"><span class="d"></span><span class="t">LIVE · 09:05 KST</span></div>
-      <div class="lb">매일 오전 9시 5분<br>지표 자동 갱신</div>
+      <div class="lb" data-i18n-html="1" data-en="Indicators auto-update<br>daily at 09:05 KST">매일 오전 9시 5분<br>지표 자동 갱신</div>
     </div>
     <!-- 방문자 카운터 (Firebase) -->
     <div class="sb-visitor" id="visitorStrip">
       <div class="vh">VISITORS</div>
-      <div class="vr now"><span><span class="vc-dot"></span>지금 보는 중</span><span class="vc-n" id="vcNow">--</span></div>
-      <div class="vr"><span>오늘</span><span class="vc-n" id="vcToday">--</span></div>
-      <div class="vr"><span>누적</span><span class="vc-n" id="vcTotal">--</span></div>
+      <div class="vr now"><span><span class="vc-dot"></span><span data-en="Viewing now">지금 보는 중</span></span><span class="vc-n" id="vcNow">--</span></div>
+      <div class="vr"><span data-en="Today">오늘</span><span class="vc-n" id="vcToday">--</span></div>
+      <div class="vr"><span data-en="Total">누적</span><span class="vc-n" id="vcTotal">--</span></div>
     </div>
-    <div class="sb-foot">참고용 정량 분석 ·<br>투자 조언 아님</div>
+    <div class="sb-foot" data-i18n-html="1" data-en="Quantitative analysis for reference ·<br>Not investment advice">참고용 정량 분석 ·<br>투자 조언 아님</div>
   </aside>
 
   <!-- ── 메인 ── -->
   <div class="main">
     <!-- 모바일 상단 바 -->
     <div class="mobile-bar">
-      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t">타이밍 레이더</span></a>
-      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기"><span></span></button>
+      <a class="mb-brand" href="../index.html"><span class="mb-logo">₿</span><span class="mb-t" data-en="Timing Radar">타이밍 레이더</span></a>
+      <button class="mb-toggle" id="mbToggle" aria-label="메뉴 열기" data-en-aria-label="Open menu"><span></span></button>
     </div>
     <!-- 데스크톱 상단 바 -->
     <div class="topbar">
-      <div class="crumb">지표 가이드 <span style="color:var(--m3)">›</span> <b>RSI 상대강도지수</b></div>
+      <div class="crumb"><span data-en="Indicator Guide">지표 가이드</span> <span style="color:var(--m3)">›</span> <b data-en="RSI">RSI 상대강도지수</b></div>
       <div class="right">
         <span class="live"><span class="d"></span>LIVE</span>
       </div>
@@ -279,131 +279,131 @@
     <div class="content">
 
       <div class="crumb-nav">
-        <a href="../guide.html">지표 가이드</a>
+        <a href="../guide.html" data-en="Indicator Guide">지표 가이드</a>
         <span class="sep">/</span>
-        <span>기술적 분석</span>
+        <span data-en="Technical Analysis">기술적 분석</span>
         <span class="sep">/</span>
-        <span>RSI 상대강도지수</span>
+        <span data-en="RSI">RSI 상대강도지수</span>
       </div>
 
       <div class="ind-hero">
-        <span class="cat-pill"><span class="d"></span><span>기술적 분석</span></span>
-        <h1>RSI, 가격의 <span class="hl">속도계</span></h1>
-        <p class="lead">RSI(상대강도지수)는 가격이 최근 얼마나 빠르고 강하게 움직였는지를 0~100 척도로 잽니다. <b>70을 넘으면 너무 빨리 올랐고(과매수), 30 아래면 너무 빨리 떨어진(과매도)</b> 상태입니다. 가격이 어디로 갈지를 알려주는 게 아니라, 최근 움직임이 너무 빠르게 과하게 늘어났는지를 알려줍니다.</p>
+        <span class="cat-pill"><span class="d"></span><span data-en="Technical Analysis">기술적 분석</span></span>
+        <h1 data-i18n-html="1" data-en="RSI, the &lt;span class=&quot;hl&quot;&gt;speedometer&lt;/span&gt; of price">RSI, 가격의 <span class="hl">속도계</span></h1>
+        <p class="lead" data-i18n-html="1" data-en="RSI (Relative Strength Index) measures how fast and strongly price has moved recently on a 0–100 scale. &lt;b&gt;Above 70 it has risen too fast (overbought); below 30 it has fallen too fast (oversold).&lt;/b&gt; It doesn't tell you where price is headed — it tells you whether the recent move has stretched too far, too fast.">RSI(상대강도지수)는 가격이 최근 얼마나 빠르고 강하게 움직였는지를 0~100 척도로 잽니다. <b>70을 넘으면 너무 빨리 올랐고(과매수), 30 아래면 너무 빨리 떨어진(과매도)</b> 상태입니다. 가격이 어디로 갈지를 알려주는 게 아니라, 최근 움직임이 너무 빠르게 과하게 늘어났는지를 알려줍니다.</p>
       </div>
 
       <div class="summary-box">
         <div class="sb">
-          <span class="k">무엇인가</span>
-          <span class="v">최근 상승이 하락 대비 얼마나 강했는지를 0~100으로 보는 지표.</span>
+          <span class="k" data-en="What it is">무엇인가</span>
+          <span class="v" data-en="An indicator that scores how strong recent gains have been versus losses, from 0 to 100.">최근 상승이 하락 대비 얼마나 강했는지를 0~100으로 보는 지표.</span>
         </div>
         <div class="sb">
-          <span class="k">어떻게 읽나</span>
-          <span class="v"><b>70 이상 과열, 30 이하 침체.</b> 50선은 대략적인 추세 경계.</span>
+          <span class="k" data-en="How to read it">어떻게 읽나</span>
+          <span class="v" data-i18n-html="1" data-en="&lt;b&gt;Above 70 is overheated, below 30 is depressed.&lt;/b&gt; The 50 line is a rough trend boundary."><b>70 이상 과열, 30 이하 침체.</b> 50선은 대략적인 추세 경계.</span>
         </div>
         <div class="sb">
-          <span class="k">신호</span>
-          <span class="impact-inline buy">과매도 = 진입 주시</span>
+          <span class="k" data-en="Signal">신호</span>
+          <span class="impact-inline buy" data-en="Oversold = watch for entry">과매도 = 진입 주시</span>
         </div>
       </div>
 
       <section class="sec">
-        <h2><span class="ix">1</span><span>RSI는 무엇을 재는가</span></h2>
-        <p>가격은 <b>수준</b>을 알려줍니다. RSI는 <b>모멘텀</b>, 즉 최근 움직임이 상승과 하락 사이에서 얼마나 한쪽으로 치우쳤는지를 알려줍니다. 최근 거의 모든 봉이 상승 마감했다면 RSI는 100을 향해 올라가고, 거의 모두 하락 마감했다면 0을 향해 내려갑니다. 그래서 RSI가 높다는 건 가격이 절대적으로 높다는 뜻이 아니라, 최근 상승이 빠르고 한쪽으로 쏠렸다는 뜻입니다.</p>
-        <p>핵심 발상은 너무 빠른 움직임은 대개 한 박자 쉬어 간다는 것입니다. 쉼 없이 급등한 시장은 자주 멈추거나 되돌리며 호흡을 고르고, 급락한 시장은 자주 반등합니다. RSI는 그 최근 움직임이 얼마나 늘어났는지를 숫자로 표현하는 도구입니다.</p>
+        <h2><span class="ix">1</span><span data-en="What RSI measures">RSI는 무엇을 재는가</span></h2>
+        <p data-i18n-html="1" data-en="Price tells you the &lt;b&gt;level&lt;/b&gt;. RSI tells you the &lt;b&gt;momentum&lt;/b&gt; — how far recent moves have leaned toward gains versus losses. If almost every recent candle closed up, RSI climbs toward 100; if almost all closed down, it falls toward 0. So a high RSI doesn't mean price is high in absolute terms — it means the recent rise has been fast and one-sided.">가격은 <b>수준</b>을 알려줍니다. RSI는 <b>모멘텀</b>, 즉 최근 움직임이 상승과 하락 사이에서 얼마나 한쪽으로 치우쳤는지를 알려줍니다. 최근 거의 모든 봉이 상승 마감했다면 RSI는 100을 향해 올라가고, 거의 모두 하락 마감했다면 0을 향해 내려갑니다. 그래서 RSI가 높다는 건 가격이 절대적으로 높다는 뜻이 아니라, 최근 상승이 빠르고 한쪽으로 쏠렸다는 뜻입니다.</p>
+        <p data-en="The core idea is that moves that are too fast usually pause to catch their breath. A market that rallies without rest often stalls or pulls back to recover, and a market that plunges often bounces. RSI is a tool that puts a number on how stretched that recent move has become.">핵심 발상은 너무 빠른 움직임은 대개 한 박자 쉬어 간다는 것입니다. 쉼 없이 급등한 시장은 자주 멈추거나 되돌리며 호흡을 고르고, 급락한 시장은 자주 반등합니다. RSI는 그 최근 움직임이 얼마나 늘어났는지를 숫자로 표현하는 도구입니다.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">2</span><span>어떻게 계산되나</span></h2>
-        <p>일정 기간 — 가장 흔하게는 <code>14</code>봉 — 동안 RSI는 상승폭의 평균과 하락폭의 평균을 비교한 뒤, 그 비율을 0~100 척도에 옮깁니다.</p>
+        <h2><span class="ix">2</span><span data-en="How it is calculated">어떻게 계산되나</span></h2>
+        <p data-i18n-html="1" data-en="Over a set period — most commonly &lt;code&gt;14&lt;/code&gt; candles — RSI compares the average of the up moves with the average of the down moves, then maps that ratio onto a 0–100 scale.">일정 기간 — 가장 흔하게는 <code>14</code>봉 — 동안 RSI는 상승폭의 평균과 하락폭의 평균을 비교한 뒤, 그 비율을 0~100 척도에 옮깁니다.</p>
         <ul>
-          <li><b>1단계.</b> 각 봉의 변화를 상승분과 하락분으로 나누고, 기간 동안 각각 평균을 냅니다.</li>
-          <li><b>2단계.</b> 비율 <code>RS = 평균상승 ÷ 평균하락</code>을 만듭니다.</li>
-          <li><b>3단계.</b> <code>RSI = 100 − 100 ÷ (1 + RS)</code>로 변환하면 항상 0~100 사이에 놓입니다.</li>
+          <li data-i18n-html="1" data-en="&lt;b&gt;Step 1.&lt;/b&gt; Split each candle's change into gains and losses, and average each over the period."><b>1단계.</b> 각 봉의 변화를 상승분과 하락분으로 나누고, 기간 동안 각각 평균을 냅니다.</li>
+          <li data-i18n-html="1" data-en="&lt;b&gt;Step 2.&lt;/b&gt; Form the ratio &lt;code&gt;RS = average gain ÷ average loss&lt;/code&gt;."><b>2단계.</b> 비율 <code>RS = 평균상승 ÷ 평균하락</code>을 만듭니다.</li>
+          <li data-i18n-html="1" data-en="&lt;b&gt;Step 3.&lt;/b&gt; Convert with &lt;code&gt;RSI = 100 − 100 ÷ (1 + RS)&lt;/code&gt;, which always lands between 0 and 100."><b>3단계.</b> <code>RSI = 100 − 100 ÷ (1 + RS)</code>로 변환하면 항상 0~100 사이에 놓입니다.</li>
         </ul>
-        <p>손으로 계산할 필요는 없습니다. 핵심은 RSI가 <b>최근 상승의 힘과 하락의 힘의 비율을 부드럽게 만든 값</b>이라는 점입니다. 매수세가 우위면 오르고 매도세가 우위면 내려갑니다. 기간을 짧게 하면 더 예민해지고, 길게 하면 더 차분해집니다.</p>
+        <p data-i18n-html="1" data-en="You don't need to compute it by hand. The key point is that RSI is a &lt;b&gt;smoothed ratio of recent buying strength to selling strength&lt;/b&gt;. When buyers dominate it rises; when sellers dominate it falls. A shorter period makes it more sensitive, a longer one calmer.">손으로 계산할 필요는 없습니다. 핵심은 RSI가 <b>최근 상승의 힘과 하락의 힘의 비율을 부드럽게 만든 값</b>이라는 점입니다. 매수세가 우위면 오르고 매도세가 우위면 내려갑니다. 기간을 짧게 하면 더 예민해지고, 길게 하면 더 차분해집니다.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">3</span><span>구간으로 읽기</span></h2>
-        <p>0~100 척도에는 잘 알려진 몇 개의 구간이 있습니다. 칼같은 선이 아니라 점진적 변화로 받아들이고, 같은 숫자라도 잔잔한 장과 강한 추세에서는 의미가 다르다는 점을 기억하세요.</p>
+        <h2><span class="ix">3</span><span data-en="Reading it by zone">구간으로 읽기</span></h2>
+        <p data-en="The 0–100 scale has a few well-known zones. Treat them as gradual shifts rather than hard lines, and remember that the same number can mean different things in a quiet market versus a strong trend.">0~100 척도에는 잘 알려진 몇 개의 구간이 있습니다. 칼같은 선이 아니라 점진적 변화로 받아들이고, 같은 숫자라도 잔잔한 장과 강한 추세에서는 의미가 다르다는 점을 기억하세요.</p>
         <div class="zone-table">
-          <div class="zrow"><div class="zr-band z-strong"><span>0~30</span></div><div class="zr-desc"><b>과매도.</b> 최근 매도가 격렬했던 국면. 반등 가능성이 커지지만, 강한 하락 추세에서는 한동안 머물 수 있음.</div></div>
-          <div class="zrow"><div class="zr-band z-mild"><span>30~50</span></div><div class="zr-desc"><b>약세 / 중심선 아래.</b> 매도세가 아직 약간 우위. 인내심 있는 매수자가 분할로 모아가는 구간인 경우가 많음.</div></div>
-          <div class="zrow"><div class="zr-band z-wait"><span>50~70</span></div><div class="zr-desc"><b>강세 / 중심선 위.</b> 매수세가 우위. 모멘텀은 더 갈 수 있지만 쉬운 과매도 진입 구간은 지났음.</div></div>
-          <div class="zrow"><div class="zr-band z-bear"><span>70~100</span></div><div class="zr-desc"><b>과매수.</b> 최근 매수가 뜨거웠던 국면. 추격 매수를 자제하라는 경고 — 강한 상승 추세에서는 RSI가 70 위에 머물 수 있어 정확한 매도 신호는 아님.</div></div>
+          <div class="zrow"><div class="zr-band z-strong"><span data-en="0–30">0~30</span></div><div class="zr-desc" data-i18n-html="1" data-en="&lt;b&gt;Oversold.&lt;/b&gt; A phase of intense recent selling. The likelihood of a bounce rises, but in a strong downtrend it can stay here for a while."><b>과매도.</b> 최근 매도가 격렬했던 국면. 반등 가능성이 커지지만, 강한 하락 추세에서는 한동안 머물 수 있음.</div></div>
+          <div class="zrow"><div class="zr-band z-mild"><span data-en="30–50">30~50</span></div><div class="zr-desc" data-i18n-html="1" data-en="&lt;b&gt;Weak / below the midline.&lt;/b&gt; Sellers still hold a slight edge. This is often where patient buyers accumulate in tranches."><b>약세 / 중심선 아래.</b> 매도세가 아직 약간 우위. 인내심 있는 매수자가 분할로 모아가는 구간인 경우가 많음.</div></div>
+          <div class="zrow"><div class="zr-band z-wait"><span data-en="50–70">50~70</span></div><div class="zr-desc" data-i18n-html="1" data-en="&lt;b&gt;Strong / above the midline.&lt;/b&gt; Buyers hold the edge. Momentum can run further, but the easy oversold entry zone has passed."><b>강세 / 중심선 위.</b> 매수세가 우위. 모멘텀은 더 갈 수 있지만 쉬운 과매도 진입 구간은 지났음.</div></div>
+          <div class="zrow"><div class="zr-band z-bear"><span data-en="70–100">70~100</span></div><div class="zr-desc" data-i18n-html="1" data-en="&lt;b&gt;Overbought.&lt;/b&gt; A phase of hot recent buying. A warning to hold off on chasing — in a strong uptrend RSI can stay above 70, so it is not a precise sell signal."><b>과매수.</b> 최근 매수가 뜨거웠던 국면. 추격 매수를 자제하라는 경고 — 강한 상승 추세에서는 RSI가 70 위에 머물 수 있어 정확한 매도 신호는 아님.</div></div>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">4</span><span>매수 타이밍에 쓰는 법</span></h2>
-        <p>RSI는 <b>추세 판단 위에 얹는 타이밍 필터</b>로 쓸 때 가장 좋습니다. 단독 방아쇠가 아닙니다. 상승 추세에서는 RSI를 40~50 부근까지 내리는 눌림목이, 70 근처에 붙어 있을 때 사는 것보다 더 나은 진입인 경우가 많습니다. 하락 추세에서는 과매도 진입이 반등 기회를 줄 수 있지만, 큰 추세에 맞서는 것은 위험합니다. 많은 트레이더에게 가장 쓸모 있는 해석은 <b>다이버전스</b> — 가격은 신극단인데 RSI는 그렇지 않은 경우로, 움직임의 힘이 빠지고 있다는 힌트입니다.</p>
+        <h2><span class="ix">4</span><span data-en="How to use it for buy timing">매수 타이밍에 쓰는 법</span></h2>
+        <p data-i18n-html="1" data-en="RSI works best as a &lt;b&gt;timing filter layered on top of a trend read&lt;/b&gt;, not as a standalone trigger. In an uptrend, a pullback that drops RSI toward 40–50 is often a better entry than buying while it is pinned near 70. In a downtrend, an oversold entry can offer a bounce, but fighting the larger trend is risky. For many traders the most useful reading is &lt;b&gt;divergence&lt;/b&gt; — price makes a new extreme but RSI does not — a hint that the move is losing strength.">RSI는 <b>추세 판단 위에 얹는 타이밍 필터</b>로 쓸 때 가장 좋습니다. 단독 방아쇠가 아닙니다. 상승 추세에서는 RSI를 40~50 부근까지 내리는 눌림목이, 70 근처에 붙어 있을 때 사는 것보다 더 나은 진입인 경우가 많습니다. 하락 추세에서는 과매도 진입이 반등 기회를 줄 수 있지만, 큰 추세에 맞서는 것은 위험합니다. 많은 트레이더에게 가장 쓸모 있는 해석은 <b>다이버전스</b> — 가격은 신극단인데 RSI는 그렇지 않은 경우로, 움직임의 힘이 빠지고 있다는 힌트입니다.</p>
         <div class="callout">
-          <div class="ct">실전 팁</div>
-          <p>한 시간프레임만 보고 움직이지 마세요. 일·주·월봉 RSI를 함께 보세요. 건강한 주봉 상승 추세 안의 일봉 과매도와, 하락하는 주봉 추세 안의 일봉 과매도는 완전히 다른 상황입니다. 자금을 넣기 전에 RSI를 가격 구조와 함께 판단하세요.</p>
+          <div class="ct" data-en="Practical tip">실전 팁</div>
+          <p data-en="Don't act on a single timeframe. Look at daily, weekly, and monthly RSI together. Daily oversold within a healthy weekly uptrend and daily oversold within a falling weekly trend are completely different situations. Judge RSI alongside price structure before committing capital.">한 시간프레임만 보고 움직이지 마세요. 일·주·월봉 RSI를 함께 보세요. 건강한 주봉 상승 추세 안의 일봉 과매도와, 하락하는 주봉 추세 안의 일봉 과매도는 완전히 다른 상황입니다. 자금을 넣기 전에 RSI를 가격 구조와 함께 판단하세요.</p>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">5</span><span>한계와 흔한 오해</span></h2>
-        <p>RSI는 가치가 아니라 최근 움직임의 속도를 재며, 강한 추세에서는 오랫동안 과매수나 과매도에 머물 수 있습니다. 가장 흔한 실수는 <b>70을 자동 매도</b>로, <b>30을 자동 매수</b>로 받아들이는 것입니다. 비트코인의 강한 상승장에서 RSI는 몇 주씩 70 위를 유지하며 가격이 계속 올랐고, 깊은 매도장에서는 30 아래에 머무는 동안 가격이 더 떨어지기도 했습니다. RSI는 움직임의 크기나 펀더멘털에 대해서는 아무것도 말해주지 않습니다. 정확한 전환점을 짚기보다 최근 움직임이 늘어났는지 판단하는 용도로 쓰고, 단일 임계값보다 다이버전스와 여러 시간프레임의 맥락에 기대세요.</p>
+        <h2><span class="ix">5</span><span data-en="Limits and common misreadings">한계와 흔한 오해</span></h2>
+        <p data-i18n-html="1" data-en="RSI measures the speed of recent moves, not value, and in a strong trend it can stay overbought or oversold for a long time. The most common mistake is treating &lt;b&gt;70 as an automatic sell&lt;/b&gt; and &lt;b&gt;30 as an automatic buy&lt;/b&gt;. In Bitcoin's strong bull runs RSI has held above 70 for weeks while price kept climbing, and in deep sell-offs it has stayed below 30 while price fell further. RSI says nothing about the size of the move or fundamentals. Use it to gauge whether the recent move has stretched rather than to pinpoint exact turning points, and lean on divergence and multi-timeframe context rather than a single threshold.">RSI는 가치가 아니라 최근 움직임의 속도를 재며, 강한 추세에서는 오랫동안 과매수나 과매도에 머물 수 있습니다. 가장 흔한 실수는 <b>70을 자동 매도</b>로, <b>30을 자동 매수</b>로 받아들이는 것입니다. 비트코인의 강한 상승장에서 RSI는 몇 주씩 70 위를 유지하며 가격이 계속 올랐고, 깊은 매도장에서는 30 아래에 머무는 동안 가격이 더 떨어지기도 했습니다. RSI는 움직임의 크기나 펀더멘털에 대해서는 아무것도 말해주지 않습니다. 정확한 전환점을 짚기보다 최근 움직임이 늘어났는지 판단하는 용도로 쓰고, 단일 임계값보다 다이버전스와 여러 시간프레임의 맥락에 기대세요.</p>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">+</span><span>함께 보면 좋은 지표</span></h2>
+        <h2><span class="ix">+</span><span data-en="Indicators to watch alongside">함께 보면 좋은 지표</span></h2>
         <div class="related-grid">
           <a href="macd.html">
-            <span class="rn">MACD</span>
-            <span class="rd">이동평균 간격으로 보는 추세 방향과 모멘텀.</span>
+            <span class="rn" data-en="MACD">MACD</span>
+            <span class="rd" data-en="Trend direction and momentum from the gap between moving averages.">이동평균 간격으로 보는 추세 방향과 모멘텀.</span>
           </a>
           <a href="ma200-deviation.html">
-            <span class="rn">MA200 이격도</span>
-            <span class="rd">가격이 200일 평균에서 얼마나 떨어져 있는지.</span>
+            <span class="rn" data-en="MA200 Deviation">MA200 이격도</span>
+            <span class="rd" data-en="How far price sits from its 200-day average.">가격이 200일 평균에서 얼마나 떨어져 있는지.</span>
           </a>
           <a href="../guide.html">
-            <span class="rn">전체 지표 보기</span>
-            <span class="rd">지표 가이드 전체로 돌아가기.</span>
+            <span class="rn" data-en="See all indicators">전체 지표 보기</span>
+            <span class="rd" data-en="Back to the full indicator guide.">지표 가이드 전체로 돌아가기.</span>
           </a>
         </div>
       </section>
 
       <section class="sec">
-        <h2><span class="ix">?</span><span>자주 묻는 질문</span></h2>
+        <h2><span class="ix">?</span><span data-en="Frequently asked questions">자주 묻는 질문</span></h2>
         <div class="faq-list">
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>RSI가 30 아래면 무조건 사야 하나요?</span></summary>
-            <div class="ans">RSI 30 이하(과매도)는 단기 반등 가능성을 키우지만 그 자체가 매수 신호는 아닙니다. 강한 하락 추세에서는 RSI가 며칠씩 30 아래에 머물 수 있으므로, 추세·다른 지표와 함께 분할 매수(DCA) 관점으로 활용하는 것이 안전합니다.</div>
+            <summary><span class="q">Q</span><span data-en="If RSI is below 30, should I always buy?">RSI가 30 아래면 무조건 사야 하나요?</span></summary>
+            <div class="ans" data-en="RSI below 30 (oversold) raises the odds of a short-term bounce, but it is not a buy signal on its own. In a strong downtrend RSI can stay below 30 for days, so it is safer to use it with the trend and other indicators from a phased (DCA) perspective.">RSI 30 이하(과매도)는 단기 반등 가능성을 키우지만 그 자체가 매수 신호는 아닙니다. 강한 하락 추세에서는 RSI가 며칠씩 30 아래에 머물 수 있으므로, 추세·다른 지표와 함께 분할 매수(DCA) 관점으로 활용하는 것이 안전합니다.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>RSI는 어떤 기간을 쓰는 게 좋나요?</span></summary>
-            <div class="ans">가장 널리 쓰는 설정은 14기간입니다. 기간을 짧게 하면 신호가 더 자주, 더 민감하게 나오고, 길게 하면 신호가 줄고 부드러워집니다. 일봉·주봉·월봉을 함께 보면 단기 흔들림과 큰 추세를 구분하기 좋습니다.</div>
+            <summary><span class="q">Q</span><span data-en="Which period should I use for RSI?">RSI는 어떤 기간을 쓰는 게 좋나요?</span></summary>
+            <div class="ans" data-en="The most widely used setting is 14 periods. A shorter period produces more frequent, more sensitive signals; a longer one gives fewer, smoother ones. Looking at daily, weekly, and monthly together helps separate short-term wobble from the larger trend.">가장 널리 쓰는 설정은 14기간입니다. 기간을 짧게 하면 신호가 더 자주, 더 민감하게 나오고, 길게 하면 신호가 줄고 부드러워집니다. 일봉·주봉·월봉을 함께 보면 단기 흔들림과 큰 추세를 구분하기 좋습니다.</div>
           </details>
           <details class="faq-item">
-            <summary><span class="q">Q</span><span>RSI 다이버전스가 뭔가요?</span></summary>
-            <div class="ans">가격은 신고점(또는 신저점)을 만드는데 RSI는 그만큼 따라가지 못하는 어긋남을 다이버전스라고 합니다. 가격의 추진력이 약해지고 있다는 힌트로 읽히지만, 발생 후에도 추세가 한동안 이어질 수 있어 단독 신호보다 경고 신호로 보는 편이 좋습니다.</div>
+            <summary><span class="q">Q</span><span data-en="What is RSI divergence?">RSI 다이버전스가 뭔가요?</span></summary>
+            <div class="ans" data-en="Divergence is when price makes a new high (or new low) but RSI fails to follow to the same degree. It reads as a hint that the move's momentum is weakening, but the trend can continue for a while afterward, so it is better treated as a warning signal than a standalone one.">가격은 신고점(또는 신저점)을 만드는데 RSI는 그만큼 따라가지 못하는 어긋남을 다이버전스라고 합니다. 가격의 추진력이 약해지고 있다는 힌트로 읽히지만, 발생 후에도 추세가 한동안 이어질 수 있어 단독 신호보다 경고 신호로 보는 편이 좋습니다.</div>
           </details>
         </div>
       </section>
 
       <div class="page-cta">
         <div class="ct-tx">
-          <h3>오늘의 지표 값 확인하기</h3>
-          <p>대시보드에서 실시간 RSI 값과 종합 타이밍 점수를 확인하세요.</p>
+          <h3 data-en="Check today's indicator values">오늘의 지표 값 확인하기</h3>
+          <p data-en="See the latest RSI reading and the composite timing score on the dashboard.">대시보드에서 실시간 RSI 값과 종합 타이밍 점수를 확인하세요.</p>
         </div>
-        <a class="ct-btn" href="../index.html">대시보드 열기 →</a>
+        <a class="ct-btn" href="../index.html" data-en="Open dashboard →">대시보드 열기 →</a>
       </div>
 
       <!-- 푸터 -->
       <div class="foot">
         <div class="fa">
-          <div class="fb"><span class="lo">₿</span><span class="nm">BTC 타이밍 레이더</span></div>
-          <div class="fd">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
+          <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
+          <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4>메뉴</h4><a href="../index.html">대시보드</a><a href="../guide.html">지표 가이드</a><a href="../about.html">서비스 소개</a><a href="../contact.html">문의</a></div>
-          <div class="col"><h4>정책 · 커뮤니티</h4><a href="../privacy.html">개인정보처리방침</a><a href="../disclaimer.html">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl">텔레그램 채널</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="../index.html" data-en="Dashboard">대시보드</a><a href="../guide.html" data-en="Indicator Guide">지표 가이드</a><a href="../about.html" data-en="About">서비스 소개</a><a href="../contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="../disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
-        <div class="copy">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
+        <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
       </div>
 
     </div>
@@ -475,5 +475,7 @@
   }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
 })();
 </script>
+<!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="../btc-i18n.js"></script>
 </body>
 </html>

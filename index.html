@@ -912,7 +912,7 @@ async function init(){
     {k:T({ko:'시장 국면',en:'Market phase'}),v:ML(sd),col:scoreCol,s:m.actionType==='HOLD'?T({ko:'관망 우세',en:'Hold off'}):'',cls:'s'},
     {k:T({ko:'매수 조건 통과',en:'Conditions passed'}),v:passed+' / '+total,col:(chk.passedCount/chk.totalCount>=0.5?GREEN:AMBER),s:chk.levelLabel?ML(chk.levelLabel):T({ko:'체크리스트',en:'Checklist'})},
     {k:T({ko:'내일 예상 점수',en:"Tomorrow's score"}),v:predS!=null?predS+T({ko:'점',en:' pts'}):'--',col:predS!=null?scoreColor(predS):AMBER,s:fc.scoreDiff!=null?(T({ko:'오늘 대비 ',en:'vs. today '})+(pf(fc.scoreDiff)>0?'+':'')+fc.scoreDiff):''},
-    {k:T({ko:'반감기 경과',en:'Since halving'}),v:elapsed,col:'#cfd4de',s:ML(m.halvingPhase||cy.phaseLabel||''),cls:'s'}
+    {k:T({ko:'반감기 경과',en:'Since halving'}),v:elapsed,col:'#cfd4de',s:isEn?(m.halvingPhaseEn||ML(m.halvingPhase||cy.phaseLabel||'')):ML(m.halvingPhase||cy.phaseLabel||''),cls:'s'}
   ];
   var sg=ge('sumGrid');
   sums.forEach(function(s){
@@ -920,6 +920,8 @@ async function init(){
   });
 
   /* ── 전문가 의견 · AI 다이제스트 (요약+위험신호+권고행동 전체 섹션) ── */
+  // 영어 모드면 영어판 digest(api_ai_digest_en) 사용 — 없으면 한국어(api_ai_digest) 폴백
+  if(isEn&&d.api_ai_digest_en&&d.api_ai_digest_en.hasData)ai=d.api_ai_digest_en;
   var aiSecs=ai.sections||[];
   if(aiSecs.length){
     // 타입별 그룹핑 (SUMMARY/RISK/ACTION/OPPORTUNITY)
@@ -928,7 +930,7 @@ async function init(){
     // HTML 이스케이프 (안전)
     var esc=function(x){return String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
     // 메타: 톤·점수·갱신시각(KST)
-    var dtone=ai.toneDisplay||ex.verdict||'--';
+    var dtone=ai.toneDisplay||(isEn?(ex.verdictEn||ex.verdict):ex.verdict)||'--';
     var dsc=(ai.compositeScore!=null?ai.compositeScore+T({ko:'점',en:' pts'}):'');
     var dcol=ai.toneHexColor||AMBER;
     var gt='';
@@ -947,7 +949,7 @@ async function init(){
     ge('expertText').innerHTML=html;
   } else {
     // 다이제스트 없으면 전문가 요약 폴백
-    ge('expertText').textContent=ex.summary||T({ko:'데이터 없음',en:'No data'});
+    ge('expertText').textContent=(isEn?(ex.summaryEn||ex.summary):ex.summary)||T({ko:'데이터 없음',en:'No data'});
   }
 
   /* 뉴스 센티먼트: compositeScore(-1~1) → 바 width(0~100%) + 뉴스 목록 */
@@ -1011,7 +1013,9 @@ async function init(){
   var elapsedTail=isEn?((m.halvingDaysAfter!=null?m.halvingDaysAfter+' days elapsed':'')):(cy.formattedElapsed||'');
   ge('halvSub').textContent=(cy.lastHalvingDate?cy.lastHalvingDate+T({ko:' 반감기 기준 · ',en:' halving basis · '}):'')+elapsedTail;
   ge('halvCur').textContent=T({ko:'현재 · ',en:'Now · '})+Math.round(pw)+'%';
-  ge('halvDesc').textContent=cy.phaseDescription||ML(m.halvingPhase||'');
+  // 영어 모드면 영어 설명(phaseDescriptionEn) 사용 — 없으면 한국어 폴백
+  var halvDescTxt=isEn?(cy.phaseDescriptionEn||cy.phaseDescription):cy.phaseDescription;
+  ge('halvDesc').textContent=halvDescTxt||ML(m.halvingPhase||'');
   setTimeout(function(){ge('halvFill').style.width=pw+'%';},200);
 
   /* ── 카테고리별 점수 (indicatorBreakdown 그룹 평균, index.html 그룹핑) ── */
@@ -1208,8 +1212,8 @@ async function init(){
       '<div class="quad" style="background:'+rmCol+'1a;border:1px solid '+rmCol+'44;color:'+rmCol+'">'
         +'<span class="q">'+(rm.score!=null?rm.score:'--')+'</span>'
         +'<span class="qs">'+T({ko:'공탐 ',en:'F&G '})+(rm.fearGreed!=null?rm.fearGreed:'--')+'</span></div>'
-      +'<div class="rd"><div class="rl" style="color:'+rmCol+'">'+ML(rm.label||'--')+'</div>'
-        +'<div class="rdesc">'+(rm.description||'')+'</div>'
+      +'<div class="rd"><div class="rl" style="color:'+rmCol+'">'+ML(isEn?(rm.labelEn||rm.label||'--'):(rm.label||'--'))+'</div>'
+        +'<div class="rdesc">'+(isEn?(rm.descriptionEn||rm.description||''):(rm.description||''))+'</div>'
         +'<div class="rmeta">'+(rm.quadrant||'')+'</div></div>';
   }else{ge('regimeCnt').textContent=T({ko:'데이터 없음',en:'No data'});}
 
