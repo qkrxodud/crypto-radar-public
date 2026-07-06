@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-06T21:13:38Z",
+  "updatedAt": "2026-07-06T21:33:44Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "63710.01",
       "macd": {
-        "macdLine": "-1039.97",
-        "signalLine": "-1842.78",
-        "histogram": "802.81",
+        "macdLine": "-1046.95",
+        "signalLine": "-1844.17",
+        "histogram": "797.22",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001140",
       "ivRv": {
-        "iv": "33.29",
+        "iv": "33.35",
         "rv": "33.00",
-        "spread": "+0.29",
+        "spread": "+0.35",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2855,7 +2855,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257287744780.38168",
+      "totalMarketCapUsd": "257300195416.53431",
       "marketCap30dAgoUsd": "262310728383.60233",
       "growth30dPercent": "-1.91",
       "signal": "STABLE",
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64349.00",
-      "openInterestUsd": "6658255937.59349300",
-      "longAccountRatio": "0.5792",
-      "shortAccountRatio": "0.4208",
-      "downsideLiquidationUsd": "3856461839.05",
-      "upsideLiquidationUsd": "2801794098.54",
+      "currentPrice": "64276.70",
+      "openInterestUsd": "6567427811.49840000",
+      "longAccountRatio": "0.5803",
+      "shortAccountRatio": "0.4197",
+      "downsideLiquidationUsd": "3811078359.01",
+      "upsideLiquidationUsd": "2756349452.49",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57914.10",
+          "price": "57849.03",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1542584735.62"
+          "notionalUsd": "1524431343.61"
         },
         {
-          "price": "70783.90",
+          "price": "70704.37",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1120717639.42"
+          "notionalUsd": "1102539780.99"
         },
         {
-          "price": "61775.04",
+          "price": "61705.63",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1349761643.67"
+          "notionalUsd": "1333877425.65"
         },
         {
-          "price": "66922.96",
+          "price": "66847.77",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "980627934.49"
+          "notionalUsd": "964722308.37"
         },
         {
-          "price": "63062.02",
+          "price": "62991.17",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "771292367.81"
+          "notionalUsd": "762215671.80"
         },
         {
-          "price": "65635.98",
+          "price": "65562.23",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "560358819.71"
+          "notionalUsd": "551269890.50"
         },
         {
-          "price": "63705.51",
+          "price": "63633.93",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "192823091.95"
+          "notionalUsd": "190553917.95"
         },
         {
-          "price": "64992.49",
+          "price": "64919.47",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "140089704.93"
+          "notionalUsd": "137817472.62"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-06T21:00:03.171149Z",
+      "generatedAt": "2026-07-06T21:30:03.045140Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,30 +4388,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로, 심리 지표가 공포 상태에 있으며 가격 안정성을 보이고 있다."
+          "content": "현재 매집 우세로, 시장 심리는 공포에 가까운 상태이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "낮은 MVRV-Z와 NUPL로 인해 투자자들의 실현 손실 우려가 존재한다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인 투자에 대한 리스크가 존재한다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 심리 지표를 주의 깊게 살펴라."
+          "content": "현재 매집 우세를 활용하여 추가 매수 고려."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
+          "content": "시장 심리 개선을 기다리며 장기 투자 전략 유지."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-06T20:53:35.801441Z",
+      "generatedAt": "2026-07-06T21:33:44.432602Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4420,23 +4420,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "Market sentiment indicates accumulation dominance despite some caution in technical indicators."
+          "content": "The market shows a slight bullish sentiment with accumulation dominance, but caution is advised due to mixed indicators."
         },
         {
           "type": "RISK",
-          "content": "Fear and Greed Index at 24 suggests extreme fear in the market."
+          "content": "Fear and Greed index at 24 indicates extreme fear."
         },
         {
           "type": "RISK",
-          "content": "RSI weekly at 38.35 indicates potential bearish momentum."
+          "content": "RSI on weekly at 38.35 suggests potential bearish momentum."
         },
         {
           "type": "ACTION",
-          "content": "Consider gradual accumulation of BTC as sentiment improves."
+          "content": "Consider gradual accumulation in a long-term strategy."
         },
         {
           "type": "ACTION",
-          "content": "Monitor RSI and MVRV-Z for signs of trend reversal."
+          "content": "Monitor market sentiment closely for signs of reversal."
         }
       ],
       "errorMessage": null
