@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-08T13:03:10Z",
+  "updatedAt": "2026-07-08T13:23:16Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "63431.07",
       "macd": {
-        "macdLine": "-905.38",
-        "signalLine": "-1561.08",
-        "histogram": "655.70",
+        "macdLine": "-912.62",
+        "signalLine": "-1562.53",
+        "histogram": "649.91",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001262",
       "ivRv": {
-        "iv": "40.00",
+        "iv": "40.74",
         "rv": "33.00",
-        "spread": "+7.00",
+        "spread": "+7.74",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "61934.30",
-      "openInterestUsd": "6222523831.26605100",
-      "longAccountRatio": "0.6361",
-      "shortAccountRatio": "0.3639",
-      "downsideLiquidationUsd": "3958147409.07",
-      "upsideLiquidationUsd": "2264376422.20",
+      "currentPrice": "61846.60",
+      "openInterestUsd": "6218120070.43260000",
+      "longAccountRatio": "0.6353",
+      "shortAccountRatio": "0.3647",
+      "downsideLiquidationUsd": "3950371680.75",
+      "upsideLiquidationUsd": "2267748389.69",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "55740.87",
+          "price": "55661.94",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1583258963.63"
+          "notionalUsd": "1580148672.30"
         },
         {
-          "price": "68127.73",
+          "price": "68031.26",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "905750568.88"
+          "notionalUsd": "907099355.87"
         },
         {
-          "price": "59456.93",
+          "price": "59372.74",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1385351593.17"
+          "notionalUsd": "1382630088.26"
         },
         {
-          "price": "64411.67",
+          "price": "64320.46",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "792531747.77"
+          "notionalUsd": "793711936.39"
         },
         {
-          "price": "60695.61",
+          "price": "60609.67",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "791629481.81"
+          "notionalUsd": "790074336.15"
         },
         {
-          "price": "63172.99",
+          "price": "63083.53",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "452875284.44"
+          "notionalUsd": "453549677.94"
         },
         {
-          "price": "61314.96",
+          "price": "61228.13",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "197907370.45"
+          "notionalUsd": "197518584.04"
         },
         {
-          "price": "62553.64",
+          "price": "62465.07",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "113218821.11"
+          "notionalUsd": "113387419.48"
         }
       ],
       "errorMessage": null
@@ -4415,7 +4415,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-08T12:43:06.734538Z",
+      "generatedAt": "2026-07-08T13:23:16.104072Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,91 +4424,105 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a slight bullish sentiment despite high fear levels and mixed indicators."
+          "content": "The market shows a slight bullish sentiment with accumulation favored, but caution is advised due to mixed indicators."
         },
         {
           "type": "RISK",
-          "content": "High fear sentiment at 20 indicates potential volatility."
+          "content": "Fear and Greed index at 20 indicates extreme fear in the market."
         },
         {
           "type": "RISK",
-          "content": "RSI on the weekly is low at 37.97, suggesting bearish momentum."
+          "content": "RSI on weekly at 37.97 suggests potential bearish momentum."
         },
         {
           "type": "ACTION",
-          "content": "Consider accumulating positions gradually given the current score."
+          "content": "Consider gradual accumulation of BTC given the favorable accumulation score."
         },
         {
           "type": "ACTION",
-          "content": "Monitor macroeconomic indicators closely for potential impacts."
+          "content": "Monitor market sentiment closely for shifts in the Fear and Greed index."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-08T12:05:02.737211Z",
-      "compositeScore": "-0.250",
-      "label": "NEGATIVE",
-      "labelDisplay": "부정",
-      "labelHexColor": "#F97316",
+      "generatedAt": "2026-07-08T13:05:00.832751Z",
+      "compositeScore": "-0.169",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Citadel drops U.S. Portofino suit, seeks bankruptcy order against firm's founder in UK",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/07/08/citadel-drops-u-s-portofino-suit-seeks-bankruptcy-order-against-firm-s-founder-in-uk",
+          "publishedAt": "2026-07-08T12:45:30Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "SpaceX's first bitcoin wallet movements in six months likely don't signal sales",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/08/spacex-s-first-bitcoin-wallet-movements-in-six-months-likely-don-t-signal-sales",
+          "publishedAt": "2026-07-08T12:44:27Z",
+          "score": "0.2"
+        },
         {
           "title": "Bitcoin's inflation quagmire gets stickier as renewed MidEast conflict sends oil price soaring",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/07/08/bitcoin-s-inflation-quagmire-gets-stickier-as-renewed-mideast-conflict-sends-oil-price-soaring",
           "publishedAt": "2026-07-08T11:15:42Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
           "title": "Crypto and stocks tumble after Trump declares ceasefire 'over' following Iran strikes",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/08/crypto-and-stocks-tumble-after-trump-declares-ceasefire-over-following-iran-strikes",
           "publishedAt": "2026-07-08T10:37:10Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Reserve Bank of India still favors crypto prohibition to curtail tax evasion: Reuters",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/08/reserve-bank-of-india-still-favors-crypto-prohibition-to-curtail-tax-evasion-reuters",
           "publishedAt": "2026-07-08T09:45:24Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Validators embrace XRP Ledger's recent upgrade. But not everyoneâs on board yet",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/08/xrp-ledger-s-new-upgrade-is-here-but-not-everyone-s-on-board-yet",
           "publishedAt": "2026-07-08T08:40:22Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Live markets: Bitcoin drops to $62,000, stocks slide, oil soars as Iran ceasefire collapses",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/08/live-markets-japan-s-collapsing-yen-is-pushing-companies-into-bitcoin-and-xrp",
           "publishedAt": "2026-07-08T05:29:16Z",
-          "score": "-0.9"
+          "score": "-0.8"
         },
         {
           "title": "Bitcoin under pressure as Trump says Iran ceasefire is over",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/08/bitcoin-under-pressure-as-u-s-iran-escalation-lifts-oil",
           "publishedAt": "2026-07-08T04:30:24Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
-          "title": "BlackRock-backed Securitize slides 40% after SPAC debut despite tokenization boom",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/07/blackrock-backed-securitize-slides-40-after-spac-debut-despite-tokenization-boom",
-          "publishedAt": "2026-07-07T19:35:14Z",
-          "score": "-0.4"
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-08T12:43:17Z",
+          "score": "0.0"
         },
         {
-          "title": "Crypto exchange Kraken is trying to become a bank in Europe",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/07/crypto-exchange-kraken-is-trying-to-become-a-bank-in-europe",
-          "publishedAt": "2026-07-07T18:38:10Z",
+          "title": "Lyn Alden says Bitcoin needs no savior as Strategy sells $216M of BTC",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-needs-no-savior-lyn-alden-strategy-216-million-btc-sale?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-08T12:01:00Z",
           "score": "0.4"
         },
         {
@@ -4537,14 +4551,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/berachain-hard-fork-single-token-economy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T10:21:12Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Base to activate B20 standard for stablecoins, RWAs and other tokens",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/base-to-activate-b20-standard-for-stablecoins-rwas-and-other-tokens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T08:46:02Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "EU to again vote to extend ‘chat control’ rules",
@@ -4552,20 +4566,6 @@
           "url": "https://cointelegraph.com/news/eu-to-again-vote-to-extend-chat-control-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T06:33:46Z",
           "score": "-0.2"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-08T06:05:32Z",
-          "score": "0.0"
-        },
-        {
-          "title": "StarkWare CEO suggests 4% annual Bitcoin inflation to replace 21M cap",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/starkware-ceo-suggests-4-annual-bitcoin-inflation-to-replace-21m-cap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-08T05:48:42Z",
-          "score": "-0.6"
         }
       ],
       "errorMessage": null
