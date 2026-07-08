@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-08T09:02:16Z",
+  "updatedAt": "2026-07-08T09:22:19Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.33",
       "btcClose": "63431.07",
       "macd": {
-        "macdLine": "-897.57",
-        "signalLine": "-1559.52",
-        "histogram": "661.95",
+        "macdLine": "-916.36",
+        "signalLine": "-1563.27",
+        "histogram": "646.92",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "38.2",
-        "plusDi": "14.0",
-        "minusDi": "23.9",
+        "plusDi": "13.9",
+        "minusDi": "24.2",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62026.90",
-      "openInterestUsd": "6177328875.51400000",
-      "longAccountRatio": "0.6350",
-      "shortAccountRatio": "0.3650",
-      "downsideLiquidationUsd": "3922603835.95",
-      "upsideLiquidationUsd": "2254725039.56",
+      "currentPrice": "61800.00",
+      "openInterestUsd": "6195492571.03867400",
+      "longAccountRatio": "0.6362",
+      "shortAccountRatio": "0.3638",
+      "downsideLiquidationUsd": "3941572373.69",
+      "upsideLiquidationUsd": "2253920197.34",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "55824.21",
+          "price": "55620.00",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1569041534.38"
+          "notionalUsd": "1576628949.48"
         },
         {
-          "price": "68229.59",
+          "price": "67980.00",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "901890015.83"
+          "notionalUsd": "901568078.94"
         },
         {
-          "price": "59545.82",
+          "price": "59328.00",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1372911342.58"
+          "notionalUsd": "1379550330.79"
         },
         {
-          "price": "64507.98",
+          "price": "64272.00",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "789153763.85"
+          "notionalUsd": "788872069.07"
         },
         {
-          "price": "60786.36",
+          "price": "60564.00",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "784520767.19"
+          "notionalUsd": "788314474.74"
         },
         {
-          "price": "63267.44",
+          "price": "63036.00",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "450945007.91"
+          "notionalUsd": "450784039.47"
         },
         {
-          "price": "61406.63",
+          "price": "61182.00",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "196130191.80"
+          "notionalUsd": "197078618.68"
         },
         {
-          "price": "62647.17",
+          "price": "62418.00",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "112736251.98"
+          "notionalUsd": "112696009.87"
         }
       ],
       "errorMessage": null
@@ -4447,8 +4447,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-08T08:05:02.645967Z",
-      "compositeScore": "0.044",
+      "generatedAt": "2026-07-08T09:05:03.021899Z",
+      "compositeScore": "-0.100",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,18 +4456,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
-          "title": "Live markets: Japan's collapsing yen is pushing companies into bitcoin and XRP",
+          "title": "XRP Ledgerâs new upgrade is here. But not everyoneâs on board yet",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/07/08/xrp-ledger-s-new-upgrade-is-here-but-not-everyone-s-on-board-yet",
+          "publishedAt": "2026-07-08T08:40:22Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Live markets: Bitcoin drops as yen, Iran ceasefire collapse",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/08/live-markets-japan-s-collapsing-yen-is-pushing-companies-into-bitcoin-and-xrp",
           "publishedAt": "2026-07-08T05:29:16Z",
-          "score": "0.5"
+          "score": "-0.7"
         },
         {
-          "title": "Bitcoin under pressure as U.S.-Iran escalation lifts oil",
+          "title": "Bitcoin under pressure as Trump says Iran ceasefire is over",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/08/bitcoin-under-pressure-as-u-s-iran-escalation-lifts-oil",
           "publishedAt": "2026-07-08T04:30:24Z",
-          "score": "-0.4"
+          "score": "-0.8"
         },
         {
           "title": "BlackRock-backed Securitize slides 40% after SPAC debut despite tokenization boom",
@@ -4488,14 +4495,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/07/spacex-ipo-powers-record-usd3-86-billion-in-tokenized-equities-trading-in-june",
           "publishedAt": "2026-07-07T16:18:18Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "U.S. SEC to propose crypto rule as soon as this month to ease startups, fundraising",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/07/u-s-sec-to-propose-crypto-rule-as-soon-as-this-month-to-ease-startups-fundraising",
           "publishedAt": "2026-07-07T16:08:19Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "Analysts see more upside for SpaceX as post-IPO research begins",
@@ -4505,18 +4512,18 @@
           "score": "0.3"
         },
         {
-          "title": "Vanguard opens search for digital assets leader in sign of evolving crypto strategy",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/07/vanguard-opens-search-for-digital-assets-leader-in-sign-of-evolving-crypto-strategy",
-          "publishedAt": "2026-07-07T14:28:37Z",
-          "score": "0.5"
+          "title": "Base to activate B20 standard for stablecoins, RWAs and other tokens",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/base-to-activate-b20-standard-for-stablecoins-rwas-and-other-tokens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-08T08:46:02Z",
+          "score": "0.2"
         },
         {
           "title": "EU to again vote to extend ‘chat control’ rules",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/eu-to-again-vote-to-extend-chat-control-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T06:33:46Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4530,42 +4537,35 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/starkware-ceo-suggests-4-annual-bitcoin-inflation-to-replace-21m-cap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T05:48:42Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "Swyftx eyes crypto payments after securing Australian license",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/swyftx-eyes-crypto-payments-space-after-securing-australian-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T05:30:03Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Secret Network cites AI exploit risks in proposed Arbitrum move",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/secret-network-cites-ai-exploit-risks-in-proposed-arbitrum-move?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T03:54:27Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "CFTC charges commodity, crypto pool operator with $14M fraud",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-charges-commodity-crypto-pool-operator-with-14m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T03:25:30Z",
-          "score": "-0.6"
+          "score": "-0.9"
         },
         {
           "title": "Strike launches ‘volatility-proof’ Bitcoin loans amid bear market, but at a cost",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/strike-launches-volatility-proof-bitcoin-loans-amid-bear-market-but-at-what-cost?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T02:40:13Z",
-          "score": "0.2"
-        },
-        {
-          "title": "SEC crypto rule changes are high on its 2026 agenda",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/sec-crypto-rule-changes-2026-agenda?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-07T21:39:48Z",
-          "score": "-0.4"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
