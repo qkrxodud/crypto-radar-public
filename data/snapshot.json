@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-08T14:03:25Z",
+  "updatedAt": "2026-07-08T14:23:28Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "63431.07",
       "macd": {
-        "macdLine": "-905.40",
-        "signalLine": "-1561.08",
-        "histogram": "655.69",
+        "macdLine": "-892.14",
+        "signalLine": "-1558.43",
+        "histogram": "666.29",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001262",
       "ivRv": {
-        "iv": "40.34",
+        "iv": "39.87",
         "rv": "33.00",
-        "spread": "+7.34",
+        "spread": "+6.87",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "61935.90",
-      "openInterestUsd": "6256281524.32147200",
-      "longAccountRatio": "0.6388",
-      "shortAccountRatio": "0.3612",
-      "downsideLiquidationUsd": "3996512637.74",
-      "upsideLiquidationUsd": "2259768886.58",
+      "currentPrice": "62117.50",
+      "openInterestUsd": "6265628633.29130000",
+      "longAccountRatio": "0.6397",
+      "shortAccountRatio": "0.3603",
+      "downsideLiquidationUsd": "4008122636.72",
+      "upsideLiquidationUsd": "2257505996.57",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "55742.31",
+          "price": "55905.75",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1598605055.09"
+          "notionalUsd": "1603249054.69"
         },
         {
-          "price": "68129.49",
+          "price": "68329.25",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "903907554.63"
+          "notionalUsd": "903002398.63"
         },
         {
-          "price": "59458.46",
+          "price": "59632.80",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1398779423.21"
+          "notionalUsd": "1402842922.85"
         },
         {
-          "price": "64413.34",
+          "price": "64602.20",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "790919110.30"
+          "notionalUsd": "790127098.80"
         },
         {
-          "price": "60697.18",
+          "price": "60875.15",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "799302527.55"
+          "notionalUsd": "801624527.34"
         },
         {
-          "price": "63174.62",
+          "price": "63359.85",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "451953777.32"
+          "notionalUsd": "451501199.31"
         },
         {
-          "price": "61316.54",
+          "price": "61496.33",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "199825631.89"
+          "notionalUsd": "200406131.84"
         },
         {
-          "price": "62555.26",
+          "price": "62738.68",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "112988444.33"
+          "notionalUsd": "112875299.83"
         }
       ],
       "errorMessage": null
@@ -4447,14 +4447,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-08T13:05:00.832751Z",
-      "compositeScore": "-0.169",
+      "generatedAt": "2026-07-08T14:05:03.774Z",
+      "compositeScore": "-0.081",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "BNB Chain is building a new layer-1 for high-frequency trading and AI agents",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/web3/2026/07/08/bnb-chain-is-building-a-new-layer-1-for-high-frequency-trading-and-ai-agents",
+          "publishedAt": "2026-07-08T14:01:44Z",
+          "score": "0.3"
+        },
         {
           "title": "Citadel drops U.S. Portofino suit, seeks bankruptcy order against firm's founder in UK",
           "source": "CoinDesk",
@@ -4467,14 +4474,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/08/spacex-s-first-bitcoin-wallet-movements-in-six-months-likely-don-t-signal-sales",
           "publishedAt": "2026-07-08T12:44:27Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "Bitcoin's inflation quagmire gets stickier as renewed MidEast conflict sends oil price soaring",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/07/08/bitcoin-s-inflation-quagmire-gets-stickier-as-renewed-mideast-conflict-sends-oil-price-soaring",
           "publishedAt": "2026-07-08T11:15:42Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "Crypto and stocks tumble after Trump declares ceasefire 'over' following Iran strikes",
@@ -4488,28 +4495,56 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/08/reserve-bank-of-india-still-favors-crypto-prohibition-to-curtail-tax-evasion-reuters",
           "publishedAt": "2026-07-08T09:45:24Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "Validators embrace XRP Ledger's recent upgrade. But not everyoneâs on board yet",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/08/xrp-ledger-s-new-upgrade-is-here-but-not-everyone-s-on-board-yet",
           "publishedAt": "2026-07-08T08:40:22Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Live markets: Bitcoin drops to $62,000, stocks slide, oil soars as Iran ceasefire collapses",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/08/live-markets-japan-s-collapsing-yen-is-pushing-companies-into-bitcoin-and-xrp",
           "publishedAt": "2026-07-08T05:29:16Z",
-          "score": "-0.8"
+          "score": "-0.9"
         },
         {
-          "title": "Bitcoin under pressure as Trump says Iran ceasefire is over",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/08/bitcoin-under-pressure-as-u-s-iran-escalation-lifts-oil",
-          "publishedAt": "2026-07-08T04:30:24Z",
-          "score": "-0.7"
+          "title": "Bull Bitcoin asks French court to strike down DAC8 implementing decree",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bull-bitcoin-legal-action-france-dac8?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-08T13:36:44Z",
+          "score": "0.1"
+        },
+        {
+          "title": "India crypto tax filings lag trading activity: Report",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/india-crypto-tax-underreporting-rbi-ban-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-08T13:31:15Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "The 5 types of real world assets being tokenized fastest onchain",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/features/as-real-world-asset-tokenization-accelerates-heres-whats-been-put-onchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-08T13:30:00Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Kazakhstan president signs decree to accelerate crypto adoption",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/kazakhstan-president-decree-accelerate-crypto-adoption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-08T13:19:28Z",
+          "score": "0.5"
+        },
+        {
+          "title": "BTC speculators in focus as analysis says 'textbook Bitcoin bottom' is underway",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/btc-speculators-in-focus-as-analysis-says-textbook-bitcoin-bottom-is-underway?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-08T12:59:06Z",
+          "score": "0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4523,49 +4558,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-needs-no-savior-lyn-alden-strategy-216-million-btc-sale?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T12:01:00Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
-          "title": "Mobile app Toss and blockchain Optimism to conduct Korean won stablecoin POC : report",
+          "title": "Mobile app Toss and blockchain Optimism to conduct Korean won stablecoin POC: report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/south-korea-toss-partners-optimism-won-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-08T11:33:11Z",
           "score": "0.3"
-        },
-        {
-          "title": "ESMA turns spotlight on crypto custody risks after MiCA transition",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/esma-crypto-custody-scrutiny-mica-transition?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-08T10:49:21Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Kalshi files same-day appeal of NY court's rejection of bid to block state gambling law enforcement",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/kalshi-appeals-new-york-sports-event-contracts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-08T10:37:52Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Berachain hard fork to replace dual-token model with WBERA rewards",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/berachain-hard-fork-single-token-economy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-08T10:21:12Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Base to activate B20 standard for stablecoins, RWAs and other tokens",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/base-to-activate-b20-standard-for-stablecoins-rwas-and-other-tokens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-08T08:46:02Z",
-          "score": "0.3"
-        },
-        {
-          "title": "EU to again vote to extend ‘chat control’ rules",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/eu-to-again-vote-to-extend-chat-control-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-08T06:33:46Z",
-          "score": "-0.2"
         }
       ],
       "errorMessage": null
