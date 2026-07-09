@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-09T12:50:24Z",
+  "updatedAt": "2026-07-09T13:10:26Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "62205.95",
       "macd": {
-        "macdLine": "-815.28",
-        "signalLine": "-1432.74",
-        "histogram": "617.46",
+        "macdLine": "-796.83",
+        "signalLine": "-1429.05",
+        "histogram": "632.22",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001319",
       "ivRv": {
-        "iv": "37.73",
+        "iv": "32.59",
         "rv": "33.00",
-        "spread": "+4.73",
+        "spread": "-0.42",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62572.00",
-      "openInterestUsd": "6195703962.90390000",
-      "longAccountRatio": "0.6052",
-      "shortAccountRatio": "0.3948",
-      "downsideLiquidationUsd": "3749640038.35",
-      "upsideLiquidationUsd": "2446063924.55",
+      "currentPrice": "62807.00",
+      "openInterestUsd": "6203222986.57400000",
+      "longAccountRatio": "0.6065",
+      "shortAccountRatio": "0.3935",
+      "downsideLiquidationUsd": "3762254741.36",
+      "upsideLiquidationUsd": "2440968245.22",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56314.80",
+          "price": "56526.30",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1499856015.34"
+          "notionalUsd": "1504901896.54"
         },
         {
-          "price": "68829.20",
+          "price": "69087.70",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "978425569.82"
+          "notionalUsd": "976387298.09"
         },
         {
-          "price": "60069.12",
+          "price": "60294.72",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1312374013.42"
+          "notionalUsd": "1316789159.47"
         },
         {
-          "price": "65074.88",
+          "price": "65319.28",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "856122373.59"
+          "notionalUsd": "854338885.83"
         },
         {
-          "price": "61320.56",
+          "price": "61550.86",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "749928007.67"
+          "notionalUsd": "752450948.27"
         },
         {
-          "price": "63823.44",
+          "price": "64063.14",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "489212784.91"
+          "notionalUsd": "488193649.04"
         },
         {
-          "price": "61946.28",
+          "price": "62178.93",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "187482001.92"
+          "notionalUsd": "188112737.07"
         },
         {
-          "price": "63197.72",
+          "price": "63435.07",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "122303196.23"
+          "notionalUsd": "122048412.26"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-09T12:30:02.508866Z",
+      "generatedAt": "2026-07-09T13:00:03.168717Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,23 +4392,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집이 우세하나 시장 심리가 공포에 가까워 리스크가 존재한다."
+          "content": "현재 매집 우세 상황이나 공포 심리가 지배적이다."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 공포(22)로 낮아 매도 압력이 증가할 수 있다."
+          "content": "낮은 공포탐욕 지수(22)로 인해 시장 심리가 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스(56)가 높아 알트코인에 대한 투자 매력이 감소할 수 있다."
+          "content": "거래소 순유입이 -143.51로 매도 압력이 존재한다."
         },
         {
           "type": "ACTION",
-          "content": "매집 우세를 활용해 추가 매수 고려."
+          "content": "매수 기회를 모색하되, 시장 심리를 주의 깊게 살펴야 한다."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리를 주의 깊게 관찰하며 손절가 설정."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산시킬 필요가 있다."
         }
       ],
       "errorMessage": null
@@ -4447,14 +4447,28 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-09T12:05:00.467Z",
-      "compositeScore": "0.138",
+      "generatedAt": "2026-07-09T13:05:02.282713Z",
+      "compositeScore": "0.088",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Aave rolls out vaults for yield-hungry fintech investors",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/09/aave-rolls-out-vaults-for-yield-hungry-fintech-investors",
+          "publishedAt": "2026-07-09T13:01:38Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Age verification is the surveillance nobody voted for",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/opinion/2026/07/09/age-verification-is-the-surveillance-nobody-voted-for",
+          "publishedAt": "2026-07-09T13:00:00Z",
+          "score": "-0.3"
+        },
         {
           "title": "Over $7.2 billion have migrated from LayerZero to Chainlink CCIP as Mantle joins exodus",
           "source": "CoinDesk",
@@ -4467,7 +4481,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/07/09/pricing-houses-in-bitcoin-exposes-dollar-s-loss-of-value",
           "publishedAt": "2026-07-09T11:27:10Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "Swift rolls out new blockchain ledger to bring 24/7 banking to 17 global giants",
@@ -4488,42 +4502,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/09/crypto-remains-resilient-in-face-of-renewed-middle-east-tensions",
           "publishedAt": "2026-07-09T10:36:02Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Singapore's Temasek investment fund says crypto is off the table, will focus on AI",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/09/singapore-s-temasek-investment-fund-says-crypto-is-off-the-table-will-focus-on-ai",
           "publishedAt": "2026-07-09T10:22:35Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
-          "title": "Crypto trader applies legendary HODL strategy to EUR/USD forex bet",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/09/crypto-trader-applies-legendary-hodl-strategy-to-eur-usd-forex-bet",
-          "publishedAt": "2026-07-09T09:51:20Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Sony secures conditional approval to set up U.S. stablecoin trust bank",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/09/sony-secures-conditional-approval-to-set-up-u-s-stablecoin-trust-bank",
-          "publishedAt": "2026-07-09T09:49:26Z",
-          "score": "0.5"
+          "title": "Hong Kong regulator orders new anti-phishing measures for crypto platforms",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/hong-kong-regulator-anti-phishing-measures-crypto-platforms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-09T12:53:44Z",
+          "score": "-0.2"
         },
         {
           "title": "Sony Bank gets US regulator nod to issue stablecoins",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/sony-bank-preliminary-approval-us-stablecoin-business?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-09T11:18:41Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "Interpol operation exposes $122M crypto wallet tied to romance scam laundering",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/interpol-122m-crypto-flows-romance-scam-laundering?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-09T11:18:21Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "Revolut says USDT delisting is limited to EEA, Switzerland",
@@ -4537,7 +4544,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hyperliquid-onchain-perps-absorbing-tradfi-markets-pantera-capital?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-09T10:02:32Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin ETFs end 'most overwhelming' $2.7B sell-off amid new $85M net outflow",
@@ -4551,7 +4558,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bank-of-korea-bank-led-stablecoins-deposit-token-pilots?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-09T09:19:38Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "SWIFT launches blockchain ledger with 17-bank tokenized deposit pilot",
@@ -4559,13 +4566,6 @@
           "url": "https://cointelegraph.com/news/swift-launches-blockchain-announces-tokenized-deposit-pilot-with-17-banks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-09T08:51:48Z",
           "score": "0.5"
-        },
-        {
-          "title": "Regulators invited Binance to seek new licenses after MiCA setback, co-CEO says",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/regulators-invite-binance-seek-new-license-mica-setback-teng?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-09T08:26:30Z",
-          "score": "0.2"
         }
       ],
       "errorMessage": null
