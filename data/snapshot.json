@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-09T08:49:29Z",
+  "updatedAt": "2026-07-09T09:09:31Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "62205.95",
       "macd": {
-        "macdLine": "-786.51",
-        "signalLine": "-1426.99",
-        "histogram": "640.48",
+        "macdLine": "-797.51",
+        "signalLine": "-1429.19",
+        "histogram": "631.68",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001319",
       "ivRv": {
-        "iv": "33.58",
+        "iv": "33.14",
         "rv": "33.00",
-        "spread": "+0.58",
+        "spread": "+0.14",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62924.00",
-      "openInterestUsd": "6259045832.77410000",
-      "longAccountRatio": "0.6069",
-      "shortAccountRatio": "0.3931",
-      "downsideLiquidationUsd": "3798614915.91",
-      "upsideLiquidationUsd": "2460430916.86",
+      "currentPrice": "62790.60",
+      "openInterestUsd": "6241596606.01836900",
+      "longAccountRatio": "0.6033",
+      "shortAccountRatio": "0.3967",
+      "downsideLiquidationUsd": "3765555232.41",
+      "upsideLiquidationUsd": "2476041373.61",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56631.60",
+          "price": "56511.54",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1519445966.36"
+          "notionalUsd": "1506222092.96"
         },
         {
-          "price": "69216.40",
+          "price": "69069.66",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "984172366.75"
+          "notionalUsd": "990416549.44"
         },
         {
-          "price": "60407.04",
+          "price": "60278.98",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1329515220.57"
+          "notionalUsd": "1317944331.34"
         },
         {
-          "price": "65440.96",
+          "price": "65302.22",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "861150820.90"
+          "notionalUsd": "866614480.76"
         },
         {
-          "price": "61665.52",
+          "price": "61534.79",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "759722983.18"
+          "notionalUsd": "753111046.48"
         },
         {
-          "price": "64182.48",
+          "price": "64046.41",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "492086183.37"
+          "notionalUsd": "495208274.72"
         },
         {
-          "price": "62294.76",
+          "price": "62162.69",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "189930745.80"
+          "notionalUsd": "188277761.62"
         },
         {
-          "price": "63553.24",
+          "price": "63418.51",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "123021545.84"
+          "notionalUsd": "123802068.68"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-09T08:30:02.491828Z",
+      "generatedAt": "2026-07-09T09:00:02.400648Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,23 +4392,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 심리 지표가 공포 상태에 있으며, 온체인 지표는 안정세를 보이고 있다."
+          "content": "현재 시장은 매집 우세로 보이며, 공포심리가 강하게 작용하고 있다."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 공포에 가까워 추가 하락 가능성이 존재한다."
+          "content": "공포탐욕 지수가 22로 심각한 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스 상태로 매도 압력이 우려된다."
+          "content": "RSI(주)가 34.83으로 과매도 구간에 진입하고 있다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 손절매 설정을 권장한다."
+          "content": "매집 우세를 고려하여 소량의 매수를 검토하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 지속적으로 모니터링하며 변동성에 대비해야 한다."
+          "content": "시장 심리를 주의 깊게 모니터링하라."
         }
       ],
       "errorMessage": null
@@ -4447,8 +4447,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-09T08:05:02.322763Z",
-      "compositeScore": "-0.094",
+      "generatedAt": "2026-07-09T09:05:02.260647Z",
+      "compositeScore": "-0.044",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,18 +4456,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
-          "title": "Live markets: Bitcoin ETFs slip back to outflows while ether funds extend their streak",
+          "title": "Bitcoin's dwindling exchange reserves don't pack the same bullish punch anymore",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/09/bitcoin-s-dwindling-exchange-reserves-don-t-pack-the-same-bullish-punch-anymore",
+          "publishedAt": "2026-07-09T08:43:01Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Live markets: Second day of U.S, Iran conflict keeps markets volatile as oil drops",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/09/live-markets-bitcoin-etfs-slip-back-to-outflows-while-ether-funds-extend-their-streak",
           "publishedAt": "2026-07-09T06:51:10Z",
-          "score": "-0.5"
+          "score": "-0.3"
         },
         {
           "title": "Bank of Japan may speed up rate hikes, pushing borrowing costs above 2%, ex-BOJ official warns",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/09/bank-of-japan-may-speed-up-rate-hikes-pushing-borrowing-costs-above-2-ex-boj-official-warns",
           "publishedAt": "2026-07-09T06:42:09Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
           "title": "'CASHCAT' trader turns $800 into over $1 million on Robinhood's brand new blockchain",
@@ -4488,7 +4495,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/09/bitcoin-ether-steady-gold-slides-as-us-iran-tensions-escalate-again",
           "publishedAt": "2026-07-09T04:57:35Z",
-          "score": "-0.4"
+          "score": "-0.2"
         },
         {
           "title": "Polymarket bets on U.S. marketing blitz to win back trust after 4-year ban: Report",
@@ -4502,13 +4509,27 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/07/08/crypto-long-and-short-with-mstr-concerns-assuaged-look-to-traditional-signals-around-btc",
           "publishedAt": "2026-07-08T15:18:10Z",
+          "score": "0.0"
+        },
+        {
+          "title": "SWIFT launches blockchain ledger with 17-bank tokenized deposit pilot",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/swift-launches-blockchain-announces-tokenized-deposit-pilot-with-17-banks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-09T08:51:48Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Regulators invited Binance to seek new licenses after MiCA setback, co-CEO says",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/regulators-invite-binance-seek-new-license-mica-setback-teng?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-09T08:26:30Z",
           "score": "0.3"
         },
         {
-          "title": "Crypto VC Paradigm launches $1.2 billion AI fund as it broadens beyond digital assets",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/08/crypto-vc-paradigm-launches-usd1-2-billion-ai-fund-as-it-broadens-beyond-digital-assets-bbg",
-          "publishedAt": "2026-07-08T15:11:45Z",
+          "title": "Russia's largest private bank Alfa-Bank tests crypto trading",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/russia-largest-private-bank-alfa-bank-crypto-services?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-09T08:22:36Z",
           "score": "0.4"
         },
         {
@@ -4537,35 +4558,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ai-is-shortening-the-shelf-life-of-crypto-security-audits-researchers-warn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-09T05:47:09Z",
-          "score": "-0.5"
+          "score": "-0.3"
         },
         {
           "title": "AI boom fuels inflation fears, complicating Fed’s next rate move",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ai-boom-fuels-inflation-fears-complicating-feds-next-move?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-09T04:12:10Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "Crypto VC Paradigm raises $1.2B to push into AI",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-vc-paradigm-raises-12b-to-push-into-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-09T02:33:00Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Mark Cuban-backed DeFi dashboard Zapper shutters after 7 years",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/defi-dashboard-zapper-to-shut-down-after-seven-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-09T02:32:20Z",
-          "score": "-0.8"
-        },
-        {
-          "title": "Crypto could benefit if Fed steps in to backstop US stock market: Analysts",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-could-benefit-if-fed-steps-in-to-backstop-us-stock-market-analysts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-09T01:32:12Z",
-          "score": "0.6"
+          "score": "-0.5"
         }
       ],
       "errorMessage": null
