@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-10T16:12:55Z",
+  "updatedAt": "2026-07-10T16:33:01Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "62205.95",
       "macd": {
-        "macdLine": "-602.95",
-        "signalLine": "-1280.48",
-        "histogram": "677.53",
+        "macdLine": "-605.50",
+        "signalLine": "-1280.99",
+        "histogram": "675.49",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001319",
       "ivRv": {
-        "iv": "33.99",
+        "iv": "23.47",
         "rv": "33.00",
-        "spread": "+0.99",
-        "label": "균형"
+        "spread": "-9.54",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 22,
@@ -2859,9 +2859,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257426746668.21861",
+      "totalMarketCapUsd": "257362433019.57012",
       "marketCap30dAgoUsd": "261730450352.49595",
-      "growth30dPercent": "-1.64",
+      "growth30dPercent": "-1.67",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64009.80",
-      "openInterestUsd": "6623473036.30260000",
-      "longAccountRatio": "0.5536",
-      "shortAccountRatio": "0.4464",
-      "downsideLiquidationUsd": "3666754672.90",
-      "upsideLiquidationUsd": "2956718363.41",
+      "currentPrice": "63982.10",
+      "openInterestUsd": "6629609810.28456500",
+      "longAccountRatio": "0.5527",
+      "shortAccountRatio": "0.4473",
+      "downsideLiquidationUsd": "3664185342.14",
+      "upsideLiquidationUsd": "2965424468.14",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57608.82",
+          "price": "57583.89",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1466701869.16"
+          "notionalUsd": "1465674136.86"
         },
         {
-          "price": "70410.78",
+          "price": "70380.31",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1182687345.36"
+          "notionalUsd": "1186169787.26"
         },
         {
-          "price": "61449.41",
+          "price": "61422.82",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1283364135.51"
+          "notionalUsd": "1282464869.75"
         },
         {
-          "price": "66570.19",
+          "price": "66541.38",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1034851427.19"
+          "notionalUsd": "1037898563.85"
         },
         {
-          "price": "62729.60",
+          "price": "62702.46",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "733350934.58"
+          "notionalUsd": "732837068.43"
         },
         {
-          "price": "65290.00",
+          "price": "65261.74",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "591343672.68"
+          "notionalUsd": "593084893.63"
         },
         {
-          "price": "63369.70",
+          "price": "63342.28",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "183337733.64"
+          "notionalUsd": "183209267.11"
         },
         {
-          "price": "64649.90",
+          "price": "64621.92",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "147835918.17"
+          "notionalUsd": "148271223.41"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-10T16:00:03.226781Z",
+      "generatedAt": "2026-07-10T16:30:03.530606Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,30 +4392,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이나, 공포 심리가 지배적이다."
+          "content": "현재 시장은 매집 우세로 보이며, 공포 심리가 강하게 작용하고 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수로 인해 시장 심리가 부정적이다."
+          "content": "낮은 공포탐욕 지수(22)는 시장의 불안감을 나타낸다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스여서 매도 압력이 우려된다."
+          "content": "BTC 도미넌스가 56으로 높아 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 고려하되, 시장 심리를 주의 깊게 살펴라."
+          "content": "매수 기회를 고려하되, 시장 심리를 주의 깊게 살펴야 한다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산하라."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 바람직하다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-10T15:52:52.628423Z",
+      "generatedAt": "2026-07-10T16:33:01.488693Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,7 +4424,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "Market sentiment shows accumulation dominance but remains cautious with fear indicators."
+          "content": "The market shows a moderate accumulation phase with signs of fear and low sentiment."
         },
         {
           "type": "RISK",
@@ -4432,15 +4432,15 @@
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance may limit altcoin growth opportunities."
+          "content": "High BTC dominance may limit altcoin performance."
         },
         {
           "type": "ACTION",
-          "content": "Consider accumulating BTC during price dips."
+          "content": "Consider accumulating BTC during this accumulation phase."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment for shifts towards greed."
+          "content": "Monitor sentiment indicators for potential shifts in market psychology."
         }
       ],
       "errorMessage": null
