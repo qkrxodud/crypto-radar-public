@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-10T13:32:22Z",
+  "updatedAt": "2026-07-10T13:52:28Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,16 +61,16 @@
       "historicalVolatility": "0.33",
       "btcClose": "62205.95",
       "macd": {
-        "macdLine": "-585.83",
-        "signalLine": "-1277.06",
-        "histogram": "691.22",
+        "macdLine": "-552.21",
+        "signalLine": "-1270.33",
+        "histogram": "718.13",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "34.0",
-        "plusDi": "16.0",
+        "plusDi": "16.3",
         "minusDi": "21.8",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001319",
       "ivRv": {
-        "iv": "33.70",
+        "iv": "26.37",
         "rv": "33.00",
-        "spread": "+0.70",
-        "label": "균형"
+        "spread": "-6.64",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 22,
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64224.20",
-      "openInterestUsd": "6650859584.10587300",
-      "longAccountRatio": "0.5470",
-      "shortAccountRatio": "0.4530",
-      "downsideLiquidationUsd": "3638020192.51",
-      "upsideLiquidationUsd": "3012839391.60",
+      "currentPrice": "64649.50",
+      "openInterestUsd": "6698372621.98533500",
+      "longAccountRatio": "0.5483",
+      "shortAccountRatio": "0.4517",
+      "downsideLiquidationUsd": "3672717708.63",
+      "upsideLiquidationUsd": "3025654913.35",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57801.78",
+          "price": "58184.55",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1455208077.00"
+          "notionalUsd": "1469087083.45"
         },
         {
-          "price": "70646.62",
+          "price": "71114.45",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1205135756.64"
+          "notionalUsd": "1210261965.34"
         },
         {
-          "price": "61655.23",
+          "price": "62063.52",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1273307067.38"
+          "notionalUsd": "1285451198.02"
         },
         {
-          "price": "66793.17",
+          "price": "67235.48",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1054493787.06"
+          "notionalUsd": "1058979219.67"
         },
         {
-          "price": "62939.72",
+          "price": "63356.51",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "727604038.50"
+          "notionalUsd": "734543541.73"
         },
         {
-          "price": "65508.68",
+          "price": "65942.49",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "602567878.32"
+          "notionalUsd": "605130982.67"
         },
         {
-          "price": "63581.96",
+          "price": "64003.01",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "181901009.63"
+          "notionalUsd": "183635885.43"
         },
         {
-          "price": "64866.44",
+          "price": "65296.00",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "150641969.58"
+          "notionalUsd": "151282745.67"
         }
       ],
       "errorMessage": null
@@ -4415,7 +4415,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-10T13:12:18.443805Z",
+      "generatedAt": "2026-07-10T13:52:28.965943Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,23 +4424,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a moderate accumulation phase with signs of fear and low trading volume."
+          "content": "The market shows a slight bullish sentiment with accumulation dominance, but caution is advised due to low fear-greed index."
         },
         {
           "type": "RISK",
-          "content": "Fear and Greed index at 22 indicates extreme fear, potentially leading to panic selling."
+          "content": "Low RSI values indicate potential bearish momentum."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest bearish momentum may continue in the short term."
+          "content": "High BTC dominance suggests altcoin weakness."
         },
         {
           "type": "ACTION",
-          "content": "Consider accumulating BTC gradually during this accumulation phase."
+          "content": "Consider accumulating BTC on dips."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment closely for potential shifts towards greed."
+          "content": "Monitor market sentiment closely for shifts."
         }
       ],
       "errorMessage": null
