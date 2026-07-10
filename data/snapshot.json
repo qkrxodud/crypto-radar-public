@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-10T13:52:28Z",
+  "updatedAt": "2026-07-10T14:12:31Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "62205.95",
       "macd": {
-        "macdLine": "-552.21",
-        "signalLine": "-1270.33",
-        "histogram": "718.13",
+        "macdLine": "-582.58",
+        "signalLine": "-1276.41",
+        "histogram": "693.83",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001319",
       "ivRv": {
-        "iv": "26.37",
+        "iv": "33.58",
         "rv": "33.00",
-        "spread": "-6.64",
-        "label": "저평가"
+        "spread": "+0.58",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 22,
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64649.50",
-      "openInterestUsd": "6698372621.98533500",
-      "longAccountRatio": "0.5483",
-      "shortAccountRatio": "0.4517",
-      "downsideLiquidationUsd": "3672717708.63",
-      "upsideLiquidationUsd": "3025654913.35",
+      "currentPrice": "64260.10",
+      "openInterestUsd": "6690693537.59040000",
+      "longAccountRatio": "0.5467",
+      "shortAccountRatio": "0.4533",
+      "downsideLiquidationUsd": "3657802157.00",
+      "upsideLiquidationUsd": "3032891380.59",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58184.55",
+          "price": "57834.09",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1469087083.45"
+          "notionalUsd": "1463120862.80"
         },
         {
-          "price": "71114.45",
+          "price": "70686.11",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1210261965.34"
+          "notionalUsd": "1213156552.24"
         },
         {
-          "price": "62063.52",
+          "price": "61689.70",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1285451198.02"
+          "notionalUsd": "1280230754.95"
         },
         {
-          "price": "67235.48",
+          "price": "66830.50",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1058979219.67"
+          "notionalUsd": "1061511983.21"
         },
         {
-          "price": "63356.51",
+          "price": "62974.90",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "734543541.73"
+          "notionalUsd": "731560431.40"
         },
         {
-          "price": "65942.49",
+          "price": "65545.30",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "605130982.67"
+          "notionalUsd": "606578276.12"
         },
         {
-          "price": "64003.01",
+          "price": "63617.50",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "183635885.43"
+          "notionalUsd": "182890107.85"
         },
         {
-          "price": "65296.00",
+          "price": "64902.70",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "151282745.67"
+          "notionalUsd": "151644569.03"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-10T13:30:07.411311Z",
+      "generatedAt": "2026-07-10T14:00:02.690885Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,23 +4392,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세 상황이나 공포 심리가 지배적이다."
+          "content": "현재 매집 우세가 나타나지만 심리 지표는 공포 상태로, 시장의 불확실성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(22)는 시장 심리의 불안정을 나타낸다."
+          "content": "공포탐욕 지표가 22로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스(56)가 높아 알트코인에 대한 투자 심리가 약하다."
+          "content": "RSI(주)가 34.83으로 과매도 구간에 진입하고 있다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 염두에 두되, 시장 심리를 주의 깊게 관찰하라."
+          "content": "매수 기회를 고려하되, 시장 심리를 주의 깊게 살펴야 한다."
         },
         {
           "type": "ACTION",
-          "content": "분산 투자로 리스크를 줄이는 전략을 고려하라."
+          "content": "포지션을 분산하여 리스크를 관리하는 것이 바람직하다."
         }
       ],
       "errorMessage": null
@@ -4447,11 +4447,11 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-10T13:05:05.390701Z",
-      "compositeScore": "0.294",
-      "label": "POSITIVE",
-      "labelDisplay": "긍정",
-      "labelHexColor": "#10B981",
+      "generatedAt": "2026-07-10T14:05:03.338603Z",
+      "compositeScore": "0.188",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
@@ -4467,7 +4467,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion",
           "publishedAt": "2026-07-10T11:41:47Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "Japan's 'invest locally' plan likely to spur demand for assets like bitcoin, gold",
@@ -4495,7 +4495,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/10/bitcoin-s-usd60k-to-usd70k-range-becomes-third-longest-consolidation-in-history",
           "publishedAt": "2026-07-10T09:16:52Z",
-          "score": "0.6"
+          "score": "0.2"
         },
         {
           "title": "Metaplanet explores bringing bitcoin-backed digital credit to Japan",
@@ -4512,6 +4512,27 @@
           "score": "0.5"
         },
         {
+          "title": "MiCA licensing only the beginning as crypto custodians face scrutiny",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/mica-only-beginning-crypto-custodians-scrutiny?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-10T13:54:50Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-10T13:46:13Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Will the crypto lobby's $189M campaign get CLARITY over the line?",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/features/how-crypto-built-political-influence-in-washington?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-10T13:30:00Z",
+          "score": "0.2"
+        },
+        {
           "title": "US charges prisoner over alleged laundering of seized Kraken crypto",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-prisoner-290k-crypto-restrained-kraken-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -4523,21 +4544,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/wall-street-prediction-market-trading-insider-fears?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T11:51:02Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "USDC issuer Circle wins final approval for US national trust bank charter",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/circle-final-occ-approval-national-trust-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T11:37:25Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "Japanese lender launches Bitcoin-backed loans of up to $6.2M",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/japan-cryl-bitcoin-backed-loans-6-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T11:24:06Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "TeraWulf eyes $3.5B debt raise for Anthropic-linked data center: Report",
@@ -4545,27 +4566,6 @@
           "url": "https://cointelegraph.com/news/terawulf-3-5-billion-debt-raise-anthropic-data-center?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T10:14:51Z",
           "score": "0.0"
-        },
-        {
-          "title": "Metaplanet explores Bitcoin-backed digital credit with JPYC in Japan",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/metaplanet-studies-bitcoin-digital-bonds-japan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-10T09:58:10Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Bitcoin returns to $64.3K with new 3-week BTC price highs imminent",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-returns-to-64k-with-three-week-btc-price-highs-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-10T09:32:23Z",
-          "score": "0.8"
-        },
-        {
-          "title": "EU parliament passes ‘chat control,’ allowing private chat scans until 2028",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/eu-parliament-passes-chat-control-allowing-private-chat-scans-to-2028?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-10T06:05:38Z",
-          "score": "-0.5"
         }
       ],
       "errorMessage": null
