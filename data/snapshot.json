@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-10T15:52:52Z",
+  "updatedAt": "2026-07-10T16:12:55Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "62205.95",
       "macd": {
-        "macdLine": "-605.02",
-        "signalLine": "-1280.90",
-        "histogram": "675.87",
+        "macdLine": "-602.95",
+        "signalLine": "-1280.48",
+        "histogram": "677.53",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001319",
       "ivRv": {
-        "iv": "23.85",
+        "iv": "33.99",
         "rv": "33.00",
-        "spread": "-9.16",
-        "label": "저평가"
+        "spread": "+0.99",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 22,
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63981.90",
-      "openInterestUsd": "6629086574.41980700",
-      "longAccountRatio": "0.5514",
-      "shortAccountRatio": "0.4486",
-      "downsideLiquidationUsd": "3655278337.14",
-      "upsideLiquidationUsd": "2973808237.28",
+      "currentPrice": "64009.80",
+      "openInterestUsd": "6623473036.30260000",
+      "longAccountRatio": "0.5536",
+      "shortAccountRatio": "0.4464",
+      "downsideLiquidationUsd": "3666754672.90",
+      "upsideLiquidationUsd": "2956718363.41",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57583.71",
+          "price": "57608.82",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1462111334.85"
+          "notionalUsd": "1466701869.16"
         },
         {
-          "price": "70380.09",
+          "price": "70410.78",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1189523294.91"
+          "notionalUsd": "1182687345.36"
         },
         {
-          "price": "61422.62",
+          "price": "61449.41",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1279347418.00"
+          "notionalUsd": "1283364135.51"
         },
         {
-          "price": "66541.18",
+          "price": "66570.19",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1040832883.05"
+          "notionalUsd": "1034851427.19"
         },
         {
-          "price": "62702.26",
+          "price": "62729.60",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "731055667.43"
+          "notionalUsd": "733350934.58"
         },
         {
-          "price": "65261.54",
+          "price": "65290.00",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "594761647.46"
+          "notionalUsd": "591343672.68"
         },
         {
-          "price": "63342.08",
+          "price": "63369.70",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "182763916.86"
+          "notionalUsd": "183337733.64"
         },
         {
-          "price": "64621.72",
+          "price": "64649.90",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "148690411.86"
+          "notionalUsd": "147835918.17"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-10T15:30:03.790864Z",
+      "generatedAt": "2026-07-10T16:00:03.226781Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,23 +4392,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로, 공포탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
+          "content": "현재 매집 우세로 보이나, 공포 심리가 지배적이다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수로 인해 추가 하락 가능성이 존재한다."
+          "content": "낮은 공포탐욕 지수로 인해 시장 심리가 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약하다."
+          "content": "거래소 순유입이 마이너스여서 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 리스크 관리에 유의해야 한다."
+          "content": "매수 기회를 고려하되, 시장 심리를 주의 깊게 살펴라."
         },
         {
           "type": "ACTION",
-          "content": "시장 변동성을 고려하여 분할 매수를 추천한다."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하라."
         }
       ],
       "errorMessage": null
@@ -4447,20 +4447,34 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-10T15:05:02.804063Z",
-      "compositeScore": "0.250",
-      "label": "POSITIVE",
-      "labelDisplay": "긍정",
-      "labelHexColor": "#10B981",
+      "generatedAt": "2026-07-10T16:05:00.594449Z",
+      "compositeScore": "0.131",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "U.S. government digital dollar set to be banned tonight under housing law's CBDC limit",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit",
+          "publishedAt": "2026-07-10T16:02:21Z",
+          "score": "-0.8"
+        },
+        {
+          "title": "Hyundai becomes first major South Korean company to introduce internal stablecoin transfers",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/10/hyundai-becomes-first-major-south-korean-company-to-introduce-internal-stablecoin-transfers",
+          "publishedAt": "2026-07-10T15:26:43Z",
+          "score": "0.5"
+        },
         {
           "title": "OKX, MetaMask, Matter Labs back dispute resolution court for AI agents",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/10/okx-metamask-matter-labs-back-dispute-resolution-court-for-ai-agents",
           "publishedAt": "2026-07-10T12:29:08Z",
-          "score": "0.0"
+          "score": "0.2"
         },
         {
           "title": "Circle soars after securing U.S. trust bank approval in crypto expansion",
@@ -4474,21 +4488,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/07/10/japan-s-invest-locally-plan-likely-to-spur-demand-for-assets-like-bitcoin-gold",
           "publishedAt": "2026-07-10T11:37:31Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Crypto defies equity weakness as altcoin optimism builds into the weekend",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/10/crypto-defies-equity-weakness-as-altcoin-optimism-builds-into-the-weekend",
           "publishedAt": "2026-07-10T10:37:44Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Polymarket seeks approval to bring margin trading to U.S. customers",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/10/polymarket-seeks-approval-to-bring-margin-trading-to-u-s-customers",
           "publishedAt": "2026-07-10T09:35:21Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
           "title": "Bitcoin's $60,000-$70,000 range becomes third most traded range in history",
@@ -4498,18 +4512,11 @@
           "score": "0.6"
         },
         {
-          "title": "Metaplanet explores bringing bitcoin-backed digital credit to Japan",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/10/metaplanet-explores-bringing-bitcoin-backed-digital-credit-to-japan",
-          "publishedAt": "2026-07-10T09:08:20Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Bitcoin gets a green light from a reliable momentum gauge. Here are key levels to watch",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/10/bitcoin-gets-a-green-light-from-a-reliable-momentum-gauge-here-are-key-levels-to-watch",
-          "publishedAt": "2026-07-10T06:49:13Z",
-          "score": "0.5"
+          "title": "Crypto Biz: How stablecoins found their niche",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-biz-how-stablecoins-found-their-niche?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-10T15:37:37Z",
+          "score": "0.3"
         },
         {
           "title": "Bitcoin whales sent BTC price to $64K as Coinbase Premium broke key level: CryptoQuant",
@@ -4523,14 +4530,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/federal-reserve-a16z-co-founder-monetary-policy-task-force?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T14:12:53Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "MiCA licensing only the beginning as crypto custodians face scrutiny",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/mica-only-beginning-crypto-custodians-scrutiny?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T13:54:50Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4544,7 +4551,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/features/how-crypto-built-political-influence-in-washington?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T13:30:00Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "US charges prisoner over alleged laundering of seized Kraken crypto",
@@ -4558,14 +4565,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/wall-street-prediction-market-trading-insider-fears?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T11:51:02Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "USDC issuer Circle wins final approval for US national trust bank charter",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/circle-final-occ-approval-national-trust-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-10T11:37:25Z",
-          "score": "0.7"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
