@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-10T18:13:35Z",
+  "updatedAt": "2026-07-10T18:33:44Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "62205.95",
       "macd": {
-        "macdLine": "-615.07",
-        "signalLine": "-1282.90",
-        "histogram": "667.84",
+        "macdLine": "-612.44",
+        "signalLine": "-1282.38",
+        "histogram": "669.94",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001319",
       "ivRv": {
-        "iv": "23.26",
+        "iv": "23.15",
         "rv": "33.00",
-        "spread": "-9.74",
+        "spread": "-9.86",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2859,9 +2859,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257343783977.24245",
+      "totalMarketCapUsd": "257425950138.18765",
       "marketCap30dAgoUsd": "261730450352.49595",
-      "growth30dPercent": "-1.68",
+      "growth30dPercent": "-1.64",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2869,11 +2869,11 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5955775.000",
-      "change4wUsdM": "143682.000",
-      "change4wPercent": "2.47",
+      "netLiquidityUsdM": "5961002.000",
+      "change4wUsdM": "148719.000",
+      "change4wPercent": "2.56",
       "fedAssetsUsdM": "6735609",
-      "reverseRepoUsdM": "5772.000",
+      "reverseRepoUsdM": "545.000",
       "treasuryAccountUsdM": "774062",
       "rrpIncluded": true,
       "signal": "EXPANDING",
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63863.10",
-      "openInterestUsd": "6621493193.56436100",
-      "longAccountRatio": "0.5563",
-      "shortAccountRatio": "0.4437",
-      "downsideLiquidationUsd": "3683536663.58",
-      "upsideLiquidationUsd": "2937956529.98",
+      "currentPrice": "63898.10",
+      "openInterestUsd": "6618389286.76682900",
+      "longAccountRatio": "0.5566",
+      "shortAccountRatio": "0.4434",
+      "downsideLiquidationUsd": "3683795477.01",
+      "upsideLiquidationUsd": "2934593809.75",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57476.79",
+          "price": "57508.29",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1473414665.43"
+          "notionalUsd": "1473518190.81"
         },
         {
-          "price": "70249.41",
+          "price": "70287.91",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1175182611.99"
+          "notionalUsd": "1173837523.90"
         },
         {
-          "price": "61308.58",
+          "price": "61342.18",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1289237832.25"
+          "notionalUsd": "1289328416.96"
         },
         {
-          "price": "66417.62",
+          "price": "66454.02",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1028284785.49"
+          "notionalUsd": "1027107833.41"
         },
         {
-          "price": "62585.84",
+          "price": "62620.14",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "736707332.72"
+          "notionalUsd": "736759095.40"
         },
         {
-          "price": "65140.36",
+          "price": "65176.06",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "587591306.00"
+          "notionalUsd": "586918761.95"
         },
         {
-          "price": "63224.47",
+          "price": "63259.12",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "184176833.18"
+          "notionalUsd": "184189773.85"
         },
         {
-          "price": "64501.73",
+          "price": "64537.08",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "146897826.50"
+          "notionalUsd": "146729690.49"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-10T17:53:28.296297Z",
+      "generatedAt": "2026-07-10T18:33:43.233612Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,30 +4392,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이나, 심리적 공포가 여전히 존재함."
+          "content": "현재 매집 우세로 보이나, 공포심리가 강해 추가 상승이 제한적일 수 있음."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 공포 상태로, 추가 하락 가능성이 있음."
+          "content": "공포탐욕 지수가 22로 극단적 공포 상태를 나타냄."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스여서 매도 압력이 우려됨."
+          "content": "RSI(주)가 34.83으로 과매도 구간에 진입."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 포착하되, 리스크 관리에 유의해야 함."
+          "content": "단기 매수 관점에서 접근하되, 손절매 설정 필수."
         },
         {
           "type": "ACTION",
-          "content": "단기 변동성에 대비한 포트폴리오 조정 필요."
+          "content": "시장 심리 변화에 따라 포지션 조정 고려."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-10T17:53:30.206763Z",
+      "generatedAt": "2026-07-10T18:33:44.870398Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,23 +4424,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a slight bullish sentiment with accumulation favored, but indicators suggest caution."
+          "content": "Market sentiment shows accumulation dominance with moderate risk indicators."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 22 indicates extreme fear in the market."
+          "content": "Low fear sentiment at 22 may indicate potential for further declines."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values across daily and weekly suggest potential downward pressure."
+          "content": "RSI levels suggest bearish momentum, particularly in weekly and daily metrics."
         },
         {
           "type": "ACTION",
-          "content": "Consider gradual accumulation of assets in this favorable accumulation phase."
+          "content": "Consider cautious accumulation in the current market phase."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment closely for shifts that may indicate increased volatility."
+          "content": "Monitor key indicators closely for signs of trend reversal."
         }
       ],
       "errorMessage": null
