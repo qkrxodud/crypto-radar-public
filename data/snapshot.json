@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-10T16:53:06Z",
+  "updatedAt": "2026-07-10T17:13:17Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "62205.95",
       "macd": {
-        "macdLine": "-597.87",
-        "signalLine": "-1279.47",
-        "histogram": "681.59",
+        "macdLine": "-606.13",
+        "signalLine": "-1281.12",
+        "histogram": "674.99",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001319",
       "ivRv": {
-        "iv": "34.05",
+        "iv": "23.33",
         "rv": "33.00",
-        "spread": "+1.05",
-        "label": "균형"
+        "spread": "-9.68",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 22,
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64090.10",
-      "openInterestUsd": "6619622987.37780000",
-      "longAccountRatio": "0.5534",
-      "shortAccountRatio": "0.4466",
-      "downsideLiquidationUsd": "3663299361.21",
-      "upsideLiquidationUsd": "2956323626.16",
+      "currentPrice": "63977.10",
+      "openInterestUsd": "6629240569.25480400",
+      "longAccountRatio": "0.5546",
+      "shortAccountRatio": "0.4454",
+      "downsideLiquidationUsd": "3676576819.71",
+      "upsideLiquidationUsd": "2952663749.55",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57681.09",
+          "price": "57579.39",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1465319744.49"
+          "notionalUsd": "1470630727.88"
         },
         {
-          "price": "70499.11",
+          "price": "70374.81",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1182529450.47"
+          "notionalUsd": "1181065499.82"
         },
         {
-          "price": "61526.50",
+          "price": "61418.02",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1282154776.43"
+          "notionalUsd": "1286801886.90"
         },
         {
-          "price": "66653.70",
+          "price": "66536.18",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1034713269.16"
+          "notionalUsd": "1033432312.34"
         },
         {
-          "price": "62808.30",
+          "price": "62697.56",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "732659872.24"
+          "notionalUsd": "735315363.94"
         },
         {
-          "price": "65371.90",
+          "price": "65256.64",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "591264725.23"
+          "notionalUsd": "590532749.91"
         },
         {
-          "price": "63449.20",
+          "price": "63337.33",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "183164968.06"
+          "notionalUsd": "183828840.99"
         },
         {
-          "price": "64731.00",
+          "price": "64616.87",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "147816181.31"
+          "notionalUsd": "147633187.48"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-10T16:30:03.530606Z",
+      "generatedAt": "2026-07-10T17:13:13.730585Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,30 +4392,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로 보이며, 공포 심리가 강하게 작용하고 있다."
+          "content": "현재 시장은 매집 우세로 보이며, 공포탐욕 지수는 낮아 투자 심리가 위축된 상태이다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(22)는 시장의 불안감을 나타낸다."
+          "content": "공포탐욕 지수가 22로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 높아 알트코인에 대한 투자 심리가 약하다."
+          "content": "RSI(주)가 34.83으로 과매도 구간에 진입해 있다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 고려하되, 시장 심리를 주의 깊게 살펴야 한다."
+          "content": "단기 매수 전략을 고려하되, 시장 심리를 주의 깊게 살펴야 한다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 바람직하다."
+          "content": "손절매 설정을 통해 리스크 관리를 강화할 필요가 있다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-10T16:33:01.488693Z",
+      "generatedAt": "2026-07-10T17:13:15.161996Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,31 +4424,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a moderate accumulation phase with signs of fear and low sentiment."
+          "content": "The market shows a slight bullish sentiment with accumulation favored, but indicators suggest caution."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values indicate potential bearish momentum."
+          "content": "Fear and greed index at 22 indicates extreme fear."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance may limit altcoin performance."
+          "content": "RSI values below 50 suggest potential bearish momentum."
         },
         {
           "type": "ACTION",
-          "content": "Consider accumulating BTC during this accumulation phase."
+          "content": "Consider cautious accumulation of assets."
         },
         {
           "type": "ACTION",
-          "content": "Monitor sentiment indicators for potential shifts in market psychology."
+          "content": "Monitor market sentiment closely for shifts."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-10T16:05:00.594449Z",
-      "compositeScore": "0.131",
+      "generatedAt": "2026-07-10T17:13:17.724570Z",
+      "compositeScore": "0.144",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4481,7 +4481,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion",
           "publishedAt": "2026-07-10T11:41:47Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "Japan's 'invest locally' plan likely to spur demand for assets like bitcoin, gold",
@@ -4509,21 +4509,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/10/bitcoin-s-usd60k-to-usd70k-range-becomes-third-longest-consolidation-in-history",
           "publishedAt": "2026-07-10T09:16:52Z",
-          "score": "0.6"
+          "score": "0.4"
+        },
+        {
+          "title": "Backpack joins race for 24/7 stock markets with tokenized equities",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/backpack-launches-247-trading-for-tokenized-us-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-10T16:36:36Z",
+          "score": "0.3"
         },
         {
           "title": "Crypto Biz: How stablecoins found their niche",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-biz-how-stablecoins-found-their-niche?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T15:37:37Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin whales sent BTC price to $64K as Coinbase Premium broke key level: CryptoQuant",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-whales-sent-btc-price-to-64k-as-coinbase-premium-broke-key-level-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T14:59:30Z",
-          "score": "0.8"
+          "score": "0.7"
         },
         {
           "title": "A16z’s Andreessen lands Federal Reserve role as AI reshapes policy debate",
@@ -4551,7 +4558,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/features/how-crypto-built-political-influence-in-washington?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T13:30:00Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "US charges prisoner over alleged laundering of seized Kraken crypto",
@@ -4559,13 +4566,6 @@
           "url": "https://cointelegraph.com/news/us-prisoner-290k-crypto-restrained-kraken-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-10T12:27:40Z",
           "score": "-0.5"
-        },
-        {
-          "title": "Wall Street banks tighten prediction market rules for staff as insider fears spread",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/wall-street-prediction-market-trading-insider-fears?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-10T11:51:02Z",
-          "score": "-0.3"
         }
       ],
       "errorMessage": null
