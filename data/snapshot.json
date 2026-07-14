@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-14T15:21:04Z",
+  "updatedAt": "2026-07-14T15:41:09Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.27",
       "btcClose": "62314.00",
       "macd": {
-        "macdLine": "-279.86",
-        "signalLine": "-772.57",
-        "histogram": "492.71",
+        "macdLine": "-246.67",
+        "signalLine": "-765.93",
+        "histogram": "519.26",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "31.1",
-        "plusDi": "13.1",
-        "minusDi": "24.5",
+        "adx": "30.6",
+        "plusDi": "14.7",
+        "minusDi": "24.1",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001548",
       "ivRv": {
-        "iv": "31.51",
+        "iv": "37.58",
         "rv": "27.00",
-        "spread": "+4.51",
-        "label": "균형"
+        "spread": "+10.58",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 22,
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64315.00",
-      "openInterestUsd": "6718547847.25370000",
-      "longAccountRatio": "0.5764",
-      "shortAccountRatio": "0.4236",
-      "downsideLiquidationUsd": "3872570979.16",
-      "upsideLiquidationUsd": "2845976868.10",
+      "currentPrice": "64726.00",
+      "openInterestUsd": "6794241889.78160000",
+      "longAccountRatio": "0.5760",
+      "shortAccountRatio": "0.4240",
+      "downsideLiquidationUsd": "3913483328.51",
+      "upsideLiquidationUsd": "2880758561.27",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57883.50",
+          "price": "58253.40",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1549028391.66"
+          "notionalUsd": "1565393331.41"
         },
         {
-          "price": "70746.50",
+          "price": "71198.60",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1138390747.24"
+          "notionalUsd": "1152303424.51"
         },
         {
-          "price": "61742.40",
+          "price": "62136.96",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1355399842.70"
+          "notionalUsd": "1369719164.98"
         },
         {
-          "price": "66887.60",
+          "price": "67315.04",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "996091903.83"
+          "notionalUsd": "1008265496.44"
         },
         {
-          "price": "63028.70",
+          "price": "63431.48",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "774514195.83"
+          "notionalUsd": "782696665.70"
         },
         {
-          "price": "65601.30",
+          "price": "66020.52",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "569195373.62"
+          "notionalUsd": "576151712.25"
         },
         {
-          "price": "63671.85",
+          "price": "64078.74",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "193628548.96"
+          "notionalUsd": "195674166.43"
         },
         {
-          "price": "64958.15",
+          "price": "65373.26",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "142298843.40"
+          "notionalUsd": "144037928.06"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-14T15:00:04.238027Z",
+      "generatedAt": "2026-07-14T15:30:04.454836Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,15 +4388,15 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮고 온체인 지표가 혼조세를 보이고 있다."
+          "content": "현재 시장은 중립적인 상태로, 약간의 공포가 감지되지만 가격 상승 여력도 존재한다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(22)는 시장의 불안감을 나타낸다."
+          "content": "공포탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 증가(178.12)는 매도 압력을 시사한다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 매력이 감소하고 있다."
         },
         {
           "type": "ACTION",
@@ -4404,14 +4404,14 @@
         },
         {
           "type": "ACTION",
-          "content": "추가적인 하락 가능성을 대비해 포트폴리오를 재조정하는 것이 좋다."
+          "content": "매수 기회를 모색하되, 손절매를 설정하여 리스크를 관리하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-14T15:00:58.558564Z",
+      "generatedAt": "2026-07-14T15:41:09.984099Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4420,23 +4420,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with mixed indicators suggesting cautious trading."
+          "content": "The market is currently neutral with mixed indicators suggesting cautious sentiment."
         },
         {
           "type": "RISK",
-          "content": "Fear and Greed index at 22 indicates extreme fear."
+          "content": "Fear and greed index at 22 indicates extreme fear in the market."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential downward pressure."
+          "content": "Low RSI values (daily 45.73, weekly 37.27) suggest potential downward pressure."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of recovery."
+          "content": "Monitor market closely for signs of recovery or further decline."
         },
         {
           "type": "ACTION",
-          "content": "Consider risk management strategies to mitigate potential losses."
+          "content": "Consider risk management strategies if entering new positions."
         }
       ],
       "errorMessage": null
