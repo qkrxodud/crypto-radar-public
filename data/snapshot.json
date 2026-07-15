@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-15T08:06:35Z",
+  "updatedAt": "2026-07-15T08:26:45Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "65001.13",
       "macd": {
-        "macdLine": "-96.72",
-        "signalLine": "-629.21",
-        "histogram": "532.48",
+        "macdLine": "-100.69",
+        "signalLine": "-630.00",
+        "histogram": "529.31",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001661",
       "ivRv": {
-        "iv": "29.94",
+        "iv": "85.60",
         "rv": "33.00",
-        "spread": "-3.06",
-        "label": "균형"
+        "spread": "+52.60",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 25,
@@ -2851,9 +2851,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257266120171.24908",
+      "totalMarketCapUsd": "257215549390.1926",
       "marketCap30dAgoUsd": "261377366335.07492",
-      "growth30dPercent": "-1.57",
+      "growth30dPercent": "-1.59",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64640.00",
-      "openInterestUsd": "6877631572.01280000",
-      "longAccountRatio": "0.5457",
-      "shortAccountRatio": "0.4543",
-      "downsideLiquidationUsd": "3753123548.85",
-      "upsideLiquidationUsd": "3124508023.17",
+      "currentPrice": "64591.40",
+      "openInterestUsd": "6876443095.90920000",
+      "longAccountRatio": "0.5469",
+      "shortAccountRatio": "0.4531",
+      "downsideLiquidationUsd": "3760726729.15",
+      "upsideLiquidationUsd": "3115716366.76",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58176.00",
+          "price": "58132.26",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1501249419.54"
+          "notionalUsd": "1504290691.66"
         },
         {
-          "price": "71104.00",
+          "price": "71050.54",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1249803209.27"
+          "notionalUsd": "1246286546.70"
         },
         {
-          "price": "62054.40",
+          "price": "62007.74",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1313593242.10"
+          "notionalUsd": "1316254355.20"
         },
         {
-          "price": "67225.60",
+          "price": "67175.06",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1093577808.11"
+          "notionalUsd": "1090500728.36"
         },
         {
-          "price": "63347.20",
+          "price": "63299.57",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "750624709.77"
+          "notionalUsd": "752145345.83"
         },
         {
-          "price": "65932.80",
+          "price": "65883.23",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "624901604.63"
+          "notionalUsd": "623143273.35"
         },
         {
-          "price": "63993.60",
+          "price": "63945.49",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "187656177.44"
+          "notionalUsd": "188036336.46"
         },
         {
-          "price": "65286.40",
+          "price": "65237.31",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "156225401.16"
+          "notionalUsd": "155785818.34"
         }
       ],
       "errorMessage": null
@@ -4407,7 +4407,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-15T07:46:28.466200Z",
+      "generatedAt": "2026-07-15T08:26:45.451759Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4416,23 +4416,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a slight bullish sentiment with accumulation favored, but caution is advised due to mixed indicators."
+          "content": "Market shows accumulation dominance with mixed sentiment indicators."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 25 indicates extreme fear."
+          "content": "Fear and greed index at 25 indicates high fear."
         },
         {
           "type": "RISK",
-          "content": "RSI on weekly at 39.62 suggests potential bearish momentum."
+          "content": "NVT ratio of 216.67 suggests potential overvaluation."
         },
         {
           "type": "ACTION",
-          "content": "Monitor accumulation trends and consider entering positions cautiously."
+          "content": "Consider cautious accumulation strategies."
         },
         {
           "type": "ACTION",
-          "content": "Stay alert for changes in market sentiment and adjust strategies accordingly."
+          "content": "Monitor sentiment shifts closely for potential entry points."
         }
       ],
       "errorMessage": null
