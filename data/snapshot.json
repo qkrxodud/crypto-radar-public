@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-16T12:55:45Z",
+  "updatedAt": "2026-07-16T13:15:52Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "64825.69",
       "macd": {
-        "macdLine": "-42.11",
-        "signalLine": "-510.10",
-        "histogram": "467.98",
+        "macdLine": "-35.67",
+        "signalLine": "-508.81",
+        "histogram": "473.14",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001632",
       "ivRv": {
-        "iv": "33.73",
+        "iv": "29.97",
         "rv": "33.00",
-        "spread": "+0.73",
+        "spread": "-3.03",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63971.10",
-      "openInterestUsd": "6532440812.89445400",
+      "currentPrice": "64069.50",
+      "openInterestUsd": "6528587047.06680000",
       "longAccountRatio": "0.5786",
       "shortAccountRatio": "0.4214",
-      "downsideLiquidationUsd": "3779670254.34",
-      "upsideLiquidationUsd": "2752770558.55",
+      "downsideLiquidationUsd": "3777440465.43",
+      "upsideLiquidationUsd": "2751146581.63",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57573.99",
+          "price": "57662.55",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1511868101.74"
+          "notionalUsd": "1510976186.17"
         },
         {
-          "price": "70368.21",
+          "price": "70476.45",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1101108223.42"
+          "notionalUsd": "1100458632.65"
         },
         {
-          "price": "61412.26",
+          "price": "61506.72",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1322884589.02"
+          "notionalUsd": "1322104162.90"
         },
         {
-          "price": "66529.94",
+          "price": "66632.28",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "963469695.49"
+          "notionalUsd": "962901303.57"
         },
         {
-          "price": "62691.68",
+          "price": "62788.11",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "755934050.87"
+          "notionalUsd": "755488093.09"
         },
         {
-          "price": "65250.52",
+          "price": "65350.89",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "550554111.71"
+          "notionalUsd": "550229316.33"
         },
         {
-          "price": "63331.39",
+          "price": "63428.81",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "188983512.72"
+          "notionalUsd": "188872023.27"
         },
         {
-          "price": "64610.81",
+          "price": "64710.20",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "137638527.93"
+          "notionalUsd": "137557329.08"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-16T12:30:03.709202Z",
+      "generatedAt": "2026-07-16T13:00:02.593756Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,23 +4384,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리를 보이며, 가격 상승 여력이 있지만 위험 요소도 존재한다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축된 상황이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 25로 극단적인 공포를 나타내고 있다."
+          "content": "낮은 공포탐욕 지수(25)는 투자자들이 비관적임을 나타낸다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 알트코인에 대한 투자 심리가 약하다."
+          "content": "BTC 도미넌스가 56으로 높은 편이며, 알트코인 시장의 활력이 부족하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "단기적인 투자 결정을 신중히 하고, 시장의 변동성을 주의 깊게 관찰하라."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 좋다."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산시키는 것이 좋다."
         }
       ],
       "errorMessage": null
@@ -4439,8 +4439,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-16T12:05:04.198701Z",
-      "compositeScore": "-0.125",
+      "generatedAt": "2026-07-16T13:05:03.459309Z",
+      "compositeScore": "-0.019",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4448,11 +4448,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Ledger wants AI agents to manage crypto without holding your keys",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/07/15/ledger-wants-ai-agents-to-manage-crypto-without-holding-your-keys",
+          "publishedAt": "2026-07-16T13:00:00Z",
+          "score": "0.2"
+        },
+        {
           "title": "Galaxy targets institutional stablecoin yield with new DeFi vaults",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/16/galaxy-targets-institutional-stablecoin-yield-with-new-defi-vaults",
           "publishedAt": "2026-07-16T12:00:00Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "The most popular bitcoin call option has slipped by $10,000",
@@ -4466,7 +4473,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/16/ai-payments-have-a-new-open-standards-body-its-aim-is-to-reinvent-the-internet",
           "publishedAt": "2026-07-16T11:22:37Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Bitcoin pulls back to $64,000 after hitting monthly high as bears take control",
@@ -4480,7 +4487,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/16/tether-invests-usd20-million-in-argentine-neobank-uala-as-it-expands-latin-america-push",
           "publishedAt": "2026-07-16T10:12:05Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "U.S. adds four Iran central bank crypto wallets to sanctions, Tether freezes $131 million of contents",
@@ -4497,67 +4504,60 @@
           "score": "-0.6"
         },
         {
-          "title": "U.S. Senate unanimously opposes clemency for FTX founder Sam Bankman-Fried",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/07/16/u-s-senate-unanimously-opposes-clemency-for-ftx-founder-sam-bankman-fried",
-          "publishedAt": "2026-07-16T06:00:43Z",
-          "score": "-0.3"
+          "title": "MoonPay buys Glide to bolster crypto deposits infrastructure",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/moonpay-acquires-glide-strengthen-crypto-deposits?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-16T13:00:00Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Tokenized stocks market cap gains to record $2.3B",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/tokenized-stocks-rise-23b-all-time-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-16T12:35:52Z",
+          "score": "0.6"
+        },
+        {
+          "title": "FATF urges faster crypto AML enforcement as stablecoin crime increases",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/fatf-urges-crypto-aml-enforcement-stablecoin-crime?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-16T12:05:45Z",
+          "score": "-0.5"
         },
         {
           "title": "ARK pushes back against a16z’s ‘TradFi wants blockchain, not DeFi’ claim",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ark-sentora-a16zs-tradfi-blockchain-defi-thesis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-16T11:35:30Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Autonomous AI agent economy faces infrastructure gaps: Visa, Artemis",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/autonomous-ai-agent-economy-infrastructure-gaps-visa-artemis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-16T10:33:34Z",
-          "score": "0.0"
+          "score": "-0.3"
         },
         {
           "title": "US Senate unanimously adopts resolution opposing clemency for SBF",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/senate-adopts-resolution-opposing-clemency-sbf-ftx?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-16T09:26:11Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Tether invests $20M into Argentine neobank Ualá",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/tether-invests-20m-argentine-neobank-uala?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-16T08:27:31Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin $107K buyers providing ‘early signals’ of 2026 bear-market bottom: Glassnode",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-107-buyers-providing-early-signals-of-2026-bear-market-bottom-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-16T08:11:25Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Robinhood Chain memecoin launchpad Vlad.fun halts after ‘internal integrity’ issue",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/robinhood-chain-memecoin-vladfun-halts-integrity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-16T07:43:45Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Hyperion DeFi to deploy 500K HYPE for Hyperliquid HIP-3 markets",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/hyperion-defi-to-deploy-500k-hype-for-hyperliquid-hip-3-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-16T06:41:14Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-16T05:55:48Z",
-          "score": "0.0"
+          "score": "0.5"
         }
       ],
       "errorMessage": null
