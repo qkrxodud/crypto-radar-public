@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-16T04:53:20Z",
+  "updatedAt": "2026-07-16T05:13:24Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "64825.69",
       "macd": {
-        "macdLine": "7.96",
-        "signalLine": "-500.08",
-        "histogram": "508.04",
+        "macdLine": "15.62",
+        "signalLine": "-498.55",
+        "histogram": "514.17",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64594.00",
-      "openInterestUsd": "6672438636.35816200",
-      "longAccountRatio": "0.5476",
-      "shortAccountRatio": "0.4524",
-      "downsideLiquidationUsd": "3653827397.27",
-      "upsideLiquidationUsd": "3018611239.09",
+      "currentPrice": "64694.90",
+      "openInterestUsd": "6673736368.88950000",
+      "longAccountRatio": "0.5486",
+      "shortAccountRatio": "0.4514",
+      "downsideLiquidationUsd": "3661211771.97",
+      "upsideLiquidationUsd": "3012524596.92",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58134.60",
+          "price": "58225.41",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1461530958.91"
+          "notionalUsd": "1464484708.79"
         },
         {
-          "price": "71053.40",
+          "price": "71164.39",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1207444495.64"
+          "notionalUsd": "1205009838.77"
         },
         {
-          "price": "62010.24",
+          "price": "62107.10",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1278839589.04"
+          "notionalUsd": "1281424120.19"
         },
         {
-          "price": "67177.76",
+          "price": "67282.70",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1056513933.68"
+          "notionalUsd": "1054383608.92"
         },
         {
-          "price": "63302.12",
+          "price": "63401.00",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "730765479.45"
+          "notionalUsd": "732242354.39"
         },
         {
-          "price": "65885.88",
+          "price": "65988.80",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "603722247.82"
+          "notionalUsd": "602504919.38"
         },
         {
-          "price": "63948.06",
+          "price": "64047.95",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "182691369.86"
+          "notionalUsd": "183060588.60"
         },
         {
-          "price": "65239.94",
+          "price": "65341.85",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "150930561.95"
+          "notionalUsd": "150626229.85"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-16T04:30:02.963649Z",
+      "generatedAt": "2026-07-16T05:00:02.616920Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,23 +4384,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리 상태이며, 가격 안정세를 보이고 있다."
+          "content": "현재 시장은 중립적이며, 공포와 탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "공포탐욕 지수가 25로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 매력이 감소하고 있다."
+          "content": "BTC 도미넌스가 56으로 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 투자 접근이 필요하다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "알트코인에 대한 비중을 줄이고 BTC에 집중하는 것이 좋다."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 좋다."
         }
       ],
       "errorMessage": null
@@ -4439,8 +4439,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-16T04:05:02.829717Z",
-      "compositeScore": "0.013",
+      "generatedAt": "2026-07-16T05:05:04.948003Z",
+      "compositeScore": "-0.031",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4448,11 +4448,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Ether outruns bitcoin as ETF money returns, almost all of from BlackRock's fund",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/16/ether-outruns-bitcoin-as-etf-money-returns-almost-all-of-from-blackrock-s-fund",
+          "publishedAt": "2026-07-16T04:56:15Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Two Groups of bitcoin Investors sell on the rise as U.S. inflation lifts prices to nearly $65,000",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/16/two-groups-of-bitcoin-investors-sell-on-the-rise-as-inflation-lifts-prices-to-nearly-usd65-000",
+          "publishedAt": "2026-07-16T04:09:10Z",
+          "score": "-0.3"
+        },
+        {
           "title": "Coinbase's Jesse Pollak steps back from Base app leadership after admitting his crypto social strategy failed",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/15/coinbase-s-jesse-pollak-steps-back-from-base-app-leadership-after-admitting-his-crypto-social-strategy-failed",
           "publishedAt": "2026-07-15T20:18:02Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "DTCC moves tokenized securities into live trading, marking a milestone for Wall Street's blockchain push",
@@ -4466,7 +4480,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/15/cantor-and-securitize-collaborate-on-blockchain-based-ipos",
           "publishedAt": "2026-07-15T16:52:28Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Ostium suffers $18 million exploit as oracle attack wave continues to hit DeFi",
@@ -4490,25 +4504,18 @@
           "score": "0.1"
         },
         {
-          "title": "President Trump expected to meet with senators to work on ethics concerns in crypto bill",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/07/15/high-level-white-house-meeting-said-to-be-planned-to-hash-out-clarity-act-ethics-section",
-          "publishedAt": "2026-07-15T14:37:36Z",
+          "title": "Trump to meet with senators over CLARITY Act on Thursday: Politico",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/trump-to-meet-with-senators-over-clarity-act-on-thursday-politico?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-16T04:18:29Z",
           "score": "0.2"
-        },
-        {
-          "title": "South Korea to modify 76-year-old law to classify cryptocurrencies as national assets",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/07/15/south-korea-to-modify-76-year-old-law-to-classify-cryptocurrencies-as-national-assets",
-          "publishedAt": "2026-07-15T14:35:26Z",
-          "score": "0.7"
         },
         {
           "title": "Base’s social bet left it trailing in prediction markets and perps: Pollak",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bases-social-bet-left-it-trailing-in-prediction-markets-and-perps-pollak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-16T01:14:58Z",
-          "score": "-0.4"
+          "score": "-0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4522,7 +4529,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/stanford-study-5-minute-bitcoin-prediction-markets-enable-settlement-manipulation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-15T20:05:08Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "Revolut receives in-principle approval from UAE authorities for crypto services",
@@ -4550,14 +4557,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/aave-brings-v4-to-avalanche-laying-groundwork-for-tokenized-asset-lending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-15T16:29:39Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Securitize, Cantor target tokenized IPOs for public markets",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/securitize-cantor-target-tokenized-ipos-for-public-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-15T15:59:36Z",
-          "score": "0.5"
+          "score": "0.7"
         }
       ],
       "errorMessage": null
