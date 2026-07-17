@@ -391,6 +391,25 @@
     .content{padding:14px 10px 44px;}
     .ind-line .chip{padding:2px 6px;font-size:11px;}
   }
+  /* ── 홈 편집 산문(해설 확장) 보조 스타일 ── */
+  .explain h3{color:var(--t1);font-size:15.5px;font-weight:700;margin:26px 0 8px;}
+  .explain code{font-family:var(--mono);font-size:12.5px;color:var(--t2);background:var(--card-2);border:1px solid var(--line-2);border-radius:6px;padding:1px 6px;}
+  /* ── 지표 사전 디렉터리 ── */
+  .dir-cat{margin-top:8px;}
+  .dir-cat + .dir-cat{margin-top:28px;}
+  .dir-cat-h{display:flex;align-items:center;gap:11px;margin:0 0 14px;}
+  .dir-cat-h .dot{width:11px;height:11px;border-radius:50%;flex:none;}
+  .dir-cat-h .nm{color:var(--t1);font-size:16px;font-weight:700;}
+  .dir-cat-h .ct{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--m2);white-space:nowrap;}
+  .dir-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;}
+  .dir-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 17px;min-width:0;display:flex;flex-direction:column;gap:8px;text-decoration:none;transition:border-color .18s,transform .18s,background .18s;}
+  .dir-card:hover{border-color:rgba(22,199,132,.4);background:#13171e;transform:translateY(-2px);}
+  .dir-card .dc-name{color:var(--t1);font-size:14.5px;font-weight:700;letter-spacing:-.01em;}
+  .dir-card .dc-desc{color:var(--t3);font-size:12.5px;line-height:1.6;margin:0;}
+  .dir-card .dc-more{margin-top:auto;color:var(--green);font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:4px;transition:gap .16s;}
+  .dir-card:hover .dc-more{gap:7px;}
+  @media(max-width:768px){.dir-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:480px){.dir-grid{grid-template-columns:1fr;gap:10px;}}
 </style>
 <!-- 구조화 데이터 -->
 <script type="application/ld+json">
@@ -682,6 +701,168 @@
           <div class="ec"><div class="n" data-en="Derivatives">파생상품</div><div class="w">20%</div></div>
           <div class="ec"><div class="n" data-en="On-chain">온체인</div><div class="w">15%</div></div>
           <div class="ec"><div class="n" data-en="Macro">매크로</div><div class="w">10%</div></div>
+        </div>
+
+        <!-- 여러 지표를 함께 읽는 원리 -->
+        <h3 data-en="Why read many indicators together">여러 지표를 함께 읽는 이유</h3>
+        <p data-i18n-html="1" data-en="No single number can pin down the bottom or the top. RSI can flash oversold for weeks in a downtrend, the funding rate can turn negative and still fall further, and a positive ETF inflow does not guarantee a rally on its own. Each indicator only captures one slice of the market, so relying on one is like judging the weather from a single thermometer."><b>어떤 단 하나의 숫자도 바닥이나 천장을 짚어주지 못합니다.</b> RSI(최근 상승·하락의 힘을 0~100으로 나타낸 값)는 하락장에서 몇 주씩 과매도로 깜빡일 수 있고, 펀딩비(선물에서 어느 쪽이 비용을 더 내는지)는 마이너스가 되고도 더 떨어지곤 하며, ETF 순유입이 플러스라고 그 자체로 상승이 보장되지도 않습니다. 지표 하나는 시장의 한 단면만 담기 때문에, 한 개에만 기대는 건 온도계 하나로 날씨 전체를 판단하는 것과 비슷합니다.</p>
+        <p data-i18n-html="1" data-en="That is why we spread the reading across five categories — cycle·sentiment, technical, derivatives, on-chain, and macro — and cross-check them. They look at different layers: cycle and sentiment describe the slow, structural backdrop; technical reads recent price behavior; derivatives reveal how leveraged traders are positioned; on-chain shows what actual coin holders are doing; and macro places Bitcoin within the wider risk-asset environment. When several categories point the same way at once, the signal is far more trustworthy than any one of them alone.">그래서 사이클·심리, 기술적 분석, 파생상품, 온체인, 매크로라는 <b>다섯 카테고리로 나눠 교차로 읽습니다.</b> 이들은 서로 다른 층위를 봅니다 — 사이클·심리는 느리고 구조적인 배경을, 기술적 분석은 최근 가격 움직임을, 파생상품은 레버리지 투자자들의 포지션 쏠림을, 온체인은 실제 코인 보유자들의 행동을, 매크로는 넓은 위험자산 환경 속 비트코인의 위치를 나타냅니다. 여러 카테고리가 한 방향을 동시에 가리킬 때, 그 신호는 어느 하나만 볼 때보다 훨씬 믿을 만합니다.</p>
+        <p data-i18n-html="1" data-en="Signals will often conflict — one category says fear while another says overheating. That is not a flaw but useful information: it usually means the market has no clear edge in either direction, and the neutral band exists to describe exactly that. Rather than forcing a single answer, treat a conflict as a reason to move more slowly and in stages.">신호는 자주 서로 엇갈립니다 — 한 카테고리는 공포를, 다른 카테고리는 과열을 말하기도 합니다. 이건 결함이 아니라 <b>쓸모 있는 정보</b>입니다. 대개 시장이 어느 방향으로도 뚜렷한 우위가 없다는 뜻이고, 중립 구간은 바로 그런 상태를 묘사하려고 존재합니다. 억지로 하나의 답을 만들기보다, 신호가 상충할 때는 더 천천히·분할해서 접근할 이유로 받아들이는 편이 낫습니다.</p>
+
+        <!-- 점수 산정 3단계 -->
+        <h3 data-en="How the score is calculated, in three steps">점수는 어떻게 나오나요 — 세 단계</h3>
+        <p data-i18n-html="1" data-en="<b>① Normalize to 0–100.</b> Every indicator uses a different unit — RSI runs 0–100, the funding rate is a tiny percentage, DXY is an index near 100. Comparing them as-is is meaningless, so each is converted onto a common <code>0–100</code> scale. Bounded indicators are mapped from their known range, and open-ended ones are scored against their own recent history — by where they sit versus normal, not against a fixed line."><b>① 0~100으로 정규화.</b> 지표마다 단위가 제각각입니다 — RSI는 0~100, 펀딩비는 아주 작은 %, DXY(달러가 주요 통화 대비 얼마나 강한지)는 100 부근의 지수입니다. 이를 그대로 비교하는 건 의미가 없어, 각 지표를 공통의 <code>0~100</code> 척도로 변환합니다. 범위가 정해진 지표는 알려진 구간을 매핑하고, 범위가 열린 지표는 그 지표 자신의 최근 역사에 견줘 — 고정선이 아니라 평소 대비 위치로 — 점수화합니다.</p>
+        <p data-i18n-html="1" data-en="<b>② Apply category weights and sum.</b> The five categories are not equal. Slower, structural signals get more weight than indirect ones, giving <code>30 / 25 / 20 / 15 / 10%</code>. Each category's member indicators are averaged first, then multiplied by its weight and added up. For example, if the normalized category scores were Cycle 30, Technical 40, Derivatives 50, On-chain 35, Macro 60, the composite would be <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>. This keeps any single indicator from dominating the outcome."><b>② 카테고리 가중치 적용·합산.</b> 다섯 카테고리는 동등하지 않습니다. 느리고 구조적인 신호에 간접적 신호보다 큰 비중을 둬 <code>30 / 25 / 20 / 15 / 10%</code>입니다. 각 카테고리는 소속 지표를 먼저 평균낸 뒤, 그 가중치를 곱해 더합니다. 예를 들어 정규화된 카테고리 점수가 사이클 30, 기술 40, 파생 50, 온체인 35, 매크로 60이라면 종합 점수는 <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>가 됩니다. 이렇게 하면 한 지표가 결과를 지배하지 못합니다.</p>
+        <p data-i18n-html="1" data-en="<b>③ Interpret by band.</b> The final 0–100 score is read as a fear, neutral, or greed band. A low score means fear is widespread — historically often closer to a long-term buying zone; a high score means greed and overheating, a time for caution. The boundaries are signposts, not promises: a low score describes a statistically favorable backdrop and never guarantees a rise."><b>③ 구간으로 해석.</b> 최종 0~100 점수를 공포·중립·탐욕 구간으로 읽습니다. 점수가 낮으면 공포가 퍼진 상태로 역사적으로 장기 매수 구간에 더 가까웠고, 높으면 탐욕과 과열로 주의가 필요한 때입니다. 경계는 약속이 아니라 이정표입니다 — 낮은 점수는 통계적으로 우호적이었던 배경을 묘사할 뿐, 상승을 결코 보장하지 않습니다.</p>
+      </div>
+
+      <!-- 지표 사전 — 22개 상세페이지 허브 -->
+      <div>
+        <div class="sec-h"><h2 data-en="Bitcoin indicator dictionary">비트코인 지표 사전</h2><span class="hint" data-en="22 indicators · 5 categories · click through to each detail page">22개 지표 · 5개 카테고리 · 각 상세 설명으로 이동</span></div>
+
+        <!-- 사이클 · 심리 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#16c784"></span><span class="nm" data-en="Cycle · Sentiment">사이클 · 심리</span><span class="ct" data-en="5 indicators">5개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/fear-greed-index.html">
+              <span class="dc-name" data-en="Fear & Greed Index">공포·탐욕 지수</span>
+              <p class="dc-desc" data-en="Expresses the market's overall crowd psychology from 0 to 100. 0 is extreme fear, 100 is extreme greed.">시장 전체의 군중 심리를 0~100으로 나타냅니다. 0은 극도의 공포, 100은 극도의 탐욕입니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/halving-cycle.html">
+              <span class="dc-name" data-en="Halving Cycle">반감기 사이클</span>
+              <p class="dc-desc" data-en="Roughly every 4 years, the amount of newly issued BTC is cut in half. As supply tightens, bull markets have tended to follow.">약 4년마다 새로 발행되는 양이 절반으로 줄어듭니다. 공급이 줄며 상승장이 오는 경향이 있습니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/mvrv-z-score.html">
+              <span class="dc-name" data-en="MVRV-Z Score">MVRV-Z 점수</span>
+              <p class="dc-desc" data-en="Gauges over- or under-valuation by how far current market cap sits above the aggregate 'actual purchase price'.">현재 시가총액이 '실제 매입가 합계'보다 얼마나 비싼지로 고평가·저평가를 가늠합니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/nupl.html">
+              <span class="dc-name">NUPL</span>
+              <p class="dc-desc" data-en="Shows whether holders as a whole are, on average, in profit or in loss (net unrealized profit/loss ratio).">전체 보유자가 평균적으로 이익 상태인지 손실 상태인지 나타냅니다(미실현 손익 비율).</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/pi-cycle.html">
+              <span class="dc-name">Pi Cycle</span>
+              <p class="dc-desc" data-en="Has caught cycle tops at the point where two long-term moving averages cross.">두 개의 장기 이동평균선이 교차하는 시점으로 사이클 고점을 포착해온 지표입니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 기술적 분석 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#5b8def"></span><span class="nm" data-en="Technical Analysis">기술적 분석</span><span class="ct" data-en="4 indicators">4개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/rsi.html">
+              <span class="dc-name">RSI</span>
+              <p class="dc-desc" data-en="Expresses the strength of recent gains vs. losses from 0 to 100. Shows whether the market is overbought or oversold.">최근 상승·하락의 힘을 0~100으로 나타냅니다. 과매수인지 과매도인지 봅니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/ma200-deviation.html">
+              <span class="dc-name" data-en="MA200 Deviation">MA200 이격도</span>
+              <p class="dc-desc" data-en="How far above or below the 200-day average price line the current price sits. A baseline for the long-term trend.">200일 평균 가격선 대비 현재가가 얼마나 위/아래에 있는지입니다. 장기 추세의 기준선입니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/macd.html">
+              <span class="dc-name">MACD</span>
+              <p class="dc-desc" data-en="Uses the gap between short- and long-term trends to catch trend reversals and momentum.">단기·장기 추세의 차이로 추세 전환과 모멘텀(상승 힘)을 포착합니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/historical-volatility.html">
+              <span class="dc-name" data-en="Historical Volatility">역사적 변동성</span>
+              <p class="dc-desc" data-en="Shows how wildly the price swings. When it falls, a large move often lies ahead.">가격이 얼마나 심하게 출렁이는지 나타냅니다. 낮아지면 큰 움직임을 앞둔 경우가 많습니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 파생상품 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#2bd49a"></span><span class="nm" data-en="Derivatives">파생상품</span><span class="ct" data-en="4 indicators">4개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/funding-rate.html">
+              <span class="dc-name" data-en="Funding Rate">펀딩비</span>
+              <p class="dc-desc" data-en="In futures, which side — longs (betting up) or shorts (betting down) — pays more, revealing where the crowd is leaning.">선물에서 롱(상승 베팅)과 숏(하락 베팅) 중 어느 쪽이 비용을 더 내는지로 쏠림을 봅니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/open-interest.html">
+              <span class="dc-name" data-en="Open Interest">미결제약정</span>
+              <p class="dc-desc" data-en="The total size of futures contracts not yet closed. It represents the total leverage in the market.">아직 청산되지 않은 선물 계약의 총 규모입니다. 시장에 깔린 레버리지 총량을 뜻합니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/long-short-ratio.html">
+              <span class="dc-name" data-en="Long/Short Ratio">롱·숏 비율</span>
+              <p class="dc-desc" data-en="The ratio of traders betting on a rise to those betting on a fall. Shows how positioning is skewed.">상승에 베팅한 사람과 하락에 베팅한 사람의 비율입니다. 포지션 쏠림을 봅니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/liquidation-heatmap.html">
+              <span class="dc-name" data-en="Liquidation Heatmap">청산 히트맵</span>
+              <p class="dc-desc" data-en="Shows which price levels have forced liquidations clustered — the points price tends to get pulled toward.">어느 가격대에 강제 청산이 몰려 있는지 보여줍니다. 가격이 끌려가기 쉬운 지점입니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 온체인 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#f0b90b"></span><span class="nm" data-en="On-chain">온체인</span><span class="ct" data-en="5 indicators">5개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/sopr.html">
+              <span class="dc-name">SOPR</span>
+              <p class="dc-desc" data-en="Shows whether the coins that moved that day were, on average, sold at a profit or at a loss.">그날 움직인 코인들이 평균적으로 이익을 보고 팔렸는지 손해를 보고 팔렸는지 나타냅니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/holder-supply.html">
+              <span class="dc-name" data-en="Long/Short-term Holders">장기·단기 보유</span>
+              <p class="dc-desc" data-en="The share of coins held by long-time holders (long-term holders) vs. recent buyers (short-term holders).">오래 들고 있는 사람(장기 보유자)과 최근 산 사람(단기 보유자)의 코인 비중입니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/exchange-net-flow.html">
+              <span class="dc-name" data-en="Exchange Net Inflow">거래소 순유입</span>
+              <p class="dc-desc" data-en="The difference between coins flowing into and out of exchanges. Sending coins to an exchange usually means 'to sell'.">거래소로 들어오고 나가는 코인의 차이입니다. 거래소로 보내는 건 보통 '팔기 위해서'입니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/puell-multiple.html">
+              <span class="dc-name">Puell Multiple</span>
+              <p class="dc-desc" data-en="Uses whether miner revenue is above or below normal to gauge cycle bottoms and tops.">채굴자의 수익이 평소보다 많은지 적은지로 사이클 바닥·천장을 가늠합니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/hash-rate.html">
+              <span class="dc-name" data-en="Hash Rate">해시레이트</span>
+              <p class="dc-desc" data-en="The computing power miners worldwide pour into the network. It reflects the network's security and health.">전 세계 채굴기가 네트워크에 쏟는 연산력입니다. 네트워크의 보안·건강 상태를 뜻합니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 매크로 -->
+        <div class="dir-cat">
+          <div class="dir-cat-h"><span class="dot" style="background:#a06bff"></span><span class="nm" data-en="Macro (Macroeconomics)">매크로 (거시경제)</span><span class="ct" data-en="4 indicators">4개 지표</span></div>
+          <div class="dir-grid">
+            <a class="dir-card" href="indicators/dollar-index-dxy.html">
+              <span class="dc-name" data-en="Dollar Index (DXY)">달러지수 DXY</span>
+              <p class="dc-desc" data-en="How strong the US dollar is against major currencies. The dollar and risk assets usually move in opposite directions.">미국 달러가 주요 통화 대비 얼마나 강한지입니다. 달러와 위험자산은 보통 반대로 움직입니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/sp500.html">
+              <span class="dc-name">S&amp;P 500</span>
+              <p class="dc-desc" data-en="The benchmark US stock index. Watched as a reference point for global risk-asset sentiment.">미국 대표 주가지수입니다. 글로벌 위험자산 심리의 기준점으로 봅니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/kimchi-premium.html">
+              <span class="dc-name" data-en="Kimchi Premium">김치 프리미엄</span>
+              <p class="dc-desc" data-en="How much more expensive Korean exchange prices are than overseas. It reveals domestic investment enthusiasm.">국내 거래소 가격이 해외보다 얼마나 비싼지입니다. 국내 투자 열기를 보여줍니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+            <a class="dir-card" href="indicators/etf-net-flow.html">
+              <span class="dc-name" data-en="ETF Net Inflow">ETF 순유입</span>
+              <p class="dc-desc" data-en="Institutional money flowing into spot Bitcoin ETFs. It reflects mainstream, institutional demand.">비트코인 현물 ETF로 들어오는 기관 자금입니다. 제도권 수요를 보여줍니다.</p>
+              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
+            </a>
+          </div>
         </div>
       </div>
 
