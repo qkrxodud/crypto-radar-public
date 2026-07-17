@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-17T12:03:20Z",
+  "updatedAt": "2026-07-17T12:23:26Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "63790.02",
       "macd": {
-        "macdLine": "-66.18",
-        "signalLine": "-418.07",
-        "histogram": "351.89",
+        "macdLine": "-71.67",
+        "signalLine": "-419.17",
+        "histogram": "347.50",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001755",
       "ivRv": {
-        "iv": "28.69",
+        "iv": "28.52",
         "rv": "33.00",
-        "spread": "-4.31",
+        "spread": "-4.48",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63286.30",
-      "openInterestUsd": "6450730400.95740000",
-      "longAccountRatio": "0.6503",
-      "shortAccountRatio": "0.3497",
-      "downsideLiquidationUsd": "4194909979.74",
-      "upsideLiquidationUsd": "2255820421.21",
+      "currentPrice": "63219.90",
+      "openInterestUsd": "6415340516.03178800",
+      "longAccountRatio": "0.6468",
+      "shortAccountRatio": "0.3532",
+      "downsideLiquidationUsd": "4149442245.77",
+      "upsideLiquidationUsd": "2265898270.26",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56957.67",
+          "price": "56897.91",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1677963991.90"
+          "notionalUsd": "1659776898.31"
         },
         {
-          "price": "69614.93",
+          "price": "69541.89",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "902328168.49"
+          "notionalUsd": "906359308.10"
         },
         {
-          "price": "60754.85",
+          "price": "60691.10",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1468218492.91"
+          "notionalUsd": "1452304786.02"
         },
         {
-          "price": "65817.75",
+          "price": "65748.70",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "789537147.43"
+          "notionalUsd": "793064394.59"
         },
         {
-          "price": "62020.57",
+          "price": "61955.50",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "838981995.95"
+          "notionalUsd": "829888449.15"
         },
         {
-          "price": "64552.03",
+          "price": "64484.30",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "451164084.24"
+          "notionalUsd": "453179654.05"
         },
         {
-          "price": "62653.44",
+          "price": "62587.70",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "209745498.99"
+          "notionalUsd": "207472112.29"
         },
         {
-          "price": "63919.16",
+          "price": "63852.10",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "112791021.06"
+          "notionalUsd": "113294913.51"
         }
       ],
       "errorMessage": null
@@ -4411,7 +4411,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-17T11:43:16.264945Z",
+      "generatedAt": "2026-07-17T12:23:26.738362Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4420,31 +4420,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a slight bullish sentiment with accumulation prevailing despite mixed indicators."
+          "content": "Market sentiment shows accumulation dominance with moderate risk indicators."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 27 indicates high fear, suggesting potential volatility."
+          "content": "Fear and greed index at 27 indicates high fear in the market."
         },
         {
           "type": "RISK",
-          "content": "RSI levels indicate a lack of strong momentum, particularly in weekly and monthly readings."
+          "content": "Low RSI on weekly at 37.10 suggests potential bearish momentum."
         },
         {
           "type": "ACTION",
-          "content": "Consider cautious accumulation as the market shows signs of recovery."
+          "content": "Consider accumulating positions gradually as market sentiment improves."
         },
         {
           "type": "ACTION",
-          "content": "Monitor on-chain metrics for shifts in investor behavior and sentiment."
+          "content": "Monitor key indicators like MVRV-Z and NUPL for potential shifts in market behavior."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-17T11:05:03.455213Z",
-      "compositeScore": "-0.081",
+      "generatedAt": "2026-07-17T12:05:03.295927Z",
+      "compositeScore": "-0.163",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4452,11 +4452,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "AI frenzy losing steam leaves bitcoin less volatile than South Korean stocks",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/07/17/ai-frenzy-losing-steam-leaves-bitcoin-less-volatile-than-south-korean-stocks",
+          "publishedAt": "2026-07-17T11:48:20Z",
+          "score": "-0.4"
+        },
+        {
           "title": "Live markets: Bitcoin slips to $63,000 as the chip rout goes global",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/live-markets-bitcoin-slips-to-usd63-000-as-the-chip-rout-goes-global",
           "publishedAt": "2026-07-17T10:43:57Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Risk-off wave drags bitcoin below $63,000 as AI selloff spreads from stocks to crypto",
@@ -4470,63 +4477,63 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/web3/2026/07/17/airbnb-ceo-says-x-account-was-hacked-attacker-posted-ai-slop-thread-on-tokenization",
           "publishedAt": "2026-07-17T08:50:22Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "Ether falls twice as hard as bitcoin and HYPE drops 10% as the chip trade unwinds",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/ether-falls-twice-as-hard-as-bitcoin-and-hype-drops-10-as-the-chip-trade-unwinds",
           "publishedAt": "2026-07-17T07:29:41Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "This $28 million ether market bet aims to profit from pure market chaos",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/this-usd28-million-ether-market-bet-aims-to-profit-from-pure-market-chaos",
           "publishedAt": "2026-07-17T07:28:52Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "DOG Mode vs. BIP-110: Inside the Bitcoin client built to bypass data restrictions",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/17/bitcoin-s-anti-spam-fight-gets-a-dog-mode-reply",
           "publishedAt": "2026-07-17T05:32:00Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Bitcoin under $63,000 after new U.S. strike on Iran. Trump's China comment adds to uncertainty",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/bitcoin-under-usd64-000-after-u-s-strike-on-iran-trump-s-china-comment-adds-to-uncertainty",
           "publishedAt": "2026-07-17T04:10:09Z",
-          "score": "-0.8"
+          "score": "-0.6"
         },
         {
-          "title": "$1.9 trillion asset manager T. Rowe Price bets on active management with first multi-token crypto ETF",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/16/usd1-9-trillion-asset-manager-t-rowe-price-bets-on-active-management-with-first-multi-token-crypto-etf",
-          "publishedAt": "2026-07-16T18:38:13Z",
-          "score": "0.5"
+          "title": "UK sentences 2 hackers tied to $115M crypto ransom scheme",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/london-police-sentence-hackers-crypto-ransom-public-transport?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-17T11:22:55Z",
+          "score": "-0.3"
         },
         {
-          "title": "ESMA Adds 14 New CASPs to MiCA Register as Licensing Slows",
+          "title": "ESMA adds 14 new CASPs to MiCA register as licensing slows",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/mica-licensing-momentum-slows-post-deadline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T10:29:35Z",
-          "score": "0.0"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin bottom countdown nears 50 days after BTC supply in loss passed 50%",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-bottom-countdown-nears-50-days-after-btc-supply-in-loss-passed-50?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T09:51:33Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "US indicts crypto investor over alleged $20M fraud scheme",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-indicts-crypto-investor-over-alleged-20m-fraud-scheme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T09:25:33Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "MacOS malware hijacks Telegram sessions, targets crypto wallets: SlowMist",
@@ -4554,14 +4561,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ordinals-dev-leonidas-proposes-new-bitcoin-client-dog-mode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T05:54:04Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Crypto exchange Bybit launches in Indonesia after NOBI acquisition",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-exchange-bybit-launches-in-indonesia-after-nobi-acquisition?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-17T04:16:32Z",
-          "score": "0.4"
+          "score": "0.3"
         }
       ],
       "errorMessage": null
