@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-17T09:02:25Z",
+  "updatedAt": "2026-07-17T09:22:30Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "63790.02",
       "macd": {
-        "macdLine": "-98.75",
-        "signalLine": "-424.58",
-        "histogram": "325.83",
+        "macdLine": "-98.61",
+        "signalLine": "-424.56",
+        "histogram": "325.94",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -428,7 +428,12 @@
       ],
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001755",
-      "ivRv": null,
+      "ivRv": {
+        "iv": "34.34",
+        "rv": "33.00",
+        "spread": "+1.34",
+        "label": "균형"
+      },
       "fearGreedMa": {
         "currentFg": 27,
         "fgMa30": "20.3",
@@ -2921,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62870.10",
-      "openInterestUsd": "6414243930.07500000",
-      "longAccountRatio": "0.6435",
-      "shortAccountRatio": "0.3565",
-      "downsideLiquidationUsd": "4127565969.00",
-      "upsideLiquidationUsd": "2286677961.07",
+      "currentPrice": "62864.90",
+      "openInterestUsd": "6414222775.53360000",
+      "longAccountRatio": "0.6457",
+      "shortAccountRatio": "0.3543",
+      "downsideLiquidationUsd": "4141663646.16",
+      "upsideLiquidationUsd": "2272559129.37",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56583.09",
+          "price": "56578.41",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1651026387.60"
+          "notionalUsd": "1656665458.46"
         },
         {
-          "price": "69157.11",
+          "price": "69151.39",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "914671184.43"
+          "notionalUsd": "909023651.75"
         },
         {
-          "price": "60355.30",
+          "price": "60350.30",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1444648089.15"
+          "notionalUsd": "1449582276.16"
         },
         {
-          "price": "65384.90",
+          "price": "65379.50",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "800337286.38"
+          "notionalUsd": "795395695.28"
         },
         {
-          "price": "61612.70",
+          "price": "61607.60",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "825513193.80"
+          "notionalUsd": "828332729.23"
         },
         {
-          "price": "64127.50",
+          "price": "64122.20",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "457335592.21"
+          "notionalUsd": "454511825.87"
         },
         {
-          "price": "62241.40",
+          "price": "62236.25",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "206378298.45"
+          "notionalUsd": "207083182.31"
         },
         {
-          "price": "63498.80",
+          "price": "63493.55",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "114333898.05"
+          "notionalUsd": "113627956.47"
         }
       ],
       "errorMessage": null
@@ -4438,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-17T08:05:03.112958Z",
-      "compositeScore": "0.163",
+      "generatedAt": "2026-07-17T09:05:02.778437Z",
+      "compositeScore": "0.081",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4447,18 +4452,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Airbnb CEO says X account was hacked, attacker posted AI-slop on tokenization",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/web3/2026/07/17/airbnb-ceo-says-x-account-was-hacked-attacker-posted-ai-slop-thread-on-tokenization",
+          "publishedAt": "2026-07-17T08:50:22Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Ether falls twice as hard as bitcoin and HYPE drops 10% as the chip trade unwinds",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/17/ether-falls-twice-as-hard-as-bitcoin-and-hype-drops-10-as-the-chip-trade-unwinds",
+          "publishedAt": "2026-07-17T07:29:41Z",
+          "score": "-0.4"
+        },
+        {
           "title": "This $28 million ether market bet aims to profit from pure market chaos",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/this-usd28-million-ether-market-bet-aims-to-profit-from-pure-market-chaos",
           "publishedAt": "2026-07-17T07:28:52Z",
-          "score": "-0.4"
+          "score": "0.1"
         },
         {
-          "title": "Bitcoinâs anti-spam fight gets a 'DOG Mode' reply",
+          "title": "Bitcoin Ordinals leader proposes a way to bypass data restriction efforts",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/17/bitcoin-s-anti-spam-fight-gets-a-dog-mode-reply",
           "publishedAt": "2026-07-17T05:32:00Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin under $63,000 after new U.S. strike on Iran. Trump's China comment adds to uncertainty",
@@ -4472,35 +4491,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/16/usd1-9-trillion-asset-manager-t-rowe-price-bets-on-active-management-with-first-multi-token-crypto-etf",
           "publishedAt": "2026-07-16T18:38:13Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Citadel Securities invests $400 million in Crypto.com, valuing exchange at $20 billion",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/16/citadel-securities-invests-usd400-million-in-crypto-com-valuing-exchange-at-usd20-billion",
           "publishedAt": "2026-07-16T18:00:00Z",
-          "score": "0.6"
+          "score": "0.8"
         },
         {
           "title": "Stripeâs $53 billion PayPal bid is a high-stakes play to own the future of digital payments",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/16/stripe-s-usd53-billion-paypal-bid-is-a-high-stakes-play-to-own-the-future-of-digital-payments",
           "publishedAt": "2026-07-16T16:37:16Z",
-          "score": "0.2"
+          "score": "0.5"
         },
         {
-          "title": "Visa backs Open USD with new stablecoin platform as Circle faces fresh competition",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/16/visa-backs-open-usd-with-new-stablecoin-platform-as-circle-faces-fresh-competition",
-          "publishedAt": "2026-07-16T16:14:30Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Keyrock acquires BlockFills trading assets to expand institutional crypto business",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/16/keyrock-acquires-blockfills-trading-assets-to-expand-institutional-crypto-business",
-          "publishedAt": "2026-07-16T15:26:15Z",
-          "score": "0.4"
+          "title": "MacOS malware hijacks Telegram sessions, targets crypto wallets: SlowMist",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/macos-malware-crypto-investors-slowmist?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-17T08:48:20Z",
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin ETFs add $368M in three-day buying streak",
@@ -4521,7 +4533,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ordinals-dev-leonidas-proposes-new-bitcoin-client-dog-mode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T05:54:04Z",
-          "score": "0.1"
+          "score": "0.3"
         },
         {
           "title": "Crypto exchange Bybit launches in Indonesia after NOBI acquisition",
@@ -4542,21 +4554,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/balaji-seeks-malaysia-deal-threatens-exit-after-network-school-probe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T01:54:00Z",
-          "score": "-0.5"
+          "score": "-0.3"
         },
         {
           "title": "Bitcoin liquidity clusters determine BTC’s price direction as futures flow fuels price",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-liquidity-clusters-determine-btcs-price-direction-as-futures-flow-fuels-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T00:12:40Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Citadel Securities invests $400M in Crypto.com at $20B valuation",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/citadel-securities-invests-400m-in-cryptocom-at-20b-valuation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-16T23:47:12Z",
-          "score": "0.6"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
