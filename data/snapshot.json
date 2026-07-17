@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-17T18:57:28Z",
+  "updatedAt": "2026-07-17T19:17:38Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,12 +61,12 @@
       "historicalVolatility": "0.33",
       "btcClose": "63790.02",
       "macd": {
-        "macdLine": "7.48",
-        "signalLine": "-403.34",
-        "histogram": "410.82",
+        "macdLine": "-6.64",
+        "signalLine": "-406.16",
+        "histogram": "399.53",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
-        "bullish": true
+        "bullish": false
       },
       "adx": {
         "adx": "15.2",
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001755",
       "ivRv": {
-        "iv": "21.50",
+        "iv": "21.54",
         "rv": "33.00",
-        "spread": "-11.50",
+        "spread": "-11.47",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2855,9 +2855,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257263389247.58355",
+      "totalMarketCapUsd": "257341822146.64828",
       "marketCap30dAgoUsd": "261103717834.44450",
-      "growth30dPercent": "-1.47",
+      "growth30dPercent": "-1.44",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64178.00",
-      "openInterestUsd": "6458679543.13880000",
-      "longAccountRatio": "0.6217",
-      "shortAccountRatio": "0.3783",
-      "downsideLiquidationUsd": "4015361071.97",
-      "upsideLiquidationUsd": "2443318471.17",
+      "currentPrice": "64038.30",
+      "openInterestUsd": "6430808132.63525400",
+      "longAccountRatio": "0.6191",
+      "shortAccountRatio": "0.3809",
+      "downsideLiquidationUsd": "3981313314.91",
+      "upsideLiquidationUsd": "2449494817.72",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57760.20",
+          "price": "57634.47",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1606144428.79"
+          "notionalUsd": "1592525325.97"
         },
         {
-          "price": "70595.80",
+          "price": "70442.13",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "977327388.47"
+          "notionalUsd": "979797927.09"
         },
         {
-          "price": "61610.88",
+          "price": "61476.77",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1405376375.19"
+          "notionalUsd": "1393459660.22"
         },
         {
-          "price": "66745.12",
+          "price": "66599.83",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "855161464.91"
+          "notionalUsd": "857323186.20"
         },
         {
-          "price": "62894.44",
+          "price": "62757.53",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "803072214.39"
+          "notionalUsd": "796262662.98"
         },
         {
-          "price": "65461.56",
+          "price": "65319.07",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "488663694.23"
+          "notionalUsd": "489898963.54"
         },
         {
-          "price": "63536.22",
+          "price": "63397.92",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "200768053.60"
+          "notionalUsd": "199065665.75"
         },
         {
-          "price": "64819.78",
+          "price": "64678.68",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "122165923.56"
+          "notionalUsd": "122474740.89"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-17T18:37:22.647149Z",
+      "generatedAt": "2026-07-17T19:17:35.366090Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,23 +4388,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로 보이며, 공포탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
+          "content": "매집 우세로 보이며, 심리 지표는 공포 상태를 나타냄."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 27로 낮아 투자 심리가 약하다."
+          "content": "시장 심리가 공포에 가까워 추가 하락 가능성 존재."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 알트코인에 대한 관심이 낮다."
+          "content": "거래소 순유입이 마이너스여서 유동성 감소 우려."
         },
         {
           "type": "ACTION",
-          "content": "매집 우세를 고려하여 추가 매수를 검토하라."
+          "content": "매수 기회를 노려보되, 손절가 설정 필수."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리를 반영하여 단기적인 변동성에 대비하라."
+          "content": "포트폴리오 다각화를 고려하여 리스크 분산."
         }
       ],
       "errorMessage": null
@@ -4443,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-17T18:17:16.854458Z",
-      "compositeScore": "0.094",
+      "generatedAt": "2026-07-17T19:17:38.232069Z",
+      "compositeScore": "0.069",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,21 +4456,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/polymarket-traders-cut-clarity-act-passage-odds-to-record-low-as-senate-delay-drags-on",
           "publishedAt": "2026-07-17T18:00:11Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Stripe and Swift race to control the next generation of global payments infrastructure",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/17/stripe-and-swift-race-to-control-the-next-generation-of-global-payments-infrastructure",
           "publishedAt": "2026-07-17T17:23:01Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Cardano hands core development to outside teams in decentralization push",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/17/cardano-hands-core-development-to-outside-teams-in-decentralization-push",
           "publishedAt": "2026-07-17T16:23:26Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "Inside Robinhoodâs high-stakes bet to onboard 10 million casual users onto decentralized finance",
@@ -4484,70 +4484,70 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/17/japan-s-sbi-group-is-building-asia-s-first-cross-border-digital-asset-empire",
           "publishedAt": "2026-07-17T13:46:46Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Bitcoin faces fresh headwinds as Chinaâs Kimi beats Claude, GPT in coding benchmark",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark",
           "publishedAt": "2026-07-17T12:45:11Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "AI frenzy losing steam leaves bitcoin less volatile than South Korean stocks",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/07/17/ai-frenzy-losing-steam-leaves-bitcoin-less-volatile-than-south-korean-stocks",
           "publishedAt": "2026-07-17T11:48:20Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Live markets: Bitcoin returns to $63,000 as Nasdaq trims large early loss",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/live-markets-bitcoin-slips-to-usd63-000-as-the-chip-rout-goes-global",
           "publishedAt": "2026-07-17T10:43:57Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "OKX Europe lets users convert USDT to MiCA-compliant USDC",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/okx-europe-lets-users-convert-usdt-to-mica-compliant-usdc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T16:54:37Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Senator Warren requests 2026 reporting for Trump’s crypto earnings after $1.4B disclosure",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/senator-warren-2026-reporting-donald-trump-crypto-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T16:48:22Z",
-          "score": "-0.4"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin price sags under $62.5K as Iran strikes add to US stocks pressure",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-sags-under-625k-as-iran-strikes-add-to-us-stocks-pressure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T14:37:39Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "HSBC wins Bank of England approval to enter Digital Securities Sandbox",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hsbc-bank-of-england-approval-digital-securities-sandbox?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T13:54:27Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "SBI acquires Singaporean crypto platform Coinhako after MAS approval",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/sbi-receives-mas-approval-to-acquire-singaporean-coinhako?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T13:30:20Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "The British Virgin Islands are a top crypto hub no one ever talks about: Here’s why",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/why-is-the-british-virgin-islands-becoming-a-legal-home-for-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T13:30:00Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4561,7 +4561,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/dutch-court-knaken-crypto-platform-bankruptcy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T12:21:55Z",
-          "score": "-0.8"
+          "score": "-0.7"
         }
       ],
       "errorMessage": null
