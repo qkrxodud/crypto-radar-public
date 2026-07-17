@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-17T14:15:54Z",
+  "updatedAt": "2026-07-17T14:35:58Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "63790.02",
       "macd": {
-        "macdLine": "-58.09",
-        "signalLine": "-416.45",
-        "histogram": "358.36",
+        "macdLine": "-70.69",
+        "signalLine": "-418.97",
+        "histogram": "348.28",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001755",
       "ivRv": {
-        "iv": "29.47",
+        "iv": "29.00",
         "rv": "33.00",
-        "spread": "-3.53",
+        "spread": "-4.00",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63385.10",
-      "openInterestUsd": "6399364232.93444250",
-      "longAccountRatio": "0.6525",
-      "shortAccountRatio": "0.3475",
-      "downsideLiquidationUsd": "4175585161.99",
-      "upsideLiquidationUsd": "2223779070.94",
+      "currentPrice": "63213.50",
+      "openInterestUsd": "6363627503.06767500",
+      "longAccountRatio": "0.6475",
+      "shortAccountRatio": "0.3525",
+      "downsideLiquidationUsd": "4120448808.24",
+      "upsideLiquidationUsd": "2243178694.83",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57046.59",
+          "price": "56892.15",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1670234064.80"
+          "notionalUsd": "1648179523.29"
         },
         {
-          "price": "69723.61",
+          "price": "69534.85",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "889511628.38"
+          "notionalUsd": "897271477.93"
         },
         {
-          "price": "60849.70",
+          "price": "60684.96",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1461454806.70"
+          "notionalUsd": "1442157082.88"
         },
         {
-          "price": "65920.50",
+          "price": "65742.04",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "778322674.83"
+          "notionalUsd": "785112543.19"
         },
         {
-          "price": "62117.40",
+          "price": "61949.23",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "835117032.40"
+          "notionalUsd": "824089761.65"
         },
         {
-          "price": "64652.80",
+          "price": "64477.77",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "444755814.19"
+          "notionalUsd": "448635738.97"
         },
         {
-          "price": "62751.25",
+          "price": "62581.37",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208779258.10"
+          "notionalUsd": "206022440.41"
         },
         {
-          "price": "64018.95",
+          "price": "63845.64",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "111188953.55"
+          "notionalUsd": "112158934.74"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-17T14:15:52.804009Z",
+      "generatedAt": "2026-07-17T14:30:04.695646Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,23 +4388,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이며, 시장 심리는 공포 단계에 있다."
+          "content": "현재 매집 우세로 시장 심리는 공포 상태이나, 온체인 지표는 긍정적인 신호를 보임."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "시장 심리가 극단적 공포 상태로 변동성이 클 수 있음."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 매력이 감소할 수 있다."
+          "content": "거래소 순유입이 마이너스여서 매도 압력이 우려됨."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 염두에 두고 시장 동향을 주의 깊게 관찰하라."
+          "content": "매수 기회를 노리되, 손절매 설정을 권장."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
+          "content": "포트폴리오 다각화를 고려하여 리스크 분산을 추천."
         }
       ],
       "errorMessage": null
@@ -4443,20 +4443,27 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-17T13:21:03.043989Z",
-      "compositeScore": "-0.319",
-      "label": "NEGATIVE",
-      "labelDisplay": "부정",
-      "labelHexColor": "#F97316",
+      "generatedAt": "2026-07-17T14:20:55.612754Z",
+      "compositeScore": "-0.113",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Japan's SBI Group is building Asia's first cross-border digital asset empire",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/17/japan-s-sbi-group-is-building-asia-s-first-cross-border-digital-asset-empire",
+          "publishedAt": "2026-07-17T13:46:46Z",
+          "score": "0.5"
+        },
         {
           "title": "Bitcoin faces fresh headwinds as Chinaâs Kimi beats Claude, GPT in coding benchmark",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/bitcoin-faces-fresh-headwinds-as-china-s-kimi-beats-claude-gpt-in-coding-benchmark",
           "publishedAt": "2026-07-17T12:45:11Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "AI frenzy losing steam leaves bitcoin less volatile than South Korean stocks",
@@ -4466,25 +4473,25 @@
           "score": "0.2"
         },
         {
-          "title": "Live markets: Bitcoin slips to $63,000 as the chip rout goes global",
+          "title": "Live markets: Bitcoin slips below $63,000 as the chip rout goes global",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/live-markets-bitcoin-slips-to-usd63-000-as-the-chip-rout-goes-global",
           "publishedAt": "2026-07-17T10:43:57Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Risk-off wave drags bitcoin below $63,000 as AI selloff spreads from stocks to crypto",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/17/risk-off-wave-drags-bitcoin-below-usd63-000-as-ai-selloff-spreads-from-stocks-to-crypto",
           "publishedAt": "2026-07-17T10:26:06Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Airbnb CEO says X account was hacked, attacker posted AI-slop on tokenization",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/web3/2026/07/17/airbnb-ceo-says-x-account-was-hacked-attacker-posted-ai-slop-thread-on-tokenization",
           "publishedAt": "2026-07-17T08:50:22Z",
-          "score": "-0.4"
+          "score": "0.0"
         },
         {
           "title": "Ether falls twice as hard as bitcoin and HYPE drops 10% as the chip trade unwinds",
@@ -4501,11 +4508,25 @@
           "score": "0.1"
         },
         {
-          "title": "DOG Mode vs. BIP-110: Inside the Bitcoin client built to bypass data restrictions",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/07/17/bitcoin-s-anti-spam-fight-gets-a-dog-mode-reply",
-          "publishedAt": "2026-07-17T05:32:00Z",
-          "score": "0.0"
+          "title": "HSBC wins Bank of England approval to enter Digital Securities Sandbox",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/hsbc-bank-of-england-approval-digital-securities-sandbox?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-17T13:54:27Z",
+          "score": "0.4"
+        },
+        {
+          "title": "SBI acquires Singaporean crypto platform Coinhako after MAS approval",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/sbi-receives-mas-approval-to-acquire-singaporean-coinhako?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-17T13:30:20Z",
+          "score": "0.3"
+        },
+        {
+          "title": "The British Virgin Islands are a top crypto hub no one ever talks about: Here’s why",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/features/why-is-the-british-virgin-islands-becoming-a-legal-home-for-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-17T13:30:00Z",
+          "score": "0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4519,7 +4540,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/dutch-court-knaken-crypto-platform-bankruptcy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T12:21:55Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Stablecoin growth will erode bank deposits, says ECB’s Cipollone",
@@ -4533,7 +4554,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/london-police-sentence-hackers-crypto-ransom-public-transport?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T11:22:55Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "ESMA adds 14 new CASPs to MiCA register as licensing slows",
@@ -4541,27 +4562,6 @@
           "url": "https://cointelegraph.com/news/mica-licensing-momentum-slows-post-deadline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-17T10:29:35Z",
           "score": "0.1"
-        },
-        {
-          "title": "Bitcoin bottom countdown nears 50 days after BTC supply in loss passed 50%",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-bottom-countdown-nears-50-days-after-btc-supply-in-loss-passed-50?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-17T09:51:33Z",
-          "score": "0.3"
-        },
-        {
-          "title": "US indicts crypto investor over alleged $20M fraud scheme",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/us-indicts-crypto-investor-over-alleged-20m-fraud-scheme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-17T09:25:33Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "MacOS malware hijacks Telegram sessions, targets crypto wallets: SlowMist",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/macos-malware-crypto-investors-slowmist?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-17T08:48:20Z",
-          "score": "-0.7"
         }
       ],
       "errorMessage": null
