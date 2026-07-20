@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-20T14:50:22Z",
+  "updatedAt": "2026-07-20T15:10:25Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "64641.98",
       "macd": {
-        "macdLine": "211.47",
-        "signalLine": "-82.18",
-        "histogram": "293.65",
+        "macdLine": "252.45",
+        "signalLine": "-73.99",
+        "histogram": "326.44",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001789",
       "ivRv": {
-        "iv": "32.22",
+        "iv": "41.48",
         "rv": "33.00",
-        "spread": "-0.79",
-        "label": "균형"
+        "spread": "+8.48",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 29,
@@ -454,15 +454,15 @@
     "api_dashboard_cycle": {
       "hasData": true,
       "halvingCycle": {
-        "position": "56.3%",
+        "position": "56.4%",
         "progressWidth": 56,
         "phaseLabel": "과열 구간 (Q3)",
         "phaseLabelEn": "Euphoria (Q3)",
         "phaseBadgeClass": "bg-warning text-dark",
         "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
         "phaseDescriptionEn": "The historical cycle top forms. Consider taking profits.",
-        "formattedElapsed": "821일 경과",
-        "formattedRemaining": "637일 남음",
+        "formattedElapsed": "822일 경과",
+        "formattedRemaining": "636일 남음",
         "cycleNumber": 4,
         "lastHalvingDate": "2024-04-20",
         "nextHalvingDate": "2028-04-17",
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64338.00",
-      "openInterestUsd": "6558649250.29293250",
-      "longAccountRatio": "0.5912",
-      "shortAccountRatio": "0.4088",
-      "downsideLiquidationUsd": "3877473436.77",
-      "upsideLiquidationUsd": "2681175813.52",
+      "currentPrice": "64841.80",
+      "openInterestUsd": "6577363994.98684500",
+      "longAccountRatio": "0.5889",
+      "shortAccountRatio": "0.4111",
+      "downsideLiquidationUsd": "3873409656.65",
+      "upsideLiquidationUsd": "2703954338.34",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57904.20",
+          "price": "58357.62",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1550989374.71"
+          "notionalUsd": "1549363862.66"
         },
         {
-          "price": "70771.80",
+          "price": "71325.98",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1072470325.41"
+          "notionalUsd": "1081581735.34"
         },
         {
-          "price": "61764.48",
+          "price": "62248.13",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1357115702.87"
+          "notionalUsd": "1355693379.83"
         },
         {
-          "price": "66911.52",
+          "price": "67435.47",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "938411534.73"
+          "notionalUsd": "946384018.42"
         },
         {
-          "price": "63051.24",
+          "price": "63544.96",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "775494687.35"
+          "notionalUsd": "774681931.33"
         },
         {
-          "price": "65624.76",
+          "price": "66138.64",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "536235162.70"
+          "notionalUsd": "540790867.67"
         },
         {
-          "price": "63694.62",
+          "price": "64193.38",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "193873671.84"
+          "notionalUsd": "193670482.83"
         },
         {
-          "price": "64981.38",
+          "price": "65490.22",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "134058790.68"
+          "notionalUsd": "135197716.92"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-20T14:29:59.239220Z",
+      "generatedAt": "2026-07-20T15:00:03.034435Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,23 +4392,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 혼재되어 있다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 가격 상승 여력이 있지만 불확실성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "낮은 MVRV-Z와 NUPL로 인해 투자자 심리가 위축될 수 있다."
+          "content": "공포탐욕 지수가 29로, 투자 심리가 매우 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스인 점은 매도 압력을 시사한다."
+          "content": "거래소 순유입이 -25.99로, 매도 압력이 우세하다."
         },
         {
           "type": "ACTION",
-          "content": "단기적으로 관망하며 시장 변화를 주시하라."
+          "content": "시장 상황을 면밀히 관찰하며 소극적인 투자 전략을 유지하라."
         },
         {
           "type": "ACTION",
-          "content": "리스크를 줄이기 위해 포트폴리오 다각화를 고려하라."
+          "content": "가격이 안정되면 매수 기회를 고려하라."
         }
       ],
       "errorMessage": null
@@ -4447,8 +4447,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-20T14:05:02.911533Z",
-      "compositeScore": "0.006",
+      "generatedAt": "2026-07-20T15:05:00.598611Z",
+      "compositeScore": "0.019",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,32 +4456,39 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Inside Cardano's 'Van Rossum' hard fork, and what it means for users",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/20/inside-cardano-s-van-rossum-hard-fork-and-what-it-means-for-users",
+          "publishedAt": "2026-07-20T14:31:23Z",
+          "score": "0.2"
+        },
+        {
           "title": "Exodus to cut 25% of global workforce in payments shift",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/20/exodus-to-cut-25-of-global-workforce-in-payments-shift",
           "publishedAt": "2026-07-20T13:53:08Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Hut 8 surges on $9.8 billion AI data-center lease, lifting compute sector",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/20/hut-8-surges-on-usd9-8-billion-ai-data-center-lease-lifting-compute-sector",
           "publishedAt": "2026-07-20T13:49:24Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Tom Lee's Bitmine slowed ether purchases as it bought back $86 million in stock",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/20/tom-lee-s-bitmine-slowed-ether-purchases-as-it-bought-back-usd86-million-in-stock",
           "publishedAt": "2026-07-20T12:55:36Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Saylor's Strategy raises cash reserves to $3.2 billion, leaving bitcoin holdings unchanged",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/20/saylor-s-strategy-raises-cash-reserves-to-usd3-225-billion-leaving-bitcoin-holdings-unchanged",
           "publishedAt": "2026-07-20T12:35:02Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "Brazilâs securities regulator sets up task force with 60-day deadline for tokenization proposal",
@@ -4502,14 +4509,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/20/bank-of-korea-prepares-for-live-cbdc-transactions-with-nine-banks-in-september",
           "publishedAt": "2026-07-20T11:10:07Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Crypto market slips even as equities advance. Pump surges on social-media chatter",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/20/crypto-market-slips-even-as-equities-advance-pump-surges-on-social-media-chatter",
-          "publishedAt": "2026-07-20T10:33:14Z",
-          "score": "-0.3"
+          "score": "0.5"
         },
         {
           "title": "Peter Brandt predicts the exact day Bitcoin’s bear market will be over",
@@ -4530,7 +4530,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/strategy-263-5-million-mstr-raise-holds-843775-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-20T12:39:49Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Hyperliquid sets 500,000 HYPE stake for permissionless prediction market deployers",
@@ -4551,14 +4551,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/zilliqa-zil-deposit-halt-exchange-partner-wallet-breach?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-20T12:03:35Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Crypto institutions look beyond audits as trust signals falter: Hacken",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/institutions-crypto-security-beyond-audits-hacken-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-20T11:00:00Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "Capital B approves 10-for-1 reverse stock split to broaden investor base",
