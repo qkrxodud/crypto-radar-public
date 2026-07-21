@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-21T09:14:56Z",
+  "updatedAt": "2026-07-21T09:35:03Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "65234.26",
       "macd": {
-        "macdLine": "437.47",
-        "signalLine": "46.40",
-        "histogram": "391.07",
+        "macdLine": "442.98",
+        "signalLine": "47.50",
+        "histogram": "395.48",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -432,7 +432,12 @@
       ],
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001782",
-      "ivRv": null,
+      "ivRv": {
+        "iv": "33.26",
+        "rv": "33.00",
+        "spread": "+0.26",
+        "label": "균형"
+      },
       "fearGreedMa": {
         "currentFg": 25,
         "fgMa30": "21.4",
@@ -2854,7 +2859,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257219085641.25472",
+      "totalMarketCapUsd": "257210468124.72373",
       "marketCap30dAgoUsd": "261112231209.3042",
       "growth30dPercent": "-1.49",
       "signal": "STABLE",
@@ -2925,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "66187.80",
-      "openInterestUsd": "6968286674.38260000",
-      "longAccountRatio": "0.5279",
-      "shortAccountRatio": "0.4721",
-      "downsideLiquidationUsd": "3678558535.41",
-      "upsideLiquidationUsd": "3289728138.98",
+      "currentPrice": "66252.80",
+      "openInterestUsd": "6982193187.14463500",
+      "longAccountRatio": "0.5252",
+      "shortAccountRatio": "0.4748",
+      "downsideLiquidationUsd": "3667047861.89",
+      "upsideLiquidationUsd": "3315145325.26",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "59569.02",
+          "price": "59627.52",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1471423414.16"
+          "notionalUsd": "1466819144.76"
         },
         {
-          "price": "72806.58",
+          "price": "72878.08",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1315891255.59"
+          "notionalUsd": "1326058130.10"
         },
         {
-          "price": "63540.29",
+          "price": "63602.69",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1287495487.39"
+          "notionalUsd": "1283466751.66"
         },
         {
-          "price": "68835.31",
+          "price": "68902.91",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1151404848.64"
+          "notionalUsd": "1160300863.84"
         },
         {
-          "price": "64864.04",
+          "price": "64927.74",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "735711707.08"
+          "notionalUsd": "733409572.38"
         },
         {
-          "price": "67511.56",
+          "price": "67577.86",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "657945627.80"
+          "notionalUsd": "663029065.05"
         },
         {
-          "price": "65525.92",
+          "price": "65590.27",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "183927926.77"
+          "notionalUsd": "183352393.09"
         },
         {
-          "price": "66849.68",
+          "price": "66915.33",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "164486406.95"
+          "notionalUsd": "165757266.26"
         }
       ],
       "errorMessage": null
@@ -4378,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-21T09:00:02.556586Z",
+      "generatedAt": "2026-07-21T09:30:03.551151Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4387,30 +4392,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리 상태로, 가격 상승 가능성이 있지만 주의가 필요하다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 알트코인과 비트코인의 도미넌스가 비슷한 수준이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 25로 낮아 투자 심리가 위축되어 있다."
+          "content": "낮은 공포탐욕 지수로 인해 투자 심리가 위축될 수 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -18.42로 매도 압력이 존재한다."
+          "content": "거래소 순유입이 마이너스로, 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매 전략을 고려하라."
+          "content": "현재 포지션을 유지하며 시장 동향을 주시하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 지속적으로 모니터링하라."
+          "content": "추가 매수는 신중히 고려하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-21T08:54:54.104010Z",
+      "generatedAt": "2026-07-21T09:35:03.061425Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4419,11 +4424,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with mixed indicators suggesting potential stability."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting cautious optimism."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 25 indicates high fear in the market."
+          "content": "Fear and greed index at 25 indicates extreme fear."
         },
         {
           "type": "RISK",
@@ -4431,11 +4436,11 @@
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of recovery or further decline."
+          "content": "Monitor market closely for signs of recovery."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying investments to mitigate risks."
+          "content": "Consider risk management strategies for existing positions."
         }
       ],
       "errorMessage": null
