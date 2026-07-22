@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-22T16:00:08Z",
+  "updatedAt": "2026-07-22T16:20:20Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "65234.26",
       "macd": {
-        "macdLine": "564.13",
-        "signalLine": "169.38",
-        "histogram": "394.75",
+        "macdLine": "563.52",
+        "signalLine": "169.26",
+        "histogram": "394.26",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001782",
       "ivRv": {
-        "iv": "36.06",
+        "iv": "36.04",
         "rv": "33.00",
-        "spread": "+3.06",
+        "spread": "+3.04",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2859,9 +2859,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257262643936.83352",
+      "totalMarketCapUsd": "257420461185.03050",
       "marketCap30dAgoUsd": "260646993997.18508",
-      "growth30dPercent": "-1.30",
+      "growth30dPercent": "-1.24",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "66014.90",
-      "openInterestUsd": "6810374984.21280000",
-      "longAccountRatio": "0.5450",
-      "shortAccountRatio": "0.4550",
-      "downsideLiquidationUsd": "3711654366.40",
-      "upsideLiquidationUsd": "3098720617.82",
+      "currentPrice": "66018.50",
+      "openInterestUsd": "6814841110.05996100",
+      "longAccountRatio": "0.5441",
+      "shortAccountRatio": "0.4559",
+      "downsideLiquidationUsd": "3707955047.98",
+      "upsideLiquidationUsd": "3106886062.08",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "59413.41",
+          "price": "59416.65",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1484661746.56"
+          "notionalUsd": "1483182019.19"
         },
         {
-          "price": "72616.39",
+          "price": "72620.35",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1239488247.13"
+          "notionalUsd": "1242754424.83"
         },
         {
-          "price": "63374.30",
+          "price": "63377.76",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1299079028.24"
+          "notionalUsd": "1297784266.79"
         },
         {
-          "price": "68655.50",
+          "price": "68659.24",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1084552216.24"
+          "notionalUsd": "1087410121.73"
         },
         {
-          "price": "64694.60",
+          "price": "64698.13",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "742330873.28"
+          "notionalUsd": "741591009.60"
         },
         {
-          "price": "67335.20",
+          "price": "67338.87",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "619744123.56"
+          "notionalUsd": "621377212.42"
         },
         {
-          "price": "65354.75",
+          "price": "65358.32",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "185582718.32"
+          "notionalUsd": "185397752.40"
         },
         {
-          "price": "66675.05",
+          "price": "66678.69",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "154936030.89"
+          "notionalUsd": "155344303.10"
         }
       ],
       "errorMessage": null
@@ -4447,14 +4447,42 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-22T15:05:02.541464Z",
-      "compositeScore": "-0.069",
+      "generatedAt": "2026-07-22T16:05:01.104418Z",
+      "compositeScore": "0.050",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Revolut hits $115 billion valuation in employee share sale: WSJ",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/22/revolut-hits-usd115-billion-valuation-in-employee-share-sale-wsj",
+          "publishedAt": "2026-07-22T15:53:54Z",
+          "score": "0.5"
+        },
+        {
+          "title": "SEC's Peirce warns some DeFi vaults, onchain lending may fall under securities laws",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/07/22/sec-s-peirce-warns-some-defi-vaults-onchain-lending-may-fall-under-securities-laws",
+          "publishedAt": "2026-07-22T15:37:36Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "UK digital bond plans hinge on one missing piece: onchain cash",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/22/uk-digital-bond-plans-hinge-on-one-missing-piece-onchain-cash",
+          "publishedAt": "2026-07-22T15:36:49Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Crypto Long & Short: The crypto question isn't what to own â it's what you can survive holding",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/coindesk-indices/2026/07/22/crypto-long-and-short-the-crypto-question-isn-t-what-to-own-it-s-what-you-can-survive-holding",
+          "publishedAt": "2026-07-22T15:09:47Z",
+          "score": "0.0"
+        },
         {
           "title": "U.S. seeks forfeiture of $25 million in crypto tied to romance and investment scams",
           "source": "CoinDesk",
@@ -4467,56 +4495,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/21/forget-nvidia-the-next-big-ai-trade-could-be-crypto-and-blockchain",
           "publishedAt": "2026-07-22T13:32:40Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Kalshi rolls out Midterm Hubs ahead of the November elections in the U.S.",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/22/kalshi-rolls-out-midterm-hubs-ahead-of-the-november-elections-in-the-u-s",
           "publishedAt": "2026-07-22T12:12:10Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Midnight token rebounds 19% after Wanchain bridge hack, Hoskinson calls for ZK revamp",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/22/midnight-token-rebounds-after-wanchain-bridge-hack-hoskinson-calls-for-industry-overhaul",
           "publishedAt": "2026-07-22T11:45:42Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
-          "title": "Here's why bitcoin bulls should take a closer look at interest rates",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/07/22/here-s-why-bitcoin-bulls-should-take-a-closer-look-at-interest-rates",
-          "publishedAt": "2026-07-22T11:23:36Z",
-          "score": "0.1"
-        },
-        {
-          "title": "SecondFi to shut down after $2.4 million ADA wallet theft",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/web3/2026/07/22/secondfi-to-shut-down-after-usd2-4-million-ada-wallet-theft",
-          "publishedAt": "2026-07-22T11:10:27Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Bitcoin retreats from one-month high as oil tops $85, inflation concerns resurface",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/22/bitcoin-retreats-from-one-month-high-as-oil-tops-usd85-inflation-concerns-resurface",
-          "publishedAt": "2026-07-22T10:33:33Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Kraken parent expands tokenized stocks to Hong Kong, UK and South Korea equities",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/22/kraken-parent-expands-tokenized-stocks-to-hong-kong-uk-and-south-korea-equities",
-          "publishedAt": "2026-07-22T10:30:00Z",
-          "score": "0.4"
+          "title": "Bitcoin price avoids major Iran jitters as S&P 500 ‘short squeeze’ on horizon",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-price-avoids-major-iran-jitters-as-sp-500-short-squeeze-on-horizon?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-22T15:55:20Z",
+          "score": "0.6"
         },
         {
           "title": "The digital euro: Surveillance money, or a better alternative to cash?",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/what-is-the-digital-euro-all-you-need-to-know-about-europes-cbdc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T13:30:00Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "Franklin Templeton calls agentic AI next ‘killer’ use case for blockchain",
@@ -4544,7 +4551,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/zilliqa-ledger-vulnerability-attackers-recover-private-keys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T11:49:53Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "US seeks forfeiture of $25M in crypto tied to romance, investment scams",
@@ -4559,13 +4566,6 @@
           "url": "https://cointelegraph.com/news/talos-brings-institutional-trading-tools-to-kalshi-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T11:00:00Z",
           "score": "0.2"
-        },
-        {
-          "title": "Crypto institutions look beyond audits as trust signals falter: Hacken",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/institutions-crypto-security-beyond-audits-hacken-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-22T11:00:00Z",
-          "score": "-0.3"
         }
       ],
       "errorMessage": null
