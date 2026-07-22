@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-22T06:55:01Z",
+  "updatedAt": "2026-07-22T07:26:21Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,22 +60,8 @@
       "piCycleGap": "0.59",
       "historicalVolatility": "0.33",
       "btcClose": "65234.26",
-      "macd": {
-        "macdLine": "555.34",
-        "signalLine": "167.63",
-        "histogram": "387.72",
-        "crossType": "NONE",
-        "crossLabel": "크로스 없음",
-        "bullish": true
-      },
-      "adx": {
-        "adx": "14.5",
-        "plusDi": "17.6",
-        "minusDi": "22.6",
-        "strength": "WEAK",
-        "strengthLabel": "무추세(횡보)",
-        "trending": false
-      },
+      "macd": null,
+      "adx": null,
       "optionsSkew25d": "21.51",
       "perpBasisSpread": "-0.0432",
       "errorMessage": null
@@ -432,12 +418,7 @@
       ],
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001782",
-      "ivRv": {
-        "iv": "35.04",
-        "rv": "33.00",
-        "spread": "+2.04",
-        "label": "균형"
-      },
+      "ivRv": null,
       "fearGreedMa": {
         "currentFg": 25,
         "fgMa30": "21.4",
@@ -4383,7 +4364,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-22T06:30:02.733050Z",
+      "generatedAt": "2026-07-22T07:00:02.809721Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,11 +4373,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리를 보이며, 가격 상승 여력이 있지만 위험 요소도 존재한다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 알트코인과 비트코인 간의 경쟁이 심화되고 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 낮아 투자자 심리가 위축되어 있다."
+          "content": "공포탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
@@ -4404,51 +4385,43 @@
         },
         {
           "type": "ACTION",
-          "content": "단기적인 매매 전략을 고려하라."
+          "content": "단기 투자자는 신중하게 포지션을 조정해야 한다."
         },
         {
           "type": "ACTION",
-          "content": "시장 동향을 주의 깊게 모니터링하라."
+          "content": "장기 투자자는 현재 가격대에서 매수 기회를 모색할 수 있다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-22T06:34:57.631419Z",
+      "generatedAt": "2026-07-22T07:26:21.177705Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
       "toneHexColor": "#FBBF24",
-      "modelName": "gpt-4o-mini",
+      "modelName": "gpt-4o-mini (fallback)",
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed signals across various indicators."
-        },
-        {
-          "type": "RISK",
-          "content": "Fear and Greed Index shows extreme fear at 25."
-        },
-        {
-          "type": "RISK",
-          "content": "High NVT ratio at 223.66 indicates potential overvaluation."
+          "content": "Composite 64 pts, Neutral tone. Rule-based summary provided (LLM unavailable)."
         },
         {
           "type": "ACTION",
-          "content": "Monitor BTC dominance at 57 for altcoin performance."
+          "content": "Buy-favorable zone -- maintain or slightly increase DCA allocation."
         },
         {
           "type": "ACTION",
-          "content": "Consider profit-taking strategies if prices approach resistance levels."
+          "content": "BTC dominance above 55% -- consider trimming altcoin allocation."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-22T06:05:02.578850Z",
-      "compositeScore": "-0.013",
+      "generatedAt": "2026-07-22T07:05:02.301656Z",
+      "compositeScore": "-0.094",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,11 +4429,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "AI models escaped OpenAIâs sandbox and hit Hugging Face. Crypto is where that gets dangerous",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/22/ai-models-escaped-openai-s-sandbox-and-hit-hugging-face-crypto-is-where-that-gets-dangerous",
+          "publishedAt": "2026-07-22T06:01:56Z",
+          "score": "-0.5"
+        },
+        {
           "title": "Bitcoin holds near $66,300 as chips extend their rally and the yen hits a 40-year low",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/22/bitcoin-holds-near-usd66-300-as-chips-extend-their-rally-and-the-yen-hits-a-40-year-low",
           "publishedAt": "2026-07-22T05:03:39Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Crypto lobby group Digital Chamber sues Illinois to block digital asset tax",
@@ -4474,28 +4454,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/21/crypto-clarity-act-still-at-mercy-of-ethics-section-as-democrats-balk-at-trump-deal",
           "publishedAt": "2026-07-21T21:14:03Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "Bitcoin rally faces key test at $68,000 as 'summer slumber' grips crypto, analysts say",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/21/bitcoin-rally-faces-key-test-at-usd68-000-as-summer-slumber-grips-crypto-analysts-say",
           "publishedAt": "2026-07-21T20:05:33Z",
-          "score": "-0.1"
+          "score": "0.1"
         },
         {
           "title": "White House pushes Senate Democrats to take 'historic' crypto Clarity Act ethics deal",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/21/white-house-pushes-senate-democrats-to-take-historic-crypto-clarity-act-ethics-deal",
           "publishedAt": "2026-07-21T18:14:39Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Movement Labs files for Chapter 11 bankruptcy months after token scandal",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/21/movement-labs-files-for-chapter-11-months-after-token-scandal-and-strategic-overhaul",
           "publishedAt": "2026-07-21T17:54:40Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Claude's Fable 5 just solved an 87-year-old math problem, and it matters for bitcoin",
@@ -4503,13 +4483,6 @@
           "url": "https://www.coindesk.com/tech/2026/07/21/claude-s-fable-5-just-solved-an-87-year-old-math-problem-and-it-matters-for-bitcoin",
           "publishedAt": "2026-07-21T16:19:24Z",
           "score": "0.5"
-        },
-        {
-          "title": "Galaxy sets up $5 million fund to help shield Bitcoin against quantum computing threats",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/07/21/galaxy-sets-up-usd5-million-fund-to-help-shield-bitcoin-against-quantum-computing-threats",
-          "publishedAt": "2026-07-21T16:16:14Z",
-          "score": "0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4523,49 +4496,49 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/algorithmic-stablecoin-balance-coin-plummets-99-after-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T03:12:48Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "OpenAI says AI models escaped containment to hack Hugging Face",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/openai-models-hacked-hugging-face-to-cheat-on-a-test?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T02:45:55Z",
-          "score": "-0.3"
+          "score": "-0.6"
         },
         {
           "title": "Balaji’s Network School turns to Kazakhstan amid Malaysia setback",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/balajis-network-school-turns-to-kazakhstan-amid-malaysia-setback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T01:05:25Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "CLARITY Act could help CFTC deal with prediction markets: Lawyer",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/clarity-act-cftc-prediction-markets-resources?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-21T21:36:43Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Movement Labs files for Chapter 11 bankruptcy after months of MOVE token turmoil",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/movement-labs-files-chapter-11-bankruptcy-move-token-turmoil?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-21T20:59:32Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Ether breaks the $1.9K resistance: Is $2.1K the next target for ETH bulls?",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/ether-breaks-the-1900-resistance-is-2100-the-next-target-for-eth-bulls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-21T20:26:13Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Pakistan steps up crypto enforcement with dedicated federal unit",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/pakistan-crypto-enforcement-dedicated-unit-crimes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-21T19:19:22Z",
-          "score": "-0.5"
+          "score": "-0.4"
         }
       ],
       "errorMessage": null
