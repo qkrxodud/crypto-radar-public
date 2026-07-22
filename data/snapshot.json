@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-22T14:39:50Z",
+  "updatedAt": "2026-07-22T14:59:53Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "65234.26",
       "macd": {
-        "macdLine": "538.15",
-        "signalLine": "164.19",
-        "histogram": "373.96",
+        "macdLine": "543.72",
+        "signalLine": "165.30",
+        "histogram": "378.42",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -432,7 +432,12 @@
       ],
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001782",
-      "ivRv": null,
+      "ivRv": {
+        "iv": "35.89",
+        "rv": "33.00",
+        "spread": "+2.89",
+        "label": "균형"
+      },
       "fearGreedMa": {
         "currentFg": 25,
         "fgMa30": "21.4",
@@ -2925,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "65680.30",
-      "openInterestUsd": "6813964547.74660100",
-      "longAccountRatio": "0.5458",
-      "shortAccountRatio": "0.4542",
-      "downsideLiquidationUsd": "3719061850.16",
-      "upsideLiquidationUsd": "3094902697.59",
+      "currentPrice": "65761.40",
+      "openInterestUsd": "6816931760.59566900",
+      "longAccountRatio": "0.5470",
+      "shortAccountRatio": "0.4530",
+      "downsideLiquidationUsd": "3728861673.05",
+      "upsideLiquidationUsd": "3088070087.55",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "59112.27",
+          "price": "59185.26",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1487624740.06"
+          "notionalUsd": "1491544669.22"
         },
         {
-          "price": "72248.33",
+          "price": "72337.54",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1237961079.03"
+          "notionalUsd": "1235228035.02"
         },
         {
-          "price": "63053.09",
+          "price": "63130.94",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1301671647.56"
+          "notionalUsd": "1305101585.57"
         },
         {
-          "price": "68307.51",
+          "price": "68391.86",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1083215944.16"
+          "notionalUsd": "1080824530.64"
         },
         {
-          "price": "64366.69",
+          "price": "64446.17",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "743812370.03"
+          "notionalUsd": "745772334.61"
         },
         {
-          "price": "66993.91",
+          "price": "67076.63",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "618980539.52"
+          "notionalUsd": "617614017.51"
         },
         {
-          "price": "65023.50",
+          "price": "65103.79",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "185953092.51"
+          "notionalUsd": "186443083.65"
         },
         {
-          "price": "66337.10",
+          "price": "66419.01",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "154745134.88"
+          "notionalUsd": "154403504.38"
         }
       ],
       "errorMessage": null
