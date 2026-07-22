@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-22T21:02:07Z",
+  "updatedAt": "2026-07-22T21:22:13Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "65234.26",
       "macd": {
-        "macdLine": "553.99",
-        "signalLine": "167.35",
-        "histogram": "386.63",
+        "macdLine": "556.09",
+        "signalLine": "167.78",
+        "histogram": "388.32",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -2859,9 +2859,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257325367062.08592",
+      "totalMarketCapUsd": "257386411603.63968",
       "marketCap30dAgoUsd": "260646993997.18508",
-      "growth30dPercent": "-1.27",
+      "growth30dPercent": "-1.25",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "65878.20",
-      "openInterestUsd": "6753366604.30740000",
-      "longAccountRatio": "0.5470",
-      "shortAccountRatio": "0.4530",
-      "downsideLiquidationUsd": "3694091532.56",
-      "upsideLiquidationUsd": "3059275071.75",
+      "currentPrice": "65905.40",
+      "openInterestUsd": "6750498367.42500000",
+      "longAccountRatio": "0.5474",
+      "shortAccountRatio": "0.4526",
+      "downsideLiquidationUsd": "3695222806.33",
+      "upsideLiquidationUsd": "3055275561.10",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "59290.38",
+          "price": "59314.86",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1477636613.02"
+          "notionalUsd": "1478089122.53"
         },
         {
-          "price": "72466.02",
+          "price": "72495.94",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1223710028.70"
+          "notionalUsd": "1222110224.44"
         },
         {
-          "price": "63243.07",
+          "price": "63269.18",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1292932036.39"
+          "notionalUsd": "1293327982.21"
         },
         {
-          "price": "68513.33",
+          "price": "68541.62",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1070746275.11"
+          "notionalUsd": "1069346446.38"
         },
         {
-          "price": "64560.64",
+          "price": "64587.29",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "738818306.51"
+          "notionalUsd": "739044561.27"
         },
         {
-          "price": "67195.76",
+          "price": "67223.51",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "611855014.35"
+          "notionalUsd": "611055112.22"
         },
         {
-          "price": "65219.42",
+          "price": "65246.35",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "184704576.63"
+          "notionalUsd": "184761140.32"
         },
         {
-          "price": "66536.98",
+          "price": "66564.45",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "152963753.59"
+          "notionalUsd": "152763778.05"
         }
       ],
       "errorMessage": null
@@ -4415,7 +4415,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-22T20:42:02.234429Z",
+      "generatedAt": "2026-07-22T21:22:13.551343Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4432,23 +4432,23 @@
         },
         {
           "type": "RISK",
-          "content": "Low RSI on weekly (40.20) suggests potential downward pressure."
+          "content": "Low RSI on weekly at 40.20 suggests potential downward pressure."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for shifts in sentiment."
+          "content": "Monitor market closely for signs of recovery."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into stable assets to mitigate risk."
+          "content": "Consider reducing exposure to high-risk assets."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-22T20:21:58.963576Z",
-      "compositeScore": "-0.081",
+      "generatedAt": "2026-07-22T21:05:02.531883Z",
+      "compositeScore": "-0.063",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,18 +4456,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Tesla holds bitcoin treasury steady, reports $112M impairment loss",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/22/tesla-holds-bitcoin-steady-reports-usd112m-impairment-loss",
+          "publishedAt": "2026-07-22T20:40:24Z",
+          "score": "-0.6"
+        },
+        {
           "title": "New draft of Clarity Act is out, and it would impose limits on Trump's crypto empire",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/22/new-clarity-act-emerges-that-s-a-start-on-the-final-draft-makes-ethics-rule-temporary",
           "publishedAt": "2026-07-22T16:15:55Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
           "title": "Revolut hits $115 billion valuation in employee share sale: WSJ",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/22/revolut-hits-usd115-billion-valuation-in-employee-share-sale-wsj",
           "publishedAt": "2026-07-22T15:53:54Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "SEC's Peirce warns some DeFi vaults, onchain lending may fall under securities laws",
@@ -4481,7 +4488,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/22/uk-digital-bond-plans-hinge-on-one-missing-piece-onchain-cash",
           "publishedAt": "2026-07-22T15:36:49Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Crypto Long & Short: The crypto question isn't what to own â it's what you can survive holding",
@@ -4495,21 +4502,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/22/u-s-seeks-forfeiture-of-usd25-million-in-crypto-tied-to-romance-and-investment-scams",
           "publishedAt": "2026-07-22T13:45:58Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Forget Nvidia: The next big AI trade could be crypto and blockchain",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/21/forget-nvidia-the-next-big-ai-trade-could-be-crypto-and-blockchain",
           "publishedAt": "2026-07-22T13:32:40Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
-          "title": "Kalshi rolls out Midterm Hubs ahead of the November elections in the U.S.",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/22/kalshi-rolls-out-midterm-hubs-ahead-of-the-november-elections-in-the-u-s",
-          "publishedAt": "2026-07-22T12:12:10Z",
-          "score": "0.2"
+          "title": "Crypto PAC pours $1M into Michigan Democratic primary race",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-pac-michigan-democratic-primary-race?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-22T20:38:08Z",
+          "score": "0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4523,14 +4530,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/clarity-act-ethics-public-officials-president-barred-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T18:41:30Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Anthropic joins UK FCA’s AI regulatory sandbox as second cohort launches",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/anthropic-joins-uk-fcas-ai-regulatory-sandbox-as-second-cohort-launches?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T17:57:11Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "SEC’s Peirce says crypto vaults and onchain lending may fall under securities laws",
@@ -4544,14 +4551,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/digital-chamber-lawsuit-illinois-crypto-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T16:28:10Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "BitGo, OTC Markets plan tokenized securities access for broker-dealers",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitgo-otc-markets-tokenized-securities-broker-dealers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T16:10:22Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin price avoids major Iran jitters as S&P 500 ‘short squeeze’ on horizon",
@@ -4559,13 +4566,6 @@
           "url": "https://cointelegraph.com/markets/bitcoin-price-avoids-major-iran-jitters-as-sp-500-short-squeeze-on-horizon?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T15:55:20Z",
           "score": "0.6"
-        },
-        {
-          "title": "The digital euro: Surveillance money, or a better alternative to cash?",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/magazine/what-is-the-digital-euro-all-you-need-to-know-about-europes-cbdc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-22T13:30:00Z",
-          "score": "0.1"
         }
       ],
       "errorMessage": null
