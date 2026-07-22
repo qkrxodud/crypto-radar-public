@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-22T07:46:23Z",
+  "updatedAt": "2026-07-22T08:06:34Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "65234.26",
       "macd": {
-        "macdLine": "546.23",
-        "signalLine": "165.80",
-        "histogram": "380.43",
+        "macdLine": "564.79",
+        "signalLine": "169.52",
+        "histogram": "395.28",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001782",
       "ivRv": {
-        "iv": "35.96",
+        "iv": "35.54",
         "rv": "33.00",
-        "spread": "+2.96",
+        "spread": "+2.54",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2859,9 +2859,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257304667629.90222",
+      "totalMarketCapUsd": "257279016215.15852",
       "marketCap30dAgoUsd": "260646993997.18508",
-      "growth30dPercent": "-1.28",
+      "growth30dPercent": "-1.29",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "65779.90",
-      "openInterestUsd": "6815416842.37200700",
-      "longAccountRatio": "0.5143",
-      "shortAccountRatio": "0.4857",
-      "downsideLiquidationUsd": "3505168882.03",
-      "upsideLiquidationUsd": "3310247960.34",
+      "currentPrice": "66022.40",
+      "openInterestUsd": "6838803793.61270000",
+      "longAccountRatio": "0.5164",
+      "shortAccountRatio": "0.4836",
+      "downsideLiquidationUsd": "3531558279.02",
+      "upsideLiquidationUsd": "3307245514.59",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "59201.91",
+          "price": "59420.16",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1402067552.81"
+          "notionalUsd": "1412623311.61"
         },
         {
-          "price": "72357.89",
+          "price": "72624.64",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1324099184.14"
+          "notionalUsd": "1322898205.84"
         },
         {
-          "price": "63148.70",
+          "price": "63381.50",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1226809108.71"
+          "notionalUsd": "1236045397.66"
         },
         {
-          "price": "68411.10",
+          "price": "68663.30",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1158586786.12"
+          "notionalUsd": "1157535930.11"
         },
         {
-          "price": "64464.30",
+          "price": "64701.95",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "701033776.41"
+          "notionalUsd": "706311655.80"
         },
         {
-          "price": "67095.50",
+          "price": "67342.85",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "662049592.07"
+          "notionalUsd": "661449102.92"
         },
         {
-          "price": "65122.10",
+          "price": "65362.18",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "175258444.10"
+          "notionalUsd": "176577913.95"
         },
         {
-          "price": "66437.70",
+          "price": "66682.62",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "165512398.02"
+          "notionalUsd": "165362275.73"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-22T07:41:20.527406Z",
+      "generatedAt": "2026-07-22T08:00:02.411352Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,55 +4392,63 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리 상태로, 다소 안정적인 지표들이 혼재되어 있다."
+          "content": "현재 시장은 중립적이며, 공포탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "공포탐욕 지수가 25로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스여서 매도 압력이 우려된다."
+          "content": "거래소 순유입이 -18.42로 매도 압력이 우세하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려해 신중한 접근이 필요하다."
+          "content": "단기적인 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산시킬 것을 권장한다."
+          "content": "추가 매수를 고려하기 전에 시장 심리를 주의 깊게 관찰하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-22T07:26:21.177705Z",
+      "generatedAt": "2026-07-22T08:06:32.081397Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
       "toneHexColor": "#FBBF24",
-      "modelName": "gpt-4o-mini (fallback)",
+      "modelName": "gpt-4o-mini",
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "Composite 64 pts, Neutral tone. Rule-based summary provided (LLM unavailable)."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting potential caution."
+        },
+        {
+          "type": "RISK",
+          "content": "Fear and greed index at 25 indicates high fear in the market."
+        },
+        {
+          "type": "RISK",
+          "content": "Low RSI on weekly at 40.20 suggests potential downward pressure."
         },
         {
           "type": "ACTION",
-          "content": "Buy-favorable zone -- maintain or slightly increase DCA allocation."
+          "content": "Monitor market closely for signs of reversal or increased volatility."
         },
         {
           "type": "ACTION",
-          "content": "BTC dominance above 55% -- consider trimming altcoin allocation."
+          "content": "Consider diversifying investments to mitigate risk exposure."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-22T07:05:02.301656Z",
-      "compositeScore": "-0.094",
+      "generatedAt": "2026-07-22T08:06:34.928737Z",
+      "compositeScore": "-0.038",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4459,14 +4467,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/22/bitcoin-holds-near-usd66-300-as-chips-extend-their-rally-and-the-yen-hits-a-40-year-low",
           "publishedAt": "2026-07-22T05:03:39Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Crypto lobby group Digital Chamber sues Illinois to block digital asset tax",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/21/crypto-lobby-group-tdc-sues-illinois-to-block-digital-asset-tax",
           "publishedAt": "2026-07-21T22:08:10Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Crypto Clarity Act still at mercy of ethics section as Democrats balk at Trump deal",
@@ -4480,14 +4488,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/21/bitcoin-rally-faces-key-test-at-usd68-000-as-summer-slumber-grips-crypto-analysts-say",
           "publishedAt": "2026-07-21T20:05:33Z",
-          "score": "0.1"
+          "score": "-0.2"
         },
         {
           "title": "White House pushes Senate Democrats to take 'historic' crypto Clarity Act ethics deal",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/21/white-house-pushes-senate-democrats-to-take-historic-crypto-clarity-act-ethics-deal",
           "publishedAt": "2026-07-21T18:14:39Z",
-          "score": "0.3"
+          "score": "0.6"
         },
         {
           "title": "Movement Labs files for Chapter 11 bankruptcy months after token scandal",
@@ -4501,7 +4509,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/21/claude-s-fable-5-just-solved-an-87-year-old-math-problem-and-it-matters-for-bitcoin",
           "publishedAt": "2026-07-21T16:19:24Z",
-          "score": "0.5"
+          "score": "0.2"
+        },
+        {
+          "title": "Bitcoin ETFs extend inflow streak to six days with $203M added",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-etfs-203-million-inflow-streak-six-days?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-22T07:57:03Z",
+          "score": "0.7"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4529,14 +4544,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/balajis-network-school-turns-to-kazakhstan-amid-malaysia-setback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-22T01:05:25Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "CLARITY Act could help CFTC deal with prediction markets: Lawyer",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/clarity-act-cftc-prediction-markets-resources?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-21T21:36:43Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Movement Labs files for Chapter 11 bankruptcy after months of MOVE token turmoil",
@@ -4550,14 +4565,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/ether-breaks-the-1900-resistance-is-2100-the-next-target-for-eth-bulls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-21T20:26:13Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Pakistan steps up crypto enforcement with dedicated federal unit",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/pakistan-crypto-enforcement-dedicated-unit-crimes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-21T19:19:22Z",
-          "score": "-0.4"
+          "score": "0.4"
         }
       ],
       "errorMessage": null
