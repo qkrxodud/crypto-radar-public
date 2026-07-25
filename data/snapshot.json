@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-25T15:18:48Z",
+  "updatedAt": "2026-07-25T15:38:55Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "64167.16",
       "macd": {
-        "macdLine": "442.05",
-        "signalLine": "388.69",
-        "histogram": "53.35",
+        "macdLine": "441.73",
+        "signalLine": "388.63",
+        "histogram": "53.10",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001784",
       "ivRv": {
-        "iv": "27.54",
+        "iv": "27.78",
         "rv": "27.00",
-        "spread": "+0.54",
+        "spread": "+0.78",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2855,8 +2855,8 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "256618406601.8164",
-      "marketCap30dAgoUsd": "259800889634.15032",
+      "totalMarketCapUsd": "256600218916.20076",
+      "marketCap30dAgoUsd": "259803845521.19599",
       "growth30dPercent": "-1.23",
       "signal": "STABLE",
       "signalLabel": "중립",
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64203.70",
-      "openInterestUsd": "6932539373.00820000",
-      "longAccountRatio": "0.6475",
-      "shortAccountRatio": "0.3525",
-      "downsideLiquidationUsd": "4488819244.02",
-      "upsideLiquidationUsd": "2443720128.99",
+      "currentPrice": "64203.80",
+      "openInterestUsd": "6923654803.69736700",
+      "longAccountRatio": "0.6472",
+      "shortAccountRatio": "0.3528",
+      "downsideLiquidationUsd": "4480989388.95",
+      "upsideLiquidationUsd": "2442665414.74",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57783.33",
+          "price": "57783.42",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1795527697.61"
+          "notionalUsd": "1792395755.58"
         },
         {
-          "price": "70624.07",
+          "price": "70624.18",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "977488051.59"
+          "notionalUsd": "977066165.90"
         },
         {
-          "price": "61635.55",
+          "price": "61635.65",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1571086735.41"
+          "notionalUsd": "1568346286.13"
         },
         {
-          "price": "66771.85",
+          "price": "66771.95",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "855302045.14"
+          "notionalUsd": "854932895.16"
         },
         {
-          "price": "62919.63",
+          "price": "62919.72",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "897763848.80"
+          "notionalUsd": "896197877.79"
         },
         {
-          "price": "65487.77",
+          "price": "65487.88",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "488744025.80"
+          "notionalUsd": "488533082.95"
         },
         {
-          "price": "63561.66",
+          "price": "63561.76",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "224440962.20"
+          "notionalUsd": "224049469.45"
         },
         {
-          "price": "64845.74",
+          "price": "64845.84",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "122186006.45"
+          "notionalUsd": "122133270.74"
         }
       ],
       "errorMessage": null
@@ -4379,39 +4379,31 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-25T15:00:02.175272Z",
+      "generatedAt": "2026-07-25T15:29:57.943554Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
       "toneHexColor": "#FBBF24",
-      "modelName": "gpt-4o-mini",
+      "modelName": "gpt-4o-mini (fallback)",
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
-        },
-        {
-          "type": "RISK",
-          "content": "낮은 공포탐욕 지수(27)는 투자 심리의 위축을 나타낸다."
-        },
-        {
-          "type": "RISK",
-          "content": "거래소 순유입이 -131.05로, 매도 압력이 존재한다."
+          "content": "종합 63점 중립 톤. LLM 미가용으로 룰 기반 요약을 제공합니다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 불확실성을 고려하여 신중한 접근이 필요하다."
+          "content": "매수 우호 구간 — DCA 비중 유지 또는 소폭 확대 고려."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산할 것을 권장한다."
+          "content": "BTC 도미넌스 55% 이상 — 알트 비중 축소 검토."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-25T14:58:47.478996Z",
+      "generatedAt": "2026-07-25T15:38:55.148234Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4420,7 +4412,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed signals across various indicators."
+          "content": "The market is currently neutral with mixed indicators suggesting cautious sentiment."
         },
         {
           "type": "RISK",
@@ -4428,15 +4420,15 @@
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential weakness in momentum."
+          "content": "Low RSI values suggest potential downward pressure."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of recovery or further decline."
+          "content": "Monitor market closely for signs of recovery."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying investments to mitigate risk exposure."
+          "content": "Consider diversifying into stable assets to mitigate risk."
         }
       ],
       "errorMessage": null
