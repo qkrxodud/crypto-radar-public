@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-25T15:58:58Z",
+  "updatedAt": "2026-07-25T16:19:04Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "64167.16",
       "macd": {
-        "macdLine": "437.58",
-        "signalLine": "387.80",
-        "histogram": "49.78",
+        "macdLine": "437.90",
+        "signalLine": "387.86",
+        "histogram": "50.03",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001784",
       "ivRv": {
-        "iv": "27.88",
+        "iv": "27.70",
         "rv": "27.00",
-        "spread": "+0.88",
+        "spread": "+0.70",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64150.00",
-      "openInterestUsd": "6924376092.19720000",
-      "longAccountRatio": "0.6468",
-      "shortAccountRatio": "0.3532",
-      "downsideLiquidationUsd": "4478686456.43",
-      "upsideLiquidationUsd": "2445689635.76",
+      "currentPrice": "64157.70",
+      "openInterestUsd": "6929745314.34110000",
+      "longAccountRatio": "0.6453",
+      "shortAccountRatio": "0.3547",
+      "downsideLiquidationUsd": "4471764651.34",
+      "upsideLiquidationUsd": "2457980663.00",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57735.00",
+          "price": "57741.93",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1791474582.57"
+          "notionalUsd": "1788705860.54"
         },
         {
-          "price": "70565.00",
+          "price": "70573.47",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "978275854.31"
+          "notionalUsd": "983192265.20"
         },
         {
-          "price": "61584.00",
+          "price": "61591.39",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1567540259.75"
+          "notionalUsd": "1565117627.97"
         },
         {
-          "price": "66716.00",
+          "price": "66724.01",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "855991372.52"
+          "notionalUsd": "860293232.05"
         },
         {
-          "price": "62867.00",
+          "price": "62874.55",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "895737291.29"
+          "notionalUsd": "894352930.27"
         },
         {
-          "price": "65433.00",
+          "price": "65440.85",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "489137927.15"
+          "notionalUsd": "491596132.60"
         },
         {
-          "price": "63508.50",
+          "price": "63516.12",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "223934322.82"
+          "notionalUsd": "223588232.57"
         },
         {
-          "price": "64791.50",
+          "price": "64799.28",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "122284481.79"
+          "notionalUsd": "122899033.15"
         }
       ],
       "errorMessage": null
@@ -4379,31 +4379,39 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-25T15:29:57.943554Z",
+      "generatedAt": "2026-07-25T16:00:03.085763Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
       "toneHexColor": "#FBBF24",
-      "modelName": "gpt-4o-mini (fallback)",
+      "modelName": "gpt-4o-mini",
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "종합 63점 중립 톤. LLM 미가용으로 룰 기반 요약을 제공합니다."
+          "content": "현재 시장은 중립적인 심리 상태를 보이며, 알트코인과 비트코인의 도미넌스가 혼재되어 있다."
+        },
+        {
+          "type": "RISK",
+          "content": "공포탐욕 지수가 27로, 시장의 두려움이 커지고 있다."
+        },
+        {
+          "type": "RISK",
+          "content": "RSI(주)가 38.30으로 과매도 구간에 근접하고 있다."
         },
         {
           "type": "ACTION",
-          "content": "매수 우호 구간 — DCA 비중 유지 또는 소폭 확대 고려."
+          "content": "단기적인 시장 회복을 기대하며 소액 매수 전략을 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "BTC 도미넌스 55% 이상 — 알트 비중 축소 검토."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산시키는 것이 필요하다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-25T15:38:55.148234Z",
+      "generatedAt": "2026-07-25T16:19:04.752267Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4412,31 +4420,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed indicators suggesting cautious sentiment."
+          "content": "The market is currently neutral with mixed indicators suggesting caution."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 27 indicates extreme fear."
+          "content": "Fear and greed index at 27 indicates high fear sentiment."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential downward pressure."
+          "content": "Low RSI values across weekly and monthly charts suggest potential downward pressure."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of recovery."
+          "content": "Monitor market closely for signs of trend reversal."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into stable assets to mitigate risk."
+          "content": "Consider reducing exposure to high-risk assets."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-25T15:05:02.228567Z",
-      "compositeScore": "-0.088",
+      "generatedAt": "2026-07-25T16:05:00.313981Z",
+      "compositeScore": "-0.050",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4444,39 +4452,46 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
+          "publishedAt": "2026-07-25T15:46:05Z",
+          "score": "-0.7"
+        },
+        {
           "title": "Democratizing weather derivatives through tokenization could be crypto's most important real-world use case",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/07/25/democratizing-weather-derivatives-through-tokenization-could-be-crypto-s-most-important-real-world-use-case",
           "publishedAt": "2026-07-25T13:00:00Z",
-          "score": "0.2"
+          "score": "0.5"
         },
         {
           "title": "Robinhood Chain's real-world assets jump fivefold as tokenized stocks start trading in bigger size",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size",
           "publishedAt": "2026-07-25T10:00:00Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/24/senate-dems-should-accept-the-victory-they-won-on-trump-s-crypto-limits-white-house",
           "publishedAt": "2026-07-24T15:01:46Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Sam Altman-backed World Network secures $52.5 million in fresh funding to fight online AI deepfakes",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/24/sam-altman-backed-world-network-secures-fresh-funding-to-fight-online-ai-deepfakes",
           "publishedAt": "2026-07-24T15:00:00Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Institutional crypto trading platform LMAX is exploring sale, IPO",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/05/22/institutional-crypto-trading-platform-lmax-is-exploring-sale-ipo",
           "publishedAt": "2026-07-24T14:36:16Z",
-          "score": "-0.2"
+          "score": "0.0"
         },
         {
           "title": "Saylor and team overhaul Strategy's bitcoin metrics as bear market persists",
@@ -4493,18 +4508,11 @@
           "score": "0.4"
         },
         {
-          "title": "EU hits Russia with massive 21st sanctions package targeting $120B crypto network",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network",
-          "publishedAt": "2026-07-24T11:58:06Z",
-          "score": "-0.7"
-        },
-        {
           "title": "North Korea arrests bank hacking ring tied to crypto laundering: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/north-korea-bank-hacking-ring-crypto-laundering-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T13:14:18Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4532,14 +4540,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/ethereum-etfs-week-red-end-inflow-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T07:40:35Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "EU authorities include HTX exchange in Russian sanctions",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/htx-exchange-european-union-russia-sanctions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-24T21:53:05Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Strive’s SATA recovers most of June decline, trades within 3% of par",
