@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-26T13:04:54Z",
+  "updatedAt": "2026-07-26T13:24:56Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,11 +61,11 @@
       "historicalVolatility": "0.27",
       "btcClose": "64387.99",
       "macd": {
-        "macdLine": "419.76",
-        "signalLine": "420.40",
-        "histogram": "-0.64",
-        "crossType": "DEAD",
-        "crossLabel": "데드크로스",
+        "macdLine": "425.99",
+        "signalLine": "421.65",
+        "histogram": "4.35",
+        "crossType": "NONE",
+        "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001801",
       "ivRv": {
-        "iv": "29.53",
+        "iv": "29.54",
         "rv": "27.00",
-        "spread": "+2.53",
+        "spread": "+2.54",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64396.50",
-      "openInterestUsd": "6930336164.33592500",
-      "longAccountRatio": "0.6349",
-      "shortAccountRatio": "0.3651",
-      "downsideLiquidationUsd": "4400070430.74",
-      "upsideLiquidationUsd": "2530265733.60",
+      "currentPrice": "64472.10",
+      "openInterestUsd": "6933965053.80960000",
+      "longAccountRatio": "0.6336",
+      "shortAccountRatio": "0.3664",
+      "downsideLiquidationUsd": "4393360258.09",
+      "upsideLiquidationUsd": "2540604795.72",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57956.85",
+          "price": "58024.89",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1760028172.29"
+          "notionalUsd": "1757344103.24"
         },
         {
-          "price": "70836.15",
+          "price": "70919.31",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1012106293.44"
+          "notionalUsd": "1016241918.29"
         },
         {
-          "price": "61820.64",
+          "price": "61893.22",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1540024650.76"
+          "notionalUsd": "1537676090.33"
         },
         {
-          "price": "66972.36",
+          "price": "67050.98",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "885593006.76"
+          "notionalUsd": "889211678.50"
         },
         {
-          "price": "63108.57",
+          "price": "63182.66",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "880014086.15"
+          "notionalUsd": "878672051.62"
         },
         {
-          "price": "65684.43",
+          "price": "65761.54",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "506053146.72"
+          "notionalUsd": "508120959.14"
         },
         {
-          "price": "63752.54",
+          "price": "63827.38",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "220003521.54"
+          "notionalUsd": "219668012.90"
         },
         {
-          "price": "65040.47",
+          "price": "65116.82",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "126513286.68"
+          "notionalUsd": "127030239.79"
         }
       ],
       "errorMessage": null
@@ -4443,14 +4443,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-26T12:05:02.931598Z",
-      "compositeScore": "0.094",
+      "generatedAt": "2026-07-26T13:05:01.854820Z",
+      "compositeScore": "0.063",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "U.S. regulator warns prediction markets against cutting corners in event contracts",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/07/24/u-s-regulator-warns-prediction-markets-against-cutting-corners-in-event-contracts",
+          "publishedAt": "2026-07-26T13:00:00Z",
+          "score": "-0.4"
+        },
         {
           "title": "Europe's high regulatory bar could spark new crypto industry M&A wave",
           "source": "CoinDesk",
@@ -4484,7 +4491,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
           "publishedAt": "2026-07-25T15:46:05Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Democratizing weather derivatives through tokenization could be crypto's most important real-world use case",
@@ -4501,11 +4508,11 @@
           "score": "0.7"
         },
         {
-          "title": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/07/24/senate-dems-should-accept-the-victory-they-won-on-trump-s-crypto-limits-white-house",
-          "publishedAt": "2026-07-24T15:01:46Z",
-          "score": "0.2"
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-26T12:04:52Z",
+          "score": "0.0"
         },
         {
           "title": "South Korea’s largest bank to launch payment service on JPMorgan’s Kinexys",
@@ -4519,35 +4526,35 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitmart-wind-down-exchange-end-trading?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-26T07:11:27Z",
-          "score": "-0.9"
+          "score": "-0.7"
         },
         {
           "title": "Binance ‘red teams’ its own staff every month to keep hackers out",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-red-teams-own-staff-every-month-to-keep-hackers-out?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-26T02:00:00Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Robinhood in talks with Crypto.com over prediction markets: WSJ",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/robinhood-cryptocom-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T21:01:44Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin advocacy group to join US State Department’s ‘digital freedom’ program",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-policy-institute-state-department-program?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T18:15:44Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Wise to resubmit US charter application under GENIUS Act",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/wise-resubmit-occ-charter-application-genius-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T16:05:31Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "North Korea arrests bank hacking ring tied to crypto laundering: Report",
@@ -4555,13 +4562,6 @@
           "url": "https://cointelegraph.com/news/north-korea-bank-hacking-ring-crypto-laundering-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T13:14:18Z",
           "score": "-0.6"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-25T12:06:01Z",
-          "score": "0.0"
         }
       ],
       "errorMessage": null
