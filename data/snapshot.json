@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-26T07:02:58Z",
+  "updatedAt": "2026-07-26T07:23:01Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,11 +61,11 @@
       "historicalVolatility": "0.27",
       "btcClose": "64387.99",
       "macd": {
-        "macdLine": "422.47",
-        "signalLine": "420.94",
-        "histogram": "1.53",
-        "crossType": "NONE",
-        "crossLabel": "크로스 없음",
+        "macdLine": "415.79",
+        "signalLine": "419.61",
+        "histogram": "-3.82",
+        "crossType": "DEAD",
+        "crossLabel": "데드크로스",
         "bullish": true
       },
       "adx": {
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001801",
       "ivRv": {
-        "iv": "30.02",
+        "iv": "30.61",
         "rv": "27.00",
-        "spread": "+3.02",
+        "spread": "+3.61",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64431.20",
-      "openInterestUsd": "6897737643.24900000",
-      "longAccountRatio": "0.6440",
-      "shortAccountRatio": "0.3560",
-      "downsideLiquidationUsd": "4442143042.25",
-      "upsideLiquidationUsd": "2455594601.00",
+      "currentPrice": "64343.10",
+      "openInterestUsd": "6894232903.19240000",
+      "longAccountRatio": "0.6432",
+      "shortAccountRatio": "0.3568",
+      "downsideLiquidationUsd": "4434370603.33",
+      "upsideLiquidationUsd": "2459862299.86",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57988.08",
+          "price": "57908.79",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1776857216.90"
+          "notionalUsd": "1773748241.33"
         },
         {
-          "price": "70874.32",
+          "price": "70777.41",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "982237840.40"
+          "notionalUsd": "983944919.94"
         },
         {
-          "price": "61853.95",
+          "price": "61769.38",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1554750064.79"
+          "notionalUsd": "1552029711.17"
         },
         {
-          "price": "67008.45",
+          "price": "66916.82",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "859458110.35"
+          "notionalUsd": "860951804.95"
         },
         {
-          "price": "63142.58",
+          "price": "63056.24",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "888428608.45"
+          "notionalUsd": "886874120.67"
         },
         {
-          "price": "65719.82",
+          "price": "65629.96",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "491118920.20"
+          "notionalUsd": "491972459.97"
         },
         {
-          "price": "63786.89",
+          "price": "63699.67",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "222107152.11"
+          "notionalUsd": "221718530.17"
         },
         {
-          "price": "65075.51",
+          "price": "64986.53",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "122779730.05"
+          "notionalUsd": "122993114.99"
         }
       ],
       "errorMessage": null
@@ -4443,14 +4443,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-26T06:05:02.863129Z",
-      "compositeScore": "0.088",
+      "generatedAt": "2026-07-26T07:05:00.039499Z",
+      "compositeScore": "0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
+          "publishedAt": "2026-07-26T06:59:51Z",
+          "score": "-0.8"
+        },
         {
           "title": "Russiaâs largest bank Sberbank plans crypto trading infrastructure by December",
           "source": "CoinDesk",
@@ -4470,14 +4477,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/07/25/democratizing-weather-derivatives-through-tokenization-could-be-crypto-s-most-important-real-world-use-case",
           "publishedAt": "2026-07-25T13:00:00Z",
-          "score": "0.6"
+          "score": "0.4"
         },
         {
           "title": "Robinhood Chain's real-world assets jump fivefold as tokenized stocks start trading in bigger size",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size",
           "publishedAt": "2026-07-25T10:00:00Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
@@ -4491,21 +4498,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/24/sam-altman-backed-world-network-secures-fresh-funding-to-fight-online-ai-deepfakes",
           "publishedAt": "2026-07-24T15:00:00Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Institutional crypto trading platform LMAX is exploring sale, IPO",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/05/22/institutional-crypto-trading-platform-lmax-is-exploring-sale-ipo",
           "publishedAt": "2026-07-24T14:36:16Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Saylor and team overhaul Strategy's bitcoin metrics as bear market persists",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/24/saylor-and-team-overhaul-strategy-s-bitcoin-metrics-as-bear-market-persists",
-          "publishedAt": "2026-07-24T13:15:15Z",
-          "score": "-0.3"
+          "score": "0.0"
         },
         {
           "title": "Binance ‘red teams’ its own staff every month to keep hackers out",
@@ -4519,7 +4519,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/robinhood-cryptocom-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T21:01:44Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin advocacy group to join US State Department’s ‘digital freedom’ program",
@@ -4533,7 +4533,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/wise-resubmit-occ-charter-application-genius-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T16:05:31Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "North Korea arrests bank hacking ring tied to crypto laundering: Report",
