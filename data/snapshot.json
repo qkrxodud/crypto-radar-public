@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-26T08:03:25Z",
+  "updatedAt": "2026-07-26T08:23:30Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "64387.99",
       "macd": {
-        "macdLine": "414.02",
-        "signalLine": "419.25",
-        "histogram": "-5.23",
+        "macdLine": "417.53",
+        "signalLine": "419.96",
+        "histogram": "-2.43",
         "crossType": "DEAD",
         "crossLabel": "데드크로스",
         "bullish": true
@@ -428,7 +428,12 @@
       ],
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001801",
-      "ivRv": null,
+      "ivRv": {
+        "iv": "29.32",
+        "rv": "27.00",
+        "spread": "+2.32",
+        "label": "균형"
+      },
       "fearGreedMa": {
         "currentFg": 26,
         "fgMa30": "22.4",
@@ -2921,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64325.10",
-      "openInterestUsd": "6889716874.32732200",
-      "longAccountRatio": "0.6414",
-      "shortAccountRatio": "0.3586",
-      "downsideLiquidationUsd": "4419064403.19",
-      "upsideLiquidationUsd": "2470652471.13",
+      "currentPrice": "64367.20",
+      "openInterestUsd": "6897592532.96962100",
+      "longAccountRatio": "0.6415",
+      "shortAccountRatio": "0.3585",
+      "downsideLiquidationUsd": "4424805609.90",
+      "upsideLiquidationUsd": "2472786923.07",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57892.59",
+          "price": "57930.48",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1767625761.28"
+          "notionalUsd": "1769922243.96"
         },
         {
-          "price": "70757.61",
+          "price": "70803.92",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "988260988.45"
+          "notionalUsd": "989114769.23"
         },
         {
-          "price": "61752.10",
+          "price": "61792.51",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1546672541.12"
+          "notionalUsd": "1548681963.47"
         },
         {
-          "price": "66898.10",
+          "price": "66941.89",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "864728364.90"
+          "notionalUsd": "865475423.07"
         },
         {
-          "price": "63038.60",
+          "price": "63079.86",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "883812880.64"
+          "notionalUsd": "884961121.98"
         },
         {
-          "price": "65611.60",
+          "price": "65654.54",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "494130494.23"
+          "notionalUsd": "494557384.61"
         },
         {
-          "price": "63681.85",
+          "price": "63723.53",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "220953220.16"
+          "notionalUsd": "221240280.50"
         },
         {
-          "price": "64968.35",
+          "price": "65010.87",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "123532623.56"
+          "notionalUsd": "123639346.15"
         }
       ],
       "errorMessage": null
@@ -4406,7 +4411,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-26T07:43:08.371743Z",
+      "generatedAt": "2026-07-26T08:23:30.888382Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4415,31 +4420,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with mixed indicators suggesting caution."
+          "content": "The market is currently neutral with mixed indicators suggesting cautious sentiment."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 26 indicates extreme fear."
+          "content": "Fear and greed index at 26 indicates high fear among investors."
         },
         {
           "type": "RISK",
-          "content": "Low RSI on weekly (38.70) suggests potential bearish momentum."
+          "content": "Low RSI values on weekly and monthly charts suggest potential downward pressure."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of recovery."
+          "content": "Monitor market closely for signs of trend reversal."
         },
         {
           "type": "ACTION",
-          "content": "Consider reducing exposure to high-risk assets."
+          "content": "Consider reducing exposure to high-risk assets in the short term."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-26T07:05:00.039499Z",
-      "compositeScore": "0.075",
+      "generatedAt": "2026-07-26T08:05:02.152956Z",
+      "compositeScore": "0.094",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4447,39 +4452,46 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Shiba Inu surges 36% as South Korean traders fuel mystery rally",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/26/shiba-inu-surges-36-as-south-korean-traders-fuel-mystery-rally",
+          "publishedAt": "2026-07-26T07:29:45Z",
+          "score": "0.5"
+        },
+        {
           "title": "Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
           "publishedAt": "2026-07-26T06:59:51Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Russiaâs largest bank Sberbank plans crypto trading infrastructure by December",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december",
           "publishedAt": "2026-07-25T16:59:36Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
           "publishedAt": "2026-07-25T15:46:05Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Democratizing weather derivatives through tokenization could be crypto's most important real-world use case",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/07/25/democratizing-weather-derivatives-through-tokenization-could-be-crypto-s-most-important-real-world-use-case",
           "publishedAt": "2026-07-25T13:00:00Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Robinhood Chain's real-world assets jump fivefold as tokenized stocks start trading in bigger size",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size",
           "publishedAt": "2026-07-25T10:00:00Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
@@ -4493,42 +4505,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/24/sam-altman-backed-world-network-secures-fresh-funding-to-fight-online-ai-deepfakes",
           "publishedAt": "2026-07-24T15:00:00Z",
-          "score": "0.1"
+          "score": "0.3"
         },
         {
-          "title": "Institutional crypto trading platform LMAX is exploring sale, IPO",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/05/22/institutional-crypto-trading-platform-lmax-is-exploring-sale-ipo",
-          "publishedAt": "2026-07-24T14:36:16Z",
-          "score": "0.0"
+          "title": "BitMart to wind down exchange, end trading by Aug. 26",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitmart-wind-down-exchange-end-trading?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-26T07:11:27Z",
+          "score": "-0.6"
         },
         {
           "title": "Binance ‘red teams’ its own staff every month to keep hackers out",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-red-teams-own-staff-every-month-to-keep-hackers-out?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-26T02:00:00Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
           "title": "Robinhood in talks with Crypto.com over prediction markets: WSJ",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/robinhood-cryptocom-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T21:01:44Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin advocacy group to join US State Department’s ‘digital freedom’ program",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-policy-institute-state-department-program?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T18:15:44Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Wise to resubmit US charter application under GENIUS Act",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/wise-resubmit-occ-charter-application-genius-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T16:05:31Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "North Korea arrests bank hacking ring tied to crypto laundering: Report",
@@ -4550,13 +4562,6 @@
           "url": "https://cointelegraph.com/news/fidelity-push-senate-passage-of-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-25T11:30:15Z",
           "score": "0.3"
-        },
-        {
-          "title": "Dango’s perp DEX taps out nearly 4 months after launch",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/dangos-perp-dex-taps-nearly-months-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-25T10:01:26Z",
-          "score": "-0.6"
         }
       ],
       "errorMessage": null
