@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-26T12:44:49Z",
+  "updatedAt": "2026-07-26T13:04:54Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,11 +61,11 @@
       "historicalVolatility": "0.27",
       "btcClose": "64387.99",
       "macd": {
-        "macdLine": "425.98",
-        "signalLine": "421.65",
-        "histogram": "4.34",
-        "crossType": "NONE",
-        "crossLabel": "크로스 없음",
+        "macdLine": "419.76",
+        "signalLine": "420.40",
+        "histogram": "-0.64",
+        "crossType": "DEAD",
+        "crossLabel": "데드크로스",
         "bullish": true
       },
       "adx": {
@@ -428,7 +428,12 @@
       ],
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001801",
-      "ivRv": null,
+      "ivRv": {
+        "iv": "29.53",
+        "rv": "27.00",
+        "spread": "+2.53",
+        "label": "균형"
+      },
       "fearGreedMa": {
         "currentFg": 26,
         "fgMa30": "22.4",
@@ -2921,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64470.00",
-      "openInterestUsd": "6927740163.27196900",
-      "longAccountRatio": "0.6377",
-      "shortAccountRatio": "0.3623",
-      "downsideLiquidationUsd": "4417819902.12",
-      "upsideLiquidationUsd": "2509920261.15",
+      "currentPrice": "64396.50",
+      "openInterestUsd": "6930336164.33592500",
+      "longAccountRatio": "0.6349",
+      "shortAccountRatio": "0.3651",
+      "downsideLiquidationUsd": "4400070430.74",
+      "upsideLiquidationUsd": "2530265733.60",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58023.00",
+          "price": "57956.85",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1767127960.85"
+          "notionalUsd": "1760028172.29"
         },
         {
-          "price": "70917.00",
+          "price": "70836.15",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1003968104.46"
+          "notionalUsd": "1012106293.44"
         },
         {
-          "price": "61891.20",
+          "price": "61820.64",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1546236965.74"
+          "notionalUsd": "1540024650.76"
         },
         {
-          "price": "67048.80",
+          "price": "66972.36",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "878472091.40"
+          "notionalUsd": "885593006.76"
         },
         {
-          "price": "63180.60",
+          "price": "63108.57",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "883563980.42"
+          "notionalUsd": "880014086.15"
         },
         {
-          "price": "65759.40",
+          "price": "65684.43",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "501984052.23"
+          "notionalUsd": "506053146.72"
         },
         {
-          "price": "63825.30",
+          "price": "63752.54",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "220890995.11"
+          "notionalUsd": "220003521.54"
         },
         {
-          "price": "65114.70",
+          "price": "65040.47",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "125496013.06"
+          "notionalUsd": "126513286.68"
         }
       ],
       "errorMessage": null
@@ -4374,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-26T12:30:01.906583Z",
+      "generatedAt": "2026-07-26T13:00:03.007562Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4383,11 +4388,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 암호화폐 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 26으로 투자 심리가 매우 낮아 추가 하락 가능성이 있다."
+          "content": "공포탐욕 지수가 26으로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
@@ -4395,18 +4400,18 @@
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 주의 깊게 모니터링하며, 신규 투자는 신중하게 접근해야 한다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하는 것이 바람직하다."
+          "content": "장기 투자 관점에서 저가 매수 기회를 모색할 수 있다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-26T12:24:30.300658Z",
+      "generatedAt": "2026-07-26T13:04:54.070392Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4415,23 +4420,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed indicators suggesting cautious sentiment."
+          "content": "Market sentiment is neutral with indicators showing mixed signals and moderate risk."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 26 indicates high fear."
+          "content": "Fear and greed index at 26 indicates extreme fear in the market."
         },
         {
           "type": "RISK",
-          "content": "Low RSI on weekly at 38.70 suggests potential downward pressure."
+          "content": "RSI values suggest potential bearish momentum, especially on weekly."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of recovery or further decline."
+          "content": "Monitor market closely for signs of reversal or further decline."
         },
         {
           "type": "ACTION",
-          "content": "Consider reducing exposure to high-risk assets."
+          "content": "Consider cautious entry points or hedging strategies."
         }
       ],
       "errorMessage": null
