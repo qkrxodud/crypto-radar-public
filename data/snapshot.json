@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-27T04:48:38Z",
+  "updatedAt": "2026-07-27T05:08:40Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "65286.00",
       "macd": {
-        "macdLine": "521.86",
-        "signalLine": "472.35",
-        "histogram": "49.50",
+        "macdLine": "519.33",
+        "signalLine": "471.85",
+        "histogram": "47.48",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001877",
       "ivRv": {
-        "iv": "34.80",
+        "iv": "34.50",
         "rv": "27.00",
-        "spread": "+7.80",
+        "spread": "+7.50",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "65314.80",
-      "openInterestUsd": "6802940289.31810000",
-      "longAccountRatio": "0.6107",
-      "shortAccountRatio": "0.3893",
-      "downsideLiquidationUsd": "4154555634.69",
-      "upsideLiquidationUsd": "2648384654.63",
+      "currentPrice": "65283.20",
+      "openInterestUsd": "6792226469.69713300",
+      "longAccountRatio": "0.6095",
+      "shortAccountRatio": "0.3905",
+      "downsideLiquidationUsd": "4139862033.28",
+      "upsideLiquidationUsd": "2652364436.42",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58783.32",
+          "price": "58754.88",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1661822253.87"
+          "notionalUsd": "1655944813.31"
         },
         {
-          "price": "71846.28",
+          "price": "71811.52",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1059353861.85"
+          "notionalUsd": "1060945774.57"
         },
         {
-          "price": "62702.21",
+          "price": "62671.87",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1454094472.14"
+          "notionalUsd": "1448951711.65"
         },
         {
-          "price": "67927.39",
+          "price": "67894.53",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "926934629.12"
+          "notionalUsd": "928327552.75"
         },
         {
-          "price": "64008.50",
+          "price": "63977.54",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "830911126.94"
+          "notionalUsd": "827972406.66"
         },
         {
-          "price": "66621.10",
+          "price": "66588.86",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "529676930.93"
+          "notionalUsd": "530472887.28"
         },
         {
-          "price": "64661.65",
+          "price": "64630.37",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "207727781.73"
+          "notionalUsd": "206993101.66"
         },
         {
-          "price": "65967.95",
+          "price": "65936.03",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "132419232.73"
+          "notionalUsd": "132618221.82"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-27T04:30:02.318756Z",
+      "generatedAt": "2026-07-27T05:00:01.444808Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,15 +4388,15 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮고 온체인 지표가 혼조세를 보이고 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 30으로 극단적인 공포를 나타내고 있다."
+          "content": "공포탐욕 지수가 30으로 낮아 시장 심리가 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -39.37로 매도 압력이 존재한다."
+          "content": "거래소 순유입이 -39.37로 자금 유출이 우세하다."
         },
         {
           "type": "ACTION",
@@ -4443,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-27T04:05:07.138899Z",
-      "compositeScore": "-0.138",
+      "generatedAt": "2026-07-27T05:05:00.730046Z",
+      "compositeScore": "-0.069",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4452,25 +4452,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin is back above $65,000 as U.S. and Iran hold fire. Oil drops 5%",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/27/bitcoin-is-back-above-usd65-000-as-u-s-iran-hold-fire-oil-drops-5",
+          "publishedAt": "2026-07-27T04:21:26Z",
+          "score": "0.7"
+        },
+        {
           "title": "South Korea trading giant puts receivables onchain in tokenization test with LG CNS",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/26/south-korea-trading-giant-puts-receivables-onchain-in-tokenization-test-with-lg-cns",
           "publishedAt": "2026-07-27T00:00:00Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "2 weeks left for Clarity: State of Crypto",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto",
           "publishedAt": "2026-07-26T18:30:00Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "U.S. regulator warns prediction markets against cutting corners in event contracts",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/24/u-s-regulator-warns-prediction-markets-against-cutting-corners-in-event-contracts",
           "publishedAt": "2026-07-26T13:00:00Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Europe's high regulatory bar could spark new crypto industry M&A wave",
@@ -4491,49 +4498,49 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
           "publishedAt": "2026-07-26T06:59:51Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "Russiaâs largest bank Sberbank plans crypto trading infrastructure by December",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december",
           "publishedAt": "2026-07-25T16:59:36Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
-          "title": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
-          "publishedAt": "2026-07-25T15:46:05Z",
-          "score": "-0.5"
+          "title": "BitMart withdrawals appear to slow following wind-down announcement",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitmart-withdrawals-slow-exchange-wind-down?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-27T04:34:44Z",
+          "score": "-0.4"
         },
         {
           "title": "Garden Finance disables app as Blockaid reports $450,000 exploit",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/garden-finance-app-offline-450k-htlc-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T01:58:54Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Storj files for bankruptcy, explores equity path for tokenholders",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/storj-chapter-11-bankruptcy-tokenholder-equity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T01:01:43Z",
-          "score": "-0.8"
+          "score": "-0.9"
         },
         {
           "title": "CLARITY hopes fade, BitMEX shuts as lawsuit looms: Hodler’s Digest, July 26",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/clarity-hopes-fade-bitmex-shuts-as-lawsuit-looms-hodlers-digest-july-27?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T00:03:44Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "WEMIX says attacker moved about $724,000 after contract breach",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/wemix-attacker-moves-724k-contract-breach?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-26T22:53:55Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4554,14 +4561,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/russias-sberbank-to-launch-crypto-trading-infrastructure-this-year?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-26T16:07:11Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Bitcoin OG selling eases as dormant BTC movement hits 4-year low: Galaxy",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-og-dormant-btc-movement-thorn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-26T13:06:00Z",
-          "score": "-0.2"
+          "score": "0.5"
         }
       ],
       "errorMessage": null
