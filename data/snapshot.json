@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-27T16:51:17Z",
+  "updatedAt": "2026-07-27T17:11:25Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "65286.00",
       "macd": {
-        "macdLine": "485.83",
-        "signalLine": "465.15",
-        "histogram": "20.68",
+        "macdLine": "483.27",
+        "signalLine": "464.64",
+        "histogram": "18.64",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001877",
       "ivRv": {
-        "iv": "39.26",
+        "iv": "39.10",
         "rv": "27.00",
-        "spread": "+12.26",
+        "spread": "+12.10",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64861.90",
-      "openInterestUsd": "6814830376.22502800",
-      "longAccountRatio": "0.6105",
-      "shortAccountRatio": "0.3895",
-      "downsideLiquidationUsd": "4160453944.69",
-      "upsideLiquidationUsd": "2654376431.54",
+      "currentPrice": "64832.00",
+      "openInterestUsd": "6810437556.57690000",
+      "longAccountRatio": "0.6084",
+      "shortAccountRatio": "0.3916",
+      "downsideLiquidationUsd": "4143470209.42",
+      "upsideLiquidationUsd": "2666967347.16",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58375.71",
+          "price": "58348.80",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1664181577.87"
+          "notionalUsd": "1657388083.77"
         },
         {
-          "price": "71348.09",
+          "price": "71315.20",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1061750572.62"
+          "notionalUsd": "1066786938.86"
         },
         {
-          "price": "62267.42",
+          "price": "62238.72",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1456158880.64"
+          "notionalUsd": "1450214573.30"
         },
         {
-          "price": "67456.38",
+          "price": "67425.28",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "929031751.04"
+          "notionalUsd": "933438571.50"
         },
         {
-          "price": "63564.66",
+          "price": "63535.36",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "832090788.94"
+          "notionalUsd": "828694041.88"
         },
         {
-          "price": "66159.14",
+          "price": "66128.64",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "530875286.31"
+          "notionalUsd": "533393469.43"
         },
         {
-          "price": "64213.28",
+          "price": "64183.68",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208022697.23"
+          "notionalUsd": "207173510.47"
         },
         {
-          "price": "65510.52",
+          "price": "65480.32",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "132718821.58"
+          "notionalUsd": "133348367.36"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-27T16:30:02.940235Z",
+      "generatedAt": "2026-07-27T17:11:22.787002Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,23 +4388,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮고 온체인 지표가 혼조세를 보임."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 혼재되어 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 30으로 낮아 투자 심리가 위축됨."
+          "content": "공포탐욕 지표가 30으로 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -39.37로 매도 압력이 존재함."
+          "content": "BTC 도미넌스가 56으로 알트코인에 대한 투자 유입이 제한적이다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요함."
+          "content": "시장의 불확실성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "추가 매수는 시장 심리가 개선될 때까지 보류하는 것이 좋음."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 바람직하다."
         }
       ],
       "errorMessage": null
@@ -4443,14 +4443,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-27T16:05:03.502296Z",
-      "compositeScore": "0.106",
+      "generatedAt": "2026-07-27T17:11:25.399392Z",
+      "compositeScore": "0.094",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Digital asset trading platform Uphold cuts 17% of global headcount as crypto winter bites",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/27/digital-asset-trading-platform-uphold-cuts-17-of-global-headcount-as-crypto-winter-bites",
+          "publishedAt": "2026-07-27T16:47:06Z",
+          "score": "-0.6"
+        },
         {
           "title": "What are perps, anyway? Everything you need to know about cryptoâs hottest trading instrument",
           "source": "CoinDesk",
@@ -4463,14 +4470,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/27/fanatics-buys-regulated-exchange-in-bid-to-grow-prediction-markets-business",
           "publishedAt": "2026-07-27T14:46:10Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Cantor is advising crypto bank AMINA on path to potential public listing",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/27/cantor-is-advising-crypto-bank-amina-on-path-to-potential-public-listing",
           "publishedAt": "2026-07-27T14:36:30Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Lido begins moving $16.5 billion in staked ether to cut validator count by a third",
@@ -4498,35 +4505,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/27/securitize-builds-wall-street-credentials-with-sec-adviser-license-as-tokenization-expands",
           "publishedAt": "2026-07-27T13:00:00Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Tether’s XAUt gold token receives Shariah certification to expand Islamic finance access",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/tether-xaut-gold-token-receives-shariah-certification-islamic-finance-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-27T16:44:03Z",
           "score": "0.6"
         },
         {
-          "title": "Crypto is rewriting how Wall Street traders spend their weekends",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/27/crypto-is-rewriting-how-wall-street-traders-spend-their-weekends",
-          "publishedAt": "2026-07-27T13:00:00Z",
-          "score": "0.2"
+          "title": "Kraken parent Payward acquires Magic Labs’ wallet business",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/kraken-parent-payward-acquires-magic-labs-wallet-business?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-27T16:40:39Z",
+          "score": "0.4"
         },
         {
           "title": "Bitcoin price eyes $66K as US stocks rise on Iran-strike pause",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-eyes-66k-as-us-stocks-rise-on-iran-strike-pause?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T14:51:26Z",
-          "score": "0.8"
+          "score": "0.7"
         },
         {
           "title": "Hong Kong crypto giant HashKey merges regional exchange into one",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hong-kong-crypto-giant-hashkey-merges-its-exchanges-into-one?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T13:41:44Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Rate path still divides investors: Five things to know in Bitcoin this week",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/rate-path-still-divides-investors-five-things-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T13:31:07Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Binance disappears from Google Play in certain EU countries",
@@ -4540,7 +4554,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/circle-to-acquire-nearly-1000-ibm-blockchain-patents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T13:08:55Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Strategy sells MSTR shares, buys back $25M in STRC preferred stock",
@@ -4548,20 +4562,6 @@
           "url": "https://cointelegraph.com/news/strategy-sells-mstr-buys-back-25-milllion-strc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T12:34:36Z",
           "score": "0.0"
-        },
-        {
-          "title": "BNY Mellon unit joins MiCA register as ESMA adds 15 providers",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/mica-register-expands-third-post-deadline-update?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-27T10:38:09Z",
-          "score": "0.5"
-        },
-        {
-          "title": "Brazilian police bust cocaine traffickers in crypto-linked transnational probe",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/brazilian-police-cracks-down-on-crypto-fueled-international-drug-traffickers-suspected-of-moving-billions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-27T09:29:49Z",
-          "score": "-0.6"
         }
       ],
       "errorMessage": null
