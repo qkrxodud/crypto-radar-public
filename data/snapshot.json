@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-27T22:12:59Z",
+  "updatedAt": "2026-07-27T22:33:02Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "65286.00",
       "macd": {
-        "macdLine": "472.00",
-        "signalLine": "462.38",
-        "histogram": "9.62",
+        "macdLine": "461.49",
+        "signalLine": "460.28",
+        "histogram": "1.21",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001877",
       "ivRv": {
-        "iv": "39.25",
+        "iv": "31.68",
         "rv": "27.00",
-        "spread": "+12.25",
-        "label": "과대"
+        "spread": "+4.68",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 30,
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64691.30",
-      "openInterestUsd": "6782369466.59596900",
-      "longAccountRatio": "0.6042",
-      "shortAccountRatio": "0.3958",
-      "downsideLiquidationUsd": "4097907631.72",
-      "upsideLiquidationUsd": "2684461834.88",
+      "currentPrice": "64556.90",
+      "openInterestUsd": "6764639822.40960000",
+      "longAccountRatio": "0.6037",
+      "shortAccountRatio": "0.3963",
+      "downsideLiquidationUsd": "4083813060.79",
+      "upsideLiquidationUsd": "2680826761.62",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58222.17",
+          "price": "58101.21",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1639163052.69"
+          "notionalUsd": "1633525224.32"
         },
         {
-          "price": "71160.43",
+          "price": "71012.59",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1073784733.95"
+          "notionalUsd": "1072330704.65"
         },
         {
-          "price": "62103.65",
+          "price": "61974.62",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1434267671.10"
+          "notionalUsd": "1429334571.28"
         },
         {
-          "price": "67278.95",
+          "price": "67139.18",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "939561642.21"
+          "notionalUsd": "938289366.57"
         },
         {
-          "price": "63397.47",
+          "price": "63265.76",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "819581526.34"
+          "notionalUsd": "816762612.16"
         },
         {
-          "price": "65985.13",
+          "price": "65848.04",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "536892366.98"
+          "notionalUsd": "536165352.32"
         },
         {
-          "price": "64044.39",
+          "price": "63911.33",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204895381.59"
+          "notionalUsd": "204190653.04"
         },
         {
-          "price": "65338.21",
+          "price": "65202.47",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "134223091.74"
+          "notionalUsd": "134041338.08"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-27T22:00:05.225005Z",
+      "generatedAt": "2026-07-27T22:30:02.416959Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,19 +4392,19 @@
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(30)로 인해 시장의 불확실성이 커질 수 있다."
+          "content": "공포탐욕 지수가 30으로 투자 심리가 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -39.37로, 매도 압력이 증가할 가능성이 있다."
+          "content": "BTC 도미넌스가 56으로 알트코인에 대한 관심이 낮다."
         },
         {
           "type": "ACTION",
-          "content": "단기 투자자들은 포지션을 조정하는 것이 좋다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "장기 투자자는 가격 하락 시 매수 기회를 노려볼 수 있다."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 좋다."
         }
       ],
       "errorMessage": null
