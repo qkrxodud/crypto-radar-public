@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-27T10:49:58Z",
+  "updatedAt": "2026-07-27T11:09:59Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "65286.00",
       "macd": {
-        "macdLine": "523.48",
-        "signalLine": "472.68",
-        "histogram": "50.80",
+        "macdLine": "518.89",
+        "signalLine": "471.76",
+        "histogram": "47.13",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001877",
       "ivRv": {
-        "iv": "32.71",
+        "iv": "32.83",
         "rv": "27.00",
-        "spread": "+5.71",
+        "spread": "+5.83",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "65338.40",
-      "openInterestUsd": "6840699413.58173900",
-      "longAccountRatio": "0.6098",
-      "shortAccountRatio": "0.3902",
-      "downsideLiquidationUsd": "4171458502.40",
-      "upsideLiquidationUsd": "2669240911.18",
+      "currentPrice": "65288.00",
+      "openInterestUsd": "6827967059.98151800",
+      "longAccountRatio": "0.6084",
+      "shortAccountRatio": "0.3916",
+      "downsideLiquidationUsd": "4154135159.29",
+      "upsideLiquidationUsd": "2673831900.69",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58804.56",
+          "price": "58759.20",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1668583400.96"
+          "notionalUsd": "1661654063.72"
         },
         {
-          "price": "71872.24",
+          "price": "71816.80",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1067696364.47"
+          "notionalUsd": "1069532760.28"
         },
         {
-          "price": "62724.86",
+          "price": "62676.48",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1460010475.84"
+          "notionalUsd": "1453947305.75"
         },
         {
-          "price": "67951.94",
+          "price": "67899.52",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "934234318.91"
+          "notionalUsd": "935841165.24"
         },
         {
-          "price": "64031.63",
+          "price": "63982.24",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "834291700.48"
+          "notionalUsd": "830827031.86"
         },
         {
-          "price": "66645.17",
+          "price": "66593.76",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "533848182.24"
+          "notionalUsd": "534766380.14"
         },
         {
-          "price": "64685.02",
+          "price": "64635.12",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208572925.12"
+          "notionalUsd": "207706757.96"
         },
         {
-          "price": "65991.78",
+          "price": "65940.88",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "133462045.56"
+          "notionalUsd": "133691595.03"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-27T10:30:02.639284Z",
+      "generatedAt": "2026-07-27T11:00:01.986831Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,23 +4388,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 혼재되어 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 30으로 낮아 시장 심리가 위축되어 있다."
+          "content": "시장 심리가 약화되어 가격 하락 위험이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -39.37로 매도 압력이 존재한다."
+          "content": "거래소 순유입이 부정적이며, 이는 매도 압력을 나타낼 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "시장 상황을 주의 깊게 관찰하며, 신규 투자 시 신중을 기할 필요가 있다."
         },
         {
           "type": "ACTION",
-          "content": "가격 상승 추세를 확인한 후 매수 전략을 고려할 수 있다."
+          "content": "포트폴리오 리밸런싱을 고려하여 리스크를 분산시키는 것이 좋다."
         }
       ],
       "errorMessage": null
@@ -4443,14 +4443,35 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-27T10:05:03.120440Z",
-      "compositeScore": "-0.175",
+      "generatedAt": "2026-07-27T11:05:03.046982Z",
+      "compositeScore": "-0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Bitcoin ETFs post third straight weekly inflows despite $465 million in late-week losses",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/27/bitcoin-etfs-record-third-consecutive-weekly-inflows-despite-losses-of-usd465-million-to-end-week",
+          "publishedAt": "2026-07-27T11:04:39Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Coinbase CEO Brian Armstrong criticizes crypto startups that rebrand to AI",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/27/coinbase-ceo-brian-armstrong-criticizes-crypto-startups-that-rebrand-to-ai",
+          "publishedAt": "2026-07-27T10:39:22Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "Crypto steadies as Iran-U.S. pause sends oil tumbling, lifts risk assets",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/27/crypto-steadies-as-iran-u-s-pause-sends-oil-tumbling-lifts-risk-assets",
+          "publishedAt": "2026-07-27T10:35:04Z",
+          "score": "0.4"
+        },
         {
           "title": "Interest rates in U.S., U.K., Japan and Coinbase, Strategy earnings: Crypto Week Ahead",
           "source": "CoinDesk",
@@ -4463,63 +4484,49 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/27/cloud-data-firm-storj-files-for-chapter-11-extending-a-week-of-crypto-failures-token-slides-16",
           "publishedAt": "2026-07-27T09:15:43Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Live updates: Ether leads crypto higher. China's gold imports surge",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/27/live-updates-ether-leads-crypto-higher-as-bitcoin-trades-around-usd65-500",
           "publishedAt": "2026-07-27T06:43:34Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Crypto is the canary in the coal mine for the quantum computing threat, experts say",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/27/crypto-is-the-canary-in-the-coal-mine-for-the-quantum-computing-threat-experts-say",
           "publishedAt": "2026-07-27T06:37:54Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Bitcoin is back above $65,000 as U.S. and Iran hold fire. Oil drops 5%",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/27/bitcoin-is-back-above-usd65-000-as-u-s-iran-hold-fire-oil-drops-5",
           "publishedAt": "2026-07-27T04:21:26Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
-          "title": "South Korea trading giant puts receivables onchain in tokenization test with LG CNS",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/26/south-korea-trading-giant-puts-receivables-onchain-in-tokenization-test-with-lg-cns",
-          "publishedAt": "2026-07-27T00:00:00Z",
-          "score": "0.4"
-        },
-        {
-          "title": "2 weeks left for Clarity: State of Crypto",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto",
-          "publishedAt": "2026-07-26T18:30:00Z",
-          "score": "0.0"
-        },
-        {
-          "title": "U.S. regulator warns prediction markets against cutting corners in event contracts",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/07/24/u-s-regulator-warns-prediction-markets-against-cutting-corners-in-event-contracts",
-          "publishedAt": "2026-07-26T13:00:00Z",
-          "score": "-0.2"
+          "title": "BNY Mellon unit joins MiCA register as ESMA adds 15 providers",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/mica-register-expands-third-post-deadline-update?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-27T10:38:09Z",
+          "score": "0.3"
         },
         {
           "title": "Brazilian police bust cocaine traffickers in crypto-linked transnational probe",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/brazilian-police-cracks-down-on-crypto-fueled-international-drug-traffickers-suspected-of-moving-billions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T09:29:49Z",
-          "score": "-0.5"
+          "score": "-0.2"
         },
         {
           "title": "Coinbase CEO touts agentic finance as Base tops 100M AI payments",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coinbase-ceo-agentic-finance-base-100-million-aifi-transactions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T09:01:05Z",
-          "score": "0.7"
+          "score": "0.5"
         },
         {
           "title": "Triple-A confirms treasury-wallet breach after losses reach $11.8M",
@@ -4555,13 +4562,6 @@
           "url": "https://cointelegraph.com/magazine/clarity-hopes-fade-bitmex-shuts-as-lawsuit-looms-hodlers-digest-july-27?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-27T00:03:44Z",
           "score": "-0.6"
-        },
-        {
-          "title": "WEMIX says attacker moved about $724,000 after contract breach",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/wemix-attacker-moves-724k-contract-breach?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-26T22:53:55Z",
-          "score": "-0.5"
         }
       ],
       "errorMessage": null
