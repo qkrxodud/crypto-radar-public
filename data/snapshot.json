@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-28T17:17:29Z",
+  "updatedAt": "2026-07-28T17:37:37Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "63756.92",
       "macd": {
-        "macdLine": "313.99",
-        "signalLine": "436.22",
-        "histogram": "-122.24",
+        "macdLine": "292.77",
+        "signalLine": "431.98",
+        "histogram": "-139.21",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001866",
       "ivRv": {
-        "iv": "32.24",
+        "iv": "38.40",
         "rv": "33.00",
-        "spread": "-0.76",
-        "label": "균형"
+        "spread": "+5.40",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 29,
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63792.50",
-      "openInterestUsd": "6651319176.95400000",
-      "longAccountRatio": "0.6393",
-      "shortAccountRatio": "0.3607",
-      "downsideLiquidationUsd": "4252188349.83",
-      "upsideLiquidationUsd": "2399130827.13",
+      "currentPrice": "63516.60",
+      "openInterestUsd": "6636679532.25714600",
+      "longAccountRatio": "0.6381",
+      "shortAccountRatio": "0.3619",
+      "downsideLiquidationUsd": "4234865209.53",
+      "upsideLiquidationUsd": "2401814322.72",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57413.25",
+          "price": "57164.94",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1700875339.93"
+          "notionalUsd": "1693946083.81"
         },
         {
-          "price": "70171.75",
+          "price": "69868.26",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "959652330.85"
+          "notionalUsd": "960725729.09"
         },
         {
-          "price": "61240.80",
+          "price": "60975.94",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1488265922.44"
+          "notionalUsd": "1482202823.34"
         },
         {
-          "price": "66344.20",
+          "price": "66057.26",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "839695789.49"
+          "notionalUsd": "840635012.95"
         },
         {
-          "price": "62516.65",
+          "price": "62246.27",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "850437669.97"
+          "notionalUsd": "846973041.91"
         },
         {
-          "price": "65068.35",
+          "price": "64786.93",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "479826165.43"
+          "notionalUsd": "480362864.54"
         },
         {
-          "price": "63154.58",
+          "price": "62881.43",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "212609417.49"
+          "notionalUsd": "211743260.48"
         },
         {
-          "price": "64430.43",
+          "price": "64151.77",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "119956541.36"
+          "notionalUsd": "120090716.14"
         }
       ],
       "errorMessage": null
@@ -4411,7 +4411,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-07-28T16:57:20.691398Z",
+      "generatedAt": "2026-07-28T17:37:37.090185Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4420,23 +4420,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed signals across various indicators."
+          "content": "The market is currently neutral with signs of fear and moderate on-chain activity."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 29 indicates high fear among investors."
+          "content": "Market sentiment is fearful with a Fear & Greed Index at 29."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential bearish momentum in the short term."
+          "content": "Low SOPR at 0.9980 indicates minimal profit-taking."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of trend reversal."
+          "content": "Monitor for potential buying opportunities if sentiment improves."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying investments to mitigate risks."
+          "content": "Consider reducing exposure if fear persists and indicators weaken further."
         }
       ],
       "errorMessage": null
