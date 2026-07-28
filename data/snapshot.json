@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-28T20:58:43Z",
+  "updatedAt": "2026-07-28T21:18:46Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "63756.92",
       "macd": {
-        "macdLine": "322.62",
-        "signalLine": "437.95",
-        "histogram": "-115.33",
+        "macdLine": "322.92",
+        "signalLine": "438.01",
+        "histogram": "-115.09",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001866",
       "ivRv": {
-        "iv": "32.65",
+        "iv": "32.75",
         "rv": "33.00",
-        "spread": "-0.35",
+        "spread": "-0.26",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63889.10",
-      "openInterestUsd": "6646484667.76961400",
-      "longAccountRatio": "0.6349",
-      "shortAccountRatio": "0.3651",
-      "downsideLiquidationUsd": "4219853115.57",
-      "upsideLiquidationUsd": "2426631552.20",
+      "currentPrice": "63898.20",
+      "openInterestUsd": "6642727048.04120000",
+      "longAccountRatio": "0.6348",
+      "shortAccountRatio": "0.3652",
+      "downsideLiquidationUsd": "4216803130.10",
+      "upsideLiquidationUsd": "2425923917.94",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57500.19",
+          "price": "57508.38",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1687941246.23"
+          "notionalUsd": "1686721252.04"
         },
         {
-          "price": "70278.01",
+          "price": "70288.02",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "970652620.88"
+          "notionalUsd": "970369567.18"
         },
         {
-          "price": "61333.54",
+          "price": "61342.27",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1476948590.45"
+          "notionalUsd": "1475881095.53"
         },
         {
-          "price": "66444.66",
+          "price": "66454.13",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "849321043.27"
+          "notionalUsd": "849073371.28"
         },
         {
-          "price": "62611.32",
+          "price": "62620.24",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "843970623.11"
+          "notionalUsd": "843360626.02"
         },
         {
-          "price": "65166.88",
+          "price": "65176.16",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "485326310.44"
+          "notionalUsd": "485184783.59"
         },
         {
-          "price": "63250.21",
+          "price": "63259.22",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "210992655.78"
+          "notionalUsd": "210840156.50"
         },
         {
-          "price": "64527.99",
+          "price": "64537.18",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "121331577.61"
+          "notionalUsd": "121296195.90"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-07-28T20:38:37.847180Z",
+      "generatedAt": "2026-07-28T21:00:02.363912Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,11 +4388,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 공포탐욕 지수는 낮은 수준이다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(29)는 시장의 불안감을 나타낸다."
+          "content": "공포탐욕 지수가 29로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
@@ -4400,11 +4400,11 @@
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "단기적인 매매보다는 장기 보유 전략을 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "단기 거래보다는 장기 투자 전략을 검토하라."
+          "content": "시장 심리 회복을 기다리며 추가 매수를 신중히 검토하라."
         }
       ],
       "errorMessage": null
@@ -4443,27 +4443,34 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-28T20:18:32.774003Z",
-      "compositeScore": "0.200",
-      "label": "POSITIVE",
-      "labelDisplay": "긍정",
-      "labelHexColor": "#10B981",
+      "generatedAt": "2026-07-28T21:05:02.813808Z",
+      "compositeScore": "0.163",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "'Anything remotely dovish' from Fed could be good for bitcoin, says analyst",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/28/remotely-dovish-fed-could-be-good-for-bitcoin-says-analyst",
+          "publishedAt": "2026-07-28T20:23:31Z",
+          "score": "0.5"
+        },
         {
           "title": "Ondo drops tokenized asset blockchain plans for private, high-speed trading network",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/28/ondo-drops-tokenized-asset-blockchain-plans-for-private-high-speed-trading-network",
           "publishedAt": "2026-07-28T19:44:26Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Wall Street veteran Don Wilson says regulators are getting perps all wrong",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/28/wall-street-veteran-don-wilson-says-regulators-are-getting-crypto-s-biggest-trading-innovation-all-wrong",
           "publishedAt": "2026-07-28T17:23:35Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "BlackRock, Fidelity, other Wall Street giants back the Clarity Act",
@@ -4501,25 +4508,18 @@
           "score": "0.5"
         },
         {
-          "title": "Morgan Stanley debuts ether, solana exchange-traded products after bitcoin fund success",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success",
-          "publishedAt": "2026-07-28T14:30:57Z",
-          "score": "0.7"
-        },
-        {
           "title": "Morgan Stanley expands crypto lineup with Ether, Solana ETPs",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/morgan-stanley-expands-crypto-lineup-with-ether-solana-etps?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-28T20:10:46Z",
-          "score": "0.6"
+          "score": "0.4"
         },
         {
           "title": "AmericanFortress proposes quantum-safe crypto wallet protection without fund migration",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/americanfortress-proposes-quantum-safe-crypto-wallet-protection-without-fund-migration?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-28T18:47:26Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4533,7 +4533,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/galaxy-mara-texas-land-deals-ai-bitcoin-data-centers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-28T18:08:32Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin lows pierce $63K as Asia chip-stock crash spreads to Wall Street",
@@ -4547,21 +4547,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kraken-opens-jersey-mikes-ipo-to-retail-investors-through-tokenized-shares-and-direct-allocations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-28T16:20:57Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Core Scientific revenue doubles in Q2 as AI colocation expansion accelerates",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/core-scientific-revenue-doubles-q2-ai-colocation-expansion-accelerate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-28T15:47:00Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "The real reason DeFi projects that survived 2022 crash are shutting down now",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/the-2022-bear-market-didnt-kill-these-defi-projects-what-changed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-28T13:30:00Z",
-          "score": "-0.6"
+          "score": "-0.5"
         }
       ],
       "errorMessage": null
