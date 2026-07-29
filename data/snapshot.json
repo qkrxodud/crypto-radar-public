@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-29T17:03:20Z",
+  "updatedAt": "2026-07-29T17:23:26Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "64041.85",
       "macd": {
-        "macdLine": "255.11",
-        "signalLine": "417.38",
-        "histogram": "-162.27",
+        "macdLine": "257.91",
+        "signalLine": "417.93",
+        "histogram": "-160.03",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001913",
       "ivRv": {
-        "iv": "37.61",
+        "iv": "37.67",
         "rv": "33.00",
-        "spread": "+4.61",
+        "spread": "+4.67",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63792.90",
-      "openInterestUsd": "6554845272.60428600",
-      "longAccountRatio": "0.6018",
-      "shortAccountRatio": "0.3982",
-      "downsideLiquidationUsd": "3944705885.05",
-      "upsideLiquidationUsd": "2610139387.55",
+      "currentPrice": "63795.80",
+      "openInterestUsd": "6569430500.57760000",
+      "longAccountRatio": "0.6044",
+      "shortAccountRatio": "0.3956",
+      "downsideLiquidationUsd": "3970563794.55",
+      "upsideLiquidationUsd": "2598866706.03",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57413.61",
+          "price": "57416.22",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1577882354.02"
+          "notionalUsd": "1588225517.82"
         },
         {
-          "price": "70172.19",
+          "price": "70175.38",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1044055755.02"
+          "notionalUsd": "1039546682.41"
         },
         {
-          "price": "61241.18",
+          "price": "61243.97",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1380647059.77"
+          "notionalUsd": "1389697328.09"
         },
         {
-          "price": "66344.62",
+          "price": "66347.63",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "913548785.64"
+          "notionalUsd": "909603347.11"
         },
         {
-          "price": "62517.04",
+          "price": "62519.88",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "788941177.01"
+          "notionalUsd": "794112758.91"
         },
         {
-          "price": "65068.76",
+          "price": "65071.72",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "522027877.51"
+          "notionalUsd": "519773341.21"
         },
         {
-          "price": "63154.97",
+          "price": "63157.84",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "197235294.25"
+          "notionalUsd": "198528189.73"
         },
         {
-          "price": "64430.83",
+          "price": "64433.76",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "130506969.38"
+          "notionalUsd": "129943335.30"
         }
       ],
       "errorMessage": null
@@ -4443,14 +4443,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-29T16:05:02.861771Z",
-      "compositeScore": "0.200",
-      "label": "POSITIVE",
-      "labelDisplay": "긍정",
-      "labelHexColor": "#10B981",
+      "generatedAt": "2026-07-29T17:23:26.022139Z",
+      "compositeScore": "0.100",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "The traditional 9-to-5 banking day is officially dying, says Morgan Stanley execs",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/29/morgan-stanley-execs-admit-the-traditional-9-to-5-banking-day-is-officially-dying",
+          "publishedAt": "2026-07-29T16:09:32Z",
+          "score": "-0.4"
+        },
         {
           "title": "Stablecoin firm Brale says new protocol can remove a major hurdle to scaling custom tokens",
           "source": "CoinDesk",
@@ -4463,7 +4470,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/29/investors-look-past-expected-weak-q2-earnings-to-focus-on-coinbase-s-political-future",
           "publishedAt": "2026-07-29T15:15:08Z",
-          "score": "-0.4"
+          "score": "-0.7"
         },
         {
           "title": "Crypto Long & Short: What this year's $972 million crypto hacks actually tell us about security",
@@ -4477,14 +4484,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/29/ethereum-foundation-names-pcaversaccio-to-board-amid-leadership-changes",
           "publishedAt": "2026-07-29T14:11:21Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "The inside story of how a hike in Hong Kong changed crypto trading forever",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/29/the-inside-story-of-how-a-hike-in-hong-kong-changed-crypto-trading-forever",
           "publishedAt": "2026-07-29T13:53:01Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "About $80 million ZEC crosses into Zcash's new Ironwood pool in the first day",
@@ -4498,14 +4505,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/07/29/the-systemic-risk-debate-over-perpetual-futures-is-aimed-at-the-wrong-target",
           "publishedAt": "2026-07-29T13:00:00Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
-          "title": "BNY targets $8.6 trillion transfer agency market on blockchain rails",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails",
-          "publishedAt": "2026-07-29T12:18:58Z",
+          "title": "Binance launches regulated gold, silver options through ADGM exchange",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/binance-launches-regulated-gold-silver-options-through-adgm-exchange?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-29T17:09:24Z",
           "score": "0.6"
+        },
+        {
+          "title": "Bitcoin price wedged into ‘most divided’ FOMC as Iran war spikes oil prices 8%",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-price-wedged-into-most-divided-fomc-as-iran-war-spikes-oil-prices?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-29T17:06:55Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "MoonPay vault enables ChatGPT and Claude users to authorize crypto transactions",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/moonpay-launches-ai-payment-vault-for-chatgpt-and-claude-with-crypto-transaction-support?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-29T16:20:37Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Cost to insure AI debt reaches record high amid Asian semiconductor tumble",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/cost-to-insure-ai-debt-reaches-new-all-time-high-amid-asian-semiconductor-tumble?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-29T16:04:22Z",
+          "score": "-0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4519,14 +4547,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bny-transfer-agency-records-blockchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T13:36:18Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "The 100x obsession: Fundamentals grow in importance as crypto matures",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/the-100x-obsession-why-great-crypto-projects-keep-losing-to-great-stories?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T13:30:00Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "Emirates enables UAE residents to pay for flights through Crypto.com",
@@ -4534,34 +4562,6 @@
           "url": "https://cointelegraph.com/news/emirates-starts-letting-uae-residents-pay-for-flights-through-cryptocom?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T12:14:31Z",
           "score": "0.7"
-        },
-        {
-          "title": "Telegram founder Pavel Durov internationally wanted, Russia’s FSB says",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/telegram-founder-wanted-internationally-russia?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-29T11:18:19Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Crypto TradFi grows fivefold to $6.6B as exchanges expand into stocks, commodities: Report",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-exchanges-tokenized-assets-market-6-6-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-29T10:00:00Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Hungary repeals crypto checks as first MiCA license is granted",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/hungary-repeals-crypto-checks-first-mica-license-granted?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-29T09:15:36Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Trump teleprompter operator accused over Kalshi bets leaves government: AP",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/trump-teleprompter-kalshi-bets-government-ap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-29T08:12:11Z",
-          "score": "-0.3"
         }
       ],
       "errorMessage": null
