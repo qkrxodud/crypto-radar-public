@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-29T15:02:42Z",
+  "updatedAt": "2026-07-29T15:22:51Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "64041.85",
       "macd": {
-        "macdLine": "282.87",
-        "signalLine": "422.93",
-        "histogram": "-140.06",
+        "macdLine": "277.90",
+        "signalLine": "421.93",
+        "histogram": "-144.03",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001913",
       "ivRv": {
-        "iv": "37.36",
+        "iv": "37.22",
         "rv": "33.00",
-        "spread": "+4.36",
+        "spread": "+4.22",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64134.40",
-      "openInterestUsd": "6563940471.14200000",
-      "longAccountRatio": "0.5929",
-      "shortAccountRatio": "0.4071",
-      "downsideLiquidationUsd": "3891760305.34",
-      "upsideLiquidationUsd": "2672180165.80",
+      "currentPrice": "64057.00",
+      "openInterestUsd": "6539778285.99810000",
+      "longAccountRatio": "0.5937",
+      "shortAccountRatio": "0.4063",
+      "downsideLiquidationUsd": "3882666368.40",
+      "upsideLiquidationUsd": "2657111917.60",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57720.96",
+          "price": "57651.30",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1556704122.14"
+          "notionalUsd": "1553066547.36"
         },
         {
-          "price": "70547.84",
+          "price": "70462.70",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1068872066.32"
+          "notionalUsd": "1062844767.04"
         },
         {
-          "price": "61569.02",
+          "price": "61494.72",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1362116106.87"
+          "notionalUsd": "1358933228.94"
         },
         {
-          "price": "66699.78",
+          "price": "66619.28",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "935263058.03"
+          "notionalUsd": "929989171.16"
         },
         {
-          "price": "62851.71",
+          "price": "62775.86",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "778352061.07"
+          "notionalUsd": "776533273.68"
         },
         {
-          "price": "65417.09",
+          "price": "65338.14",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "534436033.16"
+          "notionalUsd": "531422383.52"
         },
         {
-          "price": "63493.06",
+          "price": "63416.43",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "194588015.27"
+          "notionalUsd": "194133318.42"
         },
         {
-          "price": "64775.74",
+          "price": "64697.57",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "133609008.29"
+          "notionalUsd": "132855595.88"
         }
       ],
       "errorMessage": null
@@ -4443,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-29T14:05:02.537475Z",
-      "compositeScore": "0.225",
+      "generatedAt": "2026-07-29T15:05:02.191995Z",
+      "compositeScore": "0.300",
       "label": "POSITIVE",
       "labelDisplay": "긍정",
       "labelHexColor": "#10B981",
@@ -4452,18 +4452,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Ethereum Foundation names pcaversaccio to board amid leadership changes",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/07/29/ethereum-foundation-names-pcaversaccio-to-board-amid-leadership-changes",
+          "publishedAt": "2026-07-29T14:11:21Z",
+          "score": "0.0"
+        },
+        {
           "title": "The inside story of how a hike in Hong Kong changed crypto trading forever",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/29/the-inside-story-of-how-a-hike-in-hong-kong-changed-crypto-trading-forever",
           "publishedAt": "2026-07-29T13:53:01Z",
-          "score": "0.2"
+          "score": "0.5"
         },
         {
           "title": "About $80 million ZEC crosses into Zcash's new Ironwood pool in the first day",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/29/about-usd80-million-zec-crosses-into-zcash-s-new-ironwood-pool-in-the-first-day",
           "publishedAt": "2026-07-29T13:32:37Z",
-          "score": "0.1"
+          "score": "0.4"
         },
         {
           "title": "The systemic-risk debate over perpetual futures is aimed at the wrong target",
@@ -4477,35 +4484,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails",
           "publishedAt": "2026-07-29T12:18:58Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "3 reasons Wednesday's Fed meeting is pivotal for BTC",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/07/29/3-reasons-wednesday-s-fed-meeting-is-pivotal-for-btc",
           "publishedAt": "2026-07-29T11:15:00Z",
-          "score": "0.5"
+          "score": "0.7"
         },
         {
           "title": "Bitcoin steadies above $64,000 as crypto looks to Fed interest-rate decision",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/29/bitcoin-steadies-above-usd64-000-as-crypto-looks-to-fed-interest-rate-decision",
           "publishedAt": "2026-07-29T10:34:18Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Binance offers gold and silver options after commodity futures pull in billions in daily volume",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/29/binance-offers-gold-and-silver-options-after-commodity-futures-pull-in-billions-in-daily-volume",
           "publishedAt": "2026-07-29T10:00:00Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Ionic Digital jumps 26% in Nasdaq debut, giving Celsius Network claimholders an exit route",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/29/ionic-digital-jumps-26-in-nasdaq-debut-giving-celsius-network-claimholders-an-exit-route",
-          "publishedAt": "2026-07-29T09:22:24Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4519,7 +4519,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bny-transfer-agency-records-blockchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T13:36:18Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "The 100x obsession: Fundamentals grow in importance as crypto matures",
@@ -4533,7 +4533,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/emirates-starts-letting-uae-residents-pay-for-flights-through-cryptocom?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T12:14:31Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Telegram founder Pavel Durov internationally wanted, Russia’s FSB says",
@@ -4547,14 +4547,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-exchanges-tokenized-assets-market-6-6-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T10:00:00Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Hungary repeals crypto checks as first MiCA license is granted",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hungary-repeals-crypto-checks-first-mica-license-granted?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T09:15:36Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "Trump teleprompter operator accused over Kalshi bets leaves government: AP",
