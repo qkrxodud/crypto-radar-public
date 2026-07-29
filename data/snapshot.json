@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-07-29T11:01:49Z",
+  "updatedAt": "2026-07-29T11:21:53Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "64041.85",
       "macd": {
-        "macdLine": "311.45",
-        "signalLine": "428.64",
-        "histogram": "-117.20",
+        "macdLine": "317.33",
+        "signalLine": "429.82",
+        "histogram": "-112.49",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001913",
       "ivRv": {
-        "iv": "36.45",
+        "iv": "36.30",
         "rv": "33.00",
-        "spread": "+3.45",
+        "spread": "+3.30",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64475.00",
-      "openInterestUsd": "6683304669.29200000",
-      "longAccountRatio": "0.5941",
-      "shortAccountRatio": "0.4059",
-      "downsideLiquidationUsd": "3970551304.03",
-      "upsideLiquidationUsd": "2712753365.27",
+      "currentPrice": "64551.50",
+      "openInterestUsd": "6678557500.20890000",
+      "longAccountRatio": "0.5936",
+      "shortAccountRatio": "0.4064",
+      "downsideLiquidationUsd": "3964391732.12",
+      "upsideLiquidationUsd": "2714165768.08",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58027.50",
+          "price": "58096.35",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1588220521.61"
+          "notionalUsd": "1585756692.85"
         },
         {
-          "price": "70922.50",
+          "price": "71006.65",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1085101346.11"
+          "notionalUsd": "1085666307.23"
         },
         {
-          "price": "61896.00",
+          "price": "61969.44",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1389692956.41"
+          "notionalUsd": "1387537106.24"
         },
         {
-          "price": "67054.00",
+          "price": "67133.56",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "949463677.84"
+          "notionalUsd": "949958018.83"
         },
         {
-          "price": "63185.50",
+          "price": "63260.47",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "794110260.81"
+          "notionalUsd": "792878346.42"
         },
         {
-          "price": "65764.50",
+          "price": "65842.53",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "542550673.05"
+          "notionalUsd": "542833153.62"
         },
         {
-          "price": "63830.25",
+          "price": "63905.99",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "198527565.20"
+          "notionalUsd": "198219586.61"
         },
         {
-          "price": "65119.75",
+          "price": "65197.02",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "135637668.26"
+          "notionalUsd": "135708288.40"
         }
       ],
       "errorMessage": null
@@ -4443,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-07-29T10:05:03.224890Z",
-      "compositeScore": "0.125",
+      "generatedAt": "2026-07-29T11:05:03.767636Z",
+      "compositeScore": "0.094",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4452,46 +4452,53 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin steadies above $64,000 as crypto looks to Fed interest-rate decision",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/29/bitcoin-steadies-above-usd64-000-as-crypto-looks-to-fed-interest-rate-decision",
+          "publishedAt": "2026-07-29T10:34:18Z",
+          "score": "0.3"
+        },
+        {
           "title": "Binance offers gold and silver options after commodity futures pull in billions in daily volume",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/29/binance-offers-gold-and-silver-options-after-commodity-futures-pull-in-billions-in-daily-volume",
           "publishedAt": "2026-07-29T10:00:00Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Ionic Digital jumps 26% in Nasdaq debut, giving Celsius Network claimholders an exit route",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/07/29/ionic-digital-jumps-26-in-nasdaq-debut-giving-celsius-network-claimholders-an-exit-route",
           "publishedAt": "2026-07-29T09:22:24Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "Russia charges Telegram founder Pavel Durov with aiding terrorism",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/07/29/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism",
           "publishedAt": "2026-07-29T09:10:54Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "SpaceX is a battleground Solana must win",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/07/29/spacex-is-a-battleground-solana-must-win",
           "publishedAt": "2026-07-29T08:00:00Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Live updates: Bitcoin clears $64,000 in Asia hours ahead of Fed decision",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/07/29/live-updates-bitcoin-clears-usd64-000-in-asia-hours-ahead-of-fed-decision",
           "publishedAt": "2026-07-29T06:25:21Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Company behind AI trade that caused $60 million crypto liquidations to cover all losses",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/07/29/company-behind-ai-trade-that-caused-usd60-million-crypto-liquidations-to-cover-all-losses",
           "publishedAt": "2026-07-29T06:03:28Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Citadel bets on a Fed rate hike Wednesday as bitcoin analysts call a hold. Someone will be wrong.",
@@ -4501,32 +4508,32 @@
           "score": "0.0"
         },
         {
-          "title": "Bitcoin rises toward $64,000 as Korea's record chip crash leaves crypto untouched",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/07/29/bitcoin-rises-toward-usd64-000-as-korea-s-record-chip-crash-leaves-crypto-untouched",
-          "publishedAt": "2026-07-29T05:32:27Z",
-          "score": "0.5"
+          "title": "Crypto TradFi grows fivefold to $6.6B as exchanges expand into stocks, commodities: Report",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-exchanges-tokenized-assets-market-6-6-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-07-29T10:00:00Z",
+          "score": "0.6"
         },
         {
           "title": "Hungary repeals crypto checks as first MiCA license is granted",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hungary-repeals-crypto-checks-first-mica-license-granted?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T09:15:36Z",
-          "score": "0.7"
+          "score": "0.5"
         },
         {
           "title": "Trump teleprompter operator accused over Kalshi bets leaves government: AP",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trump-teleprompter-kalshi-bets-government-ap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T08:12:11Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin ETFs extend outflow streak as BTC fails to hold $65K",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-etf-extend-outflow-streak-btc-slips-below-65k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T07:16:47Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "UK policy sprint finds cross-border payments are stablecoins’ top use case",
@@ -4547,21 +4554,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trade-xyz-sk-hynix-perp-liquidations-price-anomaly?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T05:29:48Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Uniswap founder rejects claims v4 fees reduce LP earnings",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/uniswap-founder-rejects-v4-fees-reduce-lp-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-07-29T05:02:07Z",
-          "score": "0.0"
-        },
-        {
-          "title": "South Korea plans stablecoin rules as opposition pushes crypto tax repeal",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/south-korea-consolidated-crypto-law-tax-repeal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-07-29T03:43:05Z",
-          "score": "0.4"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
