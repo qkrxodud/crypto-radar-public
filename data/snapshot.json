@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-03T07:00:34Z",
+  "updatedAt": "2026-08-03T07:20:36Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "63510.72",
       "macd": {
-        "macdLine": "-119.68",
-        "signalLine": "159.89",
-        "histogram": "-279.57",
+        "macdLine": "-122.39",
+        "signalLine": "159.35",
+        "histogram": "-281.74",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -71,7 +71,7 @@
       "adx": {
         "adx": "22.5",
         "plusDi": "16.2",
-        "minusDi": "24.3",
+        "minusDi": "24.5",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001945",
       "ivRv": {
-        "iv": "34.28",
+        "iv": "34.37",
         "rv": "27.00",
-        "spread": "+7.28",
+        "spread": "+7.37",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "62588.50",
-      "openInterestUsd": "6883490789.99700000",
-      "longAccountRatio": "0.6673",
-      "shortAccountRatio": "0.3327",
-      "downsideLiquidationUsd": "4593353404.16",
-      "upsideLiquidationUsd": "2290137385.83",
+      "currentPrice": "62569.70",
+      "openInterestUsd": "6888845343.29686500",
+      "longAccountRatio": "0.6681",
+      "shortAccountRatio": "0.3319",
+      "downsideLiquidationUsd": "4602437573.86",
+      "upsideLiquidationUsd": "2286407769.44",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56329.65",
+          "price": "56312.73",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1837341361.67"
+          "notionalUsd": "1840975029.54"
         },
         {
-          "price": "68847.35",
+          "price": "68826.67",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "916054954.33"
+          "notionalUsd": "914563107.78"
         },
         {
-          "price": "60084.96",
+          "price": "60066.91",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1607673691.46"
+          "notionalUsd": "1610853150.85"
         },
         {
-          "price": "65092.04",
+          "price": "65072.49",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "801548085.04"
+          "notionalUsd": "800242719.30"
         },
         {
-          "price": "61336.73",
+          "price": "61318.31",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "918670680.83"
+          "notionalUsd": "920487514.77"
         },
         {
-          "price": "63840.27",
+          "price": "63821.09",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "458027477.17"
+          "notionalUsd": "457281553.89"
         },
         {
-          "price": "61962.62",
+          "price": "61944.00",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "229667670.21"
+          "notionalUsd": "230121878.69"
         },
         {
-          "price": "63214.39",
+          "price": "63195.40",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "114506869.29"
+          "notionalUsd": "114320388.47"
         }
       ],
       "errorMessage": null
@@ -4443,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-03T06:05:04.742495Z",
-      "compositeScore": "-0.056",
+      "generatedAt": "2026-08-03T07:05:02.949129Z",
+      "compositeScore": "-0.200",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4452,18 +4452,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin slips under $63,000 despite Iran deal hopes as Coldcard losses rattle market",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/03/bitcoin-slips-under-usd63-000-despite-iran-deal-hopes-as-coldcard-losses-rattle-market",
+          "publishedAt": "2026-08-03T06:15:38Z",
+          "score": "-0.6"
+        },
+        {
           "title": "Trump Mediaâs bitcoin stash may be down to loan collateral after $165 million BTC move",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/03/trump-media-s-bitcoin-stash-may-be-down-to-loan-collateral-after-usd165-million-btc-move",
           "publishedAt": "2026-08-03T05:52:29Z",
-          "score": "-0.6"
+          "score": "-0.4"
         },
         {
           "title": "Michael Saylorâs Strategy is now tracking bitcoinâs 200-week moving average",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/03/michael-saylor-s-strategy-is-now-tracking-bitcoin-s-200-week-moving-average",
           "publishedAt": "2026-08-03T05:07:49Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Counting down the days: State of Crypto",
@@ -4484,14 +4491,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
           "publishedAt": "2026-08-02T16:00:00Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "The reverse bridge: Crypto meets Wall Street using perps",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps",
           "publishedAt": "2026-08-02T13:00:00Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
@@ -4501,10 +4508,10 @@
           "score": "-0.5"
         },
         {
-          "title": "Strategy holds STRC dividend at 12%",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/01/strategy-holds-strc-dividend-at-12",
-          "publishedAt": "2026-08-01T22:01:57Z",
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-03T06:25:13Z",
           "score": "0.0"
         },
         {
@@ -4512,42 +4519,35 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-hits-62k-while-coinbase-premium-hits-77-day-negative-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-03T05:58:00Z",
-          "score": "0.5"
+          "score": "-0.3"
         },
         {
           "title": "Coldcard’s 5-year flaw reveals hardware wallet testing gap: Kraken’s security chief",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coldcards-5-year-flaw-reveals-hardware-wallet-testing-gap-krakens-security-chief?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-03T04:09:44Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "South Korean stablecoin outflows top $367M in June: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/south-korea-stablecoin-outflows-overseas-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-03T04:05:11Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Suspected 4th Coldcard attack wave sweeps 448 Bitcoin: Galaxy’s Thorn",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/suspected-4th-coldcard-attack-wave-sweeps-389-bitcoin-galaxys-thorn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-03T01:57:40Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Coldcard exploit sparks Bitcoin flight, ‘bullish’ crypto consolidation: Hodler’s Digest, August 2",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/coldcard-exploit-sparks-bitcoin-flight-clarity-act-no-vote-or-no-vote-hodlers-digest-august-2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-02T23:44:04Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-02T20:00:35Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "Strategy leaves preferred STRC dividend at 12% as price still below par",
@@ -4561,7 +4561,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bnb-chain-legal-action-ex-employee-memecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-02T11:24:00Z",
-          "score": "-0.2"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
