@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-03T21:48:39Z",
+  "updatedAt": "2026-08-03T22:08:42Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "63510.72",
       "macd": {
-        "macdLine": "-36.72",
-        "signalLine": "176.49",
-        "histogram": "-213.20",
+        "macdLine": "-52.99",
+        "signalLine": "173.23",
+        "histogram": "-226.22",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001945",
       "ivRv": {
-        "iv": "30.48",
+        "iv": "25.88",
         "rv": "27.00",
-        "spread": "+3.48",
+        "spread": "-1.13",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2855,9 +2855,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255393874594.74313",
+      "totalMarketCapUsd": "255344220542.57659",
       "marketCap30dAgoUsd": "257053563646.41810",
-      "growth30dPercent": "-0.65",
+      "growth30dPercent": "-0.67",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63640.70",
-      "openInterestUsd": "6895617450.43600000",
-      "longAccountRatio": "0.5928",
-      "shortAccountRatio": "0.4072",
-      "downsideLiquidationUsd": "4087722024.62",
-      "upsideLiquidationUsd": "2807895425.82",
+      "currentPrice": "63424.00",
+      "openInterestUsd": "6900148934.70628300",
+      "longAccountRatio": "0.5931",
+      "shortAccountRatio": "0.4069",
+      "downsideLiquidationUsd": "4092478333.17",
+      "upsideLiquidationUsd": "2807670601.53",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57276.63",
+          "price": "57081.60",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1635088809.85"
+          "notionalUsd": "1636991333.27"
         },
         {
-          "price": "70004.77",
+          "price": "69766.40",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1123158170.33"
+          "notionalUsd": "1123068240.61"
         },
         {
-          "price": "61095.07",
+          "price": "60887.04",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1430702708.62"
+          "notionalUsd": "1432367416.61"
         },
         {
-          "price": "66186.33",
+          "price": "65960.96",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "982763399.04"
+          "notionalUsd": "982684710.54"
         },
         {
-          "price": "62367.89",
+          "price": "62155.52",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "817544404.92"
+          "notionalUsd": "818495666.63"
         },
         {
-          "price": "64913.51",
+          "price": "64692.48",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "561579085.16"
+          "notionalUsd": "561534120.31"
         },
         {
-          "price": "63004.29",
+          "price": "62789.76",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204386101.23"
+          "notionalUsd": "204623916.66"
         },
         {
-          "price": "64277.11",
+          "price": "64058.24",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "140394771.29"
+          "notionalUsd": "140383530.08"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-03T21:30:04.866749Z",
+      "generatedAt": "2026-08-03T22:00:03.011277Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,23 +4388,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이며, 심리 지표는 공포 상태를 나타냅니다."
+          "content": "현재 시장은 매집 우세로 보이며, 공포탐욕 지수는 낮은 편이다."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 공포에 가까워 추가 하락 가능성이 존재합니다."
+          "content": "공포탐욕 지수가 28로 시장 심리가 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 증가하고 있어 매도 압력이 우려됩니다."
+          "content": "BTC 도미넌스가 56으로 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 포착하되, 손실 제한을 위한 손절매 설정이 필요합니다."
+          "content": "매수 기회를 노리되, 시장 심리를 주의 깊게 살펴라."
         },
         {
           "type": "ACTION",
-          "content": "시장의 심리 변화에 주의하며, 알트코인 비중을 조절하는 것이 좋습니다."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
@@ -4443,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-03T21:05:02.664245Z",
-      "compositeScore": "-0.163",
+      "generatedAt": "2026-08-03T22:05:04.282914Z",
+      "compositeScore": "-0.200",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4470,14 +4470,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/03/circle-internet-slides-after-morgan-stanley-downgrade-cut-in-price-target",
           "publishedAt": "2026-08-03T13:59:50Z",
-          "score": "-0.3"
+          "score": "-0.6"
         },
         {
           "title": "Bernstein sees another leg lower for crypto markets if Clarity Act stalls",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls",
           "publishedAt": "2026-08-03T13:49:40Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
@@ -4498,14 +4498,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/03/strategy-sold-another-usd105-million-of-bitcoin-last-week-repurchased-usd81-2-million-of-strc",
           "publishedAt": "2026-08-03T12:17:10Z",
-          "score": "-0.1"
+          "score": "-0.3"
         },
         {
           "title": "Bitget set to exit Japan, close all remaining positions by year-end",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/03/bitget-set-to-exit-japan-close-all-remaining-positions-by-year-end",
           "publishedAt": "2026-08-03T12:03:41Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "Bessent’s top crypto adviser Tyler Williams exits US Treasury: Report",
@@ -4547,14 +4547,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hashdex-to-shut-smallest-bitcoin-etf-after-more-than-two-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-03T15:24:43Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "US hints at more yen intervention: Five things to know in Bitcoin this week",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/us-hints-at-more-yen-intervention-five-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-03T14:11:26Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "How Fake World Assets and onchain gacha became crypto’s latest craze",
