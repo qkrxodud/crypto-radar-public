@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-04T06:50:40Z",
+  "updatedAt": "2026-08-04T07:10:44Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "63585.09",
       "macd": {
-        "macdLine": "-72.56",
-        "signalLine": "111.38",
-        "histogram": "-183.94",
+        "macdLine": "-77.01",
+        "signalLine": "110.49",
+        "histogram": "-187.50",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001896",
       "ivRv": {
-        "iv": "31.03",
+        "iv": "26.48",
         "rv": "27.00",
-        "spread": "+4.03",
+        "spread": "-0.53",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2855,9 +2855,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255176920850.32817",
+      "totalMarketCapUsd": "255145863078.72202",
       "marketCap30dAgoUsd": "257051964146.74565",
-      "growth30dPercent": "-0.73",
+      "growth30dPercent": "-0.74",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63646.20",
-      "openInterestUsd": "6918571928.58106700",
-      "longAccountRatio": "0.5901",
-      "shortAccountRatio": "0.4099",
-      "downsideLiquidationUsd": "4082649295.06",
-      "upsideLiquidationUsd": "2835922633.53",
+      "currentPrice": "63589.10",
+      "openInterestUsd": "6917717628.42920000",
+      "longAccountRatio": "0.5894",
+      "shortAccountRatio": "0.4106",
+      "downsideLiquidationUsd": "4077302770.20",
+      "upsideLiquidationUsd": "2840414858.23",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57281.58",
+          "price": "57230.19",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1633059718.02"
+          "notionalUsd": "1630921108.08"
         },
         {
-          "price": "70010.82",
+          "price": "69948.01",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1134369053.41"
+          "notionalUsd": "1136165943.29"
         },
         {
-          "price": "61100.35",
+          "price": "61045.54",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1428927253.27"
+          "notionalUsd": "1427055969.57"
         },
         {
-          "price": "66192.05",
+          "price": "66132.66",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "992572921.73"
+          "notionalUsd": "994145200.38"
         },
         {
-          "price": "62373.28",
+          "price": "62317.32",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "816529859.01"
+          "notionalUsd": "815460554.04"
         },
         {
-          "price": "64919.12",
+          "price": "64860.88",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "567184526.71"
+          "notionalUsd": "568082971.65"
         },
         {
-          "price": "63009.74",
+          "price": "62953.21",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204132464.75"
+          "notionalUsd": "203865138.51"
         },
         {
-          "price": "64282.66",
+          "price": "64224.99",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "141796131.68"
+          "notionalUsd": "142020742.91"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-04T06:30:01.109230Z",
+      "generatedAt": "2026-08-04T07:00:02.745740Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,23 +4388,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 시장 심리가 다소 공포에 가까운 상태이다."
+          "content": "현재 매집이 우세하나 시장 심리는 공포 상태로 위험 요소가 존재함."
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
+          "content": "공포탐욕 지수가 25로 극단적인 공포를 나타냄."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 알트코인에 대한 투자 심리가 약해질 수 있다."
+          "content": "RSI(주)가 39.54로 과매도 구간에 근접함."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 염두에 두고 시장을 주의 깊게 관찰하라."
+          "content": "매수 기회를 엿보되, 손절매 설정을 권장함."
         },
         {
           "type": "ACTION",
-          "content": "리스크 관리 차원에서 포지션 크기를 조절하라."
+          "content": "시장 심리 개선을 기다리며 추가 매수는 신중하게 결정할 것."
         }
       ],
       "errorMessage": null
@@ -4443,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-04T06:05:05.762337Z",
-      "compositeScore": "-0.069",
+      "generatedAt": "2026-08-04T07:05:00.101106Z",
+      "compositeScore": "-0.081",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4452,11 +4452,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
-          "title": "A new Solana proposal would take daily SOL burns from $47,000 to $650,000",
+          "title": "XRP holders can now borrow RLUSD on Ethereum through $280 million lending pool",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/04/flare-s-wrapped-xrp-wins-approval-in-a-usd280-million-rlusd-lending-vault",
+          "publishedAt": "2026-08-04T06:12:20Z",
+          "score": "0.2"
+        },
+        {
+          "title": "A new Solana proposal aims to ramp up daily SOL Burns from $47,000 to $650,000",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/04/a-new-solana-proposal-would-take-daily-sol-burns-from-usd47-000-to-usd650-000",
           "publishedAt": "2026-08-04T05:39:18Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Bitcoin nears $64,000 as traders look past Strategy's BTC sales and Coldcard sweeps",
@@ -4470,14 +4477,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/04/a-bitcoin-wallet-dormant-since-2013-moved-usd31-million-and-it-s-not-the-only-one",
           "publishedAt": "2026-08-04T04:48:40Z",
-          "score": "0.4"
+          "score": "-0.3"
         },
         {
           "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
           "publishedAt": "2026-08-03T22:17:59Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Trump-linked American Bitcoin president Matt Prusak departs for Giga Energy",
@@ -4491,21 +4498,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/03/u-s-japan-intervention-revives-yen-carry-trade-fears-for-bitcoin",
           "publishedAt": "2026-08-03T14:46:08Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Circle slides after Morgan Stanley downgrade, cut in price target",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/03/circle-internet-slides-after-morgan-stanley-downgrade-cut-in-price-target",
           "publishedAt": "2026-08-03T13:59:50Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
-          "title": "Bernstein sees another leg lower for crypto markets if Clarity Act stalls",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls",
-          "publishedAt": "2026-08-03T13:49:40Z",
-          "score": "-0.6"
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-04T06:18:03Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Crypto firms still seeking frontier AI access; only select few have it",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/few-crypto-firms-have-access-to-frontier-ai-as-cyber-threats-escalate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-04T06:00:23Z",
+          "score": "0.1"
         },
         {
           "title": "Coldcard Bitcoin theft tops $100M across 3 confirmed attack waves: Galaxy",
@@ -4526,7 +4540,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/mastercard-completes-bvnk-acquisition-stablecoin-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-04T02:58:51Z",
-          "score": "0.6"
+          "score": "0.4"
         },
         {
           "title": "Malaysia Blockchain Week’s OnlyFans scandal, lonely heart scammed for $3.3M: Asia Express",
@@ -4540,7 +4554,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/caleb-brown-expands-to-uk-betting-on-untapped-crypto-demand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-04T00:51:32Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Boltz pauses service after wave of AI-assisted hacking attempts",
@@ -4548,20 +4562,6 @@
           "url": "https://cointelegraph.com/news/boltz-pauses-service-after-wave-of-ai-assisted-hacking-attempts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-04T00:03:47Z",
           "score": "-0.5"
-        },
-        {
-          "title": "Bessent’s top crypto adviser Tyler Williams exits US Treasury: Report",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bessent-top-crypto-adviser-tyler-williams-leaves-us-treasury-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-03T20:29:47Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-03T19:52:11Z",
-          "score": "0.0"
         }
       ],
       "errorMessage": null
