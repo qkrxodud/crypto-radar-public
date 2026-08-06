@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-06T05:02:15Z",
+  "updatedAt": "2026-08-06T05:22:19Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.27",
       "btcClose": "64620.23",
       "macd": {
-        "macdLine": "77.25",
-        "signalLine": "90.53",
-        "histogram": "-13.28",
+        "macdLine": "89.53",
+        "signalLine": "92.99",
+        "histogram": "-3.46",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
         "adx": "21.8",
-        "plusDi": "17.7",
-        "minusDi": "21.9",
+        "plusDi": "17.5",
+        "minusDi": "21.7",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001784",
       "ivRv": {
-        "iv": "33.34",
+        "iv": "31.67",
         "rv": "27.00",
-        "spread": "+6.34",
-        "label": "과대"
+        "spread": "+4.67",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 25,
@@ -2851,9 +2851,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255121401273.06608",
+      "totalMarketCapUsd": "255106217138.80712",
       "marketCap30dAgoUsd": "257502102626.95470",
-      "growth30dPercent": "-0.92",
+      "growth30dPercent": "-0.93",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64742.50",
-      "openInterestUsd": "6858104157.79620100",
-      "longAccountRatio": "0.5386",
-      "shortAccountRatio": "0.4614",
-      "downsideLiquidationUsd": "3693774899.39",
-      "upsideLiquidationUsd": "3164329258.41",
+      "currentPrice": "64885.90",
+      "openInterestUsd": "6892412629.83000000",
+      "longAccountRatio": "0.5322",
+      "shortAccountRatio": "0.4678",
+      "downsideLiquidationUsd": "3668142001.60",
+      "upsideLiquidationUsd": "3224270628.23",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58268.25",
+          "price": "58397.31",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1477509959.76"
+          "notionalUsd": "1467256800.64"
         },
         {
-          "price": "71216.75",
+          "price": "71374.49",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1265731703.36"
+          "notionalUsd": "1289708251.29"
         },
         {
-          "price": "62152.80",
+          "price": "62290.46",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1292821214.79"
+          "notionalUsd": "1283849700.56"
         },
         {
-          "price": "67332.20",
+          "price": "67481.34",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1107515240.44"
+          "notionalUsd": "1128494719.88"
         },
         {
-          "price": "63447.65",
+          "price": "63588.18",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "738754979.88"
+          "notionalUsd": "733628400.32"
         },
         {
-          "price": "66037.35",
+          "price": "66183.62",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "632865851.68"
+          "notionalUsd": "644854125.65"
         },
         {
-          "price": "64095.08",
+          "price": "64237.04",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "184688744.97"
+          "notionalUsd": "183407100.08"
         },
         {
-          "price": "65389.93",
+          "price": "65534.76",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "158216462.92"
+          "notionalUsd": "161213531.41"
         }
       ],
       "errorMessage": null
@@ -4439,14 +4439,35 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-06T04:05:02.685384Z",
-      "compositeScore": "0.119",
+      "generatedAt": "2026-08-06T05:05:01.340561Z",
+      "compositeScore": "0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Bitcoin steadies above $64,000 as traders watch $100 billion SpaceX unlock",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/06/bitcoin-steadies-above-usd64-000-as-traders-watch-usd100-billion-spacex-unlock",
+          "publishedAt": "2026-08-06T04:59:11Z",
+          "score": "0.5"
+        },
+        {
+          "title": "XRP whales keep buying the dip, but ether shows deeper capitulation",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/06/xrp-whales-keep-buying-the-dip-but-ether-shows-deeper-capitulation",
+          "publishedAt": "2026-08-06T04:46:17Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "CASHCAT jumps 120% in a week as Robinhood Chain hits $774 million of value locked",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/05/cashcat-jumps-120-in-a-week-as-robinhood-chain-tvl-hits-usd774-million",
+          "publishedAt": "2026-08-06T04:31:41Z",
+          "score": "0.2"
+        },
         {
           "title": "Here are the possible outcomes for Clarity right now",
           "source": "CoinDesk",
@@ -4459,56 +4480,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/05/binance-sues-redotpay-for-usd470-million-claiming-it-diverted-users",
           "publishedAt": "2026-08-05T21:40:33Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Crypto's campaign efforts see rare loss, but crypto roster in Congress likely to grow",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/05/crypto-s-campaign-efforts-see-rare-loss-but-crypto-roster-in-congress-likely-to-grow",
           "publishedAt": "2026-08-05T18:15:21Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say",
           "publishedAt": "2026-08-05T15:44:08Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Crypto Long & Short: Putting the bitcoin sizing question to the test",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/08/05/crypto-long-and-short-putting-the-bitcoin-sizing-question-to-the-test",
           "publishedAt": "2026-08-05T15:03:19Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
-          "title": "Strategyâs STRC rebounds 30% as company builds cash reserve, bitcoin price stabilizes",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/05/strategy-s-strc-rebounds-30-as-company-builds-cash-reserve-bitcoin-price-stabilizes",
-          "publishedAt": "2026-08-05T14:44:30Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Nomuraâs Laser Digital backs ZIGChain for onchain private credit push in UAE",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/05/noumura-s-laser-digital-backs-zigchain-for-onchain-private-credit-push-in-uae",
-          "publishedAt": "2026-08-05T13:25:04Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Crypto may have institutionalized, but it still trades like a rumor mill",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/opinion/2026/08/05/crypto-may-have-institutionalized-but-it-still-trades-like-a-rumor-mill",
-          "publishedAt": "2026-08-05T13:00:00Z",
-          "score": "-0.2"
+          "title": "Meta latest AI firm to see model go rogue during testing",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/meta-latest-ai-firm-to-see-model-go-rogue-during-testing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-06T04:28:47Z",
+          "score": "0.0"
         },
         {
           "title": "Block raises 2026 outlook on strong quarter, says AI touches nearly all code",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/block-raises-2026-outlook-strong-quarter-says-ai-touches-nearly-all-code?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T01:33:57Z",
-          "score": "0.6"
+          "score": "0.1"
         },
         {
           "title": "Mysten Labs tech chief joins Anthropic to work on AI security",
@@ -4522,21 +4529,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-red-team-reports-5k-findings-in-sweeping-security-audit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T01:09:06Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Senator Warren questions US AI chip policy after Trump crypto investment: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/senator-warren-us-policy-uae-ai-chips-trump-crypto-investment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-05T21:15:37Z",
-          "score": "-0.4"
+          "score": "-0.2"
         },
         {
           "title": "Senator Lummis still pushing for CLARITY vote before August recess",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/senator-lummis-clarity-vote-movement-calendar?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-05T19:18:24Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4550,14 +4557,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/marex-digital-prime-tokenet-institutional-crypto-lending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-05T18:53:47Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Crypto-backed Michigan House incumbent loses primary despite $2M PAC support",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/michigan-house-rep-loses-primary-support-crypto-pac?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-05T16:51:54Z",
-          "score": "-0.5"
+          "score": "0.3"
         }
       ],
       "errorMessage": null
