@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-06T13:03:58Z",
+  "updatedAt": "2026-08-06T13:24:06Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.27",
       "btcClose": "64620.23",
       "macd": {
-        "macdLine": "48.64",
-        "signalLine": "84.81",
-        "histogram": "-36.17",
+        "macdLine": "33.38",
+        "signalLine": "81.76",
+        "histogram": "-48.38",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
         "adx": "21.8",
-        "plusDi": "17.4",
-        "minusDi": "21.6",
+        "plusDi": "17.3",
+        "minusDi": "21.4",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001784",
       "ivRv": {
-        "iv": "25.72",
+        "iv": "26.75",
         "rv": "27.00",
-        "spread": "-1.28",
+        "spread": "-0.26",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2851,7 +2851,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255055134059.08469",
+      "totalMarketCapUsd": "255052300840.35887",
       "marketCap30dAgoUsd": "257502102626.95470",
       "growth30dPercent": "-0.95",
       "signal": "STABLE",
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64377.80",
-      "openInterestUsd": "6872765002.83488750",
-      "longAccountRatio": "0.5417",
-      "shortAccountRatio": "0.4583",
-      "downsideLiquidationUsd": "3722976802.04",
-      "upsideLiquidationUsd": "3149788200.80",
+      "currentPrice": "64191.90",
+      "openInterestUsd": "6811284962.99250000",
+      "longAccountRatio": "0.5425",
+      "shortAccountRatio": "0.4575",
+      "downsideLiquidationUsd": "3695122092.42",
+      "upsideLiquidationUsd": "3116162870.57",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57940.02",
+          "price": "57772.71",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1489190720.81"
+          "notionalUsd": "1478048836.97"
         },
         {
-          "price": "70815.58",
+          "price": "70611.09",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1259915280.32"
+          "notionalUsd": "1246465148.23"
         },
         {
-          "price": "61802.69",
+          "price": "61624.22",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1303041880.71"
+          "notionalUsd": "1293292732.35"
         },
         {
-          "price": "66952.91",
+          "price": "66759.58",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1102425870.28"
+          "notionalUsd": "1090657004.70"
         },
         {
-          "price": "63090.24",
+          "price": "62908.06",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "744595360.41"
+          "notionalUsd": "739024418.48"
         },
         {
-          "price": "65665.36",
+          "price": "65475.74",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "629957640.16"
+          "notionalUsd": "623232574.11"
         },
         {
-          "price": "63734.02",
+          "price": "63549.98",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "186148840.10"
+          "notionalUsd": "184756104.62"
         },
         {
-          "price": "65021.58",
+          "price": "64833.82",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "157489410.04"
+          "notionalUsd": "155808143.53"
         }
       ],
       "errorMessage": null
@@ -4439,8 +4439,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-06T12:05:03.234849Z",
-      "compositeScore": "0.013",
+      "generatedAt": "2026-08-06T13:04:58.511288Z",
+      "compositeScore": "-0.113",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4448,25 +4448,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts",
+          "publishedAt": "2026-08-06T12:46:42Z",
+          "score": "-0.5"
+        },
+        {
           "title": "Bitcoinâs low volatility doesnât necessarily mean low risk",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk",
           "publishedAt": "2026-08-06T11:37:03Z",
-          "score": "-0.4"
+          "score": "-0.2"
         },
         {
           "title": "Free Markets and Innovation, Sort Of",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/08/06/free-markets-and-innovation-sort-of",
           "publishedAt": "2026-08-06T11:30:00Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Why Sandisk and Western Digital crashed 10% and what it means for bitcoin",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/06/why-sandisk-and-western-digital-crashed-10-and-what-it-means-for-bitcoin",
           "publishedAt": "2026-08-06T11:14:47Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa",
@@ -4480,84 +4487,77 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/06/bitcoin-ether-benefit-as-traders-seek-safety-of-largest-tokens",
           "publishedAt": "2026-08-06T10:43:07Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "NFT startup founder charged with misusing funds from $10 million fundraising",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising",
           "publishedAt": "2026-08-06T09:19:03Z",
-          "score": "-0.3"
+          "score": "-0.6"
         },
         {
-          "title": "Live updates: Coinbase lets UK users trade U.S. equities. BTC trades near $65,000",
+          "title": "Live updates: BTC trades near $65,000; SpaceX rises ahead of $100 billion unlock",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
           "publishedAt": "2026-08-06T07:26:23Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
-          "title": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/08/06/bitcoin-developers-flag-85-critical-bugs-in-an-extremely-bad-situation",
-          "publishedAt": "2026-08-06T07:14:11Z",
-          "score": "-0.6"
+          "title": "Blockchain.com wins Cayman custody license after MiCA and FCA approvals",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/blockchain-com-cayman-custody-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-06T13:00:00Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Hyperliquid RWA contracts grow to 32% of trading activity in Q2",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/hyperliquid-rwa-contracts-rise-32-trading-q2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-06T12:55:44Z",
+          "score": "0.1"
+        },
+        {
+          "title": "Zeus Wallet taken offline after cyberattack, says no customer funds at risk",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/zeus-offline-cyberattack-says-no-funds-at-risk?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-06T12:11:49Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "Crypto wrench attacks steal more than $30M so far in 2026: Chainalysis",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-wrench-attacks-steal-30-million-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-06T12:00:00Z",
+          "score": "-0.7"
         },
         {
           "title": "Bitcoin treasury trade ‘breaking’ and fund holdings drop 10%: Analysis",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-treasury-trade-breaking-and-fund-holdings-drop-10-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T11:48:37Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Coldcard hackers transfer 64 BTC and 200 ETH to cryptocurrency mixers",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coldcard-hackers-64-btc-200-eth-cryptocurrency-mixers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T11:26:00Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Situational Awareness returns with $400M investment after nearly collapsing: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/situational-awareness-400m-investment-nearly-collapsing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T10:41:49Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Russian president signs crypto law, core rules take effect in 2026",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/putin-signs-crypto-law-core-rules-take-effect-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T09:38:54Z",
-          "score": "0.2"
-        },
-        {
-          "title": "RWAs buck DeFi slowdown as tokenized assets gain traction: CoinShares",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/rwa-buck-defi-slowdown-tokenization-coinshares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-06T09:28:20Z",
           "score": "0.3"
-        },
-        {
-          "title": "Yen stablecoin issuer JPYC’s Series B reaches $38M",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/jpyc-series-b-funding-az-com?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-06T08:44:43Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Bitcoin-backed loan refinances PowerCompute’s $18M debt at 2%",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitcoin-collateral-cuts-powercompute-debt-rate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-06T07:56:34Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Bitcoin ETFs pull in $244M, 3-day inflow streak tops $626M",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-etf-244-million-three-day-inflow-streak-626-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-06T06:57:31Z",
-          "score": "0.6"
         }
       ],
       "errorMessage": null
