@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-06T00:21:15Z",
+  "updatedAt": "2026-08-06T00:41:18Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,16 +61,16 @@
       "historicalVolatility": "0.27",
       "btcClose": "64620.23",
       "macd": {
-        "macdLine": "67.34",
-        "signalLine": "88.55",
-        "histogram": "-21.21",
+        "macdLine": "71.02",
+        "signalLine": "89.29",
+        "histogram": "-18.26",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
         "adx": "21.8",
-        "plusDi": "17.9",
+        "plusDi": "17.8",
         "minusDi": "22.1",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001784",
       "ivRv": {
-        "iv": "28.41",
+        "iv": "33.06",
         "rv": "27.00",
-        "spread": "+1.41",
-        "label": "균형"
+        "spread": "+6.06",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 25,
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64611.90",
-      "openInterestUsd": "6916901333.57063000",
-      "longAccountRatio": "0.5341",
-      "shortAccountRatio": "0.4659",
-      "downsideLiquidationUsd": "3694317002.26",
-      "upsideLiquidationUsd": "3222584331.31",
+      "currentPrice": "64654.80",
+      "openInterestUsd": "6921665686.87400000",
+      "longAccountRatio": "0.5352",
+      "shortAccountRatio": "0.4648",
+      "downsideLiquidationUsd": "3704475475.61",
+      "upsideLiquidationUsd": "3217190211.26",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58150.71",
+          "price": "58189.32",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1477726800.90"
+          "notionalUsd": "1481790190.25"
         },
         {
-          "price": "71073.09",
+          "price": "71120.28",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1289033732.52"
+          "notionalUsd": "1286876084.50"
         },
         {
-          "price": "62027.42",
+          "price": "62068.61",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1293010950.79"
+          "notionalUsd": "1296566416.47"
         },
         {
-          "price": "67196.38",
+          "price": "67240.99",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1127904515.96"
+          "notionalUsd": "1126016573.94"
         },
         {
-          "price": "63319.66",
+          "price": "63361.70",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "738863400.45"
+          "notionalUsd": "740895095.12"
         },
         {
-          "price": "65904.14",
+          "price": "65947.90",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "644516866.26"
+          "notionalUsd": "643438042.25"
         },
         {
-          "price": "63965.78",
+          "price": "64008.25",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "184715850.11"
+          "notionalUsd": "185223773.78"
         },
         {
-          "price": "65258.02",
+          "price": "65301.35",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "161129216.57"
+          "notionalUsd": "160859510.56"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-06T00:21:13.899807Z",
+      "generatedAt": "2026-08-06T00:30:04.007020Z",
       "compositeScore": 69,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,23 +4384,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "매집 우세로 보이며, 시장 심리는 공포 단계에 있음."
+          "content": "현재 매집 우세로, 시장 심리는 공포에 가까운 상태이다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수로 인해 투자 심리가 위축될 수 있음."
+          "content": "낮은 MVRV-Z와 NUPL로 인해 투자자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 매력이 감소할 수 있음."
+          "content": "BTC 도미넌스가 57로 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "매집 우세를 활용해 장기 투자 전략을 고려할 것."
+          "content": "매수 기회를 노리되, 시장 심리를 주의 깊게 살펴야 한다."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리 회복을 기다리며 추가 매수 기회를 모색할 것."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산시켜야 한다."
         }
       ],
       "errorMessage": null
