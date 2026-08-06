@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-06T18:05:21Z",
+  "updatedAt": "2026-08-06T18:25:37Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "64620.23",
       "macd": {
-        "macdLine": "58.58",
-        "signalLine": "86.80",
-        "histogram": "-28.22",
+        "macdLine": "59.22",
+        "signalLine": "86.92",
+        "histogram": "-27.71",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001784",
       "ivRv": {
-        "iv": "24.58",
+        "iv": "24.27",
         "rv": "27.00",
-        "spread": "-2.43",
+        "spread": "-2.73",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2851,9 +2851,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255280891790.35113",
+      "totalMarketCapUsd": "255265037151.31131",
       "marketCap30dAgoUsd": "257502102626.95470",
-      "growth30dPercent": "-0.86",
+      "growth30dPercent": "-0.87",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2861,11 +2861,11 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5825764.000",
-      "change4wUsdM": "-57267.000",
-      "change4wPercent": "-0.97",
+      "netLiquidityUsdM": "5825985.000",
+      "change4wUsdM": "-54621.000",
+      "change4wPercent": "-0.93",
       "fedAssetsUsdM": "6738190",
-      "reverseRepoUsdM": "1650.000",
+      "reverseRepoUsdM": "1429.000",
       "treasuryAccountUsdM": "910776",
       "rrpIncluded": true,
       "signal": "STABLE",
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64502.40",
-      "openInterestUsd": "6852970714.26450500",
-      "longAccountRatio": "0.5351",
-      "shortAccountRatio": "0.4649",
-      "downsideLiquidationUsd": "3667024629.20",
-      "upsideLiquidationUsd": "3185946085.06",
+      "currentPrice": "64505.10",
+      "openInterestUsd": "6838798791.13630800",
+      "longAccountRatio": "0.5359",
+      "shortAccountRatio": "0.4641",
+      "downsideLiquidationUsd": "3664912272.17",
+      "upsideLiquidationUsd": "3173886518.97",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58052.16",
+          "price": "58054.59",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1466809851.68"
+          "notionalUsd": "1465964908.87"
         },
         {
-          "price": "70952.64",
+          "price": "70955.61",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1274378434.02"
+          "notionalUsd": "1269554607.59"
         },
         {
-          "price": "61922.30",
+          "price": "61924.90",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1283458620.22"
+          "notionalUsd": "1282719295.26"
         },
         {
-          "price": "67082.50",
+          "price": "67085.30",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1115081129.77"
+          "notionalUsd": "1110860281.64"
         },
         {
-          "price": "63212.35",
+          "price": "63215.00",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "733404925.84"
+          "notionalUsd": "732982454.43"
         },
         {
-          "price": "65792.45",
+          "price": "65795.20",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "637189217.01"
+          "notionalUsd": "634777303.79"
         },
         {
-          "price": "63857.38",
+          "price": "63860.05",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "183351231.46"
+          "notionalUsd": "183245613.61"
         },
         {
-          "price": "65147.42",
+          "price": "65150.15",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "159297304.25"
+          "notionalUsd": "158694325.95"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-06T17:45:17.198441Z",
+      "generatedAt": "2026-08-06T18:25:30.934937Z",
       "compositeScore": 69,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,30 +4384,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로, 심리 지표가 낮아 단기 변동성이 우려된다."
+          "content": "현재 시장은 매집 우세로 보이며, 심리 지표는 공포 상태에 가까움."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수 25로 극단적인 공포 상태를 나타냄."
+          "content": "공포탐욕 지표가 25로 극단적인 공포를 나타냄."
         },
         {
           "type": "RISK",
-          "content": "RSI(주) 38.59로 과매도 구간에 접근 중임."
+          "content": "BTC 도미넌스가 57로 알트코인에 대한 투자 심리가 약함."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매보다는 장기 보유 전략을 고려하라."
+          "content": "매집 우세를 고려해 추가 매수를 검토하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리를 주의 깊게 모니터링하라."
+          "content": "공포 심리를 반영해 리스크 관리에 유의하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-06T17:45:18.860477Z",
+      "generatedAt": "2026-08-06T18:25:34.618899Z",
       "compositeScore": 69,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4416,11 +4416,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "Market sentiment shows accumulation dominance, but caution is advised due to mixed indicators."
+          "content": "The market shows a slight bullish sentiment with accumulation dominance but underlying risks remain."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 25 indicates extreme fear."
+          "content": "Fear and Greed index at 25 indicates extreme fear in the market."
         },
         {
           "type": "RISK",
@@ -4428,19 +4428,19 @@
         },
         {
           "type": "ACTION",
-          "content": "Monitor accumulation trends closely for potential entry points."
+          "content": "Consider cautious accumulation strategies in the current market."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into altcoins given the alt season index at 50."
+          "content": "Monitor macroeconomic indicators closely for potential impacts."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-06T17:25:11.889316Z",
-      "compositeScore": "-0.050",
+      "generatedAt": "2026-08-06T18:25:37.385871Z",
+      "compositeScore": "-0.044",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4452,7 +4452,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate",
           "publishedAt": "2026-08-06T16:10:04Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Crypto for Advisors: Europe's crypto rules, U.S. Preview",
@@ -4466,14 +4466,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts",
           "publishedAt": "2026-08-06T12:46:42Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Bitcoinâs low volatility doesnât necessarily mean low risk",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk",
           "publishedAt": "2026-08-06T11:37:03Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Free Markets and Innovation, Sort Of",
@@ -4494,56 +4494,63 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/06/jpyc-raises-usd38-million-series-b-led-by-major-japanese-logistics-firm-az-com-maruwa",
           "publishedAt": "2026-08-06T10:53:09Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin, ether benefit as traders seek safety of largest tokens",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/06/bitcoin-ether-benefit-as-traders-seek-safety-of-largest-tokens",
           "publishedAt": "2026-08-06T10:43:07Z",
-          "score": "0.6"
+          "score": "0.5"
+        },
+        {
+          "title": "Bitcoin ETF inflows surge after Coldcard hack, but link is unclear: Bloomberg analyst",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-etf-inflows-coldcard-hack-bloomberg-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-06T18:17:57Z",
+          "score": "0.1"
         },
         {
           "title": "US appellate court mandate affirms Sam Bankman-Fried conviction",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-appellate-court-mandate-sam-bankman-fried?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T17:17:34Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
           "title": "US Senate will vote on CLARITY crypto bill ‘without any question’ this week: Tim Scott",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-senate-vote-clarity-act-tim-scott?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T16:53:45Z",
-          "score": "0.3"
+          "score": "0.6"
         },
         {
           "title": "Bitcoin miners’ AI pivot loses Wall Street’s wow factor",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-miners-ai-infrastructure-deals-wall-street-reaction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T16:42:33Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Bitcoin price coils under $65K as US PMI data brings new ‘stagflation’ warning",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-compresses-as-us-pmi-data-brings-new-stagflation-warning?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T16:24:18Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Step App winds down after four years as FITFI token sinks",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/step-app-winds-down-four-years-move-to-earn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T13:52:36Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "10 weirdest things ever tokenized... including farts",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/the-10-weirdest-things-already-finding-a-home-onchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T13:30:00Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4551,13 +4558,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T13:02:49Z",
           "score": "0.0"
-        },
-        {
-          "title": "Blockchain.com wins Cayman custody license after MiCA and FCA approvals",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/blockchain-com-cayman-custody-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-06T13:00:00Z",
-          "score": "0.5"
         }
       ],
       "errorMessage": null
