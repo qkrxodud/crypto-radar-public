@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-07T04:48:21Z",
+  "updatedAt": "2026-08-07T05:08:24Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "64354.00",
       "macd": {
-        "macdLine": "55.59",
-        "signalLine": "82.33",
-        "histogram": "-26.75",
+        "macdLine": "52.67",
+        "signalLine": "81.75",
+        "histogram": "-29.08",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001697",
       "ivRv": {
-        "iv": "23.74",
+        "iv": "24.58",
         "rv": "27.00",
-        "spread": "-3.26",
+        "spread": "-2.43",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64216.30",
-      "openInterestUsd": "6773771390.37000000",
-      "longAccountRatio": "0.5518",
-      "shortAccountRatio": "0.4482",
-      "downsideLiquidationUsd": "3737767053.21",
-      "upsideLiquidationUsd": "3036004337.16",
+      "currentPrice": "64181.70",
+      "openInterestUsd": "6774661062.05679600",
+      "longAccountRatio": "0.5543",
+      "shortAccountRatio": "0.4457",
+      "downsideLiquidationUsd": "3755194626.70",
+      "upsideLiquidationUsd": "3019466435.36",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57794.67",
+          "price": "57763.53",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1495106821.28"
+          "notionalUsd": "1502077850.68"
         },
         {
-          "price": "70637.93",
+          "price": "70599.87",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1214401734.87"
+          "notionalUsd": "1207786574.14"
         },
         {
-          "price": "61647.65",
+          "price": "61614.43",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1308218468.62"
+          "notionalUsd": "1314318119.34"
         },
         {
-          "price": "66784.95",
+          "price": "66748.97",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1062601518.01"
+          "notionalUsd": "1056813252.38"
         },
         {
-          "price": "62931.97",
+          "price": "62898.07",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "747553410.64"
+          "notionalUsd": "751038925.34"
         },
         {
-          "price": "65500.63",
+          "price": "65465.33",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "607200867.43"
+          "notionalUsd": "603893287.07"
         },
         {
-          "price": "63574.14",
+          "price": "63539.88",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "186888352.66"
+          "notionalUsd": "187759731.33"
         },
         {
-          "price": "64858.46",
+          "price": "64823.52",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "151800216.86"
+          "notionalUsd": "150973321.77"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-07T04:30:02.798230Z",
+      "generatedAt": "2026-08-07T05:00:03.719548Z",
       "compositeScore": 69,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,23 +4388,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이며, 심리 지표는 공포 상태에 가까움."
+          "content": "현재 매집 우세로 보이며, 시장 심리는 공포에 가까운 상태이다."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 공포에 가까워 추가 하락 가능성이 존재."
+          "content": "공포탐욕 지수가 29로 극단적인 공포를 나타낸다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 위험이 증가."
+          "content": "BTC 도미넌스가 57로 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 활용하되, 손절매 설정을 권장."
+          "content": "매집 우세를 활용하여 추가 매수 고려."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리 회복을 지켜보며 추가 매수 고려."
+          "content": "시장 심리 회복을 기다리며 리스크 관리 필요."
         }
       ],
       "errorMessage": null
@@ -4443,14 +4443,35 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-07T04:05:02.325344Z",
-      "compositeScore": "-0.113",
+      "generatedAt": "2026-08-07T05:05:03.214215Z",
+      "compositeScore": "-0.069",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/07/bitcoin-wallet-dormant-since-2011-moves-usd3-2-million-toward-falconx-linked-address",
+          "publishedAt": "2026-08-07T04:50:44Z",
+          "score": "0.2"
+        },
+        {
+          "title": "A case for a bitcoin surge to $76,000 may be building beneath the boring price action, but there's a caveat",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat",
+          "publishedAt": "2026-08-07T04:28:17Z",
+          "score": "0.5"
+        },
+        {
+          "title": "XRP leads majors losses as Clarity Act vote slips to September",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/07/bitcoin-stuck-near-usd64-000-as-clarity-act-vote-slips-to-september",
+          "publishedAt": "2026-08-07T04:17:01Z",
+          "score": "-0.4"
+        },
         {
           "title": "Senate won't vote on crypto Clarity Act before its summer break",
           "source": "CoinDesk",
@@ -4470,52 +4491,31 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate",
           "publishedAt": "2026-08-06T16:10:04Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Crypto for Advisors: Europe's crypto rules, U.S. Preview",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/08/06/crypto-for-advisors-europe-s-crypto-rules-u-s-preview",
           "publishedAt": "2026-08-06T15:07:00Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts",
           "publishedAt": "2026-08-06T12:46:42Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Bitcoinâs low volatility doesnât necessarily mean low risk",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk",
-          "publishedAt": "2026-08-06T11:37:03Z",
           "score": "-0.2"
-        },
-        {
-          "title": "Free Markets and Innovation, Sort Of",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/opinion/2026/08/06/free-markets-and-innovation-sort-of",
-          "publishedAt": "2026-08-06T11:30:00Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Why Sandisk and Western Digital crashed 10% and what it means for bitcoin",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/06/why-sandisk-and-western-digital-crashed-10-and-what-it-means-for-bitcoin",
-          "publishedAt": "2026-08-06T11:14:47Z",
-          "score": "-0.6"
         },
         {
           "title": "Bitget explores licensed crypto presence in Bhutan",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitget-explores-licensed-crypto-presence-in-bhutan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-07T03:22:26Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
-          "title": "US Senate pushes CLARITY Act vote to September: Report",
+          "title": "US Senate pushes CLARITY Act vote to September",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-senate-pushes-clarity-act-vote-to-september-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-07T02:49:53Z",
@@ -4526,21 +4526,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/mara-swings-to-q2-loss-as-bitcoins-slump-masks-higher-output?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-07T02:17:07Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "Crypto market maker Wintermute launches US broker-dealer",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-market-maker-wintermute-launches-us-broker-dealer?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-07T00:09:47Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Following primary loss, crypto PACs invest $1.5M in 3 US state races",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-pac-florida-alaska-wyoming-primary-races?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T21:11:19Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4561,7 +4561,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-appellate-court-mandate-sam-bankman-fried?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-06T17:17:34Z",
-          "score": "-0.4"
+          "score": "-0.7"
         }
       ],
       "errorMessage": null
