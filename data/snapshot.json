@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-08T12:56:46Z",
+  "updatedAt": "2026-08-08T13:16:48Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "64920.42",
       "macd": {
-        "macdLine": "166.93",
-        "signalLine": "109.39",
-        "histogram": "57.54",
+        "macdLine": "166.32",
+        "signalLine": "109.27",
+        "histogram": "57.05",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001675",
       "ivRv": {
-        "iv": "30.67",
+        "iv": "30.66",
         "rv": "27.00",
-        "spread": "+3.67",
+        "spread": "+3.66",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64983.30",
-      "openInterestUsd": "6957999650.47307100",
-      "longAccountRatio": "0.5294",
-      "shortAccountRatio": "0.4706",
-      "downsideLiquidationUsd": "3683565014.96",
-      "upsideLiquidationUsd": "3274434635.51",
+      "currentPrice": "64978.80",
+      "openInterestUsd": "6953057816.61000000",
+      "longAccountRatio": "0.5298",
+      "shortAccountRatio": "0.4702",
+      "downsideLiquidationUsd": "3683730031.24",
+      "upsideLiquidationUsd": "3269327785.37",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58484.97",
+          "price": "58480.92",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1473426005.98"
+          "notionalUsd": "1473492012.50"
         },
         {
-          "price": "71481.63",
+          "price": "71476.68",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1309773854.21"
+          "notionalUsd": "1307731114.15"
         },
         {
-          "price": "62383.97",
+          "price": "62379.65",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1289247755.24"
+          "notionalUsd": "1289305510.93"
         },
         {
-          "price": "67582.63",
+          "price": "67577.95",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1146052122.43"
+          "notionalUsd": "1144264724.88"
         },
         {
-          "price": "63683.63",
+          "price": "63679.22",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "736713002.99"
+          "notionalUsd": "736746006.25"
         },
         {
-          "price": "66282.97",
+          "price": "66278.38",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "654886927.10"
+          "notionalUsd": "653865557.07"
         },
         {
-          "price": "64333.47",
+          "price": "64329.01",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "184178250.75"
+          "notionalUsd": "184186501.56"
         },
         {
-          "price": "65633.13",
+          "price": "65628.59",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "163721731.78"
+          "notionalUsd": "163466389.27"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-08T12:30:01.964231Z",
+      "generatedAt": "2026-08-08T13:00:02.280655Z",
       "compositeScore": 70,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,23 +4384,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 매집 우세로, 공포탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
+          "content": "현재 시장은 매집 우세로, 중립적인 심리 상태를 보이고 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 30으로 낮아 투자 심리가 부정적이다."
+          "content": "공포탐욕 지수가 30으로 극단적 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 57로 알트코인에 대한 관심이 낮아질 수 있다."
+          "content": "거래소 순유입이 -2130.21로 매도 압력이 우세하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 매집 우세를 활용해 장기 투자 전략을 고려하라."
+          "content": "현재 매수 포지션을 고려하되, 시장 변동성을 주의 깊게 살펴야 한다."
         },
         {
           "type": "ACTION",
-          "content": "단기 변동성을 감안하여 리스크 관리에 집중하라."
+          "content": "손절매 설정을 통해 리스크 관리를 강화하는 것이 필요하다."
         }
       ],
       "errorMessage": null
@@ -4439,14 +4439,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-08T12:05:02.102560Z",
-      "compositeScore": "-0.100",
+      "generatedAt": "2026-08-08T13:05:02.087175Z",
+      "compositeScore": "-0.056",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Why trillion-dollar asset manager T. Rowe Price put memecoins in its crypto ETF",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/06/why-trillion-dollar-asset-manager-t-rowe-price-put-memecoins-in-its-crypto-etf",
+          "publishedAt": "2026-08-08T13:00:00Z",
+          "score": "0.2"
+        },
         {
           "title": "U.S. Senate opens first stage of crypto Clarity Act voting to give bill a chance next month",
           "source": "CoinDesk",
@@ -4466,7 +4473,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/07/new-xrp-ledger-amendments-target-usd530-million-in-tokenized-wall-street-assets",
           "publishedAt": "2026-08-08T03:30:00Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Bitcoin holders risk losing real BTC if they sell coins from BIP-110 fork, says developer",
@@ -4487,7 +4494,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/07/trump-backed-american-bitcoin-director-justin-mateen-buys-nearly-usd2-million-of-abtc-stock",
           "publishedAt": "2026-08-07T20:20:00Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "U.S. widens Iran crypto crackdown with sanctions on two exchanges",
@@ -4497,25 +4504,18 @@
           "score": "-0.6"
         },
         {
-          "title": "BitMEX sale collapsed as buyers balked at founder ownership and shrinking business",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/07/31/bitmex-sale-collapsed-as-buyers-balked-at-founder-ownership-and-shrinking-business",
-          "publishedAt": "2026-08-07T16:53:56Z",
-          "score": "-0.8"
-        },
-        {
           "title": "Domestic stablecoins could boost demand for dollar-backed tokens: IMF",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/imf-domestic-stablecoins-dollar-token-demand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-08T06:21:08Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "US court backs Bybit’s bid to trace funds from $1.5B North Korea hack",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bybit-us-court-trace-funds-north-korea-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-08T04:11:53Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Donald Trump’s media company to terminate Crypto.com deal",
@@ -4543,21 +4543,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/circle-native-usdc-okx-x-layer-cctp?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-07T17:36:45Z",
-          "score": "0.6"
+          "score": "0.3"
         },
         {
           "title": "Reform UK chair calls for probe into SBF-linked donation: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/reform-uk-probe-ftx-sam-bankman-fried-donation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-07T17:03:50Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin price tags $65.3K August high as low US jobs numbers cool Fed rate bets",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-tags-653k-august-high-as-low-us-jobs-numbers-cool-fed-rate-bets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-07T15:23:15Z",
-          "score": "0.7"
+          "score": "0.6"
         }
       ],
       "errorMessage": null
