@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-12T12:01:25Z",
+  "updatedAt": "2026-08-12T12:21:30Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.27",
       "btcClose": "63566.01",
       "macd": {
-        "macdLine": "84.89",
-        "signalLine": "130.01",
-        "histogram": "-45.12",
+        "macdLine": "92.24",
+        "signalLine": "131.48",
+        "histogram": "-39.24",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
         "adx": "9.1",
-        "plusDi": "16.2",
-        "minusDi": "21.8",
+        "plusDi": "16.1",
+        "minusDi": "21.6",
         "strength": "WEAK",
         "strengthLabel": "무추세(횡보)",
         "trending": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001607",
       "ivRv": {
-        "iv": "32.77",
+        "iv": "29.38",
         "rv": "27.00",
-        "spread": "+5.77",
-        "label": "과대"
+        "spread": "+2.38",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 27,
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64199.00",
-      "openInterestUsd": "6926332438.48360000",
-      "longAccountRatio": "0.6207",
-      "shortAccountRatio": "0.3793",
-      "downsideLiquidationUsd": "4299174544.57",
-      "upsideLiquidationUsd": "2627157893.92",
+      "currentPrice": "64291.50",
+      "openInterestUsd": "6923006413.98740000",
+      "longAccountRatio": "0.6205",
+      "shortAccountRatio": "0.3795",
+      "downsideLiquidationUsd": "4295725479.88",
+      "upsideLiquidationUsd": "2627280934.11",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57779.10",
+          "price": "57862.35",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1719669817.83"
+          "notionalUsd": "1718290191.95"
         },
         {
-          "price": "70618.90",
+          "price": "70720.65",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1050863157.57"
+          "notionalUsd": "1050912373.64"
         },
         {
-          "price": "61631.04",
+          "price": "61719.84",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1504711090.60"
+          "notionalUsd": "1503503917.96"
         },
         {
-          "price": "66766.96",
+          "price": "66863.16",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "919505262.87"
+          "notionalUsd": "919548326.94"
         },
         {
-          "price": "62915.02",
+          "price": "63005.67",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "859834908.91"
+          "notionalUsd": "859145095.98"
         },
         {
-          "price": "65482.98",
+          "price": "65577.33",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "525431578.78"
+          "notionalUsd": "525456186.82"
         },
         {
-          "price": "63557.01",
+          "price": "63648.59",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "214958727.23"
+          "notionalUsd": "214786273.99"
         },
         {
-          "price": "64840.99",
+          "price": "64934.42",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "131357894.70"
+          "notionalUsd": "131364046.71"
         }
       ],
       "errorMessage": null
@@ -4415,7 +4415,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-12T11:41:21.886089Z",
+      "generatedAt": "2026-08-12T12:21:30.882726Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,30 +4424,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with mixed indicators across fear and greed, on-chain metrics, and technical analysis."
+          "content": "The market is currently neutral with mixed indicators showing moderate fear and stable on-chain metrics."
         },
         {
           "type": "RISK",
-          "content": "High fear sentiment indicated by a fear-greed score of 27."
+          "content": "High fear sentiment with a Fear & Greed index at 27."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential bearish momentum."
+          "content": "Low RSI values indicate potential downward pressure on prices."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of trend reversal."
+          "content": "Monitor market closely for signs of recovery or further decline."
         },
         {
           "type": "ACTION",
-          "content": "Consider cautious entry points for long positions."
+          "content": "Consider cautious entry points if bullish indicators emerge."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-12T11:05:02.401626Z",
+      "generatedAt": "2026-08-12T12:05:02.416276Z",
       "compositeScore": "-0.175",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
@@ -4456,11 +4456,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "FlightAware drops Kalshi lawsuit over a market niche that data shows it never took off",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/12/flightaware-drops-kalshi-lawsuit-over-a-market-niche-that-data-shows-it-never-took-off",
+          "publishedAt": "2026-08-12T11:44:10Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "Russia moves to restrict retail crypto trading to bitcoin, ether and USDT",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/12/russia-moves-to-restrict-retail-crypto-trading-to-bitcoin-ether-and-usdt",
+          "publishedAt": "2026-08-12T11:19:32Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "XRP trading could get spicy after CPI report as futures bets hit highest since October",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/08/12/xrp-trading-could-get-spicy-after-cpi-report-as-futures-bets-hit-highest-since-october",
+          "publishedAt": "2026-08-12T11:15:00Z",
+          "score": "0.4"
+        },
+        {
           "title": "Bitcoin holds near $64,000 as U.S. inflation data looms, Harmony exploit rattles altcoins",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/12/bitcoin-holds-near-usd64-000-as-u-s-inflation-data-looms-harmony-exploit-rattles-altcoins",
           "publishedAt": "2026-08-12T10:30:10Z",
-          "score": "-0.4"
+          "score": "0.2"
         },
         {
           "title": "Bank of England to test stablecoin, digital currency use in cross-border finance",
@@ -4474,7 +4495,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/12/coreweave-surges-16-on-usd2-58-billion-revenue-quarter-as-ai-infrastructure-demand-eclipses-crypto",
           "publishedAt": "2026-08-12T09:41:52Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Fidelity moves to add staking, quarterly payouts to near $900 million ether ETF",
@@ -4488,35 +4509,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/12/one-overlooked-group-has-added-usd1-78-billion-of-selling-pressure-to-bitcoin-market",
           "publishedAt": "2026-08-12T08:53:23Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Live updates: Bitcoin at $63,600 as Japan's Metaplanet moves 3,881 BTC between wallets",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/08/12/live-updates-bitcoin-at-usd63-600-as-japan-s-metaplanet-moves-3-881-btc-between-wallets",
-          "publishedAt": "2026-08-12T07:04:53Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Crypto.com rolls out tokenized stock derivatives as crypto exchanges push into equities",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/12/crypto-com-rolls-out-tokenized-stock-derivatives-as-crypto-exchanges-push-into-equities",
-          "publishedAt": "2026-08-12T06:00:00Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Here's what bitcoin and ether traders are doing ahead of the binary U.S. CPI print",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/12/here-s-what-bitcoin-and-ether-traders-are-doing-ahead-of-the-binary-u-s-cpi-print",
-          "publishedAt": "2026-08-12T05:26:55Z",
-          "score": "0.1"
+          "score": "-0.4"
         },
         {
           "title": "Binance, RedotPay clash over fate of Singapore lawsuit",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-redotpay-clash-singapore-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T10:18:18Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin miners earn under 0.7% of revenue from fees in new 10-year low",
@@ -4530,7 +4530,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-companies-ai-firms-bitcoin-developers-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T09:03:01Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Inside the fake crypto startup that fooled North Korean IT workers",
@@ -4551,7 +4551,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-kalshi-emergency-order-new-york-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T04:53:26Z",
-          "score": "-0.2"
+          "score": "0.0"
         },
         {
           "title": "Ravencoin hits record low as network exploit puts transactions at risk",
