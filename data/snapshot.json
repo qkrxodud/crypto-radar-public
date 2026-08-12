@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-12T17:02:41Z",
+  "updatedAt": "2026-08-12T17:22:48Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "63566.01",
       "macd": {
-        "macdLine": "25.80",
-        "signalLine": "118.19",
-        "histogram": "-92.39",
+        "macdLine": "23.48",
+        "signalLine": "117.73",
+        "histogram": "-94.25",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001607",
       "ivRv": {
-        "iv": "24.93",
+        "iv": "24.23",
         "rv": "27.00",
-        "spread": "-2.08",
+        "spread": "-2.78",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63477.70",
-      "openInterestUsd": "7028767527.32454800",
-      "longAccountRatio": "0.6361",
-      "shortAccountRatio": "0.3639",
-      "downsideLiquidationUsd": "4470999024.13",
-      "upsideLiquidationUsd": "2557768503.19",
+      "currentPrice": "63439.40",
+      "openInterestUsd": "7032027753.85471000",
+      "longAccountRatio": "0.6372",
+      "shortAccountRatio": "0.3628",
+      "downsideLiquidationUsd": "4480808084.76",
+      "upsideLiquidationUsd": "2551219669.10",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57129.93",
+          "price": "57095.46",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1788399609.65"
+          "notionalUsd": "1792323233.90"
         },
         {
-          "price": "69825.47",
+          "price": "69783.34",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1023107401.28"
+          "notionalUsd": "1020487867.64"
         },
         {
-          "price": "60938.59",
+          "price": "60901.82",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1564849658.45"
+          "notionalUsd": "1568282829.66"
         },
         {
-          "price": "66016.81",
+          "price": "65976.98",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "895218976.12"
+          "notionalUsd": "892926884.18"
         },
         {
-          "price": "62208.15",
+          "price": "62170.61",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "894199804.83"
+          "notionalUsd": "896161616.95"
         },
         {
-          "price": "64747.25",
+          "price": "64708.19",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "511553700.64"
+          "notionalUsd": "510243933.82"
         },
         {
-          "price": "62842.92",
+          "price": "62805.01",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "223549951.21"
+          "notionalUsd": "224040404.24"
         },
         {
-          "price": "64112.48",
+          "price": "64073.79",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "127888425.16"
+          "notionalUsd": "127560983.45"
         }
       ],
       "errorMessage": null
@@ -4447,8 +4447,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-12T16:05:02.600285Z",
-      "compositeScore": "0.025",
+      "generatedAt": "2026-08-12T17:22:48.245674Z",
+      "compositeScore": "0.194",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,81 +4456,102 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Wintermute plans $1 billion AI push beyond crypto: Bloomberg",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/12/wintermute-plans-usd1-billion-ai-push-beyond-crypto-bloomberg",
+          "publishedAt": "2026-08-12T16:34:24Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Solana platform taps prediction market Kalshi for Wall Street-style high-speed data feed",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/12/solana-platform-taps-prediction-market-kalshi-for-wall-street-style-high-speed-data-feed",
+          "publishedAt": "2026-08-12T16:14:49Z",
+          "score": "0.4"
+        },
+        {
           "title": "Miden bets on privacy stablecoins with introduction of USDCx",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/12/miden-bets-on-privacy-stablecoins-with-introduction-of-usdcx",
           "publishedAt": "2026-08-12T15:00:00Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
-          "title": "Crypto Long & Short:",
+          "title": "Crypto Long & Short: When capital can't move fast enough, markets pay the price",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/08/12/crypto-long-and-short",
           "publishedAt": "2026-08-12T14:51:12Z",
-          "score": "0.0"
+          "score": "-0.5"
         },
         {
           "title": "Smart contract blockchain Solana nearly froze Wednesday, Marinade Finance says",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/12/smart-contract-blockchain-solana-nearly-froze-wednesday-marinade-finance-says",
           "publishedAt": "2026-08-12T13:39:31Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Standard Chartered-led Anchorpoint launches Hong Kong dollar stablecoin",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/12/standard-chartered-led-anchorpoint-launches-hong-kong-dollar-stablecoin",
           "publishedAt": "2026-08-12T13:13:49Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "America doesnât need a second-class payments system",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/08/12/america-doesn-t-need-a-second-class-payments-system",
           "publishedAt": "2026-08-12T13:00:00Z",
-          "score": "-0.4"
+          "score": "0.0"
         },
         {
           "title": "U.S. CPI inflation slows to 3.4% as expected, bitcoin holds near $64,000",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/12/u-s-cpi-inflation-edges-lower-to-3-4-as-expected",
           "publishedAt": "2026-08-12T12:44:39Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
-          "title": "FlightAware drops Kalshi lawsuit over a market niche that data shows it never took off",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/12/flightaware-drops-kalshi-lawsuit-over-a-market-niche-that-data-shows-it-never-took-off",
-          "publishedAt": "2026-08-12T11:44:10Z",
-          "score": "0.0"
+          "title": "FlightAware drops Kalshi lawsuit one day after filing",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/flightaware-drops-kalshi-lawsuit-one-day-after-filing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-12T16:58:52Z",
+          "score": "0.1"
         },
         {
-          "title": "Russia moves to restrict retail crypto trading to bitcoin, ether and USDT",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/12/russia-moves-to-restrict-retail-crypto-trading-to-bitcoin-ether-and-usdt",
-          "publishedAt": "2026-08-12T11:19:32Z",
-          "score": "-0.3"
+          "title": "Bank of England tests stablecoin, digital pound interoperability in cross-border payments",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bank-of-england-tests-stablecoin-digital-pound-interoperability-in-cross-border-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-12T16:50:25Z",
+          "score": "0.4"
+        },
+        {
+          "title": "HashKey begins beta distribution of Hong Kong-regulated HKDAP stablecoin",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/hashkey-begins-beta-distribution-of-hong-kong-regulated-hkdap-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-12T16:07:59Z",
+          "score": "0.3"
         },
         {
           "title": "Bitcoin eyes $63K as US CPI relief sends September Fed rate pause odds to 60%",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-eyes-63k-as-us-cpi-relief-sends-september-fed-rate-pause-odds-to-60?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T15:00:10Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "Kalshi launches sports and crypto perps data feed on DoubleZero",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kalshi-launches-sports-crypto-data-feed-doublezero?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T13:58:41Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Slovenia joins EU’s MiCA stablecoin register with first issuer",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/slovenia-eu-mica-stablecoin-register-dinaro?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T13:31:54Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "El Salvador’s Bitcoin experiment turns 5: ‘It was for us, not them’",
@@ -4544,28 +4565,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/wintermute-pour-1b-ai-tradfi-expansion-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T13:23:57Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Fidelity files with SEC to add staking to Ethereum ETF",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/fidelity-staking-ethereum-etf-sec-filing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-12T12:42:58Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Binance, RedotPay clash over fate of Singapore lawsuit",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/binance-redotpay-clash-singapore-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-12T10:21:00Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "Bitcoin miners earn under 0.7% of revenue from fees in new 10-year low",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-miners-earn-under-07-of-revenue-from-fees-in-new-10-year-low?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-12T10:06:05Z",
-          "score": "-0.6"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
