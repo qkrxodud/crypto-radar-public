@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-12T13:01:40Z",
+  "updatedAt": "2026-08-12T13:21:43Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "63566.01",
       "macd": {
-        "macdLine": "75.73",
-        "signalLine": "128.18",
-        "histogram": "-52.45",
+        "macdLine": "67.35",
+        "signalLine": "126.50",
+        "histogram": "-59.15",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001607",
       "ivRv": {
-        "iv": "32.34",
+        "iv": "32.60",
         "rv": "27.00",
-        "spread": "+5.34",
+        "spread": "+5.60",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64089.00",
-      "openInterestUsd": "6889734988.24000000",
-      "longAccountRatio": "0.6107",
-      "shortAccountRatio": "0.3893",
-      "downsideLiquidationUsd": "4207561157.32",
-      "upsideLiquidationUsd": "2682173830.92",
+      "currentPrice": "63983.10",
+      "openInterestUsd": "6889268272.39710000",
+      "longAccountRatio": "0.6110",
+      "shortAccountRatio": "0.3890",
+      "downsideLiquidationUsd": "4209342914.43",
+      "upsideLiquidationUsd": "2679925357.96",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57680.10",
+          "price": "57584.79",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1683024462.93"
+          "notionalUsd": "1683737165.77"
         },
         {
-          "price": "70497.90",
+          "price": "70381.41",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1072869532.37"
+          "notionalUsd": "1071970143.18"
         },
         {
-          "price": "61525.44",
+          "price": "61423.78",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1472646405.06"
+          "notionalUsd": "1473270020.05"
         },
         {
-          "price": "66652.56",
+          "price": "66542.42",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "938760840.82"
+          "notionalUsd": "937973875.29"
         },
         {
-          "price": "62807.22",
+          "price": "62703.44",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "841512231.46"
+          "notionalUsd": "841868582.89"
         },
         {
-          "price": "65370.78",
+          "price": "65262.76",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "536434766.18"
+          "notionalUsd": "535985071.59"
         },
         {
-          "price": "63448.11",
+          "price": "63343.27",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "210378057.87"
+          "notionalUsd": "210467145.72"
         },
         {
-          "price": "64729.89",
+          "price": "64622.93",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "134108691.55"
+          "notionalUsd": "133996267.90"
         }
       ],
       "errorMessage": null
@@ -4447,8 +4447,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-12T12:05:02.416276Z",
-      "compositeScore": "-0.175",
+      "generatedAt": "2026-08-12T13:05:03.239446Z",
+      "compositeScore": "-0.094",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,11 +4456,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "America doesnât need a second-class payments system",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/opinion/2026/08/12/america-doesn-t-need-a-second-class-payments-system",
+          "publishedAt": "2026-08-12T13:00:00Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "U.S. CPI inflation slows to 3.4% as expected, bitcoin holds near $64,000",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/12/u-s-cpi-inflation-edges-lower-to-3-4-as-expected",
+          "publishedAt": "2026-08-12T12:44:39Z",
+          "score": "0.5"
+        },
+        {
           "title": "FlightAware drops Kalshi lawsuit over a market niche that data shows it never took off",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/12/flightaware-drops-kalshi-lawsuit-over-a-market-niche-that-data-shows-it-never-took-off",
           "publishedAt": "2026-08-12T11:44:10Z",
-          "score": "-0.3"
+          "score": "0.0"
         },
         {
           "title": "Russia moves to restrict retail crypto trading to bitcoin, ether and USDT",
@@ -4488,7 +4502,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/12/bank-of-england-to-test-stablecoin-digital-currency-use-in-cross-border-finance",
           "publishedAt": "2026-08-12T10:17:05Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "CoreWeave surges 16% on $2.58 billion revenue quarter as AI infrastructure demand eclipses crypto",
@@ -4498,25 +4512,18 @@
           "score": "0.1"
         },
         {
-          "title": "Fidelity moves to add staking, quarterly payouts to near $900 million ether ETF",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/12/fidelity-moves-to-add-staking-quarterly-payouts-to-near-usd900-million-ether-etf",
-          "publishedAt": "2026-08-12T09:30:20Z",
+          "title": "Fidelity files with SEC to add staking to Ethereum ETF",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/fidelity-staking-ethereum-etf-sec-filing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-12T12:42:58Z",
           "score": "0.6"
-        },
-        {
-          "title": "One overlooked group has added $1.78 billion of selling pressure to bitcoin market",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/12/one-overlooked-group-has-added-usd1-78-billion-of-selling-pressure-to-bitcoin-market",
-          "publishedAt": "2026-08-12T08:53:23Z",
-          "score": "-0.4"
         },
         {
           "title": "Binance, RedotPay clash over fate of Singapore lawsuit",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-redotpay-clash-singapore-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T10:18:18Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "Bitcoin miners earn under 0.7% of revenue from fees in new 10-year low",
@@ -4530,7 +4537,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-companies-ai-firms-bitcoin-developers-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T09:03:01Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Inside the fake crypto startup that fooled North Korean IT workers",
@@ -4559,13 +4566,6 @@
           "url": "https://cointelegraph.com/markets/ravencoin-rvn-record-low-consensus-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T01:11:51Z",
           "score": "-0.8"
-        },
-        {
-          "title": "SEC, CFTC sue Goliath Ventures over $400M crypto Ponzi scheme",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/sec-cftc-sue-goliath-ventures-400m-crypto-ponzi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-12T00:07:41Z",
-          "score": "-0.9"
         }
       ],
       "errorMessage": null
