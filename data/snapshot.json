@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-12T11:01:13Z",
+  "updatedAt": "2026-08-12T11:21:16Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "63566.01",
       "macd": {
-        "macdLine": "82.17",
-        "signalLine": "129.46",
-        "histogram": "-47.30",
+        "macdLine": "77.72",
+        "signalLine": "128.58",
+        "histogram": "-50.85",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001607",
       "ivRv": {
-        "iv": "31.41",
+        "iv": "31.62",
         "rv": "27.00",
-        "spread": "+4.41",
+        "spread": "+4.62",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64184.00",
-      "openInterestUsd": "6932748410.71560000",
-      "longAccountRatio": "0.6250",
-      "shortAccountRatio": "0.3750",
-      "downsideLiquidationUsd": "4332967756.70",
-      "upsideLiquidationUsd": "2599780654.02",
+      "currentPrice": "64121.70",
+      "openInterestUsd": "6918453153.92282900",
+      "longAccountRatio": "0.6235",
+      "shortAccountRatio": "0.3765",
+      "downsideLiquidationUsd": "4313655541.47",
+      "upsideLiquidationUsd": "2604797612.45",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57765.60",
+          "price": "57709.53",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1733187102.68"
+          "notionalUsd": "1725462216.59"
         },
         {
-          "price": "70602.40",
+          "price": "70533.87",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1039912261.61"
+          "notionalUsd": "1041919044.98"
         },
         {
-          "price": "61616.64",
+          "price": "61556.83",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1516538714.84"
+          "notionalUsd": "1509779439.51"
         },
         {
-          "price": "66751.36",
+          "price": "66686.57",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "909923228.91"
+          "notionalUsd": "911679164.36"
         },
         {
-          "price": "62900.32",
+          "price": "62839.27",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "866593551.34"
+          "notionalUsd": "862731108.29"
         },
         {
-          "price": "65467.68",
+          "price": "65404.13",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "519956130.80"
+          "notionalUsd": "520959522.49"
         },
         {
-          "price": "63542.16",
+          "price": "63480.48",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "216648387.83"
+          "notionalUsd": "215682777.07"
         },
         {
-          "price": "64825.84",
+          "price": "64762.92",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "129989032.70"
+          "notionalUsd": "130239880.62"
         }
       ],
       "errorMessage": null
@@ -4447,8 +4447,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-12T10:05:02.841545Z",
-      "compositeScore": "-0.144",
+      "generatedAt": "2026-08-12T11:05:02.401626Z",
+      "compositeScore": "-0.175",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4456,18 +4456,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin holds near $64,000 as U.S. inflation data looms, Harmony exploit rattles altcoins",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/12/bitcoin-holds-near-usd64-000-as-u-s-inflation-data-looms-harmony-exploit-rattles-altcoins",
+          "publishedAt": "2026-08-12T10:30:10Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "Bank of England to test stablecoin, digital currency use in cross-border finance",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/12/bank-of-england-to-test-stablecoin-digital-currency-use-in-cross-border-finance",
+          "publishedAt": "2026-08-12T10:17:05Z",
+          "score": "0.5"
+        },
+        {
           "title": "CoreWeave surges 16% on $2.58 billion revenue quarter as AI infrastructure demand eclipses crypto",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/12/coreweave-surges-16-on-usd2-58-billion-revenue-quarter-as-ai-infrastructure-demand-eclipses-crypto",
           "publishedAt": "2026-08-12T09:41:52Z",
-          "score": "-0.4"
+          "score": "0.2"
         },
         {
           "title": "Fidelity moves to add staking, quarterly payouts to near $900 million ether ETF",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/12/fidelity-moves-to-add-staking-quarterly-payouts-to-near-usd900-million-ether-etf",
           "publishedAt": "2026-08-12T09:30:20Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "One overlooked group has added $1.78 billion of selling pressure to bitcoin market",
@@ -4481,7 +4495,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/12/live-updates-bitcoin-at-usd63-600-as-japan-s-metaplanet-moves-3-881-btc-between-wallets",
           "publishedAt": "2026-08-12T07:04:53Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "Crypto.com rolls out tokenized stock derivatives as crypto exchanges push into equities",
@@ -4495,21 +4509,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/12/here-s-what-bitcoin-and-ether-traders-are-doing-ahead-of-the-binary-u-s-cpi-print",
           "publishedAt": "2026-08-12T05:26:55Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Harmonyâs ONE dives 40% after an attack appears to mint tokens equal to quarter of supply",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/12/harmony-s-one-falls-26-after-attacker-allegedly-mints-4-billion-tokens",
-          "publishedAt": "2026-08-12T05:18:40Z",
-          "score": "-0.7"
-        },
-        {
-          "title": "Dogecoin and BNB lead majors higher as bitcoin slips near $63,700",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/12/dogecoin-and-bnb-lead-majors-higher-as-bitcoin-slips-near-usd63-700",
-          "publishedAt": "2026-08-12T04:53:46Z",
           "score": "0.1"
+        },
+        {
+          "title": "Binance, RedotPay clash over fate of Singapore lawsuit",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/binance-redotpay-clash-singapore-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-12T10:18:18Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "Bitcoin miners earn under 0.7% of revenue from fees in new 10-year low",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-miners-earn-under-07-of-revenue-from-fees-in-new-10-year-low?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-12T10:06:05Z",
+          "score": "-0.6"
         },
         {
           "title": "Crypto companies urge AI firms to give Bitcoin developers early access",
@@ -4523,21 +4537,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/fake-crypto-startup-fooled-north-korean-it-workers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T07:34:58Z",
-          "score": "-0.3"
+          "score": "-0.7"
         },
         {
           "title": "Harmony considers rollback after suspected exploit inflates ONE supply",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/armony-rollback-alleged-one-token-mint?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T06:02:52Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "CFTC invokes emergency powers to keep Kalshi operating in New York fight",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-kalshi-emergency-order-new-york-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T04:53:26Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
           "title": "Ravencoin hits record low as network exploit puts transactions at risk",
@@ -4552,20 +4566,6 @@
           "url": "https://cointelegraph.com/news/sec-cftc-sue-goliath-ventures-400m-crypto-ponzi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T00:07:41Z",
           "score": "-0.9"
-        },
-        {
-          "title": "SEC to address crypto regulations in absence of CLARITY passage",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/sec-crypto-regulations-absence-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-11T20:59:07Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Itaú joins Brazil tokenization pilot with OpenAssets",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/ita-joins-brazil-tokenization-pilot-with-openassets-brief?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-11T20:55:58Z",
-          "score": "0.3"
         }
       ],
       "errorMessage": null
