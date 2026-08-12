@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-12T07:00:21Z",
+  "updatedAt": "2026-08-12T07:20:24Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "63566.01",
       "macd": {
-        "macdLine": "43.58",
-        "signalLine": "121.75",
-        "histogram": "-78.17",
+        "macdLine": "44.77",
+        "signalLine": "121.99",
+        "histogram": "-77.21",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001607",
       "ivRv": {
-        "iv": "28.83",
+        "iv": "28.57",
         "rv": "27.00",
-        "spread": "+1.83",
+        "spread": "+1.57",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63699.90",
-      "openInterestUsd": "6928033609.31360000",
-      "longAccountRatio": "0.6366",
-      "shortAccountRatio": "0.3634",
-      "downsideLiquidationUsd": "4410386195.69",
-      "upsideLiquidationUsd": "2517647413.62",
+      "currentPrice": "63712.50",
+      "openInterestUsd": "6940061173.41581250",
+      "longAccountRatio": "0.6368",
+      "shortAccountRatio": "0.3632",
+      "downsideLiquidationUsd": "4419430955.23",
+      "upsideLiquidationUsd": "2520630218.18",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57329.91",
+          "price": "57341.25",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1764154478.28"
+          "notionalUsd": "1767772382.09"
         },
         {
-          "price": "70069.89",
+          "price": "70083.75",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1007058965.45"
+          "notionalUsd": "1008252087.27"
         },
         {
-          "price": "61151.90",
+          "price": "61164.00",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1543635168.49"
+          "notionalUsd": "1546800834.33"
         },
         {
-          "price": "66247.90",
+          "price": "66261.00",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "881176594.77"
+          "notionalUsd": "882220576.36"
         },
         {
-          "price": "62425.90",
+          "price": "62438.25",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "882077239.14"
+          "notionalUsd": "883886191.05"
         },
         {
-          "price": "64973.90",
+          "price": "64986.75",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "503529482.72"
+          "notionalUsd": "504126043.64"
         },
         {
-          "price": "63062.90",
+          "price": "63075.38",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "220519309.78"
+          "notionalUsd": "220971547.76"
         },
         {
-          "price": "64336.90",
+          "price": "64349.63",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "125882370.68"
+          "notionalUsd": "126031510.91"
         }
       ],
       "errorMessage": null
@@ -4447,8 +4447,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-12T06:05:03.205708Z",
-      "compositeScore": "-0.013",
+      "generatedAt": "2026-08-12T07:05:02.787286Z",
+      "compositeScore": "0.006",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4460,7 +4460,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/12/crypto-com-rolls-out-tokenized-stock-derivatives-as-crypto-exchanges-push-into-equities",
           "publishedAt": "2026-08-12T06:00:00Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Here's what bitcoin and ether traders are doing ahead of the binary U.S. CPI print",
@@ -4481,7 +4481,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/12/dogecoin-and-bnb-lead-majors-higher-as-bitcoin-slips-near-usd63-700",
           "publishedAt": "2026-08-12T04:53:46Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "XRP bridge drained for $200,000 after software mistook fake deposits for real ones",
@@ -4509,14 +4509,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/11/brazil-s-largest-lender-itau-is-stepping-deeper-into-the-tokenization",
           "publishedAt": "2026-08-11T19:06:23Z",
-          "score": "0.5"
+          "score": "0.6"
+        },
+        {
+          "title": "Harmony considers rollback after suspected exploit inflates ONE supply",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/armony-rollback-alleged-one-token-mint?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-12T06:02:52Z",
+          "score": "-0.6"
         },
         {
           "title": "CFTC invokes emergency powers to keep Kalshi operating in New York fight",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-kalshi-emergency-order-new-york-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-12T04:53:26Z",
-          "score": "0.0"
+          "score": "0.3"
         },
         {
           "title": "Ravencoin hits record low as network exploit puts transactions at risk",
@@ -4544,28 +4551,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ita-joins-brazil-tokenization-pilot-with-openassets-brief?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-11T20:55:58Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "MoneyGram expands crypto cash ramps to Solana",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/moneygram-expands-crypto-cash-ramps-to-solana?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-11T19:53:02Z",
-          "score": "0.3"
+          "score": "0.7"
         },
         {
           "title": "Following Senate delay, crypto bill has narrow window to become law",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/clarity-act-senate-delay-window-become-law-midterm-elections?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-11T19:42:08Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "Strategy CEO says company will resume Bitcoin accumulation this year",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/strategy-ceo-resume-bitcoin-accumulation-this-year?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-11T18:03:49Z",
-          "score": "0.6"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
