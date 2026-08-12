@@ -1,53 +1,10 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-12T18:43:12Z",
+  "updatedAt": "2026-08-12T19:04:18Z",
   "data": {
     "api_dashboard": {
-      "hasData": true,
-      "score": 62,
-      "signalLabel": "NEUTRAL",
-      "signalDisplay": "중립",
-      "btcClose": "63566.01",
-      "fearGreed": 27,
-      "dataDate": "2026-08-12",
-      "scoreDelta": 0,
-      "weeklyAverageScore": 67,
-      "monthlyAverageScore": 64,
-      "halvingDaysAfter": 845,
-      "halvingPhase": "사이클 후기",
-      "halvingPhaseEn": "Late Cycle",
-      "actionType": "HOLD",
-      "actionReason": "관망 구간 (점수 62) — 다음 매수 기회 대기 중",
-      "indicatorBreakdown": {
-        "공포탐욕": 73,
-        "펀딩비": 40,
-        "롱숏비율": 30,
-        "테이커비율": 35,
-        "OI비율": 73,
-        "BTC도미넌스": 80,
-        "김치프리미엄": 100,
-        "RSI(일)": 59,
-        "RSI(주)": 78,
-        "MVRV Z": 77,
-        "스테이블코인": 68,
-        "ETH/BTC": 58,
-        "MA200비율": 90,
-        "Puell Multiple": 84,
-        "Active Addresses": 60,
-        "Hash Rate": 8,
-        "DXY": 69,
-        "S&P500": 98,
-        "Put/Call": 56,
-        "VIX": 1,
-        "M2 성장률": 47,
-        "반감기사이클": 26,
-        "변동성(HV)": 100,
-        "Pi사이클": 100,
-        "NUPL": 57,
-        "SOPR": 63,
-        "LTH/STH": 100
-      },
-      "errorMessage": null
+      "hasData": false,
+      "errorMessage": "timed out"
     },
     "api_dashboard_technical": {
       "hasData": true,
@@ -61,9 +18,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "63566.01",
       "macd": {
-        "macdLine": "21.08",
-        "signalLine": "117.25",
-        "histogram": "-96.17",
+        "macdLine": "17.53",
+        "signalLine": "116.54",
+        "histogram": "-99.01",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +390,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001607",
       "ivRv": {
-        "iv": "23.39",
+        "iv": "23.37",
         "rv": "27.00",
-        "spread": "-3.62",
+        "spread": "-3.64",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2859,7 +2816,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255080547480.45302",
+      "totalMarketCapUsd": "255079855480.99751",
       "marketCap30dAgoUsd": "257118553759.73608",
       "growth30dPercent": "-0.79",
       "signal": "STABLE",
@@ -2869,11 +2826,11 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5839993.000",
-      "change4wUsdM": "-42286.000",
-      "change4wPercent": "-0.72",
+      "netLiquidityUsdM": "5840518.000",
+      "change4wUsdM": "-41888.000",
+      "change4wPercent": "-0.71",
       "fedAssetsUsdM": "6748567",
-      "reverseRepoUsdM": "1250.000",
+      "reverseRepoUsdM": "725.000",
       "treasuryAccountUsdM": "907324",
       "rrpIncluded": true,
       "signal": "STABLE",
@@ -2930,63 +2887,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63416.60",
-      "openInterestUsd": "7031958591.07480000",
-      "longAccountRatio": "0.6398",
-      "shortAccountRatio": "0.3602",
-      "downsideLiquidationUsd": "4499047106.57",
-      "upsideLiquidationUsd": "2532911484.51",
+      "currentPrice": "63374.70",
+      "openInterestUsd": "7025556217.37752700",
+      "longAccountRatio": "0.6401",
+      "shortAccountRatio": "0.3599",
+      "downsideLiquidationUsd": "4497058534.74",
+      "upsideLiquidationUsd": "2528497682.63",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57074.94",
+          "price": "57037.23",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1799618842.63"
+          "notionalUsd": "1798823413.90"
         },
         {
-          "price": "69758.26",
+          "price": "69712.17",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1013164593.80"
+          "notionalUsd": "1011399073.05"
         },
         {
-          "price": "60879.94",
+          "price": "60839.71",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1574666487.30"
+          "notionalUsd": "1573970487.16"
         },
         {
-          "price": "65953.26",
+          "price": "65909.69",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "886519019.58"
+          "notionalUsd": "884974188.92"
         },
         {
-          "price": "62148.27",
+          "price": "62107.21",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "899809421.31"
+          "notionalUsd": "899411706.95"
         },
         {
-          "price": "64684.93",
+          "price": "64642.19",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "506582296.90"
+          "notionalUsd": "505699536.53"
         },
         {
-          "price": "62782.43",
+          "price": "62740.95",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "224952355.33"
+          "notionalUsd": "224852926.74"
         },
         {
-          "price": "64050.77",
+          "price": "64008.45",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "126645574.23"
+          "notionalUsd": "126424884.13"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4340,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-12T18:23:05.453332Z",
+      "generatedAt": "2026-08-12T19:04:15.228472Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4396,26 +4353,26 @@
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 27로 투자 심리가 부정적이다."
+          "content": "낮은 공포탐욕 지수(27)로 인해 투자 심리가 약해질 수 있다."
         },
         {
           "type": "RISK",
-          "content": "RSI(주)가 38.50으로 과매도 구간에 진입하고 있다."
+          "content": "BTC 도미넌스가 56으로 알트코인에 대한 관심이 낮아질 위험이 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 매수 기회를 고려하되, 리스크 관리에 유의하라."
+          "content": "시장 상황을 주의 깊게 관찰하며, 매매 결정을 신중히 해야 한다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 위험을 분산시켜라."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하는 것이 좋다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-12T18:23:07.165966Z",
+      "generatedAt": "2026-08-12T19:04:18.030563Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,23 +4381,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed indicators suggesting cautious sentiment."
+          "content": "The market is neutral with mixed indicators reflecting cautious sentiment and moderate activity."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 27 indicates extreme fear among investors."
+          "content": "Fear and Greed Index at 27 indicates strong fear in the market."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential for further downside in price momentum."
+          "content": "RSI levels suggest potential for further downside in the short term."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of recovery or further decline."
+          "content": "Monitor market closely for signs of trend reversal."
         },
         {
           "type": "ACTION",
-          "content": "Consider hedging positions to mitigate potential losses."
+          "content": "Consider reducing exposure to high-risk assets."
         }
       ],
       "errorMessage": null
