@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-13T16:29:09Z",
+  "updatedAt": "2026-08-13T16:49:14Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.19",
       "btcClose": "63460.33",
       "macd": {
-        "macdLine": "-21.18",
-        "signalLine": "106.87",
-        "histogram": "-128.05",
+        "macdLine": "-39.94",
+        "signalLine": "103.12",
+        "histogram": "-143.06",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "8.8",
-        "plusDi": "15.5",
-        "minusDi": "20.3",
+        "adx": "9.3",
+        "plusDi": "15.0",
+        "minusDi": "22.4",
         "strength": "WEAK",
         "strengthLabel": "무추세(횡보)",
         "trending": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001627",
       "ivRv": {
-        "iv": "24.11",
+        "iv": "26.69",
         "rv": "19.00",
-        "spread": "+5.11",
+        "spread": "+7.69",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63407.70",
-      "openInterestUsd": "7047537175.27950500",
-      "longAccountRatio": "0.6357",
-      "shortAccountRatio": "0.3643",
-      "downsideLiquidationUsd": "4480119382.33",
-      "upsideLiquidationUsd": "2567417792.95",
+      "currentPrice": "63128.40",
+      "openInterestUsd": "6914441014.92610000",
+      "longAccountRatio": "0.6462",
+      "shortAccountRatio": "0.3538",
+      "downsideLiquidationUsd": "4468111783.85",
+      "upsideLiquidationUsd": "2446329231.08",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57066.93",
+          "price": "56815.56",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1792047752.93"
+          "notionalUsd": "1787244713.54"
         },
         {
-          "price": "69748.47",
+          "price": "69441.24",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1026967117.18"
+          "notionalUsd": "978531692.43"
         },
         {
-          "price": "60871.39",
+          "price": "60603.26",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1568041783.81"
+          "notionalUsd": "1563839124.35"
         },
         {
-          "price": "65944.01",
+          "price": "65653.54",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "898596227.53"
+          "notionalUsd": "856215230.88"
         },
         {
-          "price": "62139.55",
+          "price": "61865.83",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "896023876.47"
+          "notionalUsd": "893622356.77"
         },
         {
-          "price": "64675.85",
+          "price": "64390.97",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "513483558.59"
+          "notionalUsd": "489265846.22"
         },
         {
-          "price": "62773.62",
+          "price": "62497.12",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "224005969.12"
+          "notionalUsd": "223405589.19"
         },
         {
-          "price": "64041.78",
+          "price": "63759.68",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "128370889.65"
+          "notionalUsd": "122316461.55"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-13T16:00:03.803803Z",
+      "generatedAt": "2026-08-13T16:30:03.143059Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,30 +4392,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포지수가 낮고 온체인 지표가 안정세를 보인다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 혼재되어 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 29로 극단적인 공포를 나타내며 투자 심리가 위축되어 있다."
+          "content": "낮은 RSI 수치로 인해 하락 압력이 존재할 수 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 56으로 알트코인 시장의 불확실성이 존재한다."
+          "content": "BTC 도미넌스가 높은 상황에서 알트코인에 대한 투자 심리가 약할 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 변동성을 고려하여 포트폴리오 다각화를 권장한다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 심리 변화에 주목하며 매수 기회를 탐색하라."
+          "content": "장기 투자 관점에서 저가 매수 기회를 모색하는 것이 좋다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-13T16:09:06.214407Z",
+      "generatedAt": "2026-08-13T16:49:14.429160Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,15 +4424,15 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with indicators reflecting mixed signals."
+          "content": "The market is neutral with mixed indicators suggesting cautious sentiment."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 29 indicates high fear among investors."
+          "content": "Fear and greed index at 29 indicates high fear."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential downward pressure on prices."
+          "content": "Low RSI values suggest potential for downward pressure."
         },
         {
           "type": "ACTION",
@@ -4440,7 +4440,7 @@
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into stable assets to mitigate risk."
+          "content": "Consider reducing exposure to high-risk assets."
         }
       ],
       "errorMessage": null
