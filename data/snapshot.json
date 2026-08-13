@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-13T20:50:34Z",
+  "updatedAt": "2026-08-13T21:10:36Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "63460.33",
       "macd": {
-        "macdLine": "-22.12",
-        "signalLine": "106.68",
-        "histogram": "-128.80",
+        "macdLine": "-17.69",
+        "signalLine": "107.57",
+        "histogram": "-125.26",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001627",
       "ivRv": {
-        "iv": "22.90",
+        "iv": "29.96",
         "rv": "19.00",
-        "spread": "+3.90",
-        "label": "균형"
+        "spread": "+10.96",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 29,
@@ -2859,9 +2859,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255000277200.11482",
+      "totalMarketCapUsd": "254966258231.49861",
       "marketCap30dAgoUsd": "257322787813.87038",
-      "growth30dPercent": "-0.90",
+      "growth30dPercent": "-0.92",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2869,16 +2869,16 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5840793.000",
-      "change4wUsdM": "-41639.000",
-      "change4wPercent": "-0.71",
-      "fedAssetsUsdM": "6748567",
+      "netLiquidityUsdM": "5795555.000",
+      "change4wUsdM": "-73271.000",
+      "change4wPercent": "-1.25",
+      "fedAssetsUsdM": "6759955",
       "reverseRepoUsdM": "450.000",
-      "treasuryAccountUsdM": "907324",
+      "treasuryAccountUsdM": "963950",
       "rrpIncluded": true,
-      "signal": "STABLE",
-      "signalLabel": "중립",
-      "signalDescription": "순유동성 횡보 — 유동성 레짐 균형",
+      "signal": "CONTRACTING",
+      "signalLabel": "유동성 축소",
+      "signalDescription": "순유동성 축소 — 위험자산 역풍(약세 압력)",
       "errorMessage": null
     },
     "api_dashboard_altcoin": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63363.60",
-      "openInterestUsd": "6972962983.66653000",
-      "longAccountRatio": "0.6533",
-      "shortAccountRatio": "0.3467",
-      "downsideLiquidationUsd": "4555436717.23",
-      "upsideLiquidationUsd": "2417526266.44",
+      "currentPrice": "63419.60",
+      "openInterestUsd": "6970853487.24400000",
+      "longAccountRatio": "0.6530",
+      "shortAccountRatio": "0.3470",
+      "downsideLiquidationUsd": "4551967327.17",
+      "upsideLiquidationUsd": "2418886160.07",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57027.24",
+          "price": "57077.64",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1822174686.89"
+          "notionalUsd": "1820786930.87"
         },
         {
-          "price": "69699.96",
+          "price": "69761.56",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "967010506.57"
+          "notionalUsd": "967554464.03"
         },
         {
-          "price": "60829.06",
+          "price": "60882.82",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1594402851.03"
+          "notionalUsd": "1593188564.51"
         },
         {
-          "price": "65898.14",
+          "price": "65956.38",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "846134193.25"
+          "notionalUsd": "846610156.03"
         },
         {
-          "price": "62096.33",
+          "price": "62151.21",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "911087343.45"
+          "notionalUsd": "910393465.43"
         },
         {
-          "price": "64630.87",
+          "price": "64687.99",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "483505253.29"
+          "notionalUsd": "483777232.01"
         },
         {
-          "price": "62729.96",
+          "price": "62785.40",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "227771835.86"
+          "notionalUsd": "227598366.36"
         },
         {
-          "price": "63997.24",
+          "price": "64053.80",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "120876313.32"
+          "notionalUsd": "120944308.00"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-13T20:30:29.146215Z",
+      "generatedAt": "2026-08-13T21:00:02.941761Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4396,7 +4396,7 @@
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(29)는 투자자 심리가 부정적임을 나타낸다."
+          "content": "낮은 공포탐욕 지수(29)는 투자 심리의 약세를 나타낸다."
         },
         {
           "type": "RISK",
@@ -4404,11 +4404,11 @@
         },
         {
           "type": "ACTION",
-          "content": "시장의 중립성을 고려하여 신중한 접근이 필요하다."
+          "content": "단기적인 투자에 신중을 기하고 시장 동향을 면밀히 관찰하라."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 좋다."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
@@ -4447,8 +4447,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-13T20:10:23.937052Z",
-      "compositeScore": "-0.031",
+      "generatedAt": "2026-08-13T21:05:00.163185Z",
+      "compositeScore": "-0.038",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4512,6 +4512,13 @@
           "score": "-0.7"
         },
         {
+          "title": "Tether completes first full financial audit, receives clean KPMG opinion",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/tether-completes-first-full-financial-audit-receives-clean-kpmg-opinion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-13T20:43:12Z",
+          "score": "0.6"
+        },
+        {
           "title": "Delio CEO sentenced to 15 years in prison on crypto fraud in South Korea",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/delio-ceo-prison-crypto-fraud-south-korea?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -4523,21 +4530,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-exploring-crypto-regulations-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-13T18:18:50Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Crypto group backs Custodia in Supreme Court battle over Fed access",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blockchain-association-backs-custodia-in-supreme-court-fight-over-fed-master-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-13T17:36:09Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Robinhood Chain nears $1B TVL as Uniswap drives liquidity: Standard Chartered",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/robinhood-chain-uniswap-liquidity-uni-burns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-13T17:28:54Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Public Bitcoin miners cut hashrate 13.4% as AI infrastructure revenue grows",
@@ -4551,21 +4558,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bullish-shares-surge-as-q2-adjusted-revenue-surges-62?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-13T15:36:45Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Trezor reports data from 14K users exposed through shipping provider",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trezor-customer-data-shipping-provider-shipmonk?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-13T15:25:14Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Bitcoin keeps traders guessing near $64K as stocks gain on cool US PPI data",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-keeps-traders-guessing-near-64k-as-stocks-gain-on-cool-us-ppi-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-13T15:07:38Z",
-          "score": "0.4"
+          "score": "-0.6"
         }
       ],
       "errorMessage": null
