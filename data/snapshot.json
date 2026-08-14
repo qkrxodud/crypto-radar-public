@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-14T03:11:54Z",
+  "updatedAt": "2026-08-14T03:31:59Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "63473.99",
       "macd": {
-        "macdLine": "-44.13",
-        "signalLine": "95.82",
-        "histogram": "-139.94",
+        "macdLine": "-44.83",
+        "signalLine": "95.68",
+        "histogram": "-140.50",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001697",
       "ivRv": {
-        "iv": "28.48",
+        "iv": "19.31",
         "rv": "19.00",
-        "spread": "+9.48",
-        "label": "과대"
+        "spread": "+0.31",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 29,
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63430.60",
-      "openInterestUsd": "6967032436.44240000",
-      "longAccountRatio": "0.6505",
-      "shortAccountRatio": "0.3495",
-      "downsideLiquidationUsd": "4532054599.91",
-      "upsideLiquidationUsd": "2434977836.54",
+      "currentPrice": "63412.30",
+      "openInterestUsd": "6962011618.18980000",
+      "longAccountRatio": "0.6503",
+      "shortAccountRatio": "0.3497",
+      "downsideLiquidationUsd": "4527396155.31",
+      "upsideLiquidationUsd": "2434615462.88",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57087.54",
+          "price": "57071.07",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1812821839.96"
+          "notionalUsd": "1810958462.12"
         },
         {
-          "price": "69773.66",
+          "price": "69753.53",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "973991134.61"
+          "notionalUsd": "973846185.15"
         },
         {
-          "price": "60893.38",
+          "price": "60875.81",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1586219109.97"
+          "notionalUsd": "1584588654.36"
         },
         {
-          "price": "65967.82",
+          "price": "65948.79",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "852242242.79"
+          "notionalUsd": "852115412.01"
         },
         {
-          "price": "62161.99",
+          "price": "62144.05",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "906410919.98"
+          "notionalUsd": "905479231.06"
         },
         {
-          "price": "64699.21",
+          "price": "64680.55",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "486995567.31"
+          "notionalUsd": "486923092.58"
         },
         {
-          "price": "62796.29",
+          "price": "62778.18",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "226602730.00"
+          "notionalUsd": "226369807.77"
         },
         {
-          "price": "64064.91",
+          "price": "64046.42",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "121748891.83"
+          "notionalUsd": "121730773.14"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-14T03:00:03.035425Z",
+      "generatedAt": "2026-08-14T03:30:02.925181Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,30 +4392,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리를 보이며, 일부 지표는 긍정적인 신호를 나타내고 있다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 가격 상승의 여지가 있으나 불확실성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "공포탐욕 지수가 29로 극단적인 공포를 나타내며, 매수 신호가 약하다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 증가하고 있어 매도 압력이 우려된다."
+          "content": "RSI(주)가 38.16으로 과매도 상태에 가까워 추가 하락 가능성이 있다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "단기 매매를 고려하되, 손절매를 설정하여 리스크를 관리하라."
         },
         {
           "type": "ACTION",
-          "content": "장기 투자 관점에서 저가 매수 기회를 노려볼 수 있다."
+          "content": "장기 투자자는 현재 가격 수준에서 매수 기회를 모색할 수 있다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-14T02:51:50.545668Z",
+      "generatedAt": "2026-08-14T03:31:59.030567Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,23 +4424,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is neutral with mixed indicators suggesting cautious sentiment."
+          "content": "The market shows a neutral stance with mixed indicators reflecting cautious sentiment."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 29 indicates high fear."
+          "content": "Fear and Greed index at 29 indicates high fear among investors."
         },
         {
           "type": "RISK",
-          "content": "RSI values below 50 suggest potential downward pressure."
+          "content": "Low RSI values suggest potential bearish momentum in the short term."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of reversal."
+          "content": "Monitor market closely for signs of trend reversal before making significant investments."
         },
         {
           "type": "ACTION",
-          "content": "Consider reducing exposure to high-risk assets."
+          "content": "Consider diversifying into stable assets to mitigate potential losses."
         }
       ],
       "errorMessage": null
