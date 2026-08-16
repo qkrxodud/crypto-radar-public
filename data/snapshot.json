@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-16T15:25:58Z",
+  "updatedAt": "2026-08-16T15:46:03Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "63072.52",
       "macd": {
-        "macdLine": "-156.39",
-        "signalLine": "27.25",
-        "histogram": "-183.64",
+        "macdLine": "-155.62",
+        "signalLine": "27.40",
+        "histogram": "-183.02",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001592",
       "ivRv": {
-        "iv": "21.86",
+        "iv": "21.62",
         "rv": "19.00",
-        "spread": "+2.86",
+        "spread": "+2.62",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63081.60",
-      "openInterestUsd": "7042013609.48250000",
-      "longAccountRatio": "0.6696",
-      "shortAccountRatio": "0.3304",
-      "downsideLiquidationUsd": "4715332312.91",
-      "upsideLiquidationUsd": "2326681296.57",
+      "currentPrice": "63090.10",
+      "openInterestUsd": "7045934913.89700000",
+      "longAccountRatio": "0.6698",
+      "shortAccountRatio": "0.3302",
+      "downsideLiquidationUsd": "4719367205.33",
+      "upsideLiquidationUsd": "2326567708.57",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "56773.44",
+          "price": "56781.09",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1886132925.16"
+          "notionalUsd": "1887746882.13"
         },
         {
-          "price": "69389.76",
+          "price": "69399.11",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "930672518.63"
+          "notionalUsd": "930627083.43"
         },
         {
-          "price": "60558.34",
+          "price": "60566.50",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1650366309.52"
+          "notionalUsd": "1651778521.86"
         },
         {
-          "price": "65604.86",
+          "price": "65613.70",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "814338453.80"
+          "notionalUsd": "814298698.00"
         },
         {
-          "price": "61819.97",
+          "price": "61828.30",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "943066462.58"
+          "notionalUsd": "943873441.07"
         },
         {
-          "price": "64343.23",
+          "price": "64351.90",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "465336259.31"
+          "notionalUsd": "465313541.71"
         },
         {
-          "price": "62450.78",
+          "price": "62459.20",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "235766615.65"
+          "notionalUsd": "235968360.27"
         },
         {
-          "price": "63712.42",
+          "price": "63721.00",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "116334064.83"
+          "notionalUsd": "116328385.43"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-16T15:00:02.701845Z",
+      "generatedAt": "2026-08-16T15:30:02.970190Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4396,7 +4396,7 @@
         },
         {
           "type": "RISK",
-          "content": "가격 상승에 대한 저항이 강하며, RSI 지표가 하락세를 보이고 있다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
@@ -4404,18 +4404,18 @@
         },
         {
           "type": "ACTION",
-          "content": "현재 시장 상황을 주의 깊게 관찰하며, 신규 투자에 신중해야 한다."
+          "content": "시장 상황을 면밀히 관찰하며 추가 매수 기회를 모색하라."
         },
         {
           "type": "ACTION",
-          "content": "리스크 관리 차원에서 포트폴리오 재조정이 필요할 수 있다."
+          "content": "포트폴리오 리밸런싱을 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-16T15:05:55.013750Z",
+      "generatedAt": "2026-08-16T15:46:03.906792Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,23 +4424,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is neutral with mixed indicators suggesting caution."
+          "content": "The market is currently neutral with signs of fear and moderate on-chain activity."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 34 indicates fear in the market."
+          "content": "Low confidence indicated by RSI values below 50."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential downward pressure."
+          "content": "High BTC dominance suggests potential altcoin underperformance."
         },
         {
           "type": "ACTION",
-          "content": "Consider a cautious approach to new investments."
+          "content": "Monitor market sentiment closely for shifts in fear and greed."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment closely for changes."
+          "content": "Consider diversifying into altcoins if BTC shows signs of weakness."
         }
       ],
       "errorMessage": null
