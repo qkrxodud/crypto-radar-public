@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-17T16:51:54Z",
+  "updatedAt": "2026-08-17T17:12:06Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "62909.15",
       "macd": {
-        "macdLine": "-111.91",
-        "signalLine": "8.65",
-        "histogram": "-120.56",
+        "macdLine": "-118.59",
+        "signalLine": "7.31",
+        "histogram": "-125.90",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001606",
       "ivRv": {
-        "iv": "19.75",
+        "iv": "19.52",
         "rv": "19.00",
-        "spread": "+0.75",
+        "spread": "+0.52",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64072.90",
-      "openInterestUsd": "6888881969.17830000",
-      "longAccountRatio": "0.6288",
-      "shortAccountRatio": "0.3712",
-      "downsideLiquidationUsd": "4331728982.22",
-      "upsideLiquidationUsd": "2557152986.96",
+      "currentPrice": "63986.00",
+      "openInterestUsd": "6884711217.20272100",
+      "longAccountRatio": "0.6265",
+      "shortAccountRatio": "0.3735",
+      "downsideLiquidationUsd": "4313271577.58",
+      "upsideLiquidationUsd": "2571439639.63",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57665.61",
+          "price": "57587.40",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1732691592.89"
+          "notionalUsd": "1725308631.03"
         },
         {
-          "price": "70480.19",
+          "price": "70384.60",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1022861194.78"
+          "notionalUsd": "1028575855.85"
         },
         {
-          "price": "61509.98",
+          "price": "61426.56",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1516105143.78"
+          "notionalUsd": "1509645052.15"
         },
         {
-          "price": "66635.82",
+          "price": "66545.44",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "895003545.44"
+          "notionalUsd": "900003873.87"
         },
         {
-          "price": "62791.44",
+          "price": "62706.28",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "866345796.44"
+          "notionalUsd": "862654315.52"
         },
         {
-          "price": "65354.36",
+          "price": "65265.72",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "511430597.39"
+          "notionalUsd": "514287927.93"
         },
         {
-          "price": "63432.17",
+          "price": "63346.14",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "216586449.11"
+          "notionalUsd": "215663578.88"
         },
         {
-          "price": "64713.63",
+          "price": "64625.86",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "127857649.35"
+          "notionalUsd": "128571981.98"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-17T16:30:03.045680Z",
+      "generatedAt": "2026-08-17T17:12:02.905594Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,23 +4392,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮고 온체인 지표가 혼조세를 보이고 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 31로 시장 심리가 부정적이다."
+          "content": "공포탐욕 지수가 31로 투자 심리가 약하다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -82.43으로 매도 압력이 존재한다."
+          "content": "BTC 도미넌스가 56으로 알트코인에 대한 관심이 낮다."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 면밀히 관찰하며 추가 매수 기회를 모색하라."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "리스크 관리 차원에서 포트폴리오 다각화를 고려하라."
+          "content": "추가적인 매수 기회를 모색하되, 손실을 최소화하는 전략을 유지하라."
         }
       ],
       "errorMessage": null
@@ -4447,27 +4447,34 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-17T16:05:02.378813Z",
-      "compositeScore": "-0.294",
-      "label": "NEGATIVE",
-      "labelDisplay": "부정",
-      "labelHexColor": "#F97316",
+      "generatedAt": "2026-08-17T17:12:06.086889Z",
+      "compositeScore": "-0.144",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "BitMart founder dismisses calls for audit as users report blocked funds, unpaid employees",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/17/bitmart-founder-dismisses-calls-for-audit-as-users-report-blocked-funds-unpaid-employees",
+          "publishedAt": "2026-08-17T16:40:08Z",
+          "score": "-0.7"
+        },
         {
           "title": "Compound bets $52 million, new leadership team in switch to institutional focus",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/17/compound-bets-usd52-million-new-leadership-team-in-switch-to-institutional-focus",
           "publishedAt": "2026-08-17T15:32:30Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "U.S. Treasury Department proposes GENIUS Act stablecoin rule",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule",
           "publishedAt": "2026-08-17T14:44:29Z",
-          "score": "-0.4"
+          "score": "0.2"
         },
         {
           "title": "The Coldcard hack proves reputation is not a security model",
@@ -4481,14 +4488,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/17/tom-lee-s-bitmine-now-owns-4-8-of-ethereum-supply-after-latest-eth-purchase",
           "publishedAt": "2026-08-17T14:04:21Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "How a bug in Coldcardâs code went unnoticed for years, leading to $100 million in hacked funds",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds",
           "publishedAt": "2026-08-17T13:57:11Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "No change in bitcoin holdings as Strategy boosted dollar reserve, bought back more STRC last week",
@@ -4502,14 +4509,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/17/ethereum-s-next-big-upgrade-has-66-proposals-including-a-major-privacy-fix",
           "publishedAt": "2026-08-17T12:02:10Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
-          "title": "Israelâs largest crypto broker Bits of Gold hit by data breach affecting 200,000 customers",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/08/17/israel-s-largest-crypto-broker-bits-of-gold-hit-by-data-breach-affecting-200-000-customers",
-          "publishedAt": "2026-08-17T11:59:23Z",
-          "score": "-0.6"
+          "title": "US Treasury moves forward with rules on GENIUS Act after July deadline",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/us-treasury-public-comment-rules-genius-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-17T16:29:48Z",
+          "score": "0.1"
+        },
+        {
+          "title": "Bitcoin hits $64K as gold gains while oil shakes off Trump Oman threat",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-hits-64k-as-gold-gains-while-oil-shakes-off-trump-oman-threat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-17T16:16:40Z",
+          "score": "0.6"
+        },
+        {
+          "title": "Bitmine nears 5% of Ethereum supply despite $8.4B in unrealized losses",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitmine-ethereum-supply-5-82-million-eth-staking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-17T16:04:32Z",
+          "score": "-0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4523,7 +4544,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/strategy-stock-sales-buys-no-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T12:51:03Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Harmony plans rollback, wiping 109,000 transactions after ONE exploit",
@@ -4545,27 +4566,6 @@
           "url": "https://cointelegraph.com/news/binance-russia-client-data-used-ukraine-case-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T11:38:43Z",
           "score": "-0.7"
-        },
-        {
-          "title": "Bitpanda fined in Austria’s first published MiCA penalty",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitpanda-fined-austrian-published-mica-penalty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-17T09:31:47Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "BitMart account demands founder explain funds status, Xia calls claims ‘fabricated’",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitmart-account-founder-explain-repayment-plan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-17T08:30:00Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Greenlane’s $70M BERA treasury ends Q2 valued at $16M",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/greenlane-70m-bera-treasury-valued-16m?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-17T05:52:55Z",
-          "score": "-0.6"
         }
       ],
       "errorMessage": null
