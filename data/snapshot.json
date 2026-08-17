@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-17T10:50:36Z",
+  "updatedAt": "2026-08-17T11:10:39Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "62909.15",
       "macd": {
-        "macdLine": "-150.51",
-        "signalLine": "0.93",
-        "histogram": "-151.44",
+        "macdLine": "-148.99",
+        "signalLine": "1.23",
+        "histogram": "-150.22",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001606",
       "ivRv": {
-        "iv": "20.12",
+        "iv": "20.88",
         "rv": "19.00",
-        "spread": "+1.12",
+        "spread": "+1.88",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "63596.20",
-      "openInterestUsd": "6967546450.56563400",
-      "longAccountRatio": "0.6667",
-      "shortAccountRatio": "0.3333",
-      "downsideLiquidationUsd": "4645263218.59",
-      "upsideLiquidationUsd": "2322283231.97",
+      "currentPrice": "63620.40",
+      "openInterestUsd": "6964312853.61000000",
+      "longAccountRatio": "0.6609",
+      "shortAccountRatio": "0.3391",
+      "downsideLiquidationUsd": "4602714364.95",
+      "upsideLiquidationUsd": "2361598488.66",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57236.58",
+          "price": "57258.36",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1858105287.44"
+          "notionalUsd": "1841085745.98"
         },
         {
-          "price": "69955.82",
+          "price": "69982.44",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "928913292.79"
+          "notionalUsd": "944639395.46"
         },
         {
-          "price": "61052.35",
+          "price": "61075.58",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1625842126.51"
+          "notionalUsd": "1610950027.73"
         },
         {
-          "price": "66140.05",
+          "price": "66165.22",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "812799131.19"
+          "notionalUsd": "826559471.03"
         },
         {
-          "price": "62324.28",
+          "price": "62347.99",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "929052643.72"
+          "notionalUsd": "920542872.99"
         },
         {
-          "price": "64868.12",
+          "price": "64892.81",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "464456646.39"
+          "notionalUsd": "472319697.73"
         },
         {
-          "price": "62960.24",
+          "price": "62984.20",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "232263160.93"
+          "notionalUsd": "230135718.25"
         },
         {
-          "price": "64232.16",
+          "price": "64256.60",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "116114161.60"
+          "notionalUsd": "118079924.43"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-17T10:30:02.984267Z",
+      "generatedAt": "2026-08-17T11:00:04.361955Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,23 +4392,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적이며, 공포와 탐욕 지표가 낮아 투자 심리가 위축된 상태이다."
+          "content": "현재 암호화폐 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮고 온체인 지표가 혼조세를 보이고 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지표로 인해 추가 하락 가능성이 존재한다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -82.43으로 매도 압력이 우세하다."
+          "content": "거래소 순유입이 마이너스이며, 이는 매도 압력을 시사한다."
         },
         {
           "type": "ACTION",
-          "content": "단기 투자자는 관망하며 시장 상황을 지켜보는 것이 좋다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "장기 투자자는 가격 조정 시 매수 기회를 고려할 수 있다."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 좋다."
         }
       ],
       "errorMessage": null
@@ -4447,20 +4447,34 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-17T10:05:01.695849Z",
-      "compositeScore": "-0.044",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-08-17T11:05:04.446544Z",
+      "compositeScore": "-0.219",
+      "label": "NEGATIVE",
+      "labelDisplay": "부정",
+      "labelHexColor": "#F97316",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Bitpanda fined â¬70,000 in Austriaâs first published MiCA enforcement case",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/17/bitpanda-fined-eur70-000-in-austria-s-first-published-mica-enforcement-case",
+          "publishedAt": "2026-08-17T10:52:31Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Bitcoin tracks equity bounce, but $390 million ETF outflow week keeps bulls on back foot",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tracks-equity-bounce-but-usd390-million-etf-outflow-week-keeps-bulls-on-back-foot",
+          "publishedAt": "2026-08-17T09:59:55Z",
+          "score": "-0.3"
+        },
         {
           "title": "Binance handed user data to Russia that led to a Ukrainian donor's arrest",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/17/binance-handed-user-data-to-russia-that-led-to-a-ukrainian-donor-s-arrest",
           "publishedAt": "2026-08-17T09:16:14Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Coinbase-Circle USDC collaboration, FOMC minutes, oil price: Crypto Week Ahead",
@@ -4481,14 +4495,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/17/september-fed-interest-rate-increase-is-very-unlikely-goldman-sachs-says",
           "publishedAt": "2026-08-17T08:16:11Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "The bitcoin futures market looks like a crowded club with a tiny exit â and it could cause pain",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/17/the-bitcoin-futures-market-has-a-crowded-club-tiny-exit-problem-and-it-could-cause-pain",
           "publishedAt": "2026-08-17T05:51:18Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "XRP traders bet on a rebound as price slips to $1 and bearish chatter surges",
@@ -4498,46 +4512,39 @@
           "score": "0.1"
         },
         {
-          "title": "Bitcoin nears $64,000 in Asia morning hours as HYPE jumps 8% on the week",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/17/bitcoin-tops-usd64-000-in-asia-morning-hours-as-hype-jumps-8-on-the-week",
-          "publishedAt": "2026-08-17T04:14:00Z",
-          "score": "0.6"
-        },
-        {
-          "title": "The SEC meeting that wasn't: State of Crypto",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto",
-          "publishedAt": "2026-08-16T18:30:00Z",
-          "score": "0.0"
-        },
-        {
           "title": "Bitpanda fined in Austria’s first published MiCA penalty",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitpanda-fined-austrian-published-mica-penalty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T09:31:47Z",
-          "score": "-0.3"
+          "score": "-0.5"
+        },
+        {
+          "title": "BitMart account demands founder explain funds status, Xia calls claims ‘fabricated’",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitmart-account-founder-explain-repayment-plan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-17T08:15:01Z",
+          "score": "-0.4"
         },
         {
           "title": "Greenlane’s $70M BERA treasury ends Q2 valued at $16M",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/greenlane-70m-bera-treasury-valued-16m?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T05:52:55Z",
-          "score": "-0.5"
+          "score": "-0.2"
         },
         {
           "title": "Chainalysis sues US over $95M ICE contract with TRM Labs",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/chainalysis-sues-us-over-ices-sole-source-contract-with-trm-labs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T03:42:48Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "Data of 54,000 wallet users leaked, CLARITY odds just 10%: Hodler’s Digest",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/data-of-54000-wallet-users-leaked-clarity-odds-just-10-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-16T23:54:50Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "DefiLlama delayed mobile launch over phishing apps on Apple Store, founder says",
@@ -4558,14 +4565,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bybit-launches-unitree-pre-ipo-perpetual-as-crypto-platforms-push-into-private-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-15T19:27:29Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Tokenized stock holders more than double as monthly volume surges",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/tokenized-stock-holders-double-to-13m-as-activity-grows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-15T17:26:43Z",
-          "score": "0.5"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
