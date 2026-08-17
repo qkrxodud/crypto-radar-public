@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-17T22:53:46Z",
+  "updatedAt": "2026-08-17T23:13:51Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "62909.15",
       "macd": {
-        "macdLine": "-97.21",
-        "signalLine": "11.59",
-        "histogram": "-108.80",
+        "macdLine": "-90.84",
+        "signalLine": "12.86",
+        "histogram": "-103.70",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001606",
       "ivRv": {
-        "iv": "23.04",
+        "iv": "22.92",
         "rv": "19.00",
-        "spread": "+4.04",
+        "spread": "+3.92",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2930,63 +2930,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64263.80",
-      "openInterestUsd": "6855078851.94981000",
-      "longAccountRatio": "0.6035",
-      "shortAccountRatio": "0.3965",
-      "downsideLiquidationUsd": "4137040087.15",
-      "upsideLiquidationUsd": "2718038764.80",
+      "currentPrice": "64349.60",
+      "openInterestUsd": "6860677881.49020000",
+      "longAccountRatio": "0.6025",
+      "shortAccountRatio": "0.3975",
+      "downsideLiquidationUsd": "4133558423.60",
+      "upsideLiquidationUsd": "2727119457.89",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57837.42",
+          "price": "57914.64",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1654816034.86"
+          "notionalUsd": "1653423369.44"
         },
         {
-          "price": "70690.18",
+          "price": "70784.56",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1087215505.92"
+          "notionalUsd": "1090847783.16"
         },
         {
-          "price": "61693.25",
+          "price": "61775.62",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1447964030.50"
+          "notionalUsd": "1446745448.26"
         },
         {
-          "price": "66834.35",
+          "price": "66923.58",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "951313567.68"
+          "notionalUsd": "954491810.26"
         },
         {
-          "price": "62978.52",
+          "price": "63062.61",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "827408017.43"
+          "notionalUsd": "826711684.72"
         },
         {
-          "price": "65549.08",
+          "price": "65636.59",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "543607752.96"
+          "notionalUsd": "545423891.58"
         },
         {
-          "price": "63621.16",
+          "price": "63706.10",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "206852004.36"
+          "notionalUsd": "206677921.18"
         },
         {
-          "price": "64906.44",
+          "price": "64993.10",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "135901938.24"
+          "notionalUsd": "136355972.89"
         }
       ],
       "errorMessage": null
@@ -4383,7 +4383,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-17T22:30:02.669675Z",
+      "generatedAt": "2026-08-17T23:00:00.045361Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4392,23 +4392,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지표가 낮아 투자 심리가 위축된 상황이다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지표로 인해 매수 심리가 약하다."
+          "content": "공포탐욕 지수가 31로 투자 심리가 부정적이다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스인 점은 매도 압력을 나타낸다."
+          "content": "거래소 순유입이 -82.43으로 매도 압력이 존재한다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "단기 투자자는 관망하며 시장 상황을 지켜보는 것이 좋다."
         },
         {
           "type": "ACTION",
-          "content": "단기 투자보다는 장기적인 관점을 유지하는 것이 좋다."
+          "content": "장기 투자자는 저가 매수를 고려할 수 있다."
         }
       ],
       "errorMessage": null
@@ -4447,14 +4447,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-17T22:05:02.477493Z",
-      "compositeScore": "0.006",
+      "generatedAt": "2026-08-17T23:05:02.480999Z",
+      "compositeScore": "-0.094",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Kraken parent Payward joins Anthropicâs Project Glasswing for AI security push",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/17/kraken-parent-payward-joins-anthropic-s-project-glasswing-for-ai-security-push",
+          "publishedAt": "2026-08-17T22:12:00Z",
+          "score": "0.0"
+        },
         {
           "title": "Saylor says share buyback isnât priority as Strategy builds $4.8 billion cash reserve",
           "source": "CoinDesk",
@@ -4467,21 +4474,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/17/bitmart-founder-dismisses-calls-for-audit-as-users-report-blocked-funds-unpaid-employees",
           "publishedAt": "2026-08-17T16:40:08Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "Compound bets $52 million, new leadership team in switch to institutional focus",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/17/compound-bets-usd52-million-new-leadership-team-in-switch-to-institutional-focus",
           "publishedAt": "2026-08-17T15:32:30Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "U.S. Treasury Department proposes GENIUS Act stablecoin rule",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule",
           "publishedAt": "2026-08-17T14:44:29Z",
-          "score": "0.2"
+          "score": "-0.4"
         },
         {
           "title": "The Coldcard hack proves reputation is not a security model",
@@ -4495,21 +4502,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/17/tom-lee-s-bitmine-now-owns-4-8-of-ethereum-supply-after-latest-eth-purchase",
           "publishedAt": "2026-08-17T14:04:21Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "How a bug in Coldcardâs code went unnoticed for years, leading to $100 million in hacked funds",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/17/how-a-bug-in-coldcard-s-code-went-unnoticed-for-years-leading-to-usd100-million-in-hacked-funds",
           "publishedAt": "2026-08-17T13:57:11Z",
-          "score": "-0.8"
-        },
-        {
-          "title": "No change in bitcoin holdings as Strategy boosted dollar reserve, bought back more STRC last week",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/17/no-change-in-bitcoin-holdings-as-strategy-lifted-dollar-reserve-and-bought-back-more-strc-last-week",
-          "publishedAt": "2026-08-17T12:19:45Z",
-          "score": "0.0"
+          "score": "-0.7"
         },
         {
           "title": "OCC approves Trump family crypto company for trust charter",
@@ -4523,7 +4523,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-uk-launch-plans-fca-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T18:45:00Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "CFTC seeks public input on AI compute futures contracts as CME eyes October launch",
@@ -4537,14 +4537,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-treasury-public-comment-rules-genius-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T16:29:48Z",
-          "score": "0.2"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin hits $64K as gold gains while oil shakes off Trump Oman threat",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-hits-64k-as-gold-gains-while-oil-shakes-off-trump-oman-threat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T16:16:40Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "Bitmine nears 5% of Ethereum supply despite $8.4B in unrealized losses",
@@ -4565,7 +4565,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/strategy-stock-sales-buys-no-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-17T12:51:03Z",
-          "score": "-0.2"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
