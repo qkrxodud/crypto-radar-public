@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-18T23:19:56Z",
+  "updatedAt": "2026-08-18T23:40:05Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "64482.33",
       "macd": {
-        "macdLine": "12.79",
-        "signalLine": "27.18",
-        "histogram": "-14.39",
+        "macdLine": "16.82",
+        "signalLine": "27.99",
+        "histogram": "-11.17",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001581",
       "ivRv": {
-        "iv": "36.68",
+        "iv": "36.69",
         "rv": "19.00",
-        "spread": "+17.68",
+        "spread": "+17.69",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2857,9 +2857,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "254861961846.08977",
+      "totalMarketCapUsd": "254866190067.59506",
       "marketCap30dAgoUsd": "257346696254.13448",
-      "growth30dPercent": "-0.97",
+      "growth30dPercent": "-0.96",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2928,63 +2928,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64679.00",
-      "openInterestUsd": "6879999733.13120000",
-      "longAccountRatio": "0.5831",
-      "shortAccountRatio": "0.4169",
-      "downsideLiquidationUsd": "4011727844.39",
-      "upsideLiquidationUsd": "2868271888.74",
+      "currentPrice": "64725.00",
+      "openInterestUsd": "6881198196.67714700",
+      "longAccountRatio": "0.5813",
+      "shortAccountRatio": "0.4187",
+      "downsideLiquidationUsd": "4000040511.73",
+      "upsideLiquidationUsd": "2881157684.95",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58211.10",
+          "price": "58252.50",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1604691137.76"
+          "notionalUsd": "1600016204.69"
         },
         {
-          "price": "71146.90",
+          "price": "71197.50",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1147308755.50"
+          "notionalUsd": "1152463073.98"
         },
         {
-          "price": "62091.84",
+          "price": "62136.00",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1404104745.54"
+          "notionalUsd": "1400014179.10"
         },
         {
-          "price": "67266.16",
+          "price": "67314.00",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1003895161.06"
+          "notionalUsd": "1008405189.73"
         },
         {
-          "price": "63385.42",
+          "price": "63430.50",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "802345568.88"
+          "notionalUsd": "800008102.35"
         },
         {
-          "price": "65972.58",
+          "price": "66019.50",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "573654377.75"
+          "notionalUsd": "576231536.99"
         },
         {
-          "price": "64032.21",
+          "price": "64077.75",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "200586392.22"
+          "notionalUsd": "200002025.59"
         },
         {
-          "price": "65325.79",
+          "price": "65372.25",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "143413594.44"
+          "notionalUsd": "144057884.25"
         }
       ],
       "errorMessage": null
@@ -4381,7 +4381,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-18T23:00:01.885025Z",
+      "generatedAt": "2026-08-18T23:30:02.967247Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4390,30 +4390,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 혼재되어 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮고 MVRV-Z가 긍정적인 신호를 보임."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 공포에 가까워 추가 하락 가능성이 있다."
+          "content": "공포탐욕 지수가 41로, 투자 심리가 약화된 상태임."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인 투자에 대한 리스크가 존재한다."
+          "content": "BTC 도미넌스가 57로, 알트코인에 대한 투자 매력이 낮아질 수 있음."
         },
         {
           "type": "ACTION",
-          "content": "현재 포지션을 유지하며 시장 동향을 주의 깊게 관찰하라."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요함."
         },
         {
           "type": "ACTION",
-          "content": "추가 매수는 신중하게 고려하되, 손절매 기준을 설정하라."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 권장됨."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-18T22:59:53.563305Z",
+      "generatedAt": "2026-08-18T23:40:05.317405Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4422,23 +4422,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with mixed indicators reflecting cautious optimism."
+          "content": "The market is neutral with mixed indicators suggesting caution."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 41 indicates a prevailing fear sentiment."
+          "content": "Fear and greed index at 41 indicates market fear."
         },
         {
           "type": "RISK",
-          "content": "Low NUPL at 0.19 suggests limited profit-taking potential."
+          "content": "Low NUPL at 0.19 suggests limited profit-taking."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market trends closely for potential shifts in sentiment."
+          "content": "Monitor market sentiment closely for potential shifts."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying investments to mitigate risks."
+          "content": "Consider diversifying investments to mitigate risk."
         }
       ],
       "errorMessage": null
