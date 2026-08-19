@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-19T15:03:42Z",
+  "updatedAt": "2026-08-19T15:23:45Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.19",
       "btcClose": "64633.05",
       "macd": {
-        "macdLine": "193.07",
-        "signalLine": "72.06",
-        "histogram": "121.02",
+        "macdLine": "263.41",
+        "signalLine": "86.13",
+        "histogram": "177.28",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": true
       },
       "adx": {
-        "adx": "18.5",
-        "plusDi": "23.2",
-        "minusDi": "17.7",
+        "adx": "19.2",
+        "plusDi": "26.9",
+        "minusDi": "16.9",
         "strength": "WEAK",
         "strengthLabel": "무추세(횡보)",
         "trending": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001567",
       "ivRv": {
-        "iv": "32.60",
+        "iv": "33.89",
         "rv": "19.00",
-        "spread": "+13.60",
+        "spread": "+14.89",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2928,63 +2928,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "66018.10",
-      "openInterestUsd": "7263158055.60844100",
-      "longAccountRatio": "0.5620",
-      "shortAccountRatio": "0.4380",
-      "downsideLiquidationUsd": "4081894827.25",
-      "upsideLiquidationUsd": "3181263228.36",
+      "currentPrice": "66877.00",
+      "openInterestUsd": "7420547958.55052000",
+      "longAccountRatio": "0.5490",
+      "shortAccountRatio": "0.4510",
+      "downsideLiquidationUsd": "4073880829.24",
+      "upsideLiquidationUsd": "3346667129.31",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "59416.29",
+          "price": "60189.30",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1632757930.90"
+          "notionalUsd": "1629552331.70"
         },
         {
-          "price": "72619.91",
+          "price": "73564.70",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1272505291.34"
+          "notionalUsd": "1338666851.72"
         },
         {
-          "price": "63377.38",
+          "price": "64201.92",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1428663189.54"
+          "notionalUsd": "1425858290.24"
         },
         {
-          "price": "68658.82",
+          "price": "69552.08",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1113442129.92"
+          "notionalUsd": "1171333495.26"
         },
         {
-          "price": "64697.74",
+          "price": "65539.46",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "816378965.45"
+          "notionalUsd": "814776165.85"
         },
         {
-          "price": "67338.46",
+          "price": "68214.54",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "636252645.67"
+          "notionalUsd": "669333425.86"
         },
         {
-          "price": "65357.92",
+          "price": "66208.23",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204094741.36"
+          "notionalUsd": "203694041.46"
         },
         {
-          "price": "66678.28",
+          "price": "67545.77",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "159063161.42"
+          "notionalUsd": "167333356.47"
         }
       ],
       "errorMessage": null
@@ -4445,8 +4445,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-19T14:05:10.070273Z",
-      "compositeScore": "0.019",
+      "generatedAt": "2026-08-19T15:05:02.572543Z",
+      "compositeScore": "0.138",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4454,11 +4454,39 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "AI could supercharge crypto but thereâs a catch, Fidelity Digital Assets says",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/19/ai-could-supercharge-crypto-but-there-s-a-catch-fidelity-digital-assets-says",
+          "publishedAt": "2026-08-19T14:59:07Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Crypto Long & Short: Where DeFi yield really comes from (and why it broke this spring)",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/coindesk-indices/2026/08/18/crypto-long-and-short-where-defi-yield-really-comes-from-and-why-it-broke-this-spring",
+          "publishedAt": "2026-08-19T14:57:35Z",
+          "score": "0.0"
+        },
+        {
+          "title": "HSBC, Standard Chartered execute first live banking transaction on Swiftâs 24/7 ledger",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/19/hsbc-standard-chartered-execute-first-live-banking-transaction-on-swift-s-24-7-ledger",
+          "publishedAt": "2026-08-19T14:50:33Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Cantor opens Kalshi prediction markets to thousands of institutional clients",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/19/cantor-opens-kalshi-prediction-markets-to-thousands-of-institutional-clients",
+          "publishedAt": "2026-08-19T14:41:55Z",
+          "score": "0.3"
+        },
+        {
           "title": "Beyond crypto funding rates: Ethena diversifies USDe backing with $1 billion FalconX facility",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/19/beyond-crypto-funding-rates-ethena-diversifies-usde-backing-with-usd1-billion-falconx-facility",
           "publishedAt": "2026-08-19T13:00:00Z",
-          "score": "0.2"
+          "score": "0.5"
         },
         {
           "title": "Strengthen the Clarity Act",
@@ -4479,34 +4507,6 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/19/a-year-after-losing-usd1-46-billion-bybit-says-ai-helped-it-save-usd700-million",
           "publishedAt": "2026-08-19T12:01:09Z",
-          "score": "0.0"
-        },
-        {
-          "title": "China triples its e-CNY network in 2026 as 8 more banks join the CBDC push this week",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/19/china-triples-digital-yuan-bank-roster-year-to-date-as-eight-more-banks-join-network",
-          "publishedAt": "2026-08-19T11:55:45Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Fed decision making comes into focus as bitcoin holds steady, bond yields surge",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/08/19/fed-decision-making-comes-into-focus-as-bitcoin-holds-steady-bond-yields-surge",
-          "publishedAt": "2026-08-19T11:14:50Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Bitcoin stuck in a six-week range as global bond yields hit highest levels for decades",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/19/bitcoin-stuck-in-a-six-week-range-as-global-bond-yields-hit-highest-levels-for-decades",
-          "publishedAt": "2026-08-19T10:29:57Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "TikTok code includes peer-to-peer payments over messaging: Bloomberg",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/19/tiktok-code-includes-peer-to-peer-payments-over-messaging-bloomberg",
-          "publishedAt": "2026-08-19T10:04:30Z",
           "score": "0.3"
         },
         {
@@ -4514,14 +4514,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/fake-ai-victims-are-scam-baiting-600000-fraudsters-every-month?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T13:30:00Z",
-          "score": "-0.1"
+          "score": "-0.4"
         },
         {
           "title": "SEC regulatory proposal marks ‘important’ step forward from ‘inapt’ crypto rules: Commissioner Peirce",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/sec-proposal-forward-inapt-crypto-rules-commissioner-peirce?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T13:27:09Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4542,7 +4542,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/swedens-h100-26m-h1-loss-falling-bitcoin-value?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T11:59:30Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Ripple raises $275M for US prime brokerage to meet institutional demand",
@@ -4556,14 +4556,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-has-largely-purged-froth-that-preceded-50-drop-from-126k-blackrock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T11:06:13Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Nexo launches regulated crypto-backed credit in Australia",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/nexo-launches-crypto-backed-credit-australia?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-19T10:20:27Z",
-          "score": "0.4"
+          "publishedAt": "2026-08-19T10:25:00Z",
+          "score": "0.3"
         }
       ],
       "errorMessage": null
