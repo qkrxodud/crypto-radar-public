@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-19T10:02:28Z",
+  "updatedAt": "2026-08-19T10:22:33Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "64633.05",
       "macd": {
-        "macdLine": "62.75",
-        "signalLine": "45.99",
-        "histogram": "16.75",
+        "macdLine": "61.78",
+        "signalLine": "45.80",
+        "histogram": "15.98",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001567",
       "ivRv": {
-        "iv": "22.70",
+        "iv": "23.31",
         "rv": "19.00",
-        "spread": "+3.70",
+        "spread": "+4.31",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2928,63 +2928,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64375.50",
-      "openInterestUsd": "6759442210.89873300",
-      "longAccountRatio": "0.6121",
-      "shortAccountRatio": "0.3879",
-      "downsideLiquidationUsd": "4137454577.29",
-      "upsideLiquidationUsd": "2621987633.61",
+      "currentPrice": "64368.70",
+      "openInterestUsd": "6754582703.62260000",
+      "longAccountRatio": "0.6126",
+      "shortAccountRatio": "0.3874",
+      "downsideLiquidationUsd": "4137857364.24",
+      "upsideLiquidationUsd": "2616725339.38",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "57937.95",
+          "price": "57931.83",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1654981830.92"
+          "notionalUsd": "1655142945.70"
         },
         {
-          "price": "70813.05",
+          "price": "70805.57",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1048795053.44"
+          "notionalUsd": "1046690135.75"
         },
         {
-          "price": "61800.48",
+          "price": "61793.95",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1448109102.05"
+          "notionalUsd": "1448250077.48"
         },
         {
-          "price": "66950.52",
+          "price": "66943.45",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "917695671.76"
+          "notionalUsd": "915853868.78"
         },
         {
-          "price": "63087.99",
+          "price": "63081.33",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "827490915.46"
+          "notionalUsd": "827571472.85"
         },
         {
-          "price": "65663.01",
+          "price": "65656.07",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "524397526.72"
+          "notionalUsd": "523345067.88"
         },
         {
-          "price": "63731.75",
+          "price": "63725.01",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "206872728.86"
+          "notionalUsd": "206892868.21"
         },
         {
-          "price": "65019.26",
+          "price": "65012.39",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "131099381.68"
+          "notionalUsd": "130836266.97"
         }
       ],
       "errorMessage": null
@@ -4413,7 +4413,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-19T09:42:25.414779Z",
+      "generatedAt": "2026-08-19T10:22:33.306346Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4422,31 +4422,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed indicators suggesting cautious sentiment."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting cautious optimism."
         },
         {
           "type": "RISK",
-          "content": "Fear and greed index at 46 indicates uncertainty in market sentiment."
+          "content": "Low MVRV-Z indicates potential profit-taking pressure."
         },
         {
           "type": "RISK",
-          "content": "Low NUPL at 0.19 suggests limited profit-taking potential."
+          "content": "Decreasing active addresses may signal reduced market interest."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of trend reversal."
+          "content": "Monitor market sentiment closely for shifts in fear and greed."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying investments to mitigate risks."
+          "content": "Consider diversifying investments to mitigate potential downturns."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-19T09:05:02.610994Z",
-      "compositeScore": "0.069",
+      "generatedAt": "2026-08-19T10:05:05.768952Z",
+      "compositeScore": "0.088",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4454,25 +4454,53 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "TikTok code includes peer-to-peer payments over messaging: Bloomberg",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/19/tiktok-code-includes-peer-to-peer-payments-over-messaging-bloomberg",
+          "publishedAt": "2026-08-19T10:04:30Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Ripple raises $275 million in senior notes for prime brokerage push",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/19/ripple-raises-usd275-million-in-debut-debt-offering-for-its-prime-brokerage-arm",
+          "publishedAt": "2026-08-19T09:55:50Z",
+          "score": "0.5"
+        },
+        {
+          "title": "OpenAI trails Anthropic as losses deepen and Altman pauses frontier AI training",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/19/openai-trails-anthropic-as-losses-deepen-and-altman-pauses-frontier-ai-training",
+          "publishedAt": "2026-08-19T09:10:22Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Live updates: Bitcoin remains above $64,000 as oil rises and the Kospi tumbles 6%",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/19/live-updates-bitcoin-holds-firm-above-usd64-000-as-south-korea-s-kospi-sinks-5-8",
+          "publishedAt": "2026-08-19T09:05:45Z",
+          "score": "0.4"
+        },
+        {
           "title": "Maya Protocol exploit drains bitcoin and other assets as pool value drops $11 million",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million",
           "publishedAt": "2026-08-19T06:36:11Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Robot maker Unitreeâs IPO surges 600% , outpacing crypto tradersâ premarket bets",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/19/robot-maker-unitree-s-ipo-surges-600-outpacing-crypto-traders-premarket-bets",
           "publishedAt": "2026-08-19T05:45:27Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin holds $64,000 and solana leads gains amid 7% Korean chip stock slide",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/19/solana-leads-bitcoin-and-ether-higher-while-korean-chip-stocks-slide-7",
           "publishedAt": "2026-08-19T04:25:42Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "âIt has to passâ: Andrew Cuomo warns U.S. is falling behind on crypto rules",
@@ -4482,46 +4510,18 @@
           "score": "-0.2"
         },
         {
-          "title": "Robinhood CEO urges U.S. to clear path for tokenized stocks as overseas markets advance",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/18/robinhood-ceo-urges-u-s-to-clear-path-for-tokenized-stocks-as-overseas-markets-advance",
-          "publishedAt": "2026-08-18T23:11:12Z",
-          "score": "0.5"
-        },
-        {
-          "title": "U.S. accounting-standards group proposes way to see stablecoins as 'cash equivalent'",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/18/u-s-accounting-standards-group-proposes-way-to-see-stablecoins-as-cash-equivalent",
-          "publishedAt": "2026-08-18T21:25:42Z",
-          "score": "0.6"
-        },
-        {
-          "title": "U.S. SEC proposes first major crypto rule in surprise announcement",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/18/r",
-          "publishedAt": "2026-08-18T19:09:33Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Wyoming joins $15 billion LayerZero exodus with state stablecoin move",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/18/wyoming-joins-usd15-billion-layerzero-exodus-with-state-stablecoin-move",
-          "publishedAt": "2026-08-18T18:57:00Z",
-          "score": "-0.4"
-        },
-        {
           "title": "Arthur Hayes takes CEO role at Flop Labs ahead of Q4 airdrop",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/arthur-hayes-ceo-role-flop-labs-q4-airdrop?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T08:34:51Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Bitcoin ETFs add $189M as August net inflows approach $1B",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-etf-august-net-inflows-approach-1b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T07:59:16Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4535,35 +4535,35 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/maya-protocol-1-7m-exploit-network-halt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T05:13:54Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "US accounting board FASB proposes conditions for stablecoins as cash equivalents",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-accounting-board-fasb-proposes-conditions-for-stablecoins-as-cash-equivalents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T03:58:13Z",
-          "score": "0.5"
+          "score": "0.2"
         },
         {
           "title": "SEC proposes new crypto rules in absence of CLARITY Act",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-sec-crypto-rules-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-18T21:24:15Z",
-          "score": "0.2"
+          "score": "-0.3"
         },
         {
           "title": "FalconX, Interstice Connect Canton to Ethereum, Solana and Robinhood Chain",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/interstice-falconx-cross-chain-swap-engine-canton-solana-ethereum-robinhood-chain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-18T20:45:48Z",
-          "score": "0.0"
+          "score": "0.4"
         },
         {
           "title": "Ripple- and Coinbase-funded PAC spends $2M in Florida race with little mention of crypto",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-pac-ads-florida-congress-spending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-18T19:54:16Z",
-          "score": "-0.1"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
