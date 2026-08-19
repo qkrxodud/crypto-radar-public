@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-19T01:20:29Z",
+  "updatedAt": "2026-08-19T01:40:35Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "64633.05",
       "macd": {
-        "macdLine": "70.70",
-        "signalLine": "47.58",
-        "histogram": "23.12",
+        "macdLine": "66.75",
+        "signalLine": "46.79",
+        "histogram": "19.96",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001567",
       "ivRv": {
-        "iv": "36.69",
+        "iv": "22.35",
         "rv": "19.00",
-        "spread": "+17.69",
-        "label": "과대"
+        "spread": "+3.35",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 46,
@@ -2857,9 +2857,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "254820316108.47108",
+      "totalMarketCapUsd": "254807684410.94804",
       "marketCap30dAgoUsd": "257317836048.61516",
-      "growth30dPercent": "-0.97",
+      "growth30dPercent": "-0.98",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2928,63 +2928,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64480.10",
-      "openInterestUsd": "6849643752.39753200",
-      "longAccountRatio": "0.5879",
-      "shortAccountRatio": "0.4121",
-      "downsideLiquidationUsd": "4026905562.03",
-      "upsideLiquidationUsd": "2822738190.36",
+      "currentPrice": "64435.40",
+      "openInterestUsd": "6851777886.96393600",
+      "longAccountRatio": "0.5887",
+      "shortAccountRatio": "0.4113",
+      "downsideLiquidationUsd": "4033641642.06",
+      "upsideLiquidationUsd": "2818136244.91",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58032.09",
+          "price": "57991.86",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1610762224.81"
+          "notionalUsd": "1613456656.82"
         },
         {
-          "price": "70928.11",
+          "price": "70878.94",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1129095276.15"
+          "notionalUsd": "1127254497.96"
         },
         {
-          "price": "61900.90",
+          "price": "61857.98",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1409416946.71"
+          "notionalUsd": "1411774574.72"
         },
         {
-          "price": "67059.30",
+          "price": "67012.82",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "987958366.63"
+          "notionalUsd": "986347685.72"
         },
         {
-          "price": "63190.50",
+          "price": "63146.69",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "805381112.41"
+          "notionalUsd": "806728328.41"
         },
         {
-          "price": "65769.70",
+          "price": "65724.11",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "564547638.07"
+          "notionalUsd": "563627248.98"
         },
         {
-          "price": "63835.30",
+          "price": "63791.05",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "201345278.10"
+          "notionalUsd": "201682082.10"
         },
         {
-          "price": "65124.90",
+          "price": "65079.75",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "141136909.52"
+          "notionalUsd": "140906812.25"
         }
       ],
       "errorMessage": null
@@ -4381,7 +4381,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-19T01:00:03.062974Z",
+      "generatedAt": "2026-08-19T01:30:01.490206Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4390,30 +4390,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 암호화폐 시장은 중립적인 심리를 보이며, 가격 안정세를 유지하고 있다."
+          "content": "현재 암호화폐 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 공포에 가까워 추가 하락 가능성이 존재한다."
+          "content": "시장 심리가 약화되어 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스여서 매도 압력이 우려된다."
+          "content": "거래소 순유입이 부정적이며, 이는 매도 압력을 증가시킬 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "보수적인 접근을 유지하며, 추가 매수는 신중하게 고려하라."
+          "content": "시장 상황을 면밀히 관찰하며, 매수 타이밍을 신중히 결정하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 동향을 지속적으로 모니터링하라."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-19T01:00:26.010321Z",
+      "generatedAt": "2026-08-19T01:40:35.622287Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4422,23 +4422,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed indicators suggesting cautious sentiment."
+          "content": "The market is neutral with mixed signals across various indicators."
         },
         {
           "type": "RISK",
-          "content": "Market sentiment is leaning towards fear with a Fear & Greed Index at 46."
+          "content": "High volatility indicated by low historical volatility (HV 0.19)."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance at 57 indicates potential altcoin underperformance."
+          "content": "Decreasing exchange inflow (-29.31) may suggest bearish sentiment."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into altcoins as the altseason index is at 48."
+          "content": "Monitor market closely for potential trend shifts."
         },
         {
           "type": "ACTION",
-          "content": "Monitor the SOPR at 0.9947 for potential profit-taking signals."
+          "content": "Consider diversifying investments to mitigate risk."
         }
       ],
       "errorMessage": null
