@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-19T13:03:07Z",
+  "updatedAt": "2026-08-19T13:23:10Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "64633.05",
       "macd": {
-        "macdLine": "93.30",
-        "signalLine": "52.10",
-        "histogram": "41.20",
+        "macdLine": "109.79",
+        "signalLine": "55.40",
+        "histogram": "54.39",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001567",
       "ivRv": {
-        "iv": "23.49",
+        "iv": "24.02",
         "rv": "19.00",
-        "spread": "+4.49",
-        "label": "균형"
+        "spread": "+5.02",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 46,
@@ -2928,63 +2928,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "64779.20",
-      "openInterestUsd": "6824997847.59993000",
-      "longAccountRatio": "0.5949",
-      "shortAccountRatio": "0.4051",
-      "downsideLiquidationUsd": "4060191219.54",
-      "upsideLiquidationUsd": "2764806628.06",
+      "currentPrice": "64971.00",
+      "openInterestUsd": "6847379406.96213500",
+      "longAccountRatio": "0.5900",
+      "shortAccountRatio": "0.4100",
+      "downsideLiquidationUsd": "4039953850.11",
+      "upsideLiquidationUsd": "2807425556.85",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "58301.28",
+          "price": "58473.90",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1624076487.81"
+          "notionalUsd": "1615981540.04"
         },
         {
-          "price": "71257.12",
+          "price": "71468.10",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1105922651.23"
+          "notionalUsd": "1122970222.74"
         },
         {
-          "price": "62188.03",
+          "price": "62372.16",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1421066926.84"
+          "notionalUsd": "1413983847.54"
         },
         {
-          "price": "67370.37",
+          "price": "67569.84",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "967682319.82"
+          "notionalUsd": "982598944.90"
         },
         {
-          "price": "63483.62",
+          "price": "63671.58",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "812038243.91"
+          "notionalUsd": "807990770.02"
         },
         {
-          "price": "66074.78",
+          "price": "66270.42",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "552961325.61"
+          "notionalUsd": "561485111.37"
         },
         {
-          "price": "64131.41",
+          "price": "64321.29",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "203009560.98"
+          "notionalUsd": "201997692.51"
         },
         {
-          "price": "65426.99",
+          "price": "65620.71",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "138240331.40"
+          "notionalUsd": "140371277.84"
         }
       ],
       "errorMessage": null
@@ -4445,8 +4445,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-19T12:05:02.659669Z",
-      "compositeScore": "0.144",
+      "generatedAt": "2026-08-19T13:05:02.715685Z",
+      "compositeScore": "0.063",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4454,59 +4454,59 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Beyond crypto funding rates: Ethena diversifies USDe backing with $1 billion FalconX facility",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/19/beyond-crypto-funding-rates-ethena-diversifies-usde-backing-with-usd1-billion-falconx-facility",
+          "publishedAt": "2026-08-19T13:00:00Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Strengthen the Clarity Act",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/opinion/2026/08/19/strengthen-the-clarity-act",
+          "publishedAt": "2026-08-19T13:00:00Z",
+          "score": "0.1"
+        },
+        {
+          "title": "Bitcoin is flashing 8 of 12 capitulation signals, but bottom's not yet in, says VanEck",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/19/bitcoin-is-flashing-8-of-12-capitulation-signals-but-its-not-a-bottom-yet",
+          "publishedAt": "2026-08-19T12:45:35Z",
+          "score": "-0.4"
+        },
+        {
           "title": "A year after losing $1.46 billion, Bybit says AI helped it save $700 million",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/19/a-year-after-losing-usd1-46-billion-bybit-says-ai-helped-it-save-usd700-million",
           "publishedAt": "2026-08-19T12:01:09Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "China triples its e-CNY network in 2026 as 8 more banks join the CBDC push this week",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/19/china-triples-digital-yuan-bank-roster-year-to-date-as-eight-more-banks-join-network",
           "publishedAt": "2026-08-19T11:55:45Z",
-          "score": "0.1"
+          "score": "-0.3"
         },
         {
           "title": "Fed decision making comes into focus as bitcoin holds steady, bond yields surge",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/08/19/fed-decision-making-comes-into-focus-as-bitcoin-holds-steady-bond-yields-surge",
           "publishedAt": "2026-08-19T11:14:50Z",
-          "score": "-0.3"
+          "score": "0.0"
         },
         {
           "title": "Bitcoin stuck in a six-week range as global bond yields hit highest levels for decades",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/19/bitcoin-stuck-in-a-six-week-range-as-global-bond-yields-hit-highest-levels-for-decades",
           "publishedAt": "2026-08-19T10:29:57Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "TikTok code includes peer-to-peer payments over messaging: Bloomberg",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/19/tiktok-code-includes-peer-to-peer-payments-over-messaging-bloomberg",
           "publishedAt": "2026-08-19T10:04:30Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Ripple raises $275 million in senior notes for prime brokerage push",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/19/ripple-raises-usd275-million-in-debut-debt-offering-for-its-prime-brokerage-arm",
-          "publishedAt": "2026-08-19T09:55:50Z",
-          "score": "0.5"
-        },
-        {
-          "title": "OpenAI trails Anthropic as losses deepen and Altman pauses frontier AI training",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/19/openai-trails-anthropic-as-losses-deepen-and-altman-pauses-frontier-ai-training",
-          "publishedAt": "2026-08-19T09:10:22Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "Live updates: Bitcoin remains above $64,000 as oil rises and the Kospi tumbles 6%",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/19/live-updates-bitcoin-holds-firm-above-usd64-000-as-south-korea-s-kospi-sinks-5-8",
-          "publishedAt": "2026-08-19T09:05:45Z",
           "score": "0.3"
         },
         {
@@ -4514,28 +4514,28 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/centrifuge-symbiotic-liquidity-network-janus-henderson-nylim-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T12:00:00Z",
-          "score": "0.0"
+          "score": "0.2"
         },
         {
           "title": "Sweden’s H100 reports $26M H1 loss driven by falling Bitcoin value",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/swedens-h100-26m-h1-loss-falling-bitcoin-value?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T11:59:30Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Ripple raises $275M for US prime brokerage to meet institutional demand",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ripple-raises-275m-us-prime-brokerage?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T11:18:38Z",
-          "score": "0.6"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin has ‘largely purged’ froth that preceded 50% drop from $126K: BlackRock",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-has-largely-purged-froth-that-preceded-50-drop-from-126k-blackrock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T11:06:13Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Nexo launches regulated crypto-backed credit in Australia",
@@ -4549,14 +4549,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/arthur-hayes-ceo-role-flop-labs-q4-airdrop?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T08:34:51Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Bitcoin ETFs add $189M as August net inflows approach $1B",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-etf-august-net-inflows-approach-1b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-19T07:59:16Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
