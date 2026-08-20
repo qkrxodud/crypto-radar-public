@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-20T18:30:40Z",
+  "updatedAt": "2026-08-20T18:50:47Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "69548.54",
       "macd": {
-        "macdLine": "1061.72",
-        "signalLine": "320.36",
-        "histogram": "741.36",
+        "macdLine": "1050.16",
+        "signalLine": "318.05",
+        "histogram": "732.11",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001659",
       "ivRv": {
-        "iv": "45.21",
+        "iv": "36.74",
         "rv": "33.00",
-        "spread": "+12.21",
-        "label": "과대"
+        "spread": "+3.74",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 62,
@@ -2855,7 +2855,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255458142247.13724",
+      "totalMarketCapUsd": "255457102834.91881",
       "marketCap30dAgoUsd": "257351821827.40746",
       "growth30dPercent": "-0.74",
       "signal": "STABLE",
@@ -2865,11 +2865,11 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5795688.000",
-      "change4wUsdM": "-72887.000",
-      "change4wPercent": "-1.24",
+      "netLiquidityUsdM": "5795780.000",
+      "change4wUsdM": "-72267.000",
+      "change4wPercent": "-1.23",
       "fedAssetsUsdM": "6759955",
-      "reverseRepoUsdM": "317.000",
+      "reverseRepoUsdM": "225.000",
       "treasuryAccountUsdM": "963950",
       "rrpIncluded": true,
       "signal": "CONTRACTING",
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "72653.10",
-      "openInterestUsd": "7866921695.06757200",
-      "longAccountRatio": "0.4935",
-      "shortAccountRatio": "0.5065",
-      "downsideLiquidationUsd": "3882325856.52",
-      "upsideLiquidationUsd": "3984595838.55",
+      "currentPrice": "72499.90",
+      "openInterestUsd": "7837417992.09920000",
+      "longAccountRatio": "0.4912",
+      "shortAccountRatio": "0.5088",
+      "downsideLiquidationUsd": "3849739717.72",
+      "upsideLiquidationUsd": "3987678274.38",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "65387.79",
+          "price": "65249.91",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1552930342.61"
+          "notionalUsd": "1539895887.09"
         },
         {
-          "price": "79918.41",
+          "price": "79749.89",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1593838335.42"
+          "notionalUsd": "1595071309.75"
         },
         {
-          "price": "69746.98",
+          "price": "69599.90",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1358814049.78"
+          "notionalUsd": "1347408901.20"
         },
         {
-          "price": "75559.22",
+          "price": "75399.90",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1394608543.49"
+          "notionalUsd": "1395687396.03"
         },
         {
-          "price": "71200.04",
+          "price": "71049.90",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "776465171.30"
+          "notionalUsd": "769947943.54"
         },
         {
-          "price": "74106.16",
+          "price": "73949.90",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "796919167.71"
+          "notionalUsd": "797535654.88"
         },
         {
-          "price": "71926.57",
+          "price": "71774.90",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "194116292.83"
+          "notionalUsd": "192486985.89"
         },
         {
-          "price": "73379.63",
+          "price": "73224.90",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "199229791.93"
+          "notionalUsd": "199383913.72"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-20T18:10:32.580927Z",
+      "generatedAt": "2026-08-20T18:50:45.738059Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,30 +4388,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포탐욕 지수는 62로 약간의 탐욕을 나타냅니다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지표가 균형을 이루고 있다."
         },
         {
           "type": "RISK",
-          "content": "높은 RSI(일) 73.99로 과매수 신호가 나타나고 있습니다."
+          "content": "높은 RSI(일)로 인해 단기 과매수 신호가 나타나고 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 57로 알트코인에 대한 투자 심리가 약해질 수 있습니다."
+          "content": "BTC 도미넌스가 57로 알트코인에 대한 투자 심리가 약해질 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 매매를 고려하되, 과매수 신호에 주의해야 합니다."
+          "content": "단기 매매 전략을 고려하며 리스크 관리에 유의하라."
         },
         {
           "type": "ACTION",
-          "content": "알트코인 투자 비중을 조정하며 리스크 관리를 강화하세요."
+          "content": "포트폴리오 다각화를 통해 위험을 분산시키는 것이 바람직하다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-20T18:10:34.814725Z",
+      "generatedAt": "2026-08-20T18:50:47.346568Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4424,19 +4424,19 @@
         },
         {
           "type": "RISK",
-          "content": "High RSI indicates potential overbought conditions."
+          "content": "High RSI on daily indicates potential overbought conditions."
         },
         {
           "type": "RISK",
-          "content": "BTC dominance remains relatively high, suggesting altcoins may underperform."
+          "content": "Low SOPR suggests profit-taking may occur."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market trends closely for signs of reversal."
+          "content": "Monitor market closely for signs of trend reversal."
         },
         {
           "type": "ACTION",
-          "content": "Consider profit-taking strategies if prices begin to decline."
+          "content": "Consider taking profits if price approaches resistance levels."
         }
       ],
       "errorMessage": null
