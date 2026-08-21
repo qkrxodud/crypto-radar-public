@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-21T02:01:04Z",
+  "updatedAt": "2026-08-21T02:22:04Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -50,8 +50,35 @@
       "errorMessage": null
     },
     "api_dashboard_technical": {
-      "hasData": false,
-      "errorMessage": "timed out"
+      "hasData": true,
+      "rsiDaily": "80.43",
+      "rsiWeekly": "51.86",
+      "rsiMonthly": "52.30",
+      "ma200Ratio": "1.06",
+      "ma200Value": "68960",
+      "ma200DistancePct": "6.0",
+      "piCycleGap": "0.59",
+      "historicalVolatility": "0.38",
+      "btcClose": "73098.01",
+      "macd": {
+        "macdLine": "1717.09",
+        "signalLine": "617.72",
+        "histogram": "1099.37",
+        "crossType": "NONE",
+        "crossLabel": "크로스 없음",
+        "bullish": true
+      },
+      "adx": {
+        "adx": "23.7",
+        "plusDi": "48.9",
+        "minusDi": "10.5",
+        "strength": "MODERATE_UP",
+        "strengthLabel": "보통 상승 추세",
+        "trending": true
+      },
+      "optionsSkew25d": "35.40",
+      "perpBasisSpread": "-0.0472",
+      "errorMessage": null
     },
     "api_dashboard_onchain": {
       "hasData": true,
@@ -406,9 +433,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001660",
       "ivRv": {
-        "iv": "39.49",
+        "iv": "39.00",
         "rv": "38.00",
-        "spread": "+1.49",
+        "spread": "+1.00",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2899,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "75080.10",
-      "openInterestUsd": "8130836371.31500000",
-      "longAccountRatio": "0.5060",
-      "shortAccountRatio": "0.4940",
-      "downsideLiquidationUsd": "4114203203.89",
-      "upsideLiquidationUsd": "4016633167.43",
+      "currentPrice": "74746.10",
+      "openInterestUsd": "8047870494.84666600",
+      "longAccountRatio": "0.5045",
+      "shortAccountRatio": "0.4955",
+      "downsideLiquidationUsd": "4060150664.65",
+      "upsideLiquidationUsd": "3987719830.20",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "67572.09",
+          "price": "67271.49",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1645681281.55"
+          "notionalUsd": "1624060265.86"
         },
         {
-          "price": "82588.11",
+          "price": "82220.71",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1606653266.97"
+          "notionalUsd": "1595087932.08"
         },
         {
-          "price": "72076.90",
+          "price": "71756.26",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1439971121.36"
+          "notionalUsd": "1421052732.63"
         },
         {
-          "price": "78083.30",
+          "price": "77735.94",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1405821608.60"
+          "notionalUsd": "1395701940.57"
         },
         {
-          "price": "73578.50",
+          "price": "73251.18",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "822840640.78"
+          "notionalUsd": "812030132.93"
         },
         {
-          "price": "76581.70",
+          "price": "76241.02",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "803326633.49"
+          "notionalUsd": "797543966.04"
         },
         {
-          "price": "74329.30",
+          "price": "73998.64",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "205710160.19"
+          "notionalUsd": "203007533.23"
         },
         {
-          "price": "75830.90",
+          "price": "75493.56",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "200831658.37"
+          "notionalUsd": "199385991.51"
         }
       ],
       "errorMessage": null
@@ -4352,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-21T02:00:35.934398Z",
+      "generatedAt": "2026-08-21T02:00:35.939718Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4361,30 +4388,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리를 보이며, 일부 지표는 과매수 상태를 나타냅니다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 일부 과열 신호가 감지됨."
         },
         {
           "type": "RISK",
-          "content": "고RSI 수치로 인해 조정 가능성이 존재합니다."
+          "content": "RSI(일)가 80.43으로 과매수 상태를 나타내며 조정 가능성이 있음."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 리스크가 증가하고 있습니다."
+          "content": "BTC 도미넌스가 59로 알트코인에 대한 불안감을 유발할 수 있음."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매 전략을 고려하며, 포지션 조정이 필요합니다."
+          "content": "단기 조정에 대비해 포트폴리오 리밸런싱을 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "알트코인에 대한 비중을 줄이고 BTC에 집중하는 것이 좋습니다."
+          "content": "과열 신호가 지속될 경우 이익 실현을 검토하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-21T01:38:05.310631Z",
+      "generatedAt": "2026-08-21T02:22:04.127994Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4393,31 +4420,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral stance with signs of fear and greed, indicating potential volatility ahead."
+          "content": "The market is currently neutral with mixed signals across various indicators."
         },
         {
           "type": "RISK",
-          "content": "High RSI levels suggest overbought conditions, increasing the likelihood of a price correction."
+          "content": "High RSI indicates potential overbought conditions."
         },
         {
           "type": "RISK",
-          "content": "The low altcoin season index indicates a lack of interest in altcoins, which may affect overall market dynamics."
+          "content": "Decreasing altcoin season index suggests weakening altcoin performance."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment closely for signs of reversal or trend changes."
+          "content": "Monitor market closely for signs of trend reversal."
         },
         {
           "type": "ACTION",
-          "content": "Consider profit-taking strategies if prices approach historical resistance levels."
+          "content": "Consider profit-taking on overbought positions."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-21T01:05:02.741272Z",
-      "compositeScore": "0.056",
+      "generatedAt": "2026-08-21T02:05:55.665759Z",
+      "compositeScore": "0.175",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4425,25 +4452,39 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin pushes past $75,000 as rally continues.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/20/bitcoin-pushes-past-usd75-000-as-rally-continues",
+          "publishedAt": "2026-08-21T01:55:50Z",
+          "score": "1.0"
+        },
+        {
+          "title": "A $2 million bet on XRP volatility crosses the tape as prices surge",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/21/a-usd2-million-bet-on-xrp-volatility-crosses-the-tape-as-prices-surge",
+          "publishedAt": "2026-08-21T01:51:56Z",
+          "score": "0.5"
+        },
+        {
           "title": "U.S. CFTC chief puts staff on notice to create crypto regulations if Clarity Act fails",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/20/u-s-cftc-chief-puts-staff-on-notice-to-create-crypto-regulations-if-clarity-act-fails",
           "publishedAt": "2026-08-20T18:54:18Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Treasury buybacks could set up Bitcoinâs next move toward $180,000, says strategist",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/20/treasury-buybacks-could-set-up-bitcoin-s-next-move-toward-usd180-000",
           "publishedAt": "2026-08-20T16:17:32Z",
-          "score": "0.5"
+          "score": "0.8"
         },
         {
           "title": "Bitcoin's jump above $71,000 sets up bullish golden cross pattern",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/20/bitcoin-s-jump-above-usd71-000-sets-up-bullish-golden-cross-pattern",
           "publishedAt": "2026-08-20T15:16:12Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "Crypto for Advisors: What are tokenized deposits?",
@@ -4457,35 +4498,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/web3/2026/08/20/optimism-funded-team-s-deciding-vote-shifts-usd49-million-in-op-tokens-away-from-users",
           "publishedAt": "2026-08-20T12:00:25Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Ripple-linked XRP jumps 15% as data shows 'banker hours' onchain pattern",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/20/ripple-linked-xrp-jumps-15-as-data-shows-banker-hours-onchain-pattern",
           "publishedAt": "2026-08-20T11:35:47Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Fed liquidity promises, dollar weakness could determine bitcoin's next move",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/08/20/fed-liquidity-promises-dollar-weakness-could-determine-bitcoin-s-next-move",
-          "publishedAt": "2026-08-20T11:31:10Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Bitcoin rally sparks debate whether Clarity Act is already priced in",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/20/crypto-s-bottom-is-near-as-ai-hype-fades-okx-europe-ceo-says",
-          "publishedAt": "2026-08-20T10:47:35Z",
-          "score": "0.2"
+          "score": "0.6"
         },
         {
           "title": "Bitcoin breaks above 200-day moving average for first time since November",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-breaks-200-day-moving-average?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-20T21:03:21Z",
-          "score": "0.7"
+          "score": "0.9"
         },
         {
           "title": "CFTC chair says agency will move forward on crypto regulation if CLARITY fails",
@@ -4534,7 +4561,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/optimism-moves-5469m-op-from-future-airdrops-to-ecosystem-growth-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-20T15:43:00Z",
-          "score": "0.1"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
