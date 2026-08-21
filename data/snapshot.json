@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-21T14:02:33Z",
+  "updatedAt": "2026-08-21T14:22:34Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "73098.01",
       "macd": {
-        "macdLine": "1886.02",
-        "signalLine": "651.51",
-        "histogram": "1234.51",
+        "macdLine": "1884.82",
+        "signalLine": "651.27",
+        "histogram": "1233.55",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001660",
       "ivRv": {
-        "iv": "55.53",
+        "iv": "42.98",
         "rv": "38.00",
-        "spread": "+17.53",
-        "label": "과대"
+        "spread": "+4.98",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 72,
@@ -2855,9 +2855,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255892301571.65050",
+      "totalMarketCapUsd": "255949203162.35388",
       "marketCap30dAgoUsd": "257397794382.23199",
-      "growth30dPercent": "-0.58",
+      "growth30dPercent": "-0.56",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "76849.70",
-      "openInterestUsd": "8311687490.46962700",
-      "longAccountRatio": "0.5103",
-      "shortAccountRatio": "0.4897",
-      "downsideLiquidationUsd": "4241454126.39",
-      "upsideLiquidationUsd": "4070233364.08",
+      "currentPrice": "76860.90",
+      "openInterestUsd": "8236470652.24856950",
+      "longAccountRatio": "0.5122",
+      "shortAccountRatio": "0.4878",
+      "downsideLiquidationUsd": "4218720268.08",
+      "upsideLiquidationUsd": "4017750384.17",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "69164.73",
+          "price": "69174.81",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1696581650.55"
+          "notionalUsd": "1687488107.23"
         },
         {
-          "price": "84534.67",
+          "price": "84546.99",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1628093345.63"
+          "notionalUsd": "1607100153.67"
         },
         {
-          "price": "73775.71",
+          "price": "73786.46",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1484508944.24"
+          "notionalUsd": "1476552093.83"
         },
         {
-          "price": "79923.69",
+          "price": "79935.34",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1424581677.43"
+          "notionalUsd": "1406212634.46"
         },
         {
-          "price": "75312.71",
+          "price": "75323.68",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "848290825.28"
+          "notionalUsd": "843744053.62"
         },
         {
-          "price": "78386.69",
+          "price": "78398.12",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "814046672.82"
+          "notionalUsd": "803550076.83"
         },
         {
-          "price": "76081.20",
+          "price": "76092.29",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "212072706.32"
+          "notionalUsd": "210936013.40"
         },
         {
-          "price": "77618.20",
+          "price": "77629.51",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "203511668.20"
+          "notionalUsd": "200887519.21"
         }
       ],
       "errorMessage": null
@@ -4443,11 +4443,11 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-21T13:05:02.981623Z",
-      "compositeScore": "0.156",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-08-21T14:05:05.111809Z",
+      "compositeScore": "0.306",
+      "label": "POSITIVE",
+      "labelDisplay": "긍정",
+      "labelHexColor": "#10B981",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
@@ -4491,7 +4491,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/21/bitcoin-tops-usd77-000-as-best-week-since-2023-pulls-altcoins-along-for-the-ride",
           "publishedAt": "2026-08-21T10:15:36Z",
-          "score": "0.7"
+          "score": "0.8"
         },
         {
           "title": "Treasury's latest measure isn't QE or YCC. Still, bitcoin is skyrocketing. Here's why.",
@@ -4505,7 +4505,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/21/strategy-sits-on-usd1-4-billion-profit-on-bitcoin-holdings-as-price-surges",
           "publishedAt": "2026-08-21T08:24:52Z",
-          "score": "0.4"
+          "score": "0.7"
+        },
+        {
+          "title": "Solana cuts blockchain slot time to 350 milliseconds",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/solana-cuts-blockchain-slot-time-350-milliseconds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-21T13:45:13Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Laser Digital gets Japan’s first crypto exchange approval in 4 years",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/nomuras-laser-digital-japans-first-crypto-exchange-4-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-21T13:08:12Z",
+          "score": "0.5"
         },
         {
           "title": "Binance says employees questioned in UAE cleared and released",
@@ -4519,28 +4533,28 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/standard-chartered-100k-bitcoin-2026-prediction-low?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-21T11:58:10Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Coldcard strengthens seed generation with firmware update",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coldcard-upgrade-strengthen-seed-phrase-generation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-21T10:13:23Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Strategy Bitcoin treasury hits breakeven point as BTC price passes $77K",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/strategy-bitcoin-treasury-hits-breakeven-point-as-btc-price-passes-77k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-21T08:48:52Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Bitcoin ETFs draw $608M as Ether ETFs see largest inflow since October",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-etfs-ether-etfs-largest-inflow-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-21T07:50:01Z",
-          "score": "0.6"
+          "score": "0.9"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4548,20 +4562,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-21T05:53:11Z",
           "score": "0.0"
-        },
-        {
-          "title": "South Korean lawmakers seek expanded FIU powers over unregistered crypto firms",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/south-korea-fiu-unregistered-crypto-firms-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-21T05:47:16Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "MANTRA token sinks 18% to record low amid blockchain halt",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/mantra-token-record-low-blockchain-halt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-21T05:04:52Z",
-          "score": "-0.7"
         }
       ],
       "errorMessage": null
