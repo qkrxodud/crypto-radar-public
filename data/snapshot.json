@@ -1,14 +1,84 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-21T02:45:24Z",
+  "updatedAt": "2026-08-21T03:08:11Z",
   "data": {
     "api_dashboard": {
-      "hasData": false,
-      "errorMessage": "timed out"
+      "hasData": true,
+      "score": 63,
+      "signalLabel": "NEUTRAL",
+      "signalDisplay": "중립",
+      "btcClose": "73098.01",
+      "fearGreed": 72,
+      "dataDate": "2026-08-21",
+      "scoreDelta": -1,
+      "weeklyAverageScore": 63,
+      "monthlyAverageScore": 64,
+      "halvingDaysAfter": 854,
+      "halvingPhase": "사이클 후기",
+      "halvingPhaseEn": "Late Cycle",
+      "actionType": "HOLD",
+      "actionReason": "관망 구간 (점수 63) — 다음 매수 기회 대기 중",
+      "indicatorBreakdown": {
+        "공포탐욕": 28,
+        "펀딩비": 45,
+        "롱숏비율": 100,
+        "테이커비율": 70,
+        "OI비율": 76,
+        "BTC도미넌스": 95,
+        "김치프리미엄": 100,
+        "RSI(일)": 0,
+        "RSI(주)": 45,
+        "MVRV Z": 77,
+        "스테이블코인": 60,
+        "ETH/BTC": 68,
+        "MA200비율": 78,
+        "Puell Multiple": 84,
+        "Active Addresses": 44,
+        "Hash Rate": 37,
+        "DXY": 76,
+        "S&P500": 70,
+        "Put/Call": 55,
+        "VIX": 0,
+        "M2 성장률": 47,
+        "반감기사이클": 27,
+        "변동성(HV)": 100,
+        "Pi사이클": 100,
+        "NUPL": 46,
+        "SOPR": 63,
+        "LTH/STH": 100
+      },
+      "errorMessage": null
     },
     "api_dashboard_technical": {
-      "hasData": false,
-      "errorMessage": "timed out"
+      "hasData": true,
+      "rsiDaily": "80.43",
+      "rsiWeekly": "51.86",
+      "rsiMonthly": "52.30",
+      "ma200Ratio": "1.06",
+      "ma200Value": "68960",
+      "ma200DistancePct": "6.0",
+      "piCycleGap": "0.59",
+      "historicalVolatility": "0.38",
+      "btcClose": "73098.01",
+      "macd": {
+        "macdLine": "1683.22",
+        "signalLine": "610.95",
+        "histogram": "1072.27",
+        "crossType": "NONE",
+        "crossLabel": "크로스 없음",
+        "bullish": true
+      },
+      "adx": {
+        "adx": "23.7",
+        "plusDi": "48.9",
+        "minusDi": "10.5",
+        "strength": "MODERATE_UP",
+        "strengthLabel": "보통 상승 추세",
+        "trending": true
+      },
+      "optionsSkew25d": "35.40",
+      "perpBasisSpread": "-0.0472",
+      "errorMessage": null
     },
     "api_dashboard_onchain": {
       "hasData": true,
@@ -322,12 +392,866 @@
       "errorMessage": null
     },
     "api_dashboard_sentiment": {
-      "hasData": false,
-      "errorMessage": "timed out"
+      "hasData": true,
+      "fearGreed": 72,
+      "fundingRate": "0.00004964",
+      "openInterestRatio": "1.00",
+      "putCallRatio": "0.5590",
+      "longShortRatio": "0.96",
+      "takerBuySellRatio": "1.12",
+      "lthSthRatio": "0.8409",
+      "fundingHistory": [
+        {
+          "date": "2026-08-15",
+          "value": "0.00006801"
+        },
+        {
+          "date": "2026-08-16",
+          "value": "0.00000966"
+        },
+        {
+          "date": "2026-08-17",
+          "value": "0.00003818"
+        },
+        {
+          "date": "2026-08-18",
+          "value": "0.00005164"
+        },
+        {
+          "date": "2026-08-19",
+          "value": "0.00001617"
+        },
+        {
+          "date": "2026-08-20",
+          "value": "0.00009655"
+        },
+        {
+          "date": "2026-08-21",
+          "value": "0.00004964"
+        }
+      ],
+      "cumulativeFunding7d": "0.0003",
+      "cumulativeFunding30d": "0.001660",
+      "ivRv": {
+        "iv": "42.78",
+        "rv": "38.00",
+        "spread": "+4.78",
+        "label": "균형"
+      },
+      "fearGreedMa": {
+        "currentFg": 72,
+        "fgMa30": "32.1",
+        "btcMa30": "64665.91",
+        "consecutiveFear": 0,
+        "maxConsecutiveFear": 26,
+        "interpretation": "탐욕, 주의 필요"
+      },
+      "iv30d": "38.15",
+      "perpBasisSpread": "-0.0472",
+      "optionsSkew25d": "35.40",
+      "errorMessage": null
     },
     "api_dashboard_cycle": {
-      "hasData": false,
-      "errorMessage": "timed out"
+      "hasData": true,
+      "halvingCycle": {
+        "position": "58.5%",
+        "progressWidth": 59,
+        "phaseLabel": "과열 구간 (Q3)",
+        "phaseLabelEn": "Euphoria (Q3)",
+        "phaseBadgeClass": "bg-warning text-dark",
+        "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
+        "phaseDescriptionEn": "The historical cycle top forms. Consider taking profits.",
+        "formattedElapsed": "853일 경과",
+        "formattedRemaining": "605일 남음",
+        "cycleNumber": 4,
+        "lastHalvingDate": "2024-04-20",
+        "nextHalvingDate": "2028-04-17",
+        "progressBarColor": "#F59E0B"
+      },
+      "heatmapDates": [
+        "08-15",
+        "08-16",
+        "08-17",
+        "08-18",
+        "08-19",
+        "08-20",
+        "08-21"
+      ],
+      "heatmapRows": [
+        {
+          "cells": [
+            {
+              "date": "08-15",
+              "color": "down",
+              "value": "42.73"
+            },
+            {
+              "date": "08-16",
+              "color": "down",
+              "value": "43.11"
+            },
+            {
+              "date": "08-17",
+              "color": "down",
+              "value": "42.05"
+            },
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "53.92"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "54.75"
+            },
+            {
+              "date": "08-20",
+              "color": "up",
+              "value": "73.99"
+            },
+            {
+              "date": "08-21",
+              "color": "up",
+              "value": "80.43"
+            }
+          ],
+          "label": "RSI"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-15",
+              "color": "down",
+              "value": "34.00"
+            },
+            {
+              "date": "08-16",
+              "color": "down",
+              "value": "34.00"
+            },
+            {
+              "date": "08-17",
+              "color": "down",
+              "value": "31.00"
+            },
+            {
+              "date": "08-18",
+              "color": "down",
+              "value": "41.00"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "46.00"
+            },
+            {
+              "date": "08-20",
+              "color": "up",
+              "value": "62.00"
+            },
+            {
+              "date": "08-21",
+              "color": "up",
+              "value": "72.00"
+            }
+          ],
+          "label": "Fear&Greed"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-15",
+              "color": "down",
+              "value": "0.37"
+            },
+            {
+              "date": "08-16",
+              "color": "down",
+              "value": "0.37"
+            },
+            {
+              "date": "08-17",
+              "color": "down",
+              "value": "0.36"
+            },
+            {
+              "date": "08-18",
+              "color": "down",
+              "value": "0.36"
+            },
+            {
+              "date": "08-19",
+              "color": "down",
+              "value": "0.35"
+            },
+            {
+              "date": "08-20",
+              "color": "down",
+              "value": "0.41"
+            },
+            {
+              "date": "08-21",
+              "color": "down",
+              "value": "0.41"
+            }
+          ],
+          "label": "MVRV"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-15",
+              "color": "amber",
+              "value": "0.17"
+            },
+            {
+              "date": "08-16",
+              "color": "amber",
+              "value": "0.17"
+            },
+            {
+              "date": "08-17",
+              "color": "amber",
+              "value": "0.17"
+            },
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "0.19"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "0.19"
+            },
+            {
+              "date": "08-20",
+              "color": "amber",
+              "value": "0.25"
+            },
+            {
+              "date": "08-21",
+              "color": "amber",
+              "value": "0.29"
+            }
+          ],
+          "label": "NUPL"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-15",
+              "color": "amber",
+              "value": "56.00"
+            },
+            {
+              "date": "08-16",
+              "color": "amber",
+              "value": "56.00"
+            },
+            {
+              "date": "08-17",
+              "color": "amber",
+              "value": "56.00"
+            },
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "57.00"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "57.00"
+            },
+            {
+              "date": "08-20",
+              "color": "amber",
+              "value": "57.00"
+            },
+            {
+              "date": "08-21",
+              "color": "amber",
+              "value": "59.00"
+            }
+          ],
+          "label": "BTC도미"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-15",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-16",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-17",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-20",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-21",
+              "color": "amber",
+              "value": "0.00"
+            }
+          ],
+          "label": "펀딩비"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-15",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-16",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-17",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-20",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-21",
+              "color": "amber",
+              "value": "0.99"
+            }
+          ],
+          "label": "SOPR"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-15",
+              "color": "down",
+              "value": "0.24"
+            },
+            {
+              "date": "08-16",
+              "color": "down",
+              "value": "0.26"
+            },
+            {
+              "date": "08-17",
+              "color": "down",
+              "value": "0.49"
+            },
+            {
+              "date": "08-18",
+              "color": "down",
+              "value": "-0.14"
+            },
+            {
+              "date": "08-19",
+              "color": "down",
+              "value": "-0.35"
+            },
+            {
+              "date": "08-20",
+              "color": "down",
+              "value": "-1.23"
+            },
+            {
+              "date": "08-21",
+              "color": "down",
+              "value": "-1.39"
+            }
+          ],
+          "label": "김치P"
+        }
+      ],
+      "score90History": [
+        {
+          "date": "2026-05-19",
+          "score": 65,
+          "btcClose": "76875.18"
+        },
+        {
+          "date": "2026-05-20",
+          "score": 64,
+          "btcClose": "77620.77"
+        },
+        {
+          "date": "2026-05-21",
+          "score": 65,
+          "btcClose": "77640.82"
+        },
+        {
+          "date": "2026-05-22",
+          "score": 65,
+          "btcClose": "77546.93"
+        },
+        {
+          "date": "2026-05-23",
+          "score": 65,
+          "btcClose": "75576.58"
+        },
+        {
+          "date": "2026-05-24",
+          "score": 68,
+          "btcClose": "76696.00"
+        },
+        {
+          "date": "2026-05-25",
+          "score": 68,
+          "btcClose": "77138.68"
+        },
+        {
+          "date": "2026-05-26",
+          "score": 69,
+          "btcClose": "77262.23"
+        },
+        {
+          "date": "2026-05-27",
+          "score": 66,
+          "btcClose": "75047.87"
+        },
+        {
+          "date": "2026-05-28",
+          "score": 66,
+          "btcClose": "73303.53"
+        },
+        {
+          "date": "2026-05-29",
+          "score": 66,
+          "btcClose": "73696.65"
+        },
+        {
+          "date": "2026-05-30",
+          "score": 65,
+          "btcClose": "73450.09"
+        },
+        {
+          "date": "2026-05-31",
+          "score": 67,
+          "btcClose": "74190.01"
+        },
+        {
+          "date": "2026-06-01",
+          "score": 64,
+          "btcClose": "71569.99"
+        },
+        {
+          "date": "2026-06-02",
+          "score": 64,
+          "btcClose": "71325.84"
+        },
+        {
+          "date": "2026-06-03",
+          "score": 63,
+          "btcClose": "66753.12"
+        },
+        {
+          "date": "2026-06-04",
+          "score": 64,
+          "btcClose": "64351.15"
+        },
+        {
+          "date": "2026-06-05",
+          "score": 66,
+          "btcClose": "63740.00"
+        },
+        {
+          "date": "2026-06-06",
+          "score": 67,
+          "btcClose": "60976.61"
+        },
+        {
+          "date": "2026-06-07",
+          "score": 67,
+          "btcClose": "61902.11"
+        },
+        {
+          "date": "2026-06-08",
+          "score": 66,
+          "btcClose": "61810.01"
+        },
+        {
+          "date": "2026-06-09",
+          "score": 67,
+          "btcClose": "63548.02"
+        },
+        {
+          "date": "2026-06-10",
+          "score": 64,
+          "btcClose": "61839.99"
+        },
+        {
+          "date": "2026-06-11",
+          "score": 65,
+          "btcClose": "61574.52"
+        },
+        {
+          "date": "2026-06-12",
+          "score": 68,
+          "btcClose": "63584.00"
+        },
+        {
+          "date": "2026-06-13",
+          "score": 65,
+          "btcClose": "63562.01"
+        },
+        {
+          "date": "2026-06-14",
+          "score": 68,
+          "btcClose": "64317.89"
+        },
+        {
+          "date": "2026-06-15",
+          "score": 65,
+          "btcClose": "64317.89"
+        },
+        {
+          "date": "2026-06-16",
+          "score": 64,
+          "btcClose": "66312.75"
+        },
+        {
+          "date": "2026-06-18",
+          "score": 64,
+          "btcClose": "64610.00"
+        },
+        {
+          "date": "2026-06-19",
+          "score": 65,
+          "btcClose": "62980.85"
+        },
+        {
+          "date": "2026-06-20",
+          "score": 65,
+          "btcClose": "63510.43"
+        },
+        {
+          "date": "2026-06-21",
+          "score": 65,
+          "btcClose": "64255.27"
+        },
+        {
+          "date": "2026-06-22",
+          "score": 63,
+          "btcClose": "63433.97"
+        },
+        {
+          "date": "2026-06-24",
+          "score": 62,
+          "btcClose": "62746.78"
+        },
+        {
+          "date": "2026-06-25",
+          "score": 63,
+          "btcClose": "61102.02"
+        },
+        {
+          "date": "2026-06-26",
+          "score": 64,
+          "btcClose": "59826.01"
+        },
+        {
+          "date": "2026-06-27",
+          "score": 63,
+          "btcClose": "60112.01"
+        },
+        {
+          "date": "2026-06-28",
+          "score": 65,
+          "btcClose": "60041.19"
+        },
+        {
+          "date": "2026-06-29",
+          "score": 66,
+          "btcClose": "62619.10"
+        },
+        {
+          "date": "2026-06-30",
+          "score": 66,
+          "btcClose": "62619.10"
+        },
+        {
+          "date": "2026-07-01",
+          "score": 65,
+          "btcClose": "58726.00"
+        },
+        {
+          "date": "2026-07-02",
+          "score": 67,
+          "btcClose": "59910.84"
+        },
+        {
+          "date": "2026-07-03",
+          "score": 65,
+          "btcClose": "62619.10"
+        },
+        {
+          "date": "2026-07-04",
+          "score": 68,
+          "btcClose": "62922.00"
+        },
+        {
+          "date": "2026-07-05",
+          "score": 67,
+          "btcClose": "63070.11"
+        },
+        {
+          "date": "2026-07-06",
+          "score": 65,
+          "btcClose": "63710.01"
+        },
+        {
+          "date": "2026-07-07",
+          "score": 64,
+          "btcClose": "64058.77"
+        },
+        {
+          "date": "2026-07-08",
+          "score": 65,
+          "btcClose": "63431.07"
+        },
+        {
+          "date": "2026-07-09",
+          "score": 65,
+          "btcClose": "62205.95"
+        },
+        {
+          "date": "2026-07-11",
+          "score": 65,
+          "btcClose": "64103.79"
+        },
+        {
+          "date": "2026-07-12",
+          "score": 64,
+          "btcClose": "63896.42"
+        },
+        {
+          "date": "2026-07-13",
+          "score": 63,
+          "btcClose": "63874.72"
+        },
+        {
+          "date": "2026-07-14",
+          "score": 60,
+          "btcClose": "62314.00"
+        },
+        {
+          "date": "2026-07-15",
+          "score": 65,
+          "btcClose": "65001.13"
+        },
+        {
+          "date": "2026-07-16",
+          "score": 63,
+          "btcClose": "64825.69"
+        },
+        {
+          "date": "2026-07-17",
+          "score": 65,
+          "btcClose": "63790.02"
+        },
+        {
+          "date": "2026-07-18",
+          "score": 64,
+          "btcClose": "63919.99"
+        },
+        {
+          "date": "2026-07-19",
+          "score": 67,
+          "btcClose": "64835.00"
+        },
+        {
+          "date": "2026-07-20",
+          "score": 64,
+          "btcClose": "64641.98"
+        },
+        {
+          "date": "2026-07-21",
+          "score": 64,
+          "btcClose": "65234.26"
+        },
+        {
+          "date": "2026-07-23",
+          "score": 66,
+          "btcClose": "66138.21"
+        },
+        {
+          "date": "2026-07-24",
+          "score": 63,
+          "btcClose": "65029.99"
+        },
+        {
+          "date": "2026-07-25",
+          "score": 63,
+          "btcClose": "64167.16"
+        },
+        {
+          "date": "2026-07-26",
+          "score": 63,
+          "btcClose": "64387.99"
+        },
+        {
+          "date": "2026-07-27",
+          "score": 60,
+          "btcClose": "65286.00"
+        },
+        {
+          "date": "2026-07-28",
+          "score": 59,
+          "btcClose": "63756.92"
+        },
+        {
+          "date": "2026-07-29",
+          "score": 60,
+          "btcClose": "64041.85"
+        },
+        {
+          "date": "2026-07-30",
+          "score": 62,
+          "btcClose": "64018.00"
+        },
+        {
+          "date": "2026-07-31",
+          "score": 65,
+          "btcClose": "64878.96"
+        },
+        {
+          "date": "2026-08-02",
+          "score": 65,
+          "btcClose": "62897.33"
+        },
+        {
+          "date": "2026-08-03",
+          "score": 65,
+          "btcClose": "63510.72"
+        },
+        {
+          "date": "2026-08-04",
+          "score": 65,
+          "btcClose": "63585.09"
+        },
+        {
+          "date": "2026-08-05",
+          "score": 68,
+          "btcClose": "64075.79"
+        },
+        {
+          "date": "2026-08-06",
+          "score": 69,
+          "btcClose": "64620.23"
+        },
+        {
+          "date": "2026-08-07",
+          "score": 69,
+          "btcClose": "64354.00"
+        },
+        {
+          "date": "2026-08-08",
+          "score": 70,
+          "btcClose": "64920.42"
+        },
+        {
+          "date": "2026-08-09",
+          "score": 69,
+          "btcClose": "64963.99"
+        },
+        {
+          "date": "2026-08-10",
+          "score": 66,
+          "btcClose": "64896.00"
+        },
+        {
+          "date": "2026-08-11",
+          "score": 62,
+          "btcClose": "63944.50"
+        },
+        {
+          "date": "2026-08-12",
+          "score": 62,
+          "btcClose": "63566.01"
+        },
+        {
+          "date": "2026-08-13",
+          "score": 62,
+          "btcClose": "63460.33"
+        },
+        {
+          "date": "2026-08-14",
+          "score": 63,
+          "btcClose": "63473.99"
+        },
+        {
+          "date": "2026-08-15",
+          "score": 62,
+          "btcClose": "63026.07"
+        },
+        {
+          "date": "2026-08-16",
+          "score": 63,
+          "btcClose": "63072.52"
+        },
+        {
+          "date": "2026-08-17",
+          "score": 61,
+          "btcClose": "62909.15"
+        },
+        {
+          "date": "2026-08-18",
+          "score": 64,
+          "btcClose": "64482.33"
+        },
+        {
+          "date": "2026-08-19",
+          "score": 64,
+          "btcClose": "64633.05"
+        },
+        {
+          "date": "2026-08-20",
+          "score": 64,
+          "btcClose": "69548.54"
+        },
+        {
+          "date": "2026-08-21",
+          "score": 63,
+          "btcClose": "73098.01"
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_market_overview": {
       "hasData": true,
@@ -745,8 +1669,55 @@
       "errorMessage": null
     },
     "api_dashboard_checklist": {
-      "hasData": false,
-      "errorMessage": "timed out"
+      "hasData": true,
+      "passedCount": 4,
+      "totalCount": 8,
+      "progressWidth": "50.0",
+      "levelLabel": "좋음",
+      "levelDescription": "상당수 매수 조건이 충족되었습니다",
+      "items": [
+        {
+          "name": "공포탐욕 < 25",
+          "passed": false,
+          "reason": "공포 구간 아님 (현재: 72)"
+        },
+        {
+          "name": "RSI < 30",
+          "passed": false,
+          "reason": "과매도 아님 (현재: 80.43)"
+        },
+        {
+          "name": "MVRV < 1",
+          "passed": true,
+          "reason": "역사적 저평가 구간 (현재: 0.41)"
+        },
+        {
+          "name": "김프 < 2%",
+          "passed": true,
+          "reason": "김치프리미엄 적정 (현재: -1.39%)"
+        },
+        {
+          "name": "펀딩비 < 0",
+          "passed": false,
+          "reason": "롱 우세 (현재: 0.00004964)"
+        },
+        {
+          "name": "MA200 위",
+          "passed": true,
+          "reason": "장기 상승추세 확인 (MA200 대비: 1.06)"
+        },
+        {
+          "name": "해시리본 비항복",
+          "passed": false,
+          "reason": "해시리본 항복 진행 중"
+        },
+        {
+          "name": "ETF 순유입 > 0",
+          "passed": true,
+          "reason": "기관 매수 확인 (순유입: $209.26M)"
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_performance": {
       "hasData": true,
@@ -1884,9 +2855,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "255819394284.74372",
+      "totalMarketCapUsd": "255798438016.87468",
       "marketCap30dAgoUsd": "257397794382.23199",
-      "growth30dPercent": "-0.61",
+      "growth30dPercent": "-0.62",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -1954,67 +2925,8 @@
       "errorMessage": null
     },
     "api_dashboard_liquidation_heatmap": {
-      "hasData": true,
-      "currentPrice": "74683.80",
-      "openInterestUsd": "8025418289.20500000",
-      "longAccountRatio": "0.5057",
-      "shortAccountRatio": "0.4943",
-      "downsideLiquidationUsd": "4058454028.85",
-      "upsideLiquidationUsd": "3966964260.35",
-      "cascadeDirection": "BALANCED",
-      "cascadeLabel": "균형",
-      "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
-      "levels": [
-        {
-          "price": "67215.42",
-          "side": "LONG",
-          "leverage": 10,
-          "notionalUsd": "1623381611.54"
-        },
-        {
-          "price": "82152.18",
-          "side": "SHORT",
-          "leverage": 10,
-          "notionalUsd": "1586785704.14"
-        },
-        {
-          "price": "71696.45",
-          "side": "LONG",
-          "leverage": 25,
-          "notionalUsd": "1420458910.10"
-        },
-        {
-          "price": "77671.15",
-          "side": "SHORT",
-          "leverage": 25,
-          "notionalUsd": "1388437491.12"
-        },
-        {
-          "price": "73190.12",
-          "side": "LONG",
-          "leverage": 50,
-          "notionalUsd": "811690805.77"
-        },
-        {
-          "price": "76177.48",
-          "side": "SHORT",
-          "leverage": 50,
-          "notionalUsd": "793392852.07"
-        },
-        {
-          "price": "73936.96",
-          "side": "LONG",
-          "leverage": 100,
-          "notionalUsd": "202922701.44"
-        },
-        {
-          "price": "75430.64",
-          "side": "SHORT",
-          "leverage": 100,
-          "notionalUsd": "198348213.02"
-        }
-      ],
-      "errorMessage": null
+      "hasData": false,
+      "errorMessage": "timed out"
     },
     "api_dashboard_rolling_correlation": {
       "hasData": true,
@@ -3408,7 +4320,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-21T02:30:44.662357Z",
+      "generatedAt": "2026-08-21T03:05:46.422070Z",
       "compositeScore": 63,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -3417,183 +4329,34 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리를 보이며, 알트코인 시장은 다소 약세를 보이고 있다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 알트코인에 대한 관심이 낮아지고 있다."
         },
         {
           "type": "RISK",
-          "content": "높은 RSI 수치로 인해 과매수 상태에 진입할 위험이 있다."
+          "content": "높은 RSI 수치로 인해 과매수 상태의 위험이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 59로 상승하면서 알트코인에 대한 투자 심리가 위축될 수 있다."
+          "content": "거래소 순유입이 증가하여 매도 압력이 커질 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "현재 포지션을 유지하며 시장 변동성을 주의 깊게 관찰하라."
+          "content": "시장의 변동성을 고려하여 신중한 매매를 권장한다."
         },
         {
           "type": "ACTION",
-          "content": "알트코인에 대한 추가 투자는 신중하게 고려하라."
+          "content": "알트코인 투자 비중을 줄이고 BTC에 집중할 것을 추천한다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
-      "hasData": true,
-      "generatedAt": "2026-08-21T02:22:04.127994Z",
-      "compositeScore": 63,
-      "tone": "NEUTRAL",
-      "toneDisplay": "Neutral",
-      "toneHexColor": "#FBBF24",
-      "modelName": "gpt-4o-mini",
-      "sections": [
-        {
-          "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed signals across various indicators."
-        },
-        {
-          "type": "RISK",
-          "content": "High RSI indicates potential overbought conditions."
-        },
-        {
-          "type": "RISK",
-          "content": "Decreasing altcoin season index suggests weakening altcoin performance."
-        },
-        {
-          "type": "ACTION",
-          "content": "Monitor market closely for signs of trend reversal."
-        },
-        {
-          "type": "ACTION",
-          "content": "Consider profit-taking on overbought positions."
-        }
-      ],
-      "errorMessage": null
+      "hasData": false,
+      "errorMessage": "timed out"
     },
     "api_ai_news_sentiment": {
-      "hasData": true,
-      "generatedAt": "2026-08-21T02:05:55.665759Z",
-      "compositeScore": "0.175",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
-      "scoredCount": 16,
-      "modelName": "gpt-4o-mini",
-      "items": [
-        {
-          "title": "Bitcoin pushes past $75,000 as rally continues.",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/20/bitcoin-pushes-past-usd75-000-as-rally-continues",
-          "publishedAt": "2026-08-21T01:55:50Z",
-          "score": "1.0"
-        },
-        {
-          "title": "A $2 million bet on XRP volatility crosses the tape as prices surge",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/21/a-usd2-million-bet-on-xrp-volatility-crosses-the-tape-as-prices-surge",
-          "publishedAt": "2026-08-21T01:51:56Z",
-          "score": "0.5"
-        },
-        {
-          "title": "U.S. CFTC chief puts staff on notice to create crypto regulations if Clarity Act fails",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/20/u-s-cftc-chief-puts-staff-on-notice-to-create-crypto-regulations-if-clarity-act-fails",
-          "publishedAt": "2026-08-20T18:54:18Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Treasury buybacks could set up Bitcoinâs next move toward $180,000, says strategist",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/20/treasury-buybacks-could-set-up-bitcoin-s-next-move-toward-usd180-000",
-          "publishedAt": "2026-08-20T16:17:32Z",
-          "score": "0.8"
-        },
-        {
-          "title": "Bitcoin's jump above $71,000 sets up bullish golden cross pattern",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/20/bitcoin-s-jump-above-usd71-000-sets-up-bullish-golden-cross-pattern",
-          "publishedAt": "2026-08-20T15:16:12Z",
-          "score": "0.7"
-        },
-        {
-          "title": "Crypto for Advisors: What are tokenized deposits?",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/coindesk-indices/2026/08/20/crypto-for-advisors-what-are-tokenized-deposits",
-          "publishedAt": "2026-08-20T15:01:40Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Optimism-funded team's deciding vote shifts $49 million in OP tokens away from users",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/web3/2026/08/20/optimism-funded-team-s-deciding-vote-shifts-usd49-million-in-op-tokens-away-from-users",
-          "publishedAt": "2026-08-20T12:00:25Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Ripple-linked XRP jumps 15% as data shows 'banker hours' onchain pattern",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/20/ripple-linked-xrp-jumps-15-as-data-shows-banker-hours-onchain-pattern",
-          "publishedAt": "2026-08-20T11:35:47Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Bitcoin breaks above 200-day moving average for first time since November",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-breaks-200-day-moving-average?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-20T21:03:21Z",
-          "score": "0.9"
-        },
-        {
-          "title": "CFTC chair says agency will move forward on crypto regulation if CLARITY fails",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/cftc-chair-crypto-regulation-without-clarity-act-congress?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-20T20:56:23Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Binance opens crypto trading to AI agents with user-set controls",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/binance-opens-crypto-trading-to-ai-agents-with-user-set-controls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-20T20:26:28Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-20T19:50:32Z",
-          "score": "0.0"
-        },
-        {
-          "title": "US debt tops $40T stoking debate on what it means for Bitcoin",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-surges-after-us-debt-crosses-40t?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-20T17:43:58Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "Bitcoin miners pour billions into AI as capex outpaces revenue 15-to-1",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitcoin-miners-ai-hpc-capex-revenue-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-20T16:12:00Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "Most Americans say the Trump family’s crypto investments are not ‘appropriate’: Poll",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/americans-donald-trump-crypto-investments-inappropriate-poll?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-20T15:53:51Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Optimism moves 546.9M OP from future airdrops to ecosystem growth fund",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/optimism-moves-5469m-op-from-future-airdrops-to-ecosystem-growth-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-20T15:43:00Z",
-          "score": "0.2"
-        }
-      ],
-      "errorMessage": null
+      "hasData": false,
+      "errorMessage": "timed out"
     }
   }
 }
