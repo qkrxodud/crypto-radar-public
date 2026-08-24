@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-24T08:59:02Z",
+  "updatedAt": "2026-08-24T09:19:05Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "77616.72",
       "macd": {
-        "macdLine": "3359.48",
-        "signalLine": "1852.45",
-        "histogram": "1507.03",
+        "macdLine": "3379.90",
+        "signalLine": "1856.53",
+        "histogram": "1523.36",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001833",
       "ivRv": {
-        "iv": "48.00",
+        "iv": "48.13",
         "rv": "43.00",
-        "spread": "+5.00",
+        "spread": "+5.13",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "77009.70",
-      "openInterestUsd": "8216197963.84880000",
-      "longAccountRatio": "0.5176",
-      "shortAccountRatio": "0.4824",
-      "downsideLiquidationUsd": "4252704066.09",
-      "upsideLiquidationUsd": "3963493897.76",
+      "currentPrice": "77249.60",
+      "openInterestUsd": "8219998131.81880300",
+      "longAccountRatio": "0.5187",
+      "shortAccountRatio": "0.4813",
+      "downsideLiquidationUsd": "4263713030.97",
+      "upsideLiquidationUsd": "3956285100.84",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "69308.73",
+          "price": "69524.64",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1701081626.44"
+          "notionalUsd": "1705485212.39"
         },
         {
-          "price": "84710.67",
+          "price": "84974.56",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1585397559.10"
+          "notionalUsd": "1582514040.34"
         },
         {
-          "price": "73929.31",
+          "price": "74159.62",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1488446423.13"
+          "notionalUsd": "1492299560.84"
         },
         {
-          "price": "80090.09",
+          "price": "80339.58",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1387222864.22"
+          "notionalUsd": "1384699785.30"
         },
         {
-          "price": "75469.51",
+          "price": "75704.61",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "850540813.22"
+          "notionalUsd": "852742606.19"
         },
         {
-          "price": "78549.89",
+          "price": "78794.59",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "792698779.55"
+          "notionalUsd": "791257020.17"
         },
         {
-          "price": "76239.60",
+          "price": "76477.10",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "212635203.30"
+          "notionalUsd": "213185651.55"
         },
         {
-          "price": "77779.80",
+          "price": "78022.10",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "198174694.89"
+          "notionalUsd": "197814255.04"
         }
       ],
       "errorMessage": null
@@ -4379,7 +4379,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-24T08:30:02.993734Z",
+      "generatedAt": "2026-08-24T09:00:02.092352Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4388,23 +4388,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 높아 투자 심리가 혼재되어 있다."
+          "content": "현재 시장은 중립적인 심리 상태이며, 가격 상승에 대한 기대감이 존재하지만 과열 신호도 포착되고 있다."
         },
         {
           "type": "RISK",
-          "content": "높은 RSI 수치로 인해 과매수 상태가 우려된다."
+          "content": "높은 RSI 수치로 인해 과매수 상태 가능성이 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 마이너스여서 유동성 감소 가능성이 있다."
+          "content": "BTC 도미넌스가 높아 알트코인 투자에 대한 리스크가 존재한다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매 전략을 고려하며 시장 상황을 주의 깊게 관찰하라."
+          "content": "단기 매매 전략을 고려하며 포지션을 조정하라."
         },
         {
           "type": "ACTION",
-          "content": "추가 매수는 신중하게 접근하고 손절매 설정을 권장한다."
+          "content": "시장의 변동성을 주의 깊게 모니터링하라."
         }
       ],
       "errorMessage": null
@@ -4443,69 +4443,76 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-24T08:05:02.645619Z",
-      "compositeScore": "0.100",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-08-24T09:05:02.889248Z",
+      "compositeScore": "0.281",
+      "label": "POSITIVE",
+      "labelDisplay": "긍정",
+      "labelHexColor": "#10B981",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Crypto roars back as bitcoin posts its second-best week since early 2021",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/24/crypto-roars-back-as-bitcoin-posts-its-second-best-week-since-early-2021",
+          "publishedAt": "2026-08-24T08:28:14Z",
+          "score": "0.8"
+        },
+        {
+          "title": "Jackson  Hole Symposium, U.S. PCE prices, IREN earnings: Crypto Week Ahead",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/24/jackson-hole-symposium-u-s-pce-prices-iren-earnings-crypto-week-ahead",
+          "publishedAt": "2026-08-24T08:16:29Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Live updates: Bitcoin holds $77,000 as XRP, Zcash pull back after a big weekly rally",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/24/live-updates-bitcoin-holds-usd77-000-as-xrp-zcash-pull-back-after-a-big-weekly-rally",
+          "publishedAt": "2026-08-24T08:05:57Z",
+          "score": "0.5"
+        },
         {
           "title": "Ether is crushing bitcoin and the 'golden cross' says it may not be done yet",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/24/ether-is-crushing-bitcoin-and-the-golden-cross-says-it-may-not-be-done-yet",
           "publishedAt": "2026-08-24T06:50:58Z",
-          "score": "-0.5"
+          "score": "0.1"
         },
         {
           "title": "Ethereum lending app Term Finance loses $8.5 million after attacker buys voting power",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/24/ethereum-lending-app-term-finance-loses-usd8-5-million-after-attacker-buys-voting-power",
           "publishedAt": "2026-08-24T06:27:33Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
           "title": "Ray Dalio says investors should own âa bit of Bitcoinâ as U.S. debt risks rise",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/24/ray-dalio-says-investors-should-own-a-bit-of-bitcoin-as-u-s-debt-risks-rise",
           "publishedAt": "2026-08-24T05:13:19Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Bessent's $4 billion bond buyback wanted lower yields. It got a bitcoin surge instead.",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/24/bessent-s-usd4-billion-bond-buyback-wanted-lower-yields-it-got-a-bitcoin-surge-instead",
           "publishedAt": "2026-08-24T05:12:56Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Stablecoin neobank Fasset lands $1 billion valuation as SBI backs its payments push",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/22/stablecoin-neobank-fasset-lands-usd1-billion-valuation-as-sbi-backs-its-payments-push",
           "publishedAt": "2026-08-24T04:45:00Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
-          "title": "Crypto holds big weekly rally as Warshâs Jackson Hole debut comes into focus",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/24/crypto-holds-big-weekly-rally-as-warsh-s-jackson-hole-debut-comes-into-focus",
-          "publishedAt": "2026-08-24T04:41:28Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Regulation Crypto is here: State of Crypto",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/23/regulation-crypto-is-here-state-of-crypto",
-          "publishedAt": "2026-08-23T18:30:00Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "XRP on track for biggest weekly gain in 21 months as Treasury buyback spurs 'curve control' hopes",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/23/xrp-on-track-for-biggest-weekly-gain-in-21-months-as-treasury-buyback-spurs-curve-control-hopes",
-          "publishedAt": "2026-08-23T15:52:21Z",
-          "score": "0.5"
+          "title": "Bitcoin ETF inflows hit $1.9B in strongest week since October 2025",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-etf-inflows-billion-strongest-week-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-24T08:56:52Z",
+          "score": "0.9"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4519,21 +4526,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/banks-regulators-quantum-resistant-crypto-pilot?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-24T05:51:29Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Pakistan opens crypto licensing portal, sets Sept. 5 deadline for existing firms",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/pakistan-crypto-licensing-portal-september-5-deadline?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-24T05:17:57Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "Term Finance loses estimated $8.5M in vault governance exploit",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/term-finance-8-5m-vault-governance-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-24T03:59:29Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "We are so back! Bitcoin’s 23% rally on US debt policy: Hodler’s Digest",
@@ -4547,21 +4554,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/fed-study-finds-crypto-investors-driven-by-beliefs-easily-swayed-by-returns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-23T15:30:53Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "MiCA is coming for DeFi vaults, but regulation will be difficult",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/mica-is-coming-for-defi-vaults-but-regulation-will-be-difficult?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-22T13:30:00Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Bitget CEO sees Bitcoin near current levels at year-end, doubts US will buy BTC",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitget-ceo-sees-bitcoin-near-current-levels-at-year-end-doubts-us-will-buy-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-21T20:26:16Z",
-          "score": "0.2"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
