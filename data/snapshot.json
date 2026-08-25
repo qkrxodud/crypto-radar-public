@@ -1,118 +1,4570 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-25T11:22:38Z",
+  "updatedAt": "2026-08-25T11:42:53Z",
   "data": {
     "api_dashboard": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "score": 61,
+      "signalLabel": "NEUTRAL",
+      "signalDisplay": "중립",
+      "btcClose": "77616.72",
+      "fearGreed": 73,
+      "dataDate": "2026-08-24",
+      "scoreDelta": -1,
+      "weeklyAverageScore": 63,
+      "monthlyAverageScore": 64,
+      "halvingDaysAfter": 857,
+      "halvingPhase": "사이클 후기",
+      "halvingPhaseEn": "Late Cycle",
+      "actionType": "HOLD",
+      "actionReason": "관망 구간 (점수 61) — 다음 매수 기회 대기 중",
+      "indicatorBreakdown": {
+        "공포탐욕": 27,
+        "펀딩비": 40,
+        "롱숏비율": 100,
+        "테이커비율": 46,
+        "OI비율": 78,
+        "BTC도미넌스": 95,
+        "김치프리미엄": 100,
+        "RSI(일)": 0,
+        "RSI(주)": 34,
+        "MVRV Z": 72,
+        "스테이블코인": 56,
+        "ETH/BTC": 68,
+        "MA200비율": 73,
+        "Puell Multiple": 84,
+        "Active Addresses": 44,
+        "Hash Rate": 16,
+        "DXY": 76,
+        "S&P500": 79,
+        "Put/Call": 59,
+        "VIX": 2,
+        "M2 성장률": 47,
+        "반감기사이클": 27,
+        "변동성(HV)": 100,
+        "Pi사이클": 100,
+        "NUPL": 43,
+        "SOPR": 63,
+        "LTH/STH": 100
+      },
+      "errorMessage": null
     },
     "api_dashboard_technical": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "rsiDaily": "80.25",
+      "rsiWeekly": "56.22",
+      "rsiMonthly": "54.03",
+      "ma200Ratio": "1.12",
+      "ma200Value": "69301",
+      "ma200DistancePct": "12.0",
+      "piCycleGap": "0.59",
+      "historicalVolatility": "0.43",
+      "btcClose": "77616.72",
+      "macd": {
+        "macdLine": "3841.32",
+        "signalLine": "2276.06",
+        "histogram": "1565.26",
+        "crossType": "NONE",
+        "crossLabel": "크로스 없음",
+        "bullish": true
+      },
+      "adx": {
+        "adx": "37.9",
+        "plusDi": "47.9",
+        "minusDi": "9.4",
+        "strength": "MODERATE_UP",
+        "strengthLabel": "보통 상승 추세",
+        "trending": true
+      },
+      "optionsSkew25d": "2.48",
+      "perpBasisSpread": "-0.0358",
+      "errorMessage": null
     },
     "api_dashboard_onchain": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "sopr": "0.9947",
+      "nupl": "0.32",
+      "mvrvZScore": "0.86",
+      "lthSthRatio": "0.8380",
+      "exchangeNetFlow": "-1274.78",
+      "exchangeReserve": "362606.72",
+      "puellMultiple": "0.8013",
+      "activeAddresses": "402442.00",
+      "hashRate": "889.9429",
+      "minerOutflow": null,
+      "netflowHistory": [
+        {
+          "value": "39.30",
+          "date": "2026-08-18"
+        },
+        {
+          "value": "-29.31",
+          "date": "2026-08-19"
+        },
+        {
+          "value": "262.01",
+          "date": "2026-08-20"
+        },
+        {
+          "value": "998.62",
+          "date": "2026-08-21"
+        },
+        {
+          "value": "-395.42",
+          "date": "2026-08-22"
+        },
+        {
+          "value": "-1278.74",
+          "date": "2026-08-23"
+        },
+        {
+          "value": "-1274.78",
+          "date": "2026-08-24"
+        }
+      ],
+      "realizedPrice": "52414.85",
+      "rhodlRatio": "10264.4500",
+      "btcClose": "77616.72",
+      "reserveRisk": "0.01325900",
+      "coinDaysDestroyed": "0.92",
+      "illiquidSupplyRatio": null,
+      "nvtSignal": "260.65",
+      "accumulationTrendScore": null,
+      "errorMessage": null
     },
     "api_dashboard_macro": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "dxy": "98.834",
+      "sp500": "7674.37",
+      "kimchiPremium": "-0.96",
+      "stablecoinDominance": "9.74",
+      "btcEtfNetFlow": "644.34",
+      "btcEtfNetFlowEstimated": false,
+      "dxyHistory": [
+        {
+          "value": "101.465",
+          "date": "2026-07-25"
+        },
+        {
+          "value": "101.465",
+          "date": "2026-07-26"
+        },
+        {
+          "value": "101.296",
+          "date": "2026-07-27"
+        },
+        {
+          "value": "101.537",
+          "date": "2026-07-28"
+        },
+        {
+          "value": "101.429",
+          "date": "2026-07-29"
+        },
+        {
+          "value": "100.794",
+          "date": "2026-07-30"
+        },
+        {
+          "value": "100.070",
+          "date": "2026-07-31"
+        },
+        {
+          "value": "99.803",
+          "date": "2026-08-02"
+        },
+        {
+          "value": "99.726",
+          "date": "2026-08-03"
+        },
+        {
+          "value": "100.022",
+          "date": "2026-08-04"
+        },
+        {
+          "value": "99.878",
+          "date": "2026-08-05"
+        },
+        {
+          "value": "99.652",
+          "date": "2026-08-06"
+        },
+        {
+          "value": "99.944",
+          "date": "2026-08-07"
+        },
+        {
+          "value": "99.604",
+          "date": "2026-08-08"
+        },
+        {
+          "value": "99.604",
+          "date": "2026-08-09"
+        },
+        {
+          "value": "99.621",
+          "date": "2026-08-10"
+        },
+        {
+          "value": "99.794",
+          "date": "2026-08-11"
+        },
+        {
+          "value": "99.809",
+          "date": "2026-08-12"
+        },
+        {
+          "value": "99.953",
+          "date": "2026-08-13"
+        },
+        {
+          "value": "99.922",
+          "date": "2026-08-14"
+        },
+        {
+          "value": "99.636",
+          "date": "2026-08-15"
+        },
+        {
+          "value": "99.636",
+          "date": "2026-08-16"
+        },
+        {
+          "value": "99.603",
+          "date": "2026-08-17"
+        },
+        {
+          "value": "99.541",
+          "date": "2026-08-18"
+        },
+        {
+          "value": "99.655",
+          "date": "2026-08-19"
+        },
+        {
+          "value": "98.832",
+          "date": "2026-08-20"
+        },
+        {
+          "value": "98.796",
+          "date": "2026-08-21"
+        },
+        {
+          "value": "98.839",
+          "date": "2026-08-22"
+        },
+        {
+          "value": "98.839",
+          "date": "2026-08-23"
+        },
+        {
+          "value": "98.834",
+          "date": "2026-08-24"
+        }
+      ],
+      "sp500History": [
+        {
+          "value": "7411.98",
+          "date": "2026-07-25"
+        },
+        {
+          "value": "7411.98",
+          "date": "2026-07-26"
+        },
+        {
+          "value": "7411.98",
+          "date": "2026-07-27"
+        },
+        {
+          "value": "7413.18",
+          "date": "2026-07-28"
+        },
+        {
+          "value": "7428.78",
+          "date": "2026-07-29"
+        },
+        {
+          "value": "7316.15",
+          "date": "2026-07-30"
+        },
+        {
+          "value": "7437.63",
+          "date": "2026-07-31"
+        },
+        {
+          "value": "7489.72",
+          "date": "2026-08-02"
+        },
+        {
+          "value": "7489.72",
+          "date": "2026-08-03"
+        },
+        {
+          "value": "7600.50",
+          "date": "2026-08-04"
+        },
+        {
+          "value": "7736.52",
+          "date": "2026-08-05"
+        },
+        {
+          "value": "7723.55",
+          "date": "2026-08-06"
+        },
+        {
+          "value": "7709.96",
+          "date": "2026-08-07"
+        },
+        {
+          "value": "7757.64",
+          "date": "2026-08-08"
+        },
+        {
+          "value": "7757.64",
+          "date": "2026-08-09"
+        },
+        {
+          "value": "7757.64",
+          "date": "2026-08-10"
+        },
+        {
+          "value": "7753.11",
+          "date": "2026-08-11"
+        },
+        {
+          "value": "7728.20",
+          "date": "2026-08-12"
+        },
+        {
+          "value": "7748.50",
+          "date": "2026-08-13"
+        },
+        {
+          "value": "7798.99",
+          "date": "2026-08-14"
+        },
+        {
+          "value": "7785.76",
+          "date": "2026-08-15"
+        },
+        {
+          "value": "7785.76",
+          "date": "2026-08-16"
+        },
+        {
+          "value": "7785.76",
+          "date": "2026-08-17"
+        },
+        {
+          "value": "7745.06",
+          "date": "2026-08-18"
+        },
+        {
+          "value": "7691.76",
+          "date": "2026-08-19"
+        },
+        {
+          "value": "7707.98",
+          "date": "2026-08-20"
+        },
+        {
+          "value": "7641.16",
+          "date": "2026-08-21"
+        },
+        {
+          "value": "7674.37",
+          "date": "2026-08-22"
+        },
+        {
+          "value": "7674.37",
+          "date": "2026-08-23"
+        },
+        {
+          "value": "7674.37",
+          "date": "2026-08-24"
+        }
+      ],
+      "goldPrice": "4679.60",
+      "usTreasury10y": "4.690",
+      "globalM2Growth": "5.530",
+      "vix": "16.01",
+      "fedFundsRate": "3.63",
+      "errorMessage": null
     },
     "api_dashboard_sentiment": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "fearGreed": 73,
+      "fundingRate": "0.00010000",
+      "openInterestRatio": "0.98",
+      "putCallRatio": "0.5950",
+      "longShortRatio": "1.07",
+      "takerBuySellRatio": "0.98",
+      "lthSthRatio": "0.8380",
+      "fundingHistory": [
+        {
+          "value": "0.00005164",
+          "date": "2026-08-18"
+        },
+        {
+          "value": "0.00001617",
+          "date": "2026-08-19"
+        },
+        {
+          "value": "0.00009655",
+          "date": "2026-08-20"
+        },
+        {
+          "value": "0.00004964",
+          "date": "2026-08-21"
+        },
+        {
+          "value": "0.00010000",
+          "date": "2026-08-22"
+        },
+        {
+          "value": "0.00010000",
+          "date": "2026-08-23"
+        },
+        {
+          "value": "0.00010000",
+          "date": "2026-08-24"
+        }
+      ],
+      "cumulativeFunding7d": "0.0005",
+      "cumulativeFunding30d": "0.001833",
+      "ivRv": {
+        "iv": "49.57",
+        "rv": "43.00",
+        "spread": "+6.57",
+        "label": "과대"
+      },
+      "fearGreedMa": {
+        "currentFg": 73,
+        "fgMa30": "36.3",
+        "btcMa30": "65884.02",
+        "consecutiveFear": 0,
+        "maxConsecutiveFear": 23,
+        "interpretation": "탐욕, 주의 필요"
+      },
+      "iv30d": "62.05",
+      "perpBasisSpread": "-0.0358",
+      "optionsSkew25d": "2.48",
+      "errorMessage": null
     },
     "api_dashboard_cycle": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "halvingCycle": {
+        "position": "58.8%",
+        "progressWidth": 59,
+        "phaseLabel": "과열 구간 (Q3)",
+        "phaseLabelEn": "Euphoria (Q3)",
+        "phaseBadgeClass": "bg-warning text-dark",
+        "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
+        "phaseDescriptionEn": "The historical cycle top forms. Consider taking profits.",
+        "formattedElapsed": "857일 경과",
+        "formattedRemaining": "601일 남음",
+        "cycleNumber": 4,
+        "lastHalvingDate": "2024-04-20",
+        "nextHalvingDate": "2028-04-17",
+        "progressBarColor": "#F59E0B"
+      },
+      "heatmapDates": [
+        "08-18",
+        "08-19",
+        "08-20",
+        "08-21",
+        "08-22",
+        "08-23",
+        "08-24"
+      ],
+      "heatmapRows": [
+        {
+          "cells": [
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "53.92"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "54.75"
+            },
+            {
+              "date": "08-20",
+              "color": "up",
+              "value": "73.99"
+            },
+            {
+              "date": "08-21",
+              "color": "up",
+              "value": "80.43"
+            },
+            {
+              "date": "08-22",
+              "color": "up",
+              "value": "85.23"
+            },
+            {
+              "date": "08-23",
+              "color": "up",
+              "value": "80.15"
+            },
+            {
+              "date": "08-24",
+              "color": "up",
+              "value": "80.25"
+            }
+          ],
+          "label": "RSI"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-18",
+              "color": "down",
+              "value": "41.00"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "46.00"
+            },
+            {
+              "date": "08-20",
+              "color": "up",
+              "value": "62.00"
+            },
+            {
+              "date": "08-21",
+              "color": "up",
+              "value": "72.00"
+            },
+            {
+              "date": "08-22",
+              "color": "up",
+              "value": "71.00"
+            },
+            {
+              "date": "08-23",
+              "color": "up",
+              "value": "66.00"
+            },
+            {
+              "date": "08-24",
+              "color": "up",
+              "value": "73.00"
+            }
+          ],
+          "label": "Fear&Greed"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-18",
+              "color": "down",
+              "value": "0.36"
+            },
+            {
+              "date": "08-19",
+              "color": "down",
+              "value": "0.35"
+            },
+            {
+              "date": "08-20",
+              "color": "down",
+              "value": "0.41"
+            },
+            {
+              "date": "08-21",
+              "color": "down",
+              "value": "0.41"
+            },
+            {
+              "date": "08-22",
+              "color": "down",
+              "value": "0.56"
+            },
+            {
+              "date": "08-23",
+              "color": "down",
+              "value": "0.69"
+            },
+            {
+              "date": "08-24",
+              "color": "down",
+              "value": "0.86"
+            }
+          ],
+          "label": "MVRV"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "0.19"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "0.19"
+            },
+            {
+              "date": "08-20",
+              "color": "amber",
+              "value": "0.25"
+            },
+            {
+              "date": "08-21",
+              "color": "amber",
+              "value": "0.29"
+            },
+            {
+              "date": "08-22",
+              "color": "up",
+              "value": "0.33"
+            },
+            {
+              "date": "08-23",
+              "color": "up",
+              "value": "0.32"
+            },
+            {
+              "date": "08-24",
+              "color": "up",
+              "value": "0.32"
+            }
+          ],
+          "label": "NUPL"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "57.00"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "57.00"
+            },
+            {
+              "date": "08-20",
+              "color": "amber",
+              "value": "57.00"
+            },
+            {
+              "date": "08-21",
+              "color": "amber",
+              "value": "59.00"
+            },
+            {
+              "date": "08-22",
+              "color": "amber",
+              "value": "59.00"
+            },
+            {
+              "date": "08-23",
+              "color": "amber",
+              "value": "59.00"
+            },
+            {
+              "date": "08-24",
+              "color": "amber",
+              "value": "59.00"
+            }
+          ],
+          "label": "BTC도미"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-20",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-21",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-22",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-23",
+              "color": "amber",
+              "value": "0.00"
+            },
+            {
+              "date": "08-24",
+              "color": "amber",
+              "value": "0.00"
+            }
+          ],
+          "label": "펀딩비"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-18",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-19",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-20",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-21",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-22",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-23",
+              "color": "amber",
+              "value": "0.99"
+            },
+            {
+              "date": "08-24",
+              "color": "amber",
+              "value": "0.99"
+            }
+          ],
+          "label": "SOPR"
+        },
+        {
+          "cells": [
+            {
+              "date": "08-18",
+              "color": "down",
+              "value": "-0.14"
+            },
+            {
+              "date": "08-19",
+              "color": "down",
+              "value": "-0.35"
+            },
+            {
+              "date": "08-20",
+              "color": "down",
+              "value": "-1.23"
+            },
+            {
+              "date": "08-21",
+              "color": "down",
+              "value": "-1.39"
+            },
+            {
+              "date": "08-22",
+              "color": "down",
+              "value": "-0.84"
+            },
+            {
+              "date": "08-23",
+              "color": "down",
+              "value": "-0.95"
+            },
+            {
+              "date": "08-24",
+              "color": "down",
+              "value": "-0.96"
+            }
+          ],
+          "label": "김치P"
+        }
+      ],
+      "score90History": [
+        {
+          "date": "2026-05-22",
+          "score": 65,
+          "btcClose": "77546.93"
+        },
+        {
+          "date": "2026-05-23",
+          "score": 65,
+          "btcClose": "75576.58"
+        },
+        {
+          "date": "2026-05-24",
+          "score": 68,
+          "btcClose": "76696.00"
+        },
+        {
+          "date": "2026-05-25",
+          "score": 68,
+          "btcClose": "77138.68"
+        },
+        {
+          "date": "2026-05-26",
+          "score": 69,
+          "btcClose": "77262.23"
+        },
+        {
+          "date": "2026-05-27",
+          "score": 66,
+          "btcClose": "75047.87"
+        },
+        {
+          "date": "2026-05-28",
+          "score": 66,
+          "btcClose": "73303.53"
+        },
+        {
+          "date": "2026-05-29",
+          "score": 66,
+          "btcClose": "73696.65"
+        },
+        {
+          "date": "2026-05-30",
+          "score": 65,
+          "btcClose": "73450.09"
+        },
+        {
+          "date": "2026-05-31",
+          "score": 67,
+          "btcClose": "74190.01"
+        },
+        {
+          "date": "2026-06-01",
+          "score": 64,
+          "btcClose": "71569.99"
+        },
+        {
+          "date": "2026-06-02",
+          "score": 64,
+          "btcClose": "71325.84"
+        },
+        {
+          "date": "2026-06-03",
+          "score": 63,
+          "btcClose": "66753.12"
+        },
+        {
+          "date": "2026-06-04",
+          "score": 64,
+          "btcClose": "64351.15"
+        },
+        {
+          "date": "2026-06-05",
+          "score": 66,
+          "btcClose": "63740.00"
+        },
+        {
+          "date": "2026-06-06",
+          "score": 67,
+          "btcClose": "60976.61"
+        },
+        {
+          "date": "2026-06-07",
+          "score": 67,
+          "btcClose": "61902.11"
+        },
+        {
+          "date": "2026-06-08",
+          "score": 66,
+          "btcClose": "61810.01"
+        },
+        {
+          "date": "2026-06-09",
+          "score": 67,
+          "btcClose": "63548.02"
+        },
+        {
+          "date": "2026-06-10",
+          "score": 64,
+          "btcClose": "61839.99"
+        },
+        {
+          "date": "2026-06-11",
+          "score": 65,
+          "btcClose": "61574.52"
+        },
+        {
+          "date": "2026-06-12",
+          "score": 68,
+          "btcClose": "63584.00"
+        },
+        {
+          "date": "2026-06-13",
+          "score": 65,
+          "btcClose": "63562.01"
+        },
+        {
+          "date": "2026-06-14",
+          "score": 68,
+          "btcClose": "64317.89"
+        },
+        {
+          "date": "2026-06-15",
+          "score": 65,
+          "btcClose": "64317.89"
+        },
+        {
+          "date": "2026-06-16",
+          "score": 64,
+          "btcClose": "66312.75"
+        },
+        {
+          "date": "2026-06-18",
+          "score": 64,
+          "btcClose": "64610.00"
+        },
+        {
+          "date": "2026-06-19",
+          "score": 65,
+          "btcClose": "62980.85"
+        },
+        {
+          "date": "2026-06-20",
+          "score": 65,
+          "btcClose": "63510.43"
+        },
+        {
+          "date": "2026-06-21",
+          "score": 65,
+          "btcClose": "64255.27"
+        },
+        {
+          "date": "2026-06-22",
+          "score": 63,
+          "btcClose": "63433.97"
+        },
+        {
+          "date": "2026-06-24",
+          "score": 62,
+          "btcClose": "62746.78"
+        },
+        {
+          "date": "2026-06-25",
+          "score": 63,
+          "btcClose": "61102.02"
+        },
+        {
+          "date": "2026-06-26",
+          "score": 64,
+          "btcClose": "59826.01"
+        },
+        {
+          "date": "2026-06-27",
+          "score": 63,
+          "btcClose": "60112.01"
+        },
+        {
+          "date": "2026-06-28",
+          "score": 65,
+          "btcClose": "60041.19"
+        },
+        {
+          "date": "2026-06-29",
+          "score": 66,
+          "btcClose": "62619.10"
+        },
+        {
+          "date": "2026-06-30",
+          "score": 66,
+          "btcClose": "62619.10"
+        },
+        {
+          "date": "2026-07-01",
+          "score": 65,
+          "btcClose": "58726.00"
+        },
+        {
+          "date": "2026-07-02",
+          "score": 67,
+          "btcClose": "59910.84"
+        },
+        {
+          "date": "2026-07-03",
+          "score": 65,
+          "btcClose": "62619.10"
+        },
+        {
+          "date": "2026-07-04",
+          "score": 68,
+          "btcClose": "62922.00"
+        },
+        {
+          "date": "2026-07-05",
+          "score": 67,
+          "btcClose": "63070.11"
+        },
+        {
+          "date": "2026-07-06",
+          "score": 65,
+          "btcClose": "63710.01"
+        },
+        {
+          "date": "2026-07-07",
+          "score": 64,
+          "btcClose": "64058.77"
+        },
+        {
+          "date": "2026-07-08",
+          "score": 65,
+          "btcClose": "63431.07"
+        },
+        {
+          "date": "2026-07-09",
+          "score": 65,
+          "btcClose": "62205.95"
+        },
+        {
+          "date": "2026-07-11",
+          "score": 65,
+          "btcClose": "64103.79"
+        },
+        {
+          "date": "2026-07-12",
+          "score": 64,
+          "btcClose": "63896.42"
+        },
+        {
+          "date": "2026-07-13",
+          "score": 63,
+          "btcClose": "63874.72"
+        },
+        {
+          "date": "2026-07-14",
+          "score": 60,
+          "btcClose": "62314.00"
+        },
+        {
+          "date": "2026-07-15",
+          "score": 65,
+          "btcClose": "65001.13"
+        },
+        {
+          "date": "2026-07-16",
+          "score": 63,
+          "btcClose": "64825.69"
+        },
+        {
+          "date": "2026-07-17",
+          "score": 65,
+          "btcClose": "63790.02"
+        },
+        {
+          "date": "2026-07-18",
+          "score": 64,
+          "btcClose": "63919.99"
+        },
+        {
+          "date": "2026-07-19",
+          "score": 67,
+          "btcClose": "64835.00"
+        },
+        {
+          "date": "2026-07-20",
+          "score": 64,
+          "btcClose": "64641.98"
+        },
+        {
+          "date": "2026-07-21",
+          "score": 64,
+          "btcClose": "65234.26"
+        },
+        {
+          "date": "2026-07-23",
+          "score": 66,
+          "btcClose": "66138.21"
+        },
+        {
+          "date": "2026-07-24",
+          "score": 63,
+          "btcClose": "65029.99"
+        },
+        {
+          "date": "2026-07-25",
+          "score": 63,
+          "btcClose": "64167.16"
+        },
+        {
+          "date": "2026-07-26",
+          "score": 63,
+          "btcClose": "64387.99"
+        },
+        {
+          "date": "2026-07-27",
+          "score": 60,
+          "btcClose": "65286.00"
+        },
+        {
+          "date": "2026-07-28",
+          "score": 59,
+          "btcClose": "63756.92"
+        },
+        {
+          "date": "2026-07-29",
+          "score": 60,
+          "btcClose": "64041.85"
+        },
+        {
+          "date": "2026-07-30",
+          "score": 62,
+          "btcClose": "64018.00"
+        },
+        {
+          "date": "2026-07-31",
+          "score": 65,
+          "btcClose": "64878.96"
+        },
+        {
+          "date": "2026-08-02",
+          "score": 65,
+          "btcClose": "62897.33"
+        },
+        {
+          "date": "2026-08-03",
+          "score": 65,
+          "btcClose": "63510.72"
+        },
+        {
+          "date": "2026-08-04",
+          "score": 65,
+          "btcClose": "63585.09"
+        },
+        {
+          "date": "2026-08-05",
+          "score": 68,
+          "btcClose": "64075.79"
+        },
+        {
+          "date": "2026-08-06",
+          "score": 69,
+          "btcClose": "64620.23"
+        },
+        {
+          "date": "2026-08-07",
+          "score": 69,
+          "btcClose": "64354.00"
+        },
+        {
+          "date": "2026-08-08",
+          "score": 70,
+          "btcClose": "64920.42"
+        },
+        {
+          "date": "2026-08-09",
+          "score": 69,
+          "btcClose": "64963.99"
+        },
+        {
+          "date": "2026-08-10",
+          "score": 66,
+          "btcClose": "64896.00"
+        },
+        {
+          "date": "2026-08-11",
+          "score": 62,
+          "btcClose": "63944.50"
+        },
+        {
+          "date": "2026-08-12",
+          "score": 62,
+          "btcClose": "63566.01"
+        },
+        {
+          "date": "2026-08-13",
+          "score": 62,
+          "btcClose": "63460.33"
+        },
+        {
+          "date": "2026-08-14",
+          "score": 63,
+          "btcClose": "63473.99"
+        },
+        {
+          "date": "2026-08-15",
+          "score": 62,
+          "btcClose": "63026.07"
+        },
+        {
+          "date": "2026-08-16",
+          "score": 63,
+          "btcClose": "63072.52"
+        },
+        {
+          "date": "2026-08-17",
+          "score": 61,
+          "btcClose": "62909.15"
+        },
+        {
+          "date": "2026-08-18",
+          "score": 64,
+          "btcClose": "64482.33"
+        },
+        {
+          "date": "2026-08-19",
+          "score": 64,
+          "btcClose": "64633.05"
+        },
+        {
+          "date": "2026-08-20",
+          "score": 64,
+          "btcClose": "69548.54"
+        },
+        {
+          "date": "2026-08-21",
+          "score": 63,
+          "btcClose": "73098.01"
+        },
+        {
+          "date": "2026-08-22",
+          "score": 62,
+          "btcClose": "78193.06"
+        },
+        {
+          "date": "2026-08-23",
+          "score": 62,
+          "btcClose": "77135.99"
+        },
+        {
+          "date": "2026-08-24",
+          "score": 61,
+          "btcClose": "77616.72"
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_market_overview": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "score": 61,
+      "signalLabel": "NEUTRAL",
+      "signalDisplay": "중립",
+      "btcClose": "77616.72",
+      "fearGreed": 73,
+      "scoreDelta": -1,
+      "weeklyAverageScore": 63,
+      "monthlyAverageScore": 64,
+      "halvingDaysAfter": 857,
+      "halvingPhase": "사이클 후기",
+      "actionType": "HOLD",
+      "actionReason": "관망 구간 (점수 61) — 다음 매수 기회 대기 중",
+      "consecutiveDays": 14,
+      "consecutiveLabel": "NEUTRAL",
+      "errorMessage": null
     },
     "api_dashboard_buy_timing": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "currentScore": 61,
+      "actionType": "HOLD",
+      "actionLabel": "대기",
+      "actionReason": "관망 구간 (점수 61) — 다음 매수 기회 대기 중",
+      "marketSeason": "혼합 시장",
+      "positionSizePct": 0,
+      "dcaSplits": 0,
+      "dcaIntervalDays": 0,
+      "targetPrice": null,
+      "stopLossPrice": null,
+      "buySignal": false,
+      "sellSignal": false,
+      "targetAsset": "-",
+      "dcaZones": [
+        {
+          "range": "80점 이상",
+          "signal": "강력 매수",
+          "pct": 30,
+          "active": false,
+          "color": "success"
+        },
+        {
+          "range": "65~79점",
+          "signal": "매수 신호",
+          "pct": 20,
+          "active": false,
+          "color": "success"
+        },
+        {
+          "range": "50~64점",
+          "signal": "관심 구간",
+          "pct": 10,
+          "active": true,
+          "color": "warning"
+        },
+        {
+          "range": "35~49점",
+          "signal": "대기",
+          "pct": 5,
+          "active": false,
+          "color": "secondary"
+        },
+        {
+          "range": "35점 미만",
+          "signal": "매도 신호",
+          "pct": 0,
+          "active": false,
+          "color": "danger"
+        }
+      ],
+      "windowComparison": [
+        {
+          "window": "30일",
+          "avgScore": 64,
+          "buyPct": "33.3%",
+          "avgBtc": "$65,884",
+          "n": 30
+        },
+        {
+          "window": "60일",
+          "avgScore": 64,
+          "buyPct": "43.3%",
+          "avgBtc": "$64,455",
+          "n": 60
+        },
+        {
+          "window": "90일",
+          "avgScore": 65,
+          "buyPct": "54.4%",
+          "avgBtc": "$65,645",
+          "n": 90
+        }
+      ],
+      "scoreHistogram": [
+        {
+          "label": "0-9",
+          "count": 0,
+          "heightPct": 0,
+          "isToday": false,
+          "color": "#ef4444"
+        },
+        {
+          "label": "10-19",
+          "count": 0,
+          "heightPct": 0,
+          "isToday": false,
+          "color": "#ef4444"
+        },
+        {
+          "label": "20-29",
+          "count": 0,
+          "heightPct": 0,
+          "isToday": false,
+          "color": "#ef4444"
+        },
+        {
+          "label": "30-39",
+          "count": 0,
+          "heightPct": 0,
+          "isToday": false,
+          "color": "#ef4444"
+        },
+        {
+          "label": "40-49",
+          "count": 0,
+          "heightPct": 0,
+          "isToday": false,
+          "color": "#eab308"
+        },
+        {
+          "label": "50-59",
+          "count": 1,
+          "heightPct": 1,
+          "isToday": false,
+          "color": "#eab308"
+        },
+        {
+          "label": "60-69",
+          "count": 88,
+          "heightPct": 100,
+          "isToday": true,
+          "color": "#eab308"
+        },
+        {
+          "label": "70-79",
+          "count": 1,
+          "heightPct": 1,
+          "isToday": false,
+          "color": "#22c55e"
+        },
+        {
+          "label": "80-89",
+          "count": 0,
+          "heightPct": 0,
+          "isToday": false,
+          "color": "#22c55e"
+        },
+        {
+          "label": "90-100",
+          "count": 0,
+          "heightPct": 0,
+          "isToday": false,
+          "color": "#22c55e"
+        }
+      ],
+      "priceDivergence": [
+        {
+          "date": "2026-08-19",
+          "score": 64,
+          "scoreDelta": 0,
+          "pricePct": "0.23",
+          "divergenceType": "수렴"
+        },
+        {
+          "date": "2026-08-20",
+          "score": 64,
+          "scoreDelta": 0,
+          "pricePct": "7.61",
+          "divergenceType": "수렴"
+        },
+        {
+          "date": "2026-08-21",
+          "score": 63,
+          "scoreDelta": -1,
+          "pricePct": "5.10",
+          "divergenceType": "부정 다이버전스"
+        },
+        {
+          "date": "2026-08-22",
+          "score": 62,
+          "scoreDelta": -1,
+          "pricePct": "6.97",
+          "divergenceType": "부정 다이버전스"
+        },
+        {
+          "date": "2026-08-23",
+          "score": 62,
+          "scoreDelta": 0,
+          "pricePct": "-1.35",
+          "divergenceType": "수렴"
+        },
+        {
+          "date": "2026-08-24",
+          "score": 61,
+          "scoreDelta": -1,
+          "pricePct": "0.62",
+          "divergenceType": "부정 다이버전스"
+        }
+      ],
+      "dcaBacktest": [
+        {
+          "label": "65점 이상 매수",
+          "entryCount": 49,
+          "avgEntry": "$65764",
+          "todayClose": "$77617",
+          "returnPct": "18.02"
+        },
+        {
+          "label": "50점 이상 매수",
+          "entryCount": 90,
+          "avgEntry": "$65645",
+          "todayClose": "$77617",
+          "returnPct": "18.24"
+        }
+      ],
+      "indicatorBreakdown": {
+        "공포탐욕": 27,
+        "펀딩비": 40,
+        "롱숏비율": 100,
+        "테이커비율": 46,
+        "OI비율": 78,
+        "BTC도미넌스": 95,
+        "김치프리미엄": 100,
+        "RSI(일)": 0,
+        "RSI(주)": 34,
+        "MVRV Z": 72,
+        "스테이블코인": 56,
+        "ETH/BTC": 68,
+        "MA200비율": 73,
+        "Puell Multiple": 84,
+        "Active Addresses": 44,
+        "Hash Rate": 16,
+        "DXY": 76,
+        "S&P500": 79,
+        "Put/Call": 59,
+        "VIX": 2,
+        "M2 성장률": 47,
+        "반감기사이클": 27,
+        "변동성(HV)": 100,
+        "Pi사이클": 100,
+        "NUPL": 43,
+        "SOPR": 63,
+        "LTH/STH": 100
+      },
+      "indicatorTrends": {
+        "공포탐욕": -1,
+        "펀딩비": -1,
+        "롱숏비율": 1,
+        "테이커비율": -1,
+        "OI비율": 1,
+        "BTC도미넌스": 1,
+        "김치프리미엄": 1,
+        "RSI(일)": -1,
+        "RSI(주)": -1,
+        "MVRV Z": -1,
+        "스테이블코인": -1,
+        "ETH/BTC": 1,
+        "MA200비율": -1,
+        "Puell Multiple": 0,
+        "Active Addresses": -1,
+        "Hash Rate": -1,
+        "DXY": 1,
+        "S&P500": -1,
+        "Put/Call": 1,
+        "VIX": 0,
+        "M2 성장률": 0,
+        "반감기사이클": 0,
+        "변동성(HV)": 0,
+        "Pi사이클": 0,
+        "NUPL": -1,
+        "SOPR": 0,
+        "LTH/STH": 0
+      },
+      "changeRanking": [
+        {
+          "name": "공포탐욕",
+          "trend": -1,
+          "score": 27
+        },
+        {
+          "name": "펀딩비",
+          "trend": -1,
+          "score": 40
+        },
+        {
+          "name": "롱숏비율",
+          "trend": 1,
+          "score": 100
+        },
+        {
+          "name": "테이커비율",
+          "trend": -1,
+          "score": 46
+        },
+        {
+          "name": "OI비율",
+          "trend": 1,
+          "score": 78
+        },
+        {
+          "name": "BTC도미넌스",
+          "trend": 1,
+          "score": 95
+        },
+        {
+          "name": "김치프리미엄",
+          "trend": 1,
+          "score": 100
+        },
+        {
+          "name": "RSI(일)",
+          "trend": -1,
+          "score": 0
+        },
+        {
+          "name": "RSI(주)",
+          "trend": -1,
+          "score": 34
+        },
+        {
+          "name": "MVRV Z",
+          "trend": -1,
+          "score": 72
+        }
+      ],
+      "halvingPhase": "사이클 후기",
+      "halvingPhaseEn": "Late Cycle",
+      "halvingDaysAfter": 857,
+      "weeklyAverageScore": 63,
+      "monthlyAverageScore": 64,
+      "scoreDelta": -1,
+      "consecutiveDays": 14,
+      "consecutiveLabel": "NEUTRAL",
+      "scoreCorrelations": [
+        {
+          "name": "테이커비율",
+          "correlation": "0.405",
+          "strength": "보통 양의 상관",
+          "absValue": "0.405"
+        },
+        {
+          "name": "Put/Call",
+          "correlation": "0.349",
+          "strength": "약한 양의 상관",
+          "absValue": "0.349"
+        },
+        {
+          "name": "공포탐욕",
+          "correlation": "-0.279",
+          "strength": "약한 음의 상관",
+          "absValue": "0.279"
+        },
+        {
+          "name": "롱숏비율",
+          "correlation": "-0.245",
+          "strength": "약한 음의 상관",
+          "absValue": "0.245"
+        },
+        {
+          "name": "RSI",
+          "correlation": "-0.196",
+          "strength": "약한 음의 상관",
+          "absValue": "0.196"
+        },
+        {
+          "name": "BTC도미넌스",
+          "correlation": "0.139",
+          "strength": "약한 양의 상관",
+          "absValue": "0.139"
+        },
+        {
+          "name": "OI비율",
+          "correlation": "-0.121",
+          "strength": "약한 음의 상관",
+          "absValue": "0.121"
+        },
+        {
+          "name": "변동성HV",
+          "correlation": "0.034",
+          "strength": "약한 양의 상관",
+          "absValue": "0.034"
+        }
+      ],
+      "predictionCorrelation": [
+        {
+          "period": "1일후",
+          "pearsonR": "-0.053",
+          "strength": "약함",
+          "sampleCount": 89
+        },
+        {
+          "period": "3일후",
+          "pearsonR": "-0.111",
+          "strength": "약함",
+          "sampleCount": 87
+        },
+        {
+          "period": "7일후",
+          "pearsonR": "-0.280",
+          "strength": "약함",
+          "sampleCount": 83
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_checklist": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "passedCount": 4,
+      "totalCount": 8,
+      "progressWidth": "50.0",
+      "levelLabel": "좋음",
+      "levelDescription": "상당수 매수 조건이 충족되었습니다",
+      "items": [
+        {
+          "name": "공포탐욕 < 25",
+          "passed": false,
+          "reason": "공포 구간 아님 (현재: 73)"
+        },
+        {
+          "name": "RSI < 30",
+          "passed": false,
+          "reason": "과매도 아님 (현재: 80.25)"
+        },
+        {
+          "name": "MVRV < 1",
+          "passed": true,
+          "reason": "역사적 저평가 구간 (현재: 0.86)"
+        },
+        {
+          "name": "김프 < 2%",
+          "passed": true,
+          "reason": "김치프리미엄 적정 (현재: -0.96%)"
+        },
+        {
+          "name": "펀딩비 < 0",
+          "passed": false,
+          "reason": "롱 우세 (현재: 0.00010000)"
+        },
+        {
+          "name": "MA200 위",
+          "passed": true,
+          "reason": "장기 상승추세 확인 (MA200 대비: 1.12)"
+        },
+        {
+          "name": "해시리본 비항복",
+          "passed": false,
+          "reason": "해시리본 항복 진행 중"
+        },
+        {
+          "name": "ETF 순유입 > 0",
+          "passed": true,
+          "reason": "기관 매수 확인 (순유입: $644.34M)"
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_performance": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "monthlyData": [
+        {
+          "month": 1,
+          "monthName": "1월",
+          "avgScore": null,
+          "avgBtcReturn": null,
+          "sampleCount": 0,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 2,
+          "monthName": "2월",
+          "avgScore": null,
+          "avgBtcReturn": null,
+          "sampleCount": 0,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 3,
+          "monthName": "3월",
+          "avgScore": null,
+          "avgBtcReturn": null,
+          "sampleCount": 0,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 4,
+          "monthName": "4월",
+          "avgScore": "69.7",
+          "avgBtcReturn": "12.09",
+          "sampleCount": 30,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 5,
+          "monthName": "5월",
+          "avgScore": "66.8",
+          "avgBtcReturn": "-5.17",
+          "sampleCount": 31,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 6,
+          "monthName": "6월",
+          "avgScore": "64.9",
+          "avgBtcReturn": "-12.51",
+          "sampleCount": 28,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 7,
+          "monthName": "7월",
+          "avgScore": "64.0",
+          "avgBtcReturn": "10.48",
+          "sampleCount": 29,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 8,
+          "monthName": "8월",
+          "avgScore": "64.4",
+          "avgBtcReturn": "23.40",
+          "sampleCount": 23,
+          "isCurrentMonth": true
+        },
+        {
+          "month": 9,
+          "monthName": "9월",
+          "avgScore": null,
+          "avgBtcReturn": null,
+          "sampleCount": 0,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 10,
+          "monthName": "10월",
+          "avgScore": null,
+          "avgBtcReturn": null,
+          "sampleCount": 0,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 11,
+          "monthName": "11월",
+          "avgScore": null,
+          "avgBtcReturn": null,
+          "sampleCount": 0,
+          "isCurrentMonth": false
+        },
+        {
+          "month": 12,
+          "monthName": "12월",
+          "avgScore": null,
+          "avgBtcReturn": null,
+          "sampleCount": 0,
+          "isCurrentMonth": false
+        }
+      ],
+      "scoreHistory": [
+        {
+          "score": 63,
+          "date": "2026-07-25"
+        },
+        {
+          "score": 63,
+          "date": "2026-07-26"
+        },
+        {
+          "score": 60,
+          "date": "2026-07-27"
+        },
+        {
+          "score": 59,
+          "date": "2026-07-28"
+        },
+        {
+          "score": 60,
+          "date": "2026-07-29"
+        },
+        {
+          "score": 62,
+          "date": "2026-07-30"
+        },
+        {
+          "score": 65,
+          "date": "2026-07-31"
+        },
+        {
+          "score": 65,
+          "date": "2026-08-02"
+        },
+        {
+          "score": 65,
+          "date": "2026-08-03"
+        },
+        {
+          "score": 65,
+          "date": "2026-08-04"
+        },
+        {
+          "score": 68,
+          "date": "2026-08-05"
+        },
+        {
+          "score": 69,
+          "date": "2026-08-06"
+        },
+        {
+          "score": 69,
+          "date": "2026-08-07"
+        },
+        {
+          "score": 70,
+          "date": "2026-08-08"
+        },
+        {
+          "score": 69,
+          "date": "2026-08-09"
+        },
+        {
+          "score": 66,
+          "date": "2026-08-10"
+        },
+        {
+          "score": 62,
+          "date": "2026-08-11"
+        },
+        {
+          "score": 62,
+          "date": "2026-08-12"
+        },
+        {
+          "score": 62,
+          "date": "2026-08-13"
+        },
+        {
+          "score": 63,
+          "date": "2026-08-14"
+        },
+        {
+          "score": 62,
+          "date": "2026-08-15"
+        },
+        {
+          "score": 63,
+          "date": "2026-08-16"
+        },
+        {
+          "score": 61,
+          "date": "2026-08-17"
+        },
+        {
+          "score": 64,
+          "date": "2026-08-18"
+        },
+        {
+          "score": 64,
+          "date": "2026-08-19"
+        },
+        {
+          "score": 64,
+          "date": "2026-08-20"
+        },
+        {
+          "score": 63,
+          "date": "2026-08-21"
+        },
+        {
+          "score": 62,
+          "date": "2026-08-22"
+        },
+        {
+          "score": 62,
+          "date": "2026-08-23"
+        },
+        {
+          "score": 61,
+          "date": "2026-08-24"
+        }
+      ],
+      "indicatorTrends": {
+        "공포탐욕": -1,
+        "펀딩비": -1,
+        "롱숏비율": 1,
+        "테이커비율": -1,
+        "OI비율": 1,
+        "BTC도미넌스": 1,
+        "김치프리미엄": 1,
+        "RSI(일)": -1,
+        "RSI(주)": -1,
+        "MVRV Z": -1,
+        "스테이블코인": -1,
+        "ETH/BTC": 1,
+        "MA200비율": -1,
+        "Puell Multiple": 0,
+        "Active Addresses": -1,
+        "Hash Rate": -1,
+        "DXY": 1,
+        "S&P500": -1,
+        "Put/Call": 1,
+        "VIX": 0,
+        "M2 성장률": 0,
+        "반감기사이클": 0,
+        "변동성(HV)": 0,
+        "Pi사이클": 0,
+        "NUPL": -1,
+        "SOPR": 0,
+        "LTH/STH": 0
+      },
+      "heatmapDays": [
+        {
+          "date": "2026-07-25",
+          "score": 63,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-07-26",
+          "score": 63,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-07-27",
+          "score": 60,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-07-28",
+          "score": 59,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-07-29",
+          "score": 60,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-07-30",
+          "score": 62,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-07-31",
+          "score": 65,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-02",
+          "score": 65,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-03",
+          "score": 65,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-04",
+          "score": 65,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-05",
+          "score": 68,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-06",
+          "score": 69,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-07",
+          "score": 69,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-08",
+          "score": 70,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-09",
+          "score": 69,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-10",
+          "score": 66,
+          "color": "good"
+        },
+        {
+          "date": "2026-08-11",
+          "score": 62,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-12",
+          "score": 62,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-13",
+          "score": 62,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-14",
+          "score": 63,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-15",
+          "score": 62,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-16",
+          "score": 63,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-17",
+          "score": 61,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-18",
+          "score": 64,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-19",
+          "score": 64,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-20",
+          "score": 64,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-21",
+          "score": 63,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-22",
+          "score": 62,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-23",
+          "score": 62,
+          "color": "neutral"
+        },
+        {
+          "date": "2026-08-24",
+          "score": 61,
+          "color": "neutral"
+        }
+      ],
+      "periodPerformance": {
+        "7d": {
+          "btcChangePct": "20.37",
+          "scoreDelta": -3
+        },
+        "30d": {
+          "btcChangePct": "20.96",
+          "scoreDelta": -2
+        },
+        "all": {
+          "btcChangePct": "0.09",
+          "scoreDelta": -4,
+          "totalDays": 90
+        }
+      },
+      "dayOfWeekStats": [
+        {
+          "day": "월",
+          "dayOfWeek": "MONDAY",
+          "avgReturn": "0.2303",
+          "count": 14
+        },
+        {
+          "day": "화",
+          "dayOfWeek": "TUESDAY",
+          "avgReturn": "0.2969",
+          "count": 12
+        },
+        {
+          "day": "수",
+          "dayOfWeek": "WEDNESDAY",
+          "avgReturn": "-1.3702",
+          "count": 11
+        },
+        {
+          "day": "목",
+          "dayOfWeek": "THURSDAY",
+          "avgReturn": "-0.1606",
+          "count": 13
+        },
+        {
+          "day": "금",
+          "dayOfWeek": "FRIDAY",
+          "avgReturn": "0.4621",
+          "count": 12
+        },
+        {
+          "day": "토",
+          "dayOfWeek": "SATURDAY",
+          "avgReturn": "0.2792",
+          "count": 13
+        },
+        {
+          "day": "일",
+          "dayOfWeek": "SUNDAY",
+          "avgReturn": "0.2623",
+          "count": 14
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_forecast": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "predictedScore": 63,
+      "todayScore": 61,
+      "scoreDiff": 2,
+      "r2": null,
+      "slope": "0.01",
+      "confidenceLow": "61",
+      "confidenceHigh": "64",
+      "forecastPoints": [
+        {
+          "date": "2026-05-22",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-23",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-24",
+          "actual": 68,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-25",
+          "actual": 68,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-26",
+          "actual": 69,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-27",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-28",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-29",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-30",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-05-31",
+          "actual": 67,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-01",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-02",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-03",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-04",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-05",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-06",
+          "actual": 67,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-07",
+          "actual": 67,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-08",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-09",
+          "actual": 67,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-10",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-11",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-12",
+          "actual": 68,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-13",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-14",
+          "actual": 68,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-15",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-16",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-18",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-19",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-20",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-21",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-22",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-24",
+          "actual": 62,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-25",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-26",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-27",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-28",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-29",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-06-30",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-01",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-02",
+          "actual": 67,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-03",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-04",
+          "actual": 68,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-05",
+          "actual": 67,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-06",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-07",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-08",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-09",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-11",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-12",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-13",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-14",
+          "actual": 60,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-15",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-16",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-17",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-18",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-19",
+          "actual": 67,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-20",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-21",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-23",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-24",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-25",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-26",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-27",
+          "actual": 60,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-28",
+          "actual": 59,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-29",
+          "actual": 60,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-30",
+          "actual": 62,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-07-31",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-02",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-03",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-04",
+          "actual": 65,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-05",
+          "actual": 68,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-06",
+          "actual": 69,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-07",
+          "actual": 69,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-08",
+          "actual": 70,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-09",
+          "actual": 69,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-10",
+          "actual": 66,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-11",
+          "actual": 62,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-12",
+          "actual": 62,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-13",
+          "actual": 62,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-14",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-15",
+          "actual": 62,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-16",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-17",
+          "actual": 61,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-18",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-19",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-20",
+          "actual": 64,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-21",
+          "actual": 63,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-22",
+          "actual": 62,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-23",
+          "actual": 62,
+          "predicted": null,
+          "isActual": true
+        },
+        {
+          "date": "2026-08-24",
+          "actual": 61,
+          "predicted": null,
+          "isActual": true
+        }
+      ],
+      "rangeStats": [
+        {
+          "rangeLabel": "0-20",
+          "avgReturn": null,
+          "winRate": null,
+          "count": 0
+        },
+        {
+          "rangeLabel": "20-40",
+          "avgReturn": null,
+          "winRate": null,
+          "count": 0
+        },
+        {
+          "rangeLabel": "40-60",
+          "avgReturn": "0.45",
+          "winRate": "100.0",
+          "count": 1
+        },
+        {
+          "rangeLabel": "60-80",
+          "avgReturn": "0.02",
+          "winRate": "48.9",
+          "count": 88
+        },
+        {
+          "rangeLabel": "80-100",
+          "avgReturn": null,
+          "winRate": null,
+          "count": 0
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_expert_opinion": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "verdict": "중립 — 관망",
+      "verdictColor": "#FBBF24",
+      "summary": "점수 61점. 혼재된 신호가 관망을 지지합니다. 명확한 방향성 확인 후 진입.",
+      "score": 61,
+      "bullishSignals": [
+        "Puell Multiple 0.80 — 채굴자 수익 양호, 매도 압력 낮음",
+        "Hash Rate 890 EH/s — 채굴 네트워크 사상 최고 수준, 채굴자 장기 신뢰"
+      ],
+      "bearishSignals": [
+        "RSI(일) 80.3 — 과매수 구간, 단기 조정 주의"
+      ],
+      "neutralSignals": [
+        "MVRV Z-Score 0.86 — 적정 밸류에이션",
+        "롱숏비율 1.07 — 균형 잡힌 포지셔닝",
+        "펀딩비 0.0001% — 중립, 레버리지 쏠림 없음",
+        "MA200 비율 1.12 — 200일선 상위 (건강한 상승 추세)",
+        "반감기 D+857 사이클 후기 (Q4 전환기) — 다음 사이클 준비 구간, 온체인 저평가와 사이클 후기의 교차점"
+      ],
+      "keyWatch": [
+        "✅ Puell Multiple 0.80 — 채굴자 수익 양호, 매도 압력 낮음",
+        "⚠️ RSI(일) 80.3 — 과매수 구간, 단기 조정 주의",
+        "✅ Hash Rate 890 EH/s — 채굴 네트워크 사상 최고 수준, 채굴자 장기 신뢰"
+      ],
+      "errorMessage": null,
+      "summaryEn": "Score 61. Mixed signals support waiting. Enter after confirming a clear direction.",
+      "verdictEn": "Neutral — Wait and See",
+      "bullishSignalsEn": [
+        "Puell Multiple 0.80 — healthy miner revenue, low sell pressure",
+        "Hash Rate 890 EH/s — mining network at all-time high, long-term miner confidence"
+      ],
+      "bearishSignalsEn": [
+        "RSI (Daily) 80.3 — overbought, watch for short-term pullback"
+      ],
+      "neutralSignalsEn": [
+        "MVRV Z-Score 0.86 — fair valuation",
+        "Long/Short Ratio 1.07 — balanced positioning",
+        "Funding Rate 0.0001% — neutral, no leverage skew",
+        "MA200 Ratio 1.12 — above 200-day MA (healthy uptrend)",
+        "Halving D+857 Late Cycle (Q4 transition) — preparing for next cycle, intersection of on-chain undervaluation and late cycle"
+      ],
+      "keyWatchEn": [
+        "✅ Puell Multiple 0.80 — healthy miner revenue, low sell pressure",
+        "⚠️ RSI (Daily) 80.3 — overbought, watch for short-term pullback",
+        "✅ Hash Rate 890 EH/s — mining network at all-time high, long-term miner confidence"
+      ]
     },
     "api_dashboard_whale_activity": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "netFlowSum7d": "-1678.32",
+      "activityLevel": "MODERATE_OUTFLOW",
+      "signal": "BULLISH",
+      "reserveChange7d": "-1717.62",
+      "updatedAt": "2026-08-24",
+      "errorMessage": null
     },
     "api_dashboard_market_structure": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "structure": "SIDEWAYS",
+      "lastHigh": "78193.06",
+      "lastLow": "77135.99",
+      "nextResistance": "78193.06",
+      "nextSupport": "77135.99",
+      "consecutiveHigherHighs": 1,
+      "consecutiveLowerLows": 0,
+      "errorMessage": null
     },
     "api_dashboard_accumulation_score": {
       "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "score": null,
+      "phaseLabel": null,
+      "phaseCssClass": null,
+      "description": null,
+      "progressWidth": 0,
+      "errorMessage": null
     },
     "api_dashboard_alt_season": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "index": 44,
+      "label": "중립",
+      "cssClass": "gray",
+      "description": "BTC와 알트코인이 혼조세. 선별적 알트코인 투자 가능.",
+      "errorMessage": null
     },
     "api_dashboard_stablecoin_supply": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "totalMarketCapUsd": "256853730699.64174",
+      "marketCap30dAgoUsd": "256595076188.20464",
+      "growth30dPercent": "0.10",
+      "signal": "STABLE",
+      "signalLabel": "중립",
+      "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
+      "errorMessage": null
     },
     "api_dashboard_net_liquidity": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "netLiquidityUsdM": "5791707.000",
+      "change4wUsdM": "-106573.000",
+      "change4wPercent": "-1.81",
+      "fedAssetsUsdM": "6745699",
+      "reverseRepoUsdM": "380.000",
+      "treasuryAccountUsdM": "953612",
+      "rrpIncluded": true,
+      "signal": "CONTRACTING",
+      "signalLabel": "유동성 축소",
+      "signalDescription": "순유동성 축소 — 위험자산 역풍(약세 압력)",
+      "errorMessage": null
     },
     "api_dashboard_altcoin": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "btcDominance": 59,
+      "ethBtcPerformance": "0.1120",
+      "altseasonLabel": "BTC 시즌",
+      "ethBtcHistory": [
+        {
+          "value": "3.00",
+          "date": "2026-08-18"
+        },
+        {
+          "value": "2.50",
+          "date": "2026-08-19"
+        },
+        {
+          "value": "12.50",
+          "date": "2026-08-20"
+        },
+        {
+          "value": "11.00",
+          "date": "2026-08-21"
+        },
+        {
+          "value": "11.20",
+          "date": "2026-08-22"
+        },
+        {
+          "value": "10.40",
+          "date": "2026-08-23"
+        },
+        {
+          "value": "11.20",
+          "date": "2026-08-24"
+        }
+      ],
+      "altSeasonIndex": 44,
+      "errorMessage": null
     },
     "api_dashboard_illiquid_supply": {
       "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "ratio": null,
+      "percentFormatted": null,
+      "label": null,
+      "cssClass": null,
+      "description": null,
+      "errorMessage": null
     },
     "api_dashboard_liquidation_heatmap": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "currentPrice": "79201.30",
+      "openInterestUsd": "8479621400.90000000",
+      "longAccountRatio": "0.4730",
+      "shortAccountRatio": "0.5270",
+      "downsideLiquidationUsd": "4010860922.63",
+      "upsideLiquidationUsd": "4468760478.27",
+      "cascadeDirection": "UPSIDE",
+      "cascadeLabel": "숏스퀴즈 위험",
+      "cascadeDescription": "숏 포지션 편중 — 가격 상승 시 숏 청산(숏스퀴즈) 위험",
+      "levels": [
+        {
+          "price": "71281.17",
+          "side": "LONG",
+          "leverage": 10,
+          "notionalUsd": "1604344369.05"
+        },
+        {
+          "price": "87121.43",
+          "side": "SHORT",
+          "leverage": 10,
+          "notionalUsd": "1787504191.31"
+        },
+        {
+          "price": "76033.25",
+          "side": "LONG",
+          "leverage": 25,
+          "notionalUsd": "1403801322.92"
+        },
+        {
+          "price": "82369.35",
+          "side": "SHORT",
+          "leverage": 25,
+          "notionalUsd": "1564066167.40"
+        },
+        {
+          "price": "77617.27",
+          "side": "LONG",
+          "leverage": 50,
+          "notionalUsd": "802172184.53"
+        },
+        {
+          "price": "80785.33",
+          "side": "SHORT",
+          "leverage": 50,
+          "notionalUsd": "893752095.65"
+        },
+        {
+          "price": "78409.29",
+          "side": "LONG",
+          "leverage": 100,
+          "notionalUsd": "200543046.13"
+        },
+        {
+          "price": "79993.31",
+          "side": "SHORT",
+          "leverage": 100,
+          "notionalUsd": "223438023.91"
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_rolling_correlation": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "btcVsSpx": "0.0850",
+      "btcVsDxy": "-0.5538",
+      "btcVsGold": "0.6498",
+      "windowDays": 30,
+      "regime": "RISK_OFF",
+      "regimeLabel": "독립/헤지 성격",
+      "regimeDescription": "BTC-SPX 0.09 독립 → 매크로 독립 움직임. 알트코인 계절 또는 고유 모멘텀.",
+      "errorMessage": null
     },
     "api_dashboard_options_regime": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "iv30d": "62.05",
+      "skew25d": "2.48",
+      "ivSignal": "EXTREME_FEAR",
+      "ivLabel": "극단적 공포",
+      "skewSignal": "BULLISH_CALL",
+      "skewLabel": "콜 수요 우세",
+      "ivHistory": [
+        {
+          "date": "2026-07-25",
+          "iv": "35.56"
+        },
+        {
+          "date": "2026-07-26",
+          "iv": "30.41"
+        },
+        {
+          "date": "2026-07-27",
+          "iv": "35.24"
+        },
+        {
+          "date": "2026-07-28",
+          "iv": "35.83"
+        },
+        {
+          "date": "2026-07-29",
+          "iv": "32.99"
+        },
+        {
+          "date": "2026-07-30",
+          "iv": "36.49"
+        },
+        {
+          "date": "2026-07-31",
+          "iv": "27.06"
+        },
+        {
+          "date": "2026-08-02",
+          "iv": "30.39"
+        },
+        {
+          "date": "2026-08-03",
+          "iv": "30.68"
+        },
+        {
+          "date": "2026-08-04",
+          "iv": "25.18"
+        },
+        {
+          "date": "2026-08-05",
+          "iv": "28.46"
+        },
+        {
+          "date": "2026-08-06",
+          "iv": "28.37"
+        },
+        {
+          "date": "2026-08-07",
+          "iv": "23.42"
+        },
+        {
+          "date": "2026-08-08",
+          "iv": "29.79"
+        },
+        {
+          "date": "2026-08-09",
+          "iv": "31.13"
+        },
+        {
+          "date": "2026-08-10",
+          "iv": "33.92"
+        },
+        {
+          "date": "2026-08-11",
+          "iv": "29.16"
+        },
+        {
+          "date": "2026-08-12",
+          "iv": "27.54"
+        },
+        {
+          "date": "2026-08-13",
+          "iv": "23.43"
+        },
+        {
+          "date": "2026-08-14",
+          "iv": "29.27"
+        },
+        {
+          "date": "2026-08-15",
+          "iv": "23.24"
+        },
+        {
+          "date": "2026-08-16",
+          "iv": "21.64"
+        },
+        {
+          "date": "2026-08-17",
+          "iv": "23.87"
+        },
+        {
+          "date": "2026-08-18",
+          "iv": "22.38"
+        },
+        {
+          "date": "2026-08-19",
+          "iv": "36.71"
+        },
+        {
+          "date": "2026-08-20",
+          "iv": "42.77"
+        },
+        {
+          "date": "2026-08-21",
+          "iv": "38.15"
+        },
+        {
+          "date": "2026-08-22",
+          "iv": "47.68"
+        },
+        {
+          "date": "2026-08-23",
+          "iv": "45.29"
+        },
+        {
+          "date": "2026-08-24",
+          "iv": "62.05"
+        }
+      ],
+      "skewHistory": [
+        {
+          "date": "2026-07-25",
+          "skew": "16.07"
+        },
+        {
+          "date": "2026-07-26",
+          "skew": "-1.70"
+        },
+        {
+          "date": "2026-07-27",
+          "skew": "52.38"
+        },
+        {
+          "date": "2026-07-28",
+          "skew": "16.34"
+        },
+        {
+          "date": "2026-07-29",
+          "skew": "17.74"
+        },
+        {
+          "date": "2026-07-30",
+          "skew": "16.54"
+        },
+        {
+          "date": "2026-07-31",
+          "skew": "-22.83"
+        },
+        {
+          "date": "2026-08-02",
+          "skew": "11.25"
+        },
+        {
+          "date": "2026-08-03",
+          "skew": "7.12"
+        },
+        {
+          "date": "2026-08-04",
+          "skew": "7.02"
+        },
+        {
+          "date": "2026-08-05",
+          "skew": "7.13"
+        },
+        {
+          "date": "2026-08-06",
+          "skew": "9.28"
+        },
+        {
+          "date": "2026-08-07",
+          "skew": "9.45"
+        },
+        {
+          "date": "2026-08-08",
+          "skew": "10.36"
+        },
+        {
+          "date": "2026-08-09",
+          "skew": "9.39"
+        },
+        {
+          "date": "2026-08-10",
+          "skew": "9.06"
+        },
+        {
+          "date": "2026-08-11",
+          "skew": "7.92"
+        },
+        {
+          "date": "2026-08-12",
+          "skew": "5.40"
+        },
+        {
+          "date": "2026-08-13",
+          "skew": "4.46"
+        },
+        {
+          "date": "2026-08-14",
+          "skew": "-3.37"
+        },
+        {
+          "date": "2026-08-15",
+          "skew": "3.80"
+        },
+        {
+          "date": "2026-08-16",
+          "skew": "3.37"
+        },
+        {
+          "date": "2026-08-17",
+          "skew": "1.97"
+        },
+        {
+          "date": "2026-08-18",
+          "skew": "21.15"
+        },
+        {
+          "date": "2026-08-19",
+          "skew": "2.47"
+        },
+        {
+          "date": "2026-08-20",
+          "skew": "5.70"
+        },
+        {
+          "date": "2026-08-21",
+          "skew": "35.40"
+        },
+        {
+          "date": "2026-08-22",
+          "skew": "53.19"
+        },
+        {
+          "date": "2026-08-23",
+          "skew": "52.21"
+        },
+        {
+          "date": "2026-08-24",
+          "skew": "2.48"
+        }
+      ],
+      "errorMessage": null
     },
     "api_dashboard_system": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "regimeMatrix": {
+        "score": 61,
+        "fearGreed": 73,
+        "quadrant": "Q4",
+        "label": "과열 조정 / 관망",
+        "labelEn": "Overheated Correction / Stand Aside",
+        "description": "심리 탐욕 + 신호 미달 -- 신규 진입 자제",
+        "descriptionEn": "Greed sentiment + signal below threshold -- avoid new entries",
+        "color": "yellow"
+      },
+      "indicatorBreakdown": {
+        "공포탐욕": 27,
+        "펀딩비": 40,
+        "롱숏비율": 100,
+        "테이커비율": 46,
+        "OI비율": 78,
+        "BTC도미넌스": 95,
+        "김치프리미엄": 100,
+        "RSI(일)": 0,
+        "RSI(주)": 34,
+        "MVRV Z": 72,
+        "스테이블코인": 56,
+        "ETH/BTC": 68,
+        "MA200비율": 73,
+        "Puell Multiple": 84,
+        "Active Addresses": 44,
+        "Hash Rate": 16,
+        "DXY": 76,
+        "S&P500": 79,
+        "Put/Call": 59,
+        "VIX": 2,
+        "M2 성장률": 47,
+        "반감기사이클": 27,
+        "변동성(HV)": 100,
+        "Pi사이클": 100,
+        "NUPL": 43,
+        "SOPR": 63,
+        "LTH/STH": 100
+      },
+      "rawValues": {
+        "공포탐욕": "73",
+        "펀딩비": "0.00010000",
+        "롱숏비율": "1.07",
+        "테이커비율": "0.98",
+        "OI비율": "0.98",
+        "BTC도미넌스": "59",
+        "김치프리미엄": "-0.96",
+        "RSI(일)": "80.25",
+        "RSI(주)": "56.22",
+        "MVRV Z": "0.86",
+        "스테이블코인": "9.74",
+        "ETH/BTC": "0.1120",
+        "MA200비율": "1.12",
+        "Puell Multiple": "0.8013",
+        "Active Addresses": "402442.00",
+        "Hash Rate": "889.9429",
+        "DXY": "98.834",
+        "S&P500": "7674.37",
+        "Put/Call": "0.5950",
+        "VIX": "16.01",
+        "M2 성장률": "5.530",
+        "반감기사이클": "857일",
+        "변동성(HV)": "0.43",
+        "Pi사이클": "0.59",
+        "NUPL": "0.32",
+        "SOPR": "0.9947",
+        "LTH/STH": "0.8380",
+        "거래소넷플로우": "-1274.78"
+      },
+      "indicatorTrends": {
+        "공포탐욕": -1,
+        "펀딩비": -1,
+        "롱숏비율": 1,
+        "테이커비율": -1,
+        "OI비율": 1,
+        "BTC도미넌스": 1,
+        "김치프리미엄": 1,
+        "RSI(일)": -1,
+        "RSI(주)": -1,
+        "MVRV Z": -1,
+        "스테이블코인": -1,
+        "ETH/BTC": 1,
+        "MA200비율": -1,
+        "Puell Multiple": 0,
+        "Active Addresses": -1,
+        "Hash Rate": -1,
+        "DXY": 1,
+        "S&P500": -1,
+        "Put/Call": 1,
+        "VIX": 0,
+        "M2 성장률": 0,
+        "반감기사이클": 0,
+        "변동성(HV)": 0,
+        "Pi사이클": 0,
+        "NUPL": -1,
+        "SOPR": 0,
+        "LTH/STH": 0
+      },
+      "activeCount": 46,
+      "totalCount": 40,
+      "dataDate": "2026-08-24",
+      "indicatorRows": [
+        {
+          "name": "공포탐욕",
+          "value": "73",
+          "score": 27,
+          "trend": -1
+        },
+        {
+          "name": "펀딩비",
+          "value": "0.00010000",
+          "score": 40,
+          "trend": -1
+        },
+        {
+          "name": "롱숏비율",
+          "value": "1.07",
+          "score": 100,
+          "trend": 1
+        },
+        {
+          "name": "테이커비율",
+          "value": "0.98",
+          "score": 46,
+          "trend": -1
+        },
+        {
+          "name": "OI비율",
+          "value": "0.98",
+          "score": 78,
+          "trend": 1
+        },
+        {
+          "name": "BTC도미넌스",
+          "value": "59",
+          "score": 95,
+          "trend": 1
+        },
+        {
+          "name": "김치프리미엄",
+          "value": "-0.96",
+          "score": 100,
+          "trend": 1
+        },
+        {
+          "name": "RSI(일)",
+          "value": "80.25",
+          "score": 0,
+          "trend": -1
+        },
+        {
+          "name": "RSI(주)",
+          "value": "56.22",
+          "score": 34,
+          "trend": -1
+        },
+        {
+          "name": "MVRV Z",
+          "value": "0.86",
+          "score": 72,
+          "trend": -1
+        },
+        {
+          "name": "스테이블코인",
+          "value": "9.74",
+          "score": 56,
+          "trend": -1
+        },
+        {
+          "name": "ETH/BTC",
+          "value": "0.1120",
+          "score": 68,
+          "trend": 1
+        },
+        {
+          "name": "MA200비율",
+          "value": "1.12",
+          "score": 73,
+          "trend": -1
+        },
+        {
+          "name": "Puell Multiple",
+          "value": "0.8013",
+          "score": 84,
+          "trend": 0
+        },
+        {
+          "name": "Active Addresses",
+          "value": "402442.00",
+          "score": 44,
+          "trend": -1
+        },
+        {
+          "name": "Hash Rate",
+          "value": "889.9429",
+          "score": 16,
+          "trend": -1
+        },
+        {
+          "name": "DXY",
+          "value": "98.834",
+          "score": 76,
+          "trend": 1
+        },
+        {
+          "name": "S&P500",
+          "value": "7674.37",
+          "score": 79,
+          "trend": -1
+        },
+        {
+          "name": "Put/Call",
+          "value": "0.5950",
+          "score": 59,
+          "trend": 1
+        },
+        {
+          "name": "VIX",
+          "value": "16.01",
+          "score": 2,
+          "trend": 0
+        },
+        {
+          "name": "M2 성장률",
+          "value": "5.530",
+          "score": 47,
+          "trend": 0
+        },
+        {
+          "name": "반감기사이클",
+          "value": "857일",
+          "score": 27,
+          "trend": 0
+        },
+        {
+          "name": "변동성(HV)",
+          "value": "0.43",
+          "score": 100,
+          "trend": 0
+        },
+        {
+          "name": "Pi사이클",
+          "value": "0.59",
+          "score": 100,
+          "trend": 0
+        },
+        {
+          "name": "NUPL",
+          "value": "0.32",
+          "score": 43,
+          "trend": -1
+        },
+        {
+          "name": "SOPR",
+          "value": "0.9947",
+          "score": 63,
+          "trend": 0
+        },
+        {
+          "name": "LTH/STH",
+          "value": "0.8380",
+          "score": 100,
+          "trend": 0
+        }
+      ],
+      "contributionAnalysis": [
+        {
+          "name": "롱숏비율",
+          "score": 100,
+          "weight": "0.0700",
+          "contribution": "0.0700"
+        },
+        {
+          "name": "MA200비율",
+          "score": 73,
+          "weight": "0.0900",
+          "contribution": "0.0657"
+        },
+        {
+          "name": "변동성(HV)",
+          "score": 100,
+          "weight": "0.0400",
+          "contribution": "0.0400"
+        },
+        {
+          "name": "Pi사이클",
+          "score": 100,
+          "weight": "0.0400",
+          "contribution": "0.0400"
+        },
+        {
+          "name": "OI비율",
+          "score": 78,
+          "weight": "0.0500",
+          "contribution": "0.0390"
+        },
+        {
+          "name": "BTC도미넌스",
+          "score": 95,
+          "weight": "0.0400",
+          "contribution": "0.0380"
+        },
+        {
+          "name": "DXY",
+          "score": 76,
+          "weight": "0.0500",
+          "contribution": "0.0380"
+        },
+        {
+          "name": "Puell Multiple",
+          "score": 84,
+          "weight": "0.0400",
+          "contribution": "0.0336"
+        },
+        {
+          "name": "테이커비율",
+          "score": 46,
+          "weight": "0.0700",
+          "contribution": "0.0322"
+        },
+        {
+          "name": "S&P500",
+          "score": 79,
+          "weight": "0.0400",
+          "contribution": "0.0316"
+        },
+        {
+          "name": "MVRV Z",
+          "score": 72,
+          "weight": "0.0400",
+          "contribution": "0.0288"
+        },
+        {
+          "name": "펀딩비",
+          "score": 40,
+          "weight": "0.0700",
+          "contribution": "0.0280"
+        },
+        {
+          "name": "SOPR",
+          "score": 63,
+          "weight": "0.0300",
+          "contribution": "0.0189"
+        },
+        {
+          "name": "반감기사이클",
+          "score": 27,
+          "weight": "0.0600",
+          "contribution": "0.0162"
+        },
+        {
+          "name": "RSI(주)",
+          "score": 34,
+          "weight": "0.0400",
+          "contribution": "0.0136"
+        },
+        {
+          "name": "공포탐욕",
+          "score": 27,
+          "weight": "0.0500",
+          "contribution": "0.0135"
+        },
+        {
+          "name": "김치프리미엄",
+          "score": 100,
+          "weight": "0.0100",
+          "contribution": "0.0100"
+        },
+        {
+          "name": "Hash Rate",
+          "score": 16,
+          "weight": "0.0100",
+          "contribution": "0.0016"
+        },
+        {
+          "name": "RSI(일)",
+          "score": 0,
+          "weight": "0.0300",
+          "contribution": "0.0000"
+        },
+        {
+          "name": "스테이블코인",
+          "score": 56,
+          "weight": "0",
+          "contribution": "0.0000"
+        },
+        {
+          "name": "ETH/BTC",
+          "score": 68,
+          "weight": "0",
+          "contribution": "0.0000"
+        },
+        {
+          "name": "Active Addresses",
+          "score": 44,
+          "weight": "0",
+          "contribution": "0.0000"
+        },
+        {
+          "name": "Put/Call",
+          "score": 59,
+          "weight": "0",
+          "contribution": "0.0000"
+        },
+        {
+          "name": "VIX",
+          "score": 2,
+          "weight": "0",
+          "contribution": "0.0000"
+        },
+        {
+          "name": "M2 성장률",
+          "score": 47,
+          "weight": "0",
+          "contribution": "0.0000"
+        },
+        {
+          "name": "NUPL",
+          "score": 43,
+          "weight": "0",
+          "contribution": "0.0000"
+        },
+        {
+          "name": "LTH/STH",
+          "score": 100,
+          "weight": "0",
+          "contribution": "0.0000"
+        }
+      ],
+      "reliabilityData": [
+        {
+          "name": "MA200비율",
+          "reliability": "9.0",
+          "weight": "0.0900",
+          "approximation": false,
+          "_summary_totalReliability": "3.2",
+          "_summary_highCount": 1,
+          "_summary_lowCount": 10,
+          "_summary_approximationCount": 0
+        },
+        {
+          "name": "펀딩비",
+          "reliability": "7.0",
+          "weight": "0.0700",
+          "approximation": false
+        },
+        {
+          "name": "롱숏비율",
+          "reliability": "7.0",
+          "weight": "0.0700",
+          "approximation": false
+        },
+        {
+          "name": "테이커비율",
+          "reliability": "7.0",
+          "weight": "0.0700",
+          "approximation": false
+        },
+        {
+          "name": "반감기사이클",
+          "reliability": "6.0",
+          "weight": "0.0600",
+          "approximation": false
+        },
+        {
+          "name": "공포탐욕",
+          "reliability": "5.0",
+          "weight": "0.0500",
+          "approximation": false
+        },
+        {
+          "name": "OI비율",
+          "reliability": "5.0",
+          "weight": "0.0500",
+          "approximation": false
+        },
+        {
+          "name": "DXY",
+          "reliability": "5.0",
+          "weight": "0.0500",
+          "approximation": false
+        },
+        {
+          "name": "BTC도미넌스",
+          "reliability": "4.0",
+          "weight": "0.0400",
+          "approximation": false
+        },
+        {
+          "name": "RSI(주)",
+          "reliability": "4.0",
+          "weight": "0.0400",
+          "approximation": false
+        },
+        {
+          "name": "MVRV Z",
+          "reliability": "4.0",
+          "weight": "0.0400",
+          "approximation": false
+        },
+        {
+          "name": "Puell Multiple",
+          "reliability": "4.0",
+          "weight": "0.0400",
+          "approximation": false
+        },
+        {
+          "name": "S&P500",
+          "reliability": "4.0",
+          "weight": "0.0400",
+          "approximation": false
+        },
+        {
+          "name": "변동성(HV)",
+          "reliability": "4.0",
+          "weight": "0.0400",
+          "approximation": false
+        },
+        {
+          "name": "Pi사이클",
+          "reliability": "4.0",
+          "weight": "0.0400",
+          "approximation": false
+        },
+        {
+          "name": "RSI(일)",
+          "reliability": "3.0",
+          "weight": "0.0300",
+          "approximation": false
+        },
+        {
+          "name": "SOPR",
+          "reliability": "3.0",
+          "weight": "0.0300",
+          "approximation": false
+        },
+        {
+          "name": "김치프리미엄",
+          "reliability": "1.0",
+          "weight": "0.0100",
+          "approximation": false
+        },
+        {
+          "name": "Hash Rate",
+          "reliability": "1.0",
+          "weight": "0.0100",
+          "approximation": false
+        },
+        {
+          "name": "스테이블코인",
+          "reliability": "0.0",
+          "weight": "0",
+          "approximation": false
+        },
+        {
+          "name": "ETH/BTC",
+          "reliability": "0.0",
+          "weight": "0",
+          "approximation": false
+        },
+        {
+          "name": "Active Addresses",
+          "reliability": "0.0",
+          "weight": "0",
+          "approximation": false
+        },
+        {
+          "name": "Put/Call",
+          "reliability": "0.0",
+          "weight": "0",
+          "approximation": false
+        },
+        {
+          "name": "VIX",
+          "reliability": "0.0",
+          "weight": "0",
+          "approximation": false
+        },
+        {
+          "name": "M2 성장률",
+          "reliability": "0.0",
+          "weight": "0",
+          "approximation": false
+        },
+        {
+          "name": "NUPL",
+          "reliability": "0.0",
+          "weight": "0",
+          "approximation": false
+        },
+        {
+          "name": "LTH/STH",
+          "reliability": "0.0",
+          "weight": "0",
+          "approximation": false
+        }
+      ],
+      "apiUsage": [
+        {
+          "name": "Binance",
+          "limit": "무제한",
+          "status": "정상"
+        },
+        {
+          "name": "CoinGecko",
+          "limit": "10-30/분",
+          "status": "정상"
+        },
+        {
+          "name": "Glassnode",
+          "limit": "무료 티어",
+          "status": "정상"
+        },
+        {
+          "name": "alternative.me",
+          "limit": "무제한",
+          "status": "정상"
+        },
+        {
+          "name": "Deribit",
+          "limit": "무제한",
+          "status": "정상"
+        },
+        {
+          "name": "Bithumb",
+          "limit": "135/초",
+          "status": "정상"
+        }
+      ],
+      "missingIndicators": [
+        "BTC ETF 유입",
+        "채굴자수익"
+      ],
+      "errorMessage": null
     },
     "api_prism_indices": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "entries": [
+        {
+          "date": "2026-07-25",
+          "fearGreed": 27,
+          "mvrvZScore": "0.45",
+          "rsiDaily": "49.69",
+          "rsiWeekly": "38.30",
+          "fundingRate": "0.00006074",
+          "nupl": "0.18",
+          "sopr": "0.9980",
+          "longShortRatio": "1.88",
+          "btcDominance": "57",
+          "openInterestRatio": "1.03",
+          "putCallRatio": "0.4289",
+          "btcClose": "64167.16",
+          "readinessScore": 63
+        },
+        {
+          "date": "2026-07-26",
+          "fearGreed": 26,
+          "mvrvZScore": "0.42",
+          "rsiDaily": "50.69",
+          "rsiWeekly": "38.70",
+          "fundingRate": "0.00003878",
+          "nupl": "0.19",
+          "sopr": "0.9980",
+          "longShortRatio": "1.80",
+          "btcDominance": "57",
+          "openInterestRatio": "1.04",
+          "putCallRatio": "0.4294",
+          "btcClose": "64387.99",
+          "readinessScore": 63
+        },
+        {
+          "date": "2026-07-27",
+          "fearGreed": 30,
+          "mvrvZScore": "0.39",
+          "rsiDaily": "54.49",
+          "rsiWeekly": "40.52",
+          "fundingRate": "0.00006147",
+          "nupl": "0.20",
+          "sopr": "0.9980",
+          "longShortRatio": "1.56",
+          "btcDominance": "56",
+          "openInterestRatio": "1.01",
+          "putCallRatio": "0.4288",
+          "btcClose": "65286.00",
+          "readinessScore": 60
+        },
+        {
+          "date": "2026-07-28",
+          "fearGreed": 29,
+          "mvrvZScore": "0.40",
+          "rsiDaily": "47.67",
+          "rsiWeekly": "39.51",
+          "fundingRate": "0.00004208",
+          "nupl": "0.18",
+          "sopr": "0.9980",
+          "longShortRatio": "1.69",
+          "btcDominance": "56",
+          "openInterestRatio": "1.02",
+          "putCallRatio": "0.4290",
+          "btcClose": "63756.92",
+          "readinessScore": 59
+        },
+        {
+          "date": "2026-07-29",
+          "fearGreed": 29,
+          "mvrvZScore": "0.43",
+          "rsiDaily": "48.99",
+          "rsiWeekly": "39.26",
+          "fundingRate": "0.00010000",
+          "nupl": "0.18",
+          "sopr": "0.9980",
+          "longShortRatio": "1.73",
+          "btcDominance": "56",
+          "openInterestRatio": "1.00",
+          "putCallRatio": "0.4364",
+          "btcClose": "64041.85",
+          "readinessScore": 60
+        },
+        {
+          "date": "2026-07-30",
+          "fearGreed": 28,
+          "mvrvZScore": "0.38",
+          "rsiDaily": "48.89",
+          "rsiWeekly": "38.17",
+          "fundingRate": "0.00008462",
+          "nupl": "0.18",
+          "sopr": "0.9980",
+          "longShortRatio": "1.56",
+          "btcDominance": "56",
+          "openInterestRatio": "1.01",
+          "putCallRatio": "0.4388",
+          "btcClose": "64018.00",
+          "readinessScore": 62
+        },
+        {
+          "date": "2026-07-31",
+          "fearGreed": 25,
+          "mvrvZScore": "0.38",
+          "rsiDaily": "52.97",
+          "rsiWeekly": "39.20",
+          "fundingRate": "0.00010000",
+          "nupl": "0.19",
+          "sopr": "0.9980",
+          "longShortRatio": "1.25",
+          "btcDominance": "57",
+          "openInterestRatio": "1.03",
+          "putCallRatio": "0.4347",
+          "btcClose": "64878.96",
+          "readinessScore": 65
+        },
+        {
+          "date": "2026-08-02",
+          "fearGreed": 27,
+          "mvrvZScore": "0.41",
+          "rsiDaily": "44.30",
+          "rsiWeekly": "37.92",
+          "fundingRate": "0.00004530",
+          "nupl": "0.17",
+          "sopr": "0.9947",
+          "longShortRatio": "2.19",
+          "btcDominance": "56",
+          "openInterestRatio": "1.05",
+          "putCallRatio": "0.5341",
+          "btcClose": "62897.33",
+          "readinessScore": 65
+        },
+        {
+          "date": "2026-08-03",
+          "fearGreed": 28,
+          "mvrvZScore": "0.35",
+          "rsiDaily": "47.41",
+          "rsiWeekly": "39.18",
+          "fundingRate": "0.00010000",
+          "nupl": "0.18",
+          "sopr": "0.9947",
+          "longShortRatio": "1.94",
+          "btcDominance": "56",
+          "openInterestRatio": "1.05",
+          "putCallRatio": "0.5329",
+          "btcClose": "63510.72",
+          "readinessScore": 65
+        },
+        {
+          "date": "2026-08-04",
+          "fearGreed": 25,
+          "mvrvZScore": "0.35",
+          "rsiDaily": "47.81",
+          "rsiWeekly": "39.54",
+          "fundingRate": "0.00003081",
+          "nupl": "0.18",
+          "sopr": "0.9947",
+          "longShortRatio": "1.50",
+          "btcDominance": "56",
+          "openInterestRatio": "1.05",
+          "putCallRatio": "0.5227",
+          "btcClose": "63585.09",
+          "readinessScore": 65
+        },
+        {
+          "date": "2026-08-05",
+          "fearGreed": 27,
+          "mvrvZScore": "0.37",
+          "rsiDaily": "50.32",
+          "rsiWeekly": "39.51",
+          "fundingRate": "0.00001674",
+          "nupl": "0.18",
+          "sopr": "0.9947",
+          "longShortRatio": "1.28",
+          "btcDominance": "57",
+          "openInterestRatio": "1.04",
+          "putCallRatio": "0.5202",
+          "btcClose": "64075.79",
+          "readinessScore": 68
+        },
+        {
+          "date": "2026-08-06",
+          "fearGreed": 25,
+          "mvrvZScore": "0.37",
+          "rsiDaily": "52.99",
+          "rsiWeekly": "38.59",
+          "fundingRate": "0.00006595",
+          "nupl": "0.19",
+          "sopr": "0.9947",
+          "longShortRatio": "1.15",
+          "btcDominance": "57",
+          "openInterestRatio": "1.03",
+          "putCallRatio": "0.5268",
+          "btcClose": "64620.23",
+          "readinessScore": 69
+        },
+        {
+          "date": "2026-08-07",
+          "fearGreed": 29,
+          "mvrvZScore": "0.39",
+          "rsiDaily": "51.52",
+          "rsiWeekly": "38.93",
+          "fundingRate": "0.00000799",
+          "nupl": "0.19",
+          "sopr": "0.9947",
+          "longShortRatio": "1.21",
+          "btcDominance": "57",
+          "openInterestRatio": "1.01",
+          "putCallRatio": "0.5275",
+          "btcClose": "64354.00",
+          "readinessScore": 69
+        },
+        {
+          "date": "2026-08-08",
+          "fearGreed": 30,
+          "mvrvZScore": "0.41",
+          "rsiDaily": "54.40",
+          "rsiWeekly": "40.36",
+          "fundingRate": "0.00005557",
+          "nupl": "0.19",
+          "sopr": "0.9947",
+          "longShortRatio": "1.10",
+          "btcDominance": "57",
+          "openInterestRatio": "1.02",
+          "putCallRatio": "0.5779",
+          "btcClose": "64920.42",
+          "readinessScore": 70
+        },
+        {
+          "date": "2026-08-09",
+          "fearGreed": 31,
+          "mvrvZScore": "0.40",
+          "rsiDaily": "54.62",
+          "rsiWeekly": "40.24",
+          "fundingRate": "0.00004423",
+          "nupl": "0.19",
+          "sopr": "0.9947",
+          "longShortRatio": "1.15",
+          "btcDominance": "57",
+          "openInterestRatio": "1.02",
+          "putCallRatio": "0.5770",
+          "btcClose": "64963.99",
+          "readinessScore": 69
+        },
+        {
+          "date": "2026-08-10",
+          "fearGreed": 30,
+          "mvrvZScore": "0.42",
+          "rsiDaily": "54.18",
+          "rsiWeekly": "40.83",
+          "fundingRate": "0.00007497",
+          "nupl": "0.19",
+          "sopr": "0.9947",
+          "longShortRatio": "1.16",
+          "btcDominance": "57",
+          "openInterestRatio": "1.02",
+          "putCallRatio": "0.5746",
+          "btcClose": "64896.00",
+          "readinessScore": 66
+        },
+        {
+          "date": "2026-08-11",
+          "fearGreed": 29,
+          "mvrvZScore": "0.42",
+          "rsiDaily": "48.23",
+          "rsiWeekly": "39.42",
+          "fundingRate": "0.00002301",
+          "nupl": "0.18",
+          "sopr": "0.9947",
+          "longShortRatio": "1.60",
+          "btcDominance": "56",
+          "openInterestRatio": "1.01",
+          "putCallRatio": "0.5721",
+          "btcClose": "63944.50",
+          "readinessScore": 62
+        },
+        {
+          "date": "2026-08-12",
+          "fearGreed": 27,
+          "mvrvZScore": "0.42",
+          "rsiDaily": "46.06",
+          "rsiWeekly": "38.50",
+          "fundingRate": "0.00010000",
+          "nupl": "0.18",
+          "sopr": "0.9947",
+          "longShortRatio": "1.80",
+          "btcDominance": "56",
+          "openInterestRatio": "1.04",
+          "putCallRatio": "0.5662",
+          "btcClose": "63566.01",
+          "readinessScore": 62
+        },
+        {
+          "date": "2026-08-13",
+          "fearGreed": 29,
+          "mvrvZScore": "0.39",
+          "rsiDaily": "45.44",
+          "rsiWeekly": "37.18",
+          "fundingRate": "0.00006576",
+          "nupl": "0.18",
+          "sopr": "0.9947",
+          "longShortRatio": "1.85",
+          "btcDominance": "56",
+          "openInterestRatio": "1.05",
+          "putCallRatio": "0.5530",
+          "btcClose": "63460.33",
+          "readinessScore": 62
+        },
+        {
+          "date": "2026-08-14",
+          "fearGreed": 29,
+          "mvrvZScore": "0.38",
+          "rsiDaily": "45.53",
+          "rsiWeekly": "38.16",
+          "fundingRate": "0.00008545",
+          "nupl": "0.18",
+          "sopr": "0.9947",
+          "longShortRatio": "1.87",
+          "btcDominance": "56",
+          "openInterestRatio": "1.04",
+          "putCallRatio": "0.5529",
+          "btcClose": "63473.99",
+          "readinessScore": 63
+        },
+        {
+          "date": "2026-08-15",
+          "fearGreed": 34,
+          "mvrvZScore": "0.37",
+          "rsiDaily": "42.73",
+          "rsiWeekly": "38.27",
+          "fundingRate": "0.00006801",
+          "nupl": "0.17",
+          "sopr": "0.9947",
+          "longShortRatio": "2.08",
+          "btcDominance": "56",
+          "openInterestRatio": "1.06",
+          "putCallRatio": "0.5433",
+          "btcClose": "63026.07",
+          "readinessScore": 62
+        },
+        {
+          "date": "2026-08-16",
+          "fearGreed": 34,
+          "mvrvZScore": "0.37",
+          "rsiDaily": "43.11",
+          "rsiWeekly": "38.33",
+          "fundingRate": "0.00000966",
+          "nupl": "0.17",
+          "sopr": "0.9947",
+          "longShortRatio": "2.05",
+          "btcDominance": "56",
+          "openInterestRatio": "1.05",
+          "putCallRatio": "0.5564",
+          "btcClose": "63072.52",
+          "readinessScore": 63
+        },
+        {
+          "date": "2026-08-17",
+          "fearGreed": 31,
+          "mvrvZScore": "0.36",
+          "rsiDaily": "42.05",
+          "rsiWeekly": "38.58",
+          "fundingRate": "0.00003818",
+          "nupl": "0.17",
+          "sopr": "0.9947",
+          "longShortRatio": "2.22",
+          "btcDominance": "56",
+          "openInterestRatio": "1.04",
+          "putCallRatio": "0.5577",
+          "btcClose": "62909.15",
+          "readinessScore": 61
+        },
+        {
+          "date": "2026-08-18",
+          "fearGreed": 41,
+          "mvrvZScore": "0.36",
+          "rsiDaily": "53.92",
+          "rsiWeekly": "40.81",
+          "fundingRate": "0.00005164",
+          "nupl": "0.19",
+          "sopr": "0.9947",
+          "longShortRatio": "1.48",
+          "btcDominance": "57",
+          "openInterestRatio": "0.99",
+          "putCallRatio": "0.5597",
+          "btcClose": "64482.33",
+          "readinessScore": 64
+        },
+        {
+          "date": "2026-08-19",
+          "fearGreed": 46,
+          "mvrvZScore": "0.35",
+          "rsiDaily": "54.75",
+          "rsiWeekly": "40.74",
+          "fundingRate": "0.00001617",
+          "nupl": "0.19",
+          "sopr": "0.9947",
+          "longShortRatio": "1.38",
+          "btcDominance": "57",
+          "openInterestRatio": "0.99",
+          "putCallRatio": "0.5630",
+          "btcClose": "64633.05",
+          "readinessScore": 64
+        },
+        {
+          "date": "2026-08-20",
+          "fearGreed": 62,
+          "mvrvZScore": "0.41",
+          "rsiDaily": "73.99",
+          "rsiWeekly": "47.63",
+          "fundingRate": "0.00009655",
+          "nupl": "0.25",
+          "sopr": "0.9947",
+          "longShortRatio": "1.08",
+          "btcDominance": "57",
+          "openInterestRatio": "1.00",
+          "putCallRatio": "0.5555",
+          "btcClose": "69548.54",
+          "readinessScore": 64
+        },
+        {
+          "date": "2026-08-21",
+          "fearGreed": 72,
+          "mvrvZScore": "0.41",
+          "rsiDaily": "80.43",
+          "rsiWeekly": "51.86",
+          "fundingRate": "0.00004964",
+          "nupl": "0.29",
+          "sopr": "0.9947",
+          "longShortRatio": "0.96",
+          "btcDominance": "59",
+          "openInterestRatio": "1.00",
+          "putCallRatio": "0.5590",
+          "btcClose": "73098.01",
+          "readinessScore": 63
+        },
+        {
+          "date": "2026-08-22",
+          "fearGreed": 71,
+          "mvrvZScore": "0.56",
+          "rsiDaily": "85.23",
+          "rsiWeekly": "56.60",
+          "fundingRate": "0.00010000",
+          "nupl": "0.33",
+          "sopr": "0.9947",
+          "longShortRatio": "1.04",
+          "btcDominance": "59",
+          "openInterestRatio": "0.99",
+          "putCallRatio": "0.5941",
+          "btcClose": "78193.06",
+          "readinessScore": 62
+        },
+        {
+          "date": "2026-08-23",
+          "fearGreed": 66,
+          "mvrvZScore": "0.69",
+          "rsiDaily": "80.15",
+          "rsiWeekly": "55.63",
+          "fundingRate": "0.00010000",
+          "nupl": "0.32",
+          "sopr": "0.9947",
+          "longShortRatio": "1.01",
+          "btcDominance": "59",
+          "openInterestRatio": "0.98",
+          "putCallRatio": "0.5929",
+          "btcClose": "77135.99",
+          "readinessScore": 62
+        },
+        {
+          "date": "2026-08-24",
+          "fearGreed": 73,
+          "mvrvZScore": "0.86",
+          "rsiDaily": "80.25",
+          "rsiWeekly": "56.22",
+          "fundingRate": "0.00010000",
+          "nupl": "0.32",
+          "sopr": "0.9947",
+          "longShortRatio": "1.07",
+          "btcDominance": "59",
+          "openInterestRatio": "0.98",
+          "putCallRatio": "0.5950",
+          "btcClose": "77616.72",
+          "readinessScore": 61
+        }
+      ],
+      "latestScore": 61,
+      "dataDate": "2026-08-24",
+      "errorMessage": null
     },
     "api_ai_digest": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "generatedAt": "2026-08-25T11:42:47.113368Z",
+      "compositeScore": 61,
+      "tone": "NEUTRAL",
+      "toneDisplay": "중립",
+      "toneHexColor": "#FBBF24",
+      "modelName": "gpt-4o-mini",
+      "sections": [
+        {
+          "type": "SUMMARY",
+          "content": "현재 시장은 중립적이며, 공포탐욕 지수가 높은 편이다."
+        },
+        {
+          "type": "RISK",
+          "content": "높은 RSI(일) 80.25로 인해 과매수 우려가 존재한다."
+        },
+        {
+          "type": "RISK",
+          "content": "거래소 순유입이 -1274.78로 매도 압력이 커질 수 있다."
+        },
+        {
+          "type": "ACTION",
+          "content": "단기 매매 전략을 고려하라."
+        },
+        {
+          "type": "ACTION",
+          "content": "포트폴리오 다각화를 검토하라."
+        }
+      ],
+      "errorMessage": null
     },
     "api_ai_digest_en": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "generatedAt": "2026-08-25T11:42:50.896750Z",
+      "compositeScore": 61,
+      "tone": "NEUTRAL",
+      "toneDisplay": "Neutral",
+      "toneHexColor": "#FBBF24",
+      "modelName": "gpt-4o-mini",
+      "sections": [
+        {
+          "type": "SUMMARY",
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting caution."
+        },
+        {
+          "type": "RISK",
+          "content": "High RSI levels indicate potential overbought conditions."
+        },
+        {
+          "type": "RISK",
+          "content": "Decreasing altcoin dominance may signal a shift in market interest."
+        },
+        {
+          "type": "ACTION",
+          "content": "Monitor market trends closely for potential corrections."
+        },
+        {
+          "type": "ACTION",
+          "content": "Consider diversifying investments to mitigate risks."
+        }
+      ],
+      "errorMessage": null
     },
     "api_ai_news_sentiment": {
-      "hasData": false,
-      "errorMessage": "<urlopen error [Errno 61] Connection refused>"
+      "hasData": true,
+      "generatedAt": "2026-08-25T11:42:53.456333Z",
+      "compositeScore": "0.025",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
+      "scoredCount": 16,
+      "modelName": "gpt-4o-mini",
+      "items": [
+        {
+          "title": "Bitcoin's surging price faces 1 key level that could signal if the bear market is really over",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/08/25/bitcoin-s-surging-price-faces-1-key-level-that-could-signal-if-the-bear-market-is-really-over",
+          "publishedAt": "2026-08-25T11:15:02Z",
+          "score": "0.2"
+        },
+        {
+          "title": "A bitcoin short squeeze for the ages as futures open interest collapses",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/25/a-bitcoin-short-squeeze-for-the-ages-as-futures-open-interest-collapses",
+          "publishedAt": "2026-08-25T10:57:02Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Bitcoin extends 7-day advance to roughly 25%",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/25/bitcoin-extends-7-day-advance-to-roughly-25",
+          "publishedAt": "2026-08-25T10:52:03Z",
+          "score": "0.6"
+        },
+        {
+          "title": "Solana ETFs extend growth streak to 5 days after year's biggest inflows",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/25/solana-etfs-extend-growth-streak-to-5-days-after-year-s-biggest-inflows",
+          "publishedAt": "2026-08-25T10:25:32Z",
+          "score": "0.1"
+        },
+        {
+          "title": "U.S. widens Iran crackdown to encompass crypto, gold, shipping and technology",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/25/u-s-widens-iran-crackdown-to-encompass-crypto-gold-shipping-and-technology",
+          "publishedAt": "2026-08-25T08:47:18Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "Franklin Templeton and Hashkey roll out U.S. tokenized money fund in Asia",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/25/franklin-templeton-and-hashkey-roll-out-u-s-tokenized-money-fund-in-asia",
+          "publishedAt": "2026-08-25T07:55:18Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Live updates: Bitcoin rejected at $81,000 as 50-week moving average caps rally",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/25/live-updates-bitcoin-etfs-draw-a-seventh-straight-day-of-inflows-as-the-rally-holds-above-usd80-000",
+          "publishedAt": "2026-08-25T07:40:11Z",
+          "score": "-0.2"
+        },
+        {
+          "title": "Treasuryâs bond buyback plan fights the market and heightens the danger, billionaire Druckenmiller says",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/25/governments-defending-prices-against-fundamentals-always-lose-billionaire-investor-druckenmiller-says",
+          "publishedAt": "2026-08-25T07:32:32Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Bitcoin RSI bullish divergence draws 2022 comparisons as analysis weighs new price trend",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-rsi-bullish-divergence-draws-2022-comparisons-as-analysis-weighs-new-price-trend?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T10:49:43Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Thailand moves closer to Bitcoin, Ether ETFs with draft rules",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/thailand-bitcoin-ether-etfs-draft-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T10:20:14Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Standard Chartered becomes first bank distributor of HKD stablecoin",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/standard-chartered-hkdap-stablecoin-distribution?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T09:52:40Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Galaxy puts Coldcard hack losses at 1,789 BTC, with 87% unmoved",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/coldcard-hack-galaxy-btc-lost-87-unmoved?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T08:46:47Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "Business owner faces up to 280 years over $24M crypto Ponzi scheme",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/business-owner-280-years-24m-crypto-ponzi-scheme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T07:58:10Z",
+          "score": "-0.7"
+        },
+        {
+          "title": "Bitcoin ETFs add $338M as six-day inflow streak hits $2.26B",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-etf-six-day-inflow-streak-2-26-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T07:38:29Z",
+          "score": "0.7"
+        },
+        {
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T05:48:17Z",
+          "score": "0.0"
+        },
+        {
+          "title": "US targets Iran’s crypto sector, cites over $100M in oil-linked payments",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/us-targets-iran-crypto-sector-100m-oil-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T05:29:29Z",
+          "score": "-0.5"
+        }
+      ],
+      "errorMessage": null
     }
   }
 }
