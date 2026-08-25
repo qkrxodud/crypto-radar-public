@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-25T13:03:12Z",
+  "updatedAt": "2026-08-25T13:23:15Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,16 +61,16 @@
       "historicalVolatility": "0.43",
       "btcClose": "77616.72",
       "macd": {
-        "macdLine": "3825.56",
-        "signalLine": "2272.91",
-        "histogram": "1552.66",
+        "macdLine": "3791.42",
+        "signalLine": "2266.08",
+        "histogram": "1525.34",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
         "adx": "37.9",
-        "plusDi": "47.8",
+        "plusDi": "47.7",
         "minusDi": "9.4",
         "strength": "MODERATE_UP",
         "strengthLabel": "보통 상승 추세",
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001833",
       "ivRv": {
-        "iv": "49.33",
+        "iv": "45.00",
         "rv": "43.00",
-        "spread": "+6.33",
-        "label": "과대"
+        "spread": "+2.00",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 73,
@@ -2926,63 +2926,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "78987.50",
-      "openInterestUsd": "8434352268.35251000",
-      "longAccountRatio": "0.4768",
-      "shortAccountRatio": "0.5232",
-      "downsideLiquidationUsd": "4021499161.55",
-      "upsideLiquidationUsd": "4412853106.80",
+      "currentPrice": "78696.90",
+      "openInterestUsd": "8440363359.00330000",
+      "longAccountRatio": "0.4766",
+      "shortAccountRatio": "0.5234",
+      "downsideLiquidationUsd": "4022677176.90",
+      "upsideLiquidationUsd": "4417686182.10",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "71088.75",
+          "price": "70827.21",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1608599664.62"
+          "notionalUsd": "1609070870.76"
         },
         {
-          "price": "86886.25",
+          "price": "86566.59",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1765141242.72"
+          "notionalUsd": "1767074472.84"
         },
         {
-          "price": "75828.00",
+          "price": "75549.02",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1407524706.54"
+          "notionalUsd": "1407937011.92"
         },
         {
-          "price": "82147.00",
+          "price": "81844.78",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1544498587.38"
+          "notionalUsd": "1546190163.74"
         },
         {
-          "price": "77407.75",
+          "price": "77122.96",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "804299832.31"
+          "notionalUsd": "804535435.38"
         },
         {
-          "price": "80567.25",
+          "price": "80270.84",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "882570621.36"
+          "notionalUsd": "883537236.42"
         },
         {
-          "price": "78197.63",
+          "price": "77909.93",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "201074958.08"
+          "notionalUsd": "201133858.85"
         },
         {
-          "price": "79777.38",
+          "price": "79483.87",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "220642655.34"
+          "notionalUsd": "220884309.11"
         }
       ],
       "errorMessage": null
@@ -4443,8 +4443,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-25T12:05:03.116284Z",
-      "compositeScore": "0.138",
+      "generatedAt": "2026-08-25T13:05:02.168075Z",
+      "compositeScore": "0.075",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4452,18 +4452,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "MiCA revolutionised European crypto, and left Poland licking its wounds",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/opinion/2026/08/24/mica-revolutionised-european-crypto-and-left-poland-licking-its-wounds",
+          "publishedAt": "2026-08-25T13:00:00Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase",
+          "publishedAt": "2026-08-25T13:00:00Z",
+          "score": "-0.7"
+        },
+        {
           "title": "A 3% token move just triggered $36 million in Ethereum DeFi liquidations",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/08/25/a-3-token-move-just-triggered-usd36-million-in-ethereum-defi-liquidations",
           "publishedAt": "2026-08-25T12:03:55Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Las Vegas businessman convicted in $24 million 'AI supercomputer' crypto Ponzi scheme",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/25/crypto-supercomputer-ponzi-schemer-convicted-faces-up-to-280-years-in-prison",
           "publishedAt": "2026-08-25T11:46:18Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "Bitcoin's surging price faces 1 key level that could signal if the bear market is really over",
@@ -4477,14 +4491,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/25/a-bitcoin-short-squeeze-for-the-ages-as-futures-open-interest-collapses",
           "publishedAt": "2026-08-25T10:57:02Z",
-          "score": "0.8"
+          "score": "0.7"
         },
         {
           "title": "Bitcoin extends 7-day advance to roughly 25%",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/25/bitcoin-extends-7-day-advance-to-roughly-25",
           "publishedAt": "2026-08-25T10:52:03Z",
-          "score": "0.9"
+          "score": "0.8"
         },
         {
           "title": "Solana ETFs extend growth streak to 5 days after year's biggest inflows",
@@ -4494,53 +4508,53 @@
           "score": "0.4"
         },
         {
-          "title": "U.S. widens Iran crackdown to encompass crypto, gold, shipping and technology",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/25/u-s-widens-iran-crackdown-to-encompass-crypto-gold-shipping-and-technology",
-          "publishedAt": "2026-08-25T08:47:18Z",
-          "score": "-0.6"
+          "title": "India plans first tokenized bonds using wholesale CBDC: Report",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/india-tokenized-bonds-digital-rupee?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T12:09:15Z",
+          "score": "0.5"
         },
         {
-          "title": "Franklin Templeton and Hashkey roll out U.S. tokenized money fund in Asia",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/25/franklin-templeton-and-hashkey-roll-out-u-s-tokenized-money-fund-in-asia",
-          "publishedAt": "2026-08-25T07:55:18Z",
-          "score": "0.5"
+          "title": "Shipyard winds down IPFS work after Protocol Labs ends funding",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/shipyard-winds-down-ipfs-protocol-labs-funding?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-25T11:57:33Z",
+          "score": "-0.3"
         },
         {
           "title": "Bitcoin RSI bullish divergence draws 2022 comparisons as analysis weighs new price trend",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-rsi-bullish-divergence-draws-2022-comparisons-as-analysis-weighs-new-price-trend?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T10:49:43Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "Thailand moves closer to Bitcoin, Ether ETFs with draft rules",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/thailand-bitcoin-ether-etfs-draft-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T10:20:14Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Standard Chartered becomes first bank distributor of HKD stablecoin",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/standard-chartered-hkdap-stablecoin-distribution?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T09:52:40Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Galaxy puts Coldcard hack losses at 1,789 BTC, with 87% unmoved",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coldcard-hack-galaxy-btc-lost-87-unmoved?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T08:46:47Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "Business owner faces up to 280 years over $24M crypto Ponzi scheme",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/business-owner-280-years-24m-crypto-ponzi-scheme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T07:58:10Z",
-          "score": "-0.8"
+          "score": "-0.9"
         },
         {
           "title": "Bitcoin ETFs add $338M as six-day inflow streak hits $2.26B",
@@ -4548,20 +4562,6 @@
           "url": "https://cointelegraph.com/markets/bitcoin-etf-six-day-inflow-streak-2-26-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T07:38:29Z",
           "score": "0.9"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-25T05:48:17Z",
-          "score": "0.0"
-        },
-        {
-          "title": "US targets Iran’s crypto sector, cites over $100M in oil-linked payments",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/us-targets-iran-crypto-sector-100m-oil-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-25T05:29:29Z",
-          "score": "-0.5"
         }
       ],
       "errorMessage": null
