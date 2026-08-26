@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-26T04:47:36Z",
+  "updatedAt": "2026-08-26T05:07:39Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "78612.25",
       "macd": {
-        "macdLine": "3976.22",
-        "signalLine": "2602.68",
-        "histogram": "1373.54",
+        "macdLine": "3963.27",
+        "signalLine": "2600.09",
+        "histogram": "1363.17",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001850",
       "ivRv": {
-        "iv": "41.94",
+        "iv": "41.73",
         "rv": "43.00",
-        "spread": "-1.06",
+        "spread": "-1.28",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "78847.60",
-      "openInterestUsd": "8357117632.08431600",
-      "longAccountRatio": "0.5040",
-      "shortAccountRatio": "0.4960",
-      "downsideLiquidationUsd": "4211987286.57",
-      "upsideLiquidationUsd": "4145130345.51",
+      "currentPrice": "78667.00",
+      "openInterestUsd": "8339987919.39000000",
+      "longAccountRatio": "0.5023",
+      "shortAccountRatio": "0.4977",
+      "downsideLiquidationUsd": "4189175931.91",
+      "upsideLiquidationUsd": "4150811987.48",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "70962.84",
+          "price": "70800.30",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1684794914.63"
+          "notionalUsd": "1675670372.76"
         },
         {
-          "price": "86732.36",
+          "price": "86533.70",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1658052138.21"
+          "notionalUsd": "1660324794.99"
         },
         {
-          "price": "75693.70",
+          "price": "75520.32",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1474195550.30"
+          "notionalUsd": "1466211576.17"
         },
         {
-          "price": "82001.50",
+          "price": "81813.68",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1450795620.93"
+          "notionalUsd": "1452784195.62"
         },
         {
-          "price": "77270.65",
+          "price": "77093.66",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "842397457.31"
+          "notionalUsd": "837835186.38"
         },
         {
-          "price": "80424.55",
+          "price": "80240.34",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "829026069.10"
+          "notionalUsd": "830162397.50"
         },
         {
-          "price": "78059.12",
+          "price": "77880.33",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "210599364.33"
+          "notionalUsd": "209458796.60"
         },
         {
-          "price": "79636.08",
+          "price": "79453.67",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "207256517.28"
+          "notionalUsd": "207540599.37"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-26T04:30:03.148884Z",
+      "generatedAt": "2026-08-26T05:00:03.865700Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,23 +4384,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 혼재되어 있다."
+          "content": "현재 암호화폐 시장은 중립적인 상태로, 공포와 탐욕 지수가 65로 다소 긍정적이나, RSI가 80.07로 과매수 신호를 보임."
         },
         {
           "type": "RISK",
-          "content": "높은 RSI 수치로 인해 과매수 우려가 존재한다."
+          "content": "과매수 상태로 조정 가능성이 존재."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 59로 알트코인에 대한 투자 심리가 약화될 수 있다."
+          "content": "BTC 도미넌스가 59로 알트코인에 대한 투자 심리가 약화될 수 있음."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 포트폴리오를 재조정할 필요가 있다."
+          "content": "단기 매매 전략을 고려하며 시장 변동성을 주의 깊게 관찰할 것."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 가격 조정 가능성을 염두에 두고 손절매 설정을 권장한다."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산할 것을 권장."
         }
       ],
       "errorMessage": null
@@ -4439,14 +4439,28 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-26T04:05:02.689368Z",
-      "compositeScore": "0.175",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-08-26T05:05:02.582824Z",
+      "compositeScore": "0.294",
+      "label": "POSITIVE",
+      "labelDisplay": "긍정",
+      "labelHexColor": "#10B981",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Crypto greed gauge hits highest since just before Octoberâs $19 billion wipeout",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/26/crypto-greed-gauge-hits-highest-since-just-before-october-s-usd19-billion-wipeout",
+          "publishedAt": "2026-08-26T04:51:49Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "Bitcoin holds $79,000, ether, solana slip as traders bank a week of gains",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/26/bitcoin-holds-usd79-000-ether-solana-slip-4-as-traders-bank-a-week-of-gains",
+          "publishedAt": "2026-08-26T04:13:10Z",
+          "score": "0.3"
+        },
         {
           "title": "U.S. state banking associations plan to launch their own nationwide blockchain network",
           "source": "CoinDesk",
@@ -4459,7 +4473,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/08/25/zerohash-back-for-second-effort-at-occ-trust-bank-charter",
           "publishedAt": "2026-08-25T21:38:28Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "South Korea trade giant POSCO brings trade receivables to Avalanche in latest tokenization move",
@@ -4480,7 +4494,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/25/bitwise-turns-coinbase-s-tokenized-stocks-into-automated-ai-robotics-and-tech-portfolios",
           "publishedAt": "2026-08-25T14:50:22Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Crypto custody firm Copper has potential buyers. But offers are way below its $500 million asking price",
@@ -4490,25 +4504,18 @@
           "score": "-0.4"
         },
         {
-          "title": "MiCA revolutionised European crypto, and left Poland licking its wounds",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/opinion/2026/08/24/mica-revolutionised-european-crypto-and-left-poland-licking-its-wounds",
-          "publishedAt": "2026-08-25T13:00:00Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase",
-          "publishedAt": "2026-08-25T13:00:00Z",
-          "score": "0.1"
+          "title": "US banking groups plan nationwide blockchain network for 2027",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/us-banking-groups-nationwide-blockchain-network-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-26T04:17:39Z",
+          "score": "0.5"
         },
         {
           "title": "World Liberty Financial launches USD1 natively on Canton Network",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/world-liberty-financial-launches-usd1-natively-on-canton-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T20:35:10Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4529,7 +4536,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/solana-record-transactions-rwa-sol-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T18:08:58Z",
-          "score": "0.5"
+          "score": "0.8"
         },
         {
           "title": "Strategy’s $66B Bitcoin machine hinges on capital markets, not BTC price: Report",
@@ -4543,21 +4550,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitwise-launches-self-custodied-tokenized-stock-portfolios-with-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T16:32:00Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "DGrid AI token jumps 93% after launch as decentralized AI network goes live",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/dgrid-ai-token-jumps-96-after-launch-as-decentralized-ai-network-goes-live?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-25T15:53:05Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Bitcoin slips from $80K as gold cools with falling US bond yields",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-slips-from-80k-as-gold-cools-with-falling-us-bond-yields?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-25T15:15:35Z",
-          "score": "-0.6"
+          "score": "0.9"
         }
       ],
       "errorMessage": null
