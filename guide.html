@@ -90,7 +90,7 @@
   .card-h{color:var(--t1);font-size:16px;font-weight:700;margin-bottom:16px;}
 
   /* ── 점수 구간 막대 ── */
-  .scale-bar{height:14px;border-radius:8px;background:linear-gradient(90deg,#16c784,#3ad29a 30%,#f0b90b 55%,#f0843b 75%,#ea3943);}
+  .scale-bar{height:14px;border-radius:8px;background:linear-gradient(90deg,#ea3943,#f0843b 30%,#f0b90b 55%,#16c784 75%,#3b82f6);}
   .scale-legend{display:flex;justify-content:space-between;gap:8px;margin-top:14px;}
   .scale-legend .sl{flex:1;min-width:0;text-align:center;}
   .scale-legend .sl .sw{width:10px;height:10px;border-radius:50%;display:inline-block;margin-bottom:6px;}
@@ -316,7 +316,7 @@
       <div>
         <div class="ph-eyebrow">INDICATOR GUIDE</div>
         <h1 class="ph-h1" data-i18n-html="1" data-en="Complex indicators, <span class=&quot;hl&quot;>explained simply</span>">어려운 지표, <span class="hl">쉬운 말</span>로 풀어드립니다</h1>
-        <p class="ph-sub" data-i18n-html="1" data-en="Every day we take the <b>25+ indicators</b> shown on the dashboard, group them into 5 categories, score each from 0 to 100, and combine them with a weighted average into a single composite timing score. A lower score means the market is fearful — historically closer to buy-friendly zones — while a higher score signals greed and a need for caution. Come back anytime a term trips you up.">대시보드에 나오는 <b>25개 이상의 지표</b>를 매일 5개 카테고리로 나눠 각각 0~100으로 점수화하고, 가중 평균해 하나의 종합 타이밍 점수로 합칩니다. 점수가 낮을수록 시장이 공포에 차 있어 역사적으로 매수 우호 구간에 가깝고, 높을수록 탐욕과 주의가 필요한 상태입니다. 용어가 막힐 때 언제든 돌아오세요.</p>
+        <p class="ph-sub" data-i18n-html="1" data-en="Every day we take the <b>25+ indicators</b> shown on the dashboard, group them into 5 categories, score each from 0 to 100, and combine them with a weighted average into a single composite timing score. Each indicator is normalized so buy-friendly readings score higher: a higher composite score means more indicators point to undervaluation and fear — historically closer to accumulation zones — while a lower score signals overheating and distribution, a time for caution. Come back anytime a term trips you up.">대시보드에 나오는 <b>25개 이상의 지표</b>를 매일 5개 카테고리로 나눠 각각 0~100으로 점수화하고, 가중 평균해 하나의 종합 타이밍 점수로 합칩니다. 각 지표는 매수에 우호적일수록 높은 점수가 되도록 정규화되어, 점수가 높을수록 여러 지표가 저평가·공포(역발상 매집 기회)를 가리키고, 낮을수록 과열·분배 신호가 많아 주의가 필요한 상태입니다. 용어가 막힐 때 언제든 돌아오세요.</p>
       </div>
 
       <!-- 점수 구간 막대 -->
@@ -324,13 +324,13 @@
         <div class="card-h" data-en="How to read the score bands">점수 구간 읽는 법</div>
         <div class="scale-bar"></div>
         <div class="scale-legend">
-          <div class="sl"><span class="sw" style="background:#16c784"></span><div class="rng">0–25</div><div class="lbl" data-en="Extreme Fear">극도 공포</div></div>
-          <div class="sl"><span class="sw" style="background:#3ad29a"></span><div class="rng">26–45</div><div class="lbl" data-en="Fear">공포</div></div>
-          <div class="sl"><span class="sw" style="background:#f0b90b"></span><div class="rng">46–55</div><div class="lbl" data-en="Neutral">중립</div></div>
-          <div class="sl"><span class="sw" style="background:#f0843b"></span><div class="rng">56–75</div><div class="lbl" data-en="Greed">탐욕</div></div>
-          <div class="sl"><span class="sw" style="background:#ea3943"></span><div class="rng">76–100</div><div class="lbl" data-en="Extreme Greed">극도 탐욕</div></div>
+          <div class="sl"><span class="sw" style="background:#ea3943"></span><div class="rng">0–29</div><div class="lbl" data-en="Strong Distribution">강력 분배</div></div>
+          <div class="sl"><span class="sw" style="background:#f0843b"></span><div class="rng">30–49</div><div class="lbl" data-en="Distribution-leaning">분배 우세</div></div>
+          <div class="sl"><span class="sw" style="background:#f0b90b"></span><div class="rng">50–64</div><div class="lbl" data-en="Neutral">중립</div></div>
+          <div class="sl"><span class="sw" style="background:#16c784"></span><div class="rng">65–81</div><div class="lbl" data-en="Accumulation-leaning">매집 우세</div></div>
+          <div class="sl"><span class="sw" style="background:#3b82f6"></span><div class="rng">82–100</div><div class="lbl" data-en="Strong Accumulation">강력 매집</div></div>
         </div>
-        <p class="scale-note" data-i18n-html="1" data-en="<b>Low scores (fear)</b> have often marked better zones for long-term entry, but in a downtrend fear can persist for weeks. Treat <b>high scores (greed)</b> as a signal of overheating and caution — use them as context for a gradual, scaled-in approach rather than as a precise trade trigger."><b>낮은 점수(공포)</b>는 역사적으로 장기 진입에 더 좋았던 구간인 경우가 많지만, 하락장에서는 공포가 몇 주씩 이어질 수 있습니다. <b>높은 점수(탐욕)</b>는 과열·주의 신호로 받아들이고, 정확한 매매 방아쇠가 아니라 분할·점진적 접근의 맥락으로 활용하세요.</p>
+        <p class="scale-note" data-i18n-html="1" data-en="<b>High scores (accumulation)</b> have often marked better backdrops for long-term entry, but in a downtrend that backdrop can persist for weeks while prices keep falling. Treat <b>low scores (distribution)</b> as a signal of overheating and caution — use them as context for a gradual, scaled-in approach rather than as a precise trade trigger."><b>높은 점수(매집 구간)</b>는 역사적으로 장기 진입에 더 좋았던 배경인 경우가 많지만, 하락장에서는 가격이 계속 내리는 동안 그 배경이 몇 주씩 이어질 수 있습니다. <b>낮은 점수(분배 구간)</b>는 과열·주의 신호로 받아들이고, 정확한 매매 방아쇠가 아니라 분할·점진적 접근의 맥락으로 활용하세요.</p>
       </div>
 
       <!-- 5개 카테고리 -->
@@ -388,7 +388,7 @@
         <div class="method-prose">
           <p data-i18n-html="1" data-en="<b>1) Normalize to 0–100.</b> Every indicator uses a different unit — RSI runs 0–100, the funding rate is a tiny %, and DXY is an index near 100. Comparing them as-is is meaningless, so every indicator is converted to a common <code>0–100</code> score. Bounded indicators like RSI are mapped from their known range, while open-ended indicators are scored against their own recent historical distribution — judged by where they sit versus normal, not against an arbitrary fixed line."><b>1) 0~100으로 정규화.</b> 지표마다 단위가 제각각입니다 — RSI는 0~100, 펀딩비는 아주 작은 %, DXY는 100 부근의 지수입니다. 이를 그대로 비교하는 건 의미가 없어, 모든 지표를 공통의 <code>0~100</code> 점수로 변환합니다. RSI처럼 범위가 정해진 지표는 알려진 구간을 매핑하고, 범위가 열린 지표는 그 지표 자신의 최근 역사적 분포에 견줘 점수화해, 임의의 고정선이 아니라 평소 위치 대비로 판단합니다.</p>
           <p data-i18n-html="1" data-en="<b>2) Apply weights.</b> The five categories are not equal. Slow, structural signals (cycle·sentiment, technical) get more weight than indirect ones (macro), giving <code>30 / 25 / 20 / 15 / 10%</code>. Within each category the member indicators are averaged first, then multiplied by the category weight and summed. A simplified example: with Cycle 30, Technical 40, Derivatives 50, On-chain 35, Macro 60, the composite score is <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>. This keeps any single indicator from dominating the result, and if data is missing the score simply shrinks rather than breaking."><b>2) 가중치 적용.</b> 다섯 카테고리는 동등하지 않습니다. 느리고 구조적인 신호(사이클·심리, 기술적)에 간접적 신호(매크로)보다 큰 비중을 둬 <code>30 / 25 / 20 / 15 / 10%</code>입니다. 각 카테고리 안에서는 소속 지표를 먼저 평균낸 뒤, 카테고리 가중치를 곱해 합산합니다. 단순화한 예: 사이클 30, 기술 40, 파생 50, 온체인 35, 매크로 60이면 종합 점수는 <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>입니다. 이렇게 하면 한 지표가 결과를 지배하지 못하고, 데이터가 빠져도 점수가 깨지지 않고 줄어들 뿐입니다.</p>
-          <p data-i18n-html="1" data-en="<b>3) Interpret by band.</b> The final 0–100 score is read against the five bands in 'How to read the score bands' above. The boundaries are signposts, not promises — a low score merely describes a statistically favorable backdrop and does not guarantee a rally."><b>3) 구간으로 해석.</b> 최종 0~100 점수를 위 '점수 구간 읽는 법'의 다섯 구간으로 읽습니다. 경계는 약속이 아니라 이정표입니다 — 낮은 점수는 통계적으로 우호적이었던 배경을 묘사할 뿐, 상승을 보장하지 않습니다.</p>
+          <p data-i18n-html="1" data-en="<b>3) Interpret by band.</b> The final 0–100 score is read against the five bands in 'How to read the score bands' above. The boundaries are signposts, not promises — a high score merely describes a statistically favorable backdrop and does not guarantee a rally."><b>3) 구간으로 해석.</b> 최종 0~100 점수를 위 '점수 구간 읽는 법'의 다섯 구간으로 읽습니다. 경계는 약속이 아니라 이정표입니다 — 높은 점수는 통계적으로 우호적이었던 배경을 묘사할 뿐, 상승을 보장하지 않습니다.</p>
           <div class="zone-table">
             <div class="zrow"><div class="zr-band" style="color:#16c784"><span class="sw" style="background:#16c784"></span>0–25</div><div class="zr-desc" data-en="Extreme Fear — many indicators aligned to pessimism at once. Historically often a better zone for long-term entry, but in a downtrend fear can persist for weeks.">극도 공포 — 다수 지표가 한꺼번에 비관으로 정렬된 상태. 역사적으로 장기 진입에 더 좋았던 구간인 경우가 많지만, 하락장에서는 공포가 몇 주씩 이어질 수 있습니다.</div></div>
             <div class="zrow"><div class="zr-band" style="color:#3ad29a"><span class="sw" style="background:#3ad29a"></span>26–45</div><div class="zr-desc" data-en="Fear — more pessimistic indicators, a backdrop that has generally been buy-friendly.">공포 — 비관적 지표가 더 많은, 대체로 매수에 우호적이었던 배경입니다.</div></div>

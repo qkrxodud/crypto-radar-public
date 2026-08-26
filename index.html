@@ -433,7 +433,7 @@
       "name": "종합 타이밍 점수란 무엇인가요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "5개 카테고리(사이클·심리, 기술적 분석, 파생상품, 온체인, 매크로)에 걸친 25개 이상의 비트코인 시장 지표를 하나로 합친 0~100 숫자입니다. 낮으면 시장이 공포 상태(역사적으로 더 좋은 매수 구간), 높으면 탐욕 상태(주의가 필요한 때)를 뜻합니다."
+        "text": "5개 카테고리(사이클·심리, 기술적 분석, 파생상품, 온체인, 매크로)에 걸친 25개 이상의 비트코인 시장 지표를 하나로 합친 0~100 숫자입니다. 높으면 여러 지표가 저평가·공포를 가리켜 역사적으로 매수에 우호적인 배경(65 이상 매집 우세, 82 이상 강력 매집), 낮으면 과열·분배 신호가 우세해 주의가 필요한 상태(49 이하 분배 구간)를 뜻합니다."
       }
     },
     {
@@ -446,10 +446,10 @@
     },
     {
       "@type": "Question",
-      "name": "점수가 낮으면 바로 사라는 신호인가요?",
+      "name": "점수가 높으면 바로 사라는 신호인가요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "아닙니다. 낮은 점수는 공포가 퍼져 있다는 뜻으로 역사적으로 장기 진입에 더 좋은 구간인 경우가 많았지만, 하락장에서는 몇 주씩 공포가 이어질 수 있습니다. 정확한 매수 방아쇠가 아니라 분할·점진적 접근의 맥락으로 받아들이고, 지표 가이드와 함께 활용하세요."
+        "text": "아닙니다. 높은 점수는 여러 지표가 공포·저평가를 가리킨다는 뜻으로 역사적으로 장기 진입에 더 좋은 배경인 경우가 많았지만, 하락장에서는 가격이 계속 내리는 동안 그 배경이 몇 주씩 이어질 수 있습니다. 정확한 매수 방아쇠가 아니라 분할·점진적 접근의 맥락으로 받아들이고, 지표 가이드와 함께 활용하세요."
       }
     },
     {
@@ -694,7 +694,7 @@
       <div class="explain">
         <h2 data-en="How to read Bitcoin buy timing with data">비트코인 매수 타이밍, 데이터로 읽는 법</h2>
         <div class="sub" data-en="What this dashboard does, in plain terms">이 대시보드가 하는 일, 쉬운 말로</div>
-        <p data-i18n-html="1" data-en="Bitcoin's price is driven as much by sentiment as by fundamentals, and no single number can pinpoint the exact bottom. Every day this dashboard gathers <b>25+ market indicators</b>, scores each from 0 to 100, and combines them into one composite timing score. The lower the score, the more fear grips the market — historically closer to a buying zone; the higher it is, the more greed and caution are warranted.">비트코인 가격은 펀더멘털만큼이나 심리로 움직이고, 어떤 단 하나의 숫자도 완벽한 바닥을 짚어주지 못합니다. 이 대시보드는 매일 <b>25개 이상의 시장 지표</b>를 모아 각각 0~100으로 점수화하고, 이를 하나의 종합 타이밍 점수로 합칩니다. 점수가 낮을수록 시장이 공포에 차 있어 역사적으로 매수 구간에 가깝고, 높을수록 탐욕과 주의가 필요한 상태입니다.</p>
+        <p data-i18n-html="1" data-en="Bitcoin's price is driven as much by sentiment as by fundamentals, and no single number can pinpoint the exact bottom. Every day this dashboard gathers <b>25+ market indicators</b>, normalizes each so that buy-friendly readings score higher, and combines them into one composite timing score from 0 to 100. The higher the score, the more indicators point to undervaluation and fear (a contrarian accumulation backdrop); the lower it is, the more overheating and distribution signals dominate — a time for caution.">비트코인 가격은 펀더멘털만큼이나 심리로 움직이고, 어떤 단 하나의 숫자도 완벽한 바닥을 짚어주지 못합니다. 이 대시보드는 매일 <b>25개 이상의 시장 지표</b>를 모아 매수에 우호적일수록 높은 점수가 되도록 0~100으로 정규화하고, 이를 하나의 종합 타이밍 점수로 합칩니다. 점수가 높을수록 여러 지표가 저평가·공포(역발상 매집 기회)를 가리키는 상태이고, 낮을수록 과열·분배 신호가 많아 주의가 필요한 상태입니다.</p>
         <div class="cats">
           <div class="ec"><div class="n" data-en="Cycle · Sentiment">사이클 · 심리</div><div class="w">30%</div></div>
           <div class="ec"><div class="n" data-en="Technical">기술적 분석</div><div class="w">25%</div></div>
@@ -713,7 +713,7 @@
         <h3 data-en="How the score is calculated, in three steps">점수는 어떻게 나오나요 — 세 단계</h3>
         <p data-i18n-html="1" data-en="<b>① Normalize to 0–100.</b> Every indicator uses a different unit — RSI runs 0–100, the funding rate is a tiny percentage, DXY is an index near 100. Comparing them as-is is meaningless, so each is converted onto a common <code>0–100</code> scale. Bounded indicators are mapped from their known range, and open-ended ones are scored against their own recent history — by where they sit versus normal, not against a fixed line."><b>① 0~100으로 정규화.</b> 지표마다 단위가 제각각입니다 — RSI는 0~100, 펀딩비는 아주 작은 %, DXY(달러가 주요 통화 대비 얼마나 강한지)는 100 부근의 지수입니다. 이를 그대로 비교하는 건 의미가 없어, 각 지표를 공통의 <code>0~100</code> 척도로 변환합니다. 범위가 정해진 지표는 알려진 구간을 매핑하고, 범위가 열린 지표는 그 지표 자신의 최근 역사에 견줘 — 고정선이 아니라 평소 대비 위치로 — 점수화합니다.</p>
         <p data-i18n-html="1" data-en="<b>② Apply category weights and sum.</b> The five categories are not equal. Slower, structural signals get more weight than indirect ones, giving <code>30 / 25 / 20 / 15 / 10%</code>. Each category's member indicators are averaged first, then multiplied by its weight and added up. For example, if the normalized category scores were Cycle 30, Technical 40, Derivatives 50, On-chain 35, Macro 60, the composite would be <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>. This keeps any single indicator from dominating the outcome."><b>② 카테고리 가중치 적용·합산.</b> 다섯 카테고리는 동등하지 않습니다. 느리고 구조적인 신호에 간접적 신호보다 큰 비중을 둬 <code>30 / 25 / 20 / 15 / 10%</code>입니다. 각 카테고리는 소속 지표를 먼저 평균낸 뒤, 그 가중치를 곱해 더합니다. 예를 들어 정규화된 카테고리 점수가 사이클 30, 기술 40, 파생 50, 온체인 35, 매크로 60이라면 종합 점수는 <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>가 됩니다. 이렇게 하면 한 지표가 결과를 지배하지 못합니다.</p>
-        <p data-i18n-html="1" data-en="<b>③ Interpret by band.</b> The final 0–100 score is read as a fear, neutral, or greed band. A low score means fear is widespread — historically often closer to a long-term buying zone; a high score means greed and overheating, a time for caution. The boundaries are signposts, not promises: a low score describes a statistically favorable backdrop and never guarantees a rise."><b>③ 구간으로 해석.</b> 최종 0~100 점수를 공포·중립·탐욕 구간으로 읽습니다. 점수가 낮으면 공포가 퍼진 상태로 역사적으로 장기 매수 구간에 더 가까웠고, 높으면 탐욕과 과열로 주의가 필요한 때입니다. 경계는 약속이 아니라 이정표입니다 — 낮은 점수는 통계적으로 우호적이었던 배경을 묘사할 뿐, 상승을 결코 보장하지 않습니다.</p>
+        <p data-i18n-html="1" data-en="<b>③ Interpret by band.</b> The final 0–100 score is read against five bands: 82+ strong accumulation, 65–81 accumulation-leaning, 50–64 neutral, 30–49 distribution-leaning, and 29 or below strong distribution. A high score means many indicators point to undervaluation — historically closer to long-term accumulation zones; a low score means overheating and distribution pressure. The boundaries are signposts, not promises: a high score describes a statistically favorable backdrop and never guarantees a rise."><b>③ 구간으로 해석.</b> 최종 0~100 점수를 다섯 구간으로 읽습니다 — 82 이상 강력 매집, 65~81 매집 우세, 50~64 중립, 30~49 분배 우세, 29 이하 강력 분배. 점수가 높을수록 여러 지표가 저평가를 가리켜 역사적으로 장기 매집 구간에 가까웠고, 낮을수록 과열·분배 압력이 큰 때입니다. 경계는 약속이 아니라 이정표입니다 — 높은 점수는 통계적으로 우호적이었던 배경을 묘사할 뿐, 상승을 결코 보장하지 않습니다.</p>
       </div>
 
       <!-- 지표 사전 — 22개 상세페이지 허브 -->
@@ -870,9 +870,9 @@
       <div>
         <div class="sec-h"><h2 data-en="Frequently Asked Questions">자주 묻는 질문</h2><span class="hint" data-en="Quick answers for first-time visitors">처음 오신 분들을 위한 빠른 답변</span></div>
         <div class="faq">
-          <details><summary><span class="q" data-en="What is the composite timing score?">종합 타이밍 점수란 무엇인가요?</span><span class="c">+</span></summary><div class="a" data-en="It is a single 0–100 number that combines 25+ Bitcoin market indicators across five categories (Cycle · Sentiment, Technical, Derivatives, On-chain, Macro). A low score means the market is fearful (historically a better buying zone); a high score means it is greedy (a time for caution).">5개 카테고리(사이클·심리, 기술적 분석, 파생상품, 온체인, 매크로)에 걸친 25개 이상의 비트코인 시장 지표를 하나로 합친 0~100 숫자입니다. 낮으면 시장이 공포 상태(역사적으로 더 좋은 매수 구간), 높으면 탐욕 상태(주의가 필요한 때)를 뜻합니다.</div></details>
+          <details><summary><span class="q" data-en="What is the composite timing score?">종합 타이밍 점수란 무엇인가요?</span><span class="c">+</span></summary><div class="a" data-en="It is a single 0–100 number that combines 25+ Bitcoin market indicators across five categories (Cycle · Sentiment, Technical, Derivatives, On-chain, Macro). A high score means many indicators point to undervaluation and fear — historically a buy-friendly backdrop (65+ accumulation-leaning, 82+ strong accumulation); a low score means overheating and distribution signals dominate (49 or below), a time for caution.">5개 카테고리(사이클·심리, 기술적 분석, 파생상품, 온체인, 매크로)에 걸친 25개 이상의 비트코인 시장 지표를 하나로 합친 0~100 숫자입니다. 높으면 여러 지표가 저평가·공포를 가리켜 역사적으로 매수에 우호적인 배경(65 이상 매집 우세, 82 이상 강력 매집), 낮으면 과열·분배 신호가 우세해 주의가 필요한 상태(49 이하 분배 구간)를 뜻합니다.</div></details>
           <details><summary><span class="q" data-en="How often is the data updated?">데이터는 얼마나 자주 갱신되나요?</span><span class="c">+</span></summary><div class="a" data-en="The dashboard updates automatically each day around 09:05 KST. Instead of calling live APIs on every visit, it always shows the most recently collected values, so the page loads fast and stays stable.">대시보드는 매일 한국시간 09:05 무렵 자동으로 갱신됩니다. 방문할 때마다 실시간 API를 호출하는 대신 항상 마지막으로 수집한 값을 보여주기 때문에 페이지가 빠르고 안정적으로 동작합니다.</div></details>
-          <details><summary><span class="q" data-en="Does a low score mean it's time to buy immediately?">점수가 낮으면 바로 사라는 신호인가요?</span><span class="c">+</span></summary><div class="a" data-en="No. A low score means fear is widespread — historically often a better zone for long-term entry — but in a downtrend fear can persist for weeks. Treat it as context for a gradual, staged approach rather than a precise buy trigger, and use it together with the Indicator Guide.">아닙니다. 낮은 점수는 공포가 퍼져 있다는 뜻으로 역사적으로 장기 진입에 더 좋은 구간인 경우가 많았지만, 하락장에서는 몇 주씩 공포가 이어질 수 있습니다. 정확한 매수 방아쇠가 아니라 분할·점진적 접근의 맥락으로 받아들이고, 지표 가이드와 함께 활용하세요.</div></details>
+          <details><summary><span class="q" data-en="Does a high score mean it's time to buy immediately?">점수가 높으면 바로 사라는 신호인가요?</span><span class="c">+</span></summary><div class="a" data-en="No. A high score means many indicators point to fear and undervaluation — historically often a better backdrop for long-term entry — but in a downtrend that backdrop can persist for weeks while prices keep falling. Treat it as context for a gradual, staged approach rather than a precise buy trigger, and use it together with the Indicator Guide.">아닙니다. 높은 점수는 여러 지표가 공포·저평가를 가리킨다는 뜻으로 역사적으로 장기 진입에 더 좋은 배경인 경우가 많았지만, 하락장에서는 가격이 계속 내리는 동안 그 배경이 몇 주씩 이어질 수 있습니다. 정확한 매수 방아쇠가 아니라 분할·점진적 접근의 맥락으로 받아들이고, 지표 가이드와 함께 활용하세요.</div></details>
           <details><summary><span class="q" data-en="Is this investment advice?">이건 투자 조언인가요?</span><span class="c">+</span></summary><div class="a" data-en="No. Everything here is quantitative analysis for educational and reference purposes only. It is not investment advice or a solicitation, and you are solely responsible for your investment decisions and their outcomes.">아닙니다. 이곳의 모든 내용은 교육·참고 목적의 정량 분석일 뿐입니다. 투자 조언이나 권유가 아니며, 모든 투자 결정과 그 결과의 책임은 본인에게 있습니다.</div></details>
           <details><summary><span class="q" data-en="Is it free? Do I need to sign up?">무료인가요? 회원가입이 필요한가요?</span><span class="c">+</span></summary><div class="a" data-en="It is completely free and requires no sign-up. Open the page and the latest figures appear right away. The service is supported by advertising.">완전히 무료이며 회원가입이 필요 없습니다. 페이지를 열면 최신 수치가 바로 나옵니다. 서비스는 광고로 운영됩니다.</div></details>
         </div>
@@ -918,9 +918,10 @@ function usd(v){var n=pf(v);if(n==null)return'--';return '$'+n.toLocaleString(LO
 function mk(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;}
 
 /* ── 데이터 기반 색상 토큰 (강세장 가정 금지) ── */
-var GREEN='#16c784',AMBER='#f0b90b',RED='#ea3943';
+var GREEN='#16c784',AMBER='#f0b90b',RED='#ea3943',BLUE='#3b82f6',ORANGE='#f0843b';
 // 점수 색: 60 이상 매수우호(green) / 45 이상 중립(amber) / 그 외 위험(red)
-function scoreColor(s){return s>=60?GREEN:s>=45?AMBER:RED;}
+/* 백엔드 SignalLabel 밴드(82 강력매집/65 매집우세/50 중립/30 분배우세)와 동일 경계 */
+function scoreColor(s){return s>=82?BLUE:s>=65?GREEN:s>=50?AMBER:s>=30?ORANGE:RED;}
 // 델타 색: 양수 green / 0 amber / 음수 red
 function deltaColor(d){return d>0?GREEN:d<0?RED:AMBER;}
 // 공포탐욕 색: 0~25 극공포(red), ~45 공포(red), ~55 중립(amber), ~75 탐욕(green계열은 과열이므로 amber), 그 외 극탐욕(red)
@@ -1044,12 +1045,12 @@ async function init(){
     ge('heroHeadline').innerHTML=(m.actionReason||(sd+' 구간입니다')).replace(/(관망|중립|매수|매도|분할)/,'<span style="color:'+scoreCol+'">$1</span>');
   }
   // 배지: signalLabel/Display 기반 색
-  var badgeCol=SCORE>=60?GREEN:SCORE>=45?AMBER:RED;
+  var badgeCol=scoreColor(SCORE);
   var hb=ge('heroBadge');
   hb.style.background=badgeCol+'1f';hb.style.border='1px solid '+badgeCol+'40';
   hb.querySelector('.sw').style.background=badgeCol;
   var hbt=ge('heroBadgeText');hbt.style.color=badgeCol;
-  hbt.textContent=ML(sd)+(SCORE>=50&&SCORE<65?T({ko:' · 분할 매수 고려',en:' · Consider scaling in'}):'');
+  hbt.textContent=ML(sd)+(SCORE>=65&&SCORE<82?T({ko:' · 분할 매수 고려',en:' · Consider scaling in'}):'');
   var hd=ge('heroDelta');
   hd.style.color=deltaColor(DELTA);
   hd.textContent=(DELTA>0?'▲ +':DELTA<0?'▼ ':'= ')+DELTA+T({ko:' (어제 대비)',en:' (vs. yesterday)'});
@@ -1376,7 +1377,7 @@ async function init(){
     var heatEl=ge('perfHeat');
     heat.slice(-30).forEach(function(day){
       var v=pf(day.score)||0;
-      var c=v>=60?GREEN:v>=45?AMBER:RED;
+      var c=scoreColor(v);
       var s=mk('span',null,v);
       s.style.background=c+'24';s.style.color=c;s.style.boxShadow='inset 0 0 0 1px '+c+'44';
       s.title=(day.date||'')+' · '+v+T({ko:'점',en:' pts'});
