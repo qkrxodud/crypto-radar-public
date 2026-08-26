@@ -35,6 +35,8 @@ ENDPOINTS = [
     "/api/ai/digest",
     "/api/ai/digest?lang=en",
     "/api/ai/news-sentiment",
+    "/api/analysis/score-history",   # 종합점수·BTC 180일 시계열 (대형 오버레이 차트용)
+    "/api/report/signal-accuracy",   # 매수 신호 사후 적중률·base rate·lift (신호 검증 패널용)
 ]
 
 # 쿼리스트링이 붙어 자동 키 생성이 불가한 엔드포인트는 명시적으로 키를 지정한다.
