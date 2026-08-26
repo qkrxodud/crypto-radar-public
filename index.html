@@ -688,6 +688,13 @@
             <div id="accuIndicators"></div>
           </div>
         </details>
+        <details class="acc" id="accExpert" style="display:none">
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Expert Analysis Scores">전문가 분석 점수</span><span class="c" id="expertCnt">--</span></div><span class="caret">▼</span></summary>
+          <div class="contrib-body">
+            <div class="ch" data-en="38 composite analyses (on-chain · derivatives · technical · sentiment combos) each scored 0–100 — sorted by score, hover for details">온체인·파생·기술·심리를 조합한 복합 분석 38종을 각각 0~100으로 채점한 결과입니다 — 점수순 정렬, 항목에 마우스를 올리면 상세가 보입니다</div>
+            <div id="expertList" class="acc-body" style="padding:0"></div>
+          </div>
+        </details>
         <details class="acc" id="accDca">
           <summary><div class="lt"><span class="d"></span><span class="t" data-en="DCA Strategy Backtest">DCA 전략 백테스트</span><span class="c" id="dcaCnt">--</span></div><span class="caret">▼</span></summary>
           <div class="contrib-body">
@@ -1630,6 +1637,26 @@ async function init(){
       ge('accuCnt').textContent=T({ko:'데이터 없음',en:'No data'});
     }
   }catch(e){console.warn('[dashboard] signal-accuracy render failed:',e&&e.message);}
+
+  /* ── [확장] 전문가 분석 점수 38종 (표시명 있는 스냅샷에서만 노출) ── */
+  try{
+    var ax=d.api_analysis_scores||{};
+    var axRows=(ax.scores||[]).filter(function(e){return e&&e.displayName;});
+    if(ax.hasData&&axRows.length){
+      var isEnX=window.BTCI18N&&window.BTCI18N.lang==='en';
+      ge('accExpert').style.display='';
+      ge('expertCnt').textContent=axRows.length+T({ko:'개 분석',en:' analyses'});
+      var xl=ge('expertList');
+      axRows.forEach(function(e){
+        var col=scoreColor(e.score);
+        var nm=isEnX?(e.displayNameEn||e.displayName):e.displayName;
+        var cell=mk('div','acc-cell',
+          '<div class="l" title="'+(e.description||'')+' — '+(e.detail||'')+'">'+nm+'</div>'+
+          '<div class="v" style="color:'+col+'">'+e.score+' <small style="color:'+col+';opacity:.8">'+ML(e.labelDisplay||'')+'</small></div>');
+        xl.appendChild(cell);
+      });
+    }
+  }catch(e){console.warn('[dashboard] expert scores render failed:',e&&e.message);}
 
   /* ── [확장] 펀딩비 최근 7일 미니 차트 ── */
   try{
