@@ -696,11 +696,11 @@
         <div class="sub" data-en="What this dashboard does, in plain terms">이 대시보드가 하는 일, 쉬운 말로</div>
         <p data-i18n-html="1" data-en="Bitcoin's price is driven as much by sentiment as by fundamentals, and no single number can pinpoint the exact bottom. Every day this dashboard gathers <b>25+ market indicators</b>, normalizes each so that buy-friendly readings score higher, and combines them into one composite timing score from 0 to 100. The higher the score, the more indicators point to undervaluation and fear (a contrarian accumulation backdrop); the lower it is, the more overheating and distribution signals dominate — a time for caution.">비트코인 가격은 펀더멘털만큼이나 심리로 움직이고, 어떤 단 하나의 숫자도 완벽한 바닥을 짚어주지 못합니다. 이 대시보드는 매일 <b>25개 이상의 시장 지표</b>를 모아 매수에 우호적일수록 높은 점수가 되도록 0~100으로 정규화하고, 이를 하나의 종합 타이밍 점수로 합칩니다. 점수가 높을수록 여러 지표가 저평가·공포(역발상 매집 기회)를 가리키는 상태이고, 낮을수록 과열·분배 신호가 많아 주의가 필요한 상태입니다.</p>
         <div class="cats">
-          <div class="ec"><div class="n" data-en="Cycle · Sentiment">사이클 · 심리</div><div class="w">30%</div></div>
-          <div class="ec"><div class="n" data-en="Technical">기술적 분석</div><div class="w">25%</div></div>
-          <div class="ec"><div class="n" data-en="Derivatives">파생상품</div><div class="w">20%</div></div>
-          <div class="ec"><div class="n" data-en="On-chain">온체인</div><div class="w">15%</div></div>
-          <div class="ec"><div class="n" data-en="Macro">매크로</div><div class="w">10%</div></div>
+          <div class="ec"><div class="n" data-en="On-chain">온체인</div><div class="w">34%</div></div>
+          <div class="ec"><div class="n" data-en="Derivatives">파생상품</div><div class="w">21%</div></div>
+          <div class="ec"><div class="n" data-en="Macro">매크로</div><div class="w">16%</div></div>
+          <div class="ec"><div class="n" data-en="Cycle · Sentiment">사이클 · 심리</div><div class="w">15%</div></div>
+          <div class="ec"><div class="n" data-en="Technical">기술적 분석</div><div class="w">14%</div></div>
         </div>
 
         <!-- 여러 지표를 함께 읽는 원리 -->
@@ -712,7 +712,7 @@
         <!-- 점수 산정 3단계 -->
         <h3 data-en="How the score is calculated, in three steps">점수는 어떻게 나오나요 — 세 단계</h3>
         <p data-i18n-html="1" data-en="<b>① Normalize to 0–100.</b> Every indicator uses a different unit — RSI runs 0–100, the funding rate is a tiny percentage, DXY is an index near 100. Comparing them as-is is meaningless, so each is converted onto a common <code>0–100</code> scale. Bounded indicators are mapped from their known range, and open-ended ones are scored against their own recent history — by where they sit versus normal, not against a fixed line."><b>① 0~100으로 정규화.</b> 지표마다 단위가 제각각입니다 — RSI는 0~100, 펀딩비는 아주 작은 %, DXY(달러가 주요 통화 대비 얼마나 강한지)는 100 부근의 지수입니다. 이를 그대로 비교하는 건 의미가 없어, 각 지표를 공통의 <code>0~100</code> 척도로 변환합니다. 범위가 정해진 지표는 알려진 구간을 매핑하고, 범위가 열린 지표는 그 지표 자신의 최근 역사에 견줘 — 고정선이 아니라 평소 대비 위치로 — 점수화합니다.</p>
-        <p data-i18n-html="1" data-en="<b>② Apply category weights and sum.</b> The five categories are not equal. Slower, structural signals get more weight than indirect ones, giving <code>30 / 25 / 20 / 15 / 10%</code>. Each category's member indicators are averaged first, then multiplied by its weight and added up. For example, if the normalized category scores were Cycle 30, Technical 40, Derivatives 50, On-chain 35, Macro 60, the composite would be <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>. This keeps any single indicator from dominating the outcome."><b>② 카테고리 가중치 적용·합산.</b> 다섯 카테고리는 동등하지 않습니다. 느리고 구조적인 신호에 간접적 신호보다 큰 비중을 둬 <code>30 / 25 / 20 / 15 / 10%</code>입니다. 각 카테고리는 소속 지표를 먼저 평균낸 뒤, 그 가중치를 곱해 더합니다. 예를 들어 정규화된 카테고리 점수가 사이클 30, 기술 40, 파생 50, 온체인 35, 매크로 60이라면 종합 점수는 <code>30×0.30 + 40×0.25 + 50×0.20 + 35×0.15 + 60×0.10 = 40.25</code>가 됩니다. 이렇게 하면 한 지표가 결과를 지배하지 못합니다.</p>
+        <p data-i18n-html="1" data-en="<b>② Apply category weights and sum.</b> The five categories are not equal. On-chain valuation — historically the best cycle top/bottom detector — carries the most weight, followed by derivatives positioning, giving roughly <code>34 / 21 / 16 / 15 / 14%</code> (On-chain / Derivatives / Macro / Cycle·Sentiment / Technical). Each indicator carries its own weight within the category and everything is summed. For example, if the category scores were On-chain 35, Derivatives 50, Macro 60, Cycle 30, Technical 40, the composite would be <code>35×0.34 + 50×0.21 + 60×0.16 + 30×0.15 + 40×0.14 = 42.1</code>. This keeps any single indicator from dominating the outcome."><b>② 카테고리 가중치 적용·합산.</b> 다섯 카테고리는 동등하지 않습니다. 역사적으로 사이클 고점·저점 포착력이 가장 좋았던 온체인 밸류에이션에 최대 비중을 두고, 파생 포지셔닝이 그 뒤를 이어 대략 <code>34 / 21 / 16 / 15 / 14%</code>(온체인/파생/매크로/사이클·심리/기술)입니다. 각 지표는 카테고리 안에서 개별 가중치로 반영된 뒤 전체가 합산됩니다. 예를 들어 카테고리 점수가 온체인 35, 파생 50, 매크로 60, 사이클 30, 기술 40이라면 종합 점수는 <code>35×0.34 + 50×0.21 + 60×0.16 + 30×0.15 + 40×0.14 = 42.1</code>이 됩니다. 이렇게 하면 한 지표가 결과를 지배하지 못합니다.</p>
         <p data-i18n-html="1" data-en="<b>③ Interpret by band.</b> The final 0–100 score is read against five bands: 82+ strong accumulation, 65–81 accumulation-leaning, 50–64 neutral, 30–49 distribution-leaning, and 29 or below strong distribution. A high score means many indicators point to undervaluation — historically closer to long-term accumulation zones; a low score means overheating and distribution pressure. The boundaries are signposts, not promises: a high score describes a statistically favorable backdrop and never guarantees a rise."><b>③ 구간으로 해석.</b> 최종 0~100 점수를 다섯 구간으로 읽습니다 — 82 이상 강력 매집, 65~81 매집 우세, 50~64 중립, 30~49 분배 우세, 29 이하 강력 분배. 점수가 높을수록 여러 지표가 저평가를 가리켜 역사적으로 장기 매집 구간에 가까웠고, 낮을수록 과열·분배 압력이 큰 때입니다. 경계는 약속이 아니라 이정표입니다 — 높은 점수는 통계적으로 우호적이었던 배경을 묘사할 뿐, 상승을 결코 보장하지 않습니다.</p>
       </div>
 
@@ -1201,12 +1201,13 @@ async function init(){
   setTimeout(function(){ge('halvFill').style.width=pw+'%';},200);
 
   /* ── 카테고리별 점수 (indicatorBreakdown 그룹 평균, index.html 그룹핑) ── */
+  /* 가중치는 백엔드 ScoringPolicy v2.1 개별 지표 가중치를 이 그룹핑 기준으로 합산한 값 */
   var cats=[
-    {name:'사이클 · 심리',en:'Cycle · Sentiment',w:'30%',keys:['공포탐욕','BTC도미넌스','김치프리미엄','ETH/BTC','반감기사이클'],grad:'linear-gradient(90deg,#f7931a,#ffb347)'},
-    {name:'기술적 분석',en:'Technical',w:'25%',keys:['RSI(일)','RSI(주)','MA200비율','Pi사이클'],grad:'linear-gradient(90deg,#5b8def,#7fb0ff)'},
-    {name:'파생상품',en:'Derivatives',w:'20%',keys:['펀딩비','롱숏비율','테이커비율','OI비율','변동성(HV)'],grad:'linear-gradient(90deg,#16c784,#2bd49a)'},
-    {name:'온체인',en:'On-chain',w:'15%',keys:['MVRV Z','Puell Multiple','NUPL','SOPR','LTH/STH','스테이블코인'],grad:'linear-gradient(90deg,#f0b90b,#ffd877)'},
-    {name:'매크로',en:'Macro',w:'10%',keys:['DXY','S&P500','VIX','M2 성장률'],grad:'linear-gradient(90deg,#b07bff,#cda6ff)'}
+    {name:'온체인',en:'On-chain',w:'34%',keys:['MVRV Z','Puell Multiple','NUPL','SOPR','LTH/STH','스테이블코인','Active Addresses','Hash Rate','채굴자수익'],grad:'linear-gradient(90deg,#f0b90b,#ffd877)'},
+    {name:'파생상품',en:'Derivatives',w:'21%',keys:['펀딩비','롱숏비율','테이커비율','OI비율','변동성(HV)','Put/Call'],grad:'linear-gradient(90deg,#16c784,#2bd49a)'},
+    {name:'매크로',en:'Macro',w:'16%',keys:['DXY','S&P500','VIX','M2 성장률','BTC ETF 유입'],grad:'linear-gradient(90deg,#b07bff,#cda6ff)'},
+    {name:'사이클 · 심리',en:'Cycle · Sentiment',w:'15%',keys:['공포탐욕','BTC도미넌스','김치프리미엄','ETH/BTC','반감기사이클'],grad:'linear-gradient(90deg,#f7931a,#ffb347)'},
+    {name:'기술적 분석',en:'Technical',w:'14%',keys:['RSI(일)','RSI(주)','MA200비율','Pi사이클'],grad:'linear-gradient(90deg,#5b8def,#7fb0ff)'}
   ];
   var cl=ge('catList');
   cats.forEach(function(cat){
