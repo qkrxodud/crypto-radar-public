@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-26T00:26:32Z",
+  "updatedAt": "2026-08-26T00:46:39Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,16 +61,16 @@
       "historicalVolatility": "0.43",
       "btcClose": "78612.25",
       "macd": {
-        "macdLine": "3950.89",
-        "signalLine": "2597.62",
-        "histogram": "1353.27",
+        "macdLine": "3940.27",
+        "signalLine": "2595.49",
+        "histogram": "1344.78",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
         "adx": "36.9",
-        "plusDi": "46.4",
+        "plusDi": "46.3",
         "minusDi": "8.6",
         "strength": "MODERATE_UP",
         "strengthLabel": "보통 상승 추세",
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001850",
       "ivRv": {
-        "iv": "44.62",
+        "iv": "44.40",
         "rv": "43.00",
-        "spread": "+1.62",
+        "spread": "+1.40",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2851,9 +2851,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "256770193136.69472",
-      "marketCap30dAgoUsd": "256595076188.20464",
-      "growth30dPercent": "0.07",
+      "totalMarketCapUsd": "256986919695.79632",
+      "marketCap30dAgoUsd": "256425279327.54159",
+      "growth30dPercent": "0.22",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "78503.60",
-      "openInterestUsd": "8399453870.23590000",
-      "longAccountRatio": "0.5012",
-      "shortAccountRatio": "0.4988",
-      "downsideLiquidationUsd": "4209806279.76",
-      "upsideLiquidationUsd": "4189647590.47",
+      "currentPrice": "78387.50",
+      "openInterestUsd": "8380523271.77748000",
+      "longAccountRatio": "0.5022",
+      "shortAccountRatio": "0.4978",
+      "downsideLiquidationUsd": "4208698787.09",
+      "upsideLiquidationUsd": "4171824484.69",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "70653.24",
+          "price": "70548.75",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1683922511.90"
+          "notionalUsd": "1683479514.83"
         },
         {
-          "price": "86353.96",
+          "price": "86226.25",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1675859036.19"
+          "notionalUsd": "1668729793.88"
         },
         {
-          "price": "75363.46",
+          "price": "75252.00",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1473432197.92"
+          "notionalUsd": "1473044575.48"
         },
         {
-          "price": "81643.74",
+          "price": "81523.00",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1466376656.67"
+          "notionalUsd": "1460138569.64"
         },
         {
-          "price": "76933.53",
+          "price": "76819.75",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "841961255.95"
+          "notionalUsd": "841739757.42"
         },
         {
-          "price": "80073.67",
+          "price": "79955.25",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "837929518.09"
+          "notionalUsd": "834364896.94"
         },
         {
-          "price": "77718.56",
+          "price": "77603.63",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "210490313.99"
+          "notionalUsd": "210434939.35"
         },
         {
-          "price": "79288.64",
+          "price": "79171.38",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "209482379.52"
+          "notionalUsd": "208591224.23"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-26T00:06:27.168022Z",
+      "generatedAt": "2026-08-26T00:30:02.999818Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,30 +4384,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 65로 다소 긍정적이나, 알트시즌지수가 낮아 주의가 필요하다."
+          "content": "현재 시장은 중립적인 상태로, 공포탐욕 지수가 65로 다소 긍정적이나 RSI가 80.07로 과매수 신호를 보이고 있다."
         },
         {
           "type": "RISK",
-          "content": "높은 RSI(일) 80.07로 과매수 신호가 나타나고 있다."
+          "content": "과매수 상태로 조정 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스 59로 알트코인에 대한 투자 심리가 약화될 수 있다."
+          "content": "BTC 도미넌스가 59로 알트코인에 대한 투자 심리가 약해질 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매 전략을 고려하고, 과매수 신호에 유의하라."
+          "content": "포트폴리오 다각화를 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "알트코인 비중을 줄이고 BTC에 집중하는 것이 바람직하다."
+          "content": "단기 매매보다는 장기 투자 전략을 유지하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-26T00:06:29.308463Z",
+      "generatedAt": "2026-08-26T00:46:39.894273Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4416,23 +4416,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is neutral with moderate bullish sentiment but shows signs of potential risk."
+          "content": "Market sentiment is neutral with mixed indicators suggesting potential volatility ahead."
         },
         {
           "type": "RISK",
-          "content": "High RSI levels indicate potential overbought conditions."
+          "content": "High RSI levels indicate overbought conditions, risking a price correction."
         },
         {
           "type": "RISK",
-          "content": "Low altcoin season index suggests limited altcoin momentum."
+          "content": "Low altcoin season index suggests limited growth in altcoins compared to BTC."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of trend reversal."
+          "content": "Monitor market closely for signs of reversal or correction."
         },
         {
           "type": "ACTION",
-          "content": "Consider taking profits or hedging positions to mitigate risk."
+          "content": "Consider diversifying investments to mitigate risk exposure."
         }
       ],
       "errorMessage": null
