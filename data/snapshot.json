@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-26T17:51:00Z",
+  "updatedAt": "2026-08-26T18:11:13Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "78612.25",
       "macd": {
-        "macdLine": "3941.85",
-        "signalLine": "2595.81",
-        "histogram": "1346.04",
+        "macdLine": "3948.39",
+        "signalLine": "2597.12",
+        "histogram": "1351.27",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001850",
       "ivRv": {
-        "iv": "37.25",
+        "iv": "40.91",
         "rv": "43.00",
-        "spread": "-5.75",
-        "label": "저평가"
+        "spread": "-2.09",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 65,
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "78398.60",
-      "openInterestUsd": "8349384540.34462300",
-      "longAccountRatio": "0.5151",
-      "shortAccountRatio": "0.4849",
-      "downsideLiquidationUsd": "4300767976.73",
-      "upsideLiquidationUsd": "4048616563.61",
+      "currentPrice": "78490.60",
+      "openInterestUsd": "8345920835.84121300",
+      "longAccountRatio": "0.5132",
+      "shortAccountRatio": "0.4868",
+      "downsideLiquidationUsd": "4283126572.95",
+      "upsideLiquidationUsd": "4062794262.89",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "70558.74",
+          "price": "70641.54",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1720307190.69"
+          "notionalUsd": "1713250629.18"
         },
         {
-          "price": "86238.46",
+          "price": "86339.66",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1619446625.45"
+          "notionalUsd": "1625117705.16"
         },
         {
-          "price": "75262.66",
+          "price": "75350.98",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1505268791.86"
+          "notionalUsd": "1499094300.53"
         },
         {
-          "price": "81534.54",
+          "price": "81630.22",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1417015797.26"
+          "notionalUsd": "1421977992.01"
         },
         {
-          "price": "76830.63",
+          "price": "76920.79",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "860153595.35"
+          "notionalUsd": "856625314.59"
         },
         {
-          "price": "79966.57",
+          "price": "80060.41",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "809723312.72"
+          "notionalUsd": "812558852.58"
         },
         {
-          "price": "77614.61",
+          "price": "77705.69",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "215038398.84"
+          "notionalUsd": "214156328.65"
         },
         {
-          "price": "79182.59",
+          "price": "79275.51",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "202430828.18"
+          "notionalUsd": "203139713.14"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-26T17:30:55.398907Z",
+      "generatedAt": "2026-08-26T18:11:09.135758Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,7 +4384,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 65로 다소 긍정적이나, 알트시즌지수가 낮아 주의가 필요하다."
+          "content": "현재 시장은 중립적인 상태로, 공포탐욕 지수가 65로 다소 긍정적이나, 알트시즌지수는 낮은 편이다."
         },
         {
           "type": "RISK",
@@ -4396,18 +4396,18 @@
         },
         {
           "type": "ACTION",
-          "content": "단기 투자자는 이익 실현을 고려해야 한다."
+          "content": "현재 포지션을 유지하며 시장 동향을 주의 깊게 관찰하라."
         },
         {
           "type": "ACTION",
-          "content": "장기 투자자는 시장 추세를 주의 깊게 관찰해야 한다."
+          "content": "과매수 상태에서의 진입은 신중히 고려하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-26T17:30:57.041539Z",
+      "generatedAt": "2026-08-26T18:11:11.588986Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4416,7 +4416,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market exhibits a neutral sentiment with mixed indicators suggesting caution in trading."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting caution."
         },
         {
           "type": "RISK",
@@ -4424,23 +4424,23 @@
         },
         {
           "type": "RISK",
-          "content": "Low altcoin season index suggests limited altcoin performance."
+          "content": "Low altcoin season index suggests limited altcoin momentum."
         },
         {
           "type": "ACTION",
-          "content": "Monitor BTC price closely for signs of reversal."
+          "content": "Monitor for signs of trend reversal before entering new positions."
         },
         {
           "type": "ACTION",
-          "content": "Consider reducing exposure to high-risk assets."
+          "content": "Consider profit-taking on existing positions due to high volatility."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-26T17:10:46.998702Z",
-      "compositeScore": "0.125",
+      "generatedAt": "2026-08-26T18:11:13.946040Z",
+      "compositeScore": "0.088",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4504,25 +4504,32 @@
           "score": "0.2"
         },
         {
+          "title": "Chainalysis estimates $457B in taxable crypto activity, says CARF misses most",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/chainalysis-estimates-457b-in-potentially-taxable-crypto-activity-says-carf-misses-most-onchain-flows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-26T17:48:34Z",
+          "score": "0.0"
+        },
+        {
           "title": "SEC sends crypto custody rule overhaul to White House for review",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/sec-crypto-custody-rules-investment-firms-white-house?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-26T16:19:09Z",
-          "score": "0.0"
+          "score": "-0.4"
         },
         {
           "title": "77% of Americans see crypto in retirement plans as risky: Survey",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/77-of-americans-see-crypto-in-retirement-plans-as-risky-survey?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-26T16:10:56Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin dips below $78K as stocks, gold fall on higher US PCE Inflation data",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-dips-below-78k-as-stocks-gold-fall-on-higher-us-pce-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-26T15:58:55Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Protocol upgrade decouples consensus from execution to solve scaling bottlenecks",
@@ -4551,13 +4558,6 @@
           "url": "https://cointelegraph.com/markets/bernstein-predicts-bitcoin-reclaim-125000-year-end?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-26T12:32:36Z",
           "score": "0.7"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-26T12:30:00Z",
-          "score": "0.0"
         }
       ],
       "errorMessage": null
