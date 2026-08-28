@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-28T14:28:18Z",
+  "updatedAt": "2026-08-28T14:42:45Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "80158.19",
       "macd": {
-        "macdLine": "4206.84",
-        "signalLine": "3162.54",
-        "histogram": "1044.30",
+        "macdLine": "4237.57",
+        "signalLine": "3168.69",
+        "histogram": "1068.88",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001879",
       "ivRv": {
-        "iv": "40.18",
+        "iv": "32.20",
         "rv": "43.00",
-        "spread": "-2.82",
-        "label": "균형"
+        "spread": "-10.80",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 73,
@@ -2851,9 +2851,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257046157558.45770",
+      "totalMarketCapUsd": "256957635432.0124",
       "marketCap30dAgoUsd": "255964245017.37008",
-      "growth30dPercent": "0.42",
+      "growth30dPercent": "0.39",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "78582.60",
-      "openInterestUsd": "8436577034.76900000",
-      "longAccountRatio": "0.5127",
-      "shortAccountRatio": "0.4873",
-      "downsideLiquidationUsd": "4325433045.73",
-      "upsideLiquidationUsd": "4111143989.04",
+      "currentPrice": "79333.20",
+      "openInterestUsd": "8468024178.40215300",
+      "longAccountRatio": "0.5126",
+      "shortAccountRatio": "0.4874",
+      "downsideLiquidationUsd": "4340709193.85",
+      "upsideLiquidationUsd": "4127314984.55",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "70724.34",
+          "price": "71399.88",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1730173218.29"
+          "notionalUsd": "1736283677.54"
         },
         {
-          "price": "86440.86",
+          "price": "87266.52",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1644457595.62"
+          "notionalUsd": "1650925993.82"
         },
         {
-          "price": "75439.30",
+          "price": "76159.87",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1513901566.00"
+          "notionalUsd": "1519248217.85"
         },
         {
-          "price": "81725.90",
+          "price": "82506.53",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1438900396.17"
+          "notionalUsd": "1444560244.59"
         },
         {
-          "price": "77010.95",
+          "price": "77746.54",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "865086609.15"
+          "notionalUsd": "868141838.77"
         },
         {
-          "price": "80154.25",
+          "price": "80919.86",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "822228797.81"
+          "notionalUsd": "825462996.91"
         },
         {
-          "price": "77796.77",
+          "price": "78539.87",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "216271652.29"
+          "notionalUsd": "217035459.69"
         },
         {
-          "price": "79368.43",
+          "price": "80126.53",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "205557199.45"
+          "notionalUsd": "206365749.23"
         }
       ],
       "errorMessage": null
@@ -4375,7 +4375,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-08-28T14:00:05.393627Z",
+      "generatedAt": "2026-08-28T14:29:59.554702Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -4384,30 +4384,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리를 보이며, 기술적 지표는 과매수 상태에 있습니다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 공포탐욕 지수가 높아 상승세를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "과매수 RSI로 인해 조정 가능성이 존재합니다."
+          "content": "높은 RSI 수치로 인해 과매수 상태일 수 있다."
         },
         {
           "type": "RISK",
-          "content": "낮은 알트시즌지수로 인해 알트코인 투자에 대한 불확실성이 높습니다."
+          "content": "BTC 도미넌스가 59로 알트코인에 대한 투자 심리가 약해질 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매매 전략을 고려하여 포지션 조정이 필요합니다."
+          "content": "시장의 변동성을 고려하여 포트폴리오 조정이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "시장 모니터링을 지속하며, 변동성에 대비한 리스크 관리가 중요합니다."
+          "content": "단기적인 이익 실현을 검토하는 것이 좋다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-28T14:02:31.490236Z",
+      "generatedAt": "2026-08-28T14:42:43.895483Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4416,15 +4416,15 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market sentiment is neutral with a mix of bullish and bearish indicators."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting potential volatility."
         },
         {
           "type": "RISK",
-          "content": "High RSI levels indicate potential overbought conditions."
+          "content": "High RSI levels indicate overbought conditions."
         },
         {
           "type": "RISK",
-          "content": "Low altcoin season index suggests weakness in altcoin performance."
+          "content": "Decreasing altcoin dominance signals potential weakness in alt markets."
         },
         {
           "type": "ACTION",
@@ -4432,7 +4432,7 @@
         },
         {
           "type": "ACTION",
-          "content": "Consider profit-taking if price approaches historical resistance levels."
+          "content": "Consider profit-taking on high-performing assets."
         }
       ],
       "errorMessage": null
@@ -5009,8 +5009,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 177715.72,
-      "currentPrice": 79156.46,
-      "deviationPct": -55.46,
+      "currentPrice": 79772.96,
+      "deviationPct": -55.11,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -5209,9 +5209,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 69733.02,
-      "currentPrice": 79156.46,
-      "priceToSthRatio": 1.1351,
-      "premiumPct": 13.51,
+      "currentPrice": 79772.96,
+      "priceToSthRatio": 1.144,
+      "premiumPct": 14.4,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
@@ -5240,7 +5240,7 @@
       "isAvailable": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": 3.7,
+      "compositeScore": 4.5,
       "extreme": {
         "name": "NEUTRAL",
         "description": "중립"
