@@ -614,6 +614,14 @@
             <div class="th"><div><div class="tt" data-en="Fear &amp; Greed Index">공포·탐욕 지수</div><div class="ts" data-en="30d · 0–100">30일 · 0–100</div></div><span class="tv" id="trFgV">--</span></div>
             <canvas id="chFg"></canvas>
           </div>
+          <div class="trend-card" id="trDxyCard" style="display:none">
+            <div class="th"><div><div class="tt" data-en="Dollar Index (DXY)">달러인덱스 (DXY)</div><div class="ts" data-en="30d · dollar strength — inverse to BTC">30일 · 달러 강세 = BTC 역풍</div></div><span class="tv" id="trDxyV">--</span></div>
+            <canvas id="chDxy"></canvas>
+          </div>
+          <div class="trend-card" id="trSpCard" style="display:none">
+            <div class="th"><div><div class="tt" data-en="S&amp;P 500">S&amp;P 500</div><div class="ts" data-en="30d · risk-asset appetite">30일 · 위험자산 선호도</div></div><span class="tv" id="trSpV">--</span></div>
+            <canvas id="chSp500"></canvas>
+          </div>
         </div>
         <div class="trend-card" id="shCard" style="margin-top:14px">
           <div class="th"><div><div class="tt" data-en="Composite Score × BTC Price — 180 days">종합 점수 × BTC 가격 — 180일</div><div class="ts" data-en="Left axis: score 0–100 (dashed 65 = accumulation-leaning boundary) · Right axis: BTC USD">왼쪽 축: 점수 0–100 (점선 65 = 매집 우세 경계) · 오른쪽 축: BTC USD</div></div><span class="tv" id="shMeta">--</span></div>
@@ -708,6 +716,16 @@
           <div class="contrib-body" style="padding-bottom:0">
             <div class="ch" data-en="Funding rate — last 7 days (positive = longs pay = crowd leaning up)">펀딩비 최근 7일 추이 (양수 = 롱이 비용 지불 = 상승 쏠림)</div>
             <canvas id="chFunding" style="height:92px;width:100%"></canvas>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px">
+              <div id="ivBox" style="display:none">
+                <div class="ch" data-en="Option implied volatility (IV 30d) — expected swings priced by options">옵션 내재변동성(IV 30일) — 옵션시장이 가격에 반영한 기대 변동폭</div>
+                <canvas id="chIv" style="height:84px;width:100%"></canvas>
+              </div>
+              <div id="skewBox" style="display:none">
+                <div class="ch" data-en="25-delta skew — positive = downside hedges in demand (bearish lean)">25델타 스큐 — 양수 = 하락 헤지 수요 우세(약세 쏠림)</div>
+                <canvas id="chSkew" style="height:84px;width:100%"></canvas>
+              </div>
+            </div>
           </div>
           <div class="acc-body" id="derivBody"></div>
         </details>
@@ -745,6 +763,22 @@
             <div id="accuRegimes"></div>
             <div class="ch" style="margin:16px 0 8px" data-en="Accuracy by signal source (7d / 14d / 30d · signal count)">신호별 적중률 (7d / 14d / 30d · 신호 수)</div>
             <div id="accuIndicators"></div>
+          </div>
+        </details>
+        <details class="acc" id="accFlow" style="display:none">
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Exchange Net Flow — 90 days">거래소 자금 흐름 — 90일</span><span class="c" id="flowCnt">--</span></div><span class="caret">▼</span></summary>
+          <div class="contrib-body">
+            <div class="ch" data-en="Daily BTC net flow into exchanges. Red = net inflow (potential sell pressure) · Green = net outflow (moving to long-term custody).">일별 거래소 BTC 순유입입니다. 빨강 = 순유입(잠재 매도 압력) · 초록 = 순유출(장기 보관 이동).</div>
+            <canvas id="chFlow" style="height:140px;width:100%"></canvas>
+            <div class="acc-body" id="flowStats" style="padding:0;margin-top:12px"></div>
+          </div>
+        </details>
+        <details class="acc" id="accHist" style="display:none">
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Score Distribution — last 90 days">점수 분포 — 최근 90일</span><span class="c" id="histCnt">--</span></div><span class="caret">▼</span></summary>
+          <div class="contrib-body">
+            <div class="ch" data-en="How often the composite score landed in each band over the last 90 days — the highlighted bar is where today sits.">최근 90일 동안 종합 점수가 각 구간에 몇 번 머물렀는지입니다 — 강조된 막대가 오늘의 위치입니다.</div>
+            <div id="histBars" style="display:flex;align-items:flex-end;gap:6px;height:120px;margin-top:10px"></div>
+            <div id="histLabels" style="display:flex;gap:6px;margin-top:6px"></div>
           </div>
         </details>
         <details class="acc" id="accExpert" style="display:none">
@@ -1046,6 +1080,36 @@ function lineChart(id,data,color,opts){
   ctx.strokeStyle=color;ctx.lineWidth=opts.lw||2.5;ctx.lineJoin='round';ctx.shadowColor=color;ctx.shadowBlur=8;ctx.stroke();ctx.shadowBlur=0;
   if(opts.dot!==false){var lx=X(data.length-1),ly=Y(data[data.length-1]!=null?data[data.length-1]:mn);
     ctx.beginPath();ctx.arc(lx,ly,3.3,0,7);ctx.fillStyle=color;ctx.fill();}
+}
+
+/* ── 바 차트 (양/음 분기, 색 배열 지원 — 거래소 순유입/유출용) ── */
+function barChart(id,values,colors){
+  var c=ge(id);if(!c||!values||!values.length)return;
+  var dpr=window.devicePixelRatio||1;
+  var w=c.clientWidth||c.offsetWidth||600,h=c.clientHeight||140;
+  c.width=w*dpr;c.height=h*dpr;
+  var ctx=c.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+  var pad={t:8,r:4,b:8,l:4};
+  var iw=w-pad.l-pad.r,ih=h-pad.t-pad.b;
+  var valid=values.filter(function(v){return v!=null;});
+  if(!valid.length)return;
+  var mx=Math.max.apply(null,valid.map(Math.abs))||1;
+  var zero=pad.t+ih*(Math.max.apply(null,valid)>0?(Math.max.apply(null,valid)/(Math.max.apply(null,valid)-Math.min.apply(null,valid,0)||1)):0.5);
+  // 0선: 최대/최소 비율 기반 — 값이 전부 양수면 바닥, 전부 음수면 천장
+  var vmax=Math.max.apply(null,valid.concat([0])),vmin=Math.min.apply(null,valid.concat([0]));
+  var rng=(vmax-vmin)||1;
+  zero=pad.t+ih*(vmax/rng);
+  ctx.strokeStyle='rgba(255,255,255,.12)';ctx.lineWidth=1;
+  ctx.beginPath();ctx.moveTo(pad.l,zero);ctx.lineTo(w-pad.r,zero);ctx.stroke();
+  var bw=Math.max(iw/values.length-1.2,1.4);
+  values.forEach(function(v,i){
+    if(v==null)return;
+    var x=pad.l+iw*(i/values.length);
+    var y=pad.t+ih*((vmax-Math.max(v,0))/rng);
+    var bh=Math.max(Math.abs(v)/rng*ih,1);
+    ctx.fillStyle=(colors&&colors[i])||(v>=0?RED:GREEN);
+    ctx.fillRect(x,v>=0?y:zero,bw,bh);
+  });
 }
 
 /* ── 이중 축 오버레이 차트: 점수(좌축 0–100 고정) × 가격(우축 min–max) ── */
@@ -1696,6 +1760,79 @@ async function init(){
       ge('accuCnt').textContent=T({ko:'데이터 없음',en:'No data'});
     }
   }catch(e){console.warn('[dashboard] signal-accuracy render failed:',e&&e.message);}
+
+  /* ── [확장] 매크로 30일 미니 차트 (DXY · S&P500) ── */
+  try{
+    var mac=d.api_dashboard_macro||{};
+    var dxyH=(mac.dxyHistory||[]).map(function(e){return pf(e.value);}).filter(function(v){return v!=null;});
+    if(dxyH.length>=2){
+      ge('trDxyCard').style.display='';
+      ge('trDxyV').textContent=fN(pf(mac.dxy),1);
+      // 달러 강세(상승)는 BTC 역풍 → 상승 빨강, 하락 초록
+      lineChart('chDxy',dxyH,dxyH[dxyH.length-1]>=dxyH[0]?RED:GREEN,{lw:2});
+    }
+    var spH=(mac.sp500History||[]).map(function(e){return pf(e.value);}).filter(function(v){return v!=null;});
+    if(spH.length>=2){
+      ge('trSpCard').style.display='';
+      ge('trSpV').textContent=fN(pf(mac.sp500),0);
+      lineChart('chSp500',spH,spH[spH.length-1]>=spH[0]?GREEN:RED,{lw:2});
+    }
+  }catch(e){console.warn('[dashboard] macro trend render failed:',e&&e.message);}
+
+  /* ── [확장] 옵션 IV · 스큐 30일 미니 차트 ── */
+  try{
+    var opt=d.api_dashboard_options_regime||{};
+    var ivH=(opt.ivHistory||[]).map(function(e){return pf(e.iv);}).filter(function(v){return v!=null;});
+    if(ivH.length>=2){
+      ge('ivBox').style.display='';
+      lineChart('chIv',ivH,'#b07bff',{lw:2});
+    }
+    var skH=(opt.skewHistory||[]).map(function(e){return pf(e.skew!=null?e.skew:e.value);}).filter(function(v){return v!=null;});
+    if(skH.length>=2){
+      ge('skewBox').style.display='';
+      lineChart('chSkew',skH,skH[skH.length-1]>=0?RED:GREEN,{lw:2});
+    }
+  }catch(e){console.warn('[dashboard] options trend render failed:',e&&e.message);}
+
+  /* ── [확장] 거래소 자금 흐름 90일 바 차트 ── */
+  try{
+    var xf=d.api_analysis_exchange_flow||{};
+    var xfVals=(xf.exchangeFlowValues||[]).map(pf);
+    if(xf.hasData&&xfVals.filter(function(v){return v!=null;}).length>=10){
+      ge('accFlow').style.display='';
+      ge('flowCnt').textContent=ML(xf.exchangeFlowNetLabel||'')||'--';
+      barChart('chFlow',xfVals,xf.exchangeFlowColors||null);
+      var fs=ge('flowStats');
+      [[T({ko:'유입일',en:'Inflow days'}),(xf.exchangeFlowInflowDays!=null?xf.exchangeFlowInflowDays+T({ko:'일',en:'d'}):'--')],
+       [T({ko:'유출일',en:'Outflow days'}),(xf.exchangeFlowOutflowDays!=null?xf.exchangeFlowOutflowDays+T({ko:'일',en:'d'}):'--')],
+       [T({ko:'90일 누적',en:'90d cumulative'}),(xf.exchangeFlowNetCumulative!=null?fN(pf(xf.exchangeFlowNetCumulative),0)+' BTC':'--')]
+      ].forEach(function(c){fs.appendChild(mk('div','acc-cell','<div class="l">'+c[0]+'</div><div class="v">'+c[1]+'</div>'));});
+    }
+  }catch(e){console.warn('[dashboard] exchange flow render failed:',e&&e.message);}
+
+  /* ── [확장] 점수 분포 히스토그램 (90일) ── */
+  try{
+    var bt2=d.api_dashboard_buy_timing||{};
+    var hg=bt2.scoreHistogram||[];
+    var hgTotal=hg.reduce(function(a,b){return a+(pf(b.count)||0);},0);
+    if(hg.length&&hgTotal>0){
+      ge('accHist').style.display='';
+      var today=hg.filter(function(b){return b.isToday;})[0];
+      ge('histCnt').textContent=today?(T({ko:'오늘 ',en:'today '})+today.label):'';
+      var hb=ge('histBars'),hl=ge('histLabels');
+      hg.forEach(function(b){
+        var hPct=Math.max(pf(b.heightPct)||0,(pf(b.count)||0)>0?4:1);
+        var bar=mk('div',null,'');
+        bar.style.cssText='flex:1;border-radius:4px 4px 0 0;height:'+hPct+'%;background:'+(b.color||'#8b93a7')
+          +(b.isToday?';box-shadow:0 0 0 2px #fff6;outline:1px solid rgba(255,255,255,.5)':';opacity:.55');
+        bar.title=b.label+' · '+b.count+T({ko:'일',en:'d'});
+        hb.appendChild(bar);
+        var lab=mk('div',null,b.label);
+        lab.style.cssText='flex:1;text-align:center;font-size:9.5px;font-family:var(--mono);color:'+(b.isToday?'var(--t1)':'var(--t3)');
+        hl.appendChild(lab);
+      });
+    }
+  }catch(e){console.warn('[dashboard] score histogram render failed:',e&&e.message);}
 
   /* ── [확장] 밸류에이션 · 시즌 카드 5종 ── */
   try{

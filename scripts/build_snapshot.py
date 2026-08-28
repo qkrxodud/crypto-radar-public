@@ -44,6 +44,7 @@ ENDPOINTS = [
     "/api/analysis/season-scores",   # BTC/알트/대형알트 시즌 점수 + 전략
     "/api/expert/dry-powder",        # 스테이블 대기 자금 게이지
     "/api/expert/crowd-extreme",     # 군중 극단(역발상) 지수
+    "/api/analysis/exchange-flow",   # 거래소 순유입/유출 90일 (온체인 자금 흐름 바 차트용)
 ]
 
 # 쿼리스트링이 붙어 자동 키 생성이 불가한 엔드포인트는 명시적으로 키를 지정한다.
