@@ -1760,15 +1760,27 @@ async function init(){
     var isEnA=window.BTCI18N&&window.BTCI18N.lang==='en';
     if(sa.hasData){
       ge('accuCnt').textContent=isEnA?(sa.grade||'--'):(sa.gradeLabel||'--');
-      // 표본 기간 정직 배지 — 히스토리 일수를 score-history에서 가져와 명시 (1사이클 = 약 4년)
+      // 표본 기간 정직 배지 — 검증 자체의 표본 범위(월간 성적표)로 명시, 없으면 180일 차트 기간 폴백
       try{
-        var shForBadge=d.api_analysis_score_history||{};
-        var badgeDays=pf(shForBadge.scoreHistoryCount);
-        if(badgeDays!=null){
-          var badge=ge('sampleBadge');
+        var badgeMonthly=sa.monthly||[];
+        var badge=ge('sampleBadge');
+        var badgeLabel=null;
+        if(badgeMonthly.length){
+          badgeLabel=T({ko:'검증 표본 ',en:'Validation sample: '})+badgeMonthly[0].month+' ~ '+badgeMonthly[badgeMonthly.length-1].month
+            +' ('+badgeMonthly.length+T({ko:'개월',en:' months'})+')';
+          if(badgeMonthly.length<48){
+            badgeLabel+=T({ko:' · 아직 1사이클(약 4년) 미만 — 통계는 참고용으로만',en:' · under one full cycle (~4y) — treat statistics as indicative only'});
+          }
+        }else{
+          var shForBadge=d.api_analysis_score_history||{};
+          var badgeDays=pf(shForBadge.scoreHistoryCount);
+          if(badgeDays!=null){
+            badgeLabel=T({ko:'표본 ',en:'Sample: '})+badgeDays+T({ko:'일 · 통계는 참고용으로만',en:' days · treat statistics as indicative only'});
+          }
+        }
+        if(badgeLabel){
           badge.style.display='';
-          badge.firstElementChild.textContent=T({ko:'표본 ',en:'Sample: '})+badgeDays+T({ko:'일',en:' days'})
-            +(badgeDays<1460?T({ko:' · 아직 1사이클(약 4년) 미만 — 통계는 참고용으로만',en:' · under one full cycle (~4y) — treat statistics as indicative only'}):'');
+          badge.firstElementChild.textContent=badgeLabel;
         }
       }catch(eB){}
       var st=ge('accuStats');
