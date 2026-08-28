@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-28T07:00:36Z",
+  "updatedAt": "2026-08-28T07:20:39Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "80158.19",
       "macd": {
-        "macdLine": "4280.09",
-        "signalLine": "3177.19",
-        "histogram": "1102.89",
+        "macdLine": "4264.23",
+        "signalLine": "3174.02",
+        "histogram": "1090.21",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001879",
       "ivRv": {
-        "iv": "39.73",
+        "iv": "42.70",
         "rv": "43.00",
-        "spread": "-3.27",
+        "spread": "-0.31",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "79862.40",
-      "openInterestUsd": "8782851866.10642400",
-      "longAccountRatio": "0.4890",
-      "shortAccountRatio": "0.5110",
-      "downsideLiquidationUsd": "4294814562.53",
-      "upsideLiquidationUsd": "4488037303.58",
+      "currentPrice": "79687.70",
+      "openInterestUsd": "8762562154.77056000",
+      "longAccountRatio": "0.4879",
+      "shortAccountRatio": "0.5121",
+      "downsideLiquidationUsd": "4275254075.31",
+      "upsideLiquidationUsd": "4487308079.46",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "71876.16",
+          "price": "71718.93",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1717925825.01"
+          "notionalUsd": "1710101630.13"
         },
         {
-          "price": "87848.64",
+          "price": "87656.47",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1795214921.43"
+          "notionalUsd": "1794923231.78"
         },
         {
-          "price": "76667.90",
+          "price": "76500.19",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1503185096.88"
+          "notionalUsd": "1496338926.36"
         },
         {
-          "price": "83056.90",
+          "price": "82875.21",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1570813056.25"
+          "notionalUsd": "1570557827.81"
         },
         {
-          "price": "78265.15",
+          "price": "78093.95",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "858962912.51"
+          "notionalUsd": "855050815.06"
         },
         {
-          "price": "81459.65",
+          "price": "81281.45",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "897607460.72"
+          "notionalUsd": "897461615.89"
         },
         {
-          "price": "79063.78",
+          "price": "78890.82",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "214740728.13"
+          "notionalUsd": "213762703.77"
         },
         {
-          "price": "80661.02",
+          "price": "80484.58",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "224401865.18"
+          "notionalUsd": "224365403.97"
         }
       ],
       "errorMessage": null
@@ -4439,8 +4439,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-28T06:05:05.168396Z",
-      "compositeScore": "0.075",
+      "generatedAt": "2026-08-28T07:05:05.067189Z",
+      "compositeScore": "0.069",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -4448,25 +4448,39 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Hereâs why Warshâs Jackson Hole speech is a major event for bitcoin and gold",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/28/here-s-why-warsh-s-jackson-hole-speech-is-a-major-event-for-bitcoin-and-gold",
+          "publishedAt": "2026-08-28T06:30:10Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Solanaâs faster disinflation plan leads vote as $800K burn proposal trails",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/28/solana-s-faster-supply-cuts-lead-vote-while-usd800-000-daily-burn-plan-trails",
+          "publishedAt": "2026-08-28T06:22:10Z",
+          "score": "0.2"
+        },
+        {
           "title": "Bitcoin is trading at a premium on Coinbase after a long time. Here's what it means",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/28/bitcoin-is-trading-at-a-premium-on-coinbase-after-a-long-time",
           "publishedAt": "2026-08-28T05:02:22Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin under $80,000, solana leads majors higher before Warsh's Jackson Hole debut",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/28/bitcoin-holds-usd80-000-solana-leads-majors-higher-before-warsh-s-jackson-hole-debut",
           "publishedAt": "2026-08-28T04:40:52Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "An XRP treasury company backed by Ripple is a shareholder vote away from Nasdaq",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/28/an-xrp-treasury-company-backed-by-ripple-is-a-shareholder-vote-away-from-nasdaq",
           "publishedAt": "2026-08-28T04:21:22Z",
-          "score": "0.4"
+          "score": "0.1"
         },
         {
           "title": "Connecticut's new lawsuit against Kalshi piles on to prediction market legal fight",
@@ -4480,28 +4494,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/27/ethena-surges-as-buyback-vote-vc-unlock-overhaul-boost-token-outlook",
           "publishedAt": "2026-08-27T17:32:20Z",
-          "score": "0.6"
+          "score": "0.3"
         },
         {
           "title": "GTA 6 leaker cashes out of his own memecoin hours before Rockstar's gameplay reveal",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/27/gta-6-leaker-cashes-out-of-his-own-memecoin-hours-before-rockstar-s-gameplay-reveal",
           "publishedAt": "2026-08-27T16:32:38Z",
-          "score": "-0.3"
-        },
-        {
-          "title": "Polish Olympic chief arrested as prosecutors probe suspected crypto-linked bribe",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/27/polish-olympic-chief-arrested-as-prosecutors-probe-suspected-crypto-linked-bribe",
-          "publishedAt": "2026-08-27T16:12:10Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "MoonPayâs newest integration lets AI agents handle crypto lending on Solana",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/27/moonpay-s-newest-integration-lets-ai-agents-handle-crypto-lending-on-solana",
-          "publishedAt": "2026-08-27T15:52:21Z",
-          "score": "0.3"
+          "score": "0.0"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -4515,7 +4515,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/the-sandbox-compensation-sand-bridge-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-28T05:40:48Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Abu Dhabi royal backs 49% stake in Trump-linked crypto bank venture: WSJ",
@@ -4529,35 +4529,35 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/virtu-tradeweb-complete-onchain-repo-using-marshall-islands-digital-bond?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-27T20:39:40Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
           "title": "Trump cost investors $4.7B through crypto ‘schemes’: Public Citizen",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/donald-trump-crypto-investors-losses-public-citizen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-27T19:22:14Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "Mirae Asset lays out crypto, stablecoin, tokenization plans for Digital X",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/mirae-asset-lays-out-crypto-stablecoin-and-tokenization-plans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-27T19:00:00Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Grayscale says Zcash can challenge Bitcoin’s network effects as privacy demand grows",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/zcash-bitcoin-network-effects-grayscale-privacy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-27T18:51:02Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin eyes $81K as Nvidia earnings beat boosts risk assets",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-eyes-81k-as-nvidia-earnings-beat-boosts-risk-assets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-27T17:15:43Z",
-          "score": "0.7"
+          "score": "0.6"
         }
       ],
       "errorMessage": null
