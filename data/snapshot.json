@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-28T15:02:49Z",
+  "updatedAt": "2026-08-28T15:22:57Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "80158.19",
       "macd": {
-        "macdLine": "4244.61",
-        "signalLine": "3170.10",
-        "histogram": "1074.51",
+        "macdLine": "4233.49",
+        "signalLine": "3167.87",
+        "histogram": "1065.61",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001879",
       "ivRv": {
-        "iv": "30.97",
+        "iv": "29.83",
         "rv": "43.00",
-        "spread": "-12.03",
+        "spread": "-13.18",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "79420.60",
-      "openInterestUsd": "8404228204.22043000",
-      "longAccountRatio": "0.5099",
-      "shortAccountRatio": "0.4901",
-      "downsideLiquidationUsd": "4285315961.33",
-      "upsideLiquidationUsd": "4118912242.89",
+      "currentPrice": "79282.60",
+      "openInterestUsd": "8455224198.61000000",
+      "longAccountRatio": "0.5074",
+      "shortAccountRatio": "0.4926",
+      "downsideLiquidationUsd": "4290180758.37",
+      "upsideLiquidationUsd": "4165043440.24",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "71478.54",
+          "price": "71354.34",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1714126384.53"
+          "notionalUsd": "1716072303.35"
         },
         {
-          "price": "87362.66",
+          "price": "87210.86",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1647564897.16"
+          "notionalUsd": "1666017376.09"
         },
         {
-          "price": "76243.78",
+          "price": "76111.30",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1499860586.47"
+          "notionalUsd": "1501563265.43"
         },
         {
-          "price": "82597.42",
+          "price": "82453.90",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1441619285.01"
+          "notionalUsd": "1457765204.08"
         },
         {
-          "price": "77832.19",
+          "price": "77696.95",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "857063192.27"
+          "notionalUsd": "858036151.67"
         },
         {
-          "price": "81009.01",
+          "price": "80868.25",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "823782448.58"
+          "notionalUsd": "833008688.05"
         },
         {
-          "price": "78626.39",
+          "price": "78489.77",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "214265798.07"
+          "notionalUsd": "214509037.92"
         },
         {
-          "price": "80214.81",
+          "price": "80075.43",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "205945612.14"
+          "notionalUsd": "208252172.01"
         }
       ],
       "errorMessage": null
@@ -4407,7 +4407,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-08-28T14:42:43.895483Z",
+      "generatedAt": "2026-08-28T15:22:55.831542Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -4416,57 +4416,71 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with mixed indicators suggesting potential volatility."
+          "content": "The market shows a neutral sentiment with a mix of bullish and bearish indicators."
         },
         {
           "type": "RISK",
-          "content": "High RSI levels indicate overbought conditions."
+          "content": "High RSI levels indicate potential overbought conditions."
         },
         {
           "type": "RISK",
-          "content": "Decreasing altcoin dominance signals potential weakness in alt markets."
+          "content": "Decreasing altcoin dominance suggests a lack of interest in altcoins."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of trend reversal."
+          "content": "Monitor for potential corrections due to high RSI."
         },
         {
           "type": "ACTION",
-          "content": "Consider profit-taking on high-performing assets."
+          "content": "Consider diversifying into altcoins if dominance shifts."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-28T14:05:02.787278Z",
-      "compositeScore": "0.200",
-      "label": "POSITIVE",
-      "labelDisplay": "긍정",
-      "labelHexColor": "#10B981",
+      "generatedAt": "2026-08-28T15:05:02.366291Z",
+      "compositeScore": "0.113",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "BitGo to buy NYDIG trading arm for $42.5M in cash and stock plus $15M earnout",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/28/bitgo-to-buy-nydig-trading-arm-for-usd42-5m-in-cash-and-stock-plus-usd15m-earnout",
+          "publishedAt": "2026-08-28T14:37:14Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Fed Chair Kevin Warsh at Jackson Hole: 'We have work to do' on inflation",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/28/warsh-at-jackson-hole-we-have-work-to-do-on-inflaiton",
+          "publishedAt": "2026-08-28T14:05:12Z",
+          "score": "-0.4"
+        },
         {
           "title": "The Clarity Act slipped to September. Banks are building anyway",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/08/28/the-clarity-act-slipped-to-september-banks-are-building-anyway",
           "publishedAt": "2026-08-28T13:00:00Z",
-          "score": "-0.4"
+          "score": "0.0"
         },
         {
           "title": "Ethena looks beyond crypto to squeeze yield from booming equity perpetuals",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/28/ethena-looks-beyond-crypto-to-squeeze-yield-from-booming-equity-perpetuals",
           "publishedAt": "2026-08-28T12:30:57Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "SBI buys 20% stake in Indonesia's Ajaib for $270 million to expand yen stablecoin in Southeast Asia",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/28/sbi-stakes-usd270-million-in-ajaib-to-expand-yen-stablecoin-in-southeast-asia",
           "publishedAt": "2026-08-28T12:18:31Z",
-          "score": "0.1"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin is outperforming stocks and correlating with gold just when it matters most",
@@ -4487,21 +4501,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/28/bullish-backs-usd-ai-with-usd100-million-gpu-stablecoin-financing",
           "publishedAt": "2026-08-28T11:03:18Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Crypto Biz: Bitcoin pumps, Wall Street does the paperwork",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-biz-bitcoin-rally-crypto-stocks-circle-strategy-solana?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-28T14:53:40Z",
           "score": "0.3"
-        },
-        {
-          "title": "Bitcoin hits highest level in 3 months before pulling back as altcoins consolidate",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/08/28/bitcoin-hits-highest-level-in-3-months-before-pulling-back-as-altcoins-consolidate",
-          "publishedAt": "2026-08-28T10:37:35Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Visa doubles down on South Korea with Upbit operator Dunamu on stablecoin payments",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/28/visa-doubles-down-on-south-korea-with-upbit-operator-dunamu-on-stablecoin-payments",
-          "publishedAt": "2026-08-28T10:21:47Z",
-          "score": "0.5"
         },
         {
           "title": "Who is legally liable when an AI agent goes rogue?",
@@ -4529,34 +4536,27 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/california-bill-ban-memecoin-issuance-public-officials?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-28T12:09:48Z",
-          "score": "-0.3"
+          "score": "-0.6"
         },
         {
           "title": "Capital B raises $24.5M for its Bitcoin treasury amid market uncertainty with BlockStream’s Adam Back chipping in",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/capital-b-raises-245m-for-its-bitcoin-treasury-amid-market-uncertainty-with-blockstreams-adam-back-chipping-in?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-28T11:36:43Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin bear market ‘over’ as price metric copies 2023 recovery: CryptoQuant CEO",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-bear-market-over-as-price-metric-copies-2023-recovery-cryptoquant-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-28T11:22:59Z",
-          "score": "0.7"
+          "score": "0.6"
         },
         {
           "title": "ENA token rises 10% as Ethena puts revenue-funded token buybacks to vote",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/ena-rises-10-ethena-token-buyback-proposal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-28T09:27:30Z",
-          "score": "0.3"
-        },
-        {
-          "title": "BitGo buys NYDIG trading arm to deepen institutional crypto push",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitgo-nydig-trading-arm-acquisition?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-28T09:21:44Z",
           "score": "0.4"
         }
       ],
@@ -5009,8 +5009,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 177876.93,
-      "currentPrice": 79877.28,
-      "deviationPct": -55.09,
+      "currentPrice": 79724.42,
+      "deviationPct": -55.18,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -5209,9 +5209,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 69733.02,
-      "currentPrice": 79877.28,
-      "priceToSthRatio": 1.1455,
-      "premiumPct": 14.55,
+      "currentPrice": 79724.42,
+      "priceToSthRatio": 1.1433,
+      "premiumPct": 14.33,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
