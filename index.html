@@ -1755,7 +1755,9 @@ async function init(){
           '<div class="track"><i style="width:'+Math.min(r[1],100)+'%;background:'+r[2]+'"></i></div>'+
           '<span class="vv" style="color:'+r[2]+'">'+r[1]+'</span>'));
       });
-      ge('ssStrategy').textContent=ss.currentSeasonStrategy||'';
+      // EN 모드면 백엔드 영문 전략 문장 사용 (구 스냅샷은 한글 폴백)
+      var ssEn=window.BTCI18N&&window.BTCI18N.lang==='en';
+      ge('ssStrategy').textContent=(ssEn&&ss.currentSeasonStrategyEn)?ss.currentSeasonStrategyEn:(ss.currentSeasonStrategy||'');
     }
     // 대기 자금 · 군중 극단 (소형 2행)
     var dp=d.api_expert_dry_powder||{};
