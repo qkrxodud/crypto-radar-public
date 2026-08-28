@@ -70,6 +70,21 @@
    * 값: { en, zh }. 매핑에 없으면 원문(ko) 그대로 반환 — 절대 깨지지 않게.
    * 백엔드 enum의 다른 값(현재 snapshot에 안 보이는 변형)도 가능한 한 포함. */
   var LABELS = {
+    /* 밸류에이션·시즌 카드 (레인보우/Mayer/STH/시즌/대기자금·군중극단) */
+    '저가 매수': { en: 'Deep Value Buy', zh: '低价买入' },
+    '적정 하단': { en: 'Fair Value (Low)', zh: '合理区间下沿' },
+    '적정 상단': { en: 'Fair Value (High)', zh: '合理区间上沿' },
+    '적정 구간': { en: 'Fair Value', zh: '合理区间' },
+    '과열': { en: 'Overheated', zh: '过热' },
+    '버블': { en: 'Bubble', zh: '泡沫' },
+    '분할 매수': { en: 'Scale In', zh: '分批买入' },
+    '비트코인 시즌': { en: 'Bitcoin Season', zh: '比特币季' },
+    '알트코인 시즌': { en: 'Altcoin Season', zh: '山寨币季' },
+    '알트 시즌': { en: 'Altcoin Season', zh: '山寨币季' },
+    '높은 매수연료 — 강세 기대': { en: 'High buying fuel — bullish backdrop', zh: '买入弹药充足 — 看涨背景' },
+    '낮은 매수연료 — 약세 주의': { en: 'Low buying fuel — caution', zh: '买入弹药不足 — 谨慎' },
+    'STH 원가 프리미엄 — 단기과열 경계': { en: 'Premium over STH cost — short-term overheating watch', zh: '高于短期持有者成本 — 警惕短期过热' },
+    'STH 원가 아래 — 역사적 매수 구간': { en: 'Below STH cost — historical buy zone', zh: '低于短期持有者成本 — 历史买入区间' },
     /* signalDisplay / toneDisplay / labelDisplay / label · 매수 신호 계열 */
     '중립': { en: 'Neutral', zh: '中性' },
     '매수': { en: 'Buy', zh: '买入' },
