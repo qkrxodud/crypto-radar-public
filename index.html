@@ -277,6 +277,24 @@
   .regime-box .rd .rl{font-size:15px;font-weight:700;color:var(--t1);}
   .regime-box .rd .rdesc{font-size:13px;color:var(--t3);line-height:1.6;margin-top:6px;}
   .regime-box .rd .rmeta{font-family:var(--mono);font-size:11.5px;color:var(--m1);margin-top:8px;}
+  /* 밸류에이션 · 시즌 카드 */
+  .val-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;}
+  .vr-main{display:flex;align-items:baseline;gap:10px;margin:10px 0 6px;}
+  .vr-zone{font-family:var(--mono);font-size:25px;font-weight:700;color:var(--t1);}
+  .vr-tag{font-size:12px;font-weight:600;}
+  .vr-sub{color:var(--t3);font-size:12.5px;font-family:var(--mono);}
+  .vr-note{color:var(--t3);font-size:12px;line-height:1.6;margin-top:8px;}
+  .ss-row{display:flex;align-items:center;gap:10px;margin:7px 0;}
+  .ss-row .nm{color:var(--t3);font-size:12px;width:84px;flex:none;}
+  .ss-row .track{flex:1;height:7px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden;}
+  .ss-row .track i{display:block;height:100%;border-radius:4px;}
+  .ss-row .vv{font-family:var(--mono);font-size:12px;width:30px;text-align:right;}
+  .mini-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);}
+  .mini-row:last-child{border-bottom:0;}
+  .mini-row .l{color:var(--t2);font-size:13px;}
+  .mini-row .v{font-family:var(--mono);font-size:16px;font-weight:700;}
+  .mini-row .s{color:var(--t3);font-size:11.5px;flex-basis:100%;margin-top:-4px;}
+
   /* DCA 구간 막대 */
   .dca-zone{display:grid;grid-template-columns:120px 1fr 56px;align-items:center;gap:12px;margin-bottom:8px;}
   .dca-zone .zl{color:var(--t2);font-size:12.5px;}
@@ -637,6 +655,41 @@
           <div class="buy-card lvl">
             <span class="bt" data-en="Price Structure — Support/Resistance">가격 구조 — 지지/저항</span>
             <div class="lvl-list" id="lvlList"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 밸류에이션 · 시즌 -->
+      <div id="valSection" style="display:none">
+        <div class="sec-h"><h2 data-en="Valuation · Season">밸류에이션 · 시즌</h2><span class="hint" data-en="Where price stands vs long-term fair-value models">장기 적정가 모델 대비 현재 가격의 위치</span></div>
+        <div class="val-grid">
+          <div class="buy-card" id="valRainbow" style="display:none">
+            <span class="bt" data-en="Rainbow Chart Zone">레인보우 차트 존</span>
+            <div class="vr-main"><span class="vr-zone" id="rbLabel">--</span></div>
+            <div class="vr-sub" id="rbDeviation">--</div>
+            <div class="vr-note" id="rbAction"></div>
+          </div>
+          <div class="buy-card" id="valMayer" style="display:none">
+            <span class="bt" data-en="Mayer Multiple (price ÷ 200d MA)">Mayer Multiple (가격 ÷ 200일 MA)</span>
+            <div class="vr-main"><span class="vr-zone" id="mmVal">--</span><span class="vr-tag" id="mmLabel"></span></div>
+            <canvas id="chMayer" style="height:80px;width:100%"></canvas>
+            <div class="vr-note" data-en="Historically ≤ 0.8 marked deep-value zones and ≥ 2.4 overheated zones.">역사적으로 0.8 이하는 깊은 저평가, 2.4 이상은 과열 구간이었습니다. 최근 90일 추이입니다.</div>
+          </div>
+          <div class="buy-card" id="valSth" style="display:none">
+            <span class="bt" data-en="Short-Term Holder Cost Basis">단기 보유자(STH) 원가선</span>
+            <div class="vr-main"><span class="vr-zone" id="sthPremium">--</span><span class="vr-tag" data-en="premium vs STH cost">STH 원가 대비</span></div>
+            <div class="vr-sub" id="sthPrices">--</div>
+            <div class="vr-note" id="sthSignal"></div>
+          </div>
+          <div class="buy-card" id="valSeason" style="display:none">
+            <span class="bt" data-en="Market Season — BTC vs Altcoins">시장 시즌 — BTC vs 알트</span>
+            <div class="vr-main"><span class="vr-zone" style="font-size:20px" id="ssSeason">--</span></div>
+            <div id="ssBars"></div>
+            <div class="vr-note" id="ssStrategy"></div>
+          </div>
+          <div class="buy-card" id="valMini" style="display:none">
+            <span class="bt" data-en="Sideline Cash · Crowd Extreme">대기 자금 · 군중 극단</span>
+            <div id="miniRows" style="margin-top:6px"></div>
           </div>
         </div>
       </div>
@@ -1637,6 +1690,95 @@ async function init(){
       ge('accuCnt').textContent=T({ko:'데이터 없음',en:'No data'});
     }
   }catch(e){console.warn('[dashboard] signal-accuracy render failed:',e&&e.message);}
+
+  /* ── [확장] 밸류에이션 · 시즌 카드 5종 ── */
+  try{
+    var valShown=false;
+    // 레인보우 차트 존
+    var rb=d.api_expert_rainbow_chart||{};
+    if(rb.isAvailable&&rb.label){
+      ge('valRainbow').style.display='';valShown=true;
+      ge('rbLabel').textContent=ML(rb.label);
+      ge('rbLabel').style.color=rb.color||AMBER;
+      var rbDev=pf(rb.deviationPct);
+      ge('rbDeviation').textContent=T({ko:'로그회귀 적정가 ',en:'Log-regression fair value '})+usd(rb.regressionPrice)
+        +T({ko:' 대비 ',en:' · now '})+(rbDev>0?'+':'')+fN(rbDev,1)+'%';
+      ge('rbAction').textContent=T({ko:'참고 스탠스: ',en:'Suggested stance: '})+ML(rb.action||'--');
+    }
+    // Mayer Multiple + 90일 미니 차트
+    var mm=d.api_analysis_mayer_multiple||{};
+    var mmCur=pf(mm.mayerMultipleCurrent);
+    if(mm.hasData&&mmCur!=null){
+      ge('valMayer').style.display='';valShown=true;
+      ge('mmVal').textContent=fN(mmCur,3);
+      var mmCol=mmCur>=2.4?RED:mmCur>=1.6?ORANGE:mmCur<=0.8?BLUE:AMBER;
+      ge('mmVal').style.color=mmCol;
+      ge('mmLabel').textContent=ML(mm.mayerMultipleLabel||'');
+      ge('mmLabel').style.color=mmCol;
+      var mvRaw=mm.mayerMultipleValues;
+      if(typeof mvRaw==='string'){try{mvRaw=JSON.parse(mvRaw);}catch(e2){mvRaw=[];}}
+      var mvArr=(mvRaw||[]).map(pf).filter(function(v){return v!=null;});
+      if(mvArr.length>=2)lineChart('chMayer',mvArr,mmCol,{lw:2});
+    }
+    // STH 원가선
+    var st=d.api_expert_sth_cost_basis||{};
+    var stPr=pf(st.premiumPct);
+    if(st.isAvailable&&stPr!=null){
+      ge('valSth').style.display='';valShown=true;
+      // 원가 아래(음수)=역사적 매수 구간, 0~30% 중간, 30%+ 단기 과열
+      var stCol=stPr<0?GREEN:stPr>=30?RED:AMBER;
+      ge('sthPremium').textContent=(stPr>0?'+':'')+fN(stPr,1)+'%';
+      ge('sthPremium').style.color=stCol;
+      ge('sthPrices').textContent=T({ko:'STH 평균 매입가 ',en:'STH cost basis '})+usd(st.sthCostBasis)
+        +' · '+T({ko:'현재가 ',en:'now '})+usd(st.currentPrice);
+      ge('sthSignal').textContent=(st.signal&&st.signal.description)?ML(st.signal.description):'';
+    }
+    // 시즌 점수 3종
+    var ss=d.api_analysis_season_scores||{};
+    if(ss.hasData){
+      ge('valSeason').style.display='';valShown=true;
+      ge('ssSeason').textContent=ML(ss.currentSeason||'--');
+      var sb=ge('ssBars');
+      [[T({ko:'BTC 시즌',en:'BTC season'}),pf(ss.btcSeasonScore),'#f7931a'],
+       [T({ko:'알트 시즌',en:'Alt season'}),pf(ss.altSeasonScore),'#5b8def'],
+       [T({ko:'대형 알트',en:'Large-cap alts'}),pf(ss.largAltSeasonScore),'#a06bff']
+      ].forEach(function(r){
+        if(r[1]==null)return;
+        sb.appendChild(mk('div','ss-row',
+          '<span class="nm">'+r[0]+'</span>'+
+          '<div class="track"><i style="width:'+Math.min(r[1],100)+'%;background:'+r[2]+'"></i></div>'+
+          '<span class="vv" style="color:'+r[2]+'">'+r[1]+'</span>'));
+      });
+      ge('ssStrategy').textContent=ss.currentSeasonStrategy||'';
+    }
+    // 대기 자금 · 군중 극단 (소형 2행)
+    var dp=d.api_expert_dry_powder||{};
+    var ce=d.api_expert_crowd_extreme||{};
+    var miniRows=[];
+    var dpV=pf(dp.gaugeScore);
+    if(dp.isAvailable&&dpV!=null){
+      miniRows.push({l:T({ko:'대기 자금 게이지',en:'Sideline cash gauge'}),v:fN(dpV,1)+' / 100',
+        s:(dp.level&&dp.level.description)?ML(dp.level.description):'',
+        col:dpV>=70?GREEN:dpV>=40?AMBER:RED});
+    }
+    var ceV=pf(ce.compositeScore);
+    if(ceV!=null){
+      miniRows.push({l:T({ko:'군중 극단 지수',en:'Crowd extreme index'}),v:fN(ceV,1),
+        s:((ce.extreme&&ce.extreme.description)?ML(ce.extreme.description):'')
+          +(ce.shouldReduceBuy?T({ko:' · 매수 축소 권고',en:' · reduce buying'}):''),
+        col:ce.shouldReduceBuy?RED:AMBER});
+    }
+    if(miniRows.length){
+      ge('valMini').style.display='';valShown=true;
+      var mr=ge('miniRows');
+      miniRows.forEach(function(r){
+        mr.appendChild(mk('div','mini-row',
+          '<span class="l">'+r.l+'</span><span class="v" style="color:'+r.col+'">'+r.v+'</span>'+
+          '<span class="s">'+r.s+'</span>'));
+      });
+    }
+    if(valShown)ge('valSection').style.display='';
+  }catch(e){console.warn('[dashboard] valuation render failed:',e&&e.message);}
 
   /* ── [확장] 전문가 분석 점수 38종 (표시명 있는 스냅샷에서만 노출) ── */
   try{
