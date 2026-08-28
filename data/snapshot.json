@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-08-28T05:00:08Z",
+  "updatedAt": "2026-08-28T05:20:11Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "80158.19",
       "macd": {
-        "macdLine": "4258.77",
-        "signalLine": "3172.93",
-        "histogram": "1085.84",
+        "macdLine": "4257.26",
+        "signalLine": "3172.63",
+        "histogram": "1084.63",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001879",
       "ivRv": {
-        "iv": "48.08",
+        "iv": "47.02",
         "rv": "43.00",
-        "spread": "+5.08",
-        "label": "과대"
+        "spread": "+4.02",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 73,
@@ -2922,63 +2922,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "79616.40",
-      "openInterestUsd": "8747667822.54319800",
-      "longAccountRatio": "0.4809",
-      "shortAccountRatio": "0.5191",
-      "downsideLiquidationUsd": "4206753455.86",
-      "upsideLiquidationUsd": "4540914366.68",
+      "currentPrice": "79594.20",
+      "openInterestUsd": "8749343946.42900000",
+      "longAccountRatio": "0.4803",
+      "shortAccountRatio": "0.5197",
+      "downsideLiquidationUsd": "4202309897.47",
+      "upsideLiquidationUsd": "4547034048.96",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "71654.76",
+          "price": "71634.78",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1682701382.34"
+          "notionalUsd": "1680923958.99"
         },
         {
-          "price": "87578.04",
+          "price": "87553.62",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1816365746.67"
+          "notionalUsd": "1818813619.58"
         },
         {
-          "price": "76431.74",
+          "price": "76410.43",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1472363709.55"
+          "notionalUsd": "1470808464.11"
         },
         {
-          "price": "82801.06",
+          "price": "82777.97",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1589320028.34"
+          "notionalUsd": "1591461917.14"
         },
         {
-          "price": "78024.07",
+          "price": "78002.32",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "841350691.17"
+          "notionalUsd": "840461979.49"
         },
         {
-          "price": "81208.73",
+          "price": "81186.08",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "908182873.34"
+          "notionalUsd": "909406809.79"
         },
         {
-          "price": "78820.24",
+          "price": "78798.26",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "210337672.79"
+          "notionalUsd": "210115494.87"
         },
         {
-          "price": "80412.56",
+          "price": "80390.14",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "227045718.33"
+          "notionalUsd": "227351702.45"
         }
       ],
       "errorMessage": null
@@ -4439,14 +4439,35 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-08-28T04:05:02.588398Z",
-      "compositeScore": "0.169",
+      "generatedAt": "2026-08-28T05:05:02.904208Z",
+      "compositeScore": "0.125",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Bitcoin is trading at a premium on Coinbase after a long time. Here's what it means",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/28/bitcoin-is-trading-at-a-premium-on-coinbase-after-a-long-time",
+          "publishedAt": "2026-08-28T05:02:22Z",
+          "score": "0.5"
+        },
+        {
+          "title": "Bitcoin under $80,000, solana leads majors higher before Warsh's Jackson Hole debut",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/28/bitcoin-holds-usd80-000-solana-leads-majors-higher-before-warsh-s-jackson-hole-debut",
+          "publishedAt": "2026-08-28T04:40:52Z",
+          "score": "-0.3"
+        },
+        {
+          "title": "An XRP treasury company backed by Ripple is a shareholder vote away from Nasdaq",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/28/an-xrp-treasury-company-backed-by-ripple-is-a-shareholder-vote-away-from-nasdaq",
+          "publishedAt": "2026-08-28T04:21:22Z",
+          "score": "0.4"
+        },
         {
           "title": "Connecticut's new lawsuit against Kalshi piles on to prediction market legal fight",
           "source": "CoinDesk",
@@ -4459,7 +4480,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/08/27/ethena-surges-as-buyback-vote-vc-unlock-overhaul-boost-token-outlook",
           "publishedAt": "2026-08-27T17:32:20Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "GTA 6 leaker cashes out of his own memecoin hours before Rockstar's gameplay reveal",
@@ -4480,28 +4501,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/08/27/moonpay-s-newest-integration-lets-ai-agents-handle-crypto-lending-on-solana",
           "publishedAt": "2026-08-27T15:52:21Z",
-          "score": "0.5"
-        },
-        {
-          "title": "240 UK taxpayers made more than $1.3 million each from crypto holdings in fiscal 2025",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/27/240-uk-taxpayers-made-more-than-usd1-3-million-each-from-crypto-holdings-in-fiscal-2025",
-          "publishedAt": "2026-08-27T15:36:25Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Crypto for Advisors: How staking on Ethereum is changing in 2026",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/coindesk-indices/2026/08/27/crypto-for-advisors-how-staking-on-ethereum-is-changing-in-2026",
-          "publishedAt": "2026-08-27T15:10:56Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Clearing firm RQD* raises $74 million as Wall Street prepares for tokenized markets",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/08/27/clearing-firm-rqd-raises-usd74-million-as-wall-street-prepares-for-tokenized-markets",
-          "publishedAt": "2026-08-27T14:32:41Z",
           "score": "0.3"
+        },
+        {
+          "title": "Abu Dhabi royal backs 49% stake in Trump-linked crypto bank venture: WSJ",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/abu-dhabi-royal-trump-world-liberty-crypto-bank-wsj?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-08-28T04:17:09Z",
+          "score": "0.2"
         },
         {
           "title": "Virtu, Tradeweb complete onchain repo using Marshall Islands digital bond",
@@ -4522,7 +4529,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/donald-trump-crypto-investors-losses-public-citizen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-27T19:22:14Z",
-          "score": "-0.8"
+          "score": "-0.6"
         },
         {
           "title": "Mirae Asset lays out crypto, stablecoin, tokenization plans for Digital X",
@@ -4551,13 +4558,6 @@
           "url": "https://cointelegraph.com/news/charles-schwab-to-add-solana-avalanche-and-chainlink-to-crypto-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-08-27T16:13:10Z",
           "score": "0.4"
-        },
-        {
-          "title": "Bitcoin’s 23% rally sends beaten-down miners soaring past AI stocks",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-miner-stocks-rally-crypto-demand-ai-hpc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-08-27T16:04:15Z",
-          "score": "0.6"
         }
       ],
       "errorMessage": null
