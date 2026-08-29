@@ -13,7 +13,16 @@ ENDPOINTS = [
     "/api/dashboard/macro",
     "/api/dashboard/sentiment",
     "/api/dashboard/cycle",
-    "/api/dashboard/market-overview",
+    "/api/dashboard/etf-flow-history",  # 미국 현물 ETF 순유입 90일 (바 차트)
+    "/api/dashboard/hash-ribbon",       # 해시리본 (채굴자 매집 신호)
+    "/api/dashboard/nvt-signal",        # NVT 시그널 (사용량 대비 밸류에이션)
+    "/api/dashboard/signal-distance",   # 다음 신호 구간까지 거리 (hero 라인)
+    "/api/dashboard/spot-perp-ratio",   # 현물/선물 거래 비율
+    "/api/analysis/iv-hv-spread",       # 옵션 IV−실현 HV 스프레드
+    "/api/analysis/master-score",       # 마스터 스코어 (복합 판단 요약)
+    "/api/bitcoin/mempool",             # 멤풀 혼잡도
+    "/api/bitcoin/mining-pools",        # 채굴 풀 점유율·집중도
+    "/api/bitcoin/lightning",           # 라이트닝 네트워크 용량
     "/api/dashboard/buy-timing",
     "/api/dashboard/checklist",
     "/api/dashboard/performance",

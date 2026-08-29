@@ -531,11 +531,21 @@
   function setLang(code) {
     code = normalize(code) || 'ko';
     if (SUPPORTED.indexOf(code) < 0) code = 'ko';
-    try { localStorage.setItem(STORE_KEY, code); } catch (e) {}
-    // ?lang= 쿼리가 붙어 있으면 제거해 store 값과 충돌하지 않게 한다.
+    // 저장이 실제로 됐는지 확인 — 프라이빗 모드/저장소 차단 브라우저는 조용히 실패한다.
+    var stored = false;
+    try {
+      localStorage.setItem(STORE_KEY, code);
+      stored = localStorage.getItem(STORE_KEY) === code;
+    } catch (e) {}
     try {
       var url = new URL(location.href);
-      url.searchParams.delete('lang');
+      if (stored) {
+        // 정상 저장 — ?lang= 쿼리를 제거해 store 값과 충돌하지 않게 한다.
+        url.searchParams.delete('lang');
+      } else {
+        // 저장 불가 브라우저 — URL 쿼리로 언어를 실어 리로드해도 전환되게 한다.
+        url.searchParams.set('lang', code);
+      }
       location.replace(url.toString());
       return;
     } catch (e) {

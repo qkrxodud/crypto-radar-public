@@ -564,6 +564,7 @@
             <span class="hero-delta" id="heroDelta">--</span>
             <span class="hero-price" id="heroPrice">--</span>
           </div>
+          <div id="heroDistance" style="display:none;font-size:12.5px;color:var(--t3);margin-top:8px"></div>
           <div class="hero-cta">
             <a class="primary" href="guide.html" data-en="View Indicator Guide">지표 가이드 보기</a>
             <a class="ghost" href="#trends" data-en="See trends">추이 자세히</a>
@@ -819,6 +820,23 @@
             <div class="acc-body" id="flowStats" style="padding:0;margin-top:12px"></div>
           </div>
         </details>
+        <details class="acc" id="accEtf" style="display:none">
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="US Spot ETF Flows — 90 days">미국 현물 ETF 자금 흐름 — 90일</span><span class="c" id="etfCnt">--</span></div><span class="caret">▼</span></summary>
+          <div class="contrib-body">
+            <div class="ch" data-en="Daily net flows into US spot Bitcoin ETFs (USD millions). Green = net buying by institutions/retail via ETFs · Red = net selling.">미국 현물 비트코인 ETF의 일별 순유입(백만 달러)입니다. 초록 = ETF를 통한 순매수 · 빨강 = 순매도.</div>
+            <canvas id="chEtf" style="height:140px;width:100%"></canvas>
+            <div class="acc-body" id="etfStats" style="padding:0;margin-top:12px"></div>
+          </div>
+        </details>
+        <details class="acc" id="accNet" style="display:none">
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Network Health — mining · mempool · Lightning">네트워크 건강 — 채굴 · 멤풀 · 라이트닝</span><span class="c" id="netCnt">--</span></div><span class="caret">▼</span></summary>
+          <div class="contrib-body">
+            <div class="ch" data-en="Miner momentum (hash ribbon), on-chain valuation vs usage (NVT), fee congestion, mining decentralization and Lightning capacity — the health of the network under the price.">채굴자 동향(해시리본), 사용량 대비 밸류에이션(NVT), 수수료 혼잡도, 채굴 분산도, 라이트닝 용량 — 가격 아래에 있는 네트워크의 건강 상태입니다.</div>
+            <div class="acc-body" id="netStats" style="padding:0"></div>
+            <div class="ch" style="margin:14px 0 8px" data-en="Mining pool share — concentration watch">채굴 풀 점유율 — 집중도 관찰</div>
+            <div id="netPools"></div>
+          </div>
+        </details>
         <details class="acc" id="accHist" style="display:none">
           <summary><div class="lt"><span class="d"></span><span class="t" data-en="Score Distribution — last 90 days">점수 분포 — 최근 90일</span><span class="c" id="histCnt">--</span></div><span class="caret">▼</span></summary>
           <div class="contrib-body">
@@ -831,6 +849,7 @@
           <summary><div class="lt"><span class="d"></span><span class="t" data-en="Expert Analysis Scores">전문가 분석 점수</span><span class="c" id="expertCnt">--</span></div><span class="caret">▼</span></summary>
           <div class="contrib-body">
             <div class="ch" data-en="38 composite analyses (on-chain · derivatives · technical · sentiment combos) each scored 0–100 — sorted by score, hover for details">온체인·파생·기술·심리를 조합한 복합 분석 38종을 각각 0~100으로 채점한 결과입니다 — 점수순 정렬, 항목에 마우스를 올리면 상세가 보입니다</div>
+            <div id="masterScoreLine" style="display:none;margin:4px 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:12.5px;line-height:1.6"></div>
             <div id="expertList" class="acc-body" style="padding:0"></div>
           </div>
         </details>
@@ -1066,7 +1085,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
 <!-- 다국어(i18n) 런타임 — 인라인 IIFE보다 먼저 동기 로드해 window.BTCI18N을 파싱 시점에 확보(defer 캡처 레이스 방지) -->
-<script src="btc-i18n.js?v=2"></script>
+<script src="btc-i18n.js?v=3"></script>
 <script>
 (function(){
 'use strict';
@@ -1877,6 +1896,102 @@ async function init(){
       }
     }
   }catch(e){console.warn('[dashboard] shadow-threshold render failed:',e&&e.message);}
+
+  /* ── [확장] 다음 신호 구간까지 거리 (hero 아래 한 줄) ── */
+  try{
+    var sdist=d.api_dashboard_signal_distance||{};
+    if(sdist.hasData&&sdist.pointsToHigher!=null){
+      var hdv=ge('heroDistance');
+      hdv.style.display='';
+      hdv.innerHTML=T({ko:'다음 구간까지: ',en:'To next zone: '})
+        +'<b style="color:'+GREEN+'">'+ML(sdist.higherLabelDisplay||'')+' +'+sdist.pointsToHigher+T({ko:'점',en:'pts'})+'</b>'
+        +(sdist.pointsToLower!=null?' · <span style="color:'+RED+'">'+ML(sdist.lowerLabelDisplay||'')+' -'+sdist.pointsToLower+T({ko:'점',en:'pts'})+'</span>':'');
+    }
+  }catch(e){console.warn('[dashboard] signal-distance render failed:',e&&e.message);}
+
+  /* ── [확장] IV-HV 스프레드 · 현물/선물 비율 (파생 아코디언 추가 셀) ── */
+  try{
+    var ivhv=d.api_analysis_iv_hv_spread||{};
+    var spp=d.api_dashboard_spot_perp_ratio||{};
+    var db2=ge('derivBody');
+    if(ivhv.iv!=null&&ivhv.rv!=null){
+      db2.appendChild(mk('div','acc-cell','<div class="l">'+T({ko:'IV−HV 스프레드',en:'IV−HV spread'})+'</div><div class="v">'+ivhv.spread+'<span style="font-size:11px;color:var(--t3)"> ('+ML(ivhv.statusLabel||'')+')</span></div>'));
+    }
+    if(spp.hasData&&spp.ratio!=null){
+      db2.appendChild(mk('div','acc-cell','<div class="l">'+T({ko:'현물/선물 거래 비율',en:'Spot/perp volume ratio'})+'</div><div class="v">'+spp.ratio+'<span style="font-size:11px;color:var(--t3)"> ('+ML(spp.label||'')+')</span></div>'));
+    }
+  }catch(e){console.warn('[dashboard] deriv extras render failed:',e&&e.message);}
+
+  /* ── [확장] 미국 현물 ETF 자금 흐름 90일 ── */
+  try{
+    var etf=d.api_dashboard_etf_flow_history||{};
+    var eh=etf.history||[];
+    if(etf.hasData&&eh.length){
+      ge('accEtf').style.display='';
+      var etfNeg=(etf.total90d||'').charAt(0)==='-';
+      ge('etfCnt').textContent=T({ko:'90일 누적 ',en:'90d net '})+(etf.total90d||'--')+'M';
+      var etfVals=eh.map(function(r){return pf(r.daily);});
+      var etfCols=etfVals.map(function(v){return v!=null&&v<0?RED:GREEN;});
+      barChart('chEtf',etfVals,etfCols);
+      var est=ge('etfStats');
+      [[T({ko:'90일 누적 순유입',en:'90d cumulative net flow'}),(etf.total90d||'--')+' M USD',etfNeg?RED:GREEN],
+       [T({ko:'추세',en:'Trend'}),ML(etf.trend||'--'),etfNeg?RED:GREEN],
+       [T({ko:'표본 일수',en:'Days sampled'}),eh.length+T({ko:'일',en:'d'}),null]
+      ].forEach(function(c){est.appendChild(mk('div','acc-cell','<div class="l">'+c[0]+'</div><div class="v"'+(c[2]?' style="color:'+c[2]+'"':'')+'>'+c[1]+'</div>'));});
+    }
+  }catch(e){console.warn('[dashboard] etf-flow render failed:',e&&e.message);}
+
+  /* ── [확장] 네트워크 건강 — 해시리본·NVT·멤풀·채굴 풀·라이트닝 ── */
+  try{
+    var hrb=d.api_dashboard_hash_ribbon||{};
+    var nvt=d.api_dashboard_nvt_signal||{};
+    var mem=d.api_bitcoin_mempool||{};
+    var pools=d.api_bitcoin_mining_pools||{};
+    var ln=d.api_bitcoin_lightning||{};
+    var netCells=[];
+    if(hrb.hasData&&hrb.ma30!=null){
+      netCells.push([T({ko:'해시리본',en:'Hash ribbon'}),ML(hrb.label||hrb.signal||'--'),hrb.crossUp?GREEN:'var(--t1)']);
+    }
+    if(nvt.hasData&&nvt.nvtValue!=null){
+      netCells.push([T({ko:'NVT 시그널',en:'NVT signal'}),nvt.nvtValue+'<span style="font-size:11px;color:var(--t3)"> ('+ML(nvt.phaseLabel||'')+')</span>',null]);
+    }
+    if(mem.hasData&&mem.txCount!=null){
+      netCells.push([T({ko:'멤풀 혼잡도',en:'Mempool congestion'}),ML(mem.congestionLevel||'--')+'<span style="font-size:11px;color:var(--t3)"> · '+Number(mem.txCount).toLocaleString()+' tx</span>',null]);
+    }
+    if(ln.channelCount!=null){
+      netCells.push([T({ko:'라이트닝 용량',en:'Lightning capacity'}),(ln.capacityBtc!=null?Number(ln.capacityBtc).toLocaleString():'--')+' BTC<span style="font-size:11px;color:var(--t3)"> · '+(ln.nodeCount!=null?Number(ln.nodeCount).toLocaleString():'--')+T({ko:' 노드',en:' nodes'})+'</span>',null]);
+    }
+    if(pools.hasData&&pools.top3Concentration!=null){
+      netCells.push([T({ko:'상위 3개 풀 점유율',en:'Top-3 pool share'}),pools.top3Concentration+'%',pf(pools.top3Concentration)>=60?AMBER:null]);
+    }
+    if(netCells.length){
+      ge('accNet').style.display='';
+      ge('netCnt').textContent=netCells.length+T({ko:'개 지표',en:' indicators'});
+      var nst=ge('netStats');
+      netCells.forEach(function(c){nst.appendChild(mk('div','acc-cell','<div class="l">'+c[0]+'</div><div class="v"'+(c[2]?' style="color:'+c[2]+'"':'')+'>'+c[1]+'</div>'));});
+      var pl=ge('netPools');
+      (pools.pools||[]).forEach(function(p){
+        var sp=pf(p.sharePct)||0;
+        pl.appendChild(mk('div','contrib-row',
+          '<span class="nm">'+p.name+'</span>'+
+          '<div class="track"><i style="left:0;width:'+Math.min(sp*2,100)+'%;background:'+(sp>=20?AMBER:'#4a90d9')+'"></i></div>'+
+          '<span class="vv">'+p.sharePct+'%</span>'));
+      });
+    }
+  }catch(e){console.warn('[dashboard] network health render failed:',e&&e.message);}
+
+  /* ── [확장] 마스터 스코어 (전문가 분석 아코디언 상단) ── */
+  try{
+    var ms=d.api_analysis_master_score||{};
+    if(ms.hasData&&ms.masterScore!=null){
+      var msl=ge('masterScoreLine');
+      msl.style.display='';
+      var msCol=scoreColor(pf(ms.masterScore)||0);
+      var msReasons=(ms.masterReasons||'').split('|').map(function(s){return s.trim();}).filter(Boolean);
+      msl.innerHTML='<b style="color:'+msCol+'">'+T({ko:'마스터 스코어 ',en:'Master score '})+ms.masterScore+'</b> · '
+        +ML(ms.masterAction||'')+'<br><span style="color:var(--t3);font-size:11.5px">'+msReasons.map(ML).join(' · ')+'</span>';
+    }
+  }catch(e){console.warn('[dashboard] master-score render failed:',e&&e.message);}
 
   /* ── [확장] 오늘의 강세 vs 약세 대차대조표 ── */
   try{
