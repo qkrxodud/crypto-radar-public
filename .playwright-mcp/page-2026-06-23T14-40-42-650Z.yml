@@ -1,0 +1,195 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - link "₿ 타이밍 레이더 TIMING RADAR" [ref=e4] [cursor=pointer]:
+      - /url: ../index-v2.html
+      - generic [ref=e5]: ₿
+      - generic [ref=e6]:
+        - generic [ref=e7]: 타이밍 레이더
+        - generic [ref=e8]: TIMING RADAR
+    - generic [ref=e9]: MENU
+    - navigation [ref=e10]:
+      - link "대시보드" [ref=e11] [cursor=pointer]:
+        - /url: ../index-v2.html
+        - text: 대시보드
+      - link "지표 가이드" [ref=e13] [cursor=pointer]:
+        - /url: ../guide-v2.html
+        - text: 지표 가이드
+      - link "서비스 소개" [ref=e15] [cursor=pointer]:
+        - /url: ../about-v2.html
+        - text: 서비스 소개
+      - link "문의" [ref=e17] [cursor=pointer]:
+        - /url: ../contact-v2.html
+        - text: 문의
+    - generic [ref=e19]:
+      - generic [ref=e22]: LIVE · 09:05 KST
+      - generic [ref=e23]:
+        - text: 매일 오전 9시 5분
+        - text: 지표 자동 갱신
+    - generic [ref=e24]:
+      - generic [ref=e25]: VISITORS
+      - generic [ref=e26]:
+        - generic [ref=e27]: 지금 보는 중
+        - generic [ref=e29]: "3"
+      - generic [ref=e30]:
+        - generic [ref=e31]: 오늘
+        - generic [ref=e32]: "12"
+      - generic [ref=e33]:
+        - generic [ref=e34]: 누적
+        - generic [ref=e35]: "12"
+    - generic [ref=e36]:
+      - text: 참고용 정량 분석 ·
+      - text: 투자 조언 아님
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - link "₿ 타이밍 레이더" [ref=e39] [cursor=pointer]:
+        - /url: ../index-v2.html
+        - generic [ref=e40]: ₿
+        - generic [ref=e41]: 타이밍 레이더
+      - button "메뉴 열기" [ref=e42] [cursor=pointer]
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - link "지표 가이드" [ref=e46] [cursor=pointer]:
+          - /url: ../guide-v2.html
+        - generic [ref=e47]: /
+        - generic [ref=e48]: 기술적 분석
+        - generic [ref=e49]: /
+        - generic [ref=e50]: RSI 상대강도지수
+      - generic [ref=e51]:
+        - generic [ref=e54]: 기술적 분석
+        - heading "RSI, 가격의 속도계" [level=1] [ref=e55]
+        - paragraph [ref=e56]: RSI(상대강도지수)는 가격이 최근 얼마나 빠르고 강하게 움직였는지를 0~100 척도로 잽니다. 70을 넘으면 너무 빨리 올랐고(과매수), 30 아래면 너무 빨리 떨어진(과매도) 상태입니다. 가격이 어디로 갈지를 알려주는 게 아니라, 최근 움직임이 너무 빠르게 과하게 늘어났는지를 알려줍니다.
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: 무엇인가
+          - generic [ref=e60]: 최근 상승이 하락 대비 얼마나 강했는지를 0~100으로 보는 지표.
+        - generic [ref=e61]:
+          - generic [ref=e62]: 어떻게 읽나
+          - generic [ref=e63]: 70 이상 과열, 30 이하 침체. 50선은 대략적인 추세 경계.
+        - generic [ref=e64]:
+          - generic [ref=e65]: 신호
+          - generic [ref=e66]: 과매도 = 진입 주시
+      - generic [ref=e67]:
+        - heading "1 RSI는 무엇을 재는가" [level=2] [ref=e68]:
+          - generic [ref=e69]: "1"
+          - generic [ref=e70]: RSI는 무엇을 재는가
+        - paragraph [ref=e71]: 가격은 수준을 알려줍니다. RSI는 모멘텀, 즉 최근 움직임이 상승과 하락 사이에서 얼마나 한쪽으로 치우쳤는지를 알려줍니다. 최근 거의 모든 봉이 상승 마감했다면 RSI는 100을 향해 올라가고, 거의 모두 하락 마감했다면 0을 향해 내려갑니다. 그래서 RSI가 높다는 건 가격이 절대적으로 높다는 뜻이 아니라, 최근 상승이 빠르고 한쪽으로 쏠렸다는 뜻입니다.
+        - paragraph [ref=e72]: 핵심 발상은 너무 빠른 움직임은 대개 한 박자 쉬어 간다는 것입니다. 쉼 없이 급등한 시장은 자주 멈추거나 되돌리며 호흡을 고르고, 급락한 시장은 자주 반등합니다. RSI는 그 최근 움직임이 얼마나 늘어났는지를 숫자로 표현하는 도구입니다.
+      - generic [ref=e73]:
+        - heading "2 어떻게 계산되나" [level=2] [ref=e74]:
+          - generic [ref=e75]: "2"
+          - generic [ref=e76]: 어떻게 계산되나
+        - paragraph [ref=e77]:
+          - text: 일정 기간 — 가장 흔하게는
+          - code [ref=e78]: "14"
+          - text: 봉 — 동안 RSI는 상승폭의 평균과 하락폭의 평균을 비교한 뒤, 그 비율을 0~100 척도에 옮깁니다.
+        - list [ref=e79]:
+          - listitem [ref=e80]: 1단계. 각 봉의 변화를 상승분과 하락분으로 나누고, 기간 동안 각각 평균을 냅니다.
+          - listitem [ref=e81]:
+            - text: 2단계. 비율
+            - code [ref=e82]: RS = 평균상승 ÷ 평균하락
+            - text: 을 만듭니다.
+          - listitem [ref=e83]:
+            - text: 3단계.
+            - code [ref=e84]: RSI = 100 − 100 ÷ (1 + RS)
+            - text: 로 변환하면 항상 0~100 사이에 놓입니다.
+        - paragraph [ref=e85]: 손으로 계산할 필요는 없습니다. 핵심은 RSI가 최근 상승의 힘과 하락의 힘의 비율을 부드럽게 만든 값이라는 점입니다. 매수세가 우위면 오르고 매도세가 우위면 내려갑니다. 기간을 짧게 하면 더 예민해지고, 길게 하면 더 차분해집니다.
+      - generic [ref=e86]:
+        - heading "3 구간으로 읽기" [level=2] [ref=e87]:
+          - generic [ref=e88]: "3"
+          - generic [ref=e89]: 구간으로 읽기
+        - paragraph [ref=e90]: 0~100 척도에는 잘 알려진 몇 개의 구간이 있습니다. 칼같은 선이 아니라 점진적 변화로 받아들이고, 같은 숫자라도 잔잔한 장과 강한 추세에서는 의미가 다르다는 점을 기억하세요.
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e94]: 0~30
+            - generic [ref=e95]: 과매도. 최근 매도가 격렬했던 국면. 반등 가능성이 커지지만, 강한 하락 추세에서는 한동안 머물 수 있음.
+          - generic [ref=e96]:
+            - generic [ref=e98]: 30~50
+            - generic [ref=e99]: 약세 / 중심선 아래. 매도세가 아직 약간 우위. 인내심 있는 매수자가 분할로 모아가는 구간인 경우가 많음.
+          - generic [ref=e100]:
+            - generic [ref=e102]: 50~70
+            - generic [ref=e103]: 강세 / 중심선 위. 매수세가 우위. 모멘텀은 더 갈 수 있지만 쉬운 과매도 진입 구간은 지났음.
+          - generic [ref=e104]:
+            - generic [ref=e106]: 70~100
+            - generic [ref=e107]: 과매수. 최근 매수가 뜨거웠던 국면. 추격 매수를 자제하라는 경고 — 강한 상승 추세에서는 RSI가 70 위에 머물 수 있어 정확한 매도 신호는 아님.
+      - generic [ref=e108]:
+        - heading "4 매수 타이밍에 쓰는 법" [level=2] [ref=e109]:
+          - generic [ref=e110]: "4"
+          - generic [ref=e111]: 매수 타이밍에 쓰는 법
+        - paragraph [ref=e112]: RSI는 추세 판단 위에 얹는 타이밍 필터로 쓸 때 가장 좋습니다. 단독 방아쇠가 아닙니다. 상승 추세에서는 RSI를 40~50 부근까지 내리는 눌림목이, 70 근처에 붙어 있을 때 사는 것보다 더 나은 진입인 경우가 많습니다. 하락 추세에서는 과매도 진입이 반등 기회를 줄 수 있지만, 큰 추세에 맞서는 것은 위험합니다. 많은 트레이더에게 가장 쓸모 있는 해석은 다이버전스 — 가격은 신극단인데 RSI는 그렇지 않은 경우로, 움직임의 힘이 빠지고 있다는 힌트입니다.
+        - generic [ref=e113]:
+          - generic [ref=e114]: 실전 팁
+          - paragraph [ref=e115]: 한 시간프레임만 보고 움직이지 마세요. 일·주·월봉 RSI를 함께 보세요. 건강한 주봉 상승 추세 안의 일봉 과매도와, 하락하는 주봉 추세 안의 일봉 과매도는 완전히 다른 상황입니다. 자금을 넣기 전에 RSI를 가격 구조와 함께 판단하세요.
+      - generic [ref=e116]:
+        - heading "5 한계와 흔한 오해" [level=2] [ref=e117]:
+          - generic [ref=e118]: "5"
+          - generic [ref=e119]: 한계와 흔한 오해
+        - paragraph [ref=e120]: RSI는 가치가 아니라 최근 움직임의 속도를 재며, 강한 추세에서는 오랫동안 과매수나 과매도에 머물 수 있습니다. 가장 흔한 실수는 70을 자동 매도로, 30을 자동 매수로 받아들이는 것입니다. 비트코인의 강한 상승장에서 RSI는 몇 주씩 70 위를 유지하며 가격이 계속 올랐고, 깊은 매도장에서는 30 아래에 머무는 동안 가격이 더 떨어지기도 했습니다. RSI는 움직임의 크기나 펀더멘털에 대해서는 아무것도 말해주지 않습니다. 정확한 전환점을 짚기보다 최근 움직임이 늘어났는지 판단하는 용도로 쓰고, 단일 임계값보다 다이버전스와 여러 시간프레임의 맥락에 기대세요.
+      - generic [ref=e121]:
+        - heading "+ 함께 보면 좋은 지표" [level=2] [ref=e122]:
+          - generic [ref=e123]: +
+          - generic [ref=e124]: 함께 보면 좋은 지표
+        - generic [ref=e125]:
+          - link "MACD 이동평균 간격으로 보는 추세 방향과 모멘텀." [ref=e126] [cursor=pointer]:
+            - /url: macd-v2.html
+            - generic [ref=e127]: MACD
+            - generic [ref=e128]: 이동평균 간격으로 보는 추세 방향과 모멘텀.
+          - link "MA200 이격도 가격이 200일 평균에서 얼마나 떨어져 있는지." [ref=e129] [cursor=pointer]:
+            - /url: ma200-deviation-v2.html
+            - generic [ref=e130]: MA200 이격도
+            - generic [ref=e131]: 가격이 200일 평균에서 얼마나 떨어져 있는지.
+          - link "전체 지표 보기 지표 가이드 전체로 돌아가기." [ref=e132] [cursor=pointer]:
+            - /url: ../guide-v2.html
+            - generic [ref=e133]: 전체 지표 보기
+            - generic [ref=e134]: 지표 가이드 전체로 돌아가기.
+      - generic [ref=e135]:
+        - heading "? 자주 묻는 질문" [level=2] [ref=e136]:
+          - generic [ref=e137]: "?"
+          - generic [ref=e138]: 자주 묻는 질문
+        - generic [ref=e139]:
+          - group [ref=e140]:
+            - generic "Q RSI가 30 아래면 무조건 사야 하나요? +" [ref=e141] [cursor=pointer]:
+              - generic [ref=e142]: Q
+              - generic [ref=e143]: RSI가 30 아래면 무조건 사야 하나요?
+              - text: +
+          - group [ref=e144]:
+            - generic "Q RSI는 어떤 기간을 쓰는 게 좋나요? +" [ref=e145] [cursor=pointer]:
+              - generic [ref=e146]: Q
+              - generic [ref=e147]: RSI는 어떤 기간을 쓰는 게 좋나요?
+              - text: +
+          - group [ref=e148]:
+            - generic "Q RSI 다이버전스가 뭔가요? +" [ref=e149] [cursor=pointer]:
+              - generic [ref=e150]: Q
+              - generic [ref=e151]: RSI 다이버전스가 뭔가요?
+              - text: +
+      - generic [ref=e152]:
+        - generic [ref=e153]:
+          - heading "오늘의 지표 값 확인하기" [level=3] [ref=e154]
+          - paragraph [ref=e155]: 대시보드에서 실시간 RSI 값과 종합 타이밍 점수를 확인하세요.
+        - link "대시보드 열기 →" [ref=e156] [cursor=pointer]:
+          - /url: ../index-v2.html
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e160]: ₿
+            - generic [ref=e161]: BTC 타이밍 레이더
+          - generic [ref=e162]: 비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - heading "메뉴" [level=4] [ref=e165]
+            - link "대시보드" [ref=e166] [cursor=pointer]:
+              - /url: ../index-v2.html
+            - link "지표 가이드" [ref=e167] [cursor=pointer]:
+              - /url: ../guide-v2.html
+            - link "서비스 소개" [ref=e168] [cursor=pointer]:
+              - /url: ../about-v2.html
+            - link "문의" [ref=e169] [cursor=pointer]:
+              - /url: ../contact-v2.html
+          - generic [ref=e170]:
+            - heading "정책 · 커뮤니티" [level=4] [ref=e171]
+            - link "개인정보처리방침" [ref=e172] [cursor=pointer]:
+              - /url: ../privacy.html
+            - link "투자 면책조항" [ref=e173] [cursor=pointer]:
+              - /url: ../disclaimer.html
+            - link "텔레그램 채널" [ref=e174] [cursor=pointer]:
+              - /url: https://t.me/+Q9AJzzunwnAxMzhl
+        - generic [ref=e175]: © 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신

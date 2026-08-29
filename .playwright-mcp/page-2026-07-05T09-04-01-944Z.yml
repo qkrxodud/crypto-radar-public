@@ -1,0 +1,192 @@
+- generic [ref=f18e2]:
+  - complementary [ref=f18e3]:
+    - link "₿ Timing Radar TIMING RADAR" [ref=f18e4] [cursor=pointer]:
+      - /url: ../index.html
+      - generic [ref=f18e5]: ₿
+      - generic [ref=f18e6]:
+        - generic [ref=f18e7]: Timing Radar
+        - generic [ref=f18e8]: TIMING RADAR
+    - generic [ref=f18e9]: MENU
+    - navigation [ref=f18e10]:
+      - link "Dashboard" [ref=f18e11] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=f18e13]: Dashboard
+      - link "Indicator Guide" [ref=f18e14] [cursor=pointer]:
+        - /url: ../guide.html
+        - generic [ref=f18e16]: Indicator Guide
+      - link "About" [ref=f18e17] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=f18e19]: About
+      - link "Contact" [ref=f18e20] [cursor=pointer]:
+        - /url: ../contact.html
+        - generic [ref=f18e22]: Contact
+    - generic [ref=f18e23]:
+      - generic [ref=f18e26]: LIVE · 09:05 KST
+      - generic [ref=f18e27]:
+        - text: Indicators auto-update
+        - text: daily at 09:05 KST
+    - generic [ref=f18e28]:
+      - generic [ref=f18e29]: VISITORS
+      - generic [ref=f18e30]:
+        - generic [ref=f18e31]: Viewing now
+        - generic [ref=f18e33]: "--"
+      - generic [ref=f18e34]:
+        - generic [ref=f18e35]: Today
+        - generic [ref=f18e36]: "--"
+      - generic [ref=f18e37]:
+        - generic [ref=f18e38]: Total
+        - generic [ref=f18e39]: "--"
+    - generic [ref=f18e40]:
+      - text: Quantitative analysis for reference ·
+      - text: Not investment advice
+  - generic [ref=f18e41]:
+    - generic [ref=f18e42]:
+      - generic [ref=f18e43]: Indicator Guide › NUPL
+      - generic [ref=f18e44]:
+        - group "Language / 언어" [ref=f18e45]:
+          - button "KO" [ref=f18e46] [cursor=pointer]
+          - button "EN" [ref=f18e47] [cursor=pointer]
+        - generic [ref=f18e48]: LIVE
+    - generic [ref=f18e50]:
+      - generic [ref=f18e51]:
+        - link "Indicator Guide" [ref=f18e52] [cursor=pointer]:
+          - /url: ../guide.html
+        - generic [ref=f18e53]: /
+        - generic [ref=f18e54]: Cycle · Sentiment
+        - generic [ref=f18e55]: /
+        - generic [ref=f18e56]: NUPL
+      - generic [ref=f18e57]:
+        - generic [ref=f18e60]: Cycle · Sentiment
+        - heading "NUPL, explained in plain terms" [level=1] [ref=f18e61]
+        - paragraph [ref=f18e62]: NUPL (Net Unrealized Profit/Loss) answers a single question. On average, are the people holding Bitcoin sitting on paper gains right now, or on losses? It compares each coin's value today with the price at which it last moved, then expresses that gap as a ratio of total value. When these paper gains grow large, holders are tempted to sell; when it turns negative, the market is in pain — and that pain has often marked bottoms.
+      - generic [ref=f18e63]:
+        - generic [ref=f18e64]:
+          - generic [ref=f18e65]: What it is
+          - generic [ref=f18e66]: The share of all holders' unrealized (paper) profit within the total value.
+        - generic [ref=f18e67]:
+          - generic [ref=f18e68]: How to read it
+          - generic [ref=f18e69]: Below 0 = capitulation — historically a better buying zone; very high means greed.
+        - generic [ref=f18e70]:
+          - generic [ref=f18e71]: Signal
+          - generic [ref=f18e72]: More negative = buying opportunity
+      - generic [ref=f18e73]:
+        - heading "1 What NUPL measures" [level=2] [ref=f18e74]:
+          - generic [ref=f18e75]: "1"
+          - generic [ref=f18e76]: What NUPL measures
+        - paragraph [ref=f18e77]: Price alone tells you only the current quote, not whether the average holder is content or in pain. NUPL fills that gap. It looks at every coin, compares its current value with the price at which it last moved on-chain, and sums that difference across the whole network. The result is a single ratio that captures the market's collective emotional state — wide gains mean comfort, vanishing gains mean stress.
+        - paragraph [ref=f18e78]: The intuition is behavioral. When most coins sit on deep gains, the temptation to lock in profit grows and selling pressure builds in the market. When most coins are underwater, those who were going to sell have already given up, and as supply tightens the conditions for a bottom quietly form. NUPL turns that crowd psychology into a number you can track over time.
+      - generic [ref=f18e79]:
+        - heading "2 How it is calculated" [level=2] [ref=f18e80]:
+          - generic [ref=f18e81]: "2"
+          - generic [ref=f18e82]: How it is calculated
+        - paragraph [ref=f18e83]: NUPL is built from two on-chain numbers. Market cap values every coin at today's price. Realized cap values every coin at the price it last moved — a rough proxy for the network's average cost basis. The formula is simple.
+        - list [ref=f18e84]:
+          - listitem [ref=f18e85]:
+            - text: NUPL =
+            - code [ref=f18e86]: (market cap − realized cap) ÷ market cap
+          - listitem [ref=f18e87]: "The numerator is total unrealized profit/loss: how much paper gain (or loss) the whole market is holding."
+          - listitem [ref=f18e88]: Dividing by market cap rescales it into a comparable ratio, so you can compare today's value with past cycles regardless of the price level.
+        - paragraph [ref=f18e89]: When NUPL is positive, the market is in net profit; when it is negative, the average coin is underwater. You do not need to compute it yourself. The key is that this is not a price forecast but a cost-basis comparison in the same family as MVRV.
+      - generic [ref=f18e90]:
+        - heading "3 Reading it by range" [level=2] [ref=f18e91]:
+          - generic [ref=f18e92]: "3"
+          - generic [ref=f18e93]: Reading it by range
+        - paragraph [ref=f18e94]: NUPL is traditionally divided into emotion zones. Treat the boundaries as gradual shifts, not sharp lines — the same value can mean different things early versus late in a cycle.
+        - generic [ref=f18e95]:
+          - generic [ref=f18e96]:
+            - generic [ref=f18e98]: Below 0
+            - generic [ref=f18e99]: Capitulation. The average holder is at a loss. Historically the best zone for long-term entry — though it can persist for a while.
+          - generic [ref=f18e100]:
+            - generic [ref=f18e102]: 0 – 0.25
+            - generic [ref=f18e103]: Hope / fear. Small net gains are returning. Often a reasonable zone for patient buyers to accumulate gradually.
+          - generic [ref=f18e104]:
+            - generic [ref=f18e106]: 0.25 – 0.5
+            - generic [ref=f18e107]: Optimism. Gains are at a comfortable level. Momentum may run further, but the easy entry zone has passed.
+          - generic [ref=f18e108]:
+            - generic [ref=f18e110]: 0.5 – 0.75
+            - generic [ref=f18e111]: Belief. Wide paper gains raise selling pressure. It is wise to lower expectations of easy upside.
+          - generic [ref=f18e112]:
+            - generic [ref=f18e114]: Above 0.75
+            - generic [ref=f18e115]: Euphoria. Near the top range. A warning to manage risk and avoid chasing — not a precise sell signal.
+      - generic [ref=f18e116]:
+        - heading "4 How to use it for buy timing" [level=2] [ref=f18e117]:
+          - generic [ref=f18e118]: "4"
+          - generic [ref=f18e119]: How to use it for buy timing
+        - paragraph [ref=f18e120]: NUPL works best as a context filter rather than a trigger. When it drops into the capitulation zone below 0, it signals that the average holder is in pain and that long-term entries have historically clustered around here — a moment to lean toward a phased (DCA) approach rather than waiting for the exact bottom. When it climbs into the euphoria zone above 0.75, it is a signal to stop buying aggressively and check the risk you are carrying.
+        - generic [ref=f18e121]:
+          - generic [ref=f18e122]: Practical tip
+          - paragraph [ref=f18e123]: Don't react to a single day's value. Unrealized profit is pressure, not actual selling, so NUPL can stay high for a long time before a correction. Watch whether the index stays in one zone for weeks, and judge it alongside price and other on-chain indicators before committing capital.
+      - generic [ref=f18e124]:
+        - heading "5 Limits and common misreadings" [level=2] [ref=f18e125]:
+          - generic [ref=f18e126]: "5"
+          - generic [ref=f18e127]: Limits and common misreadings
+        - paragraph [ref=f18e128]: "NUPL measures pressure, not behavior. A wide unrealized profit only means holders could sell, not that they will — so it can sit in the euphoria zone for weeks while price keeps rising, and stay negative through a long, grinding bottom. The most common mistake is reading negative NUPL as an automatic buy and euphoria as an automatic sell. The second trap is double counting: NUPL shares inputs with the MVRV-Z Score, so even when both agree they are not really two independent signals but one idea seen twice."
+      - generic [ref=f18e129]:
+        - heading "+ Indicators to watch alongside" [level=2] [ref=f18e130]:
+          - generic [ref=f18e131]: +
+          - generic [ref=f18e132]: Indicators to watch alongside
+        - generic [ref=f18e133]:
+          - link "MVRV-Z Score The same cost-basis comparison, normalized by standard deviation." [ref=f18e134] [cursor=pointer]:
+            - /url: mvrv-z-score.html
+            - generic [ref=f18e135]: MVRV-Z Score
+            - generic [ref=f18e136]: The same cost-basis comparison, normalized by standard deviation.
+          - link "SOPR Whether coins are actually being sold at a profit or a loss." [ref=f18e137] [cursor=pointer]:
+            - /url: sopr.html
+            - generic [ref=f18e138]: SOPR
+            - generic [ref=f18e139]: Whether coins are actually being sold at a profit or a loss.
+          - link "See all indicators Back to the full indicator guide." [ref=f18e140] [cursor=pointer]:
+            - /url: ../guide.html
+            - generic [ref=f18e141]: See all indicators
+            - generic [ref=f18e142]: Back to the full indicator guide.
+      - generic [ref=f18e143]:
+        - heading "? Frequently asked questions" [level=2] [ref=f18e144]:
+          - generic [ref=f18e145]: "?"
+          - generic [ref=f18e146]: Frequently asked questions
+        - generic [ref=f18e147]:
+          - group [ref=f18e148]:
+            - generic "Q If NUPL is negative, should I always buy? +" [ref=f18e149] [cursor=pointer]:
+              - generic [ref=f18e150]: Q
+              - generic [ref=f18e151]: If NUPL is negative, should I always buy?
+              - text: +
+          - group [ref=f18e152]:
+            - generic "Q What is the difference between NUPL and the MVRV-Z Score? +" [ref=f18e153] [cursor=pointer]:
+              - generic [ref=f18e154]: Q
+              - generic [ref=f18e155]: What is the difference between NUPL and the MVRV-Z Score?
+              - text: +
+          - group [ref=f18e156]:
+            - generic "Q If NUPL passes 0.75, is it immediately a top? +" [ref=f18e157] [cursor=pointer]:
+              - generic [ref=f18e158]: Q
+              - generic [ref=f18e159]: If NUPL passes 0.75, is it immediately a top?
+              - text: +
+      - generic [ref=f18e160]:
+        - generic [ref=f18e161]:
+          - heading "Check today's indicator values" [level=3] [ref=f18e162]
+          - paragraph [ref=f18e163]: See the latest NUPL value and the composite timing score on the dashboard.
+        - link "Open dashboard →" [ref=f18e164] [cursor=pointer]:
+          - /url: ../index.html
+      - generic [ref=f18e165]:
+        - generic [ref=f18e166]:
+          - generic [ref=f18e167]:
+            - generic [ref=f18e168]: ₿
+            - generic [ref=f18e169]: BTC Timing Radar
+          - generic [ref=f18e170]: A free information service that automatically analyzes 25+ Bitcoin market indicators every day.
+        - generic [ref=f18e171]:
+          - generic [ref=f18e172]:
+            - heading "Menu" [level=4] [ref=f18e173]
+            - link "Dashboard" [ref=f18e174] [cursor=pointer]:
+              - /url: ../index.html
+            - link "Indicator Guide" [ref=f18e175] [cursor=pointer]:
+              - /url: ../guide.html
+            - link "About" [ref=f18e176] [cursor=pointer]:
+              - /url: ../about.html
+            - link "Contact" [ref=f18e177] [cursor=pointer]:
+              - /url: ../contact.html
+          - generic [ref=f18e178]:
+            - heading "Policy · Community" [level=4] [ref=f18e179]
+            - link "Privacy Policy" [ref=f18e180] [cursor=pointer]:
+              - /url: ../privacy.html
+            - link "Disclaimer" [ref=f18e181] [cursor=pointer]:
+              - /url: ../disclaimer.html
+            - link "Telegram Channel" [ref=f18e182] [cursor=pointer]:
+              - /url: https://t.me/+Q9AJzzunwnAxMzhl
+        - generic [ref=f18e183]: © 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST

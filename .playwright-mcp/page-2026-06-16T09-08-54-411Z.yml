@@ -1,0 +1,163 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BTC Timing Radar" [ref=e4] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=e7]: BTC Timing Radar
+      - navigation [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Indicator Guide" [ref=e10] [cursor=pointer]:
+          - /url: ../guide.html
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: ../contact.html
+      - group "Language / 语言 / 언어" [ref=e12]:
+        - button "KO" [ref=e13] [cursor=pointer]
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button "中文" [ref=e15] [cursor=pointer]
+      - link "Today's Score →" [ref=e16] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=e18]: Today's Score →
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - link "Indicator Guide" [ref=e21] [cursor=pointer]:
+        - /url: ../guide.html
+      - generic [ref=e22]: /
+      - generic [ref=e23]: On-Chain
+      - generic [ref=e24]: /
+      - generic [ref=e25]: SOPR
+    - generic [ref=e26]:
+      - generic [ref=e29]: On-Chain
+      - heading "SOPR, in plain words" [level=1] [ref=e30]
+      - paragraph [ref=e31]: "SOPR (Spent Output Profit Ratio) answers one simple question: of the coins that actually moved on the blockchain today, were they on average sold at a profit or a loss? Above 1 means profit-taking dominates; below 1 means people are selling at a loss. It turns the raw blockchain into a daily read on what holders are really doing — not what they say."
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: What it is
+        - generic [ref=e35]: Whether moved coins were, on average, sold at a profit or a loss.
+      - generic [ref=e36]:
+        - generic [ref=e37]: How to read
+        - generic [ref=e38]: 1 is break-even. Above = profit-taking, below = loss-cutting.
+      - generic [ref=e39]:
+        - generic [ref=e40]: Signal
+        - generic [ref=e41]: Deep below 1 = capitulation zone
+    - generic [ref=e42]:
+      - heading "1 What SOPR actually measures" [level=2] [ref=e43]:
+        - generic [ref=e44]: "1"
+        - generic [ref=e45]: What SOPR actually measures
+      - paragraph [ref=e46]: "Every Bitcoin has a memory: the blockchain records the price at which each coin last moved. When a coin moves again today, you can compare the price it's moving at now with the price it last moved at. If now is higher, that coin moved at a profit; if lower, at a loss. SOPR is simply the average of that profit/loss ratio across every coin that moved on a given day."
+      - paragraph [ref=e47]: Why does this matter for timing? Because it captures the emotional reality of the market. When fear takes over, people sell even at a loss to escape — SOPR drops below 1. When confidence returns, holders only let coins go at a profit, and reluctant sellers wait — SOPR climbs back above 1. It's a window into realized behavior, the actual decisions people made with real money.
+    - generic [ref=e48]:
+      - heading "2 How it's calculated" [level=2] [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: How it's calculated
+      - paragraph [ref=e52]: "The core formula is deceptively simple, applied to each spent coin and then averaged:"
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - text: Per coin —
+          - code [ref=e55]: price sold ÷ price last bought
+          - text: . Above 1 = moved at a profit, below 1 = moved at a loss.
+        - listitem [ref=e56]: Daily SOPR — the average of that ratio across all coins that moved that day, weighted by size.
+        - listitem [ref=e57]: aSOPR (adjusted) — a cleaner version that excludes coins moved within a single day, removing internal-transfer noise.
+        - listitem [ref=e58]: STH / LTH SOPR — the same ratio computed only for short-term holders or only for long-term holders, to see who is selling.
+      - paragraph [ref=e59]: You don't need to compute this yourself — data providers do. The point to remember is that SOPR is a behavioral ratio centered on 1, and most analysts smooth it over several days so a single noisy day doesn't mislead.
+    - generic [ref=e60]:
+      - heading "3 Reading the zones" [level=2] [ref=e61]:
+        - generic [ref=e62]: "3"
+        - generic [ref=e63]: Reading the zones
+      - paragraph [ref=e64]: SOPR revolves around the value 1. Treat these bands as gradients shaped by the broader trend, not as hard lines.
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e68]: Well below 1
+          - generic [ref=e69]: Capitulation. Many coins moving at a loss — sellers are exhausted. Historically this loss territory has hosted good long-term entries, but it can persist in a downtrend.
+        - generic [ref=e70]:
+          - generic [ref=e72]: Bouncing off 1
+          - generic [ref=e73]: In a bull market, dips toward 1 that bounce act as support — losers stop selling, dip-buyers step in. Often a reasonable accumulation cue.
+        - generic [ref=e74]:
+          - generic [ref=e76]: Steady above 1
+          - generic [ref=e77]: Profit-taking dominates but is being absorbed. A healthy uptrend can hold here for a long time as new demand soaks up realized gains.
+        - generic [ref=e78]:
+          - generic [ref=e80]: Failing at 1
+          - generic [ref=e81]: In a bear market, rallies toward 1 that fail act as resistance — trapped buyers sell at break-even, capping the bounce. A caution flag.
+    - generic [ref=e82]:
+      - heading "4 Using it for buy timing" [level=2] [ref=e83]:
+        - generic [ref=e84]: "4"
+        - generic [ref=e85]: Using it for buy timing
+      - paragraph [ref=e86]: SOPR is most useful as a confirmation tool, not a trigger. When SOPR has been pressed well below 1 and starts curling back up, it suggests loss-driven selling is being exhausted — a context in which dollar-cost averaging into weakness has historically been more comfortable. When SOPR repeatedly fails to hold above 1, it warns that sellers are still in control and a bounce may not last.
+      - generic [ref=e87]:
+        - generic [ref=e88]: Practical tip
+        - paragraph [ref=e89]: Watch the smoothed SOPR, not a single spike, and pay attention to where it reclaims 1. Pairing it with on-chain flow and a sentiment gauge gives a fuller picture than SOPR alone.
+    - generic [ref=e90]:
+      - heading "5 Limits & common misreadings" [level=2] [ref=e91]:
+        - generic [ref=e92]: "5"
+        - generic [ref=e93]: Limits & common misreadings
+      - paragraph [ref=e94]: SOPR describes what was realized today, not what holders will do tomorrow. Two pitfalls are common. First, same-day transfers between a person's own wallets can distort the raw figure, which is why the adjusted (aSOPR) and smoothed versions are more reliable. Second, people treat a single dip below 1 as an automatic buy — but in a deep bear market SOPR can stay under 1 for weeks. It tells you the crowd's current pain, not the precise turning point, so it works best as one input among several rather than a standalone signal.
+    - generic [ref=e95]:
+      - heading "+ Indicators to read alongside" [level=2] [ref=e96]:
+        - generic [ref=e97]: +
+        - generic [ref=e98]: Indicators to read alongside
+      - generic [ref=e99]:
+        - link "MVRV-Z Score Whether price is over- or under-valued versus cost basis." [ref=e100] [cursor=pointer]:
+          - /url: mvrv-z-score.html
+          - generic [ref=e101]: MVRV-Z Score
+          - generic [ref=e102]: Whether price is over- or under-valued versus cost basis.
+        - link "Exchange Net Flow Whether coins are flowing onto or off exchanges." [ref=e103] [cursor=pointer]:
+          - /url: exchange-net-flow.html
+          - generic [ref=e104]: Exchange Net Flow
+          - generic [ref=e105]: Whether coins are flowing onto or off exchanges.
+        - link "All indicators Back to the full indicator guide." [ref=e106] [cursor=pointer]:
+          - /url: ../guide.html
+          - generic [ref=e107]: All indicators
+          - generic [ref=e108]: Back to the full indicator guide.
+    - generic [ref=e109]:
+      - heading "? Frequently asked" [level=2] [ref=e110]:
+        - generic [ref=e111]: "?"
+        - generic [ref=e112]: Frequently asked
+      - generic [ref=e113]:
+        - group [ref=e114]:
+          - generic "Q If SOPR is below 1, should I always buy? +" [ref=e115] [cursor=pointer]:
+            - generic [ref=e116]: Q
+            - generic [ref=e117]: If SOPR is below 1, should I always buy?
+            - text: +
+        - group [ref=e118]:
+          - generic "Q How are SOPR, aSOPR, and STH/LTH SOPR different? +" [ref=e119] [cursor=pointer]:
+            - generic [ref=e120]: Q
+            - generic [ref=e121]: How are SOPR, aSOPR, and STH/LTH SOPR different?
+            - text: +
+        - group [ref=e122]:
+          - generic "Q SOPR is above 1 — should I sell now? +" [ref=e123] [cursor=pointer]:
+            - generic [ref=e124]: Q
+            - generic [ref=e125]: SOPR is above 1 — should I sell now?
+            - text: +
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - heading "See today's reading" [level=3] [ref=e128]
+        - paragraph [ref=e129]: Check the live SOPR reading and the composite timing score on the dashboard.
+      - link "Open dashboard →" [ref=e130] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=e131]:
+    - generic [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - link "BTC Timing Radar" [ref=e135] [cursor=pointer]:
+            - /url: ../about.html
+            - text: BTC Timing Radar
+          - paragraph [ref=e138]: A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation.
+        - generic [ref=e139]:
+          - heading "Menu" [level=4] [ref=e140]
+          - link "Dashboard" [ref=e141] [cursor=pointer]:
+            - /url: ../index.html
+          - link "Indicator Guide" [ref=e142] [cursor=pointer]:
+            - /url: ../guide.html
+          - link "Contact" [ref=e143] [cursor=pointer]:
+            - /url: ../contact.html
+        - generic [ref=e144]:
+          - heading "Policies · Community" [level=4] [ref=e145]
+          - link "Privacy Policy" [ref=e146] [cursor=pointer]:
+            - /url: ../privacy.html
+          - link "Investment Disclaimer" [ref=e147] [cursor=pointer]:
+            - /url: ../disclaimer.html
+          - link "Telegram Channel" [ref=e148] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e149]:
+        - generic [ref=e150]: © 2024 BTC Timing Radar. All rights reserved.
+        - generic [ref=e151]: Auto-updated daily at 09:05 KST

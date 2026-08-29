@@ -1,0 +1,162 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BTC Timing Radar" [ref=e4] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=e7]: BTC Timing Radar
+      - navigation [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Indicator Guide" [ref=e10] [cursor=pointer]:
+          - /url: ../guide.html
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: ../contact.html
+      - group "Language / 语言 / 언어" [ref=e12]:
+        - button "KO" [ref=e13] [cursor=pointer]
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button "中文" [ref=e15] [cursor=pointer]
+      - link "Today's Score →" [ref=e16] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=e18]: Today's Score →
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - link "Indicator Guide" [ref=e21] [cursor=pointer]:
+        - /url: ../guide.html
+      - generic [ref=e22]: /
+      - generic [ref=e23]: Cycle · Sentiment
+      - generic [ref=e24]: /
+      - generic [ref=e25]: MVRV-Z Score
+    - generic [ref=e26]:
+      - generic [ref=e29]: Cycle · Sentiment
+      - heading "The MVRV-Z Score, in plain words" [level=1] [ref=e30]
+      - paragraph [ref=e31]: The MVRV-Z Score compares Bitcoin's market price to what holders actually paid on average. When price runs far above that cost basis, the market looks stretched; when it dips below, it looks washed out. It's one of the cleaner long-term gauges of over- and under-valuation.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: What it is
+        - generic [ref=e35]: Price versus the market's average cost basis, scaled by volatility.
+      - generic [ref=e36]:
+        - generic [ref=e37]: How to read
+        - generic [ref=e38]: 7+ has marked top zones, 0 or below bottom zones.
+      - generic [ref=e39]:
+        - generic [ref=e40]: Signal
+        - generic [ref=e41]: Higher = overheated
+    - generic [ref=e42]:
+      - heading "1 What the MVRV-Z Score actually measures" [level=2] [ref=e43]:
+        - generic [ref=e44]: "1"
+        - generic [ref=e45]: What the MVRV-Z Score actually measures
+      - paragraph [ref=e46]: "Price alone can't tell you whether Bitcoin is 'expensive.' Expensive compared to what? The MVRV-Z Score answers that by using the market's own purchase history as the yardstick. It asks: how far is today's price above or below what holders, on average, originally paid? When that gap is huge, late buyers are sitting on big paper gains and the market is prone to overheating; when the gap closes or goes negative, much of the market is underwater."
+      - paragraph [ref=e47]: The 'Z' part rescales that gap by volatility, so a reading isn't distorted by Bitcoin simply being larger today than years ago. The result is a single number that lines up surprisingly well across cycles, which is why it's read as a long-term valuation gauge rather than a day-to-day signal.
+    - generic [ref=e48]:
+      - heading "2 How it's calculated" [level=2] [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: How it's calculated
+      - paragraph [ref=e52]: "The score is built from three pieces. Don't worry about computing it by hand — the point is to understand what each piece represents:"
+      - list [ref=e53]:
+        - listitem [ref=e54]: Market cap — current price × circulating supply, i.e. today's headline value.
+        - listitem [ref=e55]: Realized cap — each coin valued at the price it last moved, summed up. It approximates the market's aggregate cost basis.
+        - listitem [ref=e56]: Standard deviation (σ) — of market cap, used to normalize the gap so cycles are comparable.
+      - paragraph [ref=e57]:
+        - text: "Putting them together:"
+        - code [ref=e58]: MVRV-Z = (market cap − realized cap) ÷ σ
+        - text: . In words — take how far today's value sits above the market's average cost, then scale it by how volatile the market has been. A big positive number means price is far above cost basis; a number near or below zero means it isn't.
+    - generic [ref=e59]:
+      - heading "3 Reading the zones" [level=2] [ref=e60]:
+        - generic [ref=e61]: "3"
+        - generic [ref=e62]: Reading the zones
+      - paragraph [ref=e63]: The score is loosely split into zones drawn from past cycles. Treat the numbers as soft historical markers, not precise triggers.
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e67]: ≤ 0
+          - generic [ref=e68]: Bottom zone. Price is below the market's average cost — much of the market is underwater. Historically rare and aligned with long-term lows.
+        - generic [ref=e69]:
+          - generic [ref=e71]: 0–2
+          - generic [ref=e72]: Undervalued-ish. Price modestly above cost basis. Often an early-cycle accumulation backdrop for patient buyers.
+        - generic [ref=e73]:
+          - generic [ref=e75]: 2–4
+          - generic [ref=e76]: Mid-cycle. Broadly neutral territory. Trend can keep running, but the deepest-value entries are behind.
+        - generic [ref=e77]:
+          - generic [ref=e79]: 7+
+          - generic [ref=e80]: "Top zone. Price far above cost basis — historically an overheating warning. Note: peak readings have trended lower each cycle."
+    - generic [ref=e81]:
+      - heading "4 Using it for buy timing" [level=2] [ref=e82]:
+        - generic [ref=e83]: "4"
+        - generic [ref=e84]: Using it for buy timing
+      - paragraph [ref=e85]: MVRV-Z is a valuation backdrop, not a trigger. A low or negative reading suggests the market is washed out and can lend conviction to a dollar-cost-averaging plan; a very high reading suggests it's stretched and is a cue to slow aggressive buying and review risk. Because it moves slowly, it answers 'roughly where are we in the cycle' far better than 'should I buy this week.'
+      - generic [ref=e86]:
+        - generic [ref=e87]: Practical tip
+        - paragraph [ref=e88]: Don't expect precise tops or bottoms from it. Peak readings have fallen each cycle, so a fixed '7 = sell' rule can mislead. Pair MVRV-Z with cycle position and sentiment, and let it shape the size of your plan, not the exact day.
+    - generic [ref=e89]:
+      - heading "5 Limits & common misreadings" [level=2] [ref=e90]:
+        - generic [ref=e91]: "5"
+        - generic [ref=e92]: Limits & common misreadings
+      - paragraph [ref=e93]: "The thresholds were calibrated on past cycles, and as the market matures the peaks have trended lower each cycle — so a level that screamed 'top' in 2017 may not recur. The biggest misread is treating it as a short-term timing tool: it updates slowly and is nearly useless for day or week trades. It can also sit in a zone for months without resolving. And like all valuation gauges, it describes condition, not catalyst — it tells you the market is stretched or washed out, not when that will change. Use it as slow-moving context, cross-checked with faster indicators."
+    - generic [ref=e94]:
+      - heading "+ Indicators to read alongside" [level=2] [ref=e95]:
+        - generic [ref=e96]: +
+        - generic [ref=e97]: Indicators to read alongside
+      - generic [ref=e98]:
+        - link "Halving Cycle Where we sit in Bitcoin's ~4-year rhythm." [ref=e99] [cursor=pointer]:
+          - /url: halving-cycle.html
+          - generic [ref=e100]: Halving Cycle
+          - generic [ref=e101]: Where we sit in Bitcoin's ~4-year rhythm.
+        - link "Fear & Greed Index The crowd's mood as a single 0–100 number." [ref=e102] [cursor=pointer]:
+          - /url: fear-greed-index.html
+          - generic [ref=e103]: Fear & Greed Index
+          - generic [ref=e104]: The crowd's mood as a single 0–100 number.
+        - link "All indicators Back to the full indicator guide." [ref=e105] [cursor=pointer]:
+          - /url: ../guide.html
+          - generic [ref=e106]: All indicators
+          - generic [ref=e107]: Back to the full indicator guide.
+    - generic [ref=e108]:
+      - heading "? Frequently asked" [level=2] [ref=e109]:
+        - generic [ref=e110]: "?"
+        - generic [ref=e111]: Frequently asked
+      - generic [ref=e112]:
+        - group [ref=e113]:
+          - generic "Q If the score is 0 or below, should I buy right away? +" [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]: Q
+            - generic [ref=e116]: If the score is 0 or below, should I buy right away?
+            - text: +
+        - group [ref=e117]:
+          - generic "Q What is realized cap? +" [ref=e118] [cursor=pointer]:
+            - generic [ref=e119]: Q
+            - generic [ref=e120]: What is realized cap?
+            - text: +
+        - group [ref=e121]:
+          - generic "Q Can I day-trade with the MVRV-Z Score? +" [ref=e122] [cursor=pointer]:
+            - generic [ref=e123]: Q
+            - generic [ref=e124]: Can I day-trade with the MVRV-Z Score?
+            - text: +
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - heading "See today's reading" [level=3] [ref=e127]
+        - paragraph [ref=e128]: Check the live MVRV-Z reading and the composite timing score on the dashboard.
+      - link "Open dashboard →" [ref=e129] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - link "BTC Timing Radar" [ref=e134] [cursor=pointer]:
+            - /url: ../about.html
+            - text: BTC Timing Radar
+          - paragraph [ref=e137]: A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation.
+        - generic [ref=e138]:
+          - heading "Menu" [level=4] [ref=e139]
+          - link "Dashboard" [ref=e140] [cursor=pointer]:
+            - /url: ../index.html
+          - link "Indicator Guide" [ref=e141] [cursor=pointer]:
+            - /url: ../guide.html
+          - link "Contact" [ref=e142] [cursor=pointer]:
+            - /url: ../contact.html
+        - generic [ref=e143]:
+          - heading "Policies · Community" [level=4] [ref=e144]
+          - link "Privacy Policy" [ref=e145] [cursor=pointer]:
+            - /url: ../privacy.html
+          - link "Investment Disclaimer" [ref=e146] [cursor=pointer]:
+            - /url: ../disclaimer.html
+          - link "Telegram Channel" [ref=e147] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e148]:
+        - generic [ref=e149]: © 2024 BTC Timing Radar. All rights reserved.
+        - generic [ref=e150]: Auto-updated daily at 09:05 KST

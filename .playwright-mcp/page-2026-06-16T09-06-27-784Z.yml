@@ -1,0 +1,162 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BTC Timing Radar" [ref=e4] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=e7]: BTC Timing Radar
+      - navigation [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Indicator Guide" [ref=e10] [cursor=pointer]:
+          - /url: ../guide.html
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: ../contact.html
+      - group "Language / 语言 / 언어" [ref=e12]:
+        - button "KO" [ref=e13] [cursor=pointer]
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button "中文" [ref=e15] [cursor=pointer]
+      - link "Today's Score →" [ref=e16] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=e18]: Today's Score →
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - link "Indicator Guide" [ref=e21] [cursor=pointer]:
+        - /url: ../guide.html
+      - generic [ref=e22]: /
+      - generic [ref=e23]: On-Chain
+      - generic [ref=e24]: /
+      - generic [ref=e25]: Hash Rate
+    - generic [ref=e26]:
+      - generic [ref=e29]: On-Chain
+      - heading "Hash rate, in plain words" [level=1] [ref=e30]
+      - paragraph [ref=e31]: Hash rate is the total computing power that miners around the world devote to securing the Bitcoin network. The more power is pointed at the network, the harder it is to attack and the healthier it is. It doesn't tell you what Bitcoin is worth — it tells you how much real-world energy and money miners are willing to commit, which is a slow but honest gauge of long-term confidence.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: What it is
+        - generic [ref=e35]: The total computing power miners devote to the network.
+      - generic [ref=e36]:
+        - generic [ref=e37]: How to read
+        - generic [ref=e38]: Rising trend = a healthy, secure network. It's a long-term confidence gauge.
+      - generic [ref=e39]:
+        - generic [ref=e40]: Signal
+        - generic [ref=e41]: Rising = healthy network
+    - generic [ref=e42]:
+      - heading "1 What hash rate actually measures" [level=2] [ref=e43]:
+        - generic [ref=e44]: "1"
+        - generic [ref=e45]: What hash rate actually measures
+      - paragraph [ref=e46]: Price tells you what the market did. Hash rate tells you how much real-world effort is being spent to defend the network. Bitcoin miners run specialized machines that make trillions of guesses per second, competing to add the next block. The combined speed of all that guessing is the hash rate. Because running those machines costs real electricity and hardware, a high hash rate means a lot of capital is committed to keeping Bitcoin secure.
+      - paragraph [ref=e47]: The intuition is that miners are long-term participants who don't switch on expensive equipment unless they expect the network to keep running and have value. So a steadily rising hash rate reflects growing, capital-backed conviction in Bitcoin's survival — even if that has only a loose, lagging connection to short-term price.
+    - generic [ref=e48]:
+      - heading "2 How it's estimated" [level=2] [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: How it's estimated
+      - paragraph [ref=e52]: "Hash rate isn't measured directly — it's inferred. No one can count every machine, so the figure is reverse-engineered from on-chain facts:"
+      - list [ref=e53]:
+        - listitem [ref=e54]: Block speed — how quickly new blocks are being found. Faster than the ~10-minute target implies more power is online.
+        - listitem [ref=e55]: Mining difficulty — the network auto-adjusts how hard the puzzle is roughly every two weeks to keep block times near 10 minutes.
+        - listitem [ref=e56]:
+          - text: The combined estimate — putting those together gives an approximate number of
+          - code [ref=e57]: hashes per second
+          - text: across all miners.
+      - paragraph [ref=e58]: "The takeaway: because it's an estimate tied to the luck of block timing, the day-to-day number wobbles. What's meaningful is the smoothed trend over weeks and months, not any single reading."
+    - generic [ref=e59]:
+      - heading "3 Reading the trend" [level=2] [ref=e60]:
+        - generic [ref=e61]: "3"
+        - generic [ref=e62]: Reading the trend
+      - paragraph [ref=e63]: There's no buy/sell line — hash rate is about direction and structural health, not a threshold. Read the smoothed trend.
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e67]: Steady rise
+          - generic [ref=e68]: Healthy & secure. Miners keep adding power — capital-backed confidence in the network is growing. A constructive long-term backdrop.
+        - generic [ref=e69]:
+          - generic [ref=e71]: Sideways
+          - generic [ref=e72]: Stable. Mining power roughly flat. The network is steady; no strong directional message from this gauge alone.
+        - generic [ref=e73]:
+          - generic [ref=e75]: Mild dip
+          - generic [ref=e76]: Watch. A modest decline can reflect some miners switching off as margins tighten. Not alarming on its own, but worth tracking.
+        - generic [ref=e77]:
+          - generic [ref=e79]: Sharp drop
+          - generic [ref=e80]: Capitulation zone. A steep fall means many miners are powering down — sometimes seen near deep, fearful lows. Read with the Hash Ribbon, not in isolation.
+    - generic [ref=e81]:
+      - heading "4 Using it for buy timing" [level=2] [ref=e82]:
+        - generic [ref=e83]: "4"
+        - generic [ref=e84]: Using it for buy timing
+      - paragraph [ref=e85]: "Hash rate works best as a long-term health check, not a timing trigger. A steadily rising trend reassures you that the network's foundation is strengthening, which can give patient buyers confidence that the asset they're accumulating isn't structurally decaying. The more interesting timing angle is the sharp drop: deep hash-rate declines reflect miner capitulation, and historically these have sometimes clustered near major price lows — though only in hindsight, and never as a precise signal on their own."
+      - generic [ref=e86]:
+        - generic [ref=e87]: Practical tip
+        - paragraph [ref=e88]: Don't react to daily wiggles — they're noise from block-timing luck. For capitulation reads, pair hash rate with the Hash Ribbon, and remember it reflects security, not near-term price.
+    - generic [ref=e89]:
+      - heading "5 Limits & common misreadings" [level=2] [ref=e90]:
+        - generic [ref=e91]: "5"
+        - generic [ref=e92]: Limits & common misreadings
+      - paragraph [ref=e93]: "Because hash rate is estimated from how fast blocks are found, it swings with the random luck of block timing — so short-term wiggles are noise, not signal. The most common mistake is treating it as a price predictor: a rising hash rate confirms the network is secure and miners are committed, but it has only a loose, lagging link to what price does next, and rising power has coincided with both rallies and declines. It also says nothing about valuation or sentiment. Read it as a structural health and security gauge — reassuring context for the long term — and pair it with the Hash Ribbon when you want to judge miner capitulation, rather than expecting it to time entries on its own."
+    - generic [ref=e94]:
+      - heading "+ Indicators to read alongside" [level=2] [ref=e95]:
+        - generic [ref=e96]: +
+        - generic [ref=e97]: Indicators to read alongside
+      - generic [ref=e98]:
+        - link "Exchange Net Flow Whether coins are leaving exchanges to be held, or arriving to be sold." [ref=e99] [cursor=pointer]:
+          - /url: exchange-net-flow.html
+          - generic [ref=e100]: Exchange Net Flow
+          - generic [ref=e101]: Whether coins are leaving exchanges to be held, or arriving to be sold.
+        - link "Long/Short-Term Holders Whether seasoned holders are accumulating or distributing." [ref=e102] [cursor=pointer]:
+          - /url: holder-supply.html
+          - generic [ref=e103]: Long/Short-Term Holders
+          - generic [ref=e104]: Whether seasoned holders are accumulating or distributing.
+        - link "All indicators Back to the full indicator guide." [ref=e105] [cursor=pointer]:
+          - /url: ../guide.html
+          - generic [ref=e106]: All indicators
+          - generic [ref=e107]: Back to the full indicator guide.
+    - generic [ref=e108]:
+      - heading "? Frequently asked" [level=2] [ref=e109]:
+        - generic [ref=e110]: "?"
+        - generic [ref=e111]: Frequently asked
+      - generic [ref=e112]:
+        - group [ref=e113]:
+          - generic "Q If hash rate rises, does price rise too? +" [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]: Q
+            - generic [ref=e116]: If hash rate rises, does price rise too?
+            - text: +
+        - group [ref=e117]:
+          - generic "Q How is hash rate measured? +" [ref=e118] [cursor=pointer]:
+            - generic [ref=e119]: Q
+            - generic [ref=e120]: How is hash rate measured?
+            - text: +
+        - group [ref=e121]:
+          - generic "Q Is a sharp hash-rate drop a buy signal? +" [ref=e122] [cursor=pointer]:
+            - generic [ref=e123]: Q
+            - generic [ref=e124]: Is a sharp hash-rate drop a buy signal?
+            - text: +
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - heading "See today's reading" [level=3] [ref=e127]
+        - paragraph [ref=e128]: Check the latest hash rate trend and the composite timing score on the dashboard.
+      - link "Open dashboard →" [ref=e129] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - link "BTC Timing Radar" [ref=e134] [cursor=pointer]:
+            - /url: ../about.html
+            - text: BTC Timing Radar
+          - paragraph [ref=e137]: A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation.
+        - generic [ref=e138]:
+          - heading "Menu" [level=4] [ref=e139]
+          - link "Dashboard" [ref=e140] [cursor=pointer]:
+            - /url: ../index.html
+          - link "Indicator Guide" [ref=e141] [cursor=pointer]:
+            - /url: ../guide.html
+          - link "Contact" [ref=e142] [cursor=pointer]:
+            - /url: ../contact.html
+        - generic [ref=e143]:
+          - heading "Policies · Community" [level=4] [ref=e144]
+          - link "Privacy Policy" [ref=e145] [cursor=pointer]:
+            - /url: ../privacy.html
+          - link "Investment Disclaimer" [ref=e146] [cursor=pointer]:
+            - /url: ../disclaimer.html
+          - link "Telegram Channel" [ref=e147] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e148]:
+        - generic [ref=e149]: © 2024 BTC Timing Radar. All rights reserved.
+        - generic [ref=e150]: Auto-updated daily at 09:05 KST

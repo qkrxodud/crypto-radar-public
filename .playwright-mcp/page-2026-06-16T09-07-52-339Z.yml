@@ -1,0 +1,159 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BTC Timing Radar" [ref=e4] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=e7]: BTC Timing Radar
+      - navigation [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Indicator Guide" [ref=e10] [cursor=pointer]:
+          - /url: ../guide.html
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: ../contact.html
+      - group "Language / 语言 / 언어" [ref=e12]:
+        - button "KO" [ref=e13] [cursor=pointer]
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button "中文" [ref=e15] [cursor=pointer]
+      - link "Today's Score →" [ref=e16] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=e18]: Today's Score →
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - link "Indicator Guide" [ref=e21] [cursor=pointer]:
+        - /url: ../guide.html
+      - generic [ref=e22]: /
+      - generic [ref=e23]: Derivatives
+      - generic [ref=e24]: /
+      - generic [ref=e25]: Liquidation Heatmap
+    - generic [ref=e26]:
+      - generic [ref=e29]: Derivatives
+      - heading "The liquidation heatmap, in plain words" [level=1] [ref=e30]
+      - paragraph [ref=e31]: A liquidation heatmap shades the price chart by where forced liquidations are likely to cluster. Bright zones mark price levels holding a lot of potential liquidations — and price tends to get pulled toward them like a magnet. It doesn't predict the future; it maps where the leverage is concentrated, which is where the market often finds its next burst of activity.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: What it is
+        - generic [ref=e35]: A map of price levels where forced liquidations are likely to cluster.
+      - generic [ref=e36]:
+        - generic [ref=e37]: How to read
+        - generic [ref=e38]: Bright clusters act like magnets for price — a support/resistance reference.
+      - generic [ref=e39]:
+        - generic [ref=e40]: Signal
+        - generic [ref=e41]: Magnet-like price levels
+    - generic [ref=e42]:
+      - heading "1 What the liquidation heatmap actually shows" [level=2] [ref=e43]:
+        - generic [ref=e44]: "1"
+        - generic [ref=e45]: What the liquidation heatmap actually shows
+      - paragraph [ref=e46]: When a leveraged position moves far enough against the trader, the exchange force-closes it — a liquidation. Each open position therefore carries a hidden price level at which it would be wiped out. A liquidation heatmap collects all of those estimated levels and shades the chart so that brighter areas hold more potential liquidations. In effect, it shows where pools of stop-out orders are sitting above and below the current price.
+      - paragraph [ref=e47]: The reason traders watch it is the so-called 'magnet effect.' Those clusters represent concentrated liquidity — a place where lots of orders will trigger at once. Markets are often drawn toward liquidity, so price has a tendency to gravitate to dense clusters, trip the liquidations there, and then move on. The heatmap is a way to anticipate where those reactive levels might be.
+    - generic [ref=e48]:
+      - heading "2 How it's estimated" [level=2] [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: How it's estimated
+      - paragraph [ref=e52]: "The map isn't a record of liquidations that already happened — it's a forward estimate. Tools build it from open positions and assumptions about leverage, then mark the price levels where large clusters would be force-closed. Because the exact leverage and stop levels of every trader are unknown, the result is a probability picture, not exact figures. The general recipe:"
+      - list [ref=e53]:
+        - listitem [ref=e54]: Open positions — start from the size of currently open leveraged positions (related to open interest).
+        - listitem [ref=e55]: Assumed leverage tiers — model common leverage levels (e.g. 10×, 25×, 50×) to infer where each would be liquidated.
+        - listitem [ref=e56]: Cluster intensity — shade each level by how many positions would be wiped out there; denser = brighter.
+      - paragraph [ref=e57]: "The takeaway: every bright band is a best guess about hidden leverage, not a confirmed order book. Read it as 'where liquidity is probably stacked,' and remember the map redraws constantly as positions open and close."
+    - generic [ref=e58]:
+      - heading "3 Reading the map" [level=2] [ref=e59]:
+        - generic [ref=e60]: "3"
+        - generic [ref=e61]: Reading the map
+      - paragraph [ref=e62]: There are no numeric cutoffs here — you read the picture. The bands below describe how clusters above and below the current price tend to behave.
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e66]: Cluster above
+          - generic [ref=e67]: Short liquidations overhead. A bright zone above price can act like an upside target — a squeeze higher may run toward it.
+        - generic [ref=e68]:
+          - generic [ref=e70]: Cluster below
+          - generic [ref=e71]: Long liquidations beneath. A bright zone below price can act like a downside magnet — a flush may dip to trigger it.
+        - generic [ref=e72]:
+          - generic [ref=e74]: Thin / empty
+          - generic [ref=e75]: Little clustered liquidity. Price can travel through such gaps quickly, with fewer reactive levels in the way.
+        - generic [ref=e76]:
+          - generic [ref=e78]: Shifting
+          - generic [ref=e79]: Always redrawing. Clusters appear and vanish as leverage opens and closes — today's map isn't tomorrow's.
+    - generic [ref=e80]:
+      - heading "4 Using it for buy timing" [level=2] [ref=e81]:
+        - generic [ref=e82]: "4"
+        - generic [ref=e83]: Using it for buy timing
+      - paragraph [ref=e84]: The heatmap is most useful as a map of reference levels, not a price forecast. If a large cluster of long liquidations sits well below the current price, it can mark a zone where a sharp, panicky flush might bottom out — a spot where patient buyers sometimes prefer to have staggered orders waiting rather than chasing strength. Conversely, a dense band overhead can flag where an upside move might stall after triggering shorts. The point is to plan around these levels, not to assume price must reach them.
+      - generic [ref=e85]:
+        - generic [ref=e86]: Practical tip
+        - paragraph [ref=e87]: Treat clusters as 'likely reaction zones,' not entry signals. Pair the heatmap with open interest and funding to judge whether the leverage behind those levels is actually building or unwinding.
+    - generic [ref=e88]:
+      - heading "5 Limits & common misreadings" [level=2] [ref=e89]:
+        - generic [ref=e90]: "5"
+        - generic [ref=e91]: Limits & common misreadings
+      - paragraph [ref=e92]: "These are estimates, not exact figures — the real leverage and stop levels of traders are unknown, so a bright band is a probability, not a promise. The biggest mistake is treating a cluster as a guaranteed target: price often reaches for liquidity, but it can also reverse early or ignore a level entirely. The map also shifts constantly as positions open and close, so a level that looks important now can dissolve within hours. And large clusters can themselves be used by sophisticated players to lure price. Use the heatmap as a rough guide to support and resistance, always alongside open interest, funding, and price — never as a precise prediction."
+    - generic [ref=e93]:
+      - heading "+ Indicators to read alongside" [level=2] [ref=e94]:
+        - generic [ref=e95]: +
+        - generic [ref=e96]: Indicators to read alongside
+      - generic [ref=e97]:
+        - link "Open Interest How much leverage sits behind those clusters." [ref=e98] [cursor=pointer]:
+          - /url: open-interest.html
+          - generic [ref=e99]: Open Interest
+          - generic [ref=e100]: How much leverage sits behind those clusters.
+        - link "Funding Rate Which side of the leveraged crowd is overheated." [ref=e101] [cursor=pointer]:
+          - /url: funding-rate.html
+          - generic [ref=e102]: Funding Rate
+          - generic [ref=e103]: Which side of the leveraged crowd is overheated.
+        - link "All indicators Back to the full indicator guide." [ref=e104] [cursor=pointer]:
+          - /url: ../guide.html
+          - generic [ref=e105]: All indicators
+          - generic [ref=e106]: Back to the full indicator guide.
+    - generic [ref=e107]:
+      - heading "? Frequently asked" [level=2] [ref=e108]:
+        - generic [ref=e109]: "?"
+        - generic [ref=e110]: Frequently asked
+      - generic [ref=e111]:
+        - group [ref=e112]:
+          - generic "Q Are the bright zones an exact price prediction? +" [ref=e113] [cursor=pointer]:
+            - generic [ref=e114]: Q
+            - generic [ref=e115]: Are the bright zones an exact price prediction?
+            - text: +
+        - group [ref=e116]:
+          - generic "Q What does it mean that price is pulled toward clusters? +" [ref=e117] [cursor=pointer]:
+            - generic [ref=e118]: Q
+            - generic [ref=e119]: What does it mean that price is pulled toward clusters?
+            - text: +
+        - group [ref=e120]:
+          - generic "Q Can I set entries and exits off the heatmap alone? +" [ref=e121] [cursor=pointer]:
+            - generic [ref=e122]: Q
+            - generic [ref=e123]: Can I set entries and exits off the heatmap alone?
+            - text: +
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - heading "See today's reading" [level=3] [ref=e126]
+        - paragraph [ref=e127]: Check the live liquidation map and the composite timing score on the dashboard.
+      - link "Open dashboard →" [ref=e128] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=e129]:
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - link "BTC Timing Radar" [ref=e133] [cursor=pointer]:
+            - /url: ../about.html
+            - text: BTC Timing Radar
+          - paragraph [ref=e136]: A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation.
+        - generic [ref=e137]:
+          - heading "Menu" [level=4] [ref=e138]
+          - link "Dashboard" [ref=e139] [cursor=pointer]:
+            - /url: ../index.html
+          - link "Indicator Guide" [ref=e140] [cursor=pointer]:
+            - /url: ../guide.html
+          - link "Contact" [ref=e141] [cursor=pointer]:
+            - /url: ../contact.html
+        - generic [ref=e142]:
+          - heading "Policies · Community" [level=4] [ref=e143]
+          - link "Privacy Policy" [ref=e144] [cursor=pointer]:
+            - /url: ../privacy.html
+          - link "Investment Disclaimer" [ref=e145] [cursor=pointer]:
+            - /url: ../disclaimer.html
+          - link "Telegram Channel" [ref=e146] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e147]:
+        - generic [ref=e148]: © 2024 BTC Timing Radar. All rights reserved.
+        - generic [ref=e149]: Auto-updated daily at 09:05 KST

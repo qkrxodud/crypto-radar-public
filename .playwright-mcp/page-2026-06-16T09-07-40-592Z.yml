@@ -1,0 +1,162 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BTC Timing Radar" [ref=e4] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=e7]: BTC Timing Radar
+      - navigation [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Indicator Guide" [ref=e10] [cursor=pointer]:
+          - /url: ../guide.html
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: ../contact.html
+      - group "Language / 语言 / 언어" [ref=e12]:
+        - button "KO" [ref=e13] [cursor=pointer]
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button "中文" [ref=e15] [cursor=pointer]
+      - link "Today's Score →" [ref=e16] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=e18]: Today's Score →
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - link "Indicator Guide" [ref=e21] [cursor=pointer]:
+        - /url: ../guide.html
+      - generic [ref=e22]: /
+      - generic [ref=e23]: Derivatives
+      - generic [ref=e24]: /
+      - generic [ref=e25]: Funding Rate
+    - generic [ref=e26]:
+      - generic [ref=e29]: Derivatives
+      - heading "The funding rate, in plain words" [level=1] [ref=e30]
+      - paragraph [ref=e31]: The funding rate is a small fee that one side of the perpetual-futures market pays the other every few hours. When it's strongly positive, longs are paying — meaning the crowd is leaning bullish; when it's negative, shorts are paying. It doesn't tell you where price is headed — it tells you how lopsided the leveraged crowd has become.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: What it is
+        - generic [ref=e35]: A periodic fee that keeps perpetual futures tethered to spot price.
+      - generic [ref=e36]:
+        - generic [ref=e37]: How to read
+        - generic [ref=e38]: High positive = longs crowded, often a correction-risk warning.
+      - generic [ref=e39]:
+        - generic [ref=e40]: Signal
+        - generic [ref=e41]: Crowding = contrarian cue
+    - generic [ref=e42]:
+      - heading "1 What the funding rate actually measures" [level=2] [ref=e43]:
+        - generic [ref=e44]: "1"
+        - generic [ref=e45]: What the funding rate actually measures
+      - paragraph [ref=e46]: Price tells you what the market did. The funding rate tells you which side of the leveraged crowd is too eager. Because perpetual futures have no expiry date, exchanges need a mechanism to keep their price from drifting away from the real spot price — and that mechanism is funding. The side that's piling on pays the side that's holding back, which makes the rate a direct readout of positioning bias.
+      - paragraph [ref=e47]: "The core idea behind reading it is contrarian: when nearly everyone has borrowed money to bet in the same direction, there are few buyers (or sellers) left to push the move further, and the crowded side becomes vulnerable to a sudden reversal. The funding rate is one of the cleanest ways to see that crowding build up in real time."
+    - generic [ref=e48]:
+      - heading "2 How it's calculated" [level=2] [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: How it's calculated
+      - paragraph [ref=e52]:
+        - text: On a perpetual contract, funding is settled at fixed intervals — most exchanges use
+        - code [ref=e53]: every 8 hours
+        - text: ". The rate is driven by how far the futures price drifts from spot: when futures trade above spot, longs pay shorts; when futures trade below spot, shorts pay longs. The payment nudges traders to push the contract price back toward the spot price."
+      - list [ref=e54]:
+        - listitem [ref=e55]: Premium component — how much the perpetual price sits above or below the underlying spot/index price.
+        - listitem [ref=e56]: Interest component — a small baseline rate reflecting the cost of holding the position.
+        - listitem [ref=e57]: Settlement interval — the fee is exchanged periodically (commonly 8 hours), not continuously.
+      - paragraph [ref=e58]: You don't need to compute it yourself. The takeaway is that funding is a balancing fee driven by demand imbalance — it rises when one side gets greedy and falls when the other side does, so its sign and size map directly to crowd positioning.
+    - generic [ref=e59]:
+      - heading "3 Reading the zones" [level=2] [ref=e60]:
+        - generic [ref=e61]: "3"
+        - generic [ref=e62]: Reading the zones
+      - paragraph [ref=e63]: Funding has no fixed scale, so judge it against its own recent range. As a rough guide, traders often frame it around a neutral baseline of about 0.01% per 8 hours.
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e67]: Strongly +
+          - generic [ref=e68]: Longs heavily crowded. Leverage is piled on the upside. Correction risk rises, but the move can run further first.
+        - generic [ref=e69]:
+          - generic [ref=e71]: Mildly +
+          - generic [ref=e72]: Healthy bullish tilt. Slightly more longs than shorts — common in a calm uptrend, not yet a warning.
+        - generic [ref=e73]:
+          - generic [ref=e75]: Near zero
+          - generic [ref=e76]: Balanced. Longs and shorts are roughly even — no strong crowd bias to read.
+        - generic [ref=e77]:
+          - generic [ref=e79]: Negative
+          - generic [ref=e80]: Shorts crowded. Bears are paying. Often appears near fear-driven lows; a squeeze higher can follow.
+    - generic [ref=e81]:
+      - heading "4 Using it for buy timing" [level=2] [ref=e82]:
+        - generic [ref=e83]: "4"
+        - generic [ref=e84]: Using it for buy timing
+      - paragraph [ref=e85]: Funding works best as a crowding filter, not a trigger. When the rate has been deeply negative for a while — shorts paying to stay short near a sold-off price — it can hint that bearish positioning is stretched and a relief bounce is more likely. When the rate is pinned strongly positive during a sharp rally, it's a cue to be careful about chasing, since a long-heavy market is fuel for a sudden flush.
+      - generic [ref=e86]:
+        - generic [ref=e87]: Practical tip
+        - paragraph [ref=e88]: Don't act on a single funding print. Watch whether the rate stays extreme across several settlements, and confirm it with open interest and price action before committing capital.
+    - generic [ref=e89]:
+      - heading "5 Limits & common misreadings" [level=2] [ref=e90]:
+        - generic [ref=e91]: "5"
+        - generic [ref=e92]: Limits & common misreadings
+      - paragraph [ref=e93]: Funding shows positioning, not timing — an overheated market can stay overheated for weeks while price keeps rising. The most common mistake is treating high funding as an instant short or negative funding as an instant buy. Rates also differ across exchanges and can be skewed by a few large players, so a single venue's number isn't the whole picture. Read it as a contrarian warning about crowding, alongside open interest and price — never as a precise turning-point signal.
+    - generic [ref=e94]:
+      - heading "+ Indicators to read alongside" [level=2] [ref=e95]:
+        - generic [ref=e96]: +
+        - generic [ref=e97]: Indicators to read alongside
+      - generic [ref=e98]:
+        - link "Open Interest How much leverage is stacked in the futures market." [ref=e99] [cursor=pointer]:
+          - /url: open-interest.html
+          - generic [ref=e100]: Open Interest
+          - generic [ref=e101]: How much leverage is stacked in the futures market.
+        - link "Long/Short Ratio Which way traders are positioned, long versus short." [ref=e102] [cursor=pointer]:
+          - /url: long-short-ratio.html
+          - generic [ref=e103]: Long/Short Ratio
+          - generic [ref=e104]: Which way traders are positioned, long versus short.
+        - link "All indicators Back to the full indicator guide." [ref=e105] [cursor=pointer]:
+          - /url: ../guide.html
+          - generic [ref=e106]: All indicators
+          - generic [ref=e107]: Back to the full indicator guide.
+    - generic [ref=e108]:
+      - heading "? Frequently asked" [level=2] [ref=e109]:
+        - generic [ref=e110]: "?"
+        - generic [ref=e111]: Frequently asked
+      - generic [ref=e112]:
+        - group [ref=e113]:
+          - generic "Q If funding is high, will price drop soon? +" [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]: Q
+            - generic [ref=e116]: If funding is high, will price drop soon?
+            - text: +
+        - group [ref=e117]:
+          - generic "Q Negative funding — should I always buy? +" [ref=e118] [cursor=pointer]:
+            - generic [ref=e119]: Q
+            - generic [ref=e120]: Negative funding — should I always buy?
+            - text: +
+        - group [ref=e121]:
+          - generic "Q What level of funding is normal? +" [ref=e122] [cursor=pointer]:
+            - generic [ref=e123]: Q
+            - generic [ref=e124]: What level of funding is normal?
+            - text: +
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - heading "See today's reading" [level=3] [ref=e127]
+        - paragraph [ref=e128]: Check the live funding rate and the composite timing score on the dashboard.
+      - link "Open dashboard →" [ref=e129] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - link "BTC Timing Radar" [ref=e134] [cursor=pointer]:
+            - /url: ../about.html
+            - text: BTC Timing Radar
+          - paragraph [ref=e137]: A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation.
+        - generic [ref=e138]:
+          - heading "Menu" [level=4] [ref=e139]
+          - link "Dashboard" [ref=e140] [cursor=pointer]:
+            - /url: ../index.html
+          - link "Indicator Guide" [ref=e141] [cursor=pointer]:
+            - /url: ../guide.html
+          - link "Contact" [ref=e142] [cursor=pointer]:
+            - /url: ../contact.html
+        - generic [ref=e143]:
+          - heading "Policies · Community" [level=4] [ref=e144]
+          - link "Privacy Policy" [ref=e145] [cursor=pointer]:
+            - /url: ../privacy.html
+          - link "Investment Disclaimer" [ref=e146] [cursor=pointer]:
+            - /url: ../disclaimer.html
+          - link "Telegram Channel" [ref=e147] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e148]:
+        - generic [ref=e149]: © 2024 BTC Timing Radar. All rights reserved.
+        - generic [ref=e150]: Auto-updated daily at 09:05 KST

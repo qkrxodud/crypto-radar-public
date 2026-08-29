@@ -1,0 +1,509 @@
+- generic [ref=e5]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - link "BTC Timing Radar" [ref=e8] [cursor=pointer]:
+        - /url: about.html
+        - generic [ref=e11]: BTC Timing Radar
+      - navigation [ref=e12]:
+        - link "Dashboard" [ref=e13] [cursor=pointer]:
+          - /url: index.html
+        - link "Indicator Guide" [ref=e14] [cursor=pointer]:
+          - /url: guide.html
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: contact.html
+      - group "Language / 语言 / 언어" [ref=e16]:
+        - button "KO" [ref=e17] [cursor=pointer]
+        - button "EN" [ref=e18] [cursor=pointer]
+        - button "中文" [ref=e19] [cursor=pointer]
+      - generic [ref=e20]: LIVE · 09:05 KST
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]: DASHBOARD
+      - heading "Today's Bitcoin Timing" [level=1] [ref=e25]
+      - generic [ref=e28]: 마지막 갱신 2026-06-11 01:24 KST · 매일 오전 9시 5분 자동 갱신
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img [ref=e33]
+          - generic [ref=e37]:
+            - generic [ref=e38]: "64"
+            - generic [ref=e39]: / 100
+        - generic [ref=e40]:
+          - generic [ref=e41]: Composite Timing Score
+          - generic [ref=e44]: 중립
+          - generic [ref=e45]: ▼ -3 어제보다
+          - paragraph [ref=e46]: 관망 구간 (점수 64) — 다음 매수 기회 대기 중
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: BTC Price
+          - generic [ref=e50]: ▼ -2.7%
+        - generic [ref=e52]: $61,840
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Fear & Greed Index
+          - generic [ref=e57]: ▼ -1
+        - generic [ref=e59]: 9 극도 공포
+        - generic [ref=e63]:
+          - generic [ref=e64]: Extreme Fear
+          - generic [ref=e65]: Neutral
+          - generic [ref=e66]: Extreme Greed
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - heading "Market at a Glance — 5-Minute Beginner Summary" [level=2] [ref=e69]
+        - generic [ref=e70]: Just the essentials, no jargon
+      - generic [ref=e71]:
+        - generic [ref=e73]:
+          - heading "Today's market in one line" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Read each item to grasp the current market state.
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]: vs Yesterday
+            - generic [ref=e79]: "-3점"
+            - generic [ref=e80]: 66 → 64
+          - generic [ref=e81]:
+            - generic [ref=e82]: Market Phase
+            - generic [ref=e83]: 중립
+            - generic [ref=e84]: 50–64 구간
+          - generic [ref=e85]:
+            - generic [ref=e86]: Buy Conditions Passed
+            - generic [ref=e87]: 5 / 8
+            - generic [ref=e88]: 좋음
+          - generic [ref=e89]:
+            - generic [ref=e90]: Tomorrow's Forecast
+            - generic [ref=e91]: "66"
+            - generic [ref=e92]: "--"
+          - generic [ref=e93]:
+            - generic [ref=e94]: Since Halving
+            - generic [ref=e95]: 782일
+            - generic [ref=e96]: 사이클 후기
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]: 중립 — 관망
+          - generic [ref=e102]: Expert Consensus
+        - paragraph [ref=e103]: 점수 64점. 혼재된 신호가 관망을 지지합니다. 명확한 방향성 확인 후 진입.
+        - generic [ref=e104]: ✅ NUPL 0.140 — 낮은 수익 실현 구간, 추가 상승 여력 충분,⚠️ 롱숏비율 2.06 — 롱 포지션 과밀집, 강제청산 리스크,✅ Puell Multiple 0.54 — 채굴자 수익 양호, 매도 압력 낮음
+      - generic [ref=e105]:
+        - generic [ref=e106]: AI Market Digest
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - generic [ref=e110]: "[요약]"
+            - generic [ref=e111]: 현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다.
+          - generic [ref=e112]:
+            - generic [ref=e114]: "[위험]"
+            - generic [ref=e115]: 낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다.
+          - generic [ref=e116]:
+            - generic [ref=e118]: "[위험]"
+            - generic [ref=e119]: BTC 도미넌스가 높아 알트코인 투자에 대한 불확실성이 크다.
+          - generic [ref=e120]:
+            - generic [ref=e122]: "[행동]"
+            - generic [ref=e123]: 시장 상황을 면밀히 관찰하며 추가 매수는 신중하게 결정하라.
+          - generic [ref=e124]:
+            - generic [ref=e126]: "[행동]"
+            - generic [ref=e127]: 단기 트레이딩 전략을 고려하여 변동성에 대응하라.
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - generic [ref=e131]:
+          - generic [ref=e132]: Market News Sentiment
+          - generic [ref=e133]: 중립 16건 분석
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: "0.0"
+            - generic [ref=e137]:
+              - link "Prediction markets get first U.S. rule proposal as CFTC pursues contract reviews" [ref=e138] [cursor=pointer]:
+                - /url: https://www.coindesk.com/policy/2026/06/10/prediction-markets-get-first-u-s-rule-proposal-as-cftc-proposes-contract-reviews
+              - generic [ref=e139]: CoinDesk · 6. 10. 오후 10:58
+          - generic [ref=e140]:
+            - generic [ref=e141]: "-0.2"
+            - generic [ref=e142]:
+              - link "Michael Saylor gets into public debate over claims that Strategy's latest share sale was dilutive" [ref=e143] [cursor=pointer]:
+                - /url: https://www.coindesk.com/markets/2026/06/10/michael-saylor-in-x-back-and-forth-over-claims-strategy-s-latest-share-sale-was-dilutive
+              - generic [ref=e144]: CoinDesk · 6. 10. 오후 10:56
+          - generic [ref=e145]:
+            - generic [ref=e146]: "-0.5"
+            - generic [ref=e147]:
+              - 'link "CoinDesk 20 performance update: Index drops 1.4% as all constituents decline" [ref=e148] [cursor=pointer]':
+                - /url: https://www.coindesk.com/coindesk-indices/2026/06/10/coindesk-20-performance-update-index-drops-1-4-as-all-constituents-decline
+              - generic [ref=e149]: CoinDesk · 6. 10. 오후 10:23
+          - generic [ref=e150]:
+            - generic [ref=e151]: "+0.4"
+            - generic [ref=e152]:
+              - link "World Series of Poker adds Solana payments for tournament buy-ins" [ref=e153] [cursor=pointer]:
+                - /url: https://www.coindesk.com/tech/2026/06/09/world-series-of-poker-adds-solana-payments-for-tournament-buy-ins
+              - generic [ref=e154]: CoinDesk · 6. 10. 오후 10:00
+          - generic [ref=e155]:
+            - generic [ref=e156]: "+0.5"
+            - generic [ref=e157]:
+              - link "Bitcoin trims losses after core CPI rises less than feared 0.2% in May" [ref=e158] [cursor=pointer]:
+                - /url: https://www.coindesk.com/markets/2026/06/10/u-s-inflation-meets-expectations-reinforcing-fed-s-higher-for-longer-stance
+              - generic [ref=e159]: CoinDesk · 6. 10. 오후 09:42
+          - generic [ref=e160]:
+            - generic [ref=e161]: "-0.7"
+            - generic [ref=e162]:
+              - 'link "A ''Bitcoin DeFi'' project just shut down with a brutal post-mortem: Users just didn''t care" [ref=e163] [cursor=pointer]':
+                - /url: https://www.coindesk.com/tech/2026/06/10/a-bitcoin-defi-project-just-shut-down-with-a-brutal-post-mortem-users-just-didn-t-care
+              - generic [ref=e164]: CoinDesk · 6. 10. 오후 09:00
+          - generic [ref=e165]:
+            - generic [ref=e166]: "-0.6"
+            - generic [ref=e167]:
+              - link "The inflation scenario that could send bitcoin tumbling below $60,000" [ref=e168] [cursor=pointer]:
+                - /url: https://www.coindesk.com/daybook-us/2026/06/10/the-inflation-scenario-that-could-send-bitcoin-tumbling-below-usd60-000
+              - generic [ref=e169]: CoinDesk · 6. 10. 오후 08:20
+          - generic [ref=e170]:
+            - generic [ref=e171]: "-0.4"
+            - generic [ref=e172]:
+              - link "Zcash, Hyperliquid tokens lead losses as traders bet against a bitcoin bounce" [ref=e173] [cursor=pointer]:
+                - /url: https://www.coindesk.com/markets/2026/06/10/zcash-hyperliquid-tokens-lead-losses-as-traders-bet-against-a-bitcoin-bounce
+              - generic [ref=e174]: CoinDesk · 6. 10. 오후 07:52
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - generic [ref=e177]: Altseason Index
+          - generic [ref=e178]: "50"
+          - generic [ref=e179]: 중립
+          - generic [ref=e180]: BTC와 알트코인이 혼조세. 선별적 알트코인 투자 가능.
+        - generic [ref=e181]:
+          - generic [ref=e182]: Whale Activity
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e185]: 활동 강도
+              - generic [ref=e186]: 중립
+            - generic [ref=e187]:
+              - generic [ref=e188]: 판단
+              - generic [ref=e189]: 중립
+            - generic [ref=e190]:
+              - generic [ref=e191]: 7일 순유입
+              - generic [ref=e192]: 483 BTC
+            - generic [ref=e193]:
+              - generic [ref=e194]: 7일 보유 변화
+              - generic [ref=e195]: +285 BTC
+    - generic [ref=e196]:
+      - generic [ref=e197]:
+        - heading "Trends" [level=2] [ref=e198]
+        - generic [ref=e199]: Last 30 days
+      - generic [ref=e200]:
+        - generic [ref=e202]:
+          - generic [ref=e203]:
+            - generic [ref=e204]: Composite Score Trend
+            - generic [ref=e205]: 30d · 0–100
+          - generic [ref=e206]:
+            - generic [ref=e207]: "64"
+            - generic [ref=e208]: ▼ -3
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - generic [ref=e213]: BTC Price Trend
+            - generic [ref=e214]: 30d · USD
+          - generic [ref=e215]:
+            - generic [ref=e216]: $61.8K
+            - generic [ref=e217]: ▼ -23.5%
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - generic [ref=e222]: Fear & Greed Trend
+            - generic [ref=e223]: 30d · 0=Fear 100=Greed
+          - generic [ref=e224]:
+            - generic [ref=e225]: "9"
+            - generic [ref=e226]: ▼ -40
+        - generic [ref=e228]:
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - generic [ref=e231]: Halving Cycle Progress
+              - generic [ref=e232]: Since 2024-04 halving
+            - generic [ref=e233]:
+              - generic [ref=e234]: 54%
+              - generic [ref=e235]: 782일차
+          - generic [ref=e236]:
+            - generic [ref=e239]:
+              - generic [ref=e240]: Halving
+              - generic [ref=e241]: Mid (1yr)
+              - generic [ref=e242]: Cycle top (est.)
+              - generic [ref=e243]: Next halving
+            - paragraph [ref=e244]: 역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - heading "Scores by Category" [level=2] [ref=e247]
+        - generic [ref=e248]: Raw scores before weighting
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - generic [ref=e252]:
+            - text: 사이클 · 심리
+            - generic [ref=e253]: 가중 30%
+          - generic [ref=e255]: "78"
+        - generic [ref=e256]:
+          - generic [ref=e257]:
+            - text: 기술적 분석
+            - generic [ref=e258]: 가중 25%
+          - generic [ref=e260]: "98"
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - text: 파생상품
+            - generic [ref=e263]: 가중 20%
+          - generic [ref=e265]: "46"
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - text: 온체인
+            - generic [ref=e268]: 가중 15%
+          - generic [ref=e270]: "61"
+        - generic [ref=e271]:
+          - generic [ref=e272]:
+            - text: 매크로
+            - generic [ref=e273]: 가중 10%
+          - generic [ref=e275]: "49"
+    - generic [ref=e276]:
+      - generic [ref=e277]:
+        - heading "Detailed Indicator Analysis" [level=2] [ref=e278]
+        - generic [ref=e279]: Key indicator scores · current values · trend
+      - table [ref=e281]:
+        - rowgroup [ref=e282]:
+          - row "Indicator Current Value Score Trend" [ref=e283]:
+            - columnheader "Indicator" [ref=e284]
+            - columnheader "Current Value" [ref=e285]
+            - columnheader "Score" [ref=e286]
+            - columnheader "Trend" [ref=e287]
+        - rowgroup [ref=e288]:
+          - row "공포탐욕 지수 9 91 — 보합" [ref=e289]:
+            - cell "공포탐욕 지수" [ref=e290]
+            - cell "9" [ref=e291]
+            - cell "91" [ref=e292]:
+              - generic [ref=e296]: "91"
+            - cell "— 보합" [ref=e297]
+          - row "펀딩비 0.00000365 49 — 보합" [ref=e298]:
+            - cell "펀딩비" [ref=e299]
+            - cell "0.00000365" [ref=e300]
+            - cell "49" [ref=e301]:
+              - generic [ref=e305]: "49"
+            - cell "— 보합" [ref=e306]
+          - row "롱/숏 비율 2.06 0 — 보합" [ref=e307]:
+            - cell "롱/숏 비율" [ref=e308]
+            - cell "2.06" [ref=e309]
+            - cell "0" [ref=e310]:
+              - generic [ref=e314]: "0"
+            - cell "— 보합" [ref=e315]
+          - row "테이커 매수/매도 0.94 40 ▲ 상승" [ref=e316]:
+            - cell "테이커 매수/매도" [ref=e317]
+            - cell "0.94" [ref=e318]
+            - cell "40" [ref=e319]:
+              - generic [ref=e323]: "40"
+            - cell "▲ 상승" [ref=e324]
+          - row "미결제약정 비율 0.97 79 ▲ 상승" [ref=e325]:
+            - cell "미결제약정 비율" [ref=e326]
+            - cell "0.97" [ref=e327]
+            - cell "79" [ref=e328]:
+              - generic [ref=e332]: "79"
+            - cell "▲ 상승" [ref=e333]
+          - row "BTC 점유율 56 80 — 보합" [ref=e334]:
+            - cell "BTC 점유율" [ref=e335]
+            - cell "56" [ref=e336]
+            - cell "80" [ref=e337]:
+              - generic [ref=e341]: "80"
+            - cell "— 보합" [ref=e342]
+          - row "김치 프리미엄 -1.72 100 — 보합" [ref=e343]:
+            - cell "김치 프리미엄" [ref=e344]
+            - cell "-1.72" [ref=e345]
+            - cell "100" [ref=e346]:
+              - generic [ref=e350]: "100"
+            - cell "— 보합" [ref=e351]
+          - row "RSI 일봉 24.69 100 — 보합" [ref=e352]:
+            - cell "RSI 일봉" [ref=e353]
+            - cell "24.69" [ref=e354]
+            - cell "100" [ref=e355]:
+              - generic [ref=e359]: "100"
+            - cell "— 보합" [ref=e360]
+          - row "RSI 주봉 32.78 93 ▲ 상승" [ref=e361]:
+            - cell "RSI 주봉" [ref=e362]
+            - cell "32.78" [ref=e363]
+            - cell "93" [ref=e364]:
+              - generic [ref=e368]: "93"
+            - cell "▲ 상승" [ref=e369]
+          - row "MVRV-Z 0.34 78 ▲ 상승" [ref=e370]:
+            - cell "MVRV-Z" [ref=e371]
+            - cell "0.34" [ref=e372]
+            - cell "78" [ref=e373]:
+              - generic [ref=e377]: "78"
+            - cell "▲ 상승" [ref=e378]
+          - row "스테이블코인 11.85 73 ▲ 상승" [ref=e379]:
+            - cell "스테이블코인" [ref=e380]
+            - cell "11.85" [ref=e381]
+            - cell "73" [ref=e382]:
+              - generic [ref=e386]: "73"
+            - cell "▲ 상승" [ref=e387]
+          - row "ETH/BTC 비율 -0.0602 39 — 보합" [ref=e388]:
+            - cell "ETH/BTC 비율" [ref=e389]
+            - cell "-0.0602" [ref=e390]
+            - cell "39" [ref=e391]:
+              - generic [ref=e395]: "39"
+            - cell "— 보합" [ref=e396]
+    - generic [ref=e397]:
+      - generic [ref=e398]:
+        - heading "Buy Timing · Forecast" [level=2] [ref=e399]
+        - generic [ref=e400]: For reference only — not investment advice
+      - generic [ref=e401]:
+        - generic [ref=e402]:
+          - generic [ref=e403]: 매수 조건 체크리스트 5/8
+          - generic [ref=e404]:
+            - generic [ref=e405]:
+              - img [ref=e407]
+              - generic [ref=e409]:
+                - text: 공포탐욕 < 25
+                - text: "극단적 공포 구간 (현재: 9)"
+            - generic [ref=e410]:
+              - img [ref=e412]
+              - generic [ref=e414]:
+                - text: RSI < 30
+                - text: "과매도 구간 (현재: 24.69)"
+            - generic [ref=e415]:
+              - img [ref=e417]
+              - generic [ref=e419]:
+                - text: MVRV < 1
+                - text: "역사적 저평가 구간 (현재: 0.34)"
+            - generic [ref=e420]:
+              - img [ref=e422]
+              - generic [ref=e424]:
+                - text: 김프 < 2%
+                - text: "김치프리미엄 적정 (현재: -1.72%)"
+            - generic [ref=e425]:
+              - img [ref=e427]
+              - generic [ref=e430]:
+                - text: 펀딩비 < 0
+                - text: "롱 우세 (현재: 0.00000365)"
+            - generic [ref=e431]:
+              - img [ref=e433]
+              - generic [ref=e436]:
+                - text: MA200 위
+                - text: "MA200 하회 (MA200 대비: 0.79)"
+            - generic [ref=e437]:
+              - img [ref=e439]
+              - generic [ref=e441]:
+                - text: 해시리본 비항복
+                - text: 채굴자 건전 상태
+        - generic [ref=e442]:
+          - generic [ref=e443]: Tomorrow's Score Forecast
+          - generic [ref=e444]:
+            - generic [ref=e445]: "66"
+            - generic [ref=e446]: ▲ 오늘보다 +2점 예상
+            - generic [ref=e447]: "--"
+        - generic [ref=e448]:
+          - generic [ref=e449]: Price Structure — Support/Resistance
+          - generic [ref=e450]:
+            - generic [ref=e451]:
+              - generic [ref=e452]: R
+              - generic [ref=e453]: 1차 저항
+              - generic [ref=e454]: $61,902
+            - generic [ref=e455]:
+              - generic [ref=e456]: ·
+              - generic [ref=e457]: 현재가
+              - generic [ref=e458]: $61,840
+            - generic [ref=e459]:
+              - generic [ref=e460]: S
+              - generic [ref=e461]: 1차 지지
+              - generic [ref=e462]: $61,810
+            - generic [ref=e463]:
+              - generic [ref=e464]: S
+              - generic [ref=e465]: 강한 지지 (200일선)
+              - generic [ref=e466]: $78,278
+    - generic [ref=e467]:
+      - generic [ref=e468]:
+        - heading "More Data · Expand" [level=2] [ref=e469]
+        - generic [ref=e470]: Open only when you need it
+      - group [ref=e471]:
+        - generic "Derivatives · Liquidity Analysis 4 indicators ▼" [ref=e472] [cursor=pointer]:
+          - generic [ref=e473]: Derivatives · Liquidity Analysis
+          - generic [ref=e474]:
+            - generic [ref=e475]: 4 indicators
+            - generic [ref=e476]: ▼
+        - generic [ref=e478]:
+          - generic [ref=e479]:
+            - generic [ref=e480]: Liquidation Heatmap
+            - generic [ref=e481]: Price zones with clustered forced buys/sells
+            - generic [ref=e482]:
+              - generic [ref=e484]: $68,572
+              - generic [ref=e487]: $64,832
+              - generic [ref=e490]: $63,585
+              - generic [ref=e493]: $62,962
+              - generic [ref=e496]: $61,715
+              - generic [ref=e499]: $61,091
+          - generic [ref=e501]:
+            - generic [ref=e502]: Cross-Asset Correlation
+            - generic [ref=e503]: 30-day correlation with BTC (−1 ~ +1)
+            - generic [ref=e504]:
+              - generic [ref=e505]:
+                - generic [ref=e506]: S&P 500
+                - generic [ref=e510]: "-0.04"
+              - generic [ref=e511]:
+                - generic [ref=e512]: 금 (Gold)
+                - generic [ref=e516]: "+1.00"
+              - generic [ref=e517]:
+                - generic [ref=e518]: 달러 DXY
+                - generic [ref=e522]: "-0.84"
+          - generic [ref=e523]:
+            - generic [ref=e524]: Options Market
+            - generic [ref=e525]: Implied volatility · skew
+            - generic [ref=e526]:
+              - generic [ref=e527]:
+                - generic [ref=e528]: 내재변동성 (IV)
+                - generic [ref=e529]: 46.2%
+              - generic [ref=e530]:
+                - generic [ref=e531]: 25Δ 스큐
+                - generic [ref=e532]: 14.7%
+              - generic [ref=e533]:
+                - generic [ref=e534]: 풋/콜 비율
+                - generic [ref=e535]: "--"
+              - generic [ref=e536]:
+                - generic [ref=e537]: 변동성 신호
+                - generic [ref=e538]: 극단적 공포
+          - generic [ref=e539]:
+            - generic [ref=e540]: Stablecoins · Liquidity
+            - generic [ref=e541]: USDT·USDC supply + Fed liquidity
+            - generic [ref=e542]:
+              - generic [ref=e543]:
+                - generic [ref=e544]: 스테이블 총공급
+                - generic [ref=e545]: $261.8B
+              - generic [ref=e546]:
+                - generic [ref=e547]: 30일 증가율
+                - generic [ref=e548]: "-2.0%"
+              - generic [ref=e549]:
+                - generic [ref=e550]: 연준 유동성 추세
+                - generic [ref=e551]: 유동성 축소
+              - generic [ref=e552]:
+                - generic [ref=e553]: 달러지수 DXY
+                - generic [ref=e554]: "100"
+      - group [ref=e555]:
+        - generic "Historical Performance Stats 3 analyses ▼" [ref=e556] [cursor=pointer]:
+          - generic [ref=e557]: Historical Performance Stats
+          - generic [ref=e558]:
+            - generic [ref=e559]: 3 analyses
+            - generic [ref=e560]: ▼
+      - group [ref=e561]:
+        - generic "Advanced Analysis · Indicator Contribution 3 analyses ▼" [ref=e562] [cursor=pointer]:
+          - generic [ref=e563]: Advanced Analysis · Indicator Contribution
+          - generic [ref=e564]:
+            - generic [ref=e565]: 3 analyses
+            - generic [ref=e566]: ▼
+    - generic [ref=e567]: Investment notice — All figures and forecasts on this dashboard are quantitative analysis for educational and reference purposes, not investment advice. You are solely responsible for all investment decisions.
+  - contentinfo [ref=e568]:
+    - generic [ref=e569]:
+      - generic [ref=e570]:
+        - generic [ref=e571]:
+          - link "BTC Timing Radar" [ref=e572] [cursor=pointer]:
+            - /url: about.html
+            - text: BTC Timing Radar
+          - paragraph [ref=e575]: A free information service that automatically analyzes 25+ Bitcoin market indicators every day.
+        - generic [ref=e576]:
+          - heading "Menu" [level=4] [ref=e577]
+          - link "Dashboard" [ref=e578] [cursor=pointer]:
+            - /url: index.html
+          - link "Indicator Guide" [ref=e579] [cursor=pointer]:
+            - /url: guide.html
+          - link "About" [ref=e580] [cursor=pointer]:
+            - /url: about.html
+          - link "Contact" [ref=e581] [cursor=pointer]:
+            - /url: contact.html
+        - generic [ref=e582]:
+          - heading "Policy · Community" [level=4] [ref=e583]
+          - link "Privacy Policy" [ref=e584] [cursor=pointer]:
+            - /url: privacy.html
+          - link "Investment Disclaimer" [ref=e585] [cursor=pointer]:
+            - /url: disclaimer.html
+          - link "Telegram Channel" [ref=e586] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e587]:
+        - generic [ref=e588]: © 2024 BTC Investment Timing Radar. All rights reserved.
+        - generic [ref=e589]: Auto-updated daily at 09:05 KST

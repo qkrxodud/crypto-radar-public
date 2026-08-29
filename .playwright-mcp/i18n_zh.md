@@ -1,0 +1,509 @@
+- generic [ref=e5]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - link "BTC 择时雷达" [ref=e8] [cursor=pointer]:
+        - /url: about.html
+        - generic [ref=e11]: BTC 择时雷达
+      - navigation [ref=e12]:
+        - link "仪表盘" [ref=e13] [cursor=pointer]:
+          - /url: index.html
+        - link "指标指南" [ref=e14] [cursor=pointer]:
+          - /url: guide.html
+        - link "联系" [ref=e15] [cursor=pointer]:
+          - /url: contact.html
+      - group "Language / 语言 / 언어" [ref=e16]:
+        - button "KO" [ref=e17] [cursor=pointer]
+        - button "EN" [ref=e18] [cursor=pointer]
+        - button "中文" [ref=e19] [cursor=pointer]
+      - generic [ref=e20]: LIVE · 09:05 KST
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]: DASHBOARD
+      - heading "今日比特币择时" [level=1] [ref=e25]
+      - generic [ref=e28]: 最后更新 2026/06/11 01:24 KST · 每天 09:05 自动更新
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img [ref=e33]
+          - generic [ref=e37]:
+            - generic [ref=e38]: "64"
+            - generic [ref=e39]: / 100
+        - generic [ref=e40]:
+          - generic [ref=e41]: 综合择时评分
+          - generic [ref=e44]: 中性
+          - generic [ref=e45]: ▼ -3 较昨日
+          - paragraph [ref=e46]: 관망 구간 (점수 64) — 다음 매수 기회 대기 중
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: BTC 现价
+          - generic [ref=e50]: ▼ -2.7%
+        - generic [ref=e52]: $61,840
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: 恐惧贪婪指数
+          - generic [ref=e57]: ▼ -1
+        - generic [ref=e59]: 9 极度恐惧
+        - generic [ref=e63]:
+          - generic [ref=e64]: 极度恐惧
+          - generic [ref=e65]: 中性
+          - generic [ref=e66]: 极度贪婪
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - heading "一目了然 — 新手5分钟摘要" [level=2] [ref=e69]
+        - generic [ref=e70]: 只看核心，无需复杂数字
+      - generic [ref=e71]:
+        - generic [ref=e73]:
+          - heading "一句话看懂今日市场" [level=3] [ref=e74]
+          - paragraph [ref=e75]: 查看各项即可掌握当前市场状态。
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]: 较昨日
+            - generic [ref=e79]: "-3 分"
+            - generic [ref=e80]: 66 → 64
+          - generic [ref=e81]:
+            - generic [ref=e82]: 市场阶段
+            - generic [ref=e83]: 中性
+            - generic [ref=e84]: 50–64 区间
+          - generic [ref=e85]:
+            - generic [ref=e86]: 买入条件通过
+            - generic [ref=e87]: 5 / 8
+            - generic [ref=e88]: 良好
+          - generic [ref=e89]:
+            - generic [ref=e90]: 明日预测评分
+            - generic [ref=e91]: "66"
+            - generic [ref=e92]: "--"
+          - generic [ref=e93]:
+            - generic [ref=e94]: 减半后经过
+            - generic [ref=e95]: 782天
+            - generic [ref=e96]: 周期后期
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]: 中性 — 观望
+          - generic [ref=e102]: 专家综合意见
+        - paragraph [ref=e103]: 점수 64점. 혼재된 신호가 관망을 지지합니다. 명확한 방향성 확인 후 진입.
+        - generic [ref=e104]: ✅ NUPL 0.140 — 낮은 수익 실현 구간, 추가 상승 여력 충분,⚠️ 롱숏비율 2.06 — 롱 포지션 과밀집, 강제청산 리스크,✅ Puell Multiple 0.54 — 채굴자 수익 양호, 매도 압력 낮음
+      - generic [ref=e105]:
+        - generic [ref=e106]: AI 市场摘要
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - generic [ref=e110]: "[摘要]"
+            - generic [ref=e111]: 현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다.
+          - generic [ref=e112]:
+            - generic [ref=e114]: "[风险]"
+            - generic [ref=e115]: 낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다.
+          - generic [ref=e116]:
+            - generic [ref=e118]: "[风险]"
+            - generic [ref=e119]: BTC 도미넌스가 높아 알트코인 투자에 대한 불확실성이 크다.
+          - generic [ref=e120]:
+            - generic [ref=e122]: "[行动]"
+            - generic [ref=e123]: 시장 상황을 면밀히 관찰하며 추가 매수는 신중하게 결정하라.
+          - generic [ref=e124]:
+            - generic [ref=e126]: "[行动]"
+            - generic [ref=e127]: 단기 트레이딩 전략을 고려하여 변동성에 대응하라.
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - generic [ref=e131]:
+          - generic [ref=e132]: 市场新闻情绪
+          - generic [ref=e133]: 中性 已分析 16 条
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: "0.0"
+            - generic [ref=e137]:
+              - link "Prediction markets get first U.S. rule proposal as CFTC pursues contract reviews" [ref=e138] [cursor=pointer]:
+                - /url: https://www.coindesk.com/policy/2026/06/10/prediction-markets-get-first-u-s-rule-proposal-as-cftc-proposes-contract-reviews
+              - generic [ref=e139]: CoinDesk · 6/10 22:58
+          - generic [ref=e140]:
+            - generic [ref=e141]: "-0.2"
+            - generic [ref=e142]:
+              - link "Michael Saylor gets into public debate over claims that Strategy's latest share sale was dilutive" [ref=e143] [cursor=pointer]:
+                - /url: https://www.coindesk.com/markets/2026/06/10/michael-saylor-in-x-back-and-forth-over-claims-strategy-s-latest-share-sale-was-dilutive
+              - generic [ref=e144]: CoinDesk · 6/10 22:56
+          - generic [ref=e145]:
+            - generic [ref=e146]: "-0.5"
+            - generic [ref=e147]:
+              - 'link "CoinDesk 20 performance update: Index drops 1.4% as all constituents decline" [ref=e148] [cursor=pointer]':
+                - /url: https://www.coindesk.com/coindesk-indices/2026/06/10/coindesk-20-performance-update-index-drops-1-4-as-all-constituents-decline
+              - generic [ref=e149]: CoinDesk · 6/10 22:23
+          - generic [ref=e150]:
+            - generic [ref=e151]: "+0.4"
+            - generic [ref=e152]:
+              - link "World Series of Poker adds Solana payments for tournament buy-ins" [ref=e153] [cursor=pointer]:
+                - /url: https://www.coindesk.com/tech/2026/06/09/world-series-of-poker-adds-solana-payments-for-tournament-buy-ins
+              - generic [ref=e154]: CoinDesk · 6/10 22:00
+          - generic [ref=e155]:
+            - generic [ref=e156]: "+0.5"
+            - generic [ref=e157]:
+              - link "Bitcoin trims losses after core CPI rises less than feared 0.2% in May" [ref=e158] [cursor=pointer]:
+                - /url: https://www.coindesk.com/markets/2026/06/10/u-s-inflation-meets-expectations-reinforcing-fed-s-higher-for-longer-stance
+              - generic [ref=e159]: CoinDesk · 6/10 21:42
+          - generic [ref=e160]:
+            - generic [ref=e161]: "-0.7"
+            - generic [ref=e162]:
+              - 'link "A ''Bitcoin DeFi'' project just shut down with a brutal post-mortem: Users just didn''t care" [ref=e163] [cursor=pointer]':
+                - /url: https://www.coindesk.com/tech/2026/06/10/a-bitcoin-defi-project-just-shut-down-with-a-brutal-post-mortem-users-just-didn-t-care
+              - generic [ref=e164]: CoinDesk · 6/10 21:00
+          - generic [ref=e165]:
+            - generic [ref=e166]: "-0.6"
+            - generic [ref=e167]:
+              - link "The inflation scenario that could send bitcoin tumbling below $60,000" [ref=e168] [cursor=pointer]:
+                - /url: https://www.coindesk.com/daybook-us/2026/06/10/the-inflation-scenario-that-could-send-bitcoin-tumbling-below-usd60-000
+              - generic [ref=e169]: CoinDesk · 6/10 20:20
+          - generic [ref=e170]:
+            - generic [ref=e171]: "-0.4"
+            - generic [ref=e172]:
+              - link "Zcash, Hyperliquid tokens lead losses as traders bet against a bitcoin bounce" [ref=e173] [cursor=pointer]:
+                - /url: https://www.coindesk.com/markets/2026/06/10/zcash-hyperliquid-tokens-lead-losses-as-traders-bet-against-a-bitcoin-bounce
+              - generic [ref=e174]: CoinDesk · 6/10 19:52
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - generic [ref=e177]: 山寨季指数
+          - generic [ref=e178]: "50"
+          - generic [ref=e179]: 中性
+          - generic [ref=e180]: BTC와 알트코인이 혼조세. 선별적 알트코인 투자 가능.
+        - generic [ref=e181]:
+          - generic [ref=e182]: 巨鲸动向
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e185]: 活动强度
+              - generic [ref=e186]: 中性
+            - generic [ref=e187]:
+              - generic [ref=e188]: 判断
+              - generic [ref=e189]: 中性
+            - generic [ref=e190]:
+              - generic [ref=e191]: 7日净流入
+              - generic [ref=e192]: 483 BTC
+            - generic [ref=e193]:
+              - generic [ref=e194]: 7日持仓变化
+              - generic [ref=e195]: +285 BTC
+    - generic [ref=e196]:
+      - generic [ref=e197]:
+        - heading "趋势查看" [level=2] [ref=e198]
+        - generic [ref=e199]: 近30天
+      - generic [ref=e200]:
+        - generic [ref=e202]:
+          - generic [ref=e203]:
+            - generic [ref=e204]: 综合评分趋势
+            - generic [ref=e205]: 30天 · 0–100
+          - generic [ref=e206]:
+            - generic [ref=e207]: "64"
+            - generic [ref=e208]: ▼ -3
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - generic [ref=e213]: BTC 价格趋势
+            - generic [ref=e214]: 30天 · USD
+          - generic [ref=e215]:
+            - generic [ref=e216]: $61.8K
+            - generic [ref=e217]: ▼ -23.5%
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - generic [ref=e222]: 恐惧贪婪趋势
+            - generic [ref=e223]: 30天 · 0=恐惧 100=贪婪
+          - generic [ref=e224]:
+            - generic [ref=e225]: "9"
+            - generic [ref=e226]: ▼ -40
+        - generic [ref=e228]:
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - generic [ref=e231]: 减半周期进度
+              - generic [ref=e232]: 以 2024-04 减半为基准
+            - generic [ref=e233]:
+              - generic [ref=e234]: 54%
+              - generic [ref=e235]: 782天
+          - generic [ref=e236]:
+            - generic [ref=e239]:
+              - generic [ref=e240]: 减半
+              - generic [ref=e241]: 中期 (1年)
+              - generic [ref=e242]: 周期顶部预期
+              - generic [ref=e243]: 下次减半
+            - paragraph [ref=e244]: 역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - heading "各类别评分" [level=2] [ref=e247]
+        - generic [ref=e248]: 加权前原始分
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - generic [ref=e252]:
+            - text: 周期 · 情绪
+            - generic [ref=e253]: 权重 30%
+          - generic [ref=e255]: "78"
+        - generic [ref=e256]:
+          - generic [ref=e257]:
+            - text: 技术分析
+            - generic [ref=e258]: 权重 25%
+          - generic [ref=e260]: "98"
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - text: 衍生品
+            - generic [ref=e263]: 权重 20%
+          - generic [ref=e265]: "46"
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - text: 链上
+            - generic [ref=e268]: 权重 15%
+          - generic [ref=e270]: "61"
+        - generic [ref=e271]:
+          - generic [ref=e272]:
+            - text: 宏观
+            - generic [ref=e273]: 权重 10%
+          - generic [ref=e275]: "49"
+    - generic [ref=e276]:
+      - generic [ref=e277]:
+        - heading "详细指标分析" [level=2] [ref=e278]
+        - generic [ref=e279]: 主要指标评分 · 当前数值 · 趋势
+      - table [ref=e281]:
+        - rowgroup [ref=e282]:
+          - row "指标名 当前数值 评分 趋势" [ref=e283]:
+            - columnheader "指标名" [ref=e284]
+            - columnheader "当前数值" [ref=e285]
+            - columnheader "评分" [ref=e286]
+            - columnheader "趋势" [ref=e287]
+        - rowgroup [ref=e288]:
+          - row "恐惧贪婪指数 9 91 — 持平" [ref=e289]:
+            - cell "恐惧贪婪指数" [ref=e290]
+            - cell "9" [ref=e291]
+            - cell "91" [ref=e292]:
+              - generic [ref=e296]: "91"
+            - cell "— 持平" [ref=e297]
+          - row "资金费率 0.00000365 49 — 持平" [ref=e298]:
+            - cell "资金费率" [ref=e299]
+            - cell "0.00000365" [ref=e300]
+            - cell "49" [ref=e301]:
+              - generic [ref=e305]: "49"
+            - cell "— 持平" [ref=e306]
+          - row "多空比 2.06 0 — 持平" [ref=e307]:
+            - cell "多空比" [ref=e308]
+            - cell "2.06" [ref=e309]
+            - cell "0" [ref=e310]:
+              - generic [ref=e314]: "0"
+            - cell "— 持平" [ref=e315]
+          - row "主动买/卖 0.94 40 ▲ 上涨" [ref=e316]:
+            - cell "主动买/卖" [ref=e317]
+            - cell "0.94" [ref=e318]
+            - cell "40" [ref=e319]:
+              - generic [ref=e323]: "40"
+            - cell "▲ 上涨" [ref=e324]
+          - row "未平仓合约比 0.97 79 ▲ 上涨" [ref=e325]:
+            - cell "未平仓合约比" [ref=e326]
+            - cell "0.97" [ref=e327]
+            - cell "79" [ref=e328]:
+              - generic [ref=e332]: "79"
+            - cell "▲ 上涨" [ref=e333]
+          - row "BTC 占比 56 80 — 持平" [ref=e334]:
+            - cell "BTC 占比" [ref=e335]
+            - cell "56" [ref=e336]
+            - cell "80" [ref=e337]:
+              - generic [ref=e341]: "80"
+            - cell "— 持平" [ref=e342]
+          - row "泡菜溢价 -1.72 100 — 持平" [ref=e343]:
+            - cell "泡菜溢价" [ref=e344]
+            - cell "-1.72" [ref=e345]
+            - cell "100" [ref=e346]:
+              - generic [ref=e350]: "100"
+            - cell "— 持平" [ref=e351]
+          - row "RSI(日线) 24.69 100 — 持平" [ref=e352]:
+            - cell "RSI(日线)" [ref=e353]
+            - cell "24.69" [ref=e354]
+            - cell "100" [ref=e355]:
+              - generic [ref=e359]: "100"
+            - cell "— 持平" [ref=e360]
+          - row "RSI(周线) 32.78 93 ▲ 上涨" [ref=e361]:
+            - cell "RSI(周线)" [ref=e362]
+            - cell "32.78" [ref=e363]
+            - cell "93" [ref=e364]:
+              - generic [ref=e368]: "93"
+            - cell "▲ 上涨" [ref=e369]
+          - row "MVRV-Z 0.34 78 ▲ 上涨" [ref=e370]:
+            - cell "MVRV-Z" [ref=e371]
+            - cell "0.34" [ref=e372]
+            - cell "78" [ref=e373]:
+              - generic [ref=e377]: "78"
+            - cell "▲ 上涨" [ref=e378]
+          - row "稳定币 11.85 73 ▲ 上涨" [ref=e379]:
+            - cell "稳定币" [ref=e380]
+            - cell "11.85" [ref=e381]
+            - cell "73" [ref=e382]:
+              - generic [ref=e386]: "73"
+            - cell "▲ 上涨" [ref=e387]
+          - row "ETH/BTC 比率 -0.0602 39 — 持平" [ref=e388]:
+            - cell "ETH/BTC 比率" [ref=e389]
+            - cell "-0.0602" [ref=e390]
+            - cell "39" [ref=e391]:
+              - generic [ref=e395]: "39"
+            - cell "— 持平" [ref=e396]
+    - generic [ref=e397]:
+      - generic [ref=e398]:
+        - heading "买入择时 · 预测" [level=2] [ref=e399]
+        - generic [ref=e400]: 仅供参考 — 非投资建议
+      - generic [ref=e401]:
+        - generic [ref=e402]:
+          - generic [ref=e403]: 买入条件清单 5/8
+          - generic [ref=e404]:
+            - generic [ref=e405]:
+              - img [ref=e407]
+              - generic [ref=e409]:
+                - text: 공포탐욕 < 25
+                - text: "극단적 공포 구간 (현재: 9)"
+            - generic [ref=e410]:
+              - img [ref=e412]
+              - generic [ref=e414]:
+                - text: RSI < 30
+                - text: "과매도 구간 (현재: 24.69)"
+            - generic [ref=e415]:
+              - img [ref=e417]
+              - generic [ref=e419]:
+                - text: MVRV < 1
+                - text: "역사적 저평가 구간 (현재: 0.34)"
+            - generic [ref=e420]:
+              - img [ref=e422]
+              - generic [ref=e424]:
+                - text: 김프 < 2%
+                - text: "김치프리미엄 적정 (현재: -1.72%)"
+            - generic [ref=e425]:
+              - img [ref=e427]
+              - generic [ref=e430]:
+                - text: 펀딩비 < 0
+                - text: "롱 우세 (현재: 0.00000365)"
+            - generic [ref=e431]:
+              - img [ref=e433]
+              - generic [ref=e436]:
+                - text: MA200 위
+                - text: "MA200 하회 (MA200 대비: 0.79)"
+            - generic [ref=e437]:
+              - img [ref=e439]
+              - generic [ref=e441]:
+                - text: 해시리본 비항복
+                - text: 채굴자 건전 상태
+        - generic [ref=e442]:
+          - generic [ref=e443]: 明日评分预测
+          - generic [ref=e444]:
+            - generic [ref=e445]: "66"
+            - generic [ref=e446]: ▲ 较今日高 2 分
+            - generic [ref=e447]: "--"
+        - generic [ref=e448]:
+          - generic [ref=e449]: 价格结构 — 支撑/阻力
+          - generic [ref=e450]:
+            - generic [ref=e451]:
+              - generic [ref=e452]: R
+              - generic [ref=e453]: 第一阻力
+              - generic [ref=e454]: $61,902
+            - generic [ref=e455]:
+              - generic [ref=e456]: ·
+              - generic [ref=e457]: 当前价格
+              - generic [ref=e458]: $61,840
+            - generic [ref=e459]:
+              - generic [ref=e460]: S
+              - generic [ref=e461]: 第一支撑
+              - generic [ref=e462]: $61,810
+            - generic [ref=e463]:
+              - generic [ref=e464]: S
+              - generic [ref=e465]: 强支撑 (200日线)
+              - generic [ref=e466]: $78,278
+    - generic [ref=e467]:
+      - generic [ref=e468]:
+        - heading "更多数据 · 展开" [level=2] [ref=e469]
+        - generic [ref=e470]: 需要时再展开
+      - group [ref=e471]:
+        - generic "衍生品 · 流动性分析 4 项指标 ▼" [ref=e472] [cursor=pointer]:
+          - generic [ref=e473]: 衍生品 · 流动性分析
+          - generic [ref=e474]:
+            - generic [ref=e475]: 4 项指标
+            - generic [ref=e476]: ▼
+        - generic [ref=e478]:
+          - generic [ref=e479]:
+            - generic [ref=e480]: 清算热力图
+            - generic [ref=e481]: 强制买卖密集的价格带
+            - generic [ref=e482]:
+              - generic [ref=e484]: $68,572
+              - generic [ref=e487]: $64,832
+              - generic [ref=e490]: $63,585
+              - generic [ref=e493]: $62,962
+              - generic [ref=e496]: $61,715
+              - generic [ref=e499]: $61,091
+          - generic [ref=e501]:
+            - generic [ref=e502]: 资产间相关性
+            - generic [ref=e503]: 与 BTC 的30日相关系数 (−1 ~ +1)
+            - generic [ref=e504]:
+              - generic [ref=e505]:
+                - generic [ref=e506]: 标普500
+                - generic [ref=e510]: "-0.04"
+              - generic [ref=e511]:
+                - generic [ref=e512]: 黄金
+                - generic [ref=e516]: "+1.00"
+              - generic [ref=e517]:
+                - generic [ref=e518]: 美元 DXY
+                - generic [ref=e522]: "-0.84"
+          - generic [ref=e523]:
+            - generic [ref=e524]: 期权市场
+            - generic [ref=e525]: 隐含波动率 · 偏度
+            - generic [ref=e526]:
+              - generic [ref=e527]:
+                - generic [ref=e528]: 隐含波动率 (IV)
+                - generic [ref=e529]: 46.2%
+              - generic [ref=e530]:
+                - generic [ref=e531]: 25Δ 偏度
+                - generic [ref=e532]: 14.7%
+              - generic [ref=e533]:
+                - generic [ref=e534]: 看跌/看涨比
+                - generic [ref=e535]: "--"
+              - generic [ref=e536]:
+                - generic [ref=e537]: 波动率信号
+                - generic [ref=e538]: 极度恐惧
+          - generic [ref=e539]:
+            - generic [ref=e540]: 稳定币 · 流动性
+            - generic [ref=e541]: USDT·USDC 供应 + 美联储流动性
+            - generic [ref=e542]:
+              - generic [ref=e543]:
+                - generic [ref=e544]: 稳定币总供应
+                - generic [ref=e545]: $261.8B
+              - generic [ref=e546]:
+                - generic [ref=e547]: 30日增长率
+                - generic [ref=e548]: "-2.0%"
+              - generic [ref=e549]:
+                - generic [ref=e550]: 美联储流动性趋势
+                - generic [ref=e551]: 流动性收缩
+              - generic [ref=e552]:
+                - generic [ref=e553]: 美元指数 DXY
+                - generic [ref=e554]: "100"
+      - group [ref=e555]:
+        - generic "历史表现统计 3 项分析 ▼" [ref=e556] [cursor=pointer]:
+          - generic [ref=e557]: 历史表现统计
+          - generic [ref=e558]:
+            - generic [ref=e559]: 3 项分析
+            - generic [ref=e560]: ▼
+      - group [ref=e561]:
+        - generic "高级分析 · 指标贡献度 3 项分析 ▼" [ref=e562] [cursor=pointer]:
+          - generic [ref=e563]: 高级分析 · 指标贡献度
+          - generic [ref=e564]:
+            - generic [ref=e565]: 3 项分析
+            - generic [ref=e566]: ▼
+    - generic [ref=e567]: 投资提示 — 本仪表盘的所有数值与预测均为教育及参考目的的量化分析，并非投资建议。所有投资决策风险由本人承担。
+  - contentinfo [ref=e568]:
+    - generic [ref=e569]:
+      - generic [ref=e570]:
+        - generic [ref=e571]:
+          - link "BTC 择时雷达" [ref=e572] [cursor=pointer]:
+            - /url: about.html
+            - text: BTC 择时雷达
+          - paragraph [ref=e575]: 每日自动分析25+个比特币市场指标的免费信息服务。
+        - generic [ref=e576]:
+          - heading "菜单" [level=4] [ref=e577]
+          - link "仪表盘" [ref=e578] [cursor=pointer]:
+            - /url: index.html
+          - link "指标指南" [ref=e579] [cursor=pointer]:
+            - /url: guide.html
+          - link "关于" [ref=e580] [cursor=pointer]:
+            - /url: about.html
+          - link "联系" [ref=e581] [cursor=pointer]:
+            - /url: contact.html
+        - generic [ref=e582]:
+          - heading "政策 · 社区" [level=4] [ref=e583]
+          - link "隐私政策" [ref=e584] [cursor=pointer]:
+            - /url: privacy.html
+          - link "投资免责声明" [ref=e585] [cursor=pointer]:
+            - /url: disclaimer.html
+          - link "Telegram 频道" [ref=e586] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e587]:
+        - generic [ref=e588]: © 2024 BTC 投资择时雷达。保留所有权利。
+        - generic [ref=e589]: 每天 09:05 KST 自动更新

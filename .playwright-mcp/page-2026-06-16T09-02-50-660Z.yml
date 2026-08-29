@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BTC Timing Radar" [ref=e4] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=e7]: BTC Timing Radar
+      - navigation [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: ../index.html
+        - link "Indicator Guide" [ref=e10] [cursor=pointer]:
+          - /url: ../guide.html
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: ../contact.html
+      - group "Language / 语言 / 언어" [ref=e12]:
+        - button "KO" [ref=e13] [cursor=pointer]
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button "中文" [ref=e15] [cursor=pointer]
+      - link "Today's Score →" [ref=e16] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=e18]: Today's Score →
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - link "Indicator Guide" [ref=e21] [cursor=pointer]:
+        - /url: ../guide.html
+      - generic [ref=e22]: /
+      - generic [ref=e23]: Technical Analysis
+      - generic [ref=e24]: /
+      - generic [ref=e25]: MA200 Deviation
+    - generic [ref=e26]:
+      - generic [ref=e29]: Technical Analysis
+      - heading "MA200 deviation, in plain words" [level=1] [ref=e30]
+      - paragraph [ref=e31]: The 200-day moving average smooths out roughly the last seven months of price into one slow-moving line, and MA200 deviation tells you how far above or below that line today's price sits, as a percentage. It's the single cleanest way to ask one question — is Bitcoin in a long-term uptrend or downtrend right now, and how stretched is it from its own baseline?
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: What it is
+        - generic [ref=e35]: The % distance of price from its 200-day moving average.
+      - generic [ref=e36]:
+        - generic [ref=e37]: How to read
+        - generic [ref=e38]: Above the line = uptrend; stretched too far above = overheating.
+      - generic [ref=e39]:
+        - generic [ref=e40]: Signal
+        - generic [ref=e41]: Above = uptrend
+    - generic [ref=e42]:
+      - heading "1 What MA200 deviation actually measures" [level=2] [ref=e43]:
+        - generic [ref=e44]: "1"
+        - generic [ref=e45]: What MA200 deviation actually measures
+      - paragraph [ref=e46]: The daily price is noisy — it jumps around with every headline. A moving average is just the average price over a fixed window, and the 200-day version is slow enough to filter out the noise and show the underlying long-term direction. The 200-day line is the most-watched of all these baselines because it roughly captures a full season of market behaviour rather than a passing mood.
+      - paragraph [ref=e47]: "Deviation adds the second layer: not just which side of the line price is on, but how far. Price tends to orbit its 200-day average — drifting far above in euphoria, far below in despair, and snapping back toward it over time. The deviation number turns that pull into something you can measure."
+    - generic [ref=e48]:
+      - heading "2 How it's calculated" [level=2] [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: How it's calculated
+      - paragraph [ref=e52]: "Two simple steps turn price history into a single percentage:"
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - text: Build the baseline. Average the closing price of the last 200 days. That average is the
+          - code [ref=e55]: MA200
+          - text: line, and it updates by one day each day.
+        - listitem [ref=e56]:
+          - text: "Measure the gap. Take today's price minus the MA200, divide by the MA200, and multiply by 100:"
+          - code [ref=e57]: (price − MA200) ÷ MA200 × 100
+          - text: . The result is a percentage — positive means above the line, negative means below.
+      - paragraph [ref=e58]:
+        - text: So a reading of
+        - code [ref=e59]: +20%
+        - text: means price is 20% above its 200-day average, and
+        - code [ref=e60]: −30%
+        - text: means it's 30% below. Because Bitcoin is far more volatile than stocks, its deviation swings far wider — readings that would be extreme for an index can be ordinary here, which is why you compare it to Bitcoin's own history rather than to other assets.
+    - generic [ref=e61]:
+      - heading "3 Reading the zones" [level=2] [ref=e62]:
+        - generic [ref=e63]: "3"
+        - generic [ref=e64]: Reading the zones
+      - paragraph [ref=e65]: There are no universal cutoffs — these bands are rough guides relative to Bitcoin's own range. Treat them as gradients, not hard lines.
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e69]: Deep below
+          - generic [ref=e70]: Far below the line. Price is well under its 200-day average — historically overlapped with long-term accumulation zones, though it can persist in a downtrend.
+        - generic [ref=e71]:
+          - generic [ref=e73]: Near the line
+          - generic [ref=e74]: Hugging the 200-day line. Trend is undecided. The line often acts as support or resistance, so price reaction here is worth watching.
+        - generic [ref=e75]:
+          - generic [ref=e77]: Moderately above
+          - generic [ref=e78]: Comfortably above. Long-term uptrend is intact and healthy. Momentum can keep running, but the easiest entries are usually behind.
+        - generic [ref=e79]:
+          - generic [ref=e81]: Far above
+          - generic [ref=e82]: Stretched far above. A large positive deviation often signals short-term overheating — a warning to manage risk, not a precise top.
+    - generic [ref=e83]:
+      - heading "4 Using it for buy timing" [level=2] [ref=e84]:
+        - generic [ref=e85]: "4"
+        - generic [ref=e86]: Using it for buy timing
+      - paragraph [ref=e87]: "MA200 deviation works best as a regime filter: it tells you whether the bigger picture is friendly or hostile before you act on any shorter-term signal. When price is below the line, the long-term trend is against you, so entries deserve more caution and a slower pace. When price is comfortably above and the deviation isn't extreme, the trend is on your side. And when deviation stretches far above its usual range, it's a cue to stop chasing and let price come back toward the line rather than buying into froth."
+      - generic [ref=e88]:
+        - generic [ref=e89]: Practical tip
+        - paragraph [ref=e90]: Don't trade a single cross of the line. Because the 200-day average lags, price often whipsaws across it in choppy markets. Wait for the deviation to settle on one side, and pair it with momentum or on-chain readings before committing capital.
+    - generic [ref=e91]:
+      - heading "5 Limits & common misreadings" [level=2] [ref=e92]:
+        - generic [ref=e93]: "5"
+        - generic [ref=e94]: Limits & common misreadings
+      - paragraph [ref=e95]: "The biggest limit is built into its nature: a moving average lags. It confirms a trend after the fact rather than predicting turns, so by the time deviation flips clearly positive or negative, much of the move may already have happened. In choppy, sideways markets price whipsaws across the line repeatedly, producing a string of misleading crosses. And there is no magic deviation number that marks a top or bottom — a level that screamed overheating in one cycle can be merely ordinary in the next. The honest use is to read the long-term regime and how stretched price is, not to call the exact turning point."
+    - generic [ref=e96]:
+      - heading "+ Indicators to read alongside" [level=2] [ref=e97]:
+        - generic [ref=e98]: +
+        - generic [ref=e99]: Indicators to read alongside
+      - generic [ref=e100]:
+        - link "Historical Volatility How violently price swings — tight compression often precedes a big move." [ref=e101] [cursor=pointer]:
+          - /url: historical-volatility.html
+          - generic [ref=e102]: Historical Volatility
+          - generic [ref=e103]: How violently price swings — tight compression often precedes a big move.
+        - link "MVRV-Z Score Whether price is over- or under-valued versus cost basis." [ref=e104] [cursor=pointer]:
+          - /url: mvrv-z-score.html
+          - generic [ref=e105]: MVRV-Z Score
+          - generic [ref=e106]: Whether price is over- or under-valued versus cost basis.
+        - link "All indicators Back to the full indicator guide." [ref=e107] [cursor=pointer]:
+          - /url: ../guide.html
+          - generic [ref=e108]: All indicators
+          - generic [ref=e109]: Back to the full indicator guide.
+    - generic [ref=e110]:
+      - heading "? Frequently asked" [level=2] [ref=e111]:
+        - generic [ref=e112]: "?"
+        - generic [ref=e113]: Frequently asked
+      - generic [ref=e114]:
+        - group [ref=e115]:
+          - generic "Q How is MA200 deviation calculated? +" [ref=e116] [cursor=pointer]:
+            - generic [ref=e117]: Q
+            - generic [ref=e118]: How is MA200 deviation calculated?
+            - text: +
+        - group [ref=e119]:
+          - generic "Q If price is above the 200-day line, should I always buy? +" [ref=e120] [cursor=pointer]:
+            - generic [ref=e121]: Q
+            - generic [ref=e122]: If price is above the 200-day line, should I always buy?
+            - text: +
+        - group [ref=e123]:
+          - generic "Q Does a deep negative deviation mean it's the bottom? +" [ref=e124] [cursor=pointer]:
+            - generic [ref=e125]: Q
+            - generic [ref=e126]: Does a deep negative deviation mean it's the bottom?
+            - text: +
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - heading "See today's reading" [level=3] [ref=e129]
+        - paragraph [ref=e130]: Check the live MA200 deviation and the composite timing score on the dashboard.
+      - link "Open dashboard →" [ref=e131] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=e132]:
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - link "BTC Timing Radar" [ref=e136] [cursor=pointer]:
+            - /url: ../about.html
+            - text: BTC Timing Radar
+          - paragraph [ref=e139]: A free information service that automatically analyzes 25+ Bitcoin market indicators every day. We provide objective, data-driven market interpretation.
+        - generic [ref=e140]:
+          - heading "Menu" [level=4] [ref=e141]
+          - link "Dashboard" [ref=e142] [cursor=pointer]:
+            - /url: ../index.html
+          - link "Indicator Guide" [ref=e143] [cursor=pointer]:
+            - /url: ../guide.html
+          - link "Contact" [ref=e144] [cursor=pointer]:
+            - /url: ../contact.html
+        - generic [ref=e145]:
+          - heading "Policies · Community" [level=4] [ref=e146]
+          - link "Privacy Policy" [ref=e147] [cursor=pointer]:
+            - /url: ../privacy.html
+          - link "Investment Disclaimer" [ref=e148] [cursor=pointer]:
+            - /url: ../disclaimer.html
+          - link "Telegram Channel" [ref=e149] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e150]:
+        - generic [ref=e151]: © 2024 BTC Timing Radar. All rights reserved.
+        - generic [ref=e152]: Auto-updated daily at 09:05 KST

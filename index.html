@@ -796,6 +796,19 @@
                 <tbody id="monthlyRows"></tbody>
               </table></div>
             </div>
+            <div id="shadowBlock" style="display:none">
+              <div class="ch" style="margin:16px 0 8px" data-en="Shadow threshold tracking — would a stricter buy bar (70) have done better than the live one (65)? Observation only; the live threshold changes only after a statistical significance gate.">그림자 임계값 추적 — 실전 매수 기준(65점)보다 엄격한 기준(70점)이 더 나았을까요? 관찰 전용이며, 실전 기준 변경은 통계적 유의성 게이트 통과 후에만 검토합니다.</div>
+              <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
+                <thead><tr style="color:var(--m2);font-size:10.5px;text-transform:uppercase;text-align:right">
+                  <th style="text-align:left;padding:5px 8px 5px 0" data-en="Window">구간</th>
+                  <th style="padding:5px 8px" data-en="Live 65+ lift">실전 65+ lift</th>
+                  <th style="padding:5px 8px" data-en="Shadow 70+ lift">그림자 70+ lift</th>
+                  <th style="padding:5px 0 5px 8px" data-en="Gap">격차</th>
+                </tr></thead>
+                <tbody id="shadowRows"></tbody>
+              </table></div>
+              <div id="shadowVerdict" style="margin-top:8px;font-size:12px"></div>
+            </div>
           </div>
         </details>
         <details class="acc" id="accFlow" style="display:none">
@@ -1834,6 +1847,36 @@ async function init(){
       ge('accuCnt').textContent=T({ko:'데이터 없음',en:'No data'});
     }
   }catch(e){console.warn('[dashboard] signal-accuracy render failed:',e&&e.message);}
+
+  /* ── [확장] 그림자 임계값(70) vs 실전(65) — 관찰 전용 ── */
+  try{
+    var sh70=d.api_report_shadow_threshold||{};
+    if(sh70.hasData&&sh70.liveFull&&sh70.shadowFull){
+      ge('shadowBlock').style.display='';
+      var shTb=ge('shadowRows');
+      [[T({ko:'전체 표본 (',en:'Full sample ('})+sh70.sampleCount+T({ko:'일)',en:'d)'}),sh70.liveFull,sh70.shadowFull,sh70.fullLiftGap],
+       [T({ko:'최근 ',en:'Last '})+sh70.recentWindowDays+T({ko:'일',en:'d'}),sh70.liveRecent,sh70.shadowRecent,sh70.recentLiftGap]
+      ].forEach(function(row){
+        var live=row[1]||{},shadow=row[2]||{},gap=row[3]||'--';
+        var gapNeg=gap.charAt(0)==='-';
+        var tr=document.createElement('tr');
+        tr.style.cssText='border-top:1px solid var(--line);text-align:right;font-family:var(--mono)';
+        tr.innerHTML='<td style="text-align:left;padding:6px 8px 6px 0;color:var(--t2)">'+row[0]+'</td>'
+          +'<td style="padding:6px 8px;color:'+(live.liftNegative?RED:'var(--t2)')+'">'+(live.hasData?live.lift30d+' · '+live.signalCount+T({ko:'건',en:''}):'--')+'</td>'
+          +'<td style="padding:6px 8px;color:'+(shadow.liftNegative?RED:'var(--t2)')+'">'+(shadow.hasData?shadow.lift30d+' · '+shadow.signalCount+T({ko:'건',en:''}):'--')+'</td>'
+          +'<td style="padding:6px 0 6px 8px;font-weight:700;color:'+(gapNeg?RED:GREEN)+'">'+gap+'</td>';
+        shTb.appendChild(tr);
+      });
+      var shV=ge('shadowVerdict');
+      if(sh70.shadowLeadsBoth){
+        shV.style.color=AMBER;
+        shV.textContent=T({ko:'판정: 전체·최근 모두 그림자 우위 — 유의성 재검 후보 (실전 기준은 아직 65 유지)',en:'Verdict: shadow leads in both windows — candidate for significance re-test (live threshold stays at 65)'});
+      }else{
+        shV.style.color='var(--t3)';
+        shV.textContent=T({ko:'판정: 그림자 우위 불충분 — 임계값 변경 근거 없음 (65 유지)',en:'Verdict: shadow advantage insufficient — no basis for change (65 stays)'});
+      }
+    }
+  }catch(e){console.warn('[dashboard] shadow-threshold render failed:',e&&e.message);}
 
   /* ── [확장] 오늘의 강세 vs 약세 대차대조표 ── */
   try{

@@ -1,0 +1,164 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BTC 타이밍 레이더" [ref=e4] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=e7]: BTC 타이밍 레이더
+      - navigation [ref=e8]:
+        - link "대시보드" [ref=e9] [cursor=pointer]:
+          - /url: ../index.html
+        - link "지표 가이드" [ref=e10] [cursor=pointer]:
+          - /url: ../guide.html
+        - link "문의" [ref=e11] [cursor=pointer]:
+          - /url: ../contact.html
+      - group "Language / 语言 / 언어" [ref=e12]:
+        - button "KO" [ref=e13] [cursor=pointer]
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button "中文" [ref=e15] [cursor=pointer]
+      - link "오늘의 점수 →" [ref=e16] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=e18]: 오늘의 점수 →
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - link "지표 가이드" [ref=e21] [cursor=pointer]:
+        - /url: ../guide.html
+      - generic [ref=e22]: /
+      - generic [ref=e23]: 사이클 · 심리
+      - generic [ref=e24]: /
+      - generic [ref=e25]: 공포·탐욕 지수
+    - generic [ref=e26]:
+      - generic [ref=e29]: 사이클 · 심리
+      - heading "공포·탐욕 지수, 쉬운 말로 풀어보기" [level=1] [ref=e30]
+      - paragraph [ref=e31]: 공포·탐욕 지수는 시장의 분위기를 0~100 하나의 숫자로 요약합니다. 0은 극도의 공포, 100은 극도의 탐욕입니다. 비트코인의 가치가 아니라 지금 군중이 어떻게 느끼는지를 보여주며, 바로 그 점 때문에 모두가 한쪽으로 쏠린 순간을 포착하는 데 유용합니다.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: 무엇인가
+        - generic [ref=e35]: 시장 전체의 군중 심리를 0~100으로 나타내는 지표.
+      - generic [ref=e36]:
+        - generic [ref=e37]: 어떻게 읽나
+        - generic [ref=e38]: 낮을수록 공포, 역사적으로 더 좋은 매수 구간.
+      - generic [ref=e39]:
+        - generic [ref=e40]: 신호
+        - generic [ref=e41]: 낮을수록 매수 기회
+    - generic [ref=e42]:
+      - heading "1 공포·탐욕 지수는 무엇을 재는가" [level=2] [ref=e43]:
+        - generic [ref=e44]: "1"
+        - generic [ref=e45]: 공포·탐욕 지수는 무엇을 재는가
+      - paragraph [ref=e46]: 가격은 시장이 무엇을 했는지를 알려줍니다. 공포·탐욕 지수는 시장이 무엇을 느끼는지를 알려주려는 지표입니다. 군중 감정을 나타내는 여러 신호를 하나의 쉬운 숫자로 압축하기 때문에, 변동성·거래량·소셜 분위기를 따로따로 확인할 필요 없이 0~100 한 값만 보면 됩니다.
+      - paragraph [ref=e47]: 이 지표의 핵심 발상은 역발상(contrarian)입니다. 시장은 공포가 극에 달하고 팔 사람이 다 팔았을 때 바닥을 만드는 경향이 있고, 탐욕이 모두에게 퍼져 더 살 사람이 없을 때 과열되는 경향이 있습니다. 지수는 군중이 얼마나 한쪽으로 치우쳤는지를 수치로 보여주는 도구입니다.
+    - generic [ref=e48]:
+      - heading "2 어떻게 계산되나" [level=2] [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: 어떻게 계산되나
+      - paragraph [ref=e52]:
+        - text: 여러 입력을 각각 점수화해 하나의
+        - code [ref=e53]: 0~100
+        - text: 값으로 섞은 뒤, 최근 며칠을 평균 내 부드럽게 만듭니다. 가장 널리 인용되는 버전(Alternative.me)의 가중치는 대략 다음과 같습니다.
+      - list [ref=e54]:
+        - listitem [ref=e55]: 변동성 (~25%) — 현재 가격 변동이 최근 평균에서 얼마나 벗어났는가.
+        - listitem [ref=e56]: 모멘텀·거래량 (~25%) — 매수 거래량과 모멘텀이 평균 대비 어느 수준인가.
+        - listitem [ref=e57]: 소셜미디어 (~15%) — 소셜 플랫폼의 언급량과 분위기.
+        - listitem [ref=e58]: 비트코인 점유율 (~10%) — 전체 암호화폐 시장에서 비트코인이 차지하는 비중.
+        - listitem [ref=e59]: 설문·트렌드 (~25%) — 설문 데이터와 검색 트렌드 관심도.
+      - paragraph [ref=e60]: 가중치를 외울 필요는 없습니다. 핵심은 이것이 가격 모델이 아니라 감정 신호의 혼합이라는 점입니다. 그래서 펀더멘털이 아니라 분위기에 따라 움직입니다.
+    - generic [ref=e61]:
+      - heading "3 구간으로 읽기" [level=2] [ref=e62]:
+        - generic [ref=e63]: "3"
+        - generic [ref=e64]: 구간으로 읽기
+      - paragraph [ref=e65]: 0~100 척도는 네 구간으로 나뉩니다. 경계는 칼같은 선이 아니라 점진적인 변화로 받아들이세요.
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e69]: 0~24
+          - generic [ref=e70]: 극도의 공포. 군중이 항복하는 국면. 역사적으로 장기 진입에 가장 좋았던 구간 — 다만 오래 지속될 수 있음.
+        - generic [ref=e71]:
+          - generic [ref=e73]: 25~49
+          - generic [ref=e74]: 공포. 신중함이 지배. 인내심 있는 매수자에게 합리적인 분할 매수 구간인 경우가 많음.
+        - generic [ref=e75]:
+          - generic [ref=e77]: 50~74
+          - generic [ref=e78]: 탐욕. 낙관이 쌓이는 국면. 모멘텀은 더 갈 수 있지만 쉬운 진입 구간은 지났음.
+        - generic [ref=e79]:
+          - generic [ref=e81]: 75~100
+          - generic [ref=e82]: 극도의 탐욕. 도취 상태. 리스크 관리와 추격 매수 자제 경고 — 정확한 매도 신호는 아님.
+    - generic [ref=e83]:
+      - heading "4 매수 타이밍에 쓰는 법" [level=2] [ref=e84]:
+        - generic [ref=e85]: "4"
+        - generic [ref=e86]: 매수 타이밍에 쓰는 법
+      - paragraph [ref=e87]: 이 지표는 방아쇠가 아니라 맥락 필터로 쓸 때 가장 좋습니다. 극도의 공포에 있을 때는 완벽한 바닥을 기다리기보다 분할 매수(DCA) 관점으로 진입을 찾기 시작하라는 신호이고, 극도의 탐욕에 고정돼 있을 때는 공격적인 추가 매수를 멈추고 자신이 진 리스크를 점검하라는 신호입니다.
+      - generic [ref=e88]:
+        - generic [ref=e89]: 실전 팁
+        - paragraph [ref=e90]: 하루치 값에 반응하지 마세요. 지수가 한 구간에 일주일 이상 머무는지를 보고, 자금을 넣기 전에 가격·온체인 지표와 함께 판단하세요.
+    - generic [ref=e91]:
+      - heading "5 한계와 흔한 오해" [level=2] [ref=e92]:
+        - generic [ref=e93]: "5"
+        - generic [ref=e94]: 한계와 흔한 오해
+      - paragraph [ref=e95]: 이 지표는 가치가 아니라 현재 감정을 반영하며, 강한 추세에서는 몇 주씩 극단값에 머물 수 있습니다. 가장 흔한 실수는 극도의 공포를 자동 매수로, 극도의 탐욕을 자동 매도로 받아들이는 것입니다 — 2020~2021년에는 탐욕이 몇 달간 높게 유지되는 동안 가격이 계속 올랐습니다. 정확한 전환점을 짚기보다 군중이 한쪽으로 쏠렸는지 확인하는 용도로 쓰세요.
+    - generic [ref=e96]:
+      - heading "+ 함께 보면 좋은 지표" [level=2] [ref=e97]:
+        - generic [ref=e98]: +
+        - generic [ref=e99]: 함께 보면 좋은 지표
+      - generic [ref=e100]:
+        - link "MVRV-Z 점수 가격이 평균 매입가 대비 고평가인지 저평가인지." [ref=e101] [cursor=pointer]:
+          - /url: mvrv-z-score.html
+          - generic [ref=e102]: MVRV-Z 점수
+          - generic [ref=e103]: 가격이 평균 매입가 대비 고평가인지 저평가인지.
+        - link "반감기 사이클 비트코인 약 4년 주기에서 지금 위치." [ref=e104] [cursor=pointer]:
+          - /url: halving-cycle.html
+          - generic [ref=e105]: 반감기 사이클
+          - generic [ref=e106]: 비트코인 약 4년 주기에서 지금 위치.
+        - link "전체 지표 보기 지표 가이드 전체로 돌아가기." [ref=e107] [cursor=pointer]:
+          - /url: ../guide.html
+          - generic [ref=e108]: 전체 지표 보기
+          - generic [ref=e109]: 지표 가이드 전체로 돌아가기.
+    - generic [ref=e110]:
+      - heading "? 자주 묻는 질문" [level=2] [ref=e111]:
+        - generic [ref=e112]: "?"
+        - generic [ref=e113]: 자주 묻는 질문
+      - generic [ref=e114]:
+        - group [ref=e115]:
+          - generic "Q 공포·탐욕 지수가 낮으면 무조건 사야 하나요? +" [ref=e116] [cursor=pointer]:
+            - generic [ref=e117]: Q
+            - generic [ref=e118]: 공포·탐욕 지수가 낮으면 무조건 사야 하나요?
+            - text: +
+        - group [ref=e119]:
+          - generic "Q 공포·탐욕 지수는 어디서 가져오나요? +" [ref=e120] [cursor=pointer]:
+            - generic [ref=e121]: Q
+            - generic [ref=e122]: 공포·탐욕 지수는 어디서 가져오나요?
+            - text: +
+        - group [ref=e123]:
+          - generic "Q 지수가 극도의 탐욕이면 바로 팔아야 하나요? +" [ref=e124] [cursor=pointer]:
+            - generic [ref=e125]: Q
+            - generic [ref=e126]: 지수가 극도의 탐욕이면 바로 팔아야 하나요?
+            - text: +
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - heading "오늘의 지표 값 확인하기" [level=3] [ref=e129]
+        - paragraph [ref=e130]: 대시보드에서 실시간 공포·탐욕 값과 종합 타이밍 점수를 확인하세요.
+      - link "대시보드 열기 →" [ref=e131] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=e132]:
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - link "BTC 타이밍 레이더" [ref=e136] [cursor=pointer]:
+            - /url: ../about.html
+            - text: BTC 타이밍 레이더
+          - paragraph [ref=e139]: 비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.
+        - generic [ref=e140]:
+          - heading "메뉴" [level=4] [ref=e141]
+          - link "대시보드" [ref=e142] [cursor=pointer]:
+            - /url: ../index.html
+          - link "지표 가이드" [ref=e143] [cursor=pointer]:
+            - /url: ../guide.html
+          - link "문의" [ref=e144] [cursor=pointer]:
+            - /url: ../contact.html
+        - generic [ref=e145]:
+          - heading "정책 · 커뮤니티" [level=4] [ref=e146]
+          - link "개인정보처리방침" [ref=e147] [cursor=pointer]:
+            - /url: ../privacy.html
+          - link "투자 면책조항" [ref=e148] [cursor=pointer]:
+            - /url: ../disclaimer.html
+          - link "텔레그램 채널" [ref=e149] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e150]:
+        - generic [ref=e151]: © 2024 BTC 투자 타이밍 레이더. All rights reserved.
+        - generic [ref=e152]: 매일 09:05 KST 자동 갱신

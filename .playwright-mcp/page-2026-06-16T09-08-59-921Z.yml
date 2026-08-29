@@ -1,0 +1,168 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BTC 타이밍 레이더" [ref=e4] [cursor=pointer]:
+        - /url: ../about.html
+        - generic [ref=e7]: BTC 타이밍 레이더
+      - navigation [ref=e8]:
+        - link "대시보드" [ref=e9] [cursor=pointer]:
+          - /url: ../index.html
+        - link "지표 가이드" [ref=e10] [cursor=pointer]:
+          - /url: ../guide.html
+        - link "문의" [ref=e11] [cursor=pointer]:
+          - /url: ../contact.html
+      - group "Language / 语言 / 언어" [ref=e12]:
+        - button "KO" [ref=e13] [cursor=pointer]
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button "中文" [ref=e15] [cursor=pointer]
+      - link "오늘의 점수 →" [ref=e16] [cursor=pointer]:
+        - /url: ../index.html
+        - generic [ref=e18]: 오늘의 점수 →
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - link "지표 가이드" [ref=e21] [cursor=pointer]:
+        - /url: ../guide.html
+      - generic [ref=e22]: /
+      - generic [ref=e23]: 온체인
+      - generic [ref=e24]: /
+      - generic [ref=e25]: 푸엘 멀티플
+    - generic [ref=e26]:
+      - generic [ref=e29]: 온체인
+      - heading "푸엘 멀티플, 쉬운 말로 풀어보기" [level=1] [ref=e30]
+      - paragraph [ref=e31]: 푸엘 멀티플은 채굴자의 눈으로 시장을 봅니다. 채굴자가 평소보다 훨씬 많이 버는지 훨씬 적게 버는지를 묻습니다. 채굴자의 하루 수익이 1년 평균보다 한참 무너지면 사이클은 바닥 부근인 경우가 많았고, 수익이 한참 부풀면 천장 부근인 경우가 많았습니다. 비트코인의 긴 리듬에서 우리가 어디쯤 있는지를 가늠하는, 거칠지만 오래 검증된 잣대입니다.
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: 무엇인가
+        - generic [ref=e35]: 채굴자 수익이 연평균 대비 한참 높은지 낮은지.
+      - generic [ref=e36]:
+        - generic [ref=e37]: 어떻게 읽나
+        - generic [ref=e38]: 매우 낮으면 바닥권, 매우 높으면 천장권.
+      - generic [ref=e39]:
+        - generic [ref=e40]: 신호
+        - generic [ref=e41]: 0.5 아래 = 역사적 바닥권
+    - generic [ref=e42]:
+      - heading "1 푸엘 멀티플은 무엇을 재는가" [level=2] [ref=e43]:
+        - generic [ref=e44]: "1"
+        - generic [ref=e45]: 푸엘 멀티플은 무엇을 재는가
+      - paragraph [ref=e46]: 채굴자는 비트코인의 구조적 매도자입니다. 네트워크를 지키는 대가로 새로 발행된 코인을 받고, 전기료와 장비 비용을 충당하려면 일부를 팔아야 합니다. 그래서 채굴자의 채산성은 공급 측 압력을 보여주는 조용한 바로미터입니다. 푸엘 멀티플은 오늘 채굴자 수익을 그 자신의 1년 평균과 비교해 이를 포착합니다.
+      - paragraph [ref=e47]: 논리는 직관적입니다. 사이클 천장 부근에서는 가격이 높아 채굴한 코인 하나하나의 가치가 크고 수익이 정상보다 한참 치솟습니다 — 채굴자는 이익이 풍부하고 팔려는 성향이 강합니다. 사이클 바닥 부근에서는 가격이 낮아 수익이 정상보다 한참 짓눌리고 — 약한 채굴자가 항복하며 최악의 매도 압력이 시장에서 대체로 지나간 상태입니다. 이 배수는 이러한 채굴자 스트레스를 하나의 사이클 위치 숫자로 바꿉니다.
+    - generic [ref=e48]:
+      - heading "2 어떻게 계산되나" [level=2] [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: 어떻게 계산되나
+      - paragraph [ref=e52]: 공식은 하나의 비율입니다. 분자는 그날의 채굴자 수입이고, 분모는 계절적 노이즈가 상쇄되도록 1년 전체를 평활화한 값입니다.
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - text: 분자 —
+          - code [ref=e55]: 오늘 채굴자 수익(달러)
+          - text: (오늘 가격으로 평가한 신규 발행 코인 + 거래 수수료).
+        - listitem [ref=e56]:
+          - text: 분모 — 그 일일 수익의
+          - code [ref=e57]: 365일 이동평균
+          - text: .
+        - listitem [ref=e58]:
+          - text: 결과 —
+          - code [ref=e59]: 푸엘 멀티플 = 오늘 수익 ÷ 365일 평균
+          - text: . 값이 1이면 채굴자가 딱 연평균만큼 벌고 있다는 뜻.
+      - paragraph [ref=e60]: 분모가 천천히 움직이는 연평균이기 때문에, 수익이 최근 평균에서 극적으로 벗어날 때만 배수가 크게 출렁입니다 — 이것이 바로 사이클 극단에서 일어나는 일입니다. 핵심은 이것이 절대 가격 수준이 아니라 채굴자 수익의 상대적 척도라는 점입니다.
+    - generic [ref=e61]:
+      - heading "3 구간으로 읽기" [level=2] [ref=e62]:
+        - generic [ref=e63]: "3"
+        - generic [ref=e64]: 구간으로 읽기
+      - paragraph [ref=e65]: 아래 구간은 과거 사이클에서 도출한 대략적 범위입니다. 정확한 선이 아니라 점진적 변화로 받아들이고, 큰 추세 맥락에서 읽으세요.
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e69]: 약 0.5 아래
+          - generic [ref=e70]: 바닥권. 채굴자 수익이 연평균보다 한참 낮은 국면 — 채굴자가 압박받고 약한 곳이 항복함. 역사적으로 더 나은 장기 분할 매수 영역에 속함.
+        - generic [ref=e71]:
+          - generic [ref=e73]: 약 0.5~1
+          - generic [ref=e74]: 평균 이하의 채굴자 수입. 회복 초기나 분할 매수 영역인 경우가 많음 — 압박은 완화되지만 추세는 아직 확인되지 않음.
+        - generic [ref=e75]:
+          - generic [ref=e77]: 약 1~4
+          - generic [ref=e78]: 채굴자 수입이 연평균을 웃도는 국면. 추세가 살아 확장하는 시장 — 모멘텀은 더 갈 수 있지만 깊은 가치 진입 구간은 지났음.
+        - generic [ref=e79]:
+          - generic [ref=e81]: 약 4 위
+          - generic [ref=e82]: 천장권. 채굴자 수익이 정상보다 한참 높은 국면 — 채굴자 이익이 풍부해 매도 성향. 정확한 고점 판정이 아니라 리스크 관리 경고.
+    - generic [ref=e83]:
+      - heading "4 매수 타이밍에 쓰는 법" [level=2] [ref=e84]:
+        - generic [ref=e85]: "4"
+        - generic [ref=e86]: 매수 타이밍에 쓰는 법
+      - paragraph [ref=e87]: 푸엘 멀티플은 일상적 방아쇠가 아니라 느린 사이클 나침반으로 쓸 때 가장 좋습니다. 낮은 구간으로 내려갔다가 위로 돌아서기 시작하면 역사적으로 하락장 후반과 겹쳤고, 완벽한 바닥을 기다리기보다 인내심 있게 분할 매수(DCA)하는 것이 더 보람 있었던 맥락입니다. 높은 구간으로 밀어 올라가면 공격적으로 추가하기보다 리스크를 점검하고 추격 매수를 자제하라는 신호입니다.
+      - generic [ref=e88]:
+        - generic [ref=e89]: 실전 팁
+        - paragraph [ref=e90]: 이것은 며칠이 아니라 몇 달 단위의 신호입니다. 정확한 전환점을 짚어주리라 기대하지 마세요. 밸류에이션·온체인 지표와 함께 보고, 여러 지표가 일치할 때 극단값에 더 무게를 두세요.
+    - generic [ref=e91]:
+      - heading "5 한계와 흔한 오해" [level=2] [ref=e92]:
+        - generic [ref=e93]: "5"
+        - generic [ref=e94]: 한계와 흔한 오해
+      - paragraph [ref=e95]: 구조적 유의점이 둘 있습니다. 첫째, 반감기는 블록 보상을 절반으로 급감시켜 채굴자 수익을 하룻밤에 깎고 365일 기준선을 한동안 왜곡합니다. 둘째, 채굴자가 전체 매도에서 차지하는 비중이 비트코인 초기보다 작아져 배수의 신호가 예전만큼 강하지 않습니다. 가장 흔한 실수는 낮은 값을 정확한 바닥으로 받아들이는 것인데, 이것은 넓은 사이클 잣대이며 낮은 값이 돌아서기 전에 더 낮게 흐를 수 있습니다. 단독 타이밍 도구가 아니라 여러 느린 입력 중 하나로 읽으세요.
+    - generic [ref=e96]:
+      - heading "+ 함께 보면 좋은 지표" [level=2] [ref=e97]:
+        - generic [ref=e98]: +
+        - generic [ref=e99]: 함께 보면 좋은 지표
+      - generic [ref=e100]:
+        - link "해시레이트 네트워크 총 채굴 능력과 채굴자 건전성." [ref=e101] [cursor=pointer]:
+          - /url: hash-rate.html
+          - generic [ref=e102]: 해시레이트
+          - generic [ref=e103]: 네트워크 총 채굴 능력과 채굴자 건전성.
+        - link "MVRV-Z 점수 가격이 평균 매입가 대비 고평가인지 저평가인지." [ref=e104] [cursor=pointer]:
+          - /url: mvrv-z-score.html
+          - generic [ref=e105]: MVRV-Z 점수
+          - generic [ref=e106]: 가격이 평균 매입가 대비 고평가인지 저평가인지.
+        - link "전체 지표 보기 지표 가이드 전체로 돌아가기." [ref=e107] [cursor=pointer]:
+          - /url: ../guide.html
+          - generic [ref=e108]: 전체 지표 보기
+          - generic [ref=e109]: 지표 가이드 전체로 돌아가기.
+    - generic [ref=e110]:
+      - heading "? 자주 묻는 질문" [level=2] [ref=e111]:
+        - generic [ref=e112]: "?"
+        - generic [ref=e113]: 자주 묻는 질문
+      - generic [ref=e114]:
+        - group [ref=e115]:
+          - generic "Q 푸엘 멀티플이 낮으면 무조건 사야 하나요? +" [ref=e116] [cursor=pointer]:
+            - generic [ref=e117]: Q
+            - generic [ref=e118]: 푸엘 멀티플이 낮으면 무조건 사야 하나요?
+            - text: +
+        - group [ref=e119]:
+          - generic "Q 푸엘 멀티플은 무엇을 보는 지표인가요? +" [ref=e120] [cursor=pointer]:
+            - generic [ref=e121]: Q
+            - generic [ref=e122]: 푸엘 멀티플은 무엇을 보는 지표인가요?
+            - text: +
+        - group [ref=e123]:
+          - generic "Q 반감기가 푸엘 멀티플에 영향을 주나요? +" [ref=e124] [cursor=pointer]:
+            - generic [ref=e125]: Q
+            - generic [ref=e126]: 반감기가 푸엘 멀티플에 영향을 주나요?
+            - text: +
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - heading "오늘의 지표 값 확인하기" [level=3] [ref=e129]
+        - paragraph [ref=e130]: 대시보드에서 실시간 푸엘 멀티플 값과 종합 타이밍 점수를 확인하세요.
+      - link "대시보드 열기 →" [ref=e131] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=e132]:
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - link "BTC 타이밍 레이더" [ref=e136] [cursor=pointer]:
+            - /url: ../about.html
+            - text: BTC 타이밍 레이더
+          - paragraph [ref=e139]: 비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다. 데이터 기반의 객관적 시장 해석을 제공합니다.
+        - generic [ref=e140]:
+          - heading "메뉴" [level=4] [ref=e141]
+          - link "대시보드" [ref=e142] [cursor=pointer]:
+            - /url: ../index.html
+          - link "지표 가이드" [ref=e143] [cursor=pointer]:
+            - /url: ../guide.html
+          - link "문의" [ref=e144] [cursor=pointer]:
+            - /url: ../contact.html
+        - generic [ref=e145]:
+          - heading "정책 · 커뮤니티" [level=4] [ref=e146]
+          - link "개인정보처리방침" [ref=e147] [cursor=pointer]:
+            - /url: ../privacy.html
+          - link "투자 면책조항" [ref=e148] [cursor=pointer]:
+            - /url: ../disclaimer.html
+          - link "텔레그램 채널" [ref=e149] [cursor=pointer]:
+            - /url: https://t.me/+Q9AJzzunwnAxMzhl
+      - generic [ref=e150]:
+        - generic [ref=e151]: © 2024 BTC 투자 타이밍 레이더. All rights reserved.
+        - generic [ref=e152]: 매일 09:05 KST 자동 갱신

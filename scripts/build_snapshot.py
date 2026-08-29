@@ -37,6 +37,7 @@ ENDPOINTS = [
     "/api/ai/news-sentiment",
     "/api/analysis/score-history",   # 종합점수·BTC 180일 시계열 (대형 오버레이 차트용)
     "/api/report/signal-accuracy",   # 매수 신호 사후 적중률·base rate·lift (신호 검증 패널용)
+    "/api/report/shadow-threshold",  # 그림자 임계값(70) vs 실전(65) lift 비교 (관찰 전용 패널용)
     "/api/analysis/scores",          # 복합 분석 점수 38종 (한글/영문 표시명 포함 — 전문가 분석 패널용)
     "/api/expert/rainbow-chart",     # 레인보우 차트 존 (로그회귀 적정가 대비 괴리)
     "/api/analysis/mayer-multiple",  # Mayer Multiple 현재값 + 90일 시계열
