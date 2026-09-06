@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-06T14:01:25Z",
+  "updatedAt": "2026-09-06T14:21:32Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.47",
       "btcClose": "79878.53",
       "macd": {
-        "macdLine": "3195.78",
-        "signalLine": "3358.40",
-        "histogram": "-162.62",
+        "macdLine": "3178.72",
+        "signalLine": "3354.99",
+        "histogram": "-176.27",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001875",
       "ivRv": {
-        "iv": "34.40",
+        "iv": "32.01",
         "rv": "47.00",
-        "spread": "-12.61",
+        "spread": "-14.99",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2077,9 +2077,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 75887,
-      "vsizeMb": "40.35",
-      "totalFeeBtc": "0.0695",
+      "txCount": 73438,
+      "vsizeMb": "39.81",
+      "totalFeeBtc": "0.0625",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2115,10 +2115,10 @@
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41080,
-      "nodeCount": 17438,
-      "capacityBtc": "4898.2676",
-      "avgChannelSizeBtc": "0.119237",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -3781,63 +3781,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "79807.70",
-      "openInterestUsd": "8515375589.16998800",
-      "longAccountRatio": "0.5137",
-      "shortAccountRatio": "0.4863",
-      "downsideLiquidationUsd": "4374348440.16",
-      "upsideLiquidationUsd": "4141027149.01",
+      "currentPrice": "79595.60",
+      "openInterestUsd": "8502395623.95980000",
+      "longAccountRatio": "0.5128",
+      "shortAccountRatio": "0.4872",
+      "downsideLiquidationUsd": "4360028475.97",
+      "upsideLiquidationUsd": "4142367147.99",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "71826.93",
+          "price": "71636.04",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1749739376.06"
+          "notionalUsd": "1744011390.39"
         },
         {
-          "price": "87788.47",
+          "price": "87555.16",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1656410859.61"
+          "notionalUsd": "1656946859.20"
         },
         {
-          "price": "76615.39",
+          "price": "76411.78",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1531021954.05"
+          "notionalUsd": "1526009966.59"
         },
         {
-          "price": "83000.01",
+          "price": "82779.42",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1449359502.15"
+          "notionalUsd": "1449828501.80"
         },
         {
-          "price": "78211.55",
+          "price": "78003.69",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "874869688.03"
+          "notionalUsd": "872005695.19"
         },
         {
-          "price": "81403.85",
+          "price": "81187.51",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "828205429.80"
+          "notionalUsd": "828473429.60"
         },
         {
-          "price": "79009.62",
+          "price": "78799.64",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "218717422.01"
+          "notionalUsd": "218001423.80"
         },
         {
-          "price": "80605.78",
+          "price": "80391.56",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "207051357.45"
+          "notionalUsd": "207118357.40"
         }
       ],
       "errorMessage": null
@@ -5266,7 +5266,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-09-06T13:41:18.472714Z",
+      "generatedAt": "2026-09-06T14:21:31.208595Z",
       "compositeScore": 65,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5275,37 +5275,44 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a moderate bullish sentiment with strong accumulation indicators."
+          "content": "Market sentiment shows a slight bullish trend with accumulation favored, but caution is advised due to mixed indicators."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance may limit altcoin performance."
+          "content": "High BTC dominance at 59 may limit altcoin growth."
         },
         {
           "type": "RISK",
-          "content": "Elevated funding rates could indicate over-leverage in the market."
+          "content": "NUPL at 0.34 indicates potential profit-taking pressure."
         },
         {
           "type": "ACTION",
-          "content": "Consider taking profits on long positions to mitigate risk."
+          "content": "Consider accumulating BTC while monitoring altcoin performance."
         },
         {
           "type": "ACTION",
-          "content": "Monitor altcoin performance closely for potential entry points."
+          "content": "Watch for changes in market sentiment and adjust positions accordingly."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-06T13:05:02.291494Z",
-      "compositeScore": "-0.025",
+      "generatedAt": "2026-09-06T14:05:01.163946Z",
+      "compositeScore": "0.000",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Better and Coinbaseâs bitcoin-backed mortgages can reuse borrowersâ collateral",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/09/06/better-and-coinbase-s-bitcoin-backed-mortgages-can-reuse-borrowers-collateral",
+          "publishedAt": "2026-09-06T14:00:00Z",
+          "score": "0.2"
+        },
         {
           "title": "Timing the bitcoin market is exciting but nearly impossible. Here's why",
           "source": "CoinDesk",
@@ -5332,7 +5339,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/05/xrp-ledger-has-fewer-active-accounts-but-bigger-trades-and-more-value",
           "publishedAt": "2026-09-05T05:30:45Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Southeast Asiaâs crypto funding rebounds to $680 million as investors focus on mature firms",
@@ -5353,14 +5360,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/04/from-warning-to-listing-uk-s-largest-wealth-platform-opens-access-to-crypto-etns",
           "publishedAt": "2026-09-04T14:23:11Z",
-          "score": "0.6"
+          "score": "0.3"
         },
         {
-          "title": "U.S. Sheriffâs association shifts opposition stance to Clarity Act to 'neutral'",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/09/04/u-s-sheriff-s-association-shifts-opposition-stance-to-clarity-act-to-neutral",
-          "publishedAt": "2026-09-04T14:12:34Z",
-          "score": "0.1"
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-06T13:24:43Z",
+          "score": "0.0"
+        },
+        {
+          "title": "Satoshi-era Bitcoin wakes after 16 years of dormancy as 600 BTC moves",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/satoshi-era-bitcoin-wakes-16-years-600-btc-moves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-06T13:01:48Z",
+          "score": "0.6"
         },
         {
           "title": "Tether-backed Orionx to shut down after audit flags $7M custody gap",
@@ -5368,13 +5382,6 @@
           "url": "https://cointelegraph.com/news/orionx-shut-down-7-million-move-outside-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-06T09:07:08Z",
           "score": "-0.5"
-        },
-        {
-          "title": "Here’s what happened in crypto today",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-05T11:16:19Z",
-          "score": "0.0"
         },
         {
           "title": "Poland upholds crypto bill veto as Zondacrypto scandal widens",
@@ -5395,14 +5402,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/surprise-labor-market-print-sends-bitcoin-back-below-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-04T20:30:47Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Pineapple Financial puts $1B in mortgage records on Injective",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/pineapple-financial-puts-1b-in-mortgage-records-on-injective?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-04T19:31:38Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "FinCEN ties $13B in crypto scams to non-US operations",
@@ -5410,13 +5417,6 @@
           "url": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-04T19:22:26Z",
           "score": "-0.7"
-        },
-        {
-          "title": "Crypto Biz: AI took a back seat when Bitcoin started climbing",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-biz-bitcoin-miners-strategy-strive-bitmine-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-04T17:22:58Z",
-          "score": "0.3"
         }
       ],
       "errorMessage": null
@@ -6250,8 +6250,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 179170.97,
-      "currentPrice": 80559.85,
-      "deviationPct": -55.04,
+      "currentPrice": 80406.56,
+      "deviationPct": -55.12,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6450,9 +6450,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 69979.57,
-      "currentPrice": 80559.85,
-      "priceToSthRatio": 1.1512,
-      "premiumPct": 15.12,
+      "currentPrice": 80406.56,
+      "priceToSthRatio": 1.149,
+      "premiumPct": 14.9,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
