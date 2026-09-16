@@ -77,6 +77,13 @@ for ep in ENDPOINTS:
     data[key] = get(ep)
     print(f"  {'OK' if data[key].get('hasData') else 'NG'}  {ep}")
 
+# 앱 다운 가드: NG가 절반을 넘으면(정상 상태는 2/48) 빈 스냅샷으로 사이트를 덮지 않는다.
+# 2026-09-16 사고 — 앱이 꺼진 4시간 동안 48/48 NG 스냅샷이 그대로 푸시돼 공개 사이트가 빈 화면.
+ng_count = sum(1 for v in data.values() if not v.get("hasData"))
+if ng_count > len(data) // 2:
+    print(f"\n[build_snapshot] ABORT: {ng_count}/{len(data)} endpoints NG — app looks down, keeping last snapshot")
+    sys.exit(2)
+
 snapshot = {"hasData": True, "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "data": data}
 with open(OUT, "w", encoding="utf-8") as f:
     json.dump(snapshot, f, ensure_ascii=False, indent=2)
