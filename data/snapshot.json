@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-18T13:02:50Z",
+  "updatedAt": "2026-09-18T13:23:01Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "76426.05",
       "macd": {
-        "macdLine": "862.20",
-        "signalLine": "1442.47",
-        "histogram": "-580.27",
+        "macdLine": "873.98",
+        "signalLine": "1444.82",
+        "histogram": "-570.85",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001918",
       "ivRv": {
-        "iv": "25.08",
+        "iv": "28.91",
         "rv": "43.00",
-        "spread": "-17.93",
+        "spread": "-14.10",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -3766,63 +3766,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "77956.60",
-      "openInterestUsd": "8400096345.40877150",
-      "longAccountRatio": "0.5546",
-      "shortAccountRatio": "0.4454",
-      "downsideLiquidationUsd": "4658693433.16",
-      "upsideLiquidationUsd": "3741402912.25",
+      "currentPrice": "78111.00",
+      "openInterestUsd": "8407234844.59040000",
+      "longAccountRatio": "0.5527",
+      "shortAccountRatio": "0.4473",
+      "downsideLiquidationUsd": "4646678698.61",
+      "upsideLiquidationUsd": "3760556145.99",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "70160.94",
+          "price": "70299.90",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1863477373.27"
+          "notionalUsd": "1858671479.44"
         },
         {
-          "price": "85752.26",
+          "price": "85922.10",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1496561164.90"
+          "notionalUsd": "1504222458.39"
         },
         {
-          "price": "74838.34",
+          "price": "74986.56",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1630542701.61"
+          "notionalUsd": "1626337544.51"
         },
         {
-          "price": "81074.86",
+          "price": "81235.44",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1309491019.29"
+          "notionalUsd": "1316194651.09"
         },
         {
-          "price": "76397.47",
+          "price": "76548.78",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "931738686.63"
+          "notionalUsd": "929335739.72"
         },
         {
-          "price": "79515.73",
+          "price": "79673.22",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "748280582.45"
+          "notionalUsd": "752111229.20"
         },
         {
-          "price": "77177.03",
+          "price": "77329.89",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "232934671.66"
+          "notionalUsd": "232333934.93"
         },
         {
-          "price": "78736.17",
+          "price": "78892.11",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "187070145.61"
+          "notionalUsd": "188027807.30"
         }
       ],
       "errorMessage": null
@@ -5283,76 +5283,83 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-18T12:19:40.135841Z",
-      "compositeScore": "0.194",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-09-18T13:05:03.560723Z",
+      "compositeScore": "0.256",
+      "label": "POSITIVE",
+      "labelDisplay": "긍정",
+      "labelHexColor": "#10B981",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "DHSâs predictive policing is unconstitutional, un-American and should be stopped",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/opinion/2026/09/18/dhs-s-predictive-policing-is-unconstitutional-un-american-and-should-be-stopped",
+          "publishedAt": "2026-09-18T13:00:00Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "ECB President Christine Lagarde intervened to block Binanceâs EU MiCA license: WSJ",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/09/18/ecb-president-christine-lagarde-intervened-to-block-binance-s-eu-mica-license-wsj",
+          "publishedAt": "2026-09-18T12:57:06Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Zcash targets November upgrade to make private payments up to three times faster",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/09/18/zcash-targets-november-upgrade-to-make-private-payments-up-to-three-times-faster",
+          "publishedAt": "2026-09-18T12:50:01Z",
+          "score": "0.4"
+        },
         {
           "title": "XRP on the brink of a golden cross as focus switches to altcoins",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/09/18/xrp-on-the-brink-of-a-golden-cross-as-focus-switches-to-altcoins",
           "publishedAt": "2026-09-18T11:15:00Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "Layer-2 and DeFi tokens lead broad crypto advance as post-Fed hike nerves fade",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/18/layer-2-and-defi-tokens-lead-broad-crypto-advance-as-post-fed-hike-nerves-fade",
           "publishedAt": "2026-09-18T10:33:05Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Bitcoin weathers September storm as rate hikes and Clarity act setback test bulls",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/18/bitcoin-weathers-september-storm-as-rate-hikes-and-clarity-act-setback-test-bulls",
           "publishedAt": "2026-09-18T10:07:33Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Live updates: HYPE leads altcoin rally as bitcoin recovers toward $78,000",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/09/18/live-updates-hype-leads-altcoin-rally-as-bitcoin-recovers-toward-usd78-000",
           "publishedAt": "2026-09-18T09:49:51Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "SBI Group backs payments firm dtcpay in $25 million funding round",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/18/sbi-group-backs-payments-firm-dtcpay-in-usd25-million-funding-round",
           "publishedAt": "2026-09-18T07:37:32Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Ethereum Institutional signals support for Ethlabs’ motion to reduce Ethereum block times",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/ethereum-institutional-support-ethlabs-reduce-ethereum-block-times?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-18T12:40:04Z",
           "score": "0.4"
-        },
-        {
-          "title": "Iranâs Strait of Hormuz toll booth ran through a bitcoin exchange, U.S. says",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/09/18/iran-s-strait-of-hormuz-toll-booth-ran-through-a-bitcoin-exchange-u-s-says",
-          "publishedAt": "2026-09-18T06:52:23Z",
-          "score": "-0.2"
-        },
-        {
-          "title": "Solana speeds up blocks by 17%, but transaction capacity stays the same",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/09/18/solana-speeds-up-blocks-by-17-but-transaction-capacity-stays-the-same",
-          "publishedAt": "2026-09-18T06:16:57Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Corporate treasuries bought just 5,900 bitcoin in 3 months. Other demand signals look weak, too.",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/09/18/corporate-treasuries-bought-just-5-900-bitcoin-in-3-months-other-demand-signals-look-weak-too",
-          "publishedAt": "2026-09-18T05:43:21Z",
-          "score": "-0.5"
         },
         {
           "title": "HYPE hits record above $90 as Hyperliquid launches manual borrowing",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/hype-ath-above-90-hyperliquid-manual-borrowing-lending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T11:54:24Z",
-          "score": "0.7"
+          "score": "0.5"
         },
         {
           "title": "Dragonfly’s Qureshi calls for end to Zcash dev fund after 2028",
@@ -5366,7 +5373,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-adds-to-bull-market-hopes-as-price-metric-prints-fourth-ever-bullish-cross?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T10:46:17Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Stablecoin payments firm dtcpay closes $25M round with SBI backing",
@@ -5387,7 +5394,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-cycle-bottom-58k-james-check?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T08:47:20Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5395,13 +5402,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T06:00:00Z",
           "score": "0.0"
-        },
-        {
-          "title": "Zcash targets November for NU7 mainnet upgrade with 25-second blocks",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/zcash-nu7-november-mainnet-activation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-18T04:51:29Z",
-          "score": "0.1"
         }
       ],
       "errorMessage": null
@@ -6235,8 +6235,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 181126.66,
-      "currentPrice": 77733.9,
-      "deviationPct": -57.08,
+      "currentPrice": 77798.27,
+      "deviationPct": -57.05,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6435,9 +6435,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 71207.8,
-      "currentPrice": 77733.9,
-      "priceToSthRatio": 1.0916,
-      "premiumPct": 9.16,
+      "currentPrice": 77798.27,
+      "priceToSthRatio": 1.0926,
+      "premiumPct": 9.26,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
