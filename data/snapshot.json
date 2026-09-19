@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-19T13:03:51Z",
+  "updatedAt": "2026-09-19T13:23:56Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "80872.01",
       "macd": {
-        "macdLine": "1301.75",
-        "signalLine": "1454.74",
-        "histogram": "-152.99",
+        "macdLine": "1295.21",
+        "signalLine": "1453.44",
+        "histogram": "-158.23",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001968",
       "ivRv": {
-        "iv": "32.80",
+        "iv": "32.58",
         "rv": "43.00",
-        "spread": "-10.20",
+        "spread": "-10.43",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2083,9 +2083,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 80358,
-      "vsizeMb": "41.17",
-      "totalFeeBtc": "0.0853",
+      "txCount": 81799,
+      "vsizeMb": "41.49",
+      "totalFeeBtc": "0.0908",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2095,26 +2095,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.88"
+          "sharePct": "24.81"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.02"
+          "sharePct": "20.14"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.84"
+          "sharePct": "15.86"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.04"
+          "sharePct": "9.05"
         },
         {
           "name": "SpiderPool",
           "sharePct": "7.68"
         }
       ],
-      "top3Concentration": "60.74",
+      "top3Concentration": "60.81",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3783,63 +3783,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "81305.10",
-      "openInterestUsd": "8789159876.81520000",
-      "longAccountRatio": "0.4868",
-      "shortAccountRatio": "0.5132",
-      "downsideLiquidationUsd": "4278563028.03",
-      "upsideLiquidationUsd": "4510596848.78",
+      "currentPrice": "81211.70",
+      "openInterestUsd": "8783611882.19806300",
+      "longAccountRatio": "0.4855",
+      "shortAccountRatio": "0.5145",
+      "downsideLiquidationUsd": "4264443568.81",
+      "upsideLiquidationUsd": "4519168313.39",
       "cascadeDirection": "BALANCED",
       "cascadeLabel": "균형",
       "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
       "levels": [
         {
-          "price": "73174.59",
+          "price": "73090.53",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1711425211.21"
+          "notionalUsd": "1705777427.52"
         },
         {
-          "price": "89435.61",
+          "price": "89332.87",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1804238739.51"
+          "notionalUsd": "1807667325.36"
         },
         {
-          "price": "78052.90",
+          "price": "77963.23",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1497497059.81"
+          "notionalUsd": "1492555249.08"
         },
         {
-          "price": "84557.30",
+          "price": "84460.17",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1578708897.07"
+          "notionalUsd": "1581708909.69"
         },
         {
-          "price": "79679.00",
+          "price": "79587.47",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "855712605.61"
+          "notionalUsd": "852888713.76"
         },
         {
-          "price": "82931.20",
+          "price": "82835.93",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "902119369.76"
+          "notionalUsd": "903833662.68"
         },
         {
-          "price": "80492.05",
+          "price": "80399.58",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "213928151.40"
+          "notionalUsd": "213222178.44"
         },
         {
-          "price": "82118.15",
+          "price": "82023.82",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "225529842.44"
+          "notionalUsd": "225958415.67"
         }
       ],
       "errorMessage": null
@@ -5300,8 +5300,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-19T12:05:02.078510Z",
-      "compositeScore": "0.063",
+      "generatedAt": "2026-09-19T13:05:02.783483Z",
+      "compositeScore": "0.131",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5309,25 +5309,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "'The orange tie stays': Michael Saylor responds to venture capitalist's bitcoin obituary",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/09/19/the-orange-tie-stays-michael-saylor-responds-to-venture-capitalist-s-bitcoin-obituary",
+          "publishedAt": "2026-09-19T12:13:57Z",
+          "score": "0.2"
+        },
+        {
           "title": "Robinhood Chain fees collapse 97% even as transactions stay near record highs",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/19/robinhood-chain-fees-collapse-97-even-as-transactions-stay-near-record-highs",
           "publishedAt": "2026-09-19T12:00:00Z",
-          "score": "0.2"
+          "score": "0.5"
         },
         {
           "title": "Why Wall Street giants build tokenization money for institutions, not regular consumers",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/15/why-wall-street-giants-build-tokenization-money-for-institutions-not-regular-consumers",
           "publishedAt": "2026-09-19T12:00:00Z",
-          "score": "-0.3"
+          "score": "0.0"
         },
         {
           "title": "CFTC sends crypto rules to White House to review as Congress stalls on Clarity Act",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/09/18/cftc-sends-crypto-rules-to-white-house-to-review-as-congress-stalls-on-clarity-act",
           "publishedAt": "2026-09-18T15:16:37Z",
-          "score": "0.1"
+          "score": "-0.3"
         },
         {
           "title": "Crypto tech provider Haruko hit by cyberattack affecting 15 clients, some funds lost",
@@ -5358,25 +5365,18 @@
           "score": "0.4"
         },
         {
-          "title": "XRP on the brink of a golden cross as focus switches to altcoins",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/09/18/xrp-on-the-brink-of-a-golden-cross-as-focus-switches-to-altcoins",
-          "publishedAt": "2026-09-18T11:15:00Z",
-          "score": "0.3"
-        },
-        {
           "title": "Bastion wins conditional OCC approval for national trust bank charter",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bastion-wins-conditional-occ-approval-for-national-trust-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-19T11:47:29Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Hong Kong jails former banker over $1.6B false credit, cryptocurrency bribes: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hong-kong-jails-former-banker-over-16b-false-credit-cryptocurrency-bribes-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-19T07:50:58Z",
-          "score": "-0.6"
+          "score": "-0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5390,35 +5390,35 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coinbase-files-to-bring-single-stock-perpetual-futures-to-us-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T19:53:54Z",
-          "score": "0.3"
+          "score": "0.6"
         },
         {
           "title": "Binance launches 24/7 FX perps with weekend pricing system",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-expands-tradfi-push-with-247-foreign-exchange-perpetuals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T19:06:30Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Crypto stocks rebound after CLARITY Act selloff",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-stocks-rebound-after-clarity-selloff-as-us-regulators-move-ahead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T17:55:57Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "CFTC submits crypto market regulation plan for White House review",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/cftc-submits-crypto-market-regulation-plan-for-white-house-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T16:04:22Z",
-          "score": "0.1"
+          "score": "0.3"
         },
         {
           "title": "Bitcoin hits $81K as US bond yields rebound on global oil woes",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-hits-81k-as-us-bond-yields-rebound-on-global-oil-woes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-18T15:35:59Z",
-          "score": "0.6"
+          "score": "0.8"
         }
       ],
       "errorMessage": null
@@ -6252,8 +6252,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 181290.43,
-      "currentPrice": 79975.51,
-      "deviationPct": -55.89,
+      "currentPrice": 79912.83,
+      "deviationPct": -55.92,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6452,9 +6452,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 71216.61,
-      "currentPrice": 79975.51,
-      "priceToSthRatio": 1.123,
-      "premiumPct": 12.3,
+      "currentPrice": 79912.83,
+      "priceToSthRatio": 1.1221,
+      "premiumPct": 12.21,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
