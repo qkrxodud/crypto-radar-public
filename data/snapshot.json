@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-20T02:48:46Z",
+  "updatedAt": "2026-09-20T03:08:52Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.38",
       "btcClose": "81212.09",
       "macd": {
-        "macdLine": "1392.34",
-        "signalLine": "1449.80",
-        "histogram": "-57.46",
+        "macdLine": "1385.02",
+        "signalLine": "1448.33",
+        "histogram": "-63.32",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
-        "adx": "47.3",
-        "plusDi": "36.3",
-        "minusDi": "13.3",
+        "adx": "47.2",
+        "plusDi": "36.1",
+        "minusDi": "13.9",
         "strength": "STRONG_UP",
         "strengthLabel": "강한 상승 추세",
         "trending": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001972",
       "ivRv": {
-        "iv": "32.11",
+        "iv": "32.90",
         "rv": "38.00",
-        "spread": "-5.90",
+        "spread": "-5.11",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2083,9 +2083,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 71440,
-      "vsizeMb": "38.79",
-      "totalFeeBtc": "0.0573",
+      "txCount": 76575,
+      "vsizeMb": "39.73",
+      "totalFeeBtc": "0.0654",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2095,36 +2095,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "25.22"
+          "sharePct": "25.27"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.35"
+          "sharePct": "19.41"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.84"
+          "sharePct": "15.71"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.80"
+          "sharePct": "8.88"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "8.21"
+          "sharePct": "8.20"
         }
       ],
-      "top3Concentration": "60.41",
+      "top3Concentration": "60.39",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41080,
-      "nodeCount": 17438,
-      "capacityBtc": "4898.2676",
-      "avgChannelSizeBtc": "0.119237",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -3716,7 +3716,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "257529497765.89123",
+      "totalMarketCapUsd": "257528929421.28262",
       "marketCap30dAgoUsd": "256520979422.86047",
       "growth30dPercent": "0.39",
       "signal": "STABLE",
@@ -3787,63 +3787,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "80575.00",
-      "openInterestUsd": "8670302038.93740000",
-      "longAccountRatio": "0.4780",
-      "shortAccountRatio": "0.5220",
-      "downsideLiquidationUsd": "4144404374.61",
-      "upsideLiquidationUsd": "4525897664.33",
-      "cascadeDirection": "BALANCED",
-      "cascadeLabel": "균형",
-      "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
+      "currentPrice": "80480.10",
+      "openInterestUsd": "8767283490.05400000",
+      "longAccountRatio": "0.4720",
+      "shortAccountRatio": "0.5280",
+      "downsideLiquidationUsd": "4138157807.31",
+      "upsideLiquidationUsd": "4629125682.75",
+      "cascadeDirection": "UPSIDE",
+      "cascadeLabel": "숏스퀴즈 위험",
+      "cascadeDescription": "숏 포지션 편중 — 가격 상승 시 숏 청산(숏스퀴즈) 위험",
       "levels": [
         {
-          "price": "72517.50",
+          "price": "72432.09",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1657761749.84"
+          "notionalUsd": "1655263122.92"
         },
         {
-          "price": "88632.50",
+          "price": "88528.11",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1810359065.73"
+          "notionalUsd": "1851650273.10"
         },
         {
-          "price": "77352.00",
+          "price": "77260.90",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1450541531.11"
+          "notionalUsd": "1448355232.56"
         },
         {
-          "price": "83798.00",
+          "price": "83699.30",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1584064182.51"
+          "notionalUsd": "1620193988.96"
         },
         {
-          "price": "78963.50",
+          "price": "78870.50",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "828880874.92"
+          "notionalUsd": "827631561.46"
         },
         {
-          "price": "82186.50",
+          "price": "82089.70",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "905179532.87"
+          "notionalUsd": "925825136.55"
         },
         {
-          "price": "79769.25",
+          "price": "79675.30",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "207220218.73"
+          "notionalUsd": "206907890.37"
         },
         {
-          "price": "81380.75",
+          "price": "81284.90",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "226294883.22"
+          "notionalUsd": "231456284.14"
         }
       ],
       "errorMessage": null
@@ -5240,7 +5240,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-09-20T02:30:04.571327Z",
+      "generatedAt": "2026-09-20T03:00:01.950467Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5249,23 +5249,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 혼재되어 있다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 기술적 지표는 긍정적이나 온체인 데이터는 혼조세를 보임."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 71로 탐욕 상태에 가까워 조정 가능성이 있다."
+          "content": "공포탐욕 지수가 71로 탐욕 상태에 있어 조정 가능성 존재."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -72.31로 매도 압력이 존재한다."
+          "content": "거래소 순유입이 -72.31로 매도 압력이 증가하고 있음."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 주의 깊게 모니터링하고 포지션 조정 고려."
+          "content": "단기 매매 전략을 고려하며 시장 변동성을 주의 깊게 관찰할 것."
         },
         {
           "type": "ACTION",
-          "content": "리스크 관리 차원에서 손절매 설정을 권장."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산할 필요가 있음."
         }
       ],
       "errorMessage": null
@@ -5304,7 +5304,7 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-20T02:05:00.176196Z",
+      "generatedAt": "2026-09-20T03:05:04.153460Z",
       "compositeScore": "0.019",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
@@ -6256,8 +6256,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 181454.32,
-      "currentPrice": 79244.29,
-      "deviationPct": -56.33,
+      "currentPrice": 79067.79,
+      "deviationPct": -56.43,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6456,9 +6456,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 71216.61,
-      "currentPrice": 79244.29,
-      "priceToSthRatio": 1.1127,
-      "premiumPct": 11.27,
+      "currentPrice": 79067.79,
+      "priceToSthRatio": 1.1102,
+      "premiumPct": 11.02,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
@@ -6487,7 +6487,7 @@
       "isAvailable": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": -0.3,
+      "compositeScore": 0.1,
       "extreme": {
         "name": "NEUTRAL",
         "description": "중립"
