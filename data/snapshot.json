@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-21T08:45:19Z",
+  "updatedAt": "2026-09-21T09:05:27Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -57,9 +57,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "81408.01",
       "macd": {
-        "macdLine": "1716.10",
-        "signalLine": "1516.57",
-        "histogram": "199.54",
+        "macdLine": "1749.98",
+        "signalLine": "1523.34",
+        "histogram": "226.64",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": true
@@ -421,9 +421,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001922",
       "ivRv": {
-        "iv": "49.05",
+        "iv": "48.38",
         "rv": "33.00",
-        "spread": "+16.05",
+        "spread": "+15.38",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2081,9 +2081,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 81972,
-      "vsizeMb": "41.09",
-      "totalFeeBtc": "0.1041",
+      "txCount": 85625,
+      "vsizeMb": "43.37",
+      "totalFeeBtc": "0.1650",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2093,15 +2093,15 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.42"
+          "sharePct": "24.44"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.23"
+          "sharePct": "20.16"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.15"
+          "sharePct": "16.16"
         },
         {
           "name": "ViaBTC",
@@ -2109,10 +2109,10 @@
         },
         {
           "name": "SpiderPool",
-          "sharePct": "8.27"
+          "sharePct": "8.28"
         }
       ],
-      "top3Concentration": "60.80",
+      "top3Concentration": "60.76",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3765,63 +3765,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "83466.60",
-      "openInterestUsd": "9157419313.18320000",
-      "longAccountRatio": "0.4793",
-      "shortAccountRatio": "0.5207",
-      "downsideLiquidationUsd": "4389151076.81",
-      "upsideLiquidationUsd": "4768268236.37",
-      "cascadeDirection": "BALANCED",
-      "cascadeLabel": "균형",
-      "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
+      "currentPrice": "83832.70",
+      "openInterestUsd": "9239118910.58791000",
+      "longAccountRatio": "0.4711",
+      "shortAccountRatio": "0.5289",
+      "downsideLiquidationUsd": "4352548918.78",
+      "upsideLiquidationUsd": "4886569991.81",
+      "cascadeDirection": "UPSIDE",
+      "cascadeLabel": "숏스퀴즈 위험",
+      "cascadeDescription": "숏 포지션 편중 — 가격 상승 시 숏 청산(숏스퀴즈) 위험",
       "levels": [
         {
-          "price": "75119.94",
+          "price": "75449.43",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1755660430.72"
+          "notionalUsd": "1741019567.51"
         },
         {
-          "price": "91813.26",
+          "price": "92215.97",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1907307294.55"
+          "notionalUsd": "1954627996.72"
         },
         {
-          "price": "80127.94",
+          "price": "80479.39",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1536202876.88"
+          "notionalUsd": "1523392121.57"
         },
         {
-          "price": "86805.26",
+          "price": "87186.01",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1668893882.73"
+          "notionalUsd": "1710299497.13"
         },
         {
-          "price": "81797.27",
+          "price": "82156.05",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "877830215.36"
+          "notionalUsd": "870509783.76"
         },
         {
-          "price": "85135.93",
+          "price": "85509.35",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "953653647.27"
+          "notionalUsd": "977313998.36"
         },
         {
-          "price": "82631.93",
+          "price": "82994.37",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "219457553.84"
+          "notionalUsd": "217627445.94"
         },
         {
-          "price": "84301.27",
+          "price": "84671.03",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "238413411.82"
+          "notionalUsd": "244328499.59"
         }
       ],
       "errorMessage": null
@@ -5142,7 +5142,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-09-21T08:30:00.390630Z",
+      "generatedAt": "2026-09-21T09:00:00.283190Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5166,32 +5166,40 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-09-21T08:25:12.125507Z",
+      "generatedAt": "2026-09-21T09:05:25.948960Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
       "toneHexColor": "#FBBF24",
-      "modelName": "gpt-4o-mini (fallback)",
+      "modelName": "gpt-4o-mini",
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "Composite 60 pts, Neutral tone. Rule-based summary provided (LLM unavailable)."
+          "content": "The market is currently neutral with mixed indicators suggesting cautious optimism."
+        },
+        {
+          "type": "RISK",
+          "content": "High BTC dominance may limit altcoin growth."
+        },
+        {
+          "type": "RISK",
+          "content": "Elevated NVT indicates potential overvaluation."
         },
         {
           "type": "ACTION",
-          "content": "Buy-favorable zone -- maintain or slightly increase DCA allocation."
+          "content": "Monitor market sentiment closely for shifts."
         },
         {
           "type": "ACTION",
-          "content": "BTC dominance above 55% -- consider trimming altcoin allocation."
+          "content": "Consider diversifying into altcoins if conditions improve."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-21T08:05:03.004229Z",
-      "compositeScore": "0.069",
+      "generatedAt": "2026-09-21T09:05:02.398890Z",
+      "compositeScore": "0.169",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5199,11 +5207,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Hana Bank issues South Koreaâs first digital bond using Euroclearâs blockchain",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/09/21/hana-bank-issues-south-korea-s-first-digital-bond-using-euroclear-s-blockchain",
+          "publishedAt": "2026-09-21T08:49:59Z",
+          "score": "0.1"
+        },
+        {
+          "title": "Live updates: Bitcoin rockets above $83,500 as falling oil lifts risk assets",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/09/21/live-updates-bitcoin-rises-above-usd82-000-as-falling-oil-lifts-risk-assets",
+          "publishedAt": "2026-09-21T08:39:26Z",
+          "score": "0.8"
+        },
+        {
           "title": "Kalshi faces âfake crypto volumeâ allegations as critic flags identical $5,500 trades",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/21/kalshi-s-crypto-chief-responds-to-fake-crypto-volume-allegations-as-critic-flags-identical-usd5-500-trades",
           "publishedAt": "2026-09-21T06:20:47Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Bitcoin rises above $81,000, while NEAR jumps 23% on Zcash swap traffic",
@@ -5224,7 +5246,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/20/gemini-s-stock-is-down-80-from-its-ipo-that-s-reviving-takeover-speculation",
           "publishedAt": "2026-09-20T14:54:48Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Coinbase, Robinhood, Circle could be early winners of SEC's tokenized-stock push, analysts say",
@@ -5239,20 +5261,6 @@
           "url": "https://www.coindesk.com/markets/2026/09/18/crypto-traders-braced-for-a-total-wipeout-this-week-but-bitcoin-had-other-plans",
           "publishedAt": "2026-09-20T12:00:00Z",
           "score": "0.4"
-        },
-        {
-          "title": "Clarity Act, we hardly knew ye: We look at what was in the bill and what's replacing it",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/news-analysis/2026/09/18/clarity-act-we-hardly-knew-ye-we-look-at-what-was-in-the-bill-and-what-s-replacing-it",
-          "publishedAt": "2026-09-19T16:00:00Z",
-          "score": "0.0"
-        },
-        {
-          "title": "'We have lost control': Crypto pioneer warns AI could trigger systemic banking and infrastructure shocks",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/09/17/we-have-lost-control-crypto-pioneer-warns-ai-could-trigger-systemic-banking-and-infrastructure-shocks",
-          "publishedAt": "2026-09-19T14:00:00Z",
-          "score": "-0.7"
         },
         {
           "title": "ZetaChain holders approve plan to wind down L1, move ZETA to Solana",
@@ -5280,35 +5288,35 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-reclaims-50-week-moving-average-is-the-bear-market-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-21T04:29:59Z",
-          "score": "0.6"
+          "score": "0.9"
         },
         {
           "title": "Hana Bank taps Euroclear blockchain for $100M bond issuance: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hana-bank-euroclear-blockchain-100m-bond?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-21T04:27:32Z",
-          "score": "0.3"
+          "score": "0.1"
         },
         {
           "title": "North Korean fake recruiters infect 30K devices, steal $10.7M in crypto",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/north-korean-fake-recruiters-infect-30k-devices-steal-107m-in-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-21T01:42:53Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Who needs CLARITY anyway? ARB could see 70X increase: Hodler’s Digest",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/who-needs-clarity-anyway-arb-could-see-70x-increase-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-20T23:37:39Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "Trump says US will form ‘AI Force’ and appoint AI czar: Reports",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trump-says-us-will-form-ai-force-and-appoint-ai-czar-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-20T12:00:52Z",
-          "score": "0.1"
+          "score": "0.0"
         }
       ],
       "errorMessage": null
@@ -6142,8 +6150,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 181618.34,
-      "currentPrice": 81445.14,
-      "deviationPct": -55.16,
+      "currentPrice": 81816.87,
+      "deviationPct": -54.95,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6342,9 +6350,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 71262.19,
-      "currentPrice": 81445.14,
-      "priceToSthRatio": 1.1429,
-      "premiumPct": 14.29,
+      "currentPrice": 81816.87,
+      "priceToSthRatio": 1.1481,
+      "premiumPct": 14.81,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
