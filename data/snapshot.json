@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-24T08:51:41Z",
+  "updatedAt": "2026-09-24T13:55:10Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "84460.00",
       "macd": {
-        "macdLine": "2480.67",
-        "signalLine": "2076.42",
-        "histogram": "404.25",
+        "macdLine": "2527.32",
+        "signalLine": "2085.75",
+        "histogram": "441.58",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
-        "adx": "53.5",
-        "plusDi": "38.4",
-        "minusDi": "13.9",
+        "adx": "53.3",
+        "plusDi": "37.9",
+        "minusDi": "14.9",
         "strength": "STRONG_UP",
         "strengthLabel": "강한 상승 추세",
         "trending": true
@@ -421,9 +421,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001800",
       "ivRv": {
-        "iv": "34.82",
+        "iv": "37.41",
         "rv": "43.00",
-        "spread": "-8.19",
+        "spread": "-5.60",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2080,31 +2080,52 @@
       "hasData": true
     },
     "api_bitcoin_mempool": {
-      "hasData": false,
-      "txCount": null,
-      "vsizeMb": null,
-      "totalFeeBtc": null,
-      "congestionLevel": null,
-      "congestionClass": null,
-      "errorMessage": "No mempool data available"
+      "hasData": true,
+      "txCount": 86908,
+      "vsizeMb": "43.88",
+      "totalFeeBtc": "0.1422",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
+      "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
-      "hasData": false,
-      "pools": null,
-      "top3Concentration": null,
-      "signal": null,
-      "signalClass": null,
-      "errorMessage": "No mining pool data available"
+      "hasData": true,
+      "pools": [
+        {
+          "name": "Foundry USA",
+          "sharePct": "24.80"
+        },
+        {
+          "name": "AntPool",
+          "sharePct": "20.92"
+        },
+        {
+          "name": "F2Pool",
+          "sharePct": "15.61"
+        },
+        {
+          "name": "ViaBTC",
+          "sharePct": "9.49"
+        },
+        {
+          "name": "SpiderPool",
+          "sharePct": "7.45"
+        }
+      ],
+      "top3Concentration": "61.33",
+      "signal": "집중도 위험 -- 51% 공격 리스크 상승",
+      "signalClass": "text-red-400",
+      "errorMessage": null
     },
     "api_bitcoin_lightning": {
-      "hasData": false,
-      "channelCount": null,
-      "nodeCount": null,
-      "capacityBtc": null,
-      "avgChannelSizeBtc": null,
-      "signal": null,
-      "signalClass": null,
-      "errorMessage": "No Lightning Network data available"
+      "hasData": true,
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
+      "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
+      "signalClass": "text-gray-300",
+      "errorMessage": null
     },
     "api_dashboard_buy_timing": {
       "hasData": true,
@@ -3686,9 +3707,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "258905525483.14337",
+      "totalMarketCapUsd": "258704336615.33617",
       "marketCap30dAgoUsd": "256766622716.80992",
-      "growth30dPercent": "0.83",
+      "growth30dPercent": "0.75",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -3757,63 +3778,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "83422.70",
-      "openInterestUsd": "8089440844.40040000",
-      "longAccountRatio": "0.5446",
-      "shortAccountRatio": "0.4554",
-      "downsideLiquidationUsd": "4405509483.86",
-      "upsideLiquidationUsd": "3683931360.54",
+      "currentPrice": "83996.90",
+      "openInterestUsd": "8051381008.79647800",
+      "longAccountRatio": "0.5613",
+      "shortAccountRatio": "0.4387",
+      "downsideLiquidationUsd": "4519240160.24",
+      "upsideLiquidationUsd": "3532140848.56",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "75080.43",
+          "price": "75597.21",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1762203793.54"
+          "notionalUsd": "1807696064.09"
         },
         {
-          "price": "91764.97",
+          "price": "92396.59",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1473572544.22"
+          "notionalUsd": "1412856339.42"
         },
         {
-          "price": "80085.79",
+          "price": "80637.02",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1541928319.35"
+          "notionalUsd": "1581734056.08"
         },
         {
-          "price": "86759.61",
+          "price": "87356.78",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1289375976.19"
+          "notionalUsd": "1236249297.00"
         },
         {
-          "price": "81754.25",
+          "price": "82316.96",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "881101896.77"
+          "notionalUsd": "903848032.05"
         },
         {
-          "price": "85091.15",
+          "price": "85676.84",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "736786272.11"
+          "notionalUsd": "706428169.71"
         },
         {
-          "price": "82588.47",
+          "price": "83156.93",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "220275474.19"
+          "notionalUsd": "225962008.01"
         },
         {
-          "price": "84256.93",
+          "price": "84836.87",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "184196568.03"
+          "notionalUsd": "176607042.43"
         }
       ],
       "errorMessage": null
@@ -5210,7 +5231,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-09-24T08:30:02.184804Z",
+      "generatedAt": "2026-09-24T13:55:04.935724Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5219,30 +5240,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 심리를 보이며, 알트코인 시장이 약세를 나타내고 있다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 약간의 공포가 감지된다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 59로 높은 수준을 유지하고 있어 알트코인에 대한 압박이 우려된다."
+          "content": "시장의 공포탐욕 지수가 71로 높은 탐욕을 나타내고 있어 조정 가능성이 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 71로 탐욕 상태에 있어 조정 가능성이 존재한다."
+          "content": "BTC 도미넌스가 59로 알트코인에 대한 투자 심리가 약해질 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 고려하여 알트코인 비중을 조정하라."
+          "content": "단기적인 변동성을 고려하여 포트폴리오를 재조정할 것을 권장한다."
         },
         {
           "type": "ACTION",
-          "content": "시장 변동성을 주의 깊게 관찰하고 손절매 전략을 준비하라."
+          "content": "주요 지표를 지속적으로 모니터링하며 매수 기회를 탐색하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-09-24T08:51:39.716405Z",
+      "generatedAt": "2026-09-24T13:55:06.719866Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5251,11 +5272,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with a mix of bullish and bearish indicators."
+          "content": "The market is neutral with mixed signals indicating potential for cautious trading."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance may limit altcoin growth potential."
+          "content": "High BTC dominance at 59 may limit altcoin growth."
         },
         {
           "type": "RISK",
@@ -5274,8 +5295,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-24T08:24:21.202827Z",
-      "compositeScore": "-0.044",
+      "generatedAt": "2026-09-24T13:55:09.083474Z",
+      "compositeScore": "-0.094",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5283,11 +5304,39 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin slides to $83,300 as bond yields hit highest level since 2007",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/09/24/bitcoin-steadies-near-usd84-000-after-bond-yields-hit-a-2007-high",
+          "publishedAt": "2026-09-24T10:30:28Z",
+          "score": "-0.7"
+        },
+        {
+          "title": "Traders price in 4 Fed rate hikes by June 2027 as bitcoin slides below $83,000",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/09/24/traders-are-pricing-in-4-fed-rate-hikes-as-bitcoin-slides-below-usd83-000",
+          "publishedAt": "2026-09-24T10:11:51Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "The data proves it: Bitcoin doesn't care about rising bond yields over long-term",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/09/24/the-data-proves-it-bitcoin-doesn-t-care-about-rising-bond-yields-over-long-term",
+          "publishedAt": "2026-09-24T09:48:09Z",
+          "score": "0.2"
+        },
+        {
+          "title": "EU financial watchdogs warn quantum computing poses imminent threat to blockchain encryption",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/09/24/eu-financial-watchdogs-warn-quantum-computing-poses-imminent-threat-to-blockchain-encryption",
+          "publishedAt": "2026-09-24T09:32:48Z",
+          "score": "-0.8"
+        },
+        {
           "title": "Trump administration weighs a global stablecoin plan to cement dollar's dominance",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/24/trump-administration-weighs-a-global-stablecoin-plan-to-cement-dollar-s-dominance",
           "publishedAt": "2026-09-24T06:33:23Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "A week of AI coding cut a quantum-safe bitcoin transaction estimate from $320 to $66",
@@ -5308,35 +5357,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/23/kalshi-says-it-is-not-being-investigated-by-the-cftc-over-trading-activity",
           "publishedAt": "2026-09-23T19:04:52Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Former Hack VC partner Hsin-Ju Chuang found dead following public dispute with the firm",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/09/23/former-hack-vc-partner-hsin-ju-chuang-found-dead-following-public-dispute-with-firm",
-          "publishedAt": "2026-09-23T18:59:36Z",
-          "score": "-0.8"
-        },
-        {
-          "title": "White House adviser defends President Trump's crypto ties in wake of Clarity Act defeat",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/09/23/white-house-adviser-defends-president-trump-s-crypto-ties-in-wake-of-clarity-act-defeat",
-          "publishedAt": "2026-09-23T18:04:11Z",
           "score": "0.0"
         },
         {
-          "title": "Inside the FBIâs little-known annual crypto crime gathering",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/09/23/inside-the-fbi-s-little-known-annual-crypto-crime-gathering",
-          "publishedAt": "2026-09-23T15:26:35Z",
-          "score": "-0.3"
+          "title": "EU banking watchdog calls for crypto lending rules under MiCA",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/eu-eba-crypto-lending-defi-mica-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-24T10:30:00Z",
+          "score": "-0.4"
         },
         {
-          "title": "Crypto Long & Short: Inside the chain settling $150 billion of stablecoins a week",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/coindesk-indices/2026/09/23/crypto-long-and-short-inside-the-chain-settling-usd150-billion-of-stablecoins-a-week",
-          "publishedAt": "2026-09-23T15:07:21Z",
+          "title": "Bitcoin falls below $84K as 10-year Treasury yield hits 19-year high",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-fall-84k-treasury-yield-hits-19-year-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-24T10:15:03Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "Bitcoin ETFs add $347M as BTC falls below $84K after topping $87K",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-etf-347-million-inflow-btc-below-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-24T09:32:44Z",
+          "score": "0.3"
+        },
+        {
+          "title": "Institutions held crypto through 50% drawdown, Bitwise finds",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/institutions-held-crypto-50-percent-drawdown-bitwise?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-24T09:18:16Z",
           "score": "0.4"
+        },
+        {
+          "title": "Australia says OpenAI agent hacked government site before Altman warning",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/australia-openai-agent-government-hack-altman-warning?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-24T08:29:11Z",
+          "score": "0.0"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5357,42 +5413,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-overseas-dollar-stablecoins-trump-administration?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-24T04:44:12Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Kalshi says CFTC hasn’t contacted it over ‘unusual’ $5B trading activity",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/kalshi-says-cftc-hasnt-contacted-it-over-unusual-5b-trading-activity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-24T00:53:09Z",
           "score": "0.2"
-        },
-        {
-          "title": "Ex-SEC acting chair: Agency dropped crypto cases to avoid issues with credibility",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/sec-mark-uyeda-agency-dropped-crypto-cases?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-23T21:47:52Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Former Hack VC partner Hsin-Ju Chuang found dead at 37",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/former-hack-vc-partner-hsin-ju-chuang-found-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-23T20:43:56Z",
-          "score": "-0.9"
-        },
-        {
-          "title": "US lawmakers from gaming states urge SCOTUS to take up Kalshi case",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/us-lawmakers-gaming-states-supreme-court-kalshi-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-23T20:28:34Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Trump reveals up to $100K Strategy stock purchase in ethics filing",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/trump-discloses-up-to-100k-strategy-stock-purchase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-23T19:05:14Z",
-          "score": "0.0"
         }
       ],
       "errorMessage": null
@@ -6226,8 +6247,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 182111.12,
-      "currentPrice": 83968.95,
-      "deviationPct": -53.89,
+      "currentPrice": 84278.76,
+      "deviationPct": -53.72,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6426,9 +6447,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 71422.04,
-      "currentPrice": 83968.95,
-      "priceToSthRatio": 1.1757,
-      "premiumPct": 17.57,
+      "currentPrice": 84278.76,
+      "priceToSthRatio": 1.18,
+      "premiumPct": 18.0,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
@@ -6449,7 +6470,7 @@
       "hasData": true
     },
     "api_expert_dry_powder": {
-      "gaugeScore": 91.9,
+      "gaugeScore": 91.6,
       "level": {
         "name": "HIGH_FUEL",
         "description": "높은 매수연료 — 강세 기대"
@@ -6457,7 +6478,7 @@
       "isAvailable": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": 4.4,
+      "compositeScore": 5.2,
       "extreme": {
         "name": "NEUTRAL",
         "description": "중립"
