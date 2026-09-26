@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-26T01:08:19Z",
+  "updatedAt": "2026-09-26T01:28:26Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "84060.01",
       "macd": {
-        "macdLine": "2545.15",
-        "signalLine": "2322.56",
-        "histogram": "222.60",
+        "macdLine": "2545.56",
+        "signalLine": "2322.64",
+        "histogram": "222.93",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -425,7 +425,7 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001651",
       "ivRv": {
-        "iv": "28.14",
+        "iv": "28.15",
         "rv": "43.00",
         "spread": "-14.86",
         "label": "저평가"
@@ -2085,9 +2085,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 79089,
-      "vsizeMb": "41.55",
-      "totalFeeBtc": "0.1155",
+      "txCount": 75088,
+      "vsizeMb": "40.26",
+      "totalFeeBtc": "0.0704",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2097,26 +2097,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.25"
+          "sharePct": "24.46"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.97"
+          "sharePct": "20.86"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.42"
+          "sharePct": "15.31"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.46"
+          "sharePct": "9.35"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "8.74"
+          "sharePct": "8.63"
         }
       ],
-      "top3Concentration": "60.64",
+      "top3Concentration": "60.63",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3786,63 +3786,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "83906.50",
-      "openInterestUsd": "7972535901.65169000",
+      "currentPrice": "83916.90",
+      "openInterestUsd": "7978900414.79797300",
       "longAccountRatio": "0.5662",
       "shortAccountRatio": "0.4338",
-      "downsideLiquidationUsd": "4514049827.52",
-      "upsideLiquidationUsd": "3458486074.14",
+      "downsideLiquidationUsd": "4517653414.86",
+      "upsideLiquidationUsd": "3461246999.94",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "75515.85",
+          "price": "75525.21",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1805619931.01"
+          "notionalUsd": "1807061365.94"
         },
         {
-          "price": "92297.15",
+          "price": "92308.59",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1383394429.65"
+          "notionalUsd": "1384498799.98"
         },
         {
-          "price": "80550.24",
+          "price": "80560.22",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1579917439.63"
+          "notionalUsd": "1581178695.20"
         },
         {
-          "price": "87262.76",
+          "price": "87273.58",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1210470125.95"
+          "notionalUsd": "1211436449.98"
         },
         {
-          "price": "82228.37",
+          "price": "82238.56",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "902809965.50"
+          "notionalUsd": "903530682.97"
         },
         {
-          "price": "85584.63",
+          "price": "85595.24",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "691697214.83"
+          "notionalUsd": "692249399.99"
         },
         {
-          "price": "83067.44",
+          "price": "83077.73",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "225702491.38"
+          "notionalUsd": "225882670.74"
         },
         {
-          "price": "84745.57",
+          "price": "84756.07",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "172924303.71"
+          "notionalUsd": "173062350.00"
         }
       ],
       "errorMessage": null
@@ -5271,7 +5271,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-09-26T00:48:12.626541Z",
+      "generatedAt": "2026-09-26T01:28:25.754778Z",
       "compositeScore": 60,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5280,23 +5280,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with moderate bullish indicators but potential risks in volatility and funding rates."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting caution."
         },
         {
           "type": "RISK",
-          "content": "High volatility indicated by a low HV of 0.43."
+          "content": "High BTC dominance may limit altcoin growth."
         },
         {
           "type": "RISK",
-          "content": "Negative funding rates may lead to bearish pressure."
+          "content": "Elevated RSI levels indicate potential overbought conditions."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market trends closely for sudden shifts."
+          "content": "Consider reducing exposure to high-risk assets."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying investments to mitigate risks."
+          "content": "Monitor market sentiment closely for shifts."
         }
       ],
       "errorMessage": null
@@ -6255,8 +6255,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 182440.26,
-      "currentPrice": 83983.62,
-      "deviationPct": -53.97,
+      "currentPrice": 83986.57,
+      "deviationPct": -53.96,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6455,7 +6455,7 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 71636.24,
-      "currentPrice": 83983.62,
+      "currentPrice": 83986.57,
       "priceToSthRatio": 1.1724,
       "premiumPct": 17.24,
       "signal": {
