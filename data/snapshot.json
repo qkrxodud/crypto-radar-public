@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-28T14:46:09Z",
+  "updatedAt": "2026-09-28T15:06:16Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.38",
       "btcClose": "84551.23",
       "macd": {
-        "macdLine": "2413.22",
-        "signalLine": "2446.84",
-        "histogram": "-33.62",
+        "macdLine": "2420.80",
+        "signalLine": "2448.35",
+        "histogram": "-27.55",
         "crossType": "DEAD",
         "crossLabel": "데드크로스",
         "bullish": true
       },
       "adx": {
         "adx": "53.8",
-        "plusDi": "34.8",
-        "minusDi": "16.6",
+        "plusDi": "34.7",
+        "minusDi": "16.7",
         "strength": "STRONG_UP",
         "strengthLabel": "강한 상승 추세",
         "trending": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.001578",
       "ivRv": {
-        "iv": "38.16",
+        "iv": "39.31",
         "rv": "38.00",
-        "spread": "+0.16",
+        "spread": "+1.31",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -450,15 +450,15 @@
     "api_dashboard_cycle": {
       "hasData": true,
       "halvingCycle": {
-        "position": "61.1%",
+        "position": "61.2%",
         "progressWidth": 61,
         "phaseLabel": "과열 구간 (Q3)",
         "phaseLabelEn": "Euphoria (Q3)",
         "phaseBadgeClass": "bg-warning text-dark",
         "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
         "phaseDescriptionEn": "The historical cycle top forms. Consider taking profits.",
-        "formattedElapsed": "891일 경과",
-        "formattedRemaining": "567일 남음",
+        "formattedElapsed": "892일 경과",
+        "formattedRemaining": "566일 남음",
         "cycleNumber": 4,
         "lastHalvingDate": "2024-04-20",
         "nextHalvingDate": "2028-04-17",
@@ -2089,9 +2089,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 81108,
-      "vsizeMb": "42.35",
-      "totalFeeBtc": "0.0953",
+      "txCount": 76698,
+      "vsizeMb": "41.44",
+      "totalFeeBtc": "0.0762",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2101,36 +2101,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.30"
+          "sharePct": "24.31"
         },
         {
           "name": "AntPool",
-          "sharePct": "21.31"
+          "sharePct": "21.33"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.64"
+          "sharePct": "15.67"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.36"
+          "sharePct": "9.33"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "7.77"
+          "sharePct": "7.74"
         }
       ],
-      "top3Concentration": "61.25",
+      "top3Concentration": "61.31",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41080,
-      "nodeCount": 17438,
-      "capacityBtc": "4898.2676",
-      "avgChannelSizeBtc": "0.119237",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -3782,63 +3782,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "82900.10",
-      "openInterestUsd": "7925087539.40844900",
-      "longAccountRatio": "0.5697",
-      "shortAccountRatio": "0.4303",
-      "downsideLiquidationUsd": "4514922371.20",
-      "upsideLiquidationUsd": "3410165168.21",
+      "currentPrice": "82966.80",
+      "openInterestUsd": "7879418341.14600000",
+      "longAccountRatio": "0.5744",
+      "shortAccountRatio": "0.4256",
+      "downsideLiquidationUsd": "4525937895.15",
+      "upsideLiquidationUsd": "3353480445.99",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "74610.09",
+          "price": "74670.12",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1805968948.48"
+          "notionalUsd": "1810375158.06"
         },
         {
-          "price": "91190.11",
+          "price": "91263.48",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1364066067.28"
+          "notionalUsd": "1341392178.40"
         },
         {
-          "price": "79584.10",
+          "price": "79648.13",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1580222829.92"
+          "notionalUsd": "1584078263.30"
         },
         {
-          "price": "86216.10",
+          "price": "86285.47",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1193557808.87"
+          "notionalUsd": "1173718156.10"
         },
         {
-          "price": "81242.10",
+          "price": "81307.46",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "902984474.24"
+          "notionalUsd": "905187579.03"
         },
         {
-          "price": "84558.10",
+          "price": "84626.14",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "682033033.64"
+          "notionalUsd": "670696089.20"
         },
         {
-          "price": "82071.10",
+          "price": "82137.13",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "225746118.56"
+          "notionalUsd": "226296894.76"
         },
         {
-          "price": "83729.10",
+          "price": "83796.47",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "170508258.41"
+          "notionalUsd": "167674022.30"
         }
       ],
       "errorMessage": null
@@ -5235,7 +5235,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-09-28T14:30:02.969257Z",
+      "generatedAt": "2026-09-28T15:00:03.657082Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5244,30 +5244,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 높지만 온체인 지표는 혼조세를 보이고 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 혼재되어 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 59로 높은 수준을 유지하고 있어 알트코인에 대한 투자 위험이 존재한다."
+          "content": "높은 BTC 도미넌스(59)는 알트코인에 대한 투자 심리를 위축시킬 수 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -53.60으로, 매도 압력이 커질 가능성이 있다."
+          "content": "거래소 순유입이 -53.60으로, 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "현재의 중립적인 시장 상황에서는 보수적인 접근이 필요하다."
+          "content": "시장의 변동성을 고려해 포트폴리오를 재조정할 필요가 있다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 고려하여 리스크를 분산시키는 것이 좋다."
+          "content": "단기적인 가격 변동에 대비해 손절매 설정을 권장한다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-09-28T14:25:59.739353Z",
+      "generatedAt": "2026-09-28T15:06:15.453481Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5276,31 +5276,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is neutral with mixed signals indicating potential for both growth and risk."
+          "content": "The market shows a neutral stance with mixed indicators suggesting potential caution."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance at 59 may limit altcoin performance."
+          "content": "High BTC dominance at 59 may limit altcoin growth."
         },
         {
           "type": "RISK",
-          "content": "Elevated fear and greed index at 74 suggests potential for market volatility."
+          "content": "Elevated fear and greed index at 74 indicates potential market volatility."
         },
         {
           "type": "ACTION",
-          "content": "Monitor BTC price movements closely for potential entry points."
+          "content": "Monitor market sentiment closely for shifts in fear and greed."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into altcoins if market sentiment shifts positively."
+          "content": "Consider diversifying into altcoins if BTC dominance decreases."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-28T14:05:02.561600Z",
-      "compositeScore": "0.000",
+      "generatedAt": "2026-09-28T15:05:02.750345Z",
+      "compositeScore": "0.031",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5312,14 +5312,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/28/ai-agents-could-drain-cheap-bank-deposits-apollo-s-torsten-slok-warns",
           "publishedAt": "2026-09-28T13:06:11Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
-          "title": "Chainlink updates its crypto bridge tech months after a $292 million hack at a rival exposed risks",
+          "title": "Chainlink launches new version of its crypto bridge tech 'CCIP' to give apps more control over their security",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/28/chainlink-updates-its-crypto-bridge-tech-months-after-a-usd292-million-hack-shook-the-industry",
           "publishedAt": "2026-09-28T12:30:00Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "THORChain rejects Bitget request to block hacker as $6 million moves to bitcoin",
@@ -5340,27 +5340,41 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/28/crypto-friendly-institution-franklin-templeton-brings-its-tokenized-collateral-service-to-bybit",
           "publishedAt": "2026-09-28T11:00:00Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Bitcoin falls to $83,000 while altcoins unwind Friday's rally",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-falls-to-usd83-000-while-altcoins-unwind-friday-s-rally",
           "publishedAt": "2026-09-28T10:15:04Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
-          "title": "Live updates: Bitcoin trims losses as oil eases on hopes of U.S. and Iran talks",
+          "title": "Live updates: Bitcoin slips back to $83,000 as bond yields surge to new cycle highs",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/28/live-updates-bitcoin-sinks-below-usd83-000-as-iran-talks-stall-and-oil-climbs",
           "publishedAt": "2026-09-28T10:02:37Z",
-          "score": "0.3"
+          "score": "-0.8"
         },
         {
           "title": "Eyes on key U.S. employment data as crypto bulls take a breather: Crypto Week Ahead",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-rally-takes-a-breather-ahead-of-key-u-s-employment-data-crypto-week-ahead",
           "publishedAt": "2026-09-28T09:45:55Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Bitget CEO says $388M hack exploited third-party security vulnerability",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitget-388m-hack-third-party-security-vulnerability?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-28T14:46:21Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "MiCA focus shifts from rulemaking to supervision, ESMA chair says",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/mica-shift-rulemaking-to-supervision-esma-chair?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-28T14:02:45Z",
           "score": "0.0"
         },
         {
@@ -5375,28 +5389,28 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/altseason-is-coming-and-traders-are-more-discerning-this-time?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-28T13:30:00Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Strategy buys 1,665 Bitcoin for $143M as BTC stack hits 847,666",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/strategy-1665-bitcoin-buy-holdings-847666-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-28T12:38:01Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "BTC price eyes best Q3 in nine years: Three things to know in Bitcoin this week",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/btc-price-eyes-best-q3-in-nine-years-three-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-28T12:21:50Z",
-          "score": "0.7"
+          "score": "0.5"
         },
         {
           "title": "Bitget resumes Bitcoin withdrawals as hacker swaps ETH via THORChain",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-28T11:05:24Z",
-          "score": "-0.3"
+          "score": "0.3"
         },
         {
           "title": "Hong Kong regulators expand financial reporting oversight to licensed crypto firms",
@@ -5404,20 +5418,6 @@
           "url": "https://cointelegraph.com/news/hong-kong-sfc-afrc-crypto-financial-reporting-mou?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-28T09:58:31Z",
           "score": "0.2"
-        },
-        {
-          "title": "Scammers steal $2M in ETH as fake GIWA network fools DYORSWAP",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/fake-giwa-blockchain-scam-drains-2m-eth?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-28T09:19:50Z",
-          "score": "-0.7"
-        },
-        {
-          "title": "Bitcoin drops under $83K as liquidity hunting keeps bulls from targeting yearly open",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-drops-under-83k-as-liquidity-hunting-keeps-bulls-from-targeting-yearly-open?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-28T09:03:20Z",
-          "score": "-0.5"
         }
       ],
       "errorMessage": null
@@ -6250,9 +6250,9 @@
       "label": "저가 매수",
       "color": "#1a7432",
       "action": "분할 매수",
-      "regressionPrice": 182769.89,
-      "currentPrice": 83139.04,
-      "deviationPct": -54.51,
+      "regressionPrice": 182934.89,
+      "currentPrice": 83198.69,
+      "deviationPct": -54.52,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6451,9 +6451,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 72158.48,
-      "currentPrice": 83139.04,
-      "priceToSthRatio": 1.1522,
-      "premiumPct": 15.22,
+      "currentPrice": 83198.69,
+      "priceToSthRatio": 1.153,
+      "premiumPct": 15.3,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
