@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-28T04:02:18Z",
+  "updatedAt": "2026-09-28T04:22:29Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,11 +61,11 @@
       "historicalVolatility": "0.38",
       "btcClose": "84551.23",
       "macd": {
-        "macdLine": "2438.41",
-        "signalLine": "2451.87",
-        "histogram": "-13.47",
-        "crossType": "DEAD",
-        "crossLabel": "데드크로스",
+        "macdLine": "2455.48",
+        "signalLine": "2455.29",
+        "histogram": "0.19",
+        "crossType": "NONE",
+        "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.001578",
       "ivRv": {
-        "iv": "30.15",
+        "iv": "28.86",
         "rv": "38.00",
-        "spread": "-7.85",
+        "spread": "-9.15",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2089,9 +2089,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 71302,
-      "vsizeMb": "40.09",
-      "totalFeeBtc": "0.0637",
+      "txCount": 71449,
+      "vsizeMb": "40.03",
+      "totalFeeBtc": "0.0621",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2101,36 +2101,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.62"
+          "sharePct": "24.52"
         },
         {
           "name": "AntPool",
-          "sharePct": "21.51"
+          "sharePct": "21.41"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.28"
+          "sharePct": "15.38"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.94"
+          "sharePct": "9.05"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "7.74"
+          "sharePct": "7.84"
         }
       ],
-      "top3Concentration": "61.41",
+      "top3Concentration": "61.31",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41080,
-      "nodeCount": 17438,
-      "capacityBtc": "4898.2676",
-      "avgChannelSizeBtc": "0.119237",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -3711,7 +3711,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "258920190396.94589",
+      "totalMarketCapUsd": "258920057390.2541",
       "marketCap30dAgoUsd": "257436310637.25527",
       "growth30dPercent": "0.58",
       "signal": "STABLE",
@@ -3782,63 +3782,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "83212.30",
-      "openInterestUsd": "7995858331.46850000",
-      "longAccountRatio": "0.5487",
-      "shortAccountRatio": "0.4513",
-      "downsideLiquidationUsd": "4387327466.48",
-      "upsideLiquidationUsd": "3608530864.99",
+      "currentPrice": "83423.10",
+      "openInterestUsd": "7993575924.29820000",
+      "longAccountRatio": "0.5506",
+      "shortAccountRatio": "0.4494",
+      "downsideLiquidationUsd": "4401262903.92",
+      "upsideLiquidationUsd": "3592313020.38",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "74891.07",
+          "price": "75080.79",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1754930986.59"
+          "notionalUsd": "1760505161.57"
         },
         {
-          "price": "91533.53",
+          "price": "91765.41",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1443412346.00"
+          "notionalUsd": "1436925208.15"
         },
         {
-          "price": "79883.81",
+          "price": "80086.18",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1535564613.27"
+          "notionalUsd": "1540442016.37"
         },
         {
-          "price": "86540.79",
+          "price": "86760.02",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1262985802.75"
+          "notionalUsd": "1257309557.13"
         },
         {
-          "price": "81548.05",
+          "price": "81754.64",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "877465493.30"
+          "notionalUsd": "880252580.78"
         },
         {
-          "price": "84876.55",
+          "price": "85091.56",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "721706173.00"
+          "notionalUsd": "718462604.08"
         },
         {
-          "price": "82380.18",
+          "price": "82588.87",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "219366373.32"
+          "notionalUsd": "220063145.20"
         },
         {
-          "price": "84044.42",
+          "price": "84257.33",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "180426543.25"
+          "notionalUsd": "179615651.02"
         }
       ],
       "errorMessage": null
@@ -5267,7 +5267,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-09-28T03:42:14.156477Z",
+      "generatedAt": "2026-09-28T04:22:28.844845Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5276,31 +5276,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed signals across various indicators."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting cautious optimism."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance could hinder altcoin performance."
+          "content": "High BTC dominance may limit altcoin growth potential."
         },
         {
           "type": "RISK",
-          "content": "Elevated fear and greed index suggests potential volatility."
+          "content": "Elevated funding rates could signal over-leveraged positions."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for shifts in sentiment."
+          "content": "Monitor BTC price movements closely for potential corrections."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into altcoins if BTC dominance decreases."
+          "content": "Consider diversifying into altcoins if market sentiment improves."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-28T03:05:01.713658Z",
-      "compositeScore": "0.025",
+      "generatedAt": "2026-09-28T04:05:00.336379Z",
+      "compositeScore": "0.000",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5308,39 +5308,46 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin, Nasdaq futures decline as Trump wonât rule out more Iran strikes",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-and-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
+          "publishedAt": "2026-09-28T03:58:52Z",
+          "score": "-0.6"
+        },
+        {
           "title": "Vitalik Buterin maps Ethereumâs shift beyond a blockchain in sweeping 2030 vision",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/09/27/vitalik-buterin-maps-ethereum-s-shift-beyond-a-blockchain-in-sweeping-2030-vision",
           "publishedAt": "2026-09-27T14:29:13Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "How months of work on the Clarity Act all fell apart",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/news-analysis/2026/09/27/how-months-of-work-on-the-clarity-act-all-fell-apart",
           "publishedAt": "2026-09-27T12:00:00Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Krakenâs parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
           "publishedAt": "2026-09-26T14:00:00Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Binance deal gives Circle a boost in stablecoin race with Tether, analysts say",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say",
           "publishedAt": "2026-09-26T13:00:00Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Bitget hacker moves $83 million in stolen XRP that Ripple cannot freeze",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
           "publishedAt": "2026-09-26T12:56:41Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
@@ -5357,60 +5364,53 @@
           "score": "0.3"
         },
         {
-          "title": "XRP Ledgerâs Batch upgrade slips to Oct. 9 after validator support resets",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
-          "publishedAt": "2026-09-26T04:30:00Z",
-          "score": "-0.2"
-        },
-        {
           "title": "Newsom signs California ban on public officials issuing memecoins",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-28T02:23:42Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Zano rolls blockchain back a month after Gateway Address exploit",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-28T01:09:22Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "THORChain under fire over Bitget, ETH evolves beyond blockchain: Hodler’s Digest",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/thorchain-under-fire-over-bitget-hack-eth-is-beyond-blockchain-now?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-27T23:43:18Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Australia asks OpenAI, Anthropic chiefs to Senate inquiry on rogue hack: Report  ",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/australia-summons-openai-anthropic-chiefs-to-senate-inquiry-on-health-data-hack-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-27T12:46:28Z",
-          "score": "0.0"
+          "score": "-0.3"
         },
         {
           "title": "Riot Platforms repays $200M credit facility, releases collateral",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/riot-platforms-repays-200m-credit-facility-releases-collateral?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-27T09:57:19Z",
-          "score": "0.5"
+          "score": "0.2"
         },
         {
           "title": "Saylor outlines ‘bill of digital rights’ to help build prosperity in future economy",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/saylor-outlines-bill-of-digital-rights-to-help-build-prosperity-in-future-economy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-27T07:18:42Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Kalshi loses appeal, setting up potential Supreme Court case",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-26T13:21:12Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -6251,8 +6251,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 182769.89,
-      "currentPrice": 83401.35,
-      "deviationPct": -54.37,
+      "currentPrice": 83512.05,
+      "deviationPct": -54.31,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6451,9 +6451,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 72158.48,
-      "currentPrice": 83401.35,
-      "priceToSthRatio": 1.1558,
-      "premiumPct": 15.58,
+      "currentPrice": 83512.05,
+      "priceToSthRatio": 1.1573,
+      "premiumPct": 15.73,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
@@ -6482,7 +6482,7 @@
       "isAvailable": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": 2.8,
+      "compositeScore": 3.2,
       "extreme": {
         "name": "NEUTRAL",
         "description": "중립"
