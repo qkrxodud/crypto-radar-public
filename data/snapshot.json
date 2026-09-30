@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-30T13:03:53Z",
+  "updatedAt": "2026-09-30T13:23:59Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,16 +61,16 @@
       "historicalVolatility": "0.38",
       "btcClose": "83670.00",
       "macd": {
-        "macdLine": "2367.77",
-        "signalLine": "2464.14",
-        "histogram": "-96.37",
+        "macdLine": "2374.32",
+        "signalLine": "2465.45",
+        "histogram": "-91.13",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
-        "adx": "51.8",
-        "plusDi": "33.3",
+        "adx": "51.9",
+        "plusDi": "33.6",
         "minusDi": "14.4",
         "strength": "STRONG_UP",
         "strengthLabel": "강한 상승 추세",
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.001510",
       "ivRv": {
-        "iv": "38.88",
+        "iv": "31.17",
         "rv": "38.00",
-        "spread": "+0.88",
-        "label": "균형"
+        "spread": "-6.83",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 71,
@@ -2089,9 +2089,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 85190,
-      "vsizeMb": "45.22",
-      "totalFeeBtc": "0.1234",
+      "txCount": 86232,
+      "vsizeMb": "45.66",
+      "totalFeeBtc": "0.1363",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2101,26 +2101,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "25.51"
+          "sharePct": "25.58"
         },
         {
           "name": "AntPool",
-          "sharePct": "21.82"
+          "sharePct": "21.89"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.32"
+          "sharePct": "15.27"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.12"
+          "sharePct": "9.05"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "8.05"
+          "sharePct": "8.07"
         }
       ],
-      "top3Concentration": "62.65",
+      "top3Concentration": "62.74",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3790,63 +3790,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "85205.10",
-      "openInterestUsd": "8203046907.27815900",
-      "longAccountRatio": "0.5408",
-      "shortAccountRatio": "0.4592",
-      "downsideLiquidationUsd": "4436207767.46",
-      "upsideLiquidationUsd": "3766839139.82",
+      "currentPrice": "85300.00",
+      "openInterestUsd": "8123214798.18501500",
+      "longAccountRatio": "0.5346",
+      "shortAccountRatio": "0.4654",
+      "downsideLiquidationUsd": "4342670631.11",
+      "upsideLiquidationUsd": "3780544167.08",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "76684.59",
+          "price": "76770.00",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1774483106.98"
+          "notionalUsd": "1737068252.44"
         },
         {
-          "price": "93725.61",
+          "price": "93830.00",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1506735655.93"
+          "notionalUsd": "1512217666.83"
         },
         {
-          "price": "81796.90",
+          "price": "81888.00",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1552672718.61"
+          "notionalUsd": "1519934720.89"
         },
         {
-          "price": "88613.30",
+          "price": "88712.00",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1318393698.94"
+          "notionalUsd": "1323190458.48"
         },
         {
-          "price": "83501.00",
+          "price": "83594.00",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "887241553.49"
+          "notionalUsd": "868534126.22"
         },
         {
-          "price": "86909.20",
+          "price": "87006.00",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "753367827.96"
+          "notionalUsd": "756108833.42"
         },
         {
-          "price": "84353.05",
+          "price": "84447.00",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "221810388.37"
+          "notionalUsd": "217133531.56"
         },
         {
-          "price": "86057.15",
+          "price": "86153.00",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "188341956.99"
+          "notionalUsd": "189027208.35"
         }
       ],
       "errorMessage": null
@@ -5307,8 +5307,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-30T12:05:02.322669Z",
-      "compositeScore": "0.031",
+      "generatedAt": "2026-09-30T13:05:04.196797Z",
+      "compositeScore": "0.063",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5316,25 +5316,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Cardano tapped by Brazilâs state oil giant to track cleaner jet fuel and diesel",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/09/30/embargo-1-pm-utc-cardano-tapped-by-brazil-s-state-oil-giant-to-track-cleaner-jet-fuel-and-diesel",
+          "publishedAt": "2026-09-30T13:00:00Z",
+          "score": "0.2"
+        },
+        {
           "title": "A stronger dollar is a weaker threat to bitcoin than traders think",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/09/30/a-stronger-dollar-is-a-weaker-threat-to-bitcoin-than-traders-think",
           "publishedAt": "2026-09-30T11:20:09Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Bitget hackers move $4 million into Zcashâs private pool, making funds harder to trace",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/30/bitget-hackers-move-usd4-million-into-zcash-s-private-pool-making-funds-harder-to-trace",
           "publishedAt": "2026-09-30T11:04:09Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "The SEC Is finally modernizing transfer-agent rules. Wall Street must not repeat the âpaperwork crisisâ",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/09/30/the-sec-is-finally-modernizing-transfer-agent-rules-wall-street-must-not-repeat-the-paperwork-crisis",
           "publishedAt": "2026-09-30T11:00:00Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "OpenAI, Google and Meta pledge outside AI audits under voluntary White House deal",
@@ -5348,49 +5355,49 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/30/metaplanet-directors-push-back-against-shareholder-fury-over-a-controversial-executive-payout-plan",
           "publishedAt": "2026-09-30T10:28:24Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
-          "title": "Live updates: Standard Chartered initiates ENA coverage, BTC tentative ahead of U.S. inflation data",
+          "title": "Live updates: Bitcoin gains as yields dip following better than hoped inflation numbers",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/30/live-updates-bitcoin-below-usd84-000-ahead-of-pce-inflation-data-micron-earnings",
           "publishedAt": "2026-09-30T10:18:34Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin stalls near $83,000 while lighter drops 17% on Robinhood perps plan",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/30/bitcoin-stalls-near-usd83-000-while-lighter-drops-17-on-robinhood-perps-plan",
           "publishedAt": "2026-09-30T10:11:36Z",
-          "score": "-0.5"
+          "score": "-0.2"
         },
         {
-          "title": "OpenAI seeks $30 billion in funding at whopping $1.4 trillion valuation after delaying IPO",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/09/30/openai-targets-usd1-4-trillion-valuation-and-unveils-dots-ai-agent",
-          "publishedAt": "2026-09-30T08:50:22Z",
-          "score": "0.0"
+          "title": "FCA opens crypto authorization window ahead of 2027 UK regime",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/fca-crypto-authorization-2027-uk-regime?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-30T12:06:04Z",
+          "score": "0.3"
         },
         {
           "title": "Altcoin exchange deposit count jumps 160% in 2 weeks",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/altcoin-exchange-deposits-spike-160-in-two-weeks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-30T11:23:56Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "A single market worth protecting: Getting the MiCA review right",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/opinion/a-single-market-worth-protecting-getting-the-mica-review-right?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-30T11:00:00Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Bitcoin ETFs stretch $3.1B inflow streak as Ether funds turn red",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-etf-streak-9-day-ether-zcash-flip-red?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-30T10:12:28Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Crypto hardware wallets compared for 2026",
@@ -5404,14 +5411,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitget-hack-zero-day-slowmist-investigation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-30T10:05:39Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "European stablecoin issuer AllUnity launches USD stablecoin USDAU",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/allunity-europe-mica-usd-stablecoin-usdau?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-30T07:00:00Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5419,13 +5426,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-30T06:00:00Z",
           "score": "0.0"
-        },
-        {
-          "title": "Kalshi in advanced talks to raise new funding at $40B valuation: Reuters",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/kalshi-in-advanced-talks-to-raise-new-funding-at-40b-valuation-reuters?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-30T05:45:55Z",
-          "score": "0.1"
         }
       ],
       "errorMessage": null
@@ -6259,8 +6259,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 183100.01,
-      "currentPrice": 85026.9,
-      "deviationPct": -53.56,
+      "currentPrice": 85219.75,
+      "deviationPct": -53.46,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6459,9 +6459,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 72797.88,
-      "currentPrice": 85026.9,
-      "priceToSthRatio": 1.168,
-      "premiumPct": 16.8,
+      "currentPrice": 85219.75,
+      "priceToSthRatio": 1.1706,
+      "premiumPct": 17.06,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
