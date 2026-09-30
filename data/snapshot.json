@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-09-30T05:01:02Z",
+  "updatedAt": "2026-09-30T05:21:07Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "83670.00",
       "macd": {
-        "macdLine": "2214.82",
-        "signalLine": "2433.55",
-        "histogram": "-218.73",
+        "macdLine": "2212.93",
+        "signalLine": "2433.17",
+        "histogram": "-220.24",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.001510",
       "ivRv": {
-        "iv": "29.72",
+        "iv": "29.69",
         "rv": "38.00",
-        "spread": "-8.29",
+        "spread": "-8.31",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2089,9 +2089,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 78691,
-      "vsizeMb": "43.30",
-      "totalFeeBtc": "0.0822",
+      "txCount": 79038,
+      "vsizeMb": "42.96",
+      "totalFeeBtc": "0.0733",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2101,26 +2101,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.52"
+          "sharePct": "24.69"
         },
         {
           "name": "AntPool",
-          "sharePct": "22.10"
+          "sharePct": "22.08"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.44"
+          "sharePct": "15.33"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.98"
+          "sharePct": "9.06"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "8.01"
+          "sharePct": "8.00"
         }
       ],
-      "top3Concentration": "62.06",
+      "top3Concentration": "62.10",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3790,63 +3790,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "83295.90",
-      "openInterestUsd": "7739123473.51869400",
-      "longAccountRatio": "0.5822",
-      "shortAccountRatio": "0.4178",
-      "downsideLiquidationUsd": "4505717686.28",
-      "upsideLiquidationUsd": "3233405787.24",
+      "currentPrice": "83256.20",
+      "openInterestUsd": "7741837137.16780000",
+      "longAccountRatio": "0.5825",
+      "shortAccountRatio": "0.4175",
+      "downsideLiquidationUsd": "4509620132.40",
+      "upsideLiquidationUsd": "3232217004.77",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "74966.31",
+          "price": "74930.58",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1802287074.51"
+          "notionalUsd": "1803848052.96"
         },
         {
-          "price": "91625.49",
+          "price": "91581.82",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1293362314.89"
+          "notionalUsd": "1292886801.91"
         },
         {
-          "price": "79964.06",
+          "price": "79925.95",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1577001190.20"
+          "notionalUsd": "1578367046.34"
         },
         {
-          "price": "86627.74",
+          "price": "86586.45",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1131692025.53"
+          "notionalUsd": "1131275951.67"
         },
         {
-          "price": "81629.98",
+          "price": "81591.08",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "901143537.26"
+          "notionalUsd": "901924026.48"
         },
         {
-          "price": "84961.82",
+          "price": "84921.32",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "646681157.45"
+          "notionalUsd": "646443400.95"
         },
         {
-          "price": "82462.94",
+          "price": "82423.64",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "225285884.31"
+          "notionalUsd": "225481006.62"
         },
         {
-          "price": "84128.86",
+          "price": "84088.76",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "161670289.36"
+          "notionalUsd": "161610850.24"
         }
       ],
       "errorMessage": null
@@ -5307,8 +5307,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-09-30T04:05:02.499507Z",
-      "compositeScore": "0.163",
+      "generatedAt": "2026-09-30T05:05:03.105058Z",
+      "compositeScore": "0.156",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5316,39 +5316,46 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin rally shows signs of cooling even as a 'bull score' gauge nears its perfect score",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/09/30/bitcoin-rally-shows-signs-of-cooling-even-as-a-bull-score-gauge-nears-its-perfect-score",
+          "publishedAt": "2026-09-30T04:38:18Z",
+          "score": "-0.4"
+        },
+        {
           "title": "Robinhood adds AI agents, perps and weekend trading in push to win active traders",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/09/29/robinhood-adds-ai-agents-perps-and-weekend-trading-in-push-to-win-active-traders",
           "publishedAt": "2026-09-29T23:00:00Z",
-          "score": "0.3"
+          "score": "0.2"
         },
         {
           "title": "Cboe, S&P Dow Jones may explore tokenized options contracts under extended licensing deal",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/09/29/cboe-s-and-p-dow-jones-may-explore-tokenized-options-contracts-under-extended-licensing-deal",
           "publishedAt": "2026-09-29T18:21:07Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Ethereum users get another way to pay privately as zk.money returns after three years",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/09/29/embargo-12-et-ethereum-users-get-another-way-to-pay-privately-as-zk-money-returns-after-three-years",
           "publishedAt": "2026-09-29T16:00:00Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Democrats killed the Clarity Act",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/09/29/democrats-killed-the-clarity-act",
           "publishedAt": "2026-09-29T14:08:18Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin surging to $100,000 may be in play, after outperforming gold",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/09/29/bitcoin-outperforms-gold-usd100-000-surge-in-play",
           "publishedAt": "2026-09-29T11:34:55Z",
-          "score": "0.8"
+          "score": "0.7"
         },
         {
           "title": "Zcash developers begin moving Tachyon code into faster private-payment software",
@@ -5365,11 +5372,11 @@
           "score": "0.6"
         },
         {
-          "title": "Live updates: Bitcoin turns lower as rates rise, consumer confidence plunges",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/09/29/live-updates-bitcoin-rebounds-above-usd84-000-as-treasury-yields-steady",
-          "publishedAt": "2026-09-29T10:14:41Z",
-          "score": "-0.5"
+          "title": "Illinois draft crypto tax rules detail DeFi, stablecoin treatment",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/illinois-crypto-tax-rules-defi-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-09-30T04:29:28Z",
+          "score": "-0.2"
         },
         {
           "title": "Crypto.com AI agent still in ‘stealth mode’ nearly 8 months after Super Bowl debut",
@@ -5390,14 +5397,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trump-accord-calls-for-tech-firms-to-self-police-their-own-frontier-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-30T00:28:38Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Crypto regulation at SEC, CFTC to come down to 3 commissioners following key resignation",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/us-sec-cftc-crypto-regulation-few-commissioners?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-29T19:59:43Z",
-          "score": "-0.6"
+          "score": "-0.3"
         },
         {
           "title": "OpenAI valuation could hit $1.4T in new funding round: Report",
@@ -5411,7 +5418,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kakaopay-securities-dinari-ondo-tokenized-korean-stocks-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-29T19:49:53Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5419,13 +5426,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-09-29T19:42:02Z",
           "score": "0.0"
-        },
-        {
-          "title": "Bitwise launches first US spot NEAR ETF after token’s recent surge",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitwise-launches-first-us-spot-near-etf-after-tokens-recent-surge?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-09-29T17:14:36Z",
-          "score": "0.4"
         }
       ],
       "errorMessage": null
@@ -6259,8 +6259,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 183100.01,
-      "currentPrice": 83618.55,
-      "deviationPct": -54.33,
+      "currentPrice": 83591.95,
+      "deviationPct": -54.35,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6459,9 +6459,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 72797.88,
-      "currentPrice": 83618.55,
-      "priceToSthRatio": 1.1486,
-      "premiumPct": 14.86,
+      "currentPrice": 83591.95,
+      "priceToSthRatio": 1.1483,
+      "premiumPct": 14.83,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
