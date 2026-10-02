@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-02T10:15:26Z",
+  "updatedAt": "2026-10-02T10:35:40Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "84772.22",
       "macd": {
-        "macdLine": "2298.00",
-        "signalLine": "2397.33",
-        "histogram": "-99.34",
+        "macdLine": "2307.41",
+        "signalLine": "2399.22",
+        "histogram": "-91.81",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.001463",
       "ivRv": {
-        "iv": "41.50",
+        "iv": "41.75",
         "rv": "38.00",
-        "spread": "+3.50",
+        "spread": "+3.75",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -3775,63 +3775,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "86300.00",
-      "openInterestUsd": "8607125900.07092000",
-      "longAccountRatio": "0.4762",
-      "shortAccountRatio": "0.5238",
-      "downsideLiquidationUsd": "4098713353.61",
-      "upsideLiquidationUsd": "4508412546.46",
-      "cascadeDirection": "BALANCED",
-      "cascadeLabel": "균형",
-      "cascadeDescription": "롱/숏 포지션 균형 — 일방 캐스케이드 위험 낮음",
+      "currentPrice": "86420.00",
+      "openInterestUsd": "8592132567.75000000",
+      "longAccountRatio": "0.4749",
+      "shortAccountRatio": "0.5251",
+      "downsideLiquidationUsd": "4080403756.42",
+      "upsideLiquidationUsd": "4511728811.33",
+      "cascadeDirection": "UPSIDE",
+      "cascadeLabel": "숏스퀴즈 위험",
+      "cascadeDescription": "숏 포지션 편중 — 가격 상승 시 숏 청산(숏스퀴즈) 위험",
       "levels": [
         {
-          "price": "77670.00",
+          "price": "77778.00",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1639485341.45"
+          "notionalUsd": "1632161502.57"
         },
         {
-          "price": "94930.00",
+          "price": "95062.00",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1803365018.58"
+          "notionalUsd": "1804691524.53"
         },
         {
-          "price": "82848.00",
+          "price": "82963.20",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1434549673.76"
+          "notionalUsd": "1428141314.75"
         },
         {
-          "price": "89752.00",
+          "price": "89876.80",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1577944391.26"
+          "notionalUsd": "1579105083.96"
         },
         {
-          "price": "84574.00",
+          "price": "84691.60",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "819742670.72"
+          "notionalUsd": "816080751.28"
         },
         {
-          "price": "88026.00",
+          "price": "88148.40",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "901682509.29"
+          "notionalUsd": "902345762.27"
         },
         {
-          "price": "85437.00",
+          "price": "85555.80",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "204935667.68"
+          "notionalUsd": "204020187.82"
         },
         {
-          "price": "87163.00",
+          "price": "87284.20",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "225420627.32"
+          "notionalUsd": "225586440.57"
         }
       ],
       "errorMessage": null
@@ -5228,7 +5228,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-02T10:14:23.350734Z",
+      "generatedAt": "2026-10-02T10:30:03.030096Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5237,30 +5237,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포탐욕 지수가 72로 탐욕을 보이고 있다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 72로 다소 긍정적이나, 알트시즌지수가 48로 약세를 보임."
         },
         {
           "type": "RISK",
-          "content": "고점에서의 매도 압력이 증가할 가능성이 있다."
+          "content": "BTC 도미넌스가 59로 높은 편이어서 알트코인에 대한 투자 위험이 존재."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -192.80으로 자금 유출이 우려된다."
+          "content": "거래소 순유입이 -192.80으로 매도 압력이 우려됨."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "현재 포지션을 유지하며 시장 동향을 주의 깊게 관찰할 것."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산시키는 것이 좋다."
+          "content": "알트코인 투자 비중을 줄이고 BTC에 집중할 것을 권장."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-10-02T09:55:07.538551Z",
+      "generatedAt": "2026-10-02T10:35:38.698428Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5269,15 +5269,15 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is neutral with a slight inclination towards fear, indicating potential volatility."
+          "content": "The market is currently neutral with mixed indicators suggesting cautious optimism."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance at 59 may limit altcoin growth."
+          "content": "High BTC dominance may limit altcoin growth potential."
         },
         {
           "type": "RISK",
-          "content": "Low altseason index at 48 suggests reduced altcoin performance."
+          "content": "Elevated funding rates indicate potential for short-term volatility."
         },
         {
           "type": "ACTION",
@@ -5285,15 +5285,15 @@
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into altcoins if BTC dominance decreases."
+          "content": "Consider diversifying into altcoins if BTC shows signs of consolidation."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-02T10:15:25.558522Z",
-      "compositeScore": "0.125",
+      "generatedAt": "2026-10-02T10:19:23.543426Z",
+      "compositeScore": "0.131",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5333,7 +5333,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/01/another-trump-memecoin-dinner-advertised-for-token-s-top-investors",
           "publishedAt": "2026-10-01T18:45:29Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Crypto for Advisors: The CLARITY Act failed, but the rules came anyway",
@@ -6244,8 +6244,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 183430.63,
-      "currentPrice": 85758.15,
-      "deviationPct": -53.25,
+      "currentPrice": 85830.14,
+      "deviationPct": -53.21,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6444,9 +6444,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 72931.6,
-      "currentPrice": 85758.15,
-      "priceToSthRatio": 1.1759,
-      "premiumPct": 17.59,
+      "currentPrice": 85830.14,
+      "priceToSthRatio": 1.1769,
+      "premiumPct": 17.69,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
