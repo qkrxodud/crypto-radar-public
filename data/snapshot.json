@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-09T22:03:31Z",
+  "updatedAt": "2026-10-09T22:23:36Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "81814.37",
       "macd": {
-        "macdLine": "1224.72",
-        "signalLine": "1841.52",
-        "histogram": "-616.80",
+        "macdLine": "1230.54",
+        "signalLine": "1842.68",
+        "histogram": "-612.14",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.001171",
       "ivRv": {
-        "iv": "21.83",
+        "iv": "22.01",
         "rv": "38.00",
-        "spread": "-16.18",
+        "spread": "-16.00",
         "label": "저평가"
       },
       "fearGreedMa": {
@@ -2099,9 +2099,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 79528,
-      "vsizeMb": "40.87",
-      "totalFeeBtc": "0.0710",
+      "txCount": 81198,
+      "vsizeMb": "41.29",
+      "totalFeeBtc": "0.0830",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2115,7 +2115,7 @@
         },
         {
           "name": "AntPool",
-          "sharePct": "20.00"
+          "sharePct": "20.10"
         },
         {
           "name": "F2Pool",
@@ -2127,20 +2127,20 @@
         },
         {
           "name": "SpiderPool",
-          "sharePct": "7.46"
+          "sharePct": "7.37"
         }
       ],
-      "top3Concentration": "63.73",
+      "top3Concentration": "63.83",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41087,
-      "nodeCount": 17437,
-      "capacityBtc": "4896.6034",
-      "avgChannelSizeBtc": "0.119176",
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -3796,63 +3796,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "82422.90",
-      "openInterestUsd": "7621034248.68290500",
-      "longAccountRatio": "0.5934",
-      "shortAccountRatio": "0.4066",
-      "downsideLiquidationUsd": "4522321723.17",
-      "upsideLiquidationUsd": "3098712525.51",
+      "currentPrice": "82495.40",
+      "openInterestUsd": "7623928226.52358900",
+      "longAccountRatio": "0.5930",
+      "shortAccountRatio": "0.4070",
+      "downsideLiquidationUsd": "4520989438.33",
+      "upsideLiquidationUsd": "3102938788.20",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "74180.61",
+          "price": "74245.86",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1808928689.27"
+          "notionalUsd": "1808395775.33"
         },
         {
-          "price": "90665.19",
+          "price": "90744.94",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1239485010.21"
+          "notionalUsd": "1241175515.28"
         },
         {
-          "price": "79125.98",
+          "price": "79195.58",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1582812603.11"
+          "notionalUsd": "1582346303.41"
         },
         {
-          "price": "85719.82",
+          "price": "85795.22",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1084549383.93"
+          "notionalUsd": "1086028575.87"
         },
         {
-          "price": "80774.44",
+          "price": "80845.49",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "904464344.63"
+          "notionalUsd": "904197887.67"
         },
         {
-          "price": "84071.36",
+          "price": "84145.31",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "619742505.10"
+          "notionalUsd": "620587757.64"
         },
         {
-          "price": "81598.67",
+          "price": "81670.45",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "226116086.16"
+          "notionalUsd": "226049471.92"
         },
         {
-          "price": "83247.13",
+          "price": "83320.35",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "154935626.28"
+          "notionalUsd": "155146939.41"
         }
       ],
       "errorMessage": null
@@ -5313,8 +5313,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-09T21:05:02.091690Z",
-      "compositeScore": "-0.050",
+      "generatedAt": "2026-10-09T22:05:01.982222Z",
+      "compositeScore": "-0.163",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5322,39 +5322,46 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/10/09/u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rages",
+          "publishedAt": "2026-10-09T21:21:54Z",
+          "score": "-0.5"
+        },
+        {
           "title": "Robinhood Chain considers technology that gives paying traders priority",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/09/robinhood-chain-considers-technology-that-gives-paying-traders-priority",
           "publishedAt": "2026-10-09T18:11:00Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "New York AG secures up to $35 million and lifetime crypto ban from Celsiusâ Alex Mashinsky",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/09/new-york-ag-secures-up-to-usd35-million-and-lifetime-crypto-ban-from-celsius-alex-mashinsky",
           "publishedAt": "2026-10-09T14:55:23Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Ledger investigates potential wallet tampering after reports of $86 million in crypto stolen",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/09/ledger-investigates-potential-wallet-tampering-after-reports-of-usd86-million-in-crypto-stolen",
           "publishedAt": "2026-10-09T14:47:27Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "DWF Labs subsidiaries sue BitGo for $141 million over alleged token lock-up breach",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/09/dwf-labs-subsidiaries-sue-bitgo-for-usd141-million-over-alleged-token-lock-up-breach",
           "publishedAt": "2026-10-09T12:23:54Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "Zcash developers set January target for quantum-resistant payments after âbunker modeâ scare",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/09/zcash-developers-set-january-target-for-quantum-resistant-payments-after-bunker-mode-scare",
           "publishedAt": "2026-10-09T11:39:05Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Trump's Iran pledge underpins crypto gains as bitcoin bears face liquidation pressure",
@@ -5371,32 +5378,25 @@
           "score": "0.5"
         },
         {
-          "title": "Thailand opens door to locally listed bitcoin and ether ETFs",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/10/09/thailand-opens-door-to-locally-listed-bitcoin-and-ether-etfs",
-          "publishedAt": "2026-10-09T10:16:55Z",
-          "score": "0.6"
-        },
-        {
           "title": "US plans to seize $1B in crypto linked to Iran this week: Scott Bessent",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/scott-bessent-us-seize-crypto-iran-sanctions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-09T20:39:17Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "New York permanently bars Celsius founder Mashinsky in $35M fraud settlement",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/celsius-founder-alex-mashinsky-permanently-banned-from-crypto-industry-in-ny-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-09T20:14:02Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "THORChain exec accuses Tether of temporarily freezing USDT vaults",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/thorchain-tether-freezing-usdt-addresses?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-09T19:04:03Z",
-          "score": "-0.6"
+          "score": "-0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5424,14 +5424,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blockchain-cftc-approval-derivatives-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-09T16:22:45Z",
-          "score": "0.4"
+          "score": "0.2"
         },
         {
           "title": "Crypto Biz: Wealthy investors are buying crypto, but their advisers aren’t sold",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/wealthy-investors-crypto-advisers-okx-strategy-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-09T15:51:53Z",
-          "score": "0.2"
+          "score": "0.1"
         }
       ],
       "errorMessage": null
@@ -6265,8 +6265,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 184758.06,
-      "currentPrice": 84086.35,
-      "deviationPct": -54.49,
+      "currentPrice": 84146.73,
+      "deviationPct": -54.46,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6465,9 +6465,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 73863.58,
-      "currentPrice": 84086.35,
-      "priceToSthRatio": 1.1384,
-      "premiumPct": 13.84,
+      "currentPrice": 84146.73,
+      "priceToSthRatio": 1.1392,
+      "premiumPct": 13.92,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
