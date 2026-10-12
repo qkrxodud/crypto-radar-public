@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-12T11:04:49Z",
+  "updatedAt": "2026-10-12T11:24:54Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.38",
       "btcClose": "83760.01",
       "macd": {
-        "macdLine": "871.15",
-        "signalLine": "1360.75",
-        "histogram": "-489.61",
+        "macdLine": "865.50",
+        "signalLine": "1359.62",
+        "histogram": "-494.12",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.001087",
       "ivRv": {
-        "iv": "34.72",
+        "iv": "32.65",
         "rv": "38.00",
-        "spread": "-3.29",
-        "label": "균형"
+        "spread": "-5.35",
+        "label": "저평가"
       },
       "fearGreedMa": {
         "currentFg": 69,
@@ -2099,9 +2099,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 83033,
-      "vsizeMb": "39.90",
-      "totalFeeBtc": "0.0884",
+      "txCount": 83607,
+      "vsizeMb": "40.01",
+      "totalFeeBtc": "0.0824",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2111,26 +2111,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.06"
+          "sharePct": "26.18"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.24"
+          "sharePct": "20.15"
         },
         {
           "name": "F2Pool",
-          "sharePct": "17.56"
+          "sharePct": "17.55"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.33"
+          "sharePct": "9.38"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.19"
+          "sharePct": "6.13"
         }
       ],
-      "top3Concentration": "63.86",
+      "top3Concentration": "63.88",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3725,7 +3725,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "256939451846.92233",
+      "totalMarketCapUsd": "256936239284.60585",
       "marketCap30dAgoUsd": "257782378503.56835",
       "growth30dPercent": "-0.33",
       "signal": "STABLE",
@@ -3796,63 +3796,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "83400.10",
-      "openInterestUsd": "7903532210.06250000",
-      "longAccountRatio": "0.5805",
-      "shortAccountRatio": "0.4195",
-      "downsideLiquidationUsd": "4588000447.94",
-      "upsideLiquidationUsd": "3315531762.12",
+      "currentPrice": "83334.20",
+      "openInterestUsd": "7904723666.20176100",
+      "longAccountRatio": "0.5792",
+      "shortAccountRatio": "0.4208",
+      "downsideLiquidationUsd": "4578415947.46",
+      "upsideLiquidationUsd": "3326307718.74",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "75060.09",
+          "price": "75000.78",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1835200179.18"
+          "notionalUsd": "1831366378.99"
         },
         {
-          "price": "91740.11",
+          "price": "91667.62",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1326212704.85"
+          "notionalUsd": "1330523087.50"
         },
         {
-          "price": "80064.10",
+          "price": "80000.83",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1605800156.78"
+          "notionalUsd": "1602445581.61"
         },
         {
-          "price": "86736.10",
+          "price": "86667.57",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1160436116.74"
+          "notionalUsd": "1164207701.56"
         },
         {
-          "price": "81732.10",
+          "price": "81667.52",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "917600089.59"
+          "notionalUsd": "915683189.49"
         },
         {
-          "price": "85068.10",
+          "price": "85000.88",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "663106352.42"
+          "notionalUsd": "665261543.75"
         },
         {
-          "price": "82566.10",
+          "price": "82500.86",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "229400022.40"
+          "notionalUsd": "228920797.37"
         },
         {
-          "price": "84234.10",
+          "price": "84167.54",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "165776588.11"
+          "notionalUsd": "166315385.94"
         }
       ],
       "errorMessage": null
@@ -5313,14 +5313,42 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-12T10:05:00.789724Z",
-      "compositeScore": "0.056",
+      "generatedAt": "2026-10-12T11:05:02.071007Z",
+      "compositeScore": "-0.056",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Global financial watchdog calls for cross-border information sharing, planning for stablecoin crisis",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/10/12/global-financial-watchdog-calls-for-cross-border-information-sharing-planning-for-stablecoin-crisis",
+          "publishedAt": "2026-10-12T11:02:38Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "South Korea just got its first traditional bank loans backed by bitcoin",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/10/12/south-korea-just-got-its-first-traditional-bank-loans-backed-by-bitcoin",
+          "publishedAt": "2026-10-12T10:57:37Z",
+          "score": "0.4"
+        },
+        {
+          "title": "SWI raises $894 million to repurpose former FTX bitcoin miner Genesis Digital to AI",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/10/12/swi-raises-usd894-million-to-repurpose-former-ftx-bitcoin-miner-genesis-digital-to-ai",
+          "publishedAt": "2026-10-12T10:27:00Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Altcoins rally on thin trading as bitcoin holds below $83,500",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/12/altcoins-rally-on-thin-trading-as-bitcoin-holds-near-usd84-000",
+          "publishedAt": "2026-10-12T10:20:54Z",
+          "score": "0.1"
+        },
         {
           "title": "U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead",
           "source": "CoinDesk",
@@ -5333,77 +5361,49 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/12/why-a-bug-that-could-have-threatened-xrp-s-100-billion-supply-cap-stayed-hidden-for-years",
           "publishedAt": "2026-10-12T08:32:17Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Ledger says unauthorized implant found in at least one device sold by CryptoBilis",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/12/ledger-says-unauthorized-implant-found-in-at-least-one-device-sold-by-cryptobilis",
           "publishedAt": "2026-10-12T07:49:40Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
-          "title": "Bitcoin shrugs off ETF outflows to trade above $84,000 as oil falls",
+          "title": "Bitcoin pulls back from $84,000 as oil recovers, ETFs bleed over $600 million",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls",
           "publishedAt": "2026-10-12T04:49:30Z",
-          "score": "0.6"
-        },
-        {
-          "title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto",
-          "publishedAt": "2026-10-11T18:30:00Z",
-          "score": "0.2"
-        },
-        {
-          "title": "Clarity's failure could speed crypto innovation while shielding incumbents",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
-          "publishedAt": "2026-10-11T16:00:00Z",
-          "score": "0.4"
-        },
-        {
-          "title": "President Trump declares 'energy ceasefire' between Russia and Ukraine",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/10/11/president-trump-declares-energy-ceasefire-between-russia-and-ukraine",
-          "publishedAt": "2026-10-11T15:40:47Z",
-          "score": "0.1"
-        },
-        {
-          "title": "IMF finds demand for tokenized stocks, says the market is still volatile, illiquid",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/10/11/imf-finds-demand-for-tokenized-stocks-says-the-market-is-still-volatile-illiquid",
-          "publishedAt": "2026-10-11T13:00:00Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Kraken parent clears Dubai’s final hurdle for dirham trading rollout",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kraken-receives-vara-approval-uae-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-12T09:41:17Z",
-          "score": "0.5"
+          "score": "0.3"
         },
         {
           "title": "Standard Chartered adds Ripple USD custody, eyes LMAX collateral deal",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/standard-chartered-rlusd-custody-lmax-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-12T09:30:57Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
           "title": "South Korean bank launches Bitcoin-backed business loans: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/south-korea-jeonbuk-bank-bitcoin-backed-business-loans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-12T08:45:58Z",
-          "score": "0.7"
+          "score": "0.4"
         },
         {
           "title": "Global watchdog flags stablecoin risks, AI threats ahead of G20",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/fsb-stablecoin-ai-risks-g20-finance-meeting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-12T06:30:21Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5417,7 +5417,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/data-network-to-migrate-to-sui-retire-its-own-chain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-12T05:15:43Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "French lawmakers back reporting rule for crypto wallets over $112K",
@@ -5431,7 +5431,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/xrp-ledger-defends-emergency-patch-for-unlimited-xrp-bug?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-12T01:21:29Z",
-          "score": "0.0"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
@@ -6265,8 +6265,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 185091.16,
-      "currentPrice": 83893.28,
-      "deviationPct": -54.67,
+      "currentPrice": 83809.79,
+      "deviationPct": -54.72,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6465,9 +6465,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74136.02,
-      "currentPrice": 83893.28,
-      "priceToSthRatio": 1.1316,
-      "premiumPct": 13.16,
+      "currentPrice": 83809.79,
+      "priceToSthRatio": 1.1305,
+      "premiumPct": 13.05,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
