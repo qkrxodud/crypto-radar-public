@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-12T19:28:05Z",
+  "updatedAt": "2026-10-13T13:14:41Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,19 +61,19 @@
       "historicalVolatility": "0.38",
       "btcClose": "83760.01",
       "macd": {
-        "macdLine": "813.81",
-        "signalLine": "1349.28",
-        "histogram": "-535.48",
+        "macdLine": "649.23",
+        "signalLine": "1164.84",
+        "histogram": "-515.61",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": true
       },
       "adx": {
-        "adx": "29.8",
-        "plusDi": "24.2",
-        "minusDi": "20.2",
-        "strength": "MODERATE_UP",
-        "strengthLabel": "보통 상승 추세",
+        "adx": "26.1",
+        "plusDi": "21.1",
+        "minusDi": "22.0",
+        "strength": "MODERATE_DOWN",
+        "strengthLabel": "보통 하락 추세",
         "trending": true
       },
       "optionsSkew25d": "20.65",
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.001087",
       "ivRv": {
-        "iv": "30.53",
+        "iv": "35.22",
         "rv": "38.00",
-        "spread": "-7.48",
-        "label": "저평가"
+        "spread": "-2.78",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 69,
@@ -2099,9 +2099,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 93649,
-      "vsizeMb": "42.92",
-      "totalFeeBtc": "0.1251",
+      "txCount": 78401,
+      "vsizeMb": "38.76",
+      "totalFeeBtc": "0.0585",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2111,26 +2111,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "25.80"
+          "sharePct": "25.30"
         },
         {
           "name": "AntPool",
-          "sharePct": "21.00"
+          "sharePct": "21.66"
         },
         {
           "name": "F2Pool",
-          "sharePct": "17.14"
+          "sharePct": "16.90"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.60"
+          "sharePct": "9.52"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.03"
+          "sharePct": "6.16"
         }
       ],
-      "top3Concentration": "63.94",
+      "top3Concentration": "63.86",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3725,9 +3725,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "256895888934.01759",
-      "marketCap30dAgoUsd": "257782378503.56835",
-      "growth30dPercent": "-0.34",
+      "totalMarketCapUsd": "256742628898.00531",
+      "marketCap30dAgoUsd": "257694944051.36230",
+      "growth30dPercent": "-0.37",
       "signal": "STABLE",
       "signalLabel": "중립",
       "signalDescription": "스테이블코인 공급 횡보 — 자금 흐름 균형",
@@ -3796,63 +3796,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "82690.30",
-      "openInterestUsd": "7738987291.45560000",
-      "longAccountRatio": "0.5967",
-      "shortAccountRatio": "0.4033",
-      "downsideLiquidationUsd": "4617853716.81",
-      "upsideLiquidationUsd": "3121133574.64",
+      "currentPrice": "83194.40",
+      "openInterestUsd": "7860234335.27200000",
+      "longAccountRatio": "0.5499",
+      "shortAccountRatio": "0.4501",
+      "downsideLiquidationUsd": "4322342860.97",
+      "upsideLiquidationUsd": "3537891474.31",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "74421.27",
+          "price": "74874.96",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1847141486.72"
+          "notionalUsd": "1728937144.39"
         },
         {
-          "price": "90959.33",
+          "price": "91513.84",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1248453429.86"
+          "notionalUsd": "1415156589.72"
         },
         {
-          "price": "79382.69",
+          "price": "79866.62",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1616248800.88"
+          "notionalUsd": "1512820001.34"
         },
         {
-          "price": "85997.91",
+          "price": "86522.18",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1092396751.13"
+          "notionalUsd": "1238262016.01"
         },
         {
-          "price": "81036.49",
+          "price": "81530.51",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "923570743.36"
+          "notionalUsd": "864468572.19"
         },
         {
-          "price": "84344.11",
+          "price": "84858.29",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "624226714.93"
+          "notionalUsd": "707578294.86"
         },
         {
-          "price": "81863.40",
+          "price": "82362.46",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "230892685.84"
+          "notionalUsd": "216117143.05"
         },
         {
-          "price": "83517.20",
+          "price": "84026.34",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "156056678.73"
+          "notionalUsd": "176894573.72"
         }
       ],
       "errorMessage": null
@@ -5249,7 +5249,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-12T19:07:49.403401Z",
+      "generatedAt": "2026-10-13T13:14:33.014945Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5258,30 +5258,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포탐욕 지수가 69로 탐욕을 나타내고 있다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 가격 안정세를 유지하고 있다."
         },
         {
           "type": "RISK",
-          "content": "높은 BTC 도미넌스(60%)가 알트코인에 대한 투자 위험을 증가시킨다."
+          "content": "공포탐욕 지수가 69로 다소 높은 탐욕을 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -14.78로, 매도 압력이 우려된다."
+          "content": "거래소 순유입이 -14.78로 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 중립성을 고려하여 신중한 투자 접근이 필요하다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "알트코인에 대한 비중을 줄이고 BTC 중심으로 포트폴리오를 조정하라."
+          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 좋다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-10-12T19:07:53.837298Z",
+      "generatedAt": "2026-10-13T13:14:34.579392Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5290,7 +5290,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with mixed indicators suggesting caution."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting cautious optimism."
         },
         {
           "type": "RISK",
@@ -5298,23 +5298,23 @@
         },
         {
           "type": "RISK",
-          "content": "Decreasing exchange inflow (-14.78) indicates potential selling pressure."
+          "content": "Low NUPL at 0.36 indicates potential profit-taking pressure."
         },
         {
           "type": "ACTION",
-          "content": "Monitor BTC price movements closely for potential volatility."
+          "content": "Monitor BTC price movements closely for potential entry points."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into altcoins with strong fundamentals."
+          "content": "Consider diversifying into altcoins if BTC shows signs of consolidation."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-12T19:07:58.651110Z",
-      "compositeScore": "0.056",
+      "generatedAt": "2026-10-13T13:14:36.834081Z",
+      "compositeScore": "-0.100",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5322,116 +5322,116 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
-          "title": "Palantir's Europe head warns the region is 'missing the boat' on AI just as it did with the internet",
+          "title": "South Korea blocks 27 crypto exchanges, including Bitmart and Kucoin",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet",
-          "publishedAt": "2026-10-12T16:18:03Z",
-          "score": "-0.4"
+          "url": "https://www.coindesk.com/policy/2026/10/13/south-korea-blocks-27-crypto-exchanges-including-bitmart-and-kucoin",
+          "publishedAt": "2026-10-13T11:58:04Z",
+          "score": "-0.8"
         },
         {
-          "title": "Tom Lee sees $2 trillion wealth transfer fueling crypto demand as Bitmine buys more ether",
+          "title": "Federated Hermes joins Wall Street's tokenization push with plans for first onchain fund shares",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether",
-          "publishedAt": "2026-10-12T15:27:09Z",
+          "url": "https://www.coindesk.com/business/2026/10/13/federated-hermes-joins-wall-street-s-tokenization-push-with-plans-for-first-onchain-fund-shares",
+          "publishedAt": "2026-10-13T11:56:04Z",
           "score": "0.5"
         },
         {
-          "title": "Tokenized catastrophe bonds target the disaster-insurance gap",
+          "title": "Stacks' STX, a Bitcoin layer-2 token, has surged by 50% in four weeks",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/10/12/tokenized-catastrophe-bonds-target-the-disaster-insurance-gap",
-          "publishedAt": "2026-10-12T15:00:00Z",
-          "score": "0.2"
+          "url": "https://www.coindesk.com/daybook-us/2026/10/13/stacks-stx-a-bitcoin-layer-2-token-has-surged-by-50-in-four-weeks",
+          "publishedAt": "2026-10-13T11:26:45Z",
+          "score": "0.4"
         },
         {
-          "title": "Standard Chartered offers RLUSD custody in Dubai and plans LMAX collateral link",
+          "title": "Bitcoin, ether slip and rebound as South Korean stocks slide on AI-related concerns",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/10/12/standard-chartered-offers-rlusd-custody-in-dubai-and-plans-lmax-collateral-link",
-          "publishedAt": "2026-10-12T12:09:09Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Ledger claims CryptoBilis cases are limited as up to $93 million is traced, $10 million frozen",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/10/12/ledger-claims-cryptobilis-cases-are-limited-as-up-to-usd93m-is-traced-usd10m-frozen",
-          "publishedAt": "2026-10-12T12:01:53Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "Bitcoin falls below $83,000 as dollar strength keeps markets on edge",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/10/12/bitcoin-holds-usd83-000-as-dollar-strength-keeps-markets-on-edge",
-          "publishedAt": "2026-10-12T11:21:11Z",
-          "score": "-0.7"
-        },
-        {
-          "title": "Global financial watchdog calls for cross-border information sharing, planning for stablecoin crisis",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/10/12/global-financial-watchdog-calls-for-cross-border-information-sharing-planning-for-stablecoin-crisis",
-          "publishedAt": "2026-10-12T11:02:38Z",
+          "url": "https://www.coindesk.com/markets/2026/10/13/bitcoin-ether-slip-and-rebound-as-south-korean-stocks-slide-on-ai-related-concerns",
+          "publishedAt": "2026-10-13T11:06:39Z",
           "score": "-0.3"
         },
         {
-          "title": "South Korea just got its first traditional bank loans backed by bitcoin",
+          "title": "Russiaâs largest bank Sberbank secures approval to trade crypto",
           "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/10/12/south-korea-just-got-its-first-traditional-bank-loans-backed-by-bitcoin",
-          "publishedAt": "2026-10-12T10:57:37Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Crypto PACs report $2.7M spending blitz on House races as midterms loom",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-pac-spending-house-races-2026-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-12T18:55:49Z",
+          "url": "https://www.coindesk.com/business/2026/10/13/russia-s-largest-bank-sberbank-secures-approval-to-trade-crypto",
+          "publishedAt": "2026-10-13T11:02:47Z",
           "score": "0.6"
         },
         {
-          "title": "US accounting overhaul could make stablecoins more attractive to corporations: Tempo",
+          "title": "Live updates: Bitcoin continues in tight range near $83,000, recovering from overnight slide",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/13/live-updates-bitcoin-whipsaws-between-usd81-000-and-usd84-000-as-altcoins-slide",
+          "publishedAt": "2026-10-13T10:46:57Z",
+          "score": "0.2"
+        },
+        {
+          "title": "Bitcoin diverges from South Korean stocks as AI concerns deepen the Kospi selloff",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/13/bitcoin-diverges-from-south-korean-stocks-as-ai-concerns-deepen-the-kospi-selloff",
+          "publishedAt": "2026-10-13T10:38:51Z",
+          "score": "-0.4"
+        },
+        {
+          "title": "Ledger says 'spy' chip inside CryptoBilis Ledger devices transmitted wallet keys over mobile network",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network",
+          "publishedAt": "2026-10-13T09:27:47Z",
+          "score": "-0.7"
+        },
+        {
+          "title": "Russia clears Sberbank for crypto trading ahead of December launch",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/fasb-stablecoin-accounting-rules-corporate-adoption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-12T18:38:14Z",
+          "url": "https://cointelegraph.com/news/sberbank-russia-crypto-trading-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-13T12:22:24Z",
           "score": "0.5"
         },
         {
-          "title": "Bitcoin miners face widening AI financing costs as lenders scrutinize deals",
+          "title": "ENS seeks DAO approval to activate upgraded Ethereum naming system",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitcoin-miners-ai-financing-costs-debt-funding-gap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-12T16:51:05Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "Bitcoin drops 2.2% as Ukraine, Iran strikes send oil toward one-month high",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-12T16:30:21Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "XRP treasury Evernorth’s shares rise 5% at Nasdaq opening print",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/xrp-treasury-evernorth-rise-nasdaq-opening?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-12T14:18:49Z",
+          "url": "https://cointelegraph.com/news/ens-dao-ensv2-upgrade-eth-domain-registrations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-13T11:11:27Z",
           "score": "0.3"
         },
         {
-          "title": "Ledger implant tests Bitcoin ETFs as safer custodial solutions than hardware wallets",
+          "title": "Metaplanet to issue $329M convertible bonds to pay debt, fund share buybacks",
           "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/ledger-implant-bitcoin-etfs-hardware-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-12T14:07:00Z",
-          "score": "0.4"
+          "url": "https://cointelegraph.com/news/metaplanet-329m-convertible-bonds-pay-debt-share-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-13T10:23:07Z",
+          "score": "0.0"
+        },
+        {
+          "title": "MediaMarktSaturn pulls Ledger products amid tampering reports",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/mediamarkt-pulls-ledger-wallet-security-incident?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-13T10:09:01Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "Bitcoin hits $84K resistance as Korean tech rout deepens KOSPI losses",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-hits-84k-resistance-as-korea-tech-sell-off-sends-kospi-down-74?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-13T09:42:00Z",
+          "score": "-0.2"
+        },
+        {
+          "title": "Chinese fraud victims lose key court battle over 61,000 Bitcoin",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-13T09:03:06Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "Ledger details LTE-enabled spy implants in wallets sold by CryptoBilis",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/ledger-cellular-implants-wallets-sold-cryptobilis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-13T08:45:10Z",
+          "score": "-0.7"
         },
         {
           "title": "Here’s what happened in crypto today",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-12T12:46:51Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Strategy adds 250 Bitcoin as holdings reach 848,250 BTC",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/michael-saylor-strategy-250-btc-buy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-12T12:31:51Z",
-          "score": "0.7"
+          "publishedAt": "2026-10-13T05:51:31Z",
+          "score": "0.1"
         }
       ],
       "errorMessage": null
@@ -6265,8 +6265,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 185257.89,
-      "currentPrice": 84000.33,
-      "deviationPct": -54.66,
+      "currentPrice": 84474.42,
+      "deviationPct": -54.4,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6464,10 +6464,10 @@
       "hasData": true
     },
     "api_expert_sth_cost_basis": {
-      "sthCostBasis": 74136.02,
-      "currentPrice": 83964.32,
-      "priceToSthRatio": 1.1326,
-      "premiumPct": 13.26,
+      "sthCostBasis": 74264.32,
+      "currentPrice": 84474.42,
+      "priceToSthRatio": 1.1375,
+      "premiumPct": 13.75,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
@@ -6496,7 +6496,7 @@
       "isAvailable": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": -1.2,
+      "compositeScore": 0.4,
       "extreme": {
         "name": "NEUTRAL",
         "description": "중립"
