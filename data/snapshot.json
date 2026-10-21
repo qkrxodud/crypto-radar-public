@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-21T13:35:48Z",
+  "updatedAt": "2026-10-21T13:55:54Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,12 +61,12 @@
       "historicalVolatility": "0.33",
       "btcClose": "81470.01",
       "macd": {
-        "macdLine": "-13.99",
-        "signalLine": "93.10",
-        "histogram": "-107.09",
+        "macdLine": "20.95",
+        "signalLine": "100.09",
+        "histogram": "-79.14",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
-        "bullish": false
+        "bullish": true
       },
       "adx": {
         "adx": "16.5",
@@ -425,9 +425,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000914",
       "ivRv": {
-        "iv": "31.13",
+        "iv": "31.06",
         "rv": "33.00",
-        "spread": "-1.87",
+        "spread": "-1.95",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2091,9 +2091,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 51293,
-      "vsizeMb": "25.02",
-      "totalFeeBtc": "0.0451",
+      "txCount": 54124,
+      "vsizeMb": "25.17",
+      "totalFeeBtc": "0.0388",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2103,26 +2103,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.12"
+          "sharePct": "26.09"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.45"
+          "sharePct": "20.52"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.64"
+          "sharePct": "16.53"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.74"
+          "sharePct": "8.82"
         },
         {
           "name": "SpiderPool",
           "sharePct": "6.04"
         }
       ],
-      "top3Concentration": "63.21",
+      "top3Concentration": "63.14",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3788,63 +3788,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "83337.30",
-      "openInterestUsd": "8129197476.93723000",
-      "longAccountRatio": "0.5644",
-      "shortAccountRatio": "0.4356",
-      "downsideLiquidationUsd": "4588119055.98",
-      "upsideLiquidationUsd": "3541078420.95",
+      "currentPrice": "83795.10",
+      "openInterestUsd": "8147425949.38140000",
+      "longAccountRatio": "0.5606",
+      "shortAccountRatio": "0.4394",
+      "downsideLiquidationUsd": "4567446987.22",
+      "upsideLiquidationUsd": "3579978962.16",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "75003.57",
+          "price": "75415.59",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1835247622.39"
+          "notionalUsd": "1826978794.89"
         },
         {
-          "price": "91671.03",
+          "price": "92174.61",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1416431368.38"
+          "notionalUsd": "1431991584.86"
         },
         {
-          "price": "80003.81",
+          "price": "80443.30",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1605841669.59"
+          "notionalUsd": "1598606445.53"
         },
         {
-          "price": "86670.79",
+          "price": "87146.90",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1239377447.33"
+          "notionalUsd": "1252992636.76"
         },
         {
-          "price": "81670.55",
+          "price": "82119.20",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "917623811.20"
+          "notionalUsd": "913489397.44"
         },
         {
-          "price": "85004.05",
+          "price": "85471.00",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "708215684.19"
+          "notionalUsd": "715995792.43"
         },
         {
-          "price": "82503.93",
+          "price": "82957.15",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "229405952.80"
+          "notionalUsd": "228372349.36"
         },
         {
-          "price": "84170.67",
+          "price": "84633.05",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "177053921.05"
+          "notionalUsd": "178998948.11"
         }
       ],
       "errorMessage": null
@@ -6257,8 +6257,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 186596.26,
-      "currentPrice": 83769.88,
-      "deviationPct": -55.11,
+      "currentPrice": 84121.58,
+      "deviationPct": -54.92,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6457,9 +6457,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74581.13,
-      "currentPrice": 83769.88,
-      "priceToSthRatio": 1.1232,
-      "premiumPct": 12.32,
+      "currentPrice": 84121.58,
+      "priceToSthRatio": 1.1279,
+      "premiumPct": 12.79,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
