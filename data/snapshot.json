@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-22T16:06:50Z",
+  "updatedAt": "2026-10-22T16:26:58Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "84235.23",
       "macd": {
-        "macdLine": "-41.77",
-        "signalLine": "82.49",
-        "histogram": "-124.26",
+        "macdLine": "-42.87",
+        "signalLine": "82.27",
+        "histogram": "-125.15",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -427,9 +427,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000919",
       "ivRv": {
-        "iv": "29.96",
+        "iv": "29.72",
         "rv": "19.00",
-        "spread": "+10.96",
+        "spread": "+10.72",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2093,9 +2093,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 64904,
-      "vsizeMb": "29.03",
-      "totalFeeBtc": "0.0768",
+      "txCount": 69247,
+      "vsizeMb": "30.08",
+      "totalFeeBtc": "0.1250",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -3780,63 +3780,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "81638.60",
-      "openInterestUsd": "7802503513.48500700",
-      "longAccountRatio": "0.6655",
-      "shortAccountRatio": "0.3345",
-      "downsideLiquidationUsd": "5192566088.22",
-      "upsideLiquidationUsd": "2609937425.26",
+      "currentPrice": "81627.10",
+      "openInterestUsd": "7793056645.50180000",
+      "longAccountRatio": "0.6659",
+      "shortAccountRatio": "0.3341",
+      "downsideLiquidationUsd": "5189396420.24",
+      "upsideLiquidationUsd": "2603660225.26",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "73474.74",
+          "price": "73464.39",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2077026435.29"
+          "notionalUsd": "2075758568.10"
         },
         {
-          "price": "89802.46",
+          "price": "89789.81",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1043974970.10"
+          "notionalUsd": "1041464090.10"
         },
         {
-          "price": "78373.06",
+          "price": "78362.02",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1817398130.88"
+          "notionalUsd": "1816288747.08"
         },
         {
-          "price": "84904.14",
+          "price": "84892.18",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "913478098.84"
+          "notionalUsd": "911281078.84"
         },
         {
-          "price": "80005.83",
+          "price": "79994.56",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1038513217.64"
+          "notionalUsd": "1037879284.05"
         },
         {
-          "price": "83271.37",
+          "price": "83259.64",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "521987485.05"
+          "notionalUsd": "520732045.05"
         },
         {
-          "price": "80822.21",
+          "price": "80810.83",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "259628304.41"
+          "notionalUsd": "259469821.01"
         },
         {
-          "price": "82454.99",
+          "price": "82443.37",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "130496871.26"
+          "notionalUsd": "130183011.26"
         }
       ],
       "errorMessage": null
@@ -5227,7 +5227,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-10-22T15:46:43.517034Z",
+      "generatedAt": "2026-10-22T16:26:57.222011Z",
       "compositeScore": 64,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5236,7 +5236,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with moderate indicators for both on-chain and technical analysis."
+          "content": "The market shows a neutral sentiment with moderate fear and greed levels, indicating potential for stability."
         },
         {
           "type": "RISK",
@@ -5244,15 +5244,15 @@
         },
         {
           "type": "RISK",
-          "content": "Low stablecoin dominance indicates potential liquidity issues."
+          "content": "Rising NVT suggests potential overvaluation of BTC."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment closely for shifts towards fear or greed."
+          "content": "Monitor BTC price closely for potential corrections."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into altcoins if BTC dominance decreases."
+          "content": "Consider diversifying into altcoins if dominance decreases."
         }
       ],
       "errorMessage": null
@@ -6211,8 +6211,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 186932.1,
-      "currentPrice": 82512.43,
-      "deviationPct": -55.86,
+      "currentPrice": 82522.99,
+      "deviationPct": -55.85,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6411,9 +6411,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74568.39,
-      "currentPrice": 82512.43,
-      "priceToSthRatio": 1.1065,
-      "premiumPct": 10.65,
+      "currentPrice": 82522.99,
+      "priceToSthRatio": 1.1067,
+      "premiumPct": 10.67,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
