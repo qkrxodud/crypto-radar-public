@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-22T11:04:46Z",
+  "updatedAt": "2026-10-22T11:24:52Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -59,9 +59,9 @@
       "historicalVolatility": "0.19",
       "btcClose": "84235.23",
       "macd": {
-        "macdLine": "-15.50",
-        "signalLine": "87.75",
-        "histogram": "-103.25",
+        "macdLine": "-25.25",
+        "signalLine": "85.80",
+        "histogram": "-111.05",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -427,9 +427,9 @@
       "cumulativeFunding7d": "0.0003",
       "cumulativeFunding30d": "0.000919",
       "ivRv": {
-        "iv": "28.23",
+        "iv": "30.74",
         "rv": "19.00",
-        "spread": "+9.23",
+        "spread": "+11.74",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2093,9 +2093,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 52140,
-      "vsizeMb": "25.11",
-      "totalFeeBtc": "0.0311",
+      "txCount": 50794,
+      "vsizeMb": "24.95",
+      "totalFeeBtc": "0.0403",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2105,26 +2105,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.50"
+          "sharePct": "26.47"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.21"
+          "sharePct": "20.30"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.11"
+          "sharePct": "16.03"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.96"
+          "sharePct": "9.01"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.67"
+          "sharePct": "6.64"
         }
       ],
-      "top3Concentration": "62.82",
+      "top3Concentration": "62.80",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3780,63 +3780,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "81958.80",
-      "openInterestUsd": "7622611520.26292300",
-      "longAccountRatio": "0.6447",
-      "shortAccountRatio": "0.3553",
-      "downsideLiquidationUsd": "4914297647.11",
-      "upsideLiquidationUsd": "2708313873.15",
+      "currentPrice": "81835.40",
+      "openInterestUsd": "7603364780.11180000",
+      "longAccountRatio": "0.6446",
+      "shortAccountRatio": "0.3554",
+      "downsideLiquidationUsd": "4901128937.26",
+      "upsideLiquidationUsd": "2702235842.85",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "73762.92",
+          "price": "73651.86",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1965719058.85"
+          "notionalUsd": "1960451574.90"
         },
         {
-          "price": "90154.68",
+          "price": "90018.94",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1083325549.26"
+          "notionalUsd": "1080894337.14"
         },
         {
-          "price": "78680.45",
+          "price": "78561.98",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1720004176.49"
+          "notionalUsd": "1715395128.04"
         },
         {
-          "price": "85237.15",
+          "price": "85108.82",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "947909855.60"
+          "notionalUsd": "945782545.00"
         },
         {
-          "price": "80319.62",
+          "price": "80198.69",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "982859529.42"
+          "notionalUsd": "980225787.45"
         },
         {
-          "price": "83597.98",
+          "price": "83472.11",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "541662774.63"
+          "notionalUsd": "540447168.57"
         },
         {
-          "price": "81139.21",
+          "price": "81017.05",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "245714882.36"
+          "notionalUsd": "245056446.86"
         },
         {
-          "price": "82778.39",
+          "price": "82653.75",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "135415693.66"
+          "notionalUsd": "135111792.14"
         }
       ],
       "errorMessage": null
@@ -5259,8 +5259,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-22T10:05:03.744698Z",
-      "compositeScore": "-0.075",
+      "generatedAt": "2026-10-22T11:05:03.410664Z",
+      "compositeScore": "-0.113",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5268,11 +5268,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin slides below $82,000 as AI doubts return, with DeFi tokens leading declines",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines",
+          "publishedAt": "2026-10-22T10:50:04Z",
+          "score": "-0.6"
+        },
+        {
+          "title": "Crypto traders price India telecoms company Reliance Jio's IPO at about $110 billion",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/22/crypto-traders-price-india-telecoms-company-reliance-jio-s-ipo-at-about-usd110-billion",
+          "publishedAt": "2026-10-22T10:18:28Z",
+          "score": "0.3"
+        },
+        {
           "title": "Live updates: Bitcoinâs round trip to $85,000 burns traders on both sides",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides",
           "publishedAt": "2026-10-22T09:54:26Z",
-          "score": "-0.6"
+          "score": "-0.4"
         },
         {
           "title": "Asian stocks tumble, bitcoin retreats as China enters bear market",
@@ -5293,35 +5307,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/22/solana-completes-alpenglow-upgrade-here-s-what-it-means-for-users",
           "publishedAt": "2026-10-22T05:24:58Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Bitcoin ETFs attract $1.08 billion in 3 days but it may not be enough for a steep rally",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally",
           "publishedAt": "2026-10-22T04:41:59Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "XRP Ledger bug fix moved to November after validator support dipped for two hours",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours",
           "publishedAt": "2026-10-22T04:36:20Z",
-          "score": "0.0"
+          "score": "-0.2"
         },
         {
-          "title": "Bitcoin gives back its run at $85,000 as Tesla and Meta fail to calm AI nerves",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves",
-          "publishedAt": "2026-10-22T03:51:34Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Trump to throw spotlight on overseas crypto abuses at White House event",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event",
-          "publishedAt": "2026-10-21T16:23:44Z",
-          "score": "0.1"
+          "title": "Bitcoin corrects below $82K after Tesla Q3 results, KOSPI falls",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-corrects-below-82k-after-tesla-q3-results-kospi-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-22T10:38:51Z",
+          "score": "-0.5"
         },
         {
           "title": "Starknet voters back research into life beyond Ethereum",
@@ -5342,7 +5349,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-22T07:37:32Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5363,7 +5370,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/php-foundation-admits-structural-failure-delayed-critical-security-fix?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-22T00:44:00Z",
-          "score": "-0.2"
+          "score": "-0.4"
         },
         {
           "title": "American Bankers Association: OCC’s GENIUS rules ‘undermine’ US Congress",
@@ -5371,13 +5378,6 @@
           "url": "https://cointelegraph.com/news/american-bankers-association-occ-genius-rules-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-21T21:53:48Z",
           "score": "-0.3"
-        },
-        {
-          "title": "Tether backs Bolivian fintech bringing USDT payments to food delivery and banking",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-21T20:26:07Z",
-          "score": "0.3"
         }
       ],
       "errorMessage": null
@@ -6211,8 +6211,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 186764.12,
-      "currentPrice": 82607.48,
-      "deviationPct": -55.77,
+      "currentPrice": 82569.76,
+      "deviationPct": -55.79,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6411,9 +6411,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74568.39,
-      "currentPrice": 82607.48,
-      "priceToSthRatio": 1.1078,
-      "premiumPct": 10.78,
+      "currentPrice": 82569.76,
+      "priceToSthRatio": 1.1073,
+      "premiumPct": 10.73,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
