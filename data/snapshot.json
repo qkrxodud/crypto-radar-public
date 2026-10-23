@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-23T14:00:47Z",
+  "updatedAt": "2026-10-23T14:20:54Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,16 +61,16 @@
       "historicalVolatility": "0.27",
       "btcClose": "81274.01",
       "macd": {
-        "macdLine": "-94.22",
-        "signalLine": "56.13",
-        "histogram": "-150.35",
+        "macdLine": "-153.20",
+        "signalLine": "44.33",
+        "histogram": "-197.53",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "16.5",
-        "plusDi": "19.4",
+        "plusDi": "19.3",
         "minusDi": "20.9",
         "strength": "WEAK",
         "strengthLabel": "무추세(횡보)",
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.000896",
       "ivRv": {
-        "iv": "21.39",
+        "iv": "32.83",
         "rv": "27.00",
-        "spread": "-5.61",
-        "label": "저평가"
+        "spread": "+5.83",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 50,
@@ -2095,11 +2095,11 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 47541,
-      "vsizeMb": "24.79",
-      "totalFeeBtc": "0.0486",
-      "congestionLevel": "보통 — 정상 대기열",
-      "congestionClass": "text-gray-300",
+      "txCount": 51922,
+      "vsizeMb": "26.06",
+      "totalFeeBtc": "0.1086",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
@@ -2107,36 +2107,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.62"
+          "sharePct": "26.69"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.06"
+          "sharePct": "20.02"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.03"
+          "sharePct": "15.98"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.43"
+          "sharePct": "8.46"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.56"
+          "sharePct": "6.58"
         }
       ],
-      "top3Concentration": "62.71",
+      "top3Concentration": "62.69",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41080,
-      "nodeCount": 17438,
-      "capacityBtc": "4898.2676",
-      "avgChannelSizeBtc": "0.119237",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -3721,7 +3721,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "254465850509.59058",
+      "totalMarketCapUsd": "254475837619.16204",
       "marketCap30dAgoUsd": "258629734720.91994",
       "growth30dPercent": "-1.61",
       "signal": "STABLE",
@@ -3792,63 +3792,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "81961.50",
-      "openInterestUsd": "7645324755.69114600",
+      "currentPrice": "81193.20",
+      "openInterestUsd": "7528034246.49550000",
       "longAccountRatio": "0.6804",
       "shortAccountRatio": "0.3196",
-      "downsideLiquidationUsd": "5201878963.77",
-      "upsideLiquidationUsd": "2443445791.92",
+      "downsideLiquidationUsd": "5122074501.32",
+      "upsideLiquidationUsd": "2405959745.18",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "73765.35",
+          "price": "73073.88",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2080751585.51"
+          "notionalUsd": "2048829800.53"
         },
         {
-          "price": "90157.65",
+          "price": "89312.52",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "977378316.77"
+          "notionalUsd": "962383898.07"
         },
         {
-          "price": "78683.04",
+          "price": "77945.47",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1820657637.32"
+          "notionalUsd": "1792726075.46"
         },
         {
-          "price": "85239.96",
+          "price": "84440.93",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "855206027.17"
+          "notionalUsd": "842085910.81"
         },
         {
-          "price": "80322.27",
+          "price": "79569.34",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1040375792.75"
+          "notionalUsd": "1024414900.26"
         },
         {
-          "price": "83600.73",
+          "price": "82817.06",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "488689158.38"
+          "notionalUsd": "481191949.04"
         },
         {
-          "price": "81141.89",
+          "price": "80381.27",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "260093948.19"
+          "notionalUsd": "256103725.07"
         },
         {
-          "price": "82781.12",
+          "price": "82005.13",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "122172289.60"
+          "notionalUsd": "120297987.26"
         }
       ],
       "errorMessage": null
@@ -5309,14 +5309,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-23T13:05:03.043245Z",
-      "compositeScore": "-0.006",
+      "generatedAt": "2026-10-23T14:05:02.844611Z",
+      "compositeScore": "0.050",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
+          "publishedAt": "2026-10-23T13:58:56Z",
+          "score": "0.3"
+        },
         {
           "title": "Bitcoin's price is as jumpy as Nvidia's and eight times more turbulent than the euro",
           "source": "CoinDesk",
@@ -5350,7 +5357,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/23/hsbc-rolls-out-its-first-stablecoin-to-over-3-million-everyday-app-users",
           "publishedAt": "2026-10-23T10:22:56Z",
-          "score": "0.3"
+          "score": "0.6"
         },
         {
           "title": "Swedenâs central bank revives e-krona debate as stablecoins and digital euro loom",
@@ -5367,18 +5374,25 @@
           "score": "-0.5"
         },
         {
-          "title": "Polymarket has reportedly fired its marketing chief, also a close friend of the CEO",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/10/23/polymarket-has-reportedly-fired-its-marketing-chief-also-a-close-friend-of-the-ceo",
-          "publishedAt": "2026-10-23T05:01:19Z",
+          "title": "Here’s what happened in crypto today",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-23T13:38:53Z",
           "score": "0.0"
+        },
+        {
+          "title": "China targets 2030 for its national blockchain network buildout",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/china-2030-national-blockchain-network-buildout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-23T13:21:07Z",
+          "score": "0.1"
         },
         {
           "title": "New York AG seeks $1.37B from NovaTech founders over Ponzi scheme",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/new-york-ag-novatech-founders-companies-crypto-ponzi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T12:33:37Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Bitcoin consolidates after 3% loss as AI fears stoke fresh stock-market weakness",
@@ -5392,7 +5406,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/self-custody-crypto-beginners-mainstream-adoption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T11:47:47Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Cysic dangles a 10% bounty, hacker pours loot into Tornado Cash",
@@ -5406,28 +5420,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bybit-first-full-dubai-spot-trading-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T09:50:04Z",
-          "score": "0.6"
+          "score": "0.7"
         },
         {
           "title": "HSBC launches Hong Kong dollar stablecoin for retail payments",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/hsbc-launches-redcoin-hong-kong-dollar-stablecoin-payme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T08:47:34Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Malaysia, Thailand join Singapore’s cross-border stablecoin push",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/malaysia-thailand-join-singapores-cross-border-stablecoin-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-23T07:15:53Z",
           "score": "0.5"
-        },
-        {
-          "title": "Bitcoin ETFs bleed $635M as October slides back into the red",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-23T07:09:39Z",
-          "score": "-0.7"
         }
       ],
       "errorMessage": null
@@ -6261,8 +6261,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 186932.1,
-      "currentPrice": 82606.36,
-      "deviationPct": -55.81,
+      "currentPrice": 81977.42,
+      "deviationPct": -56.15,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6461,9 +6461,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74639.33,
-      "currentPrice": 82606.36,
-      "priceToSthRatio": 1.1067,
-      "premiumPct": 10.67,
+      "currentPrice": 81977.42,
+      "priceToSthRatio": 1.0983,
+      "premiumPct": 9.83,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
@@ -6492,7 +6492,7 @@
       "isAvailable": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": -15.6,
+      "compositeScore": -16.0,
       "extreme": {
         "name": "NEUTRAL",
         "description": "중립"
