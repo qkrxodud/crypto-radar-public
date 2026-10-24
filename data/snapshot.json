@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-24T20:52:30Z",
+  "updatedAt": "2026-10-24T21:12:35Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "81274.01",
       "macd": {
-        "macdLine": "-279.46",
-        "signalLine": "-11.07",
-        "histogram": "-268.39",
+        "macdLine": "-299.19",
+        "signalLine": "-15.01",
+        "histogram": "-284.18",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.000896",
       "ivRv": {
-        "iv": "33.79",
+        "iv": "28.99",
         "rv": "27.00",
-        "spread": "+6.79",
-        "label": "과대"
+        "spread": "+1.99",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 50,
@@ -2095,11 +2095,11 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 50017,
-      "vsizeMb": "25.14",
-      "totalFeeBtc": "0.0478",
-      "congestionLevel": "혼잡 — 수수료 상승 중",
-      "congestionClass": "text-yellow-400",
+      "txCount": 47837,
+      "vsizeMb": "24.61",
+      "totalFeeBtc": "0.0337",
+      "congestionLevel": "보통 — 정상 대기열",
+      "congestionClass": "text-gray-300",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
@@ -2107,26 +2107,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "27.95"
+          "sharePct": "27.97"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.36"
+          "sharePct": "20.39"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.10"
+          "sharePct": "15.06"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "7.88"
+          "sharePct": "7.86"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.29"
+          "sharePct": "6.27"
         }
       ],
-      "top3Concentration": "63.41",
+      "top3Concentration": "63.42",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -3792,63 +3792,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "80520.70",
-      "openInterestUsd": "7732788963.77250000",
-      "longAccountRatio": "0.6842",
-      "shortAccountRatio": "0.3158",
-      "downsideLiquidationUsd": "5290774209.01",
-      "upsideLiquidationUsd": "2442014754.76",
+      "currentPrice": "80274.20",
+      "openInterestUsd": "7690991705.27700000",
+      "longAccountRatio": "0.6825",
+      "shortAccountRatio": "0.3175",
+      "downsideLiquidationUsd": "5249101838.85",
+      "upsideLiquidationUsd": "2441889866.43",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "72468.63",
+          "price": "72246.78",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2116309683.61"
+          "notionalUsd": "2099640735.54"
         },
         {
-          "price": "88572.77",
+          "price": "88301.62",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "976805901.90"
+          "notionalUsd": "976755946.57"
         },
         {
-          "price": "77299.87",
+          "price": "77063.23",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1851770973.15"
+          "notionalUsd": "1837185643.60"
         },
         {
-          "price": "83741.53",
+          "price": "83485.17",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "854705164.17"
+          "notionalUsd": "854661453.25"
         },
         {
-          "price": "78910.29",
+          "price": "78668.72",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1058154841.80"
+          "notionalUsd": "1049820367.77"
         },
         {
-          "price": "82131.11",
+          "price": "81879.68",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "488402950.95"
+          "notionalUsd": "488377973.29"
         },
         {
-          "price": "79715.49",
+          "price": "79471.46",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "264538710.45"
+          "notionalUsd": "262455091.94"
         },
         {
-          "price": "81325.91",
+          "price": "81076.94",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "122100737.74"
+          "notionalUsd": "122094493.32"
         }
       ],
       "errorMessage": null
@@ -5309,11 +5309,11 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-24T20:12:12.559830Z",
-      "compositeScore": "-0.138",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-10-24T21:05:03.133936Z",
+      "compositeScore": "-0.206",
+      "label": "NEGATIVE",
+      "labelDisplay": "부정",
+      "labelHexColor": "#F97316",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
@@ -5343,42 +5343,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/23/why-mcdonalds-microsoft-and-google-saying-no-to-tokenized-stocks-isn-t-a-dealbreaker",
           "publishedAt": "2026-10-24T15:00:00Z",
-          "score": "0.1"
+          "score": "-0.4"
         },
         {
           "title": "Argentina drops criminal probe into President Milei over crashed memecoin LIBRA",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/24/argentina-drops-criminal-probe-into-president-milei-over-crashed-memecoin-libra",
           "publishedAt": "2026-10-24T14:38:47Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Wells Fargo, Cisco, Marvell among latest firms objecting to OKXICE's tokenized stock plan",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/24/wells-fargo-cisco-marvell-among-latest-firms-objecting-to-okxice-s-tokenized-stock-plan",
           "publishedAt": "2026-10-24T14:06:24Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoinâs wealthy holders turning to loans and yield as investment habits mature: Xapo CEO",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/24/bitcoin-s-wealthy-holders-turning-to-loans-and-yield-as-investment-habits-mature-xapo-ceo",
           "publishedAt": "2026-10-24T14:00:00Z",
-          "score": "0.5"
+          "score": "0.2"
         },
         {
           "title": "U.S. Clarity Act failure gives Asia and Middle East a competitive edge, says Apex Group CEO",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/24/u-s-clarity-act-failure-gives-asia-and-middle-east-a-competitive-edge-says-apex-group-ceo",
           "publishedAt": "2026-10-24T12:00:00Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Wells Fargo and five others object to OKX-ICE tokenized stock listings: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/nasdaq-companies-object-tokenized-stock-listings-okx-ice?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T21:32:16Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "IRS plans lower tax disclosure penalties, including for crypto: Forbes",
@@ -5392,7 +5392,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T18:39:02Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "US senator probes Tether after reported deal with ex-Trump crypto adviser",
@@ -5413,7 +5413,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-seeks-support-above-81k-as-brent-crude-oil-hits-highest-level-since-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T15:39:17Z",
-          "score": "0.2"
+          "score": "0.5"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -6261,8 +6261,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 187268.45,
-      "currentPrice": 81803.77,
-      "deviationPct": -56.32,
+      "currentPrice": 81547.81,
+      "deviationPct": -56.45,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6461,9 +6461,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74604.04,
-      "currentPrice": 81803.77,
-      "priceToSthRatio": 1.0965,
-      "premiumPct": 9.65,
+      "currentPrice": 81547.81,
+      "priceToSthRatio": 1.0931,
+      "premiumPct": 9.31,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
