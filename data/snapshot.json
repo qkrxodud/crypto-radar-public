@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-24T22:53:13Z",
+  "updatedAt": "2026-10-24T23:13:18Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "81274.01",
       "macd": {
-        "macdLine": "-274.65",
-        "signalLine": "-10.11",
-        "histogram": "-264.54",
+        "macdLine": "-274.55",
+        "signalLine": "-10.09",
+        "histogram": "-264.46",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.000896",
       "ivRv": {
-        "iv": "33.58",
+        "iv": "33.25",
         "rv": "27.00",
-        "spread": "+6.58",
+        "spread": "+6.25",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2095,11 +2095,11 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 49296,
-      "vsizeMb": "25.14",
-      "totalFeeBtc": "0.0451",
-      "congestionLevel": "보통 — 정상 대기열",
-      "congestionClass": "text-gray-300",
+      "txCount": 51696,
+      "vsizeMb": "26.06",
+      "totalFeeBtc": "0.0719",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
@@ -2107,15 +2107,15 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "27.93"
+          "sharePct": "27.96"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.11"
+          "sharePct": "20.13"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.08"
+          "sharePct": "15.00"
         },
         {
           "name": "ViaBTC",
@@ -2126,17 +2126,17 @@
           "sharePct": "6.24"
         }
       ],
-      "top3Concentration": "63.12",
+      "top3Concentration": "63.09",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41080,
-      "nodeCount": 17438,
-      "capacityBtc": "4898.2676",
-      "avgChannelSizeBtc": "0.119237",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -3792,63 +3792,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "80577.00",
-      "openInterestUsd": "7707754559.00671100",
-      "longAccountRatio": "0.6815",
-      "shortAccountRatio": "0.3185",
-      "downsideLiquidationUsd": "5252834731.96",
-      "upsideLiquidationUsd": "2454919827.04",
+      "currentPrice": "80583.10",
+      "openInterestUsd": "7724118227.05137200",
+      "longAccountRatio": "0.6817",
+      "shortAccountRatio": "0.3183",
+      "downsideLiquidationUsd": "5265531395.38",
+      "upsideLiquidationUsd": "2458586831.67",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "72519.30",
+          "price": "72524.79",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2101133892.79"
+          "notionalUsd": "2106212558.15"
         },
         {
-          "price": "88634.70",
+          "price": "88641.41",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "981967930.82"
+          "notionalUsd": "983434732.67"
         },
         {
-          "price": "77353.92",
+          "price": "77359.78",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1838492156.19"
+          "notionalUsd": "1842935988.38"
         },
         {
-          "price": "83800.08",
+          "price": "83806.42",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "859221939.47"
+          "notionalUsd": "860505391.08"
         },
         {
-          "price": "78965.46",
+          "price": "78971.44",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1050566946.39"
+          "notionalUsd": "1053106279.08"
         },
         {
-          "price": "82188.54",
+          "price": "82194.76",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "490983965.41"
+          "notionalUsd": "491717366.33"
         },
         {
-          "price": "79771.23",
+          "price": "79777.27",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "262641736.60"
+          "notionalUsd": "263276569.77"
         },
         {
-          "price": "81382.77",
+          "price": "81388.93",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "122745991.35"
+          "notionalUsd": "122929341.58"
         }
       ],
       "errorMessage": null
@@ -5245,7 +5245,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-24T22:30:02.779118Z",
+      "generatedAt": "2026-10-24T23:00:02.020464Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5254,23 +5254,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕이 균형을 이루고 있다."
+          "content": "현재 암호화폐 시장은 중립적인 상태로, 공포와 탐욕이 균형을 이루고 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 59로 높은 편이며, 알트코인 시장의 약세가 우려된다."
+          "content": "시장의 변동성이 낮아 투자자 심리가 위축될 수 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 477.73로 증가하여 매도 압력이 우려된다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 매력이 감소할 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "현재 포지션을 유지하며 시장 동향을 주의 깊게 살펴보라."
+          "content": "현재의 중립적인 시장 상황에서 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "알트코인 투자 비중을 줄이고 BTC 중심으로 재편성하라."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산시킬 것을 권장한다."
         }
       ],
       "errorMessage": null
@@ -5309,7 +5309,7 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-24T22:05:02.633678Z",
+      "generatedAt": "2026-10-24T23:05:03.161001Z",
       "compositeScore": "-0.138",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
@@ -6261,8 +6261,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 187268.45,
-      "currentPrice": 81757.71,
-      "deviationPct": -56.34,
+      "currentPrice": 81789.42,
+      "deviationPct": -56.33,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6461,9 +6461,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74604.04,
-      "currentPrice": 81757.71,
-      "priceToSthRatio": 1.0959,
-      "premiumPct": 9.59,
+      "currentPrice": 81789.42,
+      "priceToSthRatio": 1.0963,
+      "premiumPct": 9.63,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
