@@ -17,6 +17,7 @@ ENDPOINTS = [
     "/api/dashboard/hash-ribbon",       # 해시리본 (채굴자 매집 신호)
     "/api/dashboard/nvt-signal",        # NVT 시그널 (사용량 대비 밸류에이션)
     "/api/dashboard/signal-distance",   # 다음 신호 구간까지 거리 (hero 라인)
+    "/api/dashboard/timing-verdict",    # 현재 구간의 과거 30/90/180일 적중률·백분위 (hero 근거 라인 + 신호 검증 표)
     "/api/dashboard/spot-perp-ratio",   # 현물/선물 거래 비율
     "/api/analysis/iv-hv-spread",       # 옵션 IV−실현 HV 스프레드
     "/api/analysis/master-score",       # 마스터 스코어 (복합 판단 요약)

@@ -565,6 +565,9 @@
             <span class="hero-price" id="heroPrice">--</span>
           </div>
           <div id="heroDistance" style="display:none;font-size:12.5px;color:var(--t3);margin-top:8px"></div>
+          <div id="heroEvidence" style="display:none;font-size:12.5px;color:var(--t2);margin-top:6px;line-height:1.55"></div>
+          <div id="heroCaution" style="display:none;font-size:12px;margin-top:4px;line-height:1.5"></div>
+          <div id="heroHorizons" style="display:none;font-size:12px;color:var(--t3);margin-top:8px;line-height:1.6"></div>
           <div class="hero-cta">
             <a class="primary" href="guide.html" data-en="View Indicator Guide">지표 가이드 보기</a>
             <a class="ghost" href="#trends" data-en="See trends">추이 자세히</a>
@@ -796,6 +799,19 @@
                 </tr></thead>
                 <tbody id="monthlyRows"></tbody>
               </table></div>
+            </div>
+            <div id="verdictBlock" style="display:none">
+              <div class="ch" style="margin:16px 0 8px" data-en="Verdict evidence — when the score sat in each band, was price higher 30 / 90 / 180 days later? (up-rate, with the gap to the all-days base rate in brackets; the current band is highlighted)">판정 근거 — 각 점수 구간이던 날, 실제로 30 / 90 / 180일 뒤 가격이 올랐나 (상승 확률, 괄호는 전체 기준선 대비 차이 · 현재 구간 강조)</div>
+              <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
+                <thead><tr style="color:var(--m2);font-size:10.5px;text-transform:uppercase;text-align:right">
+                  <th style="text-align:left;padding:5px 8px 5px 0" data-en="Band">구간</th>
+                  <th style="padding:5px 8px" data-en="30d up">30일 상승</th>
+                  <th style="padding:5px 8px" data-en="90d up">90일 상승</th>
+                  <th style="padding:5px 0 5px 8px" data-en="180d up">180일 상승</th>
+                </tr></thead>
+                <tbody id="verdictRows"></tbody>
+              </table></div>
+              <div id="verdictNote" style="margin-top:8px;font-size:12px;color:var(--t3)"></div>
             </div>
             <div id="shadowBlock" style="display:none">
               <div class="ch" style="margin:16px 0 8px" data-en="Shadow threshold tracking — would a stricter buy bar (70) have done better than the live one (65)? Observation only; the live threshold changes only after a statistical significance gate.">그림자 임계값 추적 — 실전 매수 기준(65점)보다 엄격한 기준(70점)이 더 나았을까요? 관찰 전용이며, 실전 기준 변경은 통계적 유의성 게이트 통과 후에만 검토합니다.</div>
@@ -1318,6 +1334,65 @@ async function init(){
   hd.style.color=deltaColor(DELTA);
   hd.textContent=(DELTA>0?'▲ +':DELTA<0?'▼ ':'= ')+DELTA+T({ko:' (어제 대비)',en:' (vs. yesterday)'});
   ge('heroPrice').textContent='BTC '+usd(BTC);
+
+  /* ── [V15-02] 판정 근거 — 현재 구간이던 날의 과거 30/90/180일 상승 확률 + 점수 백분위 (hero 라인 + 신호 검증 표) ── */
+  try{
+    var tv=d.api_dashboard_timing_verdict||{};
+    var tvEn=window.BTCI18N&&window.BTCI18N.lang==='en';
+    var bandCol={UNDERVALUED:BLUE,MILD_BUY:GREEN,NEUTRAL:AMBER,MILD_SELL:ORANGE,OVERVALUED:RED};
+    if(tv.hasData&&tv.currentBand&&tv.currentBand.length){
+      var cb=tv.currentBand.filter(function(r){return r.sampleCount>0;});
+      if(cb.length){
+        var he=ge('heroEvidence');he.style.display='';
+        var parts=cb.map(function(r){return '<b style="color:'+(r.positiveEdge?GREEN:RED)+'">'+r.horizonDays+T({ko:'일 ',en:'d '})+(r.upRate||'--')+'</b>';});
+        he.innerHTML=T({ko:'이 구간이던 날, 과거에 가격이 더 높아진 비율: ',en:'When the score sat in this band, price was higher later: '})
+          +parts.join(' · ')
+          +' <span style="color:var(--t3)">('+T({ko:'표본 ',en:'n='})+cb[0].sampleCount+T({ko:'일 · 전체 기준 ',en:'d · base '})+cb.map(function(r){return (r.baseUpRate||'--').replace('%','');}).join('/')+'%)</span>'
+          +(tv.percentileRank!=null?'<br>'+T({ko:'점수 '+tv.score+'은 지난 '+tv.sampleDays+'일 중 하위 '+tv.percentileRank+'% 수준',en:'Score '+tv.score+' sits in the bottom '+tv.percentileRank+'% of the last '+tv.sampleDays+' days'}):'');
+      }
+      if(tv.caution){
+        var hc=ge('heroCaution');hc.style.display='';hc.style.color=AMBER;
+        var up30=cb.length?parseFloat(cb[0].upRate):null;
+        var cautionEn=tv.label==='MILD_SELL'||tv.label==='OVERVALUED'
+          ?'Distribution band — in the past, price was lower 30 days later '+(up30!=null?(100-up30).toFixed(1)+'% of the time':'most of the time')+'. A backdrop for reviewing position size rather than adding.'
+          :tv.label==='UNDERVALUED'
+            ?'Strong accumulation is a long-term backdrop, not a short-term bounce signal — its 90-day up-rate has trailed the base rate.'
+            :'Neutral, but score '+tv.score+' sits in the bottom '+tv.percentileRank+'% of the sample — close to the distribution band (53 or below).';
+        hc.textContent='⚠ '+(tvEn?cautionEn:tv.caution);
+      }
+      /* 구간 × 시계 표 */
+      if(tv.bands&&tv.bands.length){
+        ge('verdictBlock').style.display='';
+        var vtb=ge('verdictRows');
+        tv.bands.forEach(function(b){
+          var col=bandCol[b.label]||'var(--t2)';
+          var tr=document.createElement('tr');
+          tr.style.cssText='border-top:1px solid var(--line);text-align:right;font-family:var(--mono)'+(b.current?';background:'+col+'14':'');
+          var cells=(b.horizons||[]).map(function(h){
+            if(!h.sampleCount) return '<td style="padding:6px 8px;color:var(--t3)">--</td>';
+            return '<td style="padding:6px 8px;color:var(--t2)">'+h.upRate+' <span style="font-size:10.5px;color:'+(h.positiveEdge?GREEN:RED)+'">('+h.edge+')</span></td>';
+          }).join('');
+          tr.innerHTML='<td style="text-align:left;padding:6px 8px 6px 0;font-family:inherit;color:'+col+'"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+col+';margin-right:6px;vertical-align:middle"></span>'+ML(b.labelDisplay||b.label)+' <span style="color:var(--t3)">'+b.range+(b.current?' · '+T({ko:'현재',en:'now'}):'')+'</span></td>'+cells;
+          vtb.appendChild(tr);
+        });
+        ge('verdictNote').textContent=T({ko:'상승 확률 = 그 구간이던 날 중 N일 뒤 가격이 더 높았던 날의 비율 (표본 '+tv.sampleDays+'일, '+tv.fromDate+'~'+tv.toDate+'). 분배 구간(53 이하)이 낮게 나오는 것이 정상이며, 그래서 "분배"입니다. 강력 매집(82+)의 단기 확률이 매집 우세보다 낮은 것은 바닥 구간에서 가격이 몇 주 더 내리는 경우가 많기 때문입니다.',en:'Up-rate = share of days in that band where price was higher N days later (n='+tv.sampleDays+' days, '+tv.fromDate+' to '+tv.toDate+'). A low number for the distribution bands (53 or below) is expected — that is what makes them distribution. Strong accumulation (82+) scoring below accumulation-leaning on short horizons reflects bottoms where price keeps sliding for weeks.'});
+      }
+    }
+  }catch(e){console.warn('[dashboard] timing-verdict render failed:',e&&e.message);}
+
+  /* ── [V15-03] 시계가 다른 세 판정을 한 줄로 — 새 합성 점수 없이 기존 키만 나열 ── */
+  try{
+    var hh=ge('heroHorizons');var hc3=(cyc.halvingCycle)||{};var ms=d.api_analysis_master_score||{};
+    var hEn=window.BTCI18N&&window.BTCI18N.lang==='en';
+    var items=[T({ko:'점수 판정(30~90일): ',en:'Score (30–90d): '})+'<b style="color:'+scoreCol+'">'+ML(sd)+'</b>'];
+    if(hc3.phaseLabel) items.push(T({ko:'반감기 사이클(수개월): ',en:'Halving cycle (months): '})+'<b style="color:'+(hc3.progressBarColor||'var(--t2)')+'">'+(hEn?(hc3.phaseLabelEn||hc3.phaseLabel):hc3.phaseLabel)+'</b>');
+    if(ms.hasData&&ms.masterAction) items.push(T({ko:'단기 기술(마스터 '+ms.masterScore+'): ',en:'Short-term technical (master '+ms.masterScore+'): '})+'<b style="color:var(--t2)">'+ML(ms.masterAction)+'</b>');
+    if(items.length>1){
+      hh.style.display='';
+      hh.innerHTML=items.join(' <span style="color:var(--line)">|</span> ')
+        +'<div style="margin-top:2px">'+T({ko:'세 판정은 보는 기간이 달라 서로 다를 수 있습니다 — 점수는 지표 종합, 사이클은 반감기 경과일, 단기는 추세·RSI 기준입니다.',en:'The three read different horizons and can disagree — the score aggregates indicators, the cycle follows days since halving, short-term follows trend and RSI.'})+'</div>';
+    }
+  }catch(e){console.warn('[dashboard] hero horizons render failed:',e&&e.message);}
 
   /* ── KPI 4 ── */
   // 스파크라인 데이터: score90History (점수/가격)
