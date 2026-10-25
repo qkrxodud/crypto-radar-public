@@ -1349,6 +1349,16 @@ async function init(){
           +parts.join(' · ')
           +' <span style="color:var(--t3)">('+T({ko:'표본 ',en:'n='})+cb[0].sampleCount+T({ko:'일 · 전체 기준 ',en:'d · base '})+cb.map(function(r){return (r.baseUpRate||'--').replace('%','');}).join('/')+'%)</span>'
           +(tv.percentileRank!=null?'<br>'+T({ko:'점수 '+tv.score+'은 지난 '+tv.sampleDays+'일 중 하위 '+tv.percentileRank+'% 수준',en:'Score '+tv.score+' sits in the bottom '+tv.percentileRank+'% of the last '+tv.sampleDays+' days'}):'');
+        /* [V16-01] 이력 비교용 점수 — 5.5년 성적표는 2021년부터 있던 9개 지표로 매긴 점수 위에서 만들어졌다 */
+        var cmp=tv.comparable;
+        if(cmp&&cmp.score!=null){
+          var cmpCol=bandCol[cmp.label]||'var(--t2)';
+          var gapTxt=(cmp.gapFromFullScore>0?'+':'')+cmp.gapFromFullScore;
+          he.innerHTML+='<br>'+T({ko:'장기 지표 기준 점수(2021년부터 있던 9개 지표만): ',en:'Long-sample basis score (the 9 indicators that exist since 2021): '})
+            +'<b style="color:'+cmpCol+'">'+cmp.score+' · '+ML(cmp.labelDisplay||cmp.label)+'</b>'
+            +' <span style="color:var(--t3)">('+T({ko:'전체 지표 점수와 '+gapTxt+'점 · 하위 '+cmp.percentileRank+'% · 위 성적표의 잣대',en:gapTxt+' vs. full score · bottom '+cmp.percentileRank+'% · the yardstick behind the track record above'})+')</span>'
+            +(cmp.sameBand?'':'<span style="color:'+AMBER+'"> '+T({ko:'— 구간이 달라 표에서 '+ML(cmp.labelDisplay||cmp.label)+' 행도 함께 보세요',en:' — different band, so also read the '+ML(cmp.labelDisplay||cmp.label)+' row in the table'})+'</span>');
+        }
       }
       if(tv.caution){
         var hc=ge('heroCaution');hc.style.display='';hc.style.color=AMBER;
@@ -1375,7 +1385,7 @@ async function init(){
           tr.innerHTML='<td style="text-align:left;padding:6px 8px 6px 0;font-family:inherit;color:'+col+'"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+col+';margin-right:6px;vertical-align:middle"></span>'+ML(b.labelDisplay||b.label)+' <span style="color:var(--t3)">'+b.range+(b.current?' · '+T({ko:'현재',en:'now'}):'')+'</span></td>'+cells;
           vtb.appendChild(tr);
         });
-        ge('verdictNote').textContent=T({ko:'상승 확률 = 그 구간이던 날 중 N일 뒤 가격이 더 높았던 날의 비율 (표본 '+tv.sampleDays+'일, '+tv.fromDate+'~'+tv.toDate+'). 분배 구간(53 이하)이 낮게 나오는 것이 정상이며, 그래서 "분배"입니다. 강력 매집(82+)의 단기 확률이 매집 우세보다 낮은 것은 바닥 구간에서 가격이 몇 주 더 내리는 경우가 많기 때문입니다.',en:'Up-rate = share of days in that band where price was higher N days later (n='+tv.sampleDays+' days, '+tv.fromDate+' to '+tv.toDate+'). A low number for the distribution bands (53 or below) is expected — that is what makes them distribution. Strong accumulation (82+) scoring below accumulation-leaning on short horizons reflects bottoms where price keeps sliding for weeks.'});
+        ge('verdictNote').textContent=T({ko:'상승 확률 = 그 구간이던 날 중 N일 뒤 가격이 더 높았던 날의 비율 (표본 '+tv.sampleDays+'일, '+tv.fromDate+'~'+tv.toDate+'). 분배 구간(53 이하)이 낮게 나오는 것이 정상이며, 그래서 "분배"입니다. 강력 매집(82+)의 단기 확률이 매집 우세보다 낮은 것은 바닥 구간에서 가격이 몇 주 더 내리는 경우가 많기 때문입니다.'+(tv.comparable&&tv.comparable.score!=null?' 이 표의 이력 점수는 2021년부터 있던 9개 지표로 계산된 값이라, 같은 잣대로 다시 매긴 오늘 점수는 '+tv.comparable.score+'('+(tv.comparable.labelDisplay||'')+')입니다 — 전체 지표 점수 '+tv.score+'과 '+(tv.comparable.gapFromFullScore>0?'+':'')+tv.comparable.gapFromFullScore+'점 차.':''),en:'Up-rate = share of days in that band where price was higher N days later (n='+tv.sampleDays+' days, '+tv.fromDate+' to '+tv.toDate+'). A low number for the distribution bands (53 or below) is expected — that is what makes them distribution. Strong accumulation (82+) scoring below accumulation-leaning on short horizons reflects bottoms where price keeps sliding for weeks.'+(tv.comparable&&tv.comparable.score!=null?' The historical scores in this table were built from the 9 indicators that exist since 2021; re-scored on that same basis, today is '+tv.comparable.score+' ('+ML(tv.comparable.labelDisplay||tv.comparable.label)+'), '+(tv.comparable.gapFromFullScore>0?'+':'')+tv.comparable.gapFromFullScore+' vs. the full-indicator score of '+tv.score+'.':'')});
       }
     }
   }catch(e){console.warn('[dashboard] timing-verdict render failed:',e&&e.message);}
