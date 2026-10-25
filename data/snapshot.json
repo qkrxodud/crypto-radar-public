@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-25T10:33:35Z",
+  "updatedAt": "2026-10-25T10:53:49Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -17,7 +17,7 @@
       "halvingPhase": "사이클 후기",
       "halvingPhaseEn": "Late Cycle",
       "actionType": "HOLD",
-      "actionReason": "관망 구간 (점수 57) — 다음 매수 기회 대기 중",
+      "actionReason": "관망 구간 (점수 57) — 분배 구간까지 -4점 · 매집 구간까지 +8점, 분배 쪽이 더 가깝습니다",
       "indicatorBreakdown": {
         "공포탐욕": 46,
         "펀딩비": 40,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "80811.13",
       "macd": {
-        "macdLine": "-357.92",
-        "signalLine": "-47.20",
-        "histogram": "-310.72",
+        "macdLine": "-359.17",
+        "signalLine": "-47.45",
+        "histogram": "-311.72",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -2316,6 +2316,189 @@
       ],
       "summary": "중립(54~64점) 구간이던 날은 과거 30일 뒤 상승 55.4% · 90일 뒤 상승 57.1% · 180일 뒤 상승 54.2% (표본 491일, 기준 52.0/52.3/58.3%)",
       "caution": "중립이지만 점수 57은 지난 표본 중 하위 14% — 분배 구간(53 이하)에 가까운 낮은 점수입니다",
+      "comparable": {
+        "score": 58,
+        "label": "NEUTRAL",
+        "labelDisplay": "중립",
+        "bandRange": "54~64",
+        "percentileRank": 16,
+        "gapFromFullScore": 1,
+        "sameBand": true,
+        "horizons": [
+          {
+            "horizonDays": 30,
+            "sampleCount": 491,
+            "upRate": "55.4%",
+            "baseUpRate": "52.0%",
+            "edge": "+3.4%p",
+            "positiveEdge": true,
+            "meanReturn": "+3.1%",
+            "medianReturn": "+2.3%",
+            "baseMeanReturn": "+1.8%"
+          },
+          {
+            "horizonDays": 90,
+            "sampleCount": 443,
+            "upRate": "57.1%",
+            "baseUpRate": "52.3%",
+            "edge": "+4.8%p",
+            "positiveEdge": true,
+            "meanReturn": "+3.3%",
+            "medianReturn": "+2.3%",
+            "baseMeanReturn": "+6.1%"
+          },
+          {
+            "horizonDays": 180,
+            "sampleCount": 413,
+            "upRate": "54.2%",
+            "baseUpRate": "58.3%",
+            "edge": "-4.0%p",
+            "positiveEdge": false,
+            "meanReturn": "+10.6%",
+            "medianReturn": "+7.5%",
+            "baseMeanReturn": "+13.2%"
+          }
+        ],
+        "note": "장기 수집 지표 9개만으로 다시 매긴 오늘 점수는 58(중립, 지난 표본 중 하위 16%) — 전체 지표 점수 57과 +1점 차. 5.5년 근거표와 백분위는 이 잣대로 만들어졌습니다"
+      },
+      "stability": {
+        "streakDays": 48,
+        "recentMin": 57,
+        "recentMax": 64,
+        "recentWindowDays": 30,
+        "flipCount": 212,
+        "shortRunShare": "39.4%",
+        "medianRunDays": 4,
+        "young": false,
+        "text": "중립 48일째 · 최근 30일 점수 57~64 · 표본 전체에서 라벨 전환 212회 중 39.4%는 2일 안에 되돌아감(중앙 지속 4일)"
+      },
+      "landmarks": {
+        "hitCount": 9,
+        "total": 10,
+        "summary": "사이클 고점·저점 10곳 중 9곳에서 그날 라벨이 방향을 맞췄습니다 (고점=분배, 저점=매집 라벨일 때 적중, 중립은 미적중)",
+        "rows": [
+          {
+            "date": "2021-04-14",
+            "event": "1차 사상 최고가 (코인베이스 상장일)",
+            "kind": "TOP",
+            "kindDisplay": "고점",
+            "score": 71,
+            "label": "MILD_BUY",
+            "labelDisplay": "매집 우세",
+            "hit": false,
+            "btcClose": "62960",
+            "forward90dReturn": "-48.0%"
+          },
+          {
+            "date": "2021-11-10",
+            "event": "사상 최고가 69,000달러",
+            "kind": "TOP",
+            "kindDisplay": "고점",
+            "score": 53,
+            "label": "MILD_SELL",
+            "labelDisplay": "분배 우세",
+            "hit": true,
+            "btcClose": "64882",
+            "forward90dReturn": "-32.1%"
+          },
+          {
+            "date": "2022-06-18",
+            "event": "루나·3AC 붕괴 저점",
+            "kind": "BOTTOM",
+            "kindDisplay": "저점",
+            "score": 94,
+            "label": "UNDERVALUED",
+            "labelDisplay": "강력 매집",
+            "hit": true,
+            "btcClose": "18971",
+            "forward90dReturn": "+4.4%"
+          },
+          {
+            "date": "2022-11-21",
+            "event": "FTX 파산 사이클 바닥",
+            "kind": "BOTTOM",
+            "kindDisplay": "저점",
+            "score": 92,
+            "label": "UNDERVALUED",
+            "labelDisplay": "강력 매집",
+            "hit": true,
+            "btcClose": "15781",
+            "forward90dReturn": "+53.8%"
+          },
+          {
+            "date": "2024-03-14",
+            "event": "현물 ETF 승인 후 고점 73,000달러",
+            "kind": "TOP",
+            "kindDisplay": "고점",
+            "score": 45,
+            "label": "OVERVALUED",
+            "labelDisplay": "강력 분배",
+            "hit": true,
+            "btcClose": "71389",
+            "forward90dReturn": "-4.4%"
+          },
+          {
+            "date": "2024-08-05",
+            "event": "엔 캐리 청산 급락 저점",
+            "kind": "BOTTOM",
+            "kindDisplay": "저점",
+            "score": 84,
+            "label": "UNDERVALUED",
+            "labelDisplay": "강력 매집",
+            "hit": true,
+            "btcClose": "54019",
+            "forward90dReturn": "+27.3%"
+          },
+          {
+            "date": "2024-12-17",
+            "event": "10만 달러 돌파 후 고점",
+            "kind": "TOP",
+            "kindDisplay": "고점",
+            "score": 43,
+            "label": "OVERVALUED",
+            "labelDisplay": "강력 분배",
+            "hit": true,
+            "btcClose": "106134",
+            "forward90dReturn": "-20.8%"
+          },
+          {
+            "date": "2025-01-20",
+            "event": "사상 최고가 109,000달러",
+            "kind": "TOP",
+            "kindDisplay": "고점",
+            "score": 51,
+            "label": "MILD_SELL",
+            "labelDisplay": "분배 우세",
+            "hit": true,
+            "btcClose": "102260",
+            "forward90dReturn": "-16.7%"
+          },
+          {
+            "date": "2025-04-07",
+            "event": "관세 충격 저점",
+            "kind": "BOTTOM",
+            "kindDisplay": "저점",
+            "score": 79,
+            "label": "MILD_BUY",
+            "labelDisplay": "매집 우세",
+            "hit": true,
+            "btcClose": "79163",
+            "forward90dReturn": "+37.9%"
+          },
+          {
+            "date": "2025-10-06",
+            "event": "사상 최고가 124,658달러",
+            "kind": "TOP",
+            "kindDisplay": "고점",
+            "score": 51,
+            "label": "MILD_SELL",
+            "labelDisplay": "분배 우세",
+            "hit": true,
+            "btcClose": "124659",
+            "forward90dReturn": "-26.6%"
+          }
+        ]
+      },
       "errorMessage": null
     },
     "api_dashboard_spot_perp_ratio": {
@@ -2349,9 +2532,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 42134,
-      "vsizeMb": "22.54",
-      "totalFeeBtc": "0.0380",
+      "txCount": 42010,
+      "vsizeMb": "22.51",
+      "totalFeeBtc": "0.0363",
       "congestionLevel": "보통 — 정상 대기열",
       "congestionClass": "text-gray-300",
       "errorMessage": null
@@ -2361,36 +2544,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "27.50"
+          "sharePct": "27.55"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.72"
+          "sharePct": "19.67"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.28"
+          "sharePct": "15.31"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.43"
+          "sharePct": "8.35"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "5.93"
+          "sharePct": "5.84"
         }
       ],
-      "top3Concentration": "62.50",
+      "top3Concentration": "62.53",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41087,
-      "nodeCount": 17437,
-      "capacityBtc": "4896.6034",
-      "avgChannelSizeBtc": "0.119176",
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -2400,7 +2583,7 @@
       "currentScore": 57,
       "actionType": "HOLD",
       "actionLabel": "대기",
-      "actionReason": "관망 구간 (점수 57) — 다음 매수 기회 대기 중",
+      "actionReason": "관망 구간 (점수 57) — 분배 구간까지 -4점 · 매집 구간까지 +8점, 분배 쪽이 더 가깝습니다",
       "marketSeason": "혼합 시장",
       "positionSizePct": 0,
       "dcaSplits": 0,
@@ -3975,7 +4158,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "254016636370.29046",
+      "totalMarketCapUsd": "254028259412.69086",
       "marketCap30dAgoUsd": "259048882745.31575",
       "growth30dPercent": "-1.94",
       "signal": "STABLE",
@@ -4046,63 +4229,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "80238.60",
-      "openInterestUsd": "7486750380.68672600",
-      "longAccountRatio": "0.6744",
-      "shortAccountRatio": "0.3256",
-      "downsideLiquidationUsd": "5049064456.74",
-      "upsideLiquidationUsd": "2437685923.95",
+      "currentPrice": "80225.50",
+      "openInterestUsd": "7480220306.79040000",
+      "longAccountRatio": "0.6729",
+      "shortAccountRatio": "0.3271",
+      "downsideLiquidationUsd": "5033440244.44",
+      "upsideLiquidationUsd": "2446780062.35",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "72214.74",
+          "price": "72202.95",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2019625782.69"
+          "notionalUsd": "2013376097.78"
         },
         {
-          "price": "88262.46",
+          "price": "88248.05",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "975074369.58"
+          "notionalUsd": "978712024.94"
         },
         {
-          "price": "77029.06",
+          "price": "77016.48",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1767172559.86"
+          "notionalUsd": "1761704085.55"
         },
         {
-          "price": "83448.14",
+          "price": "83434.52",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "853190073.38"
+          "notionalUsd": "856373021.82"
         },
         {
-          "price": "78633.83",
+          "price": "78620.99",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1009812891.35"
+          "notionalUsd": "1006688048.89"
         },
         {
-          "price": "81843.37",
+          "price": "81830.01",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "487537184.79"
+          "notionalUsd": "489356012.47"
         },
         {
-          "price": "79436.21",
+          "price": "79423.25",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "252453222.84"
+          "notionalUsd": "251672012.22"
         },
         {
-          "price": "81040.99",
+          "price": "81027.76",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "121884296.20"
+          "notionalUsd": "122339003.12"
         }
       ],
       "errorMessage": null
@@ -4472,8 +4655,8 @@
         "SOPR": 0,
         "LTH/STH": 0
       },
-      "activeCount": 45,
-      "totalCount": 40,
+      "activeCount": 44,
+      "totalCount": 47,
       "dataDate": "2026-10-25",
       "indicatorRows": [
         {
@@ -5499,7 +5682,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-25T10:30:02.317356Z",
+      "generatedAt": "2026-10-25T10:36:52.757752Z",
       "compositeScore": 57,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5512,26 +5695,26 @@
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 60으로 높은 편이지만, 알트시즌지수가 56으로 약세를 보인다."
+          "content": "BTC 도미넌스가 60으로 높아 알트코인에 대한 투자 심리가 약할 수 있다."
         },
         {
           "type": "RISK",
-          "content": "펀딩비가 낮아 시장의 상승 압력이 약할 수 있다."
+          "content": "펀딩비가 낮아 롱 포지션에 대한 수요가 감소할 위험이 있다."
         },
         {
           "type": "ACTION",
-          "content": "현재의 중립적인 시장 상황에서 관망하며 추가 신호를 기다리는 것이 좋다."
+          "content": "시장 상황을 주의 깊게 모니터링하며, 포트폴리오 다각화를 고려하라."
         },
         {
           "type": "ACTION",
-          "content": "가격 변동성을 고려하여 리스크 관리에 주의해야 한다."
+          "content": "단기 거래보다는 장기 투자 전략을 유지하는 것이 바람직하다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-10-25T10:33:34.008079Z",
+      "generatedAt": "2026-10-25T10:53:45.897889Z",
       "compositeScore": 57,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5540,34 +5723,34 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed signals across various indicators."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting caution."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance at 60% may limit altcoin growth."
+          "content": "High BTC dominance may limit altcoin growth."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential downward pressure on prices."
+          "content": "Low RSI indicates potential for further price decline."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment closely for shifts in fear and greed."
+          "content": "Monitor BTC price movements closely for entry points."
         },
         {
           "type": "ACTION",
-          "content": "Consider diversifying into altcoins if BTC shows signs of consolidation."
+          "content": "Consider diversifying into altcoins if sentiment improves."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-25T10:21:28.325676Z",
-      "compositeScore": "-0.138",
-      "label": "NEUTRAL",
-      "labelDisplay": "중립",
-      "labelHexColor": "#FBBF24",
+      "generatedAt": "2026-10-25T10:36:52.456927Z",
+      "compositeScore": "-0.225",
+      "label": "NEGATIVE",
+      "labelDisplay": "부정",
+      "labelHexColor": "#F97316",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
@@ -5583,7 +5766,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
           "publishedAt": "2026-10-24T15:21:06Z",
-          "score": "-0.2"
+          "score": "-0.4"
         },
         {
           "title": "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations",
@@ -5597,42 +5780,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/23/why-mcdonalds-microsoft-and-google-saying-no-to-tokenized-stocks-isn-t-a-dealbreaker",
           "publishedAt": "2026-10-24T15:00:00Z",
-          "score": "0.1"
+          "score": "-0.2"
         },
         {
           "title": "Argentina drops criminal probe into President Milei over crashed memecoin LIBRA",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/24/argentina-drops-criminal-probe-into-president-milei-over-crashed-memecoin-libra",
           "publishedAt": "2026-10-24T14:38:47Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Wells Fargo, Cisco, Marvell among latest firms objecting to OKXICE's tokenized stock plan",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/24/wells-fargo-cisco-marvell-among-latest-firms-objecting-to-okxice-s-tokenized-stock-plan",
           "publishedAt": "2026-10-24T14:06:24Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoinâs wealthy holders turning to loans and yield as investment habits mature: Xapo CEO",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/24/bitcoin-s-wealthy-holders-turning-to-loans-and-yield-as-investment-habits-mature-xapo-ceo",
           "publishedAt": "2026-10-24T14:00:00Z",
-          "score": "0.5"
+          "score": "0.2"
         },
         {
           "title": "U.S. Clarity Act failure gives Asia and Middle East a competitive edge, says Apex Group CEO",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/24/u-s-clarity-act-failure-gives-asia-and-middle-east-a-competitive-edge-says-apex-group-ceo",
           "publishedAt": "2026-10-24T12:00:00Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Wells Fargo and five others object to OKX-ICE tokenized stock listings: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/nasdaq-companies-object-tokenized-stock-listings-okx-ice?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T21:32:16Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "IRS plans lower tax disclosure penalties, including for crypto: Forbes",
@@ -5646,7 +5829,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T18:39:02Z",
-          "score": "-0.6"
+          "score": "-0.8"
         },
         {
           "title": "US senator probes Tether after reported deal with ex-Trump crypto adviser",
@@ -5667,7 +5850,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-seeks-support-above-81k-as-brent-crude-oil-hits-highest-level-since-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T15:39:17Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5681,7 +5864,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/china-2030-national-blockchain-network-buildout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-23T13:21:07Z",
-          "score": "0.3"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
@@ -6515,8 +6698,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 187268.45,
-      "currentPrice": 81393.79,
-      "deviationPct": -56.54,
+      "currentPrice": 81371.89,
+      "deviationPct": -56.55,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6715,9 +6898,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74572.67,
-      "currentPrice": 81393.79,
-      "priceToSthRatio": 1.0915,
-      "premiumPct": 9.15,
+      "currentPrice": 81371.89,
+      "priceToSthRatio": 1.0912,
+      "premiumPct": 9.12,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
