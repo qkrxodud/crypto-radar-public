@@ -813,6 +813,21 @@
               </table></div>
               <div id="verdictNote" style="margin-top:8px;font-size:12px;color:var(--t3)"></div>
             </div>
+            <div id="landmarkBlock" style="display:none">
+              <div class="ch" style="margin:16px 0 8px" data-en="Cycle landmarks — on the well-known tops and bottoms, what did the score say that day? (dates fixed in advance; misses are shown as they are)">사이클 랜드마크 검증 — 누구나 아는 고점·저점 당일에 점수는 무엇을 말했나 (날짜는 사전에 고정, 빗나간 날도 그대로)</div>
+              <div id="landmarkSummary" style="font-size:12.5px;color:var(--t2);margin-bottom:8px"></div>
+              <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
+                <thead><tr style="color:var(--m2);font-size:10.5px;text-transform:uppercase;text-align:right">
+                  <th style="text-align:left;padding:5px 8px 5px 0" data-en="Date · event">날짜 · 사건</th>
+                  <th style="padding:5px 8px" data-en="Kind">종류</th>
+                  <th style="padding:5px 8px" data-en="BTC">BTC</th>
+                  <th style="padding:5px 8px" data-en="Score · label">점수 · 라벨</th>
+                  <th style="padding:5px 8px" data-en="Hit">적중</th>
+                  <th style="padding:5px 0 5px 8px" data-en="+90d">90일 뒤</th>
+                </tr></thead>
+                <tbody id="landmarkRows"></tbody>
+              </table></div>
+            </div>
             <div id="shadowBlock" style="display:none">
               <div class="ch" style="margin:16px 0 8px" data-en="Shadow threshold tracking — would a stricter buy bar (70) have done better than the live one (65)? Observation only; the live threshold changes only after a statistical significance gate.">그림자 임계값 추적 — 실전 매수 기준(65점)보다 엄격한 기준(70점)이 더 나았을까요? 관찰 전용이며, 실전 기준 변경은 통계적 유의성 게이트 통과 후에만 검토합니다.</div>
               <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
@@ -1386,6 +1401,33 @@ async function init(){
           vtb.appendChild(tr);
         });
         ge('verdictNote').textContent=T({ko:'상승 확률 = 그 구간이던 날 중 N일 뒤 가격이 더 높았던 날의 비율 (표본 '+tv.sampleDays+'일, '+tv.fromDate+'~'+tv.toDate+'). 분배 구간(53 이하)이 낮게 나오는 것이 정상이며, 그래서 "분배"입니다. 강력 매집(82+)의 단기 확률이 매집 우세보다 낮은 것은 바닥 구간에서 가격이 몇 주 더 내리는 경우가 많기 때문입니다.'+(tv.comparable&&tv.comparable.score!=null?' 이 표의 이력 점수는 2021년부터 있던 9개 지표로 계산된 값이라, 같은 잣대로 다시 매긴 오늘 점수는 '+tv.comparable.score+'('+(tv.comparable.labelDisplay||'')+')입니다 — 전체 지표 점수 '+tv.score+'과 '+(tv.comparable.gapFromFullScore>0?'+':'')+tv.comparable.gapFromFullScore+'점 차.':''),en:'Up-rate = share of days in that band where price was higher N days later (n='+tv.sampleDays+' days, '+tv.fromDate+' to '+tv.toDate+'). A low number for the distribution bands (53 or below) is expected — that is what makes them distribution. Strong accumulation (82+) scoring below accumulation-leaning on short horizons reflects bottoms where price keeps sliding for weeks.'+(tv.comparable&&tv.comparable.score!=null?' The historical scores in this table were built from the 9 indicators that exist since 2021; re-scored on that same basis, today is '+tv.comparable.score+' ('+ML(tv.comparable.labelDisplay||tv.comparable.label)+'), '+(tv.comparable.gapFromFullScore>0?'+':'')+tv.comparable.gapFromFullScore+' vs. the full-indicator score of '+tv.score+'.':'')});
+      }
+      /* [V16-02] 라벨 안정성 — 지속일·최근 30일 점수 범위·전환 빈도 (규칙 아님, 사실) */
+      var st=tv.stability;
+      if(st&&st.streakDays!=null){
+        var heS=ge('heroEvidence');heS.style.display='';
+        var stEn=T({ko:'',en:ML(tv.labelDisplay||tv.label)+' for '+st.streakDays+' day'+(st.streakDays===1?'':'s')+' · score '+st.recentMin+'–'+st.recentMax+' over the last '+st.recentWindowDays+' days · of '+st.flipCount+' label changes in the sample, '+st.shortRunShare+' reverted within 2 days (median run '+st.medianRunDays+' days)'+(st.young?' — this label is only '+st.streakDays+' day(s) old, so allow for a reversal':'')});
+        heS.innerHTML+='<br><span style="color:'+(st.young?AMBER:'var(--t2)')+'">'+(tvEn?stEn:st.text)+'</span>';
+      }
+      /* [V16-03] 사이클 랜드마크 검증표 */
+      var lm=tv.landmarks;
+      if(lm&&lm.rows&&lm.rows.length){
+        ge('landmarkBlock').style.display='';
+        ge('landmarkSummary').textContent=tvEn?('On '+lm.hitCount+' of '+lm.total+' well-known cycle tops and bottoms, that day\'s label pointed the right way (top = distribution label, bottom = accumulation label; neutral counts as a miss).'):lm.summary;
+        var ltb=ge('landmarkRows');ltb.innerHTML='';
+        lm.rows.forEach(function(r){
+          var col=bandCol[r.label]||'var(--t2)';
+          var kindCol=r.kind==='TOP'?RED:BLUE;
+          var tr=document.createElement('tr');
+          tr.style.cssText='border-top:1px solid var(--line);text-align:right;font-family:var(--mono)';
+          tr.innerHTML='<td style="text-align:left;padding:6px 8px 6px 0;font-family:inherit;color:var(--t1)">'+r.date+' <span style="color:var(--t3)">'+(tvEn?'':r.event)+'</span></td>'
+            +'<td style="padding:6px 8px;color:'+kindCol+'">'+(tvEn?(r.kind==='TOP'?'Top':'Bottom'):r.kindDisplay)+'</td>'
+            +'<td style="padding:6px 8px;color:var(--t2)">'+(r.btcClose?'$'+Number(r.btcClose).toLocaleString('en-US'):'--')+'</td>'
+            +'<td style="padding:6px 8px;color:'+col+'">'+r.score+' · '+ML(r.labelDisplay||r.label)+'</td>'
+            +'<td style="padding:6px 8px;color:'+(r.hit?GREEN:RED)+'">'+(r.hit?'✓':'✗')+'</td>'
+            +'<td style="padding:6px 0 6px 8px;color:'+(r.forward90dReturn&&r.forward90dReturn.charAt(0)==='-'?RED:GREEN)+'">'+(r.forward90dReturn||'--')+'</td>';
+          ltb.appendChild(tr);
+        });
       }
     }
   }catch(e){console.warn('[dashboard] timing-verdict render failed:',e&&e.message);}
