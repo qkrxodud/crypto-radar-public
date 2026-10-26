@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-26T17:04:24Z",
+  "updatedAt": "2026-10-26T17:24:33Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "80022.01",
       "macd": {
-        "macdLine": "-430.05",
-        "signalLine": "-95.55",
-        "histogram": "-334.50",
+        "macdLine": "-425.97",
+        "signalLine": "-94.74",
+        "histogram": "-331.23",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -425,9 +425,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001135",
       "ivRv": {
-        "iv": "30.63",
+        "iv": "30.39",
         "rv": "27.00",
-        "spread": "+3.63",
+        "spread": "+3.39",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2532,11 +2532,11 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 48526,
-      "vsizeMb": "23.73",
-      "totalFeeBtc": "0.0521",
-      "congestionLevel": "보통 — 정상 대기열",
-      "congestionClass": "text-gray-300",
+      "txCount": 51291,
+      "vsizeMb": "24.13",
+      "totalFeeBtc": "0.0643",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
@@ -2544,7 +2544,7 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.99"
+          "sharePct": "26.90"
         },
         {
           "name": "AntPool",
@@ -2563,17 +2563,17 @@
           "sharePct": "5.38"
         }
       ],
-      "top3Concentration": "63.63",
+      "top3Concentration": "63.54",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41080,
-      "nodeCount": 17438,
-      "capacityBtc": "4898.2676",
-      "avgChannelSizeBtc": "0.119237",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4229,63 +4229,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "80354.20",
-      "openInterestUsd": "7486821260.14639100",
-      "longAccountRatio": "0.6927",
-      "shortAccountRatio": "0.3073",
-      "downsideLiquidationUsd": "5186121086.90",
-      "upsideLiquidationUsd": "2300700173.24",
+      "currentPrice": "80416.30",
+      "openInterestUsd": "7532722792.05240000",
+      "longAccountRatio": "0.6900",
+      "shortAccountRatio": "0.3100",
+      "downsideLiquidationUsd": "5197578726.52",
+      "upsideLiquidationUsd": "2335144065.54",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "72318.78",
+          "price": "72374.67",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2074448434.76"
+          "notionalUsd": "2079031490.61"
         },
         {
-          "price": "88389.62",
+          "price": "88457.93",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "920280069.30"
+          "notionalUsd": "934057626.21"
         },
         {
-          "price": "77140.03",
+          "price": "77199.65",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1815142380.42"
+          "notionalUsd": "1819152554.28"
         },
         {
-          "price": "83568.37",
+          "price": "83632.95",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "805245060.64"
+          "notionalUsd": "817300422.94"
         },
         {
-          "price": "78747.12",
+          "price": "78807.97",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1037224217.38"
+          "notionalUsd": "1039515745.30"
         },
         {
-          "price": "81961.28",
+          "price": "82024.63",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "460140034.65"
+          "notionalUsd": "467028813.11"
         },
         {
-          "price": "79550.66",
+          "price": "79612.14",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "259306054.35"
+          "notionalUsd": "259878936.33"
         },
         {
-          "price": "81157.74",
+          "price": "81220.46",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "115035008.66"
+          "notionalUsd": "116757203.28"
         }
       ],
       "errorMessage": null
@@ -5746,8 +5746,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-26T16:05:03.019747Z",
-      "compositeScore": "0.106",
+      "generatedAt": "2026-10-26T17:24:31.999201Z",
+      "compositeScore": "0.038",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5755,11 +5755,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Tom Lee's Bitmine favors share buybacks to ether purchases as crypto declines",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/10/26/tom-lee-s-bitmine-favors-share-buybacks-to-ether-purchases-as-crypto-declines",
+          "publishedAt": "2026-10-26T16:05:12Z",
+          "score": "-0.6"
+        },
+        {
           "title": "NBA joins pro sports leagues on CFTC prediction markets bandwagon while NFL balks",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/26/nba-joins-pro-sports-leagues-on-cftc-prediction-markets-bandwagon-while-nfl-balks",
           "publishedAt": "2026-10-26T15:59:55Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "OCC calls on community banks to enter the stablecoin payments market",
@@ -5780,7 +5787,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/26/canada-opens-consultation-on-draft-stablecoin-rules-maintains-ban-on-yields",
           "publishedAt": "2026-10-26T14:23:41Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "AI giant Anthropic files for blockbuster IPO",
@@ -5801,35 +5808,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-holds-near-usd80-000-as-oil-retreats-and-the-fed-decision-looms",
           "publishedAt": "2026-10-26T11:24:33Z",
-          "score": "0.3"
+          "score": "0.5"
         },
         {
-          "title": "Live news: Bitcoin sits near $80,000 as tech rallies following Anthropic IPO filing",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/10/26/live-news-brent-crude-slides-below-usd110-as-iran-deal-hopes-grow-and-brazil-stocks-sink",
-          "publishedAt": "2026-10-26T11:05:31Z",
-          "score": "0.4"
+          "title": "South Korea lawmakers mull pushing crypto tax implementation to 2029",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/south-korea-implementation-crypto-tax-2029?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-26T16:18:09Z",
+          "score": "-0.5"
         },
         {
           "title": "Kalshi strikes deal with S&P Dow Jones Indices to expand financial event contracts",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/sp-dow-jones-partners-with-kalshi-to-bring-financial-benchmarks-to-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-26T15:54:15Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "PHP flaw shows AI ‘vulnerability apocalypse’ is on schedule: Immunefi CEO",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/php-flaw-ai-vulnerability-apocalypse-immunefi-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-26T14:25:22Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "Strategy skips Bitcoin purchases, spends $205M on STRC buybacks",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/strategy-skips-btc-buy-205-million-strc-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-26T13:27:38Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5850,21 +5857,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/aviva-investors-launches-tokenized-share-class-of-sterling-fund-on-xrp-ledger?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-26T11:39:27Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "BTC price risks $80K loss into FOMC, earnings: Three things to know in Bitcoin this week",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/btc-price-risks-80k-loss-into-fomc-earnings-three-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-26T10:49:55Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Securitize’s tokenized stock value halves as Circle widens lead",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/securitizes-tokenized-stock-circle-lead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-26T10:25:01Z",
-          "score": "-0.6"
+          "score": "-0.5"
         }
       ],
       "errorMessage": null
@@ -6698,8 +6698,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 187605.29,
-      "currentPrice": 80930.07,
-      "deviationPct": -56.86,
+      "currentPrice": 80998.73,
+      "deviationPct": -56.82,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6898,9 +6898,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74682.09,
-      "currentPrice": 80930.07,
-      "priceToSthRatio": 1.0837,
-      "premiumPct": 8.37,
+      "currentPrice": 80998.73,
+      "priceToSthRatio": 1.0846,
+      "premiumPct": 8.46,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
