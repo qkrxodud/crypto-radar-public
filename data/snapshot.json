@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-26T09:01:20Z",
+  "updatedAt": "2026-10-26T09:21:25Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,16 +61,16 @@
       "historicalVolatility": "0.27",
       "btcClose": "80022.01",
       "macd": {
-        "macdLine": "-442.46",
-        "signalLine": "-98.03",
-        "histogram": "-344.42",
+        "macdLine": "-424.96",
+        "signalLine": "-94.53",
+        "histogram": "-330.43",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "17.7",
-        "plusDi": "16.9",
+        "plusDi": "16.8",
         "minusDi": "24.4",
         "strength": "WEAK",
         "strengthLabel": "무추세(횡보)",
@@ -425,9 +425,9 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001135",
       "ivRv": {
-        "iv": "30.66",
+        "iv": "31.63",
         "rv": "27.00",
-        "spread": "+3.66",
+        "spread": "+4.63",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2532,11 +2532,11 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 50267,
-      "vsizeMb": "23.92",
-      "totalFeeBtc": "0.0545",
-      "congestionLevel": "혼잡 — 수수료 상승 중",
-      "congestionClass": "text-yellow-400",
+      "txCount": 49173,
+      "vsizeMb": "23.45",
+      "totalFeeBtc": "0.0465",
+      "congestionLevel": "보통 — 정상 대기열",
+      "congestionClass": "text-gray-300",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
@@ -2544,26 +2544,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "27.01"
+          "sharePct": "27.08"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.24"
+          "sharePct": "20.13"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.39"
+          "sharePct": "16.56"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.88"
+          "sharePct": "8.87"
         },
         {
           "name": "MARA Pool",
           "sharePct": "5.31"
         }
       ],
-      "top3Concentration": "63.64",
+      "top3Concentration": "63.77",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -4229,63 +4229,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "80212.10",
-      "openInterestUsd": "7530675579.42876100",
-      "longAccountRatio": "0.6933",
-      "shortAccountRatio": "0.3067",
-      "downsideLiquidationUsd": "5221017379.22",
-      "upsideLiquidationUsd": "2309658200.21",
+      "currentPrice": "80442.00",
+      "openInterestUsd": "7533473959.20420000",
+      "longAccountRatio": "0.6935",
+      "shortAccountRatio": "0.3065",
+      "downsideLiquidationUsd": "5224464190.71",
+      "upsideLiquidationUsd": "2309009768.50",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "72190.89",
+          "price": "72397.80",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2088406951.69"
+          "notionalUsd": "2089785676.28"
         },
         {
-          "price": "88233.31",
+          "price": "88486.20",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "923863280.08"
+          "notionalUsd": "923603907.40"
         },
         {
-          "price": "77003.62",
+          "price": "77224.32",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1827356082.73"
+          "notionalUsd": "1828562466.75"
         },
         {
-          "price": "83420.58",
+          "price": "83659.68",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "808380370.07"
+          "notionalUsd": "808153418.97"
         },
         {
-          "price": "78607.86",
+          "price": "78833.16",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1044203475.84"
+          "notionalUsd": "1044892838.14"
         },
         {
-          "price": "81816.34",
+          "price": "82050.84",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "461931640.04"
+          "notionalUsd": "461801953.70"
         },
         {
-          "price": "79409.98",
+          "price": "79637.58",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "261050868.96"
+          "notionalUsd": "261223209.54"
         },
         {
-          "price": "81014.22",
+          "price": "81246.42",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "115482910.01"
+          "notionalUsd": "115450488.42"
         }
       ],
       "errorMessage": null
@@ -5746,8 +5746,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-26T08:05:01.278955Z",
-      "compositeScore": "-0.088",
+      "generatedAt": "2026-10-26T09:05:02.996243Z",
+      "compositeScore": "-0.106",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5759,28 +5759,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying",
           "publishedAt": "2026-10-26T07:18:24Z",
-          "score": "-0.3"
+          "score": "-0.4"
         },
         {
           "title": "India's largest crypto exchange absorbs $16 million loss from internal process failure tied to retired wallet",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/26/coindcx-absorbs-usd16-million-loss-from-internal-process-failure-tied-to-retired-wallet",
           "publishedAt": "2026-10-26T05:39:17Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Bitcoin wallet bug let rogue servers steal funds when users tried to speed up payments",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments",
           "publishedAt": "2026-10-26T05:15:20Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "Bitcoin slips under $80,000 as traders de-risk ahead of Fed meeting",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
           "publishedAt": "2026-10-26T04:37:02Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Elon Musk issues a warning for 'AI neoclouds' as SpaceX borrows $40 billion for chips",
@@ -5809,6 +5809,13 @@
           "url": "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
           "publishedAt": "2026-10-24T16:00:00Z",
           "score": "0.1"
+        },
+        {
+          "title": "Bitcoin ETFs break 2-week outflow streak with $301M comeback",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-etfs-rebound-weekly-inflow-301-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-26T08:20:49Z",
+          "score": "0.5"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5850,21 +5857,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/ai-agents-help-rescue-eths-glamsterdam-fork-steal-my-bitcoin-site-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-25T22:48:40Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "ECB official sees digital euro as key to protecting EU ‘sovereignty’",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ecb-official-sees-digital-euro-tool-to-protect-eu-sovereignty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-25T15:11:00Z",
-          "score": "0.4"
-        },
-        {
-          "title": "Netanyahu floats use of blockchain as solution to potential financial sanctions",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/netanyahu-floats-use-of-blockchain-as-solution-to-potential-financial-sanctions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-25T11:42:00Z",
-          "score": "0.3"
+          "score": "0.2"
         }
       ],
       "errorMessage": null
@@ -6698,8 +6698,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 187436.81,
-      "currentPrice": 80786.74,
-      "deviationPct": -56.9,
+      "currentPrice": 81017.78,
+      "deviationPct": -56.78,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6898,9 +6898,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74682.09,
-      "currentPrice": 80786.74,
-      "priceToSthRatio": 1.0817,
-      "premiumPct": 8.17,
+      "currentPrice": 81017.78,
+      "priceToSthRatio": 1.0848,
+      "premiumPct": 8.48,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
