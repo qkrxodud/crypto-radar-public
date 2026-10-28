@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-28T09:00:13Z",
+  "updatedAt": "2026-10-28T09:20:20Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "80833.56",
       "macd": {
-        "macdLine": "-411.34",
-        "signalLine": "-194.63",
-        "histogram": "-216.71",
+        "macdLine": "-407.59",
+        "signalLine": "-193.88",
+        "histogram": "-213.71",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0004",
       "cumulativeFunding30d": "0.001222",
       "ivRv": {
-        "iv": "34.40",
+        "iv": "30.65",
         "rv": "27.00",
-        "spread": "+7.40",
-        "label": "과대"
+        "spread": "+3.65",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 51,
@@ -2536,11 +2536,11 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 49763,
-      "vsizeMb": "21.37",
-      "totalFeeBtc": "0.0267",
-      "congestionLevel": "보통 — 정상 대기열",
-      "congestionClass": "text-gray-300",
+      "txCount": 50505,
+      "vsizeMb": "21.63",
+      "totalFeeBtc": "0.0345",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
@@ -2548,36 +2548,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.57"
+          "sharePct": "26.69"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.57"
+          "sharePct": "20.48"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.88"
+          "sharePct": "16.87"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.58"
+          "sharePct": "8.53"
         },
         {
           "name": "Luxor",
-          "sharePct": "5.44"
+          "sharePct": "5.47"
         }
       ],
-      "top3Concentration": "64.02",
+      "top3Concentration": "64.04",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41087,
-      "nodeCount": 17437,
-      "capacityBtc": "4896.6034",
-      "avgChannelSizeBtc": "0.119176",
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4162,7 +4162,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "252770671797.50047",
+      "totalMarketCapUsd": "252762198519.26520",
       "marketCap30dAgoUsd": "258534302703.25323",
       "growth30dPercent": "-2.23",
       "signal": "CONTRACTING",
@@ -4233,63 +4233,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "81450.20",
-      "openInterestUsd": "7855114829.48599200",
-      "longAccountRatio": "0.6543",
-      "shortAccountRatio": "0.3457",
-      "downsideLiquidationUsd": "5139601632.93",
-      "upsideLiquidationUsd": "2715513196.55",
+      "currentPrice": "81482.40",
+      "openInterestUsd": "7847697708.15381100",
+      "longAccountRatio": "0.6522",
+      "shortAccountRatio": "0.3478",
+      "downsideLiquidationUsd": "5118268445.26",
+      "upsideLiquidationUsd": "2729429262.90",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "73305.18",
+          "price": "73334.16",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2055840653.17"
+          "notionalUsd": "2047307378.10"
         },
         {
-          "price": "89595.22",
+          "price": "89630.64",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1086205278.62"
+          "notionalUsd": "1091771705.16"
         },
         {
-          "price": "78192.19",
+          "price": "78223.10",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1798860571.53"
+          "notionalUsd": "1791393955.84"
         },
         {
-          "price": "84708.21",
+          "price": "84741.70",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "950429618.79"
+          "notionalUsd": "955300242.01"
         },
         {
-          "price": "79821.20",
+          "price": "79852.75",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1027920326.59"
+          "notionalUsd": "1023653689.05"
         },
         {
-          "price": "83079.20",
+          "price": "83112.05",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "543102639.31"
+          "notionalUsd": "545885852.58"
         },
         {
-          "price": "80635.70",
+          "price": "80667.58",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "256980081.65"
+          "notionalUsd": "255913422.26"
         },
         {
-          "price": "82264.70",
+          "price": "82297.22",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "135775659.83"
+          "notionalUsd": "136471463.14"
         }
       ],
       "errorMessage": null
@@ -5686,7 +5686,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-28T08:30:02.839800Z",
+      "generatedAt": "2026-10-28T09:00:02.947885Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5699,19 +5699,19 @@
         },
         {
           "type": "RISK",
-          "content": "가격이 안정적이지 않으며, 변동성이 낮아 투자자 심리가 위축될 수 있다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약할 수 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 매력이 감소할 수 있다."
+          "content": "거래소 순유입이 긍정적이지 않아 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "현재 시장 상황을 고려해 보수적인 투자 전략을 유지하는 것이 바람직하다."
+          "content": "단기적으로 보수적인 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "추가적인 시장 변화를 주의 깊게 관찰하며, 필요 시 포지션 조정을 고려해야 한다."
+          "content": "시장 상황을 지속적으로 모니터링하며 추가 매수 기회를 고려하라."
         }
       ],
       "errorMessage": null
@@ -5750,8 +5750,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-28T08:05:02.891571Z",
-      "compositeScore": "-0.150",
+      "generatedAt": "2026-10-28T09:05:03.692827Z",
+      "compositeScore": "0.006",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5759,25 +5759,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Securitize adds Stellar blockchain as institutional tokenization gathers steam",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/10/28/securitize-adds-stellar-blockchain-as-institutional-tokenization-gathers-steam",
+          "publishedAt": "2026-10-28T09:00:00Z",
+          "score": "0.3"
+        },
+        {
           "title": "Bitcoin treasury Datavault AI plunges 50% after firm says it canât access its BTC",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-treasury-datavault-ai-plunges-50-after-firm-says-it-can-t-access-its-btc",
           "publishedAt": "2026-10-28T05:28:13Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "Bithumb hacked through employee system as South Korean financial firms face cyberattacks",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/28/bithumb-hacked-through-employee-system-as-south-korean-financial-firms-face-cyberattacks",
           "publishedAt": "2026-10-28T05:10:36Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "Bitcoin nears $81,000 ahead of Fed decision as ZEC jumps 8%",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-nears-usd81-000-ahead-of-fed-decision-as-zec-jumps-8",
           "publishedAt": "2026-10-28T04:15:20Z",
-          "score": "0.6"
+          "score": "0.5"
         },
         {
           "title": "Coinbase says user funds are safe after third-party vendor exposes customer contact info",
@@ -5791,7 +5798,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/27/treasury-s-bessent-sees-crypto-as-america-s-next-tool-for-keeping-the-u-s-dollar-on-top",
           "publishedAt": "2026-10-27T20:41:33Z",
-          "score": "0.5"
+          "score": "0.4"
         },
         {
           "title": "Robinhood's crypto revenue fell 55% from last year, but topped Street forecasts",
@@ -5805,21 +5812,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/27/u-s-agency-hits-utah-with-lawsuit-to-shield-kalshi-s-ability-to-offer-betting-there",
           "publishedAt": "2026-10-27T19:07:59Z",
-          "score": "-0.3"
+          "score": "0.0"
         },
         {
-          "title": "Intel, Oracle, IBM join growing list of firms objecting to OKXâICE tokenized stock plans",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/10/27/intel-oracle-ibm-join-growing-list-of-firms-objecting-to-okx-ice-tokenized-stock-plans",
-          "publishedAt": "2026-10-27T18:13:02Z",
-          "score": "-0.4"
+          "title": "Bitcoin ETF inflows climb to $176M as BTC rebounds above $80K",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-etf-176-million-inflow-sentiment-rebounds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-28T07:57:18Z",
+          "score": "0.6"
         },
         {
           "title": "Coinbase denies systems breach, says vendor exposed customer data",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coinbase-analytics-provider-customer-data?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-28T07:42:55Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5833,7 +5840,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/robinhoods-tenev-warns-us-tokenization-uncertainty-deters-serious-assets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-28T03:55:57Z",
-          "score": "-0.5"
+          "score": "-0.3"
         },
         {
           "title": "Bithumb discloses data leak after internal system breach: Report",
@@ -5854,21 +5861,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/vaneck-launches-diversified-etf-combining-stocks-bonds-and-bitcoin-exposure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-27T21:28:22Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Intel, IBM, Oracle and IonQ latest to object to OKX-ICE tokenized stocks",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/intel-ibm-oracle-ionq-object-okx-ice-tokenized-stocks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-27T21:26:41Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Quantum fears already limiting Bitcoin’s growth, Stacks founder says",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/quantum-fears-already-limiting-bitcoins-growth-stacks-founder-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-27T20:33:19Z",
-          "score": "-0.5"
+          "score": "-0.2"
         }
       ],
       "errorMessage": null
@@ -6702,8 +6702,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 187773.9,
-      "currentPrice": 82236.87,
-      "deviationPct": -56.2,
+      "currentPrice": 82290.34,
+      "deviationPct": -56.18,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6902,9 +6902,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74864.56,
-      "currentPrice": 82256.45,
-      "priceToSthRatio": 1.0987,
-      "premiumPct": 9.87,
+      "currentPrice": 82290.34,
+      "priceToSthRatio": 1.0992,
+      "premiumPct": 9.92,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
@@ -6934,7 +6934,7 @@
       "hasData": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": -16.0,
+      "compositeScore": -15.6,
       "extreme": {
         "name": "NEUTRAL",
         "description": "중립"
