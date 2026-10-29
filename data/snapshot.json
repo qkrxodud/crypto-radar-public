@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-29T16:52:48Z",
+  "updatedAt": "2026-10-29T17:13:00Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "81300.01",
       "macd": {
-        "macdLine": "-396.46",
-        "signalLine": "-227.90",
-        "histogram": "-168.56",
+        "macdLine": "-413.43",
+        "signalLine": "-231.29",
+        "histogram": "-182.14",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001245",
       "ivRv": {
-        "iv": "31.73",
+        "iv": "32.01",
         "rv": "27.00",
-        "spread": "+4.73",
-        "label": "균형"
+        "spread": "+5.01",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 51,
@@ -2536,9 +2536,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 58905,
-      "vsizeMb": "22.47",
-      "totalFeeBtc": "0.0398",
+      "txCount": 54903,
+      "vsizeMb": "21.61",
+      "totalFeeBtc": "0.0292",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2548,36 +2548,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.64"
+          "sharePct": "26.48"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.54"
+          "sharePct": "20.57"
         },
         {
           "name": "F2Pool",
-          "sharePct": "17.30"
+          "sharePct": "17.44"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.33"
+          "sharePct": "8.30"
         },
         {
           "name": "Luxor",
-          "sharePct": "5.74"
+          "sharePct": "5.72"
         }
       ],
-      "top3Concentration": "64.48",
+      "top3Concentration": "64.49",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41087,
-      "nodeCount": 17437,
-      "capacityBtc": "4896.6034",
-      "avgChannelSizeBtc": "0.119176",
+      "channelCount": 32536,
+      "nodeCount": 16228,
+      "capacityBtc": "3753.4053",
+      "avgChannelSizeBtc": "0.115362",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4233,63 +4233,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "81242.70",
-      "openInterestUsd": "7740580177.07746900",
-      "longAccountRatio": "0.6222",
-      "shortAccountRatio": "0.3778",
-      "downsideLiquidationUsd": "4816188986.18",
-      "upsideLiquidationUsd": "2924391190.90",
+      "currentPrice": "81025.80",
+      "openInterestUsd": "7656786715.43280700",
+      "longAccountRatio": "0.6243",
+      "shortAccountRatio": "0.3757",
+      "downsideLiquidationUsd": "4780131946.44",
+      "upsideLiquidationUsd": "2876654768.99",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "73118.43",
+          "price": "72923.22",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1926475594.47"
+          "notionalUsd": "1912052778.58"
         },
         {
-          "price": "89366.97",
+          "price": "89128.38",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1169756476.36"
+          "notionalUsd": "1150661907.60"
         },
         {
-          "price": "77992.99",
+          "price": "77784.77",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1685666145.16"
+          "notionalUsd": "1673046181.26"
         },
         {
-          "price": "84492.41",
+          "price": "84266.83",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1023536916.81"
+          "notionalUsd": "1006829169.15"
         },
         {
-          "price": "79617.85",
+          "price": "79405.28",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "963237797.24"
+          "notionalUsd": "956026389.29"
         },
         {
-          "price": "82867.55",
+          "price": "82646.32",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "584878238.18"
+          "notionalUsd": "575330953.80"
         },
         {
-          "price": "80430.27",
+          "price": "80215.54",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "240809449.31"
+          "notionalUsd": "239006597.32"
         },
         {
-          "price": "82055.13",
+          "price": "81836.06",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "146219559.54"
+          "notionalUsd": "143832738.45"
         }
       ],
       "errorMessage": null
@@ -5686,7 +5686,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-29T16:30:03.037800Z",
+      "generatedAt": "2026-10-29T17:12:55.917800Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5699,19 +5699,19 @@
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 59로 높은 편이며, 알트코인 시장의 약세가 우려된다."
+          "content": "BTC 도미넌스가 59로 높은 편이어서 알트코인에 대한 투자 위험이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "RSI 지표가 47.39로 하락세를 나타내며, 추가 하락 가능성이 존재한다."
+          "content": "NVT 비율이 223.22로 상대적으로 높아 거래량 대비 가치가 과대 평가될 가능성이 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기 투자자는 관망하며 시장 흐름을 지켜보는 것이 좋다."
+          "content": "시장의 중립성을 고려하여 포트폴리오를 다양화하는 것이 좋다."
         },
         {
           "type": "ACTION",
-          "content": "장기 투자자는 매수 기회를 모색할 수 있다."
+          "content": "단기적인 변동성을 대비해 손절매 설정을 권장한다."
         }
       ],
       "errorMessage": null
@@ -5750,14 +5750,42 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-29T16:05:03.729727Z",
-      "compositeScore": "0.094",
+      "generatedAt": "2026-10-29T17:12:58.792292Z",
+      "compositeScore": "0.106",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Stanley Druckenmiller's first X post backs Hyperliquid venture after $23 million indirect investment",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/10/29/stanley-druckenmiller-s-first-x-post-backs-hyperliquid-venture-after-usd23-million-indirect-investment",
+          "publishedAt": "2026-10-29T17:04:19Z",
+          "score": "0.3"
+        },
+        {
+          "title": "KuCoin exits Russia and Belarus as crypto exchanges withdraw from Western-sanctioned markets",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/10/29/kucoin-exits-russia-and-belarus-as-crypto-exchanges-withdraw-from-western-sanctioned-markets",
+          "publishedAt": "2026-10-29T16:51:18Z",
+          "score": "-0.5"
+        },
+        {
+          "title": "From rivals to partners: Polygon and Solana team to bring stablecoin payments to banks",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/10/29/from-rivals-to-partners-polygon-and-solana-team-to-bring-stablecoin-payments-to-banks",
+          "publishedAt": "2026-10-29T16:35:43Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Crypto exchange HTX exits the UK after settling with the FCA",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/10/29/crypto-exchange-htx-exits-the-uk-after-settling-with-the-fca",
+          "publishedAt": "2026-10-29T16:11:18Z",
+          "score": "-0.4"
+        },
         {
           "title": "Polymarket brings ultra-short crypto prediction markets to U.S. platform",
           "source": "CoinDesk",
@@ -5787,31 +5815,10 @@
           "score": "0.3"
         },
         {
-          "title": "New quantum model slashes hardware needed to break bitcoin keys by 17 times",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/10/29/new-quantum-model-slashes-hardware-needed-to-break-bitcoin-keys-by-17-times",
-          "publishedAt": "2026-10-29T13:55:42Z",
-          "score": "-0.4"
-        },
-        {
-          "title": "Walmart, Eli Lilly join growing pushback against OKXâICE tokenized stock plans",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/10/29/walmart-eli-lilly-join-growing-pushback-against-okx-ice-tokenized-stock-plans",
-          "publishedAt": "2026-10-29T13:39:18Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "A new framework for tokenized asset tracking",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/opinion/2026/10/28/a-new-framework-for-tokenized-asset-tracking",
-          "publishedAt": "2026-10-29T12:57:51Z",
-          "score": "0.1"
-        },
-        {
-          "title": "Tokenized stock venue on Canton could beat OKXâICE to first trade under SEC framework",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/10/29/tokenized-stock-venue-on-canton-could-beat-okx-ice-to-first-trade-under-sec-framework",
-          "publishedAt": "2026-10-29T12:51:48Z",
+          "title": "Nasdaq-listed Canton Strategic Holdings plans tokenized stock trading from Nov. 2",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/canton-strategic-holdings-tokenized-stock-trading-november-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-29T16:27:39Z",
           "score": "0.4"
         },
         {
@@ -5819,7 +5826,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/kalshi-closes-1b-funding-round-at-40b-valuation-as-non-sports-revenue-run-rate-tops-1b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-29T15:52:43Z",
-          "score": "0.6"
+          "score": "0.2"
         },
         {
           "title": "Bitcoin price jumps to $81.5K as US GDP data beats expectations",
@@ -5847,7 +5854,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/canton-foundation-redstone-coin-pricing-standard?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-29T14:00:00Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5861,14 +5868,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/brazil-crypto-license-filing-deadline-hurdles-uncertainty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-29T13:30:00Z",
-          "score": "-0.7"
-        },
-        {
-          "title": "Private, fast USDT is coming to Bitcoin. Can it compete with Ethereum and Tron?",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/magazine/private-fast-usdt-is-coming-to-bitcoin-can-it-compete-with-ethereum-and-tron?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-29T13:30:00Z",
-          "score": "0.2"
+          "score": "-0.6"
         }
       ],
       "errorMessage": null
@@ -6702,8 +6702,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 188111.5,
-      "currentPrice": 81213.31,
-      "deviationPct": -56.83,
+      "currentPrice": 81007.41,
+      "deviationPct": -56.94,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6902,9 +6902,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75780.57,
-      "currentPrice": 81213.31,
-      "priceToSthRatio": 1.0717,
-      "premiumPct": 7.17,
+      "currentPrice": 81016.36,
+      "priceToSthRatio": 1.0691,
+      "premiumPct": 6.91,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
