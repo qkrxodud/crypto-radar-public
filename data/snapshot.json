@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-29T14:52:05Z",
+  "updatedAt": "2026-10-29T15:12:11Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "81300.01",
       "macd": {
-        "macdLine": "-414.92",
-        "signalLine": "-231.59",
-        "histogram": "-183.33",
+        "macdLine": "-385.69",
+        "signalLine": "-225.75",
+        "histogram": "-159.94",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001245",
       "ivRv": {
-        "iv": "32.25",
+        "iv": "25.24",
         "rv": "27.00",
-        "spread": "+5.25",
-        "label": "과대"
+        "spread": "-1.76",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 51,
@@ -450,15 +450,15 @@
     "api_dashboard_cycle": {
       "hasData": true,
       "halvingCycle": {
-        "position": "63.2%",
+        "position": "63.3%",
         "progressWidth": 63,
         "phaseLabel": "과열 구간 (Q3)",
         "phaseLabelEn": "Euphoria (Q3)",
         "phaseBadgeClass": "bg-warning text-dark",
         "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
         "phaseDescriptionEn": "The historical cycle top forms. Consider taking profits.",
-        "formattedElapsed": "922일 경과",
-        "formattedRemaining": "536일 남음",
+        "formattedElapsed": "923일 경과",
+        "formattedRemaining": "535일 남음",
         "cycleNumber": 4,
         "lastHalvingDate": "2024-04-20",
         "nextHalvingDate": "2028-04-17",
@@ -2536,9 +2536,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 56710,
-      "vsizeMb": "22.29",
-      "totalFeeBtc": "0.0334",
+      "txCount": 59285,
+      "vsizeMb": "22.88",
+      "totalFeeBtc": "0.0595",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2548,26 +2548,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.62"
+          "sharePct": "26.74"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.41"
+          "sharePct": "20.43"
         },
         {
           "name": "F2Pool",
-          "sharePct": "17.35"
+          "sharePct": "17.18"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.44"
+          "sharePct": "8.45"
         },
         {
           "name": "Luxor",
           "sharePct": "5.66"
         }
       ],
-      "top3Concentration": "64.38",
+      "top3Concentration": "64.35",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -4233,63 +4233,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "81027.10",
-      "openInterestUsd": "7837277437.33740000",
-      "longAccountRatio": "0.6608",
-      "shortAccountRatio": "0.3392",
-      "downsideLiquidationUsd": "5178872930.59",
-      "upsideLiquidationUsd": "2658404506.74",
+      "currentPrice": "81385.80",
+      "openInterestUsd": "7883409637.13388800",
+      "longAccountRatio": "0.6568",
+      "shortAccountRatio": "0.3432",
+      "downsideLiquidationUsd": "5177823449.67",
+      "upsideLiquidationUsd": "2705586187.46",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "72924.39",
+          "price": "73247.22",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2071549172.24"
+          "notionalUsd": "2071129379.87"
         },
         {
-          "price": "89129.81",
+          "price": "89524.38",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1063361802.70"
+          "notionalUsd": "1082234474.99"
         },
         {
-          "price": "77786.02",
+          "price": "78130.37",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1812605525.71"
+          "notionalUsd": "1812238207.38"
         },
         {
-          "price": "84268.18",
+          "price": "84641.23",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "930441577.36"
+          "notionalUsd": "946955165.61"
         },
         {
-          "price": "79406.56",
+          "price": "79758.08",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1035774586.12"
+          "notionalUsd": "1035564689.93"
         },
         {
-          "price": "82647.64",
+          "price": "83013.52",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "531680901.35"
+          "notionalUsd": "541117237.49"
         },
         {
-          "price": "80216.83",
+          "price": "80571.94",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "258943646.53"
+          "notionalUsd": "258891172.48"
         },
         {
-          "price": "81837.37",
+          "price": "82199.66",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "132920225.34"
+          "notionalUsd": "135279309.37"
         }
       ],
       "errorMessage": null
@@ -5686,7 +5686,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-29T14:30:03.448863Z",
+      "generatedAt": "2026-10-29T15:00:03.641497Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5695,23 +5695,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 심리 지표와 기술적 지표가 혼재되어 있다."
+          "content": "현재 시장은 중립적인 심리를 보이며, 가격 안정세를 유지하고 있다."
         },
         {
           "type": "RISK",
-          "content": "시장 심리가 중립적이므로 큰 변동성이 예상된다."
+          "content": "변동성이 낮아 투자자 심리가 위축될 수 있다."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 59로 높은 수준을 유지하고 있어 알트코인에 대한 투자 위험이 존재한다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 매력이 감소할 수 있다."
         },
         {
           "type": "ACTION",
-          "content": "현재 포지션을 유지하며 시장 동향을 주의 깊게 관찰하라."
+          "content": "시장 상황을 주의 깊게 관찰하며 추가 매수 기회를 모색하라."
         },
         {
           "type": "ACTION",
-          "content": "추가 매수는 신중하게 고려하되, 주요 지표 변화에 따라 조정하라."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
@@ -5750,8 +5750,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-29T14:05:03.323893Z",
-      "compositeScore": "-0.081",
+      "generatedAt": "2026-10-29T15:05:04.070883Z",
+      "compositeScore": "0.044",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5759,18 +5759,32 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Why Switzerlandâs first genuine spot bitcoin ETF could soon attract overseas banks and brokers",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/10/29/switzerland-s-first-bitcoin-etf-gets-rare-exemption-will-open-to-overseas-brokers",
+          "publishedAt": "2026-10-29T14:15:46Z",
+          "score": "0.7"
+        },
+        {
+          "title": "Chainlink adds weekend pricing for tokenized assets, with Aave as launch partner",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/10/28/chainlink-adds-weekend-pricing-for-tokenized-assets-with-aave-as-launch-partner",
+          "publishedAt": "2026-10-29T14:15:00Z",
+          "score": "0.4"
+        },
+        {
           "title": "New quantum model slashes hardware needed to break bitcoin keys by 17 times",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/29/new-quantum-model-slashes-hardware-needed-to-break-bitcoin-keys-by-17-times",
           "publishedAt": "2026-10-29T13:55:42Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Walmart, Eli Lilly join growing pushback against OKXâICE tokenized stock plans",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/29/walmart-eli-lilly-join-growing-pushback-against-okx-ice-tokenized-stock-plans",
           "publishedAt": "2026-10-29T13:39:18Z",
-          "score": "-0.4"
+          "score": "-0.6"
         },
         {
           "title": "A new framework for tokenized asset tracking",
@@ -5791,28 +5805,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/29/u-s-sanctions-russian-crypto-middlemen-tied-to-north-korean-it-worker-fraud",
           "publishedAt": "2026-10-29T12:18:20Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "As $10 billion in bitcoin options near expiry, the tell is in the pricing",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/10/29/as-usd10-billion-in-bitcoin-options-near-expiry-the-tell-is-in-the-pricing",
           "publishedAt": "2026-10-29T12:04:50Z",
-          "score": "-0.3"
+          "score": "0.1"
         },
         {
-          "title": "Bitcoin drops to $80,000 on Fed dissent, Samsung, Alphabet earnings; AI tokens slump",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/10/29/bitcoin-drops-to-usd80-000-on-fed-dissent-samsung-alphabet-earnings-ai-tokens-slump",
-          "publishedAt": "2026-10-29T11:11:48Z",
-          "score": "-0.8"
+          "title": "Bank of England opens consultation on tokenized collateral for clearing",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bank-of-england-opens-consultation-on-tokenized-collateral-for-clearing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-29T14:27:46Z",
+          "score": "0.3"
         },
         {
-          "title": "NYSE owner takes steps to bring Hyperliquid perpetual futures to U.S.",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/10/29/nyse-owner-takes-steps-to-bring-hyperliquid-perpetual-futures-to-u-s",
-          "publishedAt": "2026-10-29T11:11:25Z",
-          "score": "0.4"
+          "title": "Canton Foundation grants RedStone 15.8M Canton Coin for pricing standard",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/canton-foundation-redstone-coin-pricing-standard?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-10-29T14:00:00Z",
+          "score": "0.2"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5826,7 +5840,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/brazil-crypto-license-filing-deadline-hurdles-uncertainty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-29T13:30:00Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Private, fast USDT is coming to Bitcoin. Can it compete with Ethereum and Tron?",
@@ -5847,7 +5861,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/chainalysis-dprk-crypto-cash-out-network-ofac-sanctions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-29T12:38:03Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "Unlimit founder backs Phase blockchain with $45M as mainnet launches",
@@ -5855,20 +5869,6 @@
           "url": "https://cointelegraph.com/news/unlimit-founder-phase-blockchain-mainnet-launches?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-29T12:30:00Z",
           "score": "0.6"
-        },
-        {
-          "title": "HTX agrees to halt unlawful UK crypto promotions after FCA case",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/htx-halt-unlawful-uk-crypto-promotions-fca?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-29T12:20:27Z",
-          "score": "-0.5"
-        },
-        {
-          "title": "EU investors rank crypto above retirement plans for lasting wealth creation: OKX survey",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/eu-investors-crypto-above-retirement-lasting-wealth?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-29T12:00:00Z",
-          "score": "0.7"
         }
       ],
       "errorMessage": null
@@ -6701,9 +6701,9 @@
       "label": "저가 매수",
       "color": "#1a7432",
       "action": "분할 매수",
-      "regressionPrice": 187942.64,
-      "currentPrice": 81027.55,
-      "deviationPct": -56.89,
+      "regressionPrice": 188111.5,
+      "currentPrice": 81336.4,
+      "deviationPct": -56.76,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6902,9 +6902,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75780.57,
-      "currentPrice": 81027.55,
-      "priceToSthRatio": 1.0692,
-      "premiumPct": 6.92,
+      "currentPrice": 81336.4,
+      "priceToSthRatio": 1.0733,
+      "premiumPct": 7.33,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
