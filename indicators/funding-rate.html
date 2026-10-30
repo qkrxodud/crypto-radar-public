@@ -199,6 +199,25 @@
   .byline .au a{color:inherit;text-decoration:none;}
   .byline .au small{color:var(--m1);font-weight:400;margin-left:6px;}
   .byline .dt{font-family:var(--mono);}
+  /* 오늘의 값 섹션 */
+  .live-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:4px 0 14px;}
+  .live-grid .lv{padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);min-width:0;}
+  .live-grid .lv .k{color:var(--m2);font-size:11px;letter-spacing:.06em;font-family:var(--mono);margin-bottom:6px;}
+  .live-grid .lv .v{color:var(--t1);font-size:20px;font-weight:800;font-family:var(--mono);line-height:1.2;word-break:break-all;}
+  .live-grid .lv .s{color:var(--m1);font-size:11.5px;line-height:1.5;margin-top:6px;}
+  .lv-bar{height:5px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:8px;overflow:hidden;}
+  .lv-bar i{display:block;height:100%;width:0;background:var(--amber);border-radius:3px;transition:width .5s;}
+  .lv-series{margin:6px 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);}
+  .lv-heat-t{color:var(--m1);font-size:11.5px;margin-bottom:8px;font-family:var(--mono);}
+  .lv-heat{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+  .lv-heat .hc{padding:8px 4px;border-radius:9px;text-align:center;background:rgba(255,255,255,.03);border:1px solid var(--line);}
+  .lv-heat .hc .hd{display:block;color:var(--m2);font-size:10px;font-family:var(--mono);}
+  .lv-heat .hc .hv{display:block;color:var(--t1);font-size:12.5px;font-weight:700;font-family:var(--mono);margin-top:3px;}
+  .lv-heat .hc.up{border-color:rgba(22,199,132,.35);} .lv-heat .hc.down{border-color:rgba(234,57,67,.35);} .lv-heat .hc.amber{border-color:rgba(240,185,11,.3);}
+  .lv-cv{width:100%;height:140px;display:block;}
+  .sec .rule{margin:10px 0 0;padding:12px 14px;border-left:3px solid var(--green);background:rgba(22,199,132,.05);border-radius:0 10px 10px 0;color:var(--t2);font-size:13.5px;line-height:1.7;}
+  .sec .rule b{color:var(--t1);}
+  @media(max-width:768px){.live-grid{grid-template-columns:repeat(2,1fr);}.lv-heat{grid-template-columns:repeat(4,1fr);}}
   /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
   .sb-visitor{display:none !important;}
 </style>
@@ -234,7 +253,8 @@
   "mainEntity": [
     {"@type": "Question", "name": "펀딩비가 높으면 가격이 곧 떨어지나요?", "acceptedAnswer": {"@type": "Answer", "text": "높은 펀딩비는 롱 포지션이 쏠려 있다는 뜻이지 정확한 하락 시점을 알려주지는 않습니다. 과열된 시장은 몇 주씩 과열을 유지하기도 하므로, 조정 위험이 커진 상태로 이해하고 가격·미결제약정과 함께 보는 편이 안전합니다."}},
     {"@type": "Question", "name": "펀딩비가 음수면 무조건 매수해야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "음수 펀딩비는 숏이 쏠려 있다는 신호로 반등(숏 스퀴즈) 가능성을 시사하지만 그 자체가 매수 신호는 아닙니다. 다른 지표와 함께 군중이 한쪽으로 기울었는지 확인하는 참고 자료로 쓰는 것이 좋습니다."}},
-    {"@type": "Question", "name": "펀딩비는 얼마가 정상인가요?", "acceptedAnswer": {"@type": "Answer", "text": "8시간당 약 0.01%가 통상적인 중립 기준으로 여겨집니다. 이보다 계속 높은 양수면 롱 쏠림, 음수면 숏 쏠림으로 해석하지만 절대 수치보다 평소 범위 대비 어느 수준인지가 더 중요합니다."}}
+    {"@type": "Question", "name": "펀딩비는 얼마가 정상인가요?", "acceptedAnswer": {"@type": "Answer", "text": "8시간당 약 0.01%가 통상적인 중립 기준으로 여겨집니다. 이보다 계속 높은 양수면 롱 쏠림, 음수면 숏 쏠림으로 해석하지만 절대 수치보다 평소 범위 대비 어느 수준인지가 더 중요합니다."}},
+    {"@type": "Question", "name": "±0.05%가 포화 경계인 이유는 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "무기한 선물 8시간 펀딩비는 평상시 ±0.01% 안팎이고, 2021년·2024년 과열 국면에서도 +0.05~0.10% 수준이었습니다. 처음에는 ±0.20%를 경계로 썼는데 그러면 실제 데이터가 거의 전부 47~53점에 몰려 지표가 아무 말도 하지 않았습니다. 실제 분포의 5~95 퍼센타일에 가까운 ±0.05%로 좁히자 과열과 숏 과밀이 점수에 드러나기 시작했습니다."}}
   ]
 }
 </script>
@@ -319,6 +339,20 @@
         </div>
       </div>
 
+      <section class="sec" id="liveSec" data-ind="funding-rate">
+        <h2><span class="ix">●</span><span>오늘의 펀딩비 · 종합 점수 안에서의 위치</span></h2>
+        <div class="live-grid">
+          <div class="lv"><div class="k">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub">매일 09:05 KST 수집</div></div>
+          <div class="lv"><div class="k">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s">높을수록 매수 우호<span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
+          <div class="lv"><div class="k">종합 점수 가중치</div><div class="v" style="font-size:17px">5% (파생 그룹 상한 15%)</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
+          <div class="lv"><div class="k">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
+        </div>
+        <div class="lv-series" id="lvSeries" style="display:none"></div>
+        <p class="rule"><b>8시간 펀딩비 −0.05% 이하 = 100점(숏 과밀), +0.05% 이상 = 0점(롱 과밀), 0% = 50점.</b> 대칭 선형 보간입니다. 이전에는 ±0.20% 범위였는데 실제 분포(통상 ±0.01%, 과열장 ±0.05%)의 20배라 항상 47~53점에 갇혀 변별력이 없었고, 2026년에 ±0.05%로 좁혔습니다.</p>
+        <p class="rule" style="border-left-color:var(--amber);background:rgba(240,185,11,.05)"><b>가중치 5%</b> — 파생상품 지표 중 가장 높습니다. 다만 펀딩비·롱숏비율·테이커비율·미결제약정은 같은 레버리지 쏠림을 다른 각도에서 보는 것이라 네 지표의 가중치 합에 15% 상한을 둡니다. 사이클 프리셋(과열기)에서는 9%까지 올라갑니다.</p>
+        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
+      </section>
+
       <section class="sec">
         <h2><span class="ix">1</span><span data-en="What funding rate measures">펀딩비는 무엇을 재는가</span></h2>
         <p data-i18n-html="1" data-en="Price tells you <b>what the market did</b>. Funding rate tells you which side of the leveraged crowd is <b>too impatient</b>. Because perpetual futures have no expiry, exchanges need a mechanism to keep the futures price from drifting away from the actual spot price — and that mechanism is funding. The crowded side pays the restrained side, so the rate becomes a direct readout of position crowding.">가격은 시장이 <b>무엇을 했는지</b>를 알려줍니다. 펀딩비는 레버리지를 쓴 군중 중 어느 쪽이 <b>지나치게 조급한지</b>를 알려줍니다. 무기한 선물은 만기가 없기 때문에, 거래소는 선물 가격이 실제 현물 가격에서 멀어지지 않도록 붙잡아 둘 장치가 필요합니다 — 그 장치가 바로 펀딩입니다. 몰리는 쪽이 자제하는 쪽에 비용을 내므로, 요율은 포지션 쏠림을 그대로 보여주는 값이 됩니다.</p>
@@ -402,6 +436,10 @@
           <details class="faq-item">
             <summary><span class="q">Q</span><span data-en="What counts as a normal funding rate?">펀딩비는 얼마가 정상인가요?</span></summary>
             <div class="ans" data-en="About 0.01% per 8 hours is generally taken as a neutral baseline. Consistently higher positive values suggest long crowding and negative values short crowding, but where it sits relative to its usual range matters more than the absolute number.">8시간당 약 0.01%가 통상적인 중립 기준으로 여겨집니다. 이보다 계속 높은 양수면 롱 쏠림, 음수면 숏 쏠림으로 보지만, 절대 수치보다 평소 범위 대비 어느 수준인지가 더 중요합니다.</div>
+          </details>
+                  <details class="faq-item">
+            <summary><span class="q">Q</span><span>±0.05%가 포화 경계인 이유는 무엇인가요?</span></summary>
+            <div class="ans">무기한 선물 8시간 펀딩비는 평상시 ±0.01% 안팎이고, 2021년·2024년 과열 국면에서도 +0.05~0.10% 수준이었습니다. 처음에는 ±0.20%를 경계로 썼는데 그러면 실제 데이터가 거의 전부 47~53점에 몰려 지표가 아무 말도 하지 않았습니다. 실제 분포의 5~95 퍼센타일에 가까운 ±0.05%로 좁히자 과열과 숏 과밀이 점수에 드러나기 시작했습니다.</div>
           </details>
         </div>
       </section>
@@ -497,6 +535,7 @@
 })();
 </script>
 <!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="ind-live.js?v=1" defer></script>
 <script src="../btc-i18n.js?v=2"></script>
 </body>
 </html>

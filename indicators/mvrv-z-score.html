@@ -199,6 +199,25 @@
   .byline .au a{color:inherit;text-decoration:none;}
   .byline .au small{color:var(--m1);font-weight:400;margin-left:6px;}
   .byline .dt{font-family:var(--mono);}
+  /* 오늘의 값 섹션 */
+  .live-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:4px 0 14px;}
+  .live-grid .lv{padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);min-width:0;}
+  .live-grid .lv .k{color:var(--m2);font-size:11px;letter-spacing:.06em;font-family:var(--mono);margin-bottom:6px;}
+  .live-grid .lv .v{color:var(--t1);font-size:20px;font-weight:800;font-family:var(--mono);line-height:1.2;word-break:break-all;}
+  .live-grid .lv .s{color:var(--m1);font-size:11.5px;line-height:1.5;margin-top:6px;}
+  .lv-bar{height:5px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:8px;overflow:hidden;}
+  .lv-bar i{display:block;height:100%;width:0;background:var(--amber);border-radius:3px;transition:width .5s;}
+  .lv-series{margin:6px 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);}
+  .lv-heat-t{color:var(--m1);font-size:11.5px;margin-bottom:8px;font-family:var(--mono);}
+  .lv-heat{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+  .lv-heat .hc{padding:8px 4px;border-radius:9px;text-align:center;background:rgba(255,255,255,.03);border:1px solid var(--line);}
+  .lv-heat .hc .hd{display:block;color:var(--m2);font-size:10px;font-family:var(--mono);}
+  .lv-heat .hc .hv{display:block;color:var(--t1);font-size:12.5px;font-weight:700;font-family:var(--mono);margin-top:3px;}
+  .lv-heat .hc.up{border-color:rgba(22,199,132,.35);} .lv-heat .hc.down{border-color:rgba(234,57,67,.35);} .lv-heat .hc.amber{border-color:rgba(240,185,11,.3);}
+  .lv-cv{width:100%;height:140px;display:block;}
+  .sec .rule{margin:10px 0 0;padding:12px 14px;border-left:3px solid var(--green);background:rgba(22,199,132,.05);border-radius:0 10px 10px 0;color:var(--t2);font-size:13.5px;line-height:1.7;}
+  .sec .rule b{color:var(--t1);}
+  @media(max-width:768px){.live-grid{grid-template-columns:repeat(2,1fr);}.lv-heat{grid-template-columns:repeat(4,1fr);}}
   /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
   .sb-visitor{display:none !important;}
 </style>
@@ -234,7 +253,8 @@
   "mainEntity": [
     {"@type": "Question", "name": "MVRV-Z 점수가 0 이하면 바로 사야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "0 이하는 시장 전체가 평균 매입가보다 낮은 가격에 거래되는 드문 구간으로, 과거에는 장기 바닥권과 자주 겹쳤습니다. 그러나 점수가 그 구간에 수개월 머무를 수 있고 이 지표는 단기 타이밍에 둔감하므로, 즉시 매수 신호로 보기보다 분할 매수 관점에서 다른 지표와 함께 활용하는 것이 안전합니다."}},
     {"@type": "Question", "name": "실현 시가총액(Realized Cap)이 뭔가요?", "acceptedAnswer": {"@type": "Answer", "text": "실현 시가총액은 각 코인을 마지막으로 움직인(거래된) 시점의 가격으로 평가해 모두 더한 값으로, 보유자들이 실제로 치른 총 매입가에 가깝습니다. 현재 가격으로 일괄 계산하는 일반 시가총액과 달리, 시장의 평균 원가를 근사하기 때문에 가격이 그 원가 대비 비싼지 싼지를 비교하는 기준이 됩니다."}},
-    {"@type": "Question", "name": "MVRV-Z 점수로 단기 매매를 해도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "권하기 어렵습니다. MVRV-Z는 사이클 단위로 천천히 움직이는 장기 밸류에이션 잣대라 갱신이 느리고 일·주 단위 변동에는 둔감합니다. 단기 진입·청산보다는 지금이 사이클의 어디쯤인지, 시장이 전반적으로 과열인지 침체인지를 가늠하는 큰 그림 용도로 적합합니다."}}
+    {"@type": "Question", "name": "MVRV-Z 점수로 단기 매매를 해도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "권하기 어렵습니다. MVRV-Z는 사이클 단위로 천천히 움직이는 장기 밸류에이션 잣대라 갱신이 느리고 일·주 단위 변동에는 둔감합니다. 단기 진입·청산보다는 지금이 사이클의 어디쯤인지, 시장이 전반적으로 과열인지 침체인지를 가늠하는 큰 그림 용도로 적합합니다."}},
+    {"@type": "Question", "name": "MVRV-Z와 NUPL을 둘 다 쓰면 같은 걸 두 번 세는 것 아닌가요?", "acceptedAnswer": {"@type": "Answer", "text": "맞습니다. 둘 다 실현가치(전체 코인의 평균 매입가)를 기준으로 하므로 상관이 높습니다. 그래서 이 사이트는 두 지표의 가중치 합에 6% 상한을 두어, 한 방향으로 쏠릴 때 종합 점수를 과도하게 끌고 가지 못하게 합니다. 그래도 둘을 함께 보는 이유는 NUPL이 비율(0~1)이라 극단에서 포화되는 반면 MVRV-Z는 표준편차 단위라 극단의 \"깊이\"를 더 잘 구분하기 때문입니다."}}
   ]
 }
 </script>
@@ -319,6 +339,20 @@
         </div>
       </div>
 
+      <section class="sec" id="liveSec" data-ind="mvrv-z-score">
+        <h2><span class="ix">●</span><span>오늘의 MVRV-Z 점수 · 종합 점수 안에서의 위치</span></h2>
+        <div class="live-grid">
+          <div class="lv"><div class="k">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub">매일 09:05 KST 수집</div></div>
+          <div class="lv"><div class="k">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s">높을수록 매수 우호<span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
+          <div class="lv"><div class="k">종합 점수 가중치</div><div class="v" style="font-size:17px">7%</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
+          <div class="lv"><div class="k">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
+        </div>
+        <div class="lv-series" id="lvSeries" style="display:none"></div>
+        <p class="rule"><b>−1.5 이하 = 100점, 7 이상 = 0점, 그 사이 선형 보간.</b> 예를 들어 MVRV-Z 0.93이면 (7 − 0.93) ÷ 8.5 × 100 ≈ 71점입니다. 하한을 −0.5에서 −1.5로 넓힌 것은 2022년식 깊은 항복 구간(−1.0~−1.5)의 민감도를 살리기 위해서입니다.</p>
+        <p class="rule" style="border-left-color:var(--amber);background:rgba(240,185,11,.05)"><b>가중치 7%</b> — 단일 지표로는 가장 높습니다. 2026-06-07 개정에서 6%에서 7%로 올렸고, 사이클 고점·저점 검증에서 가장 꾸준히 방향을 맞힌 지표였습니다. 단, 같은 온체인 밸류에이션인 NUPL과 상관이 높아 두 지표의 가중치 합이 6%를 넘지 않도록 상한(캡)을 둡니다 — 실제 반영 비중은 명목 가중치보다 작을 수 있습니다.</p>
+        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
+      </section>
+
       <section class="sec">
         <h2><span class="ix">1</span><span data-en="What the MVRV-Z Score measures">MVRV-Z 점수는 무엇을 재는가</span></h2>
         <p data-i18n-html="1" data-en="Price alone cannot tell you whether Bitcoin is 'expensive.' Expensive <b>compared with what</b>? The MVRV-Z Score answers this by using the market's own purchase history as a yardstick — how far today's price sits above or below what holders paid on average. When that gap is wide, later buyers are sitting on large paper gains and the market tends to overheat; when the gap narrows or turns negative, a large share of the market is in a loss.">가격만으로는 비트코인이 '비싼지'를 알 수 없습니다. <b>무엇과 비교해</b> 비싸다는 걸까요? MVRV-Z 점수는 시장 자신의 매입 이력을 잣대로 삼아 이 질문에 답합니다 — 오늘의 가격이 보유자들이 평균적으로 처음 치른 값보다 얼마나 위 또는 아래에 있는가. 그 간극이 크면 후발 매수자들이 큰 평가 이익을 안고 있어 시장이 과열되기 쉽고, 간극이 좁혀지거나 음수가 되면 시장의 상당 부분이 손실 상태에 놓입니다.</p>
@@ -402,6 +436,10 @@
           <details class="faq-item">
             <summary><span class="q">Q</span><span data-en="Can I use the MVRV-Z Score for short-term trading?">MVRV-Z 점수로 단기 매매를 해도 되나요?</span></summary>
             <div class="ans" data-en="It is hard to recommend. MVRV-Z is a long-term valuation gauge that moves slowly on a cycle scale, so it updates slowly and is insensitive to daily or weekly swings. Rather than short-term entries and exits, it suits the big-picture use of gauging where we are in the cycle and whether the market is broadly overheated or depressed.">권하기 어렵습니다. MVRV-Z는 사이클 단위로 천천히 움직이는 장기 밸류에이션 잣대라 갱신이 느리고 일·주 단위 변동에는 둔감합니다. 단기 진입·청산보다는 지금이 사이클의 어디쯤인지, 시장이 전반적으로 과열인지 침체인지를 가늠하는 큰 그림 용도로 적합합니다.</div>
+          </details>
+                  <details class="faq-item">
+            <summary><span class="q">Q</span><span>MVRV-Z와 NUPL을 둘 다 쓰면 같은 걸 두 번 세는 것 아닌가요?</span></summary>
+            <div class="ans">맞습니다. 둘 다 실현가치(전체 코인의 평균 매입가)를 기준으로 하므로 상관이 높습니다. 그래서 이 사이트는 두 지표의 가중치 합에 6% 상한을 두어, 한 방향으로 쏠릴 때 종합 점수를 과도하게 끌고 가지 못하게 합니다. 그래도 둘을 함께 보는 이유는 NUPL이 비율(0~1)이라 극단에서 포화되는 반면 MVRV-Z는 표준편차 단위라 극단의 "깊이"를 더 잘 구분하기 때문입니다.</div>
           </details>
         </div>
       </section>
@@ -497,6 +535,7 @@
 })();
 </script>
 <!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="ind-live.js?v=1" defer></script>
 <script src="../btc-i18n.js?v=2"></script>
 </body>
 </html>

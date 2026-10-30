@@ -199,6 +199,25 @@
   .byline .au a{color:inherit;text-decoration:none;}
   .byline .au small{color:var(--m1);font-weight:400;margin-left:6px;}
   .byline .dt{font-family:var(--mono);}
+  /* 오늘의 값 섹션 */
+  .live-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:4px 0 14px;}
+  .live-grid .lv{padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);min-width:0;}
+  .live-grid .lv .k{color:var(--m2);font-size:11px;letter-spacing:.06em;font-family:var(--mono);margin-bottom:6px;}
+  .live-grid .lv .v{color:var(--t1);font-size:20px;font-weight:800;font-family:var(--mono);line-height:1.2;word-break:break-all;}
+  .live-grid .lv .s{color:var(--m1);font-size:11.5px;line-height:1.5;margin-top:6px;}
+  .lv-bar{height:5px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:8px;overflow:hidden;}
+  .lv-bar i{display:block;height:100%;width:0;background:var(--amber);border-radius:3px;transition:width .5s;}
+  .lv-series{margin:6px 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);}
+  .lv-heat-t{color:var(--m1);font-size:11.5px;margin-bottom:8px;font-family:var(--mono);}
+  .lv-heat{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+  .lv-heat .hc{padding:8px 4px;border-radius:9px;text-align:center;background:rgba(255,255,255,.03);border:1px solid var(--line);}
+  .lv-heat .hc .hd{display:block;color:var(--m2);font-size:10px;font-family:var(--mono);}
+  .lv-heat .hc .hv{display:block;color:var(--t1);font-size:12.5px;font-weight:700;font-family:var(--mono);margin-top:3px;}
+  .lv-heat .hc.up{border-color:rgba(22,199,132,.35);} .lv-heat .hc.down{border-color:rgba(234,57,67,.35);} .lv-heat .hc.amber{border-color:rgba(240,185,11,.3);}
+  .lv-cv{width:100%;height:140px;display:block;}
+  .sec .rule{margin:10px 0 0;padding:12px 14px;border-left:3px solid var(--green);background:rgba(22,199,132,.05);border-radius:0 10px 10px 0;color:var(--t2);font-size:13.5px;line-height:1.7;}
+  .sec .rule b{color:var(--t1);}
+  @media(max-width:768px){.live-grid{grid-template-columns:repeat(2,1fr);}.lv-heat{grid-template-columns:repeat(4,1fr);}}
   /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
   .sb-visitor{display:none !important;}
 </style>
@@ -234,7 +253,8 @@
   "mainEntity": [
     {"@type": "Question", "name": "SOPR이 1보다 낮으면 무조건 사야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "SOPR이 1 아래라는 건 그날 움직인 코인들이 평균적으로 손해를 보고 팔렸다는 뜻으로, 항복성 매도가 진행 중일 수 있습니다. 역사적으로 깊은 손실 구간은 좋은 진입 기회가 많았지만, 하락장에서는 SOPR이 한동안 1 아래에 머물 수 있으므로 단일 신호로 매수하기보다 다른 지표와 분할 매수 관점으로 함께 보는 것이 안전합니다."}},
     {"@type": "Question", "name": "SOPR과 aSOPR, 단기·장기 SOPR은 무엇이 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "기본 SOPR은 그날 움직인 모든 코인의 손익을 평균낸 값이고, aSOPR(조정 SOPR)은 하루 안에 옮겨진 코인을 제외해 노이즈를 줄인 버전입니다. 단기 보유자 SOPR(STH-SOPR)은 최근에 산 사람들, 장기 보유자 SOPR(LTH-SOPR)은 오래 들고 있던 사람들의 손익만 따로 보는 변형으로, 누가 팔고 있는지를 구분해 줍니다."}},
-    {"@type": "Question", "name": "SOPR이 1보다 크면 지금 팔아야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "1보다 크다는 건 이익 실현이 우세하다는 뜻일 뿐 고점 신호는 아닙니다. 상승장에서는 SOPR이 오랫동안 1 위에 머물며 이익 실현이 꾸준히 흡수되기도 합니다. 정확한 매도 시점을 짚기보다 시장에 이익 실현 압력이 어느 정도인지 가늠하는 용도로 보는 편이 현실적입니다."}}
+    {"@type": "Question", "name": "SOPR이 1보다 크면 지금 팔아야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "1보다 크다는 건 이익 실현이 우세하다는 뜻일 뿐 고점 신호는 아닙니다. 상승장에서는 SOPR이 오랫동안 1 위에 머물며 이익 실현이 꾸준히 흡수되기도 합니다. 정확한 매도 시점을 짚기보다 시장에 이익 실현 압력이 어느 정도인지 가늠하는 용도로 보는 편이 현실적입니다."}},
+    {"@type": "Question", "name": "SOPR이 1.00 근처에 딱 붙어 있을 때는 어떻게 읽나요?", "acceptedAnswer": {"@type": "Answer", "text": "그날 움직인 코인들이 산 가격 근처에서 팔리고 있다는 뜻으로, 시장이 이익도 손실도 크게 실현하지 않는 교착 상태입니다. 상승장에서는 SOPR이 1로 내려올 때 매수세가 받쳐주면 \"눌림목\"이고, 1 아래로 뚫리면 손절 물량이 나오기 시작한다는 경고입니다. 하루 값보다 며칠 연속 1 아래에 머무는지가 더 중요합니다."}}
   ]
 }
 </script>
@@ -318,6 +338,20 @@
           <span class="impact-inline buy" data-en="Well below 1 = capitulation zone">1 한참 아래 = 항복 구간</span>
         </div>
       </div>
+
+      <section class="sec" id="liveSec" data-ind="sopr">
+        <h2><span class="ix">●</span><span>오늘의 SOPR · 종합 점수 안에서의 위치</span></h2>
+        <div class="live-grid">
+          <div class="lv"><div class="k">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub">매일 09:05 KST 수집</div></div>
+          <div class="lv"><div class="k">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s">높을수록 매수 우호<span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
+          <div class="lv"><div class="k">종합 점수 가중치</div><div class="v" style="font-size:17px">5%</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
+          <div class="lv"><div class="k">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
+        </div>
+        <div class="lv-series" id="lvSeries" style="display:none"></div>
+        <p class="rule"><b>SOPR 0.70 이하 = 100점(극단적 항복), 1.50 이상 = 0점(극단적 이익 실현), 선형 보간.</b> 점수 = (1.5 − SOPR) ÷ 0.8 × 100. SOPR 1.0057이면 약 62점입니다. 1.0이 손익분기이고, 그날 움직인 코인이 평균적으로 이익이면 1보다 크고 손실이면 작습니다.</p>
+        <p class="rule" style="border-left-color:var(--amber);background:rgba(240,185,11,.05)"><b>가중치 5%</b> — 항복 구간(SOPR이 1 아래에 며칠씩 머무는 때)을 포착하는 데 탁월했습니다. 2022년 6월과 11월 저점에서 모두 1 아래였습니다. 다만 평소에는 1 근처(0.98~1.03)에서 거의 움직이지 않아 극단이 아닐 때는 점수 기여가 작습니다.</p>
+        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
+      </section>
 
       <section class="sec">
         <h2><span class="ix">1</span><span data-en="What SOPR measures">SOPR은 무엇을 재는가</span></h2>
@@ -403,6 +437,10 @@
           <details class="faq-item">
             <summary><span class="q">Q</span><span data-en="If SOPR is above 1, should I sell now?">SOPR이 1보다 크면 지금 팔아야 하나요?</span></summary>
             <div class="ans" data-en="Above 1 just means profit-taking dominates — it is not a top signal. In a bull market, SOPR can stay above 1 for a long time while profit-taking is steadily absorbed. Rather than pinpointing an exact sell moment, it is more realistic to use it to gauge how much profit-taking pressure is in the market.">1보다 크다는 건 이익 실현이 우세하다는 뜻일 뿐 고점 신호는 아닙니다. 상승장에서는 SOPR이 오랫동안 1 위에 머물며 이익 실현이 꾸준히 흡수되기도 합니다. 정확한 매도 시점을 짚기보다 시장에 이익 실현 압력이 어느 정도인지 가늠하는 용도로 보는 편이 현실적입니다.</div>
+          </details>
+                  <details class="faq-item">
+            <summary><span class="q">Q</span><span>SOPR이 1.00 근처에 딱 붙어 있을 때는 어떻게 읽나요?</span></summary>
+            <div class="ans">그날 움직인 코인들이 산 가격 근처에서 팔리고 있다는 뜻으로, 시장이 이익도 손실도 크게 실현하지 않는 교착 상태입니다. 상승장에서는 SOPR이 1로 내려올 때 매수세가 받쳐주면 "눌림목"이고, 1 아래로 뚫리면 손절 물량이 나오기 시작한다는 경고입니다. 하루 값보다 며칠 연속 1 아래에 머무는지가 더 중요합니다.</div>
           </details>
         </div>
       </section>
@@ -498,6 +536,7 @@
 })();
 </script>
 <!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="ind-live.js?v=1" defer></script>
 <script src="../btc-i18n.js?v=2"></script>
 </body>
 </html>

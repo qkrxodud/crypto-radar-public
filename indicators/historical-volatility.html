@@ -199,6 +199,25 @@
   .byline .au a{color:inherit;text-decoration:none;}
   .byline .au small{color:var(--m1);font-weight:400;margin-left:6px;}
   .byline .dt{font-family:var(--mono);}
+  /* 오늘의 값 섹션 */
+  .live-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:4px 0 14px;}
+  .live-grid .lv{padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);min-width:0;}
+  .live-grid .lv .k{color:var(--m2);font-size:11px;letter-spacing:.06em;font-family:var(--mono);margin-bottom:6px;}
+  .live-grid .lv .v{color:var(--t1);font-size:20px;font-weight:800;font-family:var(--mono);line-height:1.2;word-break:break-all;}
+  .live-grid .lv .s{color:var(--m1);font-size:11.5px;line-height:1.5;margin-top:6px;}
+  .lv-bar{height:5px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:8px;overflow:hidden;}
+  .lv-bar i{display:block;height:100%;width:0;background:var(--amber);border-radius:3px;transition:width .5s;}
+  .lv-series{margin:6px 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);}
+  .lv-heat-t{color:var(--m1);font-size:11.5px;margin-bottom:8px;font-family:var(--mono);}
+  .lv-heat{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+  .lv-heat .hc{padding:8px 4px;border-radius:9px;text-align:center;background:rgba(255,255,255,.03);border:1px solid var(--line);}
+  .lv-heat .hc .hd{display:block;color:var(--m2);font-size:10px;font-family:var(--mono);}
+  .lv-heat .hc .hv{display:block;color:var(--t1);font-size:12.5px;font-weight:700;font-family:var(--mono);margin-top:3px;}
+  .lv-heat .hc.up{border-color:rgba(22,199,132,.35);} .lv-heat .hc.down{border-color:rgba(234,57,67,.35);} .lv-heat .hc.amber{border-color:rgba(240,185,11,.3);}
+  .lv-cv{width:100%;height:140px;display:block;}
+  .sec .rule{margin:10px 0 0;padding:12px 14px;border-left:3px solid var(--green);background:rgba(22,199,132,.05);border-radius:0 10px 10px 0;color:var(--t2);font-size:13.5px;line-height:1.7;}
+  .sec .rule b{color:var(--t1);}
+  @media(max-width:768px){.live-grid{grid-template-columns:repeat(2,1fr);}.lv-heat{grid-template-columns:repeat(4,1fr);}}
   /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
   .sb-visitor{display:none !important;}
 </style>
@@ -318,6 +337,20 @@
           <span class="impact-inline buy" data-en="Compression = big move ahead">압축=큰 변동 예고</span>
         </div>
       </div>
+
+      <section class="sec" id="liveSec" data-ind="historical-volatility">
+        <h2><span class="ix">●</span><span>오늘의 역사적 변동성 · 종합 점수 안에서의 위치</span></h2>
+        <div class="live-grid">
+          <div class="lv"><div class="k">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub">매일 09:05 KST 수집</div></div>
+          <div class="lv"><div class="k">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s">높을수록 매수 우호<span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
+          <div class="lv"><div class="k">종합 점수 가중치</div><div class="v" style="font-size:17px">3%</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
+          <div class="lv"><div class="k">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
+        </div>
+        <div class="lv-series" id="lvSeries" style="display:none"></div>
+        <p class="rule"><b>30일 연율화 변동성이 50% 이하 = 100점, 120% 이상 = 0점, 선형 보간.</b> 낮은 변동성을 매수 우호로 봅니다(큰 움직임 직전의 압축 구간). 2023~2024년 실측 최저치가 35~50%대라 하한을 50%로 두었고, 상한 120%는 2020년 3월 같은 극단 이벤트에만 닿습니다.</p>
+        <p class="rule" style="border-left-color:var(--amber);background:rgba(240,185,11,.05)"><b>가중치 3%</b> — 2026-06-07 개정에서 4%에서 3%로 낮췄습니다. 저변동이 상승 돌파로 이어질지 하락 돌파로 이어질지 방향을 말해주지 않기 때문입니다. 옵션 내재변동성(IV)과 비교한 IV−HV 스프레드는 별도 패널에서 보여줍니다.</p>
+        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
+      </section>
 
       <section class="sec">
         <h2><span class="ix">1</span><span data-en="What historical volatility measures">역사적 변동성은 무엇을 재는가</span></h2>
@@ -497,6 +530,7 @@
 })();
 </script>
 <!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="ind-live.js?v=1" defer></script>
 <script src="../btc-i18n.js?v=2"></script>
 </body>
 </html>

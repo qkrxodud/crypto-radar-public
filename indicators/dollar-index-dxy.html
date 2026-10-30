@@ -199,6 +199,25 @@
   .byline .au a{color:inherit;text-decoration:none;}
   .byline .au small{color:var(--m1);font-weight:400;margin-left:6px;}
   .byline .dt{font-family:var(--mono);}
+  /* 오늘의 값 섹션 */
+  .live-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:4px 0 14px;}
+  .live-grid .lv{padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);min-width:0;}
+  .live-grid .lv .k{color:var(--m2);font-size:11px;letter-spacing:.06em;font-family:var(--mono);margin-bottom:6px;}
+  .live-grid .lv .v{color:var(--t1);font-size:20px;font-weight:800;font-family:var(--mono);line-height:1.2;word-break:break-all;}
+  .live-grid .lv .s{color:var(--m1);font-size:11.5px;line-height:1.5;margin-top:6px;}
+  .lv-bar{height:5px;border-radius:3px;background:rgba(255,255,255,.06);margin-top:8px;overflow:hidden;}
+  .lv-bar i{display:block;height:100%;width:0;background:var(--amber);border-radius:3px;transition:width .5s;}
+  .lv-series{margin:6px 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card-2);}
+  .lv-heat-t{color:var(--m1);font-size:11.5px;margin-bottom:8px;font-family:var(--mono);}
+  .lv-heat{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+  .lv-heat .hc{padding:8px 4px;border-radius:9px;text-align:center;background:rgba(255,255,255,.03);border:1px solid var(--line);}
+  .lv-heat .hc .hd{display:block;color:var(--m2);font-size:10px;font-family:var(--mono);}
+  .lv-heat .hc .hv{display:block;color:var(--t1);font-size:12.5px;font-weight:700;font-family:var(--mono);margin-top:3px;}
+  .lv-heat .hc.up{border-color:rgba(22,199,132,.35);} .lv-heat .hc.down{border-color:rgba(234,57,67,.35);} .lv-heat .hc.amber{border-color:rgba(240,185,11,.3);}
+  .lv-cv{width:100%;height:140px;display:block;}
+  .sec .rule{margin:10px 0 0;padding:12px 14px;border-left:3px solid var(--green);background:rgba(22,199,132,.05);border-radius:0 10px 10px 0;color:var(--t2);font-size:13.5px;line-height:1.7;}
+  .sec .rule b{color:var(--t1);}
+  @media(max-width:768px){.live-grid{grid-template-columns:repeat(2,1fr);}.lv-heat{grid-template-columns:repeat(4,1fr);}}
   /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
   .sb-visitor{display:none !important;}
 </style>
@@ -234,7 +253,8 @@
   "mainEntity": [
     {"@type": "Question", "name": "DXY가 내리면 비트코인은 무조건 오르나요?", "acceptedAnswer": {"@type": "Answer", "text": "약달러는 역사적으로 비트코인을 포함한 위험자산에 우호적인 배경이었지만 인과 법칙은 아닙니다. 둘의 역상관은 느슨한 경향일 뿐이며 한동안 깨지기도 합니다. DXY는 매매 트리거가 아니라 거시 배경을 읽는 맥락 지표로 활용하는 것이 안전합니다."}},
     {"@type": "Question", "name": "DXY는 어떻게 계산되나요?", "acceptedAnswer": {"@type": "Answer", "text": "DXY는 유로·엔·파운드 등 6개 주요 통화 바스켓 대비 미국 달러의 가치를 가중 평균으로 나타낸 지수입니다. 유로의 비중이 절반 이상으로 가장 크며, 달러가 이들 통화 대비 강해지면 지수가 오릅니다."}},
-    {"@type": "Question", "name": "DXY는 몇 이상이면 강달러인가요?", "acceptedAnswer": {"@type": "Answer", "text": "절대적인 고정 기준선은 없고 방향과 추세가 더 중요합니다. 같은 100이라도 직전에 내려온 100인지 올라온 100인지에 따라 의미가 다릅니다. 특정 숫자보다 DXY가 오르는 추세인지 내리는 추세인지를 보는 편이 실용적입니다."}}
+    {"@type": "Question", "name": "DXY는 몇 이상이면 강달러인가요?", "acceptedAnswer": {"@type": "Answer", "text": "절대적인 고정 기준선은 없고 방향과 추세가 더 중요합니다. 같은 100이라도 직전에 내려온 100인지 올라온 100인지에 따라 의미가 다릅니다. 특정 숫자보다 DXY가 오르는 추세인지 내리는 추세인지를 보는 편이 실용적입니다."}},
+    {"@type": "Question", "name": "DXY 103이 중간점(50점)인 이유는?", "acceptedAnswer": {"@type": "Answer", "text": "2024~2026년 DXY의 실제 분포 중앙이 103 근처였기 때문입니다. 이론적 중립선이 아니라 최근 3년 데이터의 가운데를 50점으로 두고, 아래 95(강한 달러 약세)와 위 112(2022년식 달러 초강세) 사이를 두 구간으로 나눠 보간합니다. 달러 체제가 바뀌면 이 눈금도 다시 잡습니다."}}
   ]
 }
 </script>
@@ -318,6 +338,20 @@
           <span class="impact-inline buy" data-en="Weak dollar = crypto-friendly">약달러 = 코인 우호</span>
         </div>
       </div>
+
+      <section class="sec" id="liveSec" data-ind="dollar-index-dxy">
+        <h2><span class="ix">●</span><span>오늘의 달러지수 DXY · 종합 점수 안에서의 위치</span></h2>
+        <div class="live-grid">
+          <div class="lv"><div class="k">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub">매일 09:05 KST 수집</div></div>
+          <div class="lv"><div class="k">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s">높을수록 매수 우호<span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
+          <div class="lv"><div class="k">종합 점수 가중치</div><div class="v" style="font-size:17px">4%</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
+          <div class="lv"><div class="k">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
+        </div>
+        <div class="lv-series" id="lvSeries" style="display:none"></div>
+        <p class="rule"><b>95 이하 = 100점, 103 = 50점, 112 이상 = 0점.</b> 95~103 구간은 100→50, 103~112 구간은 50→0으로 두 단계 선형 보간합니다(역함수: 달러가 약할수록 높은 점수). 2024~2026년 실제 DXY 범위(95~112)에 맞춘 눈금입니다. 101.88이면 50 + (103 − 101.88) ÷ 8 × 50 = 57점입니다.</p>
+        <p class="rule" style="border-left-color:var(--amber);background:rgba(240,185,11,.05)"><b>가중치 4%</b> — 매크로 지표 중 ETF 유입·글로벌 M2와 같은 최고 비중입니다. 달러와 위험자산의 역상관은 길게 보면 꾸준하지만 몇 주 단위로는 자주 끊기므로, 매크로 전체가 16%로 다섯 카테고리 중 세 번째입니다.</p>
+        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
+      </section>
 
       <section class="sec">
         <h2><span class="ix">1</span><span data-en="What the Dollar Index measures">달러지수는 무엇을 재는가</span></h2>
@@ -403,6 +437,10 @@
           <details class="faq-item">
             <summary><span class="q">Q</span><span data-en="Above what level is DXY considered a strong dollar?">DXY는 몇 이상이면 강달러인가요?</span></summary>
             <div class="ans" data-en="There's no absolute fixed threshold — direction and trend matter more. The same 100 means something different depending on whether it came down from above or rose up from below. Rather than fixating on a specific number, it's more practical to watch whether DXY is trending up or down.">절대적인 고정 기준선은 없고 방향과 추세가 더 중요합니다. 같은 100이라도 위에서 내려온 100인지 아래서 올라온 100인지에 따라 의미가 다릅니다. 특정 숫자에 집착하기보다 DXY가 오르는 추세인지 내리는 추세인지를 보는 편이 실용적입니다.</div>
+          </details>
+                  <details class="faq-item">
+            <summary><span class="q">Q</span><span>DXY 103이 중간점(50점)인 이유는?</span></summary>
+            <div class="ans">2024~2026년 DXY의 실제 분포 중앙이 103 근처였기 때문입니다. 이론적 중립선이 아니라 최근 3년 데이터의 가운데를 50점으로 두고, 아래 95(강한 달러 약세)와 위 112(2022년식 달러 초강세) 사이를 두 구간으로 나눠 보간합니다. 달러 체제가 바뀌면 이 눈금도 다시 잡습니다.</div>
           </details>
         </div>
       </section>
@@ -498,6 +536,7 @@
 })();
 </script>
 <!-- 다국어(i18n) 런타임 — 동기 로드 -->
+<script src="ind-live.js?v=1" defer></script>
 <script src="../btc-i18n.js?v=2"></script>
 </body>
 </html>
