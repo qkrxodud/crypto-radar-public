@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-30T08:54:15Z",
+  "updatedAt": "2026-10-30T09:14:21Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "78003.75",
       "macd": {
-        "macdLine": "-829.05",
-        "signalLine": "-378.86",
-        "histogram": "-450.19",
+        "macdLine": "-847.92",
+        "signalLine": "-382.63",
+        "histogram": "-465.29",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001205",
       "ivRv": {
-        "iv": "36.74",
+        "iv": "30.68",
         "rv": "27.00",
-        "spread": "+9.74",
-        "label": "과대"
+        "spread": "+3.68",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 30,
@@ -2536,9 +2536,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 56409,
-      "vsizeMb": "22.06",
-      "totalFeeBtc": "0.0288",
+      "txCount": 55774,
+      "vsizeMb": "21.71",
+      "totalFeeBtc": "0.0266",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2548,36 +2548,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.36"
+          "sharePct": "26.38"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.55"
+          "sharePct": "20.57"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.84"
+          "sharePct": "16.76"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.85"
+          "sharePct": "8.86"
         },
         {
           "name": "Luxor",
-          "sharePct": "5.61"
+          "sharePct": "5.62"
         }
       ],
-      "top3Concentration": "63.75",
+      "top3Concentration": "63.71",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41087,
-      "nodeCount": 17437,
-      "capacityBtc": "4896.6034",
-      "avgChannelSizeBtc": "0.119176",
+      "channelCount": 32536,
+      "nodeCount": 16228,
+      "capacityBtc": "3753.4053",
+      "avgChannelSizeBtc": "0.115362",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4237,63 +4237,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "78018.30",
-      "openInterestUsd": "7437146220.04510000",
-      "longAccountRatio": "0.6955",
-      "shortAccountRatio": "0.3045",
-      "downsideLiquidationUsd": "5172535196.04",
-      "upsideLiquidationUsd": "2264611024.00",
+      "currentPrice": "77786.30",
+      "openInterestUsd": "7415958218.08800000",
+      "longAccountRatio": "0.6966",
+      "shortAccountRatio": "0.3034",
+      "downsideLiquidationUsd": "5165956494.72",
+      "upsideLiquidationUsd": "2250001723.37",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "70216.47",
+          "price": "70007.67",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2069014078.42"
+          "notionalUsd": "2066382597.89"
         },
         {
-          "price": "85820.13",
+          "price": "85564.93",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "905844409.60"
+          "notionalUsd": "900000689.35"
         },
         {
-          "price": "74897.57",
+          "price": "74674.85",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1810387318.61"
+          "notionalUsd": "1808084773.15"
         },
         {
-          "price": "81139.03",
+          "price": "80897.75",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "792613858.40"
+          "notionalUsd": "787500603.18"
         },
         {
-          "price": "76457.93",
+          "price": "76230.57",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1034507039.21"
+          "notionalUsd": "1033191298.94"
         },
         {
-          "price": "79578.67",
+          "price": "79342.03",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "452922204.80"
+          "notionalUsd": "450000344.67"
         },
         {
-          "price": "77238.12",
+          "price": "77008.44",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "258626759.80"
+          "notionalUsd": "258297824.74"
         },
         {
-          "price": "78798.48",
+          "price": "78564.16",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "113230551.20"
+          "notionalUsd": "112500086.17"
         }
       ],
       "errorMessage": null
@@ -5690,7 +5690,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-30T08:30:02.663860Z",
+      "generatedAt": "2026-10-30T09:00:00.064594Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5699,11 +5699,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지표가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적이며, 공포와 탐욕 지수가 낮아 투자 심리가 위축된 상태이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지표가 30으로 극단적인 공포를 나타내고 있다."
+          "content": "공포탐욕 지수가 30으로 극단적인 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
@@ -5711,11 +5711,11 @@
         },
         {
           "type": "ACTION",
-          "content": "단기적인 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산하는 것이 권장된다."
+          "content": "장기 투자 관점에서 BTC를 추가 매수하는 것을 고려해볼 수 있다."
         }
       ],
       "errorMessage": null
@@ -5754,8 +5754,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-30T08:05:03.483462Z",
-      "compositeScore": "-0.413",
+      "generatedAt": "2026-10-30T09:05:00.274727Z",
+      "compositeScore": "-0.475",
       "label": "NEGATIVE",
       "labelDisplay": "부정",
       "labelHexColor": "#F97316",
@@ -5763,18 +5763,25 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Live News: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
+          "publishedAt": "2026-10-30T08:36:52Z",
+          "score": "-0.8"
+        },
+        {
           "title": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
           "publishedAt": "2026-10-30T07:54:07Z",
-          "score": "-0.7"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin, ether and XRP selloff wipes out $1.5 billion in leveraged crypto bets",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/30/bitcoin-ether-and-xrp-selloff-wipes-out-usd1-5-billion-in-leveraged-crypto-bets",
           "publishedAt": "2026-10-30T06:22:00Z",
-          "score": "-0.8"
+          "score": "-0.7"
         },
         {
           "title": "XRP Ledger developers tighten the rules for who can hold 'restricted' tokens",
@@ -5788,7 +5795,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
           "publishedAt": "2026-10-30T05:43:07Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Binance hacker splits $1.4 billion of bitcoin into 19 wallets that no one can freeze",
@@ -5809,21 +5816,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack",
           "publishedAt": "2026-10-30T03:56:40Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths",
-          "publishedAt": "2026-10-30T03:36:11Z",
-          "score": "-0.4"
+          "score": "-0.8"
         },
         {
           "title": "Live updates: Binance $6.3B hack linked to North Korea’s TraderTraitor",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/live-updates-binance-63b-hack-linked-to-north-koreas-tradertraitor?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-10-30T07:33:15Z",
-          "score": "-0.5"
+          "publishedAt": "2026-10-30T08:00:39Z",
+          "score": "-0.7"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5858,7 +5858,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-hack-may-involve-private-key-misuse-not-theft-blockaid-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-30T00:11:26Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "Binance hack rattles markets as BNB falls 8%, Bitcoin nears $77K",
@@ -5872,7 +5872,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/tampered-ledger-reported-in-singapore-a-month-before-news-broke-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-29T22:31:07Z",
-          "score": "-0.2"
+          "score": "-0.4"
         }
       ],
       "errorMessage": null
@@ -6706,8 +6706,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 188111.5,
-      "currentPrice": 78302.39,
-      "deviationPct": -58.37,
+      "currentPrice": 78158.07,
+      "deviationPct": -58.45,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6906,9 +6906,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75800.28,
-      "currentPrice": 78302.39,
-      "priceToSthRatio": 1.033,
-      "premiumPct": 3.3,
+      "currentPrice": 78158.07,
+      "priceToSthRatio": 1.0311,
+      "premiumPct": 3.11,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
