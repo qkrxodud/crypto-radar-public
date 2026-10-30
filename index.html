@@ -449,7 +449,9 @@
   .today-note .tn-posts li a:hover{border-color:rgba(22,199,132,.4);}
   .today-note .tn-posts li a .k{display:block;color:var(--m2);font-size:11px;font-family:var(--mono);margin-bottom:4px;}
   .today-note .tn-posts li a.all{display:flex;align-items:center;justify-content:center;color:var(--green);font-weight:700;}
-  @media(max-width:768px){.today-note{padding:20px 18px;}.today-note .tn-posts ul{grid-template-columns:1fr;}}
+  @media(max-width:768px){.today-note{padding:20px 18px;}.today-note .tn-posts ul{grid-template-columns:1fr;}
+    /* 모바일: 해설이 KPI 4카드보다 먼저 보이도록 순서 조정 (.content는 flex column) */
+    .content>*{order:10;}.content>.hero{order:1;}.content>.today-note{order:2;}.content>.kpi-strip{order:3;}}
   /* AI 생성 고지 */
   .ai-disc{margin-top:10px;padding:8px 11px;border-radius:9px;background:rgba(240,185,11,.08);border:1px solid rgba(240,185,11,.18);color:var(--t3);font-size:11.5px;line-height:1.55;}
   .ai-disc b{color:var(--amber);}
@@ -567,7 +569,7 @@
     <div class="topbar">
       <div class="crumb" data-i18n-html="1" data-en='Home <span style="color:var(--m3)">›</span> <b>Dashboard</b>'>Home <span style="color:var(--m3)">›</span> <b>대시보드</b></div>
       <div class="right">
-        <span class="date" id="topDate">--</span>
+        <span class="date" id="topDate">2026.10.30</span>
         <span class="live"><span class="d"></span>LIVE</span>
       </div>
     </div>
@@ -581,15 +583,15 @@
             <circle cx="100" cy="100" r="82" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="15" stroke-linecap="round" stroke-dasharray="386.4 600" transform="rotate(135 100 100)"></circle>
             <circle id="gaugeArc" cx="100" cy="100" r="82" fill="none" stroke="var(--green)" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 600" transform="rotate(135 100 100)"></circle>
           </svg>
-          <div class="gauge-read"><div class="gv" id="gaugeVal">--</div><div class="gl" data-en="/ 100 · Composite score">/ 100 · 종합 점수</div></div>
+          <div class="gauge-read"><div class="gv" id="gaugeVal">62</div><div class="gl" data-en="/ 100 · Composite score">/ 100 · 종합 점수</div></div>
         </div>
         <div class="hero-body">
           <h1 class="hero-date" id="heroDate">오늘의 비트코인 타이밍</h1>
-          <div class="hero-h" id="heroHeadline">--</div>
+          <div class="hero-h" id="heroHeadline">관망 구간 (점수 62) — 분배 구간까지 -9점 · 매집 구간까지 +3점, 매집 쪽이 더 가깝습니다</div>
           <div class="hero-meta">
-            <div class="hero-badge" id="heroBadge"><span class="sw"></span><span id="heroBadgeText">--</span></div>
-            <span class="hero-delta" id="heroDelta">--</span>
-            <span class="hero-price" id="heroPrice">--</span>
+            <div class="hero-badge" id="heroBadge"><span class="sw"></span><span id="heroBadgeText">중립</span></div>
+            <span class="hero-delta" id="heroDelta">▲ +1 (어제 대비)</span>
+            <span class="hero-price" id="heroPrice">BTC $78,004</span>
           </div>
           <div id="heroDistance" style="display:none;font-size:12.5px;color:var(--t3);margin-top:8px"></div>
           <div id="heroEvidence" style="display:none;font-size:12.5px;color:var(--t2);margin-top:6px;line-height:1.55"></div>
@@ -605,12 +607,12 @@
       <!-- KPI -->
       <div class="kpi-strip" id="kpiStrip"></div>
 
-      <!-- 오늘의 해설 — 정적 편집 콘텐츠(주간 리뷰 요약). 매주 목요일 주간 리뷰와 함께 갱신 -->
+      <!-- 오늘의 해설 — 정적 편집 콘텐츠(주간 리뷰의 요약·해석, 본문과 문장 중복 금지). 매주 목요일 주간 리뷰와 함께 갱신 -->
       <section class="today-note" id="todayNote">
-        <div class="tn-head"><h2 data-en="Today's note">오늘의 해설</h2><span class="tn-meta">2026-10-30 · 글: 태영 · 주간 리뷰 요약</span></div>
-        <p><b>종합 62점, 중립 53일째.</b> 이번 주 점수는 57~64 사이를 오갔고 10월 30일 아침 기준 62점(전일 +1)입니다. BTC는 78,004달러로 200일 이동평균(72,901달러)보다 7% 위, 30일 평균(82,418달러)보다 5% 아래 — 장기 추세선 위이면서 단기 평균 아래라는 애매한 자리가 중립이 길어지는 배경입니다. 매집 우세 경계(65)까지 +3점, 분배 우세 경계(53)까지 −9점으로 위쪽이 더 가깝습니다.</p>
-        <p><b>가장 크게 움직인 지표는 공포·탐욕 지수입니다.</b> 24~29일 내내 48~54였다가 30일 수집에서 30(공포)으로 한 번에 내려왔고, 같은 날 일봉 RSI는 7일 중 최저인 36.1을 찍었습니다. 이 사이트는 공포를 역발상 매수 배경으로 보기 때문에 두 지표의 정규화 점수는 70·84로 높아졌지만, 가중치 합이 5%라 종합 점수는 +1점에 그쳤습니다. 반대편에서는 롱·숏 비율 2.37이 표본 분포상 극단적 롱 쏠림(정규화 0)을 가리킵니다. 심리는 식었는데 선물 포지션은 정리되지 않은 조합이라, 가격이 흔들리면 청산 연쇄가 날 수 있는 상태로 읽습니다.</p>
-        <p><b>온체인과 매크로는 조용했습니다.</b> MVRV-Z 0.93, NUPL 0.31, SOPR 1.006으로 보유자들은 얕은 이익 상태이고, 거래소 순유입 +46 BTC, 미국 현물 ETF 순유입 +1억 7천만 달러, DXY 101.9로 바깥에서 온 충격은 아닙니다. 2,061일 표본에서 오늘 같은 중립 구간(496일)은 30일 뒤 상승 54.8%(기준 51.9%), 90일 뒤 57.5%(기준 52.4%), 180일 뒤 54.2%(기준 58.3%)였습니다 — 단기엔 조금 낫고 장기엔 못했던, 말 그대로 우위가 없는 구간입니다. 다음 주에 볼 것은 공포가 3일 이상 이어지는지, 롱·숏 비율이 2.0 아래로 내려오는지, 그리고 점수가 65를 넘기더라도 2일 안에 되돌아가지 않는지입니다(표본에서 라벨 전환의 39%가 2일 내 재반전).</p>
+        <div class="tn-head"><h2 data-en="Today's note">오늘의 해설</h2><span class="tn-meta">2026-10-30 · 글: <a href="about.html#operator" style="color:var(--t2);text-decoration:none;border-bottom:1px dotted var(--m2)">태영</a> · 주간 리뷰 요약</span></div>
+        <p><b>한 줄로 줄이면 "심리는 식었고, 포지션은 아직 안 식었다"입니다.</b> 점수는 여전히 중립(62)이지만 그 안에서 두 힘이 반대로 당기고 있습니다. 공포·탐욕 지수가 하루 만에 공포 영역으로 내려앉고 일봉 RSI가 7일 최저를 찍은 반면, 선물 시장의 롱·숏 비율은 표본 분포에서 가장 쏠린 축에 남아 있습니다. 역사적으로 건강한 바닥은 이 두 가지가 같이 내려올 때 만들어졌고, 심리만 먼저 무너진 경우는 한 번 더 흔들린 뒤에 정리되는 일이 잦았습니다.</p>
+        <p><b>왜 점수는 거의 안 움직였나.</b> 심리 지표가 크게 움직여도 이 사이트의 가중치 설계상 공포탐욕과 일봉 RSI를 합쳐 5%뿐이라 종합 점수는 하루 1점 올랐을 뿐입니다. 점수를 실제로 움직이는 온체인 밸류에이션(MVRV-Z·NUPL·SOPR)과 매크로(DXY·ETF 유입)가 이번 주 거의 제자리였기 때문에, 숫자만 보면 "아무 일도 없는 주"처럼 보입니다. 그래서 이번 주는 종합 점수보다 지표 사이의 엇갈림을 읽는 것이 더 중요합니다.</p>
+        <p><b>지켜볼 세 가지.</b> ① 공포가 사흘 이상 이어지는지, ② 롱·숏 비율이 2.0 아래로 정리되는지, ③ 점수가 65를 넘기더라도 이틀 안에 되돌아가지 않는지. 셋 중 둘이 확인되면 "눌림목"이라는 해석에 무게가 실리고, 하나도 확인되지 않으면 중립이 두 달째로 넘어갑니다. 지표 27개의 수치와 과거 2,061일 중 같은 구간의 통계는 주간 리뷰 전문에 정리했습니다.</p>
         <a class="tn-more" href="posts/2026-10-30-weekly-review.html" data-en="Read the full weekly review →">주간 리뷰 전문 읽기 — 지표 27개 수치와 과거 동일 구간 통계 →</a>
         <div class="tn-posts">
           <h3 data-en="LATEST POSTS">최신 글</h3>

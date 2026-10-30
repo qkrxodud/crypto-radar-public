@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """invest-view 대시보드 API 전체를 수집해 data/snapshot.json을 생성한다."""
-import json, sys, urllib.request
+import json, os, sys, urllib.request
 from datetime import datetime, timezone
 
 BASE = "http://localhost:8080"
@@ -92,3 +92,49 @@ with open(OUT, "w", encoding="utf-8") as f:
 m = data.get("api_dashboard", {})
 print(f"\n[build_snapshot] → {OUT}")
 print(f"  date={m.get('dataDate')}  score={m.get('score')}  signal={m.get('signalDisplay')}")
+
+
+# ── 정적 히어로 값 주입 ───────────────────────────────────────────────
+# JS 미실행 크롤러·심사자에게도 홈 첫 화면이 빈 "--"가 아니도록, 마지막 수집값을
+# index.html 히어로(점수·라벨·헤드라인·전일 대비·BTC 가격·날짜)에 정적으로 써 넣는다.
+# 브라우저에서는 인라인 JS가 같은 요소를 다시 채우므로 표시 결과는 동일하다.
+def inject_static_hero(snapshot, index_path):
+    import re as _re, html as _html
+    m = (snapshot.get("data") or {}).get("api_dashboard") or {}
+    if not m.get("hasData"):
+        return False
+    try:
+        with open(index_path, encoding="utf-8") as f:
+            s = f.read()
+    except FileNotFoundError:
+        return False
+    score = m.get("score"); delta = m.get("scoreDelta") or 0
+    try:
+        price = f"BTC ${float(m.get('btcClose')):,.0f}"
+    except (TypeError, ValueError):
+        price = "--"
+    delta_txt = ("▲ +" if delta > 0 else "▼ " if delta < 0 else "= ") + f"{delta} (어제 대비)"
+    date_txt = (m.get("dataDate") or "").replace("-", ".")
+    reps = [
+        (r'(<div class="gv" id="gaugeVal">)[^<]*(</div>)', str(score) if score is not None else "--"),
+        (r'(<div class="hero-h" id="heroHeadline">)[^<]*(</div>)', _html.escape(m.get("actionReason") or "--")),
+        (r'(<span id="heroBadgeText">)[^<]*(</span>)', _html.escape(m.get("signalDisplay") or "--")),
+        (r'(<span class="hero-delta" id="heroDelta">)[^<]*(</span>)', delta_txt),
+        (r'(<span class="hero-price" id="heroPrice">)[^<]*(</span>)', price),
+        (r'(<span class="date" id="topDate">)[^<]*(</span>)', date_txt or "--"),
+    ]
+    out = s
+    for pat, val in reps:
+        out, n = _re.subn(pat, lambda mm, v=val: mm.group(1) + v + mm.group(2), out, count=1)
+        if n != 1:
+            print(f"  [WARN] static hero: pattern not found: {pat[:40]}")
+    if out != s:
+        with open(index_path, "w", encoding="utf-8") as f:
+            f.write(out)
+        return True
+    return False
+
+if __name__ == "__main__":
+    _idx = os.path.join(os.path.dirname(os.path.abspath(OUT)), "..", "index.html")
+    if inject_static_hero(snapshot, os.path.normpath(_idx)):
+        print("  static hero values written to index.html")

@@ -10,7 +10,7 @@ echo "[refresh] $(date -u +%Y-%m-%dT%H:%M:%SZ) — fetching indicators..."
 python3 "$REPO_DIR/scripts/build_snapshot.py" "$OUT"
 
 cd "$REPO_DIR"
-git add data/snapshot.json
+git add data/snapshot.json index.html
 if git diff --staged --quiet; then
   echo "[refresh] No changes, skipping commit."
   exit 0
