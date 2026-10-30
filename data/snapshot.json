@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-30T12:25:47Z",
+  "updatedAt": "2026-10-30T12:46:00Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "78003.75",
       "macd": {
-        "macdLine": "-875.46",
-        "signalLine": "-388.14",
-        "histogram": "-487.32",
+        "macdLine": "-884.10",
+        "signalLine": "-389.87",
+        "histogram": "-494.23",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001205",
       "ivRv": {
-        "iv": "30.49",
+        "iv": "36.23",
         "rv": "27.00",
-        "spread": "+3.49",
-        "label": "균형"
+        "spread": "+9.23",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 30,
@@ -2536,9 +2536,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 57976,
-      "vsizeMb": "22.47",
-      "totalFeeBtc": "0.0461",
+      "txCount": 61751,
+      "vsizeMb": "24.11",
+      "totalFeeBtc": "0.0934",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2548,36 +2548,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.31"
+          "sharePct": "26.34"
         },
         {
           "name": "AntPool",
-          "sharePct": "20.78"
+          "sharePct": "20.80"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.78"
+          "sharePct": "16.79"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.67"
+          "sharePct": "8.68"
         },
         {
           "name": "Luxor",
-          "sharePct": "5.62"
+          "sharePct": "5.63"
         }
       ],
-      "top3Concentration": "63.87",
+      "top3Concentration": "63.93",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41087,
-      "nodeCount": 17437,
-      "capacityBtc": "4896.6034",
-      "avgChannelSizeBtc": "0.119176",
+      "channelCount": 32536,
+      "nodeCount": 16228,
+      "capacityBtc": "3753.4053",
+      "avgChannelSizeBtc": "0.115362",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4166,9 +4166,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "251683799098.62821",
+      "totalMarketCapUsd": "251673336623.47922",
       "marketCap30dAgoUsd": "257779705280.94298",
-      "growth30dPercent": "-2.36",
+      "growth30dPercent": "-2.37",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -4237,63 +4237,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "77426.90",
-      "openInterestUsd": "7414894565.77252100",
-      "longAccountRatio": "0.7132",
-      "shortAccountRatio": "0.2868",
-      "downsideLiquidationUsd": "5288302804.31",
-      "upsideLiquidationUsd": "2126591761.46",
+      "currentPrice": "77330.10",
+      "openInterestUsd": "7386503414.05760000",
+      "longAccountRatio": "0.7136",
+      "shortAccountRatio": "0.2864",
+      "downsideLiquidationUsd": "5271008836.27",
+      "upsideLiquidationUsd": "2115494577.79",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "69684.21",
+          "price": "69597.09",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2115321121.72"
+          "notionalUsd": "2108403534.51"
         },
         {
-          "price": "85169.59",
+          "price": "85063.11",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "850636704.59"
+          "notionalUsd": "846197831.11"
         },
         {
-          "price": "74329.82",
+          "price": "74236.90",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1850905981.51"
+          "notionalUsd": "1844853092.70"
         },
         {
-          "price": "80523.98",
+          "price": "80423.30",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "744307116.51"
+          "notionalUsd": "740423102.23"
         },
         {
-          "price": "75878.36",
+          "price": "75783.50",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1057660560.86"
+          "notionalUsd": "1054201767.25"
         },
         {
-          "price": "78975.44",
+          "price": "78876.70",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "425318352.29"
+          "notionalUsd": "423098915.56"
         },
         {
-          "price": "76652.63",
+          "price": "76556.80",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "264415140.22"
+          "notionalUsd": "263550441.81"
         },
         {
-          "price": "78201.17",
+          "price": "78103.40",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "106329588.07"
+          "notionalUsd": "105774728.89"
         }
       ],
       "errorMessage": null
@@ -5690,7 +5690,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-30T12:00:03.063120Z",
+      "generatedAt": "2026-10-30T12:30:02.724008Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5711,18 +5711,18 @@
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "시장 상황을 주의 깊게 관찰하며 추가 매수 기회를 모색하라."
         },
         {
           "type": "ACTION",
-          "content": "장기 투자 관점에서 저가 매수 기회를 모색할 수 있다."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-10-30T12:05:36.366910Z",
+      "generatedAt": "2026-10-30T12:45:58.256872Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5731,23 +5731,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows neutral sentiment with mixed indicators suggesting potential caution."
+          "content": "The market is currently neutral with mixed signals across various indicators."
         },
         {
           "type": "RISK",
-          "content": "Fear and Greed index at 30 indicates high fear among investors."
+          "content": "Fear and Greed Index at 30 indicates high fear among investors."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential oversold conditions."
+          "content": "RSI is low at 36.10, suggesting potential bearish momentum."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of reversal or increased volatility."
+          "content": "Consider cautious trading strategies given the neutral score."
         },
         {
           "type": "ACTION",
-          "content": "Consider reducing exposure to high-risk assets until sentiment improves."
+          "content": "Monitor on-chain metrics for signs of recovery or further decline."
         }
       ],
       "errorMessage": null
@@ -6706,8 +6706,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 188111.5,
-      "currentPrice": 77952.43,
-      "deviationPct": -58.56,
+      "currentPrice": 77852.97,
+      "deviationPct": -58.61,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6906,9 +6906,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75800.28,
-      "currentPrice": 77952.43,
-      "priceToSthRatio": 1.0284,
-      "premiumPct": 2.84,
+      "currentPrice": 77852.97,
+      "priceToSthRatio": 1.0271,
+      "premiumPct": 2.71,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
