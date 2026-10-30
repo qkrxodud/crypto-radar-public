@@ -181,5 +181,13 @@ React 대시보드(`/react/dashboard`)의 데이터를 정적 GitHub Pages 사�
 | 2026-11-27 | 주간 지표 리뷰 (11-27) | 당일 snapshot |
 | 2026-12-01 | 2022년 6월 94점이 바닥이 아니었던 이유 — 강력 매집 구간의 90일 뒤 44% | bands UNDERVALUED, landmarks |
 
-### A-04 지표 상세 템플릿 차별화 (진행 중)
-- 각 지표 페이지에 `오늘의 값 · 종합점수 내 위치` 데이터 섹션(snapshot 렌더: 현재값·정규화 점수·가중치·7일 추이), 지표별 FAQ 수 2~5로 변화, dateModified 실갱신
+### A-04 지표 상세 템플릿 차별화 (완료 2026-10-30)
+- 22편에 `#liveSec` 데이터 섹션(indicators/ind-live.js: 현재값·정규화 점수·가중치·7일 히트/30일 라인) + 지표별 정규화 규칙·가중치 근거 문단, 8편 고유 FAQ 추가(FAQ 3~4)
+
+### A-05 홈 정적 히어로 값·모바일 순서 (완료 2026-10-30)
+- build_snapshot.py `inject_static_hero()`가 점수·헤드라인·라벨·전일대비·BTC가·날짜를 index.html에 기록, refresh.sh가 index.html 동반 커밋
+- 모바일 `.content` flex order: 히어로 → 해설 → KPI
+
+### A-06 재신청 조건 (대기)
+- 평가자 권고: ① 글 8~10편 누적 ② Search Console에서 posts 4 URL·홈·about 색인 확인(사이트맵 재제출 + URL 검사 색인 요청) — 둘 다 충족 시 재신청(일정대로면 2026-11-13~11-20)
+- 보류: 새 섹션(todayNote·posts·operator) EN 번역(data-en) — 심사 무관, UX 과제
