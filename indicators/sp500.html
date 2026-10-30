@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="S&amp;P 500 지수가 비트코인과 어떤 관계인지 — 미국 대표 주가지수의 의미, 위험자산 심리와 상관관계, 매수 타이밍 활용법과 한계까지 초보자 눈높이로 설명합니다." data-en-content="How the S&amp;P 500 relates to Bitcoin — what America's benchmark stock index means, its correlation with risk-asset sentiment, and how to use it for buy timing along with its limits, explained for beginners.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="태영">
 <title data-en="S&amp;P 500 and Bitcoin? The Risk-Sentiment Benchmark Explained — BTC Timing Radar">S&amp;P 500과 비트코인? 위험자산 심리 기준점 완전 정리 — BTC 타이밍 레이더</title>
 <link rel="canonical" href="https://btctiming.co.kr/indicators/sp500.html">
 <meta property="og:type" content="article">
@@ -192,6 +193,14 @@
     .content{padding:16px 12px 48px;}
     .ind-hero h1{font-size:21px;}
   }
+  /* 저자·발행일 바이라인 */
+  .byline{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:16px 0 22px;padding:11px 15px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--m1);font-size:12.5px;}
+  .byline .au{color:var(--t1);font-weight:700;}
+  .byline .au a{color:inherit;text-decoration:none;}
+  .byline .au small{color:var(--m1);font-weight:400;margin-left:6px;}
+  .byline .dt{font-family:var(--mono);}
+  /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
+  .sb-visitor{display:none !important;}
 </style>
 <!-- 구조화 데이터: 지표 해설 문서 + 빵부스러기 + FAQ -->
 <script type="application/ld+json">
@@ -199,11 +208,11 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "datePublished": "2026-06-16",
-  "dateModified": "2026-06-16",
+  "dateModified": "2026-10-30",
   "headline": "S&P 500과 비트코인? 위험자산 심리 기준점 완전 정리",
   "description": "S&P 500이 비트코인과 어떤 관계인지, 위험자산 심리와의 상관관계, 매수 타이밍 활용법과 한계를 설명합니다.",
   "inLanguage": "ko",
-  "author": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더"},
+  "author": {"@type": "Person", "name": "태영", "jobTitle": "백엔드 개발자", "url": "https://btctiming.co.kr/about.html#operator"},
   "publisher": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더"},
   "mainEntityOfPage": "https://btctiming.co.kr/indicators/sp500.html"
 }
@@ -244,6 +253,7 @@
     <nav class="sb-nav">
       <a href="../index.html"><span class="dot"></span><span data-en="Dashboard">대시보드</span></a>
       <a class="active" href="../guide.html"><span class="dot"></span><span data-en="Indicator Guide">지표 가이드</span></a>
+      <a href="../posts/index.html"><span class="dot"></span><span data-en="Posts">글</span></a>
       <a href="../about.html"><span class="dot"></span><span data-en="About">서비스 소개</span></a>
       <a href="../contact.html"><span class="dot"></span><span data-en="Contact">문의</span></a>
     </nav>
@@ -291,6 +301,8 @@
         <h1 data-i18n-html="1" data-en="The S&amp;P 500 and Bitcoin, <span class=&quot;hl&quot;>in plain terms</span>">S&amp;P 500과 비트코인, <span class="hl">쉬운 말</span>로 풀어보기</h1>
         <p class="lead" data-i18n-html="1" data-en="The S&amp;P 500 is America's benchmark stock index and acts as a thermometer for global <b>risk appetite</b>. When stocks rise, investors are willing to take on risk, which has tended to be a favorable backdrop for Bitcoin too. Conversely, when stocks fall sharply, that same risk-off sentiment has frequently dragged crypto down with it. We watch the trend, not the absolute level.">S&amp;P 500은 미국 대표 주가지수이자 글로벌 <b>위험 선호</b>의 온도계 역할을 합니다. 증시가 오를 때는 투자자들이 위험을 기꺼이 감수하는 분위기로, 비트코인에도 우호적인 배경이 되곤 했습니다. 반대로 증시가 크게 빠지면 같은 위험 회피 심리가 코인까지 함께 끌어내린 경우가 잦았습니다. 절대 수준이 아니라 추세를 봅니다.</p>
       </div>
+
+      <div class="byline"><span class="au"><a href="../about.html#operator">태영</a><small data-en="Backend developer · sole operator">백엔드 개발자 · 1인 운영</small></span><span><span data-en="Published">발행</span> <span class="dt">2026-06-16</span> · <span data-en="Updated">수정</span> <span class="dt">2026-10-30</span></span><span data-en="Reviewed against live data daily">수치는 매일 09:05 KST 재검증</span></div>
 
       <div class="summary-box">
         <div class="sb">
@@ -404,17 +416,17 @@
       </div>
 
       <!-- 푸터 -->
-      <div class="foot">
+      <footer class="foot">
         <div class="fa">
           <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
           <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="../index.html" data-en="Dashboard">대시보드</a><a href="../guide.html" data-en="Indicator Guide">지표 가이드</a><a href="../about.html" data-en="About">서비스 소개</a><a href="../contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="../index.html" data-en="Dashboard">대시보드</a><a href="../guide.html" data-en="Indicator Guide">지표 가이드</a><a href="../posts/index.html" data-en="Posts">글</a><a href="../about.html" data-en="About">서비스 소개</a><a href="../contact.html" data-en="Contact">문의</a></div>
           <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="../privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="../disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
         <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
-      </div>
+      </footer>
 
     </div>
   </div>

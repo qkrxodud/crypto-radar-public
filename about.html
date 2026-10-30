@@ -268,6 +268,20 @@
   @media(max-width:380px){
     .content{padding:14px 10px 44px;}
   }
+  /* ── 운영자 ── */
+  .op-card{display:grid;grid-template-columns:96px 1fr;gap:22px;padding:26px;border:1px solid var(--line);border-radius:20px;background:var(--card);}
+  .op-card .op-av{width:96px;height:96px;border-radius:24px;background:linear-gradient(160deg,rgba(22,199,132,.35),rgba(22,199,132,.08));border:1px solid rgba(22,199,132,.3);display:flex;align-items:center;justify-content:center;color:var(--green);font-size:34px;font-weight:800;}
+  .op-card .op-nm{color:var(--t1);font-size:19px;font-weight:800;margin:0 0 2px;}
+  .op-card .op-role{color:var(--green);font-size:13px;font-weight:600;margin-bottom:12px;}
+  .op-card p{margin:0 0 10px;color:var(--t2);font-size:14px;line-height:1.75;}
+  .op-card p b{color:var(--t1);}
+  .op-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px;}
+  .op-facts div{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);font-size:13px;line-height:1.6;color:var(--t3);}
+  .op-facts div b{display:block;color:var(--t1);font-size:12px;margin-bottom:3px;}
+  .op-facts a{color:var(--green);text-decoration:none;}
+  @media(max-width:640px){.op-card{grid-template-columns:1fr;}.op-card .op-av{width:72px;height:72px;font-size:26px;}.op-facts{grid-template-columns:1fr;}}
+  /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
+  .sb-visitor{display:none !important;}
 </style>
 <!-- 구조화 데이터: 소개 페이지 + 운영 주체 (기존 about.html에서 이식) -->
 <script type="application/ld+json">
@@ -278,6 +292,7 @@
   "url": "https://btctiming.co.kr/about.html",
   "inLanguage": "ko",
   "description": "BTC 투자 타이밍 레이더 소개 — 비트코인 온체인·기술·파생·매크로 지표 25개+를 매일 자동 분석해 0~100점 하나로 요약하는 무료 정보 서비스. 점수 읽는 법과 해석 시 주의점까지 안내.",
+  "author": {"@type": "Person", "name": "태영", "jobTitle": "백엔드 개발자", "url": "https://btctiming.co.kr/about.html#operator"},
   "about": {
     "@type": "Organization",
     "name": "BTC 투자 타이밍 레이더",
@@ -302,6 +317,7 @@
     <nav class="sb-nav">
       <a href="index.html"><span class="dot"></span><span data-en="Dashboard">대시보드</span></a>
       <a href="guide.html"><span class="dot"></span><span data-en="Indicator Guide">지표 가이드</span></a>
+      <a href="posts/index.html"><span class="dot"></span><span data-en="Posts">글</span></a>
       <a class="active" href="about.html"><span class="dot"></span><span data-en="About">서비스 소개</span></a>
       <a href="contact.html"><span class="dot"></span><span data-en="Contact">문의</span></a>
     </nav>
@@ -410,31 +426,32 @@
         <p class="lead-tx" data-en="Each category is weighted and summed.">각 카테고리에 가중치를 적용해 합산합니다.</p>
         <div class="cat-list">
           <div class="cat-row">
-            <div class="ct"><div class="cn"><span data-en="Cycle · Sentiment">사이클 · 심리</span><span class="pct">30%</span></div><div class="cd" data-en="Identifies the market phase">시장 단계 판별</div></div>
+            <div class="ct"><div class="cn"><span data-en="On-chain">온체인</span><span class="pct">34%</span></div><div class="cd" data-en="Actual holder behavior · valuation">실제 보유자 행동 · 밸류에이션</div></div>
             <div class="cat-bar"><i style="width:100%"></i></div>
-            <div class="cat-tags"><span data-en="Fear &amp; Greed">공포탐욕</span><span data-en="Halving cycle">반감기 사이클</span><span>MVRV-Z</span><span>NUPL</span><span>Pi Cycle</span></div>
+            <div class="cat-tags"><span>MVRV-Z</span><span>NUPL</span><span>SOPR</span><span>Puell</span><span>LTH/STH</span><span data-en="Active addresses">활성 주소</span><span data-en="Hash rate">해시레이트</span></div>
           </div>
           <div class="cat-row">
-            <div class="ct"><div class="cn"><span data-en="Technical analysis">기술적 분석</span><span class="pct">25%</span></div><div class="cd" data-en="Price trend strength">가격 추세 강도</div></div>
-            <div class="cat-bar"><i style="width:83%"></i></div>
-            <div class="cat-tags"><span data-en="RSI D/W/M">RSI 일/주/월</span><span data-en="MA200 ratio">MA200 비율</span><span data-en="Volatility">변동성</span><span>MACD</span></div>
+            <div class="ct"><div class="cn"><span data-en="Derivatives">파생상품</span><span class="pct">21%</span></div><div class="cd" data-en="Leverage froth">레버리지 과열도</div></div>
+            <div class="cat-bar"><i style="width:62%"></i></div>
+            <div class="cat-tags"><span data-en="Funding rate">펀딩비</span><span data-en="Long/short ratio">롱숏비율</span><span data-en="Taker ratio">테이커비율</span><span data-en="Open interest">미결제약정</span><span>Put/Call</span></div>
           </div>
           <div class="cat-row">
-            <div class="ct"><div class="cn"><span data-en="Derivatives">파생상품</span><span class="pct">20%</span></div><div class="cd" data-en="Leverage froth">레버리지 과열도</div></div>
-            <div class="cat-bar"><i style="width:66%"></i></div>
-            <div class="cat-tags"><span data-en="Funding rate">펀딩비</span><span data-en="Open interest">미결제약정</span><span data-en="Long/short ratio">롱숏비율</span><span data-en="Taker ratio">테이커비율</span></div>
+            <div class="ct"><div class="cn"><span data-en="Macro">매크로</span><span class="pct">16%</span></div><div class="cd" data-en="External environment">외부 환경</div></div>
+            <div class="cat-bar"><i style="width:47%"></i></div>
+            <div class="cat-tags"><span>DXY</span><span data-en="ETF inflows">ETF 유입</span><span data-en="Global M2">글로벌 M2</span><span>S&amp;P500</span><span>VIX</span></div>
           </div>
           <div class="cat-row">
-            <div class="ct"><div class="cn"><span data-en="On-chain">온체인</span><span class="pct">15%</span></div><div class="cd" data-en="Actual holder behavior">실제 보유자 행동</div></div>
-            <div class="cat-bar"><i style="width:50%"></i></div>
-            <div class="cat-tags"><span>SOPR</span><span>LTH/STH</span><span data-en="Exchange inflow">거래소 유입</span><span>Puell</span><span data-en="Hash rate">해시레이트</span></div>
+            <div class="ct"><div class="cn"><span data-en="Cycle · Sentiment">사이클 · 심리</span><span class="pct">15%</span></div><div class="cd" data-en="Market phase · crowd psychology">시장 단계 · 군중 심리</div></div>
+            <div class="cat-bar"><i style="width:44%"></i></div>
+            <div class="cat-tags"><span data-en="Halving cycle">반감기 사이클</span><span data-en="Fear &amp; Greed">공포탐욕</span><span data-en="BTC dominance">BTC 도미넌스</span><span data-en="Stablecoin dominance">스테이블코인 비중</span><span>Pi Cycle</span></div>
           </div>
           <div class="cat-row">
-            <div class="ct"><div class="cn"><span data-en="Macro">매크로</span><span class="pct">10%</span></div><div class="cd" data-en="External environment">외부 환경</div></div>
-            <div class="cat-bar"><i style="width:33%"></i></div>
-            <div class="cat-tags"><span>DXY</span><span>S&amp;P500</span><span data-en="Kimchi premium">김치프리미엄</span><span data-en="ETF inflows">ETF 유입</span></div>
+            <div class="ct"><div class="cn"><span data-en="Technical analysis">기술적 분석</span><span class="pct">14%</span></div><div class="cd" data-en="Price trend strength">가격 추세 강도</div></div>
+            <div class="cat-bar"><i style="width:41%"></i></div>
+            <div class="cat-tags"><span data-en="MA200 ratio">MA200 비율</span><span data-en="RSI D/W">RSI 일/주</span><span data-en="Volatility">변동성</span><span>ETH/BTC</span></div>
           </div>
         </div>
+        <p class="lead-tx" style="margin-top:12px;font-size:12.5px;color:var(--m1)" data-en="Weights were last revised on 2026-06-07 (ScoringPolicy v2.1). Correlated indicators are capped so that MVRV-Z + NUPL together never exceed 6% and the derivatives group never exceeds 15%. The exact per-indicator weights are listed on each indicator's detail page.">가중치는 2026-06-07에 마지막으로 개정됐습니다(ScoringPolicy v2.1). 서로 상관이 높은 지표는 상한을 둡니다 — MVRV-Z와 NUPL의 합은 6%, 파생상품 그룹은 15%를 넘지 않습니다. 지표별 정확한 가중치는 각 지표 상세 페이지에 적어 두었습니다.</p>
       </div>
 
       <!-- 다섯 카테고리를 왜 모았나 -->
@@ -471,6 +488,26 @@
             <div class="ic"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v4M11 16v4M2 11h4M16 11h4"/><circle cx="11" cy="11" r="3.5"/></svg></div>
             <div class="t" data-en="Together, not alone">하나가 아니라 함께</div>
             <div class="d" data-en="No single category is treated as decisive on its own. The composite score summarizes where most signals agree or diverge — it isn't a prediction of tomorrow's price.">어떤 카테고리도 단독으로 결정적이라고 보지 않습니다. 종합 점수는 대부분의 신호가 어디에서 일치하고 엇갈리는지를 요약하는 것이지, 내일의 가격을 맞히는 것이 아닙니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 운영자 -->
+      <div id="operator">
+        <div class="sec-h"><h2 data-en="Who runs this site">누가 만들고 운영하나요</h2><span class="hint" data-en="One person, writing under a pen name — here is what I do and don't claim">한 사람이 운영합니다 — 하는 일과 하지 않는 일을 분명히 적어 둡니다</span></div>
+        <div class="op-card">
+          <div class="op-av">태</div>
+          <div>
+            <div class="op-nm">태영 <span style="color:var(--m2);font-size:13px;font-weight:400">(필명)</span></div>
+            <div class="op-role" data-en="Backend developer · individual investor · sole operator of BTC Timing Radar">백엔드 개발자 · 개인 투자자 · BTC 타이밍 레이더 1인 운영</div>
+            <p data-en="I am a Java/Spring backend developer. In May 2026 I started building the collection and scoring engine behind this site — a Spring Boot application that pulls 50-odd public market APIs every morning, normalizes each reading to 0–100, and combines them into one composite score — and opened the site in June 2026. I run it alone: the code, the data pipeline, the server, and every post under the Posts menu.">Java/Spring 백엔드 개발자입니다. 매수 타이밍을 감이 아니라 숫자로 보고 싶어서 2026년 5월에 이 사이트의 수집·점수화 엔진 — 매일 아침 50여 개 공개 시장 API를 호출해 각 수치를 0~100으로 정규화하고 하나의 종합 점수로 합치는 Spring Boot 애플리케이션 — 을 만들기 시작했고, 2026년 6월에 사이트를 열었습니다. 코드, 데이터 파이프라인, 서버, 그리고 '글' 메뉴의 모든 글을 혼자 운영합니다.</p>
+            <p data-en="I am not a licensed financial professional and I do not manage anyone's money. What I can do is build a pipeline that collects data reliably, check whether the score's calls were right or wrong against fixed dates, and publish those results — including the misses — so you can judge for yourself. Everything on this site is information, not advice.">금융투자 자격을 가진 전문가가 아니며, 누구의 돈도 운용하지 않습니다. 제가 할 수 있는 것은 데이터를 빠짐없이 모으는 파이프라인을 만들고, 점수의 판정이 사전에 고정한 날짜에서 맞았는지 틀렸는지를 검증해서 — 빗나간 날까지 — 그대로 공개하는 일입니다. 이 사이트의 모든 내용은 정보이지 조언이 아닙니다.</p>
+            <div class="op-facts">
+              <div><b data-en="What is written by a person">사람이 쓰는 것</b><span data-en="'Today's note' on the dashboard, every article under Posts, the indicator guides, and this page.">대시보드의 '오늘의 해설', '글' 메뉴의 모든 글, 지표 가이드와 상세 페이지, 그리고 이 페이지.</span></div>
+              <div><b data-en="What is generated automatically">자동으로 만들어지는 것</b><span data-en="All numbers and charts (collected daily at 09:05 KST), and the 'AI Summary' block, which is produced by a language model and is labeled as such.">모든 수치와 차트(매일 09:05 KST 수집), 그리고 언어모델이 생성하는 'AI 요약' 블록 — 화면에 자동 생성임을 표시합니다.</span></div>
+              <div><b data-en="How the site is funded">운영비</b><span data-en="Google AdSense ads. No paid subscriptions, no affiliate links to exchanges, no sponsored calls.">Google AdSense 광고. 유료 구독, 거래소 제휴 링크, 유료 매매 추천은 없습니다.</span></div>
+              <div><b data-en="Contact">연락</b><span data-i18n-html="1" data-en="<a href=&quot;mailto:btctimingbtc@gmail.com&quot;>btctimingbtc@gmail.com</a> · <a href=&quot;https://t.me/+Q9AJzzunwnAxMzhl&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>Telegram channel</a> · errors in data are fixed first."><a href="mailto:btctimingbtc@gmail.com">btctimingbtc@gmail.com</a> · <a href="https://t.me/+Q9AJzzunwnAxMzhl" target="_blank" rel="noopener">텔레그램 채널</a> · 데이터 오류 제보는 가장 먼저 처리합니다.</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -660,17 +697,17 @@
       </div>
 
       <!-- 푸터 (셸 공통) -->
-      <div class="foot">
+      <footer class="foot">
         <div class="fa">
           <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
           <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="index.html" data-en="Dashboard">대시보드</a><a href="guide.html" data-en="Indicator Guide">지표 가이드</a><a href="about.html" data-en="About">서비스 소개</a><a href="contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="index.html" data-en="Dashboard">대시보드</a><a href="guide.html" data-en="Indicator Guide">지표 가이드</a><a href="posts/index.html" data-en="Posts">글</a><a href="about.html" data-en="About">서비스 소개</a><a href="contact.html" data-en="Contact">문의</a></div>
           <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
         <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
-      </div>
+      </footer>
 
     </div>
   </div>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="태영">
 <title data-en="Indicator Guide — BTC Timing Radar">지표 가이드 — BTC 투자 타이밍 레이더</title>
 <meta name="description" data-en-content="A plain-language guide to the key Bitcoin indicators — RSI, MVRV-Z, SOPR, NUPL, Fear & Greed Index, Funding Rate and more — explaining what each means and how to read it." content="RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다.">
 <meta name="robots" content="index, follow">
@@ -232,6 +233,14 @@
   @media(max-width:380px){
     .content{padding:14px 10px 44px;}
   }
+  /* 저자·발행일 바이라인 */
+  .byline{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:16px 0 22px;padding:11px 15px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--m1);font-size:12.5px;}
+  .byline .au{color:var(--t1);font-weight:700;}
+  .byline .au a{color:inherit;text-decoration:none;}
+  .byline .au small{color:var(--m1);font-weight:400;margin-left:6px;}
+  .byline .dt{font-family:var(--mono);}
+  /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
+  .sb-visitor{display:none !important;}
 </style>
 <!-- 구조화 데이터: 지표 가이드 문서 -->
 <script type="application/ld+json">
@@ -242,7 +251,8 @@
   "url": "https://btctiming.co.kr/guide.html",
   "inLanguage": "ko",
   "description": "RSI, MVRV-Z, SOPR, NUPL, 공포탐욕지수, 펀딩비 등 비트코인 투자에 사용하는 주요 지표의 의미와 해석 방법을 설명합니다.",
-  "author": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더"},
+  "author": {"@type": "Person", "name": "태영", "jobTitle": "백엔드 개발자", "url": "https://btctiming.co.kr/about.html#operator"},
+  "dateModified": "2026-10-30",
   "publisher": {"@type": "Organization", "name": "BTC 투자 타이밍 레이더", "url": "https://btctiming.co.kr/"}
 }
 </script>
@@ -278,6 +288,7 @@
     <nav class="sb-nav">
       <a href="index.html"><span class="dot"></span><span data-en="Dashboard">대시보드</span></a>
       <a class="active" href="guide.html"><span class="dot"></span><span data-en="Indicator Guide">지표 가이드</span></a>
+      <a href="posts/index.html"><span class="dot"></span><span data-en="Posts">글</span></a>
       <a href="about.html"><span class="dot"></span><span data-en="About">서비스 소개</span></a>
       <a href="contact.html"><span class="dot"></span><span data-en="Contact">문의</span></a>
     </nav>
@@ -317,6 +328,7 @@
         <div class="ph-eyebrow">INDICATOR GUIDE</div>
         <h1 class="ph-h1" data-i18n-html="1" data-en="Complex indicators, <span class=&quot;hl&quot;>explained simply</span>">어려운 지표, <span class="hl">쉬운 말</span>로 풀어드립니다</h1>
         <p class="ph-sub" data-i18n-html="1" data-en="Every day we take the <b>25+ indicators</b> shown on the dashboard, group them into 5 categories, score each from 0 to 100, and combine them with a weighted average into a single composite timing score. Each indicator is normalized so buy-friendly readings score higher: a higher composite score means more indicators point to undervaluation and fear — historically closer to accumulation zones — while a lower score signals overheating and distribution, a time for caution. Come back anytime a term trips you up.">대시보드에 나오는 <b>25개 이상의 지표</b>를 매일 5개 카테고리로 나눠 각각 0~100으로 점수화하고, 가중 평균해 하나의 종합 타이밍 점수로 합칩니다. 각 지표는 매수에 우호적일수록 높은 점수가 되도록 정규화되어, 점수가 높을수록 여러 지표가 저평가·공포(역발상 매집 기회)를 가리키고, 낮을수록 과열·분배 신호가 많아 주의가 필요한 상태입니다. 용어가 막힐 때 언제든 돌아오세요.</p>
+      <div class="byline"><span class="au"><a href="about.html#operator">태영</a><small data-en="Backend developer · sole operator">백엔드 개발자 · 1인 운영</small></span><span><span data-en="Published">발행</span> <span class="dt">2026-06-12</span> · <span data-en="Updated">수정</span> <span class="dt">2026-10-30</span></span><span data-en="Reviewed against live data daily">수치는 매일 09:05 KST 재검증</span></div>
       </div>
 
       <!-- 점수 구간 막대 -->
@@ -703,17 +715,17 @@
       </div>
 
       <!-- 푸터 -->
-      <div class="foot">
+      <footer class="foot">
         <div class="fa">
           <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
           <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="index.html" data-en="Dashboard">대시보드</a><a href="guide.html" data-en="Indicator Guide">지표 가이드</a><a href="about.html" data-en="About">서비스 소개</a><a href="contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="index.html" data-en="Dashboard">대시보드</a><a href="guide.html" data-en="Indicator Guide">지표 가이드</a><a href="posts/index.html" data-en="Posts">글</a><a href="about.html" data-en="About">서비스 소개</a><a href="contact.html" data-en="Contact">문의</a></div>
           <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
         <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
-      </div>
+      </footer>
 
     </div>
   </div>

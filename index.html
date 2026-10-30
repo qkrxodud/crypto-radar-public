@@ -95,7 +95,7 @@
   .gauge-read .gv{font-family:var(--mono);font-size:56px;font-weight:700;color:var(--t1);line-height:1;}
   .gauge-read .gl{color:var(--m2);font-size:12px;margin-top:6px;}
   .hero-body{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:14px;}
-  .hero-date{color:var(--m2);font-size:13px;}
+  .hero-date{color:var(--m2);font-size:13px;margin:0;font-weight:400;}
   .hero-h{color:var(--t1);font-size:27px;font-weight:800;line-height:1.32;}
   .hero-meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
   .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border-radius:999px;}
@@ -434,6 +434,32 @@
   .dir-card:hover .dc-more{gap:7px;}
   @media(max-width:768px){.dir-grid{grid-template-columns:repeat(2,1fr);}}
   @media(max-width:480px){.dir-grid{grid-template-columns:1fr;gap:10px;}}
+  /* ── 오늘의 해설 (정적 편집 콘텐츠) ── */
+  .today-note{margin:18px 0 26px;padding:24px 26px;border:1px solid rgba(22,199,132,.18);border-radius:18px;background:linear-gradient(160deg,rgba(22,199,132,.07),rgba(22,199,132,.015)),var(--card);}
+  .today-note .tn-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:12px;}
+  .today-note h2{margin:0;color:var(--t1);font-size:19px;font-weight:800;letter-spacing:-.01em;}
+  .today-note .tn-meta{color:var(--m1);font-size:12px;font-family:var(--mono);}
+  .today-note p{margin:0 0 11px;color:var(--t2);font-size:14.5px;line-height:1.8;}
+  .today-note p b{color:var(--t1);}
+  .today-note .tn-more{display:inline-flex;align-items:center;gap:6px;margin-top:2px;color:var(--green);font-size:13.5px;font-weight:700;text-decoration:none;}
+  .today-note .tn-posts{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);}
+  .today-note .tn-posts h3{margin:0 0 10px;color:var(--m1);font-size:11.5px;letter-spacing:.1em;font-family:var(--mono);font-weight:600;}
+  .today-note .tn-posts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+  .today-note .tn-posts li a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);text-decoration:none;color:var(--t2);font-size:13px;line-height:1.5;transition:border-color .18s;}
+  .today-note .tn-posts li a:hover{border-color:rgba(22,199,132,.4);}
+  .today-note .tn-posts li a .k{display:block;color:var(--m2);font-size:11px;font-family:var(--mono);margin-bottom:4px;}
+  .today-note .tn-posts li a.all{display:flex;align-items:center;justify-content:center;color:var(--green);font-weight:700;}
+  @media(max-width:768px){.today-note{padding:20px 18px;}.today-note .tn-posts ul{grid-template-columns:1fr;}}
+  /* AI 생성 고지 */
+  .ai-disc{margin-top:10px;padding:8px 11px;border-radius:9px;background:rgba(240,185,11,.08);border:1px solid rgba(240,185,11,.18);color:var(--t3);font-size:11.5px;line-height:1.55;}
+  .ai-disc b{color:var(--amber);}
+  /* 지표 사전 — 압축형(이름만, 설명은 상세 페이지) */
+  .dir-chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .dir-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--t2);font-size:13px;font-weight:600;text-decoration:none;transition:border-color .18s,color .18s;}
+  .dir-chip:hover{border-color:rgba(22,199,132,.45);color:var(--t1);}
+  .dir-chip::after{content:"→";color:var(--m2);font-size:11px;}
+  /* 방문자 카운터: 심사·UX 상 비노출 (데이터 수집은 유지) */
+  .sb-visitor{display:none !important;}
 </style>
 <!-- 구조화 데이터 -->
 <script type="application/ld+json">
@@ -512,6 +538,7 @@
     <nav class="sb-nav">
       <a class="active" href="index.html" data-i18n-html="1" data-en='<span class="dot"></span>Dashboard'><span class="dot"></span>대시보드</a>
       <a href="guide.html" data-i18n-html="1" data-en='<span class="dot"></span>Indicator Guide'><span class="dot"></span>지표 가이드</a>
+      <a href="posts/index.html" data-i18n-html="1" data-en='<span class="dot"></span>Posts'><span class="dot"></span>글</a>
       <a href="about.html" data-i18n-html="1" data-en='<span class="dot"></span>About'><span class="dot"></span>서비스 소개</a>
       <a href="contact.html" data-i18n-html="1" data-en='<span class="dot"></span>Contact'><span class="dot"></span>문의</a>
     </nav>
@@ -557,7 +584,7 @@
           <div class="gauge-read"><div class="gv" id="gaugeVal">--</div><div class="gl" data-en="/ 100 · Composite score">/ 100 · 종합 점수</div></div>
         </div>
         <div class="hero-body">
-          <div class="hero-date" id="heroDate">오늘의 비트코인 타이밍</div>
+          <h1 class="hero-date" id="heroDate">오늘의 비트코인 타이밍</h1>
           <div class="hero-h" id="heroHeadline">--</div>
           <div class="hero-meta">
             <div class="hero-badge" id="heroBadge"><span class="sw"></span><span id="heroBadgeText">--</span></div>
@@ -578,14 +605,32 @@
       <!-- KPI -->
       <div class="kpi-strip" id="kpiStrip"></div>
 
+      <!-- 오늘의 해설 — 정적 편집 콘텐츠(주간 리뷰 요약). 매주 목요일 주간 리뷰와 함께 갱신 -->
+      <section class="today-note" id="todayNote">
+        <div class="tn-head"><h2 data-en="Today's note">오늘의 해설</h2><span class="tn-meta">2026-10-30 · 글: 태영 · 주간 리뷰 요약</span></div>
+        <p><b>종합 62점, 중립 53일째.</b> 이번 주 점수는 57~64 사이를 오갔고 10월 30일 아침 기준 62점(전일 +1)입니다. BTC는 78,004달러로 200일 이동평균(72,901달러)보다 7% 위, 30일 평균(82,418달러)보다 5% 아래 — 장기 추세선 위이면서 단기 평균 아래라는 애매한 자리가 중립이 길어지는 배경입니다. 매집 우세 경계(65)까지 +3점, 분배 우세 경계(53)까지 −9점으로 위쪽이 더 가깝습니다.</p>
+        <p><b>가장 크게 움직인 지표는 공포·탐욕 지수입니다.</b> 24~29일 내내 48~54였다가 30일 수집에서 30(공포)으로 한 번에 내려왔고, 같은 날 일봉 RSI는 7일 중 최저인 36.1을 찍었습니다. 이 사이트는 공포를 역발상 매수 배경으로 보기 때문에 두 지표의 정규화 점수는 70·84로 높아졌지만, 가중치 합이 5%라 종합 점수는 +1점에 그쳤습니다. 반대편에서는 롱·숏 비율 2.37이 표본 분포상 극단적 롱 쏠림(정규화 0)을 가리킵니다. 심리는 식었는데 선물 포지션은 정리되지 않은 조합이라, 가격이 흔들리면 청산 연쇄가 날 수 있는 상태로 읽습니다.</p>
+        <p><b>온체인과 매크로는 조용했습니다.</b> MVRV-Z 0.93, NUPL 0.31, SOPR 1.006으로 보유자들은 얕은 이익 상태이고, 거래소 순유입 +46 BTC, 미국 현물 ETF 순유입 +1억 7천만 달러, DXY 101.9로 바깥에서 온 충격은 아닙니다. 2,061일 표본에서 오늘 같은 중립 구간(496일)은 30일 뒤 상승 54.8%(기준 51.9%), 90일 뒤 57.5%(기준 52.4%), 180일 뒤 54.2%(기준 58.3%)였습니다 — 단기엔 조금 낫고 장기엔 못했던, 말 그대로 우위가 없는 구간입니다. 다음 주에 볼 것은 공포가 3일 이상 이어지는지, 롱·숏 비율이 2.0 아래로 내려오는지, 그리고 점수가 65를 넘기더라도 2일 안에 되돌아가지 않는지입니다(표본에서 라벨 전환의 39%가 2일 내 재반전).</p>
+        <a class="tn-more" href="posts/2026-10-30-weekly-review.html" data-en="Read the full weekly review →">주간 리뷰 전문 읽기 — 지표 27개 수치와 과거 동일 구간 통계 →</a>
+        <div class="tn-posts">
+          <h3 data-en="LATEST POSTS">최신 글</h3>
+          <ul>
+            <li><a href="posts/cycle-landmarks-case-study.html"><span class="k">사례 연구 · 2026-10-30</span>사이클 고점·저점 10곳에서 점수는 무엇을 말했나 — 9/10 적중과 2021년 4월의 빗나감</a></li>
+            <li><a href="posts/threshold-65-vs-70-shadow.html"><span class="k">방법론 · 2026-10-30</span>매수 기준이 65점인 이유 — 70점 그림자 실험과 lift가 음수일 때</a></li>
+            <li><a class="all" href="posts/index.html" data-en="All posts →">글 전체 보기 →</a></li>
+          </ul>
+        </div>
+      </section>
+
       <!-- 5분 요약 -->
       <div>
         <div class="sec-h"><h2 data-en="Market at a Glance">지금 상황 한눈에</h2><span class="hint" data-en="A 5-minute summary for beginners · just the essentials, no jargon">초보자용 5분 요약 · 복잡한 수치 없이 핵심만</span></div>
         <div class="sum-grid" id="sumGrid"></div>
         <div class="opinion-row">
           <div class="ob">
-            <div class="oh"><span class="d"></span><span class="t" data-en="Expert Consensus · AI Digest">전문가 종합 의견 · AI 다이제스트</span></div>
+            <div class="oh"><span class="d"></span><span class="t" data-en="AI Summary · auto-generated · for reference">AI 요약 · 자동 생성 · 참고용</span></div>
             <div class="otext" id="expertText">--</div>
+            <div class="ai-disc" data-en="<b>AI-generated text.</b> This summary is produced automatically by a large language model (gpt-4o-mini) from the day's indicator readings. It is not reviewed by a person and is not investment advice. The editorial commentary written by the operator is in 'Today's note' above and in the Posts section."><b>AI 생성 문장입니다.</b> 이 요약은 당일 지표 수치를 입력으로 대규모 언어모델(gpt-4o-mini)이 자동 생성한 것으로, 사람의 검수를 거치지 않으며 투자 조언이 아닙니다. 운영자가 직접 쓴 해설은 위 '오늘의 해설'과 '글' 메뉴에 있습니다.</div>
           </div>
           <div class="opinion-side">
             <div class="mini-stat">
@@ -593,6 +638,7 @@
               <div class="sent-bar"><i id="newsBar" style="width:50%"></i></div>
               <div class="news-meta" id="newsSentMeta"></div>
               <div class="news-list" id="newsSentItems"></div>
+              <div class="ai-disc" style="margin-top:8px" data-en="Headline sentiment labels are assigned automatically by an AI classifier (reference only).">헤드라인의 긍정·부정 라벨은 AI 분류기가 자동으로 붙인 것입니다(참고용).</div>
             </div>
             <div class="mini-pair">
               <div class="mp"><div class="l" data-en="Altcoin Season Index">알트시즌 지수</div><div class="v" id="altVal">--</div><div class="s" id="altLbl">--</div></div>
@@ -877,7 +923,7 @@
           </div>
         </details>
         <details class="acc" id="accExpert" style="display:none">
-          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Expert Analysis Scores">전문가 분석 점수</span><span class="c" id="expertCnt">--</span></div><span class="caret">▼</span></summary>
+          <summary><div class="lt"><span class="d"></span><span class="t" data-en="Composite Analysis Scores (rule-based)">복합 분석 점수 · 규칙 기반</span><span class="c" id="expertCnt">--</span></div><span class="caret">▼</span></summary>
           <div class="contrib-body">
             <div class="ch" data-en="38 composite analyses (on-chain · derivatives · technical · sentiment combos) each scored 0–100 — sorted by score, hover for details">온체인·파생·기술·심리를 조합한 복합 분석 38종을 각각 0~100으로 채점한 결과입니다 — 점수순 정렬, 항목에 마우스를 올리면 상세가 보입니다</div>
             <div id="masterScoreLine" style="display:none;margin:4px 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:12.5px;line-height:1.6"></div>
@@ -935,152 +981,32 @@
 
       <!-- 지표 사전 — 22개 상세페이지 허브 -->
       <div>
-        <div class="sec-h"><h2 data-en="Bitcoin indicator dictionary">비트코인 지표 사전</h2><span class="hint" data-en="22 indicators · 5 categories · click through to each detail page">22개 지표 · 5개 카테고리 · 각 상세 설명으로 이동</span></div>
+        <div class="sec-h"><h2 data-en="Bitcoin indicator dictionary">비트코인 지표 사전</h2><span class="hint" data-en="22 indicators · 5 categories · definitions and reading guides are on each detail page and the Indicator Guide">22개 지표 · 5개 카테고리 · 뜻과 읽는 법은 각 상세 페이지와 지표 가이드에</span></div>
 
         <!-- 사이클 · 심리 -->
         <div class="dir-cat">
           <div class="dir-cat-h"><span class="dot" style="background:#16c784"></span><span class="nm" data-en="Cycle · Sentiment">사이클 · 심리</span><span class="ct" data-en="5 indicators">5개 지표</span></div>
-          <div class="dir-grid">
-            <a class="dir-card" href="indicators/fear-greed-index.html">
-              <span class="dc-name" data-en="Fear & Greed Index">공포·탐욕 지수</span>
-              <p class="dc-desc" data-en="Expresses the market's overall crowd psychology from 0 to 100. 0 is extreme fear, 100 is extreme greed.">시장 전체의 군중 심리를 0~100으로 나타냅니다. 0은 극도의 공포, 100은 극도의 탐욕입니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/halving-cycle.html">
-              <span class="dc-name" data-en="Halving Cycle">반감기 사이클</span>
-              <p class="dc-desc" data-en="Roughly every 4 years, the amount of newly issued BTC is cut in half. As supply tightens, bull markets have tended to follow.">약 4년마다 새로 발행되는 양이 절반으로 줄어듭니다. 공급이 줄며 상승장이 오는 경향이 있습니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/mvrv-z-score.html">
-              <span class="dc-name" data-en="MVRV-Z Score">MVRV-Z 점수</span>
-              <p class="dc-desc" data-en="Gauges over- or under-valuation by how far current market cap sits above the aggregate 'actual purchase price'.">현재 시가총액이 '실제 매입가 합계'보다 얼마나 비싼지로 고평가·저평가를 가늠합니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/nupl.html">
-              <span class="dc-name">NUPL</span>
-              <p class="dc-desc" data-en="Shows whether holders as a whole are, on average, in profit or in loss (net unrealized profit/loss ratio).">전체 보유자가 평균적으로 이익 상태인지 손실 상태인지 나타냅니다(미실현 손익 비율).</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/pi-cycle.html">
-              <span class="dc-name">Pi Cycle</span>
-              <p class="dc-desc" data-en="Has caught cycle tops at the point where two long-term moving averages cross.">두 개의 장기 이동평균선이 교차하는 시점으로 사이클 고점을 포착해온 지표입니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-          </div>
-        </div>
+          <div class="dir-chips"><a class="dir-chip" href="indicators/fear-greed-index.html" data-en="Fear & Greed Index">공포·탐욕 지수</a><a class="dir-chip" href="indicators/halving-cycle.html" data-en="Halving Cycle">반감기 사이클</a><a class="dir-chip" href="indicators/mvrv-z-score.html" data-en="MVRV-Z Score">MVRV-Z 점수</a><a class="dir-chip" href="indicators/nupl.html">NUPL</a><a class="dir-chip" href="indicators/pi-cycle.html">Pi Cycle</a></div></div>
 
         <!-- 기술적 분석 -->
         <div class="dir-cat">
           <div class="dir-cat-h"><span class="dot" style="background:#5b8def"></span><span class="nm" data-en="Technical Analysis">기술적 분석</span><span class="ct" data-en="4 indicators">4개 지표</span></div>
-          <div class="dir-grid">
-            <a class="dir-card" href="indicators/rsi.html">
-              <span class="dc-name">RSI</span>
-              <p class="dc-desc" data-en="Expresses the strength of recent gains vs. losses from 0 to 100. Shows whether the market is overbought or oversold.">최근 상승·하락의 힘을 0~100으로 나타냅니다. 과매수인지 과매도인지 봅니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/ma200-deviation.html">
-              <span class="dc-name" data-en="MA200 Deviation">MA200 이격도</span>
-              <p class="dc-desc" data-en="How far above or below the 200-day average price line the current price sits. A baseline for the long-term trend.">200일 평균 가격선 대비 현재가가 얼마나 위/아래에 있는지입니다. 장기 추세의 기준선입니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/macd.html">
-              <span class="dc-name">MACD</span>
-              <p class="dc-desc" data-en="Uses the gap between short- and long-term trends to catch trend reversals and momentum.">단기·장기 추세의 차이로 추세 전환과 모멘텀(상승 힘)을 포착합니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/historical-volatility.html">
-              <span class="dc-name" data-en="Historical Volatility">역사적 변동성</span>
-              <p class="dc-desc" data-en="Shows how wildly the price swings. When it falls, a large move often lies ahead.">가격이 얼마나 심하게 출렁이는지 나타냅니다. 낮아지면 큰 움직임을 앞둔 경우가 많습니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-          </div>
-        </div>
+          <div class="dir-chips"><a class="dir-chip" href="indicators/rsi.html">RSI</a><a class="dir-chip" href="indicators/ma200-deviation.html" data-en="MA200 Deviation">MA200 이격도</a><a class="dir-chip" href="indicators/macd.html">MACD</a><a class="dir-chip" href="indicators/historical-volatility.html" data-en="Historical Volatility">역사적 변동성</a></div></div>
 
         <!-- 파생상품 -->
         <div class="dir-cat">
           <div class="dir-cat-h"><span class="dot" style="background:#2bd49a"></span><span class="nm" data-en="Derivatives">파생상품</span><span class="ct" data-en="4 indicators">4개 지표</span></div>
-          <div class="dir-grid">
-            <a class="dir-card" href="indicators/funding-rate.html">
-              <span class="dc-name" data-en="Funding Rate">펀딩비</span>
-              <p class="dc-desc" data-en="In futures, which side — longs (betting up) or shorts (betting down) — pays more, revealing where the crowd is leaning.">선물에서 롱(상승 베팅)과 숏(하락 베팅) 중 어느 쪽이 비용을 더 내는지로 쏠림을 봅니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/open-interest.html">
-              <span class="dc-name" data-en="Open Interest">미결제약정</span>
-              <p class="dc-desc" data-en="The total size of futures contracts not yet closed. It represents the total leverage in the market.">아직 청산되지 않은 선물 계약의 총 규모입니다. 시장에 깔린 레버리지 총량을 뜻합니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/long-short-ratio.html">
-              <span class="dc-name" data-en="Long/Short Ratio">롱·숏 비율</span>
-              <p class="dc-desc" data-en="The ratio of traders betting on a rise to those betting on a fall. Shows how positioning is skewed.">상승에 베팅한 사람과 하락에 베팅한 사람의 비율입니다. 포지션 쏠림을 봅니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/liquidation-heatmap.html">
-              <span class="dc-name" data-en="Liquidation Heatmap">청산 히트맵</span>
-              <p class="dc-desc" data-en="Shows which price levels have forced liquidations clustered — the points price tends to get pulled toward.">어느 가격대에 강제 청산이 몰려 있는지 보여줍니다. 가격이 끌려가기 쉬운 지점입니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-          </div>
-        </div>
+          <div class="dir-chips"><a class="dir-chip" href="indicators/funding-rate.html" data-en="Funding Rate">펀딩비</a><a class="dir-chip" href="indicators/open-interest.html" data-en="Open Interest">미결제약정</a><a class="dir-chip" href="indicators/long-short-ratio.html" data-en="Long/Short Ratio">롱·숏 비율</a><a class="dir-chip" href="indicators/liquidation-heatmap.html" data-en="Liquidation Heatmap">청산 히트맵</a></div></div>
 
         <!-- 온체인 -->
         <div class="dir-cat">
           <div class="dir-cat-h"><span class="dot" style="background:#f0b90b"></span><span class="nm" data-en="On-chain">온체인</span><span class="ct" data-en="5 indicators">5개 지표</span></div>
-          <div class="dir-grid">
-            <a class="dir-card" href="indicators/sopr.html">
-              <span class="dc-name">SOPR</span>
-              <p class="dc-desc" data-en="Shows whether the coins that moved that day were, on average, sold at a profit or at a loss.">그날 움직인 코인들이 평균적으로 이익을 보고 팔렸는지 손해를 보고 팔렸는지 나타냅니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/holder-supply.html">
-              <span class="dc-name" data-en="Long/Short-term Holders">장기·단기 보유</span>
-              <p class="dc-desc" data-en="The share of coins held by long-time holders (long-term holders) vs. recent buyers (short-term holders).">오래 들고 있는 사람(장기 보유자)과 최근 산 사람(단기 보유자)의 코인 비중입니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/exchange-net-flow.html">
-              <span class="dc-name" data-en="Exchange Net Inflow">거래소 순유입</span>
-              <p class="dc-desc" data-en="The difference between coins flowing into and out of exchanges. Sending coins to an exchange usually means 'to sell'.">거래소로 들어오고 나가는 코인의 차이입니다. 거래소로 보내는 건 보통 '팔기 위해서'입니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/puell-multiple.html">
-              <span class="dc-name">Puell Multiple</span>
-              <p class="dc-desc" data-en="Uses whether miner revenue is above or below normal to gauge cycle bottoms and tops.">채굴자의 수익이 평소보다 많은지 적은지로 사이클 바닥·천장을 가늠합니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/hash-rate.html">
-              <span class="dc-name" data-en="Hash Rate">해시레이트</span>
-              <p class="dc-desc" data-en="The computing power miners worldwide pour into the network. It reflects the network's security and health.">전 세계 채굴기가 네트워크에 쏟는 연산력입니다. 네트워크의 보안·건강 상태를 뜻합니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-          </div>
-        </div>
+          <div class="dir-chips"><a class="dir-chip" href="indicators/sopr.html">SOPR</a><a class="dir-chip" href="indicators/holder-supply.html" data-en="Long/Short-term Holders">장기·단기 보유</a><a class="dir-chip" href="indicators/exchange-net-flow.html" data-en="Exchange Net Inflow">거래소 순유입</a><a class="dir-chip" href="indicators/puell-multiple.html">Puell Multiple</a><a class="dir-chip" href="indicators/hash-rate.html" data-en="Hash Rate">해시레이트</a></div></div>
 
         <!-- 매크로 -->
         <div class="dir-cat">
           <div class="dir-cat-h"><span class="dot" style="background:#a06bff"></span><span class="nm" data-en="Macro (Macroeconomics)">매크로 (거시경제)</span><span class="ct" data-en="4 indicators">4개 지표</span></div>
-          <div class="dir-grid">
-            <a class="dir-card" href="indicators/dollar-index-dxy.html">
-              <span class="dc-name" data-en="Dollar Index (DXY)">달러지수 DXY</span>
-              <p class="dc-desc" data-en="How strong the US dollar is against major currencies. The dollar and risk assets usually move in opposite directions.">미국 달러가 주요 통화 대비 얼마나 강한지입니다. 달러와 위험자산은 보통 반대로 움직입니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/sp500.html">
-              <span class="dc-name">S&amp;P 500</span>
-              <p class="dc-desc" data-en="The benchmark US stock index. Watched as a reference point for global risk-asset sentiment.">미국 대표 주가지수입니다. 글로벌 위험자산 심리의 기준점으로 봅니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/kimchi-premium.html">
-              <span class="dc-name" data-en="Kimchi Premium">김치 프리미엄</span>
-              <p class="dc-desc" data-en="How much more expensive Korean exchange prices are than overseas. It reveals domestic investment enthusiasm.">국내 거래소 가격이 해외보다 얼마나 비싼지입니다. 국내 투자 열기를 보여줍니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-            <a class="dir-card" href="indicators/etf-net-flow.html">
-              <span class="dc-name" data-en="ETF Net Inflow">ETF 순유입</span>
-              <p class="dc-desc" data-en="Institutional money flowing into spot Bitcoin ETFs. It reflects mainstream, institutional demand.">비트코인 현물 ETF로 들어오는 기관 자금입니다. 제도권 수요를 보여줍니다.</p>
-              <span class="dc-more" data-en="Learn more →">자세히 보기 →</span>
-            </a>
-          </div>
-        </div>
+          <div class="dir-chips"><a class="dir-chip" href="indicators/dollar-index-dxy.html" data-en="Dollar Index (DXY)">달러지수 DXY</a><a class="dir-chip" href="indicators/sp500.html">S&amp;P 500</a><a class="dir-chip" href="indicators/kimchi-premium.html" data-en="Kimchi Premium">김치 프리미엄</a><a class="dir-chip" href="indicators/etf-net-flow.html" data-en="ETF Net Inflow">ETF 순유입</a></div></div>
       </div>
 
       <!-- FAQ -->
@@ -1096,17 +1022,17 @@
       </div>
 
       <!-- 푸터 -->
-      <div class="foot">
+      <footer class="foot">
         <div class="fa">
           <div class="fb"><span class="lo">₿</span><span class="nm" data-en="BTC Timing Radar">BTC 타이밍 레이더</span></div>
           <div class="fd" data-en="A free information service that automatically analyzes 25+ Bitcoin market indicators every day.">비트코인 시장의 25개 이상 지표를 매일 자동 분석하는 무료 정보 서비스입니다.</div>
         </div>
         <div class="cols">
-          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="index.html" data-en="Dashboard">대시보드</a><a href="guide.html" data-en="Indicator Guide">지표 가이드</a><a href="about.html" data-en="About">서비스 소개</a><a href="contact.html" data-en="Contact">문의</a></div>
+          <div class="col"><h4 data-en="Menu">메뉴</h4><a href="index.html" data-en="Dashboard">대시보드</a><a href="guide.html" data-en="Indicator Guide">지표 가이드</a><a href="posts/index.html" data-en="Posts">글</a><a href="about.html" data-en="About">서비스 소개</a><a href="contact.html" data-en="Contact">문의</a></div>
           <div class="col"><h4 data-en="Policy · Community">정책 · 커뮤니티</h4><a href="privacy.html" data-en="Privacy Policy">개인정보처리방침</a><a href="disclaimer.html" data-en="Disclaimer">투자 면책조항</a><a href="https://t.me/+Q9AJzzunwnAxMzhl" data-en="Telegram Channel">텔레그램 채널</a></div>
         </div>
         <div class="copy" data-en="© 2026 BTC Timing Radar. All rights reserved. · Auto-updated daily at 09:05 KST">© 2026 BTC 투자 타이밍 레이더. All rights reserved. · 매일 09:05 KST 자동 갱신</div>
-      </div>
+      </footer>
 
     </div>
   </div>
