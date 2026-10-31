@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-10-31T03:58:46Z",
+  "updatedAt": "2026-10-31T09:54:35Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "77326.00",
       "macd": {
-        "macdLine": "-1069.16",
-        "signalLine": "-519.80",
-        "histogram": "-549.37",
+        "macdLine": "-1047.10",
+        "signalLine": "-515.38",
+        "histogram": "-531.71",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001225",
       "ivRv": {
-        "iv": "32.91",
+        "iv": "25.25",
         "rv": "27.00",
-        "spread": "+5.91",
-        "label": "과대"
+        "spread": "-1.75",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 30,
@@ -2535,31 +2535,52 @@
       "hasData": true
     },
     "api_bitcoin_mempool": {
-      "hasData": false,
-      "txCount": null,
-      "vsizeMb": null,
-      "totalFeeBtc": null,
-      "congestionLevel": null,
-      "congestionClass": null,
-      "errorMessage": "No mempool data available"
+      "hasData": true,
+      "txCount": 54670,
+      "vsizeMb": "21.45",
+      "totalFeeBtc": "0.0292",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
+      "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
-      "hasData": false,
-      "pools": null,
-      "top3Concentration": null,
-      "signal": null,
-      "signalClass": null,
-      "errorMessage": "No mining pool data available"
+      "hasData": true,
+      "pools": [
+        {
+          "name": "Foundry USA",
+          "sharePct": "26.88"
+        },
+        {
+          "name": "AntPool",
+          "sharePct": "19.94"
+        },
+        {
+          "name": "F2Pool",
+          "sharePct": "17.09"
+        },
+        {
+          "name": "ViaBTC",
+          "sharePct": "8.74"
+        },
+        {
+          "name": "Luxor",
+          "sharePct": "5.41"
+        }
+      ],
+      "top3Concentration": "63.91",
+      "signal": "집중도 위험 -- 51% 공격 리스크 상승",
+      "signalClass": "text-red-400",
+      "errorMessage": null
     },
     "api_bitcoin_lightning": {
-      "hasData": false,
-      "channelCount": null,
-      "nodeCount": null,
-      "capacityBtc": null,
-      "avgChannelSizeBtc": null,
-      "signal": null,
-      "signalClass": null,
-      "errorMessage": "No Lightning Network data available"
+      "hasData": true,
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
+      "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
+      "signalClass": "text-gray-300",
+      "errorMessage": null
     },
     "api_dashboard_buy_timing": {
       "hasData": true,
@@ -4145,9 +4166,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "251741258378.97273",
+      "totalMarketCapUsd": "251775342076.71943",
       "marketCap30dAgoUsd": "257962631763.32864",
-      "growth30dPercent": "-2.41",
+      "growth30dPercent": "-2.40",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -4216,63 +4237,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "77124.90",
-      "openInterestUsd": "7433993025.30000000",
-      "longAccountRatio": "0.7277",
-      "shortAccountRatio": "0.2723",
-      "downsideLiquidationUsd": "5409716724.51",
-      "upsideLiquidationUsd": "2024276300.79",
+      "currentPrice": "77400.10",
+      "openInterestUsd": "7523213306.62880000",
+      "longAccountRatio": "0.7262",
+      "shortAccountRatio": "0.2738",
+      "downsideLiquidationUsd": "5463357503.27",
+      "upsideLiquidationUsd": "2059855803.35",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "69412.41",
+          "price": "69660.09",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2163886689.80"
+          "notionalUsd": "2185343001.31"
         },
         {
-          "price": "84837.39",
+          "price": "85140.11",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "809710520.32"
+          "notionalUsd": "823942321.34"
         },
         {
-          "price": "74039.90",
+          "price": "74304.10",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1893400853.58"
+          "notionalUsd": "1912175126.15"
         },
         {
-          "price": "80209.90",
+          "price": "80496.10",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "708496705.28"
+          "notionalUsd": "720949531.17"
         },
         {
-          "price": "75582.40",
+          "price": "75852.10",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1081943344.90"
+          "notionalUsd": "1092671500.65"
         },
         {
-          "price": "78667.40",
+          "price": "78948.10",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "404855260.16"
+          "notionalUsd": "411971160.67"
         },
         {
-          "price": "76353.65",
+          "price": "76626.10",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "270485836.23"
+          "notionalUsd": "273167875.16"
         },
         {
-          "price": "77896.15",
+          "price": "78174.10",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "101213815.04"
+          "notionalUsd": "102992790.17"
         }
       ],
       "errorMessage": null
@@ -5669,7 +5690,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-10-31T03:43:06.024696Z",
+      "generatedAt": "2026-10-31T09:54:31.077631Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5682,26 +5703,26 @@
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(30)로 인해 시장의 불확실성이 커지고 있다."
+          "content": "낮은 공포탐욕 지수(30)로 인해 투자 심리가 약화되고 있다."
         },
         {
           "type": "RISK",
-          "content": "RSI(일) 34.25로 과매도 상태에 진입할 가능성이 있다."
+          "content": "거래소 순유입(111.60)이 증가하여 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 반등을 노리기 위해 소량 매수하는 전략을 고려하라."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 주의 깊게 모니터링하며 추가 매수 타이밍을 재조정하라."
+          "content": "단기 투자보다는 장기적인 관점에서 포트폴리오를 재조정하는 것이 좋다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-10-31T03:38:32.419910Z",
+      "generatedAt": "2026-10-31T09:54:32.416720Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5710,31 +5731,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with mixed indicators suggesting caution."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting caution."
         },
         {
           "type": "RISK",
-          "content": "Fear and Greed index at 30 indicates high fear among investors."
+          "content": "Fear and Greed index at 30 indicates strong fear in the market."
         },
         {
           "type": "RISK",
-          "content": "RSI values below 40 suggest potential bearish momentum."
+          "content": "RSI(일) at 34.25 suggests potential oversold conditions."
         },
         {
           "type": "ACTION",
-          "content": "Consider reducing exposure to high-risk assets."
+          "content": "Consider a cautious approach to new investments."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment for signs of recovery before re-entering."
+          "content": "Monitor key indicators for signs of recovery or further decline."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-10-31T03:05:02.680605Z",
-      "compositeScore": "-0.375",
+      "generatedAt": "2026-10-31T09:53:40.356886Z",
+      "compositeScore": "-0.275",
       "label": "NEGATIVE",
       "labelDisplay": "부정",
       "labelHexColor": "#F97316",
@@ -5742,11 +5763,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "Bitcoin stolen from Binance tops Teslaâs holdings and is over twice El Salvadorâs reserve",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
+          "publishedAt": "2026-10-31T05:01:32Z",
+          "score": "-0.8"
+        },
+        {
           "title": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
           "publishedAt": "2026-10-31T00:48:56Z",
-          "score": "-0.4"
+          "score": "0.0"
         },
         {
           "title": "Experts divided over Binance hack asset freezes, warn recovery is another matter",
@@ -5767,14 +5795,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/10/30/wall-street-analysts-urge-investors-to-buy-crypto-stocks-on-weakness-after-usd6-3-billion-binance-hack",
           "publishedAt": "2026-10-30T14:13:34Z",
-          "score": "0.2"
+          "score": "0.4"
         },
         {
           "title": "Binance arranges $6.34 billion to cover losses from record crypto hack",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/30/binance-arranges-usd6-34-billion-to-cover-losses-from-record-crypto-hack",
           "publishedAt": "2026-10-30T12:13:02Z",
-          "score": "0.1"
+          "score": "0.5"
         },
         {
           "title": "Here's how big bitcoin traders responded after the Binance hack hit",
@@ -5788,42 +5816,35 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/30/here-s-how-one-ethereum-permission-let-an-attacker-drain-usd2-5-billion-from-binance",
           "publishedAt": "2026-10-30T11:35:16Z",
-          "score": "0.0"
-        },
-        {
-          "title": "Crypto liquidations jump to $1.57 billion as Binance hack sends bitcoin, ether lower",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower",
-          "publishedAt": "2026-10-30T11:09:24Z",
-          "score": "-0.6"
+          "score": "0.2"
         },
         {
           "title": "Binance hackers raced to move billions before it could be frozen",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/binance-hackers-raced-to-move-billions-before-could-be-frozen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-30T22:00:00Z",
-          "score": "-0.8"
+          "score": "-0.6"
         },
         {
           "title": "Tether’s excess reserves nearly double to $8B as Q3 profit hits $1.5B",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-30T19:01:58Z",
-          "score": "0.4"
+          "score": "0.6"
         },
         {
           "title": "Coinbase leads crypto stock selloff following $6.3B Binance hack",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/coinbase-leads-crypto-stock-selloff-shares-tumble?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-30T17:48:27Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "Crypto Biz: Bitcoin’s quantum threat is becoming an economic problem",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-quantum-threat-ripple-bank-usdc-vaneck-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-30T17:09:31Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Recap: How Binance’s record $6.3B hack unfolded",
@@ -6685,8 +6706,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 188280.49,
-      "currentPrice": 77850.17,
-      "deviationPct": -58.65,
+      "currentPrice": 78148.99,
+      "deviationPct": -58.49,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6885,9 +6906,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75819.27,
-      "currentPrice": 77850.17,
-      "priceToSthRatio": 1.0268,
-      "premiumPct": 2.68,
+      "currentPrice": 78148.99,
+      "priceToSthRatio": 1.0307,
+      "premiumPct": 3.07,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
@@ -6917,7 +6938,7 @@
       "hasData": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": -30.3,
+      "compositeScore": -32.7,
       "extreme": {
         "name": "FEAR",
         "description": "공포 구간 — 매집 기회"
