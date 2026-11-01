@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-01T02:00:44Z",
+  "updatedAt": "2026-11-01T02:20:52Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.27",
       "btcClose": "77544.00",
       "macd": {
-        "macdLine": "-1134.54",
-        "signalLine": "-637.04",
-        "histogram": "-497.50",
+        "macdLine": "-1132.78",
+        "signalLine": "-636.69",
+        "histogram": "-496.09",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "20.5",
-        "plusDi": "13.3",
-        "minusDi": "29.1",
+        "adx": "20.4",
+        "plusDi": "13.6",
+        "minusDi": "29.0",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001298",
       "ivRv": {
-        "iv": "26.34",
+        "iv": "38.08",
         "rv": "27.00",
-        "spread": "-0.66",
-        "label": "균형"
+        "spread": "+11.08",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 34,
@@ -2540,11 +2540,11 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 48463,
-      "vsizeMb": "20.27",
-      "totalFeeBtc": "0.0264",
-      "congestionLevel": "보통 — 정상 대기열",
-      "congestionClass": "text-gray-300",
+      "txCount": 51905,
+      "vsizeMb": "20.79",
+      "totalFeeBtc": "0.0289",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
@@ -2556,7 +2556,7 @@
         },
         {
           "name": "AntPool",
-          "sharePct": "20.40"
+          "sharePct": "20.49"
         },
         {
           "name": "F2Pool",
@@ -2571,7 +2571,7 @@
           "sharePct": "5.29"
         }
       ],
-      "top3Concentration": "62.79",
+      "top3Concentration": "62.88",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -4170,7 +4170,7 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "251737843684.09748",
+      "totalMarketCapUsd": "251756119117.07008",
       "marketCap30dAgoUsd": "258145116235.62725",
       "growth30dPercent": "-2.48",
       "signal": "CONTRACTING",
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "77685.00",
-      "openInterestUsd": "7507116560.97508500",
-      "longAccountRatio": "0.7188",
-      "shortAccountRatio": "0.2812",
-      "downsideLiquidationUsd": "5396115384.03",
-      "upsideLiquidationUsd": "2111001176.95",
+      "currentPrice": "77705.10",
+      "openInterestUsd": "7518263142.81700000",
+      "longAccountRatio": "0.7194",
+      "shortAccountRatio": "0.2806",
+      "downsideLiquidationUsd": "5408638504.94",
+      "upsideLiquidationUsd": "2109624637.87",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "69916.50",
+          "price": "69934.59",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2158446153.61"
+          "notionalUsd": "2163455401.98"
         },
         {
-          "price": "85453.50",
+          "price": "85475.61",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "844400470.78"
+          "notionalUsd": "843849855.15"
         },
         {
-          "price": "74577.60",
+          "price": "74596.90",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1888640384.41"
+          "notionalUsd": "1893023476.73"
         },
         {
-          "price": "80792.40",
+          "price": "80813.30",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "738850411.93"
+          "notionalUsd": "738368623.26"
         },
         {
-          "price": "76131.30",
+          "price": "76151.00",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1079223076.81"
+          "notionalUsd": "1081727700.99"
         },
         {
-          "price": "79238.70",
+          "price": "79259.20",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "422200235.39"
+          "notionalUsd": "421924927.57"
         },
         {
-          "price": "76908.15",
+          "price": "76928.05",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "269805769.20"
+          "notionalUsd": "270431925.25"
         },
         {
-          "price": "78461.85",
+          "price": "78482.15",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "105550058.85"
+          "notionalUsd": "105481231.89"
         }
       ],
       "errorMessage": null
@@ -5726,7 +5726,7 @@
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-11-01T01:40:37.669604Z",
+      "generatedAt": "2026-11-01T02:20:50.978828Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5735,31 +5735,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with indicators suggesting cautious optimism."
+          "content": "The market shows a neutral sentiment with mixed indicators suggesting caution."
         },
         {
           "type": "RISK",
-          "content": "Fear and Greed index at 34 indicates market fear."
+          "content": "Fear and greed index at 34 indicates a fearful market sentiment."
         },
         {
           "type": "RISK",
-          "content": "Low RSI values suggest potential for further downside."
+          "content": "Low RSI levels (daily at 35.36) suggest potential downward pressure."
         },
         {
           "type": "ACTION",
-          "content": "Monitor for bullish reversal signals before entering positions."
+          "content": "Consider holding positions to avoid potential losses."
         },
         {
           "type": "ACTION",
-          "content": "Consider hedging strategies to mitigate downside risks."
+          "content": "Monitor on-chain metrics for signs of recovery or further decline."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-01T01:05:02.761618Z",
-      "compositeScore": "0.000",
+      "generatedAt": "2026-11-01T02:05:02.627792Z",
+      "compositeScore": "-0.025",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5767,11 +5767,18 @@
       "modelName": "gpt-4o-mini",
       "items": [
         {
+          "title": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
+          "publishedAt": "2026-11-01T01:10:05Z",
+          "score": "-0.8"
+        },
+        {
           "title": "Bitcoin's white paper turns 18, and small businesses are still paying for the bailouts it answered",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
           "publishedAt": "2026-10-31T18:00:00Z",
-          "score": "-0.4"
+          "score": "0.2"
         },
         {
           "title": "A stolen iPhone, $14,000 in losses and London's crypto theft problem",
@@ -5785,49 +5792,42 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/31/traders-are-already-placing-leveraged-bets-on-anthropic-s-ipo-using-crypto-contracts",
           "publishedAt": "2026-10-31T16:00:00Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
           "publishedAt": "2026-10-31T15:24:10Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Institutions embrace crypto staking despite shrinking yields",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/26/institutions-embrace-crypto-staking-despite-shrinking-yields",
           "publishedAt": "2026-10-31T15:00:00Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Uber tests how tokenization can put idle cash to work with HSBC, Franklin Templeton",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/10/31/uber-tests-how-tokenization-can-put-idle-cash-to-work-with-hsbc-franklin-templeton",
           "publishedAt": "2026-10-31T14:40:29Z",
-          "score": "0.4"
+          "score": "0.3"
         },
         {
           "title": "As big bitcoin miners chase AI profits, individuals get another shot at the rewards",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/10/31/as-big-bitcoin-miners-chase-ai-profits-individuals-get-another-shot-at-the-rewards",
           "publishedAt": "2026-10-31T14:00:00Z",
-          "score": "0.6"
-        },
-        {
-          "title": "18 years in, what has Bitcoin truly done?",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/opinion/2026/10/31/18-years-in-what-has-bitcoin-truly-done",
-          "publishedAt": "2026-10-31T13:00:00Z",
-          "score": "0.0"
+          "score": "0.5"
         },
         {
           "title": "Binance says 90% of stolen assets replenished, targets Sunday withdrawals",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-hack-90-percent-replenished?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-31T15:36:01Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "Bitcoin held up better than expected after Binance hack, Strive CEO says",
@@ -5848,7 +5848,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/bitcoin-turns-18-has-the-original-rebel-grown-up?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-31T14:27:52Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "Texas brothers sentenced to 15 years in prison for armed crypto robbery, kidnapping",
@@ -5862,21 +5862,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blockchain-investigator-chainalysis-hit-by-cybersecurity-incident?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-31T11:22:49Z",
-          "score": "-0.6"
+          "score": "-0.4"
         },
         {
           "title": "Binance $6.3B record hack sparks pre-election political clashes ",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binance-63b-record-hack-sparks-pre-election-political-chatter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-31T09:58:50Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Binance hackers raced to move billions before it could be frozen",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/binance-hackers-raced-to-move-billions-before-could-be-frozen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-10-30T22:00:00Z",
-          "score": "-0.3"
+          "score": "-0.7"
         }
       ],
       "errorMessage": null
@@ -6710,8 +6710,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 188449.6,
-      "currentPrice": 78333.22,
-      "deviationPct": -58.43,
+      "currentPrice": 78449.3,
+      "deviationPct": -58.37,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75819.27,
-      "currentPrice": 78333.22,
-      "priceToSthRatio": 1.0332,
-      "premiumPct": 3.32,
+      "currentPrice": 78449.3,
+      "priceToSthRatio": 1.0347,
+      "premiumPct": 3.47,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
