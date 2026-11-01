@@ -65,6 +65,19 @@
   // <html lang> 즉시 설정
   try { document.documentElement.lang = HTML_LANG[lang]; } catch (e) {}
 
+  // 장문 글 전용 언어 블록 전환: data-lang-block="ko|en"
+  // 글 본문은 문장 단위 data-en 대신 언어별 블록을 통째로 둔다.
+  // en 블록은 마크업에 hidden으로 두고(스크립트 실패 시 한국어만 노출), en 모드에서 boot 때 해제한다.
+  // ko 블록 숨김은 지금 즉시 주입해 이중 노출 플래시를 줄인다.
+  try {
+    if (lang === 'en') {
+      var blockStyle = document.createElement('style');
+      blockStyle.id = 'btc-i18n-block';
+      blockStyle.textContent = '[data-lang-block="ko"]{display:none!important}';
+      (document.head || document.documentElement).appendChild(blockStyle);
+    }
+  } catch (e) {}
+
   /* ── 2. snapshot 한국어 라벨 매핑 테이블 ─────────────────────────────────
    * 키: snapshot이 내려주는 한국어 원문 그대로.
    * 값: { en, zh }. 매핑에 없으면 원문(ko) 그대로 반환 — 절대 깨지지 않게.
@@ -452,6 +465,9 @@
       ATTR_LIST.map(function (a) { return '[data-' + lang + '-' + a + ']'; }).join(',');
     var nodes = root.querySelectorAll(sel);
     for (var i = 0; i < nodes.length; i++) translateEl(nodes[i]);
+    // 언어 블록: 현재 언어 블록의 hidden 해제
+    var blocks = root.querySelectorAll('[data-lang-block="' + lang + '"][hidden]');
+    for (var b = 0; b < blocks.length; b++) blocks[b].removeAttribute('hidden');
     // <title>은 head에 있어 위 셀렉터에 잡히지만, 혹시 누락 대비 명시 처리
     var ttl = document.querySelector('title[data-' + lang + ']');
     if (ttl) document.title = ttl.getAttribute('data-' + lang);

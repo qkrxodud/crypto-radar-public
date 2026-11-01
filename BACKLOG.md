@@ -158,7 +158,7 @@ React 대시보드(`/react/dashboard`)의 데이터를 정적 GitHub Pages 사�
 - 지표 사전 22카드 → 이름 칩(guide.html과 설명 중복 제거, 링크 22개 유지)
 
 ### A-02 저자·AI 고지 (완료 2026-10-30)
-- about.html `#operator` 운영자 섹션(필명 태영 · 백엔드 개발자 · 1인 운영 · 자격 없음 명시), 가중치 34/21/16/15/14 정합
+- about.html `#operator` 운영자 섹션(실명 비공개 · 백엔드 개발자 · 1인 운영 · 자격 없음 명시), 가중치 34/21/16/15/14 정합
 - 지표 22편·guide: byline(발행·수정일) + JSON-LD author Person + `<meta name="author">`
 - 홈 "전문가 종합 의견" → "AI 요약 · 자동 생성 · 참고용" + gpt-4o-mini 생성 고지, 뉴스 감성 AI 분류 고지, "전문가 분석 점수" → "복합 분석 점수 · 규칙 기반"
 
