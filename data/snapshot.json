@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-03T13:03:39Z",
+  "updatedAt": "2026-11-03T13:23:45Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.27",
       "btcClose": "76786.66",
       "macd": {
-        "macdLine": "-1278.99",
-        "signalLine": "-835.56",
-        "histogram": "-443.43",
+        "macdLine": "-1277.60",
+        "signalLine": "-835.28",
+        "histogram": "-442.32",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001466",
       "ivRv": {
-        "iv": "41.91",
+        "iv": "41.82",
         "rv": "27.00",
-        "spread": "+14.91",
+        "spread": "+14.82",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 45430,
-      "vsizeMb": "22.22",
-      "totalFeeBtc": "0.0590",
+      "txCount": 46712,
+      "vsizeMb": "22.72",
+      "totalFeeBtc": "0.0816",
       "congestionLevel": "보통 — 정상 대기열",
       "congestionClass": "text-gray-300",
       "errorMessage": null
@@ -2552,36 +2552,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.52"
+          "sharePct": "26.49"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.64"
+          "sharePct": "19.62"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.50"
+          "sharePct": "16.48"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.82"
+          "sharePct": "9.81"
         },
         {
           "name": "SpiderPool",
           "sharePct": "5.06"
         }
       ],
-      "top3Concentration": "62.66",
+      "top3Concentration": "62.59",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 41087,
-      "nodeCount": 17437,
-      "capacityBtc": "4896.6034",
-      "avgChannelSizeBtc": "0.119176",
+      "channelCount": 32536,
+      "nodeCount": 16228,
+      "capacityBtc": "3753.4053",
+      "avgChannelSizeBtc": "0.115362",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "77323.20",
-      "openInterestUsd": "7750050129.40240000",
-      "longAccountRatio": "0.7258",
-      "shortAccountRatio": "0.2742",
-      "downsideLiquidationUsd": "5624986383.92",
-      "upsideLiquidationUsd": "2125063745.48",
+      "currentPrice": "77338.50",
+      "openInterestUsd": "7745192180.52720000",
+      "longAccountRatio": "0.7243",
+      "shortAccountRatio": "0.2757",
+      "downsideLiquidationUsd": "5609842696.36",
+      "upsideLiquidationUsd": "2135349484.17",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "69590.88",
+          "price": "69604.65",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2249994553.57"
+          "notionalUsd": "2243937078.54"
         },
         {
-          "price": "85055.52",
+          "price": "85072.35",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "850025498.19"
+          "notionalUsd": "854139793.67"
         },
         {
-          "price": "74230.27",
+          "price": "74244.96",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1968745234.37"
+          "notionalUsd": "1963444943.72"
         },
         {
-          "price": "80416.13",
+          "price": "80432.04",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "743772310.92"
+          "notionalUsd": "747372319.46"
         },
         {
-          "price": "75776.74",
+          "price": "75791.73",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1124997276.78"
+          "notionalUsd": "1121968539.27"
         },
         {
-          "price": "78869.66",
+          "price": "78885.27",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "425012749.10"
+          "notionalUsd": "427069896.83"
         },
         {
-          "price": "76549.97",
+          "price": "76565.12",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "281249319.20"
+          "notionalUsd": "280492134.82"
         },
         {
-          "price": "78096.43",
+          "price": "78111.89",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "106253187.27"
+          "notionalUsd": "106767474.21"
         }
       ],
       "errorMessage": null
@@ -5758,14 +5758,28 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-03T12:05:02.863593Z",
-      "compositeScore": "-0.063",
+      "generatedAt": "2026-11-03T13:05:02.602918Z",
+      "compositeScore": "-0.106",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Binance net outflows reach $5.3 billion after record hack. CEO says recovery underway",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/11/03/binance-net-outflows-reach-usd5-3b-after-record-hack-though-ceo-cites-recovery",
+          "publishedAt": "2026-11-03T12:57:28Z",
+          "score": "-0.8"
+        },
+        {
+          "title": "Bitcoin is breaking a midterm election pattern going back to 2014",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014",
+          "publishedAt": "2026-11-03T12:30:09Z",
+          "score": "0.4"
+        },
         {
           "title": "ETHGas wants to bring Wall Street to public Ethereum by selling advance block reservations",
           "source": "CoinDesk",
@@ -5792,7 +5806,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/11/03/tether-holds-150-000-bitcoin-worth-usd11-5-billion-ceo-paolo-ardoino-says",
           "publishedAt": "2026-11-03T10:15:53Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Live news: Bitcoin faces fifth weekly loss as midterm elections weigh on markets",
@@ -5809,17 +5823,10 @@
           "score": "0.0"
         },
         {
-          "title": "Mercado Bitcoin pledges to cover all user losses after near $40 million hack",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/11/03/mercado-bitcoin-pledges-to-cover-all-user-losses-after-near-usd40-million-hack",
-          "publishedAt": "2026-11-03T08:56:48Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Bitcoinâs latest chart signal looks a lot like the ones before its big crashes",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-s-price-chart-is-flashing-a-red-signal",
-          "publishedAt": "2026-11-03T08:50:56Z",
+          "title": "NEAR token sinks 7% as proposal to cut annual token issuance passes",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/near-sinks-7-proposal-cut-annual-token-issuance-passes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-11-03T12:30:13Z",
           "score": "-0.4"
         },
         {
@@ -5827,7 +5834,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/binances-daily-inflows-positive-18b-withdrawals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-03T11:32:02Z",
-          "score": "0.5"
+          "score": "0.6"
         },
         {
           "title": "France postpones 2027 budget vote, crypto exit-tax proposals scrapped",
@@ -5848,21 +5855,21 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ark-buys-coinbase-circle-trims-bullish?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-03T08:35:13Z",
-          "score": "0.6"
+          "score": "0.3"
         },
         {
           "title": "Kraken restricts accounts amid suspected $133M EU crypto theft",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/zachxbt-eu-crypto-theft-133m-alleged-cover-up?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-03T08:18:22Z",
-          "score": "-0.3"
+          "score": "-0.5"
         },
         {
           "title": "BlackRock’s IBIT sees biggest Bitcoin ETF outflows since June",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/blackrocks-ibit-biggest-bitcoin-etf-outflow-june?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-03T07:49:51Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5870,13 +5877,6 @@
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-03T06:00:00Z",
           "score": "0.0"
-        },
-        {
-          "title": "Crypto.com to withdraw Hong Kong consumer app citing regulatory changes",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-com-hong-kong-app-shutdown-license-pending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-11-03T05:10:19Z",
-          "score": "-0.4"
         }
       ],
       "errorMessage": null
@@ -6710,8 +6710,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 188788.2,
-      "currentPrice": 77549.33,
-      "deviationPct": -58.92,
+      "currentPrice": 77588.8,
+      "deviationPct": -58.9,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75808.6,
-      "currentPrice": 77549.33,
-      "priceToSthRatio": 1.023,
-      "premiumPct": 2.3,
+      "currentPrice": 77588.8,
+      "priceToSthRatio": 1.0235,
+      "premiumPct": 2.35,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
