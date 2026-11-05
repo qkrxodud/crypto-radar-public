@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-05T03:00:50Z",
+  "updatedAt": "2026-11-05T03:20:56Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "80623.77",
       "macd": {
-        "macdLine": "-853.66",
-        "signalLine": "-854.19",
-        "histogram": "0.54",
+        "macdLine": "-837.64",
+        "signalLine": "-850.99",
+        "histogram": "13.35",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001540",
       "ivRv": {
-        "iv": "32.32",
+        "iv": "34.83",
         "rv": "33.00",
-        "spread": "-0.68",
+        "spread": "+1.83",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2540,11 +2540,11 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 49757,
-      "vsizeMb": "12.01",
-      "totalFeeBtc": "0.0205",
-      "congestionLevel": "보통 — 정상 대기열",
-      "congestionClass": "text-gray-300",
+      "txCount": 52440,
+      "vsizeMb": "13.22",
+      "totalFeeBtc": "0.0446",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
@@ -2552,26 +2552,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "25.20"
+          "sharePct": "25.28"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.69"
+          "sharePct": "19.67"
         },
         {
           "name": "F2Pool",
-          "sharePct": "17.24"
+          "sharePct": "17.23"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.90"
+          "sharePct": "9.89"
         },
         {
           "name": "MARA Pool",
-          "sharePct": "5.51"
+          "sharePct": "5.50"
         }
       ],
-      "top3Concentration": "62.13",
+      "top3Concentration": "62.18",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "80535.80",
-      "openInterestUsd": "7715653402.05000000",
-      "longAccountRatio": "0.5793",
-      "shortAccountRatio": "0.4207",
-      "downsideLiquidationUsd": "4469678015.81",
-      "upsideLiquidationUsd": "3245975386.24",
+      "currentPrice": "80731.70",
+      "openInterestUsd": "7715031821.23573900",
+      "longAccountRatio": "0.5798",
+      "shortAccountRatio": "0.4202",
+      "downsideLiquidationUsd": "4473175449.95",
+      "upsideLiquidationUsd": "3241856371.28",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "72482.22",
+          "price": "72658.53",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1787871206.32"
+          "notionalUsd": "1789270179.98"
         },
         {
-          "price": "88589.38",
+          "price": "88804.87",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1298390154.50"
+          "notionalUsd": "1296742548.51"
         },
         {
-          "price": "77314.37",
+          "price": "77502.43",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1564387305.53"
+          "notionalUsd": "1565611407.48"
         },
         {
-          "price": "83757.23",
+          "price": "83960.97",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1136091385.18"
+          "notionalUsd": "1134649729.95"
         },
         {
-          "price": "78925.08",
+          "price": "79117.07",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "893935603.16"
+          "notionalUsd": "894635089.99"
         },
         {
-          "price": "82146.52",
+          "price": "82346.33",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "649195077.25"
+          "notionalUsd": "648371274.26"
         },
         {
-          "price": "79730.44",
+          "price": "79924.38",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "223483900.79"
+          "notionalUsd": "223658772.50"
         },
         {
-          "price": "81341.16",
+          "price": "81539.02",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "162298769.31"
+          "notionalUsd": "162092818.56"
         }
       ],
       "errorMessage": null
@@ -5758,8 +5758,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-05T02:05:02.952414Z",
-      "compositeScore": "-0.038",
+      "generatedAt": "2026-11-05T03:05:02.853325Z",
+      "compositeScore": "-0.044",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5771,14 +5771,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/11/04/tokenization-and-stablecoins-may-weather-democrats-sweep-as-broader-crypto-rules-face-uncertainty",
           "publishedAt": "2026-11-04T22:55:00Z",
-          "score": "0.3"
+          "score": "0.0"
         },
         {
           "title": "Crypto's Washington hopes fade, but Grayscale and BlackRock see growth ahead",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/11/04/crypto-s-washington-hopes-fade-but-grayscale-and-blackrock-see-growth-ahead",
           "publishedAt": "2026-11-04T22:51:42Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Crypto's powerhouse super PAC suffers costly setback as Democrats sweep Congress",
@@ -5792,7 +5792,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/11/04/u-s-democratic-sweep-could-be-the-final-nail-in-the-clarity-act-s-coffin",
           "publishedAt": "2026-11-04T16:11:29Z",
-          "score": "-0.7"
+          "score": "-0.6"
         },
         {
           "title": "Wall Street rethinks AI data center boom as Texas election raises new risks",
@@ -5806,14 +5806,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/11/04/crypto-long-and-short-ice-is-betting-on-retail-s-appetite-for-quick-outcomes",
           "publishedAt": "2026-11-04T15:27:20Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "The election changes Washington. The work on crypto continues",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/opinion/2026/11/04/the-election-changes-washington-the-work-on-crypto-continues",
           "publishedAt": "2026-11-04T14:25:12Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Live updates: Bitcoin rises above $80,000 as stocks gain following Blue Wave",
@@ -5848,14 +5848,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitmart-hack-security-staffing-crypto-exchange-restructuring?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-04T22:31:58Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Crypto PACs eye 2028 ‘new map’ as Democrats take Congress",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-superpac-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-04T22:17:33Z",
-          "score": "0.1"
+          "score": "0.2"
         },
         {
           "title": "How Aussie Bitcoiners can avoid 2027’s shock CGT hike",
@@ -5869,7 +5869,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-04T19:15:39Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Riot shares surge on $28B AI lease as Hut 8 sinks on revenue miss",
@@ -6710,8 +6710,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 189127.31,
-      "currentPrice": 81050.82,
-      "deviationPct": -57.14,
+      "currentPrice": 81192.01,
+      "deviationPct": -57.07,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75891.97,
-      "currentPrice": 81050.82,
-      "priceToSthRatio": 1.068,
-      "premiumPct": 6.8,
+      "currentPrice": 81192.01,
+      "priceToSthRatio": 1.0698,
+      "premiumPct": 6.98,
       "signal": {
         "name": "ABOVE_BAND",
         "description": "STH 원가 프리미엄 — 단기과열 경계"
