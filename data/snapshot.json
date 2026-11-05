@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-05T14:45:12Z",
+  "updatedAt": "2026-11-05T15:05:20Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.33",
       "btcClose": "80623.77",
       "macd": {
-        "macdLine": "-986.27",
-        "signalLine": "-880.72",
-        "histogram": "-105.55",
+        "macdLine": "-1077.31",
+        "signalLine": "-898.92",
+        "histogram": "-178.38",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "25.5",
-        "plusDi": "18.5",
-        "minusDi": "22.2",
+        "plusDi": "17.8",
+        "minusDi": "21.3",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001540",
       "ivRv": {
-        "iv": "36.62",
+        "iv": "39.49",
         "rv": "33.00",
-        "spread": "+3.62",
-        "label": "균형"
+        "spread": "+6.49",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 50,
@@ -454,15 +454,15 @@
     "api_dashboard_cycle": {
       "hasData": true,
       "halvingCycle": {
-        "position": "63.7%",
+        "position": "63.8%",
         "progressWidth": 64,
         "phaseLabel": "과열 구간 (Q3)",
         "phaseLabelEn": "Euphoria (Q3)",
         "phaseBadgeClass": "bg-warning text-dark",
         "phaseDescription": "역사적 사이클 고점이 형성되는 구간입니다. 차익 실현을 고려하세요.",
         "phaseDescriptionEn": "The historical cycle top forms. Consider taking profits.",
-        "formattedElapsed": "929일 경과",
-        "formattedRemaining": "529일 남음",
+        "formattedElapsed": "930일 경과",
+        "formattedRemaining": "528일 남음",
         "cycleNumber": 4,
         "lastHalvingDate": "2024-04-20",
         "nextHalvingDate": "2028-04-17",
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 66366,
-      "vsizeMb": "31.26",
-      "totalFeeBtc": "0.2435",
+      "txCount": 67148,
+      "vsizeMb": "31.94",
+      "totalFeeBtc": "0.2264",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2578,10 +2578,10 @@
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 32536,
-      "nodeCount": 16228,
-      "capacityBtc": "3753.4053",
-      "avgChannelSizeBtc": "0.115362",
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4170,9 +4170,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "249228113978.56688",
+      "totalMarketCapUsd": "248558326628.49874",
       "marketCap30dAgoUsd": "258311787148.59549",
-      "growth30dPercent": "-3.52",
+      "growth30dPercent": "-3.78",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "78873.30",
-      "openInterestUsd": "7481807744.06960000",
-      "longAccountRatio": "0.6086",
-      "shortAccountRatio": "0.3914",
-      "downsideLiquidationUsd": "4553428193.04",
-      "upsideLiquidationUsd": "2928379551.03",
+      "currentPrice": "77738.10",
+      "openInterestUsd": "7396218454.86175000",
+      "longAccountRatio": "0.6291",
+      "shortAccountRatio": "0.3709",
+      "downsideLiquidationUsd": "4652961029.95",
+      "upsideLiquidationUsd": "2743257424.91",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "70985.97",
+          "price": "69964.29",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1821371277.22"
+          "notionalUsd": "1861184411.98"
         },
         {
-          "price": "86760.63",
+          "price": "85511.91",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "1171351820.41"
+          "notionalUsd": "1097302969.96"
         },
         {
-          "price": "75718.37",
+          "price": "74628.58",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1593699867.56"
+          "notionalUsd": "1628536360.48"
         },
         {
-          "price": "82028.23",
+          "price": "80847.62",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "1024932842.86"
+          "notionalUsd": "960140098.72"
         },
         {
-          "price": "77295.83",
+          "price": "76183.34",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "910685638.61"
+          "notionalUsd": "930592205.99"
         },
         {
-          "price": "80450.77",
+          "price": "79292.86",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "585675910.21"
+          "notionalUsd": "548651484.98"
         },
         {
-          "price": "78084.57",
+          "price": "76960.72",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "227671409.65"
+          "notionalUsd": "232648051.50"
         },
         {
-          "price": "79662.03",
+          "price": "78515.48",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "146418977.55"
+          "notionalUsd": "137162871.25"
         }
       ],
       "errorMessage": null
@@ -5694,7 +5694,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-05T14:30:02.918223Z",
+      "generatedAt": "2026-11-05T15:00:03.029063Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5703,30 +5703,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 투자 심리가 안정적이나 불확실성이 존재한다."
+          "content": "현재 시장은 중립적인 상태로, 투자 심리가 안정적이나 변동성이 존재함."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 50으로 심리적 불확실성이 크다."
+          "content": "고점에서의 매도 압력과 낮은 알트시즌지수로 인해 알트코인 투자에 위험이 있음."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 60으로 알트코인 시장의 약세를 시사한다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 자금 유입이 제한될 수 있음."
         },
         {
           "type": "ACTION",
-          "content": "중립적인 시장 상황에서 신중한 접근이 필요하다."
+          "content": "단기적인 변동성을 고려하여 포트폴리오를 다각화할 것을 권장."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
+          "content": "시장 상황을 지속적으로 모니터링하며 매수 기회를 탐색할 필요가 있음."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-11-05T14:25:03.581062Z",
+      "generatedAt": "2026-11-05T15:05:19.310757Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5735,19 +5735,19 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with mixed indicators suggesting potential stability."
+          "content": "The market shows a neutral stance with mixed indicators reflecting uncertainty."
         },
         {
           "type": "RISK",
-          "content": "Market sentiment is neutral, indicating uncertainty in price movements."
+          "content": "Market sentiment is neutral, indicating potential volatility."
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance at 60% may limit altcoin growth opportunities."
+          "content": "High BTC dominance at 60% may limit altcoin growth."
         },
         {
           "type": "ACTION",
-          "content": "Monitor key indicators for shifts in market sentiment."
+          "content": "Monitor key indicators closely for signs of trend shifts."
         },
         {
           "type": "ACTION",
@@ -5758,14 +5758,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-05T14:05:02.934188Z",
-      "compositeScore": "-0.063",
+      "generatedAt": "2026-11-05T15:05:02.928644Z",
+      "compositeScore": "-0.131",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Gate CEO says crypto exchanges must prove they can survive a hack like Binanceâs",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/11/05/gate-ceo-says-crypto-exchanges-must-prove-they-can-survive-a-hack-like-binance-s",
+          "publishedAt": "2026-11-05T14:21:50Z",
+          "score": "-0.6"
+        },
         {
           "title": "Kraken parent Payward and its clients buy AAVE tokens in DeFi investment push",
           "source": "CoinDesk",
@@ -5785,21 +5792,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/11/05/binance-cuts-signalplus-access-after-security-warning-urges-users-to-check-accounts",
           "publishedAt": "2026-11-05T12:55:03Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Ukraineâs central bank opposes crypto bill, citing monetary sovereignty concerns",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/11/05/ukraine-s-central-bank-opposes-crypto-bill-citing-monetary-sovereignty-concerns",
           "publishedAt": "2026-11-05T12:50:57Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Bitcoin is resilient, but leverage is missing and demand still tepid",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/11/05/bitcoin-is-resilient-but-leverage-is-missing-and-demand-still-tepid",
           "publishedAt": "2026-11-05T12:27:04Z",
-          "score": "-0.2"
+          "score": "-0.4"
         },
         {
           "title": "Bitcoin miners are oversold following 35% October rout, VanEck says",
@@ -5816,13 +5823,6 @@
           "score": "0.0"
         },
         {
-          "title": "Bitcoin holds above $80,000 after Wednesdayâs jump as injective rallies on staked ETF listing",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-after-wednesday-s-jump-as-injective-rallies-on-staked-etf-listing",
-          "publishedAt": "2026-11-05T11:30:00Z",
-          "score": "0.4"
-        },
-        {
           "title": "Here’s what happened in crypto today",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5834,28 +5834,28 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blockchain-is-perfect-solution-for-ai-agent-trust-vechain-ceo-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-05T13:34:57Z",
-          "score": "0.3"
+          "score": "0.4"
         },
         {
           "title": "Can decentralized phone networks power the AI revolution?",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/can-decentralized-phone-networks-power-the-ai-revolution?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-05T13:30:00Z",
-          "score": "0.2"
+          "score": "0.3"
         },
         {
           "title": "Trump’s memecoin ventures derailed CLARITY Act, Scaramucci says",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/scaramucci-trump-memecoins-clarity-act-failure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-05T12:39:36Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Thailand to block Bitget in December over unlicensed crypto trading",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/thailand-block-bitget-december-unlicensed-crypto-trading?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-05T11:33:20Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin win rate vs. S&P 500 recovers as post-midterm history favors stocks",
@@ -5869,14 +5869,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/south-korea-crypto-tax-fourth-delay-2029?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-05T09:35:29Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "France budget rejection sidelines stablecoin tax, wallet reporting",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/france-rejects-budget-revenue-sidelines-crypto-amendments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-05T09:04:42Z",
-          "score": "-0.3"
+          "score": "-0.4"
         }
       ],
       "errorMessage": null
@@ -6709,9 +6709,9 @@
       "label": "저가 매수",
       "color": "#1a7432",
       "action": "분할 매수",
-      "regressionPrice": 189127.31,
-      "currentPrice": 79453.6,
-      "deviationPct": -57.99,
+      "regressionPrice": 189297.05,
+      "currentPrice": 78412.2,
+      "deviationPct": -58.58,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75902.97,
-      "currentPrice": 79453.6,
-      "priceToSthRatio": 1.0468,
-      "premiumPct": 4.68,
+      "currentPrice": 78412.2,
+      "priceToSthRatio": 1.0331,
+      "premiumPct": 3.31,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
