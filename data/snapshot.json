@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-05T21:48:29Z",
+  "updatedAt": "2026-11-05T22:08:39Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "80623.77",
       "macd": {
-        "macdLine": "-1216.70",
-        "signalLine": "-926.80",
-        "histogram": "-289.89",
+        "macdLine": "-1218.56",
+        "signalLine": "-927.18",
+        "histogram": "-291.39",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001540",
       "ivRv": {
-        "iv": "43.55",
+        "iv": "44.42",
         "rv": "33.00",
-        "spread": "+10.55",
+        "spread": "+11.42",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 52503,
-      "vsizeMb": "25.98",
-      "totalFeeBtc": "0.0341",
+      "txCount": 52163,
+      "vsizeMb": "25.26",
+      "totalFeeBtc": "0.0410",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2552,36 +2552,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "25.00"
+          "sharePct": "24.90"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.63"
+          "sharePct": "19.65"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.63"
+          "sharePct": "16.77"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.92"
+          "sharePct": "9.88"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "5.58"
+          "sharePct": "5.56"
         }
       ],
-      "top3Concentration": "61.26",
+      "top3Concentration": "61.32",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 32536,
-      "nodeCount": 16228,
-      "capacityBtc": "3753.4053",
-      "avgChannelSizeBtc": "0.115362",
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4170,9 +4170,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "247934198798.8139",
+      "totalMarketCapUsd": "247855374658.23034",
       "marketCap30dAgoUsd": "258311787148.59549",
-      "growth30dPercent": "-4.02",
+      "growth30dPercent": "-4.05",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -4180,12 +4180,12 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5745783.000",
-      "change4wUsdM": "-166788.000",
-      "change4wPercent": "-2.82",
-      "fedAssetsUsdM": "6745635",
+      "netLiquidityUsdM": "5790845.000",
+      "change4wUsdM": "-73664.000",
+      "change4wPercent": "-1.26",
+      "fedAssetsUsdM": "6748145",
       "reverseRepoUsdM": "125.000",
-      "treasuryAccountUsdM": "999727",
+      "treasuryAccountUsdM": "957175",
       "rrpIncluded": true,
       "signal": "CONTRACTING",
       "signalLabel": "유동성 축소",
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "75996.10",
-      "openInterestUsd": "7199214587.95149900",
-      "longAccountRatio": "0.7473",
-      "shortAccountRatio": "0.2527",
-      "downsideLiquidationUsd": "5379973061.58",
-      "upsideLiquidationUsd": "1819241526.38",
+      "currentPrice": "75968.00",
+      "openInterestUsd": "7190474855.84835000",
+      "longAccountRatio": "0.7469",
+      "shortAccountRatio": "0.2531",
+      "downsideLiquidationUsd": "5370565669.83",
+      "upsideLiquidationUsd": "1819909186.02",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "68396.49",
+          "price": "68371.20",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2151989224.63"
+          "notionalUsd": "2148226267.93"
         },
         {
-          "price": "83595.71",
+          "price": "83564.80",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "727696610.55"
+          "notionalUsd": "727963674.41"
         },
         {
-          "price": "72956.26",
+          "price": "72929.28",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1882990571.55"
+          "notionalUsd": "1879697984.44"
         },
         {
-          "price": "79035.94",
+          "price": "79006.72",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "636734534.23"
+          "notionalUsd": "636968215.11"
         },
         {
-          "price": "74476.18",
+          "price": "74448.64",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1075994612.32"
+          "notionalUsd": "1074113133.97"
         },
         {
-          "price": "77516.02",
+          "price": "77487.36",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "363848305.28"
+          "notionalUsd": "363981837.20"
         },
         {
-          "price": "75236.14",
+          "price": "75208.32",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "268998653.08"
+          "notionalUsd": "268528283.49"
         },
         {
-          "price": "76756.06",
+          "price": "76727.68",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "90962076.32"
+          "notionalUsd": "90995459.30"
         }
       ],
       "errorMessage": null
@@ -5694,7 +5694,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-05T21:30:02.956941Z",
+      "generatedAt": "2026-11-05T22:00:03.497374Z",
       "compositeScore": 61,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5703,23 +5703,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 50으로 균형을 이루고 있다."
+          "content": "현재 시장은 중립적인 상태로, 투자 심리가 안정적이나 불확실성이 존재함."
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 60으로 알트코인 시장에 부정적 영향을 미칠 수 있다."
+          "content": "BTC 도미넌스가 60으로 알트코인에 대한 투자 심리가 약화될 수 있음."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 1732.90으로 매도 압력이 증가할 가능성이 있다."
+          "content": "거래소 순유입이 1732.90으로 매도 압력이 증가할 가능성이 있음."
         },
         {
           "type": "ACTION",
-          "content": "현재 포지션을 유지하며 시장 동향을 주의 깊게 관찰하라."
+          "content": "현재 시장 상황을 주의 깊게 관찰하며, 포트폴리오 다각화를 고려할 것."
         },
         {
           "type": "ACTION",
-          "content": "알트코인에 대한 투자 비중을 조정할 필요가 있다."
+          "content": "단기적인 변동성에 대비해 리스크 관리 전략을 강화할 것."
         }
       ],
       "errorMessage": null
@@ -5758,8 +5758,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-05T21:05:03.167268Z",
-      "compositeScore": "-0.119",
+      "generatedAt": "2026-11-05T22:05:03.829009Z",
+      "compositeScore": "-0.138",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5774,11 +5774,11 @@
           "score": "0.0"
         },
         {
-          "title": "Bitcoin, crypto stocks caught in AI trade meltdown, but Wintermute trader sees 'glass half full'",
+          "title": "Bitcion tumbles to $76,000 as collapsing AI trade drags stocks sharply lower",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-crypto-stocks-caught-in-ai-trade-meltdown-but-wintermute-trader-sees-glass-half-full",
           "publishedAt": "2026-11-05T18:48:40Z",
-          "score": "-0.3"
+          "score": "-0.8"
         },
         {
           "title": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist?",
@@ -5820,7 +5820,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/11/05/google-could-take-ownership-stake-in-bitcoin-miner-terawulf-s-ai-project-if-anthropic-defaults",
           "publishedAt": "2026-11-05T13:29:40Z",
-          "score": "0.1"
+          "score": "0.3"
+        },
+        {
+          "title": "Crypto ally French Hill wins reelection but set to lose House chair",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-ally-french-hill-wins-reelection-arkansas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-11-05T21:39:19Z",
+          "score": "-0.2"
         },
         {
           "title": "Binance, Deribit revoke SignalPlus API keys after fake Teams invite attack",
@@ -5848,7 +5855,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/paraguay-president-resigns-after-collapse-ueno-digital-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-05T17:40:25Z",
-          "score": "-0.8"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin crashes 6% to 7-week low as US stocks erase election gains",
@@ -5869,14 +5876,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/blockchain-is-perfect-solution-for-ai-agent-trust-vechain-ceo-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-05T13:34:57Z",
-          "score": "0.3"
-        },
-        {
-          "title": "Can decentralized phone networks power the AI revolution?",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/magazine/can-decentralized-phone-networks-power-the-ai-revolution?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-11-05T13:30:00Z",
-          "score": "0.2"
+          "score": "0.4"
         }
       ],
       "errorMessage": null
@@ -6710,7 +6710,7 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 189297.05,
-      "currentPrice": 76918.84,
+      "currentPrice": 76914.38,
       "deviationPct": -59.37,
       "isOversold": true,
       "isBubble": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75902.97,
-      "currentPrice": 76918.84,
-      "priceToSthRatio": 1.0134,
-      "premiumPct": 1.34,
+      "currentPrice": 76914.38,
+      "priceToSthRatio": 1.0133,
+      "premiumPct": 1.33,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
