@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-06T03:30:46Z",
+  "updatedAt": "2026-11-06T03:50:51Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.33",
       "btcClose": "76267.38",
       "macd": {
-        "macdLine": "-1338.53",
-        "signalLine": "-1003.48",
-        "histogram": "-335.05",
+        "macdLine": "-1339.88",
+        "signalLine": "-1003.75",
+        "histogram": "-336.14",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "21.1",
-        "plusDi": "16.5",
-        "minusDi": "20.7",
+        "plusDi": "16.4",
+        "minusDi": "20.6",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001647",
       "ivRv": {
-        "iv": "39.62",
+        "iv": "39.77",
         "rv": "33.00",
-        "spread": "+6.62",
+        "spread": "+6.77",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 49329,
-      "vsizeMb": "12.66",
-      "totalFeeBtc": "0.0622",
+      "txCount": 49786,
+      "vsizeMb": "12.72",
+      "totalFeeBtc": "0.0620",
       "congestionLevel": "보통 — 정상 대기열",
       "congestionClass": "text-gray-300",
       "errorMessage": null
@@ -2552,11 +2552,11 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.29"
+          "sharePct": "24.39"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.33"
+          "sharePct": "19.23"
         },
         {
           "name": "F2Pool",
@@ -2578,10 +2578,10 @@
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 32536,
-      "nodeCount": 16228,
-      "capacityBtc": "3753.4053",
-      "avgChannelSizeBtc": "0.115362",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "75916.90",
-      "openInterestUsd": "7208455282.21205000",
-      "longAccountRatio": "0.7502",
-      "shortAccountRatio": "0.2498",
-      "downsideLiquidationUsd": "5407783152.72",
-      "upsideLiquidationUsd": "1800672129.50",
+      "currentPrice": "75909.40",
+      "openInterestUsd": "7192998392.08650000",
+      "longAccountRatio": "0.7493",
+      "shortAccountRatio": "0.2507",
+      "downsideLiquidationUsd": "5389713695.19",
+      "upsideLiquidationUsd": "1803284696.90",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "68325.21",
+          "price": "68318.46",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2163113261.09"
+          "notionalUsd": "2155885478.08"
         },
         {
-          "price": "83508.59",
+          "price": "83500.34",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "720268851.80"
+          "notionalUsd": "721313878.76"
         },
         {
-          "price": "72880.22",
+          "price": "72873.02",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1892724103.45"
+          "notionalUsd": "1886399793.32"
         },
         {
-          "price": "78953.58",
+          "price": "78945.78",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "630235245.32"
+          "notionalUsd": "631149643.91"
         },
         {
-          "price": "74398.56",
+          "price": "74391.21",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1081556630.54"
+          "notionalUsd": "1077942739.04"
         },
         {
-          "price": "77435.24",
+          "price": "77427.59",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "360134425.90"
+          "notionalUsd": "360656939.38"
         },
         {
-          "price": "75157.73",
+          "price": "75150.31",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "270389157.64"
+          "notionalUsd": "269485684.76"
         },
         {
-          "price": "76676.07",
+          "price": "76668.49",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "90033606.47"
+          "notionalUsd": "90164234.84"
         }
       ],
       "errorMessage": null
@@ -6710,8 +6710,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 189297.05,
-      "currentPrice": 76844.48,
-      "deviationPct": -59.41,
+      "currentPrice": 76810.27,
+      "deviationPct": -59.42,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75902.97,
-      "currentPrice": 76844.48,
-      "priceToSthRatio": 1.0124,
-      "premiumPct": 1.24,
+      "currentPrice": 76810.27,
+      "priceToSthRatio": 1.012,
+      "premiumPct": 1.2,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
