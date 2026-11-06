@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-06T18:57:00Z",
+  "updatedAt": "2026-11-06T19:17:13Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "76267.38",
       "macd": {
-        "macdLine": "-1349.13",
-        "signalLine": "-1005.60",
-        "histogram": "-343.54",
+        "macdLine": "-1356.96",
+        "signalLine": "-1007.16",
+        "histogram": "-349.79",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0006",
       "cumulativeFunding30d": "0.001647",
       "ivRv": {
-        "iv": "23.01",
+        "iv": "38.28",
         "rv": "33.00",
-        "spread": "-9.99",
-        "label": "저평가"
+        "spread": "+5.28",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 28,
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 58857,
-      "vsizeMb": "19.14",
-      "totalFeeBtc": "0.0620",
+      "txCount": 58608,
+      "vsizeMb": "18.02",
+      "totalFeeBtc": "0.0571",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2552,11 +2552,11 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.11"
+          "sharePct": "24.00"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.10"
+          "sharePct": "19.00"
         },
         {
           "name": "F2Pool",
@@ -2564,24 +2564,24 @@
         },
         {
           "name": "ViaBTC",
-          "sharePct": "10.01"
+          "sharePct": "10.21"
         },
         {
           "name": "SpiderPool",
           "sharePct": "5.62"
         }
       ],
-      "top3Concentration": "60.98",
+      "top3Concentration": "60.77",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 32536,
-      "nodeCount": 16228,
-      "capacityBtc": "3753.4053",
-      "avgChannelSizeBtc": "0.115362",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4170,9 +4170,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "247974997982.81294",
+      "totalMarketCapUsd": "247957729418.47992",
       "marketCap30dAgoUsd": "257633059648.08936",
-      "growth30dPercent": "-3.75",
+      "growth30dPercent": "-3.76",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -4180,11 +4180,11 @@
     },
     "api_dashboard_net_liquidity": {
       "hasData": true,
-      "netLiquidityUsdM": "5790845.000",
-      "change4wUsdM": "-73664.000",
-      "change4wPercent": "-1.26",
+      "netLiquidityUsdM": "5790820.000",
+      "change4wUsdM": "-75692.000",
+      "change4wPercent": "-1.29",
       "fedAssetsUsdM": "6748145",
-      "reverseRepoUsdM": "125.000",
+      "reverseRepoUsdM": "150.000",
       "treasuryAccountUsdM": "957175",
       "rrpIncluded": true,
       "signal": "CONTRACTING",
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "75792.50",
-      "openInterestUsd": "7320857754.24500000",
-      "longAccountRatio": "0.7566",
-      "shortAccountRatio": "0.2434",
-      "downsideLiquidationUsd": "5538960976.86",
-      "upsideLiquidationUsd": "1781896777.38",
+      "currentPrice": "75694.60",
+      "openInterestUsd": "7313668776.94000000",
+      "longAccountRatio": "0.7565",
+      "shortAccountRatio": "0.2435",
+      "downsideLiquidationUsd": "5532790429.76",
+      "upsideLiquidationUsd": "1780878347.18",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "68213.25",
+          "price": "68125.14",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2215584390.74"
+          "notionalUsd": "2213116171.90"
         },
         {
-          "price": "83371.75",
+          "price": "83264.06",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "712758710.95"
+          "notionalUsd": "712351338.87"
         },
         {
-          "price": "72760.80",
+          "price": "72666.82",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1938636341.90"
+          "notionalUsd": "1936476650.41"
         },
         {
-          "price": "78824.20",
+          "price": "78722.38",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "623663872.08"
+          "notionalUsd": "623307421.51"
         },
         {
-          "price": "74276.65",
+          "price": "74180.71",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1107792195.37"
+          "notionalUsd": "1106558085.95"
         },
         {
-          "price": "77308.35",
+          "price": "77208.49",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "356379355.48"
+          "notionalUsd": "356175669.44"
         },
         {
-          "price": "75034.58",
+          "price": "74937.65",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "276948048.84"
+          "notionalUsd": "276639521.49"
         },
         {
-          "price": "76550.43",
+          "price": "76451.55",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "89094838.87"
+          "notionalUsd": "89043917.36"
         }
       ],
       "errorMessage": null
@@ -5694,7 +5694,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-06T18:36:50.623992Z",
+      "generatedAt": "2026-11-06T19:17:09.094705Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5707,19 +5707,19 @@
         },
         {
           "type": "RISK",
-          "content": "낮은 공포탐욕 지수(28)로 인해 투자 심리가 부정적이다."
+          "content": "시장 심리가 약해 추가 하락 가능성이 있다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -1600.93으로, 매도 압력이 우세하다."
+          "content": "거래소 순유입이 부정적이며, 이는 매도 압력을 나타낸다."
         },
         {
           "type": "ACTION",
-          "content": "시장 상황을 주의 깊게 모니터링하며, 신규 투자에 신중을 기할 필요가 있다."
+          "content": "단기 투자자는 관망하며 추가 하락을 지켜보는 것이 좋다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 변동성에 대비해 포트폴리오를 재조정하는 것이 좋다."
+          "content": "장기 투자자는 현재 가격대에서 분할 매수 고려할 수 있다."
         }
       ],
       "errorMessage": null
@@ -5758,11 +5758,11 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-06T18:16:40.533716Z",
-      "compositeScore": "-0.213",
-      "label": "NEGATIVE",
-      "labelDisplay": "부정",
-      "labelHexColor": "#F97316",
+      "generatedAt": "2026-11-06T19:17:12.365769Z",
+      "compositeScore": "-0.088",
+      "label": "NEUTRAL",
+      "labelDisplay": "중립",
+      "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
@@ -5778,7 +5778,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/11/05/the-crypto-industry-has-found-new-ways-to-grow-making-money-from-them-is-another-story",
           "publishedAt": "2026-11-06T15:26:38Z",
-          "score": "0.1"
+          "score": "-0.3"
         },
         {
           "title": "Thailand moves to block Bitget as crypto exchange's local acquisition faces uncertainty",
@@ -5792,7 +5792,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/11/06/u-s-added-165-000-jobs-in-october-blowing-past-65-000-estimate",
           "publishedAt": "2026-11-06T13:31:54Z",
-          "score": "0.4"
+          "score": "0.5"
         },
         {
           "title": "Over $1 billion in bullish bets liquidated while ETF flows suggest no help in spot market",
@@ -5813,14 +5813,28 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff",
           "publishedAt": "2026-11-06T11:49:35Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
           "publishedAt": "2026-11-06T09:53:27Z",
+          "score": "0.4"
+        },
+        {
+          "title": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-11-06T18:47:45Z",
           "score": "0.3"
+        },
+        {
+          "title": "Strive buys 15,124 Bitcoin in October, closes in on top treasury holders",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-11-06T18:22:42Z",
+          "score": "0.6"
         },
         {
           "title": "Bitcoin price dips under $75K as crypto markets miss tech-stock rebound",
@@ -5834,7 +5848,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/clarity-act-faces-new-test-under-democratic-congress?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-06T14:30:00Z",
-          "score": "0.2"
+          "score": "0.0"
         },
         {
           "title": "Nigeria sets new crypto licensing rules, bans algorithmic stablecoins",
@@ -5855,28 +5869,14 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ethereum-devs-fork-glamsterdam-hoodi-smart-contract-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-06T13:23:08Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Solana’s Shanghai event halted over unauthorized promotion: Report",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/solana-shanghai-event-halted-unauthorized-promotion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-06T12:15:28Z",
-          "score": "-0.6"
-        },
-        {
-          "title": "Binance hackers had 8-week intrusion window before $6.3B exploit: SEAL",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/binance-hackers-8-weeks-access-63b-exploit-security-alliance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-11-06T11:26:30Z",
-          "score": "-0.8"
-        },
-        {
-          "title": "Bitcoin holds $75K as AI regulation fears see KOSPI halted after 8% crash",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/bitcoin-holds-ai-regulation-fears-kospi-halted?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-11-06T11:16:53Z",
-          "score": "-0.2"
+          "score": "-0.3"
         }
       ],
       "errorMessage": null
@@ -6710,8 +6710,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 189466.92,
-      "currentPrice": 75889.99,
-      "deviationPct": -59.95,
+      "currentPrice": 75783.27,
+      "deviationPct": -60.0,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75773.87,
-      "currentPrice": 75889.99,
-      "priceToSthRatio": 1.0015,
-      "premiumPct": 0.15,
+      "currentPrice": 75783.27,
+      "priceToSthRatio": 1.0001,
+      "premiumPct": 0.01,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
