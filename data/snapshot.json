@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-11T20:14:41Z",
+  "updatedAt": "2026-11-11T20:34:50Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "73787.00",
       "macd": {
-        "macdLine": "-1830.06",
-        "signalLine": "-1501.38",
-        "histogram": "-328.67",
+        "macdLine": "-1833.26",
+        "signalLine": "-1502.02",
+        "histogram": "-331.24",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,9 +433,9 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.002000",
       "ivRv": {
-        "iv": "29.38",
+        "iv": "29.34",
         "rv": "33.00",
-        "spread": "-3.62",
+        "spread": "-3.66",
         "label": "균형"
       },
       "fearGreedMa": {
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 69445,
-      "vsizeMb": "34.36",
-      "totalFeeBtc": "0.0781",
+      "txCount": 69790,
+      "vsizeMb": "34.70",
+      "totalFeeBtc": "0.0819",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2578,12 +2578,12 @@
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 51021,
-      "nodeCount": 12878,
-      "capacityBtc": "4940.6909",
-      "avgChannelSizeBtc": "0.096836",
-      "signal": "Lightning 성장세 -- Layer2 활성화 중",
-      "signalClass": "text-blue-400",
+      "channelCount": 39627,
+      "nodeCount": 17334,
+      "capacityBtc": "4450.8771",
+      "avgChannelSizeBtc": "0.112319",
+      "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
+      "signalClass": "text-gray-300",
       "errorMessage": null
     },
     "api_dashboard_buy_timing": {
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "74536.70",
-      "openInterestUsd": "7278434241.90396200",
-      "longAccountRatio": "0.7223",
-      "shortAccountRatio": "0.2777",
-      "downsideLiquidationUsd": "5257213052.93",
-      "upsideLiquidationUsd": "2021221188.98",
+      "currentPrice": "74493.40",
+      "openInterestUsd": "7277552173.58010000",
+      "longAccountRatio": "0.7219",
+      "shortAccountRatio": "0.2781",
+      "downsideLiquidationUsd": "5253664914.11",
+      "upsideLiquidationUsd": "2023887259.47",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "67083.03",
+          "price": "67044.06",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2102885221.17"
+          "notionalUsd": "2101465965.64"
         },
         {
-          "price": "81990.37",
+          "price": "81942.74",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "808488475.59"
+          "notionalUsd": "809554903.79"
         },
         {
-          "price": "71555.23",
+          "price": "71513.66",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1840024568.52"
+          "notionalUsd": "1838782719.94"
         },
         {
-          "price": "77518.17",
+          "price": "77473.14",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "707427416.14"
+          "notionalUsd": "708360540.82"
         },
         {
-          "price": "73045.97",
+          "price": "73003.53",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1051442610.59"
+          "notionalUsd": "1050732982.82"
         },
         {
-          "price": "76027.43",
+          "price": "75983.27",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "404244237.80"
+          "notionalUsd": "404777451.89"
         },
         {
-          "price": "73791.33",
+          "price": "73748.47",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "262860652.65"
+          "notionalUsd": "262683245.71"
         },
         {
-          "price": "75282.07",
+          "price": "75238.33",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "101061059.45"
+          "notionalUsd": "101194362.97"
         }
       ],
       "errorMessage": null
@@ -5694,7 +5694,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-11T19:54:22.347778Z",
+      "generatedAt": "2026-11-11T20:34:49.649002Z",
       "compositeScore": 58,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5703,23 +5703,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포가 우세하나 일부 긍정적인 신호도 보인다."
+          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 약화되고 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 29로 극단적인 공포를 나타내고 있다."
+          "content": "시장 심리가 부정적이며, 공포탐욕 지수가 29로 낮다."
         },
         {
           "type": "RISK",
-          "content": "거래소 순유입이 -5.27로 자금 유출이 발생하고 있다."
+          "content": "BTC 도미넌스가 60으로 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 불확실성이 크므로 신중한 접근이 필요하다."
+          "content": "단기 투자에 신중을 기하고, 시장 동향을 지속적으로 관찰하라."
         },
         {
           "type": "ACTION",
-          "content": "장기 투자 관점에서 저가 매수 기회를 고려할 수 있다."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
@@ -6710,8 +6710,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 190318.17,
-      "currentPrice": 75587.55,
-      "deviationPct": -60.28,
+      "currentPrice": 75521.73,
+      "deviationPct": -60.32,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75876.61,
-      "currentPrice": 75587.55,
-      "priceToSthRatio": 0.9962,
-      "premiumPct": -0.38,
+      "currentPrice": 75521.73,
+      "priceToSthRatio": 0.9953,
+      "premiumPct": -0.47,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
