@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-11T16:52:45Z",
+  "updatedAt": "2026-11-11T17:13:00Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "73787.00",
       "macd": {
-        "macdLine": "-1854.19",
-        "signalLine": "-1506.21",
-        "histogram": "-347.98",
+        "macdLine": "-1850.96",
+        "signalLine": "-1505.56",
+        "histogram": "-345.40",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.002000",
       "ivRv": {
-        "iv": "38.23",
+        "iv": "32.63",
         "rv": "33.00",
-        "spread": "+5.23",
-        "label": "과대"
+        "spread": "-0.38",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 29,
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 74049,
-      "vsizeMb": "36.08",
-      "totalFeeBtc": "0.1343",
+      "txCount": 75368,
+      "vsizeMb": "36.74",
+      "totalFeeBtc": "0.1544",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2552,7 +2552,7 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.81"
+          "sharePct": "24.70"
         },
         {
           "name": "AntPool",
@@ -2564,14 +2564,14 @@
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.08"
+          "sharePct": "9.19"
         },
         {
           "name": "SpiderPool",
           "sharePct": "6.98"
         }
       ],
-      "top3Concentration": "61.03",
+      "top3Concentration": "60.92",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "74230.60",
-      "openInterestUsd": "7344306147.82809400",
-      "longAccountRatio": "0.7310",
-      "shortAccountRatio": "0.2690",
-      "downsideLiquidationUsd": "5368687794.06",
-      "upsideLiquidationUsd": "1975618353.77",
+      "currentPrice": "74265.10",
+      "openInterestUsd": "7332230338.84330400",
+      "longAccountRatio": "0.7299",
+      "shortAccountRatio": "0.2701",
+      "downsideLiquidationUsd": "5351794924.32",
+      "upsideLiquidationUsd": "1980435414.52",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "66807.54",
+          "price": "66838.59",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2147475117.62"
+          "notionalUsd": "2140717969.73"
         },
         {
-          "price": "81653.66",
+          "price": "81691.61",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "790247341.51"
+          "notionalUsd": "792174165.81"
         },
         {
-          "price": "71261.38",
+          "price": "71294.50",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1879040727.92"
+          "notionalUsd": "1873128223.51"
         },
         {
-          "price": "77199.82",
+          "price": "77235.70",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "691466423.82"
+          "notionalUsd": "693152395.08"
         },
         {
-          "price": "72745.99",
+          "price": "72779.80",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1073737558.81"
+          "notionalUsd": "1070358984.86"
         },
         {
-          "price": "75715.21",
+          "price": "75750.40",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "395123670.75"
+          "notionalUsd": "396087082.90"
         },
         {
-          "price": "73488.29",
+          "price": "73522.45",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "268434389.70"
+          "notionalUsd": "267589746.22"
         },
         {
-          "price": "74972.91",
+          "price": "75007.75",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "98780917.69"
+          "notionalUsd": "99021770.73"
         }
       ],
       "errorMessage": null
@@ -5694,7 +5694,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-11T16:30:03.243607Z",
+      "generatedAt": "2026-11-11T17:12:56.015213Z",
       "compositeScore": 58,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5703,11 +5703,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포와 탐욕 지수가 낮아 투자 심리가 위축되어 있다."
+          "content": "현재 시장은 중립적이며, 공포가 우세한 상황이다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 29로 극단적인 공포를 나타내고 있다."
+          "content": "공포탐욕 지수가 29로 극단적인 공포를 나타낸다."
         },
         {
           "type": "RISK",
@@ -5715,11 +5715,11 @@
         },
         {
           "type": "ACTION",
-          "content": "시장 반전 가능성을 고려하여 매수 기회를 모색하라."
+          "content": "단기적인 매수 기회를 모색하되, 리스크 관리에 유의하라."
         },
         {
           "type": "ACTION",
-          "content": "리스크 관리 차원에서 포트폴리오 다각화를 검토하라."
+          "content": "시장 심리 회복을 기다리며 장기 투자 전략을 고려하라."
         }
       ],
       "errorMessage": null
@@ -5758,8 +5758,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-11T16:05:03.545700Z",
-      "compositeScore": "0.000",
+      "generatedAt": "2026-11-11T17:12:59.511675Z",
+      "compositeScore": "-0.063",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5823,6 +5823,13 @@
           "score": "-0.3"
         },
         {
+          "title": "Bitcoin hovers near $74K as stocks rise despite US bond yield rebound",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-74k-stocks-us-bond-yield-inflation-cpi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-11-11T16:26:00Z",
+          "score": "0.2"
+        },
+        {
           "title": "Deutsche Bank launches crypto custody for companies and institutions",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/deutsche-bank-debuts-digital-asset-custody-services-eu?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5841,7 +5848,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/paraguay-bank-collapse-shows-stablecoins-can-offer-a-lifeline-of-sorts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-11T13:30:00Z",
-          "score": "0.2"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin Covenants Part 5: MATT and OP_CHECKCONTRACTVERIFY — How Bitcoin could carry state across transactions",
@@ -5862,7 +5869,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/fsb-turkey-crypto-oversight-stablecoin-regulation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-11T12:44:10Z",
-          "score": "-0.2"
+          "score": "-0.4"
         },
         {
           "title": "Zcash falls below $1,000 for first time since September",
@@ -5870,13 +5877,6 @@
           "url": "https://cointelegraph.com/markets/zcash-falls-1k-grayscales-1m-ecosystem-commitment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-11T12:31:44Z",
           "score": "-0.7"
-        },
-        {
-          "title": "Barclays boosts BlackRock Bitcoin ETF stake 48% as banks expand holdings",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/barclays-blackrock-ibit-boost-key-q3-filings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-11-11T11:56:23Z",
-          "score": "0.6"
         }
       ],
       "errorMessage": null
@@ -6710,8 +6710,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 190318.17,
-      "currentPrice": 75082.15,
-      "deviationPct": -60.55,
+      "currentPrice": 75147.12,
+      "deviationPct": -60.52,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6910,9 +6910,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75876.61,
-      "currentPrice": 75082.15,
-      "priceToSthRatio": 0.9895,
-      "premiumPct": -1.05,
+      "currentPrice": 75147.12,
+      "priceToSthRatio": 0.9904,
+      "premiumPct": -0.96,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
