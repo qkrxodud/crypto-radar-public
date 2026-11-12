@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-12T17:03:15Z",
+  "updatedAt": "2026-11-12T17:23:25Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.33",
       "btcClose": "74025.00",
       "macd": {
-        "macdLine": "-2110.94",
-        "signalLine": "-1651.09",
-        "histogram": "-459.85",
+        "macdLine": "-2097.72",
+        "signalLine": "-1648.45",
+        "histogram": "-449.27",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.001964",
       "ivRv": {
-        "iv": "37.79",
+        "iv": "39.15",
         "rv": "33.00",
-        "spread": "+4.79",
-        "label": "균형"
+        "spread": "+6.15",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 28,
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 76749,
-      "vsizeMb": "35.15",
-      "totalFeeBtc": "0.0910",
+      "txCount": 80811,
+      "vsizeMb": "36.07",
+      "totalFeeBtc": "0.1459",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2552,36 +2552,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.32"
+          "sharePct": "24.35"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.48"
+          "sharePct": "19.50"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.10"
+          "sharePct": "16.12"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.68"
+          "sharePct": "9.70"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "7.09"
+          "sharePct": "7.10"
         }
       ],
-      "top3Concentration": "59.90",
+      "top3Concentration": "59.97",
       "signal": "집중도 주의 -- 상위 풀 과점 경계",
       "signalClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 33101,
-      "nodeCount": 16420,
-      "capacityBtc": "3750.1929",
-      "avgChannelSizeBtc": "0.113295",
+      "channelCount": 32520,
+      "nodeCount": 16230,
+      "capacityBtc": "3753.8517",
+      "avgChannelSizeBtc": "0.115432",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4243,63 +4243,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "71682.50",
-      "openInterestUsd": "7267107489.63430000",
-      "longAccountRatio": "0.7594",
-      "shortAccountRatio": "0.2406",
-      "downsideLiquidationUsd": "5518641427.63",
-      "upsideLiquidationUsd": "1748466062.01",
+      "currentPrice": "71839.90",
+      "openInterestUsd": "7261220656.80000000",
+      "longAccountRatio": "0.7587",
+      "shortAccountRatio": "0.2413",
+      "downsideLiquidationUsd": "5509088112.31",
+      "upsideLiquidationUsd": "1752132544.49",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "64514.25",
+          "price": "64655.91",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2207456571.05"
+          "notionalUsd": "2203635244.93"
         },
         {
-          "price": "78850.75",
+          "price": "79023.89",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "699386424.80"
+          "notionalUsd": "700853017.79"
         },
         {
-          "price": "68815.20",
+          "price": "68966.30",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1931524499.67"
+          "notionalUsd": "1928180839.31"
         },
         {
-          "price": "74549.80",
+          "price": "74713.50",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "611963121.70"
+          "notionalUsd": "613246390.57"
         },
         {
-          "price": "70248.85",
+          "price": "70403.10",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1103728285.53"
+          "notionalUsd": "1101817622.46"
         },
         {
-          "price": "73116.15",
+          "price": "73276.70",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "349693212.40"
+          "notionalUsd": "350426508.90"
         },
         {
-          "price": "70965.68",
+          "price": "71121.50",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "275932071.38"
+          "notionalUsd": "275454405.62"
         },
         {
-          "price": "72399.33",
+          "price": "72558.30",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "87423303.10"
+          "notionalUsd": "87606627.22"
         }
       ],
       "errorMessage": null
@@ -5760,14 +5760,21 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-12T16:05:02.882512Z",
-      "compositeScore": "-0.075",
+      "generatedAt": "2026-11-12T17:23:23.955059Z",
+      "compositeScore": "-0.163",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/11/12/illinois-crypto-tax-is-impossible-to-enforce-as-written-crypto-industry-tells-court",
+          "publishedAt": "2026-11-12T16:45:52Z",
+          "score": "-0.6"
+        },
         {
           "title": "DTCC adds Solana to Wall Street tokenization plans, targeting 2027 rollout",
           "source": "CoinDesk",
@@ -5808,7 +5815,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/11/12/bitcoin-weakness-erases-september-s-bullish-signal",
           "publishedAt": "2026-11-12T12:15:00Z",
-          "score": "-0.6"
+          "score": "-0.7"
         },
         {
           "title": "UK bank Griffin raises $20 million to expand into stablecoin payments",
@@ -5818,53 +5825,46 @@
           "score": "0.6"
         },
         {
-          "title": "Ethereum researchers drop faster blocks to race toward quantum defenses in 2027",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/11/12/ethereum-researchers-drop-faster-blocks-to-race-toward-quantum-defenses-in-2027",
-          "publishedAt": "2026-11-12T11:43:41Z",
-          "score": "0.2"
-        },
-        {
           "title": "Bitcoin slides toward $71K as Nvidia stock tumbles after Huang steps down",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-price-drops-71k-stocks-nvidia-huang-resignation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T15:46:06Z",
-          "score": "-0.7"
+          "score": "-0.4"
         },
         {
           "title": "Jensen Huang resigns as Nvidia CEO, exits board; shares plunge",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/jensen-huang-resigns-nvidia-ceo-board-member?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T13:59:02Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Bit Digital stock falls 5% in pre-market after Q3 revenue miss",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bit-digital-stock-falls-q3-revenue-miss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T13:52:39Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Thailand proposes $148K daily cap on stablecoin deposits and withdrawals",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/thailand-tighter-stablecoin-rules-crypto-exchange?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T13:44:03Z",
-          "score": "-0.3"
+          "score": "-0.6"
         },
         {
           "title": "Crypto hack losses equal 57 cents per $1 earned onchain: Ark’s Valente",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-hackers-stole-57-cents-every-1-earned-ark?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T13:31:59Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Are Alt-L1s over? Security, costs drive smaller chains to Ethereum",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/are-alt-l1s-over-security-costs-drive-smaller-chains-to-ethereum?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T13:30:00Z",
-          "score": "0.1"
+          "score": "-0.2"
         },
         {
           "title": "Uber’s UK banking partner Griffin raises $20M for stablecoin services",
@@ -5878,7 +5878,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/eu-defi-riskier-platforms-coinbase-exec?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T12:21:43Z",
-          "score": "-0.2"
+          "score": "-0.4"
         }
       ],
       "errorMessage": null
@@ -6712,8 +6712,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 190488.8,
-      "currentPrice": 72682.32,
-      "deviationPct": -61.84,
+      "currentPrice": 72837.91,
+      "deviationPct": -61.76,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6912,9 +6912,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75910.86,
-      "currentPrice": 72682.32,
-      "priceToSthRatio": 0.9575,
-      "premiumPct": -4.25,
+      "currentPrice": 72837.91,
+      "priceToSthRatio": 0.9595,
+      "premiumPct": -4.05,
       "signal": {
         "name": "IN_BAND",
         "description": "STH 원가 밴드 내 — 중립"
