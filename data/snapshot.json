@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-13T02:47:34Z",
+  "updatedAt": "2026-11-13T03:07:40Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,17 +61,17 @@
       "historicalVolatility": "0.33",
       "btcClose": "71482.01",
       "macd": {
-        "macdLine": "-2398.12",
-        "signalLine": "-1820.02",
-        "histogram": "-578.11",
+        "macdLine": "-2413.36",
+        "signalLine": "-1823.06",
+        "histogram": "-590.30",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
-        "adx": "26.9",
-        "plusDi": "10.3",
-        "minusDi": "29.9",
+        "adx": "27.0",
+        "plusDi": "10.2",
+        "minusDi": "30.5",
         "strength": "MODERATE_DOWN",
         "strengthLabel": "보통 하락 추세",
         "trending": true
@@ -433,10 +433,10 @@
       "cumulativeFunding7d": "0.0005",
       "cumulativeFunding30d": "0.002074",
       "ivRv": {
-        "iv": "36.32",
+        "iv": "39.08",
         "rv": "33.00",
-        "spread": "+3.32",
-        "label": "균형"
+        "spread": "+6.08",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 20,
@@ -2540,9 +2540,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 61044,
-      "vsizeMb": "30.24",
-      "totalFeeBtc": "0.0460",
+      "txCount": 64882,
+      "vsizeMb": "30.80",
+      "totalFeeBtc": "0.0597",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2552,38 +2552,38 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "24.40"
+          "sharePct": "24.57"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.91"
+          "sharePct": "19.86"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.54"
+          "sharePct": "15.50"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "9.32"
+          "sharePct": "9.30"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "7.71"
+          "sharePct": "7.69"
         }
       ],
-      "top3Concentration": "59.85",
+      "top3Concentration": "59.93",
       "signal": "집중도 주의 -- 상위 풀 과점 경계",
       "signalClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 33101,
-      "nodeCount": 16420,
-      "capacityBtc": "3750.1929",
-      "avgChannelSizeBtc": "0.113295",
-      "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
-      "signalClass": "text-gray-300",
+      "channelCount": 51021,
+      "nodeCount": 12878,
+      "capacityBtc": "4940.6909",
+      "avgChannelSizeBtc": "0.096836",
+      "signal": "Lightning 성장세 -- Layer2 활성화 중",
+      "signalClass": "text-blue-400",
       "errorMessage": null
     },
     "api_dashboard_buy_timing": {
@@ -4172,9 +4172,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "244733905176.32611",
+      "totalMarketCapUsd": "244729575337.8022",
       "marketCap30dAgoUsd": "256601216342.85540",
-      "growth30dPercent": "-4.62",
+      "growth30dPercent": "-4.63",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -4243,63 +4243,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "70281.00",
-      "openInterestUsd": "7078305003.88410000",
-      "longAccountRatio": "0.7517",
-      "shortAccountRatio": "0.2483",
-      "downsideLiquidationUsd": "5320761871.42",
-      "upsideLiquidationUsd": "1757543132.46",
+      "currentPrice": "70092.00",
+      "openInterestUsd": "7056921581.75325800",
+      "longAccountRatio": "0.7577",
+      "shortAccountRatio": "0.2423",
+      "downsideLiquidationUsd": "5347029482.49",
+      "upsideLiquidationUsd": "1709892099.26",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "63252.90",
+          "price": "63082.80",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "2128304748.57"
+          "notionalUsd": "2138811793.00"
         },
         {
-          "price": "77309.10",
+          "price": "77101.20",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "703017252.99"
+          "notionalUsd": "683956839.70"
         },
         {
-          "price": "67469.76",
+          "price": "67288.32",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1862266655.00"
+          "notionalUsd": "1871460318.87"
         },
         {
-          "price": "73092.24",
+          "price": "72895.68",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "615140096.36"
+          "notionalUsd": "598462234.74"
         },
         {
-          "price": "68875.38",
+          "price": "68690.16",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "1064152374.28"
+          "notionalUsd": "1069405896.50"
         },
         {
-          "price": "71686.62",
+          "price": "71493.84",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "351508626.49"
+          "notionalUsd": "341978419.85"
         },
         {
-          "price": "69578.19",
+          "price": "69391.08",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "266038093.57"
+          "notionalUsd": "267351474.12"
         },
         {
-          "price": "70983.81",
+          "price": "70792.92",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "87877156.62"
+          "notionalUsd": "85494604.96"
         }
       ],
       "errorMessage": null
@@ -5696,7 +5696,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-13T02:30:03.907252Z",
+      "generatedAt": "2026-11-13T03:00:03.170236Z",
       "compositeScore": 59,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5705,23 +5705,23 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적이며, 공포가 우세한 상황이다."
+          "content": "현재 시장은 중립적인 상태로, 공포 심리가 강하게 작용하고 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 20으로 극단적인 공포를 나타낸다."
+          "content": "공포탐욕 지수가 20으로 극단적 공포를 나타내고 있다."
         },
         {
           "type": "RISK",
-          "content": "RSI(일)가 29.63으로 과매도 상태에 있다."
+          "content": "BTC 도미넌스가 59로 알트코인에 대한 투자 심리가 약화되고 있다."
         },
         {
           "type": "ACTION",
-          "content": "단기 매수 기회를 고려하되, 신중하게 접근하라."
+          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 리스크를 분산하라."
+          "content": "추가적인 하락 가능성을 대비해 포지션 조정이 권장된다."
         }
       ],
       "errorMessage": null
@@ -5760,8 +5760,8 @@
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-13T02:05:03.644861Z",
-      "compositeScore": "-0.044",
+      "generatedAt": "2026-11-13T03:05:03.622625Z",
+      "compositeScore": "-0.056",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5825,6 +5825,13 @@
           "score": "0.3"
         },
         {
+          "title": "Trump nominates Hester Peirce successor among SEC, CFTC picks",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/trump-nominates-hester-peirce-successor-among-sec-cftc-picks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-11-13T02:29:27Z",
+          "score": "0.1"
+        },
+        {
           "title": "Former Nvidia CEO Huang had third alleged affair: Reuters",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/former-nvidia-ceo-huang-had-third-alleged-affair-reuters?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5850,7 +5857,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/magazine/nk-hackers-join-memecoin-trenches-xstocks-adds-hong-kong-equities-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T22:29:58Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5872,13 +5879,6 @@
           "url": "https://cointelegraph.com/markets/strategy-shares-fall-5-msci-index-removal-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-12T21:52:04Z",
           "score": "-0.6"
-        },
-        {
-          "title": "US Justice Department, business groups and DeFi firms challenge Illinois crypto tax",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/us-justice-department-business-groups-defi-illinois-crypto-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-11-12T20:58:06Z",
-          "score": "0.2"
         }
       ],
       "errorMessage": null
@@ -6712,8 +6712,8 @@
       "color": "#1a7432",
       "action": "분할 매수",
       "regressionPrice": 190488.8,
-      "currentPrice": 71170.08,
-      "deviationPct": -62.64,
+      "currentPrice": 71048.65,
+      "deviationPct": -62.7,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6912,9 +6912,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75831.37,
-      "currentPrice": 71170.08,
-      "priceToSthRatio": 0.9385,
-      "premiumPct": -6.15,
+      "currentPrice": 71048.65,
+      "priceToSthRatio": 0.9369,
+      "premiumPct": -6.31,
       "signal": {
         "name": "BELOW_BAND",
         "description": "STH 원가 디스카운트 — 저점 매집 구간"
@@ -6944,7 +6944,7 @@
       "hasData": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": -39.5,
+      "compositeScore": -38.7,
       "extreme": {
         "name": "FEAR",
         "description": "공포 구간 — 매집 기회"
