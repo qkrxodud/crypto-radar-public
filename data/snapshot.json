@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-20T19:52:55Z",
+  "updatedAt": "2026-11-20T20:13:14Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,9 +60,9 @@
       "historicalVolatility": "0.43",
       "btcClose": "61938.80",
       "macd": {
-        "macdLine": "-4931.43",
-        "signalLine": "-3844.95",
-        "histogram": "-1086.47",
+        "macdLine": "-4925.05",
+        "signalLine": "-3843.68",
+        "histogram": "-1081.37",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -431,12 +431,7 @@
       ],
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.001769",
-      "ivRv": {
-        "iv": "49.13",
-        "rv": "43.00",
-        "spread": "+6.13",
-        "label": "과대"
-      },
+      "ivRv": null,
       "fearGreedMa": {
         "currentFg": 10,
         "fgMa30": "33.7",
@@ -2539,9 +2534,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 66120,
-      "vsizeMb": "32.03",
-      "totalFeeBtc": "0.0635",
+      "txCount": 64533,
+      "vsizeMb": "31.07",
+      "totalFeeBtc": "0.0479",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2551,36 +2546,36 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "25.77"
+          "sharePct": "25.72"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.23"
+          "sharePct": "19.29"
         },
         {
           "name": "F2Pool",
-          "sharePct": "19.05"
+          "sharePct": "19.11"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.68"
+          "sharePct": "8.67"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.72"
+          "sharePct": "6.71"
         }
       ],
-      "top3Concentration": "64.05",
+      "top3Concentration": "64.12",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 32536,
-      "nodeCount": 16228,
-      "capacityBtc": "3753.4053",
-      "avgChannelSizeBtc": "0.115362",
+      "channelCount": 41087,
+      "nodeCount": 17437,
+      "capacityBtc": "4896.6034",
+      "avgChannelSizeBtc": "0.119176",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4241,63 +4236,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "58448.80",
-      "openInterestUsd": "5612359771.95337700",
-      "longAccountRatio": "0.7741",
-      "shortAccountRatio": "0.2259",
-      "downsideLiquidationUsd": "4344527699.47",
-      "upsideLiquidationUsd": "1267832072.48",
+      "currentPrice": "58527.60",
+      "openInterestUsd": "5593999585.96072300",
+      "longAccountRatio": "0.7733",
+      "shortAccountRatio": "0.2267",
+      "downsideLiquidationUsd": "4325839879.82",
+      "upsideLiquidationUsd": "1268159706.14",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "52603.92",
+          "price": "52674.84",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1737811079.79"
+          "notionalUsd": "1730335951.93"
         },
         {
-          "price": "64293.68",
+          "price": "64380.36",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "507132828.99"
+          "notionalUsd": "507263882.45"
         },
         {
-          "price": "56110.85",
+          "price": "56186.50",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1520584694.81"
+          "notionalUsd": "1514043957.94"
         },
         {
-          "price": "60786.75",
+          "price": "60868.70",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "443741225.37"
+          "notionalUsd": "443855897.15"
         },
         {
-          "price": "57279.82",
+          "price": "57357.05",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "868905539.89"
+          "notionalUsd": "865167975.96"
         },
         {
-          "price": "59617.78",
+          "price": "59698.15",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "253566414.50"
+          "notionalUsd": "253631941.23"
         },
         {
-          "price": "57864.31",
+          "price": "57942.32",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "217226384.97"
+          "notionalUsd": "216291993.99"
         },
         {
-          "price": "59033.29",
+          "price": "59112.88",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "63391603.62"
+          "notionalUsd": "63407985.31"
         }
       ],
       "errorMessage": null
@@ -5675,7 +5670,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-20T19:52:47.997866Z",
+      "generatedAt": "2026-11-20T20:13:04.889230Z",
       "compositeScore": 67,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5684,7 +5679,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이나, 공포 심리가 지배적이다."
+          "content": "현재 시장은 매집 우세로 보이며, 공포 심리가 지배적이다."
         },
         {
           "type": "RISK",
@@ -5692,22 +5687,22 @@
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스 상승에도 불구하고 알트시즌 지수가 낮다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약하다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 염두에 두되, 시장 심리를 주의 깊게 살펴라."
+          "content": "매수 기회를 염두에 두고 시장을 주의 깊게 관찰하라."
         },
         {
           "type": "ACTION",
-          "content": "손절매 설정을 통해 리스크를 관리하라."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-11-20T19:52:50.293033Z",
+      "generatedAt": "2026-11-20T20:13:07.522204Z",
       "compositeScore": 67,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5716,7 +5711,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a slight bullish sentiment with accumulation dominance, but indicators suggest caution."
+          "content": "The market shows a slight bullish sentiment but remains cautious with indicators reflecting fear and low momentum."
         },
         {
           "type": "RISK",
@@ -5724,22 +5719,22 @@
         },
         {
           "type": "RISK",
-          "content": "High BTC dominance may limit altcoin growth."
+          "content": "High BTC dominance suggests altcoin weakness."
         },
         {
           "type": "ACTION",
-          "content": "Consider accumulating BTC for long-term gains."
+          "content": "Consider accumulating BTC as it shows potential for recovery."
         },
         {
           "type": "ACTION",
-          "content": "Monitor market sentiment closely for potential shifts."
+          "content": "Monitor market sentiment closely for signs of reversal."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-20T19:52:53.615444Z",
+      "generatedAt": "2026-11-20T20:13:10.668421Z",
       "compositeScore": "-0.363",
       "label": "NEGATIVE",
       "labelDisplay": "부정",
@@ -5773,7 +5768,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/11/20/u-s-senated-passes-bill-to-ban-prediction-market-best-on-war-and-death",
           "publishedAt": "2026-11-20T14:25:57Z",
-          "score": "-0.3"
+          "score": "-0.2"
         },
         {
           "title": "Live news: Bitcoin slips to fresh lows below $60,000 as Anthropic slides after Nasdaq debut",
@@ -5787,7 +5782,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/11/20/bitcoin-bots-pounced-within-seconds-when-researchers-exposed-their-keys",
           "publishedAt": "2026-11-20T13:30:22Z",
-          "score": "-0.2"
+          "score": "-0.3"
         },
         {
           "title": "ECBâs Lagarde warns Europe could lose control of growing tokenized asset market",
@@ -6691,8 +6686,8 @@
       "color": "#1a5c32",
       "action": "분할 매수",
       "regressionPrice": 191858.4,
-      "currentPrice": 60668.45,
-      "deviationPct": -68.38,
+      "currentPrice": 60224.42,
+      "deviationPct": -68.61,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6891,9 +6886,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75041.76,
-      "currentPrice": 60668.45,
-      "priceToSthRatio": 0.8085,
-      "premiumPct": -19.15,
+      "currentPrice": 60224.42,
+      "priceToSthRatio": 0.8025,
+      "premiumPct": -19.75,
       "signal": {
         "name": "BELOW_BAND",
         "description": "STH 원가 디스카운트 — 저점 매집 구간"
@@ -6923,7 +6918,7 @@
       "hasData": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": -42.8,
+      "compositeScore": -42.0,
       "extreme": {
         "name": "CAPITULATION_EXTREME",
         "description": "극단 항복 — 강한 매집 신호"
