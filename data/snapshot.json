@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-20T15:29:54Z",
+  "updatedAt": "2026-11-20T15:50:10Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -60,17 +60,17 @@
       "historicalVolatility": "0.43",
       "btcClose": "61938.80",
       "macd": {
-        "macdLine": "-4782.54",
-        "signalLine": "-3815.18",
-        "histogram": "-967.36",
+        "macdLine": "-4830.96",
+        "signalLine": "-3824.86",
+        "histogram": "-1006.10",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
       },
       "adx": {
         "adx": "53.0",
-        "plusDi": "4.7",
-        "minusDi": "38.9",
+        "plusDi": "4.6",
+        "minusDi": "39.8",
         "strength": "STRONG_DOWN",
         "strengthLabel": "강한 하락 추세",
         "trending": true
@@ -432,10 +432,10 @@
       "cumulativeFunding7d": "0.0002",
       "cumulativeFunding30d": "0.001769",
       "ivRv": {
-        "iv": "44.40",
+        "iv": "51.49",
         "rv": "43.00",
-        "spread": "+1.40",
-        "label": "균형"
+        "spread": "+8.49",
+        "label": "과대"
       },
       "fearGreedMa": {
         "currentFg": 10,
@@ -2539,9 +2539,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 69967,
-      "vsizeMb": "31.63",
-      "totalFeeBtc": "0.0521",
+      "txCount": 60374,
+      "vsizeMb": "29.91",
+      "totalFeeBtc": "0.0395",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2551,26 +2551,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "26.31"
+          "sharePct": "26.18"
         },
         {
           "name": "AntPool",
-          "sharePct": "19.18"
+          "sharePct": "19.19"
         },
         {
           "name": "F2Pool",
-          "sharePct": "19.09"
+          "sharePct": "19.00"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.55"
+          "sharePct": "8.70"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.65"
+          "sharePct": "6.71"
         }
       ],
-      "top3Concentration": "64.58",
+      "top3Concentration": "64.37",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -4241,63 +4241,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "60323.90",
-      "openInterestUsd": "5834983602.24010000",
-      "longAccountRatio": "0.7625",
-      "shortAccountRatio": "0.2375",
-      "downsideLiquidationUsd": "4449174996.71",
-      "upsideLiquidationUsd": "1385808605.53",
+      "currentPrice": "59716.40",
+      "openInterestUsd": "5844453068.62000000",
+      "longAccountRatio": "0.7690",
+      "shortAccountRatio": "0.2310",
+      "downsideLiquidationUsd": "4494384409.77",
+      "upsideLiquidationUsd": "1350068658.85",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "54291.51",
+          "price": "53744.76",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1779669998.68"
+          "notionalUsd": "1797753763.91"
         },
         {
-          "price": "66356.29",
+          "price": "65688.04",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "554323442.21"
+          "notionalUsd": "540027463.54"
         },
         {
-          "price": "57910.94",
+          "price": "57327.74",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1557211248.85"
+          "notionalUsd": "1573034543.42"
         },
         {
-          "price": "62736.86",
+          "price": "62105.06",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "485033011.94"
+          "notionalUsd": "472524030.60"
         },
         {
-          "price": "59117.42",
+          "price": "58522.07",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "889834999.34"
+          "notionalUsd": "898876881.95"
         },
         {
-          "price": "61530.38",
+          "price": "60910.73",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "277161721.11"
+          "notionalUsd": "270013731.77"
         },
         {
-          "price": "59720.66",
+          "price": "59119.24",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "222458749.84"
+          "notionalUsd": "224719220.49"
         },
         {
-          "price": "60927.14",
+          "price": "60313.56",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "69290430.28"
+          "notionalUsd": "67503432.94"
         }
       ],
       "errorMessage": null
@@ -5675,7 +5675,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-20T15:29:48.156462Z",
+      "generatedAt": "2026-11-20T15:50:02.217083Z",
       "compositeScore": 67,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5688,26 +5688,26 @@
         },
         {
           "type": "RISK",
-          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "MVRV-Z가 -1.41로 손실 상태를 나타내고 있음."
+          "content": "BTC 도미넌스 상승으로 알트코인 투자 위험이 증가하고 있다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 손실 리스크를 고려해야 함."
+          "content": "매수 기회를 염두에 두되, 시장 심리를 주의 깊게 관찰하라."
         },
         {
           "type": "ACTION",
-          "content": "포트폴리오 다각화를 통해 위험을 분산할 것."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-11-20T15:29:50.093397Z",
+      "generatedAt": "2026-11-20T15:50:03.885917Z",
       "compositeScore": 67,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5716,7 +5716,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a slight bullish sentiment but remains cautious with indicators reflecting fear and low momentum."
+          "content": "Market shows a slight bullish sentiment with accumulation favored, but indicators suggest caution."
         },
         {
           "type": "RISK",
@@ -5724,23 +5724,23 @@
         },
         {
           "type": "RISK",
-          "content": "Low RSI values indicate potential oversold conditions."
+          "content": "Low RSI levels indicate potential oversold conditions."
         },
         {
           "type": "ACTION",
-          "content": "Monitor for signs of recovery before making significant investments."
+          "content": "Consider gradual accumulation in a long-term strategy."
         },
         {
           "type": "ACTION",
-          "content": "Consider dollar-cost averaging to mitigate risk."
+          "content": "Monitor macroeconomic factors closely, especially interest rates."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-20T15:29:53.010240Z",
-      "compositeScore": "-0.213",
+      "generatedAt": "2026-11-20T15:50:06.192883Z",
+      "compositeScore": "-0.263",
       "label": "NEGATIVE",
       "labelDisplay": "부정",
       "labelHexColor": "#F97316",
@@ -5762,11 +5762,11 @@
           "score": "0.0"
         },
         {
-          "title": "Live news: Bitcoin hovers just above $61,000 as Anthropic slides after Nasdaq debut",
+          "title": "Live news: Bitcoin slips to fresh lows near $60,000 as Anthropic slides after Nasdaq debut",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
           "publishedAt": "2026-11-20T13:35:33Z",
-          "score": "0.1"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin bots pounced within seconds when researchers exposed their wallet keys",
@@ -5780,7 +5780,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/11/20/ecb-s-largarde-warns-europe-could-lose-control-of-growing-tokenized-asset-market",
           "publishedAt": "2026-11-20T13:11:49Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "Bitcoin, stocks and gold traders getting nervous, and volatility gauges are surging",
@@ -5794,7 +5794,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-drops-for-third-straight-day-as-asian-tech-shares-slide",
           "publishedAt": "2026-11-20T11:42:02Z",
-          "score": "-0.6"
+          "score": "-0.5"
         },
         {
           "title": "Coinbase targets first-half 2027 for its own prediction market contracts",
@@ -5802,6 +5802,13 @@
           "url": "https://www.coindesk.com/business/2026/11/20/coinbase-targets-first-half-2027-for-its-own-prediction-market-contracts",
           "publishedAt": "2026-11-20T10:48:04Z",
           "score": "0.2"
+        },
+        {
+          "title": "DBS bets it can lose the deposit and keep the client",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/dbs-bets-it-can-lose-the-deposit-and-keep-the-client?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-11-20T15:32:30Z",
+          "score": "0.0"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5815,7 +5822,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/lagarde-europe-limited-window-tokenization-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-20T13:21:39Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip",
@@ -5843,7 +5850,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/blackrock-ibit-record-single-day-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-20T08:18:42Z",
-          "score": "-0.5"
+          "score": "-0.6"
         },
         {
           "title": "SEC charges 8 firms over fake crypto platforms tied to $37M fraud",
@@ -5851,13 +5858,6 @@
           "url": "https://cointelegraph.com/news/sec-charges-eight-fake-crypto-platforms-37m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-20T08:03:34Z",
           "score": "-0.8"
-        },
-        {
-          "title": "Anthropic’s $81B IPO draws half the net retail buying of SpaceX’s",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/markets/anthropic-ipo-spacex-retail-buying-first-day-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-11-20T06:24:41Z",
-          "score": "0.0"
         }
       ],
       "errorMessage": null
@@ -6691,8 +6691,8 @@
       "color": "#1a5c32",
       "action": "분할 매수",
       "regressionPrice": 191858.4,
-      "currentPrice": 62387.75,
-      "deviationPct": -67.48,
+      "currentPrice": 61881.89,
+      "deviationPct": -67.75,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6891,9 +6891,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 75041.76,
-      "currentPrice": 62387.75,
-      "priceToSthRatio": 0.8314,
-      "premiumPct": -16.86,
+      "currentPrice": 61881.89,
+      "priceToSthRatio": 0.8246,
+      "premiumPct": -17.54,
       "signal": {
         "name": "BELOW_BAND",
         "description": "STH 원가 디스카운트 — 저점 매집 구간"
