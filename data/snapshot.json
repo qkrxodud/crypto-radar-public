@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-24T13:38:44Z",
+  "updatedAt": "2026-11-24T13:59:00Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.47",
       "btcClose": "61238.75",
       "macd": {
-        "macdLine": "-4839.65",
-        "signalLine": "-4465.94",
-        "histogram": "-373.70",
+        "macdLine": "-4855.82",
+        "signalLine": "-4469.18",
+        "histogram": "-386.64",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,9 +429,9 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.001570",
       "ivRv": {
-        "iv": "56.00",
+        "iv": "55.15",
         "rv": "47.00",
-        "spread": "+9.00",
+        "spread": "+8.15",
         "label": "과대"
       },
       "fearGreedMa": {
@@ -2536,48 +2536,48 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 45832,
-      "vsizeMb": "26.49",
-      "totalFeeBtc": "0.0358",
-      "congestionLevel": "보통 — 정상 대기열",
-      "congestionClass": "text-gray-300",
+      "txCount": 59796,
+      "vsizeMb": "29.42",
+      "totalFeeBtc": "0.0423",
+      "congestionLevel": "혼잡 — 수수료 상승 중",
+      "congestionClass": "text-yellow-400",
       "errorMessage": null
     },
     "api_bitcoin_mining_pools": {
       "hasData": true,
       "pools": [
         {
-          "name": "AntPool",
-          "sharePct": "22.21"
+          "name": "Foundry USA",
+          "sharePct": "22.24"
         },
         {
-          "name": "Foundry USA",
-          "sharePct": "22.12"
+          "name": "AntPool",
+          "sharePct": "22.15"
         },
         {
           "name": "F2Pool",
-          "sharePct": "16.45"
+          "sharePct": "16.50"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.68"
+          "sharePct": "8.66"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.76"
+          "sharePct": "6.75"
         }
       ],
-      "top3Concentration": "60.78",
+      "top3Concentration": "60.89",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 32536,
-      "nodeCount": 16228,
-      "capacityBtc": "3753.4053",
-      "avgChannelSizeBtc": "0.115362",
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4168,9 +4168,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "243768421092.94765",
+      "totalMarketCapUsd": "243749844470.88272",
       "marketCap30dAgoUsd": "253832757273.43805",
-      "growth30dPercent": "-3.96",
+      "growth30dPercent": "-3.97",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -4239,63 +4239,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "60170.90",
-      "openInterestUsd": "5839346973.95539950",
-      "longAccountRatio": "0.7152",
-      "shortAccountRatio": "0.2848",
-      "downsideLiquidationUsd": "4176300955.77",
-      "upsideLiquidationUsd": "1663046018.18",
+      "currentPrice": "59983.60",
+      "openInterestUsd": "5838108832.12812600",
+      "longAccountRatio": "0.7151",
+      "shortAccountRatio": "0.2849",
+      "downsideLiquidationUsd": "4174831625.85",
+      "upsideLiquidationUsd": "1663277206.27",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "54153.81",
+          "price": "53985.24",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1670520382.31"
+          "notionalUsd": "1669932650.34"
         },
         {
-          "price": "66187.99",
+          "price": "65981.96",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "665218407.27"
+          "notionalUsd": "665310882.51"
         },
         {
-          "price": "57764.06",
+          "price": "57584.26",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1461705334.52"
+          "notionalUsd": "1461191069.05"
         },
         {
-          "price": "62577.74",
+          "price": "62382.94",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "582066106.36"
+          "notionalUsd": "582147022.20"
         },
         {
-          "price": "58967.48",
+          "price": "58783.93",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "835260191.15"
+          "notionalUsd": "834966325.17"
         },
         {
-          "price": "61374.32",
+          "price": "61183.27",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "332609203.64"
+          "notionalUsd": "332655441.25"
         },
         {
-          "price": "59569.19",
+          "price": "59383.76",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208815047.79"
+          "notionalUsd": "208741581.29"
         },
         {
-          "price": "60772.61",
+          "price": "60583.44",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "83152300.91"
+          "notionalUsd": "83163860.31"
         }
       ],
       "errorMessage": null
@@ -5692,7 +5692,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-24T13:38:38.975668Z",
+      "generatedAt": "2026-11-24T13:58:54.577227Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5701,30 +5701,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적이며, 공포가 우세하지만 일부 긍정적인 신호도 존재한다."
+          "content": "현재 암호화폐 시장은 중립적인 상태로, 공포와 탐욕 지수가 매우 낮아 투자 심리가 위축되어 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 11로 극단적인 공포를 나타내고 있다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "RSI(일)가 26.56으로 과매도 상태에 있다."
+          "content": "BTC 도미넌스가 높은 상황에서 알트코인 성과가 부진하다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 신중한 접근이 필요하다."
+          "content": "단기 매매보다는 장기 투자 관점에서 접근하는 것이 바람직하다."
         },
         {
           "type": "ACTION",
-          "content": "장기 투자 관점에서 매수 기회를 모색할 수 있다."
+          "content": "시장 심리 회복을 기다리며 추가 매수 기회를 모색하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-11-24T13:38:41.143336Z",
+      "generatedAt": "2026-11-24T13:58:56.417699Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5733,31 +5733,31 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market shows a neutral sentiment with indicators suggesting caution due to low RSI and high fear."
+          "content": "The market sentiment is neutral with signs of fear and low on-chain activity."
         },
         {
           "type": "RISK",
-          "content": "Low RSI levels indicate potential oversold conditions."
+          "content": "High fear sentiment (Fear & Greed Index at 11) indicates potential for further declines."
         },
         {
           "type": "RISK",
-          "content": "Negative funding rates may signal bearish sentiment."
+          "content": "Low RSI values suggest oversold conditions but may lead to continued weakness."
         },
         {
           "type": "ACTION",
-          "content": "Consider waiting for a clearer bullish signal before entering positions."
+          "content": "Monitor for signs of recovery in on-chain metrics before entering positions."
         },
         {
           "type": "ACTION",
-          "content": "Monitor on-chain metrics for signs of recovery."
+          "content": "Consider hedging strategies to mitigate potential downside risks."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-24T13:38:43.085960Z",
-      "compositeScore": "-0.194",
+      "generatedAt": "2026-11-24T13:58:58.153593Z",
+      "compositeScore": "-0.200",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5821,18 +5821,25 @@
           "score": "-0.4"
         },
         {
+          "title": "Sky lender proposes buyback of up to $50M to fund stUSDS withdrawals",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/sky-community-proposes-50m-buybacks-stusds-liquidity-crisis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-11-24T13:43:46Z",
+          "score": "0.2"
+        },
+        {
           "title": "Grayscale calls Bitcoin ‘oversold’ at $62K but warns of AI risks",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-oversold-ai-risks-grayscale?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-24T13:11:44Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "South Korea proposes bank-led stablecoins, 20% cap on crypto exchange stakes",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/south-korea-draft-bill-crypto-innovation-user-protection?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-24T12:04:16Z",
-          "score": "0.1"
+          "score": "-0.2"
         },
         {
           "title": "Bitcoin dipped on Huang’s Nvidia exit but jumped 5% on his return",
@@ -5853,7 +5860,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/markets/bitcoin-etfs-bleed-ibit-shares-gain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-24T07:41:50Z",
-          "score": "-0.4"
+          "score": "-0.3"
         },
         {
           "title": "Here’s what happened in crypto today",
@@ -5868,13 +5875,6 @@
           "url": "https://cointelegraph.com/markets/why-42-macro-says-its-waiting-to-buy-the-bitcoin-dip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-24T05:07:30Z",
           "score": "0.2"
-        },
-        {
-          "title": "Google wants to make you the star of your own AI slop movies",
-          "source": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/google-wants-make-you-star-your-own-ai-slop-movies?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-11-24T03:13:22Z",
-          "score": "0.0"
         }
       ],
       "errorMessage": null
@@ -6708,8 +6708,8 @@
       "color": "#1a5c32",
       "action": "분할 매수",
       "regressionPrice": 192374.1,
-      "currentPrice": 60851.1,
-      "deviationPct": -68.37,
+      "currentPrice": 60732.48,
+      "deviationPct": -68.43,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6908,9 +6908,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74159.12,
-      "currentPrice": 60851.1,
-      "priceToSthRatio": 0.8205,
-      "premiumPct": -17.95,
+      "currentPrice": 60732.48,
+      "priceToSthRatio": 0.8189,
+      "premiumPct": -18.11,
       "signal": {
         "name": "BELOW_BAND",
         "description": "STH 원가 디스카운트 — 저점 매집 구간"
@@ -6940,7 +6940,7 @@
       "hasData": true
     },
     "api_expert_crowd_extreme": {
-      "compositeScore": -43.2,
+      "compositeScore": -43.6,
       "extreme": {
         "name": "CAPITULATION_EXTREME",
         "description": "극단 항복 — 강한 매집 신호"
