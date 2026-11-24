@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-24T21:05:23Z",
+  "updatedAt": "2026-11-24T21:25:36Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.47",
       "btcClose": "61238.75",
       "macd": {
-        "macdLine": "-4876.49",
-        "signalLine": "-4473.31",
-        "histogram": "-403.18",
+        "macdLine": "-4863.73",
+        "signalLine": "-4470.76",
+        "histogram": "-392.97",
         "crossType": "NONE",
         "crossLabel": "크로스 없음",
         "bullish": false
@@ -429,10 +429,10 @@
       "cumulativeFunding7d": "0.0000",
       "cumulativeFunding30d": "0.001570",
       "ivRv": {
-        "iv": "53.52",
+        "iv": "51.17",
         "rv": "47.00",
-        "spread": "+6.52",
-        "label": "과대"
+        "spread": "+4.17",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 11,
@@ -2536,9 +2536,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 60465,
-      "vsizeMb": "29.65",
-      "totalFeeBtc": "0.0572",
+      "txCount": 67643,
+      "vsizeMb": "30.53",
+      "totalFeeBtc": "0.0484",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2548,36 +2548,36 @@
       "pools": [
         {
           "name": "AntPool",
-          "sharePct": "22.51"
+          "sharePct": "22.58"
         },
         {
           "name": "Foundry USA",
-          "sharePct": "22.42"
+          "sharePct": "22.49"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.83"
+          "sharePct": "15.81"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.78"
+          "sharePct": "8.68"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "6.77"
+          "sharePct": "6.76"
         }
       ],
-      "top3Concentration": "60.76",
+      "top3Concentration": "60.88",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
     },
     "api_bitcoin_lightning": {
       "hasData": true,
-      "channelCount": 32536,
-      "nodeCount": 16228,
-      "capacityBtc": "3753.4053",
-      "avgChannelSizeBtc": "0.115362",
+      "channelCount": 41080,
+      "nodeCount": 17438,
+      "capacityBtc": "4898.2676",
+      "avgChannelSizeBtc": "0.119237",
       "signal": "Lightning 초기 단계 -- 채택률 모니터링 필요",
       "signalClass": "text-gray-300",
       "errorMessage": null
@@ -4239,63 +4239,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "59717.70",
-      "openInterestUsd": "5795308784.20560000",
-      "longAccountRatio": "0.7189",
-      "shortAccountRatio": "0.2811",
-      "downsideLiquidationUsd": "4166247484.97",
-      "upsideLiquidationUsd": "1629061299.24",
+      "currentPrice": "59882.20",
+      "openInterestUsd": "5799237618.80396400",
+      "longAccountRatio": "0.7176",
+      "shortAccountRatio": "0.2824",
+      "downsideLiquidationUsd": "4161532915.25",
+      "upsideLiquidationUsd": "1637704703.55",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "53745.93",
+          "price": "53893.98",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1666498993.99"
+          "notionalUsd": "1664613166.10"
         },
         {
-          "price": "65689.47",
+          "price": "65870.42",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "651624519.70"
+          "notionalUsd": "655081881.42"
         },
         {
-          "price": "57328.99",
+          "price": "57486.91",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1458186619.74"
+          "notionalUsd": "1456536520.34"
         },
         {
-          "price": "62106.41",
+          "price": "62277.49",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "570171454.73"
+          "notionalUsd": "573196646.24"
         },
         {
-          "price": "58523.35",
+          "price": "58684.56",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "833249496.99"
+          "notionalUsd": "832306583.05"
         },
         {
-          "price": "60912.05",
+          "price": "61079.84",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "325812259.85"
+          "notionalUsd": "327540940.71"
         },
         {
-          "price": "59120.52",
+          "price": "59283.38",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "208312374.25"
+          "notionalUsd": "208076645.76"
         },
         {
-          "price": "60314.88",
+          "price": "60481.02",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "81453064.96"
+          "notionalUsd": "81885235.18"
         }
       ],
       "errorMessage": null
@@ -5692,7 +5692,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-24T21:05:18.687854Z",
+      "generatedAt": "2026-11-24T21:25:30.933054Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5701,30 +5701,30 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 시장은 중립적인 상태로, 공포가 지배하고 있으며 기술적 지표가 약세를 보이고 있다."
+          "content": "현재 암호화폐 시장은 중립적인 상태로, 공포 심리가 우세하며 기술적 지표가 약세를 보이고 있다."
         },
         {
           "type": "RISK",
-          "content": "공포탐욕 지수가 11로 극단적인 공포를 나타내고 있다."
+          "content": "낮은 RSI 수치로 인해 추가 하락 가능성이 존재한다."
         },
         {
           "type": "RISK",
-          "content": "RSI(일)가 26.56으로 과매도 상태에 진입했다."
+          "content": "거래소 순유입이 마이너스여서 매도 압력이 우려된다."
         },
         {
           "type": "ACTION",
-          "content": "단기적인 반등을 노리기 위해 매수 기회를 모색하라."
+          "content": "단기 투자자는 관망하며 추가 하락을 지켜보는 것이 좋다."
         },
         {
           "type": "ACTION",
-          "content": "시장의 변동성을 고려하여 리스크 관리에 유의하라."
+          "content": "장기 투자자는 가격 조정 시 매수 기회를 고려할 수 있다."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-11-24T21:05:20.556055Z",
+      "generatedAt": "2026-11-24T21:25:33.305744Z",
       "compositeScore": 62,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5733,11 +5733,11 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "The market is currently neutral with signs of fear and low on-chain activity."
+          "content": "The market shows a neutral sentiment with indicators reflecting fear and low activity."
         },
         {
           "type": "RISK",
-          "content": "High fear sentiment indicated by a Fear & Greed score of 11."
+          "content": "Fear and Greed index at 11 indicates extreme fear."
         },
         {
           "type": "RISK",
@@ -5745,19 +5745,19 @@
         },
         {
           "type": "ACTION",
-          "content": "Monitor market closely for signs of recovery or further decline."
+          "content": "Consider cautious trading strategies due to market uncertainty."
         },
         {
           "type": "ACTION",
-          "content": "Consider cautious entry points if bullish signals emerge."
+          "content": "Monitor key indicators for signs of recovery or further decline."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-24T21:05:22.461741Z",
-      "compositeScore": "-0.038",
+      "generatedAt": "2026-11-24T21:25:35.311113Z",
+      "compositeScore": "-0.044",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
@@ -5769,7 +5769,7 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there",
           "publishedAt": "2026-11-24T17:50:08Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "'AI trade never died': Traders see room for market recovery, but bitcoin's participation is another story",
@@ -5797,21 +5797,21 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/11/24/a-wallet-linked-to-popular-crypto-trader-ansem-sold-usd2-million-in-memecoins-as-his-namesake-token-cratered",
           "publishedAt": "2026-11-24T12:47:49Z",
-          "score": "-0.5"
+          "score": "-0.7"
         },
         {
           "title": "Live updates: Bitcoin pulls back below $60,000, stock rally fades, as tariffs re-enter the picture",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto",
           "publishedAt": "2026-11-24T12:47:40Z",
-          "score": "-0.4"
+          "score": "-0.5"
         },
         {
           "title": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion",
           "publishedAt": "2026-11-24T12:36:28Z",
-          "score": "-0.7"
+          "score": "-0.8"
         },
         {
           "title": "JPMorgan, HSBC and StoneX complete first digital gold trades in London",
@@ -5825,7 +5825,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/utah-moves-to-dismiss-criminal-charges-against-kalshi-after-trading-halt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-24T20:48:27Z",
-          "score": "0.0"
+          "score": "0.1"
         },
         {
           "title": "Bitcoin sell-off driven by weak demand, forced liquidations: 21Shares",
@@ -5839,7 +5839,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/coldcard-how-security-reviews-missed-bitcoin-wallet-flaw-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-24T19:04:26Z",
-          "score": "-0.5"
+          "score": "-0.4"
         },
         {
           "title": "CFTC sets new prediction market rules as more firms seek US entry",
@@ -6708,8 +6708,8 @@
       "color": "#1a5c32",
       "action": "분할 매수",
       "regressionPrice": 192546.25,
-      "currentPrice": 60527.63,
-      "deviationPct": -68.56,
+      "currentPrice": 60709.85,
+      "deviationPct": -68.47,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6908,9 +6908,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 74159.12,
-      "currentPrice": 60527.63,
-      "priceToSthRatio": 0.8162,
-      "premiumPct": -18.38,
+      "currentPrice": 60709.85,
+      "priceToSthRatio": 0.8186,
+      "premiumPct": -18.14,
       "signal": {
         "name": "BELOW_BAND",
         "description": "STH 원가 디스카운트 — 저점 매집 구간"
