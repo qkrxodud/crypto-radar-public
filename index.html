@@ -3,19 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-en="Dashboard — BTC Timing Radar">대시보드 — BTC 투자 타이밍 레이더</title>
+<title data-en="Bitcoin Timing Dashboard — Daily Composite Score from 40+ Indicators | BTC Timing Radar">비트코인 매수 타이밍 대시보드 — 40개+ 지표 종합 점수 | BTC 타이밍 레이더</title>
 <meta name="description" content="비트코인 시장의 40개 이상 지표(RSI, MVRV-Z, SOPR, 공포탐욕지수, 펀딩비 등)를 매일 자동 분석하는 무료 대시보드입니다." data-en-content="A free dashboard that automatically analyzes 40+ Bitcoin market indicators daily (RSI, MVRV-Z, SOPR, Fear & Greed Index, funding rate, and more).">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="mpKDRcv53QmEiwIpjK5V-lJ5zAKD1vjq--f8th2JL6w">
 <meta name="naver-site-verification" content="83bf0a0ab453fd31567a6f047a9c91553b9bbdfe">
 <link rel="canonical" href="https://btctiming.co.kr/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://btctiming.co.kr/og/default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BTC 타이밍 레이더 — 비트코인 타이밍 종합 점수">
+<meta name="twitter:image" content="https://btctiming.co.kr/og/default.png">
 <meta property="og:url" content="https://btctiming.co.kr/">
 <meta property="og:site_name" content="BTC 투자 타이밍 레이더">
 <meta property="og:title" content="BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드" data-en-content="BTC Timing Radar — Bitcoin Composite Indicator Dashboard">
 <meta property="og:description" content="비트코인 시장의 40개 이상 지표를 매일 자동 분석하는 무료 대시보드. 매일 오전 9시 5분 갱신." data-en-content="A free dashboard that automatically analyzes 40+ Bitcoin market indicators every day. Updated daily at 09:05 KST.">
 <meta property="og:locale" content="ko_KR">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BTC 투자 타이밍 레이더 — 비트코인 종합 지표 대시보드" data-en-content="BTC Timing Radar — Bitcoin Composite Indicator Dashboard">
 <meta name="twitter:description" content="비트코인 시장의 40개 이상 지표를 매일 자동 분석하는 무료 대시보드. 매일 오전 9시 5분 갱신." data-en-content="A free dashboard that automatically analyzes 40+ Bitcoin market indicators every day. Updated daily at 09:05 KST.">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
@@ -588,7 +593,7 @@
       <!-- Hero -->
       <div class="hero">
         <div class="gauge-wrap">
-          <svg viewBox="0 0 200 200">
+          <svg viewBox="0 0 200 200" role="img" id="gaugeSvg" aria-label="종합 점수">
             <circle cx="100" cy="100" r="82" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="15" stroke-linecap="round" stroke-dasharray="386.4 600" transform="rotate(135 100 100)"></circle>
             <circle id="gaugeArc" cx="100" cy="100" r="82" fill="none" stroke="var(--green)" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 600" transform="rotate(135 100 100)"></circle>
           </svg>
@@ -1059,11 +1064,11 @@
   </div>
 </div>
 
-<!-- Firebase compat SDK (동기 로드) -->
-<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+<!-- Firebase compat SDK (defer — 방문자 카운터 전용) -->
+<script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
 <!-- 다국어(i18n) 런타임 — 인라인 IIFE보다 먼저 동기 로드해 window.BTCI18N을 파싱 시점에 확보(defer 캡처 레이스 방지) -->
-<script src="btc-i18n.js?v=6"></script>
+<script src="btc-i18n.js?v=7"></script>
 <script>
 (function(){
 'use strict';
@@ -1255,7 +1260,8 @@ function animateGauge(score,color){
 async function init(){
   var snap;
   try{
-    var r=await fetch('./data/snapshot.json?t='+Date.now());
+    // 10분 버킷 — 갱신 주기(20분)·CDN max-age(600s)와 맞춰 매 방문 캐시 우회를 피한다
+    var r=await fetch('./data/snapshot.json?t='+Math.floor(Date.now()/600000));
     snap=await r.json();
   }catch(e){
     ge('loading').innerHTML='<div style="color:'+RED+';font-size:14px;text-align:center">'+T({ko:'데이터 로드 실패',en:'Failed to load data'})+'<br><span style="font-size:12px;color:#8b93a7">'+e.message+'</span></div>';
@@ -1309,14 +1315,15 @@ async function init(){
 
   /* ── Hero ── */
   animateGauge(SCORE,scoreCol);
+  ge('gaugeSvg').setAttribute('aria-label',T({ko:'종합 점수 '+SCORE+'점, '+(m.signalDisplay||''),en:'Composite score '+SCORE+', '+ML(m.signalDisplay||'')}));
   ge('heroDate').textContent=T({ko:'오늘의 비트코인 타이밍',en:"Today's Bitcoin timing"})+(updDate?' · '+updDate+(updTime?' '+updTime+' KST':''):'');
   // 헤드라인: 비중·횟수를 정해 주는 actionReason 처방 문장은 쓰지 않고, ko/en 모두 구간명 + 인접 구간까지 거리만 노출
   var sd=m.signalDisplay||'중립';   // 로직/원문용 한국어 유지
   var isEn=window.BTCI18N&&window.BTCI18N.lang==='en';
   var hdist=d.api_dashboard_signal_distance||{};
   var hparts=[];
-  if(hdist.hasData&&hdist.lowerLabelDisplay&&hdist.pointsToLower!=null)hparts.push(ML(hdist.lowerLabelDisplay)+T({ko:'까지 −',en:' −'})+hdist.pointsToLower+T({ko:'점',en:' pts'}));
-  if(hdist.hasData&&hdist.higherLabelDisplay&&hdist.pointsToHigher!=null)hparts.push(ML(hdist.higherLabelDisplay)+T({ko:'까지 +',en:' +'})+hdist.pointsToHigher+T({ko:'점',en:' pts'}));
+  if(hdist.hasData&&hdist.lowerLabelDisplay&&hdist.pointsToLower!=null)hparts.push('<span style="white-space:nowrap">'+ML(hdist.lowerLabelDisplay)+T({ko:'까지 −',en:' −'})+hdist.pointsToLower+T({ko:'점',en:' pts'})+'</span>');
+  if(hdist.hasData&&hdist.higherLabelDisplay&&hdist.pointsToHigher!=null)hparts.push('<span style="white-space:nowrap">'+ML(hdist.higherLabelDisplay)+T({ko:'까지 +',en:' +'})+hdist.pointsToHigher+T({ko:'점',en:' pts'})+'</span>');
   ge('heroHeadline').innerHTML='<span style="color:'+scoreCol+'">'+ML(sd)+'</span>'+T({ko:' 구간',en:' zone'})
     +(hparts.length?' <span style="color:var(--t3);font-size:.72em;font-weight:600">· '+hparts.join(' · ')+'</span>':'');
   // 배지: signalLabel/Display 기반 색
@@ -1506,7 +1513,7 @@ async function init(){
     var html='<div class="ai-meta"><span class="ai-tone" style="color:'+dcol+'">'+esc(ML(dtone))+(dsc?' · '+dsc:'')+'</span>'+(gt?'<span class="ai-time">'+gt+T({ko:' 갱신',en:' updated'})+'</span>':'')+'</div>';
     if(grp.SUMMARY.length) html+='<p class="ai-sum">'+grp.SUMMARY.map(esc).join(' ')+'</p>';
     html+=groupHtml(T({ko:'위험 신호',en:'Risk Signals'}),RED,grp.RISK);
-    html+=groupHtml(T({ko:'권고 행동',en:'Recommended Action'}),GREEN,grp.ACTION);
+    // ACTION(LLM 행동 권고: 매수/매도 지시)은 공개 사이트에서 노출하지 않는다 — 히어로 처방 문구 제거와 같은 취지
     html+=groupHtml(T({ko:'기회',en:'Opportunity'}),GREEN,grp.OPPORTUNITY);
     ge('expertText').innerHTML=html;
   } else {
@@ -2314,7 +2321,7 @@ async function init(){
         var nm=isEnX?(e.displayNameEn||e.displayName):e.displayName;
         var cell=mk('div','acc-cell',
           '<div class="l" title="'+(e.description||'')+' — '+(e.detail||'')+'">'+nm+'</div>'+
-          '<div class="v" style="color:'+col+'">'+e.score+' <small style="color:'+col+';opacity:.8">'+ML(e.labelDisplay||'')+'</small></div>');
+          '<div class="v" style="color:'+col+'">'+e.score+' <small style="color:'+col+';opacity:.8;font-size:11px">'+ML(e.labelDisplay||'')+'</small></div>');
         xl.appendChild(cell);
       });
     }
@@ -2349,7 +2356,8 @@ init();
  * 방문자 카운터 (Firebase Realtime Database) — index.html에서 그대로 이식
  * snapshot 대시보드 로직과 독립적인 별도 IIFE. 실패해도 폴백 '--' 유지.
  * ────────────────────────────────────────────────────────── */
-(function(){
+// 방문자 카운터는 부가 기능 — SDK를 defer로 받고 DOM 파싱이 끝난 뒤 실행해 첫 렌더를 막지 않는다
+document.addEventListener('DOMContentLoaded',function(){
   'use strict';
   if(typeof firebase==='undefined'||!firebase.database){
     console.warn('[visitor] Firebase SDK not available, skipping visitor counter');
@@ -2395,7 +2403,7 @@ init();
       }
     }catch(e){console.warn('[visitor] sessionStorage unavailable, count skipped:',e&&e.message);}
   }catch(e){console.warn('[visitor] init failed, keeping fallback:',e&&e.message);}
-})();
+});
 </script>
 </body>
 </html>

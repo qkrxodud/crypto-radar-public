@@ -143,11 +143,6 @@
     '관심 구간': { en: 'Watch zone', zh: '关注区间' },
     '역추세 매수 기회': { en: 'Counter-trend buy opportunity', zh: '逆势买入机会' },
 
-    /* dcaZones[].range */
-    '35점 미만': { en: 'Below 35 pts', zh: '35 分以下' },
-    '35~49점': { en: '35–49 pts', zh: '35~49 分' },
-    '50~64점': { en: '50–64 pts', zh: '50~64 分' },
-    '65~79점': { en: '65–79 pts', zh: '65~79 分' },
     /* V15-01 분배 구간 재보정 후 dcaZones[].range (82/65/54/49 경계) */
     '82점 이상': { en: '82+ pts', zh: '82 分以上' },
     '65~81점': { en: '65–81 pts', zh: '65~81 分' },
@@ -155,7 +150,6 @@
     '49~53점': { en: '49–53 pts', zh: '49~53 分' },
     '48점 이하': { en: '48 pts or below', zh: '48 分以下' },
     '매도 고려': { en: 'Consider selling', zh: '考虑卖出' },
-    '80점 이상': { en: '80+ pts', zh: '80 分以上' },
 
     /* dcaBacktest[].label */
     '50점 이상 매수': { en: 'Buy at 50+', zh: '50 分以上买入' },
@@ -345,6 +339,8 @@
     '극도 탐욕': { en: 'Extreme Greed', zh: '极度贪婪' },
 
     /* 홈 동적 라벨·마스터 스코어 사유 (2026-11-27 영어판 누락 보완) */
+    '순유입': { en: 'Net inflow', zh: '净流入' },
+    '순유출': { en: 'Net outflow', zh: '净流出' },
     '극단적 저평가': { en: 'Extreme undervaluation', zh: '极度低估' },
     'STH 원가 디스카운트 — 저점 매집 구간': { en: 'STH cost-basis discount — bottom accumulation zone', zh: '短期持有者成本折价 — 底部吸筹区间' },
     '극단 항복 — 강한 매집 신호': { en: 'Extreme capitulation — strong accumulation signal', zh: '极度投降 — 强吸筹信号' },
@@ -503,7 +499,7 @@
   }
 
   /* ── 5. 언어 스위처 자동 주입 + 스타일 ──────────────────────────────── */
-  // 스타일은 btc-base.css를 건드리지 않고 JS가 <style>로 주입한다.
+  // 스타일은 공통 CSS 파일 없이 JS가 <style>로 주입한다.
   function injectStyle() {
     if (document.getElementById('btc-i18n-style')) return;
     var css =
