@@ -162,7 +162,7 @@ React 대시보드(`/react/dashboard`)의 데이터를 정적 GitHub Pages 사�
 - 지표 22편·guide: byline(발행·수정일) + JSON-LD author Person + `<meta name="author">`
 - 홈 "전문가 종합 의견" → "AI 요약 · 자동 생성 · 참고용" + gpt-4o-mini 생성 고지, 뉴스 감성 AI 분류 고지, "전문가 분석 점수" → "복합 분석 점수 · 규칙 기반"
 
-### A-03 글(posts/) 신설 (진행 중 — 3/12)
+### A-03 글(posts/) 신설 (진행 중 — 4/12, 11-03~11-24 예정 7편 미게시 — 소급 날짜 금지, 일정 재수립 필요)
 - 생성기: 세션 스크래치 `gen_posts.py` (indicators/rsi.html 셸 재사용). 새 글은 같은 셸로 작성, `posts/index.html`·`sitemap.xml`·홈 `#todayNote` 최신 글 갱신 필수.
 - **게시 일정 (하루에 몰아 올리지 말 것 — 일괄 생성 패턴 재발 방지)**
 
@@ -178,7 +178,7 @@ React 대시보드(`/react/dashboard`)의 데이터를 정적 GitHub Pages 사�
 | 2026-11-17 | 월간 신호 성적표 읽는 법 — 2022-11 +20.5%p와 2025-03 −33.1%p | signal_accuracy.monthly |
 | 2026-11-20 | 주간 지표 리뷰 (11-20) | 당일 snapshot |
 | 2026-11-24 | 중립이 53일 이어진다는 것 — 라벨 전환 212회 중 39%가 2일 내 되돌아감 | timing_verdict.stability |
-| 2026-11-27 | 주간 지표 리뷰 (11-27) | 당일 snapshot |
+| 2026-11-27 ✅ | 주간 지표 리뷰 (11-27): 점수 62→66·BTC −22%·공포 20일째 | api_dashboard, timing_verdict |
 | 2026-12-01 | 2022년 6월 94점이 바닥이 아니었던 이유 — 강력 매집 구간의 90일 뒤 44% | bands UNDERVALUED, landmarks |
 
 ### A-04 지표 상세 템플릿 차별화 (완료 2026-10-30)
