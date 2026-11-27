@@ -587,7 +587,7 @@
         </div>
         <div class="hero-body">
           <h1 class="hero-date" id="heroDate">오늘의 비트코인 타이밍</h1>
-          <div class="hero-h" id="heroHeadline">혼합 시장 + 완만한 매수 적기 (저변동성-집중진입) → BTC 20% 투입 (3회 분할, 5일 간격 DCA)</div>
+          <div class="hero-h" id="heroHeadline">매집 우세 구간 · 중립까지 −2점 · 강력 매집까지 +16점</div>
           <div class="hero-meta">
             <div class="hero-badge" id="heroBadge"><span class="sw"></span><span id="heroBadgeText">매집 우세</span></div>
             <span class="hero-delta" id="heroDelta">= 0 (어제 대비)</span>
@@ -1051,7 +1051,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
 <!-- 다국어(i18n) 런타임 — 인라인 IIFE보다 먼저 동기 로드해 window.BTCI18N을 파싱 시점에 확보(defer 캡처 레이스 방지) -->
-<script src="btc-i18n.js?v=4"></script>
+<script src="btc-i18n.js?v=5"></script>
 <script>
 (function(){
 'use strict';
@@ -1265,14 +1265,15 @@ async function init(){
   /* ── Hero ── */
   animateGauge(SCORE,scoreCol);
   ge('heroDate').textContent=T({ko:'오늘의 비트코인 타이밍',en:"Today's Bitcoin timing"})+(updDate?' · '+updDate+(updTime?' '+updTime+' KST':''):'');
-  // 헤드라인: ko는 actionReason(백엔드 한국어 문장) 우선, en은 라벨 매핑 불가 문장이므로 signalDisplay 기반으로 구성
+  // 헤드라인: 비중·횟수를 정해 주는 actionReason 처방 문장은 쓰지 않고, ko/en 모두 구간명 + 인접 구간까지 거리만 노출
   var sd=m.signalDisplay||'중립';   // 로직/원문용 한국어 유지
   var isEn=window.BTCI18N&&window.BTCI18N.lang==='en';
-  if(isEn){
-    ge('heroHeadline').innerHTML='<span style="color:'+scoreCol+'">'+ML(sd)+'</span> zone';
-  }else{
-    ge('heroHeadline').innerHTML=(m.actionReason||(sd+' 구간입니다')).replace(/(관망|중립|매수|매도|분할)/,'<span style="color:'+scoreCol+'">$1</span>');
-  }
+  var hdist=d.api_dashboard_signal_distance||{};
+  var hparts=[];
+  if(hdist.hasData&&hdist.lowerLabelDisplay&&hdist.pointsToLower!=null)hparts.push(ML(hdist.lowerLabelDisplay)+T({ko:'까지 −',en:' −'})+hdist.pointsToLower+T({ko:'점',en:' pts'}));
+  if(hdist.hasData&&hdist.higherLabelDisplay&&hdist.pointsToHigher!=null)hparts.push(ML(hdist.higherLabelDisplay)+T({ko:'까지 +',en:' +'})+hdist.pointsToHigher+T({ko:'점',en:' pts'}));
+  ge('heroHeadline').innerHTML='<span style="color:'+scoreCol+'">'+ML(sd)+'</span>'+T({ko:' 구간',en:' zone'})
+    +(hparts.length?' <span style="color:var(--t3);font-size:.72em;font-weight:600">· '+hparts.join(' · ')+'</span>':'');
   // 배지: signalLabel/Display 기반 색
   var badgeCol=scoreColor(SCORE);
   var hb=ge('heroBadge');

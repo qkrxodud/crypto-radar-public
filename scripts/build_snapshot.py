@@ -115,9 +115,19 @@ def inject_static_hero(snapshot, index_path):
         price = "--"
     delta_txt = ("▲ +" if delta > 0 else "▼ " if delta < 0 else "= ") + f"{delta} (어제 대비)"
     date_txt = (m.get("dataDate") or "").replace("-", ".")
+    # 헤드라인은 처방형 actionReason(비중·분할 지시) 대신 구간명 + 인접 구간까지 거리 (JS 렌더와 동일)
+    dist = (snapshot.get("data") or {}).get("api_dashboard_signal_distance") or {}
+    headline = (m.get("signalDisplay") or "--") + " 구간"
+    hparts = []
+    if dist.get("hasData") and dist.get("lowerLabelDisplay") and dist.get("pointsToLower") is not None:
+        hparts.append(f"{dist['lowerLabelDisplay']}까지 −{dist['pointsToLower']}점")
+    if dist.get("hasData") and dist.get("higherLabelDisplay") and dist.get("pointsToHigher") is not None:
+        hparts.append(f"{dist['higherLabelDisplay']}까지 +{dist['pointsToHigher']}점")
+    if hparts:
+        headline += " · " + " · ".join(hparts)
     reps = [
         (r'(<div class="gv" id="gaugeVal">)[^<]*(</div>)', str(score) if score is not None else "--"),
-        (r'(<div class="hero-h" id="heroHeadline">)[^<]*(</div>)', _html.escape(m.get("actionReason") or "--")),
+        (r'(<div class="hero-h" id="heroHeadline">)[^<]*(</div>)', _html.escape(headline)),
         (r'(<span id="heroBadgeText">)[^<]*(</span>)', _html.escape(m.get("signalDisplay") or "--")),
         (r'(<span class="hero-delta" id="heroDelta">)[^<]*(</span>)', delta_txt),
         (r'(<span class="hero-price" id="heroPrice">)[^<]*(</span>)', price),

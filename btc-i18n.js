@@ -4,7 +4,7 @@
  * 프레임워크·번들러 없음. 모든 페이지가 공유하는 단일 IIFE.
  *
  * 핵심 동작
- *  1) 언어 결정: ?lang= → localStorage → navigator.language → 기본 ko
+ *  1) 언어 결정: ?lang= → localStorage → 기본 ko (브라우저 언어 자동감지 없음)
  *  2) data-en 속성 기반 정적 텍스트 번역 (ko는 요소 원문 그대로)
  *  3) 언어 스위처(KO · EN) 자동 주입 (V2 topbar/mobile-bar) + 스타일 <style> 주입
  *  4) snapshot 한국어 라벨 → 현재 언어 매핑 테이블 (mapLabel)
@@ -44,15 +44,10 @@
     catch (e) { return null; }
   }
 
-  // navigator 언어 읽기
-  function fromNav() {
-    try { return normalize(navigator.language || (navigator.languages || [])[0]); }
-    catch (e) { return null; }
-  }
-
   // 우선순위에 따라 최종 언어 결정. 쿼리로 들어오면 store에도 반영한다.
+  // 브라우저 언어(navigator)는 보지 않는다 — en-US 렌더러(검색 봇)가 영어판을 색인하지 않도록 기본은 항상 ko.
   var queryLang = fromQuery();
-  var lang = queryLang || fromStore() || fromNav() || 'ko';
+  var lang = queryLang || fromStore() || 'ko';
   if (SUPPORTED.indexOf(lang) < 0) lang = 'ko';
   if (queryLang) {
     try { localStorage.setItem(STORE_KEY, queryLang); } catch (e) {}
