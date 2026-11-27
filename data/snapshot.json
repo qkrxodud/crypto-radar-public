@@ -1,6 +1,6 @@
 {
   "hasData": true,
-  "updatedAt": "2026-11-27T05:03:25Z",
+  "updatedAt": "2026-11-27T05:23:41Z",
   "data": {
     "api_dashboard": {
       "hasData": true,
@@ -61,9 +61,9 @@
       "historicalVolatility": "0.47",
       "btcClose": "60644.76",
       "macd": {
-        "macdLine": "-4365.19",
-        "signalLine": "-4519.30",
-        "histogram": "154.11",
+        "macdLine": "-4348.05",
+        "signalLine": "-4515.87",
+        "histogram": "167.82",
         "crossType": "GOLDEN",
         "crossLabel": "골든크로스",
         "bullish": false
@@ -425,10 +425,10 @@
       "cumulativeFunding7d": "0.0001",
       "cumulativeFunding30d": "0.001631",
       "ivRv": {
-        "iv": "42.01",
+        "iv": "42.21",
         "rv": "47.00",
-        "spread": "-5.00",
-        "label": "저평가"
+        "spread": "-4.79",
+        "label": "균형"
       },
       "fearGreedMa": {
         "currentFg": 12,
@@ -2532,9 +2532,9 @@
     },
     "api_bitcoin_mempool": {
       "hasData": true,
-      "txCount": 72136,
-      "vsizeMb": "31.09",
-      "totalFeeBtc": "0.0497",
+      "txCount": 72375,
+      "vsizeMb": "32.46",
+      "totalFeeBtc": "0.0546",
       "congestionLevel": "혼잡 — 수수료 상승 중",
       "congestionClass": "text-yellow-400",
       "errorMessage": null
@@ -2544,26 +2544,26 @@
       "pools": [
         {
           "name": "Foundry USA",
-          "sharePct": "23.78"
+          "sharePct": "23.88"
         },
         {
           "name": "AntPool",
-          "sharePct": "23.69"
+          "sharePct": "23.60"
         },
         {
           "name": "F2Pool",
-          "sharePct": "15.54"
+          "sharePct": "15.58"
         },
         {
           "name": "ViaBTC",
-          "sharePct": "8.43"
+          "sharePct": "8.40"
         },
         {
           "name": "SpiderPool",
-          "sharePct": "7.30"
+          "sharePct": "7.28"
         }
       ],
-      "top3Concentration": "63.01",
+      "top3Concentration": "63.06",
       "signal": "집중도 위험 -- 51% 공격 리스크 상승",
       "signalClass": "text-red-400",
       "errorMessage": null
@@ -4166,9 +4166,9 @@
     },
     "api_dashboard_stablecoin_supply": {
       "hasData": true,
-      "totalMarketCapUsd": "243041863081.75319",
+      "totalMarketCapUsd": "243007163709.84333",
       "marketCap30dAgoUsd": "252884557180.45018",
-      "growth30dPercent": "-3.89",
+      "growth30dPercent": "-3.91",
       "signal": "CONTRACTING",
       "signalLabel": "공급 축소",
       "signalDescription": "자금 이탈/상환 — 약세 압력",
@@ -4237,63 +4237,63 @@
     },
     "api_dashboard_liquidation_heatmap": {
       "hasData": true,
-      "currentPrice": "61481.80",
-      "openInterestUsd": "6090602780.56320000",
-      "longAccountRatio": "0.7111",
-      "shortAccountRatio": "0.2889",
-      "downsideLiquidationUsd": "4331027637.26",
-      "upsideLiquidationUsd": "1759575143.30",
+      "currentPrice": "61696.80",
+      "openInterestUsd": "6119547210.64120000",
+      "longAccountRatio": "0.7102",
+      "shortAccountRatio": "0.2898",
+      "downsideLiquidationUsd": "4346102429.00",
+      "upsideLiquidationUsd": "1773444781.64",
       "cascadeDirection": "DOWNSIDE",
       "cascadeLabel": "하락 청산 위험",
       "cascadeDescription": "롱 포지션 편중 — 가격 하락 시 롱 청산 캐스케이드 위험",
       "levels": [
         {
-          "price": "55333.62",
+          "price": "55527.12",
           "side": "LONG",
           "leverage": 10,
-          "notionalUsd": "1732411054.90"
+          "notionalUsd": "1738440971.60"
         },
         {
-          "price": "67629.98",
+          "price": "67866.48",
           "side": "SHORT",
           "leverage": 10,
-          "notionalUsd": "703830057.32"
+          "notionalUsd": "709377912.66"
         },
         {
-          "price": "59022.53",
+          "price": "59228.93",
           "side": "LONG",
           "leverage": 25,
-          "notionalUsd": "1515859673.04"
+          "notionalUsd": "1521135850.15"
         },
         {
-          "price": "63941.07",
+          "price": "64164.67",
           "side": "SHORT",
           "leverage": 25,
-          "notionalUsd": "615851300.16"
+          "notionalUsd": "620705673.58"
         },
         {
-          "price": "60252.16",
+          "price": "60462.86",
           "side": "LONG",
           "leverage": 50,
-          "notionalUsd": "866205527.45"
+          "notionalUsd": "869220485.80"
         },
         {
-          "price": "62711.44",
+          "price": "62930.74",
           "side": "SHORT",
           "leverage": 50,
-          "notionalUsd": "351915028.66"
+          "notionalUsd": "354688956.33"
         },
         {
-          "price": "60866.98",
+          "price": "61079.83",
           "side": "LONG",
           "leverage": 100,
-          "notionalUsd": "216551381.86"
+          "notionalUsd": "217305121.45"
         },
         {
-          "price": "62096.62",
+          "price": "62313.77",
           "side": "SHORT",
           "leverage": 100,
-          "notionalUsd": "87978757.17"
+          "notionalUsd": "88672239.08"
         }
       ],
       "errorMessage": null
@@ -5690,7 +5690,7 @@
     },
     "api_ai_digest": {
       "hasData": true,
-      "generatedAt": "2026-11-27T05:03:19.281903Z",
+      "generatedAt": "2026-11-27T05:23:35.050982Z",
       "compositeScore": 66,
       "tone": "NEUTRAL",
       "toneDisplay": "중립",
@@ -5699,7 +5699,7 @@
       "sections": [
         {
           "type": "SUMMARY",
-          "content": "현재 매집 우세로 보이나, 공포 심리가 지배적이다."
+          "content": "현재 매집 우세로 시장 심리가 공포에 가까운 상황이다."
         },
         {
           "type": "RISK",
@@ -5707,22 +5707,22 @@
         },
         {
           "type": "RISK",
-          "content": "BTC 도미넌스가 높아 알트코인 투자에 대한 불확실성이 크다."
+          "content": "BTC 도미넌스가 높아 알트코인에 대한 투자 심리가 약화되고 있다."
         },
         {
           "type": "ACTION",
-          "content": "매수 기회를 노리되, 리스크 관리에 유의하라."
+          "content": "매수 기회를 염두에 두고 시장을 주의 깊게 관찰하라."
         },
         {
           "type": "ACTION",
-          "content": "시장 심리를 주의 깊게 관찰하며 추가 투자 결정을 내리라."
+          "content": "포트폴리오 다각화를 고려하여 리스크를 분산하라."
         }
       ],
       "errorMessage": null
     },
     "api_ai_digest_en": {
       "hasData": true,
-      "generatedAt": "2026-11-27T05:03:21.370919Z",
+      "generatedAt": "2026-11-27T05:23:36.585240Z",
       "compositeScore": 66,
       "tone": "NEUTRAL",
       "toneDisplay": "Neutral",
@@ -5735,33 +5735,40 @@
         },
         {
           "type": "RISK",
-          "content": "High fear sentiment indicated by a Fear & Greed index of 12."
+          "content": "Low RSI values indicate potential oversold conditions."
         },
         {
           "type": "RISK",
-          "content": "RSI values below 30 suggest oversold conditions, indicating potential volatility."
+          "content": "High BTC dominance may limit altcoin growth."
         },
         {
           "type": "ACTION",
-          "content": "Consider accumulating positions cautiously in anticipation of a market recovery."
+          "content": "Consider cautious accumulation of BTC in the current market."
         },
         {
           "type": "ACTION",
-          "content": "Monitor macroeconomic indicators closely for potential impacts on price movements."
+          "content": "Monitor macroeconomic indicators for potential volatility."
         }
       ],
       "errorMessage": null
     },
     "api_ai_news_sentiment": {
       "hasData": true,
-      "generatedAt": "2026-11-27T05:03:23.993434Z",
-      "compositeScore": "-0.050",
+      "generatedAt": "2026-11-27T05:23:39.040311Z",
+      "compositeScore": "-0.006",
       "label": "NEUTRAL",
       "labelDisplay": "중립",
       "labelHexColor": "#FBBF24",
       "scoredCount": 16,
       "modelName": "gpt-4o-mini",
       "items": [
+        {
+          "title": "Ripple's lending plan moves closer to tapping XRP Ledger's $800 million in stablecoins",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/11/27/ripple-s-lending-plan-moves-closer-to-tapping-xrp-ledger-s-usd950-million-in-stablecoins",
+          "publishedAt": "2026-11-27T05:06:32Z",
+          "score": "0.2"
+        },
         {
           "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
           "source": "CoinDesk",
@@ -5788,14 +5795,14 @@
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/markets/2026/11/26/bitcoin-s-dormant-supply-rises-a-behavior-seen-during-previous-bear-market-bottoming-phases",
           "publishedAt": "2026-11-26T16:50:23Z",
-          "score": "-0.2"
+          "score": "-0.1"
         },
         {
           "title": "Crypto for Advisors: Four questions to ask before trusting a crypto exchange",
           "source": "CoinDesk",
           "url": "https://www.coindesk.com/coindesk-indices/2026/11/26/crypto-for-advisors-four-questions-to-ask-before-trusting-a-crypto-exchange",
           "publishedAt": "2026-11-26T15:42:43Z",
-          "score": "-0.1"
+          "score": "-0.2"
         },
         {
           "title": "Spain gives anti-laundering unit power to freeze crypto accounts without a judge",
@@ -5812,13 +5819,6 @@
           "score": "-0.6"
         },
         {
-          "title": "Bitcoin ETFs are bleeding cash and the Fed is unlikely to help",
-          "source": "CoinDesk",
-          "url": "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help",
-          "publishedAt": "2026-11-26T12:14:46Z",
-          "score": "-0.7"
-        },
-        {
           "title": "Ethereum devs set Glamsterdam’s Hoodi rollout for mid-December after delays",
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ethereum-devs-set-glamsterdams-hoodi-rollout-for-mid-december-after-delays?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5830,7 +5830,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ai-driving-flood-of-crypto-bug-reports-now-helping-sort-them?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-27T01:47:38Z",
-          "score": "0.2"
+          "score": "0.1"
         },
         {
           "title": "Privacy coins face diverging fortunes as KuCoin moves to drop Monero",
@@ -5851,7 +5851,7 @@
           "source": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-11-26T22:12:06Z",
-          "score": "0.1"
+          "score": "0.0"
         },
         {
           "title": "BNB Chain details new layer-1 for trading, private finance and AI",
@@ -6706,8 +6706,8 @@
       "color": "#1a5c32",
       "action": "분할 매수",
       "regressionPrice": 192890.95,
-      "currentPrice": 61997.55,
-      "deviationPct": -67.86,
+      "currentPrice": 62197.6,
+      "deviationPct": -67.76,
       "isOversold": true,
       "isBubble": false,
       "isFairValue": false,
@@ -6906,9 +6906,9 @@
     },
     "api_expert_sth_cost_basis": {
       "sthCostBasis": 73129.19,
-      "currentPrice": 61997.55,
-      "priceToSthRatio": 0.8478,
-      "premiumPct": -15.22,
+      "currentPrice": 62197.6,
+      "priceToSthRatio": 0.8505,
+      "premiumPct": -14.95,
       "signal": {
         "name": "BELOW_BAND",
         "description": "STH 원가 디스카운트 — 저점 매집 구간"
