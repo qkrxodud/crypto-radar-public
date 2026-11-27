@@ -624,9 +624,18 @@
     injectSwitcher();
     apply(document); // ko면 내부에서 즉시 반환
   }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', boot);
-  } else {
+  // DOMContentLoaded는 defer 스크립트(Firebase SDK) 실행을 기다려 첫 페인트보다 늦어진다 —
+  // 파싱이 끝나는 'interactive' 시점에 바로 적용해 번역 교체로 인한 레이아웃 이동을 막는다
+  var booted = false;
+  function bootOnce() {
+    if (booted || document.readyState === 'loading') return;
+    booted = true;
     boot();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('readystatechange', bootOnce);
+    document.addEventListener('DOMContentLoaded', bootOnce);
+  } else {
+    bootOnce();
   }
 })();
