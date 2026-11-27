@@ -110,7 +110,7 @@ def inject_static_hero(snapshot, index_path):
         return False
     score = m.get("score"); delta = m.get("scoreDelta") or 0
     try:
-        price = f"BTC ${float(m.get('btcClose')):,.0f}"
+        price = f"BTC ${float(m.get('btcClose')):,.0f} · 일봉 종가"
     except (TypeError, ValueError):
         price = "--"
     # 백엔드 scoreDelta는 어제 행이 없으면 0 — 이력에서 직전 수집일을 찾아 그날 대비로 표기 (JS prevCollectedDay와 동일)
