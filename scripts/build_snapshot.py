@@ -113,7 +113,24 @@ def inject_static_hero(snapshot, index_path):
         price = f"BTC ${float(m.get('btcClose')):,.0f}"
     except (TypeError, ValueError):
         price = "--"
-    delta_txt = ("▲ +" if delta > 0 else "▼ " if delta < 0 else "= ") + f"{delta} (어제 대비)"
+    # 백엔드 scoreDelta는 어제 행이 없으면 0 — 이력에서 직전 수집일을 찾아 그날 대비로 표기 (JS prevCollectedDay와 동일)
+    delta_ref = "어제 대비"
+    try:
+        import json as _json, datetime as _dt
+        sh = (snapshot.get("data") or {}).get("api_analysis_score_history") or {}
+        lab = sh.get("scoreHistoryLabels"); sco = sh.get("scoreHistoryScores")
+        lab = _json.loads(lab) if isinstance(lab, str) else (lab or [])
+        sco = _json.loads(sco) if isinstance(sco, str) else (sco or [])
+        dd = m.get("dataDate")
+        prev = next(((l, v) for l, v in reversed(list(zip(lab, sco))) if dd and l < dd and v is not None), None)
+        if prev and score is not None:
+            gap = (_dt.date.fromisoformat(dd) - _dt.date.fromisoformat(prev[0])).days
+            if gap != 1:
+                delta = int(score) - int(prev[1])
+                delta_ref = f"{prev[0][5:]} 대비 · 전일 데이터 없음"
+    except (ValueError, TypeError) as e:
+        print(f"  [WARN] static hero: delta fallback failed: {e}")
+    delta_txt = ("▲ +" if delta > 0 else "▼ " if delta < 0 else "= ") + f"{delta} ({delta_ref})"
     date_txt = (m.get("dataDate") or "").replace("-", ".")
     # 헤드라인은 처방형 actionReason(비중·분할 지시) 대신 구간명 + 인접 구간까지 거리 (JS 렌더와 동일)
     dist = (snapshot.get("data") or {}).get("api_dashboard_signal_distance") or {}
