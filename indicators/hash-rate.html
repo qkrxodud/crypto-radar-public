@@ -28,7 +28,7 @@
   :root{
     --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
     --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943; --blue:#3b82f6;
-    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#7c849a; --m3:#6b7388;
     --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
     --mono:'JetBrains Mono',monospace;
   }
@@ -341,15 +341,15 @@
       <section class="sec" id="liveSec" data-ind="hash-rate">
         <h2><span class="ix">●</span><span>오늘의 해시레이트 · 종합 점수 안에서의 위치</span></h2>
         <div class="live-grid">
-          <div class="lv"><div class="k">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub">매일 09:05 KST 수집</div></div>
-          <div class="lv"><div class="k">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s">높을수록 매수 우호<span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
-          <div class="lv"><div class="k">종합 점수 가중치</div><div class="v" style="font-size:17px">2%</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
-          <div class="lv"><div class="k">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
+          <div class="lv"><div class="k" data-en="Current value">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub" data-en="Collected daily at 09:05 KST">매일 09:05 KST 수집</div></div>
+          <div class="lv"><div class="k" data-en="Normalized score (0–100)">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s"><span data-en="Higher = more buy-friendly">높을수록 매수 우호</span><span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
+          <div class="lv"><div class="k" data-en="Weight in composite">종합 점수 가중치</div><div class="v" style="font-size:17px">2%</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
+          <div class="lv"><div class="k" data-en="Data date · composite score">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
         </div>
         <div class="lv-series" id="lvSeries" style="display:none"></div>
         <p class="rule"><b>DB 누적 분포의 5~95 퍼센타일로 동적 정규화합니다(높을수록 높은 점수).</b> 데이터가 부족할 때는 300 EH/s = 0점, 1,000 EH/s = 100점 고정 범위로 폴백합니다. 2024년 700 EH/s 도달로 기존 상한 800에서 만점 고착이 생겨 1,000으로 올렸고, 지금은 동적 범위가 기본입니다.</p>
         <p class="rule" style="border-left-color:var(--amber);background:rgba(240,185,11,.05)"><b>가중치 2%</b> — 해시레이트는 가격을 몇 달 늦게 따라가는 후행 지표라 타이밍 가중치는 낮습니다. 대신 30일·50일 이동평균 교차(해시리본)로 "채굴자 항복 → 회복" 전환을 잡는 용도로 대시보드 네트워크 건강 패널에서 따로 봅니다.</p>
-        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
+        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0" data-i18n-html="1" data-en="Figures are the last values collected into <code>data/snapshot.json</code>, not live. The normalization rule and weight are written to match the backend code (NormalizationPolicy · ScoringPolicy), and this paragraph is updated whenever they change.">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
       </section>
 
       <section class="sec">
@@ -530,7 +530,7 @@
 })();
 </script>
 <!-- 다국어(i18n) 런타임 — 동기 로드 -->
-<script src="ind-live.js?v=1" defer></script>
-<script src="../btc-i18n.js?v=5"></script>
+<script src="ind-live.js?v=2" defer></script>
+<script src="../btc-i18n.js?v=6"></script>
 </body>
 </html>

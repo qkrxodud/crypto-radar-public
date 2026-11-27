@@ -28,7 +28,7 @@
   :root{
     --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
     --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943; --blue:#3b82f6;
-    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#7c849a; --m3:#6b7388;
     --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
     --mono:'JetBrains Mono',monospace;
   }
@@ -340,17 +340,17 @@
       </div>
 
       <section class="sec" id="liveSec" data-ind="mvrv-z-score">
-        <h2><span class="ix">●</span><span>오늘의 MVRV-Z 점수 · 종합 점수 안에서의 위치</span></h2>
+        <h2><span class="ix">●</span><span data-en="Today's MVRV-Z reading · its place in the composite score">오늘의 MVRV-Z 점수 · 종합 점수 안에서의 위치</span></h2>
         <div class="live-grid">
-          <div class="lv"><div class="k">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub">매일 09:05 KST 수집</div></div>
-          <div class="lv"><div class="k">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s">높을수록 매수 우호<span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
-          <div class="lv"><div class="k">종합 점수 가중치</div><div class="v" style="font-size:17px">7%</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
-          <div class="lv"><div class="k">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
+          <div class="lv"><div class="k" data-en="Current value">현재 값</div><div class="v" id="lvRaw">--</div><div class="s" id="lvRawSub" data-en="Collected daily at 09:05 KST">매일 09:05 KST 수집</div></div>
+          <div class="lv"><div class="k" data-en="Normalized score (0–100)">정규화 점수 (0~100)</div><div class="v" id="lvNorm">--</div><div class="lv-bar"><i id="lvNormBar"></i></div><div class="s"><span data-en="Higher = more buy-friendly">높을수록 매수 우호</span><span id="lvNorm2" style="display:none;margin-left:6px;color:var(--t2)"></span></div></div>
+          <div class="lv"><div class="k" data-en="Weight in composite">종합 점수 가중치</div><div class="v" style="font-size:17px">7%</div><div class="s">ScoringPolicy v2.1 · 2026-06-07</div></div>
+          <div class="lv"><div class="k" data-en="Data date · composite score">기준일 · 종합 점수</div><div class="v" id="lvDate" style="font-size:16px">--</div><div class="s" id="lvScore">--</div></div>
         </div>
         <div class="lv-series" id="lvSeries" style="display:none"></div>
         <p class="rule"><b>−1.5 이하 = 100점, 7 이상 = 0점, 그 사이 선형 보간.</b> 예를 들어 MVRV-Z 0.93이면 (7 − 0.93) ÷ 8.5 × 100 ≈ 71점입니다. 하한을 −0.5에서 −1.5로 넓힌 것은 2022년식 깊은 항복 구간(−1.0~−1.5)의 민감도를 살리기 위해서입니다.</p>
         <p class="rule" style="border-left-color:var(--amber);background:rgba(240,185,11,.05)"><b>가중치 7%</b> — 단일 지표로는 가장 높습니다. 2026-06-07 개정에서 6%에서 7%로 올렸고, 사이클 고점·저점 검증에서 가장 꾸준히 방향을 맞힌 지표였습니다. 단, 같은 온체인 밸류에이션인 NUPL과 상관이 높아 두 지표의 가중치 합이 6%를 넘지 않도록 상한(캡)을 둡니다 — 실제 반영 비중은 명목 가중치보다 작을 수 있습니다.</p>
-        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
+        <p class="note" style="color:var(--m1);font-size:12px;line-height:1.6;margin:10px 0 0" data-i18n-html="1" data-en="Figures are the last values collected into <code>data/snapshot.json</code>, not live. The normalization rule and weight are written to match the backend code (NormalizationPolicy · ScoringPolicy), and this paragraph is updated whenever they change.">숫자는 <code>data/snapshot.json</code>에서 읽은 마지막 수집값이며 실시간이 아닙니다. 정규화 규칙과 가중치는 백엔드 코드(NormalizationPolicy · ScoringPolicy)와 동일하게 적어 두었고, 개정 시 이 문단도 함께 갱신합니다.</p>
       </section>
 
       <section class="sec">
@@ -535,7 +535,7 @@
 })();
 </script>
 <!-- 다국어(i18n) 런타임 — 동기 로드 -->
-<script src="ind-live.js?v=1" defer></script>
-<script src="../btc-i18n.js?v=5"></script>
+<script src="ind-live.js?v=2" defer></script>
+<script src="../btc-i18n.js?v=6"></script>
 </body>
 </html>

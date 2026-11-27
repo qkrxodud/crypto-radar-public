@@ -31,7 +31,7 @@
   :root{
     --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
     --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943; --blue:#3b82f6;
-    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#7c849a; --m3:#6b7388;
     --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
     --mono:'JetBrains Mono',monospace;
   }
@@ -235,7 +235,7 @@
   .sec .note{color:var(--m1);font-size:12.5px;line-height:1.6;margin:8px 0 0;}
   @media(max-width:768px){.post-hero h1{font-size:23px;}}
 </style>
-<script src="../btc-i18n.js?v=5"></script>
+<script src="../btc-i18n.js?v=6"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -302,7 +302,7 @@
     </div>
     <!-- 데스크톱 상단 바 -->
     <div class="topbar">
-      <div class="crumb"><span data-en="Posts">글</span> <span style="color:var(--m3)">›</span> <b>글 목록</b></div>
+      <div class="crumb"><span data-en="Posts">글</span> <span style="color:var(--m3)">›</span> <b data-en="All posts">글 목록</b></div>
       <div class="right">
         <span class="live"><span class="d"></span>LIVE</span>
       </div>
@@ -310,30 +310,30 @@
 
     <div class="content">
       <div class="post-hero">
-        <h1>글 — 데이터로 쓰는 <span class="hl">주간 리뷰·사례 연구·방법론</span></h1>
-        <p class="lead">이 사이트가 매일 수집하는 지표와 2,061일 치 점수 이력으로만 쓸 수 있는 글을 올립니다. 일반적인 지표 설명은 <a href="../guide.html" style="color:var(--green)">지표 가이드</a>와 22개 상세 페이지에 있고, 여기에는 그 지표가 실제로 어떻게 움직였는지, 점수의 판정이 맞았는지 틀렸는지를 날짜와 숫자로 기록합니다. 매주 목요일 주간 리뷰, 그 사이에 사례 연구와 방법론 글을 씁니다.</p>
+        <h1 data-i18n-html="1" data-en="Posts — <span class=&quot;hl&quot;>weekly reviews, case studies, methodology</span> written from data">글 — 데이터로 쓰는 <span class="hl">주간 리뷰·사례 연구·방법론</span></h1>
+        <p class="lead" data-i18n-html="1" data-en="Posts that can only be written from the indicators this site collects every day and its 2,061-day score history. General indicator explanations live in the <a href=&quot;../guide.html&quot; style=&quot;color:var(--green)&quot;>indicator guide</a> and 22 detail pages; here we record, with dates and numbers, how those indicators actually moved and whether the score's calls were right or wrong. A weekly review every Thursday, with case studies and methodology pieces in between.">이 사이트가 매일 수집하는 지표와 2,061일 치 점수 이력으로만 쓸 수 있는 글을 올립니다. 일반적인 지표 설명은 <a href="../guide.html" style="color:var(--green)">지표 가이드</a>와 22개 상세 페이지에 있고, 여기에는 그 지표가 실제로 어떻게 움직였는지, 점수의 판정이 맞았는지 틀렸는지를 날짜와 숫자로 기록합니다. 매주 목요일 주간 리뷰, 그 사이에 사례 연구와 방법론 글을 씁니다.</p>
       </div>
-      <div class="byline"><span class="au"><a href="../about.html#operator" style="color:inherit;text-decoration:none" data-en="Operator">운영자</a><small data-en="Backend developer · sole operator of BTC Timing Radar">백엔드 개발자 · BTC 타이밍 레이더 1인 운영</small></span><span>글 4편 · 최근 갱신 <span class="dt">2026-11-27</span></span></div>
+      <div class="byline"><span class="au"><a href="../about.html#operator" style="color:inherit;text-decoration:none" data-en="Operator">운영자</a><small data-en="Backend developer · sole operator of BTC Timing Radar">백엔드 개발자 · BTC 타이밍 레이더 1인 운영</small></span><span><span data-en="4 posts · last updated">글 4편 · 최근 갱신</span> <span class="dt">2026-11-27</span></span></div>
       <div class="post-list">
         <a class="post-card" href="2026-11-27-weekly-review.html">
-          <div class="pc-meta"><span class="cat">주간 지표 리뷰</span><span>2026-11-27</span><span>약 8분</span></div>
-          <h2>주간 지표 리뷰 (2026-11-27): BTC 4주 −22%에 점수는 62→66, 공포 20일째 매집 우세 재진입</h2>
-          <p>2026년 11월 27일 기준 비트코인 종합 타이밍 점수 66점(매집 우세 1일째). BTC가 4주 만에 22% 하락하는 동안 점수가 오른 이유, 지난주에 지켜보자고 한 세 조건의 결과, 과거 2,087일 표본에서 매집 우세 구간의 30/90/180일 뒤를 27개 지표 수치로 정리합니다.</p>
+          <div class="pc-meta"><span class="cat" data-en="Weekly indicator review">주간 지표 리뷰</span><span>2026-11-27</span><span data-en="8 min read">약 8분</span></div>
+          <h2 data-en="Weekly review (2026-11-27): BTC −22% in four weeks, score 62→66 — back to Accumulation on the 20th day of fear">주간 지표 리뷰 (2026-11-27): BTC 4주 −22%에 점수는 62→66, 공포 20일째 매집 우세 재진입</h2>
+          <p data-en="As of November 27, 2026 the composite timing score is 66 (Accumulation, day 1). Why the score rose while BTC fell 22% in four weeks, how the three conditions we said to watch turned out, and what followed the Accumulation band 30/90/180 days later across a 2,087-day sample.">2026년 11월 27일 기준 비트코인 종합 타이밍 점수 66점(매집 우세 1일째). BTC가 4주 만에 22% 하락하는 동안 점수가 오른 이유, 지난주에 지켜보자고 한 세 조건의 결과, 과거 2,087일 표본에서 매집 우세 구간의 30/90/180일 뒤를 27개 지표 수치로 정리합니다.</p>
         </a>
         <a class="post-card" href="2026-10-30-weekly-review.html">
-          <div class="pc-meta"><span class="cat">주간 지표 리뷰</span><span>2026-10-30</span><span>약 7분</span></div>
-          <h2>주간 지표 리뷰 (2026-10-30): 종합 62점·중립 53일째, 공포탐욕 30으로 급락한 날</h2>
-          <p>2026년 10월 30일 기준 비트코인 종합 타이밍 점수 62점(중립 53일째). 공포탐욕 지수가 하루 만에 51→30으로 급락하고 일봉 RSI 36까지 내려온 한 주를 27개 지표 수치로 정리하고, 과거 2,061일 표본에서 같은 구간이 어떤 결과로 이어졌는지 짚습니다.</p>
+          <div class="pc-meta"><span class="cat" data-en="Weekly indicator review">주간 지표 리뷰</span><span>2026-10-30</span><span data-en="7 min read">약 7분</span></div>
+          <h2 data-en="Weekly review (2026-10-30): composite 62, neutral for 53 days — the day Fear &amp; Greed fell to 30">주간 지표 리뷰 (2026-10-30): 종합 62점·중립 53일째, 공포탐욕 30으로 급락한 날</h2>
+          <p data-en="As of October 30, 2026 the composite timing score is 62 (Neutral, day 53). The week Fear &amp; Greed dropped 51→30 in a day and the daily RSI fell to 36, laid out indicator by indicator, and what the same band led to across a 2,061-day sample.">2026년 10월 30일 기준 비트코인 종합 타이밍 점수 62점(중립 53일째). 공포탐욕 지수가 하루 만에 51→30으로 급락하고 일봉 RSI 36까지 내려온 한 주를 27개 지표 수치로 정리하고, 과거 2,061일 표본에서 같은 구간이 어떤 결과로 이어졌는지 짚습니다.</p>
         </a>
         <a class="post-card" href="cycle-landmarks-case-study.html">
-          <div class="pc-meta"><span class="cat">사례 연구</span><span>2026-10-30</span><span>약 9분</span></div>
-          <h2>사이클 고점·저점 10곳에서 점수는 무엇을 말했나 — 9/10 적중과 2021년 4월의 빗나감</h2>
-          <p>2021년 코인베이스 상장 고점부터 2025년 10월 사상 최고가까지, 누구나 아는 비트코인 고점·저점 10곳의 당일 종합 점수를 사후 검증합니다. 9곳 적중, 1곳 빗나감의 이유와 "강력 매집"이 바닥을 뜻하지 않았던 2022년 6월의 교훈.</p>
+          <div class="pc-meta"><span class="cat" data-en="Case study">사례 연구</span><span>2026-10-30</span><span data-en="9 min read">약 9분</span></div>
+          <h2 data-en="What the score said at 10 cycle tops and bottoms — 9 of 10 right, and the April 2021 miss">사이클 고점·저점 10곳에서 점수는 무엇을 말했나 — 9/10 적중과 2021년 4월의 빗나감</h2>
+          <p data-en="From the 2021 Coinbase-listing top to the October 2025 all-time high, a look back at the composite score on 10 well-known Bitcoin tops and bottoms: why 9 were right and 1 was wrong, and the June 2022 lesson that &quot;Strong Accumulation&quot; did not mean the bottom.">2021년 코인베이스 상장 고점부터 2025년 10월 사상 최고가까지, 누구나 아는 비트코인 고점·저점 10곳의 당일 종합 점수를 사후 검증합니다. 9곳 적중, 1곳 빗나감의 이유와 "강력 매집"이 바닥을 뜻하지 않았던 2022년 6월의 교훈.</p>
         </a>
         <a class="post-card" href="threshold-65-vs-70-shadow.html">
-          <div class="pc-meta"><span class="cat">방법론</span><span>2026-10-30</span><span>약 8분</span></div>
-          <h2>매수 기준이 65점인 이유 — 70점 그림자 실험과 lift가 음수일 때</h2>
-          <p>비트코인 타이밍 점수의 매집 우세 경계가 왜 70이 아니라 65인지, 2,061일 표본에서 70점 그림자 임계값을 병행 추적한 결과와 통계적 유의성 게이트, 그리고 최근 180일 lift가 음수로 나온 사실을 숨기지 않고 설명합니다.</p>
+          <div class="pc-meta"><span class="cat" data-en="Methodology">방법론</span><span>2026-10-30</span><span data-en="8 min read">약 8분</span></div>
+          <h2 data-en="Why the accumulation line is 65 — the 70-point shadow test, and when lift turns negative">매수 기준이 65점인 이유 — 70점 그림자 실험과 lift가 음수일 때</h2>
+          <p data-en="Why the score's accumulation boundary is 65 rather than 70: the result of tracking a 70-point shadow threshold in parallel over a 2,061-day sample, the statistical significance gate, and — without hiding it — the negative lift of the most recent 180 days.">비트코인 타이밍 점수의 매집 우세 경계가 왜 70이 아니라 65인지, 2,061일 표본에서 70점 그림자 임계값을 병행 추적한 결과와 통계적 유의성 게이트, 그리고 최근 180일 lift가 음수로 나온 사실을 숨기지 않고 설명합니다.</p>
         </a>
       </div>
 

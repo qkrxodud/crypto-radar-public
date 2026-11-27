@@ -30,11 +30,20 @@
   :root{
     --bg:#08090c; --nav-bg:#0a0b0f; --card:#11141a; --card-2:#0c0e13;
     --green:#16c784; --green-2:#2bd49a; --amber:#f0b90b; --red:#ea3943;
-    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#5b6377; --m3:#3a4051;
+    --t1:#e8eaef; --t2:#cfd4de; --t3:#aab0bd; --m1:#8b93a7; --m2:#7c849a; --m3:#6b7388;
     --line:rgba(255,255,255,.06); --line-2:rgba(255,255,255,.05);
     --mono:'JetBrains Mono',monospace;
   }
   *{box-sizing:border-box;}
+  /* 가로 스크롤 표 — 좌우 가장자리 그림자로 '더 있음'을 표시 */
+  .xscroll{overflow-x:auto;background:linear-gradient(to right,var(--card) 30%,rgba(17,20,26,0)) left/36px 100% no-repeat local,linear-gradient(to left,var(--card) 30%,rgba(17,20,26,0)) right/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.6),transparent) left/12px 100% no-repeat scroll,radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.6),transparent) right/12px 100% no-repeat scroll;}
+  /* 히어로 판정 근거 접기 */
+  .hero-more{margin-top:8px}
+  .hero-more>summary{cursor:pointer;font-size:12.5px;color:var(--t3);list-style:none;display:inline-flex;align-items:center;gap:6px}
+  .hero-more>summary::-webkit-details-marker{display:none}
+  .hero-more>summary::before{content:'▸';transition:transform .15s}
+  .hero-more[open]>summary::before{transform:rotate(90deg)}
+  .hero-more>summary:focus-visible{outline:2px solid var(--green);outline-offset:2px;border-radius:4px}
   body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--t1);}
   ::-webkit-scrollbar{height:10px;width:10px;}
   ::-webkit-scrollbar-thumb{background:#2a2f3a;border-radius:8px;}
@@ -63,7 +72,7 @@
   .sb-live .lb{color:var(--t2);font-size:13px;margin-top:9px;line-height:1.5;}
   /* 사이드바 방문자 카운터 */
   .sb-visitor{margin-top:14px;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--line);}
-  .sb-visitor .vh{color:var(--m2);font-size:10.5px;letter-spacing:.08em;margin-bottom:9px;font-family:var(--mono);}
+  .sb-visitor .vh{color:var(--m2);font-size:11.5px;letter-spacing:.08em;margin-bottom:9px;font-family:var(--mono);}
   .sb-visitor .vr{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--m1);padding:3px 0;}
   .sb-visitor .vr .vc-n{color:var(--t1);font-weight:700;font-family:var(--mono);}
   .sb-visitor .vr.now .vc-n{color:var(--green);}
@@ -155,7 +164,7 @@
   .news-list .ni .nb{min-width:0;}
   .news-list .ni .nb a{font-size:13px;color:var(--t2);text-decoration:none;line-height:1.5;display:block;}
   .news-list .ni .nb a:hover{color:var(--green);}
-  .news-list .ni .nb .src{font-size:10.5px;color:var(--m2);margin-top:2px;font-family:var(--mono);}
+  .news-list .ni .nb .src{font-size:11.5px;color:var(--m2);margin-top:2px;font-family:var(--mono);}
   .news-list .empty{color:var(--m1);font-size:13px;padding:12px 0;}
   .mini-pair{display:flex;gap:14px;}
   .mini-pair .mp{flex:1;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;min-width:0;}
@@ -263,7 +272,7 @@
   /* 요일별 수익 막대 */
   .perf-week{display:flex;gap:8px;align-items:flex-end;height:120px;}
   .perf-week .wb{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px;}
-  .perf-week .wb .wv{font-family:var(--mono);font-size:10.5px;font-weight:700;}
+  .perf-week .wb .wv{font-family:var(--mono);font-size:11.5px;font-weight:700;}
   .perf-week .wb .bar2{width:60%;min-height:2px;border-radius:4px 4px 0 0;}
   .perf-week .wb .wl{color:var(--m2);font-size:11px;}
   /* 점수 히트맵 */
@@ -273,7 +282,7 @@
   .regime-box{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;background:var(--card-2);border:1px solid var(--line-2);border-radius:12px;padding:18px;}
   .regime-box .quad{width:88px;height:88px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;flex:none;}
   .regime-box .quad .q{font-size:20px;font-weight:800;}
-  .regime-box .quad .qs{font-size:10.5px;font-weight:700;}
+  .regime-box .quad .qs{font-size:11.5px;font-weight:700;}
   .regime-box .rd .rl{font-size:15px;font-weight:700;color:var(--t1);}
   .regime-box .rd .rdesc{font-size:13px;color:var(--t3);line-height:1.6;margin-top:6px;}
   .regime-box .rd .rmeta{font-family:var(--mono);font-size:11.5px;color:var(--m1);margin-top:8px;}
@@ -593,10 +602,13 @@
             <span class="hero-delta" id="heroDelta">= 0 (어제 대비)</span>
             <span class="hero-price" id="heroPrice">BTC $60,645</span>
           </div>
-          <div id="heroDistance" style="display:none;font-size:12.5px;color:var(--t3);margin-top:8px"></div>
-          <div id="heroEvidence" style="display:none;font-size:12.5px;color:var(--t2);margin-top:6px;line-height:1.55"></div>
-          <div id="heroCaution" style="display:none;font-size:12px;margin-top:4px;line-height:1.5"></div>
-          <div id="heroHorizons" style="display:none;font-size:12px;color:var(--t3);margin-top:8px;line-height:1.6"></div>
+          <div id="heroCaution" style="display:none;font-size:12px;margin-top:6px;line-height:1.5"></div>
+          <details class="hero-more" id="heroMore">
+            <summary data-en="Why this verdict — history, percentile, other clocks">판정 근거 펼치기 — 과거 확률·백분위·다른 시계</summary>
+            <div id="heroDistance" style="display:none;font-size:12.5px;color:var(--t3);margin-top:8px"></div>
+            <div id="heroEvidence" style="display:none;font-size:12.5px;color:var(--t2);margin-top:6px;line-height:1.55"></div>
+            <div id="heroHorizons" style="display:none;font-size:12px;color:var(--t3);margin-top:8px;line-height:1.6"></div>
+          </details>
           <div class="hero-cta">
             <a class="primary" href="guide.html" data-en="View Indicator Guide">지표 가이드 보기</a>
             <a class="ghost" href="#trends" data-en="See trends">추이 자세히</a>
@@ -844,8 +856,8 @@
             <div id="accuIndicators"></div>
             <div id="monthlyBlock" style="display:none">
               <div class="ch" style="margin:16px 0 8px" data-en="Monthly scorecard — the track record, month by month">월간 성적표 — 월별 트랙레코드</div>
-              <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
-                <thead><tr style="color:var(--m2);font-size:10.5px;text-transform:uppercase;text-align:right">
+              <div class="xscroll"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
+                <thead><tr style="color:var(--m2);font-size:11.5px;text-transform:uppercase;text-align:right">
                   <th style="text-align:left;padding:5px 8px 5px 0" data-en="Month">월</th>
                   <th style="padding:5px 8px" data-en="Signals">신호</th>
                   <th style="padding:5px 8px" data-en="30d hit">적중 30d</th>
@@ -857,8 +869,8 @@
             </div>
             <div id="verdictBlock" style="display:none">
               <div class="ch" style="margin:16px 0 8px" data-en="Verdict evidence — when the score sat in each band, was price higher 30 / 90 / 180 days later? (up-rate, with the gap to the all-days base rate in brackets; the current band is highlighted)">판정 근거 — 각 점수 구간이던 날, 실제로 30 / 90 / 180일 뒤 가격이 올랐나 (상승 확률, 괄호는 전체 기준선 대비 차이 · 현재 구간 강조)</div>
-              <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
-                <thead><tr style="color:var(--m2);font-size:10.5px;text-transform:uppercase;text-align:right">
+              <div class="xscroll"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
+                <thead><tr style="color:var(--m2);font-size:11.5px;text-transform:uppercase;text-align:right">
                   <th style="text-align:left;padding:5px 8px 5px 0" data-en="Band">구간</th>
                   <th style="padding:5px 8px" data-en="30d up">30일 상승</th>
                   <th style="padding:5px 8px" data-en="90d up">90일 상승</th>
@@ -871,8 +883,8 @@
             <div id="landmarkBlock" style="display:none">
               <div class="ch" style="margin:16px 0 8px" data-en="Cycle landmarks — on the well-known tops and bottoms, what did the score say that day? (dates fixed in advance; misses are shown as they are)">사이클 랜드마크 검증 — 누구나 아는 고점·저점 당일에 점수는 무엇을 말했나 (날짜는 사전에 고정, 빗나간 날도 그대로)</div>
               <div id="landmarkSummary" style="font-size:12.5px;color:var(--t2);margin-bottom:8px"></div>
-              <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
-                <thead><tr style="color:var(--m2);font-size:10.5px;text-transform:uppercase;text-align:right">
+              <div class="xscroll"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
+                <thead><tr style="color:var(--m2);font-size:11.5px;text-transform:uppercase;text-align:right">
                   <th style="text-align:left;padding:5px 8px 5px 0" data-en="Date · event">날짜 · 사건</th>
                   <th style="padding:5px 8px" data-en="Kind">종류</th>
                   <th style="padding:5px 8px" data-en="BTC">BTC</th>
@@ -885,8 +897,8 @@
             </div>
             <div id="shadowBlock" style="display:none">
               <div class="ch" style="margin:16px 0 8px" data-en="Shadow threshold tracking — would a stricter buy bar (70) have done better than the live one (65)? Observation only; the live threshold changes only after a statistical significance gate.">그림자 임계값 추적 — 실전 매수 기준(65점)보다 엄격한 기준(70점)이 더 나았을까요? 관찰 전용이며, 실전 기준 변경은 통계적 유의성 게이트 통과 후에만 검토합니다.</div>
-              <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
-                <thead><tr style="color:var(--m2);font-size:10.5px;text-transform:uppercase;text-align:right">
+              <div class="xscroll"><table style="width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap">
+                <thead><tr style="color:var(--m2);font-size:11.5px;text-transform:uppercase;text-align:right">
                   <th style="text-align:left;padding:5px 8px 5px 0" data-en="Window">구간</th>
                   <th style="padding:5px 8px" data-en="Live 65+ lift">실전 65+ lift</th>
                   <th style="padding:5px 8px" data-en="Shadow 70+ lift">그림자 70+ lift</th>
@@ -1051,7 +1063,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
 <!-- 다국어(i18n) 런타임 — 인라인 IIFE보다 먼저 동기 로드해 window.BTCI18N을 파싱 시점에 확보(defer 캡처 레이스 방지) -->
-<script src="btc-i18n.js?v=5"></script>
+<script src="btc-i18n.js?v=6"></script>
 <script>
 (function(){
 'use strict';
@@ -1074,6 +1086,22 @@ function histBinColor(bin,todayScore){
   var mm=String(bin.label||'').match(/^(\d+)\s*-\s*(\d+)/);
   if(!mm)return bin.color||'#8b93a7';
   return scoreColor((Number(mm[1])+Number(mm[2]))/2);
+}
+// 체크리스트 ETF 항목은 매크로 집계값이라 ETF 차트 마지막 일과 숫자가 다를 수 있다 — 차트 기준일·값을 함께 표기
+function etfChecklistBasis(item,d){
+  if(String(item.name||'').indexOf('ETF')<0)return '';
+  var eh=((d.api_dashboard_etf_flow_history||{}).history)||[];
+  var last=eh[eh.length-1];
+  if(!last||!last.date)return '';
+  return T({ko:' · 일별 차트 '+last.date.slice(5)+' '+last.daily+'M (집계 출처 다름)',en:' · daily chart '+last.date.slice(5)+' '+last.daily+'M (different source)'});
+}
+// '라벨(+N)' 형태의 사유 문자열 — 라벨만 번역하고 괄호 점수는 보존. '연속 강세 N일'은 숫자를 살려 조립
+function mapReason(s){
+  var m=String(s).match(/^(.*?)\s*(\([^()]*\))$/);
+  if(!m)return ML(s);
+  var st=m[1].match(/^연속 강세 (\d+)일$/);
+  if(st)return T({ko:s,en:st[1]+'-day winning streak'+m[2]});
+  return ML(m[1])+m[2];
 }
 function ML(s){return (window.BTCI18N&&window.BTCI18N.mapLabel)?window.BTCI18N.mapLabel(s):s;}
 
@@ -1357,7 +1385,7 @@ async function init(){
           tr.style.cssText='border-top:1px solid var(--line);text-align:right;font-family:var(--mono)'+(b.current?';background:'+col+'14':'');
           var cells=(b.horizons||[]).map(function(h){
             if(!h.sampleCount) return '<td style="padding:6px 8px;color:var(--t3)">--</td>';
-            return '<td style="padding:6px 8px;color:var(--t2)">'+h.upRate+' <span style="font-size:10.5px;color:'+(h.positiveEdge?GREEN:RED)+'">('+h.edge+')</span></td>';
+            return '<td style="padding:6px 8px;color:var(--t2)">'+h.upRate+' <span style="font-size:11.5px;color:'+(h.positiveEdge?GREEN:RED)+'">('+h.edge+')</span></td>';
           }).join('');
           tr.innerHTML='<td style="text-align:left;padding:6px 8px 6px 0;font-family:inherit;color:'+col+'"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+col+';margin-right:6px;vertical-align:middle"></span>'+ML(b.labelDisplay||b.label)+' <span style="color:var(--t3)">'+b.range+(b.current?' · '+T({ko:'현재',en:'now'}):'')+'</span></td>'+cells;
           vtb.appendChild(tr);
@@ -1601,7 +1629,7 @@ async function init(){
       var col=ok?GREEN:RED;
       var line=mk('div','chk-item',
         '<span class="mk" style="background:'+col+'22;color:'+col+'">'+(ok?'✓':'✕')+'</span>'+
-        '<span class="ct">'+ML(it.name||'--')+(it.reason?'<span class="cr">'+ML(it.reason)+'</span>':'')+'</span>');
+        '<span class="ct">'+ML(it.name||'--')+(it.reason?'<span class="cr">'+ML(it.reason)+etfChecklistBasis(it,d)+'</span>':'')+'</span>');
       ckl.appendChild(line);
     });
   }else{ckl.appendChild(mk('div','chk-item','<span class="ct" style="color:#8b93a7">'+T({ko:'체크리스트 데이터 없음',en:'No checklist data'})+'</span>'));}
@@ -2079,7 +2107,7 @@ async function init(){
       var msCol='#cfd4de';   // 종합 점수와 다른 스케일이라 구간색(scoreColor)을 쓰지 않는다
       var msReasons=(ms.masterReasons||'').split('|').map(function(s){return s.trim();}).filter(Boolean);
       msl.innerHTML='<b style="color:'+msCol+'">'+T({ko:'마스터 스코어 ',en:'Master score '})+ms.masterScore+'</b> <span style="color:var(--t3);font-size:11px">'+T({ko:'(종합 점수와 별개 지표)',en:'(separate from the composite score)'})+'</span> · '
-        +ML(ms.masterAction||'')+'<br><span style="color:var(--t3);font-size:11.5px">'+msReasons.map(ML).join(' · ')+'</span>';
+        +ML(ms.masterAction||'')+'<br><span style="color:var(--t3);font-size:11.5px">'+msReasons.map(mapReason).join(' · ')+'</span>';
     }
   }catch(e){console.warn('[dashboard] master-score render failed:',e&&e.message);}
 
@@ -2175,7 +2203,7 @@ async function init(){
         bar.title=b.label+' · '+b.count+T({ko:'일',en:'d'});
         hb.appendChild(bar);
         var lab=mk('div',null,b.label);
-        lab.style.cssText='flex:1;text-align:center;font-size:9.5px;font-family:var(--mono);color:'+(b.isToday?'var(--t1)':'var(--t3)');
+        lab.style.cssText='flex:1;text-align:center;font-size:11px;font-family:var(--mono);color:'+(b.isToday?'var(--t1)':'var(--t3)');
         hl.appendChild(lab);
       });
     }
@@ -2257,7 +2285,7 @@ async function init(){
     if(ceV!=null){
       miniRows.push({l:T({ko:'군중 극단 지수',en:'Crowd extreme index'}),v:fN(ceV,1),
         s:((ce.extreme&&ce.extreme.description)?ML(ce.extreme.description):'')
-          +(ce.shouldReduceBuy?T({ko:' · 매수 축소 권고',en:' · reduce buying'}):''),
+          +(ce.shouldReduceBuy?T({ko:' · 군중 쏠림 경고',en:' · crowd-extreme warning'}):''),
         col:ce.shouldReduceBuy?RED:AMBER});
     }
     if(miniRows.length){
