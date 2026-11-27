@@ -339,6 +339,10 @@
     '극도 탐욕': { en: 'Extreme Greed', zh: '极度贪婪' },
 
     /* 홈 동적 라벨·마스터 스코어 사유 (2026-11-27 영어판 누락 보완) */
+    '혼잡 — 수수료 상승 중': { en: 'Congested — fees rising', zh: '拥堵 — 手续费上涨' },
+    '극혼잡 — 수수료 급등 구간': { en: 'Severely congested — fee spike', zh: '严重拥堵 — 手续费飙升' },
+    '보통 — 정상 대기열': { en: 'Normal — regular queue', zh: '一般 — 正常排队' },
+    '혼잡 없음': { en: 'Not congested', zh: '无拥堵' },
     '순유입': { en: 'Net inflow', zh: '净流入' },
     '순유출': { en: 'Net outflow', zh: '净流出' },
     '극단적 저평가': { en: 'Extreme undervaluation', zh: '极度低估' },
