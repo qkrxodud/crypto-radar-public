@@ -58,7 +58,8 @@
   var HTML_LANG = { ko: 'ko', en: 'en', zh: 'zh-CN' };
 
   // <html lang> 즉시 설정
-  try { document.documentElement.lang = HTML_LANG[lang]; } catch (e) {}
+  // 번역본이 없는 페이지(<html data-i18n-only="ko">)는 en 모드에서도 lang을 원문 언어로 유지 — 스크린리더 발음 보호
+  try { document.documentElement.lang = document.documentElement.getAttribute('data-i18n-only') || HTML_LANG[lang]; } catch (e) {}
 
   // 장문 글 전용 언어 블록 전환: data-lang-block="ko|en"
   // 글 본문은 문장 단위 data-en 대신 언어별 블록을 통째로 둔다.
@@ -68,7 +69,8 @@
     if (lang === 'en') {
       var blockStyle = document.createElement('style');
       blockStyle.id = 'btc-i18n-block';
-      blockStyle.textContent = '[data-lang-block="ko"]{display:none!important}';
+      // en 블록도 첫 페인트 전에 보이게 해 boot 시점 hidden 해제로 생기는 레이아웃 이동(CLS)을 막는다
+      blockStyle.textContent = '[data-lang-block="ko"]{display:none!important}[data-lang-block="en"]{display:block!important}';
       (document.head || document.documentElement).appendChild(blockStyle);
     }
   } catch (e) {}
